@@ -1,0 +1,109 @@
+"""Topic: U.S. State Dept Visa Bulletin, F4 Final Action Date, All Other column.
+
+Logic:
+  1. Hit the visa-bulletin index page on travel.state.gov.
+  2. Find the newest monthly bulletin link there.
+  3. Fetch that monthly bulletin and locate the "Final Action Dates for
+     Family-Sponsored Preference Cases" table.
+  4. Read the F4 row, "All Chargeability Areas Except Those Listed" column.
+  5. Compare to state["visa_f4_all_other"]. If different, push and update.
+"""
+from __future__ import annotations
+
+import logging
+import re
+from typing import Optional
+
+import requests
+from bs4 import BeautifulSoup
+
+from .. import ntfy
+
+log = logging.getLogger(__name__)
+
+INDEX_URL = (
+    "https://travel.state.gov/content/travel/en/legal/visa-law0/"
+    "visa-bulletin.html"
+)
+USER_AGENT = "notify-watcher/1.0 (+https://github.com/) personal-use"
+STATE_KEY = "visa_f4_all_other"
+
+# Matches month names inside a bulletin URL so we can pick the newest one.
+_MONTHS = [
+    "january", "february", "march", "april", "may", "june",
+    "july", "august", "september", "october", "november", "december",
+]
+_BULLETIN_HREF = re.compile(
+    r"visa-bulletin-for-(" + "|".join(_MONTHS) + r")-(\d{4})\.html",
+    re.IGNORECASE,
+)
+
+
+def _fetch(url: str) -> str:
+    resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
+    resp.raise_for_status()
+    return resp.text
+
+
+def _find_current_bulletin_url(index_html: str) -> str:
+    soup = BeautifulSoup(index_html, "html.parser")
+    best: Optional[tuple[int, int, str]] = None
+    for a in soup.find_all("a", href=True):
+        m = _BULLETIN_HREF.search(a["href"])
+        if not m:
+            continue
+        month_num = _MONTHS.index(m.group(1).lower()) + 1
+        year = int(m.group(2))
+        href = a["href"]
+        if href.startswith("/"):
+            href = "https://travel.state.gov" + href
+        key = (year, month_num)
+        if best is None or key > (best[0], best[1]):
+            best = (year, month_num, href)
+    if best is None:
+        raise RuntimeError("Could not find any monthly bulletin link on index page")
+    return best[2]
+
+
+def _parse_f4_all_other(bulletin_html: str) -> str:
+    soup = BeautifulSoup(bulletin_html, "html.parser")
+    for table in soup.find_all("table"):
+        text = table.get_text(" ", strip=True).lower()
+        if "final action dates" not in text or "family" not in text:
+            continue
+        rows = table.find_all("tr")
+        if len(rows) < 2:
+            continue
+        # First data row that starts with a cell equal to "F4" (case-insensitive).
+        for tr in rows:
+            cells = [c.get_text(strip=True) for c in tr.find_all(["td", "th"])]
+            if not cells:
+                continue
+            if cells[0].strip().upper() == "F4" and len(cells) >= 2:
+                return cells[1].strip()
+    raise RuntimeError("Could not locate F4 row in Final Action Dates table")
+
+
+def run(state: dict) -> dict:
+    index_html = _fetch(INDEX_URL)
+    bulletin_url = _find_current_bulletin_url(index_html)
+    log.info("current bulletin: %s", bulletin_url)
+
+    bulletin_html = _fetch(bulletin_url)
+    current = _parse_f4_all_other(bulletin_html)
+    log.info("F4 All-Other final action date: %s", current)
+
+    previous = state.get(STATE_KEY)
+    if previous == current:
+        log.info("unchanged, no push")
+        return state
+
+    title = "F4 visa bulletin changed"
+    if previous is None:
+        body = f"First seen F4 (All Other) date: {current}"
+    else:
+        body = f"F4 (All Other) date changed: {previous} -> {current}"
+    ntfy.push(title=title, message=body, click_url=bulletin_url, tags="passport_control")
+
+    state[STATE_KEY] = current
+    return state
