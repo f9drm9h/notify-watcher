@@ -66,33 +66,47 @@ def _find_current_bulletin_url(index_html: str) -> str:
 
 
 def _norm(s: str) -> str:
-    # Collapse non-breaking spaces and surrounding whitespace.
-    return s.replace("\xa0", " ").strip()
+    # Replace non-breaking spaces with regular spaces and collapse runs.
+    return " ".join(s.replace("\xa0", " ").split())
 
 
 def _parse_f4_all_other(bulletin_html: str) -> str:
+    """Find the F4 / All Other cell in the Family-Sponsored Final Action Dates table.
+
+    Strategy: the heading "FINAL ACTION DATES FOR FAMILY-SPONSORED
+    PREFERENCE CASES" appears in a <p> above the target table. We anchor on
+    that heading and grab the next <table> sibling. The Employment table
+    follows a different heading, so we never confuse them.
+    """
     soup = BeautifulSoup(bulletin_html, "html.parser")
-    for table in soup.find_all("table"):
-        text = table.get_text(" ", strip=True).lower()
-        if "final action dates" not in text or "family" not in text:
+
+    heading_node = None
+    for text_node in soup.find_all(string=True):
+        compact = _norm(text_node).upper()
+        if "FINAL ACTION DATES" in compact and "FAMILY-SPONSORED" in compact:
+            heading_node = text_node
+            break
+    if heading_node is None:
+        raise RuntimeError(
+            "Heading 'FINAL ACTION DATES ... FAMILY-SPONSORED' not found on page"
+        )
+
+    table = heading_node.find_next("table")
+    if table is None:
+        raise RuntimeError("Found heading but no <table> followed it")
+
+    first_cells: list[str] = []
+    for tr in table.find_all("tr"):
+        cells = [_norm(c.get_text(" ", strip=True)) for c in tr.find_all(["td", "th"])]
+        if not cells:
             continue
-        rows = table.find_all("tr")
-        if len(rows) < 2:
-            continue
-        # Match the row whose leftmost cell's first whitespace-delimited
-        # token equals "F4" (case-insensitive). Tolerates extra description
-        # text, footnote markers, and non-breaking spaces.
-        first_cells: list[str] = []
-        for tr in rows:
-            cells = [_norm(c.get_text(" ", strip=True)) for c in tr.find_all(["td", "th"])]
-            if not cells:
-                continue
-            first_cells.append(cells[0])
-            first_token = cells[0].split()[0].upper() if cells[0].split() else ""
-            if first_token == "F4" and len(cells) >= 2:
-                return cells[1]
-        log.error("F4 row not found; leftmost cells were: %r", first_cells)
-    raise RuntimeError("Could not locate F4 row in Final Action Dates table")
+        first_cells.append(cells[0])
+        tokens = cells[0].split()
+        if tokens and tokens[0].upper() == "F4" and len(cells) >= 2:
+            return cells[1]
+
+    log.error("F4 row not found in matched table; leftmost cells: %r", first_cells)
+    raise RuntimeError("F4 row not found in Family Final Action Dates table")
 
 
 def run(state: dict) -> dict:
