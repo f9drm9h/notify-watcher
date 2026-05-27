@@ -65,6 +65,11 @@ def _find_current_bulletin_url(index_html: str) -> str:
     return best[2]
 
 
+def _norm(s: str) -> str:
+    # Collapse non-breaking spaces and surrounding whitespace.
+    return s.replace("\xa0", " ").strip()
+
+
 def _parse_f4_all_other(bulletin_html: str) -> str:
     soup = BeautifulSoup(bulletin_html, "html.parser")
     for table in soup.find_all("table"):
@@ -74,13 +79,19 @@ def _parse_f4_all_other(bulletin_html: str) -> str:
         rows = table.find_all("tr")
         if len(rows) < 2:
             continue
-        # First data row that starts with a cell equal to "F4" (case-insensitive).
+        # Match the row whose leftmost cell's first whitespace-delimited
+        # token equals "F4" (case-insensitive). Tolerates extra description
+        # text, footnote markers, and non-breaking spaces.
+        first_cells: list[str] = []
         for tr in rows:
-            cells = [c.get_text(strip=True) for c in tr.find_all(["td", "th"])]
+            cells = [_norm(c.get_text(" ", strip=True)) for c in tr.find_all(["td", "th"])]
             if not cells:
                 continue
-            if cells[0].strip().upper() == "F4" and len(cells) >= 2:
-                return cells[1].strip()
+            first_cells.append(cells[0])
+            first_token = cells[0].split()[0].upper() if cells[0].split() else ""
+            if first_token == "F4" and len(cells) >= 2:
+                return cells[1]
+        log.error("F4 row not found; leftmost cells were: %r", first_cells)
     raise RuntimeError("Could not locate F4 row in Final Action Dates table")
 
 
