@@ -1,12 +1,12 @@
-"""Topic: U.S. State Dept Visa Bulletin, F4 Final Action Date, All Other column.
+"""Topic: U.S. State Dept Visa Bulletin, F4 Dates for Filing, All Other column.
 
 Logic:
   1. Hit the visa-bulletin index page on travel.state.gov.
   2. Find the newest monthly bulletin link there.
-  3. Fetch that monthly bulletin and locate the "Final Action Dates for
-     Family-Sponsored Preference Cases" table.
+  3. Fetch that monthly bulletin and locate section B,
+     "Dates for Filing Family-Sponsored Visa Applications".
   4. Read the F4 row, "All Chargeability Areas Except Those Listed" column.
-  5. Compare to state["visa_f4_all_other"]. If different, push and update.
+  5. Compare to state["visa_f4_dates_for_filing"]. If different, push and update.
 """
 from __future__ import annotations
 
@@ -26,7 +26,7 @@ INDEX_URL = (
     "visa-bulletin.html"
 )
 USER_AGENT = "notify-watcher/1.0 (+https://github.com/) personal-use"
-STATE_KEY = "visa_f4_all_other"
+STATE_KEY = "visa_f4_dates_for_filing"
 
 # Matches month names inside a bulletin URL so we can pick the newest one.
 _MONTHS = [
@@ -71,24 +71,24 @@ def _norm(s: str) -> str:
 
 
 def _parse_f4_all_other(bulletin_html: str) -> str:
-    """Find the F4 / All Other cell in the Family-Sponsored Final Action Dates table.
+    """Find the F4 / All Other cell in the Family-Sponsored Dates for Filing table.
 
-    Strategy: the heading "FINAL ACTION DATES FOR FAMILY-SPONSORED
-    PREFERENCE CASES" appears in a <p> above the target table. We anchor on
-    that heading and grab the next <table> sibling. The Employment table
-    follows a different heading, so we never confuse them.
+    Strategy: the heading "DATES FOR FILING FAMILY-SPONSORED VISA
+    APPLICATIONS" appears in a <p> above the target table. We anchor on
+    that heading and grab the next <table>. The Employment table follows
+    a different heading, so we never confuse them.
     """
     soup = BeautifulSoup(bulletin_html, "html.parser")
 
     heading_node = None
     for text_node in soup.find_all(string=True):
         compact = _norm(text_node).upper()
-        if "FINAL ACTION DATES" in compact and "FAMILY-SPONSORED" in compact:
+        if "DATES FOR FILING" in compact and "FAMILY-SPONSORED" in compact:
             heading_node = text_node
             break
     if heading_node is None:
         raise RuntimeError(
-            "Heading 'FINAL ACTION DATES ... FAMILY-SPONSORED' not found on page"
+            "Heading 'DATES FOR FILING ... FAMILY-SPONSORED' not found on page"
         )
 
     table = heading_node.find_next("table")
@@ -106,7 +106,7 @@ def _parse_f4_all_other(bulletin_html: str) -> str:
             return cells[1]
 
     log.error("F4 row not found in matched table; leftmost cells: %r", first_cells)
-    raise RuntimeError("F4 row not found in Family Final Action Dates table")
+    raise RuntimeError("F4 row not found in Family Dates for Filing table")
 
 
 def run(state: dict) -> dict:
@@ -116,18 +116,18 @@ def run(state: dict) -> dict:
 
     bulletin_html = _fetch(bulletin_url)
     current = _parse_f4_all_other(bulletin_html)
-    log.info("F4 All-Other final action date: %s", current)
+    log.info("F4 All-Other dates-for-filing: %s", current)
 
     previous = state.get(STATE_KEY)
     if previous == current:
         log.info("unchanged, no push")
         return state
 
-    title = "F4 visa bulletin changed"
+    title = "F4 Dates for Filing changed"
     if previous is None:
-        body = f"First seen F4 (All Other) date: {current}"
+        body = f"First seen F4 (All Other) Dates for Filing: {current}"
     else:
-        body = f"F4 (All Other) date changed: {previous} -> {current}"
+        body = f"F4 (All Other) Dates for Filing changed: {previous} -> {current}"
     ntfy.push(title=title, message=body, click_url=bulletin_url, tags="passport_control")
 
     state[STATE_KEY] = current
