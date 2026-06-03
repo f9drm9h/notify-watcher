@@ -11,6 +11,17 @@ Topics:
 - **WWDC announcements** — watches Apple Newsroom RSS for any post whose title
   contains "WWDC" or "Worldwide Developers Conference", and alerts on each new
   one (headline + link).
+- **iOS / iPadOS releases** — watches the Apple Developer Releases RSS feed and
+  alerts once per new *stable* iOS/iPadOS build (betas and RCs are skipped) so
+  you know an update is available. The body is a one-line "major vs.
+  minor/security point release" steer when an AI key is set (see below); the
+  feed carries only version + build, not the changelog, so tap the linked
+  release-notes page for detail.
+- **Product deals** — for each entry in `watchlist.json` → `products`, reads the
+  price from the page's schema.org JSON-LD and alerts on first sight, on any
+  price drop, and when a `target_price` is reached. Store-agnostic and needs no
+  API key. (Built for the Soundcore Liberty earbuds; works for any shop that
+  publishes standard Product structured data.)
 - **Movie release dates** — for each title in `watchlist.json` → `movies`,
   tracks its TMDb release date and alerts on first sight and on any date
   change. Needs `TMDB_API_KEY`.
@@ -90,13 +101,24 @@ Edit it on github.com or locally — it holds no secrets:
 
 ```json
 {
-  "movies": ["Avatar: Fire and Ash", "Spider-Man: Brand New Day"],
-  "games":  ["Grand Theft Auto VI", "The Elder Scrolls VI"]
+  "movies":   ["Avatar: Fire and Ash", "Spider-Man: Brand New Day"],
+  "games":    ["Grand Theft Auto VI", "The Elder Scrolls VI"],
+  "products": [
+    {"name": "Soundcore Liberty 4 NC", "url": "https://www.soundcore.com/products/liberty-4-nc-a3947z11", "target_price": 79.99}
+  ]
 }
 ```
 
-Each title is resolved to the best match on TMDb/RAWG (the matched name is
-logged so you can sanity-check it). Add or remove titles any time.
+Each movie/game title is resolved to the best match on TMDb/RAWG (the matched
+name is logged so you can sanity-check it). Add or remove titles any time.
+
+For **products**, only `url` is required; `name` and `target_price` are
+optional. Point `url` at the retailer's product page — prefer the
+manufacturer/store page (soundcore.com, Best Buy, etc.) over Amazon, which
+often blocks data-center IPs like the GitHub Actions runner and hides its price
+behind JavaScript. The price is read from the page's `application/ld+json`
+Product data, so any standards-compliant shop works; the matched price is
+logged so you can sanity-check it.
 
 ### 5. Trigger the workflow once to verify
 
@@ -121,6 +143,11 @@ tiny memory file (`state.json`) that records what it last alerted on:
   one, no push. If different, push and overwrite the stored value.
 - **WWDC**: stores a list of article URLs already pushed. Any feed item
   whose URL is not in that list is pushed and then added.
+- **iOS releases**: stores a list of release titles (version + build) already
+  pushed; a build not in that list is pushed and added.
+- **Deals**: stores the last seen price per product URL. A push fires when the
+  new price is *lower* than the stored one (or it's the first sight); a price
+  rise just updates the stored baseline silently.
 
 After the run, GitHub Actions commits the updated `state.json` back to the
 repo. The next run reads it back, so the app never re-sends an old alert.
@@ -177,21 +204,34 @@ notify-watcher/
 │   ├── main.py                      runs each topic, isolates failures
 │   ├── ntfy.py                      shared push helper (env-driven)
 │   ├── state.py                     load/save state.json
-│   ├── watchlist.py                 reads watchlist.json titles
+│   ├── watchlist.py                 reads watchlist.json titles/entries
+│   ├── summarize.py                 shared one-line AI summary (Gemini→Claude)
 │   └── topics/
 │       ├── visa_bulletin.py         F4 Final Action + Dates for Filing
 │       ├── wwdc.py                  Apple Newsroom RSS, WWDC items
+│       ├── ios_release.py           Apple Developer Releases RSS, iOS/iPadOS
+│       ├── deals.py                 JSON-LD price-drop watcher (watchlist)
 │       ├── movies.py                TMDb release dates (watchlist)
 │       └── games.py                 RAWG release dates (watchlist)
-├── watchlist.json                   movie/game titles you want tracked
+├── watchlist.json                   movie/game titles + products you want tracked
 ├── state.json                       dedup memory (committed by workflow)
 ├── requirements.txt
 └── README.md
 ```
 
-## Adding a future AI summary to WWDC
+## Optional AI summaries
 
-`notify_watcher/topics/wwdc.py` isolates the notification body inside
-`build_notification(entry)`. Swap the `body = ...` line for an
-AI-generated summary there — the rest of the module (fetch, dedup, push)
-does not need to change. A `TODO(ai-summary)` comment marks the spot.
+The WWDC and iOS-release topics can render a one-line AI summary as the
+notification body. The provider plumbing lives in `notify_watcher/summarize.py`
+(`one_line(system, user_text)`), which tries **Gemini** (free tier) first, then
+**Anthropic**, and returns `None` so the caller falls back to a plain body when
+no key is set or a call fails. Add either as a GitHub Actions secret to turn it
+on:
+
+| Secret name         | Value                                          |
+| ------------------- | ---------------------------------------------- |
+| `GEMINI_API_KEY`    | (optional) free Google AI Studio key           |
+| `ANTHROPIC_API_KEY` | (optional) Claude API key (falls back here)    |
+
+To give another topic an AI body, call `summarize.one_line(system, user_text)`
+with a topic-specific system prompt — no provider code to copy.
