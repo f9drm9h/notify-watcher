@@ -22,6 +22,7 @@ from __future__ import annotations
 
 import logging
 import re
+import time
 
 import requests
 
@@ -29,6 +30,28 @@ from .. import ntfy
 from . import deals
 
 log = logging.getLogger(__name__)
+
+# The sitemap is generated on demand and occasionally 500s for data-center IPs
+# (the GitHub Actions runner) even though product pages serve fine. Retry a few
+# times with backoff before giving up, so a transient blip doesn't skip a run.
+SITEMAP_HEADERS = {**deals.HEADERS, "Accept": "application/xml,text/xml,*/*"}
+_RETRIES = 4
+_BACKOFF = 3  # seconds, multiplied by attempt number
+
+
+def _fetch_sitemap() -> str:
+    last: Exception | None = None
+    for attempt in range(1, _RETRIES + 1):
+        try:
+            resp = requests.get(SITEMAP_URL, headers=SITEMAP_HEADERS, timeout=30)
+            resp.raise_for_status()
+            return resp.text
+        except requests.RequestException as exc:
+            last = exc
+            log.warning("sitemap fetch attempt %d/%d failed: %s", attempt, _RETRIES, exc)
+            if attempt < _RETRIES:
+                time.sleep(_BACKOFF * attempt)
+    raise RuntimeError(f"sitemap unreachable after {_RETRIES} attempts: {last}")
 
 SITEMAP_URL = "https://www.soundcore.com/server-sitemap-index-products.xml"
 PRODUCT_BASE = "https://www.soundcore.com/products/"
@@ -97,10 +120,13 @@ def _describe(url: str, slug: str) -> tuple[str, str]:
 
 
 def run(state: dict) -> dict:
-    resp = requests.get(SITEMAP_URL, headers=deals.HEADERS, timeout=30)
-    resp.raise_for_status()
-    current = _current_slugs(resp.text)
+    current = _current_slugs(_fetch_sitemap())
     log.info("flagship Liberty Pro products in catalog: %d", len(current))
+    # Guard against an empty/garbled sitemap response (e.g. a WAF HTML page that
+    # still returned 200) wiping nothing but also seeding nothing useful.
+    if not current:
+        log.warning("no flagship Pro slugs parsed from sitemap; skipping this run")
+        return state
 
     seen_list = state.get(SEEN_KEY)
     # First run: seed the baseline silently so we only alert on future releases.
