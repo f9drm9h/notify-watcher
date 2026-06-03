@@ -15,13 +15,15 @@ from typing import Callable
 
 from . import ntfy
 from . import state as state_mod
-from .topics import visa_bulletin, wwdc
+from .topics import games, movies, visa_bulletin, wwdc
 
 Topic = Callable[[dict], dict]
 
 TOPICS: list[tuple[str, Topic]] = [
     ("visa_bulletin", visa_bulletin.run),
     ("wwdc", wwdc.run),
+    ("movies", movies.run),
+    ("games", games.run),
 ]
 
 

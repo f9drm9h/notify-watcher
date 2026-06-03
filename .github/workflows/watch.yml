@@ -39,6 +39,8 @@ jobs:
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}  # movie watcher (optional)
+          RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}  # game watcher (optional)
           # Empty on schedule; "1" only when manually dispatched with test_push.
           NOTIFY_TEST_PUSH: ${{ inputs.test_push && '1' || '' }}
         run: python -m notify_watcher.main
