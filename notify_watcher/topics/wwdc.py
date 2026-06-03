@@ -1,12 +1,11 @@
 """Topic: WWDC announcements from Apple Newsroom RSS.
 
-Headline-only — no external AI, no paid API. We pull the official RSS feed
-(free), keep items whose title contains "WWDC", and push any URL we have
-not pushed before.
-
-The notification body is built by build_notification() so a future version
-can swap the headline for an AI-generated summary without touching the
-fetch/dedup/push plumbing.
+We pull the official RSS feed (free), keep items whose title matches WWDC, and
+push any URL we have not pushed before. The notification body is a one-line AI
+summary when a provider key (GEMINI_API_KEY, then ANTHROPIC_API_KEY) is set,
+and falls back to the headline otherwise — see _ai_summary(). The summary is
+isolated inside build_notification(), so the fetch/dedup/push plumbing never
+changes regardless of which path produced the body.
 """
 from __future__ import annotations
 
@@ -32,15 +31,15 @@ def _title_matches(title: str) -> bool:
     t = title.lower()
     return any(k in t for k in KEYWORDS)
 
-# --- Optional Claude-powered summary ---------------------------------------
-# When ANTHROPIC_API_KEY is set, the notification body becomes a one-line
-# Claude summary of the article; otherwise we fall back to the headline. Set
-# the key locally or as a GitHub Actions secret to turn this on.
-SUMMARY_MODEL = "claude-opus-4-8"
-# Stable across every entry, so it goes in `system` with a cache breakpoint.
-# (The per-entry headline/blurb is volatile and goes in the user turn, after
-# the breakpoint.) Doubles as the "final answer only" instruction that keeps
-# Opus 4.8 from emitting reasoning preamble when thinking is off.
+# --- Optional AI summary ----------------------------------------------------
+# The notification body becomes a one-line AI summary of the article when a
+# provider key is set; otherwise it falls back to the headline. Providers are
+# tried in order of preference: Gemini (free tier) first, then Anthropic.
+# Set GEMINI_API_KEY and/or ANTHROPIC_API_KEY as GitHub Actions secrets.
+GEMINI_MODEL = "gemini-2.5-flash"
+ANTHROPIC_MODEL = "claude-opus-4-8"
+# Doubles as a "final answer only" instruction so models that reason by default
+# don't emit a preamble.
 _SUMMARY_SYSTEM = (
     "You write one-line push-notification summaries of Apple WWDC news items. "
     "Given a headline and an optional article blurb, reply with a single "
@@ -49,31 +48,62 @@ _SUMMARY_SYSTEM = (
 )
 
 
-def _ai_summary(entry) -> str | None:
-    """Return a Claude-generated one-line summary, or None to fall back.
+def _entry_text(entry) -> tuple[str, str]:
+    """Extract (headline, bounded blurb) used as the model input."""
+    title = getattr(entry, "title", "")
+    blurb = (getattr(entry, "summary", "") or "")[:2000]  # bound input tokens
+    return title, blurb
 
-    Never raises. Returns None — meaning "use the headline" — whenever a
-    summary can't be produced: ANTHROPIC_API_KEY is unset, the anthropic SDK
-    isn't installed, or the API call fails/returns empty. Keeping this total
-    means one flaky API call never silences a real WWDC alert.
+
+def _summary_gemini(title: str, blurb: str) -> str | None:
+    """One-line summary via the free Gemini API (plain REST, no SDK).
+
+    Returns None on any failure so the caller falls back to the headline.
     """
+    key = os.environ.get("GEMINI_API_KEY", "").strip()
+    if not key:
+        return None
+    url = (
+        f"https://generativelanguage.googleapis.com/v1beta/models/"
+        f"{GEMINI_MODEL}:generateContent"
+    )
+    payload = {
+        "system_instruction": {"parts": [{"text": _SUMMARY_SYSTEM}]},
+        "contents": [
+            {"parts": [{"text": f"Headline: {title}\n\nArticle blurb:\n{blurb}"}]}
+        ],
+        # Disable "thinking" so the small output budget isn't spent on reasoning.
+        "generationConfig": {"maxOutputTokens": 256, "thinkingConfig": {"thinkingBudget": 0}},
+    }
+    try:
+        resp = requests.post(
+            url, params={"key": key}, json=payload, timeout=15.0
+        )
+        resp.raise_for_status()
+        cands = resp.json().get("candidates") or []
+        parts = (cands[0].get("content", {}).get("parts") if cands else None) or []
+        text = "".join(p.get("text", "") for p in parts).strip()
+        return text or None
+    except Exception as exc:  # noqa: BLE001 - any failure → headline fallback
+        log.warning("Gemini summary failed (%s); trying next provider", exc)
+        return None
+
+
+def _summary_anthropic(title: str, blurb: str) -> str | None:
+    """One-line summary via Claude. Returns None on any failure."""
     if not os.environ.get("ANTHROPIC_API_KEY"):
         return None
     try:
         import anthropic
     except ImportError:
-        log.info("anthropic SDK not installed; using headline-only body")
+        log.info("anthropic SDK not installed; skipping Claude summary")
         return None
-
-    title = getattr(entry, "title", "")
-    blurb = (getattr(entry, "summary", "") or "")[:2000]  # bound input tokens
-
     try:
         # Short timeout + single retry so a hung call falls back fast rather
         # than stalling the scheduled run (SDK default timeout is 10 minutes).
         client = anthropic.Anthropic(max_retries=1)
         resp = client.with_options(timeout=15.0).messages.create(
-            model=SUMMARY_MODEL,
+            model=ANTHROPIC_MODEL,
             max_tokens=256,
             system=[
                 {
@@ -90,20 +120,33 @@ def _ai_summary(entry) -> str | None:
             ],
         )
     except Exception as exc:  # noqa: BLE001 - any failure → headline fallback
-        log.warning("AI summary failed (%s); using headline-only body", exc)
+        log.warning("Claude summary failed (%s); using headline-only body", exc)
         return None
+    return next((b.text for b in resp.content if b.type == "text"), "").strip() or None
 
-    text = next((b.text for b in resp.content if b.type == "text"), "").strip()
-    return text or None
+
+def _ai_summary(entry) -> str | None:
+    """Return a one-line AI summary, or None to fall back to the headline.
+
+    Never raises. Tries each provider in preference order and returns the first
+    non-empty result; if no provider key is set or every call fails, returns
+    None so a flaky/absent API never silences a real WWDC alert.
+    """
+    title, blurb = _entry_text(entry)
+    for provider in (_summary_gemini, _summary_anthropic):
+        summary = provider(title, blurb)
+        if summary:
+            return summary
+    return None
 
 
 def build_notification(entry) -> tuple[str, str, str]:
     """Return (title, body, click_url) for a feed entry.
 
-    `body` is a Claude one-line summary when ANTHROPIC_API_KEY is set and the
-    call succeeds, otherwise the headline. The (title, body, click_url)
-    contract is identical in both cases, so the fetch/dedup/push code in
-    run() is unaffected by which path produced the body.
+    `body` is a one-line AI summary when a provider key is set and the call
+    succeeds, otherwise the headline. The (title, body, click_url) contract is
+    identical in both cases, so the fetch/dedup/push code in run() is
+    unaffected by which path produced the body.
     """
     title = "Apple WWDC: " + getattr(entry, "title", "(no title)")
     link = getattr(entry, "link", "")
