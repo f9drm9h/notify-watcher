@@ -11,6 +11,7 @@ fetch/dedup/push plumbing.
 from __future__ import annotations
 
 import logging
+import os
 
 import feedparser
 
@@ -20,20 +21,93 @@ log = logging.getLogger(__name__)
 
 FEED_URL = "https://www.apple.com/newsroom/rss-feed.rss"
 STATE_KEY = "wwdc_seen_urls"
-KEYWORD = "WWDC"
+# Match the acronym AND the spelled-out name: Apple often titles articles
+# "Worldwide Developers Conference" without the "WWDC" acronym, and those
+# would otherwise be silently missed.
+KEYWORDS = ("wwdc", "worldwide developers conference")
 MAX_REMEMBERED = 200  # cap state size; the feed only carries recent items
+
+
+def _title_matches(title: str) -> bool:
+    t = title.lower()
+    return any(k in t for k in KEYWORDS)
+
+# --- Optional Claude-powered summary ---------------------------------------
+# When ANTHROPIC_API_KEY is set, the notification body becomes a one-line
+# Claude summary of the article; otherwise we fall back to the headline. Set
+# the key locally or as a GitHub Actions secret to turn this on.
+SUMMARY_MODEL = "claude-opus-4-8"
+# Stable across every entry, so it goes in `system` with a cache breakpoint.
+# (The per-entry headline/blurb is volatile and goes in the user turn, after
+# the breakpoint.) Doubles as the "final answer only" instruction that keeps
+# Opus 4.8 from emitting reasoning preamble when thinking is off.
+_SUMMARY_SYSTEM = (
+    "You write one-line push-notification summaries of Apple WWDC news items. "
+    "Given a headline and an optional article blurb, reply with a single "
+    "plain-text sentence of at most ~30 words describing what was announced. "
+    "Output only that sentence: no preamble, no markdown, no quotation marks."
+)
+
+
+def _ai_summary(entry) -> str | None:
+    """Return a Claude-generated one-line summary, or None to fall back.
+
+    Never raises. Returns None — meaning "use the headline" — whenever a
+    summary can't be produced: ANTHROPIC_API_KEY is unset, the anthropic SDK
+    isn't installed, or the API call fails/returns empty. Keeping this total
+    means one flaky API call never silences a real WWDC alert.
+    """
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        return None
+    try:
+        import anthropic
+    except ImportError:
+        log.info("anthropic SDK not installed; using headline-only body")
+        return None
+
+    title = getattr(entry, "title", "")
+    blurb = (getattr(entry, "summary", "") or "")[:2000]  # bound input tokens
+
+    try:
+        # Short timeout + single retry so a hung call falls back fast rather
+        # than stalling the scheduled run (SDK default timeout is 10 minutes).
+        client = anthropic.Anthropic(max_retries=1)
+        resp = client.with_options(timeout=15.0).messages.create(
+            model=SUMMARY_MODEL,
+            max_tokens=256,
+            system=[
+                {
+                    "type": "text",
+                    "text": _SUMMARY_SYSTEM,
+                    "cache_control": {"type": "ephemeral"},
+                }
+            ],
+            messages=[
+                {
+                    "role": "user",
+                    "content": f"Headline: {title}\n\nArticle blurb:\n{blurb}",
+                }
+            ],
+        )
+    except Exception as exc:  # noqa: BLE001 - any failure → headline fallback
+        log.warning("AI summary failed (%s); using headline-only body", exc)
+        return None
+
+    text = next((b.text for b in resp.content if b.type == "text"), "").strip()
+    return text or None
 
 
 def build_notification(entry) -> tuple[str, str, str]:
     """Return (title, body, click_url) for a feed entry.
 
-    TODO(ai-summary): swap `body` for an AI-generated summary of
-    entry.summary / fetched article body. Keep the (title, body, click_url)
-    contract so the rest of this module does not change.
+    `body` is a Claude one-line summary when ANTHROPIC_API_KEY is set and the
+    call succeeds, otherwise the headline. The (title, body, click_url)
+    contract is identical in both cases, so the fetch/dedup/push code in
+    run() is unaffected by which path produced the body.
     """
     title = "Apple WWDC: " + getattr(entry, "title", "(no title)")
-    body = getattr(entry, "title", "")  # headline-only for now
     link = getattr(entry, "link", "")
+    body = _ai_summary(entry) or getattr(entry, "title", "")
     return title, body, link
 
 
@@ -52,7 +126,7 @@ def run(state: dict) -> dict:
 
     matched = [
         e for e in feed.entries
-        if KEYWORD.lower() in getattr(e, "title", "").lower()
+        if _title_matches(getattr(e, "title", ""))
     ]
     log.info("feed entries: %d, WWDC matches: %d", len(feed.entries), len(matched))
 
