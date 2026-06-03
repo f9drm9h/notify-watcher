@@ -1,4 +1,21 @@
 {
+  "game_release_dates": {
+    "1018045": "TBA",
+    "58829": "2018-12-07",
+    "662318": "2026-09-15",
+    "972995": "2026-11-19"
+  },
+  "movie_release_dates": {
+    "1003596": "2026-12-16",
+    "1288438": "2027-03-25",
+    "1368337": "2026-07-15",
+    "806704": "2027-09-30",
+    "911916": "2027-06-17",
+    "969681": "2026-07-29"
+  },
   "visa_f4_dates_for_filing": "22DEC09",
-  "wwdc_seen_urls": []
+  "visa_f4_final_action": "08NOV08",
+  "wwdc_seen_urls": [
+    "https://www.apple.com/newsroom/2026/05/apple-kicks-off-worldwide-developers-conference-on-june-8/"
+  ]
 }
