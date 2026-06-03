@@ -14,9 +14,12 @@
   ],
   "products": [
     {
-      "name": "Soundcore Liberty 4 NC",
-      "url": "https://www.soundcore.com/products/liberty-4-nc-a3947z11",
-      "target_price": 79.99
+      "name": "Soundcore Liberty 5 Pro",
+      "url": "https://www.soundcore.com/products/d1203-liberty-5-pro-anc-earbuds-clear-calls"
+    },
+    {
+      "name": "Soundcore Liberty 5 Pro Max",
+      "url": "https://www.soundcore.com/products/d1204-liberty-5-pro-max-ai-recording-earbuds"
     }
   ]
 }

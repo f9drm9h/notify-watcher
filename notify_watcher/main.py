@@ -15,7 +15,7 @@ from typing import Callable
 
 from . import ntfy
 from . import state as state_mod
-from .topics import deals, games, ios_release, movies, visa_bulletin, wwdc
+from .topics import deals, games, ios_release, movies, soundcore_pro, visa_bulletin, wwdc
 
 Topic = Callable[[dict], dict]
 
@@ -25,6 +25,10 @@ TOPICS: list[tuple[str, Topic]] = [
     ("ios_release", ios_release.run),
     ("movies", movies.run),
     ("games", games.run),
+    # soundcore_pro discovers new Liberty Pro products and appends them to
+    # state["auto_products"]; deals runs next so a same-run discovery is
+    # price-tracked immediately.
+    ("soundcore_pro", soundcore_pro.run),
     ("deals", deals.run),
 ]
 
