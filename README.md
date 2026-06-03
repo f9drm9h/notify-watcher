@@ -3,13 +3,19 @@
 Personal multi-topic monitor. Runs on a schedule in GitHub Actions, pushes
 matches to your phone via [ntfy.sh](https://ntfy.sh). 100% free to run.
 
-Two topics:
+Topics:
 
 - **F4 visa bulletin** — watches the F4 row, "All Chargeability Areas Except
-  Those Listed" column, in the State Dept "Dates for Filing Family-Sponsored
-  Visa Applications" table (section B), and alerts when it moves.
-- **WWDC announcements** — watches Apple Newsroom RSS for any post whose
-  title contains "WWDC", and alerts on each new one (headline + link).
+  Those Listed" column, in BOTH State Dept family-sponsored tables (Final
+  Action Dates and Dates for Filing), and alerts when either moves.
+- **WWDC announcements** — watches Apple Newsroom RSS for any post whose title
+  contains "WWDC" or "Worldwide Developers Conference", and alerts on each new
+  one (headline + link).
+- **Movie release dates** — for each title in `watchlist.json` → `movies`,
+  tracks its TMDb release date and alerts on first sight and on any date
+  change. Needs `TMDB_API_KEY`.
+- **Game release dates** — for each title in `watchlist.json` → `games`,
+  tracks its RAWG release date and alerts the same way. Needs `RAWG_API_KEY`.
 
 The app is structured so adding more topics later is a small change in
 `notify_watcher/main.py`.
@@ -63,10 +69,34 @@ git push -u origin main
 On github.com → your repo → **Settings → Secrets and variables → Actions
 → New repository secret**. Add:
 
-| Secret name   | Value                                              |
-| ------------- | -------------------------------------------------- |
-| `NTFY_TOPIC`  | the topic name from step 1                         |
-| `NTFY_SERVER` | (optional) leave unset to use the default `https://ntfy.sh` |
+| Secret name    | Value                                              |
+| -------------- | -------------------------------------------------- |
+| `NTFY_TOPIC`   | the topic name from step 1                         |
+| `NTFY_SERVER`  | (optional) leave unset to use the default `https://ntfy.sh` |
+| `TMDB_API_KEY` | (optional) free TMDb v3 API key, for the movie watcher |
+| `RAWG_API_KEY` | (optional) free RAWG API key, for the game watcher |
+
+The movie/game watchers only run if their key is set; without it they skip
+quietly. Get the keys here (both free, ~2 min, no cost):
+
+- **TMDb**: themoviedb.org → Settings → API → request a developer key →
+  copy the **"API Key (v3 auth)"** value.
+- **RAWG**: rawg.io/apidocs → "Get API Key" → sign up → copy the key.
+
+### Pick what to watch: `watchlist.json`
+
+The movie/game watchers read titles from `watchlist.json` at the repo root.
+Edit it on github.com or locally — it holds no secrets:
+
+```json
+{
+  "movies": ["Avatar: Fire and Ash", "Spider-Man: Brand New Day"],
+  "games":  ["Grand Theft Auto VI", "The Elder Scrolls VI"]
+}
+```
+
+Each title is resolved to the best match on TMDb/RAWG (the matched name is
+logged so you can sanity-check it). Add or remove titles any time.
 
 ### 5. Trigger the workflow once to verify
 
@@ -147,9 +177,13 @@ notify-watcher/
 │   ├── main.py                      runs each topic, isolates failures
 │   ├── ntfy.py                      shared push helper (env-driven)
 │   ├── state.py                     load/save state.json
+│   ├── watchlist.py                 reads watchlist.json titles
 │   └── topics/
-│       ├── visa_bulletin.py         F4 All-Other Dates for Filing
-│       └── wwdc.py                  Apple Newsroom RSS, WWDC items
+│       ├── visa_bulletin.py         F4 Final Action + Dates for Filing
+│       ├── wwdc.py                  Apple Newsroom RSS, WWDC items
+│       ├── movies.py                TMDb release dates (watchlist)
+│       └── games.py                 RAWG release dates (watchlist)
+├── watchlist.json                   movie/game titles you want tracked
 ├── state.json                       dedup memory (committed by workflow)
 ├── requirements.txt
 └── README.md
