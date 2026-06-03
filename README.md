@@ -17,11 +17,16 @@ Topics:
   minor/security point release" steer when an AI key is set (see below); the
   feed carries only version + build, not the changelog, so tap the linked
   release-notes page for detail.
-- **Product deals** — for each entry in `watchlist.json` → `products`, reads the
-  price from the page's schema.org JSON-LD and alerts on first sight, on any
-  price drop, and when a `target_price` is reached. Store-agnostic and needs no
-  API key. (Built for the Soundcore Liberty earbuds; works for any shop that
-  publishes standard Product structured data.)
+- **Product deals** — for each entry in `watchlist.json` → `products` (plus any
+  product auto-discovered below), reads the price from the page's schema.org
+  JSON-LD and alerts on first sight, on any price drop, and when a `target_price`
+  is reached. Store-agnostic and needs no API key. (Built for the Soundcore
+  Liberty earbuds; works for any shop that publishes standard Product data.)
+- **Soundcore Liberty Pro discovery** — reads Soundcore's product sitemap and
+  alerts when a brand-new flagship Liberty Pro earbud appears (e.g. a future
+  "Liberty 6 Pro"), then hands it to the deals watcher to price-track
+  automatically. First run seeds the current catalog silently, so you only get
+  pinged about genuinely new releases. No API key, no watchlist editing.
 - **Movie release dates** — for each title in `watchlist.json` → `movies`,
   tracks its TMDb release date and alerts on first sight and on any date
   change. Needs `TMDB_API_KEY`.
@@ -148,6 +153,10 @@ tiny memory file (`state.json`) that records what it last alerted on:
 - **Deals**: stores the last seen price per product URL. A push fires when the
   new price is *lower* than the stored one (or it's the first sight); a price
   rise just updates the stored baseline silently.
+- **Soundcore Pro discovery**: stores the set of flagship Liberty Pro slugs it
+  has seen (`soundcore_pro_seen`). A slug not in that set is a new release →
+  push + add to `auto_products` (which deals price-tracks). First run records
+  the baseline without alerting.
 
 After the run, GitHub Actions commits the updated `state.json` back to the
 repo. The next run reads it back, so the app never re-sends an old alert.
@@ -210,7 +219,8 @@ notify-watcher/
 │       ├── visa_bulletin.py         F4 Final Action + Dates for Filing
 │       ├── wwdc.py                  Apple Newsroom RSS, WWDC items
 │       ├── ios_release.py           Apple Developer Releases RSS, iOS/iPadOS
-│       ├── deals.py                 JSON-LD price-drop watcher (watchlist)
+│       ├── deals.py                 JSON-LD price-drop watcher (watchlist + auto)
+│       ├── soundcore_pro.py         sitemap discovery of new Liberty Pro products
 │       ├── movies.py                TMDb release dates (watchlist)
 │       └── games.py                 RAWG release dates (watchlist)
 ├── watchlist.json                   movie/game titles + products you want tracked

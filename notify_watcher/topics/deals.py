@@ -103,27 +103,59 @@ def _node_prices(node: dict):
                     yield got
 
 
+def _is_product_node(node: dict) -> bool:
+    types = node.get("@type")
+    types = types if isinstance(types, list) else [types]
+    return bool({"Product", "ProductGroup"} & set(types)) or "offers" in node
+
+
 def _extract_price(html: str) -> tuple[float, str] | None:
     """Return the lowest (price, currency) across all Product JSON-LD on a page."""
     soup = BeautifulSoup(html, "html.parser")
     candidates: list[tuple[float, str]] = []
     for node in _iter_jsonld(soup):
-        types = node.get("@type")
-        types = types if isinstance(types, list) else [types]
-        if not ({"Product", "ProductGroup"} & set(types)) and "offers" not in node:
-            continue
-        candidates.extend(_node_prices(node))
+        if _is_product_node(node):
+            candidates.extend(_node_prices(node))
     return min(candidates, key=lambda c: c[0]) if candidates else None
+
+
+def extract_name(html: str) -> str | None:
+    """Return the product name from the first Product/ProductGroup JSON-LD.
+
+    Soundcore names look like "Liberty 5 Pro Max | Earbuds with ..."; we keep
+    the part before the marketing "| ..." tail. Used by the series-discovery
+    topic to label a newly found product.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    for node in _iter_jsonld(soup):
+        name = node.get("name")
+        if _is_product_node(node) and isinstance(name, str) and name.strip():
+            return name.split("|")[0].strip()
+    return None
 
 
 def _fmt(price: float, currency: str) -> str:
     return f"{currency} {price:.2f}".strip() if currency else f"{price:.2f}"
 
 
+def _merge_products(state: dict) -> list[dict]:
+    """watchlist products + auto-discovered ones (state["auto_products"]),
+    de-duplicated by URL with the watchlist entry winning (it may carry a
+    target_price). The series-discovery topic populates auto_products."""
+    merged: dict[str, dict] = {}
+    for product in watchlist.entries("products") + list(state.get("auto_products", [])):
+        if not isinstance(product, dict):
+            continue
+        url = str(product.get("url") or "").strip()
+        if url and url not in merged:
+            merged[url] = product
+    return list(merged.values())
+
+
 def run(state: dict) -> dict:
-    products = watchlist.entries("products")
+    products = _merge_products(state)
     if not products:
-        log.info("no products in watchlist; nothing to do")
+        log.info("no products to track; nothing to do")
         return state
 
     bucket: dict = state.setdefault(STATE_KEY, {})
