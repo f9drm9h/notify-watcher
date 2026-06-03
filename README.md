@@ -6,8 +6,8 @@ matches to your phone via [ntfy.sh](https://ntfy.sh). 100% free to run.
 Two topics:
 
 - **F4 visa bulletin** — watches the F4 row, "All Chargeability Areas Except
-  Those Listed" column, in the State Dept Final Action Dates table, and
-  alerts when it moves.
+  Those Listed" column, in the State Dept "Dates for Filing Family-Sponsored
+  Visa Applications" table (section B), and alerts when it moves.
 - **WWDC announcements** — watches Apple Newsroom RSS for any post whose
   title contains "WWDC", and alerts on each new one (headline + link).
 
@@ -148,7 +148,7 @@ notify-watcher/
 │   ├── ntfy.py                      shared push helper (env-driven)
 │   ├── state.py                     load/save state.json
 │   └── topics/
-│       ├── visa_bulletin.py         F4 All-Other final action date
+│       ├── visa_bulletin.py         F4 All-Other Dates for Filing
 │       └── wwdc.py                  Apple Newsroom RSS, WWDC items
 ├── state.json                       dedup memory (committed by workflow)
 ├── requirements.txt

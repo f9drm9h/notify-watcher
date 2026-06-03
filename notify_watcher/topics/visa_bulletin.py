@@ -1,12 +1,16 @@
-"""Topic: U.S. State Dept Visa Bulletin, F4 Dates for Filing, All Other column.
+"""Topic: U.S. State Dept Visa Bulletin, F4 row, "All Other" column.
 
 Logic:
   1. Hit the visa-bulletin index page on travel.state.gov.
   2. Find the newest monthly bulletin link there.
-  3. Fetch that monthly bulletin and locate section B,
-     "Dates for Filing Family-Sponsored Visa Applications".
-  4. Read the F4 row, "All Chargeability Areas Except Those Listed" column.
-  5. Compare to state["visa_f4_dates_for_filing"]. If different, push and update.
+  3. Fetch that monthly bulletin and read the F4 "All Chargeability Areas
+     Except Those Listed" cell from BOTH family-sponsored tables:
+       - section A, "Final Action Dates"
+       - section B, "Dates for Filing"
+  4. Compare each to its stored value. If either moved, push and update.
+
+The two checks are independent: a parse failure or unchanged value in one
+never blocks a real alert from the other.
 """
 from __future__ import annotations
 
@@ -26,7 +30,22 @@ INDEX_URL = (
     "visa-bulletin.html"
 )
 USER_AGENT = "notify-watcher/1.0 (+https://github.com/) personal-use"
-STATE_KEY = "visa_f4_dates_for_filing"
+
+# Each tracked cell: (state key, human label, heading phrases that must all
+# appear in the <p> above the table we want). "FINAL ACTION DATES" vs
+# "DATES FOR FILING" disambiguate the two family-sponsored tables.
+CHECKS = [
+    (
+        "visa_f4_final_action",
+        "Final Action Dates",
+        ("FINAL ACTION DATES", "FAMILY-SPONSORED"),
+    ),
+    (
+        "visa_f4_dates_for_filing",
+        "Dates for Filing",
+        ("DATES FOR FILING", "FAMILY-SPONSORED"),
+    ),
+]
 
 # Matches month names inside a bulletin URL so we can pick the newest one.
 _MONTHS = [
@@ -70,31 +89,20 @@ def _norm(s: str) -> str:
     return " ".join(s.replace("\xa0", " ").split())
 
 
-def _parse_f4_all_other(bulletin_html: str) -> str:
-    """Find the F4 / All Other cell in the Family-Sponsored Dates for Filing table.
-
-    Strategy: the heading "DATES FOR FILING FAMILY-SPONSORED VISA
-    APPLICATIONS" appears in a <p> above the target table. We anchor on
-    that heading and grab the next <table>. The Employment table follows
-    a different heading, so we never confuse them.
-    """
-    soup = BeautifulSoup(bulletin_html, "html.parser")
-
-    heading_node = None
+def _table_after_heading(soup: BeautifulSoup, phrases: tuple[str, ...]):
+    """Return the first <table> following a heading whose text contains all
+    `phrases` (case-insensitive), or None if no such heading/table exists."""
     for text_node in soup.find_all(string=True):
         compact = _norm(text_node).upper()
-        if "DATES FOR FILING" in compact and "FAMILY-SPONSORED" in compact:
-            heading_node = text_node
-            break
-    if heading_node is None:
-        raise RuntimeError(
-            "Heading 'DATES FOR FILING ... FAMILY-SPONSORED' not found on page"
-        )
+        if all(p in compact for p in phrases):
+            table = text_node.find_next("table")
+            if table is not None:
+                return table
+    return None
 
-    table = heading_node.find_next("table")
-    if table is None:
-        raise RuntimeError("Found heading but no <table> followed it")
 
+def _f4_all_other(table) -> str:
+    """Read the F4 row, second column ("All Other"), from a bulletin table."""
     first_cells: list[str] = []
     for tr in table.find_all("tr"):
         cells = [_norm(c.get_text(" ", strip=True)) for c in tr.find_all(["td", "th"])]
@@ -106,7 +114,7 @@ def _parse_f4_all_other(bulletin_html: str) -> str:
             return cells[1]
 
     log.error("F4 row not found in matched table; leftmost cells: %r", first_cells)
-    raise RuntimeError("F4 row not found in Family Dates for Filing table")
+    raise RuntimeError("F4 row not found in table")
 
 
 def run(state: dict) -> dict:
@@ -115,20 +123,33 @@ def run(state: dict) -> dict:
     log.info("current bulletin: %s", bulletin_url)
 
     bulletin_html = _fetch(bulletin_url)
-    current = _parse_f4_all_other(bulletin_html)
-    log.info("F4 All-Other dates-for-filing: %s", current)
+    soup = BeautifulSoup(bulletin_html, "html.parser")
 
-    previous = state.get(STATE_KEY)
-    if previous == current:
-        log.info("unchanged, no push")
-        return state
+    for state_key, label, phrases in CHECKS:
+        try:
+            table = _table_after_heading(soup, phrases)
+            if table is None:
+                raise RuntimeError(f"heading {phrases!r} / its table not found on page")
+            current = _f4_all_other(table)
+            log.info("F4 All-Other %s: %s", label, current)
 
-    title = "F4 Dates for Filing changed"
-    if previous is None:
-        body = f"First seen F4 (All Other) Dates for Filing: {current}"
-    else:
-        body = f"F4 (All Other) Dates for Filing changed: {previous} -> {current}"
-    ntfy.push(title=title, message=body, click_url=bulletin_url, tags="passport_control")
+            previous = state.get(state_key)
+            if previous == current:
+                log.info("%s unchanged, no push", label)
+                continue
 
-    state[STATE_KEY] = current
+            if previous is None:
+                body = f"First seen F4 (All Other) {label}: {current}"
+            else:
+                body = f"F4 (All Other) {label} changed: {previous} -> {current}"
+            ntfy.push(
+                title=f"F4 {label} changed",
+                message=body,
+                click_url=bulletin_url,
+                tags="passport_control",
+            )
+            state[state_key] = current
+        except Exception as exc:  # noqa: BLE001 - isolate each cell's check
+            log.error("F4 %s check failed: %s", label, exc)
+
     return state

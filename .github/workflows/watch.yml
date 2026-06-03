@@ -4,7 +4,12 @@ on:
   schedule:
     # Every 3 hours at minute 0. Adjust if you want it more/less often.
     - cron: "0 */3 * * *"
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      test_push:
+        description: "Send a one-off test notification and exit (skips the watchers)"
+        type: boolean
+        default: false
 
 # Prevent two scheduled runs from racing each other on the state file.
 concurrency:
@@ -34,6 +39,8 @@ jobs:
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
+          # Empty on schedule; "1" only when manually dispatched with test_push.
+          NOTIFY_TEST_PUSH: ${{ inputs.test_push && '1' || '' }}
         run: python -m notify_watcher.main
 
       - name: Commit updated state (if changed)
