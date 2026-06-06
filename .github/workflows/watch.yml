@@ -2,12 +2,20 @@ name: watch
 
 on:
   schedule:
-    # Every 3 hours at minute 0. Adjust if you want it more/less often.
+    # Every 3 hours at minute 0: collectors + entity watchers.
     - cron: "0 */3 * * *"
+    # Once daily at 12:05 UTC (~08:05 Dominican Republic, UTC-4): the daily run
+    # additionally flushes the digest and sends the health tip. Minute 5 keeps
+    # it off the 3-hour grid so github.event.schedule identifies it cleanly.
+    - cron: "5 12 * * *"
   workflow_dispatch:
     inputs:
       test_push:
         description: "Send a one-off test notification and exit (skips the watchers)"
+        type: boolean
+        default: false
+      daily:
+        description: "Also run the daily digest + health tip on this manual run"
         type: boolean
         default: false
 
@@ -45,6 +53,9 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}  # AI summary fallback (optional)
           # Empty on schedule; "1" only when manually dispatched with test_push.
           NOTIFY_TEST_PUSH: ${{ inputs.test_push && '1' || '' }}
+          # "1" on the daily cron (12:05 UTC) or a manual run with daily=true;
+          # gates the digest flush and the daily health tip.
+          NOTIFY_DAILY: ${{ (github.event.schedule == '5 12 * * *' || inputs.daily) && '1' || '' }}
         run: python -m notify_watcher.main
 
       - name: Commit updated state (if changed)
