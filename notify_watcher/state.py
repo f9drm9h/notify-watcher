@@ -6,8 +6,11 @@ Actions workflow after every run. Each topic owns one key inside it.
 from __future__ import annotations
 
 import json
+import logging
 from pathlib import Path
 from typing import Any
+
+log = logging.getLogger(__name__)
 
 STATE_PATH = Path(__file__).resolve().parent.parent / "state.json"
 
@@ -17,7 +20,12 @@ def load() -> dict[str, Any]:
         return {}
     try:
         return json.loads(STATE_PATH.read_text(encoding="utf-8"))
-    except json.JSONDecodeError:
+    except json.JSONDecodeError as exc:
+        log.warning(
+            "state.json is corrupt (%s); starting from empty state. "
+            "All dedup memory is lost, so topics may re-alert this run.",
+            exc,
+        )
         return {}
 
 

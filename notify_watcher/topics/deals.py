@@ -44,6 +44,30 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.9",
 }
 
+# --- Multi-retailer coverage notes -----------------------------------------
+# This topic is store-agnostic: any URL added to watchlist.json["products"]
+# whose page exposes a schema.org Product (JSON-LD) price is tracked with no
+# per-site code. Two retailers were evaluated for the Soundcore Liberty 5 Pro
+# line and intentionally NOT added, because neither offers a free, static
+# (no-JavaScript) price this fetcher can read:
+#
+#   * Best Buy (search/product pages): actively blocks non-browser/data-center
+#     clients — requests are connection-reset or time out, and the GitHub
+#     Actions runner's data-center IP is blocked harder still. Prices are
+#     JavaScript-rendered, so there is no static JSON-LD/meta/microdata price.
+#     Best Buy's Developer API is free but needs a registered API key (a new
+#     secret wired into the workflow) and a different query-by-SKU code path,
+#     so it's out of scope for this URL/JSON-LD pattern. Skipped.
+#   * soundcore.com/liberty-5-pro-series: returns 200 but its only JSON-LD node
+#     is a Corporation (no Product/ProductGroup, no og:price/product:price meta,
+#     no microdata). It is a collection landing page linking ~199 products, not
+#     a single trackable item. The individual Liberty 5 Pro / 5 Pro Max product
+#     pages already in watchlist.json carry proper Product JSON-LD and cover
+#     these products, so the series page is redundant. Skipped.
+#
+# Add new retailers by dropping a product-page URL into watchlist.json; if a
+# store publishes standard Product structured data it works automatically.
+
 
 def _iter_jsonld(soup: BeautifulSoup):
     """Yield every parsed JSON-LD object on the page (objects and list items)."""
