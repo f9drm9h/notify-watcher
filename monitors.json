@@ -1,0 +1,65 @@
+{
+  "scoring": {
+    "source_weights": {
+      "regulatory": 5,
+      "agency": 4,
+      "gov_data": 3,
+      "trade": 1
+    },
+    "signal_bonuses": {
+      "action_terms": {
+        "weight": 2,
+        "terms": ["approves", "approved", "authorizes", "authorized", "recalls",
+                  "recall", "halts", "first", "phase 3", "phase iii",
+                  "breakthrough", "greenlights", "clearance", "cleared",
+                  "milestone", "ignition", "record"]
+      },
+      "watch_match": {
+        "weight": 2
+      },
+      "safety_terms": {
+        "weight": 2,
+        "terms": ["safety alert", "outbreak", "contraindication", "shortage",
+                  "warning", "blackout"]
+      }
+    },
+    "noise_penalties": {
+      "hype_terms": {
+        "weight": -2,
+        "terms": ["promising", "could", "may ", "might", "in mice",
+                  "study suggests", "potential", "aims to", "hopes to",
+                  "expected to", "reportedly"]
+      }
+    },
+    "thresholds": {
+      "breakthrough": 8,
+      "high": 6,
+      "moderate": 4
+    }
+  },
+
+  "fda": {
+    "source_weight": "regulatory",
+    "application_types": ["NDA", "BLA"],
+    "url": "https://api.fda.gov/drug/drugsfda.json?search=submissions.submission_status:AP&sort=submissions.submission_status_date:desc&limit=25",
+    "keywords": ["cancer", "oncology", "hiv", "alzheimer", "parkinson",
+                 "diabetes", "vaccine", "gene therapy", "influenza", "flu",
+                 "dengue", "obesity", "hepatitis", "tuberculosis"]
+  },
+
+  "energy": {
+    "keywords": ["fusion", "grid", "battery", "storage", "nuclear", "solar",
+                 "reactor", "blackout", "transmission", "smr", "renewable",
+                 "hydrogen", "wind"],
+    "sources": [
+      {"name": "EIA Today in Energy", "url": "https://www.eia.gov/rss/todayinenergy.xml", "weight": "gov_data"},
+      {"name": "DOE Energy.gov", "url": "https://www.energy.gov/rss.xml", "weight": "agency"},
+      {"name": "World Nuclear News", "url": "https://world-nuclear-news.org/rss", "weight": "trade"}
+    ]
+  },
+
+  "digest": {
+    "max_buffer": 50,
+    "max_items_in_message": 25
+  }
+}

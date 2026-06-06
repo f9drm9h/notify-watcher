@@ -34,9 +34,15 @@ def push(
     message: str,
     click_url: Optional[str] = None,
     tags: Optional[str] = None,
+    priority: Optional[str] = None,
     timeout: float = 15.0,
 ) -> None:
     """POST a notification to the configured ntfy topic.
+
+    `priority` is an optional ntfy priority name ("min", "low", "default",
+    "high", "urgent"); when None the server applies its default, so existing
+    callers are unaffected. Used by the scored domain monitors to make
+    breakthrough/high-tier alerts ring louder than routine ones.
 
     Raises requests.HTTPError on a non-2xx response so callers can decide
     whether to retry or log-and-continue.
@@ -51,6 +57,8 @@ def push(
         headers["Click"] = click_url
     if tags:
         headers["Tags"] = tags
+    if priority:
+        headers["Priority"] = priority
 
     resp = requests.post(
         url,

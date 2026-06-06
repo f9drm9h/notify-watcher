@@ -33,6 +33,33 @@ Topics:
 - **Game release dates** — for each title in `watchlist.json` → `games`,
   tracks its RAWG release date and alerts the same way. Needs `RAWG_API_KEY`.
 
+### Domain monitors (scored, configured in `monitors.json`)
+
+Unlike the entity watchers above, these scan whole domains, so they run every
+item through a deterministic scorer (provenance + keyword/structural signals,
+**no AI in the scoring path**). Only **breakthrough/high**-tier items push live;
+**moderate** items are collected into one **daily digest**, and **minor** items
+are dropped — which is what keeps a high-volume news source from causing alert
+fatigue. Sources, keywords, weights, and thresholds all live in `monitors.json`
+(no secrets), so tuning is a config edit, not a code change.
+
+- **FDA approvals** — reads the openFDA Drugs@FDA API (free, no key) and alerts
+  on new drug/biologic (NDA/BLA) approvals. Generic (ANDA) approvals are
+  filtered out as routine. One alert per application; supplements land in the
+  digest.
+- **Energy / electricity** — reads the RSS sources in `monitors.json` → `energy`
+  (EIA Today in Energy, DOE/Energy.gov, World Nuclear News by default) and
+  scores headlines against energy keywords (grid, battery, fusion, nuclear,
+  solar, storage, …). No key.
+- **Daily health tip** — one evidence-based tip each morning from a curated,
+  vetted knowledge base (`data/health_tips.json`, sourced from CDC/WHO/
+  MedlinePlus). With an AI key set the vetted tip is optionally *reworded* for
+  variety; the fact is never AI-invented. Sent on the daily run only.
+
+The daily digest and health tip fire on a once-daily workflow run (~08:05 in the
+Dominican Republic, UTC−4); the collectors run on the normal every-3-hours
+schedule.
+
 The app is structured so adding more topics later is a small change in
 `notify_watcher/main.py`.
 

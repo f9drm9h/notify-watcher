@@ -15,7 +15,19 @@ from typing import Callable
 
 from . import ntfy
 from . import state as state_mod
-from .topics import deals, games, ios_release, movies, soundcore_pro, visa_bulletin, wwdc
+from .topics import (
+    deals,
+    digest_topic,
+    energy,
+    fda,
+    games,
+    health_tip,
+    ios_release,
+    movies,
+    soundcore_pro,
+    visa_bulletin,
+    wwdc,
+)
 
 Topic = Callable[[dict], dict]
 
@@ -30,6 +42,14 @@ TOPICS: list[tuple[str, Topic]] = [
     # price-tracked immediately.
     ("soundcore_pro", soundcore_pro.run),
     ("deals", deals.run),
+    # Domain monitors: collectors score items and either push live (high/
+    # breakthrough) or buffer moderate ones. digest_topic must run AFTER the
+    # collectors so same-day items are flushed; both digest_topic and health_tip
+    # act only on the daily run (NOTIFY_DAILY).
+    ("fda", fda.run),
+    ("energy", energy.run),
+    ("digest", digest_topic.run),
+    ("health_tip", health_tip.run),
 ]
 
 
