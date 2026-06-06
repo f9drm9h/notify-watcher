@@ -33,6 +33,7 @@ from __future__ import annotations
 import logging
 import os
 import re
+import time
 import urllib.parse
 
 import feedparser
@@ -54,6 +55,17 @@ GOOGLE_NEWS_RSS = (
     "https://news.google.com/rss/search?q={q}&hl=en-US&gl=US&ceid=US:en"
 )
 NEWS_HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; notify-watcher/1.0)"}
+
+# Optional per-title search aliases. A canonical watchlist title maps to extra
+# search phrases so the news watcher also catches headlines that use a common
+# abbreviation or alternative name. Each alias is queried separately and the
+# relevance filter runs against the *alias* phrase (so a "GTA 6" headline is
+# matched by the "GTA 6" tokens, which the canonical "Grand Theft Auto VI"
+# filter would reject), then all hits merge into the same per-title dedup pool.
+# Titles absent here are queried only by their canonical name, unchanged.
+TITLE_ALIASES: dict[str, list[str]] = {
+    "Grand Theft Auto VI": ["GTA 6", "GTA VI"],
+}
 
 # Token-subset relevance filter. We require every meaningful title token to
 # appear in a headline, which is what keeps a search for "God of War Laufey"
@@ -166,12 +178,53 @@ def _track_release_dates(state: dict) -> dict:
     return state
 
 
-def _fetch_news(title: str) -> list:
-    """Return Google News RSS entries for an exact-phrase title query."""
-    url = GOOGLE_NEWS_RSS.format(q=urllib.parse.quote_plus(f'"{title}"'))
+def _fetch_news(phrase: str) -> list:
+    """Return Google News RSS entries for an exact-phrase query."""
+    url = GOOGLE_NEWS_RSS.format(q=urllib.parse.quote_plus(f'"{phrase}"'))
     resp = requests.get(url, headers=NEWS_HEADERS, timeout=30)
     resp.raise_for_status()
     return feedparser.parse(resp.content).entries
+
+
+def _published_key(entry) -> time.struct_time:
+    """Sort key for ordering articles newest-first; missing dates sort oldest."""
+    return getattr(entry, "published_parsed", None) or time.gmtime(0)
+
+
+def _collect_news(title: str) -> list[tuple[str, str, str]]:
+    """Merge relevant news for a title and each of its aliases into one pool.
+
+    Queries the canonical title first, then every phrase in TITLE_ALIASES for
+    it. The relevance filter runs against the phrase that found each article, so
+    an alias like "GTA 6" is matched by its own tokens (which the canonical
+    "Grand Theft Auto VI" filter would reject). Results are de-duped by article
+    id across all queries so an article surfacing under several phrases is kept
+    once, then sorted newest-first and truncated to NEWS_MAX_PER_GAME — aliases
+    can push the relevant pool well past the cap, and considering only the newest
+    N keeps the stored-id window stable so dedup doesn't re-alert older articles
+    that fall outside it. A single phrase's fetch failure is logged and skipped
+    so the others still contribute. Returns a list of (article_id, headline, link).
+    """
+    merged: dict[str, tuple[time.struct_time, str, str, str]] = {}
+    for phrase in [title, *TITLE_ALIASES.get(title, [])]:
+        try:
+            entries = _fetch_news(phrase)
+        except Exception as exc:  # noqa: BLE001 - one phrase failing is non-fatal
+            log.warning("game news query %r failed: %s", phrase, exc)
+            continue
+        kept = 0
+        for e in entries:
+            headline = getattr(e, "title", "")
+            if not _news_relevant(phrase, headline):
+                continue
+            aid = _article_id(e)
+            if aid and aid not in merged:
+                merged[aid] = (_published_key(e), aid, headline, getattr(e, "link", ""))
+                kept += 1
+        log.info("game news %r via %r: +%d relevant of %d", title, phrase, kept, len(entries))
+
+    ordered = sorted(merged.values(), key=lambda v: v[0], reverse=True)
+    return [(aid, headline, link) for _, aid, headline, link in ordered[:NEWS_MAX_PER_GAME]]
 
 
 def _track_news(state: dict) -> dict:
@@ -191,17 +244,8 @@ def _track_news(state: dict) -> dict:
 
     for title in wanted:
         try:
-            entries = _fetch_news(title)
-            # Relevant, deduped-by-id, newest-first (Google News default order).
-            relevant: list[tuple[str, str, str]] = []
-            for e in entries:
-                headline = getattr(e, "title", "")
-                if not _news_relevant(title, headline):
-                    continue
-                aid = _article_id(e)
-                if aid:
-                    relevant.append((aid, headline, getattr(e, "link", "")))
-            log.info("game news %r: %d relevant of %d", title, len(relevant), len(entries))
+            relevant = _collect_news(title)
+            log.info("game news %r: %d relevant article(s) across all queries", title, len(relevant))
 
             seen = bucket.get(title)
             if seen is None:
