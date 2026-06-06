@@ -18,7 +18,7 @@ import requests
 log = logging.getLogger(__name__)
 
 GEMINI_MODEL = "gemini-2.5-flash"
-ANTHROPIC_MODEL = "claude-opus-4-8"
+ANTHROPIC_MODEL = "claude-haiku-4-5-20251001"
 
 
 def _gemini(system: str, user_text: str) -> str | None:
