@@ -49,8 +49,10 @@ item through a deterministic scorer (provenance + keyword/structural signals,
 **no AI in the scoring path**). Only **breakthrough/high**-tier items push live;
 **moderate** items are collected into one **daily digest**, and **minor** items
 are dropped — which is what keeps a high-volume news source from causing alert
-fatigue. Sources, keywords, weights, and thresholds all live in `monitors.json`
-(no secrets), so tuning is a config edit, not a code change.
+fatigue. The digest is **ranked by score**: the most important items lead the
+message and, when there are more than fit, the *least* important are dropped
+(shown as "+N more"). Sources, keywords, weights, and thresholds all live in
+`monitors.json` (no secrets), so tuning is a config edit, not a code change.
 
 - **FDA approvals** — reads the openFDA Drugs@FDA API (free, no key) and alerts
   on new drug/biologic (NDA/BLA) approvals. Generic (ANDA) approvals are

@@ -7,7 +7,7 @@ it. The buffer is a capped list inside state.json, so it can never grow without
 bound and is emptied every flush.
 
 State keys owned by this module:
-  digest_buffer    : list[dict]  pending items {title, url, source, tier, score}
+  digest_buffer    : list[dict]  pending items {title, url, source, score}
   digest_last_sent : str         YYYY-MM-DD guard so a day is flushed once
 """
 from __future__ import annotations
@@ -32,7 +32,9 @@ def _today() -> str:
 def add(state: dict, item: dict, cfg: dict) -> None:
     """Append a moderate item to the buffer, keeping only the newest N.
 
-    `item` is {title, url, source, tier, score}. The cap (digest.max_buffer)
+    `item` is {title, url, source, score}. The score is retained so the flush
+    can rank by importance (most significant first, least significant dropped on
+    overflow); a caller that omits it defaults to 0. The cap (digest.max_buffer)
     bounds state.json growth; when full the oldest pending item is dropped.
     """
     buf: list = state.setdefault(BUFFER_KEY, [])
@@ -40,6 +42,7 @@ def add(state: dict, item: dict, cfg: dict) -> None:
         "title": item.get("title", ""),
         "url": item.get("url", ""),
         "source": item.get("source", ""),
+        "score": int(item.get("score", 0) or 0),
     })
     cap = int(cfg.get("max_buffer", _DEFAULT_MAX_BUFFER))
     if len(buf) > cap:
@@ -63,18 +66,30 @@ def flush(state: dict, cfg: dict) -> bool:
         return False
 
     max_in_msg = int(cfg.get("max_items_in_message", _DEFAULT_MAX_IN_MSG))
-    shown = buf[:max_in_msg]
+
+    # Rank by importance so the most significant items survive truncation and
+    # surface first. Overflow now drops the LEAST important items; previously
+    # `buf[:max_in_msg]` kept the oldest and silently dropped the newest. Sort is
+    # stable, so equal-score items keep buffer (chronological) order.
+    ranked = sorted(buf, key=lambda it: it.get("score", 0), reverse=True)
+    shown = ranked[:max_in_msg]
     overflow = len(buf) - len(shown)
 
-    # Group by source for a scannable body.
-    by_source: dict[str, list[str]] = {}
+    # Group by source for a scannable body, with sources ordered by their best
+    # item's score and items within a group already in score order (from shown).
+    by_source: dict[str, list[dict]] = {}
     for it in shown:
-        by_source.setdefault(it.get("source", "Other"), []).append(it.get("title", ""))
+        by_source.setdefault(it.get("source", "Other"), []).append(it)
+    ordered_sources = sorted(
+        by_source,
+        key=lambda s: max(it.get("score", 0) for it in by_source[s]),
+        reverse=True,
+    )
 
     lines: list[str] = []
-    for source, titles in by_source.items():
+    for source in ordered_sources:
         lines.append(source.upper())
-        lines.extend(f"  - {t}" for t in titles)
+        lines.extend(f"  - {it.get('title', '')}" for it in by_source[source])
     if overflow > 0:
         lines.append(f"(+{overflow} more)")
 
