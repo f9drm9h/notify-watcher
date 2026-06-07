@@ -32,7 +32,7 @@ import urllib.parse
 import feedparser
 import requests
 
-from .. import ntfy, watchlist
+from .. import ids, ntfy, watchlist
 
 log = logging.getLogger(__name__)
 
@@ -229,14 +229,17 @@ def _track_news(state: dict) -> dict:
             seen = bucket.get(title)
             if seen is None:
                 # Baseline-only first run: remember without alerting.
-                bucket[title] = [aid for aid, _, _ in relevant][:NEWS_MAX_PER_MOVIE]
+                bucket[title] = [ids.short(aid) for aid, _, _ in relevant][:NEWS_MAX_PER_MOVIE]
                 log.info("seeded news baseline for %r (no alerts on first run)", title)
                 continue
 
+            # Seen-lists store short hashes; migrate any legacy raw ids on load.
+            seen = ids.normalize_seen(seen)
             seen_set = set(seen)
             fresh: list[str] = []
             for aid, headline, link in relevant:
-                if aid in seen_set:
+                h = ids.short(aid)
+                if h in seen_set:
                     continue
                 ntfy.push(
                     title=f"Movie news: {title}",
@@ -244,8 +247,8 @@ def _track_news(state: dict) -> dict:
                     click_url=link or None,
                     tags="clapper",
                 )
-                fresh.append(aid)
-                seen_set.add(aid)
+                fresh.append(h)
+                seen_set.add(h)
             if fresh:
                 log.info("pushed %d new article(s) for %r", len(fresh), title)
             # Keep newest-first and cap so state.json stays small.

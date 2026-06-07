@@ -26,7 +26,7 @@ from __future__ import annotations
 
 import logging
 
-from . import digest, ntfy, scoring
+from . import digest, ids, ntfy, scoring
 
 log = logging.getLogger(__name__)
 
@@ -50,11 +50,13 @@ def run_source(
     seen = state.get(state_key)
     if seen is None:
         # Baseline-only first run: remember ids without alerting.
-        state[state_key] = [i["id"] for i in items if i.get("id")][:cap]
+        state[state_key] = [ids.short(i["id"]) for i in items if i.get("id")][:cap]
         log.info("seeded %s baseline with %d id(s) (no alerts on first run)",
                  state_key, len(state[state_key]))
         return state
 
+    # Seen-lists store short hashes; normalize_seen migrates legacy raw ids once.
+    seen = ids.normalize_seen(seen)
     seen_set = set(seen)
     fresh: list[str] = []
     pushed = digested = 0
@@ -62,10 +64,13 @@ def run_source(
     for item in items:
         try:
             iid = item.get("id")
-            if not iid or iid in seen_set:
+            if not iid:
                 continue
-            seen_set.add(iid)
-            fresh.append(iid)
+            h = ids.short(iid)
+            if h in seen_set:
+                continue
+            seen_set.add(h)
+            fresh.append(h)
 
             sc, tier = scoring.score(
                 item.get("title", ""),
