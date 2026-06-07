@@ -61,5 +61,45 @@
   "digest": {
     "max_buffer": 50,
     "max_items_in_message": 25
+  },
+
+  "games_scoring": {
+    "_comment": "Importance scorer for game news headlines. score = source_weight + one-shot signal bonuses - one-shot noise penalties; tier = highest threshold met. Matching is case-insensitive SUBSTRING, so terms must not be substrings of innocent words (e.g. 'review' would match 'preview'). high -> live push, moderate -> daily digest, below moderate -> dropped.",
+    "source_weights": { "official": 4, "tier1": 1, "unknown": 0 },
+    "source_tiers": {
+      "official": ["playstation", "xbox wire", "xbox.com", "nintendo", "steam",
+                   "rockstar", "bethesda", "ubisoft", "ea.com", "sony interactive"],
+      "tier1": ["ign", "gamespot", "eurogamer", "polygon", "vgc",
+                "video games chronicle", "pc gamer", "game informer", "bloomberg",
+                "kotaku", "the verge", "gamesradar", "gamesindustry"]
+    },
+    "signal_bonuses": {
+      "launch_signals": { "weight": 5, "terms": ["release date", "launch date",
+        "release window", "release timing", "delayed", "delay", "pushed back",
+        "postponed", "out now", "launches"] },
+      "reveal_signals": { "weight": 5, "terms": ["trailer", "gameplay", "reveal",
+        "first look", "showcase", "world premiere", "screenshot"] },
+      "content_signals": { "weight": 4, "terms": ["beta", "playtest", "dlc",
+        "expansion", "season pass", "sequel", "major update", "content update",
+        "roadmap", "remake", "remaster"] },
+      "official_signals": { "weight": 4, "terms": ["confirm", "announce",
+        "official", "statement", "dev diary", "developer update"] },
+      "moderate_signals": { "weight": 3, "terms": ["leak", "rumor", "rumour",
+        "interview", "preview", "hands-on", "impressions", "steam page",
+        "store page", "wishlist", "esrb", "pegi", "listing", "report"] }
+    },
+    "noise_penalties": {
+      "listicle": { "weight": -6, "terms": ["top 10", "top 20", "top 25",
+        "ranked", "ranking", "tier list", "games like", "most anticipated",
+        "best games", "worst games"] },
+      "opinion": { "weight": -6, "terms": ["opinion", "editorial", "hot take",
+        "i played", "why i "] },
+      "speculation": { "weight": -5, "terms": ["could", "might", "maybe",
+        "what if", "here's why", "reasons why", "fan theory", "fans want",
+        "we want", "predict", "speculation", "rumored to"] },
+      "clickbait": { "weight": -5, "terms": ["you won't believe", "shocking",
+        "this is why", "needs to", "deserves"] }
+    },
+    "thresholds": { "high": 5, "moderate": 3 }
   }
 }
