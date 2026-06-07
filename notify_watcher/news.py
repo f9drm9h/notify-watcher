@@ -89,7 +89,7 @@ def route(
         seen_set.add(h)
         fresh.append(h)  # recorded regardless of tier so it's never re-scored
 
-        _score, tier = scoring.score(
+        score, tier = scoring.score(
             headline, _source_weight_key(source, tiers), [], scoring_cfg
         )
         if tier in ("breakthrough", "high"):
@@ -102,8 +102,9 @@ def route(
             )
             pushed += 1
         elif tier == "moderate":
-            # Group the daily digest by game/film title, not publisher.
-            digest.add(state, {"title": headline, "url": link, "source": title}, digest_cfg)
+            # Group the daily digest by game/film title, not publisher; the score
+            # lets the flush rank items across all sources.
+            digest.add(state, {"title": headline, "url": link, "source": title, "score": score}, digest_cfg)
             digested += 1
         else:
             dropped += 1

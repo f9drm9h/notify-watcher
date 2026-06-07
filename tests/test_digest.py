@@ -10,8 +10,8 @@ from tests._util import capture_pushes
 CFG = {"max_buffer": 5, "max_items_in_message": 3}
 
 
-def _item(n: int, source: str = "Energy") -> dict:
-    return {"title": f"headline {n}", "url": f"http://x/{n}", "source": source}
+def _item(n: int, source: str = "Energy", score: int = 0) -> dict:
+    return {"title": f"headline {n}", "url": f"http://x/{n}", "source": source, "score": score}
 
 
 class DigestTest(unittest.TestCase):
@@ -60,6 +60,42 @@ class DigestTest(unittest.TestCase):
         with capture_pushes() as sent:
             digest.flush(state, CFG)
         self.assertIn("+2 more", sent[0]["message"])  # 5 buffered, 3 shown
+
+    def test_add_stores_score(self):
+        state: dict = {}
+        digest.add(state, _item(1, score=7), CFG)
+        self.assertEqual(state[digest.BUFFER_KEY][0]["score"], 7)
+        # A caller that omits score defaults to 0, never raising.
+        digest.add(state, {"title": "t", "url": "u", "source": "s"}, CFG)
+        self.assertEqual(state[digest.BUFFER_KEY][1]["score"], 0)
+
+    def test_flush_drops_lowest_score_on_overflow(self):
+        # The bug fix: with more items than fit, the LEAST important are dropped
+        # (previously buf[:N] kept the oldest and dropped the newest regardless
+        # of importance). max_items_in_message=3.
+        state: dict = {}
+        digest.add(state, _item(1, "Energy", score=1), CFG)   # low
+        digest.add(state, _item(2, "Energy", score=9), CFG)   # high
+        digest.add(state, _item(3, "Energy", score=2), CFG)   # low
+        digest.add(state, _item(4, "Energy", score=8), CFG)   # high
+        with capture_pushes() as sent:
+            digest.flush(state, CFG)
+        body = sent[0]["message"]
+        self.assertIn("headline 2", body)   # score 9 survives
+        self.assertIn("headline 4", body)   # score 8 survives
+        self.assertIn("headline 3", body)   # score 2 survives (3rd slot)
+        self.assertNotIn("headline 1", body)  # score 1 dropped on overflow
+        self.assertIn("+1 more", body)
+
+    def test_flush_orders_by_score_highest_first(self):
+        state: dict = {}
+        digest.add(state, _item(1, "FDA", score=2), CFG)
+        digest.add(state, _item(2, "Energy", score=9), CFG)
+        with capture_pushes() as sent:
+            digest.flush(state, CFG)
+        body = sent[0]["message"]
+        # The source with the top-scoring item leads the message.
+        self.assertLess(body.index("ENERGY"), body.index("FDA"))
 
 
 if __name__ == "__main__":
