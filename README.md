@@ -66,10 +66,18 @@ message and, when there are more than fit, the *least* important are dropped
   vetted knowledge base (`data/health_tips.json`, sourced from CDC/WHO/
   MedlinePlus). With an AI key set the vetted tip is optionally *reworded* for
   variety; the fact is never AI-invented. Sent on the daily run only.
+- **Daily learning** — one consolidated push each morning bundling three short
+  sections: an "On this day" historical event and the day's Wikipedia featured
+  article (both from Wikimedia's free, no-key feed), plus one vetted fact from a
+  rotating curated channel — science, technology literacy, life skills, or
+  general knowledge (`data/*.json`). The Wikimedia feed is fixed per date and
+  the fact rotates by day-of-year, so the push is deterministic; each section
+  degrades independently, so a feed outage still sends the rest. Daily run only.
 
-The daily digest and health tip fire on a once-daily workflow run (~08:05 in the
-Dominican Republic, UTC−4); the collectors run on the normal every-3-hours
-schedule.
+The daily digest, health tip, and learning push fire on a once-daily workflow
+run (~08:05 in the Dominican Republic, UTC−4); the collectors run on the normal
+every-3-hours schedule. Adding a curated learning channel is just a new
+`data/*.json` file referenced from `notify_watcher/topics/learn.py`.
 
 The app is structured so adding more topics later is a small change in
 `notify_watcher/main.py`.
