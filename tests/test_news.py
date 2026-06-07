@@ -72,6 +72,16 @@ class RouteTest(unittest.TestCase):
             self._route(state, bucket, "GameX", arts)  # same batch again
         self.assertEqual(len(sent), 1)  # only fired once
 
+    def test_legacy_raw_id_in_bucket_migrates_without_refiring(self):
+        # Pre-migration bucket holds the raw article id; the same article must
+        # be recognised by its hash and not re-pushed.
+        from notify_watcher import ids
+        state, bucket = {}, {"GameX": ["live"]}  # legacy raw id
+        with capture_pushes() as sent:
+            self._route(state, bucket, "GameX", [_art("live", "release date confirmed")])
+        self.assertEqual(sent, [])
+        self.assertEqual(bucket["GameX"], [ids.short("live")])  # now stored hashed
+
     def test_official_source_can_elevate_to_live(self):
         # "interview"(3) + official source(4) = 7 -> live; same headline from an
         # unknown source stays in the digest.

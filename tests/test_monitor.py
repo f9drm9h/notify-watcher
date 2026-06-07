@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import unittest
 
-from notify_watcher import digest, monitor
+from notify_watcher import digest, ids, monitor
 from tests._util import capture_pushes
 
 SCORING = {
@@ -32,7 +32,7 @@ class RunSourceTest(unittest.TestCase):
         with capture_pushes() as sent:
             state = self._run(state, [_item("a", "approves drug", "regulatory")])
         self.assertEqual(sent, [])
-        self.assertEqual(state["k"], ["a"])
+        self.assertEqual(state["k"], [ids.short("a")])  # stored hashed, not raw
 
     def test_routes_tiers_and_records_all(self):
         state = {"k": []}
@@ -46,7 +46,17 @@ class RunSourceTest(unittest.TestCase):
         self.assertEqual(len(sent), 1)
         self.assertEqual(sent[0]["priority"], "urgent")  # breakthrough
         self.assertEqual(len(state.get(digest.BUFFER_KEY, [])), 1)
-        self.assertEqual(set(state["k"]), {"hi", "mod", "low"})  # all recorded seen
+        # all recorded seen, stored as hashes
+        self.assertEqual(set(state["k"]), {ids.short(x) for x in ("hi", "mod", "low")})
+
+    def test_legacy_raw_ids_migrate_without_refiring(self):
+        # A pre-migration seen-list holds the raw id; the same item must be
+        # recognised (via its hash) and NOT re-alerted, then stored hashed.
+        state = {"k": ["hi"]}  # legacy raw id
+        with capture_pushes() as sent:
+            state = self._run(state, [_item("hi", "approves drug", "regulatory")])
+        self.assertEqual(sent, [])
+        self.assertEqual(state["k"], [ids.short("hi")])
 
     def test_dedup_holds_on_rerun(self):
         state = {"k": []}
