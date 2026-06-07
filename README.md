@@ -238,6 +238,20 @@ and run the command above. The topic will treat the next value as "new"
 and push again. Don't forget to revert before pushing if you don't want a
 real alert.
 
+### Run the unit tests
+
+The pure logic — scoring, digest, news routing, the collector engine — has a
+fast unit suite (stdlib `unittest`, no extra deps, no network, sends nothing):
+
+```powershell
+python -m unittest discover -s tests -v
+```
+
+These also run automatically on every push/PR via `.github/workflows/test.yml`.
+`tests/test_games_scoring_config.py` is a golden test that pins how the real
+`monitors.json` keyword lists route — so a config edit that breaks tiering (or
+re-introduces a substring collision) fails CI instead of your phone.
+
 ---
 
 ## File layout
