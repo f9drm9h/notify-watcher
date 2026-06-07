@@ -25,7 +25,7 @@ from __future__ import annotations
 
 import logging
 
-from . import digest, ntfy, scoring
+from . import digest, ids, ntfy, scoring
 
 log = logging.getLogger(__name__)
 
@@ -68,20 +68,26 @@ def route(
     if seen is None:
         # Baseline-only first run: remember ids without alerting, so a newly
         # added title never blasts a backlog. Mirrors the collectors' seeding.
-        bucket[title] = [a[0] for a in articles if a[0]][:cap]
+        bucket[title] = [ids.short(a[0]) for a in articles if a[0]][:cap]
         log.info("seeded news baseline for %r (no alerts on first run)", title)
         return
 
+    # Seen-lists store short hashes, not raw article ids; normalize_seen migrates
+    # any legacy raw ids the first time we see them so dedup stays exact.
+    seen = ids.normalize_seen(seen)
     tiers = scoring_cfg.get("source_tiers", {})
     seen_set = set(seen)
     fresh: list[str] = []
     pushed = digested = dropped = 0
 
     for aid, headline, link, source in articles:
-        if not aid or aid in seen_set:
+        if not aid:
             continue
-        seen_set.add(aid)
-        fresh.append(aid)  # recorded regardless of tier so it's never re-scored
+        h = ids.short(aid)
+        if h in seen_set:
+            continue
+        seen_set.add(h)
+        fresh.append(h)  # recorded regardless of tier so it's never re-scored
 
         _score, tier = scoring.score(
             headline, _source_weight_key(source, tiers), [], scoring_cfg
