@@ -1,0 +1,28 @@
+name: test
+
+# Run the unit suite on every push and PR. The watcher logic (scoring, digest,
+# news routing, collector engine) is pure and deterministic, so these tests are
+# fast and need no secrets — they never hit the network or send a notification.
+on:
+  push:
+    branches: ["**"]
+    paths-ignore:
+      - "state.json"  # the runner's "chore: update state" commits don't need CI
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  unittest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
