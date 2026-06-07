@@ -15,17 +15,15 @@ within a year for a KB of >=366 tips and an even spread for smaller ones.
 from __future__ import annotations
 
 import datetime as _dt
-import json
 import logging
 import os
-from pathlib import Path
 
-from .. import ntfy, summarize
+from .. import kb, ntfy, summarize
 
 log = logging.getLogger(__name__)
 
 STATE_KEY = "health_tip_last_sent"
-TIPS_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "health_tips.json"
+TIPS_PATH = kb.DATA_DIR / "health_tips.json"
 
 _REWORD_SYSTEM = (
     "You reword a single evidence-based health tip for a daily push "
@@ -39,15 +37,6 @@ def _today() -> str:
     return _dt.date.today().isoformat()
 
 
-def _load_tips() -> list[dict]:
-    try:
-        data = json.loads(TIPS_PATH.read_text(encoding="utf-8"))
-    except (OSError, json.JSONDecodeError) as exc:
-        log.error("could not load health tips: %s", exc)
-        return []
-    return [t for t in data if isinstance(t, dict) and t.get("tip")]
-
-
 def run(state: dict) -> dict:
     if not os.environ.get("NOTIFY_DAILY"):
         return state  # only the daily cron run sends a tip
@@ -55,14 +44,12 @@ def run(state: dict) -> dict:
         log.info("health tip already sent today; skipping")
         return state
 
-    tips = _load_tips()
-    if not tips:
+    # The health KB uses a "tip" field; selection is a shared day-of-year pick.
+    tips = kb.load(TIPS_PATH, field="tip")
+    chosen = kb.pick(tips)
+    if not chosen:
         log.warning("no health tips available; skipping")
         return state
-
-    # Rotate by day-of-year for an even, repeat-resistant spread.
-    idx = _dt.date.today().timetuple().tm_yday % len(tips)
-    chosen = tips[idx]
     tip, src = chosen["tip"], chosen.get("src", "")
 
     body = summarize.one_line(_REWORD_SYSTEM, tip) or tip
@@ -70,6 +57,6 @@ def run(state: dict) -> dict:
         body = f"{body} (Source: {src})"
 
     ntfy.push(title="Health tip", message=body, tags="apple", priority="low")
-    log.info("sent daily health tip (idx %d)", idx)
+    log.info("sent daily health tip")
     state[STATE_KEY] = _today()
     return state

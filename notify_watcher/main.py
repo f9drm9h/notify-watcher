@@ -23,6 +23,7 @@ from .topics import (
     games,
     health_tip,
     ios_release,
+    learn,
     movies,
     soundcore_pro,
     visa_bulletin,
@@ -50,6 +51,10 @@ TOPICS: list[tuple[str, Topic]] = [
     ("energy", energy.run),
     ("digest", digest_topic.run),
     ("health_tip", health_tip.run),
+    # learn is daily-only too: one consolidated learning push (Wikimedia feed +
+    # a rotating curated fact). Independent of digest, so order among the
+    # daily-only topics doesn't matter.
+    ("learn", learn.run),
 ]
 
 

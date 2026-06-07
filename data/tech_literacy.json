@@ -1,0 +1,14 @@
+[
+  {"text": "Use a unique passphrase for every important account and a password manager to remember them; reused passwords are the top cause of account takeovers.", "src": "CISA"},
+  {"text": "Turn on multi-factor authentication wherever it's offered; it blocks the vast majority of automated account-compromise attempts.", "src": "CISA"},
+  {"text": "Keep software and your phone OS updated - most exploited vulnerabilities already have a patch available when attacks happen.", "src": "NIST"},
+  {"text": "A padlock icon means traffic is encrypted (HTTPS), not that a site is trustworthy; check the domain name itself before entering data.", "src": "EFF"},
+  {"text": "Back up important data on the 3-2-1 rule: 3 copies, on 2 types of media, with 1 kept off-site or offline.", "src": "CISA"},
+  {"text": "App permissions are opt-in trust: an offline flashlight app has no reason to need your contacts or location.", "src": "FTC"},
+  {"text": "Public Wi-Fi is shared; avoid logging into banking on it, or use a trusted VPN, since others on the network can attempt to intercept traffic.", "src": "FTC"},
+  {"text": "Phishing relies on urgency - 'act now or lose access.' Slow down and verify the sender through a known channel before clicking.", "src": "CISA"},
+  {"text": "Longer passwords beat complex short ones: a 16-character passphrase is far harder to crack than 'P@ss1!'.", "src": "NIST"},
+  {"text": "'Free' apps often pay for themselves with your data; check what a service collects and why before signing up.", "src": "EFF"},
+  {"text": "Enable automatic screen lock and device encryption on phones and laptops so a lost device doesn't expose your accounts.", "src": "NIST"},
+  {"text": "QR codes can hide malicious links; treat a scanned URL with the same caution as one in an unexpected email.", "src": "FTC"}
+]
