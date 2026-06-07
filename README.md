@@ -31,7 +31,16 @@ Topics:
   tracks its TMDb release date and alerts on first sight and on any date
   change. Needs `TMDB_API_KEY`.
 - **Game release dates** — for each title in `watchlist.json` → `games`,
-  tracks its RAWG release date and alerts the same way. Needs `RAWG_API_KEY`.
+  tracks its RAWG release date and alerts the same way (a date change is a
+  high-priority push). Needs `RAWG_API_KEY`.
+- **Game news (scored)** — for each game title, queries Google News (no key),
+  keeps only headlines specifically about that game, then runs each through the
+  `games_scoring` config in `monitors.json` instead of pushing everything:
+  release dates / delays / trailers / reveals / beta / DLC / sequel / official
+  announcements push **live**; leaks / interviews / previews / store-page
+  updates go to the **daily digest**; opinion, ranking lists, speculation, and
+  passing mentions are **dropped**. Trusted/official outlets carry more weight.
+  Tuning the keywords and weights is a `monitors.json` edit, not a code change.
 
 ### Domain monitors (scored, configured in `monitors.json`)
 

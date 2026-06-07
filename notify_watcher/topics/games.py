@@ -39,7 +39,7 @@ import urllib.parse
 import feedparser
 import requests
 
-from .. import ntfy, watchlist
+from .. import config, news, ntfy, watchlist
 
 log = logging.getLogger(__name__)
 
@@ -107,6 +107,19 @@ def _article_id(entry) -> str:
     return getattr(entry, "id", "") or getattr(entry, "link", "")
 
 
+def _entry_source(entry) -> str:
+    """Publisher label for an entry, used for provenance weighting in scoring.
+
+    Google News RSS attaches a <source> element (the originating outlet); its
+    title is what news._source_weight_key matches against. Returns "" when the
+    feed omits it, which scores as the neutral "unknown" tier.
+    """
+    src = getattr(entry, "source", None)
+    if isinstance(src, dict):  # feedparser exposes it as a dict-like
+        return src.get("title", "") or ""
+    return getattr(src, "title", "") or ""
+
+
 def _search(title: str, api_key: str) -> dict | None:
     """Return the best-match RAWG game object for a title, or None."""
     resp = requests.get(
@@ -165,11 +178,14 @@ def _track_release_dates(state: dict) -> dict:
                 body = f"Now tracking {name}. Release date: {current}"
             else:
                 body = f"{name} release date changed: {previous} -> {current}"
+            # A first-sighting or date change is a top-tier event (release date
+            # announced / changed / delayed), so it always rings as a live push.
             ntfy.push(
                 title=f"Game: {name}",
                 message=body,
                 click_url=GAME_PAGE + slug if slug else None,
                 tags="video_game",
+                priority="high",
             )
             bucket[gid] = current
         except Exception as exc:  # noqa: BLE001 - isolate each title
@@ -191,7 +207,7 @@ def _published_key(entry) -> time.struct_time:
     return getattr(entry, "published_parsed", None) or time.gmtime(0)
 
 
-def _collect_news(title: str) -> list[tuple[str, str, str]]:
+def _collect_news(title: str) -> list[news.Article]:
     """Merge relevant news for a title and each of its aliases into one pool.
 
     Queries the canonical title first, then every phrase in TITLE_ALIASES for
@@ -203,9 +219,10 @@ def _collect_news(title: str) -> list[tuple[str, str, str]]:
     can push the relevant pool well past the cap, and considering only the newest
     N keeps the stored-id window stable so dedup doesn't re-alert older articles
     that fall outside it. A single phrase's fetch failure is logged and skipped
-    so the others still contribute. Returns a list of (article_id, headline, link).
+    so the others still contribute. Returns a list of (article_id, headline,
+    link, source); `source` is the publisher used for provenance weighting.
     """
-    merged: dict[str, tuple[time.struct_time, str, str, str]] = {}
+    merged: dict[str, tuple[time.struct_time, str, str, str, str]] = {}
     for phrase in [title, *TITLE_ALIASES.get(title, [])]:
         try:
             entries = _fetch_news(phrase)
@@ -219,21 +236,30 @@ def _collect_news(title: str) -> list[tuple[str, str, str]]:
                 continue
             aid = _article_id(e)
             if aid and aid not in merged:
-                merged[aid] = (_published_key(e), aid, headline, getattr(e, "link", ""))
+                merged[aid] = (_published_key(e), aid, headline,
+                               getattr(e, "link", ""), _entry_source(e))
                 kept += 1
         log.info("game news %r via %r: +%d relevant of %d", title, phrase, kept, len(entries))
 
     ordered = sorted(merged.values(), key=lambda v: v[0], reverse=True)
-    return [(aid, headline, link) for _, aid, headline, link in ordered[:NEWS_MAX_PER_GAME]]
+    return [(aid, headline, link, source)
+            for _, aid, headline, link, source in ordered[:NEWS_MAX_PER_GAME]]
 
 
 def _track_news(state: dict) -> dict:
-    """Push new, game-specific news/trailer/delay articles per watchlist title.
+    """Score and route new, game-specific news per watchlist title.
+
+    Each fresh article is scored deterministically against the `games_scoring`
+    config (release-date / trailer / reveal / announcement headlines -> live
+    push; leaks / interviews / previews / store updates -> daily digest; opinion
+    / ranking lists / speculation / passing mentions -> dropped). This replaces
+    the previous behaviour of pushing every relevance-matched article live,
+    which was loud for high-coverage titles. The scoring + routing + seen-id
+    bookkeeping lives in notify_watcher.news so movies can reuse it.
 
     First run per game seeds the current article ids silently (no alerts), so a
-    brand-new game on the list doesn't blast ~100 back-dated notifications; only
-    articles that appear afterwards are pushed. Mirrors soundcore_pro's baseline
-    seeding.
+    brand-new game on the list doesn't blast its backlog; only articles that
+    appear afterwards are evaluated. Mirrors soundcore_pro's baseline seeding.
     """
     wanted = watchlist.titles("games")
     if not wanted:
@@ -241,36 +267,24 @@ def _track_news(state: dict) -> dict:
         return state
 
     bucket: dict = state.setdefault(NEWS_STATE_KEY, {})
+    scoring_cfg = config.section("games_scoring")
+    digest_cfg = config.section("digest")
 
     for title in wanted:
         try:
             relevant = _collect_news(title)
             log.info("game news %r: %d relevant article(s) across all queries", title, len(relevant))
-
-            seen = bucket.get(title)
-            if seen is None:
-                # Baseline-only first run: remember without alerting.
-                bucket[title] = [aid for aid, _, _ in relevant][:NEWS_MAX_PER_GAME]
-                log.info("seeded news baseline for %r (no alerts on first run)", title)
-                continue
-
-            seen_set = set(seen)
-            fresh: list[str] = []
-            for aid, headline, link in relevant:
-                if aid in seen_set:
-                    continue
-                ntfy.push(
-                    title=f"Game news: {title}",
-                    message=headline,
-                    click_url=link or None,
-                    tags="newspaper",
-                )
-                fresh.append(aid)
-                seen_set.add(aid)
-            if fresh:
-                log.info("pushed %d new article(s) for %r", len(fresh), title)
-            # Keep newest-first and cap so state.json stays small.
-            bucket[title] = (fresh + seen)[:NEWS_MAX_PER_GAME]
+            news.route(
+                state,
+                bucket=bucket,
+                title=title,
+                articles=relevant,
+                scoring_cfg=scoring_cfg,
+                digest_cfg=digest_cfg,
+                cap=NEWS_MAX_PER_GAME,
+                live_tag="video_game",
+                live_title_prefix="Game news",
+            )
         except Exception as exc:  # noqa: BLE001 - isolate each title's news check
             log.error("game news %r check failed: %s", title, exc)
 
