@@ -16,10 +16,16 @@ The two checks are independent and each title is isolated, so one failure (a
 TMDb outage, a single bad feed) never blocks the others.
 
 The news path mirrors notify_watcher.topics.games: a quoted Google News query
-per title (plus optional aliases), a token-subset relevance filter that keeps a
-search specific, per-title dedup capped at NEWS_MAX_PER_MOVIE, and silent
-first-run seeding. It is duplicated rather than imported so each topic stays
-self-contained.
+per title (plus optional aliases) and a token-subset relevance filter that keeps
+a search specific. The collected, already-relevance-filtered pool is then handed
+to notify_watcher.news.route, the shared scorer/router games uses: each fresh
+article is scored against the `movies_scoring` config in monitors.json and routed
+by tier (release date / trailer / delay headlines -> live push; casting / reviews
+/ interviews / set photos / box office -> daily digest; rankings / opinion /
+speculation -> dropped), instead of every relevance match being pushed live. The
+per-title dedup (capped at NEWS_MAX_PER_MOVIE) and silent first-run seeding live
+inside news.route, which records every evaluated id as seen so a dropped or
+digested article is never re-scored next run.
 """
 from __future__ import annotations
 
@@ -32,7 +38,7 @@ import urllib.parse
 import feedparser
 import requests
 
-from .. import ids, ntfy, watchlist
+from .. import config, news, ntfy, watchlist
 
 log = logging.getLogger(__name__)
 
@@ -97,6 +103,19 @@ def _news_relevant(phrase: str, headline: str) -> bool:
 def _article_id(entry) -> str:
     """Stable per-article id for dedup: Google News id, else the link."""
     return getattr(entry, "id", "") or getattr(entry, "link", "")
+
+
+def _entry_source(entry) -> str:
+    """Publisher label for an entry, used for provenance weighting in scoring.
+
+    Google News RSS attaches a <source> element (the originating outlet); its
+    title is what news._source_weight_key matches against. Returns "" when the
+    feed omits it, which scores as the neutral "unknown" tier. Mirrors games.py.
+    """
+    src = getattr(entry, "source", None)
+    if isinstance(src, dict):  # feedparser exposes it as a dict-like
+        return src.get("title", "") or ""
+    return getattr(src, "title", "") or ""
 
 
 def _published_key(entry) -> time.struct_time:
@@ -172,7 +191,7 @@ def _fetch_news(phrase: str) -> list:
     return feedparser.parse(resp.content).entries
 
 
-def _collect_news(title: str) -> list[tuple[str, str, str]]:
+def _collect_news(title: str) -> list[news.Article]:
     """Merge relevant news for a title and each of its aliases into one pool.
 
     Queries the canonical title first, then every phrase in TITLE_ALIASES for
@@ -183,9 +202,10 @@ def _collect_news(title: str) -> list[tuple[str, str, str]]:
     sorted newest-first and truncated to NEWS_MAX_PER_MOVIE so the stored-id
     window stays stable and dedup doesn't re-alert older articles that fall
     outside it. A single phrase's fetch failure is logged and skipped so the
-    others still contribute. Returns a list of (article_id, headline, link).
+    others still contribute. Returns a list of (article_id, headline, link,
+    source); `source` is the publisher used for provenance weighting in scoring.
     """
-    merged: dict[str, tuple[time.struct_time, str, str, str]] = {}
+    merged: dict[str, tuple[time.struct_time, str, str, str, str]] = {}
     for phrase in [title, *TITLE_ALIASES.get(title, [])]:
         try:
             entries = _fetch_news(phrase)
@@ -199,20 +219,30 @@ def _collect_news(title: str) -> list[tuple[str, str, str]]:
                 continue
             aid = _article_id(e)
             if aid and aid not in merged:
-                merged[aid] = (_published_key(e), aid, headline, getattr(e, "link", ""))
+                merged[aid] = (_published_key(e), aid, headline,
+                               getattr(e, "link", ""), _entry_source(e))
                 kept += 1
         log.info("movie news %r via %r: +%d relevant of %d", title, phrase, kept, len(entries))
 
     ordered = sorted(merged.values(), key=lambda v: v[0], reverse=True)
-    return [(aid, headline, link) for _, aid, headline, link in ordered[:NEWS_MAX_PER_MOVIE]]
+    return [(aid, headline, link, source)
+            for _, aid, headline, link, source in ordered[:NEWS_MAX_PER_MOVIE]]
 
 
 def _track_news(state: dict) -> dict:
-    """Push new, film-specific news/trailer/delay/casting articles per title.
+    """Score and route new, film-specific news per watchlist title.
+
+    Each fresh article is scored deterministically against the `movies_scoring`
+    config (release date / trailer / delay headlines -> live push; casting /
+    reviews / interviews / set photos / box office -> daily digest; rankings /
+    opinion / speculation -> dropped). This replaces the previous behaviour of
+    pushing every relevance-matched article live, which was loud for high-
+    coverage titles. The scoring + routing + seen-id bookkeeping lives in
+    notify_watcher.news, shared with games.
 
     First run per movie seeds the current article ids silently (no alerts), so a
-    brand-new title on the list doesn't blast ~100 back-dated notifications;
-    only articles that appear afterwards are pushed. Mirrors games.py.
+    brand-new title on the list doesn't blast its backlog; only articles that
+    appear afterwards are evaluated. Mirrors games.py.
     """
     wanted = watchlist.titles("movies")
     if not wanted:
@@ -220,39 +250,24 @@ def _track_news(state: dict) -> dict:
         return state
 
     bucket: dict = state.setdefault(NEWS_STATE_KEY, {})
+    scoring_cfg = config.section("movies_scoring")
+    digest_cfg = config.section("digest")
 
     for title in wanted:
         try:
             relevant = _collect_news(title)
             log.info("movie news %r: %d relevant article(s) across all queries", title, len(relevant))
-
-            seen = bucket.get(title)
-            if seen is None:
-                # Baseline-only first run: remember without alerting.
-                bucket[title] = [ids.short(aid) for aid, _, _ in relevant][:NEWS_MAX_PER_MOVIE]
-                log.info("seeded news baseline for %r (no alerts on first run)", title)
-                continue
-
-            # Seen-lists store short hashes; migrate any legacy raw ids on load.
-            seen = ids.normalize_seen(seen)
-            seen_set = set(seen)
-            fresh: list[str] = []
-            for aid, headline, link in relevant:
-                h = ids.short(aid)
-                if h in seen_set:
-                    continue
-                ntfy.push(
-                    title=f"Movie news: {title}",
-                    message=headline,
-                    click_url=link or None,
-                    tags="clapper",
-                )
-                fresh.append(h)
-                seen_set.add(h)
-            if fresh:
-                log.info("pushed %d new article(s) for %r", len(fresh), title)
-            # Keep newest-first and cap so state.json stays small.
-            bucket[title] = (fresh + seen)[:NEWS_MAX_PER_MOVIE]
+            news.route(
+                state,
+                bucket=bucket,
+                title=title,
+                articles=relevant,
+                scoring_cfg=scoring_cfg,
+                digest_cfg=digest_cfg,
+                cap=NEWS_MAX_PER_MOVIE,
+                live_tag="clapper",
+                live_title_prefix="Movie news",
+            )
         except Exception as exc:  # noqa: BLE001 - isolate each title's news check
             log.error("movie news %r check failed: %s", title, exc)
 

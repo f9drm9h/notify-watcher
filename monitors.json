@@ -101,5 +101,50 @@
         "this is why", "needs to", "deserves"] }
     },
     "thresholds": { "high": 5, "moderate": 3 }
+  },
+
+  "movies_scoring": {
+    "_comment": "Importance scorer for movie news headlines. score = source_weight + one-shot signal bonuses - one-shot noise penalties; tier = highest threshold met. Matching is case-insensitive SUBSTRING, so terms must not be substrings of innocent words (e.g. 'review' would match 'preview'). high -> live push, moderate -> daily digest, below moderate -> dropped.",
+    "source_weights": { "official": 4, "tier1": 1, "unknown": 0 },
+    "source_tiers": {
+      "official": ["marvel", "disney", "warner bros", "dc studios", "dc comics",
+                   "sony pictures", "universal pictures", "paramount", "a24",
+                   "netflix", "lucasfilm", "20th century", "pixar"],
+      "tier1": ["variety", "hollywood reporter", "deadline", "collider",
+                "rotten tomatoes", "empire", "screen rant", "ign", "the verge",
+                "entertainment weekly", "indiewire", "slashfilm", "/film"]
+    },
+    "signal_bonuses": {
+      "launch_signals": { "weight": 5, "terms": ["release date", "premiere date",
+        "in theaters", "hits theaters", "streaming date", "delayed", "delay",
+        "pushed back", "postponed", "out now", "release window"] },
+      "reveal_signals": { "weight": 5, "terms": ["trailer", "teaser",
+        "first look", "first footage", "first images", "poster", "sneak peek",
+        "clip released"] },
+      "content_signals": { "weight": 4, "terms": ["sequel", "prequel", "reboot",
+        "spin-off", "spinoff", "sets release", "wraps filming", "begins filming",
+        "production"] },
+      "cast_signals": { "weight": 4, "terms": ["casting", "joins the cast",
+        "to star", "set to play", "signs on", "lands role", "to direct",
+        "will direct", "new director"] },
+      "official_signals": { "weight": 4, "terms": ["confirm", "announce",
+        "official", "greenlit", "greenlight"] },
+      "moderate_signals": { "weight": 3, "terms": ["review", "interview",
+        "set photo", "behind the scenes", "box office", "rumor", "rumour",
+        "report", "leak", "preview", "first reactions", "early reactions"] }
+    },
+    "noise_penalties": {
+      "listicle": { "weight": -6, "terms": ["best movies", "worst movies",
+        "ranked", "ranking", "tier list", "movies like", "most anticipated",
+        "top 10", "top 20", "top 25"] },
+      "opinion": { "weight": -6, "terms": ["opinion", "editorial", "hot take",
+        "i watched", "why i "] },
+      "speculation": { "weight": -5, "terms": ["could", "might", "maybe",
+        "what if", "here's why", "reasons why", "fan theory", "fans want",
+        "we want", "predict", "speculation", "rumored to"] },
+      "clickbait": { "weight": -5, "terms": ["you won't believe", "shocking",
+        "this is why", "needs to", "deserves"] }
+    },
+    "thresholds": { "high": 5, "moderate": 3 }
   }
 }
