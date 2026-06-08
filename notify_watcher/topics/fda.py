@@ -8,11 +8,24 @@ stays comfortably free.
 
 Dedup id is "<application_number>:<submission_type><submission_number>", which
 is stable per approval (an original approval and each later supplement get
-distinct ids). Regulatory approvals carry the highest source weight, so a match
-against a watch keyword typically lands them in the live-push tier; everything
-else still flows through the deterministic scorer.
+distinct ids).
 
-Config (monitors.json -> fda): `url` (the openFDA query) and `source_weight`.
+Scoring note — why every NDA/BLA approval alerts regardless of disease area:
+Drugs@FDA carries NO indication/disease field, so we cannot filter to (say) only
+oncology approvals. The scored title therefore enriches the brand name with the
+application's active ingredient(s), the one disease-adjacent signal the response
+does provide — that is what lets agent-style keywords in monitors.json -> fda
+(e.g. "vaccine", "influenza", "hepatitis", "gene therapy") actually match
+(a brand like "Keytruda" never contains "oncology", but an active ingredient
+like "Influenza Vaccine" matches "influenza"/"flu"). Scoring is additive, so a
+keyword hit only *boosts* an item; it never gates one. Combined with the high
+regulatory source weight plus the "approves" action term, that means every
+original NDA/BLA approval clears the live-push threshold regardless of the
+disease area, and the keywords serve to surface agent matches rather than to
+silence non-matching approvals.
+
+Config (monitors.json -> fda): `url` (the openFDA query), `source_weight`,
+`application_types`, and `keywords`.
 """
 from __future__ import annotations
 
@@ -41,6 +54,26 @@ def _brand(result: dict) -> str:
         if name:
             return name.title()
     return (result.get("sponsor_name") or "").strip().title() or "drug"
+
+
+def _active_ingredients(result: dict) -> str:
+    """Comma-joined unique active-ingredient names across an application's
+    products, title-cased; "" when the response omits them.
+
+    Drugs@FDA has no indication field, so the brand name alone ("Keytruda")
+    never contains a disease/agent keyword. Folding the active ingredient into
+    the scored title is what lets the agent-style keywords in monitors.json ->
+    fda match (e.g. an "Influenza Vaccine" ingredient matches "influenza"/"flu").
+    """
+    out: list[str] = []
+    seen: set[str] = set()
+    for product in result.get("products") or []:
+        for ing in product.get("active_ingredients") or []:
+            name = (ing.get("name") or "").strip()
+            if name and name.lower() not in seen:
+                seen.add(name.lower())
+                out.append(name.title())
+    return ", ".join(out)
 
 
 def _appl_digits(app_no: str) -> str:
@@ -78,9 +111,14 @@ def _items(payload: dict, allowed_prefixes: tuple[str, ...]) -> list[dict]:
         snum = latest.get("submission_number") or ""
         brand = _brand(result)
         kind = "approves" if stype == "ORIG" else "updates approval for"
+        # Fold the active ingredient into the scored title (unless it's just the
+        # brand again) so the disease/agent keywords can match — see module docs.
+        ingredients = _active_ingredients(result)
+        label = (f"{brand} ({ingredients})"
+                 if ingredients and ingredients.lower() != brand.lower() else brand)
         out.append({
             "id": f"{app_no}:{stype}{snum}",
-            "title": f"FDA {kind} {brand} ({app_no})",
+            "title": f"FDA {kind} {label} ({app_no})",
             "url": "https://www.accessdata.fda.gov/scripts/cder/daf/"
                    f"index.cfm?event=overview.process&ApplNo={_appl_digits(app_no)}",
             "source": brand,

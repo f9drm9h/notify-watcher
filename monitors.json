@@ -130,6 +130,7 @@
   },
 
   "fda": {
+    "_comment": "New drug/biologic approvals (openFDA Drugs@FDA). Drugs@FDA carries NO indication/disease field, so these keywords are matched against the brand name + active ingredient(s) only, NOT the treated condition. Scoring is additive (a keyword hit boosts, it never gates), and a 'regulatory' source weight plus the 'approves' action term already clears the live tier, so EVERY original NDA/BLA approval alerts regardless of disease area; the keywords serve to surface agent matches (e.g. 'vaccine', 'influenza', 'hepatitis', 'gene therapy' can match an active ingredient) rather than to filter. application_types limits to NDA new drugs and BLA biologics (excludes high-volume ANDA generics).",
     "source_weight": "regulatory",
     "application_types": ["NDA", "BLA"],
     "url": "https://api.fda.gov/drug/drugsfda.json?search=submissions.submission_status:AP&sort=submissions.submission_status_date:desc&limit=25",
