@@ -7,6 +7,7 @@ never silences the others.
 """
 from __future__ import annotations
 
+import datetime as _dt
 import logging
 import os
 import sys
@@ -31,6 +32,28 @@ from .topics import (
 )
 
 Topic = Callable[[dict], dict]
+
+# Daily-only topics (digest flush, health tip, learn) gate on NOTIFY_DAILY.
+# Rather than rely on a dedicated cron firing (GitHub Actions routinely delays
+# and silently DROPS scheduled runs — a schedule sitting minutes off the main
+# grid is especially prone to being skipped, which is why these never ran), we
+# decide "is this the daily run?" here: the first invocation on/after this UTC
+# hour each day does the daily work. Each daily topic still has its own
+# per-day, set-on-success guard (health_tip_last_sent, etc.), so triggering on
+# every post-threshold run is idempotent and a same-day failure naturally
+# retries on the next 3-hourly run.
+DAILY_UTC_HOUR = 12
+
+
+def _is_daily_run() -> bool:
+    """True if the daily-only topics should run on this invocation.
+
+    Honors an explicit NOTIFY_DAILY from the workflow (manual `daily=true`
+    dispatch) and otherwise fires once the UTC hour has reached DAILY_UTC_HOUR.
+    """
+    if os.environ.get("NOTIFY_DAILY"):
+        return True
+    return _dt.datetime.now(_dt.timezone.utc).hour >= DAILY_UTC_HOUR
 
 TOPICS: list[tuple[str, Topic]] = [
     ("visa_bulletin", visa_bulletin.run),
@@ -80,6 +103,12 @@ def main() -> int:
         return 0
 
     state = state_mod.load()
+
+    # Enable the daily-only topics on the first run past DAILY_UTC_HOUR. Setting
+    # the env var keeps each daily topic's existing NOTIFY_DAILY check unchanged.
+    if _is_daily_run():
+        os.environ["NOTIFY_DAILY"] = "1"
+        log.info("daily run active: digest flush, health tip, and learn enabled")
 
     for name, run in TOPICS:
         log.info("[%s] starting", name)

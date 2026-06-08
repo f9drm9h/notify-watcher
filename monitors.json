@@ -100,7 +100,7 @@
       "clickbait": { "weight": -5, "terms": ["you won't believe", "shocking",
         "this is why", "needs to", "deserves"] }
     },
-    "thresholds": { "high": 5, "moderate": 3 }
+    "thresholds": { "high": 7, "moderate": 4 }
   },
 
   "movies_scoring": {
@@ -145,6 +145,6 @@
       "clickbait": { "weight": -5, "terms": ["you won't believe", "shocking",
         "this is why", "needs to", "deserves"] }
     },
-    "thresholds": { "high": 5, "moderate": 3 }
+    "thresholds": { "high": 7, "moderate": 4 }
   }
 }
