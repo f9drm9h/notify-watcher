@@ -131,7 +131,10 @@ def _discovery(state: dict) -> dict:
     if not seed_artists:
         return state
 
-    seen_ids = set(state.get(DISCOVERY_SEEN_KEY) or [])
+    # Keep an insertion-ordered list (newest last) for a deterministic CAP trim,
+    # plus a set built from it for O(1) "already recommended?" lookups.
+    seen_list = list(state.get(DISCOVERY_SEEN_KEY) or [])
+    seen_ids = set(seen_list)
     seed_set = {a.lower() for a in seed_artists}
     doy = _dt.date.today().timetuple().tm_yday
 
@@ -168,8 +171,10 @@ def _discovery(state: dict) -> dict:
             tags="headphones",
             priority="low",
         )
-        seen_ids.add(rec["id"])
-        state[DISCOVERY_SEEN_KEY] = list(seen_ids)[-CAP:]
+        # Append (rec is, by construction, not already in seen_ids) and keep the
+        # newest CAP entries — deterministic, unlike slicing a set-derived list.
+        seen_list.append(rec["id"])
+        state[DISCOVERY_SEEN_KEY] = seen_list[-CAP:]
         log.info("music discovery: recommended %r (seed %r)", rec["name"], seed)
     except Exception as exc:  # noqa: BLE001
         log.error("music discovery push failed: %s", exc)

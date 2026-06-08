@@ -6,6 +6,7 @@ file is safe to commit to a public repo.
 """
 from __future__ import annotations
 
+import base64
 import os
 from typing import Optional
 
@@ -16,6 +17,23 @@ DEFAULT_SERVER = "https://ntfy.sh"
 
 class NtfyConfigError(RuntimeError):
     pass
+
+
+def _encode_header(value: str) -> str:
+    """Make a header value safe for ntfy without mangling non-ASCII text.
+
+    HTTP/ntfy header values must be ASCII (requests encodes them latin-1). A pure
+    ASCII title passes through unchanged. Anything with accents/emoji is wrapped
+    as a single RFC 2047 base64 encoded-word (``=?UTF-8?B?...?=``), which ntfy
+    decodes back to UTF-8 — so "Café" renders as "Café" instead of the "CafÃ©"
+    you got from the old utf-8-bytes-as-latin-1 reinterpretation.
+    """
+    try:
+        value.encode("ascii")
+        return value
+    except UnicodeEncodeError:
+        b64 = base64.b64encode(value.encode("utf-8")).decode("ascii")
+        return f"=?UTF-8?B?{b64}?="
 
 
 def _config() -> tuple[str, str]:
@@ -51,8 +69,9 @@ def push(
     url = f"{server}/{topic}"
 
     headers: dict[str, str] = {}
-    # ntfy header values must be latin-1; encode non-ASCII so we never 400.
-    headers["Title"] = title.encode("utf-8", "replace").decode("latin-1", "replace")
+    # ntfy header values must be ASCII; RFC 2047-encode non-ASCII titles so
+    # accented characters survive instead of being mojibake'd through latin-1.
+    headers["Title"] = _encode_header(title)
     if click_url:
         headers["Click"] = click_url
     if tags:
