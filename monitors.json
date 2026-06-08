@@ -37,6 +37,23 @@
     "high": 61.0
   },
 
+  "twitch": {
+    "_comment": "Streamers to watch for going live (via decapi.me, no key). One push per live session; re-arms after they go offline.",
+    "streamers": ["RiddlesMK", "mkleossb", "elcodo22", "Sparg0", "Acola_lui", "ouchbc"]
+  },
+
+  "music": {
+    "_comment": "followed_artists -> new-release alerts (Deezer, no key). Daily discovery picks a song from a Deezer related-artist seeded by your library (data/music_seed.json) that you probably haven't heard.",
+    "followed_artists": ["Bo Burnham", "Lind Erebros"]
+  },
+
+  "blood_donation": {
+    "_comment": "Reminds when you're eligible to donate whole blood again. Update last_donation each time you donate; renotify_days throttles repeat nudges while still eligible.",
+    "last_donation": "2024-12-15",
+    "interval_days": 56,
+    "renotify_days": 30
+  },
+
   "scoring": {
     "source_weights": {
       "regulatory": 5,

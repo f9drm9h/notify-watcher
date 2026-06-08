@@ -41,6 +41,16 @@ Topics:
   updates go to the **daily digest**; opinion, ranking lists, speculation, and
   passing mentions are **dropped**. Trusted/official outlets carry more weight.
   Tuning the keywords and weights is a `monitors.json` edit, not a code change.
+- **Twitch live** — for each handle in `monitors.json` → `twitch.streamers`,
+  checks live status via decapi.me (no key) and pushes once per live session
+  (with the game + stream title), re-arming after they go offline.
+- **Music** — `monitors.json` → `music.followed_artists` get a push on a new
+  Deezer release. Plus a daily **discovery** pick: a song from a Deezer
+  *related* artist seeded by your own library (`data/music_seed.json`, built by
+  `tools/scan_music.py`) that you probably haven't heard — never repeating.
+- **Blood-donation timer** — from `monitors.json` → `blood_donation`, reminds
+  you once you're eligible to donate again (last donation + interval), re-nudging
+  at most every `renotify_days`. Update `last_donation` when you donate. Daily.
 
 ### Domain monitors (scored, configured in `monitors.json`)
 
