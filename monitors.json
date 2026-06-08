@@ -1,4 +1,42 @@
 {
+  "_location_comment": "Home location, shared by the geo-aware monitors (quakes, weather). Update these to move every location-based alert at once.",
+  "location": {
+    "name": "Santo Domingo Este",
+    "latitude": 18.521661,
+    "longitude": -69.8224191,
+    "timezone": "America/Santo_Domingo"
+  },
+
+  "quakes": {
+    "_comment": "Nearby earthquakes (USGS). Routed by magnitude AND great-circle distance from location: live push within live_radius_km at >= live_min_mag, daily digest within digest_radius_km at >= digest_min_mag, else dropped.",
+    "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson",
+    "live_radius_km": 600,
+    "live_min_mag": 4.5,
+    "digest_radius_km": 300,
+    "digest_min_mag": 3.0
+  },
+
+  "weather": {
+    "_comment": "Tropical storm / hurricane alerts (US National Hurricane Center Atlantic ATOM feed). An entry naming a region_term goes live if it also carries a live_term (watch/warning), else to the daily digest. Off-region Atlantic activity is ignored, so it stays quiet outside threats to our area.",
+    "url": "https://www.nhc.noaa.gov/index-at.xml",
+    "region_terms": ["dominican", "hispaniola", "haiti", "caribbean", "puerto rico",
+                     "mona passage", "leeward", "windward", "antilles", "turks and caicos"],
+    "live_terms": ["warning", "watch"]
+  },
+
+  "air_quality": {
+    "_comment": "Local air quality (Open-Meteo, US AQI). Alerts when AQI enters a band at or above alert_band_index (0=Good,1=Moderate,2=Unhealthy for sensitive,3=Unhealthy,4=Very unhealthy,5=Hazardous), at most once per worsening band per day.",
+    "alert_band_index": 2
+  },
+
+  "fx": {
+    "_comment": "USD -> DOP exchange rate (open.er-api, free). Pushes when the rate crosses out of the [low, high] band (low/high or back inside). Tune low/high to the range you care about.",
+    "base": "USD",
+    "quote": "DOP",
+    "low": 57.0,
+    "high": 61.0
+  },
+
   "scoring": {
     "source_weights": {
       "regulatory": 5,

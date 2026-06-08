@@ -17,17 +17,22 @@ from typing import Callable
 from . import ntfy
 from . import state as state_mod
 from .topics import (
+    air_quality,
     deals,
     digest_topic,
     energy,
     fda,
+    fx,
     games,
     health_tip,
     ios_release,
     learn,
     movies,
+    quakes,
+    reminders,
     soundcore_pro,
     visa_bulletin,
+    weather,
     wwdc,
 )
 
@@ -72,12 +77,19 @@ TOPICS: list[tuple[str, Topic]] = [
     # act only on the daily run (NOTIFY_DAILY).
     ("fda", fda.run),
     ("energy", energy.run),
+    # Safety + life monitors. weather/quakes are geo-aware (live for a near, real
+    # threat; smaller/region-relevant items buffer to the digest). air_quality and
+    # fx are threshold alerters. All run before digest so same-run items flush.
+    ("weather", weather.run),
+    ("quakes", quakes.run),
+    ("air_quality", air_quality.run),
+    ("fx", fx.run),
     ("digest", digest_topic.run),
     ("health_tip", health_tip.run),
-    # learn is daily-only too: one consolidated learning push (Wikimedia feed +
-    # a rotating curated fact). Independent of digest, so order among the
-    # daily-only topics doesn't matter.
+    # learn and reminders are daily-only too. Independent of digest, so order
+    # among the daily-only topics doesn't matter.
     ("learn", learn.run),
+    ("reminders", reminders.run),
 ]
 
 

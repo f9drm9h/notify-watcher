@@ -59,9 +59,28 @@ message and, when there are more than fit, the *least* important are dropped
   filtered out as routine. One alert per application; supplements land in the
   digest.
 - **Energy / electricity** — reads the RSS sources in `monitors.json` → `energy`
-  (EIA Today in Energy, DOE/Energy.gov, World Nuclear News by default) and
-  scores headlines against energy keywords (grid, battery, fusion, nuclear,
-  solar, storage, …). No key.
+  (EIA Today in Energy + World Nuclear News by default) and scores headlines
+  against energy keywords (grid, battery, fusion, nuclear, solar, storage, …).
+  No key.
+- **Tropical weather / hurricanes** — reads the U.S. National Hurricane Center
+  Atlantic feed (`monitors.json` → `weather`, no key). Stays silent unless a
+  system names one of your `region_terms`; a watch/warning for your area pushes
+  live, other region-relevant updates go to the digest. Off-region Atlantic
+  activity is ignored.
+- **Nearby earthquakes** — reads the USGS feed (`monitors.json` → `quakes`, no
+  key) and routes by magnitude **and** great-circle distance from your
+  `location`: a strong, close quake pushes live; a smaller nearby one goes to
+  the digest; everything else is dropped.
+- **Air quality** — checks the local US AQI via Open-Meteo (`monitors.json` →
+  `air_quality`, no key) and alerts when the air enters an unhealthy band, at
+  most once per worsening band per day.
+- **Exchange rate (USD→DOP)** — checks the daily rate via open.er-api
+  (`monitors.json` → `fx`, no key) and pings only when it crosses out of, or
+  back into, your `[low, high]` band.
+- **Reminders / expiry** — a tiny date engine over `reminders.json` (no network):
+  document/visa/ID expiry, subscription renewals, warranties, yearly birthdays.
+  Fires once at each configured lead time (default 90/30/7/1/0 days before).
+  Daily run only.
 - **Daily health tip** — one evidence-based tip each morning from a curated,
   vetted knowledge base (`data/health_tips.json`, sourced from CDC/WHO/
   MedlinePlus). With an AI key set the vetted tip is optionally *reworded* for
@@ -74,10 +93,13 @@ message and, when there are more than fit, the *least* important are dropped
   the fact rotates by day-of-year, so the push is deterministic; each section
   degrades independently, so a feed outage still sends the rest. Daily run only.
 
-The daily digest, health tip, and learning push fire on a once-daily workflow
-run (~08:05 in the Dominican Republic, UTC−4); the collectors run on the normal
-every-3-hours schedule. Adding a curated learning channel is just a new
-`data/*.json` file referenced from `notify_watcher/topics/learn.py`.
+The daily digest, health tip, learning push, and reminders fire once a day, on
+the first scheduled run on/after 12:00 UTC (~08:00 in the Dominican Republic,
+UTC−4); the collectors run on the normal every-3-hours schedule. The daily work
+is gated in code by the UTC clock (`main._is_daily_run`), not a dedicated cron,
+because GitHub Actions silently drops scheduled runs. Adding a curated learning
+channel is just a new `data/*.json` file referenced from
+`notify_watcher/topics/learn.py`.
 
 The app is structured so adding more topics later is a small change in
 `notify_watcher/main.py`.

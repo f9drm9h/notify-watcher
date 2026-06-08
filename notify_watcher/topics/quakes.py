@@ -1,0 +1,138 @@
+"""Topic: nearby earthquake alerts (USGS, free, no key).
+
+USGS publishes near-real-time seismicity as GeoJSON. We read the M2.5+ past-day
+feed, compute each quake's great-circle distance from home (monitors.json ->
+location), and route by magnitude AND proximity: a strong, close quake pushes
+live; a smaller nearby one goes to the daily digest; everything else is dropped.
+Hispaniola is seismically active, so this is a protective local alert rather than
+a global firehose.
+
+Dedup is by USGS event id (seen-list; the first run seeds silently), so a quake
+is alerted once even though the feed carries it for a day and may revise its
+magnitude. Only quakes we actually act on are remembered, so a distant quake that
+later edges into range can still alert.
+"""
+from __future__ import annotations
+
+import logging
+import math
+
+import requests
+
+from .. import config, digest, ids, ntfy
+
+log = logging.getLogger(__name__)
+
+STATE_KEY = "quake_seen_ids"
+CAP = 300
+DEFAULT_URL = (
+    "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson"
+)
+HEADERS = {"User-Agent": "notify-watcher/1.0 (+https://github.com/) personal-use"}
+
+
+def _haversine_km(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+    """Great-circle distance in km between two lat/lon points."""
+    r = 6371.0
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dphi = math.radians(lat2 - lat1)
+    dlmb = math.radians(lon2 - lon1)
+    a = math.sin(dphi / 2) ** 2 + math.cos(p1) * math.cos(p2) * math.sin(dlmb / 2) ** 2
+    return 2 * r * math.asin(math.sqrt(a))
+
+
+def _classify(mag, dist_km: float, cfg: dict) -> str | None:
+    """Return 'live' | 'digest' | None for a quake of `mag` at `dist_km` away."""
+    if mag is None:
+        return None
+    mag = float(mag)
+    if dist_km <= float(cfg.get("live_radius_km", 600)) and mag >= float(cfg.get("live_min_mag", 4.5)):
+        return "live"
+    if dist_km <= float(cfg.get("digest_radius_km", 300)) and mag >= float(cfg.get("digest_min_mag", 3.0)):
+        return "digest"
+    return None
+
+
+def _evaluate(features: list, home: tuple[float, float], cfg: dict) -> list[tuple]:
+    """Pure: map USGS features to [(id, tier, mag, dist_km, place, url)] worth acting on."""
+    lat0, lon0 = home
+    out: list[tuple] = []
+    for f in features:
+        try:
+            fid = f.get("id")
+            props = f.get("properties") or {}
+            coords = (f.get("geometry") or {}).get("coordinates") or []
+            if not fid or len(coords) < 2:
+                continue
+            mag = props.get("mag")
+            lon, lat = float(coords[0]), float(coords[1])
+            dist = _haversine_km(lat0, lon0, lat, lon)
+            tier = _classify(mag, dist, cfg)
+            if tier:
+                out.append((fid, tier, float(mag), dist,
+                            props.get("place") or "", props.get("url") or ""))
+        except (TypeError, ValueError):
+            continue
+    return out
+
+
+def run(state: dict) -> dict:
+    loc = config.section("location")
+    lat, lon = loc.get("latitude"), loc.get("longitude")
+    if lat is None or lon is None:
+        log.info("no location configured; skipping quakes")
+        return state
+
+    cfg = config.section("quakes")
+    url = cfg.get("url") or DEFAULT_URL
+    try:
+        resp = requests.get(url, headers=HEADERS, timeout=30)
+        resp.raise_for_status()
+        features = resp.json().get("features") or []
+    except Exception as exc:  # noqa: BLE001 - a fetch/parse failure is non-fatal
+        log.error("USGS fetch failed: %s", exc)
+        return state
+    log.info("USGS: %d quake(s) in feed", len(features))
+
+    evaluated = _evaluate(features, (float(lat), float(lon)), cfg)
+
+    seen = state.get(STATE_KEY)
+    if seen is None:
+        # Baseline-only first run: remember every current event without alerting.
+        state[STATE_KEY] = [ids.short(f["id"]) for f in features if f.get("id")][:CAP]
+        log.info("seeded %s baseline with %d id(s) (no alerts on first run)",
+                 STATE_KEY, len(state[STATE_KEY]))
+        return state
+
+    seen = ids.normalize_seen(seen)
+    seen_set = set(seen)
+    fresh: list[str] = []
+    pushed = digested = 0
+    digest_cfg = config.section("digest")
+
+    for fid, tier, mag, dist, place, q_url in evaluated:
+        h = ids.short(fid)
+        if h in seen_set:
+            continue
+        seen_set.add(h)
+        fresh.append(h)
+        msg = f"M{mag:.1f} - {place} (~{dist:.0f} km away)"
+        if tier == "live":
+            ntfy.push(
+                title="Earthquake nearby",
+                message=msg,
+                click_url=q_url or None,
+                tags="ocean",
+                priority="urgent" if mag >= 6 else "high",
+            )
+            pushed += 1
+        else:
+            digest.add(state, {"title": msg, "url": q_url, "source": "Earthquakes",
+                               "score": max(1, round(mag))}, digest_cfg)
+            digested += 1
+
+    if pushed or digested:
+        log.info("quakes: %d live, %d digest", pushed, digested)
+
+    state[STATE_KEY] = (fresh + seen)[:CAP]
+    return state
