@@ -53,14 +53,15 @@
                  "hydrogen", "wind"],
     "sources": [
       {"name": "EIA Today in Energy", "url": "https://www.eia.gov/rss/todayinenergy.xml", "weight": "gov_data"},
-      {"name": "DOE Energy.gov", "url": "https://www.energy.gov/rss.xml", "weight": "agency"},
       {"name": "World Nuclear News", "url": "https://world-nuclear-news.org/rss", "weight": "trade"}
     ]
   },
 
+  "_digest_comment": "max_per_source caps how many items any one source (a film, game, or feed) may hold in the shared buffer, so a high-volume source can't evict the low-volume domain monitors before the daily flush. Evictions and the flush both rank by score, so the most important pending items survive and surface first.",
   "digest": {
-    "max_buffer": 50,
-    "max_items_in_message": 25
+    "max_buffer": 120,
+    "max_per_source": 8,
+    "max_items_in_message": 30
   },
 
   "games_scoring": {

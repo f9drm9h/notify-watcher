@@ -21,32 +21,64 @@ log = logging.getLogger(__name__)
 
 BUFFER_KEY = "digest_buffer"
 LAST_SENT_KEY = "digest_last_sent"
-_DEFAULT_MAX_BUFFER = 50
-_DEFAULT_MAX_IN_MSG = 25
+_DEFAULT_MAX_BUFFER = 120
+_DEFAULT_MAX_IN_MSG = 30
+_DEFAULT_MAX_PER_SOURCE = 8
 
 
 def _today() -> str:
     return _dt.date.today().isoformat()
 
 
-def add(state: dict, item: dict, cfg: dict) -> None:
-    """Append a moderate item to the buffer, keeping only the newest N.
+def _drop_lowest(buf: list, candidates=None) -> None:
+    """Remove the lowest-score buffered item, breaking ties toward the oldest.
 
-    `item` is {title, url, source, score}. The score is retained so the flush
-    can rank by importance (most significant first, least significant dropped on
-    overflow); a caller that omits it defaults to 0. The cap (digest.max_buffer)
-    bounds state.json growth; when full the oldest pending item is dropped.
+    `candidates` restricts the choice to those buffer indices (used by the
+    per-source cap); when None the whole buffer is considered (the global cap).
+    min() returns the first index achieving the minimum, i.e. the oldest among
+    equal-low scores, so a newer item of the same importance is kept over an
+    older one.
+    """
+    pool = candidates if candidates is not None else range(len(buf))
+    victim = min(pool, key=lambda i: buf[i].get("score", 0))
+    del buf[victim]
+
+
+def add(state: dict, item: dict, cfg: dict) -> None:
+    """Append a moderate item, evicting by importance so low-volume topics survive.
+
+    `item` is {title, url, source, score}; a caller that omits score defaults to
+    0. Two caps keep the buffer both bounded and FAIR, replacing the old plain
+    newest-N trim that let a high-volume source (a hot film/game) flood the
+    buffer and evict the low-volume domain monitors (FDA, energy) before the
+    once-a-day flush ever ran:
+
+      * max_per_source: no single source may hold more than this many items; when
+        adding one would exceed it, that source's lowest-score item is dropped,
+        so a chatty source can't monopolize the buffer and starve quieter ones.
+      * max_buffer: the global ceiling; when exceeded, the lowest-score item
+        across the whole buffer is dropped.
+
+    Both evictions drop by score (oldest on a tie) and the flush ranks by score,
+    so the most important pending items always survive and surface first.
     """
     buf: list = state.setdefault(BUFFER_KEY, [])
+    src = item.get("source", "")
     buf.append({
         "title": item.get("title", ""),
         "url": item.get("url", ""),
-        "source": item.get("source", ""),
+        "source": src,
         "score": int(item.get("score", 0) or 0),
     })
+
+    per_source = int(cfg.get("max_per_source", _DEFAULT_MAX_PER_SOURCE))
+    same = [i for i, it in enumerate(buf) if it.get("source") == src]
+    if len(same) > per_source:
+        _drop_lowest(buf, same)
+
     cap = int(cfg.get("max_buffer", _DEFAULT_MAX_BUFFER))
-    if len(buf) > cap:
-        del buf[:-cap]
+    while len(buf) > cap:
+        _drop_lowest(buf)
 
 
 def flush(state: dict, cfg: dict) -> bool:
