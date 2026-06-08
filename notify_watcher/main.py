@@ -104,13 +104,15 @@ TOPICS: list[tuple[str, Topic]] = [
     ("launches", launches.run),
     ("iss", iss.run),
     ("anthropic_news", anthropic_news.run),
+    # water nudges fire on several daytime slots across the 3-hourly grid, so it
+    # runs every cycle (not daily-only) and dedups per slot in state.
+    ("water", water.run),
     ("digest", digest_topic.run),
     ("health_tip", health_tip.run),
     # learn and reminders are daily-only too. Independent of digest, so order
     # among the daily-only topics doesn't matter.
     ("learn", learn.run),
     ("reminders", reminders.run),
-    ("water", water.run),
     ("blood_donation", blood_donation.run),
     # Daily-only "today" summaries: holiday heads-up, high-UV and rough-seas
     # alerts (threshold-gated), and the astronomy almanac.
