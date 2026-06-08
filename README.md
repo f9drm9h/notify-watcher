@@ -93,9 +93,11 @@ message and, when there are more than fit, the *least* important are dropped
   document/visa/ID expiry, subscription renewals, warranties, yearly birthdays.
   Fires once at each configured lead time (default 90/30/7/1/0 days before).
   Daily run only.
-- **Drink-water reminder** — one gentle hydration nudge each morning (no
-  network, no secrets). The phrasing rotates deterministically by day-of-year
-  for variety. Daily run only.
+- **Drink-water reminders** — gentle hydration nudges across the day (no
+  network, no secrets). Fires at several daytime slots on the every-3-hours grid
+  (12/15/18/21 UTC ≈ 08:00/11:00/14:00/17:00 DR), sending at most one push per
+  slot per day with the phrasing rotating per slot. Robust against dropped runs:
+  a late or skipped run sends only the latest due slot, never a catch-up burst.
 - **Daily health tip** — one evidence-based tip each morning from a curated,
   vetted knowledge base (`data/health_tips.json`, sourced from CDC/WHO/
   MedlinePlus). With an AI key set the vetted tip is optionally *reworded* for
