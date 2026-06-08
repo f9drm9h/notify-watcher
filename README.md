@@ -80,7 +80,9 @@ message and, when there are more than fit, the *least* important are dropped
 - **Nearby earthquakes** — reads the USGS feed (`monitors.json` → `quakes`, no
   key) and routes by magnitude **and** great-circle distance from your
   `location`: a strong, close quake pushes live; a smaller nearby one goes to
-  the digest; everything else is dropped.
+  the digest; everything else is dropped. A large, shallow quake within
+  `tsunami_radius_km` instead fires an urgent **tsunami heads-up** pointing to
+  tsunami.gov (the wide radius reflects how far tsunamis travel).
 - **Air quality** — checks the local US AQI via Open-Meteo (`monitors.json` →
   `air_quality`, no key) and alerts when the air enters an unhealthy band, at
   most once per worsening band per day.

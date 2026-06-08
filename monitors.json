@@ -8,12 +8,15 @@
   },
 
   "quakes": {
-    "_comment": "Nearby earthquakes (USGS). Routed by magnitude AND great-circle distance from location: live push within live_radius_km at >= live_min_mag, daily digest within digest_radius_km at >= digest_min_mag, else dropped.",
+    "_comment": "Nearby earthquakes (USGS). Routed by magnitude AND great-circle distance from location: live push within live_radius_km at >= live_min_mag, daily digest within digest_radius_km at >= digest_min_mag, else dropped. A large, shallow quake within tsunami_radius_km (>= tsunami_min_mag, depth <= tsunami_max_depth_km) instead fires an urgent 'check tsunami advisories' alert.",
     "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson",
     "live_radius_km": 600,
     "live_min_mag": 4.5,
     "digest_radius_km": 300,
-    "digest_min_mag": 3.0
+    "digest_min_mag": 3.0,
+    "tsunami_min_mag": 7.0,
+    "tsunami_max_depth_km": 70,
+    "tsunami_radius_km": 1500
   },
 
   "weather": {

@@ -13,9 +13,9 @@ CFG = {
 }
 
 
-def _feature(fid, mag, lat, lon, place="somewhere"):
+def _feature(fid, mag, lat, lon, place="somewhere", depth=10):
     return {"id": fid, "properties": {"mag": mag, "place": place,
-            "url": f"http://usgs/{fid}"}, "geometry": {"coordinates": [lon, lat, 10]}}
+            "url": f"http://usgs/{fid}"}, "geometry": {"coordinates": [lon, lat, depth]}}
 
 
 class HaversineTest(unittest.TestCase):
@@ -60,6 +60,31 @@ class EvaluateTest(unittest.TestCase):
         feats = [{"id": "x", "properties": {"mag": 5.0}, "geometry": {}},  # no coords
                  {"properties": {"mag": 5.0}, "geometry": {"coordinates": [0, 0]}}]  # no id
         self.assertEqual(quakes._evaluate(feats, HOME, CFG), [])
+
+    def test_tsunami_quake_included_beyond_normal_range(self):
+        # Big shallow quake ~1000 km north of SDE: beyond live_radius (600) but
+        # within tsunami_radius (1500) -> included with the tsunami flag set.
+        feats = [_feature("tsu", 7.5, 27.5, -69.82, "offshore", depth=10)]
+        rows = quakes._evaluate(feats, HOME, CFG)
+        self.assertEqual(len(rows), 1)
+        fid, tier, mag, dist, place, url, tsunami = rows[0]
+        self.assertTrue(tsunami)
+        self.assertIsNone(tier)          # outside the nearby live/digest radius
+        self.assertTrue(600 < dist < 1500)
+
+
+class TsunamiRiskTest(unittest.TestCase):
+    def test_big_shallow_near_is_risk(self):
+        self.assertTrue(quakes._tsunami_risk(7.2, 20, 800, CFG))
+
+    def test_big_but_deep_is_not(self):
+        self.assertFalse(quakes._tsunami_risk(7.2, 300, 800, CFG))
+
+    def test_big_but_too_far_is_not(self):
+        self.assertFalse(quakes._tsunami_risk(7.2, 20, 4000, CFG))
+
+    def test_moderate_magnitude_is_not(self):
+        self.assertFalse(quakes._tsunami_risk(6.0, 10, 100, CFG))
 
 
 if __name__ == "__main__":
