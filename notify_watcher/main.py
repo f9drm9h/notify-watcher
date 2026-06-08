@@ -42,6 +42,7 @@ from .topics import (
     twitch,
     uv,
     visa_bulletin,
+    water,
     weather,
     wwdc,
 )
@@ -109,6 +110,7 @@ TOPICS: list[tuple[str, Topic]] = [
     # among the daily-only topics doesn't matter.
     ("learn", learn.run),
     ("reminders", reminders.run),
+    ("water", water.run),
     ("blood_donation", blood_donation.run),
     # Daily-only "today" summaries: holiday heads-up, high-UV and rough-seas
     # alerts (threshold-gated), and the astronomy almanac.

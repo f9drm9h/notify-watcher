@@ -93,6 +93,9 @@ message and, when there are more than fit, the *least* important are dropped
   document/visa/ID expiry, subscription renewals, warranties, yearly birthdays.
   Fires once at each configured lead time (default 90/30/7/1/0 days before).
   Daily run only.
+- **Drink-water reminder** — one gentle hydration nudge each morning (no
+  network, no secrets). The phrasing rotates deterministically by day-of-year
+  for variety. Daily run only.
 - **Daily health tip** — one evidence-based tip each morning from a curated,
   vetted knowledge base (`data/health_tips.json`, sourced from CDC/WHO/
   MedlinePlus). With an AI key set the vetted tip is optionally *reworded* for
