@@ -18,6 +18,7 @@ from . import ntfy
 from . import state as state_mod
 from .topics import (
     air_quality,
+    blood_donation,
     deals,
     digest_topic,
     energy,
@@ -28,9 +29,11 @@ from .topics import (
     ios_release,
     learn,
     movies,
+    music,
     quakes,
     reminders,
     soundcore_pro,
+    twitch,
     visa_bulletin,
     weather,
     wwdc,
@@ -66,6 +69,10 @@ TOPICS: list[tuple[str, Topic]] = [
     ("ios_release", ios_release.run),
     ("movies", movies.run),
     ("games", games.run),
+    # twitch pings once per live session; music watches followed artists every
+    # run and adds one library-seeded discovery pick on the daily run.
+    ("twitch", twitch.run),
+    ("music", music.run),
     # soundcore_pro discovers new Liberty Pro products and appends them to
     # state["auto_products"]; deals runs next so a same-run discovery is
     # price-tracked immediately.
@@ -90,6 +97,7 @@ TOPICS: list[tuple[str, Topic]] = [
     # among the daily-only topics doesn't matter.
     ("learn", learn.run),
     ("reminders", reminders.run),
+    ("blood_donation", blood_donation.run),
 ]
 
 
