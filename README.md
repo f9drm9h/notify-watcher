@@ -102,6 +102,22 @@ message and, when there are more than fit, the *least* important are dropped
   general knowledge (`data/*.json`). The Wikimedia feed is fixed per date and
   the fact rotates by day-of-year, so the push is deterministic; each section
   degrades independently, so a feed outage still sends the rest. Daily run only.
+- **Rocket launches** — imminent orbital launches via Launch Library 2 (no key);
+  alerts once per launch within `launches.imminent_hours`, skipping routine ones
+  (Starlink by default).
+- **ISS passes** — visible-window passes of the space station over your location
+  via the g7vrd API (no key); alerts an evening/pre-dawn pass clearing
+  `iss.min_elevation_deg`, with local time, peak elevation, and direction.
+- **Anthropic releases** — official Anthropic posts (model launches, Claude Code
+  updates) via Google News filtered to Anthropic's own `<source>`. No key.
+- **DR public holidays** — heads-up before bank/office closures via Nager.Date
+  (no key), on the configured lead days. Daily run only.
+- **High-UV alert** — pushes when the day's max UV index reaches `uv.alert_uv`
+  (Open-Meteo, no key). Daily run only.
+- **Rough-seas alert** — pushes when the coast's max wave height reaches
+  `marine.rough_wave_m` (Open-Meteo Marine, no key). Daily run only.
+- **Astronomy almanac** — full/new moons (computed) plus meteor-shower peaks,
+  solstices/equinoxes, and eclipses from a built-in table. No network. Daily run.
 
 The daily digest, health tip, learning push, and reminders fire once a day, on
 the first scheduled run on/after 12:00 UTC (~08:00 in the Dominican Republic,
