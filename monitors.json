@@ -54,6 +54,39 @@
     "renotify_days": 30
   },
 
+  "holidays": {
+    "_comment": "Dominican Republic public holidays via Nager.Date (no key). Heads-up on each lead day before (and the day of, 0).",
+    "country": "DO",
+    "lead_days": [1, 0]
+  },
+
+  "uv": {
+    "_comment": "Daily max UV index for your location via Open-Meteo (no key). Pushes only when uv_index_max >= alert_uv. The DR runs ~8-9 in summer, so raise alert_uv if you only want extreme days.",
+    "alert_uv": 9
+  },
+
+  "marine": {
+    "_comment": "Daily sea state for the nearest coast via Open-Meteo Marine (no key). Pushes only when wave_height_max >= rough_wave_m (a rough-seas heads-up for beach/fishing days). Coast coords default to Boca Chica.",
+    "latitude": 18.45,
+    "longitude": -69.6,
+    "rough_wave_m": 2.0
+  },
+
+  "launches": {
+    "_comment": "Upcoming rocket launches via Launch Library 2 (no key). Alerts once per launch when it is within imminent_hours. skip_keywords drops routine launches (Starlink by default) to cut noise.",
+    "imminent_hours": 24,
+    "skip_keywords": ["Starlink"]
+  },
+
+  "iss": {
+    "_comment": "Visible-window ISS passes over your location via the g7vrd API (no key). Alerts a pass with max elevation >= min_elevation_deg that falls in an evening/pre-dawn viewing window.",
+    "min_elevation_deg": 30
+  },
+
+  "anthropic": {
+    "_comment": "Official Anthropic announcements (model releases, etc.) via Google News, filtered to posts whose source is Anthropic itself. No key."
+  },
+
   "scoring": {
     "source_weights": {
       "regulatory": 5,

@@ -18,6 +18,8 @@ from . import ntfy
 from . import state as state_mod
 from .topics import (
     air_quality,
+    anthropic_news,
+    astronomy,
     blood_donation,
     deals,
     digest_topic,
@@ -26,14 +28,19 @@ from .topics import (
     fx,
     games,
     health_tip,
+    holidays,
     ios_release,
+    iss,
+    launches,
     learn,
+    marine,
     movies,
     music,
     quakes,
     reminders,
     soundcore_pro,
     twitch,
+    uv,
     visa_bulletin,
     weather,
     wwdc,
@@ -91,6 +98,11 @@ TOPICS: list[tuple[str, Topic]] = [
     ("quakes", quakes.run),
     ("air_quality", air_quality.run),
     ("fx", fx.run),
+    # Timely alerters (run every cycle): imminent launches, ISS passes, and new
+    # official Anthropic posts. Each seeds silently and dedups.
+    ("launches", launches.run),
+    ("iss", iss.run),
+    ("anthropic_news", anthropic_news.run),
     ("digest", digest_topic.run),
     ("health_tip", health_tip.run),
     # learn and reminders are daily-only too. Independent of digest, so order
@@ -98,6 +110,12 @@ TOPICS: list[tuple[str, Topic]] = [
     ("learn", learn.run),
     ("reminders", reminders.run),
     ("blood_donation", blood_donation.run),
+    # Daily-only "today" summaries: holiday heads-up, high-UV and rough-seas
+    # alerts (threshold-gated), and the astronomy almanac.
+    ("holidays", holidays.run),
+    ("uv", uv.run),
+    ("marine", marine.run),
+    ("astronomy", astronomy.run),
 ]
 
 
