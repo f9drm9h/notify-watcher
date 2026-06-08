@@ -20,15 +20,21 @@ CONFIG = json.loads(
 MOVIES = CONFIG["movies_scoring"]
 
 # (headline, publisher, expected_route) where route is live / digest / drop.
+# Under high:7 / moderate:4, live requires an official-channel source plus a
+# strong signal, or two distinct strong signals; a single signal from an
+# unknown/tier1 outlet (e.g. a lone "trailer" or "delayed") routes to the daily
+# digest instead of pushing live. This is the deliberate noise cut from the
+# previous high:5/moderate:3 tuning, which sent almost every signal headline live.
 CASES = [
     ("Marvel confirms Avengers: Doomsday release date for May 2026", "Marvel", "live"),
-    ("Watch the new Superman teaser trailer", "", "live"),
-    ("The Batman Part II has been delayed to 2027", "", "live"),
-    ("First look at Pedro Pascal in Fantastic Four", "", "live"),
+    ("New Superman trailer reveals the premiere date", "", "live"),
+    ("Watch the new Superman teaser trailer", "", "digest"),
+    ("The Batman Part II has been delayed to 2027", "", "digest"),
+    ("First look at Pedro Pascal in Fantastic Four", "", "digest"),
     ("Pedro Pascal joins the cast of Dune 3", "", "digest"),
     ("Avatar 3 box office and a director interview", "Variety", "digest"),
-    ("New set photos from the Dune 3 shoot leak", "", "digest"),
-    ("Superman early reactions are in", "", "digest"),
+    ("New set photos from the Dune 3 shoot leak", "", "drop"),
+    ("Superman early reactions are in", "", "drop"),
     ("Here is why Blade could be delayed again", "", "drop"),
     ("Top 10 most anticipated movies of 2026 ranked", "", "drop"),
     ("10 reasons why The Batman 2 deserves a sequel", "", "drop"),

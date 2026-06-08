@@ -9,6 +9,7 @@ changes regardless of which path produced the body.
 """
 from __future__ import annotations
 
+import datetime as _dt
 import logging
 
 import feedparser
@@ -25,10 +26,31 @@ STATE_KEY = "wwdc_seen_urls"
 KEYWORDS = ("wwdc", "worldwide developers conference")
 MAX_REMEMBERED = 200  # cap state size; the feed only carries recent items
 
+# During WWDC week itself, the keynote announcement posts are titled by what was
+# announced ("Apple introduces iOS 26", "Apple unveils...") and contain NO
+# "WWDC" string, so the keyword match above misses every one of them. Inside the
+# window below we additionally match Apple's announcement verbs and OS-family
+# names — reliable signals for keynote coverage, and the bulk of Newsroom output
+# that week is WWDC-related anyway. Update WWDC_WEEK each year.
+WWDC_WEEK = (_dt.date(2026, 6, 8), _dt.date(2026, 6, 13))  # inclusive both ends
+WEEK_KEYWORDS = (
+    "introduces", "unveils", "announces", "debuts", "reveals", "previews",
+    "ios 26", "ipados", "macos", "watchos", "visionos", "tvos", "apple intelligence",
+)
 
-def _title_matches(title: str) -> bool:
+
+def _in_wwdc_week(today: _dt.date | None = None) -> bool:
+    today = today or _dt.date.today()
+    return WWDC_WEEK[0] <= today <= WWDC_WEEK[1]
+
+
+def _title_matches(title: str, today: _dt.date | None = None) -> bool:
     t = title.lower()
-    return any(k in t for k in KEYWORDS)
+    if any(k in t for k in KEYWORDS):
+        return True
+    if _in_wwdc_week(today) and any(k in t for k in WEEK_KEYWORDS):
+        return True
+    return False
 
 # --- Optional AI summary ----------------------------------------------------
 # The notification body becomes a one-line AI summary of the article when a
