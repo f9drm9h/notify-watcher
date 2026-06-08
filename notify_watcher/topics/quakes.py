@@ -53,8 +53,20 @@ def _classify(mag, dist_km: float, cfg: dict) -> str | None:
     return None
 
 
+def _tsunami_risk(mag, depth_km: float, dist_km: float, cfg: dict) -> bool:
+    """A large, shallow, undersea-ish quake within tsunami range warrants a
+    "check advisories" heads-up - tsunamis travel far, so the radius is wide and
+    independent of the normal nearby-quake tiering."""
+    if mag is None:
+        return False
+    return (float(mag) >= float(cfg.get("tsunami_min_mag", 7.0))
+            and depth_km <= float(cfg.get("tsunami_max_depth_km", 70))
+            and dist_km <= float(cfg.get("tsunami_radius_km", 1500)))
+
+
 def _evaluate(features: list, home: tuple[float, float], cfg: dict) -> list[tuple]:
-    """Pure: map USGS features to [(id, tier, mag, dist_km, place, url)] worth acting on."""
+    """Pure: map USGS features to [(id, tier, mag, dist_km, place, url, tsunami)]
+    worth acting on (a normal tier, or a tsunami-risk quake beyond that range)."""
     lat0, lon0 = home
     out: list[tuple] = []
     for f in features:
@@ -66,11 +78,13 @@ def _evaluate(features: list, home: tuple[float, float], cfg: dict) -> list[tupl
                 continue
             mag = props.get("mag")
             lon, lat = float(coords[0]), float(coords[1])
+            depth = float(coords[2]) if len(coords) > 2 and coords[2] is not None else 10.0
             dist = _haversine_km(lat0, lon0, lat, lon)
             tier = _classify(mag, dist, cfg)
-            if tier:
+            tsunami = _tsunami_risk(mag, depth, dist, cfg)
+            if tier or tsunami:
                 out.append((fid, tier, float(mag), dist,
-                            props.get("place") or "", props.get("url") or ""))
+                            props.get("place") or "", props.get("url") or "", tsunami))
         except (TypeError, ValueError):
             continue
     return out
@@ -107,17 +121,28 @@ def run(state: dict) -> dict:
     seen = ids.normalize_seen(seen)
     seen_set = set(seen)
     fresh: list[str] = []
-    pushed = digested = 0
+    pushed = digested = tsunamis = 0
     digest_cfg = config.section("digest")
 
-    for fid, tier, mag, dist, place, q_url in evaluated:
+    for fid, tier, mag, dist, place, q_url, tsunami in evaluated:
         h = ids.short(fid)
         if h in seen_set:
             continue
         seen_set.add(h)
         fresh.append(h)
         msg = f"M{mag:.1f} - {place} (~{dist:.0f} km away)"
-        if tier == "live":
+        if tsunami:
+            # Supersedes the normal quake push: a big shallow quake in range.
+            ntfy.push(
+                title="Possible tsunami risk",
+                message=(f"{msg}. Large shallow quake - check official advisories "
+                         f"at tsunami.gov and move to high ground if instructed."),
+                click_url="https://www.tsunami.gov/",
+                tags="warning",
+                priority="urgent",
+            )
+            tsunamis += 1
+        elif tier == "live":
             ntfy.push(
                 title="Earthquake nearby",
                 message=msg,
@@ -131,8 +156,8 @@ def run(state: dict) -> dict:
                                "score": max(1, round(mag))}, digest_cfg)
             digested += 1
 
-    if pushed or digested:
-        log.info("quakes: %d live, %d digest", pushed, digested)
+    if pushed or digested or tsunamis:
+        log.info("quakes: %d live, %d digest, %d tsunami", pushed, digested, tsunamis)
 
     state[STATE_KEY] = (fresh + seen)[:CAP]
     return state
