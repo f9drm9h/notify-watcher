@@ -1,6 +1,6 @@
 # Design — Lightweight dashboard
 
-**Status:** proposal (design-first; no code yet)
+**Status:** ✅ implemented — event-log sink (`eventlog.py`), topic-health/last-run telemetry (`main.py`), static renderer (`dashboard.py` → `docs/dashboard/index.html`), wired into `watch.yml`. Tests in `tests/test_eventlog.py`, `tests/test_dashboard.py`. **Remaining manual step:** enable GitHub Pages (Settings → Pages → Deploy from a branch → `main` / `/docs`).
 **Shares infrastructure with:** [01-change-summary-framework.md](01-change-summary-framework.md) — both build on the normalized `events.Event`.
 
 ## Constraints (from the task)

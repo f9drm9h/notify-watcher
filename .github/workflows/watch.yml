@@ -59,21 +59,28 @@ jobs:
           NOTIFY_DAILY: ${{ inputs.daily && '1' || '' }}
         run: python -m notify_watcher.main
 
-      - name: Commit updated state (if changed)
+      - name: Build dashboard
+        # Pure reader of the committed state -> docs/dashboard/index.html, which
+        # GitHub Pages serves (Settings -> Pages -> Deploy from branch, /docs). A
+        # build failure must never fail the run or block the state commit.
+        run: python -m notify_watcher.dashboard || echo "dashboard build failed (non-fatal)"
+
+      - name: Commit updated state + dashboard (if changed)
         run: |
-          if git diff --quiet -- state.json; then
-            echo "state.json unchanged, nothing to commit"
+          if git diff --quiet -- state.json docs/dashboard; then
+            echo "state.json and dashboard unchanged, nothing to commit"
             exit 0
           fi
           git config user.name  "notify-watcher-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add state.json
-          git commit -m "chore: update state [skip ci]"
+          git add state.json docs/dashboard
+          git commit -m "chore: update state + dashboard [skip ci]"
           # Push with rebase-and-retry: if a concurrent/queued run advanced the
           # branch between checkout and now, a bare push is rejected (non-fast-
-          # forward). Rebase our state commit onto the new remote tip and retry.
-          # state.json is the only file we touch, so the rebase is conflict-free
-          # in practice; --autostash keeps it safe if anything else is dirty.
+          # forward). Rebase our commit onto the new remote tip and retry. state.json
+          # and the generated dashboard are the only files we touch and the
+          # concurrency group serializes runs, so the rebase is conflict-free in
+          # practice; --autostash keeps it safe if anything else is dirty.
           branch="$(git rev-parse --abbrev-ref HEAD)"
           for attempt in 1 2 3 4 5; do
             if git push origin "HEAD:${branch}"; then
