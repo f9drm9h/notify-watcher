@@ -39,6 +39,7 @@ from .topics import (
     movies,
     music,
     quakes,
+    recap,
     reminders,
     soundcore_pro,
     twitch,
@@ -122,6 +123,9 @@ TOPICS: list[tuple[str, Topic]] = [
     # (populated by the collectors earlier this run) for its occasional news slot.
     ("energy_learn", energy_learn.run),
     ("reminders", reminders.run),
+    # recap is weekly: on the first daily run of each ISO week it summarizes the
+    # past week's event log + topic health into one Monday-morning push.
+    ("recap", recap.run),
     ("blood_donation", blood_donation.run),
     # Daily-only "today" summaries: holiday heads-up, high-UV and rough-seas
     # alerts (threshold-gated), and the astronomy almanac.
