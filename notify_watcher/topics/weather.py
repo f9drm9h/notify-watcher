@@ -19,7 +19,7 @@ import logging
 import feedparser
 import requests
 
-from .. import config, digest, ids, ntfy
+from .. import config, events, ids
 
 log = logging.getLogger(__name__)
 
@@ -83,7 +83,6 @@ def run(state: dict) -> dict:
     seen_set = set(seen)
     fresh: list[str] = []
     pushed = digested = 0
-    digest_cfg = config.section("digest")
 
     for key, tier, title, summary, link in classified:
         h = ids.short(key)
@@ -92,18 +91,31 @@ def run(state: dict) -> dict:
         seen_set.add(h)
         fresh.append(h)
         if tier == "live":
-            ntfy.push(
+            state = events.emit(
+                state,
                 title=f"Weather alert: {title}",
-                message=(summary[:300] or title),
+                body=(summary[:300] or title),
+                topic="weather",
+                severity="critical",
+                source="Weather",
                 click_url=link or None,
                 tags="cyclone",
-                priority="urgent",
+                legacy_priority="urgent",
+                legacy_action="push",
             )
             pushed += 1
         else:
             # Score above the entertainment digest tier so a brewing system leads.
-            digest.add(state, {"title": title, "url": link, "source": "Weather",
-                               "score": 6}, digest_cfg)
+            state = events.emit(
+                state,
+                title=title,
+                topic="weather",
+                severity="moderate",
+                source="Weather",
+                click_url=link,
+                score=6,
+                legacy_action="digest",
+            )
             digested += 1
 
     if pushed or digested:

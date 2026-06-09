@@ -15,11 +15,14 @@ import logging
 
 import requests
 
-from .. import config, ntfy
+from .. import config, events
 
 log = logging.getLogger(__name__)
 
 STATE_KEY = "air_quality_alert"  # {"date": "YYYY-MM-DD", "band": int}
+# ntfy priority (already chosen per AQI band) -> normalized Event severity, so
+# the Personal Priority Engine can weigh an air-quality alert across topics.
+_PRIO_SEVERITY = {"urgent": "critical", "high": "high", "default": "moderate", "low": "low"}
 API_URL = "https://air-quality-api.open-meteo.com/v1/air-quality"
 HEADERS = {"User-Agent": "notify-watcher/1.0 (+https://github.com/) personal-use"}
 
@@ -90,11 +93,16 @@ def run(state: dict) -> dict:
 
     if alert:
         pm25 = current.get("pm2_5")
-        ntfy.push(
+        state = events.emit(
+            state,
             title=f"Air quality: {label}",
-            message=f"US AQI {int(aqi)} ({label}). PM2.5 {pm25} ug/m3 in {loc.get('name', 'your area')}.",
+            body=f"US AQI {int(aqi)} ({label}). PM2.5 {pm25} ug/m3 in {loc.get('name', 'your area')}.",
+            topic="air_quality",
+            severity=_PRIO_SEVERITY.get(prio, "moderate"),
+            source="Air quality",
             tags="dash",
-            priority=prio,
+            legacy_priority=prio,
+            legacy_action="push",
         )
         state[STATE_KEY] = {"date": today, "band": idx}
 
