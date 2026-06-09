@@ -18,7 +18,7 @@ import datetime as _dt
 import logging
 import os
 
-from .. import kb, ntfy, summarize
+from .. import events, kb, summarize
 
 log = logging.getLogger(__name__)
 
@@ -56,7 +56,9 @@ def run(state: dict) -> dict:
     if src:
         body = f"{body} (Source: {src})"
 
-    ntfy.push(title="Health tip", message=body, tags="apple", priority="low")
+    events.emit(state, title="Health tip", body=body, topic="health_tip",
+                severity="low", source="Health", tags="apple",
+                legacy_priority="low", legacy_action="push")
     log.info("sent daily health tip")
     state[STATE_KEY] = _today()
     return state
