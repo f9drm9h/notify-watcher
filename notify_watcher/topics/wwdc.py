@@ -14,7 +14,7 @@ import logging
 
 import feedparser
 
-from .. import ntfy, summarize
+from .. import events, summarize
 
 log = logging.getLogger(__name__)
 
@@ -99,14 +99,25 @@ def run(state: dict) -> dict:
     if getattr(feed, "bozo", 0) and not feed.entries:
         raise RuntimeError(f"feed parse failed: {getattr(feed, 'bozo_exception', '')}")
 
-    seen: list[str] = list(state.get(STATE_KEY, []))
-    seen_set = set(seen)
-
     matched = [
         e for e in feed.entries
         if _title_matches(getattr(e, "title", ""))
     ]
     log.info("feed entries: %d, WWDC matches: %d", len(feed.entries), len(matched))
+
+    seen = state.get(STATE_KEY)
+    if seen is None:
+        # First run (or a reset/corrupt state): seed the current matches silently
+        # so we never blast the feed's backlog. Mirrors the seeding every other
+        # topic does; without it, a wiped state.json would re-push every WWDC item
+        # at once (and during WWDC week the WEEK_KEYWORDS match broadly).
+        state[STATE_KEY] = [eid for e in matched if (eid := _entry_id(e))][-MAX_REMEMBERED:]
+        log.info("seeded %s baseline with %d id(s) (no alerts on first run)",
+                 STATE_KEY, len(state[STATE_KEY]))
+        return state
+
+    seen = list(seen)
+    seen_set = set(seen)
 
     pushed = 0
     for entry in matched:
@@ -114,7 +125,9 @@ def run(state: dict) -> dict:
         if not eid or eid in seen_set:
             continue
         title, body, link = build_notification(entry)
-        ntfy.push(title=title, message=body, click_url=link, tags="apple")
+        events.emit(state, title=title, body=body, topic="wwdc",
+                    severity="moderate", source="Apple", click_url=link,
+                    tags="apple", legacy_action="push")
         seen.append(eid)
         seen_set.add(eid)
         pushed += 1

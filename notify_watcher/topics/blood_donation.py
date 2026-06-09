@@ -14,7 +14,7 @@ import logging
 import os
 from datetime import date, timedelta
 
-from .. import config, ntfy
+from .. import config, events
 
 log = logging.getLogger(__name__)
 
@@ -66,13 +66,18 @@ def run(state: dict) -> dict:
     if not notify:
         return state
 
-    ntfy.push(
+    events.emit(
+        state,
         title="Blood donation",
-        message=(f"You're eligible to donate blood again "
-                 f"(last donation {last_donation.isoformat()}, eligible since "
-                 f"{eligible.isoformat()})."),
+        body=(f"You're eligible to donate blood again "
+              f"(last donation {last_donation.isoformat()}, eligible since "
+              f"{eligible.isoformat()})."),
+        topic="blood_donation",
+        severity="moderate",
+        source="Blood donation",
         tags="drop_of_blood",
-        priority="default",
+        legacy_priority="default",
+        legacy_action="push",
     )
     log.info("blood donation: sent eligibility reminder")
     state[STATE_KEY] = today.isoformat()

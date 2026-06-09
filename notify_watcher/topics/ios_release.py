@@ -18,7 +18,7 @@ import logging
 
 import feedparser
 
-from .. import ntfy, summarize
+from .. import events, summarize
 
 log = logging.getLogger(__name__)
 
@@ -68,11 +68,22 @@ def run(state: dict) -> dict:
     if getattr(feed, "bozo", 0) and not feed.entries:
         raise RuntimeError(f"feed parse failed: {getattr(feed, 'bozo_exception', '')}")
 
-    seen: list[str] = list(state.get(STATE_KEY, []))
-    seen_set = set(seen)
-
     matched = [e for e in feed.entries if _is_wanted(getattr(e, "title", ""))]
     log.info("feed entries: %d, iOS/iPadOS releases: %d", len(feed.entries), len(matched))
+
+    seen = state.get(STATE_KEY)
+    if seen is None:
+        # First run (or a reset/corrupt state): seed the current releases silently
+        # so we never blast the feed's backlog. Mirrors the seeding every other
+        # topic does; without it, a wiped state.json would re-push every shipping
+        # iOS/iPadOS build the feed still carries at once.
+        state[STATE_KEY] = [eid for e in matched if (eid := _entry_id(e))][-MAX_REMEMBERED:]
+        log.info("seeded %s baseline with %d id(s) (no alerts on first run)",
+                 STATE_KEY, len(state[STATE_KEY]))
+        return state
+
+    seen = list(seen)
+    seen_set = set(seen)
 
     pushed = 0
     for entry in matched:
@@ -81,11 +92,16 @@ def run(state: dict) -> dict:
         if not eid or eid in seen_set:
             continue
         link = getattr(entry, "link", "")
-        ntfy.push(
+        state = events.emit(
+            state,
             title=f"Apple release: {title}",
-            message=_body(title),
+            body=_body(title),
+            topic="ios_release",
+            severity="moderate",
+            source="Apple",
             click_url=link or None,
             tags="iphone",
+            legacy_action="push",
         )
         seen.append(eid)
         seen_set.add(eid)

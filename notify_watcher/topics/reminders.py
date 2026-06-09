@@ -17,7 +17,7 @@ import os
 from datetime import date
 from pathlib import Path
 
-from .. import ntfy
+from .. import events
 
 log = logging.getLogger(__name__)
 
@@ -102,11 +102,16 @@ def run(state: dict) -> dict:
         body = f"{name} - {occ.isoformat()} ({when})"
         if note:
             body = f"{body}\n{note}"
-        ntfy.push(
+        events.emit(
+            state,
             title="Reminder",
-            message=body,
+            body=body,
+            topic="reminders",
+            severity="high" if days_left <= 7 else "moderate",
+            source="Reminders",
             tags="calendar",
-            priority="high" if days_left <= 7 else "default",
+            legacy_priority="high" if days_left <= 7 else "default",
+            legacy_action="push",
         )
         sent_set.add(key)
         sent_list.append(key)

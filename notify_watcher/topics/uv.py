@@ -14,7 +14,7 @@ import os
 
 import requests
 
-from .. import config, ntfy
+from .. import config, events
 
 log = logging.getLogger(__name__)
 
@@ -69,11 +69,16 @@ def run(state: dict) -> dict:
     if uv < alert_uv:
         return state
 
-    ntfy.push(
+    events.emit(
+        state,
         title=f"High UV today ({_describe(uv)})",
-        message=f"UV index will reach {uv:.0f}. Use sunscreen and limit midday sun.",
+        body=f"UV index will reach {uv:.0f}. Use sunscreen and limit midday sun.",
+        topic="uv",
+        severity="moderate",
+        source="UV",
         tags="sunny",
-        priority="default",
+        legacy_priority="default",
+        legacy_action="push",
     )
     state[STATE_KEY] = today
     return state

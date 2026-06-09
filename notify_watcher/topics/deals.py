@@ -30,7 +30,7 @@ import logging
 import requests
 from bs4 import BeautifulSoup
 
-from .. import ntfy, watchlist
+from .. import events, watchlist
 
 log = logging.getLogger(__name__)
 
@@ -205,11 +205,16 @@ def run(state: dict) -> dict:
             bucket[url] = price  # always store the latest reading
 
             if previous is None:
-                ntfy.push(
+                events.emit(
+                    state,
                     title=f"Now tracking: {name}",
-                    message=f"Current price: {_fmt(price, currency)}",
+                    body=f"Current price: {_fmt(price, currency)}",
+                    topic="deals",
+                    severity="low",
+                    source=name,
                     click_url=url,
                     tags="shopping",
+                    legacy_action="push",
                 )
                 continue
 
@@ -219,11 +224,16 @@ def run(state: dict) -> dict:
                 line = f"Price dropped: {_fmt(previous, currency)} -> {_fmt(price, currency)}"
                 if meets_target:
                     line += f" (at or below your target {_fmt(float(target), currency)})"
-                ntfy.push(
+                events.emit(
+                    state,
                     title=f"Deal: {name}",
-                    message=line,
+                    body=line,
+                    topic="deals",
+                    severity="moderate",
+                    source=name,
                     click_url=url,
                     tags="moneybag",
+                    legacy_action="push",
                 )
             # A price rise just updates the baseline above; no notification.
         except Exception as exc:  # noqa: BLE001 - isolate each product

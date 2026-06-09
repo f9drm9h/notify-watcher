@@ -30,7 +30,7 @@ import os
 
 import requests
 
-from .. import kb, ntfy, summarize
+from .. import events, kb, summarize
 
 log = logging.getLogger(__name__)
 
@@ -158,12 +158,17 @@ def run(state: dict) -> dict:
         log.warning("learning push has nothing to send today; skipping")
         return state
 
-    ntfy.push(
+    events.emit(
+        state,
         title="Daily learning",
-        message=_compose(sections),
+        body=_compose(sections),
+        topic="learn",
+        severity="low",
+        source="Learning",
         click_url=click_url,
         tags="books",
-        priority="low",
+        legacy_priority="low",
+        legacy_action="push",
     )
     log.info("sent daily learning push (%d section(s))", len(sections))
     state[STATE_KEY] = _today()

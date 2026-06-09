@@ -27,6 +27,7 @@ from .topics import (
     fda,
     fx,
     games,
+    habits,
     health_tip,
     holidays,
     ios_release,
@@ -75,6 +76,8 @@ TOPICS: list[tuple[str, Topic]] = [
     ("wwdc", wwdc.run),
     ("ios_release", ios_release.run),
     ("movies", movies.run),
+    # games is weekly: it self-gates to the first daily run of each ISO week
+    # (see games.run), batching release-date + news updates into one catch-up.
     ("games", games.run),
     # twitch pings once per live session; music watches followed artists every
     # run and adds one library-seeded discovery pick on the daily run.
@@ -103,6 +106,10 @@ TOPICS: list[tuple[str, Topic]] = [
     ("launches", launches.run),
     ("iss", iss.run),
     ("anthropic_news", anthropic_news.run),
+    # habit nudges (water, etc. from habits.json) fire on several daytime slots
+    # across the 3-hourly grid, so this runs every cycle (not daily-only) and
+    # dedups per slot per habit in state.
+    ("habits", habits.run),
     ("digest", digest_topic.run),
     ("health_tip", health_tip.run),
     # learn and reminders are daily-only too. Independent of digest, so order

@@ -19,7 +19,7 @@ import math
 
 import requests
 
-from .. import config, digest, ids, ntfy
+from .. import config, events, ids
 
 log = logging.getLogger(__name__)
 
@@ -112,9 +112,13 @@ def run(state: dict) -> dict:
 
     seen = state.get(STATE_KEY)
     if seen is None:
-        # Baseline-only first run: remember every current event without alerting.
-        state[STATE_KEY] = [ids.short(f["id"]) for f in features if f.get("id")][:CAP]
-        log.info("seeded %s baseline with %d id(s) (no alerts on first run)",
+        # Baseline-only first run: remember only the quakes we'd act on right now,
+        # NOT every event in the feed. A quake currently too small/far to alert is
+        # deliberately left unseen, so if a later feed revises its magnitude up (or
+        # it edges into range) it can still alert. This matches the steady-state
+        # loop below, which only ever records acted-on (evaluated) ids.
+        state[STATE_KEY] = [ids.short(e[0]) for e in evaluated][:CAP]
+        log.info("seeded %s baseline with %d acted-on id(s) (no alerts on first run)",
                  STATE_KEY, len(state[STATE_KEY]))
         return state
 
@@ -122,7 +126,6 @@ def run(state: dict) -> dict:
     seen_set = set(seen)
     fresh: list[str] = []
     pushed = digested = tsunamis = 0
-    digest_cfg = config.section("digest")
 
     for fid, tier, mag, dist, place, q_url, tsunami in evaluated:
         h = ids.short(fid)
@@ -133,27 +136,45 @@ def run(state: dict) -> dict:
         msg = f"M{mag:.1f} - {place} (~{dist:.0f} km away)"
         if tsunami:
             # Supersedes the normal quake push: a big shallow quake in range.
-            ntfy.push(
+            state = events.emit(
+                state,
                 title="Possible tsunami risk",
-                message=(f"{msg}. Large shallow quake - check official advisories "
-                         f"at tsunami.gov and move to high ground if instructed."),
+                body=(f"{msg}. Large shallow quake - check official advisories "
+                      f"at tsunami.gov and move to high ground if instructed."),
+                topic="quakes",
+                severity="critical",
+                source="Earthquakes",
                 click_url="https://www.tsunami.gov/",
                 tags="warning",
-                priority="urgent",
+                legacy_priority="urgent",
+                legacy_action="push",
             )
             tsunamis += 1
         elif tier == "live":
-            ntfy.push(
+            state = events.emit(
+                state,
                 title="Earthquake nearby",
-                message=msg,
+                body=msg,
+                topic="quakes",
+                severity="critical" if mag >= 6 else "high",
+                source="Earthquakes",
                 click_url=q_url or None,
                 tags="ocean",
-                priority="urgent" if mag >= 6 else "high",
+                legacy_priority="urgent" if mag >= 6 else "high",
+                legacy_action="push",
             )
             pushed += 1
         else:
-            digest.add(state, {"title": msg, "url": q_url, "source": "Earthquakes",
-                               "score": max(1, round(mag))}, digest_cfg)
+            state = events.emit(
+                state,
+                title=msg,
+                topic="quakes",
+                severity="moderate",
+                source="Earthquakes",
+                click_url=q_url,
+                score=max(1, round(mag)),
+                legacy_action="digest",
+            )
             digested += 1
 
     if pushed or digested or tsunamis:

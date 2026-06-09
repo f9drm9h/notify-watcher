@@ -7,6 +7,76 @@
     "timezone": "America/Santo_Domingo"
   },
 
+  "quiet_hours": {
+    "_comment": "Overnight do-not-disturb. When enabled, pushes at low/default/min priority are dropped silently between start and end (local time = UTC + utc_offset_hours; DR is -4, no DST). High/urgent alerts (earthquakes, hurricanes, tsunami advisories) always ring through, and the manual test push is never suppressed. Disabled by default; set enabled=true to turn it on. Times are 'HH:MM' 24h; the window may wrap midnight.",
+    "enabled": false,
+    "start": "22:00",
+    "end": "07:00",
+    "utc_offset_hours": -4
+  },
+
+  "priority": {
+    "_comment": "Personal Priority Engine. Every topic emits a normalized event; the first matching rule sets a cross-topic score (default if none), boosts add, overrides clamp. score>=threshold pushes now (ntfy priority from ntfy_bands: >=90 urgent, >=70 high, else default - and quiet_hours holds default/low overnight while high/urgent ring through); digest_floor<=score<threshold buffers to the daily digest; below digest_floor is dropped. Rules match by topic and optional severity (info<low<moderate<high<critical). Remove this whole section to turn the engine OFF (every topic reverts to its legacy push/digest).",
+    "threshold": 60,
+    "digest_floor": 25,
+    "default": 30,
+    "ntfy_bands": { "90": "urgent", "70": "high", "0": "default" },
+    "rules": [
+      { "topic": "visa_bulletin", "score": 100 },
+      { "topic": "weather", "severity": "critical", "score": 95 },
+      { "topic": "quakes", "severity": "critical", "score": 95 },
+      { "topic": "air_quality", "severity": "critical", "score": 90 },
+      { "topic": "quakes", "severity": "high", "score": 80 },
+      { "topic": "fda", "severity": "critical", "score": 78 },
+      { "topic": "reminders", "severity": "high", "score": 75 },
+      { "topic": "air_quality", "severity": "high", "score": 72 },
+      { "topic": "fda", "severity": "high", "score": 70 },
+
+      { "topic": "twitch", "score": 68 },
+      { "topic": "games", "severity": "critical", "score": 66 },
+      { "topic": "games", "severity": "high", "score": 64 },
+      { "topic": "movies", "severity": "critical", "score": 64 },
+      { "topic": "anthropic_news", "score": 64 },
+      { "topic": "habits", "score": 64 },
+      { "topic": "energy", "severity": "critical", "score": 64 },
+      { "topic": "movies", "severity": "high", "score": 62 },
+      { "topic": "iss", "score": 62 },
+      { "topic": "launches", "score": 62 },
+      { "topic": "energy", "severity": "high", "score": 60 },
+      { "topic": "air_quality", "severity": "moderate", "score": 60 },
+      { "topic": "health_tip", "score": 60 },
+      { "topic": "learn", "score": 60 },
+      { "topic": "astronomy", "score": 60 },
+
+      { "topic": "weather", "severity": "moderate", "score": 50 },
+      { "topic": "wwdc", "score": 45 },
+      { "topic": "reminders", "severity": "moderate", "score": 45 },
+      { "topic": "fx", "score": 45 },
+      { "topic": "holidays", "score": 45 },
+      { "topic": "blood_donation", "score": 45 },
+      { "topic": "deals", "severity": "moderate", "score": 42 },
+      { "topic": "uv", "score": 40 },
+      { "topic": "quakes", "severity": "moderate", "score": 40 },
+      { "topic": "fda", "severity": "moderate", "score": 40 },
+      { "topic": "ios_release", "score": 40 },
+      { "topic": "music", "severity": "moderate", "score": 40 },
+      { "topic": "marine", "score": 38 },
+      { "topic": "energy", "severity": "moderate", "score": 35 },
+      { "topic": "games", "severity": "moderate", "score": 35 },
+      { "topic": "soundcore_pro", "score": 35 },
+      { "topic": "movies", "severity": "moderate", "score": 33 },
+
+      { "topic": "music", "severity": "low", "score": 22 },
+      { "topic": "deals", "severity": "low", "score": 20 },
+      { "topic": "movies", "severity": "low", "score": 15 }
+    ],
+    "keyword_boosts": [
+      { "terms": ["tsunami", "evacuate", "evacuation"], "add": 15 }
+    ],
+    "source_boosts": [],
+    "overrides": []
+  },
+
   "quakes": {
     "_comment": "Nearby earthquakes (USGS). Routed by magnitude AND great-circle distance from location: live push within live_radius_km at >= live_min_mag, daily digest within digest_radius_km at >= digest_min_mag, else dropped. A large, shallow quake within tsunami_radius_km (>= tsunami_min_mag, depth <= tsunami_max_depth_km) instead fires an urgent 'check tsunami advisories' alert.",
     "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson",
@@ -130,6 +200,7 @@
   },
 
   "fda": {
+    "_comment": "New drug/biologic approvals (openFDA Drugs@FDA). Drugs@FDA carries NO indication/disease field, so these keywords are matched against the brand name + active ingredient(s) only, NOT the treated condition. Scoring is additive (a keyword hit boosts, it never gates), and a 'regulatory' source weight plus the 'approves' action term already clears the live tier, so EVERY original NDA/BLA approval alerts regardless of disease area; the keywords serve to surface agent matches (e.g. 'vaccine', 'influenza', 'hepatitis', 'gene therapy' can match an active ingredient) rather than to filter. application_types limits to NDA new drugs and BLA biologics (excludes high-volume ANDA generics).",
     "source_weight": "regulatory",
     "application_types": ["NDA", "BLA"],
     "url": "https://api.fda.gov/drug/drugsfda.json?search=submissions.submission_status:AP&sort=submissions.submission_status_date:desc&limit=25",

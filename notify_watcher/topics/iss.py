@@ -18,7 +18,7 @@ try:
 except Exception:  # noqa: BLE001 - py<3.9 fallback (not expected on CI)
     ZoneInfo = None  # type: ignore
 
-from .. import config, ids, ntfy
+from .. import config, events, ids
 
 log = logging.getLogger(__name__)
 
@@ -123,12 +123,17 @@ def run(state: dict) -> dict:
             continue
         seen_set.add(h)
         fresh.append(h)
-        ntfy.push(
+        state = events.emit(
+            state,
             title="ISS pass overhead",
-            message=(f"Visible pass at {local.strftime('%I:%M %p').lstrip('0')} - "
-                     f"max {max_el:.0f}deg, {rise_dir} to {set_dir}. Look up!"),
+            body=(f"Visible pass at {local.strftime('%I:%M %p').lstrip('0')} - "
+                  f"max {max_el:.0f}deg, {rise_dir} to {set_dir}. Look up!"),
+            topic="iss",
+            severity="low",
+            source="ISS",
             tags="satellite",
-            priority="low",
+            legacy_priority="low",
+            legacy_action="push",
         )
         pushed += 1
 

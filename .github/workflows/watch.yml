@@ -69,4 +69,19 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git add state.json
           git commit -m "chore: update state [skip ci]"
-          git push
+          # Push with rebase-and-retry: if a concurrent/queued run advanced the
+          # branch between checkout and now, a bare push is rejected (non-fast-
+          # forward). Rebase our state commit onto the new remote tip and retry.
+          # state.json is the only file we touch, so the rebase is conflict-free
+          # in practice; --autostash keeps it safe if anything else is dirty.
+          branch="$(git rev-parse --abbrev-ref HEAD)"
+          for attempt in 1 2 3 4 5; do
+            if git push origin "HEAD:${branch}"; then
+              echo "pushed state on attempt ${attempt}"
+              exit 0
+            fi
+            echo "push rejected (attempt ${attempt}); rebasing on origin/${branch} and retrying"
+            git pull --rebase --autostash origin "${branch}" || true
+          done
+          echo "could not push state.json after 5 attempts" >&2
+          exit 1

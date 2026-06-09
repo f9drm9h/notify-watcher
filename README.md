@@ -32,7 +32,7 @@ Topics:
   change. Needs `TMDB_API_KEY`.
 - **Game release dates** — for each title in `watchlist.json` → `games`,
   tracks its RAWG release date and alerts the same way (a date change is a
-  high-priority push). Needs `RAWG_API_KEY`.
+  high-priority push). Needs `RAWG_API_KEY`. _Checked weekly (see below)._
 - **Game news (scored)** — for each game title, queries Google News (no key),
   keeps only headlines specifically about that game, then runs each through the
   `games_scoring` config in `monitors.json` instead of pushing everything:
@@ -41,6 +41,8 @@ Topics:
   updates go to the **daily digest**; opinion, ranking lists, speculation, and
   passing mentions are **dropped**. Trusted/official outlets carry more weight.
   Tuning the keywords and weights is a `monitors.json` edit, not a code change.
+  Both game checks run **weekly** — once per ISO week, on the first daily run of
+  the week — so game updates arrive as one batched catch-up rather than a drip.
 - **Twitch live** — for each handle in `monitors.json` → `twitch.streamers`,
   checks live status via decapi.me (no key) and pushes once per live session
   (with the game + stream title), re-arming after they go offline.
@@ -93,6 +95,14 @@ message and, when there are more than fit, the *least* important are dropped
   document/visa/ID expiry, subscription renewals, warranties, yearly birthdays.
   Fires once at each configured lead time (default 90/30/7/1/0 days before).
   Daily run only.
+- **Habit nudges** — gentle recurring reminders from `habits.json` (no network,
+  no secrets). Each habit fires at several daytime slots on the every-3-hours
+  grid (e.g. 12/15/18/21 UTC ≈ 08:00/11:00/14:00/17:00 DR), at most one push per
+  slot per day, phrasing rotating per slot. Robust against dropped runs: a late
+  or skipped run sends only the latest due slot, never a catch-up burst. A
+  **drink-water** nudge ships enabled; **stand-up** and **eye-rest** ship as
+  ready-to-enable examples. Adding or tuning a nudge is a `habits.json` edit
+  (`name`/`title`/`tag`/`hours`/`messages`/`enabled`), not a code change.
 - **Daily health tip** — one evidence-based tip each morning from a curated,
   vetted knowledge base (`data/health_tips.json`, sourced from CDC/WHO/
   MedlinePlus). With an AI key set the vetted tip is optionally *reworded* for
@@ -123,11 +133,19 @@ message and, when there are more than fit, the *least* important are dropped
 
 The daily digest, health tip, learning push, and reminders fire once a day, on
 the first scheduled run on/after 12:00 UTC (~08:00 in the Dominican Republic,
-UTC−4); the collectors run on the normal every-3-hours schedule. The daily work
-is gated in code by the UTC clock (`main._is_daily_run`), not a dedicated cron,
-because GitHub Actions silently drops scheduled runs. Adding a curated learning
-channel is just a new `data/*.json` file referenced from
+UTC−4); the collectors run on the normal every-3-hours schedule. The game checks
+fire once a *week*, on the first daily run of each ISO week. The daily/weekly
+work is gated in code by the clock (`main._is_daily_run`, `games._iso_week`), not
+a dedicated cron, because GitHub Actions silently drops scheduled runs. Adding a
+curated learning channel is just a new `data/*.json` file referenced from
 `notify_watcher/topics/learn.py`.
+
+**Quiet hours (optional).** Set `monitors.json` → `quiet_hours.enabled` to
+`true` to silence overnight pushes: any `low`/`default` notification between
+`start` and `end` (local time = UTC + `utc_offset_hours`) is dropped, while
+`high`/`urgent` safety alerts always ring through and the manual test push is
+never suppressed. Disabled by default, and any malformed config fails open
+(sends), so it can never silently swallow your alerts.
 
 The app is structured so adding more topics later is a small change in
 `notify_watcher/main.py`.
@@ -332,8 +350,10 @@ notify-watcher/
 │       ├── deals.py                 JSON-LD price-drop watcher (watchlist + auto)
 │       ├── soundcore_pro.py         sitemap discovery of new Liberty Pro products
 │       ├── movies.py                TMDb release dates (watchlist)
-│       └── games.py                 RAWG release dates (watchlist)
+│       ├── games.py                 RAWG release dates (watchlist, weekly)
+│       └── habits.py                config-driven daytime habit nudges
 ├── watchlist.json                   movie/game titles + products you want tracked
+├── habits.json                      recurring habit nudges (water, stand, eyes)
 ├── state.json                       dedup memory (committed by workflow)
 ├── requirements.txt
 └── README.md

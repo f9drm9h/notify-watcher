@@ -24,7 +24,7 @@ from pathlib import Path
 
 import requests
 
-from .. import config, ids, ntfy
+from .. import config, events, ids
 
 log = logging.getLogger(__name__)
 
@@ -76,12 +76,17 @@ def _releases(state: dict) -> dict:
                 fresh.append(h)
                 if first_run:
                     continue  # seed silently
-                ntfy.push(
+                events.emit(
+                    state,
                     title=f"New from {name}",
-                    message=f"{alb.get('title', '')} ({alb.get('release_date', '')})".strip(),
+                    body=f"{alb.get('title', '')} ({alb.get('release_date', '')})".strip(),
+                    topic="music",
+                    severity="moderate",
+                    source=name,
                     click_url=alb.get("link") or None,
                     tags="musical_note",
-                    priority="default",
+                    legacy_priority="default",
+                    legacy_action="push",
                 )
                 pushed += 1
         except Exception as exc:  # noqa: BLE001 - isolate each artist
@@ -131,7 +136,10 @@ def _discovery(state: dict) -> dict:
     if not seed_artists:
         return state
 
-    seen_ids = set(state.get(DISCOVERY_SEEN_KEY) or [])
+    # Keep an insertion-ordered list (newest last) for a deterministic CAP trim,
+    # plus a set built from it for O(1) "already recommended?" lookups.
+    seen_list = list(state.get(DISCOVERY_SEEN_KEY) or [])
+    seen_ids = set(seen_list)
     seed_set = {a.lower() for a in seed_artists}
     doy = _dt.date.today().timetuple().tm_yday
 
@@ -161,15 +169,22 @@ def _discovery(state: dict) -> dict:
         title = track.get("title") if track else None
         link = (track.get("link") if track else None) or rec.get("link")
         msg = f"{title} - {rec['name']}" if title else rec["name"]
-        ntfy.push(
+        events.emit(
+            state,
             title="Music discovery",
-            message=f"{msg}\n(because you like {seed})",
+            body=f"{msg}\n(because you like {seed})",
+            topic="music",
+            severity="low",
+            source="Music",
             click_url=link or None,
             tags="headphones",
-            priority="low",
+            legacy_priority="low",
+            legacy_action="push",
         )
-        seen_ids.add(rec["id"])
-        state[DISCOVERY_SEEN_KEY] = list(seen_ids)[-CAP:]
+        # Append (rec is, by construction, not already in seen_ids) and keep the
+        # newest CAP entries — deterministic, unlike slicing a set-derived list.
+        seen_list.append(rec["id"])
+        state[DISCOVERY_SEEN_KEY] = seen_list[-CAP:]
         log.info("music discovery: recommended %r (seed %r)", rec["name"], seed)
     except Exception as exc:  # noqa: BLE001
         log.error("music discovery push failed: %s", exc)

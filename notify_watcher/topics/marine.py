@@ -14,7 +14,7 @@ import os
 
 import requests
 
-from .. import config, ntfy
+from .. import config, events
 
 log = logging.getLogger(__name__)
 
@@ -58,11 +58,16 @@ def run(state: dict) -> dict:
     if wave < rough:
         return state
 
-    ntfy.push(
+    events.emit(
+        state,
         title="Rough seas today",
-        message=f"Waves up to {wave:.1f} m off the coast today. Take care at the beach.",
+        body=f"Waves up to {wave:.1f} m off the coast today. Take care at the beach.",
+        topic="marine",
+        severity="moderate",
+        source="Marine",
         tags="ocean",
-        priority="default",
+        legacy_priority="default",
+        legacy_action="push",
     )
     state[STATE_KEY] = today
     return state
