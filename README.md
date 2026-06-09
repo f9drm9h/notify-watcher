@@ -165,10 +165,14 @@ curated learning channel is just a new `data/*.json` file referenced from
 
 **Quiet hours (optional).** Set `monitors.json` → `quiet_hours.enabled` to
 `true` to silence overnight pushes: any `low`/`default` notification between
-`start` and `end` (local time = UTC + `utc_offset_hours`) is dropped, while
-`high`/`urgent` safety alerts always ring through and the manual test push is
-never suppressed. Disabled by default, and any malformed config fails open
-(sends), so it can never silently swallow your alerts.
+`start` and `end` (local time = UTC + `utc_offset_hours`) is **deferred into
+the daily digest** — it arrives with the morning flush instead of waking you —
+while `high`/`urgent` safety alerts always ring through and the manual test
+push is never suppressed. Set `defer_to_digest` to `false` if you'd rather
+overnight pushes be dropped outright. Disabled by default, and any malformed
+config fails open (sends), so it can never silently swallow your alerts. One
+caveat: time-sensitive overnight pushes below the high band (e.g. a pre-dawn
+ISS pass) arrive after the fact when deferred.
 
 The app is structured so adding more topics later is a small change in
 `notify_watcher/main.py`.
