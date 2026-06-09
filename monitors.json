@@ -50,6 +50,7 @@
       { "topic": "energy_learn", "score": 60 },
       { "topic": "recap", "score": 60 },
       { "topic": "astronomy", "score": 60 },
+      { "topic": "apod", "score": 60 },
 
       { "topic": "weather", "severity": "moderate", "score": 50 },
       { "topic": "wwdc", "score": 45 },

@@ -102,6 +102,7 @@ class TitlePrefixTest(unittest.TestCase):
             "click_url": "https://fda.gov/x",
             "tags": "zap",
             "priority": "high",
+            "attach_url": None,
         })
 
     def test_title_prefix_drops_separator_when_source_blank(self):
@@ -135,6 +136,7 @@ class BackwardCompatTest(unittest.TestCase):
             "click_url": "https://apple.com/x",
             "tags": "iphone",
             "priority": None,
+            "attach_url": None,
         })
 
     def test_legacy_push_preserves_explicit_priority(self):

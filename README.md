@@ -133,6 +133,11 @@ message and, when there are more than fit, the *least* important are dropped
   `marine.rough_wave_m` (Open-Meteo Marine, no key). Daily run only.
 - **Astronomy almanac** — full/new moons (computed) plus meteor-shower peaks,
   solstices/equinoxes, and eclipses from a built-in table. No network. Daily run.
+- **NASA picture of the day** — the day's Astronomy Picture of the Day, with
+  the image attached inline in the notification (tap for the HD version; video
+  days attach the thumbnail and link the video). Works without any key via
+  NASA's shared `DEMO_KEY` quota; set a free `NASA_API_KEY` secret
+  (api.nasa.gov) for your own quota. Daily run only.
 - **Weekly recap** — one Monday-morning push summarizing the past week from the
   event log: live pushes vs. digested vs. dropped, the busiest topics, the
   highest-priority story, and whether every topic is healthy. No network, no
