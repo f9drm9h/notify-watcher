@@ -59,6 +59,18 @@ class EngineOnTest(unittest.TestCase):
         self.assertEqual(buf[0]["source"], "Apple")
         self.assertEqual(buf[0]["score"], 40)  # the GLOBAL priority score
 
+    def test_digest_item_carries_body_as_detail(self):
+        # A body-informative topic routed to the digest keeps its body as detail.
+        state: dict = {}
+        with capture_pushes():
+            events.emit(
+                state, title="Public holiday", body="Christmas (in 1 day)",
+                topic="holidays", source="Holidays",
+                priority_cfg={"threshold": 60, "digest_floor": 25, "default": 40},
+                digest_cfg=DIGEST_CFG,
+            )
+        self.assertEqual(state[digest.BUFFER_KEY][0]["detail"], "Christmas (in 1 day)")
+
     def test_below_floor_drops_silently(self):
         state: dict = {}
         with capture_pushes() as sent:

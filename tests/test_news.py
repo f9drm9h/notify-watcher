@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import unittest
+from unittest import mock
 
 from notify_watcher import digest, news
 from tests._util import capture_pushes
@@ -34,6 +35,14 @@ class SourceWeightKeyTest(unittest.TestCase):
 
 
 class RouteTest(unittest.TestCase):
+    def setUp(self):
+        # Pin the Personal Priority Engine OFF so these tests exercise route's
+        # LEGACY tier routing; monitors.json now ships a `priority` section that
+        # emit would otherwise read (via config.section) and apply.
+        p = mock.patch("notify_watcher.config.section", return_value={})
+        p.start()
+        self.addCleanup(p.stop)
+
     def _route(self, state, bucket, title, arts):
         news.route(
             state, bucket=bucket, title=title, articles=arts,

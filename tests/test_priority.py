@@ -158,5 +158,38 @@ class FailSoftTest(unittest.TestCase):
         self.assertEqual((d.action, d.score), ("digest", 30))
 
 
+class ShippedConfigTest(unittest.TestCase):
+    """Lock the LIVE monitors.json priority section to the worked example, so a
+    future edit that breaks the engine's routing is caught in CI."""
+
+    @classmethod
+    def setUpClass(cls):
+        from notify_watcher import config
+        cls.cfg = config.section("priority")
+
+    def _d(self, **kw):
+        return priority.decide(ev(**kw), self.cfg)
+
+    def test_engine_is_on(self):
+        self.assertTrue(self.cfg, "monitors.json must ship a `priority` section")
+
+    def test_worked_example_anchors(self):
+        self.assertEqual(self._d(topic="visa_bulletin").ntfy_priority, "urgent")
+        self.assertEqual(self._d(topic="weather", severity="critical").action, "push")
+        self.assertEqual(self._d(topic="quakes", severity="critical").ntfy_priority, "urgent")
+        self.assertEqual(self._d(topic="fda", severity="high").action, "push")
+        self.assertEqual(self._d(topic="ios_release").action, "digest")
+        self.assertEqual(self._d(topic="movies", severity="low").action, "drop")
+
+    def test_heads_up_topics_digest(self):
+        for t in ("holidays", "blood_donation", "fx", "uv", "marine"):
+            self.assertEqual(self._d(topic=t).action, "digest", t)
+
+    def test_safety_rings_through_quiet_hours(self):
+        # urgent/high bypass quiet hours; default does not.
+        self.assertIn(self._d(topic="quakes", severity="high").ntfy_priority, ("high", "urgent"))
+        self.assertEqual(self._d(topic="twitch").ntfy_priority, "default")  # pushes, quiet-respecting
+
+
 if __name__ == "__main__":
     unittest.main()

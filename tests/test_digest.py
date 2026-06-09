@@ -112,6 +112,28 @@ class DigestTest(unittest.TestCase):
         self.assertNotIn("headline 1", titles)  # score 1 evicted
         self.assertEqual(len(titles), 3)
 
+    def test_flush_renders_detail_after_title(self):
+        # Body-informative topics keep their detail when digested.
+        state: dict = {}
+        digest.add(state, {"title": "Reminder", "source": "Reminders",
+                           "score": 5, "detail": "Mom's birthday (in 3 days)"}, CFG)
+        with capture_pushes() as sent:
+            digest.flush(state, CFG)
+        self.assertIn("Reminder - Mom's birthday (in 3 days)", sent[0]["message"])
+
+    def test_flush_without_detail_renders_title_only(self):
+        # Collector/news items carry no detail and render exactly as before.
+        state: dict = {}
+        digest.add(state, _item(1, "Energy"), CFG)
+        with capture_pushes() as sent:
+            digest.flush(state, CFG)
+        self.assertIn("  - headline 1", sent[0]["message"])
+
+    def test_detail_is_truncated(self):
+        state: dict = {}
+        digest.add(state, {"title": "t", "source": "s", "detail": "x" * 500}, CFG)
+        self.assertLessEqual(len(state[digest.BUFFER_KEY][0]["detail"]), digest._MAX_DETAIL)
+
     def test_flush_orders_by_score_highest_first(self):
         state: dict = {}
         digest.add(state, _item(1, "FDA", score=2), CFG)

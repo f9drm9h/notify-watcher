@@ -91,6 +91,10 @@ def _to_digest(state: dict, event: Event, score: int, digest_cfg: Optional[dict]
             "url": event.metadata.get("click_url", "") or "",
             "source": event.source,
             "score": int(score),
+            # The body lets body-informative topics (holidays, reminders, fx)
+            # keep their detail when digested; collector/news items have no body
+            # and render title-only as before.
+            "detail": event.body,
         },
         digest_cfg,
     )
