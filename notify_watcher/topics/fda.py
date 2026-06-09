@@ -150,4 +150,5 @@ def run(state: dict) -> dict:
         digest_cfg=config.section("digest"),
         cap=CAP,
         live_title_prefix="FDA",
+        topic="fda",
     )

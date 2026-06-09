@@ -56,10 +56,24 @@ def _now_iso() -> str:
 
 
 def _push(event: Event, ntfy_priority: Optional[str]) -> None:
-    """Send one event via the ntfy transport, reading click/tags from metadata."""
+    """Send one event via the ntfy transport, reading click/tags from metadata.
+
+    A ``title_prefix`` metadata hint (set by the collector engine) renders the
+    label-style push the collectors have always sent — bold ``"<prefix>: <source>"``
+    Title with the headline (``event.title``) as the message — so migrating the
+    collectors to ``emit`` is byte-for-byte identical. Without the hint (direct
+    topics) the push is the plain Title=event.title / message=event.body.
+    """
+    prefix = event.metadata.get("title_prefix")
+    if prefix:
+        title = f"{prefix}: {event.source}".strip(": ")
+        message = event.title
+    else:
+        title = event.title
+        message = event.body
     ntfy.push(
-        title=event.title,
-        message=event.body,
+        title=title,
+        message=message,
         click_url=event.metadata.get("click_url") or None,
         tags=event.metadata.get("tags") or None,
         priority=ntfy_priority,
