@@ -51,6 +51,7 @@
       { "topic": "recap", "score": 60 },
       { "topic": "astronomy", "score": 60 },
       { "topic": "apod", "score": 60 },
+      { "topic": "beach_day", "score": 60 },
 
       { "topic": "weather", "severity": "moderate", "score": 50 },
       { "topic": "wwdc", "score": 45 },
@@ -152,6 +153,13 @@
     "latitude": 18.45,
     "longitude": -69.6,
     "rough_wave_m": 2.0
+  },
+
+  "beach_day": {
+    "_comment": "Weekend beach-day index (Open-Meteo, no key): one 0-10 score from wave height + rain probability + UV + max temperature at the coast, pushed on the daily run of each weekday listed (0=Monday ... 5=Saturday, 6=Sunday). Coast coords default to Boca Chica, like marine.",
+    "weekdays": [5],
+    "latitude": 18.45,
+    "longitude": -69.6
   },
 
   "launches": {
