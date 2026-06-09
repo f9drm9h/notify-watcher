@@ -30,7 +30,7 @@ import logging
 from dataclasses import dataclass, field
 from typing import Optional
 
-from . import config, digest, ntfy, priority
+from . import config, digest, eventlog, ntfy, priority
 
 log = logging.getLogger(__name__)
 
@@ -164,6 +164,9 @@ def emit(
             _to_digest(state, event, score, digest_cfg)
         else:
             _push(event, legacy_priority)
+        # Log under the caller's within-domain score so history is complete even
+        # when the engine is off (the dashboard reads this regardless of mode).
+        eventlog.record(state, event, legacy_action, score, priority_cfg)
         return state
 
     if decision.action == "push":
@@ -171,4 +174,7 @@ def emit(
     elif decision.action == "digest":
         _to_digest(state, event, decision.score, digest_cfg)
     # "drop" -> intentionally nothing
+    # Record every routed Event (push/digest/drop) with its global score so the
+    # dashboard has a durable, cross-topic history that outlives the digest flush.
+    eventlog.record(state, event, decision.action, decision.score, priority_cfg)
     return state
