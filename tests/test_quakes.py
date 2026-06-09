@@ -2,8 +2,11 @@
 from __future__ import annotations
 
 import unittest
+from unittest import mock
 
+from notify_watcher import ids
 from notify_watcher.topics import quakes
+from tests._util import capture_pushes
 
 # Home ~ Santo Domingo Este.
 HOME = (18.521661, -69.8224191)
@@ -85,6 +88,74 @@ class TsunamiRiskTest(unittest.TestCase):
 
     def test_moderate_magnitude_is_not(self):
         self.assertFalse(quakes._tsunami_risk(6.0, 10, 100, CFG))
+
+
+class FirstRunSeedingTest(unittest.TestCase):
+    """The seeding fix: a first run records only acted-on (evaluated) ids, NOT
+    every event in the feed, so a quake currently too small/far to alert stays
+    unseen and can still alert if a later feed revises it into range."""
+
+    def _run_first(self, feats):
+        resp = mock.Mock()
+        resp.json.return_value = {"features": feats}
+        resp.raise_for_status.return_value = None
+        sections = {"location": {"latitude": HOME[0], "longitude": HOME[1]}, "quakes": CFG}
+        with mock.patch.object(quakes.requests, "get", return_value=resp), \
+             mock.patch.object(quakes.config, "section", side_effect=lambda n: sections.get(n, {})), \
+             capture_pushes() as sent:
+            state = quakes.run({})
+        return state, sent
+
+    def test_seeds_only_acted_on_ids(self):
+        feats = [
+            _feature("near_big", 5.2, 18.7, -69.9, "near SDE"),     # acted-on (live)
+            _feature("near_tiny", 2.5, 18.6, -69.8, "right here"),  # dropped, unseen
+        ]
+        state, sent = self._run_first(feats)
+        self.assertEqual(sent, [])  # first run never alerts
+        self.assertEqual(state["quake_seen_ids"], [ids.short("near_big")])
+        # The tiny quake is deliberately left unseen so it can alert later.
+        self.assertNotIn(ids.short("near_tiny"), state["quake_seen_ids"])
+
+    def test_seeds_empty_when_nothing_actionable(self):
+        feats = [_feature("far_tiny", 2.6, 35.0, 139.0, "Japan")]  # far + small
+        state, sent = self._run_first(feats)
+        self.assertEqual(sent, [])
+        self.assertEqual(state["quake_seen_ids"], [])
+
+
+class SteadyStateRoutingTest(unittest.TestCase):
+    """Post-seeding, routing now flows through events.emit; with no `priority`
+    section the engine is OFF and behavior is unchanged: a live quake pushes,
+    a moderate one buffers to the digest."""
+
+    def _run(self, feats, state):
+        resp = mock.Mock()
+        resp.json.return_value = {"features": feats}
+        resp.raise_for_status.return_value = None
+        sections = {"location": {"latitude": HOME[0], "longitude": HOME[1]},
+                    "quakes": CFG, "digest": {}, "priority": {}}
+        with mock.patch.object(quakes.requests, "get", return_value=resp), \
+             mock.patch.object(quakes.config, "section",
+                               side_effect=lambda n: sections.get(n, {})), \
+             capture_pushes() as sent:
+            state = quakes.run(state)
+        return state, sent
+
+    def test_live_quake_pushes(self):
+        feats = [_feature("near_big", 5.2, 18.7, -69.9, "near SDE")]
+        _, sent = self._run(feats, {"quake_seen_ids": []})
+        self.assertEqual(len(sent), 1)
+        self.assertEqual(sent[0]["title"], "Earthquake nearby")
+        self.assertEqual(sent[0]["priority"], "high")  # 4.5 <= mag < 6 -> high
+
+    def test_moderate_quake_digests_not_pushes(self):
+        from notify_watcher import digest
+        feats = [_feature("near_mid", 3.4, 19.0, -70.0, "Santiago")]
+        state, sent = self._run(feats, {"quake_seen_ids": []})
+        self.assertEqual(sent, [])
+        self.assertEqual(len(state.get(digest.BUFFER_KEY, [])), 1)
+        self.assertEqual(state[digest.BUFFER_KEY][0]["source"], "Earthquakes")
 
 
 if __name__ == "__main__":
