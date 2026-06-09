@@ -46,6 +46,7 @@
       { "topic": "air_quality", "severity": "moderate", "score": 60 },
       { "topic": "health_tip", "score": 60 },
       { "topic": "learn", "score": 60 },
+      { "topic": "energy_learn", "score": 60 },
       { "topic": "astronomy", "score": 60 },
 
       { "topic": "weather", "severity": "moderate", "score": 50 },
@@ -217,6 +218,12 @@
       {"name": "EIA Today in Energy", "url": "https://www.eia.gov/rss/todayinenergy.xml", "weight": "gov_data"},
       {"name": "World Nuclear News", "url": "https://world-nuclear-news.org/rss", "weight": "trade"}
     ]
+  },
+
+  "_energy_learn_comment": "The daily educational 'Today's spark' topic (curated JSON in data/energy_*.json). min_news_score: the lowest event_log score an energy story must reach to be eligible for the occasional news slot; news_min_gap_days: minimum days between news slots so current events stay occasional, not daily.",
+  "energy_learn": {
+    "min_news_score": 6,
+    "news_min_gap_days": 5
   },
 
   "_digest_comment": "max_per_source caps how many items any one source (a film, game, or feed) may hold in the shared buffer, so a high-volume source can't evict the low-volume domain monitors before the daily flush. Evictions and the flush both rank by score, so the most important pending items survive and surface first.",

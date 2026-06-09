@@ -1,0 +1,242 @@
+[
+  {
+    "id": "three-gorges-dam",
+    "title": "Three Gorges Dam — the biggest power station on Earth",
+    "what": "China's Three Gorges Dam on the Yangtze has a capacity of about 22,500 megawatts, more than any other power plant.",
+    "why": "Its 32 huge turbines generate enormous amounts of electricity and help control deadly downstream floods.",
+    "care": "One structure produces roughly as much power as 20 large nuclear reactors — a stark display of hydropower's scale and its human cost.",
+    "src": "China Three Gorges Corp."
+  },
+  {
+    "id": "baihetan-dam",
+    "title": "Baihetan — a dam with record-breaking turbines",
+    "what": "China's Baihetan Dam, around 16,000 megawatts, uses the world's first 1,000-megawatt hydro turbines.",
+    "why": "Each single turbine there can power a small city, pushing hydro engineering to new limits.",
+    "care": "It shows how clean hydropower keeps scaling up, even as good dam sites grow scarce worldwide.",
+    "src": "IEEE"
+  },
+  {
+    "id": "bath-county-pumped-storage",
+    "title": "Bath County — the world's largest 'battery'",
+    "what": "Virginia's Bath County Pumped Storage Station stores energy by pumping water between two reservoirs, with about 3,000 megawatts of capacity.",
+    "why": "Often called the world's largest battery, it has banked surplus power since 1985 — long before lithium.",
+    "care": "It's living proof that grids have stored electricity at massive scale for decades using just water and gravity.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "dinorwig-electric-mountain",
+    "title": "Dinorwig — the power station inside a mountain",
+    "what": "Wales' Dinorwig pumped-storage plant is buried inside a slate mountain and can hit full power of about 1,800 megawatts in well under 20 seconds.",
+    "why": "Its astonishing speed lets it catch sudden surges — famously when millions of kettles switch on after a big TV broadcast.",
+    "care": "It's a hidden engineering marvel quietly smoothing out a whole nation's electricity demand.",
+    "src": "First Hydro Company"
+  },
+  {
+    "id": "kashiwazaki-kariwa",
+    "title": "Kashiwazaki-Kariwa — the largest nuclear plant",
+    "what": "Japan's Kashiwazaki-Kariwa station has the greatest generating capacity of any nuclear plant, with seven reactors totalling around 7,900 megawatts.",
+    "why": "It shows how much carbon-free power a single nuclear site can hold, though it has spent years offline for safety upgrades.",
+    "care": "Its on-and-off status captures Japan's whole post-Fukushima struggle over the future of nuclear power.",
+    "src": "World Nuclear Association"
+  },
+  {
+    "id": "bruce-nuclear",
+    "title": "Bruce — North America's nuclear giant",
+    "what": "The Bruce Nuclear Generating Station in Ontario, Canada, is among the largest operating nuclear plants in the world by output.",
+    "why": "Its eight reactors supply a large share of Ontario's electricity with almost no carbon emissions.",
+    "care": "It helped make Ontario's grid one of the cleanest in North America after the province phased out coal.",
+    "src": "World Nuclear Association"
+  },
+  {
+    "id": "north-sea-link",
+    "title": "North Sea Link — a cable between two countries' grids",
+    "what": "The North Sea Link is a roughly 720-kilometre subsea cable connecting the power grids of the UK and Norway.",
+    "why": "Britain can import Norwegian hydropower when needed and export surplus wind power back — a two-way clean-energy trade.",
+    "care": "Such interconnectors let countries share renewables, smoothing out each other's calm or cloudy days.",
+    "src": "National Grid / Statnett"
+  },
+  {
+    "id": "champlain-hudson",
+    "title": "A buried line bringing hydro to New York City",
+    "what": "The Champlain Hudson Power Express is a high-voltage line buried underground and underwater to carry Canadian hydropower into New York City.",
+    "why": "Burying it avoids the visual and permitting battles that block many overhead transmission projects.",
+    "care": "It's a model for delivering distant clean power into dense cities without a forest of new pylons.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "continental-european-grid",
+    "title": "Europe's vast synchronous grid",
+    "what": "Most of continental Europe runs as a single synchronised grid, stretching from Spain to Turkey and Poland, all beating at 50 hertz together.",
+    "why": "It's among the largest synchronous machines ever built, letting dozens of countries trade power instantly.",
+    "care": "It means a windy day in Germany can help keep the lights on in France — cross-border cooperation as physics.",
+    "src": "ENTSO-E"
+  },
+  {
+    "id": "eastern-interconnection",
+    "title": "North America's giant interconnections",
+    "what": "The U.S. and Canada run mainly on a few enormous synchronised grids, the largest being the Eastern Interconnection covering much of the continent.",
+    "why": "Thousands of generators across many states and provinces all stay perfectly in step within each interconnection.",
+    "care": "It's one of the most complex machines humans have built — and it has to work flawlessly every second.",
+    "src": "NERC"
+  },
+  {
+    "id": "ercot-texas",
+    "title": "Texas — the grid that stands alone",
+    "what": "Texas runs its own grid (ERCOT) largely disconnected from the rest of the U.S., partly to avoid federal regulation.",
+    "why": "Independence gives it freedom but also fewer neighbours to borrow power from in a crisis, as a deadly 2021 freeze showed.",
+    "care": "It's a real-world lesson in the trade-off between grid independence and the safety net of interconnection.",
+    "src": "U.S. Energy Information Administration"
+  },
+  {
+    "id": "snowy-mountains-scheme",
+    "title": "The Snowy Mountains Scheme",
+    "what": "Australia's Snowy Mountains Scheme, built over 25 years, threads 16 dams and seven power stations through tunnels in the mountains.",
+    "why": "It generates hydropower while diverting water inland for irrigation — a postwar feat of engineering and migration-driven labour.",
+    "care": "Its modern 'Snowy 2.0' expansion aims to become a giant battery for Australia's growing solar and wind.",
+    "src": "Snowy Hydro"
+  },
+  {
+    "id": "james-bay-project",
+    "title": "Quebec's James Bay hydro complex",
+    "what": "Quebec's James Bay project dammed vast northern rivers, with the Robert-Bourassa station alone exceeding 5,000 megawatts.",
+    "why": "It made Quebec a hydropower powerhouse that exports clean electricity to neighbouring provinces and U.S. states.",
+    "care": "It also reshaped Indigenous lands and lives — a reminder that even clean power has real human costs.",
+    "src": "Hydro-Québec"
+  },
+  {
+    "id": "itaipu-dam",
+    "title": "Itaipu — a dam shared by two nations",
+    "what": "The Itaipu Dam on the Paraná River is jointly owned and operated by Brazil and Paraguay, with about 14,000 megawatts of capacity.",
+    "why": "It's a rare bi-national power plant, splitting both the electricity and the governance between two countries.",
+    "care": "It supplies most of Paraguay's power and a big share of Brazil's — proof that shared energy projects can work.",
+    "src": "Itaipu Binacional"
+  },
+  {
+    "id": "kariba-dam",
+    "title": "Kariba — the world's largest reservoir",
+    "what": "The Kariba Dam between Zambia and Zimbabwe created the largest artificial reservoir by volume on Earth.",
+    "why": "It supplies much of both countries' electricity, but droughts can drop the water so low that power output collapses.",
+    "care": "It shows how climate and rainfall can directly decide whether the lights stay on in hydro-dependent nations.",
+    "src": "Zambezi River Authority"
+  },
+  {
+    "id": "aswan-high-dam",
+    "title": "The Aswan High Dam",
+    "what": "Completed in 1970, Egypt's Aswan High Dam tamed the Nile's annual floods and generated hydropower for the nation.",
+    "why": "It transformed Egypt's agriculture and electricity supply, but trapped fertile silt and displaced communities.",
+    "care": "It's a textbook case of a megaproject's sweeping benefits and lasting side-effects.",
+    "src": "U.S. Bureau of Reclamation"
+  },
+  {
+    "id": "noor-ouarzazate",
+    "title": "Noor Ouarzazate — a solar oasis",
+    "what": "Morocco's Noor Ouarzazate complex is one of the world's largest concentrated solar power plants, using mirrors to focus sunlight and store heat.",
+    "why": "By storing heat in molten salt, it can keep generating for hours after sunset — solar that runs into the night.",
+    "care": "It points to how sun-rich nations could export clean power and reduce reliance on imported fuel.",
+    "src": "International Energy Agency"
+  },
+  {
+    "id": "gansu-wind-base",
+    "title": "Gansu — a wind farm the size of a county",
+    "what": "China's Gansu (Jiuquan) Wind Power Base in the Gobi Desert is one of the largest wind projects ever attempted, planned in the tens of gigawatts.",
+    "why": "Concentrating thousands of turbines in one windy desert pushes wind power to industrial scale.",
+    "care": "Its early struggle to send power to distant cities drove China's huge build-out of ultra-long transmission lines.",
+    "src": "IEEE"
+  },
+  {
+    "id": "olkiluoto-3",
+    "title": "Olkiluoto 3 — Europe's nuclear comeback",
+    "what": "Finland's Olkiluoto 3 reactor, around 1,600 megawatts, finally began regular output in 2023 after years of delays.",
+    "why": "It's one of Europe's most powerful single reactors and noticeably lowered Finnish electricity prices once running.",
+    "care": "Its troubled build, then steady payoff, captures both the promise and the pain of modern nuclear projects.",
+    "src": "World Nuclear Association"
+  },
+  {
+    "id": "grand-inga-proposal",
+    "title": "Grand Inga — the dam that could power a continent",
+    "what": "On the Congo River, the existing Inga dams could be expanded into 'Grand Inga', a proposed complex larger than any power plant on Earth.",
+    "why": "The river's immense, steady flow could in theory supply a huge share of Africa's electricity.",
+    "care": "Decades of stalled plans show how finance, politics, and governance — not just engineering — decide if mega-power gets built.",
+    "src": "International Energy Agency"
+  },
+  {
+    "id": "hoover-dam-infra",
+    "title": "Hoover Dam — a Depression-era icon",
+    "what": "The 221-metre Hoover Dam on the Colorado River supplies power and water across the U.S. Southwest and was a marvel of 1930s engineering.",
+    "why": "It demonstrated that public works on a grand scale could reshape a region's economy and landscape.",
+    "care": "Falling water levels behind it today are a visible warning of drought's threat to hydropower.",
+    "src": "U.S. Bureau of Reclamation"
+  },
+  {
+    "id": "grand-coulee-infra",
+    "title": "Grand Coulee — America's biggest power producer",
+    "what": "The Grand Coulee Dam on the Columbia River is the largest electricity producer in the United States.",
+    "why": "Its cheap, plentiful power fuelled the Pacific Northwest's industry and aluminium smelting.",
+    "care": "It shows how a single piece of infrastructure can decide where industries and cities grow.",
+    "src": "U.S. Bureau of Reclamation"
+  },
+  {
+    "id": "moss-landing-battery",
+    "title": "Moss Landing — a battery on a power-plant site",
+    "what": "California's Moss Landing, on the grounds of a former gas plant, is one of the world's largest battery storage facilities.",
+    "why": "It stores cheap midday solar and discharges it into the evening peak, replacing fossil 'peaker' plants.",
+    "care": "It's a glimpse of how old fossil sites can be repurposed into the storage hubs of a cleaner grid.",
+    "src": "U.S. Energy Information Administration"
+  },
+  {
+    "id": "iceland-grid",
+    "title": "Iceland — a grid run on heat and water",
+    "what": "Iceland generates essentially all its electricity from hydropower and geothermal energy tapped from its volcanic landscape.",
+    "why": "Cheap, clean, abundant power lets it run energy-hungry industries like aluminium smelting and data centres.",
+    "care": "It's a real example of a modern economy powered almost entirely by renewables — thanks to unique geology.",
+    "src": "International Energy Agency"
+  },
+  {
+    "id": "ifa-interconnector",
+    "title": "Cables under the English Channel",
+    "what": "High-voltage links run beneath the English Channel, letting Britain and France trade electricity directly.",
+    "why": "When one country has surplus nuclear or wind power, the other can buy it within seconds.",
+    "care": "These quiet undersea cables turn neighbouring nations into a shared, more resilient power market.",
+    "src": "National Grid / RTE"
+  },
+  {
+    "id": "tehri-dam",
+    "title": "Tehri — India's towering dam",
+    "what": "The Tehri Dam in the Himalayan foothills is one of the tallest dams in the world and a major source of Indian hydropower and irrigation.",
+    "why": "It combines electricity, water storage, and pumped-storage capability in a seismically active region.",
+    "care": "It highlights the engineering challenge of building huge dams safely in earthquake-prone mountains.",
+    "src": "THDC India"
+  },
+  {
+    "id": "drax-power-station",
+    "title": "Drax — a coal plant's reinvention",
+    "what": "The UK's Drax, once the country's largest coal power station, converted most of its units to burn wood pellets (biomass).",
+    "why": "It shows one path for retiring coal, though burning imported wood for power remains hotly debated.",
+    "care": "Its story captures the messy, contested reality of moving a giant fossil plant toward lower carbon.",
+    "src": "International Energy Agency"
+  },
+  {
+    "id": "akkuyu-first-reactor",
+    "title": "A country's first reactor changes its grid",
+    "what": "Nations such as Turkey, the UAE, and Bangladesh have recently built their very first nuclear power plants.",
+    "why": "A first reactor adds a large block of steady, carbon-free power and reshapes a developing nation's energy mix.",
+    "care": "It marks how nuclear power is spreading to new countries even as some older nuclear nations pull back.",
+    "src": "World Nuclear Association"
+  },
+  {
+    "id": "ultra-long-transmission",
+    "title": "Power lines that cross half a country",
+    "what": "Some transmission links now span more than 3,000 kilometres, carrying power from remote renewable zones to distant cities.",
+    "why": "Where the sun and wind are best is often far from where people live; these lines bridge that gap.",
+    "care": "Building long-distance transmission is becoming as important to clean energy as building the wind and solar farms themselves.",
+    "src": "International Energy Agency"
+  },
+  {
+    "id": "pacific-dc-intertie",
+    "title": "The Pacific DC Intertie",
+    "what": "A high-voltage DC line runs about 1,360 kilometres from the Columbia River in Oregon to Los Angeles, one of North America's first major HVDC links.",
+    "why": "It ships surplus Northwest hydropower south to California in summer and lets the regions back each other up.",
+    "care": "Operating since 1970, it proved long-distance HVDC works — the same idea now central to moving renewables across continents.",
+    "src": "U.S. Dept. of Energy / Bonneville Power Administration"
+  }
+]
