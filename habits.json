@@ -1,0 +1,46 @@
+{
+  "_comment": "Recurring daytime habit nudges. Each habit: name (unique id, also used for its state key), title (push title), tag (ntfy emoji tag), hours (UTC hours to fire, aligned to the every-3-hours cron grid 0/3/6/9/12/15/18/21; 12/15/18/21 == 08:00/11:00/14:00/17:00 in the Dominican Republic, UTC-4), messages (rotated per slot for variety), and optional enabled (default true). At most one push per slot per day, deduped in state. Adding a nudge is just a new entry here - no code change. Edit this file directly on github.com.",
+  "habits": [
+    {
+      "name": "water",
+      "title": "Drink water",
+      "tag": "droplet",
+      "enabled": true,
+      "hours": [12, 15, 18, 21],
+      "messages": [
+        "Time for a glass of water. Stay hydrated!",
+        "Hydration check: grab some water before you carry on.",
+        "Quick reminder to drink some water.",
+        "Keep a glass of water within reach.",
+        "Sip some water - your body will thank you.",
+        "Pause for a moment and have a drink of water.",
+        "Water break! A few sips now keeps you sharp."
+      ]
+    },
+    {
+      "name": "stand",
+      "title": "Stand up & move",
+      "tag": "walking",
+      "enabled": false,
+      "hours": [13, 16, 19],
+      "messages": [
+        "Stand up and stretch for a minute.",
+        "Time to move - a short walk resets your focus.",
+        "Get up, roll your shoulders, take a few steps.",
+        "Been sitting a while? Stand and reset your posture."
+      ]
+    },
+    {
+      "name": "eyes",
+      "title": "Rest your eyes",
+      "tag": "eyes",
+      "enabled": false,
+      "hours": [14, 17, 20],
+      "messages": [
+        "20-20-20: look ~20 feet away for 20 seconds.",
+        "Give your eyes a short break from the screen.",
+        "Blink, look into the distance, relax your eyes."
+      ]
+    }
+  ]
+}
