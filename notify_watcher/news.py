@@ -23,13 +23,47 @@ each topic tunes its own keywords/weights without code changes.
 """
 from __future__ import annotations
 
+import calendar
 import logging
+import time
 
 from . import events, ids, scoring
 
 log = logging.getLogger(__name__)
 
 Article = tuple[str, str, str, str]  # (article_id, headline, link, source)
+
+# Shared freshness window for the Google News-based topics (monitors.json ->
+# news.max_age_days). Google News search results routinely resurface months- or
+# years-old articles under brand-new URLs; since dedup is id/URL-based, those
+# resurfaced items look fresh and alert ("Claude Pro launches", 2023). Age-gating
+# at collection time is what actually fixes that.
+DEFAULT_MAX_AGE_DAYS = 14
+
+
+def is_recent(entry, max_age_days: float, now: float | None = None) -> bool:
+    """True if a feed entry was published within ``max_age_days`` (or is undated).
+
+    Reads feedparser's ``published_parsed``/``updated_parsed`` struct_time (UTC).
+    Undated or unparseable entries pass — the id dedup still guards them — and
+    ``max_age_days <= 0`` disables the gate, so a config typo can only ever let
+    more through, never silently filter everything out. ``now`` is an epoch
+    override for tests.
+    """
+    try:
+        if not max_age_days or float(max_age_days) <= 0:
+            return True
+    except (TypeError, ValueError):
+        return True
+    st = getattr(entry, "published_parsed", None) or getattr(entry, "updated_parsed", None)
+    if not st:
+        return True
+    try:
+        published = calendar.timegm(st)
+    except (TypeError, ValueError, OverflowError):
+        return True
+    now_ts = time.time() if now is None else now
+    return (now_ts - published) <= float(max_age_days) * 86400
 
 
 def _source_weight_key(source: str, tiers: dict) -> str:

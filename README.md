@@ -27,9 +27,12 @@ Topics:
   "Liberty 6 Pro"), then hands it to the deals watcher to price-track
   automatically. First run seeds the current catalog silently, so you only get
   pinged about genuinely new releases. No API key, no watchlist editing.
-- **Movie release dates** — for each title in `watchlist.json` → `movies`,
-  tracks its TMDb release date and alerts on first sight and on any date
-  change. Needs `TMDB_API_KEY`.
+- **Movie release dates + news** — for each title in `watchlist.json` →
+  `movies`, tracks its TMDb release date and alerts on first sight and on any
+  date change (needs `TMDB_API_KEY`). Each title's Google News headlines are
+  also scored via `movies_scoring` exactly like game news below: release
+  dates / trailers / delays push live, casting / reviews / box office go to
+  the daily digest, rankings / opinion / speculation are dropped.
 - **Game release dates** — for each title in `watchlist.json` → `games`,
   tracks its RAWG release date and alerts the same way (a date change is a
   high-priority push). Needs `RAWG_API_KEY`. _Checked weekly (see below)._
@@ -43,6 +46,10 @@ Topics:
   Tuning the keywords and weights is a `monitors.json` edit, not a code change.
   Both game checks run **weekly** — once per ISO week, on the first daily run of
   the week — so game updates arrive as one batched catch-up rather than a drip.
+  All the Google News-based topics (game news, movie news, Anthropic) ignore
+  articles older than `monitors.json` → `news.max_age_days` (default 14):
+  Google News resurfaces months-old stories under brand-new URLs, which would
+  otherwise slip past dedup and alert as "new".
 - **Twitch live** — for each handle in `monitors.json` → `twitch.streamers`,
   checks live status via decapi.me (no key) and pushes once per live session
   (with the game + stream title), re-arming after they go offline.
