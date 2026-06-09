@@ -49,6 +49,8 @@ CHANNELS: list[tuple[str, str]] = [
     ("Technology", "tech_literacy.json"),
     ("Life skill", "life_skills.json"),
     ("Did you know", "general_knowledge.json"),
+    ("Dominican culture", "dr_culture.json"),
+    ("Money basics", "personal_finance.json"),
 ]
 
 _REWORD_SYSTEM = (
