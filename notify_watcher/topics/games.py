@@ -40,7 +40,7 @@ import urllib.parse
 import feedparser
 import requests
 
-from .. import config, news, ntfy, watchlist
+from .. import config, events, news, watchlist
 
 log = logging.getLogger(__name__)
 
@@ -189,12 +189,17 @@ def _track_release_dates(state: dict) -> dict:
                 body = f"{name} release date changed: {previous} -> {current}"
             # A first-sighting or date change is a top-tier event (release date
             # announced / changed / delayed), so it always rings as a live push.
-            ntfy.push(
+            state = events.emit(
+                state,
                 title=f"Game: {name}",
-                message=body,
+                body=body,
+                topic="games",
+                severity="high",
+                source=name,
                 click_url=GAME_PAGE + slug if slug else None,
                 tags="video_game",
-                priority="high",
+                legacy_priority="high",
+                legacy_action="push",
             )
             bucket[gid] = current
         except Exception as exc:  # noqa: BLE001 - isolate each title
