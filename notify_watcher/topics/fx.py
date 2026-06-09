@@ -13,7 +13,7 @@ import logging
 
 import requests
 
-from .. import config, ntfy
+from .. import config, events
 
 log = logging.getLogger(__name__)
 
@@ -69,11 +69,16 @@ def run(state: dict) -> dict:
     log.info("FX: %s/%s = %.4f -> zone %s; alert=%s", base, quote, rate, zone, alert)
 
     if alert:
-        ntfy.push(
+        state = events.emit(
+            state,
             title=f"{base}/{quote} rate",
-            message=msg,
+            body=msg,
+            topic="fx",
+            severity="moderate",
+            source="FX",
             tags="moneybag",
-            priority="default",
+            legacy_priority="default",
+            legacy_action="push",
         )
     # Always record the latest zone so the next transition is detected (and the
     # first run seeds without alerting).
