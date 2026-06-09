@@ -30,6 +30,29 @@ def _fetch(url: str) -> list:
     return feedparser.parse(resp.content).entries
 
 
+def _entries_to_items(entries, name: str, weight: str) -> list[dict]:
+    """Map feed entries to monitor items, dropping any with no id and no link.
+
+    Each item carries its source `name` (a human label) and provenance `weight`
+    (a scoring key), so the shared collector engine can score mixed-authority
+    sources under one state key. The id falls back to the link when the feed
+    omits a GUID, matching the dedup id used elsewhere.
+    """
+    items: list[dict] = []
+    for e in entries:
+        iid = getattr(e, "id", "") or getattr(e, "link", "")
+        if not iid:
+            continue
+        items.append({
+            "id": iid,
+            "title": getattr(e, "title", ""),
+            "url": getattr(e, "link", ""),
+            "source": name,
+            "weight": weight,
+        })
+    return items
+
+
 def run(state: dict) -> dict:
     cfg = config.section("energy")
     sources = cfg.get("sources") or []
@@ -52,17 +75,7 @@ def run(state: dict) -> dict:
         except Exception as exc:  # noqa: BLE001 - one source failing is non-fatal
             log.warning("energy source %r failed: %s", name, exc)
             continue
-        for e in entries:
-            iid = getattr(e, "id", "") or getattr(e, "link", "")
-            if not iid:
-                continue
-            items.append({
-                "id": iid,
-                "title": getattr(e, "title", ""),
-                "url": getattr(e, "link", ""),
-                "source": name,
-                "weight": weight,
-            })
+        items.extend(_entries_to_items(entries, name, weight))
         log.info("energy source %r: %d entries", name, len(entries))
 
     # One call across all sources: each item carries its own provenance weight,
@@ -78,4 +91,5 @@ def run(state: dict) -> dict:
         digest_cfg=digest_cfg,
         cap=CAP,
         live_title_prefix="Energy",
+        topic="energy",
     )

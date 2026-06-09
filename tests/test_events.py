@@ -70,6 +70,40 @@ class EngineOnTest(unittest.TestCase):
         self.assertNotIn(digest.BUFFER_KEY, state)
 
 
+class TitlePrefixTest(unittest.TestCase):
+    """The collector engine's label-style push, preserved via the metadata hint."""
+
+    def test_title_prefix_renders_legacy_collector_push(self):
+        state: dict = {}
+        with capture_pushes() as sent:
+            events.emit(
+                state, title="FDA approves Keytruda (BLA1)", topic="fda",
+                severity="high", source="Keytruda",
+                click_url="https://fda.gov/x", tags="zap",
+                metadata={"title_prefix": "FDA"},
+                legacy_priority="high", legacy_action="push",
+                priority_cfg={}, digest_cfg=DIGEST_CFG,  # engine OFF -> legacy
+            )
+        self.assertEqual(sent[0], {
+            "title": "FDA: Keytruda",                       # "<prefix>: <source>"
+            "message": "FDA approves Keytruda (BLA1)",       # the headline
+            "click_url": "https://fda.gov/x",
+            "tags": "zap",
+            "priority": "high",
+        })
+
+    def test_title_prefix_drops_separator_when_source_blank(self):
+        state: dict = {}
+        with capture_pushes() as sent:
+            events.emit(
+                state, title="headline", topic="energy", source="",
+                metadata={"title_prefix": "Energy"},
+                legacy_priority="urgent", legacy_action="push",
+                priority_cfg={}, digest_cfg=DIGEST_CFG,
+            )
+        self.assertEqual(sent[0]["title"], "Energy")  # no trailing ": "
+
+
 class BackwardCompatTest(unittest.TestCase):
     """Engine OFF (empty priority cfg): emit reproduces pre-engine behavior."""
 

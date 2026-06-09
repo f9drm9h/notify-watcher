@@ -26,12 +26,17 @@ from __future__ import annotations
 
 import logging
 
-from . import digest, ids, ntfy, scoring
+from . import events, ids, scoring
 
 log = logging.getLogger(__name__)
 
 _TIER_PRIORITY = {"breakthrough": "urgent", "high": "high"}
 _TIER_TAG = {"breakthrough": "rotating_light", "high": "zap"}
+# Within-domain tier -> normalized Event severity. The collector decides how
+# notable an item is WITHIN its domain (tier); the Personal Priority Engine then
+# weighs that severity ACROSS topics. With no `priority` section the engine is
+# off and routing falls back to the tier exactly as before (see events.emit).
+_TIER_SEVERITY = {"breakthrough": "critical", "high": "high", "moderate": "moderate"}
 
 
 def run_source(
@@ -45,8 +50,18 @@ def run_source(
     digest_cfg: dict,
     cap: int,
     live_title_prefix: str,
+    topic: str = "",
 ) -> dict:
-    """Dedup, score, and route a collector's items. Returns updated state."""
+    """Dedup, score, and route a collector's items. Returns updated state.
+
+    Routing goes through events.emit (the Personal Priority Engine funnel): the
+    within-domain tier becomes the Event severity, and emit decides push vs.
+    digest vs. drop. With no `priority` section configured the engine is OFF and
+    emit reproduces the legacy tier routing exactly (breakthrough/high push at
+    urgent/high, moderate digests, minor is dropped here before emit). `topic`
+    is the engine's cross-topic rule key (e.g. "fda"); it is ignored while the
+    engine is off, so it stays optional for callers/tests that don't set it.
+    """
     seen = state.get(state_key)
     if seen is None:
         # Baseline-only first run: remember ids without alerting.
@@ -80,17 +95,39 @@ def run_source(
             )
             if tier == "minor":
                 continue
-            if tier in _TIER_PRIORITY:
-                ntfy.push(
-                    title=f"{live_title_prefix}: {item.get('source', '')}".strip(": "),
-                    message=item.get("title", ""),
+
+            # The title_prefix metadata hint makes a live push render as the
+            # legacy "<prefix>: <source>" label (see events._push); emit folds
+            # click_url/tags into metadata and decides push vs. digest vs. drop.
+            if tier in _TIER_PRIORITY:  # breakthrough / high -> live push
+                state = events.emit(
+                    state,
+                    title=item.get("title", ""),
+                    topic=topic,
+                    severity=_TIER_SEVERITY[tier],
+                    source=item.get("source", ""),
                     click_url=item.get("url") or None,
                     tags=_TIER_TAG[tier],
-                    priority=_TIER_PRIORITY[tier],
+                    metadata={"title_prefix": live_title_prefix},
+                    legacy_priority=_TIER_PRIORITY[tier],
+                    legacy_action="push",
+                    score=sc,
+                    digest_cfg=digest_cfg,
                 )
                 pushed += 1
-            else:  # moderate
-                digest.add(state, {**item, "tier": tier, "score": sc}, digest_cfg)
+            else:  # moderate -> daily digest
+                state = events.emit(
+                    state,
+                    title=item.get("title", ""),
+                    topic=topic,
+                    severity=_TIER_SEVERITY[tier],
+                    source=item.get("source", ""),
+                    click_url=item.get("url") or None,
+                    metadata={"title_prefix": live_title_prefix},
+                    legacy_action="digest",
+                    score=sc,
+                    digest_cfg=digest_cfg,
+                )
                 digested += 1
         except Exception as exc:  # noqa: BLE001 - isolate each item
             log.error("monitor item failed (%s): %s", state_key, exc)
