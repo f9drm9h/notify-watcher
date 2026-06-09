@@ -94,6 +94,18 @@ class PushIntegrationTest(unittest.TestCase):
             ntfy.push(title="hi", message="there", priority="low")
         post.assert_called_once()
 
+    def test_attach_url_sets_attach_header(self):
+        with mock.patch.object(ntfy, "_is_quiet_now", return_value=False), \
+             mock.patch.dict("os.environ", {"NTFY_TOPIC": "t"}, clear=False), \
+             mock.patch.object(ntfy.requests, "post") as post:
+            ntfy.push(title="hi", message="there",
+                      attach_url="https://example.com/pic.jpg")
+            ntfy.push(title="hi", message="there")  # no attach -> no header
+        first, second = post.call_args_list
+        self.assertEqual(first.kwargs["headers"]["Attach"],
+                         "https://example.com/pic.jpg")
+        self.assertNotIn("Attach", second.kwargs["headers"])
+
 
 if __name__ == "__main__":
     unittest.main()

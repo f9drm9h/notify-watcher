@@ -121,6 +121,7 @@ def push(
     click_url: Optional[str] = None,
     tags: Optional[str] = None,
     priority: Optional[str] = None,
+    attach_url: Optional[str] = None,
     timeout: float = 15.0,
 ) -> None:
     """POST a notification to the configured ntfy topic.
@@ -129,6 +130,10 @@ def push(
     "high", "urgent"); when None the server applies its default, so existing
     callers are unaffected. Used by the scored domain monitors to make
     breakthrough/high-tier alerts ring louder than routine ones.
+
+    `attach_url` sets the ntfy `Attach` header: the app fetches the URL and,
+    for images, renders the picture inline in the notification. The server
+    only stores the link (not the file), so any size works on the free tier.
 
     Raises requests.HTTPError on a non-2xx response so callers can decide
     whether to retry or log-and-continue.
@@ -153,6 +158,8 @@ def push(
         headers["Tags"] = tags
     if priority:
         headers["Priority"] = priority
+    if attach_url:
+        headers["Attach"] = attach_url
 
     resp = requests.post(
         url,
