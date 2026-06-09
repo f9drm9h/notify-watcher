@@ -7,6 +7,14 @@
     "timezone": "America/Santo_Domingo"
   },
 
+  "quiet_hours": {
+    "_comment": "Overnight do-not-disturb. When enabled, pushes at low/default/min priority are dropped silently between start and end (local time = UTC + utc_offset_hours; DR is -4, no DST). High/urgent alerts (earthquakes, hurricanes, tsunami advisories) always ring through, and the manual test push is never suppressed. Disabled by default; set enabled=true to turn it on. Times are 'HH:MM' 24h; the window may wrap midnight.",
+    "enabled": false,
+    "start": "22:00",
+    "end": "07:00",
+    "utc_offset_hours": -4
+  },
+
   "quakes": {
     "_comment": "Nearby earthquakes (USGS). Routed by magnitude AND great-circle distance from location: live push within live_radius_km at >= live_min_mag, daily digest within digest_radius_km at >= digest_min_mag, else dropped. A large, shallow quake within tsunami_radius_km (>= tsunami_min_mag, depth <= tsunami_max_depth_km) instead fires an urgent 'check tsunami advisories' alert.",
     "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_day.geojson",
