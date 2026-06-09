@@ -44,6 +44,7 @@ from .topics import (
     twitch,
     uv,
     visa_bulletin,
+    watchdog,
     weather,
     wwdc,
 )
@@ -128,6 +129,10 @@ TOPICS: list[tuple[str, Topic]] = [
     ("uv", uv.run),
     ("marine", marine.run),
     ("astronomy", astronomy.run),
+    # watchdog runs LAST: it reads the topic_health entries this loop stamped for
+    # every topic above and pushes once when one has been failing for 48h+ — so a
+    # dead feed can't go silently unnoticed. Pure state inspection, no network.
+    ("watchdog", watchdog.run),
 ]
 
 

@@ -130,6 +130,12 @@ message and, when there are more than fit, the *least* important are dropped
   `marine.rough_wave_m` (Open-Meteo Marine, no key). Daily run only.
 - **Astronomy almanac** — full/new moons (computed) plus meteor-shower peaks,
   solstices/equinoxes, and eclipses from a built-in table. No network. Daily run.
+- **Watchdog (self-monitoring)** — every run, `main.py` records each topic's
+  last successful run and latest failure in `state.json` → `topic_health`. The
+  watchdog reads that record and pushes one heads-up when any topic has had no
+  successful run for `watchdog.stale_hours` (default 48) — so a feed that died
+  (moved URL, revoked key) can't fail silently forever. One push per outage; it
+  re-arms when the topic recovers. No network, no key.
 
 The daily digest, health tip, learning push, and reminders fire once a day, on
 the first scheduled run on/after 12:00 UTC (~08:00 in the Dominican Republic,
