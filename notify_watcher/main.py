@@ -131,6 +131,17 @@ TOPICS: list[tuple[str, Topic]] = [
 ]
 
 
+def _selected_topics(only: str) -> list[tuple[str, Topic]]:
+    """Filter TOPICS to a comma-separated allowlist (``NOTIFY_ONLY``), preserving
+    order. Empty/blank means all topics. Unknown names are simply ignored. This lets
+    a lightweight workflow run a single fast topic often — e.g. a 15-minute Twitch
+    'went live' check — without invoking the full 3-hourly sweep."""
+    wanted = {t.strip() for t in only.split(",") if t.strip()}
+    if not wanted:
+        return TOPICS
+    return [(name, run) for name, run in TOPICS if name in wanted]
+
+
 def main() -> int:
     logging.basicConfig(
         level=logging.INFO,
@@ -168,7 +179,11 @@ def main() -> int:
     run_ts = _dt.datetime.now(_dt.timezone.utc).isoformat()
     ok_count = fail_count = 0
 
-    for name, run in TOPICS:
+    topics = _selected_topics(os.environ.get("NOTIFY_ONLY", ""))
+    if len(topics) != len(TOPICS):
+        log.info("NOTIFY_ONLY active: running %d of %d topics", len(topics), len(TOPICS))
+
+    for name, run in topics:
         log.info("[%s] starting", name)
         entry = health.setdefault(name, {})
         try:
