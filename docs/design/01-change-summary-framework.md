@@ -1,7 +1,13 @@
 # Design — Reusable "change summary" framework
 
-**Status:** proposal (design-first; no code yet)
+**Status:** ✅ implemented — `notify_watcher/changes.py` + the opt-in `emit(change=…)` hook; fx, deals, games, movies, visa_bulletin migrated. Tests in `tests/test_changes.py`.
 **Composes with:** `events.Event.body`, the digest `detail` line, the event-log sink in [02-dashboard.md](02-dashboard.md).
+
+> Implementation note: the absolute-delta and the from/to values share the topic's
+> `fmt`, so a currency `fmt` renders the delta as `-USD 20.00` (not bare `-20.00`); the
+> sign marker is an ASCII hyphen for log/console safety. fx stores a new `fx_last_rate`
+> alongside the zone so a transition can report its magnitude, and `_evaluate` now
+> returns a short band clause (`above 61.00`) that `run` appends to `change.summary`.
 
 ## Problem
 

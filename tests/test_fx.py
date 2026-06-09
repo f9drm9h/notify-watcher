@@ -26,21 +26,22 @@ class EvaluateTest(unittest.TestCase):
         self.assertFalse(alert)
 
     def test_crossing_above_alerts(self):
-        alert, zone, msg = fx._evaluate(62.5, CFG, "within")
+        alert, zone, band = fx._evaluate(62.5, CFG, "within")
         self.assertTrue(alert)
         self.assertEqual(zone, "above")
-        self.assertIn("62.5", msg)
+        self.assertEqual(band, "above 61.00")
 
     def test_crossing_below_alerts(self):
-        alert, zone, msg = fx._evaluate(56.0, CFG, "within")
+        alert, zone, band = fx._evaluate(56.0, CFG, "within")
         self.assertTrue(alert)
         self.assertEqual(zone, "below")
+        self.assertEqual(band, "below 57.00")
 
     def test_returning_to_band_alerts(self):
-        alert, zone, msg = fx._evaluate(59.0, CFG, "above")
+        alert, zone, band = fx._evaluate(59.0, CFG, "above")
         self.assertTrue(alert)
         self.assertEqual(zone, "within")
-        self.assertIn("back in range", msg)
+        self.assertIn("back in range", band)
 
     def test_missing_rate_is_silent(self):
         alert, *_ = fx._evaluate(None, CFG, "within")

@@ -13,11 +13,12 @@ import logging
 
 import requests
 
-from .. import config, events
+from .. import changes, config, events
 
 log = logging.getLogger(__name__)
 
 STATE_KEY = "fx_last_zone"
+RATE_KEY = "fx_last_rate"
 API_URL = "https://open.er-api.com/v6/latest/{base}"
 HEADERS = {"User-Agent": "notify-watcher/1.0 (+https://github.com/) personal-use"}
 
@@ -31,21 +32,22 @@ def _zone(rate: float, low: float, high: float) -> str:
 
 
 def _evaluate(rate, cfg: dict, prev_zone: str | None) -> tuple[bool, str, str]:
-    """Pure. Returns (alert?, zone, message). No alert on the first observation."""
+    """Pure. Returns (alert?, zone, band) where ``band`` is a short clause naming the
+    threshold crossed; the *magnitude* of the move is rendered separately in ``run``
+    via ``changes.diff``. No alert on the first observation."""
     if rate is None:
         return False, prev_zone or "", ""
     low, high = float(cfg.get("low", 0)), float(cfg.get("high", 10 ** 9))
-    base, quote = cfg.get("base", "USD"), cfg.get("quote", "DOP")
     zone = _zone(float(rate), low, high)
     if prev_zone is None or zone == prev_zone:
         return False, zone, ""
     if zone == "above":
-        msg = f"{base}/{quote} rose to {rate:.2f}, above {high:.2f}."
+        band = f"above {high:.2f}"
     elif zone == "below":
-        msg = f"{base}/{quote} fell to {rate:.2f}, below {low:.2f}."
+        band = f"below {low:.2f}"
     else:  # back within the band
-        msg = f"{base}/{quote} is back in range at {rate:.2f} ({low:.2f}-{high:.2f})."
-    return True, zone, msg
+        band = f"back in range ({low:.2f}-{high:.2f})"
+    return True, zone, band
 
 
 def run(state: dict) -> dict:
@@ -65,14 +67,24 @@ def run(state: dict) -> dict:
         log.warning("FX: no rate for %s in response", quote)
         return state
 
-    alert, zone, msg = _evaluate(rate, cfg, state.get(STATE_KEY))
+    prev_rate = state.get(RATE_KEY)
+    alert, zone, band = _evaluate(rate, cfg, state.get(STATE_KEY))
     log.info("FX: %s/%s = %.4f -> zone %s; alert=%s", base, quote, rate, zone, alert)
 
     if alert:
+        # Render HOW it moved (magnitude) via the shared framework, then append the
+        # band context the zone logic produced. The stored prior rate is present on
+        # any transition (only the first-ever observation lacks one, and that never
+        # alerts), so the fallback is just defensive.
+        ch = (changes.diff(prev_rate, rate, label=f"{base}/{quote}",
+                           fmt=lambda r: f"{r:.2f}")
+              if prev_rate is not None else None)
+        body = f"{ch.summary}, now {band}" if ch else f"{base}/{quote} at {rate:.2f}, {band}"
         state = events.emit(
             state,
             title=f"{base}/{quote} rate",
-            body=msg,
+            body=body,
+            change=ch,
             topic="fx",
             severity="moderate",
             source="FX",
@@ -80,7 +92,8 @@ def run(state: dict) -> dict:
             legacy_priority="default",
             legacy_action="push",
         )
-    # Always record the latest zone so the next transition is detected (and the
-    # first run seeds without alerting).
+    # Always record the latest zone + rate so the next transition is detected and can
+    # report its magnitude (and the first run seeds both without alerting).
     state[STATE_KEY] = zone
+    state[RATE_KEY] = rate
     return state
