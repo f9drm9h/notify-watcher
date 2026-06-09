@@ -93,12 +93,13 @@ def main() -> int:
 
     counts: Counter[str] = Counter()
     for i, path in enumerate(files, 1):
-        artist = _artist_from_tag(path) or _artist_from_deezer(_clean(path.name))
+        tag_artist = _artist_from_tag(path)  # read the ID3 tag once
+        artist = tag_artist or _artist_from_deezer(_clean(path.name))
         if artist:
             counts[artist.strip()] += 1
         if i % 25 == 0:
             print(f"  ...{i}/{len(files)}")
-        if not _artist_from_tag(path):  # only throttle the network path
+        if not tag_artist:  # no tag -> we hit Deezer, so throttle that path
             time.sleep(0.15)  # be gentle with Deezer's rate limit
 
     artists = sorted(counts)
