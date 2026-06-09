@@ -1,0 +1,242 @@
+[
+  {
+    "id": "why-ac-beat-dc",
+    "title": "Why AC beat DC",
+    "what": "Alternating current can be stepped up to very high voltage with a transformer; Edison's direct current could not, so it could only travel a kilometre or two before fading.",
+    "why": "High voltage lets power travel far with little loss, so AC could serve whole regions from one plant while DC needed a station every few blocks.",
+    "care": "It's the reason a distant power plant can light your home — and why wall sockets everywhere deliver AC.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "why-high-voltage-lines",
+    "title": "Why power lines run at high voltage",
+    "what": "Transmission lines carry electricity at tens or hundreds of thousands of volts, then transformers step it down near your neighbourhood.",
+    "why": "For a given amount of power, higher voltage means lower current, and lower current wastes far less energy as heat in the wires.",
+    "care": "It's why a plant 300 km away can serve your city without melting the cables — and why those towers are so tall.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "how-transformers-work",
+    "title": "How transformers changed civilisation",
+    "what": "A transformer uses two coils around an iron core; alternating current in one coil induces a voltage in the other, raising or lowering it with almost no loss.",
+    "why": "It lets the grid use high voltage for long-distance travel and low, safe voltage in your home — the trick that made AC practical.",
+    "care": "The hum of the grey cylinders on power poles is transformers quietly making your electricity safe to use.",
+    "src": "IEEE"
+  },
+  {
+    "id": "grid-frequency",
+    "title": "Why the grid must hold a steady frequency",
+    "what": "Grids run at a fixed frequency — 60 hertz in the Americas, 50 hertz in most of the world — meaning the current reverses 100 or 120 times a second.",
+    "why": "Every generator must spin in lock-step; if demand outruns supply the frequency sags, and operators add power within seconds to keep it stable.",
+    "care": "That invisible heartbeat keeps clocks accurate and motors running right — and if it drifts too far, the grid trips off to protect itself.",
+    "src": "NERC"
+  },
+  {
+    "id": "how-generators-work",
+    "title": "How almost all electricity is made",
+    "what": "A generator spins magnets past coils of wire; the moving magnetic field pushes electrons along the wire, creating current.",
+    "why": "Coal, gas, nuclear, hydro, and wind nearly all do the same final step — spin a generator — just using different ways to turn the shaft.",
+    "care": "Whether your power comes from a dam or a reactor, the last step is the same spinning magnet Faraday discovered in 1831.",
+    "src": "U.S. Energy Information Administration"
+  },
+  {
+    "id": "most-plants-boil-water",
+    "title": "Most power plants just boil water",
+    "what": "Coal, gas, nuclear, geothermal, and solar-thermal plants all make heat to boil water into steam, which spins a turbine connected to a generator.",
+    "why": "The differences are mostly in how the heat is made; the steam turbine at the end is remarkably similar across them.",
+    "care": "A nuclear reactor, for all its mystique, is fundamentally a very sophisticated way to boil water.",
+    "src": "U.S. Energy Information Administration"
+  },
+  {
+    "id": "watt-vs-watthour",
+    "title": "Watts versus watt-hours",
+    "what": "A watt measures power — the rate of using energy right now. A watt-hour measures energy — a watt sustained for an hour.",
+    "why": "A 1,000-watt heater run for one hour uses one kilowatt-hour; confusing the two is like mixing up speed with distance.",
+    "care": "Your electricity bill charges for kilowatt-hours, so knowing the difference helps you see what actually costs money.",
+    "src": "U.S. Energy Information Administration"
+  },
+  {
+    "id": "how-fission-heat",
+    "title": "How nuclear fission makes heat",
+    "what": "A neutron splits a uranium atom, releasing energy and more neutrons that split further atoms in a controlled chain reaction.",
+    "why": "The energy appears as heat, which boils water to drive a steam turbine — no burning and no carbon dioxide.",
+    "care": "A single uranium fuel pellet the size of a fingertip holds about as much energy as a tonne of coal.",
+    "src": "U.S. NRC"
+  },
+  {
+    "id": "control-rods",
+    "title": "How a reactor is kept under control",
+    "what": "Control rods made of neutron-absorbing materials slide between the fuel; pushing them in soaks up neutrons and slows the reaction.",
+    "why": "By adjusting the rods, operators fine-tune the chain reaction or shut it down within seconds in an emergency.",
+    "care": "This constant control is what separates a power reactor from a bomb — the physics simply won't allow a nuclear explosion.",
+    "src": "U.S. NRC"
+  },
+  {
+    "id": "why-storage-is-hard",
+    "title": "Why electricity is hard to store",
+    "what": "Unlike water or fuel, electricity can't easily be kept in bulk; it must usually be made the instant it's used.",
+    "why": "So grid operators constantly match generation to demand, second by second, rather than drawing from a big reservoir.",
+    "care": "It's why batteries and pumped-hydro are such a big deal — they finally let us bank electricity for later.",
+    "src": "U.S. Energy Information Administration"
+  },
+  {
+    "id": "supply-demand-balance",
+    "title": "The grid balances on a knife's edge",
+    "what": "At every instant, the power flowing onto the grid must equal the power being drawn off it.",
+    "why": "Operators forecast demand and dispatch plants minute by minute; a sudden mismatch shows up immediately as a frequency change.",
+    "care": "This relentless balancing act, invisible to you, is what keeps the lights steady when millions switch things on at once.",
+    "src": "NERC"
+  },
+  {
+    "id": "three-phase",
+    "title": "Why the grid uses three-phase power",
+    "what": "The grid sends three alternating currents, each offset by a third of a cycle, usually on three wires.",
+    "why": "Three-phase delivers steady, smooth power and lets motors run efficiently without needing a separate starter.",
+    "care": "It's why big transmission towers carry wires in sets of three, and why industrial machines run so smoothly.",
+    "src": "IEEE"
+  },
+  {
+    "id": "birds-on-wires",
+    "title": "Why birds on power lines don't get shocked",
+    "what": "Electricity flows through a path only when there's a voltage difference; a bird touching one wire is all at the same voltage, so nothing flows through it.",
+    "why": "Current needs somewhere to go; touching two wires at once, or a wire and the ground, would create that path.",
+    "care": "It explains both the bird's safety and why touching a downed line while standing on the ground is so dangerous.",
+    "src": "IEEE"
+  },
+  {
+    "id": "how-batteries-store",
+    "title": "How a battery stores energy",
+    "what": "A battery stores energy in chemicals; charging drives a reaction one way, and discharging lets it reverse, pushing electrons out as current.",
+    "why": "In a lithium-ion cell, charging moves lithium ions to one electrode and discharging lets them flow back, releasing power.",
+    "care": "Understanding this explains why batteries wear out — the chemistry slowly degrades with every charge cycle.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "transmission-vs-distribution",
+    "title": "Transmission versus distribution",
+    "what": "Transmission lines are the high-voltage 'motorways' carrying power long distances; distribution lines are the local 'streets' bringing it to homes at low voltage.",
+    "why": "Substations with transformers connect the two, stepping voltage down in stages along the way.",
+    "care": "When a storm knocks out 'the power', it's usually the local distribution lines, not the big towers, that failed.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "baseload-vs-peaking",
+    "title": "Base-load versus peaking plants",
+    "what": "Base-load plants run steadily around the clock; peaking plants switch on briefly to cover spikes, like a hot evening when everyone runs air conditioning.",
+    "why": "Cheap-to-run but slow plants cover the steady demand, while fast, pricier ones handle short peaks.",
+    "care": "This mix is why electricity can cost far more at 6 p.m. than at 3 a.m. — and why shifting use saves money.",
+    "src": "U.S. Energy Information Administration"
+  },
+  {
+    "id": "how-solar-cells-work",
+    "title": "How solar panels make electricity",
+    "what": "Sunlight knocks electrons loose in a layered silicon cell, and the cell's built-in electric field pushes them out as direct current.",
+    "why": "There are no moving parts and no fuel — just light hitting silicon — so panels are quiet and nearly maintenance-free.",
+    "care": "It's why rooftop solar can make power silently on your roof for decades with almost no upkeep.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "how-wind-turbines-work",
+    "title": "How wind turbines convert wind",
+    "what": "Wind pushes shaped blades that spin a shaft; gearing speeds it up to turn a generator, making electricity.",
+    "why": "Bigger blades sweep more air, so modern turbines are huge — some blades are longer than a football pitch.",
+    "care": "A single large offshore turbine can power thousands of homes, which is why they keep getting taller.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "capacity-factor",
+    "title": "What 'capacity factor' really means",
+    "what": "Capacity factor is how much a plant actually produces over a year compared with running flat-out the whole time.",
+    "why": "A solar farm rated at 100 megawatts may average 25%, because it makes nothing at night; a nuclear plant often exceeds 90%.",
+    "care": "It's why you can't compare power sources by their headline rating alone — uptime matters as much as size.",
+    "src": "U.S. Energy Information Administration"
+  },
+  {
+    "id": "hvdc",
+    "title": "When the grid uses high-voltage DC",
+    "what": "For very long overhead lines and undersea cables, the grid sometimes converts AC into high-voltage direct current.",
+    "why": "Over great distances, HVDC loses less energy than AC and can link grids that aren't synchronised with each other.",
+    "care": "Long undersea links that import clean power between countries rely on this — DC quietly making a comeback.",
+    "src": "IEEE"
+  },
+  {
+    "id": "grid-inertia",
+    "title": "Why spinning machines steady the grid",
+    "what": "The heavy spinning rotors of conventional generators store momentum, called inertia, that briefly resists sudden frequency changes.",
+    "why": "This buys operators precious seconds to respond when a plant trips off; solar and wind don't naturally provide it.",
+    "care": "As grids add more renewables, engineers must replace this 'shock absorber' with batteries and clever electronics.",
+    "src": "NERC"
+  },
+  {
+    "id": "fuses-breakers",
+    "title": "How fuses and breakers protect you",
+    "what": "A fuse melts and a circuit breaker trips when too much current flows, instantly cutting the circuit.",
+    "why": "Excess current means overheating wires and fire risk; breaking the circuit stops it before damage spreads.",
+    "care": "It's why a tripped breaker is a feature, not a fault — it just saved your wiring from overload.",
+    "src": "IEEE"
+  },
+  {
+    "id": "electrons-vs-signal",
+    "title": "Electrons crawl, but power races",
+    "what": "Individual electrons drift through a wire slower than a walking pace, yet the electrical effect travels near the speed of light.",
+    "why": "Flipping a switch nudges the whole chain of electrons almost at once, like pushing one end of a full pipe of marbles.",
+    "care": "It's why your light turns on instantly even though the electrons themselves barely move.",
+    "src": "IEEE"
+  },
+  {
+    "id": "pumped-hydro",
+    "title": "How pumped-hydro stores energy",
+    "what": "When power is cheap, water is pumped uphill to a reservoir; when demand peaks, it flows back down through turbines to make electricity.",
+    "why": "It's effectively a giant water battery and stores the vast majority of the world's grid-scale energy today.",
+    "care": "It's the proven way grids have banked surplus power for nearly a century — long before lithium batteries.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "brownout-vs-blackout",
+    "title": "Brownouts versus blackouts",
+    "what": "A blackout is a total loss of power; a brownout is a deliberate voltage reduction to ease strain when demand is dangerously high.",
+    "why": "Dimming the grid slightly can shed enough load to avoid a full collapse.",
+    "care": "If your lights ever dim and flicker on a scorching afternoon, the grid may be protecting itself from a blackout.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "why-copper-aluminium",
+    "title": "Why wires are copper and aluminium",
+    "what": "Copper conducts electricity superbly and is used in homes; long overhead lines use aluminium because it's much lighter and cheaper.",
+    "why": "Lighter wire means fewer and cheaper support towers over hundreds of kilometres, even if aluminium conducts a bit less well.",
+    "care": "It's a daily engineering trade-off — performance versus cost and weight — visible in the lines overhead.",
+    "src": "IEEE"
+  },
+  {
+    "id": "megawatts-gigawatts",
+    "title": "Sizing plants in megawatts and gigawatts",
+    "what": "A megawatt is a million watts; a gigawatt is a billion. A large reactor is about one gigawatt.",
+    "why": "Roughly, one gigawatt can power somewhere around 750,000 average homes, depending on the country and season.",
+    "care": "These units let you judge whether a new project is a token gesture or a serious chunk of a country's power.",
+    "src": "U.S. Energy Information Administration"
+  },
+  {
+    "id": "what-is-the-load",
+    "title": "What grid operators mean by 'the load'",
+    "what": "The load is the total electricity being demanded by everyone on the grid at a given moment.",
+    "why": "It rises and falls predictably — low overnight, peaking on hot evenings — and operators schedule plants to follow it.",
+    "care": "When you hear of 'record demand' in a heat wave, that's the load testing the limits of available supply.",
+    "src": "U.S. Energy Information Administration"
+  },
+  {
+    "id": "smart-meters",
+    "title": "What a smart meter actually does",
+    "what": "A smart meter records your electricity use in short intervals and reports it to the utility automatically.",
+    "why": "It enables time-of-use pricing, faster outage detection, and feedback that helps households cut waste.",
+    "care": "It can let you pay less by shifting heavy use — laundry, charging — to cheaper, cleaner hours.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "power-factor",
+    "title": "Why some power does no work",
+    "what": "Motors and transformers draw 'reactive' power that sloshes back and forth without doing useful work, described by the power factor.",
+    "why": "Utilities must supply this extra current and size their equipment for it, even though it never lights a bulb.",
+    "care": "It's a hidden inefficiency that big users are charged for and that engineers work hard to correct.",
+    "src": "IEEE"
+  }
+]

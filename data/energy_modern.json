@@ -1,0 +1,242 @@
+[
+  {
+    "id": "hornsdale-big-battery",
+    "title": "The battery that steadied a grid (2017)",
+    "what": "South Australia installed the Hornsdale Power Reserve, then the world's largest lithium-ion battery, beside a wind farm.",
+    "why": "It responds in a fraction of a second to grid disturbances, a job that once needed spinning fossil plants on standby.",
+    "care": "It proved grid-scale batteries can pay for themselves and sparked a global wave of similar projects.",
+    "src": "Neoen / AEMO"
+  },
+  {
+    "id": "nif-fusion-ignition",
+    "title": "Fusion 'ignition' in a lab (2022)",
+    "what": "In December 2022 the U.S. National Ignition Facility produced a fusion reaction that released more energy than the lasers delivered to the fuel capsule.",
+    "why": "It was the first lab fusion to pass that 'break-even' line, a milestone scientists chased for decades.",
+    "care": "It's a proof of physics, not a power plant — but it's the strongest sign yet that fusion energy is possible.",
+    "src": "Lawrence Livermore National Lab"
+  },
+  {
+    "id": "vogtle-new-reactors",
+    "title": "America's first new reactors in a generation",
+    "what": "Plant Vogtle in Georgia brought two new reactors online in 2023 and 2024 — the first newly built U.S. reactors in about three decades.",
+    "why": "They came in years late and far over budget, showing how hard large nuclear builds have become in the West.",
+    "care": "Whether nuclear can be built on time and on budget is central to many countries' clean-energy plans.",
+    "src": "U.S. Energy Information Administration"
+  },
+  {
+    "id": "small-modular-reactors",
+    "title": "Small modular reactors",
+    "what": "SMRs are compact reactors built in factories and shipped to site, rather than constructed piece by piece like giant plants.",
+    "why": "Standardised, smaller units aim to cut the cost overruns and long build times that plague big reactors.",
+    "care": "If they deliver, they could put reliable carbon-free power near towns, data centres, and remote industry.",
+    "src": "U.S. NRC"
+  },
+  {
+    "id": "nuscale-design-certified",
+    "title": "The first SMR design clears U.S. regulators",
+    "what": "NuScale's small modular reactor became the first SMR design certified by the U.S. Nuclear Regulatory Commission.",
+    "why": "Regulatory approval is a huge hurdle; certifying the design opened the door for utilities to consider building it.",
+    "care": "It's a key step toward a nuclear industry that builds reactors like products, not one-off megaprojects.",
+    "src": "U.S. NRC"
+  },
+  {
+    "id": "enhanced-geothermal",
+    "title": "Geothermal goes where there's no volcano",
+    "what": "Enhanced geothermal systems use drilling techniques borrowed from oil and gas to create heat reservoirs in hot, dry rock far from natural hot springs.",
+    "why": "Traditional geothermal needs rare natural conditions; this could unlock clean, always-on heat almost anywhere.",
+    "care": "It offers steady renewable power that, unlike solar and wind, runs day and night regardless of weather.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "green-hydrogen",
+    "title": "Splitting water with clean power",
+    "what": "Green hydrogen is made by using renewable electricity to split water into hydrogen and oxygen in an electrolyser.",
+    "why": "The hydrogen can store energy, fuel heavy transport, or replace fossil gas in industries hard to electrify, like steel.",
+    "care": "It's a candidate for cleaning up the parts of the economy that batteries and wires can't easily reach.",
+    "src": "International Energy Agency"
+  },
+  {
+    "id": "virtual-power-plants",
+    "title": "Virtual power plants",
+    "what": "Software links thousands of home batteries, solar panels, and smart appliances so they can act together like a single power station.",
+    "why": "Coordinated, they can feed power back or trim demand at peak times, easing strain without building new plants.",
+    "care": "Your future home battery or water heater could quietly earn you money by helping balance the grid.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "vehicle-to-grid",
+    "title": "Cars that power the grid back",
+    "what": "Vehicle-to-grid technology lets an electric car's battery send energy back to a home or the grid when it's parked and plugged in.",
+    "why": "A nation's parked EVs hold an enormous amount of storage that mostly sits idle.",
+    "care": "Your car could one day help power your house during an outage or earn credit by supporting the grid at peak times.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "long-duration-storage",
+    "title": "Batteries that last for days",
+    "what": "New chemistries like iron-air aim to store energy for many hours or even days, far longer than today's lithium batteries.",
+    "why": "Cheap multi-day storage could cover long stretches of cloudy, windless weather that short batteries can't.",
+    "care": "It may be the missing piece that lets wind and solar reliably run a grid around the clock.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "sodium-ion-batteries",
+    "title": "Batteries made from salt",
+    "what": "Sodium-ion batteries replace scarce lithium with abundant, cheap sodium, trading some energy density for lower cost.",
+    "why": "Sodium is everywhere and far cheaper, easing worries about lithium supply and price.",
+    "care": "They could make home and grid storage cheaper, even if they stay too heavy for long-range cars.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "solid-state-batteries",
+    "title": "The solid-state battery race",
+    "what": "Solid-state batteries swap the flammable liquid inside a normal battery for a solid material that carries the charge.",
+    "why": "They promise more range, faster charging, and less fire risk — but are hard to manufacture at scale.",
+    "care": "If perfected, they could be the leap that makes electric cars charge as fast as filling a tank.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "perovskite-solar",
+    "title": "The next generation of solar cells",
+    "what": "Perovskite materials, often layered on top of silicon, keep setting new records for how much sunlight a cell can convert.",
+    "why": "Stacking two materials captures more of the spectrum, pushing efficiency past what silicon alone can reach.",
+    "care": "Higher-efficiency panels mean more power from the same roof — and cheaper solar for everyone.",
+    "src": "National Renewable Energy Laboratory"
+  },
+  {
+    "id": "private-fusion-startups",
+    "title": "Fusion leaves the government lab",
+    "what": "Private companies are building compact fusion machines, some using powerful new high-temperature superconducting magnets.",
+    "why": "They aim to reach fusion power faster and cheaper than giant public projects by going small and iterating quickly.",
+    "care": "Billions in private investment have turned fusion from a distant dream into a genuine commercial race.",
+    "src": "Commonwealth Fusion Systems / MIT"
+  },
+  {
+    "id": "uhv-china",
+    "title": "China's ultra-high-voltage lines",
+    "what": "China has built ultra-high-voltage links operating above a million volts to carry power thousands of kilometres across the country.",
+    "why": "They move electricity from remote dams, solar, and wind in the west to the crowded, power-hungry east.",
+    "care": "They show how a continent-sized clean grid might move renewable power from where it's made to where it's needed.",
+    "src": "IEEE"
+  },
+  {
+    "id": "dogger-bank",
+    "title": "Offshore wind on a giant scale",
+    "what": "Projects like the UK's Dogger Bank are building the world's largest offshore wind farms far out at sea.",
+    "why": "Steady ocean winds and ever-larger turbines let a single project power millions of homes.",
+    "care": "Offshore wind is becoming a backbone of clean power for coastal nations on several continents.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "bhadla-solar-park",
+    "title": "Solar parks the size of cities",
+    "what": "Enormous solar parks such as Bhadla in India's Thar Desert cover tens of square kilometres with millions of panels.",
+    "why": "Building solar in vast, sun-soaked clusters drives the cost of clean electricity to record lows.",
+    "care": "Solar is now the cheapest electricity in history in many sunny regions, thanks to projects at this scale.",
+    "src": "International Energy Agency"
+  },
+  {
+    "id": "carbon-capture-power",
+    "title": "Capturing carbon from power plants",
+    "what": "Carbon capture equipment strips carbon dioxide from a power plant's exhaust before it reaches the air, then stores it underground.",
+    "why": "It could cut emissions from existing fossil plants, though it's costly and uses some of the plant's own power.",
+    "care": "It's a contested but real tool for cleaning up power and heavy industry that can't easily switch fuels.",
+    "src": "International Energy Agency"
+  },
+  {
+    "id": "grid-forming-inverters",
+    "title": "Electronics that steady a green grid",
+    "what": "Grid-forming inverters let batteries and solar set the grid's voltage and frequency themselves, mimicking the steadying role of spinning generators.",
+    "why": "As fossil plants retire, the grid loses their natural stability; smart electronics can recreate it.",
+    "care": "This quiet upgrade is key to running a reliable grid on mostly wind, solar, and batteries.",
+    "src": "National Renewable Energy Laboratory"
+  },
+  {
+    "id": "nuclear-life-extension",
+    "title": "Keeping old reactors running",
+    "what": "Many countries are extending the licences of existing reactors, and some are even restarting recently closed plants.",
+    "why": "Existing reactors are a large, ready source of carbon-free power that's cheaper to keep than to replace.",
+    "care": "Saving today's reactors may matter as much for the climate as building new ones.",
+    "src": "International Energy Agency"
+  },
+  {
+    "id": "demand-response",
+    "title": "Getting paid to use less at peak",
+    "what": "Demand-response programmes pay homes and businesses to cut or shift electricity use when the grid is strained.",
+    "why": "Trimming demand for a few hours can be cheaper and cleaner than firing up an extra power plant.",
+    "care": "Signing up can lower your bill while helping prevent blackouts on the hottest, tightest days.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "microgrids",
+    "title": "Microgrids that stand alone",
+    "what": "A microgrid is a small, local network — perhaps a campus or town — that can disconnect and run on its own generation and storage.",
+    "why": "When the main grid fails, a microgrid can keep critical services like hospitals powered.",
+    "care": "They're a resilience tool as extreme weather makes long, widespread outages more common.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "heat-pumps",
+    "title": "Heat pumps move heat instead of making it",
+    "what": "A heat pump uses electricity to move heat from outside into your home, delivering several units of heat per unit of electricity.",
+    "why": "Because it moves heat rather than burning fuel, it can be far more efficient than a furnace or electric heater.",
+    "care": "Switching heating to efficient electric heat pumps is one of the biggest ways homes can cut energy use and emissions.",
+    "src": "International Energy Agency"
+  },
+  {
+    "id": "agrivoltaics",
+    "title": "Farming under solar panels",
+    "what": "Agrivoltaics places solar panels above crops or grazing land so the same ground produces both food and electricity.",
+    "why": "Panels can shade and shelter some crops while the land keeps earning from farming.",
+    "care": "It eases the worry that solar farms must compete with agriculture for scarce land.",
+    "src": "National Renewable Energy Laboratory"
+  },
+  {
+    "id": "battery-recycling",
+    "title": "Mining old batteries instead of the earth",
+    "what": "New recycling plants recover lithium, nickel, and cobalt from spent batteries to make new ones.",
+    "why": "Recycling eases demand for fresh mining and keeps hazardous materials out of landfills.",
+    "care": "As today's electric cars age, recycling will decide how clean and self-sufficient the battery supply chain becomes.",
+    "src": "International Energy Agency"
+  },
+  {
+    "id": "floating-offshore-wind",
+    "title": "Wind turbines that float",
+    "what": "Floating platforms let wind turbines be anchored in deep water, far from shore where fixed foundations can't reach.",
+    "why": "Most of the world's strongest offshore winds are over water too deep for traditional turbines.",
+    "care": "It opens vast new ocean areas — off Japan, California, and Europe — to clean wind power.",
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "data-center-demand",
+    "title": "Data centres reshape power demand",
+    "what": "The boom in cloud computing and artificial intelligence is driving a surge in electricity demand from data centres.",
+    "why": "After years of flat demand, this growth is pushing utilities to build new generation and even revive nuclear plants.",
+    "care": "The digital services you use every day are now a real force shaping how much power the world needs.",
+    "src": "International Energy Agency"
+  },
+  {
+    "id": "ultra-fast-ev-charging",
+    "title": "Charging an EV in minutes",
+    "what": "High-power chargers can now add a couple of hundred kilometres of range to many electric cars in roughly 15–20 minutes.",
+    "why": "Fast, widespread charging tackles the 'range anxiety' that slowed electric-car adoption.",
+    "care": "As charging approaches the speed of a fuel stop, the last big practical hurdle to EVs keeps shrinking.",
+    "src": "International Energy Agency"
+  },
+  {
+    "id": "grid-scale-battery-boom",
+    "title": "Grid batteries go mainstream",
+    "what": "Regions like California and Texas have added thousands of megawatts of grid batteries that now routinely cover the evening demand peak.",
+    "why": "Batteries soak up cheap midday solar and release it at sunset, replacing gas 'peaker' plants.",
+    "care": "It's a live demonstration that storage, not just generation, is becoming a core part of the grid.",
+    "src": "U.S. Energy Information Administration"
+  },
+  {
+    "id": "repowering-wind",
+    "title": "Repowering ageing wind farms",
+    "what": "Older wind farms are being 'repowered' — swapping early turbines for fewer, far larger and more efficient modern ones.",
+    "why": "A handful of today's turbines can out-produce dozens of 1990s machines on the same windy site.",
+    "care": "It squeezes much more clean power from land already approved for wind, without hunting for new sites.",
+    "src": "U.S. Dept. of Energy"
+  }
+]
