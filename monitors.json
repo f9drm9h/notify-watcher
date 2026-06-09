@@ -216,7 +216,7 @@
                  "hydrogen", "wind"],
     "sources": [
       {"name": "EIA Today in Energy", "url": "https://www.eia.gov/rss/todayinenergy.xml", "weight": "gov_data"},
-      {"name": "World Nuclear News", "url": "https://world-nuclear-news.org/rss", "weight": "trade"}
+      {"name": "World Nuclear News", "url": "https://world-nuclear-news.org/rss", "weight": "gov_data"}
     ]
   },
 
