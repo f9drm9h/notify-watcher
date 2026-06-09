@@ -133,6 +133,10 @@ message and, when there are more than fit, the *least* important are dropped
   `marine.rough_wave_m` (Open-Meteo Marine, no key). Daily run only.
 - **Astronomy almanac** — full/new moons (computed) plus meteor-shower peaks,
   solstices/equinoxes, and eclipses from a built-in table. No network. Daily run.
+- **Weekly recap** — one Monday-morning push summarizing the past week from the
+  event log: live pushes vs. digested vs. dropped, the busiest topics, the
+  highest-priority story, and whether every topic is healthy. No network, no
+  key.
 - **Watchdog (self-monitoring)** — every run, `main.py` records each topic's
   last successful run and latest failure in `state.json` → `topic_health`. The
   watchdog reads that record and pushes one heads-up when any topic has had no

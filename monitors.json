@@ -48,6 +48,7 @@
       { "topic": "health_tip", "score": 60 },
       { "topic": "learn", "score": 60 },
       { "topic": "energy_learn", "score": 60 },
+      { "topic": "recap", "score": 60 },
       { "topic": "astronomy", "score": 60 },
 
       { "topic": "weather", "severity": "moderate", "score": 50 },
