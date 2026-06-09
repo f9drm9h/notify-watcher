@@ -15,7 +15,7 @@ import urllib.parse
 import feedparser
 import requests
 
-from .. import config, events, ids
+from .. import config, events, ids, news
 
 log = logging.getLogger(__name__)
 
@@ -34,11 +34,17 @@ def _entry_source(entry) -> str:
     return (getattr(src, "title", "") or "").strip()
 
 
-def _official(entries) -> list[tuple]:
-    """Pure: keep only entries published by Anthropic itself. Returns [(id, title, link)]."""
+def _official(entries, max_age_days: float = 0) -> list[tuple]:
+    """Pure: keep only entries published by Anthropic itself, and — when
+    ``max_age_days`` > 0 — published within that window. Google News resurfaces
+    years-old posts under brand-new URLs (a 2023 "introducing Claude Pro" pushed
+    in 2026), which defeats id dedup; the age gate is what stops those.
+    Returns [(id, title, link)]."""
     out: list[tuple] = []
     for e in entries:
         if _entry_source(e).lower() != OFFICIAL_SOURCE:
+            continue
+        if not news.is_recent(e, max_age_days):
             continue
         aid = getattr(e, "id", "") or getattr(e, "link", "")
         if aid:
@@ -58,8 +64,9 @@ def run(state: dict) -> dict:
         log.error("anthropic news fetch failed: %s", exc)
         return state
 
-    official = _official(entries)
-    log.info("anthropic: %d entries, %d official", len(entries), len(official))
+    max_age = config.section("news").get("max_age_days", news.DEFAULT_MAX_AGE_DAYS)
+    official = _official(entries, max_age)
+    log.info("anthropic: %d entries, %d official+recent", len(entries), len(official))
 
     seen = state.get(STATE_KEY)
     if seen is None:

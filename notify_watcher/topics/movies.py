@@ -215,6 +215,7 @@ def _collect_news(title: str) -> list[news.Article]:
     others still contribute. Returns a list of (article_id, headline, link,
     source); `source` is the publisher used for provenance weighting in scoring.
     """
+    max_age = config.section("news").get("max_age_days", news.DEFAULT_MAX_AGE_DAYS)
     merged: dict[str, tuple[time.struct_time, str, str, str, str]] = {}
     for phrase in [title, *TITLE_ALIASES.get(title, [])]:
         try:
@@ -224,6 +225,10 @@ def _collect_news(title: str) -> list[news.Article]:
             continue
         kept = 0
         for e in entries:
+            # Google News resurfaces months-old articles under fresh URLs, which
+            # defeats id dedup; age-gate them out before they can alert.
+            if not news.is_recent(e, max_age):
+                continue
             headline = getattr(e, "title", "")
             if not _news_relevant(phrase, headline):
                 continue
