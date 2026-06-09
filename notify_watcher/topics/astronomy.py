@@ -13,7 +13,7 @@ import logging
 import os
 from datetime import date, timedelta
 
-from .. import ntfy
+from .. import events
 
 log = logging.getLogger(__name__)
 
@@ -92,7 +92,9 @@ def run(state: dict) -> dict:
         key = f"{today.isoformat()}|{msg[:20]}"
         if key in sent_set:
             continue
-        ntfy.push(title="Sky tonight", message=msg, tags="milky_way", priority="low")
+        events.emit(state, title="Sky tonight", body=msg, topic="astronomy",
+                    severity="low", source="Astronomy", tags="milky_way",
+                    legacy_priority="low", legacy_action="push")
         sent_set.add(key)
         sent.append(key)
         new += 1

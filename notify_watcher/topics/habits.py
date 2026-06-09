@@ -21,7 +21,7 @@ import json
 import logging
 from pathlib import Path
 
-from .. import kb, ntfy
+from .. import events, kb
 
 log = logging.getLogger(__name__)
 
@@ -92,11 +92,16 @@ def _run_one(state: dict, habit: dict, now: _dt.datetime) -> dict:
     due = _due_slots(now, hours, sent)
     if due:
         latest = due[-1]  # ascending; send only the most recent slot
-        ntfy.push(
+        events.emit(
+            state,
             title=habit.get("title") or name,
-            message=_message_for(messages, today, latest),
+            body=_message_for(messages, today, latest),
+            topic="habits",
+            severity="low",
+            source=name,
             tags=habit.get("tag") or "bell",
-            priority="low",
+            legacy_priority="low",
+            legacy_action="push",
         )
         log.info("habit %r: sent %02d:00 UTC slot", name, latest)
         for h in due:  # mark earlier missed slots handled too (no catch-up burst)

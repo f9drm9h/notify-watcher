@@ -15,7 +15,7 @@ from datetime import date
 
 import requests
 
-from .. import config, ntfy
+from .. import config, events
 
 log = logging.getLogger(__name__)
 
@@ -69,11 +69,16 @@ def run(state: dict) -> dict:
         if key in sent_set:
             continue
         when = "today" if days_until == 0 else f"in {days_until} day{'s' if days_until != 1 else ''}"
-        ntfy.push(
+        events.emit(
+            state,
             title="Public holiday",
-            message=f"{name} - {hd.isoformat()} ({when}). Banks/offices likely closed.",
+            body=f"{name} - {hd.isoformat()} ({when}). Banks/offices likely closed.",
+            topic="holidays",
+            severity="moderate",
+            source="Holidays",
             tags="date",
-            priority="default",
+            legacy_priority="default",
+            legacy_action="push",
         )
         sent_set.add(key)
         sent_list.append(key)
