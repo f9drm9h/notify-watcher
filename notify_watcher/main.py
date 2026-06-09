@@ -155,15 +155,32 @@ def main() -> int:
         os.environ["NOTIFY_DAILY"] = "1"
         log.info("daily run active: digest flush, health tip, and learn enabled")
 
+    # Per-topic run telemetry for the dashboard. priority.decide/emit never see a
+    # topic that THREW (it never emits), so the only place that knows a topic failed
+    # is this loop. Stamp last-ok / last-error here; the dashboard turns it into the
+    # "topic health / last successful run / failures" panels (docs/design/02-dashboard).
+    health: dict = state.setdefault("topic_health", {})
+    run_ts = _dt.datetime.now(_dt.timezone.utc).isoformat()
+    ok_count = fail_count = 0
+
     for name, run in TOPICS:
         log.info("[%s] starting", name)
+        entry = health.setdefault(name, {})
         try:
             state = run(state)
+            entry["last_ok"] = run_ts
+            entry.pop("last_error", None)
+            entry.pop("last_error_ts", None)
+            ok_count += 1
             log.info("[%s] ok", name)
         except Exception as exc:  # noqa: BLE001 - we deliberately swallow
+            entry["last_error"] = str(exc)
+            entry["last_error_ts"] = run_ts
+            fail_count += 1
             log.error("[%s] failed: %s", name, exc)
             log.debug("[%s] traceback:\n%s", name, traceback.format_exc())
 
+    state["last_run"] = {"ts": run_ts, "ok": ok_count, "failed": fail_count}
     state_mod.save(state)
     # Always exit 0: a per-topic failure (e.g. transient network error) is
     # already logged above and must not turn the scheduled workflow red.

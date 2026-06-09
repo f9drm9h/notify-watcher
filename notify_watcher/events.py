@@ -28,9 +28,12 @@ from __future__ import annotations
 import datetime as _dt
 import logging
 from dataclasses import dataclass, field
-from typing import Optional
+from typing import Optional, TYPE_CHECKING
 
-from . import config, digest, ntfy, priority
+from . import config, digest, eventlog, ntfy, priority
+
+if TYPE_CHECKING:
+    from .changes import Change
 
 log = logging.getLogger(__name__)
 
@@ -114,6 +117,7 @@ def emit(
     legacy_priority: Optional[str] = None,
     legacy_action: str = "push",
     score: int = 0,
+    change: "Optional[Change]" = None,
     priority_cfg: Optional[dict] = None,
     digest_cfg: Optional[dict] = None,
 ) -> dict:
@@ -129,6 +133,13 @@ def emit(
 
     ``click_url`` and ``tags`` are transport hints; they are folded into the
     Event's metadata so the Event stays the single normalized source of truth.
+    ``change`` (a ``changes.Change``) is the opt-in change-summary hook: when given,
+    it fills an empty ``body`` with ``change.summary`` (the human "how it moved" line)
+    and stashes the STRUCTURED move under ``metadata["change"]`` so the digest detail,
+    the ntfy body, and the event log all read the same data with no sentence re-parsing
+    (see docs/design/01-change-summary-framework.md). Omitting it is byte-identical to
+    before, so the framework is pull, not push.
+
     ``priority_cfg`` / ``digest_cfg`` default to the monitors.json sections and
     exist mainly so tests can inject synthetic config.
     """
@@ -137,6 +148,11 @@ def emit(
         md.setdefault("click_url", click_url)
     if tags is not None:
         md.setdefault("tags", tags)
+    if change is not None:
+        if not body:
+            body = change.summary
+        md.setdefault("change", {**change.metadata, "summary": change.summary,
+                                 "kind": change.kind, "direction": change.direction})
 
     event = Event(
         title=title,
@@ -164,6 +180,9 @@ def emit(
             _to_digest(state, event, score, digest_cfg)
         else:
             _push(event, legacy_priority)
+        # Log under the caller's within-domain score so history is complete even
+        # when the engine is off (the dashboard reads this regardless of mode).
+        eventlog.record(state, event, legacy_action, score, priority_cfg)
         return state
 
     if decision.action == "push":
@@ -171,4 +190,7 @@ def emit(
     elif decision.action == "digest":
         _to_digest(state, event, decision.score, digest_cfg)
     # "drop" -> intentionally nothing
+    # Record every routed Event (push/digest/drop) with its global score so the
+    # dashboard has a durable, cross-topic history that outlives the digest flush.
+    eventlog.record(state, event, decision.action, decision.score, priority_cfg)
     return state

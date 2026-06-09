@@ -38,7 +38,7 @@ import urllib.parse
 import feedparser
 import requests
 
-from .. import config, events, news, watchlist
+from .. import changes, config, events, news, watchlist
 
 log = logging.getLogger(__name__)
 
@@ -166,14 +166,19 @@ def _track_release_dates(state: dict) -> dict:
             if previous == current:
                 continue
 
+            ch = None
             if previous is None:
                 body = f"Now tracking {name}. Release date: {current}"
             else:
-                body = f"{name} release date changed: {previous} -> {current}"
+                # Render the day delta via the shared framework (degrades to a string
+                # diff if a side is TBA), e.g. "moved from May 26 2027 ... (+115 days)".
+                ch = changes.diff(previous, current, kind="date", label=name)
+                body = ch.summary
             state = events.emit(
                 state,
                 title=f"Movie: {name}",
                 body=body,
+                change=ch,
                 topic="movies",
                 severity="low",
                 source="Movies",
