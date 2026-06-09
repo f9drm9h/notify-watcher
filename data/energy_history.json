@@ -1,0 +1,272 @@
+[
+  {
+    "id": "voltaic-pile-1800",
+    "title": "Volta builds the first battery (1800)",
+    "what": "Alessandro Volta stacked discs of zinc and copper separated by brine-soaked cloth, producing the first steady source of electric current.",
+    "why": "Before the 'voltaic pile', electricity was only fleeting static sparks; Volta gave science a continuous current to experiment with.",
+    "care": "Every battery in your phone, car, and remote control is a descendant of this simple stack of metal discs.",
+    "year": 1800,
+    "src": "IEEE / Smithsonian"
+  },
+  {
+    "id": "faraday-induction-1831",
+    "title": "Faraday discovers electromagnetic induction (1831)",
+    "what": "Michael Faraday showed that moving a magnet through a coil of wire generates an electric current.",
+    "why": "Induction is the principle behind every generator and transformer — turning motion into electricity and changing its voltage.",
+    "care": "Almost all the electricity you use, from any source, is made by spinning magnets past coils exactly as Faraday described.",
+    "year": 1831,
+    "src": "Royal Institution"
+  },
+  {
+    "id": "pearl-street-1882",
+    "title": "Edison's Pearl Street Station opens (1882)",
+    "what": "In September 1882 Edison's Pearl Street plant in Manhattan began selling electricity to paying customers, lighting a few hundred lamps.",
+    "why": "It was the first commercial central power station — proof that electricity could be generated centrally and sold as a utility.",
+    "care": "It created the business model — a power company that bills you monthly — that still powers your home today.",
+    "year": 1882,
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "vulcan-street-1882",
+    "title": "The first hydroelectric plant (1882)",
+    "what": "Weeks after Pearl Street, the Vulcan Street plant in Appleton, Wisconsin used the Fox River to generate the world's first hydroelectric power.",
+    "why": "It showed falling water could replace burning coal to make electricity — the first renewable power station.",
+    "care": "Hydropower still supplies about a sixth of the world's electricity, all tracing back to this small mill-town experiment.",
+    "year": 1882,
+    "src": "Smithsonian"
+  },
+  {
+    "id": "tesla-ac-motor-1888",
+    "title": "Tesla patents the AC induction motor (1888)",
+    "what": "Nikola Tesla patented a practical motor that runs on alternating current using a rotating magnetic field.",
+    "why": "It gave alternating current a killer application — a rugged, brushless motor — and helped AC win out over Edison's DC.",
+    "care": "The same induction motor runs your fridge, washing machine, fans, and most electric-vehicle drivetrains.",
+    "year": 1888,
+    "src": "IEEE"
+  },
+  {
+    "id": "niagara-ac-1896",
+    "title": "Niagara Falls powers Buffalo by AC (1896)",
+    "what": "Westinghouse's Niagara Falls plant sent alternating current 26 miles to Buffalo, New York.",
+    "why": "It proved AC could move large amounts of power over long distances — the decisive win in the 'war of the currents'.",
+    "care": "Long-distance transmission is why a power plant can sit far from your city and still keep your lights on.",
+    "year": 1896,
+    "src": "IEEE"
+  },
+  {
+    "id": "rea-1936",
+    "title": "The Rural Electrification Act (1936)",
+    "what": "A U.S. law funded cooperatives to string power lines to farms and villages that private utilities had ignored as unprofitable.",
+    "why": "In 1935 only about 1 in 10 American farms had electricity; within a decade most did.",
+    "care": "It shows that universal electricity often needs public effort, not just markets — a debate still live in the developing world.",
+    "year": 1936,
+    "src": "U.S. Dept. of Agriculture"
+  },
+  {
+    "id": "hoover-dam-1936",
+    "title": "Hoover Dam begins generating (1936)",
+    "what": "The 221-metre Hoover Dam on the Colorado River started producing hydroelectricity during the Great Depression.",
+    "why": "It was a landmark of large-scale public infrastructure, supplying power and water across the U.S. Southwest.",
+    "care": "Mega-dams like it still anchor the grids and water supplies of entire regions — and spark debate over their environmental cost.",
+    "year": 1936,
+    "src": "U.S. Bureau of Reclamation"
+  },
+  {
+    "id": "uk-national-grid-1935",
+    "title": "Britain's National Grid switches on (1935)",
+    "what": "The UK linked regional power stations into a single synchronised national network, completed around 1935.",
+    "why": "Pooling stations let the country share electricity, balance demand, and back each other up during failures.",
+    "care": "It pioneered the idea of a nationwide grid — the model nearly every country now relies on.",
+    "year": 1935,
+    "src": "National Grid"
+  },
+  {
+    "id": "obninsk-1954",
+    "title": "The first grid-connected nuclear plant (1954)",
+    "what": "The Obninsk station in the USSR became the first nuclear reactor to deliver electricity to a public grid — about 5 megawatts.",
+    "why": "It proved fission could power cities, not just weapons, opening the civilian nuclear age.",
+    "care": "Every nuclear kilowatt-hour you use today descends from this small proof-of-concept.",
+    "year": 1954,
+    "src": "World Nuclear Association"
+  },
+  {
+    "id": "calder-hall-1956",
+    "title": "Calder Hall, first industrial-scale nuclear (1956)",
+    "what": "Britain's Calder Hall became the world's first nuclear power station to deliver electricity on an industrial scale.",
+    "why": "It moved nuclear power from laboratory demonstration to genuine commercial output.",
+    "care": "It began the fleet of large reactors that today supply roughly a tenth of the world's electricity.",
+    "year": 1956,
+    "src": "World Nuclear Association"
+  },
+  {
+    "id": "shippingport-1957",
+    "title": "Shippingport, first U.S. commercial reactor (1957)",
+    "what": "Shippingport in Pennsylvania became the first full-scale nuclear plant built solely to make civilian electricity in the U.S.",
+    "why": "It launched America's commercial nuclear programme and tested reactor designs that influenced later plants.",
+    "care": "It set the U.S. on a path where nuclear still provides about half of the country's carbon-free electricity.",
+    "year": 1957,
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "bell-solar-cell-1954",
+    "title": "Bell Labs unveils the silicon solar cell (1954)",
+    "what": "Bell Labs demonstrated the first practical silicon photovoltaic cell, converting about 6% of sunlight into electricity.",
+    "why": "It was the first solar cell efficient enough to be useful, first powering satellites and remote equipment.",
+    "care": "That same silicon technology, now far cheaper and more efficient, sits on rooftops and solar farms worldwide.",
+    "year": 1954,
+    "src": "Bell Labs"
+  },
+  {
+    "id": "tva-1933",
+    "title": "The Tennessee Valley Authority is created (1933)",
+    "what": "A U.S. federal agency built dams and power plants across the Tennessee Valley to provide electricity, flood control, and jobs.",
+    "why": "It electrified one of America's poorest regions and became a model of integrated regional development.",
+    "care": "Public power authorities born from this era still run major parts of the grid and keep rates affordable for millions.",
+    "year": 1933,
+    "src": "TVA"
+  },
+  {
+    "id": "northeast-blackout-1965",
+    "title": "The Northeast Blackout of 1965",
+    "what": "A single mis-set protective relay in Ontario cascaded into a blackout across the U.S. Northeast, darkening ~30 million people for up to 13 hours.",
+    "why": "It exposed how a tiny fault could topple an interconnected grid like dominoes.",
+    "care": "The reliability rules and coordinating bodies (now NERC) that keep your lights on during peak demand were created in response.",
+    "year": 1965,
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "three-mile-island-1979",
+    "title": "The Three Mile Island accident (1979)",
+    "what": "A partial meltdown at a Pennsylvania reactor released a small amount of radiation after equipment failures and operator confusion.",
+    "why": "Though no one was hurt, it badly shook public trust and effectively froze new U.S. reactor orders for decades.",
+    "care": "It still shapes how nuclear plants are regulated, staffed, and perceived in the United States today.",
+    "year": 1979,
+    "src": "U.S. NRC"
+  },
+  {
+    "id": "chernobyl-1986",
+    "title": "The Chernobyl disaster (1986)",
+    "what": "A flawed reactor design and unsafe test caused an explosion and fire at the Chernobyl plant in Soviet Ukraine, spreading radiation across Europe.",
+    "why": "It was the worst nuclear accident in history and forced a global rethink of reactor safety and openness.",
+    "care": "Modern reactors are designed specifically to make a Chernobyl-style runaway physically impossible.",
+    "year": 1986,
+    "src": "World Nuclear Association"
+  },
+  {
+    "id": "northeast-blackout-2003",
+    "title": "The 2003 Northeast Blackout",
+    "what": "Overgrown trees, a software bug, and an alarm failure cascaded into a blackout across the U.S. Northeast and Ontario, hitting ~50 million people.",
+    "why": "It showed that even a modern grid can fall to a chain of small, unnoticed faults.",
+    "care": "It drove mandatory reliability standards and tree-trimming rules that protect today's grid from repeat cascades.",
+    "year": 2003,
+    "src": "U.S.-Canada Power System Outage Task Force"
+  },
+  {
+    "id": "fukushima-2011",
+    "title": "The Fukushima Daiichi accident (2011)",
+    "what": "A magnitude-9 earthquake and tsunami knocked out cooling at Japan's Fukushima Daiichi plant, causing three reactor meltdowns.",
+    "why": "It triggered mass evacuations and led several countries to rethink or phase out nuclear power.",
+    "care": "It reshaped global energy policy — Germany's nuclear exit and Japan's pivot both trace to this day.",
+    "year": 2011,
+    "src": "World Nuclear Association"
+  },
+  {
+    "id": "first-wind-farm-1980",
+    "title": "The first wind farm (1980)",
+    "what": "The world's first wind farm — 20 turbines — was installed on Crotched Mountain in New Hampshire in 1980.",
+    "why": "It tested whether clusters of turbines could feed meaningful power to a grid, despite early reliability problems.",
+    "care": "Wind now generates more electricity than any other renewable in many countries, all starting from experiments like this.",
+    "year": 1980,
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "vindeby-offshore-1991",
+    "title": "The first offshore wind farm (1991)",
+    "what": "Denmark built Vindeby, the world's first offshore wind farm, with 11 turbines in shallow Baltic waters.",
+    "why": "It proved turbines could survive at sea, where winds are stronger and steadier than on land.",
+    "care": "Offshore wind is now a backbone of Europe's clean-energy plans and is expanding off U.S. and Asian coasts.",
+    "year": 1991,
+    "src": "Ørsted"
+  },
+  {
+    "id": "sony-liion-1991",
+    "title": "Sony commercialises the lithium-ion battery (1991)",
+    "what": "Sony released the first commercial lithium-ion rechargeable battery, far lighter and denser than earlier types.",
+    "why": "It made portable electronics genuinely practical and, decades later, made electric cars and grid storage viable.",
+    "care": "The battery in your phone and the packs in electric cars and home power-walls are all lithium-ion.",
+    "year": 1991,
+    "src": "Nobel Prize / Sony"
+  },
+  {
+    "id": "three-gorges-2012",
+    "title": "Three Gorges Dam reaches full power (2012)",
+    "what": "China's Three Gorges Dam on the Yangtze became fully operational with 22,500 megawatts — the largest power station on Earth.",
+    "why": "It demonstrated hydropower at a scale no other project has matched, for both electricity and flood control.",
+    "care": "A single structure now produces as much power as roughly 20 large nuclear reactors — at a major environmental and social cost.",
+    "year": 2012,
+    "src": "China Three Gorges Corp."
+  },
+  {
+    "id": "itaipu-1984",
+    "title": "Itaipu Dam begins operating (1984)",
+    "what": "The Itaipu Dam on the Paraná River, shared by Brazil and Paraguay, started generating; for years it led the world in annual output.",
+    "why": "It is a rare bi-national power plant, supplying a huge share of two countries' electricity.",
+    "care": "Itaipu still provides most of Paraguay's power and a large slice of Brazil's — a model of shared energy infrastructure.",
+    "year": 1984,
+    "src": "Itaipu Binacional"
+  },
+  {
+    "id": "1973-oil-crisis",
+    "title": "The 1973 oil crisis",
+    "what": "An OPEC oil embargo quadrupled crude prices, causing fuel shortages and long queues across the industrialised world.",
+    "why": "It revealed how dependent modern economies were on imported oil and sparked the first serious push for efficiency and alternatives.",
+    "care": "Today's interest in energy independence, efficiency standards, and renewables was largely born in this crisis.",
+    "year": 1973,
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "ohms-law-1827",
+    "title": "Ohm publishes his law (1827)",
+    "what": "Georg Ohm showed that current equals voltage divided by resistance — a simple, reliable relationship in a circuit.",
+    "why": "It turned electricity from a curiosity into something engineers could calculate and design with.",
+    "care": "Ohm's law underlies the rating of every wire, fuse, and appliance that keeps your home safe.",
+    "year": 1827,
+    "src": "IEEE"
+  },
+  {
+    "id": "edison-bulb-1879",
+    "title": "Edison's practical light bulb (1879)",
+    "what": "Edison demonstrated a carbon-filament bulb that glowed for many hours — the first commercially practical incandescent lamp.",
+    "why": "A long-lasting, affordable bulb created the demand that justified building electricity networks at all.",
+    "care": "Electric lighting was the first reason ordinary homes wanted power — the spark for the whole electrified world.",
+    "year": 1879,
+    "src": "U.S. Dept. of Energy"
+  },
+  {
+    "id": "godalming-1881",
+    "title": "Godalming, first public electricity supply (1881)",
+    "what": "The English town of Godalming ran the world's first public electricity supply, using a waterwheel and dynamo to light streets and homes.",
+    "why": "It was an early test of electricity as a public service rather than a private novelty.",
+    "care": "Municipal power — your town or city running the grid — began with experiments exactly like this.",
+    "year": 1881,
+    "src": "IEEE"
+  },
+  {
+    "id": "grand-coulee-1942",
+    "title": "Grand Coulee Dam starts up (1942)",
+    "what": "The Grand Coulee Dam on the Columbia River became the largest U.S. power producer, its output ramping up during World War II.",
+    "why": "Its cheap, abundant power fuelled wartime aluminium and aircraft production in the Pacific Northwest.",
+    "care": "It shows how electricity supply can decide where industries — and jobs — are built.",
+    "year": 1942,
+    "src": "U.S. Bureau of Reclamation"
+  },
+  {
+    "id": "iter-agreement-2006",
+    "title": "Nations sign the ITER fusion agreement (2006)",
+    "what": "Seven partners covering more than half the world's population agreed to jointly build ITER, a giant experimental fusion reactor in France.",
+    "why": "It is one of the largest scientific collaborations ever, aiming to prove fusion can produce net energy.",
+    "care": "If fusion succeeds, it promises near-limitless clean power — and this treaty is the project trying to get there.",
+    "year": 2006,
+    "src": "ITER Organization"
+  }
+]
