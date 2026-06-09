@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>notify-watcher</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 14px/1.5 -apple-system, Segoe UI, Roboto, sans-serif;
+  background: #11151c; color: #d7dde5; padding: 1.5rem; }
+.wrap { max-width: 960px; margin: 0 auto; }
+header { display: flex; align-items: baseline; justify-content: space-between;
+  border-bottom: 1px solid #2a323d; padding-bottom: .6rem; margin-bottom: 1rem; }
+h1 { font-size: 1.2rem; margin: 0; }
+h2 { font-size: .95rem; text-transform: uppercase; letter-spacing: .04em;
+  color: #8b97a7; margin: 1.6rem 0 .5rem; }
+h3.day { font-size: .85rem; color: #8b97a7; margin: .9rem 0 .3rem; }
+.run.ok { color: #5fd28b; } .run.warn { color: #f0a35e; }
+.counts { color: #8b97a7; margin: 0 0 .5rem; }
+input#q { width: 100%; padding: .5rem .7rem; margin: .3rem 0 1rem; border-radius: 6px;
+  border: 1px solid #2a323d; background: #161b23; color: #d7dde5; }
+.alert { display: grid; grid-template-columns: 2.6rem 1fr auto auto; gap: .6rem;
+  align-items: baseline; padding: .25rem 0; border-bottom: 1px solid #1c222b; }
+.score { font-variant-numeric: tabular-nums; text-align: right; font-weight: 600;
+  color: #11151c; border-radius: 4px; padding: 0 .35rem; }
+.score.s90 { background: #f06363; } .score.s70 { background: #f0a35e; }
+.score.s40 { background: #e7cf5a; } .score.slt40 { background: #5a6b7e; color: #d7dde5; }
+.title a { color: #9ec5ff; text-decoration: none; } .title a:hover { text-decoration: underline; }
+.detail { color: #8b97a7; } .detail::before { content: " — "; }
+.topic { color: #6f7c8c; font-size: .8rem; }
+.mark { font-size: .75rem; } .mark.push { color: #5fd28b; } .mark.digest { color: #8b97a7; }
+.cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+@media (max-width: 640px) { .cols { grid-template-columns: 1fr; } }
+.distrow, .hrow { display: grid; grid-template-columns: 3rem 1fr 2.5rem; gap: .5rem;
+  align-items: baseline; }
+.hrow { grid-template-columns: 1.2rem 7rem 1fr; }
+.bar { color: #6f9bd6; letter-spacing: -1px; } .n { text-align: right; color: #8b97a7; }
+.hrow.warn .hicon, .hrow.warn .hnote { color: #f0a35e; } .hrow.ok .hicon { color: #5fd28b; }
+.hnote { color: #8b97a7; }
+ul.digest, ul.rem { list-style: none; padding: 0; margin: 0; }
+ul.digest li, ul.rem li { padding: .2rem 0; border-bottom: 1px solid #1c222b; }
+.src, .when { color: #6f7c8c; font-size: .8rem; margin-right: .4rem; }
+.empty { color: #6f7c8c; font-style: italic; }
+footer { color: #4f5b6b; font-size: .75rem; margin-top: 2rem;
+  border-top: 1px solid #2a323d; padding-top: .6rem; }
+</style></head>
+<body><div class="wrap">
+<header>
+  <h1>notify-watcher</h1>
+  <span class="run ok">last run: 2026-06-09 18:15 UTC · never · OK</span>
+</header>
+
+<p class="counts">last 7d — pushes: 0 · digested: 0 · dropped: 0</p>
+<input id="q" type="search" placeholder="search alerts…" oninput="filter(this.value)">
+
+<section><h2>Today's digest (pending · last flush 2026-06-09)</h2>
+<p class="empty">Digest buffer is empty.</p></section>
+
+<section><h2>Recent alerts</h2>
+<div id="alerts">
+<p class="empty">No alerts logged yet.</p>
+</div></section>
+
+<div class="cols">
+  <section><h2>Priority distribution (7d)</h2><div class="distrow"><span class="band">90+</span><span class="bar"></span><span class="n">0</span></div><div class="distrow"><span class="band">70+</span><span class="bar"></span><span class="n">0</span></div><div class="distrow"><span class="band">40+</span><span class="bar"></span><span class="n">0</span></div><div class="distrow"><span class="band"><40</span><span class="bar"></span><span class="n">0</span></div></section>
+  <section><h2>Topic health</h2><p class="empty">No topic runs recorded yet.</p></section>
+</div>
+
+
+<footer>Static page, regenerated each watcher run · served from /docs by GitHub Pages.</footer>
+</div>
+<script id="events" type="application/json">[]</script>
+<script>
+function filter(q) {
+  q = q.trim().toLowerCase();
+  document.querySelectorAll('#alerts .alert').forEach(function (el) {
+    el.style.display = (!q || el.dataset.text.indexOf(q) !== -1) ? '' : 'none';
+  });
+  document.querySelectorAll('#alerts .day').forEach(function (h) {
+    var n = h.nextElementSibling, any = false;
+    while (n && !n.classList.contains('day')) {
+      if (n.classList.contains('alert') && n.style.display !== 'none') any = true;
+      n = n.nextElementSibling;
+    }
+    h.style.display = any ? '' : 'none';
+  });
+}
+</script>
+</body></html>
