@@ -9,7 +9,9 @@ purchases. The first run records the current zone silently.
 """
 from __future__ import annotations
 
+import datetime as _dt
 import logging
+import os
 
 import requests
 
@@ -19,6 +21,7 @@ log = logging.getLogger(__name__)
 
 STATE_KEY = "fx_last_zone"
 RATE_KEY = "fx_last_rate"
+WEEK_KEY = "fx_week_baseline"
 API_URL = "https://open.er-api.com/v6/latest/{base}"
 HEADERS = {"User-Agent": "notify-watcher/1.0 (+https://github.com/) personal-use"}
 
@@ -48,6 +51,52 @@ def _evaluate(rate, cfg: dict, prev_zone: str | None) -> tuple[bool, str, str]:
     else:  # back within the band
         band = f"back in range ({low:.2f}-{high:.2f})"
     return True, zone, band
+
+
+def _iso_week(day: _dt.date) -> str:
+    y, w, _ = day.isocalendar()
+    return f"{y}-W{w:02d}"
+
+
+def _weekly_trend(state: dict, rate: float, base: str, quote: str,
+                  today: _dt.date | None = None) -> dict:
+    """Week-over-week trend line, sent into the daily digest once per ISO week.
+
+    The band-crossing alert above only speaks when the rate LEAVES the target
+    range, so weeks of drift inside the band are invisible. This adds one calm
+    line on the first daily run of each week — "USD/DOP moved from 60.10 to
+    60.80 (+0.70, +1.16%)" — comparing against the baseline recorded at the
+    previous week's summary. The fx priority rule (45) lands it in the morning
+    digest, never a live push. First run seeds the baseline silently; a flat
+    week still reports, so a silent week is never ambiguous with a broken feed.
+    """
+    if not os.environ.get("NOTIFY_DAILY"):
+        return state
+    week = _iso_week(today or _dt.date.today())
+    baseline = state.get(WEEK_KEY) or {}
+    if baseline.get("week") == week:
+        return state  # already summarized (or seeded) this week
+    prev = baseline.get("rate")
+    if baseline.get("week") and prev is not None:
+        ch = changes.diff(float(prev), float(rate), label=f"{base}/{quote}",
+                          fmt=lambda r: f"{r:.2f}")
+        body = (f"This week: {ch.summary}" if ch
+                else f"{base}/{quote} held steady at {rate:.2f} this week")
+        state = events.emit(
+            state,
+            title=f"{base}/{quote} weekly trend",
+            body=body,
+            change=ch,
+            topic="fx",
+            severity="low",
+            source="FX",
+            tags="chart_with_upwards_trend",
+            legacy_action="digest",
+            score=45,
+        )
+        log.info("FX: weekly trend recorded (%s)", body)
+    state[WEEK_KEY] = {"week": week, "rate": float(rate)}
+    return state
 
 
 def run(state: dict) -> dict:
@@ -96,4 +145,4 @@ def run(state: dict) -> dict:
     # report its magnitude (and the first run seeds both without alerting).
     state[STATE_KEY] = zone
     state[RATE_KEY] = rate
-    return state
+    return _weekly_trend(state, float(rate), base, quote)
