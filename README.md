@@ -90,7 +90,9 @@ message and, when there are more than fit, the *least* important are dropped
   most once per worsening band per day.
 - **Exchange rate (USD→DOP)** — checks the daily rate via open.er-api
   (`monitors.json` → `fx`, no key) and pings only when it crosses out of, or
-  back into, your `[low, high]` band.
+  back into, your `[low, high]` band. Once a week the morning digest also
+  carries a trend line ("USD/DOP moved from 60.10 to 60.80 (+1.16%)") so quiet
+  weeks inside the band still tell you which way the rate is drifting.
 - **Reminders / expiry** — a tiny date engine over `reminders.json` (no network):
   document/visa/ID expiry, subscription renewals, warranties, yearly birthdays.
   Fires once at each configured lead time (default 90/30/7/1/0 days before).
