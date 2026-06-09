@@ -24,6 +24,7 @@ from .topics import (
     deals,
     digest_topic,
     energy,
+    energy_learn,
     fda,
     fx,
     games,
@@ -115,6 +116,10 @@ TOPICS: list[tuple[str, Topic]] = [
     # learn and reminders are daily-only too. Independent of digest, so order
     # among the daily-only topics doesn't matter.
     ("learn", learn.run),
+    # energy_learn is daily-only too: one calm educational "Today's spark" push.
+    # Order doesn't matter among the daily-only topics; it reads the event_log
+    # (populated by the collectors earlier this run) for its occasional news slot.
+    ("energy_learn", energy_learn.run),
     ("reminders", reminders.run),
     ("blood_donation", blood_donation.run),
     # Daily-only "today" summaries: holiday heads-up, high-UV and rough-seas
