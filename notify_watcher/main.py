@@ -27,6 +27,7 @@ from .topics import (
     fda,
     fx,
     games,
+    habits,
     health_tip,
     holidays,
     ios_release,
@@ -42,7 +43,6 @@ from .topics import (
     twitch,
     uv,
     visa_bulletin,
-    water,
     weather,
     wwdc,
 )
@@ -106,9 +106,10 @@ TOPICS: list[tuple[str, Topic]] = [
     ("launches", launches.run),
     ("iss", iss.run),
     ("anthropic_news", anthropic_news.run),
-    # water nudges fire on several daytime slots across the 3-hourly grid, so it
-    # runs every cycle (not daily-only) and dedups per slot in state.
-    ("water", water.run),
+    # habit nudges (water, etc. from habits.json) fire on several daytime slots
+    # across the 3-hourly grid, so this runs every cycle (not daily-only) and
+    # dedups per slot per habit in state.
+    ("habits", habits.run),
     ("digest", digest_topic.run),
     ("health_tip", health_tip.run),
     # learn and reminders are daily-only too. Independent of digest, so order
