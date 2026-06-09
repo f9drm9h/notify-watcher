@@ -293,6 +293,7 @@ def _track_news(state: dict) -> dict:
                 cap=NEWS_MAX_PER_GAME,
                 live_tag="video_game",
                 live_title_prefix="Game news",
+                topic="games",
             )
         except Exception as exc:  # noqa: BLE001 - isolate each title's news check
             log.error("game news %r check failed: %s", title, exc)

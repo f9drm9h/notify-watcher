@@ -25,7 +25,7 @@ from __future__ import annotations
 
 import logging
 
-from . import digest, ids, ntfy, scoring
+from . import events, ids, scoring
 
 log = logging.getLogger(__name__)
 
@@ -58,11 +58,18 @@ def route(
     cap: int,
     live_tag: str,
     live_title_prefix: str,
+    topic: str = "",
 ) -> None:
     """Score and route one title's fresh articles. Mutates `bucket`/`state`.
 
     `bucket` is the topic's per-title seen-id map; `bucket[title]` is this
     title's seen-id list (None until the first run, which seeds silently).
+
+    Routing goes through events.emit (the Personal Priority Engine funnel): the
+    within-domain tier becomes the Event severity and emit decides push vs.
+    digest vs. drop. With no `priority` section the engine is OFF and emit
+    reproduces the legacy routing exactly. `topic` is the engine's cross-topic
+    rule key (e.g. "games", "movies"); it is ignored while the engine is off.
     """
     seen = bucket.get(title)
     if seen is None:
@@ -92,19 +99,41 @@ def route(
         score, tier = scoring.score(
             headline, _source_weight_key(source, tiers), [], scoring_cfg
         )
+        # The Event's source is the game/film TITLE (the 4th-tuple publisher is
+        # only a scoring weight). That title drives both the legacy push label
+        # "<prefix>: <title>" (via the title_prefix hint) and the digest grouping,
+        # matching the pre-emit behavior byte-for-byte while the engine is off.
         if tier in ("breakthrough", "high"):
-            ntfy.push(
-                title=f"{live_title_prefix}: {title}",
-                message=headline,
+            events.emit(
+                state,
+                title=headline,
+                topic=topic,
+                severity="critical" if tier == "breakthrough" else "high",
+                source=title,
                 click_url=link or None,
                 tags=live_tag,
-                priority="high",
+                metadata={"title_prefix": live_title_prefix},
+                legacy_priority="high",
+                legacy_action="push",
+                score=score,
+                digest_cfg=digest_cfg,
             )
             pushed += 1
         elif tier == "moderate":
             # Group the daily digest by game/film title, not publisher; the score
             # lets the flush rank items across all sources.
-            digest.add(state, {"title": headline, "url": link, "source": title, "score": score}, digest_cfg)
+            events.emit(
+                state,
+                title=headline,
+                topic=topic,
+                severity="moderate",
+                source=title,
+                click_url=link or None,
+                metadata={"title_prefix": live_title_prefix},
+                legacy_action="digest",
+                score=score,
+                digest_cfg=digest_cfg,
+            )
             digested += 1
         else:
             dropped += 1
