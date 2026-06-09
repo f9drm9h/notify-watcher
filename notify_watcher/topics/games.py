@@ -30,6 +30,7 @@ Evaluated against the task's options:
 """
 from __future__ import annotations
 
+import datetime as _dt
 import logging
 import os
 import re
@@ -47,6 +48,14 @@ SEARCH_URL = "https://api.rawg.io/api/games"
 GAME_PAGE = "https://rawg.io/games/"
 STATE_KEY = "game_release_dates"  # { "<rawg_id>": "YYYY-MM-DD" | "TBA" }
 TBA = "TBA"
+
+# Games is a *weekly* topic: both checks run once per ISO week to keep game
+# updates to a single batched catch-up instead of a constant drip. We stamp the
+# ISO week we last ran in state and skip until it rolls over, so the topic fires
+# on the first daily run of each week (Monday, or the next available day if
+# Monday's run was dropped). WEEK_STATE_KEY guards idempotency across the day's
+# repeated post-threshold runs.
+WEEK_STATE_KEY = "games_week_last"
 
 # --- News (Google News RSS) -------------------------------------------------
 NEWS_STATE_KEY = "game_news_seen"   # { "<title>": [article_id, ...] }
@@ -291,9 +300,27 @@ def _track_news(state: dict) -> dict:
     return state
 
 
+def _iso_week(day: _dt.date) -> str:
+    """ISO year-week label (e.g. '2026-W24') used to fire at most once a week."""
+    iso = day.isocalendar()
+    return f"{iso.year}-W{iso.week:02d}"
+
+
 def run(state: dict) -> dict:
     """Release-date tracking (RAWG) + news tracking (Google News), each additive
-    and independently isolated so one can fail without affecting the other."""
+    and independently isolated so one can fail without affecting the other.
+
+    Weekly: acts only on the daily run and only once per ISO week, so game
+    updates arrive as a single batched catch-up rather than a constant drip.
+    """
+    if not os.environ.get("NOTIFY_DAILY"):
+        return state  # weekly topic acts only on the daily run
+    week = _iso_week(_dt.date.today())
+    if state.get(WEEK_STATE_KEY) == week:
+        log.info("games already checked this week (%s); skipping", week)
+        return state
+
     state = _track_release_dates(state)
     state = _track_news(state)
+    state[WEEK_STATE_KEY] = week
     return state

@@ -76,6 +76,8 @@ TOPICS: list[tuple[str, Topic]] = [
     ("wwdc", wwdc.run),
     ("ios_release", ios_release.run),
     ("movies", movies.run),
+    # games is weekly: it self-gates to the first daily run of each ISO week
+    # (see games.run), batching release-date + news updates into one catch-up.
     ("games", games.run),
     # twitch pings once per live session; music watches followed artists every
     # run and adds one library-seeded discovery pick on the daily run.
