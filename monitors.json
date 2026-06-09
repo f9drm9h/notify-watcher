@@ -70,7 +70,7 @@
       { "topic": "energy", "severity": "moderate", "score": 35 },
       { "topic": "games", "severity": "moderate", "score": 35 },
       { "topic": "soundcore_pro", "score": 35 },
-      { "topic": "movies", "severity": "moderate", "score": 33 },
+      { "topic": "movies", "severity": "moderate", "score": 28 },
 
       { "topic": "music", "severity": "low", "score": 22 },
       { "topic": "deals", "severity": "low", "score": 20 },
@@ -243,10 +243,15 @@
     "news_min_gap_days": 5
   },
 
+  "_news_comment": "Shared freshness gate for the Google News-based topics (game news, movie news, anthropic_news). Google News routinely resurfaces months- or years-old articles under brand-new URLs, which defeats URL/id dedup; any entry older than max_age_days is ignored at collection time. Undated entries pass (dedup still applies); 0 disables the gate.",
+  "news": {
+    "max_age_days": 14
+  },
+
   "_digest_comment": "max_per_source caps how many items any one source (a film, game, or feed) may hold in the shared buffer, so a high-volume source can't evict the low-volume domain monitors before the daily flush. Evictions and the flush both rank by score, so the most important pending items survive and surface first.",
   "digest": {
     "max_buffer": 120,
-    "max_per_source": 8,
+    "max_per_source": 4,
     "max_items_in_message": 30
   },
 

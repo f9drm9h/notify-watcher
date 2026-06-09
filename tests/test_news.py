@@ -25,6 +25,42 @@ def _art(aid, headline, source=""):
     return (aid, headline, f"http://x/{aid}", source)
 
 
+class IsRecentTest(unittest.TestCase):
+    """The freshness gate that stops Google News resurfacing old articles."""
+
+    NOW = 1_770_000_000.0  # fixed epoch so the tests are deterministic
+
+    def _entry(self, days_ago: float):
+        import time as _time
+        import types
+        return types.SimpleNamespace(
+            published_parsed=_time.gmtime(self.NOW - days_ago * 86400))
+
+    def test_recent_entry_passes(self):
+        self.assertTrue(news.is_recent(self._entry(3), 14, now=self.NOW))
+
+    def test_old_entry_is_gated(self):
+        self.assertFalse(news.is_recent(self._entry(60), 14, now=self.NOW))
+        self.assertFalse(news.is_recent(self._entry(400), 14, now=self.NOW))
+
+    def test_boundary_day_still_passes(self):
+        self.assertTrue(news.is_recent(self._entry(14), 14, now=self.NOW))
+
+    def test_undated_entry_passes(self):
+        import types
+        self.assertTrue(news.is_recent(types.SimpleNamespace(), 14, now=self.NOW))
+
+    def test_zero_or_bad_window_disables_the_gate(self):
+        self.assertTrue(news.is_recent(self._entry(400), 0, now=self.NOW))
+        self.assertTrue(news.is_recent(self._entry(400), None, now=self.NOW))
+        self.assertTrue(news.is_recent(self._entry(400), "x", now=self.NOW))
+
+    def test_garbage_date_passes(self):
+        import types
+        e = types.SimpleNamespace(published_parsed="not-a-struct-time")
+        self.assertTrue(news.is_recent(e, 14, now=self.NOW))
+
+
 class SourceWeightKeyTest(unittest.TestCase):
     def test_maps_known_and_unknown(self):
         tiers = SCORING["source_tiers"]
