@@ -131,6 +131,11 @@ message and, when there are more than fit, the *least* important are dropped
   (Open-Meteo, no key). Daily run only.
 - **Rough-seas alert** — pushes when the coast's max wave height reaches
   `marine.rough_wave_m` (Open-Meteo Marine, no key). Daily run only.
+- **Beach day index** — Saturday mornings (configurable via
+  `beach_day.weekdays`), one 0–10 score answering "is today a beach day?":
+  wave height + rain probability + UV + max temperature at the coast, folded
+  into a verdict with caution notes (rough seas, extreme UV). Open-Meteo, no
+  key.
 - **Astronomy almanac** — full/new moons (computed) plus meteor-shower peaks,
   solstices/equinoxes, and eclipses from a built-in table. No network. Daily run.
 - **NASA picture of the day** — the day's Astronomy Picture of the Day, with
