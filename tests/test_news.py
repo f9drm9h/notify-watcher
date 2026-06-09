@@ -82,6 +82,19 @@ class RouteTest(unittest.TestCase):
         self.assertEqual(sent, [])
         self.assertEqual(bucket["GameX"], [ids.short("live")])  # now stored hashed
 
+    def test_live_push_label_and_digest_grouping_preserved(self):
+        # The push Title is "<prefix>: <game/film title>" and the digest groups
+        # by that title (not the publisher) — preserved across the emit migration.
+        state, bucket = {}, {"GameX": []}
+        with capture_pushes() as sent:
+            self._route(state, bucket, "GameX",
+                        [_art("live", "release date confirmed", "IGN"),
+                         _art("dig", "developer interview", "IGN")])
+        self.assertEqual(sent[0]["title"], "Game news: GameX")
+        self.assertEqual(sent[0]["tags"], "video_game")
+        self.assertEqual(state[digest.BUFFER_KEY][0]["source"], "GameX")
+        self.assertEqual(state[digest.BUFFER_KEY][0]["title"], "developer interview")
+
     def test_official_source_can_elevate_to_live(self):
         # "interview"(3) + official source(4) = 7 -> live; same headline from an
         # unknown source stays in the digest.
