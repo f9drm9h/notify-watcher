@@ -56,6 +56,26 @@ class ParseTest(unittest.TestCase):
         self.assertTrue(fact)
 
 
+class ChannelsTest(unittest.TestCase):
+    """Golden test over the real data/ channel files: every channel listed in
+    learn.CHANNELS must load and contain only well-formed {text, src} entries,
+    so a malformed curated file fails CI instead of silently emptying a day's
+    fact section."""
+
+    def test_every_channel_file_loads_with_valid_entries(self):
+        from notify_watcher import kb
+
+        for label, filename in learn.CHANNELS:
+            with self.subTest(channel=label):
+                items = kb.load(kb.DATA_DIR / filename)
+                self.assertTrue(items, f"{filename} is empty or failed to load")
+                for item in items:
+                    self.assertTrue(str(item.get("text", "")).strip(),
+                                    f"{filename} has an entry without text")
+                    self.assertTrue(str(item.get("src", "")).strip(),
+                                    f"{filename} has an entry without src")
+
+
 class RunTest(unittest.TestCase):
     def setUp(self):
         self._env = mock.patch.dict("os.environ", {"NOTIFY_DAILY": "1"})
