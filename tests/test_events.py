@@ -6,8 +6,9 @@ the network, and an in-memory state dict to inspect the digest buffer.
 from __future__ import annotations
 
 import unittest
+from unittest import mock
 
-from notify_watcher import digest, events
+from notify_watcher import digest, events, ntfy
 from tests._util import capture_pushes
 
 # Same worked-example config used in test_priority.
@@ -80,6 +81,92 @@ class EngineOnTest(unittest.TestCase):
             )
         self.assertEqual(sent, [])
         self.assertNotIn(digest.BUFFER_KEY, state)
+
+
+class QuietDeferTest(unittest.TestCase):
+    """Quiet hours defer a would-be-suppressed push into the digest (not a drop)."""
+
+    QUIET_ON = {"enabled": True, "defer_to_digest": True}
+    QUIET_DROP = {"enabled": True, "defer_to_digest": False}
+
+    def _emit_default_band(self, state, quiet_cfg,
+                           suppressed_priorities=("default", "low", None)):
+        """Emit an event that scores 62 -> a 'default'-band push, the tier quiet
+        hours holds. quiet_cfg is served as the quiet_hours config section."""
+        with mock.patch.object(events.config, "section",
+                               side_effect=lambda name: quiet_cfg if name == "quiet_hours" else {}), \
+             mock.patch.object(ntfy, "would_suppress",
+                               side_effect=lambda p: p in suppressed_priorities), \
+             capture_pushes() as sent:
+            events.emit(
+                state, title="Streamer live", topic="twitch", source="Twitch",
+                priority_cfg={"threshold": 60, "digest_floor": 25, "default": 62,
+                              "ntfy_bands": {"90": "urgent", "70": "high", "0": "default"}},
+                digest_cfg=DIGEST_CFG,
+            )
+        return sent
+
+    def test_suppressed_push_lands_in_digest(self):
+        state: dict = {}
+        sent = self._emit_default_band(state, self.QUIET_ON)
+        self.assertEqual(sent, [])  # not pushed overnight...
+        buf = state[digest.BUFFER_KEY]
+        self.assertEqual(len(buf), 1)  # ...but waiting in the morning digest
+        self.assertEqual(buf[0]["title"], "Streamer live")
+        self.assertEqual(buf[0]["score"], 62)
+        # and the event log records the deferred routing, not a phantom push
+        self.assertEqual(state["event_log"][-1]["action"], "digest")
+
+    def test_high_band_is_never_deferred(self):
+        state: dict = {}
+        with mock.patch.object(events.config, "section",
+                               side_effect=lambda name: self.QUIET_ON if name == "quiet_hours" else {}), \
+             mock.patch.object(ntfy, "would_suppress",
+                               side_effect=lambda p: p not in ("high", "urgent")), \
+             capture_pushes() as sent:
+            events.emit(
+                state, title="Quake nearby", topic="quakes", severity="critical",
+                priority_cfg={"threshold": 60, "digest_floor": 25, "default": 30,
+                              "ntfy_bands": {"90": "urgent", "70": "high", "0": "default"},
+                              "rules": [{"topic": "quakes", "severity": "critical", "score": 95}]},
+                digest_cfg=DIGEST_CFG,
+            )
+        self.assertEqual(len(sent), 1)  # urgent rings through quiet hours
+        self.assertEqual(sent[0]["priority"], "urgent")
+
+    def test_defer_disabled_falls_back_to_transport_drop(self):
+        state: dict = {}
+        sent = self._emit_default_band(state, self.QUIET_DROP)
+        # emit chose "push"; the transport's own quiet check does the dropping
+        # (capture_pushes bypasses it, so the call itself is what we assert).
+        self.assertEqual(len(sent), 1)
+        self.assertNotIn(digest.BUFFER_KEY, state)
+
+    def test_legacy_path_defers_too(self):
+        state: dict = {}
+        with mock.patch.object(events.config, "section",
+                               side_effect=lambda name: self.QUIET_ON if name == "quiet_hours" else {}), \
+             mock.patch.object(ntfy, "would_suppress", return_value=True), \
+             capture_pushes() as sent:
+            events.emit(
+                state, title="New song", topic="music", source="Music",
+                legacy_priority="default", legacy_action="push", score=40,
+                priority_cfg={}, digest_cfg=DIGEST_CFG,  # engine OFF
+            )
+        self.assertEqual(sent, [])
+        self.assertEqual(state[digest.BUFFER_KEY][0]["title"], "New song")
+
+    def test_quiet_config_error_fails_open_to_push(self):
+        state: dict = {}
+        with mock.patch.object(events.config, "section", side_effect=RuntimeError("boom")), \
+             capture_pushes() as sent:
+            events.emit(
+                state, title="Streamer live", topic="twitch",
+                priority_cfg={"threshold": 60, "digest_floor": 25, "default": 62,
+                              "ntfy_bands": {"0": "default"}},
+                digest_cfg=DIGEST_CFG,
+            )
+        self.assertEqual(len(sent), 1)
 
 
 class TitlePrefixTest(unittest.TestCase):
