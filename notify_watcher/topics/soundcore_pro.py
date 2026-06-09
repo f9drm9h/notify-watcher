@@ -26,7 +26,7 @@ import time
 
 import requests
 
-from .. import ntfy
+from .. import events
 from . import deals
 
 log = logging.getLogger(__name__)
@@ -148,11 +148,16 @@ def run(state: dict) -> dict:
         try:
             name, body = _describe(url, slug)
             log.info("new Liberty Pro discovered: %s (%s)", name, slug)
-            ntfy.push(
+            events.emit(
+                state,
                 title=f"New Soundcore Liberty Pro: {name}",
-                message=body,
+                body=body,
+                topic="soundcore_pro",
+                severity="moderate",
+                source=name,
                 click_url=url,
                 tags="rocket",
+                legacy_action="push",
             )
             if url not in tracked_urls:
                 auto.append({"name": name, "url": url})

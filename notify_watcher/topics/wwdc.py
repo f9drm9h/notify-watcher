@@ -14,7 +14,7 @@ import logging
 
 import feedparser
 
-from .. import ntfy, summarize
+from .. import events, summarize
 
 log = logging.getLogger(__name__)
 
@@ -125,7 +125,9 @@ def run(state: dict) -> dict:
         if not eid or eid in seen_set:
             continue
         title, body, link = build_notification(entry)
-        ntfy.push(title=title, message=body, click_url=link, tags="apple")
+        events.emit(state, title=title, body=body, topic="wwdc",
+                    severity="moderate", source="Apple", click_url=link,
+                    tags="apple", legacy_action="push")
         seen.append(eid)
         seen_set.add(eid)
         pushed += 1

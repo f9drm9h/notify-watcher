@@ -13,7 +13,7 @@ import logging
 
 import requests
 
-from .. import config, ntfy
+from .. import config, events
 
 log = logging.getLogger(__name__)
 
@@ -66,12 +66,17 @@ def run(state: dict) -> dict:
             except Exception:  # noqa: BLE001
                 game = ""
             body = " - ".join(p for p in (game, title) if p) or "is now live"
-            ntfy.push(
+            events.emit(
+                state,
                 title=f"{user} is live on Twitch",
-                message=body,
+                body=body,
+                topic="twitch",
+                severity="high",
+                source=user,
                 click_url=f"https://twitch.tv/{user}",
                 tags="purple_circle",
-                priority="high",
+                legacy_priority="high",
+                legacy_action="push",
             )
             log.info("twitch: %s went live", user)
         except Exception as exc:  # noqa: BLE001 - isolate each streamer
