@@ -110,8 +110,9 @@ message and, when there are more than fit, the *least* important are dropped
 - **Daily learning** — one consolidated push each morning bundling three short
   sections: an "On this day" historical event and the day's Wikipedia featured
   article (both from Wikimedia's free, no-key feed), plus one vetted fact from a
-  rotating curated channel — science, technology literacy, life skills, or
-  general knowledge (`data/*.json`). The Wikimedia feed is fixed per date and
+  rotating curated channel — science, technology literacy, life skills, general
+  knowledge, Dominican history & culture, or personal-finance basics
+  (`data/*.json`). The Wikimedia feed is fixed per date and
   the fact rotates by day-of-year, so the push is deterministic; each section
   degrades independently, so a feed outage still sends the rest. Daily run only.
 - **Rocket launches** — imminent orbital launches via Launch Library 2 (no key);
