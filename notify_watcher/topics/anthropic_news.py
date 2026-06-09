@@ -15,7 +15,7 @@ import urllib.parse
 import feedparser
 import requests
 
-from .. import config, ids, ntfy
+from .. import config, events, ids
 
 log = logging.getLogger(__name__)
 
@@ -78,12 +78,17 @@ def run(state: dict) -> dict:
             continue
         seen_set.add(h)
         fresh.append(h)
-        ntfy.push(
+        state = events.emit(
+            state,
             title="Anthropic",
-            message=title or "New post from Anthropic",
+            body=title or "New post from Anthropic",
+            topic="anthropic_news",
+            severity="moderate",
+            source="Anthropic",
             click_url=link or None,
             tags="robot",
-            priority="default",
+            legacy_priority="default",
+            legacy_action="push",
         )
         pushed += 1
 

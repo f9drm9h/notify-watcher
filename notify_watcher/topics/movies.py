@@ -38,7 +38,7 @@ import urllib.parse
 import feedparser
 import requests
 
-from .. import config, news, ntfy, watchlist
+from .. import config, events, news, watchlist
 
 log = logging.getLogger(__name__)
 
@@ -170,11 +170,16 @@ def _track_release_dates(state: dict) -> dict:
                 body = f"Now tracking {name}. Release date: {current}"
             else:
                 body = f"{name} release date changed: {previous} -> {current}"
-            ntfy.push(
+            state = events.emit(
+                state,
                 title=f"Movie: {name}",
-                message=body,
+                body=body,
+                topic="movies",
+                severity="low",
+                source="Movies",
                 click_url=MOVIE_PAGE + mid,
                 tags="clapper",
+                legacy_action="push",
             )
             bucket[mid] = current
         except Exception as exc:  # noqa: BLE001 - isolate each title

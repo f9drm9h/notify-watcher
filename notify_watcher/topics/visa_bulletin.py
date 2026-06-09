@@ -21,7 +21,7 @@ from typing import Optional
 import requests
 from bs4 import BeautifulSoup
 
-from .. import ntfy
+from .. import events
 
 log = logging.getLogger(__name__)
 
@@ -142,11 +142,16 @@ def run(state: dict) -> dict:
                 body = f"First seen F4 (All Other) {label}: {current}"
             else:
                 body = f"F4 (All Other) {label} changed: {previous} -> {current}"
-            ntfy.push(
+            state = events.emit(
+                state,
                 title=f"F4 {label} changed",
-                message=body,
+                body=body,
+                topic="visa_bulletin",
+                severity="critical",
+                source="Visa Bulletin",
                 click_url=bulletin_url,
                 tags="passport_control",
+                legacy_action="push",
             )
             state[state_key] = current
         except Exception as exc:  # noqa: BLE001 - isolate each cell's check

@@ -12,7 +12,7 @@ import logging
 
 import requests
 
-from .. import config, ids, ntfy
+from .. import config, events, ids
 
 log = logging.getLogger(__name__)
 
@@ -89,12 +89,17 @@ def run(state: dict) -> dict:
         seen_set.add(h)
         fresh.append(h)
         when = "soon" if hours < 1 else f"in ~{hours:.0f}h"
-        ntfy.push(
+        state = events.emit(
+            state,
             title="Rocket launch",
-            message=f"{name} launches {when}.",
+            body=f"{name} launches {when}.",
+            topic="launches",
+            severity="moderate",
+            source="Launches",
             click_url=url or None,
             tags="rocket",
-            priority="default",
+            legacy_priority="default",
+            legacy_action="push",
         )
         pushed += 1
 
