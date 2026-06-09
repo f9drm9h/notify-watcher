@@ -51,6 +51,7 @@ jobs:
           RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}  # game watcher (optional)
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}        # AI summary (optional)
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}  # AI summary fallback (optional)
+          NASA_API_KEY: ${{ secrets.NASA_API_KEY }}  # APOD picture (optional; DEMO_KEY without)
           # Empty on schedule; "1" only when manually dispatched with test_push.
           NOTIFY_TEST_PUSH: ${{ inputs.test_push && '1' || '' }}
           # Force the daily work (digest/health tip/learn) on a manual run with

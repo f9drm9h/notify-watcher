@@ -19,6 +19,7 @@ from . import state as state_mod
 from .topics import (
     air_quality,
     anthropic_news,
+    apod,
     astronomy,
     blood_donation,
     deals,
@@ -133,6 +134,8 @@ TOPICS: list[tuple[str, Topic]] = [
     ("uv", uv.run),
     ("marine", marine.run),
     ("astronomy", astronomy.run),
+    # apod is daily-only: NASA's Astronomy Picture of the Day, attached inline.
+    ("apod", apod.run),
     # watchdog runs LAST: it reads the topic_health entries this loop stamped for
     # every topic above and pushes once when one has been failing for 48h+ — so a
     # dead feed can't go silently unnoticed. Pure state inspection, no network.
