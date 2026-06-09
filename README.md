@@ -32,7 +32,7 @@ Topics:
   change. Needs `TMDB_API_KEY`.
 - **Game release dates** — for each title in `watchlist.json` → `games`,
   tracks its RAWG release date and alerts the same way (a date change is a
-  high-priority push). Needs `RAWG_API_KEY`.
+  high-priority push). Needs `RAWG_API_KEY`. _Checked weekly (see below)._
 - **Game news (scored)** — for each game title, queries Google News (no key),
   keeps only headlines specifically about that game, then runs each through the
   `games_scoring` config in `monitors.json` instead of pushing everything:
@@ -41,6 +41,8 @@ Topics:
   updates go to the **daily digest**; opinion, ranking lists, speculation, and
   passing mentions are **dropped**. Trusted/official outlets carry more weight.
   Tuning the keywords and weights is a `monitors.json` edit, not a code change.
+  Both game checks run **weekly** — once per ISO week, on the first daily run of
+  the week — so game updates arrive as one batched catch-up rather than a drip.
 - **Twitch live** — for each handle in `monitors.json` → `twitch.streamers`,
   checks live status via decapi.me (no key) and pushes once per live session
   (with the game + stream title), re-arming after they go offline.
@@ -128,11 +130,19 @@ message and, when there are more than fit, the *least* important are dropped
 
 The daily digest, health tip, learning push, and reminders fire once a day, on
 the first scheduled run on/after 12:00 UTC (~08:00 in the Dominican Republic,
-UTC−4); the collectors run on the normal every-3-hours schedule. The daily work
-is gated in code by the UTC clock (`main._is_daily_run`), not a dedicated cron,
-because GitHub Actions silently drops scheduled runs. Adding a curated learning
-channel is just a new `data/*.json` file referenced from
+UTC−4); the collectors run on the normal every-3-hours schedule. The game checks
+fire once a *week*, on the first daily run of each ISO week. The daily/weekly
+work is gated in code by the clock (`main._is_daily_run`, `games._iso_week`), not
+a dedicated cron, because GitHub Actions silently drops scheduled runs. Adding a
+curated learning channel is just a new `data/*.json` file referenced from
 `notify_watcher/topics/learn.py`.
+
+**Quiet hours (optional).** Set `monitors.json` → `quiet_hours.enabled` to
+`true` to silence overnight pushes: any `low`/`default` notification between
+`start` and `end` (local time = UTC + `utc_offset_hours`) is dropped, while
+`high`/`urgent` safety alerts always ring through and the manual test push is
+never suppressed. Disabled by default, and any malformed config fails open
+(sends), so it can never silently swallow your alerts.
 
 The app is structured so adding more topics later is a small change in
 `notify_watcher/main.py`.
