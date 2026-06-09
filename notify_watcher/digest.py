@@ -24,6 +24,10 @@ LAST_SENT_KEY = "digest_last_sent"
 _DEFAULT_MAX_BUFFER = 120
 _DEFAULT_MAX_IN_MSG = 30
 _DEFAULT_MAX_PER_SOURCE = 8
+# A digested item may carry an optional one-line `detail` (the event body) so
+# topics whose info lives in the body — holidays, reminders, fx — survive being
+# digested instead of pushed. Bounded so a long body can't blow up the message.
+_MAX_DETAIL = 160
 
 
 def _today() -> str:
@@ -69,6 +73,7 @@ def add(state: dict, item: dict, cfg: dict) -> None:
         "url": item.get("url", ""),
         "source": src,
         "score": int(item.get("score", 0) or 0),
+        "detail": (item.get("detail") or "")[:_MAX_DETAIL],
     })
 
     per_source = int(cfg.get("max_per_source", _DEFAULT_MAX_PER_SOURCE))
@@ -121,7 +126,17 @@ def flush(state: dict, cfg: dict) -> bool:
     lines: list[str] = []
     for source in ordered_sources:
         lines.append(source.upper())
-        lines.extend(f"  - {it.get('title', '')}" for it in by_source[source])
+        for it in by_source[source]:
+            title = it.get("title", "")
+            detail = it.get("detail", "")
+            # Title-complete items (collector/news headlines) carry no detail and
+            # render as before; body-informative ones append their detail so a
+            # generic title ("Reminder") still conveys what happened.
+            if detail:
+                line = f"{title} - {detail}" if title else detail
+            else:
+                line = title
+            lines.append(f"  - {line}")
     if overflow > 0:
         lines.append(f"(+{overflow} more)")
 

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import unittest
+from unittest import mock
 
 from notify_watcher import digest, ids, monitor
 from tests._util import capture_pushes
@@ -20,6 +21,14 @@ def _item(iid, title, weight="trade"):
 
 
 class RunSourceTest(unittest.TestCase):
+    def setUp(self):
+        # Pin the Personal Priority Engine OFF so these tests exercise
+        # run_source's LEGACY tier routing. monitors.json now ships a `priority`
+        # section that emit would otherwise read (via config.section) and apply.
+        p = mock.patch("notify_watcher.config.section", return_value={})
+        p.start()
+        self.addCleanup(p.stop)
+
     def _run(self, state, items):
         return monitor.run_source(
             state, state_key="k", items=items, default_weight_key="trade",
