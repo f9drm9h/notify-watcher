@@ -84,6 +84,24 @@ def _push(event: Event, ntfy_priority: Optional[str]) -> None:
     )
 
 
+def _quiet_defers(ntfy_priority: Optional[str]) -> bool:
+    """True when quiet hours would suppress this push AND deferral is on.
+
+    With ``quiet_hours.defer_to_digest`` (default true) an overnight low/default
+    push is rerouted into the daily digest — it arrives with the morning flush
+    instead of vanishing — which is what makes quiet hours safe to enable.
+    Setting ``defer_to_digest: false`` restores the old hard-drop behavior (the
+    transport's own check still drops it). high/urgent never suppress, so they
+    are never deferred either. Fails open (no deferral) on any config error.
+    """
+    try:
+        if not config.section("quiet_hours").get("defer_to_digest", True):
+            return False
+        return ntfy.would_suppress(ntfy_priority)
+    except Exception:  # noqa: BLE001 - deferral must never break a push
+        return False
+
+
 def _to_digest(state: dict, event: Event, score: int, digest_cfg: Optional[dict]) -> None:
     """Buffer one event for the daily digest, storing `score` for ranking/eviction."""
     if digest_cfg is None:
@@ -176,22 +194,32 @@ def emit(
         decision = None
 
     if decision is None:
-        # Engine OFF -> reproduce the caller's exact pre-engine behavior.
-        if legacy_action == "digest":
+        # Engine OFF -> reproduce the caller's exact pre-engine behavior (plus
+        # the same overnight deferral the engine path gets, so quiet hours are
+        # equally safe to enable in legacy mode).
+        action = legacy_action
+        if action == "push" and _quiet_defers(legacy_priority):
+            log.info("quiet hours: deferring %r to the morning digest", title)
+            action = "digest"
+        if action == "digest":
             _to_digest(state, event, score, digest_cfg)
         else:
             _push(event, legacy_priority)
         # Log under the caller's within-domain score so history is complete even
         # when the engine is off (the dashboard reads this regardless of mode).
-        eventlog.record(state, event, legacy_action, score, priority_cfg)
+        eventlog.record(state, event, action, score, priority_cfg)
         return state
 
-    if decision.action == "push":
+    action = decision.action
+    if action == "push" and _quiet_defers(decision.ntfy_priority):
+        log.info("quiet hours: deferring %r to the morning digest", title)
+        action = "digest"
+    if action == "push":
         _push(event, decision.ntfy_priority)
-    elif decision.action == "digest":
+    elif action == "digest":
         _to_digest(state, event, decision.score, digest_cfg)
     # "drop" -> intentionally nothing
     # Record every routed Event (push/digest/drop) with its global score so the
     # dashboard has a durable, cross-topic history that outlives the digest flush.
-    eventlog.record(state, event, decision.action, decision.score, priority_cfg)
+    eventlog.record(state, event, action, decision.score, priority_cfg)
     return state

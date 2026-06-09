@@ -8,8 +8,9 @@
   },
 
   "quiet_hours": {
-    "_comment": "Overnight do-not-disturb. When enabled, pushes at low/default/min priority are dropped silently between start and end (local time = UTC + utc_offset_hours; DR is -4, no DST). High/urgent alerts (earthquakes, hurricanes, tsunami advisories) always ring through, and the manual test push is never suppressed. Disabled by default; set enabled=true to turn it on. Times are 'HH:MM' 24h; the window may wrap midnight.",
+    "_comment": "Overnight do-not-disturb. When enabled, pushes at low/default/min priority between start and end (local time = UTC + utc_offset_hours; DR is -4, no DST) are DEFERRED into the daily digest (defer_to_digest=true, the default), so they arrive with the morning flush instead of overnight; set defer_to_digest=false to hard-drop them instead. High/urgent alerts (earthquakes, hurricanes, tsunami advisories) always ring through, and the manual test push is never suppressed. Disabled by default; set enabled=true to turn it on. Times are 'HH:MM' 24h; the window may wrap midnight. Note: time-sensitive overnight pushes below the high band (e.g. a pre-dawn ISS pass) arrive after the fact when deferred.",
     "enabled": false,
+    "defer_to_digest": true,
     "start": "22:00",
     "end": "07:00",
     "utc_offset_hours": -4

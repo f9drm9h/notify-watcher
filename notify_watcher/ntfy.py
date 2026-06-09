@@ -87,6 +87,16 @@ def _is_quiet_now(priority: Optional[str]) -> bool:
         return False
 
 
+def would_suppress(priority: Optional[str]) -> bool:
+    """Public quiet-hours probe: would a push at this priority be held right now?
+
+    Lets the routing layer (events.emit) ask BEFORE calling push, so it can
+    defer a would-be-suppressed notification into the daily digest instead of
+    letting the transport drop it on the floor. Same fail-open semantics as the
+    internal check."""
+    return _is_quiet_now(priority)
+
+
 def _encode_header(value: str) -> str:
     """Make a header value safe for ntfy without mangling non-ASCII text.
 
