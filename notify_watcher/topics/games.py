@@ -40,7 +40,7 @@ import urllib.parse
 import feedparser
 import requests
 
-from .. import config, events, news, watchlist
+from .. import changes, config, events, news, watchlist
 
 log = logging.getLogger(__name__)
 
@@ -183,16 +183,21 @@ def _track_release_dates(state: dict) -> dict:
             if previous == current:
                 continue
 
+            ch = None
             if previous is None:
                 body = f"Now tracking {name}. Release date: {current}"
             else:
-                body = f"{name} release date changed: {previous} -> {current}"
+                # "how it moved" — the day delta, e.g. "+115 days" (a delay) — via the
+                # shared framework; it degrades to a string diff for TBA transitions.
+                ch = changes.diff(previous, current, kind="date", label=name)
+                body = ch.summary
             # A first-sighting or date change is a top-tier event (release date
             # announced / changed / delayed), so it always rings as a live push.
             state = events.emit(
                 state,
                 title=f"Game: {name}",
                 body=body,
+                change=ch,
                 topic="games",
                 severity="high",
                 source=name,

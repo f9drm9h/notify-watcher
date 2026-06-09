@@ -30,7 +30,7 @@ import logging
 import requests
 from bs4 import BeautifulSoup
 
-from .. import events, watchlist
+from .. import changes, events, watchlist
 
 log = logging.getLogger(__name__)
 
@@ -221,13 +221,18 @@ def run(state: dict) -> dict:
             meets_target = target is not None and price <= float(target)
             dropped = price < previous
             if dropped:
-                line = f"Price dropped: {_fmt(previous, currency)} -> {_fmt(price, currency)}"
+                # "how it moved" — the absolute + percent drop — via the shared
+                # framework, with currency-aware value rendering.
+                ch = changes.diff(previous, price, label=name,
+                                  fmt=lambda p: _fmt(p, currency))
+                line = f"Price dropped: {ch.summary}"
                 if meets_target:
                     line += f" (at or below your target {_fmt(float(target), currency)})"
                 events.emit(
                     state,
                     title=f"Deal: {name}",
                     body=line,
+                    change=ch,
                     topic="deals",
                     severity="moderate",
                     source=name,

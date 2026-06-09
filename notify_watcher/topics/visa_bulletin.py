@@ -21,7 +21,7 @@ from typing import Optional
 import requests
 from bs4 import BeautifulSoup
 
-from .. import events
+from .. import changes, events
 
 log = logging.getLogger(__name__)
 
@@ -138,14 +138,21 @@ def run(state: dict) -> dict:
                 log.info("%s unchanged, no push", label)
                 continue
 
+            ch = None
             if previous is None:
                 body = f"First seen F4 (All Other) {label}: {current}"
             else:
-                body = f"F4 (All Other) {label} changed: {previous} -> {current}"
+                # Report how many days the cutoff date advanced/retreated, parsing the
+                # bulletin's DDMONYY cells; degrades to a string diff for non-date
+                # cells like "C" (current) or "U" (unavailable).
+                ch = changes.diff(previous, current, kind="date",
+                                  label=f"F4 (All Other) {label}")
+                body = ch.summary
             state = events.emit(
                 state,
                 title=f"F4 {label} changed",
                 body=body,
+                change=ch,
                 topic="visa_bulletin",
                 severity="critical",
                 source="Visa Bulletin",
