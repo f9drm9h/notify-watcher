@@ -21,6 +21,7 @@ from .topics import (
     anthropic_news,
     apod,
     astronomy,
+    beach_day,
     blood_donation,
     deals,
     digest_topic,
@@ -136,6 +137,9 @@ TOPICS: list[tuple[str, Topic]] = [
     ("astronomy", astronomy.run),
     # apod is daily-only: NASA's Astronomy Picture of the Day, attached inline.
     ("apod", apod.run),
+    # beach_day fires only on the configured weekdays (default Saturday): one
+    # 0-10 "is today a beach day?" score from waves + rain + UV + temperature.
+    ("beach_day", beach_day.run),
     # watchdog runs LAST: it reads the topic_health entries this loop stamped for
     # every topic above and pushes once when one has been failing for 48h+ — so a
     # dead feed can't go silently unnoticed. Pure state inspection, no network.
