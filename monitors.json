@@ -30,6 +30,7 @@
       { "topic": "fda", "severity": "critical", "score": 78 },
       { "topic": "reminders", "severity": "high", "score": 75 },
       { "topic": "air_quality", "severity": "high", "score": 72 },
+      { "topic": "watchdog", "score": 72 },
       { "topic": "fda", "severity": "high", "score": 70 },
 
       { "topic": "twitch", "score": 68 },
@@ -76,6 +77,11 @@
     ],
     "source_boosts": [],
     "overrides": []
+  },
+
+  "watchdog": {
+    "_comment": "Self-monitoring. main.py records every topic's last successful run and latest failure in state.topic_health; the watchdog pushes ONE heads-up when a topic has had no successful run for stale_hours (then stays quiet until that topic recovers, re-arming for the next outage). Several topics crossing the threshold on the same run are bundled into a single push.",
+    "stale_hours": 48
   },
 
   "quakes": {
