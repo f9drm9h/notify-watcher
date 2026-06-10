@@ -27,8 +27,6 @@ from __future__ import annotations
 import datetime as _dt
 import logging
 import os
-import re
-import xml.etree.ElementTree as ET
 
 import requests
 
@@ -43,11 +41,6 @@ HEADERS = {
     "User-Agent": "notify-watcher/1.0 (personal daily learning digest; +https://github.com/)"
 }
 _MAX_EXTRACT = 280  # keep the featured blurb to a couple of sentences
-_WOTD_FEED = (
-    "https://en.wiktionary.org/w/index.php"
-    "?title=Wiktionary:Word_of_the_day&feed=atom"
-)
-_ATOM_NS = "http://www.w3.org/2005/Atom"
 
 # Rotating curated channels: (display label, KB file). The day-of-year selects
 # the channel; kb.pick selects the entry within it, so both rotate over time.
@@ -58,7 +51,7 @@ CHANNELS: list[tuple[str, str]] = [
     ("Did you know", "general_knowledge.json"),
     ("Dominican culture", "dr_culture.json"),
     ("Money basics", "personal_finance.json"),
-    ("Word of the Day", "vocabulary.json"),  # index 6 — Wiktionary WOTD, local fallback
+    ("Word of the Day", "vocabulary.json"),  # structured entries; never LLM-reworded
 ]
 
 _REWORD_SYSTEM = (
@@ -113,50 +106,6 @@ def _featured(feed: dict) -> tuple[str, str, str | None]:
     return title, extract, url
 
 
-def _strip_tags(html: str) -> str:
-    """Strip HTML/XML tags and collapse whitespace."""
-    return " ".join(re.sub(r"<[^>]+>", " ", html).split())
-
-
-def _find_el(parent, tag: str):
-    """Find a child element by local name, trying the Atom namespace first."""
-    el = parent.find(f"{{{_ATOM_NS}}}{tag}")
-    return el if el is not None else parent.find(tag)
-
-
-def _parse_wotd_xml(xml_text: str) -> dict | None:
-    """Parse the Wiktionary WOTD Atom feed; return {'word', 'body'} or None."""
-    try:
-        root = ET.fromstring(xml_text)
-    except ET.ParseError:
-        return None
-    entry = _find_el(root, "entry")
-    if entry is None:
-        return None
-    title_el = _find_el(entry, "title")
-    title = (title_el.text or "").strip() if title_el is not None else ""
-    content_el = _find_el(entry, "content")
-    if content_el is None:
-        content_el = _find_el(entry, "summary")
-    if content_el is not None:
-        html = content_el.text or ""
-        if not html.strip():
-            html = "".join(content_el.itertext())
-    else:
-        html = ""
-    # Title format: "June 10, 2026: ephemeral" → extract word after last delimiter
-    word = title
-    for sep in (":", "–", "—"):
-        if sep in title:
-            candidate = title.split(sep)[-1].strip()
-            if candidate:
-                word = candidate
-            break
-    if not word:
-        return None
-    return {"word": word, "body": _strip_tags(html)}
-
-
 def _format_vocab_entry(entry: dict) -> str:
     """Render a vocabulary.json entry into a multiline push-notification body."""
     word = entry.get("word", "")
@@ -164,6 +113,7 @@ def _format_vocab_entry(entry: dict) -> str:
     pos = entry.get("pos", "")
     definition = entry.get("definition", "") or entry.get("text", "")
     example = entry.get("example", "")
+    src = entry.get("src", "")
     parts = [word]
     meta = " · ".join(p for p in [pronunciation, pos] if p)
     if meta:
@@ -172,22 +122,18 @@ def _format_vocab_entry(entry: dict) -> str:
         parts.append(definition)
     if example:
         parts.append(f'"{example}"')
+    if src:
+        parts.append(f"(Source: {src})")
     return "\n".join(p for p in parts if p)
 
 
 def _wotd_fact(day: _dt.date | None = None) -> tuple[str, str]:
-    """Return ('Word of the Day', body) from Wiktionary, or local vocabulary fallback."""
-    try:
-        resp = requests.get(_WOTD_FEED, headers=HEADERS, timeout=30)
-        resp.raise_for_status()
-        result = _parse_wotd_xml(resp.text)
-        if result:
-            word = result["word"]
-            body = result.get("body", "")
-            text = f"{word}\n{_truncate(body, 300)}" if body else word
-            return "Word of the Day", text
-    except Exception as exc:  # noqa: BLE001 - feed failure is non-fatal
-        log.warning("Wiktionary WOTD feed failed: %s", exc)
+    """('Word of the Day', body) from the local vocabulary KB; ('', '') if none.
+
+    Local-only: the vetted KB plus the day-of-year pick keeps the push
+    deterministic and free of an extra feed dependency. Entries are formatted
+    structurally, never LLM-reworded — a dictionary definition stays verbatim.
+    """
     items = kb.load(kb.DATA_DIR / "vocabulary.json", field="word")
     chosen = kb.pick(items, day=day)
     if not chosen:

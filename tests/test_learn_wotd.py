@@ -1,111 +1,21 @@
-"""Unit tests for the word-of-the-day parsing helpers in learn.py.
+"""Unit tests for the word-of-the-day channel in learn.py.
 
 All tests are pure (no network calls) and use only stdlib unittest.
 """
 from __future__ import annotations
 
+import datetime as _dt
 import unittest
+from unittest import mock
 
 from notify_watcher.topics import learn
 
-# ---------------------------------------------------------------------------
-# Minimal Atom feed fixtures
-# ---------------------------------------------------------------------------
-
-_ATOM_NS = "http://www.w3.org/2005/Atom"
-
-FEED_WITH_DATED_TITLE = f"""\
-<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="{_ATOM_NS}">
-  <title>Wiktionary: Word of the day</title>
-  <entry>
-    <title>June 10, 2026: ephemeral</title>
-    <content type="html">&lt;p&gt;&lt;b&gt;ephemeral&lt;/b&gt; /ɪˈfɛm.ər.əl/ &lt;i&gt;adjective&lt;/i&gt;&lt;/p&gt;\
-&lt;p&gt;Lasting for only a short time; transitory.&lt;/p&gt;</content>
-  </entry>
-</feed>"""
-
-FEED_WITH_PLAIN_TITLE = f"""\
-<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="{_ATOM_NS}">
-  <entry>
-    <title>sanguine</title>
-    <summary type="html">&lt;p&gt;Optimistic or positive, especially in a difficult situation.&lt;/p&gt;</summary>
-  </entry>
-</feed>"""
-
-FEED_WITH_NO_NAMESPACE = """\
-<?xml version="1.0" encoding="UTF-8"?>
-<feed>
-  <entry>
-    <title>June 10, 2026: laconic</title>
-    <content>Using very few words; brief and to the point.</content>
-  </entry>
-</feed>"""
-
-FEED_WITH_EM_DASH_TITLE = f"""\
-<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="{_ATOM_NS}">
-  <entry>
-    <title>June 10, 2026 — cogent</title>
-    <content type="html">Clear, logical, and convincing.</content>
-  </entry>
-</feed>"""
-
-FEED_EMPTY = f"""\
-<?xml version="1.0" encoding="UTF-8"?>
-<feed xmlns="{_ATOM_NS}">
-</feed>"""
-
-FEED_MALFORMED = "this is not XML at all <<<"
-
-
-class ParseWotdXmlTest(unittest.TestCase):
-    """Tests for _parse_wotd_xml() — the pure Atom parsing helper."""
-
-    def test_extracts_word_from_dated_title(self):
-        result = learn._parse_wotd_xml(FEED_WITH_DATED_TITLE)
-        self.assertIsNotNone(result)
-        self.assertEqual(result["word"], "ephemeral")
-
-    def test_extracts_body_strips_html_tags(self):
-        result = learn._parse_wotd_xml(FEED_WITH_DATED_TITLE)
-        self.assertIsNotNone(result)
-        self.assertIn("ephemeral", result["body"])
-        self.assertIn("Lasting for only a short time", result["body"])
-        self.assertNotIn("<p>", result["body"])
-        self.assertNotIn("<b>", result["body"])
-
-    def test_plain_title_kept_as_word(self):
-        result = learn._parse_wotd_xml(FEED_WITH_PLAIN_TITLE)
-        self.assertIsNotNone(result)
-        self.assertEqual(result["word"], "sanguine")
-
-    def test_summary_used_when_no_content(self):
-        result = learn._parse_wotd_xml(FEED_WITH_PLAIN_TITLE)
-        self.assertIsNotNone(result)
-        self.assertIn("Optimistic", result["body"])
-
-    def test_feed_without_atom_namespace(self):
-        result = learn._parse_wotd_xml(FEED_WITH_NO_NAMESPACE)
-        self.assertIsNotNone(result)
-        self.assertEqual(result["word"], "laconic")
-        self.assertIn("Using very few words", result["body"])
-
-    def test_em_dash_as_separator(self):
-        result = learn._parse_wotd_xml(FEED_WITH_EM_DASH_TITLE)
-        self.assertIsNotNone(result)
-        self.assertEqual(result["word"], "cogent")
-
-    def test_returns_none_when_no_entry(self):
-        self.assertIsNone(learn._parse_wotd_xml(FEED_EMPTY))
-
-    def test_returns_none_on_malformed_xml(self):
-        self.assertIsNone(learn._parse_wotd_xml(FEED_MALFORMED))
+# day_of_year(Jan 6) == 6 and 6 % len(CHANNELS) == 6, the Word of the Day slot.
+_WOTD_DAY = _dt.date(2026, 1, 6)
 
 
 class FormatVocabEntryTest(unittest.TestCase):
-    """Tests for _format_vocab_entry() — the local-fallback formatter."""
+    """Tests for _format_vocab_entry() — the structured entry formatter."""
 
     _FULL_ENTRY = {
         "word": "mellifluous",
@@ -113,6 +23,7 @@ class FormatVocabEntryTest(unittest.TestCase):
         "pos": "adjective",
         "definition": "Sweet or musical; pleasantly smooth in sound.",
         "example": "Her mellifluous voice made even announcements sound like poetry.",
+        "src": "Merriam-Webster",
     }
 
     def test_word_appears_on_first_line(self):
@@ -134,6 +45,15 @@ class FormatVocabEntryTest(unittest.TestCase):
     def test_example_quoted(self):
         result = learn._format_vocab_entry(self._FULL_ENTRY)
         self.assertIn('"Her mellifluous voice', result)
+
+    def test_src_attributed_on_last_line(self):
+        result = learn._format_vocab_entry(self._FULL_ENTRY)
+        self.assertEqual(result.splitlines()[-1], "(Source: Merriam-Webster)")
+
+    def test_missing_src_omits_attribution(self):
+        entry = {k: v for k, v in self._FULL_ENTRY.items() if k != "src"}
+        result = learn._format_vocab_entry(entry)
+        self.assertNotIn("Source", result)
 
     def test_missing_pronunciation_skips_meta_line(self):
         entry = {**self._FULL_ENTRY, "pronunciation": "", "pos": ""}
@@ -158,23 +78,45 @@ class FormatVocabEntryTest(unittest.TestCase):
         self.assertEqual(result, "")
 
 
-class StripTagsTest(unittest.TestCase):
-    """Tests for _strip_tags() — the HTML-stripping utility."""
+class WotdFactTest(unittest.TestCase):
+    """Tests for _wotd_fact() against the real data/vocabulary.json."""
 
-    def test_removes_tags(self):
-        self.assertEqual(learn._strip_tags("<b>word</b>"), "word")
+    def test_returns_label_and_body(self):
+        label, body = learn._wotd_fact(_WOTD_DAY)
+        self.assertEqual(label, "Word of the Day")
+        self.assertTrue(body)
+        self.assertGreaterEqual(len(body.splitlines()), 2)  # word + at least definition
 
-    def test_collapses_whitespace(self):
-        self.assertEqual(learn._strip_tags("<p>one</p>  <p>two</p>"), "one two")
+    def test_deterministic_per_day(self):
+        self.assertEqual(learn._wotd_fact(_WOTD_DAY), learn._wotd_fact(_WOTD_DAY))
 
-    def test_empty_string(self):
-        self.assertEqual(learn._strip_tags(""), "")
+    def test_rotates_across_days(self):
+        bodies = {learn._wotd_fact(_WOTD_DAY + _dt.timedelta(days=n))[1]
+                  for n in range(3)}
+        self.assertEqual(len(bodies), 3)
 
-    def test_no_tags_passes_through(self):
-        self.assertEqual(learn._strip_tags("plain text"), "plain text")
+    def test_empty_kb_returns_empty(self):
+        with mock.patch.object(learn.kb, "load", return_value=[]):
+            self.assertEqual(learn._wotd_fact(_WOTD_DAY), ("", ""))
 
-    def test_nested_tags(self):
-        self.assertEqual(learn._strip_tags("<div><p><b>deep</b></p></div>"), "deep")
+
+class CuratedFactDispatchTest(unittest.TestCase):
+    """The Word of the Day slot must bypass the generic reword path."""
+
+    def test_wotd_day_selects_wotd_channel(self):
+        label, _ = learn._curated_fact(_WOTD_DAY)
+        self.assertEqual(label, "Word of the Day")
+
+    def test_wotd_is_never_llm_reworded(self):
+        with mock.patch.object(learn.summarize, "one_line") as reword:
+            learn._curated_fact(_WOTD_DAY)
+        reword.assert_not_called()
+
+    def test_other_days_use_other_channels(self):
+        with mock.patch.object(learn.summarize, "one_line", return_value=None):
+            label, fact = learn._curated_fact(_WOTD_DAY + _dt.timedelta(days=1))
+        self.assertNotEqual(label, "Word of the Day")
+        self.assertTrue(fact)
 
 
 if __name__ == "__main__":
