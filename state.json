@@ -3416,6 +3416,28 @@
       "topic": "habits",
       "ts": "2026-06-10T20:22:53.324001+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - Cashbox wednesday! grind continues",
+      "score": 68,
+      "severity": "high",
+      "source": "mkleossb",
+      "title": "mkleossb is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-10T22:07:07.480732+00:00",
+      "url": "https://twitch.tv/mkleossb"
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - MY SECRET CHARACTER IS YOUNG LINK!!!",
+      "score": 68,
+      "severity": "high",
+      "source": "Sparg0",
+      "title": "Sparg0 is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-10T22:07:08.484963+00:00",
+      "url": "https://twitch.tv/Sparg0"
     }
   ],
   "fda_seen_ids": [
@@ -3786,8 +3808,8 @@
   "iss_seen_passes": [],
   "last_run": {
     "failed": 0,
-    "ok": 34,
-    "ts": "2026-06-10T20:21:41.352343+00:00"
+    "ok": 1,
+    "ts": "2026-06-10T22:07:06.871552+00:00"
   },
   "launch_seen_ids": [
     "efc597fa5a5f89c3",
@@ -4632,7 +4654,7 @@
       "last_ok": "2026-06-10T20:21:41.352343+00:00"
     },
     "twitch": {
-      "last_ok": "2026-06-10T20:21:41.352343+00:00"
+      "last_ok": "2026-06-10T22:07:06.871552+00:00"
     },
     "uv": {
       "last_ok": "2026-06-10T20:21:41.352343+00:00"
@@ -4653,7 +4675,10 @@
       "last_ok": "2026-06-10T20:21:41.352343+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "Sparg0",
+    "mkleossb"
+  ],
   "visa_f4_dates_for_filing": "22DEC09",
   "visa_f4_final_action": "08NOV08",
   "watchdog_alerted": {},
