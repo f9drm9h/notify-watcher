@@ -4,10 +4,12 @@ Every public channel exposes an Atom feed at
 https://www.youtube.com/feeds/videos.xml?channel_id=UC... — no API key, no
 quota. The watchlist is monitors.json -> youtube.channels (channel_id + name),
 so following a new channel is a config edit, not a code change. One push per
-new upload; the first run seeds the current uploads silently so adding the
-topic (or a channel) never blasts a backlog. Each channel is fetched inside
-its own try/except so one dead feed never blocks the others, and the whole
-run is wrapped so a surprise failure can't take down the sweep.
+new upload. Seen ids are kept per channel ({channel_id: [ids]}), and the
+first sight of any channel seeds its current uploads silently, so adding the
+topic (or a single channel, at any time) never blasts a backlog. Each channel
+is fetched inside its own try/except so one dead feed never blocks the
+others, and the whole run is wrapped so a surprise failure can't take down
+the sweep.
 """
 from __future__ import annotations
 
@@ -30,8 +32,8 @@ _NS = {
     "yt": "http://www.youtube.com/xml/schemas/2015",
 }
 
-# Cap state size: each channel feed carries only the ~15 most recent uploads,
-# so an id this far back can no longer reappear in any feed and re-alert.
+# Cap state size per channel: a feed carries only the ~15 most recent uploads,
+# so an id this far back can no longer reappear in the feed and re-alert.
 MAX_REMEMBERED = 500
 
 
@@ -70,28 +72,43 @@ def _run(state: dict) -> dict:
         log.info("no youtube channels configured; nothing to do")
         return state
 
-    seen = state.get(STATE_KEY)
-    # First run (or a reset/corrupt state): record the feeds' current uploads
-    # without pushing, so we alert only on videos published from now on.
-    first_run = seen is None
-    seen = list(seen or [])
-    seen_set = set(seen)
+    prior_state = state.get(STATE_KEY)
+    # Legacy shape (one flat list across all channels) or a fresh/corrupt
+    # state: start from an empty per-channel map. Every channel below is then
+    # a first sight and seeds silently, so the migration (like the first run)
+    # can't blast a backlog or re-push anything still in a feed.
+    if not isinstance(prior_state, dict):
+        if isinstance(prior_state, list):
+            log.info("migrating %s from flat list to per-channel map "
+                     "(re-seeding silently)", STATE_KEY)
+        prior_state = {}
 
+    new_seen: dict[str, list[str]] = {}
     pushed = 0
     for channel in channels:
         channel_id = channel["channel_id"].strip()
         name = (channel.get("name") or "").strip() or channel_id
+        prior = prior_state.get(channel_id)
+        # First sight of this channel: remember its current uploads without
+        # pushing, so we alert only on videos published from now on.
+        first_sight = prior is None
+        seen = list(prior or [])
+        seen_set = set(seen)
         try:
             videos = _fetch(channel_id)
         except Exception as exc:  # noqa: BLE001 - isolate each channel
             log.error("youtube %r feed failed: %s", name, exc)
+            # Keep an existing channel's memory; leave a first-sight channel
+            # absent so it still seeds silently once its feed is reachable.
+            if not first_sight:
+                new_seen[channel_id] = seen[-MAX_REMEMBERED:]
             continue
         for video_id, title in videos:
             if video_id in seen_set:
                 continue
             seen.append(video_id)
             seen_set.add(video_id)
-            if first_run:
+            if first_sight:
                 continue  # silent seed: remember the backlog, alert nothing
             events.emit(
                 state,
@@ -107,12 +124,15 @@ def _run(state: dict) -> dict:
                 legacy_action="push",
             )
             pushed += 1
+        if first_sight:
+            log.info("seeded %r with %d video id(s) (silent first sight)",
+                     name, len(seen))
+        new_seen[channel_id] = seen[-MAX_REMEMBERED:]
 
-    if first_run:
-        log.info("seeded %s baseline with %d video id(s) (no alerts on first run)",
-                 STATE_KEY, len(seen))
-    elif pushed:
+    if pushed:
         log.info("pushed %d new YouTube upload(s)", pushed)
 
-    state[STATE_KEY] = seen[-MAX_REMEMBERED:]
+    # Channels dropped from the config fall out of state here; re-adding one
+    # later makes it a first sight again (silent seed), which is what we want.
+    state[STATE_KEY] = new_seen
     return state
