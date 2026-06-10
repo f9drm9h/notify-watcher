@@ -68,12 +68,13 @@ Topics:
   (with the game + stream title), re-arming after they go offline.
 - **Dominican baseball (MLB)** — two checks via the free MLB Stats API
   (statsapi.mlb.com, no key), configured in `monitors.json` → `baseball`.
-  The followed team's previous-day final score lands in the morning digest
+  Each followed team's previous-day final score (`baseball.monitored_teams`)
+  lands in the morning digest
   ("Dodgers 5 – Cubs 3 (W)"; off days stay silent), and a **live push** fires
   when a followed Dominican player has a milestone game — a home run, 3+ hits,
   or 3+ RBI ("🇩🇴 Juan Soto — 2 HR, 4 RBI vs Yankees"), at most once per game.
-  Both checks skip silently in the off-season. The team defaults to an MLB
-  club because LIDOM (e.g. Tigres del Licey) publishes no free API; team ids
+  Both checks skip silently in the off-season. The teams default to MLB
+  clubs because LIDOM (e.g. Tigres del Licey) publishes no free API; team ids
   come from `https://statsapi.mlb.com/api/v1/teams?sportId=1`.
 - **YouTube uploads** — for each channel in `monitors.json` →
   `youtube.channels`, reads the channel's free Atom feed

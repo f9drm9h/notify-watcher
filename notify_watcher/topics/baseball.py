@@ -3,8 +3,9 @@
 Two independent checks against the free MLB Stats API (statsapi.mlb.com, JSON,
 no key), configured in monitors.json -> "baseball":
 
-1. Followed-team daily result (daily run only -> digest). Each daily run we
-   fetch yesterday's schedule for `team_id` and put the final score in the
+1. Followed-team daily results (daily run only -> digest). Each daily run we
+   fetch yesterday's schedule for every club in `monitored_teams` (or the
+   legacy single `team_id`/`team_name` pair) and put each final score in the
    morning digest as one line: "Dodgers 5 - Cubs 3 (W)". An off day (no game)
    or a game that isn't Final is silently skipped. Already-reported gamePks
    are tracked in state so the repeated post-noon runs (NOTIFY_DAILY is set on
@@ -22,8 +23,8 @@ days (off-season; the longest in-season league-wide pause is the ~4-day
 All-Star break) both checks skip silently instead of erroring on empty data.
 
 LIDOM (the Dominican winter league, e.g. Tigres del Licey) publishes no free
-API, so the followed team defaults to an MLB club — edit `team_id`/`team_name`
-to taste; ids come from https://statsapi.mlb.com/api/v1/teams?sportId=1.
+API, so the followed teams default to MLB clubs — edit `monitored_teams` to
+taste; ids come from https://statsapi.mlb.com/api/v1/teams?sportId=1.
 """
 from __future__ import annotations
 
@@ -111,46 +112,57 @@ def _result_line(game: dict, team_id, team_name: str) -> str | None:
     return f"{team_name} {us_score} – {opp_name} {them_score} ({wl})"
 
 
-def _check_team_result(state: dict, cfg: dict, yesterday: _dt.date) -> dict:
-    """Digest yesterday's final score for the followed team, once per gamePk."""
-    team_id = cfg.get("team_id")
-    team_name = cfg.get("team_name") or "Team"
-    if not team_id:
-        return state
+def _monitored_teams(cfg: dict) -> list[tuple]:
+    """(team_id, team_name) pairs from `monitored_teams`, else the legacy single keys."""
+    teams = []
+    for entry in cfg.get("monitored_teams") or []:
+        if isinstance(entry, dict) and entry.get("team_id"):
+            teams.append((entry["team_id"], entry.get("team_name") or "Team"))
+    if not teams and cfg.get("team_id"):
+        teams.append((cfg["team_id"], cfg.get("team_name") or "Team"))
+    return teams
 
-    try:
-        games = _schedule_games({
-            "date": yesterday.isoformat(),
-            "teamId": team_id,
-            "hydrate": "team,linescore",
-        })
-    except Exception as exc:  # noqa: BLE001 - one source failing is non-fatal
-        log.error("baseball team result fetch failed: %s", exc)
-        return state
-    if not games:
-        log.info("baseball: no %s game on %s (off day)", team_name, yesterday)
+
+def _check_team_result(state: dict, cfg: dict, yesterday: _dt.date) -> dict:
+    """Digest yesterday's final score for each followed team, once per gamePk."""
+    teams = _monitored_teams(cfg)
+    if not teams:
         return state
 
     seen = list(state.get(RESULTS_SEEN_KEY) or [])
-    for game in games:  # usually one; a doubleheader yields two lines
-        pk = game.get("gamePk")
-        if pk is None or pk in seen:
+    for team_id, team_name in teams:
+        try:
+            games = _schedule_games({
+                "date": yesterday.isoformat(),
+                "teamId": team_id,
+                "hydrate": "team,linescore",
+            })
+        except Exception as exc:  # noqa: BLE001 - one team failing is non-fatal
+            log.error("baseball team result fetch failed for %s: %s", team_name, exc)
             continue
-        line = _result_line(game, team_id, team_name)
-        if line is None:
+        if not games:
+            log.info("baseball: no %s game on %s (off day)", team_name, yesterday)
             continue
-        state = events.emit(
-            state,
-            title=line,
-            body=f"Final, {yesterday.isoformat()}",
-            topic="baseball",
-            severity="low",
-            source="Baseball",
-            tags="baseball",
-            legacy_action="digest",
-            score=4,
-        )
-        seen.append(pk)
+
+        for game in games:  # usually one; a doubleheader yields two lines
+            pk = game.get("gamePk")
+            if pk is None or pk in seen:
+                continue
+            line = _result_line(game, team_id, team_name)
+            if line is None:
+                continue
+            state = events.emit(
+                state,
+                title=line,
+                body=f"Final, {yesterday.isoformat()}",
+                topic="baseball",
+                severity="low",
+                source="Baseball",
+                tags="baseball",
+                legacy_action="digest",
+                score=4,
+            )
+            seen.append(pk)
     state[RESULTS_SEEN_KEY] = seen[-RESULTS_CAP:]
     return state
 

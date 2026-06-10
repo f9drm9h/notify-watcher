@@ -136,9 +136,12 @@
   },
 
   "baseball": {
-    "_comment": "Dominican baseball via the free MLB Stats API (statsapi.mlb.com, no key). team_id/team_name: the MLB club whose previous-day final score lands in the morning digest, e.g. 'Dodgers 5 - Cubs 3 (W)'; team_name is the display name used in that line. 119 = LA Dodgers is a placeholder — find ids at https://statsapi.mlb.com/api/v1/teams?sportId=1. (LIDOM winter-league clubs like Tigres del Licey publish no free API, so an MLB club is the default.) dominican_players: MLB players (person_id = MLB Stats API id) who get a LIVE push for a milestone game — a home run, 3+ hits, or 3+ RBI — once per game. Both checks skip silently in the off-season.",
-    "team_id": 119,
-    "team_name": "Dodgers",
+    "_comment": "Dominican baseball via the free MLB Stats API (statsapi.mlb.com, no key). monitored_teams: the MLB clubs whose previous-day final scores land in the morning digest, e.g. 'Dodgers 5 - Cubs 3 (W)'; team_name is the display name used in that line — find ids at https://statsapi.mlb.com/api/v1/teams?sportId=1. (LIDOM winter-league clubs like Tigres del Licey publish no free API, so MLB clubs are the default. The legacy single team_id/team_name keys still work when monitored_teams is absent.) dominican_players: MLB players (person_id = MLB Stats API id) who get a LIVE push for a milestone game — a home run, 3+ hits, or 3+ RBI — once per game. Both checks skip silently in the off-season.",
+    "monitored_teams": [
+      { "team_id": 141, "team_name": "Blue Jays" },
+      { "team_id": 147, "team_name": "Yankees" },
+      { "team_id": 119, "team_name": "Dodgers" }
+    ],
     "dominican_players": [
       { "person_id": 665489, "name": "Vladimir Guerrero Jr." },
       { "person_id": 665742, "name": "Juan Soto" },

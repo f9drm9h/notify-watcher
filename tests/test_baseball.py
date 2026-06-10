@@ -137,6 +137,31 @@ class TeamResultTest(unittest.TestCase):
         self.assertEqual(sent, [])
         self.assertNotIn("digest_buffer", state)
 
+    def test_monitored_teams_each_get_a_line(self):
+        payloads = {
+            141: _schedule_payload([_game(pk=2001,
+                                          home=_side(141, "Blue Jays", 4),
+                                          away=_side(110, "Orioles", 2))]),
+            119: _schedule_payload([_game(pk=2002)]),
+        }
+
+        def get(url, params=None, **kwargs):
+            return _response(payloads[params["teamId"]])
+
+        cfg = {"monitored_teams": [
+            {"team_id": 141, "team_name": "Blue Jays"},
+            {"team_id": 119, "team_name": "Dodgers"},
+        ]}
+        with mock.patch.object(baseball.requests, "get", get), \
+             mock.patch.object(baseball.config, "section", return_value={}), \
+             capture_pushes() as sent:
+            state = baseball._check_team_result({}, cfg, YESTERDAY)
+        self.assertEqual(sent, [])
+        titles = [e["title"] for e in (state.get("digest_buffer") or [])]
+        self.assertEqual(titles, ["Blue Jays 4 – Orioles 2 (W)",
+                                  "Dodgers 5 – Cubs 3 (W)"])
+        self.assertEqual(state[baseball.RESULTS_SEEN_KEY], [2001, 2002])
+
 
 class MilestonePartsTest(unittest.TestCase):
     def test_homer_and_rbi(self):
