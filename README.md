@@ -131,7 +131,10 @@ message and, when there are more than fit, the *least* important are dropped
   knowledge, Dominican history & culture, or personal-finance basics
   (`data/*.json`). The Wikimedia feed is fixed per date and
   the fact rotates by day-of-year, so the push is deterministic; each section
-  degrades independently, so a feed outage still sends the rest. Daily run only.
+  degrades independently, so a feed outage still sends the rest. The push also
+  includes the **Wikipedia picture of the day** as an inline image (via the
+  `Attach` header), so the notification arrives with a visual — no extra config
+  needed. Daily run only.
 - **Rocket launches** — imminent orbital launches via Launch Library 2 (no key);
   alerts once per launch within `launches.imminent_hours`, skipping routine ones
   (Starlink by default).
