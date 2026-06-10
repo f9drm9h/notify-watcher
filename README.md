@@ -35,9 +35,14 @@ Topics:
   "Liberty 6 Pro"), then hands it to the deals watcher to price-track
   automatically. First run seeds the current catalog silently, so you only get
   pinged about genuinely new releases. No API key, no watchlist editing.
-- **Movie release dates + news** — for each title in `watchlist.json` →
-  `movies`, tracks its TMDb release date and alerts on first sight and on any
-  date change (needs `TMDB_API_KEY`). Each title's Google News headlines are
+- **Movie release dates + streaming + news** — for each title in
+  `watchlist.json` → `movies`, tracks its TMDb release date and alerts on
+  first sight and on any date change (needs `TMDB_API_KEY`). Also watches
+  TMDb's watch-provider data and pushes once when a film becomes streamable
+  on a subscription service in the DR (e.g. "🎬 The Odyssey is now streaming
+  on Netflix in DO") — rent/buy listings don't count, and the first run seeds
+  silently so an already-streaming title stays quiet. Each title's Google
+  News headlines are
   also scored via `movies_scoring` exactly like game news below: release
   dates / trailers / delays push live, casting / reviews / box office go to
   the daily digest, rankings / opinion / speculation are dropped.
@@ -401,7 +406,7 @@ notify-watcher/
 │       ├── ios_release.py           Apple Developer Releases RSS, iOS/iPadOS
 │       ├── deals.py                 JSON-LD price-drop watcher (watchlist + auto)
 │       ├── soundcore_pro.py         sitemap discovery of new Liberty Pro products
-│       ├── movies.py                TMDb release dates (watchlist)
+│       ├── movies.py                TMDb release dates + DO streaming (watchlist)
 │       ├── games.py                 RAWG release dates (watchlist, weekly)
 │       └── habits.py                config-driven daytime habit nudges
 ├── watchlist.json                   movie/game titles + products you want tracked
