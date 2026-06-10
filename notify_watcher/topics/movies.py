@@ -1,18 +1,25 @@
-"""Topic: movie release dates + news for a personal watchlist.
+"""Topic: movie release dates + streaming availability + news for a watchlist.
 
-Two independent checks per title in watchlist.json["movies"]:
+Three independent checks per title in watchlist.json["movies"]:
 
 1. Release dates (via TMDb). We resolve each title to a TMDb movie and track
    its release date, pushing when first seen and whenever the date moves (a
    delay, or a newly-set date on a previously-TBA film). Needs TMDB_API_KEY;
    if unset this check no-ops quietly.
 
-2. News / trailers / delays / casting (via Google News RSS). For each title we
+2. "Now streaming" (via TMDb watch providers). For each title we read the
+   subscription (flatrate) providers available in WATCH_REGION and push once
+   when a film gains a provider it didn't have before — i.e. when it becomes
+   watchable on a service. Rent/buy listings don't count. First run seeds the
+   current providers silently, so adding an already-streaming film stays
+   quiet. Needs TMDB_API_KEY, same as the release-date check.
+
+3. News / trailers / delays / casting (via Google News RSS). For each title we
    query Google News' free, no-auth RSS search for the exact phrase and push
    any genuinely new article whose headline is specifically about that film.
    Needs no key, so it works even when TMDB_API_KEY is unset.
 
-The two checks are independent and each title is isolated, so one failure (a
+The three checks are independent and each title is isolated, so one failure (a
 TMDb outage, a single bad feed) never blocks the others.
 
 The news path mirrors notify_watcher.topics.games: a quoted Google News query
@@ -43,9 +50,14 @@ from .. import changes, config, events, news, watchlist
 log = logging.getLogger(__name__)
 
 SEARCH_URL = "https://api.themoviedb.org/3/search/movie"
+PROVIDERS_URL = "https://api.themoviedb.org/3/movie/{movie_id}/watch/providers"
 MOVIE_PAGE = "https://www.themoviedb.org/movie/"
 STATE_KEY = "movie_release_dates"  # { "<tmdb_id>": "YYYY-MM-DD" | "TBA" }
 TBA = "TBA"
+
+# --- "Now streaming" (TMDb watch providers) ---------------------------------
+WATCH_REGION = "DO"  # Dominican Republic; the country whose catalogs we watch
+STREAMING_STATE_KEY = "streaming_seen"  # { "<tmdb_id>": [provider_name, ...] }
 
 # --- News (Google News RSS) -------------------------------------------------
 NEWS_STATE_KEY = "movie_news_seen"   # { "<title>": [article_id, ...] }
@@ -193,6 +205,88 @@ def _track_release_dates(state: dict) -> dict:
     return state
 
 
+def _flatrate_providers(movie_id: str, api_key: str) -> list[str]:
+    """Subscription-streaming provider names for a movie in WATCH_REGION.
+
+    Reads only the `flatrate` bucket (services where the film is included with
+    a subscription); `rent`/`buy` listings exist for most films long before
+    streaming and would make "now streaming" meaningless. A missing region or
+    empty bucket yields [], which the caller records but never alerts on.
+    """
+    resp = requests.get(
+        PROVIDERS_URL.format(movie_id=movie_id),
+        params={"api_key": api_key},
+        timeout=30,
+    )
+    resp.raise_for_status()
+    region = (resp.json().get("results") or {}).get(WATCH_REGION) or {}
+    names = (p.get("provider_name", "") for p in region.get("flatrate") or [])
+    return sorted({n for n in names if n})
+
+
+def check_streaming(state: dict) -> dict:
+    """Push once when a watchlist film becomes streamable in WATCH_REGION.
+
+    Each title resolves to its TMDb movie (same best-match search as the
+    release-date check) and we diff the current flatrate providers against the
+    set already seen in state. First sight of a film seeds silently, so a
+    title that's been on Netflix for years doesn't alert when added. The seen
+    set only ever grows (union of every provider observed), so a service that
+    drops the film and later re-adds it doesn't re-alert.
+    """
+    api_key = os.environ.get("TMDB_API_KEY", "").strip()
+    if not api_key:
+        log.info("TMDB_API_KEY not set; skipping streaming check")
+        return state
+
+    wanted = watchlist.titles("movies")
+    if not wanted:
+        log.info("no movies in watchlist; no streaming to check")
+        return state
+
+    bucket: dict = state.setdefault(STREAMING_STATE_KEY, {})
+
+    for title in wanted:
+        try:
+            movie = _search(title, api_key)
+            if movie is None:
+                log.warning("no TMDb match for movie %r", title)
+                continue
+
+            mid = str(movie.get("id"))
+            name = movie.get("title") or title
+            current = _flatrate_providers(mid, api_key)
+            log.info("movie %r streaming in %s: %s", title, WATCH_REGION,
+                     ", ".join(current) or "none")
+
+            previous = bucket.get(mid)
+            if previous is None:
+                bucket[mid] = current  # first sight: seed silently
+                continue
+
+            new = [p for p in current if p not in previous]
+            if not new:
+                continue
+
+            state = events.emit(
+                state,
+                title=f"Movie: {name}",
+                body=(f"🎬 {name} is now streaming on {', '.join(new)} "
+                      f"in {WATCH_REGION}"),
+                topic="movies",
+                severity="high",
+                source="Movies",
+                click_url=MOVIE_PAGE + mid,
+                tags="clapper,tv",
+                legacy_action="push",
+            )
+            bucket[mid] = sorted({*previous, *current})
+        except Exception as exc:  # noqa: BLE001 - isolate each title
+            log.error("movie %r streaming check failed: %s", title, exc)
+
+    return state
+
+
 def _fetch_news(phrase: str) -> list:
     """Return Google News RSS entries for an exact-phrase query."""
     url = GOOGLE_NEWS_RSS.format(q=urllib.parse.quote_plus(f'"{phrase}"'))
@@ -291,8 +385,10 @@ def _track_news(state: dict) -> dict:
 
 
 def run(state: dict) -> dict:
-    """Release-date tracking (TMDb) + news tracking (Google News), each additive
-    and independently isolated so one can fail without affecting the other."""
+    """Release dates (TMDb) + streaming availability (TMDb) + news (Google
+    News), each additive and independently isolated so one can fail without
+    affecting the others."""
     state = _track_release_dates(state)
+    state = check_streaming(state)
     state = _track_news(state)
     return state
