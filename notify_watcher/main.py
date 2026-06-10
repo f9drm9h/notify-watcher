@@ -21,6 +21,7 @@ from .topics import (
     anthropic_news,
     apod,
     astronomy,
+    baseball,
     beach_day,
     blood_donation,
     deals,
@@ -88,6 +89,10 @@ TOPICS: list[tuple[str, Topic]] = [
     # run and adds one library-seeded discovery pick on the daily run.
     ("twitch", twitch.run),
     ("music", music.run),
+    # baseball checks Dominican player milestones (live push) every run and
+    # adds the followed team's previous-day result to the digest on the daily
+    # run, so it must run before digest_topic.
+    ("baseball", baseball.run),
     # soundcore_pro discovers new Liberty Pro products and appends them to
     # state["auto_products"]; deals runs next so a same-run discovery is
     # price-tracked immediately.
