@@ -86,12 +86,15 @@ def add(state: dict, item: dict, cfg: dict) -> None:
         _drop_lowest(buf)
 
 
-def flush(state: dict, cfg: dict) -> bool:
+def flush(state: dict, cfg: dict, header: str | None = None) -> bool:
     """Send one grouped digest push and clear the buffer. Returns True if sent.
 
     Idempotent per day via digest_last_sent: a second flush on the same date is
     a no-op, so a duplicate or drifted daily run never double-sends. An empty
     buffer is also a no-op (and does not consume the day's stamp).
+
+    `header`, when given, becomes the first line of the message (the digest
+    topic passes the morning weather one-liner here).
     """
     if state.get(LAST_SENT_KEY) == _today():
         log.info("digest already sent today; skipping")
@@ -124,6 +127,8 @@ def flush(state: dict, cfg: dict) -> bool:
     )
 
     lines: list[str] = []
+    if header:
+        lines.append(header)
     for source in ordered_sources:
         lines.append(source.upper())
         for it in by_source[source]:
