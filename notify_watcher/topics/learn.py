@@ -51,6 +51,7 @@ CHANNELS: list[tuple[str, str]] = [
     ("Did you know", "general_knowledge.json"),
     ("Dominican culture", "dr_culture.json"),
     ("Money basics", "personal_finance.json"),
+    ("Word of the Day", "vocabulary.json"),  # structured entries; never LLM-reworded
 ]
 
 _REWORD_SYSTEM = (
@@ -105,9 +106,46 @@ def _featured(feed: dict) -> tuple[str, str, str | None]:
     return title, extract, url
 
 
+def _format_vocab_entry(entry: dict) -> str:
+    """Render a vocabulary.json entry into a multiline push-notification body."""
+    word = entry.get("word", "")
+    pronunciation = entry.get("pronunciation", "")
+    pos = entry.get("pos", "")
+    definition = entry.get("definition", "") or entry.get("text", "")
+    example = entry.get("example", "")
+    src = entry.get("src", "")
+    parts = [word]
+    meta = " · ".join(p for p in [pronunciation, pos] if p)
+    if meta:
+        parts.append(meta)
+    if definition:
+        parts.append(definition)
+    if example:
+        parts.append(f'"{example}"')
+    if src:
+        parts.append(f"(Source: {src})")
+    return "\n".join(p for p in parts if p)
+
+
+def _wotd_fact(day: _dt.date | None = None) -> tuple[str, str]:
+    """('Word of the Day', body) from the local vocabulary KB; ('', '') if none.
+
+    Local-only: the vetted KB plus the day-of-year pick keeps the push
+    deterministic and free of an extra feed dependency. Entries are formatted
+    structurally, never LLM-reworded — a dictionary definition stays verbatim.
+    """
+    items = kb.load(kb.DATA_DIR / "vocabulary.json", field="word")
+    chosen = kb.pick(items, day=day)
+    if not chosen:
+        return "", ""
+    return "Word of the Day", _format_vocab_entry(chosen)
+
+
 def _curated_fact(day: _dt.date | None = None) -> tuple[str, str]:
     """(label, fact_text) from today's rotating KB channel; ('', '') if none."""
     label, filename = CHANNELS[kb.day_of_year(day) % len(CHANNELS)]
+    if label == "Word of the Day":
+        return _wotd_fact(day)
     items = kb.load(kb.DATA_DIR / filename)
     chosen = kb.pick(items, day=day)
     if not chosen:
