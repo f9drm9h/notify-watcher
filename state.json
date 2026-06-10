@@ -2599,6 +2599,17 @@
       "topic": "apod",
       "ts": "2026-06-09T23:25:55.813329+00:00",
       "url": "https://apod.nasa.gov/apod/image/2606/Thor_Drudis_4389.jpg"
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - Poppt1 Low tier tournament! Marth? First round is bo1",
+      "score": 68,
+      "severity": "high",
+      "source": "mkleossb",
+      "title": "mkleossb is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-10T01:31:04.231087+00:00",
+      "url": "https://twitch.tv/mkleossb"
     }
   ],
   "fda_seen_ids": [
@@ -2967,8 +2978,8 @@
   "iss_seen_passes": [],
   "last_run": {
     "failed": 0,
-    "ok": 33,
-    "ts": "2026-06-09T23:24:52.579790+00:00"
+    "ok": 1,
+    "ts": "2026-06-10T01:31:03.222974+00:00"
   },
   "launch_seen_ids": [
     "7621aad01d0821be"
@@ -3797,7 +3808,7 @@
       "last_ok": "2026-06-09T23:24:52.579790+00:00"
     },
     "twitch": {
-      "last_ok": "2026-06-09T23:24:52.579790+00:00"
+      "last_ok": "2026-06-10T01:31:03.222974+00:00"
     },
     "uv": {
       "last_ok": "2026-06-09T23:24:52.579790+00:00"
@@ -3816,7 +3827,7 @@
     }
   },
   "twitch_live": [
-    "Sparg0"
+    "mkleossb"
   ],
   "visa_f4_dates_for_filing": "22DEC09",
   "visa_f4_final_action": "08NOV08",
