@@ -75,6 +75,15 @@ Topics:
   Both checks skip silently in the off-season. The team defaults to an MLB
   club because LIDOM (e.g. Tigres del Licey) publishes no free API; team ids
   come from `https://statsapi.mlb.com/api/v1/teams?sportId=1`.
+- **YouTube uploads** — for each channel in `monitors.json` →
+  `youtube.channels`, reads the channel's free Atom feed
+  (`https://www.youtube.com/feeds/videos.xml?channel_id=...`, no key) and
+  pushes once per new upload (channel name + video title, tap to watch). Each
+  entry is `{ "channel_id": "UC...", "name": "Display Name" }` — `channel_id`
+  is the `UC...` id from the channel page URL or its source, **not** the
+  `@handle`. The first sight of each channel seeds its current uploads
+  silently, so adding a channel — on day one or any time later — never blasts
+  its backlog.
 - **Music** — `monitors.json` → `music.followed_artists` get a push on a new
   Deezer release. Plus a daily **discovery** pick: a song from a Deezer
   *related* artist seeded by your own library (`data/music_seed.json`, built by

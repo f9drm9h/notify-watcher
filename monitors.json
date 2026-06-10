@@ -46,6 +46,7 @@
       { "topic": "movies", "severity": "high", "score": 62 },
       { "topic": "iss", "score": 62 },
       { "topic": "launches", "score": 62 },
+      { "topic": "youtube", "score": 62 },
       { "topic": "energy", "severity": "high", "score": 60 },
       { "topic": "air_quality", "severity": "moderate", "score": 60 },
       { "topic": "health_tip", "score": 60 },
@@ -144,6 +145,15 @@
       { "person_id": 665487, "name": "Fernando Tatis Jr." },
       { "person_id": 682829, "name": "Elly De La Cruz" },
       { "person_id": 646240, "name": "Rafael Devers" }
+    ]
+  },
+
+  "youtube": {
+    "_comment": "Channels to watch for new uploads via the free per-channel Atom feed (no key). Each entry needs channel_id (the 'UC...' id from the channel page URL or its source - NOT the @handle) and a display name used in the notification. One push per new upload; the first sight of each channel seeds its current uploads silently. The entries below are placeholders - replace them with channels you follow.",
+    "channels": [
+      { "channel_id": "UCXuqSBlHAE6Xw-yeJA0Tunw", "name": "Linus Tech Tips" },
+      { "channel_id": "UCBJycsmduvYEL83R_U4JriQ", "name": "Marques Brownlee" },
+      { "channel_id": "UCsBjURrPoezykLs9EqgamOA", "name": "Fireship" }
     ]
   },
 

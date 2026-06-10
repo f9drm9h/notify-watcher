@@ -51,6 +51,7 @@ from .topics import (
     watchdog,
     weather,
     wwdc,
+    youtube,
 )
 
 Topic = Callable[[dict], dict]
@@ -116,6 +117,9 @@ TOPICS: list[tuple[str, Topic]] = [
     ("launches", launches.run),
     ("iss", iss.run),
     ("anthropic_news", anthropic_news.run),
+    # youtube pushes once per new upload from each followed channel (free
+    # per-channel Atom feed, no key); seeds silently and dedups by video id.
+    ("youtube", youtube.run),
     # habit nudges (water, etc. from habits.json) fire on several daytime slots
     # across the 3-hourly grid, so this runs every cycle (not daily-only) and
     # dedups per slot per habit in state.
