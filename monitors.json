@@ -23,6 +23,7 @@
     "default": 30,
     "ntfy_bands": { "90": "urgent", "70": "high", "0": "default" },
     "rules": [
+      { "topic": "visa_bulletin", "severity": "low", "score": 45 },
       { "topic": "visa_bulletin", "score": 100 },
       { "topic": "weather", "severity": "critical", "score": 95 },
       { "topic": "quakes", "severity": "critical", "score": 95 },
@@ -86,6 +87,11 @@
   "watchdog": {
     "_comment": "Self-monitoring. main.py records every topic's last successful run and latest failure in state.topic_health; the watchdog pushes ONE heads-up when a topic has had no successful run for stale_hours (then stays quiet until that topic recovers, re-arming for the next outage). Several topics crossing the threshold on the same run are bundled into a single push.",
     "stale_hours": 48
+  },
+
+  "visa_bulletin": {
+    "_comment": "F4 wait estimator. Set f4_priority_date to the priority date on your I-130 receipt notice (ISO YYYY-MM-DD) and every F4 alert plus the quarterly check-in adds '~N yr to your priority date' after the pace line. Leave it empty to show the advance pace only.",
+    "f4_priority_date": ""
   },
 
   "quakes": {

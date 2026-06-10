@@ -8,6 +8,14 @@ Topics:
 - **F4 visa bulletin** — watches the F4 row, "All Chargeability Areas Except
   Those Listed" column, in BOTH State Dept family-sponsored tables (Final
   Action Dates and Dates for Filing), and alerts when either moves.
+- **F4 wait estimator** — keeps a history of the Final Action cutoffs (up to
+  24 bulletins) and appends a pace line to every F4 alert: "Advanced ~14
+  d/bulletin over 6 bulletins — ~4.2 yr to your priority date". Set
+  `monitors.json` → `visa_bulletin.f4_priority_date` (ISO `YYYY-MM-DD`, from
+  your I-130 receipt notice) to get the ETA clause; leave it empty for the
+  pace only. Each January/April/July/October a low-priority quarterly check-in
+  lands in the digest comparing the recent pace against the full history, so
+  the estimate stays visible even while the cutoff crawls.
 - **WWDC announcements** — watches Apple Newsroom RSS for any post whose title
   contains "WWDC" or "Worldwide Developers Conference", and alerts on each new
   one (headline + link).
@@ -377,6 +385,7 @@ notify-watcher/
 │   ├── state.py                     load/save state.json
 │   ├── watchlist.py                 reads watchlist.json titles/entries
 │   ├── summarize.py                 shared one-line AI summary (Gemini→Claude)
+│   ├── visa_math.py                 pure F4 wait-pace math (history → ETA)
 │   └── topics/
 │       ├── visa_bulletin.py         F4 Final Action + Dates for Filing
 │       ├── wwdc.py                  Apple Newsroom RSS, WWDC items
