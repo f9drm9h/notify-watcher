@@ -120,6 +120,21 @@ def _curated_fact(day: _dt.date | None = None) -> tuple[str, str]:
     return label, reworded
 
 
+def _wiki_image_url(feed: dict) -> str | None:
+    """Return the Wikipedia picture-of-the-day URL from the feed, or None."""
+    try:
+        image = feed.get("image")
+        if not isinstance(image, dict):
+            return None
+        for key in ("thumbnail", "image"):
+            src = (image.get(key) or {}).get("source")
+            if src:
+                return str(src)
+    except Exception:  # noqa: BLE001 - missing image must never break the push
+        pass
+    return None
+
+
 def _compose(sections: list[tuple[str, str]]) -> str:
     """Render [(header, body), ...] into a scannable multi-section message."""
     blocks = [f"{header}\n{body}" for header, body in sections if body]
@@ -160,6 +175,7 @@ def run(state: dict) -> dict:
         log.warning("learning push has nothing to send today; skipping")
         return state
 
+    image_url = _wiki_image_url(feed)
     events.emit(
         state,
         title="Daily learning",
@@ -169,6 +185,7 @@ def run(state: dict) -> dict:
         source="Learning",
         click_url=click_url,
         tags="books",
+        metadata={"attach_url": image_url} if image_url else None,
         legacy_priority="low",
         legacy_action="push",
     )
