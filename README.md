@@ -80,6 +80,10 @@ fatigue. The digest is **ranked by score**: the most important items lead the
 message and, when there are more than fit, the *least* important are dropped
 (shown as "+N more"). Sources, keywords, weights, and thresholds all live in
 `monitors.json` (no secrets), so tuning is a config edit, not a code change.
+The digest opens with a one-line morning weather summary for your `location` —
+`Today: 31 °C, rain 20%, UV 9` (current temperature, rain probability, max UV
+via Open-Meteo, free, no key); if the weather fetch fails for any reason the
+digest simply goes out without it.
 
 - **FDA approvals** — reads the openFDA Drugs@FDA API (free, no key) and alerts
   on new drug/biologic (NDA/BLA) approvals. Generic (ANDA) approvals are
