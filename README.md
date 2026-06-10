@@ -66,6 +66,14 @@ Topics:
 - **Twitch live** — for each handle in `monitors.json` → `twitch.streamers`,
   checks live status via decapi.me (no key) and pushes once per live session
   (with the game + stream title), re-arming after they go offline.
+- **YouTube uploads** — for each channel in `monitors.json` →
+  `youtube.channels`, reads the channel's free Atom feed
+  (`https://www.youtube.com/feeds/videos.xml?channel_id=...`, no key) and
+  pushes once per new upload (channel name + video title, tap to watch). Each
+  entry is `{ "channel_id": "UC...", "name": "Display Name" }` — `channel_id`
+  is the `UC...` id from the channel page URL or its source, **not** the
+  `@handle`. The first run seeds the current uploads silently, so adding a
+  channel never blasts its backlog.
 - **Music** — `monitors.json` → `music.followed_artists` get a push on a new
   Deezer release. Plus a daily **discovery** pick: a song from a Deezer
   *related* artist seeded by your own library (`data/music_seed.json`, built by
