@@ -1,5 +1,6 @@
 {
   "anthropic_seen": [
+    "94cb1965b2543732",
     "3a256958e1cc26a6",
     "ea3362d68b1a3874",
     "2ae88489a19f181c",
@@ -41,7 +42,7 @@
     "29db49f64ce68661",
     "a8b1aff056453d2f"
   ],
-  "apod_last_sent": "2026-06-09",
+  "apod_last_sent": "2026-06-10",
   "astronomy_sent": [],
   "auto_products": [
     {
@@ -50,450 +51,18 @@
     }
   ],
   "blood_donation_last_notified": "2026-06-08",
-  "digest_buffer": [
-    {
-      "detail": "",
-      "score": 35,
-      "source": "Grand Theft Auto VI",
-      "title": "GTA VI Fan Goes Overboard and Installs Microphones Outside Rockstar\u2019s Headquarters to Figure Out When Trailer 3 Will Release - levelup.com",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQTUh0bFFSV0RzT2dhRVVTT0hWX2UyMk1SOE0yeENydGNpMmhOZ0tGNXlicVdxZ2lXbXhNRkJhYmZmRUtUUkVISVJaTXdWbXIxbTRrWWtXRUhoTWpROExZZGpFWHh0VVBqOFU2N1k3YjFwMlp3TUg3SHdGOXFMbDctWkF4YmNHV3diUTNvRUxNYVhTdUZmWmszRWw4ZVdCUHl5RFZuZWRpR0RNTzJnUnVfcEdadzZ1dmtFc044UktiVUlOSVRkR0RqeEtHWEoxRVM3MUxrV2FWd3lTZUtMc3FkMlJ6b3Etd0JTNGItaA?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 35,
-      "source": "Grand Theft Auto VI",
-      "title": "Police Called On GTA 6 Fans For Breaking Into Rockstar Games\u2019 Office - RockstarINTEL",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWXpneEk3UGVELUZ0akZHaGJFTTZqa2ktRFZjSkl4ZnRnWDRLdkRYUlR1WkNhWmQ1VTZTbDZ2YU1keU03bTVRM1BPTTR1RnB2ZEd0ME9rTTBPNm41ZnFMM3lXWW5VcEtVbEcwci1TUG9MWW14bDlkN1M5VnhmaXRWRXhJWHktS08wRXdBb1k0amZIZDZfY25PSVF3?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 35,
-      "source": "Grand Theft Auto VI",
-      "title": "Despite GTA 6 release date confidence, Take-Two Interactive stock keeps falling - Notebookcheck",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTS1jS28tRXdMNWQ3cEVXS1lYaFl4b0ZvdnFsZW5kcDRwMkEtRG5aekMwNXZ3bTNYbHVmTnc5N0J6LUJxMEUxaDd0dlB6UURFU2Y4R3UxM3dYSjVRbFBDbjdUcGVGeHctNGxhaHlTdG9nYnBQTDdGQ3prcTB2c000bUhTNUw4NVV6eVlJMUY3UXkzWmdXNlY5cmZfTERROXJhcFRNNlNhMFoxdW1QT2UwT3FCVlJrc0I5MkdScGc2MHg?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 35,
-      "source": "Grand Theft Auto VI",
-      "title": "Grand Theft Auto VI Trailer 3 | Rockstar Games | Pre-order Now | Concept Murdoch (aU0oVbLlkL) - Mshale",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE54YVplZWplYTVFYWVjRVEyVEEwZDVibmh5SDNfYzd4MVZzc3JMU2o2WkFzVkN6WUVoSEh6SVdqSjFYcVlfRHJJZi04QTZWdDE0TmdWMFZCcnl6ZnM?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 35,
-      "source": "Grand Theft Auto VI",
-      "title": "Trish Stratus Trolls Grand Theft Auto VI Delay In Hilarious Way - Yahoo",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZ283Q2UyVWthaVNzbndQLVlFNnYteVlsSzctVnRoeXByd29IVHQ0NWo2Rzh5bnhlYkVSQ1o2NldSRnJMNWYzbWpMR3BlWXJNNXZtVUxPTFF6NWlNVEE5WjFwMWRIak14TUZZbU5vYnNudXowMnM2NFZWbEM4OHBaZGQzTWVpcm1OMHZRTFhBLTBrQ243ZXBuTXdyT3ljQ1FFTWZjcQ?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 35,
-      "source": "Grand Theft Auto VI",
-      "title": "Rockstar Games is doubling down on revised GTA 6 release date, with a CEO saying the marketing blitz will begin this summer - Popverse",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNVmhON3E3M1VFdmVXLWJqTUlzdFNUVWNKQmhSbWFaQS1scXgwdDZGaWF0SlJtSmdMSHBzSlJGYUp1eUJaaXA5M05FWkd5TUh4U1FJU0ZiY0pXamtWTnJPenJCbjVVeHhqX1BCM1F6NWtXdUNBZ0paUXpNU3VIVFV4djhhODlJUHdhQUZlVmRURGdXa2xpUFJpQWhkZllRZ25IVUVzeEtBSFVjWXRfVHRtRGtB?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 35,
-      "source": "Grand Theft Auto VI",
-      "title": "GTA 6 Delay Has Gamers Outraged At Complete 'Lack Of Care' From Rockstar Games - GAMINGbible",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQVUhXTFpoSTlsS21SVDk0MTVXYzN0bkwxNlRZcFZpakdjTkVwLUx3aGhBenpmMEpEVGdLNjZPeDNBc2RsUmdhNjNpdWpCcXg1WEVKZUlDQTYzR19JWlg2OTNQM3gzQ1hUblhzZTJKM1BBVWRTSDJLR3NKM1dvSWxtcDFNRThEYWloYXBEbGdEU2RnT0Y0RFE?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 35,
-      "source": "Grand Theft Auto VI",
-      "title": "'GTA VI' Scams Now Appears Online, Claiming Fake Early Beta Access to Eager Fans - player.one",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUE1KeDJ1RDAxVzctYXlfMDN0RHNEUDZ0V2paTmZwVGhxNzFUX1ltcVRnZUlZbWxnUE1hWkluU2tBRmRRNTI0WEl0RGNPbE96SXZqZVBKdDFUODZLeldqektmZm53SjI0OFVRQkVwSVZvTk9LR2czOTI5LXZxYTNzQ01YRDA5T0s3TVotUWFVVGladXJPMGZURVFWMEoyZTU3M2x0cnVEUQ?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 35,
-      "source": "God of War Laufey",
-      "title": "Slideshow: God Of War Laufey Reveal - IGN Nordic",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFByeE5zUk54TURkbTdnd3ZtNnRnNWpqdXJqNnowWHhidmNubjU0Q0hCTEhFNjdKcmFyQlB5Zm80d1N0ZG9wX2xHX3Y1dEt1bC1RY20tUjZzLUN6cE5rVlE?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 35,
-      "source": "God of War Laufey",
-      "title": "God of War Laufey Director 'Understands' Skepticism Following Reveal, but Hopes Fans Give It a Chance - IGN",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPbUJ1Mkx6Sk5FN2JYRFZmLXNFckJWbWJtdGprTkVwbGdmaFZSS2w1TC1UVVUteFh3TGlDX0FnVmdwU3IyNlduYnJuYloyOHg3RnNlRnhsSEFYMUlLbHdWb1lHRHFxSHVweHcwRWc3RkpNWU8xcmt1dVppdmE1eGJjNnF3X1YtMHhfZ0VicUpoc01SVWxVVEFDXzNnZkxJVUhoVVR3aWpQNzNRVkxZclNDbUpYU3MxQ1QwaFZUbUpYWGcza0lFZUE?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 35,
-      "source": "God of War Laufey",
-      "title": "Sony Santa Monica reveals God of War: Laufey - GamesBeat",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1jbGtDT2pzNEpLaGllTl9UZ2JaUllrbWR2SnRZTjdyNGZLaV9fdUV0Rm94OUlxMEdHSEJ1UFVuTFN1bU9SY3hwRms4ZmNQVWMyTFdieDFmZUJPY0pfVTBOcVZlM3c0UzJhbmpKSEZlVkUycm9E?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 35,
-      "source": "God of War Laufey",
-      "title": "God of War Laufey Revealed, and PC Players Are Almost Certainly Locked Out - The FPS Review",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPR2hOS2NTMXhlSkEyOEdsY3VkS1dmVXpGYjRnMDc4LWJXU1FTS3h0TW1PLVUzcVZGN0tZbzJFTGhOeDRJTDZ0dF9MdkRMNGl6U20xbk9YMVBhTmJQeW1SQndWY3VqLUVCYmkxVmYxWTkwRUJrQ19TOWM0dUd6RW8wNkJJSEpRQW5VLXhKTy1GY1I1X3o0S2tqMXdBalhidmNkR2s2VTNvZU5VOGJmdEZ6Mmgwa0g?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Godzilla x Kong: Supernova",
-      "title": "Godzilla x Kong: Supernova Star Finally Breaks Silence on 2027 Sequel - Yahoo",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNSFVrTUdUeUZ1cFppRkVrT1F6UTBidDU4RzRYbXVDS3pZNTRvOGZmX2JBLW9qVlhxSVptMjRlTjVsZGhSbDF0UXp0ZXh2RmVQa3ZzQUNldmtNSTNfM1FHV0MyRTJ3Sm55SkVkTDUtYy11ZktoMVZyY0Z6ZHJlc0ZyVGxUdkJCUQ?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 40,
-      "source": "Emgality",
-      "title": "FDA updates approval for Emgality (Galcanezumab-Gnlm) (BLA761063)",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761063"
-    },
-    {
-      "detail": "",
-      "score": 40,
-      "source": "Ajovy",
-      "title": "FDA updates approval for Ajovy (Fremanezumab-Vfrm) (BLA761089)",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761089"
-    },
-    {
-      "detail": "",
-      "score": 40,
-      "source": "Epidiolex",
-      "title": "FDA updates approval for Epidiolex (Cannabidiol) (NDA210365)",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210365"
-    },
-    {
-      "detail": "",
-      "score": 40,
-      "source": "Vyepti",
-      "title": "FDA updates approval for Vyepti (Eptinezumab-Jjmr) (BLA761119)",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761119"
-    },
-    {
-      "detail": "",
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "The Odyssey",
-      "title": "'The Odyssey' trailer sparks criticism over accents and \u2018daddy\u2019 issues - Euronews.com",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQWNqSUR0V0tBUWctNGdNejQ1REhlV2tWM0tiMGRpaDBoMEJzX2VqaEpjc2ZWUkFQd3lpYmRBR1lZN05aR3J0eU9WSzFISXM4bEJ3aXJpcmhrZlhJNGNweWJqdWNVcnFWbVlzWkoyZ0lKUGo0bVZFRkhLWXJ4eXBhQ3JPcXdSeE81UUZyN01NS2lPNmo2MjIyb2c4X3lsZGNaRDdReEozRmk0TDltcmo0?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "The Odyssey",
-      "title": "You Can Watch \u2018The Odyssey\u2019 Trailer in All Its Various Aspect Ratios Right Now - Gizmodo",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOW12cU9BTlQ0cF9PdlZ1UDQzdVN1YkhvbC1CenVFNHlYam9FcHVaODk4S1I1S1htc2JqM0RCbFp2aFBDbDh6Q0NISURCS3RaUmR5ajhhWV9zNlFnZHRza1Nxa2RFNnFfSFlYcldxQjBXdHZ4NjRReFdEdWVUNDhhWlZRWWhsNXUtT2RQMkpVa3U5LUQ2dWliaTlaTzhTX3J3c19HLVRCUUY1cEk?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Avengers: Doomsday",
-      "title": "Russo Bros Declare \u201cWe\u2019re Back to Phase Zero\u201d With \u2018Avengers: Doomsday\u2019 and Robert Downey Jr. - The Hollywood Reporter",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUHhHZWVwWDlEOGRvNTg2OGx2R1cxc0k4QTZFVGpnc25zUEc3NmdYd3VaZk1nQzZ4YUctX2M3VVc3MklYY3JCdVJJRF9IamFZcXJpUnVhWjFMZ29KM05nVUZSLWgyNmdRUmtRY1NkTldESWlEc0p5U1RXR2trYkNZbThVRHZZb0stYUx6LUVyZkgteGdPNHdEMWpGcE1oYWFHdnFQRWE5dlktY2FVN3Y0aEVFNzBRUQ?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Avengers: Doomsday",
-      "title": "Hyped Marvel Fans Get Trolled When Avengers: Doomsday Trailer Reveal Turns Out To Be A Tease For Coffee - Kotaku",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdF9ta0Z1QTViamllR2s5SVk5Q3lqRGcyNngwajZTOUp0YXJ4MGluNzdRYjRDT2RhZ19keC1jR1NJQXpNVnJ0RjZIeW1wbmVxeHVFOURoVlBKdXB6VzdvRzVCYnd1d2QwNWpQOHA0cVQ5S3VSRWktaFNjZ3VpY0VwSHBkdXV3d1Q2WC1wY3dB?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Logo Reveal Has Marvel Fans Expecting a Trailer - IGN",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOUUZicklyWExyZzAxSHQ5a2FhTTBWQXNjdmhHRXc1SS1FQ0Y3STJCZEpIX0U2R0doejdfY0c5eVVMLTZQa2ZOcFFVdzNzTU9VVkRmcGMwWmVoSW96cHZIeDFNOWhDTHl6cWVibTFIYnRqUzQ1NTNuUUd1cTdkU3JRdzY1cXlGblNJMG5ZcmIydDZnb05wQ2Z2V0NR?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Amazon Prime Will Officially Release 'Spider-Man: Brand New Day' 2 Days Early - Collider",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeTl2ZExycXoxc21xUFIzOUlkRU9Yd1RINUEybXFndkVVTUUzM0Y3anVBSUtsdUFXR2w1U2x2cnRoT3B2aXp6dlR2cjcxM3VMQXpEbEkwNHB5THlsQ29kTm1xeXY4UVJQcTJick05WGk0Q0thVFNjdWlBbzRGei1RU0dsUVoyRFFQZXRxWVBick9GVU52aF9jSWtBRUVBeUdoNnU2aEo2dFhHTWZt?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "The Odyssey",
-      "title": "\u2018The Odyssey\u2019 Website Lets You Watch the Trailer in All Six Different Formats - PetaPixel",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVW9YUGdIMnhsTnIzNnJPdURwUWoxVVhaUk1NSUxQbGJ1Tkl6bHcySGlid2IzelpBYUFhWk1BbWxnSmlNc2ZVYXZkeGlzNThNUVF4Z2xHbVlJQnc3dnhsdUNkRlpzeXJRaHVPT3RabWV2dDdXSkhDc3hlRUpXOVZiTUd2UmVlaklXMHlnOEkzR1ZYa1QtSFRYcVFtdHNlSDVDMXJqRHo4X1k5WmVONFE?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "The Odyssey",
-      "title": "The Odyssey | 2026, Movie, Film, Length, Cast, Release Date, Christopher Nolan, & Locations - Britannica",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE12OTJHTFZmQ0FldS1MOHU3bHZyWVA1NlU0dkM1Q2dSd0ljSFRLR3FxeWR3OW94VVEwWFhobDBkVzRaUzlvV3lhR00tWmFHYzFmX3BCODJrdzFvbXR0V2QzWEdNOWIwbW00WUE?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "The Odyssey",
-      "title": "Christopher Nolan Defends 'The Odyssey' Armor and Casting Travis Scott - Variety",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQR0hIYlNucnZVd2dZNjhTNml4WkRjVW5TVlBEX0dtejVmM0R1aXItcnlQVlo1cTRvQXI5enNZUjdUQk15VUZMUVZYeEZKNV9FMUNxOEE3dTlJQk1jaWQ3Y2VXUTRGT1gwRlpua0JzWHNTZGhOLVNvd0c1UDNMb0ktejREa2x5WmdGcDl5QWhJNVpTa2N5cERBVmhlMTlfdUNUOXJKZW5JOA?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Avengers: Doomsday",
-      "title": "Kevin Feige Confirms Ant-Man\u2019s New Job In Avengers: Doomsday - The Direct",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBISzJIQkxaUXdRaHVwaXlKSWRYMzRvZFUxS29qMHY2MnoyZjN1ZUlIanNlcnpBdG9jc2wyakd3bkRlUF9VaDRNMFFneVlTWGxDWTlWY215LXVORDJkYmJ3eDNNcU9KYkQza0FrZ1hzdUFoZl8xMlE?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Promo Art Reveals First Look At Tombstone And Spidey vs. The Scorpion - IMDb",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5rajJtUzVBZHJiUGJ3NlVvWkVWdTd6M1BiMlEtdjZTVWJ1NnI4RmxFWjY5blo5WUxVakhiMWR2Mm1BTE9OY0dnemF3NlB0N21wa1VpbmJfR0ZvVGo4YkcxTFNR?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day unveils first look at Spidey vs. Hulk showdown - IMDb",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1PMnY0Q3ZqdlBRRV9KVXZCeHFpeWFlQVY1WS16MXFialpJcDhLdzNySWZvbzhPQ291cW5FajB5TnlkU2FTbzZxOGYtWmRicFBYejZkRkhBY1dpZUpUYnRnUw?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Trailer Update May Disappoint MCU Fans - Yahoo",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPQlh1QmhGTnRHMHRmaWpaazJoai13eGpfcG05YTY0NXBwNS05MFJQc05mU0l0eHRhcl9qaTZwVTNlU3RnVTJrYWtBcDZudmdBZ3BRNDBFQ1k1cmo4UmlidjRDVEs0NHJVSWpyMmlnUVJTSWFZcTN5NGxEN1BmVFRHRUY2OVFETzYtLU92aWRBQzJzaldDLWxIT05zZw?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Spider-Man: Brand New Day",
-      "title": "My favorite 'Spider-Man: Brand New Day' theories from the first trailer - Substack",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5wQXpZaUJ1ZnNlU3JqYTExVFpJSFMzODFXZ0lHRXJsYjdQM3VWUlBaZHNOQ29rM0FJYjMxMmdOMWhiUWtpOU55cVpSUThSNVVzaTBuTzJYZGwwZ2lMbjZVM3lyVHJoa3M5M0VsVlBRYloxSFBUTkRFcA?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "The Odyssey",
-      "title": "'The Odyssey' trailer lets you compare aspect ratios - FlatpanelsHD",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5fMTFjN2JfanJzZHVRWXpnbThmY3RDU0JDRVByWThydi1TV2xuLUlXMkVmRXJKbE9lUVpYSjJzNURURE43aUdNbjA2R290OWE4RGpFeTVRTmh3MVhyWjVlNVduZTV4eElmcTFnc1BzMWxJX0lIOVduWnJR?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Spider-Man: Beyond the Spider-Verse",
-      "title": "Spider-Man: Beyond the Spider-Verse \u2013 Lord And Miller Talk The Delays - Bleeding Cool News",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOUVJJNUpRN0tCQXphRGM3Qm02ejRKWUdEejJPSk5lYkIyMnA1VDA2RmRsYV9XN0kxWkw2TDc0ZEJsVGhnaEJ1RXJpcVFXa0NUTEpvdEdLdHg2d3JPaElMcGhxeFhCeTZKbTlyVHMwLVZ2aTdCejRGc3JnZUx1M2l3VmlPb2ZTbzdzNHV5a3B3LWF6MkJoLVJGNmxkaFVOM1ph?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Spider-Man: Beyond the Spider-Verse",
-      "title": "SPIDER-MAN: BEYOND THE SPIDER-VERSE\u2019s Release Date Moves Up - Nerdist",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOSnlyOTB6MWFRTGtfNDhPZmlsUEJTOU9xM0FTMVhMdXpHRUZqOHVSa2RPd29NX0VBMDVCb3ZWRmNmYUhmc2U0Rnd4b1JXUFFqSXNpZXhwdkNuZ3BwNUJiTDNpSDVBU1RkQUhrenl3RjhSZnh4SGEwOS1VdzU0ODFzR2FHVG5PNEoy?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Spider-Man: Beyond the Spider-Verse",
-      "title": "\u2018Beyond the Spider-Verse\u2019 Jumps Forward to Father\u2019s Day Weekend 2027 - The Hollywood Reporter",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQQmN1Tm1YWjVxa1ZBVU9pS1E2WHZhbk9kemo2cEJ4R3FnandETlJ2dGVCSFc5Wkk2bmUzVlVGUmVhbHpDMHlvcDI5eDdBR2FxVnpiYjhWaF90eUhTbkZGd2xJY1dSdEdGY01Wd2YwZEJmWVpRbTNuaHBRQjFZaTlNUlZLWExhQWZwX3FtTWFMSFJfMHZidEJfWmNqY1dYcEgxd21BeDZUMG14SlpaSi15VzNYSDJEaFE?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday's New Trailer Has 3 Issues That Nobody Is Talking About - The Direct",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE83ZVZncEpna1EtOGxmYWU3RFdZX2pndmFOeTUtSURxaTViaVhsdzdGQ2xjYVFwRktsTG55MkE5d0dQMGRMVnNkbFJZVWxobExzY3pHTHNCX3VUZEo0VGk2djVTQ0QtaGJHbFpjU2tDLXZBZw?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Avengers: Doomsday",
-      "title": "Avengers Doomsday's First Full Trailer Features 4 Epic X-Men Scenes at the X-Mansion - The Direct",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZy1Uc2N4Q1k5V0JtYkZxSlRncDNCcTA5eTJXeEV3SE55b2RWSDNLRlBwb25lV1VzdjJaTW9tblVVZ29fRTdxTnBMcjAyektZcVJKM0FSb1dIb2E1Q0REckZIa2JwQ3drUmRKdWtjeGdURW5nNHpjb1Z6RVZzU05Sd3N3WnNhdw?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Avengers: Doomsday",
-      "title": "We've got some bad news about the Avengers: Doomsday trailer - IMDb",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE03OWlaT1RxdG5iN21vTVB4WURDQk5OaFF0cHVQU29nSE01aGFlZFNEN1BrbGIyTkZnaURDZExoZnd6WGpWdVdiNzNWakNYQ0Q5TDd6WWpSendsUlFEck1iRGR5WHhVdEE?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Avengers: Doomsday",
-      "title": "We've got some bad news about the Avengers: Doomsday trailer - Bam Smack Pow",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQREY3Y3dpLVRWUVF3TGotaUliNnpqMTVERUhjNEw5M2kwdHdfM3l3RzJkV0V1M1UtZ0hGLS14UW5kUUw2NS1xWGdXNEJFNUlyM2V4dVU4T3l4R2lqU29mc0V3bGZzQ2JqR2ZLS2ZWamVfc01IREZ4MmlfVG1hNGNKNkxnTmJKRHdlekhmaEd1VHNyMHkwcjNFRGJlc2J6RFVZVU4zdg?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Will Reportedly Break A Spidey Movie Record - SlashFilm",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxONHg2SmZIRGhSOTBNNE9xYXY3NEt5dk5QcEo3OHdjT1pXcW9QVnU0U3kteTJNTlN4d2ZZUEw2QV9nNGZnTmdYQnV1UWYtUlNySmlHWEJ4c1FoZ0FvLVZRUkhCY1E0OFBXeDd1ak9wNHJqdXQxVWFLSGFka1pqRjM1VDB0QUlEREV2a2pWTEEtd2twRW16UnFR?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Spider-Man: Brand New Day",
-      "title": "First Look at Scorpion in \u2018Spider-Man: Brand New Day\u2019 Surfaces Online - IMDb",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9vaUJ6YV9Ybi1ndnlsc3J3QlcwM2tPQmhiRnBfcDdCOHVVNVlZY3VGSWxpLUlsWlZDWVRxTUxPQlVIeFRwZEJ6SHkwZXN3MFF4Zm5wTi1fclhtbEpPbjJhM2hn?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Empire's Spider-Man: Brand New Day issue \u2013 take a sneak peek inside - empireonline.com",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcHQ2bUNUS1ZaTm5zZVJyNllwSi1GclFQTkV1MVhORkFzNTE4V25YQThiNXdDVTNnR2RMSGlWQkNVR2JXdDFPMTV4RkJIWUhhNjU4QzR0a0wyWkJ1Q2NnS2ttWjdmUEJVSFY4dHZGVl9sRDBZejlUd044aWwtakh5dkthQzlHSDExYVc0SlhKaU1Gd1h3M21aVFF3dnNWMWVwWTQ1WjEwU0xMZ1hpQV9Pakk1VWlJUQ?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "The Odyssey",
-      "title": "Christopher Nolan\u2019s The Odyssey trailer sparks fierce debate about the \u201cright way\u201d to see a movie - Creative Bloq",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPaDRvcWlVLV9BTjBfekM0eklCSFZ4dTFlUEoyOWxwVlZrN2ZjcGhBUWwxM1YtM0l4S09MdmdqeEE1Tk9ZclhTZ0VvVWd3R1FOemFmNGZEWWdJaEVnV0duTFNWQUkzNHZIZFlUZU1BQ2ZkQ08xeS1lNUstbk9kVzdfMkVHbHJmX1lZZl90VXBreDQtZWk4SFBSR3ZNaHNZRENUNy1KTEtjNnBQQWJXTnd6LUdJNTZEVEtkUHFveXBLdDgzYmFnS2VMSmdmYXNrNlZMc1dmcnRzSWRYUFFOM3MwLVB3?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "The Odyssey",
-      "title": "Christopher Nolan\u2019s \u2018The Odyssey\u2019 to Get 3-Week Run at Westwood Village Theatre - The Hollywood Reporter",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZGxSNk9sbzNWZU9HRmhIbm0zaWxCQmhjNmJ6Sm1ScFRzN1daNDdZVEZkNnRzNzNnMjQ1bVRmcFl3SUJnRlBubDIxM0ZGZ25JRi1lbzJxLTkwam1iT0E2bm1tWDJveWhlQlVIeXVuc2J1ODM0cExnXzkyNDl6aFR1UHlMcERPUFE4bXNvQl9nMTNLQjFGdVp4WjhlNk1KYnhKandoWGRFM0dNa0dkMGwyUWVoMS1IczFIWDk0?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "The Batman Part II",
-      "title": "The Batman Part II filming begins in the UK after director Matt Reeves confirmed A-list cast members - Radio Times",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQTktjWFdLemtOVFZFVjEycTBhRjdiYVpCcUxnbnRGQU5NNUowYk9ZTzlzTEF1dGxaOWloMXozc3VCWnN6TklzZHJnN0U4bTV0Q1VJMlYzWFVlMUozaFQyU0NOMXlJLWFfalFaOUF6d0NlaHBRYS0xVXo4ZjNlZFpDakhtdmw1ZWVEYUxfQW5R?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "The Batman Part II",
-      "title": "The Batman Part II begins filming in Liverpool - - Happy Mag",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1WOUNwTWtVZU5yRkU4RzEtWVFtbHVPNUZ1MlhVTnhURE1XdXZLQ0VkeGt4dWRJV0RDMzlWa05qQ3hvSnIzX3F2Y0FZa041aU5KX0FYVl9rX21XTFNjV1dzWlpoOHVyUkhhR05HNjV1LWRKZk9LR3c?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "The Batman Part II",
-      "title": "'The Batman: Part II' News - Everything We Know About the Upcoming Sequel - ELLE",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbkE5MWVJSGVMUDZYc3lrelJXb016cXpPRjRubmRWdFRfN0h2NTdLVUkteGxWMkhqcHRpYjd0djJOdEhlSjBqa2hsRXZwVmJXcHc2QW5zbWdOUjJvWnRGVUpCUFN0UHFfMGZES2lwbUhfb2tpc0ZXSVcybzh3N0E4Qk5yWlo5SzJZMTY1aHpvUzJwRDY4N3c?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman Part II\u2019 supporting cast grows as Sebastian Stan, Scarlett Johansson join Robert Pattinson-led sequel - Gold Derby",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOdTVpaU5nczVTWHFBdWdjY2l4ZjAtSkhvcGQtU2tXaTg3NDROVWJYR015WHhiNlZCWjNaNm1oT3dHeW1DeFlFV2JYRjVYLVVuN0dLTmxndUFtcGpRX2lPR2xzVjF5U2ZaZlFxYm1Cak9JcVVXblF4OXJ4RWVEN3AycjdQZXVYcnJJMXozeDZpdXA2S3N0ZkltTm50RkNIWXhHV1NJZ2tiY0dXRHlraUZJallsd0lIV0VqVkwxZko4Yk9iakMyM3hZ?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Reveals Snowy First Look at \u2018The Batman: Part 2\u2019 Batmobile - IMDb",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAwanp0TUc5d2l1VG1sV3BiaXRLN0c4T0ZaUnVwaGZzbHZPX2xBZ2RyalNNaUtJVWgxUkNCem5SNGNReXZTRzRnemQyS0R5UQ?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "The Batman Part II",
-      "title": "The Batman 2's Setting Confirmed In First Official Behind-The-Scenes Photos - SlashFilm",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPUnc4empGTmctT3A5WVktR2dtNTFkbTFHSzdJTGZkYkZjMG5TNEpDcnVIT0V5RmJLU2hjWjV2TlRmN2VWSG1wR3pydTlLTHBFYWd0dGtLc3RyNFR3dmFIdDZ3WW1FWk83UE5YOVhjajNMUnU2ajduYkx3VTJyeEJ1WVVzT0NLdXBnN0J4RHNnRFZWRkFLSHVr?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Reveals First Look at \u2018The Batman Part 2\u2019 \u2013 Plot Detail Revealed - Men's Journal",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1jMU54WDhXeDZSdEZGekFpb1NzNVpzemh6NzFFb2RGc1NsRzFTN1JaWjZfZ2lsdEFjWXpEMkhmLUEzRnA4aTVYa2lodjJEN3lsbm1pTHFlRXd2MHc3STdxWlFVazBqWTBuWHpZcVRFT09STUFwNmNB?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Reveals Snowy First Look at \u2018The Batman: Part 2\u2019 Batmobile - Variety",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPUDZfY1dCX2wyRXNtUlp2X1dJeXhEeS1GcGo4SThzMUZRYUdtTFJHSTBlUE1adlRlcVJSd2ZBUFlvLTBISmN0SmJmdGxZb1hOV1U4a09iV1hUNTc2bHppY3NJRjJqVkNkcm95MjZhcFZrOHNZUV9FRW1MYkg1QWpDVjVyTHVrcU81ckpsak1UZw?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Spider-Man: Beyond the Spider-Verse",
-      "title": "\u2018Beyond the Spider-Verse\u2019 Scene Picks Up After Miles Morales Cliffhanger from \u2018Across\u2019 - The Hollywood Reporter",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNUlBNckVCWFdsclN0X0h0V2xWSnIxNTlVblZUckpqNHZMREZjdDB0dTlJM3Q3a2VkVFptWW9MbFJEVzR1YjFNMEVucTMzZnE0WlVySTItbkFweXRnREFvOGVKOWY3dFlhOGJjNTg2dU9FVk82eWlZNlBjMVFKQk9KQzdEd1RsVlBjSHlxZkRVRWZWcjBLd1R0Z0t5NWpWTzNl?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Spider-Man: Beyond the Spider-Verse",
-      "title": "Beloved Spider-Man Actor Confirms Beyond the Spider-Verse Return With Update - Yahoo",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOX3ZQU1NIcXFqcmY0S011UEJ1NzBjcmhGd3FJRGpNVEp1c19pN09KM1lDT0lzY3htR3Y3VXJmQ2VGV1Zmbk1YbWVJTHFVT0R3THY3ajNpSnhWZ3BiZkFOOE9rV0pQX0hRN2ltM1NOV0pxSjZSWGNJTzhzQUI5QlFDUDFqNE9uWHRiZHhlSTB2dTZ3OVJwMHphY0RQQ1I5YWVSemc?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Spider-Man: Beyond the Spider-Verse",
-      "title": "Spider-Man: Beyond The Spider-Verse Delays Explained By Producers - IMDb",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBzclVNdXAyVUJxcnlTRmstLVdXbTE2cTNGZFdSZmI4bVNsbHFlb1dXWmFWM1VITGt2OC1CUmhTS3U0cTZDWXF6Y21hYUpmUQ?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Spider-Man: Beyond the Spider-Verse",
-      "title": "BEYOND THE SPIDER-VERSE Writers Promise Much-Delayed Movie Will Stick to Summer Release Date - Movieguide",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOLUt1SjFTQWs5SFFTSjh6RE1HTXVXVGI1VmJHQWFGb2t6a1VJM0wtcTV5Ymx2S3JlN29JaWRsak9VQnE5TE81X2ExYjZUR1VVLXNvemVMcXFROUhRb2diN2Z1Q0RaekdGYnk5aXpLWlFCWnNnbHYwWTc1cHBPZG5CeW15dTM1QzVnd1YzQngzVVd5Vk9EdlQwcmx0T3VSLUY4dFE?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 33,
-      "source": "Spider-Man: Beyond the Spider-Verse",
-      "title": "'Spider-Man: Beyond the Spider-Verse': what we know so far about the final Miles Morales animated movie (release date, cast, plot) - Yahoo",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNcDl1c09tZG01NjIwcHQwSjY5b0pqbzZzamxyekxyNHNwVGkxUTdSQklwZl9NcFl0Y1RwN01TVXJqX256N2RVS0VBNjlSSHF1UlQyVnczS0sycGRKQmN6cXRuRHg2UW5rODJvWGJJZExTNWtfdXkxUk1XRDZrZHN5OUJJcnRuNDBKekZKYkRVWUtrbTNmdmNZYzI2Vk5qdw?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.3 - 53 km SE of Boca de Yuma, Dominican Republic (~174 km away)",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71519333"
-    },
-    {
-      "detail": "",
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.2 - 57 km SSE of Boca de Yuma, Dominican Republic (~171 km away)",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71519308"
-    },
-    {
-      "detail": "",
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    }
-  ],
-  "digest_last_sent": "2026-06-09",
-  "energy_learn_last_sent": "2026-06-09",
+  "digest_buffer": [],
+  "digest_last_sent": "2026-06-10",
+  "energy_learn_last_news": "2026-06-10",
+  "energy_learn_last_sent": "2026-06-10",
   "energy_learn_seen": {
     "history": [
       "calder-hall-1956"
     ]
   },
   "energy_seen_ids": [
+    "66c775368d8e92a5",
+    "6093604037bad25c",
     "12b13644aab32a0f",
     "d23c952b4644ad23",
     "2e27bf3d4e0573be",
@@ -2928,6 +2497,325 @@
       "topic": "launches",
       "ts": "2026-06-10T07:06:05.491214+00:00",
       "url": "https://ll.thespacedevs.com/2.2.0/launch/e6cefffc-19a6-4a4b-a7f0-ebe907d5a6aa/"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday's New Trailer Rewrites The Rules Of The MCU - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-10T12:16:34.367067+00:00",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Yb1NoenNoTmNKNWVQbVpFblZPWDFDWTlqVDlxMWxoMmhVcUlhVndPNUxtbHBRVnVNN2pJSjZYV0U3MUR3aTVEb3FoZndsWlY3alpLeXFpWkw2WVVPQ0IyU2RoVHpJZWI3RmhHUmxNSHdWRVU2cHE0SA?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "New \u2018Avengers: Doomsday\u2019 Promo Art Unveils First Look at Doctor Doom & Avengers in the MCU - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-10T12:16:34.367539+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1uWW1kZWRnUEdmS2JqdVVKN1lKU1JpdXMxZXBpSWR3WmxaZi1kZVhkbXpqR0MzNThoMXllc2NUWG1BaU9fV1dSbU9udUpuRzBTVC00WjNPMU5RNXo3SzU3bUhXUFdaUVk?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Every Major 'Spider-Man: Brand New Day' and 'Avengers: Doomsday' Leak So Far, From Trailer Footage to Toy Reveals - Comic Basics",
+      "topic": "movies",
+      "ts": "2026-06-10T12:16:34.367896+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNb3F5MHRONTBBOUIwdWpSNk4xQVRGWE16SWJJc1h0V1YyUFpFUVhzMXBZRVBqbzAzYVpjaE1UWnUwcVdIam9MaHl0UGZfSmoyT1VZSWlkdDBYRzBRYlBsVVowWEVFcDFWSmt3bWNKU1lNZnRDR0JXcmNGNUtFMU1INVA2dEs3OGRWNkhsVFFsRGlLUjFwVFpVYnRkdzdhWDFBaHRQTk9OV2VUVG9ILUotTi13VWFqeUx0RlQtOEx6bUVkc0Z1R0RyLXpzd2xOcXk1?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Marvel makes the Avengers: Doomsday announcement nobody wanted to hear - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-10T12:16:34.624746+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBVWXlEbjZhTHAyNUlldWdYdUhTT2pwamh1ZDhpODMtOXhuVFM1SlRSRDlkU3dCdFJrcUFiU0lzOXE1QXQ2TkdMOGU2UTNXZVRvekVBYjY0WndrMHpiU25wREFad1k1UG8?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "'I Don't Think We're Getting the Trailer': Today's Big Avengers: Doomsday Tease Appears to Be For a Coffee Shop Pop-Up - IGN",
+      "topic": "movies",
+      "ts": "2026-06-10T12:16:34.625265+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQOFJxQWxzaDY5SnVwTnJXcWRjb09kQ0RsdWFKbE1TbXIxMThxemhwZ0hkeTg1a21MWHl4WmczUkZMS1NIeVNTOURrc1hrZkFmanREcXBzcnFmVzBlVnRmN0NwV2R0ZTFWZHJsQTFHTmlzcUU5a3lNYWNyOFJ3Q2xEc0pxVFZtM3dIbmNxNWRmTGZoNnJjTzd5d05ULS1EZFh2UldUdFV2VXpHaXlKMnotTWNSU1ZObmlPTUREeElTdTY4SFpq?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "David Harbour Gives Honest 'Avengers: Doomsday' Reaction After Test Screening Rumors [Exclusive] - Collider",
+      "topic": "movies",
+      "ts": "2026-06-10T12:16:34.625497+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNbHF1R2RCUGU5bWlPclk3XzhVT1liT3c5NThwNm9abUVOMGxhWjUtWmV3UHBDN3c4S1VTY2hrYWltNEd5NzFJM3E4TXhpWGVia0ZaQkRhNXFPTGRSLVJsczRVQkc5MjdLX1ZSY3NwTXRsUVRqVVpLYk5zNXVCTFMtNk55cUEyYmhKS3V2eFdRb3ZPenlUQ29tTnVHcll2Zw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday Logo Reveal Has Marvel Fans Expecting a Trailer - IGN Southeast Asia",
+      "topic": "movies",
+      "ts": "2026-06-10T12:16:34.625747+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxON1pwMnA3ZFEyMDNQcGtUU2RvTFFOMnhQUUtndGVRTWd6LTljX2U3dFM1OHRhYlVTVERYS2d5MnpuQkdsUXJKS29JMFQ0OTNZd3JSNElzSW9kS1c3aUEyckdQWjA4cldwM3hHazhHNjRnejM0M2l5b3NfM1YtVUhGOVM1ZS15SmcyS1E0bGtwTW9tcWxRMnZpeV96d0o5TGlOSzBOdHBLLS10b0w1Q09OVXZJaG5Ndm1nTkE?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "First Look: \u2018Avengers: Doomsday\u2019 Promo Art Reveals Doom and the Heroes - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-10T12:16:34.625998+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1EemFKS1NLNWVxVTdWV3BzNzZ4TERzWWFueDlUZFJBVDJVQ2wxN09RVU14UVh4TURiY0ZkWV9hLTNLWC1xMkx0bUp1aTVIVWI5QmFGNHlkbjhaYWxaek44Ry1iNUNsNmc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "New Leaked Trailer Reveals Major Spoilers For Spider-Man: Brand New Day - Giant Freakin Robot",
+      "topic": "movies",
+      "ts": "2026-06-10T12:16:35.185043+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNamJQRDRuN3ZSQk1sNC1GX241dmFLX2t4VmMwSC1Xd3ZoWlJlVDJpQkx0b2RmRFdjOFVpQ0NZMjlNZHA1dlpURThicTBGN29MWS0zOEJWUHRHMHJxaktmRHI5Y2p6SnZRM0JUQ3RVUzJra2xwNmRTYmkyc3ozeWMzck1zaw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Is Officially the Longest Spider-Man Movie in History - Collider",
+      "topic": "movies",
+      "ts": "2026-06-10T12:16:35.432101+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOdl9lTGdCR1ZpM09IMVN1b2xnZENXVmU0M0FXSVAxZ0RqYVBPR09iTWswS3dWdkVRM29XOHMxdjd3SmwzeC04M0xZTnBtUEF2emd5aWYtaDVFRkRvMlY0c2pHcjM0YWlWb09FZkVIay1MMEVlSU9idkE0S2FURkI2MG5vT1ZSVm1kNnFEeEQ0RnRIeGxkbEczeVhWQXBoQS1NOVJsM3ZsYzQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day's Second Trailer Leaks Online, With Sony Now Issuing Copyright Takedowns - IGN",
+      "topic": "movies",
+      "ts": "2026-06-10T12:16:35.432507+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQa3FNNjlEVnU4RkJtYW40TTRqV25iajg1d0E3NjJiMEF3MW1xdUhBUTBibDd6aDBuZV9xak9OS2RZdlN4d0NkZTd1c2tCY3N6Z1d1b0tDc2ZPQ1NDOUxrUU9aMUZfaGs3Z3kxc2FpQ0VIb185dzZwT2U4R0M2c1BoXzNZMWM0VVBCQ2g2VlFyYXVlU2llT2RvZVNCX3QxR2NjM1c0OVplRERlZHNWa2x6WEtZYTI4NHZ5TmFqd2U1OUtkUQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Fans Think Spider-Man: Brand New Day Trailer #2 Audio May Have Just Leaked Online (But Is It Real?) - comicbook.com",
+      "topic": "movies",
+      "ts": "2026-06-10T12:16:35.672991+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQmZiNEszcTljZ0M0TmFETW90MnhsSm1YeDh3MjBmV2s4OXlyS2VPaG1XcnBGSUNiMmFkUzVKRUw5Wm1OQ0pyTFh5NTUyeF9pTDlELWV2ZTJhM0NtQUZQaENIR2M5cGJCRWZxTG1YeklDSzhBcGdILWlnSEFibnRwZnRxdEtoWkpCX0ZMVEh6R0J4d2REX3lfalVzOGlLOUdjcnJ4U3JQUzZzN3Z3MlgweG05T2dUWGl3aWc?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "How To See \u2018Spider-Man: Brand New Day\u2019 in Theaters 2 Days Early - Men's Journal",
+      "topic": "movies",
+      "ts": "2026-06-10T12:16:35.909174+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOMF82RE1nd0ZtYjBGdFdiRVdBa0R2cjYtWjhKTW9JaWRGQVE1Z19OM05Gb1pyYnJ6Tkplak1NWi0xWkJqNzFNTjVnODQwai1EXzBCb3M4ZDZuYXJNd2NQckEyZHFMZkhlb1puOXBndk9zalItSWpmdnRNTk5rdW9rSnB6WllISEtpMXZWVVBmNkhoLWo3bWhUMQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "New Spider-Man: Brand New Day trailer release date seemingly confirmed - Bam Smack Pow",
+      "topic": "movies",
+      "ts": "2026-06-10T12:16:35.909581+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZ1dJbkNuTVNoYXVvWC1KQnAtWHlSZlBNZHJNOTAtbTJuN2s5aElNTEZmNFUwMV93NDRMSmpudVAxSkduQjdYUmtsbzZ3SUltTXBlNTYwcmtTcjB6YXBWOEl2angzSTFDZHpMeHg5ZWgzcVBhOVYtS3hFakw3TEtZTDRrV3hySDhWWTFFNWZCV2dVWVRnSENwbGVoRHFPMFF0WEE?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Christopher Nolan's 'The Odyssey' Is Officially His Second Longest Film Ever - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-10T12:16:36.659576+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBnSlRuS0xpdWJub0VGRVJkV3dGeGloZWR3RGZsX19JaGgtMVQtUUd4aHphSUVDQWtJVlpocld0NEZxVHFxQkpTazl3T25QNE83SHRXdVBKYWZqZ1lrb1VBQjVmSllhVUU?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "10 things to do this week, including a production of \u201cThe Odyssey,\u201d midnight movies at Coolidge Corner Theatre and a garden tour - Brookline.News",
+      "topic": "movies",
+      "ts": "2026-06-10T12:16:36.659916+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOV0FISFFPQTg5ZFZIOW9GTFEwZXBIdjFBdDFNNmlTSTc2djIzbzhkaUR2elcxVXZjdWVqR21qOGl4Smk3aGdUcU9qanduNHN3cnRYN2pIZjZ1ci1MZEdrR1J6UzU1M1JZSld3bnh0eWVCVllScVdLTmJZbXBiOG5OR3hGb3htcFNMeFZLVGpKREt2ZWEtR1RadVNPUGEwWUZ5SzA3MDNmQkJMT2pXWXBlREpqb19Yd2JNXzFLQ3dhTnpJUktPZ1JFZTJhekpkYl93amUwNGJGSjdvREgzdHBNUGdn?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "'The Odyssey' trailer sparks criticism over accents and \u2018daddy\u2019 issues - Euronews.com",
+      "topic": "movies",
+      "ts": "2026-06-10T12:16:36.660250+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQWNqSUR0V0tBUWctNGdNejQ1REhlV2tWM0tiMGRpaDBoMEJzX2VqaEpjc2ZWUkFQd3lpYmRBR1lZN05aR3J0eU9WSzFISXM4bEJ3aXJpcmhrZlhJNGNweWJqdWNVcnFWbVlzWkoyZ0lKUGo0bVZFRkhLWXJ4eXBhQ3JPcXdSeE81UUZyN01NS2lPNmo2MjIyb2c4X3lsZGNaRDdReEozRmk0TDltcmo0?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "\u2018The Batman Part II\u2019 Gets a Massive Production Update Today - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-10T12:16:37.681282+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE10OWtUR0RRWkRmaGRYeExtMEMyeHVhampFSXpGdlE5ejU2QjhwZWNTZ1pFVGF0dTdVWFl0NzVFeDhCanNUdk4xWVNWOEx6cGpGMVh3Y2ttTnRYT1M3dl9sY2VMWVZmcVU?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "Symphony Of Destruction (Remastered 2012) - Megadeth\n(because you like Nevermore)",
+      "score": 22,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-10T12:16:43.318134+00:00",
+      "url": "https://www.deezer.com/track/61382107"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Japan, Kazakhstan extend cooperation on fast reactors",
+      "topic": "energy",
+      "ts": "2026-06-10T12:17:13.578413+00:00",
+      "url": "https://www.world-nuclear-news.org//articles/japan-kazakhstan-extend-cooperation-on-fast-reactors"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-06-10T12:17:13.715447+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.9 - 32 km NNE of Las Terrenas, Dominican Republic (~125 km away)",
+      "topic": "quakes",
+      "ts": "2026-06-10T12:17:13.769374+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000ss0k"
+    },
+    {
+      "action": "push",
+      "detail": "Long March 5 | Unknown Payload launches in ~19h.",
+      "score": 62,
+      "severity": "moderate",
+      "source": "Launches",
+      "title": "Rocket launch",
+      "topic": "launches",
+      "ts": "2026-06-10T12:17:15.684261+00:00",
+      "url": "https://ll.thespacedevs.com/2.2.0/launch/2670e4f1-d58b-4787-9c3f-f9eb03349513/"
+    },
+    {
+      "action": "push",
+      "detail": "Anthropic raises $65B in Series H funding at $965B post-money valuation - Anthropic",
+      "score": 64,
+      "severity": "moderate",
+      "source": "Anthropic",
+      "title": "Anthropic",
+      "topic": "anthropic_news",
+      "ts": "2026-06-10T12:17:17.125856+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9FbzhQTWUzSGozVXNfbDYxWWUzTFBZZlpldmQyeDBnSExRdHVMSkJyVVV4OHdlNmx3LVBFcHVXTmJ0ck9TclZvVVlPRnpoZVhW?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Pause for a moment and have a drink of water.",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-10T12:17:17.376481+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "A brisk 30-minute daily walk measurably lowers blood pressure and cardiovascular risk. (Source: WHO)",
+      "score": 60,
+      "severity": "low",
+      "source": "Health",
+      "title": "Health tip",
+      "topic": "health_tip",
+      "ts": "2026-06-10T12:17:20.111662+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "On this day\n1935: American physician Bob Smith had his last alcoholic drink, marking the traditional founding date of Alcoholics Anonymous.\n\nFeatured: Amalthea (mythology)\nIn Greek mythology, Amalthea or Amaltheia is the figure most commonly identified as the nurse of Zeus during his infancy. She is described either as a nymph who raises the child on the milk of a goat or, in some accounts from the Hellenistic period onwards, as the goat itself.\n\nMoney basics\nThe Rule of 72: divide 72 by an annual interest rate to estimate how many years money takes to double - at 8% growth, savings double roughly every 9 years. (Source: Investor.gov)",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Daily learning",
+      "topic": "learn",
+      "ts": "2026-06-10T12:17:21.482217+00:00",
+      "url": "https://en.wikipedia.org/wiki/Amalthea_(mythology)"
+    },
+    {
+      "action": "push",
+      "detail": "Headline: \"Japan, Kazakhstan extend cooperation on fast reactors\"\n(World Nuclear News \u00b7 tap to read)",
+      "score": 60,
+      "severity": "low",
+      "source": "Energy learning",
+      "title": "\u26a1 Energy now",
+      "topic": "energy_learn",
+      "ts": "2026-06-10T12:17:22.153321+00:00",
+      "url": "https://www.world-nuclear-news.org//articles/japan-kazakhstan-extend-cooperation-on-fast-reactors"
+    },
+    {
+      "action": "push",
+      "detail": "What looks as if it is going to swallow the great Pillars of Creation? The Eagle Nebula (M16) is not a bird, a plane, or Superman. M16 is actually a combination of several celestial objects. NGC 6611 is the young star cluster that appears to peak out beneath the Eagle\u2019s \u201cwings\u201d...\n(c) Emmanuel Delgadillo Text: Keighley Rockcliffe (NASA GSFC, UMBC CSST, CRESST II)",
+      "score": 60,
+      "severity": "low",
+      "source": "NASA APOD",
+      "title": "APOD: The Eagle Nebula and Friends",
+      "topic": "apod",
+      "ts": "2026-06-10T12:18:05.467741+00:00",
+      "url": "https://apod.nasa.gov/apod/image/2606/eagle.jpg"
     }
   ],
   "fda_seen_ids": [
@@ -3272,7 +3160,7 @@
     "972995": "2026-11-19"
   },
   "games_week_last": "2026-W24",
-  "health_tip_last_sent": "2026-06-09",
+  "health_tip_last_sent": "2026-06-10",
   "holidays_sent": [],
   "ios_seen_builds": [
     "iOS 26.5.1 (23F81)",
@@ -3296,16 +3184,37 @@
   "iss_seen_passes": [],
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-06-10T10:32:18.348815+00:00"
+    "ok": 33,
+    "ts": "2026-06-10T12:16:32.522939+00:00"
   },
   "launch_seen_ids": [
+    "efc597fa5a5f89c3",
     "9cf78ee44cb96c21",
     "7621aad01d0821be"
   ],
-  "learn_last_sent": "2026-06-09",
+  "learn_last_sent": "2026-06-10",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "002d2d2b6f81ab55",
+      "e955776a183eb69c",
+      "596f828dbace9798",
+      "a68c1f2512b97c0b",
+      "65edfafbe2e2d2dc",
+      "563b33faabe8e18e",
+      "4998fd21cf235fb5",
+      "8efc6b8c79d4f8b0",
+      "fa08e647e13d8340",
+      "9b42d6e517bb8540",
+      "584597b45f4e6252",
+      "36c4c16eb46bc05c",
+      "b0278452e81705a8",
+      "d3040246e2188400",
+      "cfbc710f27765f1f",
+      "015fbfc59c54ebd3",
+      "bc6898c940263819",
+      "732c05038ffea1b2",
+      "b3d2a960d3e85a62",
+      "151dd7124911a059",
       "fc1c7e04bd792cf9",
       "31bc49966b70ed49",
       "5771bad7bd3af853",
@@ -3385,27 +3294,7 @@
       "60c58a5b312c1d86",
       "d112f415158f96da",
       "4cb4c6a8fd9d37af",
-      "e07df1f46d9db8c2",
-      "cacd3aa896388c32",
-      "359a12da095eb99d",
-      "2598e761679d0a30",
-      "b24cbd7bfb2d23e9",
-      "d42c4466ef2d0202",
-      "2fdd27fabd663cd5",
-      "a2e06004c5c909f5",
-      "030c5519054f74df",
-      "0e0ff45ec7cf3096",
-      "ba5cbf0f498baeec",
-      "f8b87f7a80659ab8",
-      "10d6bdc93ac25878",
-      "044ff51e7fab9283",
-      "a49f22dbb2b551d3",
-      "9b7c97189d0a4cc5",
-      "f237bc14500efd0a",
-      "d500ce1f1e6b03e3",
-      "14ccceae24679733",
-      "de2fb15ca7ecb0be",
-      "23f7aab4544bc98c"
+      "e07df1f46d9db8c2"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -3607,6 +3496,25 @@
       "b2f005934ccd795b"
     ],
     "Spider-Man: Brand New Day": [
+      "2cf7bb804c63f9a5",
+      "513eee4d3ab87942",
+      "ed517c56b70dafec",
+      "b71c1ed8c8697708",
+      "905aedf02f123a0f",
+      "88958c05c1057482",
+      "dcb45972c25586d2",
+      "a8493956f2daafad",
+      "87a9d016b3714819",
+      "3896296a579c353e",
+      "20bcf114c29c3ac3",
+      "412ea318d26ebeec",
+      "e55fd04788dccd24",
+      "269296b780cbb0e6",
+      "d464d4852a11fcd4",
+      "8e580a1d2f9616b3",
+      "10db35faa06c37cd",
+      "c304402afe2337cf",
+      "def99308971d7af6",
       "1e84e9a6d280785d",
       "46dbcb9f3b471fa8",
       "921bbe69334401ec",
@@ -3687,28 +3595,15 @@
       "de2fb15ca7ecb0be",
       "73bf461046de631b",
       "41ab3c23c2f259f5",
-      "dac4b9f3cd533d57",
-      "766dfcceac1420c1",
-      "ad637f284ded8e24",
-      "08d2e3f630ec7051",
-      "c029b47b7b8f7097",
-      "7cdf646f4d0d725d",
-      "cc1b0d5a6919c2a2",
-      "8f683261f6a5f97e",
-      "6d62864e9337aefc",
-      "c06c709e582ab53c",
-      "644a0e3259771352",
-      "9cade1ec5927f856",
-      "2511ecc195911c2e",
-      "760f45ccfc223ca5",
-      "b36308bcc48728de",
-      "e56ecc98dc9d6ab6",
-      "1579c94fca859875",
-      "b7881f02dafc096a",
-      "38c85c3eefc8af2a",
-      "3949e929f0d65785"
+      "dac4b9f3cd533d57"
     ],
     "The Batman Part II": [
+      "60dcb660e609d0d5",
+      "b3260188e9046aee",
+      "146c8b33e9452a7d",
+      "e371ba33f34539e0",
+      "50069e6aeca18372",
+      "9a055a4577c7be15",
       "aed8e96e3c42a4a1",
       "f9a0e76858b43953",
       "e1ac9a740d319d59",
@@ -3802,15 +3697,29 @@
       "1a3665d0b4f520c7",
       "e48a4f46bec55eed",
       "d1e3a346d1aeabec",
-      "309a5da22969deff",
-      "f52516e212bc404a",
-      "7b7839738e0adb68",
-      "2130804cffcd6bdf",
-      "7982c53d554d9eab",
-      "4a8988840c1b6c07",
-      "348b2eba14ec3f82"
+      "309a5da22969deff"
     ],
     "The Odyssey": [
+      "d7b8c49a0f0ae35a",
+      "2d0305582e06751a",
+      "c25ba8deccbfa9c4",
+      "836b7e670e328f1e",
+      "6445222b33956dd3",
+      "0df10dcc9497ba4d",
+      "1f5e65219415d596",
+      "50735e0491fb30a0",
+      "e5852db12a0e426d",
+      "8e467f2894f9cef2",
+      "f4eec131026a6969",
+      "427a851af50a97ec",
+      "0b4dd8557ea87e1e",
+      "3ef8030b6715bc7d",
+      "f97507979eeb0309",
+      "3c86bf357c5c8feb",
+      "8bdbb2121224da67",
+      "079deafe2ccbfb2b",
+      "1e9d1e04da7cb827",
+      "400306916d8ca889",
       "b588434170a6822d",
       "af54efc0fbac2bc8",
       "785a20dab7142ef4",
@@ -3890,27 +3799,7 @@
       "016c0c9605bd61d1",
       "a6e61c5b7c0bb7ac",
       "e7f5bfd3252973a4",
-      "b8576cad5a75388a",
-      "eb3887940b048c96",
-      "100dff34f32543c1",
-      "ddacb007393c1ab8",
-      "7e3f425ed1f818f5",
-      "414372cd7262dcaa",
-      "945e26fa5334a003",
-      "471eb8ccfa041fdf",
-      "1067fb5647724fff",
-      "5345768bd2f7e74e",
-      "d54ccbc94815db1c",
-      "20d5ee33ffe1634d",
-      "0a08769a7fb7b1ae",
-      "e73162899617564a",
-      "0ba2e7e1a11ebf25",
-      "1ea416168e2a8ea8",
-      "6bde10953adc169b",
-      "36815071d9f97d4e",
-      "b6f1f8861324d058",
-      "00abc32228c7ffba",
-      "64cdbf7d06532ce9"
+      "b8576cad5a75388a"
     ]
   },
   "movie_release_dates": {
@@ -3934,7 +3823,8 @@
     66744,
     7103,
     14703,
-    560987
+    560987,
+    3487
   ],
   "music_release_seen": [
     "68c25094c070b90b",
@@ -3964,6 +3854,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "67c87fea43c65a1c",
     "31f28513a9025509",
     "ca62474b58c31dfa",
     "b1ece2d673f164f8",
@@ -4048,103 +3939,103 @@
   ],
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "deals": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "energy": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "fda": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "fx": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "games": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "movies": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "music": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "quakes": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "twitch": {
-      "last_ok": "2026-06-10T10:32:18.348815+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "weather": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     },
     "wwdc": {
-      "last_ok": "2026-06-10T07:04:50.813541+00:00"
+      "last_ok": "2026-06-10T12:16:32.522939+00:00"
     }
   },
   "twitch_live": [],
@@ -4152,8 +4043,11 @@
   "visa_f4_final_action": "08NOV08",
   "watchdog_alerted": {},
   "watchdog_failing_since": {},
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-06-10|12"
+  ],
   "weather_seen_ids": [
+    "48f21b45592c366f",
     "b8925b8d56a29114",
     "26bc9b795e6732d9",
     "79295b15485f6925",
