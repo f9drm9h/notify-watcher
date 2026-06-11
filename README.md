@@ -35,6 +35,25 @@ Topics:
   "Liberty 6 Pro"), then hands it to the deals watcher to price-track
   automatically. First run seeds the current catalog silently, so you only get
   pinged about genuinely new releases. No API key, no watchlist editing.
+- **Grocery deals (La Sirena / Nacional / Bravo)** — watches each chain's
+  weekly promotions (`monitors.json` → `groceries`, no key). La Sirena's
+  "Especiales del día" collection is read via its store API (sale vs. list
+  price gives the discount); Nacional's `/ofertas` page is scraped for items
+  showing a real price cut. A discount of `big_discount_pct` or more (30% by
+  default) is a **significant deal and pushes**; smaller cuts buffer into the
+  daily digest. One alert per (store, product, price) — a *deeper* cut on the
+  same product alerts again — and each store seeds its current offers silently
+  on first run. Bravo's site publishes no prices at all (their specials are
+  image flyers), so for Bravo you get a digest heads-up when a new promo
+  campaign page appears, with the link.
+- **ITSC academic calendar** — scrapes the academic-calendar page on
+  itsc.edu.do for the newest "Calendario académico" PDF (`monitors.json` →
+  `itsc`, no key) and pushes a heads-up **7 days and 1 day before** every
+  dated item: registration windows and document-reception periods alert at
+  both their start and their end (the deadline), exams and semester start/end
+  the same way, one-day items once. A freshly posted term's PDF takes over
+  automatically; each (activity, date, lead) alerts exactly once and the
+  first run seeds silently.
 - **Movie release dates + streaming + news** — for each title in
   `watchlist.json` → `movies`, tracks its TMDb release date and alerts on
   first sight and on any date change (needs `TMDB_API_KEY`). Also watches
@@ -469,6 +488,8 @@ notify-watcher/
 │       ├── wwdc.py                  Apple Newsroom RSS, WWDC items
 │       ├── ios_release.py           Apple Developer Releases RSS, iOS/iPadOS
 │       ├── deals.py                 JSON-LD price-drop watcher (watchlist + auto)
+│       ├── groceries.py             La Sirena/Nacional/Bravo weekly deals
+│       ├── itsc.py                  ITSC academic-calendar deadline heads-ups
 │       ├── soundcore_pro.py         sitemap discovery of new Liberty Pro products
 │       ├── movies.py                TMDb release dates + DO streaming (watchlist)
 │       ├── games.py                 RAWG release dates (watchlist, weekly)

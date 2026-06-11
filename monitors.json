@@ -61,6 +61,9 @@
       { "topic": "apod", "score": 60 },
       { "topic": "beach_day", "score": 60 },
 
+      { "topic": "groceries", "severity": "high", "score": 64 },
+      { "topic": "itsc", "score": 62 },
+
       { "topic": "weather", "severity": "moderate", "score": 50 },
       { "topic": "wwdc", "score": 45 },
       { "topic": "reminders", "severity": "moderate", "score": 45 },
@@ -68,6 +71,7 @@
       { "topic": "holidays", "score": 45 },
       { "topic": "blood_donation", "score": 45 },
       { "topic": "deals", "severity": "moderate", "score": 42 },
+      { "topic": "groceries", "severity": "moderate", "score": 45 },
       { "topic": "uv", "score": 40 },
       { "topic": "baseball", "severity": "low", "score": 40 },
       { "topic": "quakes", "severity": "moderate", "score": 40 },
@@ -81,6 +85,7 @@
       { "topic": "movies", "severity": "moderate", "score": 28 },
 
       { "topic": "music", "severity": "low", "score": 22 },
+      { "topic": "groceries", "severity": "low", "score": 28 },
       { "topic": "deals", "severity": "low", "score": 20 },
       { "topic": "movies", "severity": "low", "score": 15 }
     ],
@@ -133,6 +138,21 @@
     },
     "regions": [],
     "lead_days": 1
+  },
+
+  "groceries": {
+    "_comment": "Weekly supermarket deals. La Sirena: VTEX intelligent-search by product cluster (sirena.cluster, the homepage 'Especiales del dia' collection). Nacional: the /ofertas page's items showing a real old-vs-special price cut. Bravo: their site publishes no prices, so only a new 'PROMOS' campaign page is reported. Discounts >= big_discount_pct are significant (severity high -> push); mid..big moderate, below low (both digest). Per (store, product, price) dedup; each store seeds silently on its first collection.",
+    "big_discount_pct": 30,
+    "mid_discount_pct": 15,
+    "sirena": { "cluster": "144", "max_pages": 4 },
+    "nacional": { "url": "https://supermercadosnacional.com/ofertas" },
+    "bravo": { "url": "https://superbravo.com.do/" }
+  },
+
+  "itsc": {
+    "_comment": "ITSC academic calendar (itsc.edu.do/calendario-academico/, the newest 'Calendario academico' PDFs). Every dated row alerts lead_days before: a period at both its start and its end (the deadline), a one-day row once. Each (activity, boundary, lead) fires exactly once; first run seeds silently.",
+    "url": "https://www.itsc.edu.do/calendario-academico/",
+    "lead_days": [7, 1]
   },
 
   "air_quality": {
