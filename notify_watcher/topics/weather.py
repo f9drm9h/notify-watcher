@@ -11,10 +11,18 @@ unless something is actually pointed at us.
 Dedup is by a hash of (link + title + updated time): each new *issuance* about
 our region alerts once, while an unchanged repeat of the same advisory is
 suppressed. The first run seeds the current region-relevant entries silently.
+
+A live alert attaches the storm's forecast-cone PNG (the ntfy ``Attach``
+header renders it inline). The cone URL comes from the entry itself: the
+per-storm "Graphics" items embed one verbatim, and every advisory/summary
+entry carries the ATCF storm id (e.g. AL132024) from which the URL is
+constructed. Deriving it is best-effort — when neither is present the alert
+simply goes out without the image.
 """
 from __future__ import annotations
 
 import logging
+import re
 
 import feedparser
 import requests
@@ -27,6 +35,36 @@ STATE_KEY = "weather_seen_ids"
 CAP = 200
 DEFAULT_URL = "https://www.nhc.noaa.gov/index-at.xml"
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; notify-watcher/1.0)"}
+
+GRAPHICS_BASE = "https://www.nhc.noaa.gov/storm_graphics"
+# A cone graphic embedded verbatim in an entry (the per-storm "Graphics" item),
+# e.g. https://www.nhc.noaa.gov/storm_graphics/AT13/AL132024_5day_cone_with_line_and_wind_sm2.png
+_CONE_PNG_RE = re.compile(r"https?://\S*?/storm_graphics/\S*?cone\S*?\.png", re.IGNORECASE)
+# The ATCF storm id, e.g. AL132024 — appears in "Summary for ... (AT3/AL132024)"
+# titles and in every public/forecast advisory body. (The AT3 wallet id is NOT
+# usable: graphics directories are keyed by storm number, AL13 -> AT13.) A
+# lookahead, not a trailing \b: inside graphic filenames the id is followed by
+# an underscore (AL132024_wind_probs...), which a \b would reject.
+_ATCF_RE = re.compile(r"\b(AL\d{6})(?!\d)", re.IGNORECASE)
+
+
+def _cone_url(*texts: str) -> str | None:
+    """Pure: best-effort forecast-cone PNG URL for a feed entry, or None.
+
+    Prefers a cone URL embedded verbatim in the entry; otherwise derives it
+    from the ATCF storm id (AL132024 -> storm_graphics/AT13/AL132024_...png,
+    the layout NHC itself embeds in its feed). None when the entry names no
+    storm id (the outlook, local statements, the no-cyclones placeholder).
+    """
+    blob = "\n".join(t or "" for t in texts)
+    m = _CONE_PNG_RE.search(blob)
+    if m:
+        return m.group(0)
+    m = _ATCF_RE.search(blob)
+    if m:
+        atcf = m.group(1).upper()
+        return f"{GRAPHICS_BASE}/AT{atcf[2:4]}/{atcf}_5day_cone_with_line_and_wind_sm2.png"
+    return None
 
 
 def _dedup_key(entry) -> str:
@@ -91,6 +129,10 @@ def run(state: dict) -> dict:
         seen_set.add(h)
         fresh.append(h)
         if tier == "live":
+            try:
+                cone = _cone_url(title, summary, link)
+            except Exception:  # noqa: BLE001 - the cone image is decoration; never block the alert
+                cone = None
             state = events.emit(
                 state,
                 title=f"Weather alert: {title}",
@@ -100,6 +142,7 @@ def run(state: dict) -> dict:
                 source="Weather",
                 click_url=link or None,
                 tags="cyclone",
+                metadata={"attach_url": cone} if cone else None,
                 legacy_priority="urgent",
                 legacy_action="push",
             )

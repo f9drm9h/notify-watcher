@@ -121,7 +121,9 @@ digest simply goes out without it.
   Atlantic feed (`monitors.json` → `weather`, no key). Stays silent unless a
   system names one of your `region_terms`; a watch/warning for your area pushes
   live, other region-relevant updates go to the digest. Off-region Atlantic
-  activity is ignored.
+  activity is ignored. A live alert attaches the storm's NHC forecast-cone
+  image inline (derived from the storm id in the advisory; when it can't be
+  derived the alert simply goes out without the picture).
 - **Nearby earthquakes** — reads the USGS feed (`monitors.json` → `quakes`, no
   key) and routes by magnitude **and** great-circle distance from your
   `location`: a strong, close quake pushes live; a smaller nearby one goes to
