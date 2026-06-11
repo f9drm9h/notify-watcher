@@ -42,6 +42,8 @@
       { "topic": "twitch", "score": 68 },
       { "topic": "games", "severity": "critical", "score": 66 },
       { "topic": "games", "severity": "high", "score": 64 },
+      { "topic": "golden_sun", "severity": "critical", "score": 80 },
+      { "topic": "golden_sun", "severity": "high", "score": 64 },
       { "topic": "baseball", "severity": "high", "score": 64 },
       { "topic": "movies", "severity": "critical", "score": 64 },
       { "topic": "anthropic_news", "score": 64 },
@@ -85,6 +87,7 @@
       { "topic": "marine", "score": 38 },
       { "topic": "energy", "severity": "moderate", "score": 35 },
       { "topic": "games", "severity": "moderate", "score": 35 },
+      { "topic": "golden_sun", "severity": "moderate", "score": 35 },
       { "topic": "soundcore_pro", "score": 35 },
       { "topic": "movies", "severity": "moderate", "score": 28 },
 
@@ -176,6 +179,17 @@
     "_comment": "DR official weekly fuel prices (MICM 'Aviso Semanal' PDF; the old CNPE site no longer exists). One digest line per weekly notice; any fuel moving by push_pct percent or more week-over-week pushes live instead. page is the avisos listing URL.",
     "page": "https://micm.gob.do/direcciones/combustibles/avisos-semanales-de-precios/avisos-semanales-de-precios-de-combustibles/",
     "push_pct": 5.0
+  },
+
+  "golden_sun": {
+    "_comment": "Golden Sun community news. wiki_api reads Golden Sun Universe's Template:News (the wiki now lives at goldensunwiki.net - the old goldensununiverse.net domain is dead); bullets older than wiki_max_age_days are ignored. reddit_json is tried first and filtered to posts with score > reddit_min_score; when Reddit blocks it (403 for most non-residential IPs) the top-of-week RSS fallback keeps its first reddit_top_n entries instead. query is the Google News search. Headlines are scored by golden_sun_scoring below.",
+    "wiki_api": "https://goldensunwiki.net/w/api.php?action=parse&page=Template:News&prop=wikitext&format=json",
+    "wiki_max_age_days": 60,
+    "reddit_json": "https://www.reddit.com/r/GoldenSun/top.json?t=week&limit=25",
+    "reddit_rss": "https://www.reddit.com/r/GoldenSun/top/.rss?t=week",
+    "reddit_min_score": 50,
+    "reddit_top_n": 3,
+    "query": "\"Golden Sun\" game"
   },
 
   "twitch": {
@@ -342,6 +356,50 @@
     "max_buffer": 120,
     "max_per_source": 4,
     "max_items_in_message": 30
+  },
+
+  "golden_sun_scoring": {
+    "_comment": "Importance scorer for Golden Sun community items (same engine as games_scoring). A reddit post that cleared the upvote bar starts at the moderate threshold, so popular community posts always reach the digest; remaster/NSO/announcement language plus an official or press source is what reaches the push tiers. tier1 is listed before official so 'Nintendo Life' matches the press tier, not the 'nintendo' official fragment.",
+    "source_weights": { "official": 6, "fansite": 5, "reddit": 4, "tier1": 2, "unknown": 0 },
+    "source_tiers": {
+      "tier1": ["nintendo life", "ign", "gamespot", "eurogamer", "polygon", "vgc", "video games chronicle", "pc gamer", "game informer", "kotaku", "the verge", "gamesradar", "time extension", "destructoid", "nintendo everything", "gonintendo"],
+      "official": ["nintendo", "camelot"],
+      "fansite": ["golden sun universe"],
+      "reddit": ["reddit"]
+    },
+    "signal_bonuses": {
+      "remaster_signals": {
+        "weight": 8,
+        "terms": ["remaster", "remake", "collection", "switch online", "nintendo switch online", "expansion pack", "re-release", "rerelease", "revival", "new golden sun", "golden sun 4", "sequel"]
+      },
+      "official_signals": {
+        "weight": 5,
+        "terms": ["announce", "confirm", "official", "trailer", "reveal", "nintendo direct", "statement"]
+      },
+      "romhack_signals": {
+        "weight": 5,
+        "terms": ["rom hack", "romhack", "fan translation", "decompilation", "decomp", "randomizer", "fan remake", "fan game", "mod release", "pc port", "patch released"]
+      },
+      "community_signals": {
+        "weight": 3,
+        "terms": ["speedrun", "world record", "anniversary", "retrospective", "interview", "soundtrack", "nintendo music", "tournament", "documentary"]
+      }
+    },
+    "noise_penalties": {
+      "listicle": {
+        "weight": -6,
+        "terms": ["top 10", "top 20", "top 25", "ranked", "ranking", "tier list", "games like", "most anticipated", "best games", "worst games", "hidden gems"]
+      },
+      "opinion": {
+        "weight": -6,
+        "terms": ["opinion", "editorial", "hot take", "i played", "why i "]
+      },
+      "speculation": {
+        "weight": -5,
+        "terms": ["could", "might", "maybe", "what if", "here's why", "reasons why", "fan theory", "fans want", "we want", "predict", "speculation", "rumored to", "deserves", "needs to"]
+      }
+    },
+    "thresholds": { "breakthrough": 15, "high": 8, "moderate": 4 }
   },
 
   "games_scoring": {

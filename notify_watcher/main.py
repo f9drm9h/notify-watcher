@@ -33,6 +33,7 @@ from .topics import (
     fuel,
     fx,
     games,
+    golden_sun,
     groceries,
     habits,
     health_tip,
@@ -97,6 +98,10 @@ TOPICS: list[tuple[str, Topic]] = [
     # run and adds one library-seeded discovery pick on the daily run.
     ("twitch", twitch.run),
     ("music", music.run),
+    # golden_sun merges wiki news + r/GoldenSun + Google News into the shared
+    # news engine: remaster/official items push live, community posts buffer
+    # to the digest, so it must run before digest_topic.
+    ("golden_sun", golden_sun.run),
     # baseball checks Dominican player milestones (live push) every run and
     # adds the followed team's previous-day result to the digest on the daily
     # run, so it must run before digest_topic.
