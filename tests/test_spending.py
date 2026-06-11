@@ -3,8 +3,13 @@ from __future__ import annotations
 
 import email
 import email.policy
+import tempfile
 import unittest
 from datetime import date
+from pathlib import Path
+from unittest import mock
+
+from cryptography.fernet import Fernet
 
 from notify_watcher.topics import spending as sp
 
@@ -164,6 +169,59 @@ class SummarizeTest(unittest.TestCase):
         body, ch = sp._summarize(txs, self.TODAY)
         self.assertIsNone(ch)  # changes.diff returns None on equal values
         self.assertIn("vs prior week: unchanged", body)
+
+
+class EncryptedStorageTest(unittest.TestCase):
+    """data/spending.json.enc is ciphertext at rest, keyed by SPENDING_KEY."""
+
+    TX = {"date": "2026-06-11T13:48:00", "amount": 250.0, "currency": "DOP",
+          "merchant": "CLARO RECAR", "type": "Compra", "source": "bhd_email"}
+
+    def setUp(self):
+        tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(tmp.cleanup)
+        self.path = Path(tmp.name) / "spending.json.enc"
+        path_patch = mock.patch.object(sp, "SPENDING_PATH", self.path)
+        path_patch.start()
+        self.addCleanup(path_patch.stop)
+        self.key = Fernet.generate_key().decode()
+        env_patch = mock.patch.dict("os.environ", {"SPENDING_KEY": self.key})
+        env_patch.start()
+        self.addCleanup(env_patch.stop)
+
+    def test_round_trip_and_ciphertext_at_rest(self):
+        sp._save_spending([self.TX])
+        self.assertEqual(sp._load_spending(), [self.TX])
+        raw = self.path.read_bytes()
+        # Fernet token, not JSON: the version-byte prefix, and no plaintext.
+        # (Don't assert on short substrings like b"250" — base64 ciphertext
+        # can contain any 3-character run by chance.)
+        self.assertTrue(raw.startswith(b"gAAAA"))
+        self.assertNotIn(b"CLARO", raw)
+        self.assertNotIn(b"transactions", raw)
+
+    def test_missing_file_is_empty_without_needing_a_key(self):
+        with mock.patch.dict("os.environ", {"SPENDING_KEY": ""}):
+            self.assertEqual(sp._load_spending(), [])
+
+    def test_missing_key_blocks_save(self):
+        with mock.patch.dict("os.environ", {"SPENDING_KEY": ""}):
+            with self.assertRaises(sp.SpendingLocked):
+                sp._save_spending([self.TX])
+
+    def test_wrong_key_raises_instead_of_wiping(self):
+        sp._save_spending([self.TX])
+        other = Fernet.generate_key().decode()
+        with mock.patch.dict("os.environ", {"SPENDING_KEY": other}):
+            with self.assertRaises(sp.SpendingLocked):
+                sp._load_spending()
+        # The original ciphertext is untouched and still readable.
+        self.assertEqual(sp._load_spending(), [self.TX])
+
+    def test_malformed_key_raises(self):
+        with mock.patch.dict("os.environ", {"SPENDING_KEY": "not-a-key"}):
+            with self.assertRaises(sp.SpendingLocked):
+                sp._save_spending([self.TX])
 
 
 class WeekBoundsTest(unittest.TestCase):

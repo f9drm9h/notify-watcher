@@ -201,17 +201,21 @@ digest simply goes out without it.
 - **Weekly spending summary (BHD)** — polls Gmail over IMAP every run for
   unread "BHD Notificación de Transacciones" alert emails, parses the approved
   transactions out of the HTML table (date, amount, currency, merchant, type),
-  logs them to `data/spending.json` (deduped on date + amount + merchant), and
-  marks each processed email read so nothing is parsed twice. Every Monday it
-  pushes last week's picture: total spent in DOP, top merchants, the biggest
+  logs them to `data/spending.json.enc` (deduped on date + amount + merchant),
+  and marks each processed email read so nothing is parsed twice. Every Monday
+  it pushes last week's picture: total spent in DOP, top merchants, the biggest
   single expense, and a week-over-week comparison. Silent until transactions
   exist. Requires the `GMAIL_USER` + `GMAIL_APP_PASSWORD` secrets (a Gmail
   [app password](https://myaccount.google.com/apppasswords), not your real
   password); without them the topic skips quietly. A Claude-style Gmail MCP
   connector cannot be used here — MCP servers authenticate interactive
   assistant sessions, not headless CI runners — so IMAP is the supported path.
-  **PRIVACY: `data/spending.json` holds real purchase history and is committed
-  back to this repo. Only set the Gmail secrets if the repo is PRIVATE.**
+  **PRIVACY: the committed log is encrypted (Fernet, `SPENDING_KEY` secret) so
+  the repo can stay public without exposing purchase history. Plaintext is
+  never written; read the log locally with `python tools/show_spending.py`
+  (key in `.secrets/spending.key`, gitignored). If the key is missing or
+  wrong, the topic skips and leaves the bank emails unread — it never
+  overwrites the existing log.**
 - **Bill reminders (DR utilities)** — monthly due-date nudges from
   `reminders.json` → `bills` (no network): EDEESTE electricity, CAASD water,
   internet/cable. Each entry names the bill and its `due_day` (day of the
@@ -361,7 +365,8 @@ On github.com → your repo → **Settings → Secrets and variables → Actions
 | `RAWG_API_KEY` | (optional) free RAWG API key, for the game watcher |
 | `NASA_API_KEY` | (optional) free api.nasa.gov key for the APOD picture; without it the shared `DEMO_KEY` quota is used |
 | `GMAIL_USER` | (optional) Gmail address for the BHD spending tracker |
-| `GMAIL_APP_PASSWORD` | (optional) a Gmail **app password** (myaccount.google.com/apppasswords; requires 2-Step Verification) for the spending tracker. **Only set on a PRIVATE repo** — parsed transactions are committed to `data/spending.json` |
+| `GMAIL_APP_PASSWORD` | (optional) a Gmail **app password** (myaccount.google.com/apppasswords; requires 2-Step Verification) for the spending tracker |
+| `SPENDING_KEY` | (required with the Gmail secrets) Fernet key that encrypts the committed spending log (`data/spending.json.enc`); generate with `python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"` and keep a copy in `.secrets/spending.key` to read the log locally |
 
 The movie/game watchers only run if their key is set; without it they skip
 quietly. Get the keys here (both free, ~2 min, no cost):
