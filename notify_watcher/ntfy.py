@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import base64
 import datetime as _dt
+import json
 import logging
 import os
 from typing import Optional
@@ -132,6 +133,7 @@ def push(
     tags: Optional[str] = None,
     priority: Optional[str] = None,
     attach_url: Optional[str] = None,
+    actions: Optional[list] = None,
     timeout: float = 15.0,
 ) -> None:
     """POST a notification to the configured ntfy topic.
@@ -144,6 +146,13 @@ def push(
     `attach_url` sets the ntfy `Attach` header: the app fetches the URL and,
     for images, renders the picture inline in the notification. The server
     only stores the link (not the file), so any size works on the free tier.
+
+    `actions` is an optional list of ntfy action-button dicts (up to three),
+    serialized into the `Actions` header as a JSON array. The reply-button
+    feature uses `http` actions built by control.make_action, which POST a
+    command string back to the private control topic. json.dumps with the
+    default ensure_ascii=True yields a single-line ASCII header value, so no
+    RFC 2047 encoding is needed.
 
     Raises requests.HTTPError on a non-2xx response so callers can decide
     whether to retry or log-and-continue.
@@ -170,6 +179,8 @@ def push(
         headers["Priority"] = priority
     if attach_url:
         headers["Attach"] = attach_url
+    if actions:
+        headers["Actions"] = json.dumps(actions)
 
     resp = requests.post(
         url,

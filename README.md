@@ -278,6 +278,7 @@ On github.com → your repo → **Settings → Secrets and variables → Actions
 | -------------- | -------------------------------------------------- |
 | `NTFY_TOPIC`   | the topic name from step 1                         |
 | `NTFY_SERVER`  | (optional) leave unset to use the default `https://ntfy.sh` |
+| `NTFY_CONTROL_TOPIC` | (optional) a second random private topic name, for the reply buttons below; leave unset to disable them |
 | `TMDB_API_KEY` | (optional) free TMDb v3 API key, for the movie watcher |
 | `RAWG_API_KEY` | (optional) free RAWG API key, for the game watcher |
 
@@ -287,6 +288,30 @@ quietly. Get the keys here (both free, ~2 min, no cost):
 - **TMDb**: themoviedb.org → Settings → API → request a developer key →
   copy the **"API Key (v3 auth)"** value.
 - **RAWG**: rawg.io/apidocs → "Get API Key" → sign up → copy the key.
+
+### Reply buttons (optional): talk back to your notifications
+
+Set the `NTFY_CONTROL_TOPIC` secret to a **second** random private topic name
+(treat it like a password, e.g. `nw-ctl-x7k2m9q4w1z8r5t3`) and selected pushes
+gain tappable action buttons. A tap POSTs a small command to that private
+topic; the next watcher run picks it up and adjusts behavior — no server, no
+extra infrastructure. The notification is dismissed when the tap goes through
+(that's the ack; there is no confirmation push). Leave the secret unset and
+the feature is fully off: no buttons, no polling, behavior identical to
+before.
+
+The three buttons you'll see:
+
+| Push | Button | What it does |
+| --- | --- | --- |
+| Habit nudge (e.g. drink water) | **Done** | marks the habit done now and skips its next scheduled nudge today (later slots still fire) |
+| Reminder | **Snooze 1h** | re-delivers that reminder after ~an hour (on the next full 3-hourly run) |
+| Daily digest | **Mute movies 24h** / **Mute games 24h** | drops that topic's digest-bound items for 24 h — live high/urgent alerts are never muted |
+
+Commands are deliberately low-stakes: the worst anyone who learns the control
+topic name could do is skip a nudge, snooze a reminder, or mute digest entries
+for a bounded while. Nothing reads data, edits config, or executes code; see
+`docs/design/reply-buttons.md` for the full design and threat model.
 
 ### Pick what to watch: `watchlist.json`
 
