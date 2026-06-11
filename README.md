@@ -175,10 +175,25 @@ digest simply goes out without it.
   back into, your `[low, high]` band. Once a week the morning digest also
   carries a trend line ("USD/DOP moved from 60.10 to 60.80 (+1.16%)") so quiet
   weeks inside the band still tell you which way the rate is drifting.
+- **Fuel prices (DR weekly)** — reads the MICM's official "Aviso Semanal de
+  Precios de Combustibles" PDF (`monitors.json` → `fuel`, no key; the MICM
+  inherited this duty from the now-defunct CNPE) and reports the consumer
+  fuels' RD$/gal prices — Gasolina Premium/Regular, Gasoil Regular/Óptimo,
+  Kerosene, GLP — each week a new notice appears. Ordinary weeks land one
+  line per fuel in the morning digest ("Gasolina Premium: RD$339.80 (-4.70,
+  -1.4%)"); any fuel moving by `fuel.push_pct` (default 5%) or more
+  week-over-week pushes live instead, linking to the official PDF. The first
+  run seeds silently.
 - **Reminders / expiry** — a tiny date engine over `reminders.json` (no network):
   document/visa/ID expiry, subscription renewals, warranties, yearly birthdays.
   Fires once at each configured lead time (default 90/30/7/1/0 days before).
   Daily run only.
+- **Bill reminders (DR utilities)** — monthly due-date nudges from
+  `reminders.json` → `bills` (no network): EDEESTE electricity, CAASD water,
+  internet/cable. Each entry names the bill and its `due_day` (day of the
+  month; day 31 clamps to a short month's last day) and pushes **5 days and
+  1 day before** it is due (`lead_days` configurable per bill). Edit the due
+  days on github.com to match your actual bills; no code change needed.
 - **Habit nudges** — gentle recurring reminders from `habits.json` (no network,
   no secrets). Each habit fires at several daytime slots on the every-3-hours
   grid (e.g. 12/15/18/21 UTC ≈ 08:00/11:00/14:00/17:00 DR), at most one push per
@@ -519,12 +534,14 @@ notify-watcher/
 │       ├── astronomy.py             moons/meteor showers/eclipses almanac
 │       ├── baseball.py              MLB team results + DR player milestones
 │       ├── beach_day.py             weekend beach-day 0-10 index
+│       ├── bills.py                 monthly utility-bill due-date reminders
 │       ├── blood_donation.py        donation-eligibility reminder
 │       ├── deals.py                 JSON-LD price-drop watcher (watchlist + auto)
 │       ├── digest_topic.py          flushes the daily digest
 │       ├── energy.py                energy/electricity news monitor
 │       ├── energy_learn.py          daily "Today's spark" learning push
 │       ├── fda.py                   new FDA drug approvals (openFDA)
+│       ├── fuel.py                  DR weekly fuel prices (MICM notice PDF)
 │       ├── fx.py                    USD→DOP rate thresholds + weekly trend
 │       ├── games.py                 RAWG release dates + scored game news
 │       ├── groceries.py             La Sirena/Nacional/Bravo weekly deals
