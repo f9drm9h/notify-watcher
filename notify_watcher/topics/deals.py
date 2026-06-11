@@ -197,6 +197,29 @@ def _extract_amazon_price(html: str) -> tuple[float, str] | None:
     return None
 
 
+def _amazon_no_price_diagnosis(html: str) -> str:
+    """One log-friendly line saying WHY the Amazon fallback found nothing.
+
+    Distinguishes "Amazon walled this client off" (CAPTCHA / sorry page —
+    expected occasionally from a data-center IP, self-heals on a later run)
+    from "the buy box exists but our selectors no longer match it" (markup
+    change worth a code fix). Mirrors how the JSON-LD tests pin shapes: make
+    a silent upstream change diagnosable from the runner log alone.
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    title = soup.title.get_text(strip=True) if soup.title else ""
+    low = html[:4000].lower()
+    if "captcha" in low or "robot check" in low or "/errors/validatecaptcha" in low:
+        return f"bot wall (CAPTCHA page, title={title!r})"
+    markers = ", ".join(
+        sel for sel in ("#corePrice_feature_div", "#corePriceDisplay_desktop_feature_div",
+                        "span.priceToPay", "#apex_desktop", "span.a-offscreen")
+        if soup.select_one(sel) is not None
+    )
+    return (f"page served but no buy-box price (title={title!r}, "
+            f"{len(html)} bytes, markers present: {markers or 'none'})")
+
+
 def _group_note(products: list[dict], bucket: dict, product: dict) -> str:
     """One clause comparing a grouped product's other sources, or "".
 
@@ -273,6 +296,10 @@ def run(state: dict) -> dict:
             found = _extract_price(resp.text)
             if found is None and "amazon." in url:
                 found = _extract_amazon_price(resp.text)
+                if found is None:
+                    log.warning("no price for %r: %s (%s)", name,
+                                _amazon_no_price_diagnosis(resp.text), url)
+                    continue
             if found is None:
                 log.warning("no price found for %r (%s)", name, url)
                 continue

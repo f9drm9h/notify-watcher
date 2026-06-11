@@ -146,6 +146,18 @@ class ExtractAmazonPriceTest(unittest.TestCase):
         self.assertIsNone(deals._extract_amazon_price(_amazon_page("See price in cart")))
 
 
+class AmazonDiagnosisTest(unittest.TestCase):
+    def test_captcha_page_is_called_a_bot_wall(self):
+        page = '<html><head><title>Amazon.com</title></head><body><form action="/errors/validateCaptcha"></form></body></html>'
+        self.assertIn("bot wall", deals._amazon_no_price_diagnosis(page))
+
+    def test_real_page_reports_present_markers(self):
+        page = '<html><head><title>Foxtrot</title></head><body><div id="apex_desktop"></div></body></html>'
+        diag = deals._amazon_no_price_diagnosis(page)
+        self.assertIn("no buy-box price", diag)
+        self.assertIn("#apex_desktop", diag)
+
+
 class GroupNoteTest(unittest.TestCase):
     """Multi-source products (same `group`) quote each other's last price."""
 
