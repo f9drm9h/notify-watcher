@@ -127,9 +127,11 @@
   },
 
   "outages": {
-    "_comment": "Scheduled electricity outages scraped from EDESUR's weekly 'Mantenimientos Programados' page. Only notices whose province matches a regions entry (accent/case-insensitive substring) alert, lead_days before the outage (or day-of when published late). For a different territory, point url at that distributor's page and adjust regions.",
-    "url": "https://www.edesur.com.do/enlaces-empresa/mantenimientos-programados/",
-    "regions": ["Santo Domingo", "Distrito Nacional"],
+    "_comment": "Scheduled electricity outages. Home (Hainamosa, Santo Domingo Este) is EDEESTE territory: its weekly maintenance PDF is scanned for each zones entry (accent/case-insensitive substring) and a hit alerts lead_days before the outage day (or day-of when published late). EDESUR (capital's south/west) stays available but off: list provinces in regions to re-enable its page scrape.",
+    "edeeste": {
+      "zones": ["Hainamosa"]
+    },
+    "regions": [],
     "lead_days": 1
   },
 
