@@ -193,8 +193,12 @@ class EncryptedStorageTest(unittest.TestCase):
         sp._save_spending([self.TX])
         self.assertEqual(sp._load_spending(), [self.TX])
         raw = self.path.read_bytes()
-        self.assertNotIn(b"CLARO", raw)  # merchant never on disk in the clear
-        self.assertNotIn(b"250", raw)
+        # Fernet token, not JSON: the version-byte prefix, and no plaintext.
+        # (Don't assert on short substrings like b"250" — base64 ciphertext
+        # can contain any 3-character run by chance.)
+        self.assertTrue(raw.startswith(b"gAAAA"))
+        self.assertNotIn(b"CLARO", raw)
+        self.assertNotIn(b"transactions", raw)
 
     def test_missing_file_is_empty_without_needing_a_key(self):
         with mock.patch.dict("os.environ", {"SPENDING_KEY": ""}):
