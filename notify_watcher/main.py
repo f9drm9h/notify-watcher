@@ -14,7 +14,7 @@ import sys
 import traceback
 from typing import Callable
 
-from . import ntfy
+from . import control, ntfy
 from . import state as state_mod
 from .topics import (
     air_quality,
@@ -189,6 +189,15 @@ def main() -> int:
         return 0
 
     state = state_mod.load()
+
+    # Reply-button control channel: poll + dispatch BEFORE the topic loop so a
+    # command takes effect in the same run that reads it, and regardless of
+    # NOTIFY_ONLY so the frequent twitch run keeps command latency low. A no-op
+    # when NTFY_CONTROL_TOPIC is unset; a failure must never block the run.
+    try:
+        control.dispatch(control.poll(state), state)
+    except Exception as exc:  # noqa: BLE001 - control errors are never fatal
+        log.error("control channel failed: %s", exc)
 
     # Enable the daily-only topics on the first run past DAILY_UTC_HOUR. Setting
     # the env var keeps each daily topic's existing NOTIFY_DAILY check unchanged.

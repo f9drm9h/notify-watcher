@@ -1,7 +1,8 @@
 {
-  "_comment": "Personal expiry & deadline reminders, checked once a day. Each entry: name (what it is), date (YYYY-MM-DD), optional lead_days (how many days before to remind; default [90, 30, 7, 1, 0]), optional recurring ('yearly' for birthdays/anniversaries so the same date repeats every year), optional note (extra line in the push). A reminder fires once per lead day, so a single deadline produces a gentle 90-day heads-up tapering to a day-of nudge. Edit this file directly on github.com; no code change needed.",
+  "_comment": "Personal expiry & deadline reminders, checked once a day. Each entry: id (short unique slug, letters/digits/dashes - powers the Snooze reply button; entries without one simply get no button), name (what it is), date (YYYY-MM-DD), optional lead_days (how many days before to remind; default [90, 30, 7, 1, 0]), optional recurring ('yearly' for birthdays/anniversaries so the same date repeats every year), optional note (extra line in the push). A reminder fires once per lead day, so a single deadline produces a gentle 90-day heads-up tapering to a day-of nudge. Edit this file directly on github.com; no code change needed.",
   "reminders": [
     {
+      "id": "passport",
       "name": "EXAMPLE - delete me: passport renewal",
       "date": "2030-01-01",
       "lead_days": [90, 30, 7, 1, 0],

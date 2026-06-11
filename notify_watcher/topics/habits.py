@@ -21,7 +21,7 @@ import json
 import logging
 from pathlib import Path
 
-from .. import events, kb
+from .. import control, events, kb
 
 log = logging.getLogger(__name__)
 
@@ -92,6 +92,10 @@ def _run_one(state: dict, habit: dict, now: _dt.datetime) -> dict:
     due = _due_slots(now, hours, sent)
     if due:
         latest = due[-1]  # ascending; send only the most recent slot
+        # Reply button: [Done] POSTs DONE:{name} to the control topic, which
+        # suppresses the next slot (control.cmd_done). None when the control
+        # channel is off, leaving the push byte-identical to before.
+        done = control.make_action("Done", f"DONE:{name}")
         events.emit(
             state,
             title=habit.get("title") or name,
@@ -102,6 +106,7 @@ def _run_one(state: dict, habit: dict, now: _dt.datetime) -> dict:
             tags=habit.get("tag") or "bell",
             legacy_priority="low",
             legacy_action="push",
+            metadata={"actions": [done]} if done else None,
         )
         log.info("habit %r: sent %02d:00 UTC slot", name, latest)
         for h in due:  # mark earlier missed slots handled too (no catch-up burst)

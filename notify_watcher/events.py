@@ -30,7 +30,7 @@ import logging
 from dataclasses import dataclass, field
 from typing import Optional, TYPE_CHECKING
 
-from . import config, digest, eventlog, ntfy, priority
+from . import config, control, digest, eventlog, ntfy, priority
 
 if TYPE_CHECKING:
     from .changes import Change
@@ -74,6 +74,10 @@ def _push(event: Event, ntfy_priority: Optional[str]) -> None:
     else:
         title = event.title
         message = event.body
+    # Reply buttons ride metadata["actions"] just like click_url/attach_url, so
+    # any topic can attach them via emit(). Forwarded only when present, so a
+    # buttonless push stays byte-identical to before.
+    actions = event.metadata.get("actions") or None
     ntfy.push(
         title=title,
         message=message,
@@ -81,6 +85,7 @@ def _push(event: Event, ntfy_priority: Optional[str]) -> None:
         tags=event.metadata.get("tags") or None,
         priority=ntfy_priority,
         attach_url=event.metadata.get("attach_url") or None,
+        **({"actions": actions} if actions else {}),
     )
 
 
@@ -99,6 +104,20 @@ def _quiet_defers(ntfy_priority: Optional[str]) -> bool:
             return False
         return ntfy.would_suppress(ntfy_priority)
     except Exception:  # noqa: BLE001 - deferral must never break a push
+        return False
+
+
+def _mute_drops(state: dict, topic: str) -> bool:
+    """True when the topic has an active reply-button mute (state["muted"]).
+
+    Checked only AFTER routing decides "digest", so a mute suppresses exactly
+    the digest-bound chatter — live high/urgent pushes never reach this check
+    and still ring through. Expired or malformed entries never suppress, and
+    any error fails open (no drop), so a mute can never silence by accident.
+    """
+    try:
+        return control.until_active((state.get("muted") or {}).get(topic))
+    except Exception:  # noqa: BLE001 - mute enforcement must never drop on error
         return False
 
 
@@ -201,9 +220,12 @@ def emit(
         if action == "push" and _quiet_defers(legacy_priority):
             log.info("quiet hours: deferring %r to the morning digest", title)
             action = "digest"
+        if action == "digest" and _mute_drops(state, event.topic):
+            log.info("mute active for %r: dropping digest-bound %r", topic, title)
+            action = "drop"
         if action == "digest":
             _to_digest(state, event, score, digest_cfg)
-        else:
+        elif action != "drop":
             _push(event, legacy_priority)
         # Log under the caller's within-domain score so history is complete even
         # when the engine is off (the dashboard reads this regardless of mode).
@@ -214,6 +236,9 @@ def emit(
     if action == "push" and _quiet_defers(decision.ntfy_priority):
         log.info("quiet hours: deferring %r to the morning digest", title)
         action = "digest"
+    if action == "digest" and _mute_drops(state, event.topic):
+        log.info("mute active for %r: dropping digest-bound %r", topic, title)
+        action = "drop"
     if action == "push":
         _push(event, decision.ntfy_priority)
     elif action == "digest":

@@ -86,7 +86,8 @@ def add(state: dict, item: dict, cfg: dict) -> None:
         _drop_lowest(buf)
 
 
-def flush(state: dict, cfg: dict, header: str | None = None) -> bool:
+def flush(state: dict, cfg: dict, header: str | None = None,
+          actions: list | None = None) -> bool:
     """Send one grouped digest push and clear the buffer. Returns True if sent.
 
     Idempotent per day via digest_last_sent: a second flush on the same date is
@@ -94,7 +95,9 @@ def flush(state: dict, cfg: dict, header: str | None = None) -> bool:
     buffer is also a no-op (and does not consume the day's stamp).
 
     `header`, when given, becomes the first line of the message (the digest
-    topic passes the morning weather one-liner here).
+    topic passes the morning weather one-liner here). `actions`, when given,
+    attaches ntfy reply buttons (the digest topic passes its fixed mute
+    buttons); omitted, the push is unchanged.
     """
     if state.get(LAST_SENT_KEY) == _today():
         log.info("digest already sent today; skipping")
@@ -150,6 +153,7 @@ def flush(state: dict, cfg: dict, header: str | None = None) -> bool:
         message="\n".join(lines),
         tags="clipboard",
         priority="default",
+        **({"actions": actions} if actions else {}),
     )
     log.info("sent daily digest with %d item(s)", len(buf))
 
