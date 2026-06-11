@@ -133,14 +133,15 @@ digest simply goes out without it.
   description, and the affected provinces. The feed re-posts the same alert
   while forecasters revise it, so re-issuances of identical text are suppressed
   until the alert expires; the first run seeds silently.
-- **Electricity outage alerts (EDESUR)** — scrapes EDESUR's weekly
-  "Mantenimientos Programados" page (`monitors.json` → `outages`, no key) and
-  pushes each scheduled power cut for your `regions` (Santo Domingo + Distrito
-  Nacional by default) **the day before** it happens — or the day of, when
-  EDESUR publishes it late. The push carries the date, the time window, and
-  the affected zonas. Each notice alerts once; the first run seeds the
-  currently published week silently. (EDESUR covers the south/west;
-  for EDENORTE territory point `outages.url` at that distributor's page.)
+- **Electricity outage alerts (EDEESTE)** — reads EDEESTE's weekly scheduled-
+  maintenance PDF (`monitors.json` → `outages`, no key) and pushes when any
+  watched zone (`outages.edeeste.zones`, e.g. Hainamosa) appears in a day's
+  program — **the day before** the cut, or the day of, when EDEESTE publishes
+  it late. The push carries the date, the time window when the PDF shows one,
+  and a link to the weekly schedule. One alert per outage day per zone; the
+  first run seeds the current week silently. (EDESUR's page scrape — the
+  capital's south/west — is still built in: list provinces in
+  `outages.regions` to turn it on.)
 - **Nearby earthquakes** — reads the USGS feed (`monitors.json` → `quakes`, no
   key) and routes by magnitude **and** great-circle distance from your
   `location`: a strong, close quake pushes live; a smaller nearby one goes to

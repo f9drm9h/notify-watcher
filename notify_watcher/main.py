@@ -112,8 +112,9 @@ TOPICS: list[tuple[str, Topic]] = [
     # fx are threshold alerters. All run before digest so same-run items flush.
     ("weather", weather.run),
     # onamet: official DR severe-weather watches/warnings (INDOMET CAP feed);
-    # every new alert pushes live. outages: EDESUR scheduled power cuts for
-    # Santo Domingo, pushed the day before (or day-of when published late).
+    # every new alert pushes live. outages: scheduled power cuts for the watched
+    # zones (EDEESTE weekly PDF; EDESUR page optional), pushed the day before
+    # (or day-of when published late).
     ("onamet", onamet.run),
     ("outages", outages.run),
     ("quakes", quakes.run),
