@@ -26,7 +26,9 @@
       { "topic": "visa_bulletin", "severity": "low", "score": 45 },
       { "topic": "visa_bulletin", "score": 100 },
       { "topic": "weather", "severity": "critical", "score": 95 },
+      { "topic": "onamet", "severity": "critical", "score": 95 },
       { "topic": "quakes", "severity": "critical", "score": 95 },
+      { "topic": "onamet", "severity": "high", "score": 80 },
       { "topic": "air_quality", "severity": "critical", "score": 90 },
       { "topic": "quakes", "severity": "high", "score": 80 },
       { "topic": "fda", "severity": "critical", "score": 78 },
@@ -44,6 +46,8 @@
       { "topic": "habits", "score": 64 },
       { "topic": "energy", "severity": "critical", "score": 64 },
       { "topic": "movies", "severity": "high", "score": 62 },
+      { "topic": "onamet", "score": 62 },
+      { "topic": "outages", "score": 62 },
       { "topic": "iss", "score": 62 },
       { "topic": "launches", "score": 62 },
       { "topic": "youtube", "score": 62 },
@@ -115,6 +119,18 @@
     "region_terms": ["dominican", "hispaniola", "haiti", "caribbean", "puerto rico",
                      "mona passage", "leeward", "windward", "antilles", "turks and caicos"],
     "live_terms": ["warning", "watch"]
+  },
+
+  "onamet": {
+    "_comment": "Official DR severe-weather alerts from ONAMET/INDOMET via its Common Alerting Protocol feed (WMO Alert Hub mirror on S3, no key). Every new alert pushes live immediately: an AVISO (the highest level) rides urgent, an ALERTA high, anything else default. Re-issuances of the same alert text are suppressed until the alert's CAP expiry.",
+    "url": "https://cap-sources.s3.amazonaws.com/do-indomet-es/rss.xml"
+  },
+
+  "outages": {
+    "_comment": "Scheduled electricity outages scraped from EDESUR's weekly 'Mantenimientos Programados' page. Only notices whose province matches a regions entry (accent/case-insensitive substring) alert, lead_days before the outage (or day-of when published late). For a different territory, point url at that distributor's page and adjust regions.",
+    "url": "https://www.edesur.com.do/enlaces-empresa/mantenimientos-programados/",
+    "regions": ["Santo Domingo", "Distrito Nacional"],
+    "lead_days": 1
   },
 
   "air_quality": {
