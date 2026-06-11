@@ -124,6 +124,23 @@ digest simply goes out without it.
   activity is ignored. A live alert attaches the storm's NHC forecast-cone
   image inline (derived from the storm id in the advisory; when it can't be
   derived the alert simply goes out without the picture).
+- **ONAMET severe-weather alerts** — the Dominican meteorological office's own
+  watches and warnings (vaguadas, ondas tropicales, flood alerts, …) via its
+  official Common Alerting Protocol feed (`monitors.json` → `onamet`, no key;
+  ONAMET was renamed INDOMET, same office). Every new alert pushes live
+  immediately — never buffered to the digest: an **AVISO** (the highest level)
+  rides urgent, an **ALERTA** high. The body carries the event, the office's
+  description, and the affected provinces. The feed re-posts the same alert
+  while forecasters revise it, so re-issuances of identical text are suppressed
+  until the alert expires; the first run seeds silently.
+- **Electricity outage alerts (EDESUR)** — scrapes EDESUR's weekly
+  "Mantenimientos Programados" page (`monitors.json` → `outages`, no key) and
+  pushes each scheduled power cut for your `regions` (Santo Domingo + Distrito
+  Nacional by default) **the day before** it happens — or the day of, when
+  EDESUR publishes it late. The push carries the date, the time window, and
+  the affected zonas. Each notice alerts once; the first run seeds the
+  currently published week silently. (EDESUR covers the south/west;
+  for EDENORTE territory point `outages.url` at that distributor's page.)
 - **Nearby earthquakes** — reads the USGS feed (`monitors.json` → `quakes`, no
   key) and routes by magnitude **and** great-circle distance from your
   `location`: a strong, close quake pushes live; a smaller nearby one goes to

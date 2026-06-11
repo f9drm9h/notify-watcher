@@ -41,6 +41,8 @@ from .topics import (
     marine,
     movies,
     music,
+    onamet,
+    outages,
     quakes,
     recap,
     reminders,
@@ -109,6 +111,11 @@ TOPICS: list[tuple[str, Topic]] = [
     # threat; smaller/region-relevant items buffer to the digest). air_quality and
     # fx are threshold alerters. All run before digest so same-run items flush.
     ("weather", weather.run),
+    # onamet: official DR severe-weather watches/warnings (INDOMET CAP feed);
+    # every new alert pushes live. outages: EDESUR scheduled power cuts for
+    # Santo Domingo, pushed the day before (or day-of when published late).
+    ("onamet", onamet.run),
+    ("outages", outages.run),
     ("quakes", quakes.run),
     ("air_quality", air_quality.run),
     ("fx", fx.run),
