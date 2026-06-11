@@ -1,5 +1,5 @@
 {
-  "_comment": "Recurring daytime habit nudges. Each habit: name (unique id, also used for its state key), title (push title), tag (ntfy emoji tag), hours (UTC hours to fire, aligned to the every-3-hours cron grid 0/3/6/9/12/15/18/21; 12/15/18/21 == 08:00/11:00/14:00/17:00 in the Dominican Republic, UTC-4), messages (rotated per slot for variety), and optional enabled (default true). At most one push per slot per day, deduped in state. Adding a nudge is just a new entry here - no code change. Edit this file directly on github.com.",
+  "_comment": "Recurring daytime habit nudges. Each habit: name (unique id, also used for its state key), title (push title), tag (ntfy emoji tag), hours (UTC hours to fire; a slot fires on the first run AT or AFTER its hour, so hours on the every-3-hours cron grid 0/3/6/9/12/15/18/21 fire on time and off-grid hours fire up to ~3h late on the next run; 12/15/18/21 == 08:00/11:00/14:00/17:00 in the Dominican Republic, UTC-4), messages (rotated per slot for variety), and optional enabled (default true). At most one push per slot per day, deduped in state. Adding a nudge is just a new entry here - no code change. Edit this file directly on github.com.",
   "habits": [
     {
       "name": "water",
