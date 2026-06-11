@@ -47,6 +47,7 @@ jobs:
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
+          NTFY_CONTROL_TOPIC: ${{ secrets.NTFY_CONTROL_TOPIC }}
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}  # movie watcher (optional)
           RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}  # game watcher (optional)
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}        # AI summary (optional)

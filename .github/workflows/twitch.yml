@@ -38,6 +38,7 @@ jobs:
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
+          NTFY_CONTROL_TOPIC: ${{ secrets.NTFY_CONTROL_TOPIC }}
           # Run just the Twitch topic (see main._selected_topics). No daily work,
           # no collectors — one quick uptime call per watched streamer.
           NOTIFY_ONLY: twitch
