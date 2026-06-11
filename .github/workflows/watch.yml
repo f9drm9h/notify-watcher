@@ -54,10 +54,12 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}  # AI summary fallback (optional)
           NASA_API_KEY: ${{ secrets.NASA_API_KEY }}  # APOD picture (optional; DEMO_KEY without)
           # Spending tracker (optional): Gmail IMAP credentials for the BHD
-          # transaction-alert poll. PRIVACY: parsed transactions are committed
-          # to data/spending.json - only set these once the repo is PRIVATE.
+          # transaction-alert poll. Parsed transactions are committed as
+          # data/spending.json.enc, encrypted with SPENDING_KEY (Fernet) so
+          # the repo never holds plaintext purchase history.
           GMAIL_USER: ${{ secrets.GMAIL_USER }}
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          SPENDING_KEY: ${{ secrets.SPENDING_KEY }}
           # Empty on schedule; "1" only when manually dispatched with test_push.
           NOTIFY_TEST_PUSH: ${{ inputs.test_push && '1' || '' }}
           # Force the daily work (digest/health tip/learn) on a manual run with
@@ -74,18 +76,19 @@ jobs:
 
       - name: Commit updated state + dashboard (if changed)
         run: |
-          # data/spending.json is created by the spending topic on the runner,
-          # so it must ride the state commit or every run re-parses from scratch.
-          # git status --porcelain (unlike git diff) also sees it while untracked.
+          # data/spending.json.enc is created by the spending topic on the
+          # runner, so it must ride the state commit or every run re-parses from
+          # scratch. git status --porcelain (unlike git diff) also sees it while
+          # untracked.
           if git diff --quiet -- state.json docs/dashboard \
-             && [ -z "$(git status --porcelain -- data/spending.json)" ]; then
+             && [ -z "$(git status --porcelain -- data/spending.json.enc)" ]; then
             echo "state.json, dashboard and spending log unchanged, nothing to commit"
             exit 0
           fi
           git config user.name  "notify-watcher-bot"
           git config user.email "actions@users.noreply.github.com"
           git add state.json docs/dashboard
-          if [ -f data/spending.json ]; then git add data/spending.json; fi
+          if [ -f data/spending.json.enc ]; then git add data/spending.json.enc; fi
           git commit -m "chore: update state + dashboard [skip ci]"
           # Push with rebase-and-retry: if a concurrent/queued run advanced the
           # branch between checkout and now, a bare push is rejected (non-fast-

@@ -21,9 +21,14 @@ never raises. Emails are fetched with BODY.PEEK and flagged ``\\Seen`` only
 AFTER their transactions are safely merged and saved, so a crash mid-run
 re-processes (and re-dedups) rather than losing transactions.
 
-PRIVACY: ``data/spending.json`` holds real purchase history and is committed
-back to the repo by the workflow like ``state.json``. Do not set the Gmail
-secrets while the repository is public.
+PRIVACY: the transaction log holds real purchase history and is committed
+back to the repo by the workflow like ``state.json`` — so it is encrypted at
+rest. ``data/spending.json.enc`` is a Fernet token (AES + HMAC, via the
+``cryptography`` package) of the JSON payload, keyed by the ``SPENDING_KEY``
+secret; anyone browsing the repo sees only ciphertext. Plaintext is never
+written to disk. If the key is missing or wrong, ingestion and the summary
+skip with an error and the bank emails stay unread — the existing log is
+never overwritten blind. Decrypt locally with ``tools/show_spending.py``.
 """
 from __future__ import annotations
 
@@ -40,13 +45,14 @@ from datetime import date
 from pathlib import Path
 
 from bs4 import BeautifulSoup
+from cryptography.fernet import Fernet, InvalidToken
 
 from .. import changes, config, events
 
 log = logging.getLogger(__name__)
 
 WEEK_KEY = "spending_week_summarized"
-SPENDING_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "spending.json"
+SPENDING_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "spending.json.enc"
 DEFAULT_SENDER = "alertas@bhd.com.do"
 DEFAULT_SUBJECT = "BHD Notificación de Transacciones"
 IMAP_HOST = "imap.gmail.com"
@@ -197,24 +203,45 @@ def _merge(existing: list[dict], new: list[dict]) -> tuple[list[dict], int]:
     return merged, added
 
 
+class SpendingLocked(Exception):
+    """The encrypted spending log cannot be safely read or written.
+
+    Raised when ``SPENDING_KEY`` is missing/malformed or does not decrypt the
+    existing file. Callers must treat this as "hands off": never overwrite the
+    log (a blind save under a fresh key would orphan the history) and leave
+    bank emails unread so the next correctly-keyed run picks them up.
+    """
+
+
+def _fernet() -> Fernet:
+    key = os.environ.get("SPENDING_KEY", "").strip()
+    if not key:
+        raise SpendingLocked("SPENDING_KEY is not set")
+    try:
+        return Fernet(key.encode("ascii"))
+    except (ValueError, UnicodeEncodeError) as exc:
+        raise SpendingLocked(f"SPENDING_KEY is not a valid Fernet key: {exc}") from exc
+
+
 def _load_spending() -> list[dict]:
     try:
-        data = json.loads(SPENDING_PATH.read_text(encoding="utf-8"))
+        token = SPENDING_PATH.read_bytes()
     except FileNotFoundError:
-        return []
-    except json.JSONDecodeError as exc:
-        log.error("spending: data/spending.json is not valid JSON: %s", exc)
-        return []
+        return []  # nothing recorded yet; no key needed to know that
+    try:
+        data = json.loads(_fernet().decrypt(token))
+    except InvalidToken as exc:
+        raise SpendingLocked(
+            "data/spending.json.enc does not decrypt with SPENDING_KEY") from exc
     txs = data.get("transactions") if isinstance(data, dict) else None
     return txs if isinstance(txs, list) else []
 
 
 def _save_spending(transactions: list[dict]) -> None:
+    payload = json.dumps(
+        {"transactions": transactions}, ensure_ascii=False).encode("utf-8")
     SPENDING_PATH.parent.mkdir(parents=True, exist_ok=True)
-    SPENDING_PATH.write_text(
-        json.dumps({"transactions": transactions}, indent=2, ensure_ascii=False) + "\n",
-        encoding="utf-8",
-    )
+    SPENDING_PATH.write_bytes(_fernet().encrypt(payload))
 
 
 def _ingest_emails(cfg: dict) -> int:
@@ -229,6 +256,11 @@ def _ingest_emails(cfg: dict) -> int:
     if not user or not password:
         log.info("spending: GMAIL_USER/GMAIL_APP_PASSWORD not set; skipping email poll")
         return 0
+    # Fail fast on a missing/bad key BEFORE touching the mailbox: parsed
+    # transactions could not be saved (plaintext is never written), so the
+    # emails must stay unread for a future correctly-keyed run.
+    _fernet()
+    _load_spending()
 
     sender = cfg.get("sender", DEFAULT_SENDER)
     wanted_subject = cfg.get("subject", DEFAULT_SUBJECT)
@@ -345,6 +377,8 @@ def run(state: dict) -> dict:
         added = _ingest_emails(cfg)
         if added:
             log.info("spending: recorded %d new transaction(s)", added)
+    except SpendingLocked as exc:
+        log.error("spending: log locked, ingestion skipped (emails left unread): %s", exc)
     except Exception as exc:  # noqa: BLE001 - mail being down must not kill the run
         log.error("spending: email ingestion failed: %s", exc)
 
@@ -355,7 +389,12 @@ def run(state: dict) -> dict:
     if state.get(WEEK_KEY) == week:
         return state
 
-    result = _summarize(_load_spending(), today)
+    try:
+        transactions = _load_spending()
+    except SpendingLocked as exc:
+        log.error("spending: log locked, weekly summary skipped: %s", exc)
+        return state
+    result = _summarize(transactions, today)
     if result is None:
         # Nothing recorded (yet): stay silent and DON'T stamp the week, so the
         # first week of real data still gets its summary even if ingestion
