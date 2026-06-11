@@ -9,7 +9,7 @@
       "note": "Replace this example with your real documents, subscriptions, and dates."
     }
   ],
-  "_bills_comment": "Monthly bills, checked once a day. Each entry: id (short unique slug), name (what to pay), due_day (day of the month it is due, 1-31; days past a short month's end clamp to its last day), optional lead_days (default [5, 1] - a heads-up 5 days before and a final nudge the day before), optional note. Rent and internet due days are confirmed; EDEESTE and CAASD due_day values are still placeholders - edit them to match the due dates printed on the actual bills (github.com edit, no code change needed).",
+  "_bills_comment": "Monthly bills, checked once a day. Each entry: id (short unique slug), name (what to pay), due_day (day of the month it is due, 1-31; days past a short month's end clamp to its last day), optional lead_days (default [5, 1] - a heads-up 5 days before and a final nudge the day before), optional note. Add or edit entries directly on github.com; no code change needed.",
   "bills": [
     {
       "id": "rent",
@@ -20,8 +20,6 @@
       "id": "internet",
       "name": "Internet bill",
       "due_day": 22
-    },
-    {
     }
   ]
 }
