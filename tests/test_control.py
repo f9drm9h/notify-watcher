@@ -201,7 +201,11 @@ class UntilActiveTest(unittest.TestCase):
 class DispatchTest(unittest.TestCase):
     def test_routes_known_commands(self):
         state: dict = {}
-        with mock.patch.object(habits, "_load", return_value=[WATER]):
+        # Pin the clock: dispatch routes DONE through the real current time,
+        # and past the day's last water slot it is (correctly) a no-op — the
+        # test must not depend on the hour it happens to run at.
+        with mock.patch.object(habits, "_load", return_value=[WATER]), \
+                mock.patch.object(control, "_utcnow", return_value=NOW):
             control.dispatch(
                 ["DONE:water", "SNOOZE:passport:60", "MUTE:movies:24"], state)
         self.assertTrue(state["water_slots_sent"])
