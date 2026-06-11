@@ -17,15 +17,23 @@ watchlist.json shape for this topic:
       {"name": "Soundcore Liberty 4 NC", "url": "https://...", "target_price": 79.99}
     ]
 
-`name` and `target_price` are optional; `url` is required. A note on Amazon:
-Amazon frequently blocks data-center IPs (like GitHub Actions runners) and does
-not always expose a clean JSON-LD price, so prefer the manufacturer/retailer
-product page (soundcore.com, Best Buy, etc.) for reliable readings.
+`name` and `target_price` are optional; `url` is required. An optional `group`
+ties multiple listings of the SAME product together (e.g. Costco + Amazon for
+one backpack): every source is tracked independently — a drop at EITHER pushes
+an alert — and each alert quotes the other sources' last known price so the
+two can be compared at a glance.
+
+A note on Amazon: product pages carry no schema.org Product JSON-LD, so when
+the JSON-LD scan comes up empty on an amazon.* URL we fall back to reading the
+buy-box price (`span.a-offscreen` inside the core-price block). Amazon also
+intermittently blocks data-center IPs (like GitHub Actions runners); a blocked
+fetch is logged and retried naturally on the next run.
 """
 from __future__ import annotations
 
 import json
 import logging
+import re
 
 import requests
 from bs4 import BeautifulSoup
@@ -67,6 +75,15 @@ HEADERS = {
 #
 # Add new retailers by dropping a product-page URL into watchlist.json; if a
 # store publishes standard Product structured data it works automatically.
+#
+#   * Costco (p/... product pages): behind Akamai bot protection — returns 403
+#     to any non-browser client (verified 2026-06-11 with plain requests, full
+#     Chrome header sets, and curl alike), and a GitHub Actions data-center IP
+#     fares no better. There is no static JSON-LD to read even on success. The
+#     Highland Tactical Foxtrot entry keeps the Costco URL as its primary
+#     source so it starts working the moment Costco unblocks; until then each
+#     run logs the failed fetch and the Amazon listing (same `group`) carries
+#     the price tracking.
 
 
 def _iter_jsonld(soup: BeautifulSoup):
@@ -143,6 +160,65 @@ def _extract_price(html: str) -> tuple[float, str] | None:
     return min(candidates, key=lambda c: c[0]) if candidates else None
 
 
+# Amazon renders the buy-box price as e.g. "$59.99" or "DOP3,459.57" (currency
+# symbol or ISO code, then a comma-grouped number).
+_AMAZON_PRICE_RE = re.compile(r"^\s*(US\$|[A-Z]{2,3}|\$|€|£)?\s*(\d[\d,]*(?:\.\d+)?)\s*$")
+_CURRENCY_SYMBOLS = {"$": "USD", "US$": "USD", "€": "EUR", "£": "GBP"}
+# The struck-through list price and per-unit prices also use a-offscreen spans,
+# so scope to the buy-box containers (in order of preference) instead of taking
+# the first match on the page.
+_AMAZON_PRICE_SELECTORS = (
+    "#corePrice_feature_div span.a-offscreen",
+    "#corePriceDisplay_desktop_feature_div span.a-offscreen",
+    "span.priceToPay span.a-offscreen",
+    "#apex_desktop span.a-offscreen",
+)
+
+
+def _extract_amazon_price(html: str) -> tuple[float, str] | None:
+    """Return (price, currency) from an Amazon buy box, or None.
+
+    Amazon product pages publish no schema.org Product JSON-LD, so the generic
+    extractor finds nothing there; this reads the rendered price instead. A
+    CAPTCHA/blocked page simply has no buy box and yields None, which run()
+    already logs as "no price found".
+    """
+    soup = BeautifulSoup(html, "html.parser")
+    for selector in _AMAZON_PRICE_SELECTORS:
+        node = soup.select_one(selector)
+        if node is None:
+            continue
+        m = _AMAZON_PRICE_RE.match(node.get_text())
+        if not m:
+            continue
+        symbol, number = m.group(1) or "", m.group(2)
+        currency = _CURRENCY_SYMBOLS.get(symbol, symbol)
+        return float(number.replace(",", "")), currency
+    return None
+
+
+def _group_note(products: list[dict], bucket: dict, product: dict) -> str:
+    """One clause comparing a grouped product's other sources, or "".
+
+    For a product listed at several stores (same `group` value), quote each
+    sibling's last stored price so a drop alert from one store reads against
+    the other: "Costco: 39.99". Prices are quoted bare because the bucket only
+    stores the number, not the currency it was read in.
+    """
+    group = str(product.get("group") or "").strip()
+    if not group:
+        return ""
+    url = str(product.get("url") or "").strip()
+    notes = [
+        f"{sibling.get('name') or sibling_url}: {bucket[sibling_url]:.2f}"
+        for sibling in products
+        if (sibling_url := str(sibling.get("url") or "").strip()) != url
+        and str(sibling.get("group") or "").strip() == group
+        and bucket.get(sibling_url) is not None
+    ]
+    return f" | Compare {', '.join(notes)}" if notes else ""
+
+
 def extract_name(html: str) -> str | None:
     """Return the product name from the first Product/ProductGroup JSON-LD.
 
@@ -195,8 +271,10 @@ def run(state: dict) -> dict:
             resp = requests.get(url, headers=HEADERS, timeout=30)
             resp.raise_for_status()
             found = _extract_price(resp.text)
+            if found is None and "amazon." in url:
+                found = _extract_amazon_price(resp.text)
             if found is None:
-                log.warning("no JSON-LD price found for %r (%s)", name, url)
+                log.warning("no price found for %r (%s)", name, url)
                 continue
             price, currency = found
             log.info("product %r -> %s", name, _fmt(price, currency))
@@ -208,7 +286,8 @@ def run(state: dict) -> dict:
                 events.emit(
                     state,
                     title=f"Now tracking: {name}",
-                    body=f"Current price: {_fmt(price, currency)}",
+                    body=f"Current price: {_fmt(price, currency)}"
+                         f"{_group_note(products, bucket, product)}",
                     topic="deals",
                     severity="low",
                     source=name,
@@ -228,6 +307,7 @@ def run(state: dict) -> dict:
                 line = f"Price dropped: {ch.summary}"
                 if meets_target:
                     line += f" (at or below your target {_fmt(float(target), currency)})"
+                line += _group_note(products, bucket, product)
                 events.emit(
                     state,
                     title=f"Deal: {name}",

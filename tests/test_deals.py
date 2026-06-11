@@ -112,5 +112,63 @@ class FmtTest(unittest.TestCase):
         self.assertEqual(deals._fmt(79.9, ""), "79.90")
 
 
+def _amazon_page(buybox: str, extra: str = "") -> str:
+    return (
+        f"<html><body>{extra}"
+        f'<div id="corePrice_feature_div"><span class="a-offscreen">{buybox}</span></div>'
+        f"</body></html>"
+    )
+
+
+class ExtractAmazonPriceTest(unittest.TestCase):
+    """Amazon pages have no Product JSON-LD; the buy-box fallback reads them."""
+
+    def test_dollar_symbol_maps_to_usd(self):
+        self.assertEqual(deals._extract_amazon_price(_amazon_page("$59.99")), (59.99, "USD"))
+
+    def test_iso_code_with_thousands_separator(self):
+        # Amazon localizes the currency by viewer IP, e.g. Dominican pesos.
+        self.assertEqual(
+            deals._extract_amazon_price(_amazon_page("DOP3,459.57")), (3459.57, "DOP")
+        )
+
+    def test_buybox_preferred_over_other_offscreen_spans(self):
+        # The struck-through list price elsewhere on the page must not win.
+        page = _amazon_page(
+            "$49.99", extra='<span class="a-offscreen">$99.99</span>'
+        )
+        self.assertEqual(deals._extract_amazon_price(page), (49.99, "USD"))
+
+    def test_blocked_or_captcha_page_is_none(self):
+        self.assertIsNone(deals._extract_amazon_price("<html><body>Robot check</body></html>"))
+
+    def test_non_price_text_is_none(self):
+        self.assertIsNone(deals._extract_amazon_price(_amazon_page("See price in cart")))
+
+
+class GroupNoteTest(unittest.TestCase):
+    """Multi-source products (same `group`) quote each other's last price."""
+
+    PRODUCTS = [
+        {"name": "Foxtrot (Costco)", "url": "https://costco.example/p", "group": "foxtrot"},
+        {"name": "Foxtrot (Amazon)", "url": "https://amazon.example/p", "group": "foxtrot"},
+        {"name": "Unrelated", "url": "https://other.example/p"},
+    ]
+
+    def test_quotes_sibling_price(self):
+        bucket = {"https://costco.example/p": 39.99, "https://other.example/p": 5.0}
+        note = deals._group_note(self.PRODUCTS, bucket, self.PRODUCTS[1])
+        self.assertEqual(note, " | Compare Foxtrot (Costco): 39.99")
+
+    def test_sibling_without_stored_price_is_silent(self):
+        note = deals._group_note(self.PRODUCTS, {}, self.PRODUCTS[1])
+        self.assertEqual(note, "")
+
+    def test_ungrouped_product_is_silent(self):
+        bucket = {"https://costco.example/p": 39.99}
+        note = deals._group_note(self.PRODUCTS, bucket, self.PRODUCTS[2])
+        self.assertEqual(note, "")
+
+
 if __name__ == "__main__":
     unittest.main()
