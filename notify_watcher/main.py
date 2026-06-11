@@ -60,7 +60,8 @@ from .topics import (
 
 Topic = Callable[[dict], dict]
 
-# Daily-only topics (digest flush, health tip, learn) gate on NOTIFY_DAILY.
+# Daily-only topics (digest flush, health tip, learn, groceries, itsc, …)
+# gate on NOTIFY_DAILY.
 # Rather than rely on a dedicated cron firing (GitHub Actions routinely delays
 # and silently DROPS scheduled runs — a schedule sitting minutes off the main
 # grid is especially prone to being skipped, which is why these never ran), we

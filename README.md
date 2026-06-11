@@ -320,6 +320,7 @@ On github.com → your repo → **Settings → Secrets and variables → Actions
 | `NTFY_CONTROL_TOPIC` | (optional) a second random private topic name, for the reply buttons below; leave unset to disable them |
 | `TMDB_API_KEY` | (optional) free TMDb v3 API key, for the movie watcher |
 | `RAWG_API_KEY` | (optional) free RAWG API key, for the game watcher |
+| `NASA_API_KEY` | (optional) free api.nasa.gov key for the APOD picture; without it the shared `DEMO_KEY` quota is used |
 
 The movie/game watchers only run if their key is set; without it they skip
 quietly. Get the keys here (both free, ~2 min, no cost):
@@ -327,6 +328,18 @@ quietly. Get the keys here (both free, ~2 min, no cost):
 - **TMDb**: themoviedb.org → Settings → API → request a developer key →
   copy the **"API Key (v3 auth)"** value.
 - **RAWG**: rawg.io/apidocs → "Get API Key" → sign up → copy the key.
+
+(The AI-summary keys, `GEMINI_API_KEY` / `ANTHROPIC_API_KEY`, are also
+optional — see "Optional AI summaries" at the bottom.)
+
+Besides the secrets, the workflows steer a run with three plain env toggles
+you normally never set by hand: `NOTIFY_DAILY=1` marks the once-a-day run
+(daily-only topics like the digest flush, learn, and groceries gate on it;
+main.py also sets it automatically on the first run past 12:00 UTC),
+`NOTIFY_ONLY=<topic,topic>` restricts a run to named topics (how the
+15-minute `twitch.yml` workflow stays lightweight), and `NOTIFY_TEST_PUSH=1`
+sends a single delivery-test notification and exits (the `test_push=true`
+manual dispatch input).
 
 ### Reply buttons (optional): talk back to your notifications
 
@@ -475,27 +488,78 @@ re-introduces a substring collision) fails CI instead of your phone.
 
 ```
 notify-watcher/
-├── .github/workflows/watch.yml      cron + run + commit state back
-├── notify_watcher/
+├── .github/workflows/
+│   ├── watch.yml                    3-hourly sweep: run + commit state back
+│   ├── twitch.yml                   15-min lightweight run (NOTIFY_ONLY=twitch)
+│   └── test.yml                     CI: full test suite on every push/PR
+├── notify_watcher/                  — engine —
 │   ├── main.py                      runs each topic, isolates failures
-│   ├── ntfy.py                      shared push helper (env-driven)
+│   ├── events.py                    Event normalizer: every topic emits through here
+│   ├── priority.py                  Personal Priority Engine (pure, cross-topic scorer)
+│   ├── digest.py                    daily digest buffer (rank, evict, flush)
+│   ├── eventlog.py                  capped history of every routed event
+│   ├── dashboard.py                 renders state into docs/dashboard/index.html
+│   ├── changes.py                   reusable before/after diffs ("A → B, +N%")
+│   ├── news.py                      shared scoring/routing for per-title news
+│   ├── monitor.py                   shared collector engine (FDA, energy, …)
+│   ├── scoring.py                   deterministic keyword importance scorer
+│   ├── control.py                   reply-button command channel (ntfy poll)
+│   ├── ntfy.py                      push transport + quiet-hours suppression
+│   ├── config.py                    loads monitors.json sections
 │   ├── state.py                     load/save state.json
 │   ├── watchlist.py                 reads watchlist.json titles/entries
+│   ├── ids.py                       short stable hashes for dedup seen-lists
+│   ├── kb.py                        curated fact channels + day-of-year pick
 │   ├── summarize.py                 shared one-line AI summary (Gemini→Claude)
 │   ├── visa_math.py                 pure F4 wait-pace math (history → ETA)
-│   └── topics/
-│       ├── visa_bulletin.py         F4 Final Action + Dates for Filing
-│       ├── wwdc.py                  Apple Newsroom RSS, WWDC items
-│       ├── ios_release.py           Apple Developer Releases RSS, iOS/iPadOS
-│       ├── deals.py                 JSON-LD price-drop watcher (watchlist + auto)
-│       ├── groceries.py             La Sirena/Nacional/Bravo weekly deals
-│       ├── itsc.py                  ITSC academic-calendar deadline heads-ups
-│       ├── soundcore_pro.py         sitemap discovery of new Liberty Pro products
-│       ├── movies.py                TMDb release dates + DO streaming (watchlist)
-│       ├── games.py                 RAWG release dates (watchlist, weekly)
+│   └── topics/                      — one module per alert topic —
+│       ├── air_quality.py           AQI threshold alerts (Open-Meteo)
+│       ├── anthropic_news.py        official Anthropic announcements
+│       ├── apod.py                  NASA Astronomy Picture of the Day
+│       ├── astronomy.py             moons/meteor showers/eclipses almanac
 │       ├── baseball.py              MLB team results + DR player milestones
-│       └── habits.py                config-driven daytime habit nudges
+│       ├── beach_day.py             weekend beach-day 0-10 index
+│       ├── blood_donation.py        donation-eligibility reminder
+│       ├── deals.py                 JSON-LD price-drop watcher (watchlist + auto)
+│       ├── digest_topic.py          flushes the daily digest
+│       ├── energy.py                energy/electricity news monitor
+│       ├── energy_learn.py          daily "Today's spark" learning push
+│       ├── fda.py                   new FDA drug approvals (openFDA)
+│       ├── fx.py                    USD→DOP rate thresholds + weekly trend
+│       ├── games.py                 RAWG release dates + scored game news
+│       ├── groceries.py             La Sirena/Nacional/Bravo weekly deals
+│       ├── habits.py                config-driven daytime habit nudges
+│       ├── health_tip.py            one evidence-based health tip per day
+│       ├── holidays.py              DR public-holiday heads-up (Nager.Date)
+│       ├── ios_release.py           Apple Developer Releases RSS, iOS/iPadOS
+│       ├── iss.py                   visible ISS passes over your location
+│       ├── itsc.py                  ITSC academic-calendar deadline heads-ups
+│       ├── launches.py              imminent rocket launches (Launch Library)
+│       ├── learn.py                 consolidated daily learning push
+│       ├── marine.py                rough-seas heads-up (Open-Meteo Marine)
+│       ├── movies.py                TMDb release dates + DO streaming (watchlist)
+│       ├── music.py                 followed-artist releases + discovery pick
+│       ├── onamet.py                official DR severe-weather alerts (CAP feed)
+│       ├── outages.py               EDEESTE scheduled power cuts (weekly PDF)
+│       ├── quakes.py                nearby earthquakes, geo-routed (USGS)
+│       ├── recap.py                 Monday "your week in notifications" summary
+│       ├── reminders.py             reminders.json expiry/deadline alerts
+│       ├── soundcore_pro.py         sitemap discovery of new Liberty Pro products
+│       ├── twitch.py                followed-streamer live alerts (decapi)
+│       ├── uv.py                    high-UV heads-up (Open-Meteo)
+│       ├── visa_bulletin.py         F4 Final Action + Dates for Filing
+│       ├── watchdog.py              self-monitoring over topic_health
+│       ├── weather.py               NHC hurricane/tropical-storm alerts
+│       ├── wwdc.py                  Apple Newsroom RSS, WWDC items
+│       └── youtube.py               new uploads from followed channels
+├── data/                            curated KB content (learn/energy_learn/…)
+├── docs/
+│   ├── dashboard/index.html         self-contained static dashboard (view locally)
+│   └── design/                      design notes for the bigger frameworks
+├── tools/scan_music.py              one-off iTunes-library scanner (seeds music)
+├── monitors.json                    all topic config + priority rules (no secrets)
 ├── watchlist.json                   movie/game titles + products you want tracked
+├── reminders.json                   personal expiry/deadline reminders
 ├── habits.json                      recurring habit nudges (water, stand, eyes)
 ├── state.json                       dedup memory (committed by workflow)
 ├── requirements.txt
