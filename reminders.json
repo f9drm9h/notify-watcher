@@ -8,5 +8,26 @@
       "lead_days": [90, 30, 7, 1, 0],
       "note": "Replace this example with your real documents, subscriptions, and dates."
     }
+  ],
+  "_bills_comment": "Monthly utility bills, checked once a day. Each entry: id (short unique slug), name (what to pay), due_day (day of the month it is due, 1-31; days past a short month's end clamp to its last day), optional lead_days (default [5, 1] - a heads-up 5 days before and a final nudge the day before), optional note. IMPORTANT: the due_day values below are placeholders - edit them to match the due dates printed on your actual bills (github.com edit, no code change needed).",
+  "bills": [
+    {
+      "id": "edeeste",
+      "name": "EDEESTE electricity bill",
+      "due_day": 25,
+      "note": "Pay online at oficinavirtual.edeeste.com.do or via banking app."
+    },
+    {
+      "id": "caasd",
+      "name": "CAASD water bill (agua)",
+      "due_day": 20,
+      "note": "Pay at oficinavirtual.caasd.gob.do or via banking app."
+    },
+    {
+      "id": "internet",
+      "name": "Internet/cable bill",
+      "due_day": 15,
+      "note": "Adjust due_day to your provider's billing date, or delete this entry if autopay covers it."
+    }
   ]
 }
