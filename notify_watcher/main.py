@@ -31,11 +31,13 @@ from .topics import (
     fda,
     fx,
     games,
+    groceries,
     habits,
     health_tip,
     holidays,
     ios_release,
     iss,
+    itsc,
     launches,
     learn,
     marine,
@@ -101,6 +103,11 @@ TOPICS: list[tuple[str, Topic]] = [
     # price-tracked immediately.
     ("soundcore_pro", soundcore_pro.run),
     ("deals", deals.run),
+    # groceries: weekly supermarket deals (La Sirena/Nacional/Bravo). A big
+    # discount pushes; the rest buffer to the digest, so it must run before
+    # digest_topic. Daily-only (NOTIFY_DAILY) — weekly pools don't change
+    # run-to-run.
+    ("groceries", groceries.run),
     # Domain monitors: collectors score items and either push live (high/
     # breakthrough) or buffer moderate ones. digest_topic must run AFTER the
     # collectors so same-day items are flushed; both digest_topic and health_tip
@@ -149,6 +156,9 @@ TOPICS: list[tuple[str, Topic]] = [
     # Daily-only "today" summaries: holiday heads-up, high-UV and rough-seas
     # alerts (threshold-gated), and the astronomy almanac.
     ("holidays", holidays.run),
+    # itsc: academic-calendar deadlines from itsc.edu.do, pushed 7 days and
+    # 1 day before each boundary. Daily-only, push-only (never digests).
+    ("itsc", itsc.run),
     ("uv", uv.run),
     ("marine", marine.run),
     ("astronomy", astronomy.run),
