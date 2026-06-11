@@ -1,5 +1,6 @@
 {
   "anthropic_seen": [
+    "ad76d3e1d5e60ab0",
     "94cb1965b2543732",
     "3a256958e1cc26a6",
     "ea3362d68b1a3874",
@@ -55,6 +56,7 @@
     823215
   ],
   "blood_donation_last_notified": "2026-06-08",
+  "control": {},
   "digest_buffer": [
     {
       "detail": "",
@@ -100,20 +102,6 @@
     },
     {
       "detail": "",
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "\u2018The Odyssey\u2019 Website Lets You Watch the Trailer in All Six Different Formats - PetaPixel",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVW9YUGdIMnhsTnIzNnJPdURwUWoxVVhaUk1NSUxQbGJ1Tkl6bHcySGlid2IzelpBYUFhWk1BbWxnSmlNc2ZVYXZkeGlzNThNUVF4Z2xHbVlJQnc3dnhsdUNkRlpzeXJRaHVPT3RabWV2dDdXSkhDc3hlRUpXOVZiTUd2UmVlaklXMHlnOEkzR1ZYa1QtSFRYcVFtdHNlSDVDMXJqRHo4X1k5WmVONFE?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "The Odyssey | 2026, Movie, Film, Length, Cast, Release Date, Christopher Nolan, & Locations - Britannica",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE12OTJHTFZmQ0FldS1MOHU3bHZyWVA1NlU0dkM1Q2dSd0ljSFRLR3FxeWR3OW94VVEwWFhobDBkVzRaUzlvV3lhR00tWmFHYzFmX3BCODJrdzFvbXR0V2QzWEdNOWIwbW00WUE?oc=5"
-    },
-    {
-      "detail": "",
       "score": 40,
       "source": "Provocholine",
       "title": "FDA updates approval for Provocholine (Methacholine Chloride) (NDA019193)",
@@ -130,13 +118,6 @@
       "detail": "",
       "score": 28,
       "source": "Avengers: Doomsday",
-      "title": "Marvel makes the Avengers: Doomsday announcement nobody wanted to hear - Bam Smack Pow",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMmc4djBiTndNX0dONlB6amExWnRZc2tQQmZqMll3T2p2a1N3SnlEaEI0TnhOSjlRR1RHRl9GUm9iQkV6X2JmcnNrNjU0QzU5bWN0SFlWV090blZjNWVvY25aNkE2YkJXbnNsMWtXUF9uQ29xaXZMQ1FpRVlxQlhDenl3cHRYV1k2QlZHaDZB?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 28,
-      "source": "Avengers: Doomsday",
       "title": "Russo Bros Declare \u201cWe\u2019re Back to Phase Zero\u201d With \u2018Avengers: Doomsday\u2019 and Robert Downey Jr. - The Hollywood Reporter",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUHhHZWVwWDlEOGRvNTg2OGx2R1cxc0k4QTZFVGpnc25zUEc3NmdYd3VaZk1nQzZ4YUctX2M3VVc3MklYY3JCdVJJRF9IamFZcXJpUnVhWjFMZ29KM05nVUZSLWgyNmdRUmtRY1NkTldESWlEc0p5U1RXR2trYkNZbThVRHZZb0stYUx6LUVyZkgteGdPNHdEMWpGcE1oYWFHdnFQRWE5dlktY2FVN3Y0aEVFNzBRUQ?oc=5"
     },
@@ -146,13 +127,6 @@
       "source": "Avengers: Doomsday",
       "title": "Hyped Marvel Fans Get Trolled When Avengers: Doomsday Trailer Reveal Turns Out To Be A Tease For Coffee - Kotaku",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdF9ta0Z1QTViamllR2s5SVk5Q3lqRGcyNngwajZTOUp0YXJ4MGluNzdRYjRDT2RhZ19keC1jR1NJQXpNVnJ0RjZIeW1wbmVxeHVFOURoVlBKdXB6VzdvRzVCYnd1d2QwNWpQOHA0cVQ5S3VSRWktaFNjZ3VpY0VwSHBkdXV3d1Q2WC1wY3dB?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Promo Art Reveals First Look At Tombstone And Spidey vs. The Scorpion - IMDb",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5rajJtUzVBZHJiUGJ3NlVvWkVWdTd6M1BiMlEtdjZTVWJ1NnI4RmxFWjY5blo5WUxVakhiMWR2Mm1BTE9OY0dnemF3NlB0N21wa1VpbmJfR0ZvVGo4YkcxTFNR?oc=5"
     },
     {
       "detail": "",
@@ -209,6 +183,34 @@
       "source": "Weather",
       "title": "Atlantic Tropical Weather Outlook",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "score": 28,
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday Promo May Confirm the MCU\u2019s Third Character to Make a Deal With Mephisto - The Direct",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1CMVBhTjBUeHNPOVpOSmhMbER4M1VUbDg3ei03cDl2SGZQRWFnbjdRSTJ1eUpVdVF3a0VRUGI5LVVFQ1RUcUozSlBUVnBTUTgxcUtmRV9lRjM3dE04WVoyQjJ0R08zdWdWOGNIa1FIWUFpdkU?oc=5"
+    },
+    {
+      "detail": "",
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day: Marvel Studios President Kevin Feige Confirms the Movie Will Focus on the Character's 'Classic Elements' - IGN India",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPRFdGLU5URlR4VndLMEpmLVdEZUlobVA5RUdXeFhPelRFZERjTmN6U1FRQUhjR041RkxUN2dVWTZ0blBVWl9hTmxlVUpkelVhbXdmV281RUhVVWJvZ2VmMU83b0M0bXVlUHJzZW9zYVQybzd3YVUtUmwwUkc1OVZidUgwdnR2Zjd6ZkRjLTNIblJxWGtjOHU1NDZIYVlKa3V2Y1FTby13czhIU3JYRWNVZ0tYWDF0dnNrZHFQZ1BfM2Y5a2FxMXlXSngxN1o5TVFqRmtkcXh4MlhxZFIyOVdEOVBqTWZHQQ?oc=5"
+    },
+    {
+      "detail": "",
+      "score": 28,
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 Is Officially Christopher Nolan\u2019s Most Expensive Movie in 14 Years - Collider",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQ05UdjE3S0kyMlIydlk5a01zSkJiVGx3S0l6RUUyZGpFeThqRHZHRTVVQjRXdmhKVHYxcHFZWHpzeVlkZWFRUGJFQzhsMTE0NjZELUdpNzlpaWQzcFR0blZNc2g0Nm83WjJPNFFObkNYXzBnemVaYmxHd1FpeHgwQ3BYZUk5QmhfbUROX215QzE3Y2JQVDFwZThWcDFsQVNnRGg1SmtfYUdXQnpmSVFBM0E3eTV3MHg1VlpZ?oc=5"
+    },
+    {
+      "detail": "",
+      "score": 28,
+      "source": "The Odyssey",
+      "title": "The Odyssey Officially Gets a Rare Christopher Nolan Rating - IMDb",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5EamU2MW1rdnlZZmpmaFdKTkZsNWRvN2FlcWRyNGZTUUVmdlhRRy1Bc0VORXZxeXpmTi1PMERKWTQ5RXJKeFpCUGhaNXR6RzdLN1RWMmw0akJ5Z3Zob3VEcHhTVVZ0SjQ?oc=5"
     }
   ],
   "digest_last_sent": "2026-06-10",
@@ -3826,6 +3828,237 @@
       "topic": "launches",
       "ts": "2026-06-11T02:58:18.030836+00:00",
       "url": "https://www.youtube.com/watch?v=HSiaGTea1rc"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday Promo May Confirm the MCU\u2019s Third Character to Make a Deal With Mephisto - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-11T05:14:45.663835+00:00",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1CMVBhTjBUeHNPOVpOSmhMbER4M1VUbDg3ei03cDl2SGZQRWFnbjdRSTJ1eUpVdVF3a0VRUGI5LVVFQ1RUcUozSlBUVnBTUTgxcUtmRV9lRjM3dE04WVoyQjJ0R08zdWdWOGNIa1FIWUFpdkU?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday trailer release date seemingly confirmed - Bam Smack Pow",
+      "topic": "movies",
+      "ts": "2026-06-11T05:14:45.664275+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNdVBJSTZGbTcwdTV1NmlOUGlOXzJjYnM0eUo4VnNyMlkycExnWGdrTHljVktWWERGVFFBXzE2X0txdlB0LWVYSWVqVEEwNjg0dHlWc3I1QUw4MVZTcGFZNTNTelExYXk3N2VnN2hYbnlLQmZDUVI0c2dyUDlZbkdIZzk1QmMxRnhqb2xoZDR3aG9qTGtmTVE?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday Trailer Release Date Possibly Set for MCU Movie \u2014 Report - Yahoo",
+      "topic": "movies",
+      "ts": "2026-06-11T05:14:45.711920+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPYk9PVkd3R1FOekJBRmZ2c1ExRGdpOG84b3dSMS12TElGekl3OU1ENE16aUlIOUswTHNJRHlsMkdMVEpfQmRIZG9qYlVZdnBSWVVPWWpQM2JZQW5lREthOUR4MVhnaFJOV2RQbDdHYzF2X0gzcWoxR1VQZ0dZM0daTWpRY3o2S0FoQXlLYUpPZl9vWjBGaHRWT1lDdWZkWUoyZmR1WVI2YV8?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day: Marvel Studios President Kevin Feige Confirms the Movie Will Focus on the Character's 'Classic Elements' - IGN India",
+      "topic": "movies",
+      "ts": "2026-06-11T05:14:46.285081+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPRFdGLU5URlR4VndLMEpmLVdEZUlobVA5RUdXeFhPelRFZERjTmN6U1FRQUhjR041RkxUN2dVWTZ0blBVWl9hTmxlVUpkelVhbXdmV281RUhVVWJvZ2VmMU83b0M0bXVlUHJzZW9zYVQybzd3YVUtUmwwUkc1OVZidUgwdnR2Zjd6ZkRjLTNIblJxWGtjOHU1NDZIYVlKa3V2Y1FTby13czhIU3JYRWNVZ0tYWDF0dnNrZHFQZ1BfM2Y5a2FxMXlXSngxN1o5TVFqRmtkcXh4MlhxZFIyOVdEOVBqTWZHQQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Second \u2018Spider-Man: Brand New Day\u2019 Trailer Leaks Online - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-11T05:14:46.285570+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9hUjA1ZU00TnBScEp2eThBa3daVzB2MEZ5RC1nSE51UHNETDBOWWhyclBrTlBaNTI5UFBKYjk0TmZCTGZycTVDdW5xMmdmczlqU0tBdV82cGJ2WXFVSGUzRQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer Leaks Again and Fans Are Furious Sony Still Can\u2019t Keep a Secret - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-11T05:14:46.338867+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1EeHQyczJFUWtKS3lIdmVsRE1sSklxZlZLUTdiT1BmOEN6bTJ6Y3g3cWNVTzJGaGFvQm9NZllsRmZMWVlMVE9PWUlwOVlxSkt4Y2ZIQjZMcXZWeERSdVJTUVFKTnpHQQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Toy Leak Confirms Significant Cameo - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-11T05:14:46.385795+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9TOEloVlF6RlUtM2RfWUwtN19nckRfcmlmU3laMHV2ZW5tZXdHbjI3eHFNOWtaNERXZEY5YUpCMks2OEVOQ0RBNXQ2allaZHN3N2FhbkdycDVUbEhVTDAwVFpmT2JEbEU?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Tom Holland Called Sony Boss to Delay \u2018Spider-Man: Brand New Day\u2019 for Christopher Nolan\u2019s \u2018The Odyssey\u2019 - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-06-11T05:14:46.433519+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVW5BTjc1OWFuWUtuVm9HdWxZcGlHUlFiaGRuMF9nc2E0VEdqOVdFSXE5SmxQY1lJWE1saHk0ampzVjh4NTJjUDlKX0xfb0NxUjRBNXozQUxzb1NSS2FEWHQ5dWtRVWladnQ2a1hsTzVFeFZVMFc2ckRCSzd3SGtVNkRVWDVpUGI1UG8tYlY0dWs1QmFVdEFXODZ0UWVieUtmOEhWYkUyVnEzZ2Z3ZGtkRHNVU1BZbzlOWHc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day Posters Confirm Hulk MCU Storyline Rumors - SlashFilm",
+      "topic": "movies",
+      "ts": "2026-06-11T05:14:46.482653+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNR0ZNUU9DWlV1emdGRVZVUC1hc1JjQkV6eDJNdVEzNE05YmxHazB1dXdpZWtkZk1GTHFtZlN6a0lid2JBRzB3ZkZWY1dmd0tmejd2bHlVcUtOOUdZME56cWpkdVZ5Z0NmMUVQbWJmTTEzWVAyaG9tcE1aREdrTHk4aVdIbW9FQm5XRXl1MkhiLVpkZGZkM0NqY1owR2NnQ05yYW44SDlKd3hsdw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 Is Officially Christopher Nolan\u2019s Most Expensive Movie in 14 Years - Collider",
+      "topic": "movies",
+      "ts": "2026-06-11T05:14:47.040279+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPQ05UdjE3S0kyMlIydlk5a01zSkJiVGx3S0l6RUUyZGpFeThqRHZHRTVVQjRXdmhKVHYxcHFZWHpzeVlkZWFRUGJFQzhsMTE0NjZELUdpNzlpaWQzcFR0blZNc2g0Nm83WjJPNFFObkNYXzBnemVaYmxHd1FpeHgwQ3BYZUk5QmhfbUROX215QzE3Y2JQVDFwZThWcDFsQVNnRGg1SmtfYUdXQnpmSVFBM0E3eTV3MHg1VlpZ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "The Odyssey Officially Gets a Rare Christopher Nolan Rating - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-11T05:14:47.040655+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5EamU2MW1rdnlZZmpmaFdKTkZsNWRvN2FlcWRyNGZTUUVmdlhRRy1Bc0VORXZxeXpmTi1PMERKWTQ5RXJKeFpCUGhaNXR6RzdLN1RWMmw0akJ5Z3Zob3VEcHhTVVZ0SjQ?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "Current price: USD 139.99",
+      "score": 20,
+      "severity": "low",
+      "source": "Anker Prime Power Bank (20K, 200W)",
+      "title": "Now tracking: Anker Prime Power Bank (20K, 200W)",
+      "topic": "deals",
+      "ts": "2026-06-11T05:15:10.212523+00:00",
+      "url": "https://www.anker.com/products/a1336-20000mah-power-bank"
+    },
+    {
+      "action": "drop",
+      "detail": "Current price: USD 49.99",
+      "score": 20,
+      "severity": "low",
+      "source": "Anker Nano Power Bank (10K, 30W, Built-In Cable)",
+      "title": "Now tracking: Anker Nano Power Bank (10K, 30W, Built-In Cable)",
+      "topic": "deals",
+      "ts": "2026-06-11T05:15:10.462944+00:00",
+      "url": "https://www.anker.com/products/a1259-built-in-cable-power-bank-10000mah"
+    },
+    {
+      "action": "drop",
+      "detail": "Current price: USD 59.99",
+      "score": 20,
+      "severity": "low",
+      "source": "Baseus EnerFill Power Bank (20K, 100W)",
+      "title": "Now tracking: Baseus EnerFill Power Bank (20K, 100W)",
+      "topic": "deals",
+      "ts": "2026-06-11T05:15:10.943094+00:00",
+      "url": "https://www.baseus.com/products/enerfill-fc41-digital-display-power-bank-20000mah-100w"
+    },
+    {
+      "action": "drop",
+      "detail": "Current price: USD 59.99",
+      "score": 20,
+      "severity": "low",
+      "source": "Baseus PicoGo AM52 Magnetic Power Bank (10K, 45W)",
+      "title": "Now tracking: Baseus PicoGo AM52 Magnetic Power Bank (10K, 45W)",
+      "topic": "deals",
+      "ts": "2026-06-11T05:15:11.312008+00:00",
+      "url": "https://www.baseus.com/products/picogo-am52-qi2-2-magnetic-power-bank-10000mah-45w"
+    },
+    {
+      "action": "drop",
+      "detail": "Current price: USD 19.99",
+      "score": 20,
+      "severity": "low",
+      "source": "Anker USB-C to USB-C Cable (240W, Braided)",
+      "title": "Now tracking: Anker USB-C to USB-C Cable (240W, Braided)",
+      "topic": "deals",
+      "ts": "2026-06-11T05:15:11.747327+00:00",
+      "url": "https://www.anker.com/products/a82e2-240w-usb-c-to-usb-c-cable"
+    },
+    {
+      "action": "drop",
+      "detail": "Current price: USD 7.99",
+      "score": 20,
+      "severity": "low",
+      "source": "Baseus USB-C to USB-C Cable (100W)",
+      "title": "Now tracking: Baseus USB-C to USB-C Cable (100W)",
+      "topic": "deals",
+      "ts": "2026-06-11T05:15:12.142862+00:00",
+      "url": "https://www.baseus.com/products/usb-c-to-usb-c-cable-100w"
+    },
+    {
+      "action": "drop",
+      "detail": "Current price: USD 39.99",
+      "score": 20,
+      "severity": "low",
+      "source": "Anker 341 USB-C Hub (7-in-1)",
+      "title": "Now tracking: Anker 341 USB-C Hub (7-in-1)",
+      "topic": "deals",
+      "ts": "2026-06-11T05:15:12.387421+00:00",
+      "url": "https://www.anker.com/products/a8346"
+    },
+    {
+      "action": "drop",
+      "detail": "Current price: USD 69.99",
+      "score": 20,
+      "severity": "low",
+      "source": "Baseus Metal Gleam 9-in-1 USB-C Hub",
+      "title": "Now tracking: Baseus Metal Gleam 9-in-1 USB-C Hub",
+      "topic": "deals",
+      "ts": "2026-06-11T05:15:12.900461+00:00",
+      "url": "https://www.baseus.com/products/metal-gleam-series-9-in-1-usb-c-hub"
+    },
+    {
+      "action": "drop",
+      "detail": "Current price: USD 199.99",
+      "score": 20,
+      "severity": "low",
+      "source": "Anker 575 USB-C Docking Station (13-in-1)",
+      "title": "Now tracking: Anker 575 USB-C Docking Station (13-in-1)",
+      "topic": "deals",
+      "ts": "2026-06-11T05:15:13.135590+00:00",
+      "url": "https://www.anker.com/products/a8392"
+    },
+    {
+      "action": "push",
+      "detail": "Policy on the AI Exponential - Anthropic",
+      "score": 64,
+      "severity": "moderate",
+      "source": "Anthropic",
+      "title": "Anthropic",
+      "topic": "anthropic_news",
+      "ts": "2026-06-11T05:15:29.633654+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9LYS01Sm5aOUUyclZ2MTVsalAtVWI2aWVfaUhpWGY2cWJJRl9tY1NEb0ZXR25KanNRVkozX0xyVG1wa0Ztd29nRWtSS2Y2Q21TdFhjbXlDdm5wVFZOa05tY0ZNa1o?oc=5"
     }
   ],
   "fda_seen_ids": [
@@ -4196,8 +4429,8 @@
   "iss_seen_passes": [],
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-06-11T03:37:30.134937+00:00"
+    "ok": 35,
+    "ts": "2026-06-11T05:14:43.606428+00:00"
   },
   "launch_seen_ids": [
     "4cc755b9dfaf231c",
@@ -4208,6 +4441,14 @@
   "learn_last_sent": "2026-06-10",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "9b881ffc706abced",
+      "a843c24568ddefaf",
+      "9a9d458bb3c33ae8",
+      "9e82298a4d908f2d",
+      "5afa2eb6ee646e66",
+      "c2acee2baf7b7882",
+      "8ff3d50f64928a8a",
+      "7a490debf7f649c7",
       "7b44d78956578960",
       "994f766c1e25085e",
       "41c7d35421d27060",
@@ -4299,15 +4540,7 @@
       "354d52eb2be21c81",
       "c5ec18dbea541e73",
       "8a76e6a34f79f09c",
-      "7eff973b39fb7179",
-      "1a109e89947d49af",
-      "8ab65481450ad70d",
-      "a607b27d0d6c322e",
-      "223115d62ef9e95c",
-      "bc3423c0bc486300",
-      "904d8d9bcb54c736",
-      "913343c0d4d417bc",
-      "6b59eff9615b90ca"
+      "7eff973b39fb7179"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -4509,6 +4742,24 @@
       "b2f005934ccd795b"
     ],
     "Spider-Man: Brand New Day": [
+      "8346e1f18545ddf8",
+      "c8ab054fa6694de1",
+      "94602a2d2ad6a8bc",
+      "f0344c8b9e95f5c9",
+      "2b932194cd748b89",
+      "190c742435551df4",
+      "60a44caeab9991aa",
+      "16f3130bd70bd975",
+      "67c7e36be6ec713f",
+      "522122b72dde699a",
+      "ad0189dc48673399",
+      "731453f06e67197e",
+      "d5b41ee3707ebf5c",
+      "bca3c3ee21eae4b8",
+      "d5a0365c5afd950e",
+      "c750f7fc23883527",
+      "48204ef1bab46780",
+      "ae8b13aab1cdd905",
       "b34f837fb02fd1a2",
       "1441a7070d83d33a",
       "5521b5fc976d1303",
@@ -4590,27 +4841,10 @@
       "b71c1ed8c8697708",
       "905aedf02f123a0f",
       "88958c05c1057482",
-      "dcb45972c25586d2",
-      "a8493956f2daafad",
-      "87a9d016b3714819",
-      "3896296a579c353e",
-      "20bcf114c29c3ac3",
-      "412ea318d26ebeec",
-      "e55fd04788dccd24",
-      "269296b780cbb0e6",
-      "d464d4852a11fcd4",
-      "8e580a1d2f9616b3",
-      "10db35faa06c37cd",
-      "c304402afe2337cf",
-      "def99308971d7af6",
-      "1e84e9a6d280785d",
-      "46dbcb9f3b471fa8",
-      "921bbe69334401ec",
-      "770046bfb3900f8d",
-      "88bb28a210382b58",
-      "fa198863a549ca2b"
+      "dcb45972c25586d2"
     ],
     "The Batman Part II": [
+      "531f7e6205572add",
       "86fc4958aaa12fc0",
       "f4becd9a21ad841d",
       "4b87b12b41b456cc",
@@ -4709,10 +4943,27 @@
       "45a45f925229dbeb",
       "385bd54259627cec",
       "1b808de3f32a8bbb",
-      "d7d338b308be8c2d",
-      "20f508aba06c4a8f"
+      "d7d338b308be8c2d"
     ],
     "The Odyssey": [
+      "30682d1bf4dd35aa",
+      "a53d6c7d8350470a",
+      "97e56d311510f15e",
+      "1f502f05186ec421",
+      "596e6b845225b635",
+      "5a662d599ec7bb46",
+      "fd745582c5a798cc",
+      "462c3c243ea5f233",
+      "548197f04511e07e",
+      "b9408d64cbc8bee5",
+      "c96e3d2928082986",
+      "6e8c66798ddc50d2",
+      "a1ab6ab8da1a0b85",
+      "af79151aa6a60455",
+      "1aca23ba0616622c",
+      "009fb5e867dc4d3c",
+      "826ef727cb56ee5e",
+      "ec5658ea3a259991",
       "a5461800db0dc38c",
       "4ecb7e4a1b93cfe9",
       "e6e8ad38d04c5c19",
@@ -4794,25 +5045,7 @@
       "af54efc0fbac2bc8",
       "785a20dab7142ef4",
       "035b43ce7a7f431a",
-      "9a274258def5543d",
-      "755f76d3848fcdda",
-      "5fbf537c916019ca",
-      "c23b5d10883886dc",
-      "072b431b1a1b5af4",
-      "80d8d0f4ce3effd8",
-      "1a05cb4c7379123e",
-      "d441ea33d45dba4e",
-      "ddb499834a5575a3",
-      "225bd7051de68a1e",
-      "2cae0c9f1436de8b",
-      "67dcf14619835e27",
-      "d0790c8093f044a7",
-      "3ed007ba7999619c",
-      "4a9faa0969ec9ef6",
-      "4803096c9078d034",
-      "6293e911e09c62c0",
-      "85c280bc82798bf5",
-      "9dc4cbba1c39714b"
+      "9a274258def5543d"
     ]
   },
   "movie_release_dates": {
@@ -4865,6 +5098,15 @@
     "b4e5bca091f93858"
   ],
   "product_prices": {
+    "https://www.anker.com/products/a1259-built-in-cable-power-bank-10000mah": 49.99,
+    "https://www.anker.com/products/a1336-20000mah-power-bank": 139.99,
+    "https://www.anker.com/products/a82e2-240w-usb-c-to-usb-c-cable": 19.99,
+    "https://www.anker.com/products/a8346": 39.99,
+    "https://www.anker.com/products/a8392": 199.99,
+    "https://www.baseus.com/products/enerfill-fc41-digital-display-power-bank-20000mah-100w": 59.99,
+    "https://www.baseus.com/products/metal-gleam-series-9-in-1-usb-c-hub": 69.99,
+    "https://www.baseus.com/products/picogo-am52-qi2-2-magnetic-power-bank-10000mah-45w": 59.99,
+    "https://www.baseus.com/products/usb-c-to-usb-c-cable-100w": 7.99,
     "https://www.soundcore.com/products/d1203-liberty-5-pro-anc-earbuds-clear-calls": 169.99,
     "https://www.soundcore.com/products/d1204-liberty-5-pro-max-ai-recording-earbuds": 229.99,
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
@@ -4963,115 +5205,112 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "deals": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "energy": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "fda": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "fx": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "games": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "movies": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "music": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "quakes": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "twitch": {
-      "last_ok": "2026-06-11T03:37:30.134937+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "weather": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "wwdc": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     },
     "youtube": {
-      "last_ok": "2026-06-11T02:57:28.735665+00:00"
+      "last_ok": "2026-06-11T05:14:43.606428+00:00"
     }
   },
-  "twitch_live": [
-    "Sparg0",
-    "mkleossb"
-  ],
+  "twitch_live": [],
   "visa_f4_dates_for_filing": "22DEC09",
   "visa_f4_final_action": "08NOV08",
   "watchdog_alerted": {},
