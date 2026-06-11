@@ -82,6 +82,16 @@ Topics:
   articles older than `monitors.json` → `news.max_age_days` (default 14):
   Google News resurfaces months-old stories under brand-new URLs, which would
   otherwise slip past dedup and alert as "new".
+- **Golden Sun community tracker** — merges three sources into the same scored
+  news engine (`monitors.json` → `golden_sun` + `golden_sun_scoring`, no key):
+  the Golden Sun Universe wiki's news posts (read from goldensunwiki.net — the
+  old goldensununiverse.net domain is dead), the week's top r/GoldenSun posts
+  (the score-bearing JSON endpoint filtered to >50 upvotes when Reddit allows
+  it, else the top-of-week RSS as fallback), and a Google News "Golden Sun"
+  search. Remaster/Switch Online listings, official Nintendo/Camelot mentions,
+  and major ROM-hack releases push **live**; popular community posts and press
+  chatter buffer to the **daily digest**; memes, listicles, and speculation are
+  **dropped**. First run seeds silently.
 - **Twitch live** — for each handle in `monitors.json` → `twitch.streamers`,
   checks live status via decapi.me (no key) and pushes once per live session
   (with the game + stream title), re-arming after they go offline.
@@ -544,6 +554,7 @@ notify-watcher/
 │       ├── fuel.py                  DR weekly fuel prices (MICM notice PDF)
 │       ├── fx.py                    USD→DOP rate thresholds + weekly trend
 │       ├── games.py                 RAWG release dates + scored game news
+│       ├── golden_sun.py            Golden Sun wiki/reddit/news tracker
 │       ├── groceries.py             La Sirena/Nacional/Bravo weekly deals
 │       ├── habits.py                config-driven daytime habit nudges
 │       ├── health_tip.py            one evidence-based health tip per day
