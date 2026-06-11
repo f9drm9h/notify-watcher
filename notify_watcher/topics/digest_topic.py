@@ -22,7 +22,7 @@ import os
 
 import requests
 
-from .. import config, digest
+from .. import config, control, digest
 
 log = logging.getLogger(__name__)
 
@@ -98,5 +98,13 @@ def run(state: dict) -> dict:
     if (state.get(digest.BUFFER_KEY)
             and state.get(digest.LAST_SENT_KEY) != _dt.date.today().isoformat()):
         header = _weather_line(state)
-    digest.flush(state, config.section("digest"), header=header)
+    # Reply buttons: a fixed pair of 24h digest mutes (movies/games, the two
+    # chattiest topics). make_action returns None when the control channel is
+    # off, so the flush push is then byte-identical to before.
+    mutes = [a for a in (
+        control.make_action("Mute movies 24h", "MUTE:movies:24"),
+        control.make_action("Mute games 24h", "MUTE:games:24"),
+    ) if a]
+    digest.flush(state, config.section("digest"), header=header,
+                 actions=mutes or None)
     return state
