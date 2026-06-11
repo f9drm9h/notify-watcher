@@ -33,6 +33,8 @@
       { "topic": "quakes", "severity": "high", "score": 80 },
       { "topic": "fda", "severity": "critical", "score": 78 },
       { "topic": "reminders", "severity": "high", "score": 75 },
+      { "topic": "bills", "severity": "high", "score": 75 },
+      { "topic": "fuel", "severity": "high", "score": 75 },
       { "topic": "air_quality", "severity": "high", "score": 72 },
       { "topic": "watchdog", "score": 72 },
       { "topic": "fda", "severity": "high", "score": 70 },
@@ -63,11 +65,13 @@
 
       { "topic": "groceries", "severity": "high", "score": 64 },
       { "topic": "itsc", "score": 62 },
+      { "topic": "bills", "score": 62 },
 
       { "topic": "weather", "severity": "moderate", "score": 50 },
       { "topic": "wwdc", "score": 45 },
       { "topic": "reminders", "severity": "moderate", "score": 45 },
       { "topic": "fx", "score": 45 },
+      { "topic": "fuel", "score": 45 },
       { "topic": "holidays", "score": 45 },
       { "topic": "blood_donation", "score": 45 },
       { "topic": "deals", "severity": "moderate", "score": 42 },
@@ -166,6 +170,12 @@
     "quote": "DOP",
     "low": 57.0,
     "high": 61.0
+  },
+
+  "fuel": {
+    "_comment": "DR official weekly fuel prices (MICM 'Aviso Semanal' PDF; the old CNPE site no longer exists). One digest line per weekly notice; any fuel moving by push_pct percent or more week-over-week pushes live instead. page is the avisos listing URL.",
+    "page": "https://micm.gob.do/direcciones/combustibles/avisos-semanales-de-precios/avisos-semanales-de-precios-de-combustibles/",
+    "push_pct": 5.0
   },
 
   "twitch": {

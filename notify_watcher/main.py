@@ -23,12 +23,14 @@ from .topics import (
     astronomy,
     baseball,
     beach_day,
+    bills,
     blood_donation,
     deals,
     digest_topic,
     energy,
     energy_learn,
     fda,
+    fuel,
     fx,
     games,
     groceries,
@@ -128,6 +130,10 @@ TOPICS: list[tuple[str, Topic]] = [
     ("quakes", quakes.run),
     ("air_quality", air_quality.run),
     ("fx", fx.run),
+    # fuel: official DR weekly fuel prices (MICM notice PDF). A big week-over-
+    # week move pushes; ordinary weeks buffer one line to the digest, so it
+    # must run before digest_topic. Daily-only — prices change once a week.
+    ("fuel", fuel.run),
     # Timely alerters (run every cycle): imminent launches, ISS passes, and new
     # official Anthropic posts. Each seeds silently and dedups.
     ("launches", launches.run),
@@ -150,6 +156,9 @@ TOPICS: list[tuple[str, Topic]] = [
     # (populated by the collectors earlier this run) for its occasional news slot.
     ("energy_learn", energy_learn.run),
     ("reminders", reminders.run),
+    # bills: monthly utility-bill due-date reminders (reminders.json -> bills).
+    # Daily-only date math like reminders; pushes 5 days and 1 day before.
+    ("bills", bills.run),
     # recap is weekly: on the first daily run of each ISO week it summarizes the
     # past week's event log + topic health into one Monday-morning push.
     ("recap", recap.run),
