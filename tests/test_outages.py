@@ -1,4 +1,6 @@
-"""Tests for the EDESUR scheduled-outage watcher (notify_watcher.topics.outages)."""
+"""Tests for the scheduled-outage watcher (notify_watcher.topics.outages):
+EDEESTE's weekly PDF (primary — home is Hainamosa, Santo Domingo Este) and
+EDESUR's weekly HTML page (kept, off by default)."""
 from __future__ import annotations
 
 import datetime as dt
@@ -138,6 +140,116 @@ class DueTest(unittest.TestCase):
 
     def test_longer_lead_widens_the_window(self):
         self.assertTrue(outages._due(self.OUTAGE, dt.date(2026, 6, 7), lead_days=3))
+
+
+# --------------------------------------------------------------------------
+# EDEESTE: weekly PDF behind the WordPress download archive
+# --------------------------------------------------------------------------
+
+ARCHIVE_HTML = """
+<div class="media-body package-title">
+  <a href="https://edeeste.com.do/index.php/download/semana-08-junio/">Desde el Lunes 08 de Junio hasta el Domingo 14 Junio 2026</a>
+</div>
+<div class="media-body package-title">
+  <a href="https://edeeste.com.do/index.php/download/semana-01-junio/">Desde el Lunes 01 hasta el Domingo 07 de Junio 2026</a>
+</div>
+"""
+
+WEEK = (dt.date(2026, 6, 8), dt.date(2026, 6, 14))
+
+
+def _two_panel(rows: list[tuple[str, str]]) -> str:
+    """Lay rows out like the real PDF: left panel at column 0, right at 60."""
+    return "\n".join(f"{left:<60}{right}" for left, right in rows)
+
+
+# Mirrors the real PDF's hostile layout: side-by-side day panels, and the
+# right panel's header carries the WRONG month (mayo inside a June week) —
+# exactly what EDEESTE published for the June 8-14 PDF.
+PDF_TEXT = _two_panel([
+    ("LUNES 8 DE JUNIO DEL 2026",          "JUEVES 11 DE MAYO DEL 2026"),
+    ("SANTO DOMINGO  LOS MINA 69, NO 2",    "HAINAMOSA, NO 6    HAMO06"),
+    ("9:20 a.m.   3:20 p.m.   Borrador",    "9:20 a.m.    3:20 p.m."),
+    ("  ver jueves 11 de junio (nota)",     "Farallones, Villa Eloisa II"),
+    ("MARTES 9 DE JUNIO DEL 2026",          ""),
+    ("LA ROMANA, NO 3",                     ""),
+])
+
+
+class ParsePackagesTest(unittest.TestCase):
+    def test_extracts_links_and_titles_newest_first(self):
+        pkgs = outages._parse_packages(ARCHIVE_HTML)
+        self.assertEqual(len(pkgs), 2)
+        self.assertEqual(pkgs[0][0], "https://edeeste.com.do/index.php/download/semana-08-junio/")
+        self.assertEqual(pkgs[0][1], "Desde el Lunes 08 de Junio hasta el Domingo 14 Junio 2026")
+
+    def test_unrelated_html_yields_nothing(self):
+        self.assertEqual(outages._parse_packages("<html><body>hola</body></html>"), [])
+
+
+class ParseWeekRangeTest(unittest.TestCase):
+    def test_month_named_twice(self):
+        self.assertEqual(
+            outages._parse_week_range("Desde el Lunes 08 de Junio hasta el Domingo 14 Junio 2026"),
+            (dt.date(2026, 6, 8), dt.date(2026, 6, 14)))
+
+    def test_month_named_once(self):
+        self.assertEqual(
+            outages._parse_week_range("Desde el Lunes 04 hasta el Domingo 10 de Mayo 2026"),
+            (dt.date(2026, 5, 4), dt.date(2026, 5, 10)))
+
+    def test_new_year_week_rolls_the_start_back(self):
+        self.assertEqual(
+            outages._parse_week_range("Desde el Lunes 29 de Diciembre hasta el Domingo 04 de Enero 2026"),
+            (dt.date(2025, 12, 29), dt.date(2026, 1, 4)))
+
+    def test_garbage_is_none(self):
+        self.assertIsNone(outages._parse_week_range("Programa de mantenimiento"))
+        self.assertIsNone(outages._parse_week_range(""))
+
+
+class ResolveDayTest(unittest.TestCase):
+    def test_day_number_beats_the_month_word(self):
+        # The whole point: a "JUEVES 11 DE MAYO" header inside the June 8-14
+        # PDF must resolve to June 11.
+        self.assertEqual(outages._resolve_day(11, *WEEK), dt.date(2026, 6, 11))
+
+    def test_day_outside_the_week_is_none(self):
+        self.assertIsNone(outages._resolve_day(20, *WEEK))
+
+
+class ScanPdfTextTest(unittest.TestCase):
+    def test_zone_found_with_date_from_day_number_and_window(self):
+        hits = outages._scan_pdf_text(PDF_TEXT, *WEEK, zones=["Hainamosa"])
+        self.assertEqual(hits, [{
+            "date": dt.date(2026, 6, 11),  # despite the "mayo" header
+            "zone": "Hainamosa",
+            "window": "9:20 a.m. a 3:20 p.m.",
+        }])
+
+    def test_matching_is_accent_and_case_insensitive(self):
+        hits = outages._scan_pdf_text(PDF_TEXT, *WEEK, zones=["haïnamosa"])
+        self.assertEqual(len(hits), 1)
+
+    def test_day_mention_in_body_text_does_not_open_a_section(self):
+        # "ver jueves 11 de junio (nota)" sits indented inside Monday's
+        # section; only Hainamosa's real (right-panel) section may match.
+        hits = outages._scan_pdf_text(PDF_TEXT, *WEEK, zones=["Los Mina"])
+        self.assertEqual([h["date"] for h in hits], [dt.date(2026, 6, 8)])
+
+    def test_unwatched_zone_yields_nothing(self):
+        self.assertEqual(outages._scan_pdf_text(PDF_TEXT, *WEEK, zones=["Gualey"]), [])
+
+
+class EdeesteKeyTest(unittest.TestCase):
+    def test_key_is_stable_and_fold_insensitive(self):
+        d = dt.date(2026, 6, 11)
+        self.assertEqual(outages._edeeste_key(d, "Hainamosa"),
+                         outages._edeeste_key(d, "HAINAMOSA"))
+
+    def test_different_day_different_key(self):
+        self.assertNotEqual(outages._edeeste_key(dt.date(2026, 6, 10), "Hainamosa"),
+                            outages._edeeste_key(dt.date(2026, 6, 11), "Hainamosa"))
 
 
 if __name__ == "__main__":
