@@ -53,6 +53,11 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}        # AI summary (optional)
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}  # AI summary fallback (optional)
           NASA_API_KEY: ${{ secrets.NASA_API_KEY }}  # APOD picture (optional; DEMO_KEY without)
+          # Spending tracker (optional): Gmail IMAP credentials for the BHD
+          # transaction-alert poll. PRIVACY: parsed transactions are committed
+          # to data/spending.json - only set these once the repo is PRIVATE.
+          GMAIL_USER: ${{ secrets.GMAIL_USER }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           # Empty on schedule; "1" only when manually dispatched with test_push.
           NOTIFY_TEST_PUSH: ${{ inputs.test_push && '1' || '' }}
           # Force the daily work (digest/health tip/learn) on a manual run with
@@ -69,13 +74,18 @@ jobs:
 
       - name: Commit updated state + dashboard (if changed)
         run: |
-          if git diff --quiet -- state.json docs/dashboard; then
-            echo "state.json and dashboard unchanged, nothing to commit"
+          # data/spending.json is created by the spending topic on the runner,
+          # so it must ride the state commit or every run re-parses from scratch.
+          # git status --porcelain (unlike git diff) also sees it while untracked.
+          if git diff --quiet -- state.json docs/dashboard \
+             && [ -z "$(git status --porcelain -- data/spending.json)" ]; then
+            echo "state.json, dashboard and spending log unchanged, nothing to commit"
             exit 0
           fi
           git config user.name  "notify-watcher-bot"
           git config user.email "actions@users.noreply.github.com"
           git add state.json docs/dashboard
+          if [ -f data/spending.json ]; then git add data/spending.json; fi
           git commit -m "chore: update state + dashboard [skip ci]"
           # Push with rebase-and-retry: if a concurrent/queued run advanced the
           # branch between checkout and now, a bare push is rejected (non-fast-
