@@ -22,16 +22,6 @@
       "due_day": 22
     },
     {
-      "id": "edeeste",
-      "name": "EDEESTE electricity bill",
-      "due_day": 25,
-      "note": "PLACEHOLDER due_day - check a real bill. Pay online at oficinavirtual.edeeste.com.do or via banking app."
-    },
-    {
-      "id": "caasd",
-      "name": "CAASD water bill (agua)",
-      "due_day": 20,
-      "note": "PLACEHOLDER due_day - check a real bill. Pay at oficinavirtual.caasd.gob.do or via banking app."
     }
   ]
 }
