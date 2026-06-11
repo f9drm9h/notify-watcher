@@ -38,6 +38,7 @@
       { "topic": "twitch", "score": 68 },
       { "topic": "games", "severity": "critical", "score": 66 },
       { "topic": "games", "severity": "high", "score": 64 },
+      { "topic": "baseball", "severity": "high", "score": 64 },
       { "topic": "movies", "severity": "critical", "score": 64 },
       { "topic": "anthropic_news", "score": 64 },
       { "topic": "habits", "score": 64 },
@@ -64,6 +65,7 @@
       { "topic": "blood_donation", "score": 45 },
       { "topic": "deals", "severity": "moderate", "score": 42 },
       { "topic": "uv", "score": 40 },
+      { "topic": "baseball", "severity": "low", "score": 40 },
       { "topic": "quakes", "severity": "moderate", "score": 40 },
       { "topic": "fda", "severity": "moderate", "score": 40 },
       { "topic": "ios_release", "score": 40 },
@@ -131,6 +133,22 @@
   "twitch": {
     "_comment": "Streamers to watch for going live (via decapi.me, no key). One push per live session; re-arms after they go offline.",
     "streamers": ["RiddlesMK", "mkleossb", "elcodo22", "Sparg0", "Acola_lui", "ouchbc"]
+  },
+
+  "baseball": {
+    "_comment": "Dominican baseball via the free MLB Stats API (statsapi.mlb.com, no key). monitored_teams: the MLB clubs whose previous-day final scores land in the morning digest, e.g. 'Dodgers 5 - Cubs 3 (W)'; team_name is the display name used in that line — find ids at https://statsapi.mlb.com/api/v1/teams?sportId=1. (LIDOM winter-league clubs like Tigres del Licey publish no free API, so MLB clubs are the default. The legacy single team_id/team_name keys still work when monitored_teams is absent.) dominican_players: MLB players (person_id = MLB Stats API id) who get a LIVE push for a milestone game — a home run, 3+ hits, or 3+ RBI — once per game. Both checks skip silently in the off-season.",
+    "monitored_teams": [
+      { "team_id": 141, "team_name": "Blue Jays" },
+      { "team_id": 147, "team_name": "Yankees" },
+      { "team_id": 119, "team_name": "Dodgers" }
+    ],
+    "dominican_players": [
+      { "person_id": 665489, "name": "Vladimir Guerrero Jr." },
+      { "person_id": 665742, "name": "Juan Soto" },
+      { "person_id": 665487, "name": "Fernando Tatis Jr." },
+      { "person_id": 682829, "name": "Elly De La Cruz" },
+      { "person_id": 646240, "name": "Rafael Devers" }
+    ]
   },
 
   "youtube": {
