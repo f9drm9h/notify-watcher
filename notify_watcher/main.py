@@ -52,6 +52,7 @@ from .topics import (
     recap,
     reminders,
     soundcore_pro,
+    spending,
     twitch,
     uv,
     visa_bulletin,
@@ -164,6 +165,10 @@ TOPICS: list[tuple[str, Topic]] = [
     # bills: monthly utility-bill due-date reminders (reminders.json -> bills).
     # Daily-only date math like reminders; pushes 5 days and 1 day before.
     ("bills", bills.run),
+    # spending ingests BHD transaction emails every cycle (no-op without the
+    # GMAIL_* secrets) and pushes a weekly summary on the first daily run of
+    # each ISO week, like recap.
+    ("spending", spending.run),
     # recap is weekly: on the first daily run of each ISO week it summarizes the
     # past week's event log + topic health into one Monday-morning push.
     ("recap", recap.run),
