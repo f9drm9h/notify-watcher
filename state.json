@@ -74,7 +74,15 @@
   "control": {
     "last_id": "VWhYsEtWZKfd"
   },
-  "digest_buffer": [],
+  "digest_buffer": [
+    {
+      "detail": "",
+      "score": 62,
+      "source": "Avengers: Doomsday",
+      "title": "Fan Detective Work May Have Uncovered \u2018Avengers: Doomsday\u2019 Trailer Release Date - Murphy's Multiverse",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSzdqaTZYN1B3VUVQS3JDVXV2Sl9YOUhkamtrUUctZHo0Y0htWG9pcy1DWEZobjBtekZHaVZFODdIc3pDT2ZHd3ZvQVpzOThmZjQ2YUljbTVQZks2TXVaMlZlaU9xamlyc1VzWFZPNy1wWlVVdGRFMlc3Mkh6NHNxS25DYjVreDVzOW4xMklxQ2JmNEdqTXBvek5OODdRd0owdlBJQ0ZRdXNRUThscTFVRg?oc=5"
+    }
+  ],
   "digest_last_sent": "2026-06-12",
   "energy_learn_last_news": "2026-06-10",
   "energy_learn_last_sent": "2026-06-12",
@@ -182,39 +190,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel makes the Avengers: Doomsday announcement nobody wanted to hear - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-09T19:38:24.209199+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBVWXlEbjZhTHAyNUlldWdYdUhTT2pwamh1ZDhpODMtOXhuVFM1SlRSRDlkU3dCdFJrcUFiU0lzOXE1QXQ2TkdMOGU2UTNXZVRvekVBYjY0WndrMHpiU25wREFad1k1UG8?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "David Harbour Gives Honest 'Avengers: Doomsday' Reaction After Test Screening Rumors [Exclusive] - Collider",
-      "topic": "movies",
-      "ts": "2026-06-09T19:38:24.209541+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNbHF1R2RCUGU5bWlPclk3XzhVT1liT3c5NThwNm9abUVOMGxhWjUtWmV3UHBDN3c4S1VTY2hrYWltNEd5NzFJM3E4TXhpWGVia0ZaQkRhNXFPTGRSLVJsczRVQkc5MjdLX1ZSY3NwTXRsUVRqVVpLYk5zNXVCTFMtNk55cUEyYmhKS3V2eFdRb3ZPenlUQ29tTnVHcll2Zw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "'I Don't Think We're Getting the Trailer': Today's Big Avengers: Doomsday Tease Appears to Be For a Coffee Shop Pop-Up - IGN",
-      "topic": "movies",
-      "ts": "2026-06-09T19:38:24.209763+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQOFJxQWxzaDY5SnVwTnJXcWRjb09kQ0RsdWFKbE1TbXIxMThxemhwZ0hkeTg1a21MWHl4WmczUkZMS1NIeVNTOURrc1hrZkFmanREcXBzcnFmVzBlVnRmN0NwV2R0ZTFWZHJsQTFHTmlzcUU5a3lNYWNyOFJ3Q2xEc0pxVFZtM3dIbmNxNWRmTGZoNnJjTzd5d05ULS1EZFh2UldUdFV2VXpHaXlKMnotTWNSU1ZObmlPTUREeElTdTY4SFpq?oc=5"
-    },
     {
       "action": "push",
       "detail": "",
@@ -5681,6 +5656,39 @@
       "topic": "itsc",
       "ts": "2026-06-12T06:23:31.880305+00:00",
       "url": "https://www.itsc.edu.do/wp-content/uploads/2026/05/Calendario-academico-2026-2-MAYO-AGOSTO-_-Actualizado_.pdf"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Fan Detective Work May Have Uncovered \u2018Avengers: Doomsday\u2019 Trailer Release Date - Murphy's Multiverse",
+      "topic": "movies",
+      "ts": "2026-06-12T07:18:50.567931+00:00",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSzdqaTZYN1B3VUVQS3JDVXV2Sl9YOUhkamtrUUctZHo0Y0htWG9pcy1DWEZobjBtekZHaVZFODdIc3pDT2ZHd3ZvQVpzOThmZjQ2YUljbTVQZks2TXVaMlZlaU9xamlyc1VzWFZPNy1wWlVVdGRFMlc3Mkh6NHNxS25DYjVreDVzOW4xMklxQ2JmNEdqTXBvek5OODdRd0owdlBJQ0ZRdXNRUThscTFVRg?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Sony Officially Responds To Spider-Man Brand New Day Trailer 2 Leaks - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-12T07:18:51.119944+00:00",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBnU3p0anVfaWdQZ0xiaFJnbldqN1BoQ3FRNGlrR1dlYnpEaHBvM3JFX1c0REhXVHFGWHdSbnBObG5JQnFBam1IR2ZmVDFlNEFBUEc1WkxDeGg3Vmc2Yms3b1pLdGJ3OEU1S3VMX2VtM3JnOVF5UlR1eEM5RG1kQQ?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day Trailer Leak Confirmed: Sony DMCA Backfires, June 17 Event Stands - Tech Times",
+      "topic": "movies",
+      "ts": "2026-06-12T07:18:51.120423+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdU1XUEJyY09PamtpMzd3dHQzSWUya3hSRHJaVGIzSDJPbDF3VDVqQWlCblBqWlZqNDZBaUs0RHVzLTFiVW91OEhuZ3JIaVRWd0lUMUpvNUZxVkQ5eVl2dG5yTm5ubWc2SmJFSUx4bEJ3elZobzVBa1p2NGs0dUx3UjM4akw3S1JlZno3REdYQzE2Qm5JZGVEQU9wR1BHOVhreWd3UHpvSURVN1NlSzFXQzlxQmI3dUxvckhYMTdVby1BYXNOOTdPLUdYMm9SdU1mSHFhMW83ak9UaHM?oc=5"
     }
   ],
   "fda_seen_ids": [
@@ -6308,8 +6316,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-06-12T06:34:33.851520+00:00"
+    "ok": 43,
+    "ts": "2026-06-12T07:18:47.434269+00:00"
   },
   "launch_seen_ids": [
     "4cc755b9dfaf231c",
@@ -6320,6 +6328,12 @@
   "learn_last_sent": "2026-06-12",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "914f75dc351f3bd0",
+      "308e6637524fa96f",
+      "cb592435e3d10e99",
+      "c5ec18dbea541e73",
+      "4d0cc35a2b483935",
+      "ca07082003399bce",
       "044eed6030561107",
       "ae04897e16bef83c",
       "9a9d458bb3c33ae8",
@@ -6413,13 +6427,7 @@
       "1e917215f87d5e5f",
       "d3c69ef2b5989842",
       "e6929969bbca3566",
-      "752177a84c3afc66",
-      "d8ec595210d9dd57",
-      "d7381c957ade669a",
-      "c57e3083d29332ed",
-      "354d52eb2be21c81",
-      "80b02d3585666a31",
-      "b39c3e92489d9066"
+      "752177a84c3afc66"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -6621,6 +6629,15 @@
       "b2f005934ccd795b"
     ],
     "Spider-Man: Brand New Day": [
+      "497ced80ac7be251",
+      "4bc9b337f2ef64ab",
+      "26e979b22cb4d13a",
+      "993f7f04139c708e",
+      "b4240febd20d157c",
+      "da5f6cb4e3398d96",
+      "146eac9a71d871f3",
+      "4e685f8fef05f59f",
+      "cab56770482c0136",
       "6b70758f3d5fbfcc",
       "60ff06272a5aaa4a",
       "f13b87bebeb23517",
@@ -6711,16 +6728,7 @@
       "c750f7fc23883527",
       "2a4b1ba7bf62a02b",
       "48204ef1bab46780",
-      "8fcf25e8b00049ba",
-      "57abe8317bc2e553",
-      "bb15fb973d5fb4bc",
-      "52d4830342f9eb25",
-      "fae1d919adffcd9c",
-      "90a78ec234ed7efc",
-      "406c56a21fbaabdb",
-      "336b77d9e2503466",
-      "9a9e9e97b8aa1338",
-      "5dec8b2bb91a6c9f"
+      "8fcf25e8b00049ba"
     ],
     "The Batman Part II": [
       "d17558fa744e04ee",
@@ -6825,6 +6833,14 @@
       "cfa7ef7a1ae0383c"
     ],
     "The Odyssey": [
+      "172aeeb66df74fb1",
+      "17db8bcb46af9cbe",
+      "1f5e65219415d596",
+      "50735e0491fb30a0",
+      "e5852db12a0e426d",
+      "075a57ea9802f908",
+      "1ea416168e2a8ea8",
+      "36815071d9f97d4e",
       "b4ee9d24a2770ace",
       "755f76d3848fcdda",
       "6293e911e09c62c0",
@@ -6916,15 +6932,7 @@
       "e73162899617564a",
       "8665f8d3bd0619fc",
       "6b9afbfe9f18b866",
-      "48c502eb1fa4bfaa",
-      "db71598c7c440c80",
-      "c6e831ef63821cad",
-      "6ebbce3fb83b99a6",
-      "d06bf3f86b13a649",
-      "2d0305582e06751a",
-      "c25ba8deccbfa9c4",
-      "50bfc1d4f55a78d1",
-      "9980ffe468eef693"
+      "48c502eb1fa4bfaa"
     ]
   },
   "movie_release_dates": {
@@ -7193,133 +7201,133 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "deals": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "energy": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "fda": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "fuel": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "fx": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "games": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "golden_sun": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "groceries": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "movies": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "music": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "onamet": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "outages": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "quakes": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "twitch": {
-      "last_ok": "2026-06-12T06:34:33.851520+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "weather": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "wwdc": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     },
     "youtube": {
-      "last_ok": "2026-06-12T06:21:44.930194+00:00"
+      "last_ok": "2026-06-12T07:18:47.434269+00:00"
     }
   },
   "twitch_live": [
