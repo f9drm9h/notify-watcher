@@ -374,7 +374,15 @@
   "digest": {
     "max_buffer": 120,
     "max_per_source": 4,
-    "max_items_in_message": 30
+    "max_items_in_message": 30,
+    "briefing": {
+      "_comment": "AI morning briefing (docs/design/05) rendered above the item list, via summarize.brief (Gemini -> Anthropic, both optional). Any failure or enabled=false sends exactly the plain digest; raw items always survive in the event log + dashboard. max_items_with_briefing caps the visible list when the briefing is present (ntfy ~4KB).",
+      "enabled": true,
+      "max_chars": 900,
+      "max_items_in_prompt": 30,
+      "max_items_with_briefing": 10
+    },
+    "follow_button": true
   },
 
   "golden_sun_scoring": {
