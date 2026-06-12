@@ -76,13 +76,16 @@ class ParseTransactionsTest(unittest.TestCase):
         self.assertEqual(txs[0]["merchant"], "CLARO RECAR")
 
 
-# Mirrors the REAL BHD alert verified against a user screenshot (2026-06-11):
-# banner + prose rows sit ABOVE the header row inside the same table, the date
-# is 12-hour with a lowercase meridiem, and the Comercio cell carries a
-# reference/phone number on a second line under the merchant name.
+# Mirrors the REAL BHD alert verified against live emails (2026-06-11):
+# the transaction table is NESTED inside a wrapper table, banner + prose rows
+# sit ABOVE the header row inside the same table, the date is 12-hour with a
+# lowercase meridiem, and the Comercio cell carries a reference/phone number
+# after the merchant name (inline in the live emails, sometimes on a second
+# line).
 REAL_HTML = """
 <html><body>
 <table><tr><td><img src="bhd-logo.png"></td></tr></table>
+<table><tr><td>
 <table>
   <tr><td colspan="6">BHD Notificaci&oacute;n de Transacciones</td></tr>
   <tr><td colspan="6">Visa D&eacute;bito Intl # 8252</td></tr>
@@ -97,9 +100,10 @@ REAL_HTML = """
   </tr>
   <tr>
     <td>11/06/2026 01:48 pm</td><td>RD</td><td>$250.00</td>
-    <td>CLARO RECAR<br>8099048592</td><td>Aprobada</td><td>Compra</td>
+    <td>CLARO RECAR 8099048592</td><td>Aprobada</td><td>Compra</td>
   </tr>
 </table>
+</td></tr></table>
 </body></html>
 """
 
@@ -107,16 +111,30 @@ REAL_HTML = """
 class RealEmailFormatTest(unittest.TestCase):
     """The parser must handle the real alert layout, not just the guessed one."""
 
-    def test_parses_the_real_alert(self):
+    def test_parses_the_real_alert_exactly_once(self):
+        # Exactly ONE dict: the wrapper table around the transaction table
+        # must not yield a second copy of the same row.
         txs = sp._parse_transactions(REAL_HTML)
         self.assertEqual(txs, [{
             "date": "2026-06-11T13:48:00",  # 01:48 pm -> 13:48
             "amount": 250.0,
             "currency": "DOP",
-            "merchant": "CLARO RECAR",  # reference line dropped
+            "merchant": "CLARO RECAR",  # trailing reference number dropped
             "type": "Compra",
             "source": "bhd_email",
         }])
+
+    def test_merchant_reference_on_second_line_also_dropped(self):
+        html = REAL_HTML.replace("CLARO RECAR 8099048592",
+                                 "CLARO RECAR<br>8099048592")
+        self.assertEqual(sp._parse_transactions(html)[0]["merchant"],
+                         "CLARO RECAR")
+
+    def test_merchant_with_short_number_is_kept_whole(self):
+        # Only LONG digit runs are references; "TIENDA 123" stays intact.
+        html = REAL_HTML.replace("CLARO RECAR 8099048592", "TIENDA 123")
+        self.assertEqual(sp._parse_transactions(html)[0]["merchant"],
+                         "TIENDA 123")
 
     def test_prose_row_mentioning_fecha_and_monto_is_not_the_header(self):
         # A single-cell row containing both keywords must not be mistaken for
