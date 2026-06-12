@@ -20,10 +20,23 @@ from __future__ import annotations
 
 import logging
 
+from . import ids
+
 log = logging.getLogger(__name__)
 
 EVENT_LOG_KEY = "event_log"
 _DEFAULT_MAX = 500
+
+
+def entry_id(event) -> str:
+    """Deterministic short id for one routed Event (timestamp + topic + title).
+
+    Item-level reply buttons (READ/MORE/LATER, see docs/design/05) carry this
+    id and the control channel resolves it back against the log, so the SAME
+    function must produce the id at button-build time (events.emit) and at
+    record time — hashing the frozen Event fields guarantees that.
+    """
+    return ids.short(f"{event.timestamp}|{event.topic}|{event.title}")
 
 
 def _cap(cfg: dict | None) -> int:
@@ -47,6 +60,7 @@ def record(state: dict, event, action: str, score: int, cfg: dict | None = None)
     the dashboard shows HOW a value moved with no extra plumbing.
     """
     entry = {
+        "id": entry_id(event),
         "ts": event.timestamp,
         "topic": event.topic,
         "title": event.title,

@@ -41,6 +41,9 @@ log = logging.getLogger(__name__)
 # breakthrough -> "critical", high -> "high", moderate -> "moderate".
 SEVERITIES = ("info", "low", "moderate", "high", "critical")
 
+# ntfy renders at most three action buttons per notification.
+MAX_BUTTONS = 3
+
 
 @dataclass(frozen=True)
 class Event:
@@ -56,6 +59,83 @@ class Event:
 
 def _now_iso() -> str:
     return _dt.datetime.now(_dt.timezone.utc).isoformat()
+
+
+def _later_label(minutes: int) -> str:
+    """Human label for a LATER button: 'Remind 3h' / '1d' / '45m'."""
+    if minutes % 1440 == 0:
+        return f"Remind {minutes // 1440}d"
+    if minutes % 60 == 0:
+        return f"Remind {minutes // 60}h"
+    return f"Remind {minutes}m"
+
+
+def _spec_action(spec: str, event_id: str) -> Optional[dict]:
+    """One declarative button spec -> a concrete ntfy action, or None.
+
+    Specs are the small vocabulary topics (and ``control.default_buttons``
+    config) use to request item-level buttons without knowing the event id:
+
+        "read"        -> [Read later]  READ:<event_id>
+        "more"        -> [Show more]   MORE:<event_id>
+        "later:180"   -> [Remind 3h]   LATER:<event_id>:180
+
+    Unknown or malformed specs return None (skipped with a log line) so a
+    config typo can never break a push, and ``control.make_action`` returns
+    None when the control channel is off — both fail closed to "no button".
+    """
+    try:
+        if spec == "read":
+            return control.make_action("Read later", f"READ:{event_id}")
+        if spec == "more":
+            return control.make_action("Show more", f"MORE:{event_id}")
+        if spec.startswith("later:"):
+            minutes = int(spec.split(":", 1)[1])
+            if minutes > 0:
+                return control.make_action(
+                    _later_label(minutes), f"LATER:{event_id}:{minutes}")
+    except (ValueError, AttributeError):
+        pass
+    log.warning("ignoring unknown button spec %r", spec)
+    return None
+
+
+def _build_actions(event: Event) -> Optional[list]:
+    """Assemble the push's action buttons (explicit + declarative + defaults).
+
+    Three sources, in priority order under the hard ntfy cap of MAX_BUTTONS:
+
+      1. ``metadata["actions"]``  — fully-built v1 actions (habits' Done,
+         reminders' Snooze). Forwarded untouched, always first.
+      2. ``metadata["buttons"]``  — declarative specs from the topic, expanded
+         with this event's log id (see _spec_action).
+      3. ``control.default_buttons[topic]`` from monitors.json — per-topic
+         default specs, so giving every news push a [Read later] is a config
+         edit, not a code change across topics.
+
+    Returns None when nothing applies, keeping buttonless pushes
+    byte-identical to before. Config errors fail closed to "no defaults".
+    """
+    explicit = list(event.metadata.get("actions") or [])
+    specs = list(event.metadata.get("buttons") or [])
+    try:
+        defaults = (config.section("control").get("default_buttons") or {})
+        for spec in defaults.get(event.topic) or []:
+            if spec not in specs:
+                specs.append(spec)
+    except Exception:  # noqa: BLE001 - bad config must never block a push
+        pass
+
+    actions = explicit[:MAX_BUTTONS]
+    if specs and len(actions) < MAX_BUTTONS:
+        event_id = eventlog.entry_id(event)
+        for spec in specs:
+            if len(actions) >= MAX_BUTTONS:
+                break
+            action = _spec_action(str(spec), event_id)
+            if action:
+                actions.append(action)
+    return actions or None
 
 
 def _push(event: Event, ntfy_priority: Optional[str]) -> None:
@@ -74,10 +154,10 @@ def _push(event: Event, ntfy_priority: Optional[str]) -> None:
     else:
         title = event.title
         message = event.body
-    # Reply buttons ride metadata["actions"] just like click_url/attach_url, so
-    # any topic can attach them via emit(). Forwarded only when present, so a
-    # buttonless push stays byte-identical to before.
-    actions = event.metadata.get("actions") or None
+    # Reply buttons: explicit metadata["actions"] (v1) plus declarative specs
+    # and config defaults, capped at ntfy's three (see _build_actions). A push
+    # with none of those stays byte-identical to before.
+    actions = _build_actions(event)
     ntfy.push(
         title=title,
         message=message,

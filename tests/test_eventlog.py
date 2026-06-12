@@ -38,8 +38,10 @@ def _event(topic="games", title="t", body="b", source="RAWG", click=""):
 class RecordShapeTest(unittest.TestCase):
     def test_record_captures_normalized_event_plus_decision(self):
         state: dict = {}
-        eventlog.record(state, _event(click="https://x/1"), "push", 95)
+        ev = _event(click="https://x/1")
+        eventlog.record(state, ev, "push", 95)
         self.assertEqual(state[eventlog.EVENT_LOG_KEY], [{
+            "id": eventlog.entry_id(ev),
             "ts": "2026-06-08T14:00:00+00:00",
             "topic": "games",
             "title": "t",
@@ -50,6 +52,15 @@ class RecordShapeTest(unittest.TestCase):
             "detail": "b",          # the Event body -> change-summary line
             "url": "https://x/1",
         }])
+
+    def test_entry_id_is_deterministic_and_short(self):
+        # Buttons are built from the id BEFORE record runs (events.emit), so
+        # the same Event must always hash to the same 16-hex-char id.
+        a, b = eventlog.entry_id(_event()), eventlog.entry_id(_event())
+        self.assertEqual(a, b)
+        self.assertRegex(a, r"^[0-9a-f]{16}$")
+        # ...and a different title/topic/ts yields a different id.
+        self.assertNotEqual(a, eventlog.entry_id(_event(title="other")))
 
     def test_url_defaults_to_empty_when_no_click(self):
         state: dict = {}
