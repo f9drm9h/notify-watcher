@@ -121,6 +121,96 @@ class FlushHeaderTest(unittest.TestCase):
         self.assertTrue(sent[0]["message"].startswith("ENERGY"))
 
 
+class BriefingTest(unittest.TestCase):
+    """digest_topic._briefing: prompt building, gating, truncation, fallback."""
+
+    BCFG = {"briefing": {"enabled": True, "max_chars": 60,
+                         "max_items_in_prompt": 2}}
+    BUF = [
+        {"title": "small", "score": 10, "topic": "movies", "detail": ""},
+        {"title": "big", "score": 90, "topic": "fda", "detail": "approved"},
+        {"title": "mid", "score": 50, "topic": "games", "detail": ""},
+    ]
+
+    def _briefing(self, state, cfg=None, ai=lambda system, user: "line1\nline2"):
+        with mock.patch.object(digest_topic.config, "section",
+                               return_value=self.BCFG if cfg is None else cfg), \
+                mock.patch.object(digest_topic.summarize, "brief",
+                                  side_effect=ai) as brief:
+            return digest_topic._briefing(state), brief
+
+    def test_prompt_is_ranked_and_capped(self):
+        _, brief = self._briefing({"digest_buffer": list(self.BUF)})
+        prompt = brief.call_args.args[1]
+        self.assertEqual(prompt.splitlines(), [
+            "[90] fda: big - approved",   # top score first, detail appended
+            "[50] games: mid",            # max_items_in_prompt=2 cut here
+        ])
+        self.assertIn("morning briefing", brief.call_args.args[0])
+
+    def test_disabled_or_missing_section_returns_none(self):
+        out, brief = self._briefing({"digest_buffer": list(self.BUF)},
+                                    cfg={"briefing": {"enabled": False}})
+        self.assertIsNone(out)
+        out, brief = self._briefing({"digest_buffer": list(self.BUF)}, cfg={})
+        self.assertIsNone(out)
+        brief.assert_not_called()
+
+    def test_ai_failure_returns_none(self):
+        out, _ = self._briefing({"digest_buffer": list(self.BUF)},
+                                ai=lambda *a, **k: None)
+        self.assertIsNone(out)
+
+    def test_truncates_at_line_boundary(self):
+        long = "x" * 50 + "\n" + "y" * 50
+        out, _ = self._briefing({"digest_buffer": list(self.BUF)},
+                                ai=lambda *a, **k: long)
+        self.assertEqual(out, "x" * 50)  # cut at the newline before max_chars
+
+    def test_empty_buffer_returns_none(self):
+        out, brief = self._briefing({})
+        self.assertIsNone(out)
+        brief.assert_not_called()
+
+
+class FlushBriefingTest(unittest.TestCase):
+    def _state(self, n=3):
+        state: dict = {}
+        for i in range(n):
+            digest.add(state, {"title": f"item{i}", "source": "S",
+                               "score": i, "topic": "movies"}, {})
+        return state
+
+    def test_briefing_renders_between_header_and_items(self):
+        state = self._state()
+        with capture_pushes() as sent:
+            digest.flush(state, {}, header="Today: 31 C",
+                         briefing="Big day for movies.")
+        body = sent[0]["message"]
+        self.assertLess(body.index("Today: 31 C"), body.index("Big day"))
+        self.assertLess(body.index("Big day"), body.index("All items:"))
+        self.assertIn("item2", body)
+        self.assertEqual(state[digest.BUFFER_KEY], [])  # cleared after send
+
+    def test_briefing_caps_visible_items_via_config(self):
+        state = self._state(n=4)
+        cfg = {"briefing": {"max_items_with_briefing": 2}}
+        with capture_pushes() as sent:
+            digest.flush(state, cfg, briefing="b")
+        body = sent[0]["message"]
+        self.assertIn("item3", body)      # top scores survive
+        self.assertIn("item2", body)
+        self.assertNotIn("item1", body)   # trimmed under the briefing cap
+        self.assertIn("(+2 more)", body)
+
+    def test_no_briefing_is_byte_identical_to_before(self):
+        state = self._state()
+        with capture_pushes() as sent:
+            digest.flush(state, {"briefing": {"max_items_with_briefing": 1}})
+        self.assertNotIn("All items:", sent[0]["message"])
+        self.assertIn("item0", sent[0]["message"])  # cap NOT applied
+
+
 class FollowButtonTest(unittest.TestCase):
     BUF = [
         {"title": "a", "score": 10, "topic": "movies"},
