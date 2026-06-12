@@ -221,11 +221,8 @@
   },
 
   "youtube": {
-    "_comment": "Channels to watch for new uploads via the free per-channel Atom feed (no key). Each entry needs channel_id (the 'UC...' id from the channel page URL or its source - NOT the @handle) and a display name used in the notification. One push per new upload; the first sight of each channel seeds its current uploads silently. The entries below are placeholders - replace them with channels you follow.",
+    "_comment": "Channels to watch for new uploads via the free per-channel Atom feed (no key). Each entry needs channel_id (the 'UC...' id from the channel page URL or its source - NOT the @handle) and a display name used in the notification. One push per new upload; the first sight of each channel seeds its current uploads silently. Curated 2026-06: the stock placeholder channels (Linus Tech Tips, Marques Brownlee, Fireship) were pruned after they alerted on videos the user never asked for - this list is now the user's actual subscriptions.",
     "channels": [
-      { "channel_id": "UCXuqSBlHAE6Xw-yeJA0Tunw", "name": "Linus Tech Tips" },
-      { "channel_id": "UCBJycsmduvYEL83R_U4JriQ", "name": "Marques Brownlee" },
-      { "channel_id": "UCsBjURrPoezykLs9EqgamOA", "name": "Fireship" },
       { "channel_id": "UCcqcWFtrp3tpUlfqj0phH3A", "name": "MIGALA666" },
       { "channel_id": "UCvAR_BDFclXJ1Q9ndUhWLCA", "name": "MKLeo17" },
       { "channel_id": "UCeqwEzPy8tgfk11OXaUCOpw", "name": "sparg0147" },
