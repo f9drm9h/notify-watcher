@@ -252,5 +252,42 @@ class EdeesteKeyTest(unittest.TestCase):
                             outages._edeeste_key(dt.date(2026, 6, 11), "Hainamosa"))
 
 
+class HealthContractTest(unittest.TestCase):
+    """run() aggregates per-source outcomes into one health report."""
+
+    EDEESTE_CFG = {"edeeste": {"zones": ["Hainamosa"]}}
+
+    def test_unconfigured_makes_no_claim(self):
+        from unittest import mock
+        from notify_watcher import health
+        with mock.patch.object(outages.config, "section", return_value={}):
+            state = outages.run({})
+        self.assertNotIn(health.STATUS_KEY, state)
+
+    def test_all_sources_failing_reports_source_failed(self):
+        from unittest import mock
+        from notify_watcher import health
+        with mock.patch.object(outages.config, "section",
+                               return_value=self.EDEESTE_CFG), \
+                mock.patch.object(outages, "_edeeste_collect", return_value=None):
+            state = outages.run({})
+        status = state[health.STATUS_KEY]["outages"]
+        self.assertTrue(status["source_failed"])
+        self.assertIn("EDEESTE", status["message"])
+
+    def test_one_delivering_source_reports_ok(self):
+        from unittest import mock
+        from notify_watcher import health
+        rows = [{"date": dt.date(2026, 6, 11), "zone": "Hainamosa",
+                 "window": "", "url": "https://edeeste.example/x"}]
+        with mock.patch.object(outages.config, "section",
+                               return_value=self.EDEESTE_CFG), \
+                mock.patch.object(outages, "_edeeste_collect", return_value=rows):
+            state = outages.run({})  # first sight: seeds silently
+        status = state[health.STATUS_KEY]["outages"]
+        self.assertTrue(status["ok"])
+        self.assertEqual(status["data_count"], 1)
+
+
 if __name__ == "__main__":
     unittest.main()

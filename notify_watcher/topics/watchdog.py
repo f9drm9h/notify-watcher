@@ -8,6 +8,13 @@ topic has been failing with no successful run for ``stale_hours`` (monitors.json
 -> watchdog, default 48), it pushes ONE heads-up naming the topic, how long it
 has been down, and its last error.
 
+Failures land in ``last_error`` two ways and this check treats them alike: a
+topic that RAISED (main.py's except), and a topic that swallowed its own source
+failure but reported it via the topic health contract (health.source_failed —
+main.py records it as a soft failure WITHOUT stamping ``last_ok``, and a later
+no-claim run leaves it sticky). So a direct scraper whose source dies quietly
+now crosses this same threshold instead of looking healthy forever.
+
 Once per outage: an alerted topic is remembered in ``state["watchdog_alerted"]``
 and not re-alerted until it recovers (main.py clears ``last_error`` on the next
 success), which re-arms it for a future outage. A topic that has NEVER succeeded

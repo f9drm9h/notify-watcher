@@ -27,10 +27,11 @@ import re
 import feedparser
 import requests
 
-from .. import config, events, ids
+from .. import config, events, health, ids
 
 log = logging.getLogger(__name__)
 
+TOPIC = "weather"
 STATE_KEY = "weather_seen_ids"
 CAP = 200
 DEFAULT_URL = "https://www.nhc.noaa.gov/index-at.xml"
@@ -104,9 +105,13 @@ def run(state: dict) -> dict:
         feed = feedparser.parse(resp.content)
     except Exception as exc:  # noqa: BLE001 - a fetch/parse failure is non-fatal
         log.error("NHC fetch failed: %s", exc)
+        health.source_failed(state, TOPIC, f"NHC fetch failed: {exc}")
         return state
 
     entries = feed.entries
+    # Raw feed entries, pre-filter: last_data tracks the SOURCE producing data,
+    # not region relevance.
+    health.source_ok(state, TOPIC, data_count=len(entries))
     classified = _classify(entries, cfg)
     log.info("NHC: %d entr(ies), %d region-relevant", len(entries), len(classified))
 

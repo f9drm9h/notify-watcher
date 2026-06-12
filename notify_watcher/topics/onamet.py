@@ -30,10 +30,11 @@ import xml.etree.ElementTree as ET
 import feedparser
 import requests
 
-from .. import config, events, ids
+from .. import config, events, health, ids
 
 log = logging.getLogger(__name__)
 
+TOPIC = "onamet"
 STATE_SEEN = "onamet_seen_ids"
 STATE_ACTIVE = "onamet_active"  # content key -> expiry ISO timestamp
 SEEN_CAP = 300
@@ -142,10 +143,13 @@ def run(state: dict) -> dict:
         feed = feedparser.parse(resp.content)
     except Exception as exc:  # noqa: BLE001 - a fetch/parse failure is non-fatal
         log.error("INDOMET CAP feed fetch failed: %s", exc)
+        health.source_failed(state, TOPIC, f"INDOMET CAP feed fetch failed: {exc}")
         return state
 
     entries = feed.entries
     log.info("INDOMET: %d alert item(s) in feed", len(entries))
+    # An empty CAP feed is normal (no active alerts): ok with 0 items.
+    health.source_ok(state, TOPIC, data_count=len(entries))
 
     now = _dt.datetime.now(_dt.timezone.utc)
     items = []  # (guid, title, description, link)

@@ -19,10 +19,11 @@ import math
 
 import requests
 
-from .. import config, events, ids
+from .. import config, events, health, ids
 
 log = logging.getLogger(__name__)
 
+TOPIC = "quakes"
 STATE_KEY = "quake_seen_ids"
 CAP = 300
 DEFAULT_URL = (
@@ -105,8 +106,11 @@ def run(state: dict) -> dict:
         features = resp.json().get("features") or []
     except Exception as exc:  # noqa: BLE001 - a fetch/parse failure is non-fatal
         log.error("USGS fetch failed: %s", exc)
+        health.source_failed(state, TOPIC, f"USGS fetch failed: {exc}")
         return state
     log.info("USGS: %d quake(s) in feed", len(features))
+    # Whole feed, pre-filter: last_data tracks the SOURCE producing data.
+    health.source_ok(state, TOPIC, data_count=len(features))
 
     evaluated = _evaluate(features, (float(lat), float(lon)), cfg)
 

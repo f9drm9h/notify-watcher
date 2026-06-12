@@ -18,10 +18,11 @@ import xml.etree.ElementTree as ET
 
 import requests
 
-from .. import config, control, events
+from .. import config, control, events, health
 
 log = logging.getLogger(__name__)
 
+TOPIC = "youtube"
 STATE_KEY = "youtube_seen"
 FEED_URL = "https://www.youtube.com/feeds/videos.xml?channel_id={channel_id}"
 WATCH_URL = "https://www.youtube.com/watch?v={video_id}"
@@ -61,6 +62,7 @@ def run(state: dict) -> dict:
         return _run(state)
     except Exception as exc:  # noqa: BLE001 - this topic must never break the sweep
         log.error("youtube topic failed: %s", exc)
+        health.source_failed(state, TOPIC, f"topic failed: {exc}")
         return state
 
 
@@ -91,7 +93,8 @@ def _run(state: dict) -> dict:
         prior_state = {}
 
     new_seen: dict[str, list[str]] = {}
-    pushed = 0
+    pushed = fetched_ok = total_videos = 0
+    last_feed_error = ""
     for channel in channels:
         channel_id = channel["channel_id"].strip()
         name = (channel.get("name") or "").strip() or channel_id
@@ -105,11 +108,14 @@ def _run(state: dict) -> dict:
             videos = _fetch(channel_id)
         except Exception as exc:  # noqa: BLE001 - isolate each channel
             log.error("youtube %r feed failed: %s", name, exc)
+            last_feed_error = f"{name}: {exc}"
             # Keep an existing channel's memory; leave a first-sight channel
             # absent so it still seeds silently once its feed is reachable.
             if not first_sight:
                 new_seen[channel_id] = seen[-MAX_REMEMBERED:]
             continue
+        fetched_ok += 1
+        total_videos += len(videos)
         for video_id, title in videos:
             if video_id in seen_set:
                 continue
@@ -138,6 +144,15 @@ def _run(state: dict) -> dict:
 
     if pushed:
         log.info("pushed %d new YouTube upload(s)", pushed)
+
+    # Health contract: ok while at least one channel feed delivered;
+    # source_failed only when every configured feed failed this run.
+    if fetched_ok:
+        health.source_ok(state, TOPIC, data_count=total_videos)
+    else:
+        health.source_failed(
+            state, TOPIC,
+            f"all {len(channels)} channel feed(s) failed; last: {last_feed_error}")
 
     # Channels dropped from the config fall out of state here; re-adding one
     # later makes it a first sight again (silent seed), which is what we want.

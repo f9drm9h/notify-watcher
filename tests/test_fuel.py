@@ -1,8 +1,11 @@
 """Tests for the DR weekly fuel-price topic (notify_watcher.topics.fuel)."""
 from __future__ import annotations
 
+import os
 import unittest
+from unittest import mock
 
+from notify_watcher import health
 from notify_watcher.topics import fuel
 
 # Trimmed from the real text pypdf extracts from a MICM weekly notice
@@ -95,6 +98,91 @@ class EvaluateTest(unittest.TestCase):
         self.assertEqual(action, "push")
         action, _, _ = fuel._evaluate(prev, self.CUR, 6.0)
         self.assertEqual(action, "digest")
+
+
+PDF_URL = ("https://micm.gob.do/wp-content/uploads/2026/06/"
+           "AVISO-PRE.-SEM.CORTE-06-12-JUN-DE-2026-5-CON.pdf")
+LISTING_HTML = f'<a href="{PDF_URL}">corte 06-12</a>'
+
+
+class _Resp:
+    def __init__(self, text="", content=b""):
+        self.text, self.content = text, content
+
+    def raise_for_status(self):
+        pass
+
+
+class RunHealthContractTest(unittest.TestCase):
+    """run() must report its source outcome via the topic health contract."""
+
+    def setUp(self):
+        self._env = mock.patch.dict(os.environ, {"NOTIFY_DAILY": "1"})
+        self._env.start()
+        self.addCleanup(self._env.stop)
+
+    def _status(self, state):
+        return (state.get(health.STATUS_KEY) or {}).get("fuel")
+
+    def test_listing_fetch_failure_reports_source_failed(self):
+        state: dict = {}
+        with mock.patch.object(fuel.requests, "get",
+                               side_effect=OSError("connection refused")):
+            state = fuel.run(state)
+        status = self._status(state)
+        self.assertTrue(status["source_failed"])
+        self.assertIn("listing fetch failed", status["message"])
+
+    def test_listing_without_notice_reports_source_failed(self):
+        state: dict = {}
+        with mock.patch.object(fuel.requests, "get",
+                               return_value=_Resp(text="<html>no links</html>")):
+            state = fuel.run(state)
+        status = self._status(state)
+        self.assertTrue(status["source_failed"])
+        self.assertIn("no weekly notice PDF", status["message"])
+
+    def test_known_notice_is_a_true_success(self):
+        # The listing answering with the already-seen PDF is a healthy source.
+        state = {fuel.LAST_PDF_KEY: PDF_URL}
+        with mock.patch.object(fuel.requests, "get",
+                               return_value=_Resp(text=LISTING_HTML)):
+            state = fuel.run(state)
+        status = self._status(state)
+        self.assertTrue(status["ok"])
+        self.assertIn("last_data", state["topic_health"]["fuel"])
+
+    def test_unparseable_notice_reports_source_failed(self):
+        state: dict = {}
+        page = mock.Mock()
+        page.pages = [mock.Mock(extract_text=mock.Mock(return_value="no table here"))]
+        with mock.patch.object(fuel.requests, "get",
+                               side_effect=[_Resp(text=LISTING_HTML), _Resp()]), \
+                mock.patch("pypdf.PdfReader", return_value=page):
+            state = fuel.run(state)
+        status = self._status(state)
+        self.assertTrue(status["source_failed"])
+        self.assertIn("no prices parsed", status["message"])
+        self.assertNotIn(fuel.LAST_PDF_KEY, state)  # dedup key kept for a retry
+
+    def test_new_notice_reports_ok_with_price_count(self):
+        state: dict = {}
+        page = mock.Mock()
+        page.pages = [mock.Mock(extract_text=mock.Mock(return_value=SAMPLE_TEXT))]
+        with mock.patch.object(fuel.requests, "get",
+                               side_effect=[_Resp(text=LISTING_HTML), _Resp()]), \
+                mock.patch("pypdf.PdfReader", return_value=page):
+            state = fuel.run(state)
+        status = self._status(state)
+        self.assertTrue(status["ok"])
+        self.assertEqual(status["data_count"], len(fuel.FUELS))
+        self.assertIn("last_data", state["topic_health"]["fuel"])
+        self.assertEqual(state[fuel.LAST_PDF_KEY], PDF_URL)
+
+    def test_gated_run_makes_no_claim(self):
+        with mock.patch.dict(os.environ, {"NOTIFY_DAILY": ""}):
+            state = fuel.run({})
+        self.assertIsNone(self._status(state))
 
 
 if __name__ == "__main__":

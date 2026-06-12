@@ -40,10 +40,11 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
-from .. import config, events, ids
+from .. import config, events, health, ids
 
 log = logging.getLogger(__name__)
 
+TOPIC = "groceries"
 STATE_KEY = "grocery_seen"  # { "<store>": [key, ...] } — per-store baselines
 CAP = 800  # per store
 HEADERS = {
@@ -327,6 +328,16 @@ def run(state: dict) -> dict:
             "Bravo",
             [(ids.short(f"bravo-promo|{c['url']}"), c) for c in campaigns],
             _emit_bravo_campaign))
+
+    # Health contract: the three _collect_* return None when a store was
+    # unreachable; ok while at least one store delivered, source_failed only
+    # when all three came back None.
+    if collected:
+        health.source_ok(state, TOPIC,
+                         data_count=sum(len(keyed) for _, keyed, _ in collected))
+    else:
+        health.source_failed(state, TOPIC,
+                             "all stores unreachable (Sirena, Nacional, Bravo)")
 
     for store, keyed, emit in collected:
         state = _store_run(state, store, keyed, emit)
