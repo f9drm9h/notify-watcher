@@ -24,11 +24,29 @@ the per-topic resilience used throughout the project.
 """
 from __future__ import annotations
 
+import datetime as _dt
 import logging
 
 from . import events, ids, scoring
 
 log = logging.getLogger(__name__)
+
+
+def stamp_last_data(state: dict, topic: str, count: int) -> None:
+    """Record that `topic` observed live source data this run.
+
+    Stamps ``state["topic_health"][topic]["last_data"]`` whenever a fetch
+    returned at least one parseable item (seen-before or not — this tracks the
+    SOURCE producing data, not alert-worthiness). The watchdog's opt-in
+    data-staleness check (monitors.json -> watchdog.data_stale_days) reads it
+    to catch the failure the error stamps can't: a scraper that gets HTTP 200
+    but parses zero items forever because the site changed its layout —
+    "successfully doing nothing" looks identical to healthy in last_ok.
+    """
+    if not topic or count <= 0:
+        return
+    entry = state.setdefault("topic_health", {}).setdefault(topic, {})
+    entry["last_data"] = _dt.datetime.now(_dt.timezone.utc).isoformat()
 
 _TIER_PRIORITY = {"breakthrough": "urgent", "high": "high"}
 _TIER_TAG = {"breakthrough": "rotating_light", "high": "zap"}
@@ -62,6 +80,7 @@ def run_source(
     is the engine's cross-topic rule key (e.g. "fda"); it is ignored while the
     engine is off, so it stays optional for callers/tests that don't set it.
     """
+    stamp_last_data(state, topic, len(items))
     seen = state.get(state_key)
     if seen is None:
         # Baseline-only first run: remember ids without alerting.

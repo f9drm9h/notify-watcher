@@ -1,6 +1,6 @@
 # 04 — Reliability & Safety Layer
 
-**Status: Phases 1 (config validation) and 2 (alert.yml) IMPLEMENTED; Phase 3 still proposed**
+**Status: IMPLEMENTED — all three phases (config validation, alert.yml, watchdog extensions) are live**
 
 Goal: no silent failures. Every way this system can break should eventually
 produce exactly one ntfy push saying what broke, or be blocked in CI before it

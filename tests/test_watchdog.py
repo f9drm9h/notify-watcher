@@ -3,7 +3,9 @@ from __future__ import annotations
 
 import datetime as dt
 import unittest
+from unittest import mock
 
+from notify_watcher import ntfy
 from notify_watcher.topics import watchdog
 from tests._util import capture_pushes
 
@@ -124,6 +126,104 @@ class BuildMessageTest(unittest.TestCase):
         self.assertIn("…", body)
 
 
+def _days(days_ago: float) -> str:
+    return (NOW - dt.timedelta(days=days_ago)).isoformat()
+
+
+class EvaluateDataTest(unittest.TestCase):
+    CFG = {"fda": 14}
+
+    def test_fresh_data_is_silent(self):
+        health = {"fda": {"last_ok": _iso(1), "last_data": _days(2)}}
+        alerts, bl, al = watchdog._evaluate_data(health, self.CFG, {}, {}, NOW)
+        self.assertEqual(alerts, [])
+        self.assertEqual(al, {})
+
+    def test_unconfigured_topic_is_never_data_checked(self):
+        health = {"energy": {"last_ok": _iso(1)}}  # no last_data, ever
+        alerts, bl, al = watchdog._evaluate_data(health, self.CFG, {}, {}, NOW)
+        self.assertEqual(alerts, [])
+        self.assertNotIn("energy", bl)
+
+    def test_never_stamped_topic_clocks_from_first_observation(self):
+        # Enabling the check on a topic with no stamp yet must not alert
+        # instantly: the first sighting seeds the baseline...
+        health = {"fda": {"last_ok": _iso(1)}}
+        alerts, bl, al = watchdog._evaluate_data(health, self.CFG, {}, {}, NOW)
+        self.assertEqual(alerts, [])
+        self.assertEqual(bl["fda"], NOW.isoformat())
+        # ...and alerts once that baseline is older than the window.
+        later = NOW + dt.timedelta(days=15)
+        alerts, bl, al = watchdog._evaluate_data(health, self.CFG, bl, al, later)
+        self.assertEqual(len(alerts), 1)
+        self.assertEqual(alerts[0][0], "fda")
+
+    def test_stale_data_alerts_once_then_stays_quiet(self):
+        health = {"fda": {"last_ok": _iso(1), "last_data": _days(20)}}
+        alerts, bl, al = watchdog._evaluate_data(health, self.CFG, {}, {}, NOW)
+        self.assertEqual(len(alerts), 1)
+        name, anchor, days = alerts[0]
+        self.assertEqual((name, days), ("fda", 14.0))
+        self.assertEqual(anchor, NOW - dt.timedelta(days=20))
+        self.assertIn("fda", al)
+        alerts2, _, al2 = watchdog._evaluate_data(health, self.CFG, bl, al, NOW)
+        self.assertEqual(alerts2, [])
+        self.assertIn("fda", al2)
+
+    def test_fresh_data_rearms_for_the_next_outage(self):
+        stale = {"fda": {"last_data": _days(20)}}
+        alerts, bl, al = watchdog._evaluate_data(stale, self.CFG, {}, {}, NOW)
+        self.assertEqual(len(alerts), 1)
+        # Data flows again: alerted marker is dropped (re-armed)...
+        fresh = {"fda": {"last_data": _days(0)}}
+        alerts, bl, al = watchdog._evaluate_data(fresh, self.CFG, bl, al, NOW)
+        self.assertEqual(alerts, [])
+        self.assertEqual(al, {})
+        # ...so a second outage alerts again.
+        later = NOW + dt.timedelta(days=15)
+        alerts, bl, al = watchdog._evaluate_data(fresh, self.CFG, bl, al, later)
+        self.assertEqual(len(alerts), 1)
+
+    def test_topic_removed_from_config_drops_its_tracking(self):
+        bl = {"fda": _days(30), "old": _days(30)}
+        al = {"old": _days(1)}
+        _, bl2, al2 = watchdog._evaluate_data(
+            {"fda": {"last_data": _days(1)}}, self.CFG, bl, al, NOW)
+        self.assertNotIn("old", bl2)
+        self.assertNotIn("old", al2)
+
+    def test_invalid_day_values_are_skipped(self):
+        health = {"fda": {"last_data": _days(400)}}
+        for bad in ("soon", None, 0, -3):
+            with self.subTest(days=bad):
+                alerts, bl, al = watchdog._evaluate_data(
+                    health, {"fda": bad}, {}, {}, NOW)
+                self.assertEqual(alerts, [])
+
+    def test_unparseable_baseline_restarts_the_clock(self):
+        health = {"fda": {}}  # no last_data, baseline is garbage
+        alerts, bl, al = watchdog._evaluate_data(
+            health, self.CFG, {"fda": "not-a-date"}, {}, NOW)
+        self.assertEqual(alerts, [])
+        self.assertEqual(bl["fda"], NOW.isoformat())
+
+
+class DataMessageTest(unittest.TestCase):
+    def test_single_topic_named_in_title(self):
+        anchor = NOW - dt.timedelta(days=20)
+        title, body = watchdog._build_data_message([("fda", anchor, 14.0)])
+        self.assertIn("'fda'", title)
+        self.assertIn("14+ days", title)
+        self.assertIn("2026-05-20 12:00 UTC", body)
+
+    def test_multiple_topics_bundle(self):
+        anchor = NOW - dt.timedelta(days=20)
+        title, body = watchdog._build_data_message(
+            [("energy", anchor, 14.0), ("fda", anchor, 14.0)])
+        self.assertIn("2 topics", title)
+        self.assertEqual(len(body.splitlines()), 2)
+
+
 class RunTest(unittest.TestCase):
     def test_stale_outage_pushes_once_then_stays_silent(self):
         state = {"topic_health": {"fda": {
@@ -150,6 +250,38 @@ class RunTest(unittest.TestCase):
             out = watchdog.run({})
         self.assertEqual(sent, [])
         self.assertEqual(out, {})
+
+    def test_failed_alert_push_is_retried_next_run(self):
+        # The push raising must leave the alerted marker unwritten so the next
+        # run re-sends — a watchdog alert must not be lost to an ntfy outage.
+        state = {"topic_health": {"fda": {
+            "last_ok": _iso(72), "last_error": "HTTP 500", "last_error_ts": _iso(1),
+        }}}
+        with mock.patch.object(ntfy, "push", side_effect=RuntimeError("ntfy down")):
+            with self.assertRaises(RuntimeError):
+                watchdog.run(state)
+        self.assertNotIn("fda", state.get(watchdog.ALERTED_KEY) or {})
+        with capture_pushes() as sent:
+            state = watchdog.run(state)
+        self.assertEqual(len(sent), 1)
+        self.assertIn("fda", state[watchdog.ALERTED_KEY])
+
+    def test_stale_data_pushes_once_then_stays_silent(self):
+        # End-to-end through run() and the real monitors.json config, which
+        # opts fda into data_stale_days: a healthy-but-empty fda (fresh
+        # last_ok, baseline far older than any sane window) alerts once.
+        state = {
+            "topic_health": {"fda": {"last_ok": _iso(1)}},
+            watchdog.DATA_BASELINE_KEY: {"fda": _days(60)},
+        }
+        with capture_pushes() as sent:
+            state = watchdog.run(state)
+        self.assertEqual(len(sent), 1)
+        self.assertIn("no data", sent[0]["title"])
+        self.assertIn("fda", state[watchdog.DATA_ALERTED_KEY])
+        with capture_pushes() as sent:
+            state = watchdog.run(state)
+        self.assertEqual(sent, [])
 
 
 if __name__ == "__main__":

@@ -27,7 +27,7 @@ import calendar
 import logging
 import time
 
-from . import events, ids, scoring
+from . import events, ids, monitor, scoring
 
 log = logging.getLogger(__name__)
 
@@ -105,6 +105,7 @@ def route(
     reproduces the legacy routing exactly. `topic` is the engine's cross-topic
     rule key (e.g. "games", "movies"); it is ignored while the engine is off.
     """
+    monitor.stamp_last_data(state, topic, len(articles))
     seen = bucket.get(title)
     if seen is None:
         # Baseline-only first run: remember ids without alerting, so a newly
