@@ -63,13 +63,18 @@ def _window(event_log: list, now: _dt.datetime, days: int = WINDOW_DAYS) -> list
     return out
 
 
-def _summarize(entries: list[dict], health: dict) -> str:
+def _summarize(entries: list[dict], health: dict,
+               reading_list_count: int = 0) -> str:
     """Pure. Render the recap body from one week of log entries + topic health."""
     actions = Counter(e.get("action") for e in entries)
     lines = [
         f"{actions.get('push', 0)} live pushes, {actions.get('digest', 0)} digested, "
         f"{actions.get('drop', 0)} dropped"
     ]
+    if reading_list_count:
+        # Items saved via the [Read later] reply button (docs/design/05);
+        # the full list with links is on the dashboard.
+        lines.append(f"Reading list: {reading_list_count} saved item(s)")
 
     by_topic = Counter(e.get("topic") for e in entries if e.get("topic"))
     if by_topic:
@@ -106,7 +111,8 @@ def run(state: dict) -> dict:
         state[STATE_KEY] = week
         return state
 
-    body = _summarize(entries, state.get("topic_health") or {})
+    body = _summarize(entries, state.get("topic_health") or {},
+                      len(state.get("reading_list") or []))
     state = events.emit(
         state,
         title="Your week in notifications",

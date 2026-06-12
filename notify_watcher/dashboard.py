@@ -132,6 +132,8 @@ def summarize(state: dict, now: Optional[_dt.datetime] = None) -> dict:
         "days": days,
         "digest": list(state.get("digest_buffer") or []),
         "digest_last_sent": state.get("digest_last_sent", ""),
+        # Saved via the [Read later] reply button (newest first, see design 05)
+        "reading_list": list(reversed(state.get("reading_list") or [])),
         "health": health_rows,
         "embed": shown,   # rows exposed to client-side search
     }
@@ -214,6 +216,18 @@ def render(state: dict, *, now: Optional[_dt.datetime] = None,
             f'<span class="hnote">{_esc(note)}</span></div>')
     health_html = "".join(health_rows) or '<p class="empty">No topic runs recorded yet.</p>'
 
+    # reading list (saved from pushes via the [Read later] button)
+    read_rows = []
+    for it in vm["reading_list"]:
+        title = _esc(it.get("title", ""))
+        url = it.get("url") or ""
+        if url:
+            title = f'<a href="{_esc(url)}" target="_blank" rel="noopener">{title}</a>'
+        read_rows.append(
+            f'<li><span class="src">{_esc(it.get("source",""))}</span> {title}</li>')
+    read_html = ("<section><h2>Reading list</h2><ul class='digest'>"
+                 + "".join(read_rows) + "</ul></section>") if read_rows else ""
+
     # upcoming reminders (optional, computed by build())
     rem_html = ""
     if reminders:
@@ -237,6 +251,7 @@ def render(state: dict, *, now: Optional[_dt.datetime] = None,
         alerts_html=alerts_html,
         dist_html=dist_html,
         health_html=health_html,
+        read_html=read_html,
         rem_html=rem_html,
         embed_json=embed_json,
     )
@@ -368,6 +383,7 @@ footer {{ color: #4f5b6b; font-size: .75rem; margin-top: 2rem;
   <section><h2>Priority distribution ({recent_days}d)</h2>{dist_html}</section>
   <section><h2>Topic health</h2>{health_html}</section>
 </div>
+{read_html}
 {rem_html}
 
 <footer>Static page, regenerated each watcher run · served from /docs by GitHub Pages.</footer>

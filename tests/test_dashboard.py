@@ -80,6 +80,24 @@ class SummarizeTest(unittest.TestCase):
         self.assertEqual(rows["movies"]["error"], "fetch failed")
 
 
+class ReadingListTest(unittest.TestCase):
+    def test_section_renders_newest_first_with_links(self):
+        state = _state()
+        state["reading_list"] = [
+            {"id": "a" * 16, "title": "Old save", "url": "https://x/old",
+             "source": "Movies", "added": "2026-06-07T10:00:00+00:00"},
+            {"id": "b" * 16, "title": "New save", "url": "https://x/new",
+             "source": "Games", "added": "2026-06-08T10:00:00+00:00"},
+        ]
+        html = dashboard.render(state, now=NOW)
+        self.assertIn("Reading list", html)
+        self.assertIn('href="https://x/new"', html)
+        self.assertLess(html.index("New save"), html.index("Old save"))
+
+    def test_no_section_when_empty(self):
+        self.assertNotIn("Reading list", dashboard.render(_state(), now=NOW))
+
+
 class RenderTest(unittest.TestCase):
     def test_self_contained_page(self):
         html = dashboard.render(_state(), now=NOW)
