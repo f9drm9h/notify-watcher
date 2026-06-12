@@ -66,6 +66,8 @@ class ChannelsTest(unittest.TestCase):
         from notify_watcher import kb
 
         for label, filename in learn.CHANNELS:
+            if label == learn.KNOWLEDGE_LABEL:
+                continue  # structured schema; covered by tests/test_learn_knowledge.py
             with self.subTest(channel=label):
                 items = kb.load(kb.DATA_DIR / filename)
                 self.assertTrue(items, f"{filename} is empty or failed to load")

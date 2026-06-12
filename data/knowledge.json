@@ -1,0 +1,702 @@
+[
+  {
+    "id": "mastering_fire",
+    "category": "early_humans",
+    "title": "Mastering Fire",
+    "body": "Humans were tending fires at least a million years ago - ash and charred bone deep inside South Africa's Wonderwerk Cave prove it. Cooking unlocked far more calories from the same food, and many researchers credit it with helping power the growth of our unusually large brains. Fire also extended the day, giving early humans warmth, protection, and a social hearth to gather around.",
+    "tags": ["prehistory", "evolution", "food"]
+  },
+  {
+    "id": "farming_revolution",
+    "category": "early_humans",
+    "title": "The Farming Revolution",
+    "body": "Around 12,000 years ago in the Fertile Crescent, people began cultivating wheat and barley instead of relying only on hunting and gathering. Farming could feed far more mouths but tied people to their fields, producing the first permanent villages. Nearly everything we call civilization - cities, writing, governments - grew out of that single change.",
+    "tags": ["agriculture", "neolithic", "civilization"]
+  },
+  {
+    "id": "invention_of_writing",
+    "category": "early_humans",
+    "title": "The Invention of Writing",
+    "body": "The earliest writing, cuneiform, appeared in Sumer around 3300 BCE - and it began not with poetry but with bookkeeping, tallying grain, beer, and livestock on clay tablets. Scribes pressed wedge-shaped marks into wet clay that, once dried, could outlast empires. Writing was invented from scratch only a handful of times in history, including independently in China and Mesoamerica.",
+    "tags": ["writing", "mesopotamia", "language"]
+  },
+  {
+    "id": "bronze_breakthrough",
+    "category": "early_humans",
+    "title": "The Bronze Breakthrough",
+    "body": "About 5,000 years ago, smiths discovered that blending soft copper with roughly one part in ten of tin produces bronze - a metal hard enough for real tools and weapons. Tin is scarce, so the recipe forced trade networks that stretched thousands of kilometers, from Britain to the Middle East. An alloy, not a pure metal, gave the era its name: the Bronze Age.",
+    "tags": ["metallurgy", "trade", "bronze-age"]
+  },
+  {
+    "id": "first_animal_partner",
+    "category": "early_humans",
+    "title": "Our First Animal Partner",
+    "body": "Dogs were domesticated from wolves at least 15,000 years ago - before any other animal, and even before farming. The likeliest story is that the friendliest wolves essentially domesticated themselves, scavenging near human camps until the two species became partners. Every breed today, from chihuahua to mastiff, descends from those camp-following wolves.",
+    "tags": ["domestication", "dogs", "prehistory"]
+  },
+  {
+    "id": "surprisingly_late_wheel",
+    "category": "early_humans",
+    "title": "The Surprisingly Late Wheel",
+    "body": "The wheel appeared in Mesopotamia around 3500 BCE - thousands of years after farming and even after metalworking began, and its first job was spinning pottery, not pulling carts. The hard problem was never the wheel itself but the wheel-and-axle: a smooth, durable bearing is genuinely difficult to make with hand tools. Entire advanced civilizations, like the Inca, built empires without ever using wheeled transport.",
+    "tags": ["invention", "transport", "mesopotamia"]
+  },
+  {
+    "id": "three_million_years_of_tools",
+    "category": "early_humans",
+    "title": "Three Million Years of Toolmaking",
+    "body": "The oldest known stone tools, found at Lomekwi in Kenya, are about 3.3 million years old - older than our genus Homo itself. That means toolmaking did not start with humans; it helped create us, shaping the hands and brains of our ancestors. Knapping sharp flakes off a stone core remained the cutting-edge technology, literally, for over three million years.",
+    "tags": ["tools", "prehistory", "evolution"]
+  },
+  {
+    "id": "iron_for_everyone",
+    "category": "early_humans",
+    "title": "Iron for Everyone",
+    "body": "Around 1200 BCE, smiths learned to work iron - trickier to smelt than bronze, but made from ore found almost everywhere instead of rare imported tin. Cheap, abundant iron put strong tools in the hands of ordinary farmers, not just elites, transforming agriculture and warfare alike. The shift was so profound that we still call the era it opened the Iron Age.",
+    "tags": ["metallurgy", "iron-age", "agriculture"]
+  },
+  {
+    "id": "taming_the_horse",
+    "category": "early_humans",
+    "title": "Taming the Horse",
+    "body": "Horses were domesticated on the Eurasian steppe over 4,000 years ago, and they redefined the limits of human distance and speed. Until the railroad arrived in the 1800s, nothing on land moved people, armies, or news faster than a horse. Empires from the Persians to the Mongols were built largely on horseback.",
+    "tags": ["domestication", "horses", "transport"]
+  },
+  {
+    "id": "first_artists",
+    "category": "early_humans",
+    "title": "The First Artists",
+    "body": "Cave paintings in Indonesia are at least 45,000 years old, and Europe's Chauvet Cave holds stunning lion and rhino murals from around 36,000 years ago. These are not crude doodles - the artists used shading, perspective, and the cave's own contours to bring animals to life by torchlight. Long before writing or cities, human minds were already fully symbolic.",
+    "tags": ["art", "prehistory", "cognition"]
+  },
+  {
+    "id": "earth_loses_center",
+    "category": "science",
+    "title": "When Earth Lost Its Place at the Center",
+    "body": "In 1543, Copernicus published his theory that Earth orbits the Sun - reportedly seeing the printed book only on his deathbed. Decades later Galileo's telescope delivered the hard evidence: Venus shows phases like the Moon, and Jupiter has moons that clearly do not orbit Earth. Demoting our planet from the center of the cosmos was the opening act of modern science.",
+    "tags": ["astronomy", "copernicus", "galileo"]
+  },
+  {
+    "id": "gravity_unified_heavens",
+    "category": "science",
+    "title": "Gravity Unified the Heavens",
+    "body": "In his 1687 Principia, Isaac Newton showed that the same force pulling an apple to the ground also holds the Moon in orbit. One simple law explained falling objects, planetary orbits, tides, and comets - the first time heaven and Earth obeyed identical rules. It reigned unchallenged for over two centuries, until Einstein found its limits.",
+    "tags": ["physics", "newton", "gravity"]
+  },
+  {
+    "id": "darwins_dangerous_idea",
+    "category": "science",
+    "title": "Darwin's Dangerous Idea",
+    "body": "Charles Darwin sat on his theory of evolution for some twenty years, fearing the uproar - until a letter from Alfred Russel Wallace, who had independently hit on the same idea, forced his hand in 1859. Natural selection explained how life's staggering variety and apparent design could arise with no designer: heritable variation plus differential survival, compounded over deep time. It remains the unifying idea of all biology.",
+    "tags": ["biology", "evolution", "darwin"]
+  },
+  {
+    "id": "invisible_killers",
+    "category": "science",
+    "title": "The Invisible Killers",
+    "body": "Until the late 1800s, most doctors blamed disease on 'miasma' - bad air. Louis Pasteur's experiments and Robert Koch's methodical work proved instead that specific microbes cause specific diseases, an idea known as germ theory. Few discoveries have saved more lives: clean water, sterile surgery, pasteurized milk, and vaccines all flow from it.",
+    "tags": ["medicine", "microbiology", "pasteur"]
+  },
+  {
+    "id": "secret_of_life",
+    "category": "science",
+    "title": "The Secret of Life",
+    "body": "In 1953, James Watson and Francis Crick worked out DNA's double-helix structure, leaning heavily on Rosalind Franklin's X-ray image known as Photo 51. The structure was its own eureka: two complementary strands mean the molecule can unzip and copy itself, which is exactly how inheritance works. Within fifty years, scientists had read the entire human genome.",
+    "tags": ["biology", "dna", "genetics"]
+  },
+  {
+    "id": "einsteins_warped_universe",
+    "category": "science",
+    "title": "Einstein's Warped Universe",
+    "body": "Einstein's general relativity, published in 1915, reimagined gravity: massive objects do not pull on things, they curve space and time itself, and everything else just follows the curves. When a 1919 eclipse expedition confirmed that the Sun bends starlight by precisely his predicted amount, Einstein became world-famous overnight. The theory is no abstraction - GPS satellites must correct for it every day or your map would drift by kilometers.",
+    "tags": ["physics", "einstein", "relativity"]
+  },
+  {
+    "id": "quantum_revolution",
+    "category": "science",
+    "title": "The Quantum Revolution",
+    "body": "Quantum mechanics, built in the 1920s by Heisenberg, Schrodinger, and others, revealed that at the smallest scales nature deals in probabilities, not certainties - particles exist as clouds of possibility until measured. Einstein himself never accepted it, protesting that God 'does not play dice.' Yet it is the most precisely tested theory in science, and every transistor, laser, and LED depends on it.",
+    "tags": ["physics", "quantum", "technology"]
+  },
+  {
+    "id": "mendeleevs_prophetic_table",
+    "category": "science",
+    "title": "Mendeleev's Prophetic Table",
+    "body": "When Dmitri Mendeleev arranged the elements into his periodic table in 1869, he left deliberate gaps and predicted the properties of undiscovered elements that should fill them. Within two decades, gallium and germanium were found matching his predictions almost exactly. The table worked because it was secretly tracking atomic structure - decades before anyone knew atoms had structure.",
+    "tags": ["chemistry", "elements", "prediction"]
+  },
+  {
+    "id": "continents_adrift",
+    "category": "science",
+    "title": "Continents Adrift",
+    "body": "When Alfred Wegener proposed in 1912 that the continents slowly drift - noting how Africa and South America fit like puzzle pieces - geologists ridiculed him because he could not explain what moved them. The answer surfaced in the 1960s: the seafloor itself spreads from mid-ocean ridges, carrying continents on vast tectonic plates. Plate tectonics now explains earthquakes, volcanoes, and mountain ranges in one stroke.",
+    "tags": ["geology", "tectonics", "earth"]
+  },
+  {
+    "id": "chemistry_revolution",
+    "category": "science",
+    "title": "Lavoisier's Chemistry Revolution",
+    "body": "Antoine Lavoisier showed in the 1770s and 80s that burning is combination with oxygen - a gas he named - and that matter is never created or destroyed in reactions, only rearranged. His obsessive weighing and measuring turned chemistry from alchemy into a quantitative science. He was guillotined in the French Revolution; a colleague lamented that severing that head took an instant, but a century might not produce another like it.",
+    "tags": ["chemistry", "lavoisier", "oxygen"]
+  },
+  {
+    "id": "black_holes_turned_real",
+    "category": "astronomy",
+    "title": "Black Holes Turned Real",
+    "body": "Karl Schwarzschild solved Einstein's equations in 1916 while serving on the World War I front, revealing objects whose gravity not even light escapes - long dismissed as a mathematical curiosity. The X-ray source Cygnus X-1 became the first convincing real one in the early 1970s. In 2019, the Event Horizon Telescope finally photographed a black hole's glowing shadow in galaxy M87.",
+    "tags": ["space", "physics", "relativity"]
+  },
+  {
+    "id": "worlds_beyond_counting",
+    "category": "astronomy",
+    "title": "Worlds Beyond Counting",
+    "body": "The first planet found orbiting a Sun-like star, 51 Pegasi b in 1995, was a shock: a Jupiter-sized world racing around its star every four days, which existing theories said was impossible. Astronomers have since confirmed thousands of exoplanets, and the statistics imply our galaxy holds more planets than stars. The discovery earned a Nobel Prize in 2019.",
+    "tags": ["space", "exoplanets", "discovery"]
+  },
+  {
+    "id": "hearing_spacetime_ring",
+    "category": "astronomy",
+    "title": "Hearing Spacetime Ring",
+    "body": "On September 14, 2015, the LIGO detectors caught gravitational waves from two black holes that collided 1.3 billion years ago - ripples in spacetime that Einstein predicted but doubted anyone could ever measure. The signal stretched LIGO's four-kilometer arms by a fraction of a proton's width. It opened an entirely new sense for astronomy: we can now hear the universe, not just see it.",
+    "tags": ["space", "physics", "ligo"]
+  },
+  {
+    "id": "big_bangs_baby_picture",
+    "category": "astronomy",
+    "title": "The Big Bang's Baby Picture",
+    "body": "In 1965, Arno Penzias and Robert Wilson could not get rid of a faint hiss in their radio antenna - they even cleared out nesting pigeons - before realizing they had found the afterglow of the Big Bang itself. This cosmic microwave background is light released when the universe was just 380,000 years old, now stretched into microwaves filling every direction of the sky. The accidental discovery won them the Nobel Prize.",
+    "tags": ["space", "cosmology", "big-bang"]
+  },
+  {
+    "id": "universe_got_bigger",
+    "category": "astronomy",
+    "title": "The Universe Got Bigger Overnight",
+    "body": "Until the 1920s, many astronomers believed the Milky Way was the entire universe. Then Edwin Hubble spotted a pulsating star in the Andromeda 'nebula' whose brightness revealed it lay far outside our galaxy - Andromeda was a separate island of hundreds of billions of stars. In one measurement, the known universe grew from a single galaxy to what we now estimate is hundreds of billions of them.",
+    "tags": ["space", "galaxies", "hubble"]
+  },
+  {
+    "id": "universe_is_expanding",
+    "category": "astronomy",
+    "title": "The Universe Is Expanding",
+    "body": "In the late 1920s, Georges Lemaitre and then Edwin Hubble showed that nearly every galaxy is rushing away from us, and the farther it is, the faster it flees - space itself is stretching. Run that film backward and everything converges to a hot, dense beginning: the Big Bang, which Lemaitre, a Catholic priest and physicist, was the first to propose. The expansion is even accelerating, driven by a dark energy nobody yet understands.",
+    "tags": ["space", "cosmology", "expansion"]
+  },
+  {
+    "id": "little_green_men",
+    "category": "astronomy",
+    "title": "The Signal Nicknamed 'Little Green Men'",
+    "body": "In 1967, graduate student Jocelyn Bell Burnell noticed a radio pulse ticking every 1.3 seconds with unnatural precision - so strange her team half-jokingly labeled it LGM-1, for 'little green men.' It turned out to be a pulsar: a spinning neutron star, the city-sized corpse of a giant star, so dense a teaspoon of it would weigh billions of tons. The Nobel Prize went to her supervisor, a slight still debated today.",
+    "tags": ["space", "pulsars", "discovery"]
+  },
+  {
+    "id": "footprints_on_another_world",
+    "category": "astronomy",
+    "title": "Footprints on Another World",
+    "body": "On July 20, 1969, Neil Armstrong and Buzz Aldrin walked on the Moon while roughly 600 million people watched - the largest live audience in history to that point. Their guidance computer had less processing power than a modern pocket calculator. With no wind or rain on the Moon, their boot prints could remain visible for millions of years.",
+    "tags": ["space", "apollo", "moon"]
+  },
+  {
+    "id": "farthest_thing_ever_made",
+    "category": "astronomy",
+    "title": "The Farthest Thing We've Ever Made",
+    "body": "Launched in 1977, Voyager 1 crossed into interstellar space in 2012 and is now more than 24 billion kilometers away - the most distant human-made object, still faintly calling home on a transmitter weaker than a refrigerator bulb. Both Voyagers carry a Golden Record with greetings in 55 languages, whale song, and Chuck Berry. They will drift among the stars long after the Sun burns out.",
+    "tags": ["space", "voyager", "exploration"]
+  },
+  {
+    "id": "universes_missing_mass",
+    "category": "astronomy",
+    "title": "The Universe's Missing Mass",
+    "body": "In the 1970s, Vera Rubin measured galaxies spinning so fast their visible stars should fly apart - unless huge halos of unseen matter hold them together. That 'dark matter' outweighs ordinary matter about five to one, yet decades of increasingly sensitive experiments have not identified what it is. Most of the material universe is something we have never directly detected.",
+    "tags": ["space", "dark-matter", "mystery"]
+  },
+  {
+    "id": "end_of_surgical_agony",
+    "category": "medicine",
+    "title": "The End of Surgical Agony",
+    "body": "Before anesthesia, surgeons were prized for raw speed - a leg amputation in under three minutes - because patients felt everything. On October 16, 1846, at Massachusetts General Hospital, William Morton publicly put a patient under with ether while a tumor was removed painlessly; the surgeon announced, 'Gentlemen, this is no humbug.' Surgery transformed from desperate last resort into a healing art.",
+    "tags": ["surgery", "anesthesia", "history"]
+  },
+  {
+    "id": "listers_clean_revolution",
+    "category": "medicine",
+    "title": "Lister's Clean Revolution",
+    "body": "In the 1860s, surgeon Joseph Lister applied Pasteur's germ theory to the operating room, soaking instruments, wounds, and dressings in carbolic acid. Deaths after his amputations fell from nearly half of patients to about one in seven. Antiseptic - and later sterile - surgery became universal, and the mouthwash Listerine was named in his honor.",
+    "tags": ["surgery", "antiseptics", "germs"]
+  },
+  {
+    "id": "transfusions_stopped_killing",
+    "category": "medicine",
+    "title": "Why Transfusions Stopped Killing",
+    "body": "For centuries, blood transfusions were a deadly gamble - sometimes life-saving, often fatal, and nobody knew why. In 1901, Karl Landsteiner discovered the answer: humans have distinct blood groups, A, B, AB, and O, and mixing incompatible types makes blood clump and kill. Typing and cross-matching turned transfusion into routine medicine and earned him a Nobel Prize.",
+    "tags": ["blood", "transfusion", "discovery"]
+  },
+  {
+    "id": "mold_that_saved_millions",
+    "category": "medicine",
+    "title": "The Mold That Saved Millions",
+    "body": "Returning from holiday in 1928, Alexander Fleming found a stray mold killing the bacteria on one of his culture dishes - penicillin, the first true antibiotic. It took Howard Florey and Ernst Chain's team another decade to turn the finicky mold into a mass-produced drug, just in time to save countless wounded soldiers in World War II. Antibiotics have since added years to average human life expectancy.",
+    "tags": ["antibiotics", "penicillin", "fleming"]
+  },
+  {
+    "id": "only_disease_wiped_out",
+    "category": "medicine",
+    "title": "The Only Human Disease We've Wiped Out",
+    "body": "Edward Jenner showed in 1796 that infecting someone with harmless cowpox protected them from smallpox - the word 'vaccine' comes from vacca, Latin for cow. Smallpox killed an estimated 300 million people in the 20th century alone. A global vaccination campaign cornered the virus, and in 1980 it became the first and still only human disease ever eradicated.",
+    "tags": ["vaccines", "smallpox", "eradication"]
+  },
+  {
+    "id": "doctor_who_said_wash",
+    "category": "medicine",
+    "title": "The Doctor Who Said 'Wash Your Hands'",
+    "body": "In 1847 Vienna, Ignaz Semmelweis realized doctors were carrying death from autopsies to maternity wards on their hands; when he mandated chlorine handwashing, deaths from childbed fever collapsed. Rather than embrace the data, the medical establishment took offense and pushed him out, and he died in an asylum. Germ theory vindicated him within decades - hand hygiene remains medicine's cheapest lifesaver.",
+    "tags": ["hygiene", "semmelweis", "hospitals"]
+  },
+  {
+    "id": "seeing_inside_the_body",
+    "category": "medicine",
+    "title": "Seeing Inside the Body",
+    "body": "In 1895, Wilhelm Roentgen discovered mysterious rays that passed through flesh but not bone, naming them 'X' for unknown; an early image of his wife's hand showed her bones and wedding ring, and she reportedly gasped, 'I have seen my death.' Within months, doctors worldwide were using X-rays to find fractures and bullets. Roentgen refused to patent the discovery and won the first Nobel Prize in Physics.",
+    "tags": ["xrays", "imaging", "physics"]
+  },
+  {
+    "id": "death_sentence_to_daily_shot",
+    "category": "medicine",
+    "title": "From Death Sentence to Daily Shot",
+    "body": "Until 1922, type 1 diabetes killed within a few years; the only 'treatment' was near-starvation. Frederick Banting and Charles Best isolated insulin in Toronto, and dying children gained their lives back within days of injection. Banting refused to profit, and the patent was sold to the university for one dollar - 'insulin belongs to the world,' he said.",
+    "tags": ["diabetes", "insulin", "treatment"]
+  },
+  {
+    "id": "salk_and_the_sugar_cube",
+    "category": "medicine",
+    "title": "Salk, Sabin, and the Defeat of Polio",
+    "body": "Polio paralyzed tens of thousands of children a year until Jonas Salk's injected vaccine, proven in a 1955 trial involving 1.8 million child volunteers, and Albert Sabin's oral drops on a sugar cube finished the job. Asked who owned the patent, Salk famously replied, 'Could you patent the sun?' Global cases have since fallen by more than 99.9 percent.",
+    "tags": ["polio", "vaccines", "salk"]
+  },
+  {
+    "id": "first_spare_part",
+    "category": "medicine",
+    "title": "The First Spare Part",
+    "body": "In 1954, surgeon Joseph Murray performed the first successful organ transplant, moving a kidney between identical twins - identical genes meant no rejection. Drugs that tame the immune system later opened transplantation to everyone, making hearts, livers, and lungs transferable. Murray received the Nobel Prize in 1990 for proving the body's parts could be shared.",
+    "tags": ["transplant", "surgery", "immunology"]
+  },
+  {
+    "id": "engine_that_industrialized",
+    "category": "technology",
+    "title": "The Engine That Industrialized the World",
+    "body": "Thomas Newcomen's 1712 steam engine pumped water from coal mines, but it wasted most of its fuel; James Watt's separate condenser in 1769 made steam power efficient enough to drive factories, ships, and locomotives. For the first time, muscle, wind, and water were no longer the limits of human power. Watt even coined 'horsepower' to market his engines to mine owners who thought in horses.",
+    "tags": ["steam", "industrial-revolution", "energy"]
+  },
+  {
+    "id": "most_manufactured_object",
+    "category": "technology",
+    "title": "The Most Manufactured Object in History",
+    "body": "The transistor, invented at Bell Labs in December 1947, replaced bulky, fragile vacuum tubes with a tiny sliver of semiconductor that switches electric signals. A modern phone chip packs billions of them, each far smaller than a virus. By total count, transistors are the most manufactured artifact in human history - trillions are made every second across the world's chip factories.",
+    "tags": ["electronics", "computing", "transistor"]
+  },
+  {
+    "id": "computer_on_a_chip",
+    "category": "technology",
+    "title": "Putting a Computer on a Chip",
+    "body": "In 1958-59, Jack Kilby and Robert Noyce independently worked out how to build an entire circuit - transistors, resistors, wiring - on a single sliver of semiconductor: the integrated circuit. Gordon Moore observed in 1965 that the number of components per chip kept doubling roughly every two years, a pace the industry then turned into a self-fulfilling roadmap. That doubling is why a room-sized 1950s computer now fits in your pocket and costs less than a pair of shoes.",
+    "tags": ["computing", "microchip", "moores-law"]
+  },
+  {
+    "id": "splitting_the_atom",
+    "category": "technology",
+    "title": "Splitting the Atom",
+    "body": "In 1938, Otto Hahn and Fritz Strassmann found barium where uranium should be; their exiled colleague Lise Meitner worked out during a snowy walk that the atom's nucleus had split, releasing enormous energy. Four years later, Enrico Fermi's team achieved the first controlled chain reaction in a pile of graphite and uranium under a Chicago squash court. The discovery gave humanity both nuclear power and nuclear weapons within a single decade.",
+    "tags": ["nuclear", "physics", "energy"]
+  },
+  {
+    "id": "gutenbergs_explosion",
+    "category": "technology",
+    "title": "Gutenberg's Information Explosion",
+    "body": "Around 1450, Johannes Gutenberg combined movable metal type, oil-based ink, and a screw press into a system that could mass-produce books - an idea movable type pioneers in China and Korea had explored centuries earlier. A Bible that took a scribe a year could now be printed in days, and within fifty years European presses had produced an estimated twenty million books. Cheap, identical copies of ideas fueled the Reformation and the Scientific Revolution.",
+    "tags": ["printing", "books", "information"]
+  },
+  {
+    "id": "lighting_the_world",
+    "category": "technology",
+    "title": "Lighting the World",
+    "body": "Edison's Pearl Street station began selling electricity to a corner of Manhattan in 1882, igniting the 'war of the currents' between his direct current and the alternating current backed by Tesla and Westinghouse. AC won because its voltage can be transformed for cheap long-distance transmission. The electric grid that followed is often called the largest machine ever built.",
+    "tags": ["electricity", "edison", "tesla"]
+  },
+  {
+    "id": "beep_heard_round_world",
+    "category": "technology",
+    "title": "The Beep Heard Round the World",
+    "body": "On October 4, 1957, the Soviet Union launched Sputnik, a polished 58-centimeter sphere whose radio beep any ham operator on Earth could hear passing overhead. The shock jolted the United States into creating NASA and pouring money into science education, launching the space race. Today, thousands of satellites quietly run our navigation, weather forecasts, and communications.",
+    "tags": ["satellites", "space-race", "sputnik"]
+  },
+  {
+    "id": "network_of_networks",
+    "category": "technology",
+    "title": "The Network of Networks",
+    "body": "The first ARPANET message, sent from UCLA to Stanford on October 29, 1969, was supposed to be 'LOGIN' - the system crashed after 'LO.' The TCP/IP protocols adopted in 1983 let any network join any other, creating the Internet, and Tim Berners-Lee's World Wide Web in 1989-91 made it usable by everyone. From that two-letter stumble grew a system connecting most of humanity.",
+    "tags": ["internet", "computing", "networks"]
+  },
+  {
+    "id": "victorian_internet",
+    "category": "technology",
+    "title": "The Victorian Internet",
+    "body": "Samuel Morse's 1844 telegraph line from Washington to Baltimore opened with the message 'What hath God wrought,' and by 1866 a durable cable spanned the Atlantic seafloor. News that once sailed for ten days now crossed the ocean in minutes. It was the first time in history that information traveled meaningfully faster than a physical object could carry it.",
+    "tags": ["telegraph", "communication", "morse"]
+  },
+  {
+    "id": "kitty_hawk_to_moon",
+    "category": "technology",
+    "title": "From Kitty Hawk to the Moon in 66 Years",
+    "body": "On December 17, 1903, the Wright brothers' first powered flight lasted twelve seconds and covered 37 meters - shorter than a 747's wingspan. Bicycle mechanics by trade, they cracked the real problem everyone else missed: not getting airborne, but controlling the machine once it was. Sixty-six years later, humans flew from Florida to the surface of the Moon.",
+    "tags": ["flight", "aviation", "wright-brothers"]
+  },
+  {
+    "id": "pyramid_skyscraper",
+    "category": "ancient_civilizations",
+    "title": "The 4,500-Year-Old Skyscraper",
+    "body": "The Great Pyramid of Giza, finished around 2560 BCE from some 2.3 million stone blocks, stood as the tallest human structure on Earth for nearly 3,800 years. Archaeology has overturned the slave-labor myth: excavated workers' villages with bakeries, breweries, and medical care show it was built by rotating crews of paid, well-fed Egyptian laborers. Its base is level to within a couple of centimeters.",
+    "tags": ["egypt", "pyramids", "engineering"]
+  },
+  {
+    "id": "key_that_unlocked_egypt",
+    "category": "ancient_civilizations",
+    "title": "The Key That Unlocked Egypt",
+    "body": "In 1799, Napoleon's soldiers rebuilding a fort in Egypt unearthed a slab carrying the same decree in three scripts: hieroglyphics, Demotic, and ancient Greek. Using the Greek as a crib, Jean-Francois Champollion cracked the hieroglyphic code in 1822. The Rosetta Stone turned three thousand years of silent Egyptian inscriptions back into readable history.",
+    "tags": ["egypt", "language", "archaeology"]
+  },
+  {
+    "id": "romes_self_healing_concrete",
+    "category": "ancient_civilizations",
+    "title": "Rome's Self-Healing Concrete",
+    "body": "Roman engineers mixed volcanic ash into their concrete, producing harbors and aqueducts that have survived two thousand years of waves and weather - modern research shows embedded lime fragments can even re-seal cracks when water gets in. The Pantheon's dome, poured around 126 CE, is still the largest unreinforced concrete dome in the world. Some Roman recipes outperform modern marine concrete to this day.",
+    "tags": ["rome", "engineering", "concrete"]
+  },
+  {
+    "id": "city_frozen_in_time",
+    "category": "ancient_civilizations",
+    "title": "The City Frozen in Time",
+    "body": "When Vesuvius erupted in 79 CE, it buried Pompeii under meters of ash so quickly that loaves of bread were preserved in ovens and election graffiti stayed sharp on the walls. Rediscovered in the 1700s, the city is a freeze-frame of ordinary Roman life - bars, bathhouses, gardens, and all. Excavators famously poured plaster into voids in the ash to recover the final poses of the victims.",
+    "tags": ["rome", "pompeii", "archaeology"]
+  },
+  {
+    "id": "first_democracy",
+    "category": "ancient_civilizations",
+    "title": "The First Democracy",
+    "body": "Around 508 BCE, Cleisthenes reorganized Athens so that major decisions were made by the assembled citizens themselves - and many public offices were filled by lottery, since Athenians considered elections aristocratic. Citizenship was narrow, excluding women, slaves, and foreigners, yet the experiment proved ordinary people could govern. The word democracy is Greek: demos kratos, 'people power.'",
+    "tags": ["greece", "democracy", "athens"]
+  },
+  {
+    "id": "ancient_greek_computer",
+    "category": "ancient_civilizations",
+    "title": "The Ancient Greek Computer",
+    "body": "In 1901, sponge divers exploring a Roman-era shipwreck off the island of Antikythera hauled up a corroded lump of bronze gears - a hand-cranked mechanism from around the 2nd century BCE that modeled the Sun, Moon, and planets and predicted eclipses. Nothing of comparable mechanical complexity appears again for well over a thousand years. It is often called the world's first analog computer.",
+    "tags": ["greece", "technology", "archaeology"]
+  },
+  {
+    "id": "oldest_story_ever_written",
+    "category": "ancient_civilizations",
+    "title": "The Oldest Story Ever Written",
+    "body": "The Epic of Gilgamesh, pressed into Mesopotamian clay some four thousand years ago, is humanity's oldest surviving great story - a king's friendship with the wild man Enkidu and his desperate quest to escape death. It even contains a great-flood story with an ark, predating the biblical version by centuries. Much of it survives thanks to the buried library of Assyrian king Ashurbanipal.",
+    "tags": ["mesopotamia", "literature", "gilgamesh"]
+  },
+  {
+    "id": "law_written_in_stone",
+    "category": "ancient_civilizations",
+    "title": "The Law Written in Stone",
+    "body": "Around 1754 BCE, Babylon's King Hammurabi had 282 laws carved onto a two-meter basalt pillar for all to see - among the oldest substantial legal codes known, now standing in the Louvre. Its famous principle of 'an eye for an eye' sounds harsh, but publishing fixed penalties was itself radical: justice by published rule rather than a ruler's whim. Punishments, however, depended openly on social class.",
+    "tags": ["mesopotamia", "law", "babylon"]
+  },
+  {
+    "id": "maya_sky_mathematicians",
+    "category": "ancient_civilizations",
+    "title": "Maya Sky Mathematicians",
+    "body": "With no telescopes - only patient naked-eye records - Maya astronomers tracked Venus so precisely that their tables in the Dresden Codex stay accurate to about a day across centuries. They also developed the concept of zero independently, centuries before it reached Europe. At Chichen Itza, the pyramid of El Castillo is aligned so the equinox sun casts a serpent of shadow slithering down its staircase.",
+    "tags": ["maya", "astronomy", "mathematics"]
+  },
+  {
+    "id": "emperors_clay_legions",
+    "category": "ancient_civilizations",
+    "title": "The Emperor's Clay Legions",
+    "body": "In 1974, Chinese farmers digging a well near Xi'an broke into a pit containing the Terracotta Army: roughly 8,000 life-sized clay soldiers, each with a distinct face, buried to guard Qin Shi Huang, who unified China in 221 BCE. The figures were originally painted in vivid colors and armed with real bronze weapons. The emperor's actual tomb mound nearby remains unexcavated to this day.",
+    "tags": ["china", "archaeology", "qin"]
+  },
+  {
+    "id": "twelve_of_olympus",
+    "category": "mythology",
+    "title": "The Twelve of Mount Olympus",
+    "body": "Greek myth says the Olympian gods took power by overthrowing the Titans - their own parents' generation - in a ten-year war, after which Zeus, Poseidon, and Hades drew lots for the sky, the sea, and the underworld. The twelve Olympians ruled from Mount Olympus, Greece's highest peak. What made Greek gods compelling was their humanity: they schemed, sulked, and played favorites, just on a cosmic scale.",
+    "tags": ["greek-myth", "gods", "olympus"]
+  },
+  {
+    "id": "the_fire_thief",
+    "category": "mythology",
+    "title": "The Fire Thief",
+    "body": "The Titan Prometheus - whose name means 'forethought' - defied Zeus by smuggling fire to humanity hidden in a fennel stalk. His punishment was an immortal's nightmare: chained to a mountain while an eagle devoured his liver daily, the organ regrowing each night, until Heracles finally freed him. He endures as the great symbol of knowledge gained at a price.",
+    "tags": ["greek-myth", "prometheus", "fire"]
+  },
+  {
+    "id": "pandoras_jar",
+    "category": "mythology",
+    "title": "Pandora's Jar (Not Box)",
+    "body": "In Hesiod's telling, Pandora - the first woman - opened a great storage jar, a pithos, releasing every evil into the world; the famous 'box' comes from a 16th-century mistranslation by the scholar Erasmus. Zeus sent her with the jar as payback for Prometheus stealing fire. Only one thing remained inside when she slammed the lid: hope.",
+    "tags": ["greek-myth", "pandora", "origin-story"]
+  },
+  {
+    "id": "war_behind_the_iliad",
+    "category": "mythology",
+    "title": "The War Behind the Iliad",
+    "body": "The Trojan War begins with a golden apple inscribed 'to the fairest': Paris of Troy must judge among three goddesses, picks Aphrodite, and is rewarded with Helen - another king's wife - igniting a ten-year siege. The famous wooden horse never actually appears in the Iliad; the tale is told in the Odyssey and Virgil's Aeneid. Excavations at Hisarlik in Turkey suggest a real Bronze Age city lies behind the legend.",
+    "tags": ["greek-myth", "troy", "homer"]
+  },
+  {
+    "id": "ten_years_lost_at_sea",
+    "category": "mythology",
+    "title": "Ten Years Lost at Sea",
+    "body": "Odysseus' ten-year journey home from Troy gave Western storytelling some of its oldest set pieces: he blinds the Cyclops after introducing himself as 'Nobody,' so the giant's cries that 'Nobody is hurting me' bring no help, and he has himself lashed to the mast to hear the Sirens' song and live. Navigating between Scylla and Charybdis - a monster and a whirlpool - still means choosing between two evils. When he finally reaches home in disguise, the first to recognize him is his old dog, Argos.",
+    "tags": ["greek-myth", "odyssey", "homer"]
+  },
+  {
+    "id": "why_greeks_had_winter",
+    "category": "mythology",
+    "title": "Why the Greeks Had Winter",
+    "body": "When Hades carried Persephone to the underworld, her mother Demeter - goddess of the harvest - let the earth go barren in grief. Because Persephone had eaten pomegranate seeds below, she must return underground part of each year: the Greek explanation for winter. The myth stood at the heart of the Eleusinian Mysteries, secret rites celebrated for nearly two thousand years.",
+    "tags": ["greek-myth", "seasons", "persephone"]
+  },
+  {
+    "id": "wolf_raised_twins",
+    "category": "mythology",
+    "title": "The Wolf-Raised Twins",
+    "body": "Roman legend held that the city was founded in 753 BCE by Romulus and Remus, twin sons of the war god Mars who were abandoned on the Tiber and suckled by a she-wolf. The brothers quarreled over where to build, and Romulus killed Remus - a fratricide at the very foundation of Rome's story. Romans counted their calendar years 'ab urbe condita': from the founding of the city.",
+    "tags": ["roman-myth", "rome", "founding"]
+  },
+  {
+    "id": "same_gods_new_names",
+    "category": "mythology",
+    "title": "Same Gods, New Names",
+    "body": "Rome largely adopted the Greek pantheon and rebranded it: Zeus became Jupiter, Aphrodite became Venus, and Ares - a chaotic bully to the Greeks - was dignified into Mars, honored father of the Roman people. But Janus, the two-faced god of doorways and beginnings who looks to past and future at once, was authentically Roman with no Greek equivalent. He still greets you every January.",
+    "tags": ["roman-myth", "gods", "culture"]
+  },
+  {
+    "id": "twelve_labors",
+    "category": "mythology",
+    "title": "The Twelve Labors of Heracles",
+    "body": "Driven mad by the goddess Hera into killing his own family, Heracles was sentenced to twelve 'impossible' labors as penance: strangling the Nemean lion, beheading the regrowing Hydra, even hauling the three-headed dog Cerberus up from the underworld. Rerouting two rivers to flush the Augean stables in a day still lends its name to cleaning up monumental messes. His name ironically means 'glory of Hera' - the very goddess tormenting him - and he became the only Greek hero granted full godhood.",
+    "tags": ["greek-myth", "heracles", "legends"]
+  },
+  {
+    "id": "wings_of_wax",
+    "category": "mythology",
+    "title": "Wings of Wax and Hubris",
+    "body": "Imprisoned in Crete with his son Icarus, the master inventor Daedalus - builder of the Labyrinth that held the Minotaur - crafted wings of feathers and wax for their escape. He warned Icarus to fly the middle path: too low and sea spray would soak the feathers, too high and the sun would melt the wax. Icarus soared, the wax failed, and his fall into the sea became the ancient world's most enduring warning about ignoring the engineer's limits.",
+    "tags": ["greek-myth", "icarus", "hubris"]
+  },
+  {
+    "id": "gadfly_of_athens",
+    "category": "philosophy",
+    "title": "The Gadfly of Athens",
+    "body": "Socrates wrote nothing at all - everything we know of him comes through students like Plato - yet his method of relentless questioning until confident answers fell apart became the foundation of Western philosophy. Athens tried him in 399 BCE for impiety and 'corrupting the youth,' and he chose to drink the hemlock rather than renounce his calling. His defense gave us the line that 'the unexamined life is not worth living.'",
+    "tags": ["philosophy", "socrates", "athens"]
+  },
+  {
+    "id": "platos_academy_and_cave",
+    "category": "philosophy",
+    "title": "Plato's Academy and the Cave",
+    "body": "Around 387 BCE, Plato founded the Academy in an olive grove outside Athens; it operated in various forms for roughly nine centuries and gave us the word 'academic.' His allegory of the cave imagines prisoners mistaking shadows on a wall for reality itself - his picture of the unphilosophical life. One modern philosopher quipped that all of Western philosophy is 'a series of footnotes to Plato.'",
+    "tags": ["philosophy", "plato", "forms"]
+  },
+  {
+    "id": "man_who_organized_knowledge",
+    "category": "philosophy",
+    "title": "The Man Who Organized Knowledge",
+    "body": "Aristotle studied under Plato for twenty years, tutored the young Alexander the Great, then founded his own school, the Lyceum, where he set out to systematize everything: logic, physics, biology, ethics, politics, and poetry. His invention of formal logic - the syllogism - remained the standard for over two thousand years. Medieval scholars simply called him 'The Philosopher,' as if there were no other.",
+    "tags": ["philosophy", "aristotle", "logic"]
+  },
+  {
+    "id": "painted_porch",
+    "category": "philosophy",
+    "title": "The Painted Porch",
+    "body": "Stoicism takes its name from the Stoa Poikile, the painted porch in Athens where Zeno began teaching around 300 BCE. Its core discipline - focus on what you control, accept what you cannot - proved durable enough to guide both Epictetus, born a slave, and Marcus Aurelius, the most powerful man alive. The emperor's Meditations were private notes to himself, never meant for publication, which is exactly why they still read as honest.",
+    "tags": ["philosophy", "stoicism", "marcus-aurelius"]
+  },
+  {
+    "id": "misunderstood_garden",
+    "category": "philosophy",
+    "title": "The Misunderstood Garden",
+    "body": "Epicurus taught that pleasure is the goal of life - but by pleasure he meant tranquility: freedom from pain and fear, achieved with simple food, deep friendships, and no terror of death, which he argued 'is nothing to us' since we never coexist with it. His school, the Garden, scandalized Athens by admitting women as equals. Today his name ironically adorns gourmet excess he would have shrugged at.",
+    "tags": ["philosophy", "epicureanism", "happiness"]
+  },
+  {
+    "id": "philosopher_in_a_jar",
+    "category": "philosophy",
+    "title": "The Philosopher in a Jar",
+    "body": "Diogenes the Cynic lived in a large ceramic jar in the Athenian marketplace and owned almost nothing - he threw away his cup after watching a boy drink from cupped hands. When Alexander the Great offered him anything he wished, Diogenes replied, 'Stand out of my sunlight.' Asked where he was from, he coined a new word: kosmopolites, 'a citizen of the world.'",
+    "tags": ["philosophy", "cynics", "diogenes"]
+  },
+  {
+    "id": "i_think_therefore_i_am",
+    "category": "philosophy",
+    "title": "I Think, Therefore I Am",
+    "body": "Rene Descartes resolved in 1637 to doubt absolutely everything - his senses, his body, even mathematics - hunting for one belief that could survive. He found it: the very act of doubting proves a doubter exists, his famous 'cogito, ergo sum.' The move re-centered philosophy on the mind and certainty, and the same man gave us Cartesian coordinates, welding algebra to geometry.",
+    "tags": ["philosophy", "descartes", "rationalism"]
+  },
+  {
+    "id": "clockwork_philosopher",
+    "category": "philosophy",
+    "title": "The Clockwork Philosopher of Konigsberg",
+    "body": "Immanuel Kant rarely left his hometown of Konigsberg, and legend says neighbors set their watches by his daily walk. His 'categorical imperative' offered a secular bedrock for ethics: act only on principles you could will as universal law, and treat people always as ends, never merely as means. He also argued the mind actively shapes experience - we never see reality raw, only as our categories serve it up.",
+    "tags": ["philosophy", "kant", "ethics"]
+  },
+  {
+    "id": "philosophy_before_socrates",
+    "category": "philosophy",
+    "title": "Philosophy Before Socrates",
+    "body": "Before Socrates, Greek thinkers made the radical move of explaining nature without gods: Thales, often called the first philosopher, even predicted the solar eclipse of 585 BCE. Heraclitus taught that everything flows - you cannot step into the same river twice. Democritus guessed that matter is made of indivisible particles he called 'atomos,' anticipating atomic theory by some 2,400 years.",
+    "tags": ["philosophy", "presocratics", "atoms"]
+  },
+  {
+    "id": "teacher_of_ten_thousand_generations",
+    "category": "philosophy",
+    "title": "The Teacher of Ten Thousand Generations",
+    "body": "Confucius, teaching in China around 500 BCE, framed ethics through relationships, ritual, and self-cultivation, and offered his own golden rule: 'Do not impose on others what you yourself do not desire.' His sayings, collected by students in the Analects, became the backbone of Chinese education. For about 1,300 years, China staffed its government through civil-service exams built on his texts.",
+    "tags": ["philosophy", "confucius", "china"]
+  },
+  {
+    "id": "theorem_older_than_pythagoras",
+    "category": "mathematics",
+    "title": "The Theorem Older Than Pythagoras",
+    "body": "A Babylonian clay tablet known as Plimpton 322 lists Pythagorean triples more than a thousand years before Pythagoras was born. His secretive brotherhood treated numbers as mystical, and legend claims they were so horrified when Hippasus showed that the square root of two cannot be written as a fraction that he was drowned at sea. The scandalous numbers were literally named 'irrational.'",
+    "tags": ["mathematics", "pythagoras", "geometry"]
+  },
+  {
+    "id": "textbook_that_lasted_millennia",
+    "category": "mathematics",
+    "title": "The Textbook That Lasted 2,000 Years",
+    "body": "Euclid's Elements, written in Alexandria around 300 BCE, builds hundreds of theorems from just a handful of axioms - the model of rigorous proof every mathematician still follows. It served as the world's geometry textbook for over two millennia and ranks among the most printed books in history. Abraham Lincoln studied it by candlelight to learn what it truly means to demonstrate something.",
+    "tags": ["mathematics", "euclid", "proof"]
+  },
+  {
+    "id": "number_that_had_to_be_invented",
+    "category": "mathematics",
+    "title": "The Number That Had to Be Invented",
+    "body": "Zero began as a mere placeholder in Babylonian bookkeeping, but in 628 CE the Indian mathematician Brahmagupta wrote the first known rules treating zero as a number you can actually calculate with. The idea traveled through the Islamic world to Europe, where Fibonacci promoted the new numerals in 1202. Merchants and clergy were suspicious for generations - some Italian cities banned the strange new digits outright.",
+    "tags": ["mathematics", "zero", "india"]
+  },
+  {
+    "id": "great_calculus_feud",
+    "category": "mathematics",
+    "title": "The Great Calculus Feud",
+    "body": "Newton developed calculus in the 1660s but sat on it; Leibniz invented it independently and published first, igniting the nastiest priority fight in the history of science. The Royal Society's official 'investigation' siding with Newton was stacked - Newton was its president and effectively wrote the verdict himself. Leibniz had the last laugh: his elegant notation is the one every student learns today.",
+    "tags": ["mathematics", "calculus", "newton"]
+  },
+  {
+    "id": "most_prolific_mathematician",
+    "category": "mathematics",
+    "title": "The Most Prolific Mathematician",
+    "body": "Leonhard Euler produced roughly 850 works - enough that journals were still publishing his backlog decades after his death - and gave mathematics much of its modern notation, including e, i, and f(x). His identity linking e, i, pi, 1, and 0 in a single equation is routinely voted the most beautiful in mathematics. When he went almost completely blind, his output actually increased; he joked he would have fewer distractions.",
+    "tags": ["mathematics", "euler", "notation"]
+  },
+  {
+    "id": "eureka_and_war_machines",
+    "category": "mathematics",
+    "title": "Eureka and War Machines",
+    "body": "Archimedes reportedly leapt from his bath shouting 'Eureka!' upon realizing that water displacement could expose a fake gold crown. He pinned down pi by sandwiching a circle between many-sided polygons, and a long-lost manuscript shows his 'method' creeping up on the ideas of calculus nearly 1,900 years early. He died in 212 BCE when a Roman soldier ignored orders to spare him - legend gives him the last words 'Do not disturb my circles.'",
+    "tags": ["mathematics", "archimedes", "pi"]
+  },
+  {
+    "id": "when_parallel_lines_met",
+    "category": "mathematics",
+    "title": "When Parallel Lines Met",
+    "body": "For two thousand years, mathematicians tried to prove Euclid's parallel postulate from his other axioms - and kept failing. In the early 1800s, Bolyai, Lobachevsky, and privately Gauss discovered why: perfectly consistent geometries exist where the postulate is simply false and space itself curves. The 'useless' curiosity became indispensable when Einstein needed curved space to describe gravity.",
+    "tags": ["mathematics", "geometry", "non-euclidean"]
+  },
+  {
+    "id": "man_behind_algorithm",
+    "category": "mathematics",
+    "title": "The Man Behind the Word 'Algorithm'",
+    "body": "In 9th-century Baghdad's House of Wisdom, Muhammad ibn Musa al-Khwarizmi wrote the book on solving equations by 'al-jabr' - restoration - giving algebra its name. Medieval Europe Latinized his own name into 'algorithm,' which originally just meant calculating with the Hindu-Arabic numerals he championed. Every line of code that runs today carries an echo of his name.",
+    "tags": ["mathematics", "algebra", "islamic-golden-age"]
+  },
+  {
+    "id": "limits_of_logic",
+    "category": "mathematics",
+    "title": "The Limits of Logic Itself",
+    "body": "In 1931, 25-year-old Kurt Godel proved that any consistent mathematical system rich enough for arithmetic must contain true statements it can never prove - and it can never prove its own consistency. The result demolished the era's dream of placing all mathematics on a complete, self-certifying foundation. At Princeton, Einstein said he came to the office mainly 'to have the privilege of walking home with Godel.'",
+    "tags": ["mathematics", "logic", "godel"]
+  },
+  {
+    "id": "358_year_margin_note",
+    "category": "mathematics",
+    "title": "The 358-Year-Old Margin Note",
+    "body": "In 1637, Pierre de Fermat scribbled in a book's margin that he had a 'truly marvelous proof' that x^n + y^n = z^n has no whole-number solutions for n greater than 2 - but the margin was too narrow to contain it. The claim taunted mathematicians for 358 years until Andrew Wiles, chasing a childhood dream, proved it in 1994-95 after seven years of secret work. The machinery his proof required is so far beyond Fermat's era that the margin boast was almost certainly a bluff.",
+    "tags": ["mathematics", "fermat", "wiles"]
+  },
+  {
+    "id": "fall_that_took_centuries",
+    "category": "world_history",
+    "title": "The Fall That Took Centuries",
+    "body": "In 476 CE, the Germanic commander Odoacer deposed the teenage emperor Romulus Augustulus - the conventional 'fall of Rome,' though contemporaries barely noticed, since plague, inflation, civil war, and migrations had been hollowing the West for generations. The Eastern half of the empire never fell with it: Byzantium carried Roman law and learning for another thousand years. Europe's political map still bears the scar.",
+    "tags": ["rome", "history", "empire"]
+  },
+  {
+    "id": "1453_constantinople",
+    "category": "world_history",
+    "title": "1453: The End of the Middle Ages",
+    "body": "Mehmed II took Constantinople in 1453 with the help of giant cannons that breached walls which had withstood sieges for a thousand years - gunpowder loudly ending the age of castles. Greek scholars fled west carrying classical manuscripts that helped fuel the Renaissance. With the old trade routes east now under Ottoman control, Atlantic kingdoms began funding ocean voyages instead.",
+    "tags": ["history", "ottoman", "byzantium"]
+  },
+  {
+    "id": "rebirth_banked_by_medici",
+    "category": "world_history",
+    "title": "The Rebirth Banked by the Medici",
+    "body": "The Renaissance flowered in 14th-to-16th-century Florence largely because banking fortunes - above all the Medici family's - poured into art and learning, funding Brunelleschi's impossible dome and Michelangelo's David. Rediscovered classical texts and the new geometry of perspective changed how Europeans painted, built, and thought. Leonardo's notebooks, ranging from anatomy to flying machines, gave us the very phrase 'Renaissance man.'",
+    "tags": ["history", "renaissance", "florence"]
+  },
+  {
+    "id": "pamphlet_war_split_europe",
+    "category": "world_history",
+    "title": "The Pamphlet War That Split Europe",
+    "body": "When Martin Luther circulated his 95 Theses in 1517 attacking the sale of indulgences, the printing press did the rest - his tracts blanketed Europe within weeks, far too fast for any censor. The Reformation that followed broke Western Christianity in two, ignited a century of religious wars, and pushed ordinary believers to read scripture in their own languages. Mass literacy and cheap print grew up together in the aftermath.",
+    "tags": ["history", "reformation", "printing"]
+  },
+  {
+    "id": "when_oceans_connected",
+    "category": "world_history",
+    "title": "When the Oceans Connected",
+    "body": "Columbus reached the Americas in 1492 convinced he had found Asia - by most accounts he died still believing it - and in 1519-22 the Magellan expedition circled the globe, though Magellan himself was killed in the Philippines and only 18 of about 270 men returned. The 'Columbian Exchange' that followed rewired the planet's diets: tomatoes reached Italy, potatoes Ireland, chili peppers Asia, and horses the Americas. World regions that had evolved separately for millennia were suddenly one connected system, with consequences both creative and catastrophic.",
+    "tags": ["history", "exploration", "columbian-exchange"]
+  },
+  {
+    "id": "biggest_change_since_farming",
+    "category": "world_history",
+    "title": "The Biggest Change Since Farming",
+    "body": "Between roughly 1760 and 1840, Britain's steam engines, cotton mills, and railways industrialized work itself - the Rocket locomotive of 1829 stunned crowds by outrunning horses. For the first time in recorded history, ordinary incomes began growing steadily generation after generation. Historians rank it with the invention of agriculture as one of the two sharpest breaks in the human story.",
+    "tags": ["history", "industrial-revolution", "britain"]
+  },
+  {
+    "id": "liberty_equality_metric",
+    "category": "world_history",
+    "title": "Liberty, Equality, and the Metric System",
+    "body": "The French Revolution that erupted with the storming of the Bastille in 1789 toppled one of Europe's oldest monarchies and proclaimed the Rights of Man - before devouring its own leaders in the Terror's guillotine. Napoleon then carried its legal and administrative ideas across Europe at bayonet point. Among its quieter legacies is the metric system, designed in revolutionary Paris 'for all people, for all time.'",
+    "tags": ["history", "france", "revolution"]
+  },
+  {
+    "id": "war_that_ended_four_empires",
+    "category": "world_history",
+    "title": "The War That Ended Four Empires",
+    "body": "A single assassination in Sarajevo on June 28, 1914 tripped a chain of alliances that dragged all of Europe into war within weeks. Four years of industrialized trench slaughter killed some 17 million people and erased four empires - the German, Austro-Hungarian, Ottoman, and Russian - from the map. The punitive peace signed at Versailles left grievances that helped ignite an even larger war twenty years later.",
+    "tags": ["history", "ww1", "empires"]
+  },
+  {
+    "id": "deadliest_war_in_history",
+    "category": "world_history",
+    "title": "The Deadliest War in History",
+    "body": "World War II killed an estimated 70 to 85 million people between 1939 and 1945 - the majority of them civilians - including six million Jews murdered in the Holocaust. It ended with atomic bombs over Hiroshima and Nagasaki, the only nuclear weapons ever used in war. From its ashes came the United Nations, the Cold War's divided world, and the slow dismantling of colonial empires.",
+    "tags": ["history", "ww2", "20th-century"]
+  },
+  {
+    "id": "night_the_wall_fell",
+    "category": "world_history",
+    "title": "The Night the Wall Fell",
+    "body": "On November 9, 1989, an East German official misread a memo at a live press conference and announced that travel to the West was permitted 'immediately' - within hours, crowds overwhelmed the Berlin Wall's checkpoints and began dancing on the concrete that had divided the city since 1961. Germany reunified within a year. By the end of 1991, the Soviet Union itself had voted out of existence, closing the Cold War without the nuclear catastrophe both sides had spent decades preparing for.",
+    "tags": ["history", "cold-war", "berlin"]
+  }
+]
