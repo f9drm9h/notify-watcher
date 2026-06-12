@@ -101,7 +101,7 @@
       { "topic": "soundcore_pro", "score": 62 },
       { "topic": "movies", "severity": "moderate", "score": 28 },
 
-      { "topic": "music", "severity": "low", "score": 22 },
+      { "topic": "music", "severity": "low", "score": 62 },
       { "topic": "groceries", "severity": "low", "score": 28 },
       { "topic": "deals", "severity": "low", "score": 20 },
       { "topic": "movies", "severity": "low", "score": 15 }
