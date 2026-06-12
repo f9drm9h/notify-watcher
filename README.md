@@ -405,7 +405,7 @@ you normally never set by hand: `NOTIFY_DAILY=1` marks the once-a-day run
 (daily-only topics like the digest flush, learn, and groceries gate on it;
 main.py also sets it automatically on the first run past 12:00 UTC),
 `NOTIFY_ONLY=<topic,topic>` restricts a run to named topics (how the
-15-minute `twitch.yml` workflow stays lightweight), and `NOTIFY_TEST_PUSH=1`
+15-minute Twitch-only mode inside `watch.yml` stays lightweight), and `NOTIFY_TEST_PUSH=1`
 sends a single delivery-test notification and exits (the `test_push=true`
 manual dispatch input).
 
@@ -471,7 +471,8 @@ finishes (green check), you should:
 - See a new commit on `main` titled `chore: update state [skip ci]` if any
   topic recorded state.
 
-After this, the workflow runs by itself every 3 hours.
+After this, the workflow runs by itself every 15 minutes for Twitch and does
+the full sweep once per 3-hour window.
 
 ---
 
@@ -559,8 +560,7 @@ re-introduces a substring collision) fails CI instead of your phone.
 ```
 notify-watcher/
 ├── .github/workflows/
-│   ├── watch.yml                    3-hourly sweep: run + commit state back
-│   ├── twitch.yml                   15-min lightweight run (NOTIFY_ONLY=twitch)
+│   ├── watch.yml                    15-min scheduler: Twitch every run, full sweep once per 3-hour window
 │   └── test.yml                     CI: full test suite on every push/PR
 ├── notify_watcher/                  — engine —
 │   ├── main.py                      runs each topic, isolates failures
