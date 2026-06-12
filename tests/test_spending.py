@@ -76,6 +76,59 @@ class ParseTransactionsTest(unittest.TestCase):
         self.assertEqual(txs[0]["merchant"], "CLARO RECAR")
 
 
+# Mirrors the REAL BHD alert verified against a user screenshot (2026-06-11):
+# banner + prose rows sit ABOVE the header row inside the same table, the date
+# is 12-hour with a lowercase meridiem, and the Comercio cell carries a
+# reference/phone number on a second line under the merchant name.
+REAL_HTML = """
+<html><body>
+<table><tr><td><img src="bhd-logo.png"></td></tr></table>
+<table>
+  <tr><td colspan="6">BHD Notificaci&oacute;n de Transacciones</td></tr>
+  <tr><td colspan="6">Visa D&eacute;bito Intl # 8252</td></tr>
+  <tr><td colspan="6">Detalle de Criterios</td></tr>
+  <tr><td colspan="6">Te notificamos la transacci&oacute;n realizada con tu
+    Tarjeta Visa D&eacute;bito Intl # 8252. En caso de no reconocer esta
+    transacci&oacute;n, por favor llama de inmediato al 809-243-5282.</td></tr>
+  <tr><td colspan="6">Detalle de Transacciones</td></tr>
+  <tr>
+    <td>Fecha</td><td>Moneda</td><td>Monto</td>
+    <td>Comercio</td><td>Estado</td><td>Tipo</td>
+  </tr>
+  <tr>
+    <td>11/06/2026 01:48 pm</td><td>RD</td><td>$250.00</td>
+    <td>CLARO RECAR<br>8099048592</td><td>Aprobada</td><td>Compra</td>
+  </tr>
+</table>
+</body></html>
+"""
+
+
+class RealEmailFormatTest(unittest.TestCase):
+    """The parser must handle the real alert layout, not just the guessed one."""
+
+    def test_parses_the_real_alert(self):
+        txs = sp._parse_transactions(REAL_HTML)
+        self.assertEqual(txs, [{
+            "date": "2026-06-11T13:48:00",  # 01:48 pm -> 13:48
+            "amount": 250.0,
+            "currency": "DOP",
+            "merchant": "CLARO RECAR",  # reference line dropped
+            "type": "Compra",
+            "source": "bhd_email",
+        }])
+
+    def test_prose_row_mentioning_fecha_and_monto_is_not_the_header(self):
+        # A single-cell row containing both keywords must not be mistaken for
+        # the header row (date and amount must land in distinct cells).
+        html = REAL_HTML.replace(
+            "Detalle de Criterios",
+            "Verifica la fecha y el monto de cada transacci&oacute;n")
+        txs = sp._parse_transactions(html)
+        self.assertEqual(len(txs), 1)
+        self.assertEqual(txs[0]["merchant"], "CLARO RECAR")
+
+
 class HelpersTest(unittest.TestCase):
     def test_subject_matches_ignores_accents_and_case(self):
         self.assertTrue(sp._subject_matches(
@@ -93,6 +146,14 @@ class HelpersTest(unittest.TestCase):
         self.assertEqual(sp._parse_date("11/06/2026 13:48"), "2026-06-11T13:48:00")
         self.assertEqual(sp._parse_date("11/06/2026"), "2026-06-11T00:00:00")
         self.assertEqual(sp._parse_date("whenever"), "whenever")  # raw, not raised
+
+    def test_parse_date_twelve_hour(self):
+        # The real BHD alert: lowercase meridiem, sometimes wrapped onto its
+        # own line in the cell (normalized to one space before parsing).
+        self.assertEqual(sp._parse_date("11/06/2026 01:48 pm"), "2026-06-11T13:48:00")
+        self.assertEqual(sp._parse_date("11/06/2026 01:48\npm"), "2026-06-11T13:48:00")
+        self.assertEqual(sp._parse_date("11/06/2026 12:05 AM"), "2026-06-11T00:05:00")
+        self.assertEqual(sp._parse_date("11/06/2026 12:30 PM"), "2026-06-11T12:30:00")
 
     def test_html_from_multipart_message(self):
         raw = (
