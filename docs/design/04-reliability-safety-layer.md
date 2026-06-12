@@ -32,7 +32,7 @@ the foundation of this design, so it is worth stating precisely:
   reminders/bills/habits topics all treat a missing file, malformed JSON, or a
   wrong-typed field as "nothing to do" so a typo never crashes a scheduled run.
 - **State-push resilience** — shared `watch` concurrency group plus the
-  rebase-and-retry push loop in watch.yml / twitch.yml.
+  rebase-and-retry push loop in watch.yml.
 
 None of this is duplicated below. The new layers cover only what this
 machinery *cannot* see.
@@ -124,7 +124,7 @@ tests/test_watchdog.py               EDIT new cases for 3a/3b
 ```
 
 `jsonschema` goes in a new requirements-dev.txt rather than requirements.txt so
-the runtime image (watch.yml / twitch.yml) is byte-for-byte unchanged —
+the runtime image (watch.yml) is unchanged —
 validation is a CI concern; the runtime loaders stay deliberately fail-soft.
 
 ## 5. Layer 1 — workflow failure alerts (alert.yml)
@@ -145,7 +145,7 @@ name: alert
 
 on:
   workflow_run:
-    workflows: [watch, twitch, test]   # workflow `name:` fields, not filenames
+    workflows: [watch, test]   # workflow `name:` fields, not filenames
     types: [completed]
   schedule:
     - cron: "30 5,11,17,23 * * *"      # heartbeat 4x/day, offset from :00 grid
@@ -178,7 +178,7 @@ jobs:
         run: |
           # workflow_run fires once per completed run-attempt, so per-run dedup
           # is inherent. Streak suppression handles the other spam source: a
-          # workflow that fails every cycle (twitch runs 96x/day) must push on
+          # workflow that fails every cycle (watch runs 96x/day) must push on
           # the first failure only, then stay quiet until it recovers.
           prev=$(gh api "repos/${{ github.repository }}/actions/workflows/${WF_ID}/runs?branch=${RUN_BRANCH}&status=completed&per_page=5" \
             --jq "[.workflow_runs[] | select(.id != ${RUN_ID})][0].conclusion // \"none\"")
@@ -518,7 +518,7 @@ asserts the topic re-alerts on the next run.
 **Phase 1 — validation first (PR).** Add `schemas/`, `tests/test_config_files.py`,
 `requirements-dev.txt`; point test.yml's install at requirements-dev.txt. If
 any live config fails its new schema, fix file or schema in the same PR so it
-merges green. *Runtime change: none — watch.yml/twitch.yml and all loaders are
+merges green. *Runtime change: none — watch.yml and all loaders are
 untouched.* Rollback: delete the new files. Validation goes first because it
 protects every config edit made during the later phases.
 

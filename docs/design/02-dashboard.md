@@ -7,7 +7,7 @@
 
 - Must stay **free**. GitHub Actions stays the only scheduler. **No always-on server.** Minimal maintenance.
 
-These rule out anything that needs a process running between the 3-hourly cron ticks.
+These rule out anything that needs a process running between scheduled Actions ticks.
 The dashboard must be **static, regenerated each run**.
 
 ## The shared foundation: an event-log artifact
@@ -69,7 +69,7 @@ file is zero new infrastructure and stays 100% free/serverless.
 ## Recommended architecture
 
 ```
- watch.yml (every 3h)
+ watch.yml (full-sweep mode)
    └─ python -m notify_watcher.main
         └─ emit(...) ──► eventlog.record() ──► state["event_log"]  (capped ~500)
    └─ build step:  python -m notify_watcher.dashboard

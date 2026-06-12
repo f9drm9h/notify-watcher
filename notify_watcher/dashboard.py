@@ -1,6 +1,7 @@
 """Static dashboard: render the watcher's state into one self-contained HTML page.
 
-The watcher has no server — GitHub Actions runs it every 3h and commits ``state.json``.
+The watcher has no server — GitHub Actions commits ``state.json`` and rebuilds
+the dashboard on each full sweep.
 So the dashboard is **static, regenerated each run**: this module reads the durable
 data the watcher already commits (the ``eventlog`` history, the ``digest`` buffer, the
 per-topic ``topic_health`` stamps from ``main``, and the ``last_run`` summary) and emits
