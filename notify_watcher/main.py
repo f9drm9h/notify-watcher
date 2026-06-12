@@ -4,6 +4,17 @@ Each topic is a function `(state: dict) -> dict` that may push notifications
 as a side effect and returns the (possibly updated) state dict. If a topic
 raises, we log it and continue with the next topic so one broken source
 never silences the others.
+
+Health stamping (state["topic_health"]) has two regimes:
+
+  - Legacy topics: "didn't raise" counts as success and stamps ``last_ok``.
+  - Topics in health.ADOPTED report their source outcome explicitly via the
+    topic health contract (health.source_ok / health.source_failed):
+    ``last_ok`` is stamped only for a true ok report, a soft (swallowed)
+    source failure is recorded as ``last_error`` + ``source_failed`` without
+    refreshing ``last_ok``, and a run with no report leaves the entry
+    untouched — so a soft failure stays sticky until a true success and the
+    watchdog's no-successful-run check can finally see a dead source.
 """
 from __future__ import annotations
 
@@ -14,7 +25,7 @@ import sys
 import traceback
 from typing import Callable
 
-from . import control, ntfy
+from . import control, health, ntfy
 from . import state as state_mod
 from .topics import (
     air_quality,
@@ -196,6 +207,39 @@ TOPICS: list[tuple[str, Topic]] = [
 ]
 
 
+def _record_outcome(entry: dict, status: dict | None, *, adopted: bool,
+                    run_ts: str) -> bool:
+    """Stamp one topic's ``topic_health`` entry from its run outcome.
+
+    ``status`` is the topic's health report (health.consume), or None when the
+    topic made no claim this run. Returns True when the run counts as ok in the
+    last_run telemetry. The rules (see module docstring): an explicit ok report
+    — or, for legacy topics, simply not raising — stamps ``last_ok`` and clears
+    errors; a source_failed report records a soft failure WITHOUT stamping
+    ``last_ok``; an adopted topic with no report (gated daily topic on a
+    3-hourly run, nothing configured) leaves the entry untouched so a prior
+    soft failure stays sticky until a true success.
+    """
+    if status is None:
+        if adopted:
+            return True
+        entry["last_ok"] = run_ts
+        entry.pop("last_error", None)
+        entry.pop("last_error_ts", None)
+        return True
+    if status.get("ok"):
+        entry["last_ok"] = run_ts
+        entry["last_data_count"] = int(status.get("data_count") or 0)
+        entry.pop("last_error", None)
+        entry.pop("last_error_ts", None)
+        entry.pop("source_failed", None)
+        return True
+    entry["last_error"] = status.get("message") or "source failed"
+    entry["last_error_ts"] = run_ts
+    entry["source_failed"] = True
+    return False
+
+
 def _selected_topics(only: str) -> list[tuple[str, Topic]]:
     """Filter TOPICS to a comma-separated allowlist (``NOTIFY_ONLY``), preserving
     order. Empty/blank means all topics. Unknown names are simply ignored. This lets
@@ -252,7 +296,7 @@ def main() -> int:
     # topic that THREW (it never emits), so the only place that knows a topic failed
     # is this loop. Stamp last-ok / last-error here; the dashboard turns it into the
     # "topic health / last successful run / failures" panels (docs/design/02-dashboard).
-    health: dict = state.setdefault("topic_health", {})
+    topic_health: dict = state.setdefault("topic_health", {})
     run_ts = _dt.datetime.now(_dt.timezone.utc).isoformat()
     ok_count = fail_count = 0
 
@@ -262,21 +306,29 @@ def main() -> int:
 
     for name, run in topics:
         log.info("[%s] starting", name)
-        entry = health.setdefault(name, {})
+        entry = topic_health.setdefault(name, {})
         try:
             state = run(state)
-            entry["last_ok"] = run_ts
-            entry.pop("last_error", None)
-            entry.pop("last_error_ts", None)
-            ok_count += 1
-            log.info("[%s] ok", name)
         except Exception as exc:  # noqa: BLE001 - we deliberately swallow
+            health.consume(state, name)  # discard any half-written report
             entry["last_error"] = str(exc)
             entry["last_error_ts"] = run_ts
+            entry.pop("source_failed", None)
             fail_count += 1
             log.error("[%s] failed: %s", name, exc)
             log.debug("[%s] traceback:\n%s", name, traceback.format_exc())
+            continue
+        status = health.consume(state, name)
+        if _record_outcome(entry, status,
+                           adopted=name in health.ADOPTED, run_ts=run_ts):
+            ok_count += 1
+            log.info("[%s] ok", name)
+        else:
+            fail_count += 1
+            log.error("[%s] source failed: %s", name, entry["last_error"])
 
+    # The contract reports are per-run scratch; never persist them.
+    state.pop(health.STATUS_KEY, None)
     state["last_run"] = {"ts": run_ts, "ok": ok_count, "failed": fail_count}
     state_mod.save(state)
     # Always exit 0: a per-topic failure (e.g. transient network error) is

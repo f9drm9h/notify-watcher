@@ -212,5 +212,48 @@ class StoreRunTest(unittest.TestCase):
         self.assertEqual(state[groceries.STATE_KEY]["La Sirena"], [self.S1])
 
 
+class HealthContractTest(unittest.TestCase):
+    """run() aggregates the three store collectors into one health report."""
+
+    DEAL = {"store": "La Sirena", "name": "Televisor", "url": "https://x/p1",
+            "price": 8995.0, "list_price": 15995.0, "pct": 43.8}
+
+    def _run(self, sirena, nacional, bravo):
+        from unittest import mock
+        with mock.patch.dict("os.environ", {"NOTIFY_DAILY": "1"}), \
+                mock.patch.object(groceries.config, "section", return_value={}), \
+                mock.patch.object(groceries, "_collect_sirena",
+                                  return_value=sirena), \
+                mock.patch.object(groceries, "_collect_nacional",
+                                  return_value=nacional), \
+                mock.patch.object(groceries, "_collect_bravo",
+                                  return_value=bravo):
+            return groceries.run({})
+
+    def _status(self, state):
+        from notify_watcher import health
+        return (state.get(health.STATUS_KEY) or {}).get("groceries")
+
+    def test_all_stores_unreachable_reports_source_failed(self):
+        state = self._run(None, None, None)
+        status = self._status(state)
+        self.assertTrue(status["source_failed"])
+        self.assertIn("all stores unreachable", status["message"])
+
+    def test_one_delivering_store_reports_ok(self):
+        state = self._run([dict(self.DEAL)], None, None)
+        status = self._status(state)
+        self.assertTrue(status["ok"])
+        self.assertEqual(status["data_count"], 1)
+        self.assertIn("last_data", state["topic_health"]["groceries"])
+
+    def test_gated_run_makes_no_claim(self):
+        from unittest import mock
+        from notify_watcher import health
+        with mock.patch.dict("os.environ", {"NOTIFY_DAILY": ""}):
+            state = groceries.run({})
+        self.assertNotIn(health.STATUS_KEY, state)
+
+
 if __name__ == "__main__":
     unittest.main()

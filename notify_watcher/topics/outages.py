@@ -39,10 +39,11 @@ try:
 except ImportError:  # pragma: no cover - requirements.txt installs it
     PdfReader = None
 
-from .. import config, events, ids
+from .. import config, events, health, ids
 
 log = logging.getLogger(__name__)
 
+TOPIC = "outages"
 STATE_KEY = "outage_seen_ids"  # EDESUR notices
 EDEESTE_STATE_KEY = "outage_edeeste_seen_ids"  # EDEESTE (date, zone) hits
 CAP = 400
@@ -293,13 +294,17 @@ def _edeeste_collect(cfg: dict, today: _dt.date) -> list[dict] | None:
     return rows
 
 
-def _run_edeeste(state: dict, cfg: dict, lead_days: int, today: _dt.date) -> dict:
+def _run_edeeste(state: dict, cfg: dict, lead_days: int,
+                 today: _dt.date) -> tuple[dict, tuple[bool, int, str]]:
+    """Returns (state, (source_ok, data_count, message)) for run()'s health
+    aggregation across the configured outage sources."""
     if PdfReader is None:
         log.error("pypdf is not installed; skipping EDEESTE outages")
-        return state
+        return state, (False, 0, "EDEESTE: pypdf is not installed")
     rows = _edeeste_collect(cfg, today)
     if rows is None:
-        return state
+        return state, (False, 0,
+                       "EDEESTE archive unreachable or parsed to 0 packages")
 
     seen = state.get(EDEESTE_STATE_KEY)
     if seen is None:
@@ -307,7 +312,7 @@ def _run_edeeste(state: dict, cfg: dict, lead_days: int, today: _dt.date) -> dic
                                     for r in rows][:CAP]
         log.info("seeded %s baseline with %d id(s) (no alerts on first run)",
                  EDEESTE_STATE_KEY, len(state[EDEESTE_STATE_KEY]))
-        return state
+        return state, (True, len(rows), "")
 
     seen = ids.normalize_seen(seen)
     seen_set = set(seen)
@@ -341,7 +346,7 @@ def _run_edeeste(state: dict, cfg: dict, lead_days: int, today: _dt.date) -> dic
     if pushed:
         log.info("outages (EDEESTE): %d pushed", pushed)
     state[EDEESTE_STATE_KEY] = (fresh + seen)[:CAP]
-    return state
+    return state, (True, len(rows), "")
 
 
 # --------------------------------------------------------------------------
@@ -414,7 +419,10 @@ def _key(row: dict) -> str:
                                row["window"], row["zones"]]))
 
 
-def _run_edesur(state: dict, cfg: dict, lead_days: int, today: _dt.date) -> dict:
+def _run_edesur(state: dict, cfg: dict, lead_days: int,
+                today: _dt.date) -> tuple[dict, tuple[bool, int, str]]:
+    """Returns (state, (source_ok, data_count, message)) for run()'s health
+    aggregation across the configured outage sources."""
     url = cfg.get("url") or EDESUR_URL
     regions = cfg.get("regions") or []
     try:
@@ -423,7 +431,7 @@ def _run_edesur(state: dict, cfg: dict, lead_days: int, today: _dt.date) -> dict
         rows = _parse_page(resp.text)
     except Exception as exc:  # noqa: BLE001 - a fetch/parse failure is non-fatal
         log.error("EDESUR outages fetch failed: %s", exc)
-        return state
+        return state, (False, 0, f"EDESUR fetch failed: {exc}")
 
     matching = [r for r in rows if _matches_region(r["province"], regions)]
     log.info("EDESUR: %d notice(s) on page, %d in watched regions",
@@ -431,14 +439,15 @@ def _run_edesur(state: dict, cfg: dict, lead_days: int, today: _dt.date) -> dict
     if not rows:
         # A published week always has notices; an empty parse means the page
         # is blocked or was restructured, so don't touch the seen baseline.
-        return state
+        return state, (False, 0,
+                       "EDESUR parsed 0 notices (blocked or restructured?)")
 
     seen = state.get(STATE_KEY)
     if seen is None:
         state[STATE_KEY] = [_key(r) for r in matching][:CAP]
         log.info("seeded %s baseline with %d id(s) (no alerts on first run)",
                  STATE_KEY, len(state[STATE_KEY]))
-        return state
+        return state, (True, len(rows), "")
 
     seen = ids.normalize_seen(seen)
     seen_set = set(seen)
@@ -471,7 +480,7 @@ def _run_edesur(state: dict, cfg: dict, lead_days: int, today: _dt.date) -> dict
         log.info("outages (EDESUR): %d pushed", pushed)
 
     state[STATE_KEY] = (fresh + seen)[:CAP]
-    return state
+    return state, (True, len(rows), "")
 
 
 def run(state: dict) -> dict:
@@ -479,11 +488,24 @@ def run(state: dict) -> dict:
     lead_days = int(cfg.get("lead_days", DEFAULT_LEAD_DAYS))
     today = _today_local()
 
+    outcomes: list[tuple[bool, int, str]] = []
     edeeste_cfg = cfg.get("edeeste") or {}
     if edeeste_cfg.get("zones"):
-        state = _run_edeeste(state, edeeste_cfg, lead_days, today)
+        state, outcome = _run_edeeste(state, edeeste_cfg, lead_days, today)
+        outcomes.append(outcome)
     if cfg.get("regions"):
-        state = _run_edesur(state, cfg, lead_days, today)
-    if not edeeste_cfg.get("zones") and not cfg.get("regions"):
+        state, outcome = _run_edesur(state, cfg, lead_days, today)
+        outcomes.append(outcome)
+    if not outcomes:
         log.info("no outage zones/regions configured; skipping")
+        return state
+
+    # Health contract: ok while at least one configured source delivered;
+    # source_failed only when every configured source failed.
+    if any(ok for ok, _, _ in outcomes):
+        health.source_ok(state, TOPIC,
+                         data_count=sum(n for ok, n, _ in outcomes if ok))
+    else:
+        health.source_failed(state, TOPIC,
+                             "; ".join(msg for _, _, msg in outcomes))
     return state

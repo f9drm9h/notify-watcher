@@ -51,11 +51,24 @@ machinery *cannot* see.
 | 8 | Scraper gets HTTP 200 but parses zero items (site changed its HTML) | ❌ "successfully does nothing" forever | **Layer 3: data heartbeat** |
 | 9 | Watchdog's own alert push fails | ❌ `watchdog_alerted` is stamped anyway; alert lost | **Layer 3: alert-retry fix** |
 | 10 | ntfy itself is down | ⚠️ undetectable *through ntfy* | residual risk (§9) |
+| 11 | Topic swallows its own fetch failure (log + `return state`) so main stamps `last_ok` anyway | ✅ reported as `source_failed`; watchdog alerts after 48 h | **topic health contract (`health.py`)** |
 
 Rows 6–7 are the most likely in practice: the whole point of watchlist.json /
 reminders.json / habits.json is that they are edited by hand on github.com, and
 today a stray comma silently disables the edited feature while the dashboard
 shows green.
+
+Row 11 shipped after the original three layers: every direct scraper — fuel,
+weather, quakes, onamet, outages, youtube, twitch, deals, groceries, fx —
+deliberately swallows fetch errors so one dead source never kills the sweep,
+which used to make "source down" indistinguishable from "ran fine". Topics in
+`health.ADOPTED` now report `source_ok(data_count=N)` / `source_failed(msg)`
+once per run (`notify_watcher/health.py`); main.py stamps `last_ok` only for a
+true ok report, records soft failures into `topic_health` as
+`last_error` + `source_failed` (the exact shape the existing watchdog
+threshold already reads), keeps them sticky across gated no-claim runs, and an
+ok report with items also stamps `last_data` — extending the Layer-3 data
+heartbeat to the direct scrapers.
 
 ## 3. Architecture: three layers, crisp boundaries
 

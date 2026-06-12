@@ -182,5 +182,59 @@ class GroupNoteTest(unittest.TestCase):
         self.assertEqual(note, "")
 
 
+class HealthContractTest(unittest.TestCase):
+    """run() reports its source outcome (notify_watcher.health)."""
+
+    PRODUCTS = [{"name": "Liberty 4 NC", "url": "https://soundcore.example/p"}]
+
+    def _run(self, get, state=None):
+        from unittest import mock
+        from tests._util import capture_pushes
+        with mock.patch.object(deals.watchlist, "entries",
+                               return_value=list(self.PRODUCTS)), \
+                mock.patch.object(deals.requests, "get", get), \
+                capture_pushes():
+            return deals.run(state if state is not None else {})
+
+    def _status(self, state):
+        from notify_watcher import health
+        return (state.get(health.STATUS_KEY) or {}).get("deals")
+
+    def test_every_product_failing_reports_source_failed(self):
+        from unittest import mock
+        state = self._run(mock.Mock(side_effect=OSError("connection refused")))
+        status = self._status(state)
+        self.assertTrue(status["source_failed"])
+        self.assertIn("connection refused", status["message"])
+
+    def test_unparseable_pages_everywhere_report_source_failed(self):
+        from unittest import mock
+        resp = mock.Mock()
+        resp.raise_for_status.return_value = None
+        resp.text = "<html><body>no JSON-LD here</body></html>"
+        state = self._run(mock.Mock(return_value=resp))
+        status = self._status(state)
+        self.assertTrue(status["source_failed"])
+        self.assertIn("no price parsed", status["message"])
+
+    def test_a_price_observation_reports_ok(self):
+        from unittest import mock
+        resp = mock.Mock()
+        resp.raise_for_status.return_value = None
+        resp.text = _page(PLAIN_PRODUCT)
+        state = self._run(mock.Mock(return_value=resp))
+        status = self._status(state)
+        self.assertTrue(status["ok"])
+        self.assertEqual(status["data_count"], 1)
+        self.assertIn("last_data", state["topic_health"]["deals"])
+
+    def test_no_products_makes_no_claim(self):
+        from unittest import mock
+        from notify_watcher import health
+        with mock.patch.object(deals.watchlist, "entries", return_value=[]):
+            state = deals.run({})
+        self.assertNotIn(health.STATUS_KEY, state)
+
+
 if __name__ == "__main__":
     unittest.main()

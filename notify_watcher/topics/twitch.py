@@ -13,10 +13,11 @@ import logging
 
 import requests
 
-from .. import config, control, events
+from .. import config, control, events, health
 
 log = logging.getLogger(__name__)
 
+TOPIC = "twitch"
 STATE_KEY = "twitch_live"  # usernames known live as of the previous run
 DECAPI = "https://decapi.me/twitch/{kind}/{user}"
 HEADERS = {"User-Agent": "notify-watcher/1.0 (+https://github.com/) personal-use"}
@@ -56,10 +57,14 @@ def run(state: dict) -> dict:
 
     was_live = set(state.get(STATE_KEY) or [])
     now_live: list[str] = []
+    checked_ok = 0
+    last_check_error = ""
 
     for user in streamers:
         try:
-            if not _is_live(_get("uptime", user)):
+            live = _is_live(_get("uptime", user))
+            checked_ok += 1
+            if not live:
                 continue
             now_live.append(user)
             if user in was_live:
@@ -89,10 +94,20 @@ def run(state: dict) -> dict:
             log.info("twitch: %s went live", user)
         except Exception as exc:  # noqa: BLE001 - isolate each streamer
             log.error("twitch %r check failed: %s", user, exc)
+            last_check_error = f"{user}: {exc}"
             # Preserve prior live-state on a transient error so we don't re-alert
             # a still-live streamer just because this one poll failed.
             if user in was_live:
                 now_live.append(user)
+
+    # Health contract: ok while at least one uptime check answered (an offline
+    # response IS an answer); source_failed only when every check failed.
+    if checked_ok:
+        health.source_ok(state, TOPIC, data_count=checked_ok)
+    else:
+        health.source_failed(
+            state, TOPIC,
+            f"all {len(streamers)} uptime check(s) failed; last: {last_check_error}")
 
     state[STATE_KEY] = sorted(set(now_live))
     return state
