@@ -199,10 +199,12 @@ digest simply goes out without it.
   Fires once at each configured lead time (default 90/30/7/1/0 days before).
   Daily run only.
 - **Weekly spending summary (BHD)** — polls Gmail over IMAP every run for
-  unread "BHD Notificación de Transacciones" alert emails, parses the approved
+  "BHD Notificación de Transacciones" alert emails from the last 7 days
+  (read or unread — reading your own alerts can't hide them from the bot; the
+  mailbox is opened read-only and never modified), parses the approved
   transactions out of the HTML table (date, amount, currency, merchant, type),
-  logs them to `data/spending.json.enc` (deduped on date + amount + merchant),
-  and marks each processed email read so nothing is parsed twice. Every Monday
+  and logs them to `data/spending.json.enc` (deduped on date + amount +
+  merchant, so re-scanning the same emails is harmless). Every Monday
   it pushes last week's picture: total spent in DOP, top merchants, the biggest
   single expense, and a week-over-week comparison. Silent until transactions
   exist. Requires the `GMAIL_USER` + `GMAIL_APP_PASSWORD` secrets (a Gmail

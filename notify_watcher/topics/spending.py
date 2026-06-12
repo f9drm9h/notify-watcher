@@ -1,11 +1,14 @@
 """Topic: weekly spending summary from BHD transaction emails (Gmail IMAP).
 
 Banco BHD mails a "BHD Notificación de Transacciones" alert for each card
-transaction. Every run this topic polls Gmail for unread alerts from the
-configured sender, parses the transaction table out of the email HTML
-(approved transactions only), appends them to ``data/spending.json`` (deduped
-on date + amount + merchant), and marks each successfully processed email as
-read so it is never parsed twice. On the first daily run of each ISO week
+transaction. Every run this topic polls Gmail for recent alerts from the
+configured sender — the last ``lookback_days`` (default 7) of mail regardless
+of read state, because the account owner reads their own bank alerts and an
+UNSEEN filter would race them and silently lose transactions. The mailbox is
+opened read-only and never modified; re-parsing an already-recorded email is
+harmless because transactions dedup on date + amount + merchant. Approved
+transactions are appended to the encrypted log. On the first daily run of
+each ISO week
 (Monday morning) it pushes a summary of the completed week: total spent in
 DOP, top merchants, the biggest single expense, and a week-over-week
 comparison rendered by ``changes.diff``. With no transactions recorded yet the
@@ -17,9 +20,7 @@ connector was considered and rejected: MCP servers are session-authenticated
 for AI assistants, so a headless GitHub Actions runner cannot use one — an
 app password over IMAP is the equivalent capability the runner CAN hold.
 Without the secrets the ingestion step logs and skips; a fetch/parse failure
-never raises. Emails are fetched with BODY.PEEK and flagged ``\\Seen`` only
-AFTER their transactions are safely merged and saved, so a crash mid-run
-re-processes (and re-dedups) rather than losing transactions.
+never raises.
 
 PRIVACY: the transaction log holds real purchase history and is committed
 back to the repo by the workflow like ``state.json`` — so it is encrypted at
@@ -53,7 +54,9 @@ log = logging.getLogger(__name__)
 
 WEEK_KEY = "spending_week_summarized"
 SPENDING_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "spending.json.enc"
-DEFAULT_SENDER = "alertas@bhd.com.do"
+# A bare domain: IMAP FROM is a substring match over the header, and the
+# bank's exact mailbox name is not guaranteed (the subject filter narrows it).
+DEFAULT_SENDER = "bhd.com.do"
 DEFAULT_SUBJECT = "BHD Notificación de Transacciones"
 IMAP_HOST = "imap.gmail.com"
 
@@ -69,13 +72,22 @@ _COLUMNS = {
 _DATE_FORMATS = (
     "%d/%m/%Y %H:%M:%S",
     "%d/%m/%Y %H:%M",
+    # The real BHD alert uses 12-hour time: "11/06/2026 01:48 pm" (%p matches
+    # am/pm case-insensitively).
+    "%d/%m/%Y %I:%M:%S %p",
+    "%d/%m/%Y %I:%M %p",
     "%d/%m/%Y",
     "%d-%m-%Y %H:%M:%S",
     "%d-%m-%Y %H:%M",
+    "%d-%m-%Y %I:%M %p",
     "%d-%m-%Y",
     "%Y-%m-%d %H:%M:%S",
     "%Y-%m-%d",
 )
+# IMAP SINCE dates are dd-Mon-yyyy with English month names; strftime("%b")
+# is locale-dependent, so the month names are pinned here.
+_IMAP_MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun",
+                "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
 
 
 def _fold(text: str) -> str:
@@ -123,29 +135,42 @@ def _normalize_currency(text: str) -> str:
 def _parse_transactions(html: str) -> list[dict]:
     """Pure: approved transactions from a BHD alert's HTML body.
 
-    Finds any table whose header row names a Fecha and a Monto column (matched
-    accent/case-insensitively, so layout or styling changes don't matter),
-    maps the remaining columns by header name, and keeps only rows whose
-    Estado is "Aprobada" (a missing Estado column keeps the row — a bank table
-    with no status column has nothing to filter on). Rows with no parseable
-    amount are skipped.
+    Scans each table for its header row — the first row naming a Fecha and a
+    Monto column in DISTINCT cells (matched accent/case-insensitively). The
+    real alert stacks banner rows ("Detalle de Transacciones", the card
+    blurb) above the headers inside the same table, so the header is found by
+    scanning, not assumed to be row 0; requiring distinct cells stops a
+    one-cell prose row that happens to mention both words from masquerading
+    as the header. Remaining columns map by header name. Only rows whose
+    Estado is "Aprobada" are kept (a missing Estado column keeps the row — a
+    bank table with no status column has nothing to filter on); rows with no
+    parseable amount are skipped. The Comercio cell carries a reference/phone
+    number on a second line below the merchant name; only the first line is
+    kept so merchants group consistently.
     """
     out: list[dict] = []
     soup = BeautifulSoup(html or "", "html.parser")
     for table in soup.find_all("table"):
         rows = table.find_all("tr")
-        if not rows:
-            continue
-        header = [_fold(c.get_text()) for c in rows[0].find_all(["th", "td"])]
         idx: dict[str, int] = {}
-        for i, cell in enumerate(header):
-            for fragment, field in _COLUMNS.items():
-                if fragment in cell and field not in idx:
-                    idx[field] = i
-        if "date" not in idx or "amount" not in idx:
+        header_at = None
+        for r, row in enumerate(rows):
+            cells = [_fold(c.get_text()) for c in row.find_all(["th", "td"])]
+            found: dict[str, int] = {}
+            for i, cell in enumerate(cells):
+                for fragment, field in _COLUMNS.items():
+                    if fragment in cell and field not in found:
+                        found[field] = i
+            if "date" in found and "amount" in found \
+                    and found["date"] != found["amount"]:
+                idx, header_at = found, r
+                break
+        if header_at is None:
             continue  # not the transaction table (layout/spacer tables abound)
-        for row in rows[1:]:
-            cells = [c.get_text(" ", strip=True) for c in row.find_all("td")]
+        for row in rows[header_at + 1:]:
+            # "\n" preserves line breaks inside a cell so the merchant's
+            # reference line can be split off below.
+            cells = [c.get_text("\n", strip=True) for c in row.find_all("td")]
             if len(cells) <= max(idx.values()):
                 continue
             status = cells[idx["status"]] if "status" in idx else "Aprobada"
@@ -154,13 +179,15 @@ def _parse_transactions(html: str) -> list[dict]:
             amount = _parse_amount(cells[idx["amount"]])
             if amount is None:
                 continue
+            merchant = cells[idx["merchant"]] if "merchant" in idx else ""
+            tx_type = cells[idx["type"]] if "type" in idx else ""
             out.append({
                 "date": _parse_date(cells[idx["date"]]),
                 "amount": amount,
                 "currency": _normalize_currency(
                     cells[idx["currency"]] if "currency" in idx else "RD"),
-                "merchant": cells[idx["merchant"]] if "merchant" in idx else "",
-                "type": cells[idx["type"]] if "type" in idx else "",
+                "merchant": merchant.split("\n", 1)[0].strip(),
+                "type": " ".join(tx_type.split()),
                 "source": "bhd_email",
             })
     return out
@@ -208,8 +235,8 @@ class SpendingLocked(Exception):
 
     Raised when ``SPENDING_KEY`` is missing/malformed or does not decrypt the
     existing file. Callers must treat this as "hands off": never overwrite the
-    log (a blind save under a fresh key would orphan the history) and leave
-    bank emails unread so the next correctly-keyed run picks them up.
+    log (a blind save under a fresh key would orphan the history); a future
+    correctly-keyed run re-reads the same mail window and loses nothing.
     """
 
 
@@ -245,11 +272,14 @@ def _save_spending(transactions: list[dict]) -> None:
 
 
 def _ingest_emails(cfg: dict) -> int:
-    """Poll Gmail over IMAP for unread BHD alerts; parse, merge, mark read.
+    """Poll Gmail over IMAP for recent BHD alerts; parse and merge.
 
-    Returns the number of new transactions recorded. Each email is flagged
-    ``\\Seen`` individually, only after the merged file is saved, so a failure
-    on one message leaves the rest unread for the next run.
+    Searches the last ``lookback_days`` (default 7) of mail from the sender
+    regardless of read state: the account owner reads their own bank alerts,
+    so filtering on UNSEEN raced them and silently skipped opened emails.
+    Re-parsing an already-recorded alert is harmless — ``_merge`` dedups on
+    date + amount + merchant. The mailbox is opened read-only and never
+    modified. Returns the number of new transactions recorded.
     """
     user = os.environ.get("GMAIL_USER")
     password = os.environ.get("GMAIL_APP_PASSWORD")
@@ -257,47 +287,47 @@ def _ingest_emails(cfg: dict) -> int:
         log.info("spending: GMAIL_USER/GMAIL_APP_PASSWORD not set; skipping email poll")
         return 0
     # Fail fast on a missing/bad key BEFORE touching the mailbox: parsed
-    # transactions could not be saved (plaintext is never written), so the
-    # emails must stay unread for a future correctly-keyed run.
+    # transactions could not be saved (plaintext is never written).
     _fernet()
-    _load_spending()
+    existing = _load_spending()
 
     sender = cfg.get("sender", DEFAULT_SENDER)
     wanted_subject = cfg.get("subject", DEFAULT_SUBJECT)
-    added_total = 0
+    since = _dt.date.today() - _dt.timedelta(days=int(cfg.get("lookback_days", 7)))
+    since_str = f"{since.day:02d}-{_IMAP_MONTHS[since.month - 1]}-{since.year}"
+
+    parsed: list[dict] = []
     imap = imaplib.IMAP4_SSL(IMAP_HOST)
     try:
         imap.login(user, password)
-        imap.select("INBOX")
+        imap.select("INBOX", readonly=True)
         # Subject is matched in Python after decoding: IMAP SEARCH chokes on
-        # non-ASCII criteria and the bank's subject carries an accent.
-        status, data = imap.search(None, "UNSEEN", "FROM", f'"{sender}"')
+        # non-ASCII criteria and the bank's subject carries an accent. FROM
+        # matches a substring of the header, so a bare domain works too.
+        status, data = imap.search(None, "SINCE", since_str, "FROM", f'"{sender}"')
         if status != "OK":
             log.warning("spending: IMAP search failed: %s", status)
             return 0
         for num in (data[0] or b"").split():
-            # PEEK leaves the message unread until we explicitly flag it below.
             status, fetched = imap.fetch(num, "(BODY.PEEK[])")
             if status != "OK" or not fetched or not fetched[0]:
                 continue
             msg = email.message_from_bytes(fetched[0][1], policy=email.policy.default)
             if not _subject_matches(str(msg.get("Subject", "")), wanted_subject):
-                continue  # other mail from the bank; leave unread, not ours
-            txs = _parse_transactions(_html_from_message(msg))
-            if txs:
-                merged, added = _merge(_load_spending(), txs)
-                if added:
-                    _save_spending(merged)
-                added_total += added
-            # Processed (even if it parsed to zero approved transactions):
-            # mark read so it is never re-parsed.
-            imap.store(num, "+FLAGS", "\\Seen")
-        return added_total
+                continue  # other mail from the bank, not a transaction alert
+            parsed.extend(_parse_transactions(_html_from_message(msg)))
     finally:
         try:
             imap.logout()
         except Exception:  # noqa: BLE001 - a logout hiccup is irrelevant
             pass
+
+    if not parsed:
+        return 0
+    merged, added = _merge(existing, parsed)
+    if added:
+        _save_spending(merged)
+    return added
 
 
 # --- weekly summary ----------------------------------------------------------
@@ -378,7 +408,7 @@ def run(state: dict) -> dict:
         if added:
             log.info("spending: recorded %d new transaction(s)", added)
     except SpendingLocked as exc:
-        log.error("spending: log locked, ingestion skipped (emails left unread): %s", exc)
+        log.error("spending: log locked, ingestion skipped: %s", exc)
     except Exception as exc:  # noqa: BLE001 - mail being down must not kill the run
         log.error("spending: email ingestion failed: %s", exc)
 
