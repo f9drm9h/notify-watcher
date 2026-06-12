@@ -1,5 +1,6 @@
 {
   "anthropic_seen": [
+    "afd856bd4b5e60f0",
     "b461b1a69970a01d",
     "ad76d3e1d5e60ab0",
     "94cb1965b2543732",
@@ -60,7 +61,8 @@
   "baseball_results_seen": [
     822804,
     824428,
-    823372
+    823372,
+    823371
   ],
   "bills_sent": [
     "internet|2026-06-22|5",
@@ -72,42 +74,16 @@
   "control": {
     "last_id": "j4swAVij0lgp"
   },
-  "digest_buffer": [
-    {
-      "detail": "",
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "score": 62,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland's Spider-Man Brand New Day gets early release date in India, advance bookings begin June 17 | Hollywood - Hindustan Times",
-      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNR0k1RnRfMFVuaFRocTRaNDBwTFBOQkpvaElOVDVwbldsaEg2QVZTWm1ldEZhRnJGWFE5amlWYV9CXzdLXzNod1F2bzc1ZnJZLVpMbnp4b3Bpb3J5REdyRm02S25ibERqa0JoNVFFTGJ6bzlES0Z5OUs4RVU0S1NEdjg5V3hfaU1FYUpBZ3ZMcnpibi00ZWJGcXBSeG16NFA1eXozYkduXzZRaFFNM2xWSGNVX1I5ZnR3aDlNOVpXd3RkVW81ZmdwQUxUV2J3dm5HRVpOZVY0Z0Z5eThWYUdIYzVTeWNRYVluRUJfOWdlMnY5UGZwZjdVaFptY25PU0xxQ09hem56UdIBjAJBVV95cUxNbVRJRGp0S1Q2MndPWEdIT3RPbU9xaXQ3X3BSczY5QXhfczdlbU9hTURKSWpFdGdMeDJKQ1NtczVGZzlLQmMtQU5rS0R6VldVZGJHbjNCZDlBZmtfdzI5TEJRUkZHSXJOY09ROGpZcmt0OHliZHpaUGRfc0ZOcGxFQjlCYXBpWHpuTUFnUmY0d1E1X0dpZTN1VzhEZndqTEZIVzFsTE5zVmlHcmJqLWdSWXRuTy1iNUh4RDRGYUhUV2dPeVFJU2NiUGNCVHpUYjFydUQ4WlVhMFM0c2hRazVVYzhzWFo4OXhHaWFHa0NjcGg0NE5OUDFTXzRFdjc1MjdkZ2p6LU1ib0lCYVpV?oc=5"
-    },
-    {
-      "detail": "",
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.3 - 68 km NNE of Punta Cana, Dominican Republic (~180 km away)",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71519623"
-    }
-  ],
-  "digest_last_sent": "2026-06-11",
+  "digest_buffer": [],
+  "digest_last_sent": "2026-06-12",
   "energy_learn_last_news": "2026-06-10",
-  "energy_learn_last_sent": "2026-06-11",
+  "energy_learn_last_sent": "2026-06-12",
   "energy_learn_seen": {
     "history": [
       "calder-hall-1956"
+    ],
+    "infrastructure": [
+      "itaipu-dam"
     ],
     "modern": [
       "perovskite-solar"
@@ -206,28 +182,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Every Major \u2018Spider-Man: Brand New Day\u2019 and \u2018Avengers: Doomsday\u2019 Leak So Far, From Trailer Footage to Toy Reveals - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-09T19:38:23.943727+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9LM042bEszTzhLMWd5cFJnVFVfLUpjVTlUNFlCYVlNRFBzUGlMbEVjdlllcno1WUFWRGNlMlo0VTEyeHlBdWM3R3hlSm5qQ2pXUnlGdXBVSUZRcDU4ZHhOM29tUjNuUQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "New \u2018Avengers: Doomsday\u2019 Promo Art Unveils First Look at Doctor Doom & Avengers in the MCU - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-09T19:38:24.208657+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1uWW1kZWRnUEdmS2JqdVVKN1lKU1JpdXMxZXBpSWR3WmxaZi1kZVhkbXpqR0MzNThoMXllc2NUWG1BaU9fV1dSbU9udUpuRzBTVC00WjNPMU5RNXo3SzU3bUhXUFdaUVk?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -5562,6 +5516,171 @@
       "topic": "twitch",
       "ts": "2026-06-12T06:09:01.279084+00:00",
       "url": "https://twitch.tv/mkleossb"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day- Tom Holland starrer to arrive sooner in India, release date announced - WION",
+      "topic": "movies",
+      "ts": "2026-06-12T06:21:49.357437+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQSEtuVEVDLU0wbTlKYmtvMGdsNUVZZnpqaUFHYjVqRl9PN3FQRjlWeEhHcF9fNFMxQndtMnhLYmJSSldlR2V2MGpSZ0pWbXk0T1Bfd0lUQWJvR3NBdmVGMXJiWlc1amZsYnB0Y2p2d1lWbUIyOGdsdUZTRXQyZWRuemozOU9UVDVqZmx4a0tfTENuS19RSENnTUgtNjNIOV9NTE9Eek5wWlRxS3hwTmhyZGVCaXI0LUFMYVFDdUpIazhhVXFYcXg3S1VqN3AyZ2tWVEsxdVpSakRqSE5sOHotaUlFSWlhWC0yc2Jj0gHwAUFVX3lxTE1Jc1ZCLS1VeVBPaE4zYlhNaG9KbkxpTFBLcmhWdFRuUHFKaTJjN3dkaGxMRnlvQVM3djFhdmtrSUJaTUJBZExucTRLdl9XeE5jTXBReUw3cUYydjFHWE1ZbzZDbExkSUpwckwzb3Fmc2dQVmtIT3BRaUJEZUoyaXE3TTh6cTZJak5tc1NjQ1phaEJJb3BRTjVkeXJ6TjRBbVJwVGg3ZzN5X20xRUNSeHZwZkE3TkhockFHSHl3Y0VIcmJ4SHBPeUg3MEk3aFE2WkR0eGpJbTBDVENVSkVzWTh0SU85TUxnLTVJQjF6S19LcA?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day Chinese Poster Released As Synopsis Confirms Peter Parker's New [Spoilers] - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-12T06:21:49.358591+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0Y0dmOUNTd0NaZVFkejNMeDVLWmh4NHk3S29zVVd5QTRiSXJ3aGgyaEYxSlJpSF9nZm9wV1FMS1VwblMybHRkNXBVRkFuUQ?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Amazon Prime Will Officially Release 'Spider-Man: Brand New Day' 2 Days Early - Collider",
+      "topic": "movies",
+      "ts": "2026-06-12T06:21:49.359647+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeTl2ZExycXoxc21xUFIzOUlkRU9Yd1RINUEybXFndkVVTUUzM0Y3anVBSUtsdUFXR2w1U2x2cnRoT3B2aXp6dlR2cjcxM3VMQXpEbEkwNHB5THlsQ29kTm1xeXY4UVJQcTJick05WGk0Q0thVFNjdWlBbzRGei1RU0dsUVoyRFFQZXRxWVBick9GVU52aF9jSWtBRUVBeUdoNnU2aEo2dFhHTWZt?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "The Odyssey releases in 33 days\nSpider-Man: Brand New Day releases in 47 days",
+      "score": 62,
+      "severity": "high",
+      "source": "Movies",
+      "title": "Movie countdown",
+      "topic": "movies",
+      "ts": "2026-06-12T06:21:53.532318+00:00",
+      "url": ""
+    },
+    {
+      "action": "drop",
+      "detail": "At Last - Etta James\n(because you like Nina Simone)",
+      "score": 22,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-12T06:21:56.973415+00:00",
+      "url": "https://www.deezer.com/track/2171224"
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-06-11",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Dodgers 8 \u2013 Pirates 6 (W)",
+      "topic": "baseball",
+      "ts": "2026-06-12T06:22:00.298329+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-06-12T06:22:55.576356+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "DXC will integrate Claude into the systems banks, airlines, and other regulated industries rely on - Anthropic",
+      "score": 64,
+      "severity": "moderate",
+      "source": "Anthropic",
+      "title": "Anthropic",
+      "topic": "anthropic_news",
+      "ts": "2026-06-12T06:23:17.382950+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBCeUZvTHM5SUxFNEh4QTRtM2N1c0R5N3piSVliUFlTRnZDRERDTjdrOGJKTjUzNnljQ3ZTYnJ5MGplM1Q0RFN2emJqek04bUpiWEhWd3VDTkVlblQtTzNQZkY3bw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Chilling night! playing with Yukimaruwu !metafy English Espa\u00f1ol",
+      "score": 62,
+      "severity": "moderate",
+      "source": "MKLeo17",
+      "title": "MKLeo17 uploaded a new video",
+      "topic": "youtube",
+      "ts": "2026-06-12T06:23:18.336618+00:00",
+      "url": "https://www.youtube.com/watch?v=RoVbjsprvns"
+    },
+    {
+      "action": "push",
+      "detail": "Aim to fill half your plate with vegetables and fruit at meals. (Source: MedlinePlus)",
+      "score": 60,
+      "severity": "low",
+      "source": "Health",
+      "title": "Health tip",
+      "topic": "health_tip",
+      "ts": "2026-06-12T06:23:23.025355+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "The Great Pyramid of Giza, finished around 2560 BCE from some 2.3 million stone blocks, stood as the tallest human structure on Earth for nearly 3,800 years. Archaeology has overturned the slave-labor myth: excavated workers' villages with bakeries, breweries, and medical care show it was built by rotating crews of paid, well-fed Egyptian laborers. Its base is level to within a couple of centimeters.",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The 4,500-Year-Old Skyscraper",
+      "topic": "learn",
+      "ts": "2026-06-12T06:23:23.219945+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "On this day\n1999: In the aftermath of the bombing of Yugoslavia and the Kosovo War, the NATO-led Kosovo Force entered the territory with a mandate of establishing a secure environment.\n\nFeatured: Love Is Embarrassing\n\"Love Is Embarrassing\" is a song by American singer-songwriter Olivia Rodrigo from her second studio album, Guts (2023). Rodrigo wrote the song with its producer, Dan Nigro. It became available as the album's ninth track on September 8, 2023, when it was released by Geffen...\n\nLife skill\nHand-washing with soap for 20 seconds is one of the most effective ways to prevent the spread of illness. (Source: CDC)",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Daily learning",
+      "topic": "learn",
+      "ts": "2026-06-12T06:23:24.649750+00:00",
+      "url": "https://en.wikipedia.org/wiki/Love_Is_Embarrassing"
+    },
+    {
+      "action": "push",
+      "detail": "What: The Itaipu Dam on the Paran\u00e1 River is jointly owned and operated by Brazil and Paraguay, with about 14,000 megawatts of capacity.\nWhy it matters: It's a rare bi-national power plant, splitting both the electricity and the governance between two countries.\nWhy you should care: It supplies most of Paraguay's power and a big share of Brazil's \u2014 proof that shared energy projects can work.\n(Source: Itaipu Binacional)",
+      "score": 60,
+      "severity": "low",
+      "source": "Energy learning",
+      "title": "\u26a1 Today's spark \u2014 Itaipu \u2014 a dam shared by two nations",
+      "topic": "energy_learn",
+      "ts": "2026-06-12T06:23:24.843626+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Jun 01-Jun 07: RD$4,428.70 across 7 transactions\nTop: JUMBO MELLA RD$2,073.70; BANCO BHD RD$800.00; WENDYS SAMBIL RD$605.00; KRISPY KREME SIRENA CDG RD$300.01; HELADOS BON SAMBIL KENNED RD$249.99\nBiggest: RD$2,073.70 at JUMBO MELLA",
+      "score": 60,
+      "severity": "moderate",
+      "source": "BHD",
+      "title": "Weekly spending summary",
+      "topic": "spending",
+      "ts": "2026-06-12T06:23:30.312354+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Ends Saturday 13 June (tomorrow). Tap for the academic calendar (PDF).",
+      "score": 62,
+      "severity": "high",
+      "source": "ITSC",
+      "title": "ITSC: Solicitud Cambio de Carrera / Reingreso 2026-3 / Readmisi\u00f3n",
+      "topic": "itsc",
+      "ts": "2026-06-12T06:23:31.880305+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/05/Calendario-academico-2026-2-MAYO-AGOSTO-_-Actualizado_.pdf"
     }
   ],
   "fda_seen_ids": [
@@ -6156,7 +6275,7 @@
       "eda75804088818b9"
     ]
   },
-  "health_tip_last_sent": "2026-06-11",
+  "health_tip_last_sent": "2026-06-12",
   "holidays_sent": [],
   "ios_seen_builds": [
     "iOS 26.5.1 (23F81)",
@@ -6179,12 +6298,18 @@
   ],
   "iss_seen_passes": [],
   "itsc_sent_ids": [
+    "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
+  "knowledge_last_category": "ancient_civilizations",
+  "knowledge_last_sent": "2026-06-12T2",
+  "knowledge_seen": {
+    "pyramid_skyscraper": "2026-06-12"
+  },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-06-12T06:19:31.129511+00:00"
+    "ok": 43,
+    "ts": "2026-06-12T06:21:44.930194+00:00"
   },
   "launch_seen_ids": [
     "4cc755b9dfaf231c",
@@ -6192,9 +6317,14 @@
     "9cf78ee44cb96c21",
     "7621aad01d0821be"
   ],
-  "learn_last_sent": "2026-06-11",
+  "learn_last_sent": "2026-06-12",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "044eed6030561107",
+      "ae04897e16bef83c",
+      "9a9d458bb3c33ae8",
+      "8ab65481450ad70d",
+      "e9eec9c30a2e69d9",
       "6b1d1b57350d815a",
       "994f766c1e25085e",
       "ee13098f45c577da",
@@ -6289,12 +6419,7 @@
       "c57e3083d29332ed",
       "354d52eb2be21c81",
       "80b02d3585666a31",
-      "b39c3e92489d9066",
-      "12b8b8ec920323a5",
-      "c5ec18dbea541e73",
-      "7eff973b39fb7179",
-      "4d0cc35a2b483935",
-      "ca07082003399bce"
+      "b39c3e92489d9066"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -6496,6 +6621,15 @@
       "b2f005934ccd795b"
     ],
     "Spider-Man: Brand New Day": [
+      "6b70758f3d5fbfcc",
+      "60ff06272a5aaa4a",
+      "f13b87bebeb23517",
+      "ce647f61b28c2894",
+      "339c6855cb3bea2f",
+      "b5c9d6905643accb",
+      "f7a7c6fa32f79649",
+      "755bba3220a82db4",
+      "78a248f9fc73e323",
       "c1d97154c475cb79",
       "eb3ea5a18ce9f71f",
       "3d62c4911bd0465b",
@@ -6586,18 +6720,10 @@
       "406c56a21fbaabdb",
       "336b77d9e2503466",
       "9a9e9e97b8aa1338",
-      "5dec8b2bb91a6c9f",
-      "497ced80ac7be251",
-      "4bc9b337f2ef64ab",
-      "26e979b22cb4d13a",
-      "993f7f04139c708e",
-      "b4240febd20d157c",
-      "da5f6cb4e3398d96",
-      "146eac9a71d871f3",
-      "4e685f8fef05f59f",
-      "cab56770482c0136"
+      "5dec8b2bb91a6c9f"
     ],
     "The Batman Part II": [
+      "d17558fa744e04ee",
       "bfad1d64ba3af242",
       "892d162fe6a12fe3",
       "0454607bb5c4c071",
@@ -6696,10 +6822,19 @@
       "3d4fac3d16b1c50f",
       "90435626d0327e5f",
       "23bdf711a60a371d",
-      "cfa7ef7a1ae0383c",
-      "9f700b8b1ee484f2"
+      "cfa7ef7a1ae0383c"
     ],
     "The Odyssey": [
+      "b4ee9d24a2770ace",
+      "755f76d3848fcdda",
+      "6293e911e09c62c0",
+      "f4eec131026a6969",
+      "427a851af50a97ec",
+      "0b4dd8557ea87e1e",
+      "dafa087159a93a06",
+      "3c86bf357c5c8feb",
+      "079deafe2ccbfb2b",
+      "1e9d1e04da7cb827",
       "9c815f18b6355d51",
       "433a1b9b4798ef05",
       "5fbf537c916019ca",
@@ -6789,17 +6924,7 @@
       "2d0305582e06751a",
       "c25ba8deccbfa9c4",
       "50bfc1d4f55a78d1",
-      "9980ffe468eef693",
-      "075a57ea9802f908",
-      "1ea416168e2a8ea8",
-      "36815071d9f97d4e",
-      "b6f1f8861324d058",
-      "75af6fc52b84c5f7",
-      "172aeeb66df74fb1",
-      "1f5e65219415d596",
-      "50735e0491fb30a0",
-      "e5852db12a0e426d",
-      "8e467f2894f9cef2"
+      "9980ffe468eef693"
     ]
   },
   "movie_release_dates": {
@@ -6810,6 +6935,7 @@
     "911916": "2027-06-17",
     "969681": "2026-07-29"
   },
+  "movies_countdown_week": "2026-W24",
   "music_discovery_seen": [
     5425093,
     4685222,
@@ -6831,7 +6957,8 @@
     74398,
     9956746,
     62769902,
-    7631254
+    7631254,
+    620
   ],
   "music_release_seen": [
     "68c25094c070b90b",
@@ -7055,6 +7182,7 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
+  "spending_week_summarized": "2026-W24",
   "streaming_seen": {
     "1003596": [],
     "1288438": [],
@@ -7065,133 +7193,133 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "deals": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "energy": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "fda": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "fuel": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "fx": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "games": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "golden_sun": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "groceries": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "movies": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "music": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "onamet": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "outages": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "quakes": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "twitch": {
-      "last_ok": "2026-06-12T06:19:31.129511+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "weather": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "wwdc": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     },
     "youtube": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:21:44.930194+00:00"
     }
   },
   "twitch_live": [
@@ -7205,6 +7333,7 @@
     "2026-06-12|12"
   ],
   "weather_seen_ids": [
+    "09f4ece7b5fb6348",
     "f1eab3ed5e8a313f",
     "b83b9e9bba61aab9",
     "f2218c6998264874",
@@ -7335,7 +7464,8 @@
       "g8Rla39zh1o",
       "G_Veaz_OQf4",
       "CtgFjuaTHTk",
-      "qZLdA4vTF_M"
+      "qZLdA4vTF_M",
+      "RoVbjsprvns"
     ]
   }
 }
