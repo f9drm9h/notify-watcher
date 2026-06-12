@@ -243,11 +243,13 @@ def cmd_snooze(reminder_id: str, minutes: int, state: dict,
 
 def cmd_mute(topic: str, hours: int, state: dict,
              now: Optional[_dt.datetime] = None) -> None:
-    """Mute a topic's digest-bound items for N hours (clamped 1 h-30 d).
+    """Mute a topic for N hours (clamped 1 h-30 d).
 
-    events.emit downgrades a routed "digest" to "drop" while the mute is
-    active; live high/urgent pushes are untouched by design, so muting a
-    chatty topic never silences a real alert. A repeated MUTE overwrites the
+    While the mute is active, events.emit downgrades the topic's routed
+    actions: a live push is deferred into the morning digest (so nothing is
+    lost, it just stops ringing) and a digest-bound item is dropped. Events
+    with ``critical`` severity are exempt and still push, so muting a chatty
+    news topic never silences a real alert. A repeated MUTE overwrites the
     until — idempotent.
     """
     hours = max(MIN_MUTE_HOURS, min(MAX_MUTE_HOURS, hours))
