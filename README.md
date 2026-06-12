@@ -406,12 +406,14 @@ The three buttons you'll see:
 | --- | --- | --- |
 | Habit nudge (e.g. drink water) | **Done** | marks the habit done now and skips its next scheduled nudge today (later slots still fire) |
 | Reminder | **Snooze 1h** | re-delivers that reminder after ~an hour (on the next full 3-hourly run) |
-| Daily digest | **Mute movies 24h** / **Mute games 24h** | drops that topic's digest-bound items for 24 h — live high/urgent alerts are never muted |
+| Daily digest | **Mute movies 24h** / **Mute games 24h** | silences that topic for 24 h: its live pushes are deferred into the next morning digest and its digest chatter is dropped; `critical` alerts still ring through |
 
 Commands are deliberately low-stakes: the worst anyone who learns the control
-topic name could do is skip a nudge, snooze a reminder, or mute digest entries
-for a bounded while. Nothing reads data, edits config, or executes code; see
-`docs/design/reply-buttons.md` for the full design and threat model.
+topic name could do is skip a nudge, snooze a reminder, or mute a topic for a
+bounded while (≤ 30 days, deferred into the digest rather than lost, and
+`critical` alerts can never be muted). Nothing reads data, edits config, or
+executes code; see `docs/design/reply-buttons.md` for the full design and
+threat model.
 
 ### Pick what to watch: `watchlist.json`
 
