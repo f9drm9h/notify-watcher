@@ -8,7 +8,7 @@
 `events.emit` (routing funnel), `ntfy.py` (transport, ≤ 3 action buttons),
 `state.py` (persistence), the topic modules that discover things
 (`soundcore_pro`, `deals`, `music`, `movies`, `games`, `twitch`, `youtube`,
-news engine via `news.py`), and both workflows (`watch.yml`, `twitch.yml`).
+news engine via `news.py`), and the scheduler workflow (`watch.yml`).
 
 ## Where we are, and where this goes
 
@@ -66,7 +66,7 @@ regardless of what the AI does.
 - Fetching/scraping article bodies for Show More (news sites bot-wall the
   runners; see Risks). Show More v1 is built from data we already hold.
 - Sub-15-minute latency. All commands keep v1's "next run" semantics
-  (≤ ~15 min thanks to the twitch workflow polling the control topic).
+  (≤ ~15 min thanks to watch.yml's Twitch-only mode polling the control topic).
 
 ## The two keystone mechanisms
 

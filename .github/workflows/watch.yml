@@ -2,12 +2,14 @@ name: watch
 
 on:
   schedule:
-    # Every 3 hours at minute 0: collectors + entity watchers. The daily work
-    # (digest flush, health tip, learn) is no longer tied to a dedicated cron —
-    # main._is_daily_run() triggers it on the first run on/after 12:00 UTC each
-    # day, because GitHub silently drops/delays scheduled runs and the old
-    # minute-5 daily cron kept getting skipped (so the digest/tip never ran).
-    - cron: "0 */3 * * *"
+    # Every 15 minutes. Each run always checks Twitch latency-sensitive alerts;
+    # the first surviving run in each 3-hour UTC window performs the full sweep.
+    # This avoids a separate twitch.yml workflow sharing the same concurrency
+    # group: GitHub concurrency allows one running + one pending run, and a newer
+    # queued run replaces the older pending one even with cancel-in-progress:
+    # false. Deciding "is a full sweep due?" at runtime makes that replacement
+    # harmless — the latest pending run simply does the overdue full sweep.
+    - cron: "*/15 * * * *"
   workflow_dispatch:
     inputs:
       test_push:
@@ -19,7 +21,9 @@ on:
         type: boolean
         default: false
 
-# Prevent two scheduled runs from racing each other on the state file.
+# Prevent two scheduled runs from racing each other on the state file. Because
+# pending runs can be replaced in this group, do not encode important behavior
+# only in a specific cron tick; the mode decision below reads committed state.
 concurrency:
   group: watch
   cancel-in-progress: false
@@ -34,6 +38,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Sync latest state before mode decision
+        run: |
+          # A queued run may have been created before the previous serialized
+          # run committed state.json. Refresh the branch tip now so the
+          # full-sweep gate reads the newest watch_schedule stamp.
+          git fetch origin "${GITHUB_REF_NAME}"
+          git checkout -B "${GITHUB_REF_NAME}" "origin/${GITHUB_REF_NAME}"
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -43,7 +55,25 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Run watchers
+      - name: Decide watcher mode
+        id: mode
+        run: |
+          window="$(python -c "import time; print(int(time.time() // 10800))")"
+          last="$(python -c "import json, pathlib; p=pathlib.Path('state.json'); s=json.loads(p.read_text()) if p.exists() else {}; print((s.get('watch_schedule') or {}).get('last_full_window', ''))")"
+          mode="twitch"
+          reason="full sweep already ran for 3-hour window ${window}"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            mode="full"
+            reason="manual dispatch"
+          elif [ "${last}" != "${window}" ]; then
+            mode="full"
+            reason="first surviving run for 3-hour window ${window} (last: ${last:-none})"
+          fi
+          echo "run_mode=${mode}" >> "$GITHUB_OUTPUT"
+          echo "full_window=${window}" >> "$GITHUB_OUTPUT"
+          echo "watcher mode: ${mode} - ${reason}"
+
+      - name: Run watcher mode
         env:
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
           NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
@@ -66,9 +96,20 @@ jobs:
           # daily=true. On schedule it's left empty: main._is_daily_run() decides
           # by UTC hour instead, so a dropped cron can't skip the daily push.
           NOTIFY_DAILY: ${{ inputs.daily && '1' || '' }}
+          # Twitch-only mode keeps the 15-minute live alerts lightweight. Full
+          # mode leaves NOTIFY_ONLY empty so main.py runs every topic in order.
+          NOTIFY_ONLY: ${{ steps.mode.outputs.run_mode == 'twitch' && 'twitch' || '' }}
         run: python -m notify_watcher.main
 
+      - name: Stamp full sweep window
+        if: ${{ steps.mode.outputs.run_mode == 'full' && (github.event_name != 'workflow_dispatch' || inputs.test_push != true) }}
+        env:
+          FULL_WINDOW: ${{ steps.mode.outputs.full_window }}
+        run: |
+          python -c "import json, os, pathlib; p=pathlib.Path('state.json'); s=json.loads(p.read_text()) if p.exists() else {}; s.setdefault('watch_schedule', {})['last_full_window']=os.environ['FULL_WINDOW']; p.write_text(json.dumps(s, indent=2, sort_keys=True) + '\n')"
+
       - name: Build dashboard
+        if: ${{ steps.mode.outputs.run_mode == 'full' && (github.event_name != 'workflow_dispatch' || inputs.test_push != true) }}
         # Pure reader of the committed state -> docs/dashboard/index.html, which
         # GitHub Pages serves (Settings -> Pages -> Deploy from branch, /docs). A
         # build failure must never fail the run or block the state commit.

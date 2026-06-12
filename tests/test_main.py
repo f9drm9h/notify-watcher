@@ -1,6 +1,6 @@
 """Tests for the topic-selection filter and health stamping in notify_watcher.main.
 
-`NOTIFY_ONLY` lets a lightweight workflow (the 15-minute Twitch check) run a single
+`NOTIFY_ONLY` lets the lightweight workflow mode (the 15-minute Twitch check) run a single
 topic without invoking the full sweep. These pin the pure filter: blank -> all,
 allowlist -> subset in declared order, unknown names ignored.
 

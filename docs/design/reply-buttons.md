@@ -3,8 +3,8 @@
 **Status:** 📝 proposed — design only, no implementation yet.
 **Composes with:** `notify_watcher/ntfy.py` (transport), `events.emit` (routing funnel),
 `topics/habits.py` (DONE), `topics/reminders.py` (SNOOZE), `digest.py` /
-`topics/digest_topic.py` (MUTE), `state.py` (persistence), both workflows
-(`watch.yml`, `twitch.yml`).
+`topics/digest_topic.py` (MUTE), `state.py` (persistence), workflow
+(`watch.yml`).
 
 ## Problem
 
@@ -119,7 +119,7 @@ topic loop** and **regardless of `NOTIFY_ONLY`**:
 - *Before the topic loop*, so a command takes effect in the same run that
   reads it (control runs, mutates state, then `habits.run` etc. see the
   mutation). Same reasoning as collectors-before-digest.
-- *Regardless of `NOTIFY_ONLY`*, because the twitch workflow runs `main.py`
+- *Regardless of `NOTIFY_ONLY`*, because watch.yml runs `main.py`
   every 15 minutes — piggybacking the poll on it drops effective command
   latency from "up to 3 h" to "≤ ~15 min" for free. The poll is one cheap GET
   that is empty almost every time.
@@ -254,7 +254,7 @@ The re-fired push does **not** touch `reminders_sent` — the original
 unaffected; a snooze is an *extra* delivery, not a reschedule of the ladder.
 
 **Granularity caveat:** re-fires happen when a run executes `reminders.run`,
-i.e. the 3-hourly full run (the 15-min twitch run filters topics to twitch).
+i.e. the 3-hourly full run (the 15-min Twitch-only mode filters topics to twitch).
 So `SNOOZE:x:60` effectively means "next full run" (≤ 3 h). Acceptable for
 expiry-style reminders; see Open questions for tightening it.
 
@@ -354,7 +354,7 @@ teeth — anything config-writing or data-reading changes this calculus.
 
 **GitHub Actions secret:** `NTFY_CONTROL_TOPIC` — a second random private
 topic name, e.g. `nw-ctl-<16 random chars>`. Exported in **both**
-`watch.yml` and `twitch.yml` env blocks (the twitch run is the low-latency
+the `watch.yml` env block (the Twitch-only mode is the low-latency
 poller). Missing/empty secret = feature off: `control.poll` returns
 immediately and no buttons are attached (push behavior byte-identical to
 today), which is also the rollback story.

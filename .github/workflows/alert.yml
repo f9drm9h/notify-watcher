@@ -26,7 +26,7 @@ name: alert
 
 on:
   workflow_run:
-    workflows: [watch, twitch, test]
+    workflows: [watch, test]
     types: [completed]
   schedule:
     # Heartbeat 4x/day, offset from the :00 grid the watchers use.
@@ -67,7 +67,7 @@ jobs:
         run: |
           # workflow_run fires once per completed run, so per-run dedup is
           # structural. Streak suppression handles the other spam source: a
-          # workflow that fails every cycle (twitch runs 96x/day) must push
+          # workflow that fails every cycle (watch now runs 96x/day) must push
           # on its first failure only, then stay quiet until it recovers.
           prev=$(gh api \
             "repos/${{ github.repository }}/actions/workflows/${WF_ID}/runs?branch=$(jq -rn 'env.RUN_BRANCH|@uri')&status=completed&per_page=5" \
@@ -121,10 +121,10 @@ jobs:
 
   heartbeat:
     # Catches failure mode 5 (docs/design/04 §2): GitHub drops or disables
-    # the schedule and nothing runs at all. watch runs every 3h; 7h of
-    # silence means at least two consecutive ticks vanished — a dead
-    # schedule, not normal GitHub jitter. A manual dispatch also runs this
-    # as a silent-if-healthy probe.
+    # the schedule and nothing runs at all. watch now runs every 15 min; 7h of
+    # silence means many consecutive ticks vanished — a dead schedule, not
+    # normal GitHub jitter. A manual dispatch also runs this as a silent-if-
+    # healthy probe.
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     env:
