@@ -24,7 +24,7 @@ from pathlib import Path
 
 import requests
 
-from .. import config, events, ids
+from .. import config, control, events, ids
 
 log = logging.getLogger(__name__)
 
@@ -49,8 +49,22 @@ def _artist_id(name: str) -> int | None:
 
 
 # --- 1. Releases -----------------------------------------------------------
+def _artists(state: dict) -> list[str]:
+    """Configured followed_artists + artists followed from a notification
+    ([Follow artist] -> state["follows"]["artists"], docs/design/05),
+    de-duplicated case-insensitively with the config entry winning."""
+    merged: list[str] = list(config.section("music").get("followed_artists") or [])
+    seen = {a.lower() for a in merged if isinstance(a, str)}
+    for entry in control.follows(state, "artists"):
+        name = str(entry.get("name") or "").strip()
+        if name and name.lower() not in seen:
+            seen.add(name.lower())
+            merged.append(name)
+    return merged
+
+
 def _releases(state: dict) -> dict:
-    artists = config.section("music").get("followed_artists") or []
+    artists = _artists(state)
     if not artists:
         return state
 
@@ -118,14 +132,19 @@ def _pick_seed(artists: list[str], doy: int) -> str | None:
     return artists[doy % len(artists)] if artists else None
 
 
-def _pick_recommendation(related: list[dict], seed_set: set[str], seen_ids: set) -> dict | None:
+def _pick_recommendation(related: list[dict], seed_set: set[str], seen_ids: set,
+                         ignored: dict | None = None) -> dict | None:
     """First related artist that is new to the user (not in their library or
-    already recommended). `related` is Deezer artist objects."""
+    already recommended). `related` is Deezer artist objects. `ignored` is
+    state["ignored"]: an artist the user tapped [Not my thing] on re-rolls to
+    the next candidate instead of ever being recommended again."""
     for art in related:
         name = (art.get("name") or "").strip()
         if not name or art.get("id") in seen_ids:
             continue
         if name.lower() in seed_set:
+            continue
+        if ignored and control.offer_id("artist", {"name": name}) in ignored:
             continue
         return art
     return None
@@ -153,7 +172,8 @@ def _discovery(state: dict) -> dict:
             if sid is None:
                 continue
             related = (_get(f"artist/{sid}/related", limit=20).get("data") or [])
-            rec = _pick_recommendation(related, seed_set, seen_ids)
+            rec = _pick_recommendation(related, seed_set, seen_ids,
+                                       state.get("ignored") or {})
             if rec:
                 break
         except Exception as exc:  # noqa: BLE001
@@ -169,6 +189,15 @@ def _discovery(state: dict) -> dict:
         title = track.get("title") if track else None
         link = (track.get("link") if track else None) or rec.get("link")
         msg = f"{title} - {rec['name']}" if title else rec["name"]
+        # Offer registry (docs/design/05): [Follow artist] opts into release
+        # alerts for this pick; [Not my thing] re-rolls future discoveries
+        # past them. Buttons evaporate when the control channel is off.
+        oid = control.register_offer(state, "artist", rec["name"],
+                                     {"name": rec["name"]})
+        actions = [a for a in (
+            control.make_action("Follow artist", f"ADD:{oid}"),
+            control.make_action("Not my thing", f"IGNORE:{oid}"),
+        ) if a] if oid else []
         events.emit(
             state,
             title="Music discovery",
@@ -180,6 +209,7 @@ def _discovery(state: dict) -> dict:
             tags="headphones",
             legacy_priority="low",
             legacy_action="push",
+            metadata={"actions": actions} if actions else None,
         )
         # Append (rec is, by construction, not already in seen_ids) and keep the
         # newest CAP entries — deterministic, unlike slicing a set-derived list.

@@ -66,6 +66,23 @@ def _run(state, cfg=CFG, get=None):
 
 
 class RunTest(unittest.TestCase):
+    def test_followed_channel_overlay_is_watched_too(self):
+        # A channel followed via reply button (state["follows"]["channels"])
+        # is fetched alongside the config ones, deduped by channel_id.
+        state = {
+            "follows": {"channels": [
+                {"channel_id": "UC_TWO", "name": "Followed"},
+                {"channel_id": "UC_ONE", "name": "Duplicate of config"},
+            ]},
+        }
+        get = mock.Mock(return_value=_response(FEED_XML))
+        state, _ = _run(state, get=get)
+        fetched = {c.args[0] for c in get.call_args_list}
+        self.assertEqual(fetched, {
+            youtube.FEED_URL.format(channel_id="UC_ONE"),
+            youtube.FEED_URL.format(channel_id="UC_TWO"),
+        })
+
     def test_first_run_seeds_silently(self):
         state, sent = _run({})
         self.assertEqual(sent, [])

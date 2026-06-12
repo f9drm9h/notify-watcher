@@ -585,6 +585,48 @@ class AddUndoIgnoreTest(unittest.TestCase):
         self.assertNotIn(oid, state["ignored"])
 
 
+class OverlayKindsTest(unittest.TestCase):
+    """Step 4 kinds: artist/streamer/channel -> follows, movie/game ->
+    watchlist_extra. Same ADD/UNDO/IGNORE machine as products."""
+
+    def test_artist_add_lands_in_follows(self):
+        state: dict = {}
+        oid = control.register_offer(state, "artist", "Mitski",
+                                     {"name": "Mitski"}, now=NOW)
+        control.cmd_add(oid, state, now=NOW)
+        self.assertEqual(state["follows"]["artists"], [{"name": "Mitski"}])
+        self.assertEqual(control.follows(state, "artists"),
+                         [{"name": "Mitski"}])
+
+    def test_channel_identity_is_the_channel_id(self):
+        a = control.offer_id("channel", {"channel_id": "UC123", "name": "X"})
+        b = control.offer_id("channel", {"channel_id": "UC123", "name": "Renamed"})
+        self.assertEqual(a, b)
+
+    def test_movie_add_lands_in_watchlist_extra(self):
+        state: dict = {}
+        oid = control.register_offer(state, "movie", "Dune 3",
+                                     {"name": "Dune 3"}, now=NOW)
+        control.cmd_add(oid, state, now=NOW)
+        self.assertEqual(control.extra_titles(state, "movies"), ["Dune 3"])
+
+    def test_undo_removes_follow(self):
+        state: dict = {}
+        oid = control.register_offer(state, "streamer", "ludwig",
+                                     {"name": "ludwig"}, now=NOW)
+        control.cmd_add(oid, state, now=NOW)
+        control.cmd_undo(oid, state, now=NOW)
+        self.assertEqual(state["follows"]["streamers"], [])
+
+    def test_follow_cap(self):
+        state = {"follows": {"artists": [
+            {"name": str(i)} for i in range(control.MAX_FOLLOWS)]}}
+        oid = control.register_offer(state, "artist", "One More",
+                                     {"name": "One More"}, now=NOW)
+        control.cmd_add(oid, state, now=NOW)
+        self.assertEqual(len(state["follows"]["artists"]), control.MAX_FOLLOWS)
+
+
 class PruneOffersTest(unittest.TestCase):
     def test_expired_unapplied_pruned_applied_kept(self):
         state: dict = {}

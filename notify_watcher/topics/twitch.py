@@ -13,7 +13,7 @@ import logging
 
 import requests
 
-from .. import config, events
+from .. import config, control, events
 
 log = logging.getLogger(__name__)
 
@@ -41,7 +41,15 @@ def _get(kind: str, user: str) -> str:
 
 
 def run(state: dict) -> dict:
-    streamers = config.section("twitch").get("streamers") or []
+    # Config streamers + ones followed from a notification ([Watch streamer]
+    # -> state["follows"]["streamers"], docs/design/05), case-insensitive dedupe.
+    streamers = list(config.section("twitch").get("streamers") or [])
+    seen_users = {s.lower() for s in streamers if isinstance(s, str)}
+    for entry in control.follows(state, "streamers"):
+        name = str(entry.get("name") or "").strip()
+        if name and name.lower() not in seen_users:
+            seen_users.add(name.lower())
+            streamers.append(name)
     if not streamers:
         log.info("no twitch streamers configured; nothing to do")
         return state
