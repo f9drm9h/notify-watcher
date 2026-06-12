@@ -183,8 +183,8 @@
   },
 
   "spending": {
-    "_comment": "Weekly spending summary from BHD card-transaction alert emails, polled over Gmail IMAP (requires the GMAIL_USER + GMAIL_APP_PASSWORD secrets; skips quietly without them). sender/subject select which emails are parsed; matching is accent- and case-insensitive. PRIVACY: parsed transactions are committed to data/spending.json - only enable on a private repo.",
-    "sender": "alertas@bhd.com.do",
+    "_comment": "Weekly spending summary from BHD card-transaction alert emails, polled over Gmail IMAP (requires the GMAIL_USER + GMAIL_APP_PASSWORD + SPENDING_KEY secrets; skips quietly without them). sender is an IMAP FROM substring (a bare domain matches any bank mailbox); subject is matched accent/case-insensitively; lookback_days (default 7) is how far back each run re-scans - read emails are fine, dedup makes re-parsing harmless. The committed log data/spending.json.enc is encrypted with SPENDING_KEY.",
+    "sender": "bhd.com.do",
     "subject": "BHD Notificación de Transacciones"
   },
 
