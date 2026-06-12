@@ -154,8 +154,10 @@ TOPICS: list[tuple[str, Topic]] = [
     ("habits", habits.run),
     ("digest", digest_topic.run),
     ("health_tip", health_tip.run),
-    # learn and reminders are daily-only too. Independent of digest, so order
-    # among the daily-only topics doesn't matter.
+    # learn's consolidated push is daily-only; its standalone knowledge push
+    # fires every cycle (guarded per 3-hour window in state). reminders is
+    # daily-only too. Independent of digest, so order among the daily-only
+    # topics doesn't matter.
     ("learn", learn.run),
     # energy_learn is daily-only too: one calm educational "Today's spark" push.
     # Order doesn't matter among the daily-only topics; it reads the event_log

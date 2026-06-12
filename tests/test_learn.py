@@ -66,8 +66,6 @@ class ChannelsTest(unittest.TestCase):
         from notify_watcher import kb
 
         for label, filename in learn.CHANNELS:
-            if label == learn.KNOWLEDGE_LABEL:
-                continue  # structured schema; covered by tests/test_learn_knowledge.py
             with self.subTest(channel=label):
                 items = kb.load(kb.DATA_DIR / filename)
                 self.assertTrue(items, f"{filename} is empty or failed to load")
@@ -79,10 +77,17 @@ class ChannelsTest(unittest.TestCase):
 
 
 class RunTest(unittest.TestCase):
+    """The consolidated daily push. The standalone knowledge push that run()
+    also fires is neutralized here and covered by tests/test_learn_knowledge.py."""
+
     def setUp(self):
         self._env = mock.patch.dict("os.environ", {"NOTIFY_DAILY": "1"})
         self._env.start()
         self.addCleanup(self._env.stop)
+        self._knowledge = mock.patch.object(
+            learn, "_run_knowledge", side_effect=lambda state, now=None: state)
+        self._knowledge.start()
+        self.addCleanup(self._knowledge.stop)
 
     def test_run_sends_one_consolidated_push_and_stamps(self):
         with mock.patch.object(learn, "_fetch_feed", return_value=SAMPLE_FEED), \

@@ -4,8 +4,12 @@ Bundles up to three short sections into a SINGLE daily notification:
   - On this day  - a historical event for today's date (Wikimedia featured feed)
   - Featured     - Wikipedia's featured article of the day (title + extract)
   - A curated fact - one vetted entry from a rotating knowledge-base channel
-                     (science / technology / life skills / general knowledge /
-                     the structured "Knowledge" deep-dive channel)
+                     (science / technology / life skills / general knowledge)
+
+Also owns the standalone "Knowledge" push: one titled deep-dive entry from
+data/knowledge.json on EVERY watcher run (every 3 hours), independent of the
+daily gate. Guarded by a per-3-hour-window stamp so a re-run inside the same
+window never double-sends; see _run_knowledge.
 
 Design choices that match the rest of the project:
   * Free / no key. The Wikimedia REST feed needs no auth; the KB channels are
@@ -20,8 +24,8 @@ Design choices that match the rest of the project:
   * LLM optional. The curated fact may be reworded for variety via
     notify_watcher.summarize, falling back to the verbatim vetted text.
 
-Daily-only (NOTIFY_DAILY) and guarded by learn_last_sent so a duplicate or
-drifted run never double-sends.
+The consolidated push is daily-only (NOTIFY_DAILY) and guarded by
+learn_last_sent so a duplicate or drifted run never double-sends.
 """
 from __future__ import annotations
 
@@ -54,22 +58,26 @@ CHANNELS: list[tuple[str, str]] = [
     ("Dominican culture", "dr_culture.json"),
     ("Money basics", "personal_finance.json"),
     ("Word of the Day", "vocabulary.json"),  # structured entries; never LLM-reworded
-    ("Knowledge", "knowledge.json"),  # structured entries; never LLM-reworded
 ]
 
-# --- "Knowledge" channel ----------------------------------------------------
+# --- "Knowledge" push (every run, not part of the daily rotation) -----------
 # Unlike the plain {text, src} channels above, knowledge.json entries are
 # structured ({id, category, title, body, tags}) and the pick has memory: the
 # id of each shown entry is stamped into state.json so nothing repeats within
 # KNOWLEDGE_REPEAT_DAYS, and a category pointer advances cyclically so
-# consecutive picks never cluster on one theme. The in-category pick is a
-# date-seeded RNG: random across days, identical on a same-day re-run (the
-# same re-run safety the day-of-year channels get for free).
+# consecutive picks never cluster on one theme. One entry goes out as its own
+# push on every watcher run (the every-3-hours cron), independent of
+# NOTIFY_DAILY. The in-category pick is seeded with the current 3-hour window
+# (date + hour-of-day bucket): each window picks its own entry, while a re-run
+# inside the same window re-picks the same one. KNOWLEDGE_SENT_KEY stamps the
+# window so a re-run never double-sends at all.
 KNOWLEDGE_LABEL = "Knowledge"
 KNOWLEDGE_FILE = "knowledge.json"
 KNOWLEDGE_SEEN_KEY = "knowledge_seen"  # {entry_id: "YYYY-MM-DD" last shown}
 KNOWLEDGE_CATEGORY_KEY = "knowledge_last_category"
+KNOWLEDGE_SENT_KEY = "knowledge_last_sent"  # "YYYY-MM-DDTn" 3-hour window
 KNOWLEDGE_REPEAT_DAYS = 30
+KNOWLEDGE_WINDOW_HOURS = 3  # the watcher cron's cadence
 
 _REWORD_SYSTEM = (
     "You reword a single educational fact for a daily push notification. "
@@ -177,16 +185,28 @@ def _knowledge_recent(state: dict, day: _dt.date) -> dict[str, _dt.date]:
     return recent
 
 
-def _knowledge_fact(state: dict, day: _dt.date | None = None) -> tuple[str, str]:
-    """(title, body) for today's knowledge entry; records the pick in state.
+def _knowledge_window(now: _dt.datetime) -> str:
+    """The 3-hour-window stamp for a datetime, e.g. '2026-06-16T4'.
+
+    Bucketing the hour (instead of using it raw) keeps the stamp stable when
+    a cron run drifts a few minutes inside its window, so the seed and the
+    double-send guard agree about which window a run belongs to.
+    """
+    return f"{now.date().isoformat()}T{now.hour // KNOWLEDGE_WINDOW_HOURS}"
+
+
+def _knowledge_fact(state: dict, now: _dt.datetime | None = None) -> tuple[str, str]:
+    """(title, body) for this run's knowledge entry; records the pick in state.
 
     Rotates to the next category (sorted, cyclic after the one stamped in
     state) that still has an entry unseen within KNOWLEDGE_REPEAT_DAYS, then
-    picks one of its eligible entries with a date-seeded RNG. If every entry
-    in the KB was shown recently (only possible while the KB is small), the
-    least recently shown one is reused so the section never goes silent.
+    picks one of its eligible entries with an RNG seeded by the current
+    3-hour window - each window picks its own entry, a re-run inside the
+    window re-picks the same one. If every entry in the KB was shown recently,
+    the least recently shown one is reused so the push never goes silent.
     """
-    day = day or _dt.date.today()
+    now = now or _dt.datetime.now()
+    day = now.date()
     entries = _knowledge_entries()
     if not entries:
         return "", ""
@@ -197,7 +217,7 @@ def _knowledge_fact(state: dict, day: _dt.date | None = None) -> tuple[str, str]
     start = (categories.index(last) + 1) % len(categories) if last in categories else 0
     rotation = categories[start:] + categories[:start]
 
-    rng = random.Random(day.isoformat())
+    rng = random.Random(_knowledge_window(now))
     chosen: dict | None = None
     for category in rotation:
         eligible = [e for e in entries
@@ -216,15 +236,45 @@ def _knowledge_fact(state: dict, day: _dt.date | None = None) -> tuple[str, str]
     return str(chosen["title"]), str(chosen["body"])
 
 
-def _curated_fact(day: _dt.date | None = None,
-                  state: dict | None = None) -> tuple[str, str]:
+def _run_knowledge(state: dict, now: _dt.datetime | None = None) -> dict:
+    """Send one knowledge entry per 3-hour window; runs on every cycle.
+
+    The entry's title is the push header and the body goes out verbatim
+    (never LLM-reworded). The window stamp in KNOWLEDGE_SENT_KEY makes a
+    re-run inside the same window a no-op.
+    """
+    now = now or _dt.datetime.now()
+    window = _knowledge_window(now)
+    if state.get(KNOWLEDGE_SENT_KEY) == window:
+        log.info("knowledge push already sent this window; skipping")
+        return state
+
+    title, body = _knowledge_fact(state, now)
+    if not body:
+        log.warning("knowledge KB has nothing to send; skipping")
+        return state
+
+    events.emit(
+        state,
+        title=title,
+        body=body,
+        topic="learn",
+        severity="low",
+        source="Learning",
+        tags="bulb",
+        legacy_priority="low",
+        legacy_action="push",
+    )
+    log.info("sent knowledge push for window %s", window)
+    state[KNOWLEDGE_SENT_KEY] = window
+    return state
+
+
+def _curated_fact(day: _dt.date | None = None) -> tuple[str, str]:
     """(label, fact_text) from today's rotating KB channel; ('', '') if none."""
     label, filename = CHANNELS[kb.day_of_year(day) % len(CHANNELS)]
     if label == "Word of the Day":
         return _wotd_fact(day)
-    if label == KNOWLEDGE_LABEL:
-        # Header is the entry's own title; body verbatim (never LLM-reworded).
-        return _knowledge_fact(state if state is not None else {}, day)
     items = kb.load(kb.DATA_DIR / filename)
     chosen = kb.pick(items, day=day)
     if not chosen:
@@ -259,6 +309,7 @@ def _compose(sections: list[tuple[str, str]]) -> str:
 
 
 def run(state: dict) -> dict:
+    state = _run_knowledge(state)  # every run, independent of the daily gate
     if not os.environ.get("NOTIFY_DAILY"):
         return state  # only the daily cron run sends the learning push
     if state.get(STATE_KEY) == _today():
@@ -284,7 +335,7 @@ def run(state: dict) -> dict:
         sections.append((f"Featured: {title}", extract))
         click_url = url
 
-    label, fact = _curated_fact(today, state)
+    label, fact = _curated_fact(today)
     if fact:
         sections.append((label, fact))
 
