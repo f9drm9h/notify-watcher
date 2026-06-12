@@ -40,6 +40,12 @@ class SummarizeTest(unittest.TestCase):
         self.assertIn("Top story: [78] New approval", body)
         self.assertIn("All 1 topics healthy", body)
 
+    def test_reading_list_count_line(self):
+        body = recap._summarize([_entry(1)], {}, reading_list_count=6)
+        self.assertIn("Reading list: 6 saved item(s)", body)
+        # ...and an empty list adds no line at all.
+        self.assertNotIn("Reading list", recap._summarize([_entry(1)], {}))
+
     def test_failing_topics_are_named(self):
         body = recap._summarize([_entry(1)], {
             "fx": {"last_ok": "x"},

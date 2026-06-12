@@ -40,6 +40,26 @@
       "patternProperties": { "^_": {} },
       "additionalProperties": false
     },
+    "control": {
+      "type": "object",
+      "properties": {
+        "default_buttons": {
+          "type": "object",
+          "description": "topic -> button specs ('read', 'more', 'later:<minutes>') attached to that topic's live pushes",
+          "patternProperties": {
+            "^_": {},
+            "^[A-Za-z0-9][A-Za-z0-9_-]*$": {
+              "type": "array",
+              "maxItems": 3,
+              "items": { "type": "string", "pattern": "^(read|more|later:[0-9]{1,6})$" }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "patternProperties": { "^_": {} },
+      "additionalProperties": false
+    },
     "priority": {
       "type": "object",
       "properties": {

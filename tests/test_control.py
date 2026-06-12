@@ -341,6 +341,205 @@ class MakeActionTest(unittest.TestCase):
         })
 
 
+EID = "ab12cd34ef56ab78"   # a valid 16-hex event-log id
+EID2 = "ab12cd34ef56ab79"
+LOG_ENTRY = {
+    "id": EID, "ts": NOW.isoformat(), "topic": "movies", "title": "Trailer",
+    "source": "Movies", "severity": "high", "score": 70, "action": "push",
+    "detail": "Full detail line", "url": "https://x/article",
+}
+
+
+def _log_state(extra_entries=()):
+    return {"event_log": [LOG_ENTRY, *extra_entries]}
+
+
+class ReadTest(unittest.TestCase):
+    def test_saves_log_fields_only(self):
+        state = _log_state()
+        control.cmd_read(EID, state, now=NOW)
+        self.assertEqual(state["reading_list"], [{
+            "id": EID, "title": "Trailer", "url": "https://x/article",
+            "source": "Movies", "added": NOW.isoformat(),
+        }])
+
+    def test_idempotent_repeat(self):
+        state = _log_state()
+        control.cmd_read(EID, state, now=NOW)
+        control.cmd_read(EID, state, now=NOW)
+        self.assertEqual(len(state["reading_list"]), 1)
+
+    def test_unknown_event_fails_closed(self):
+        state = _log_state()
+        control.cmd_read("0" * 16, state, now=NOW)
+        self.assertNotIn("reading_list", state)
+
+    def test_fifo_cap(self):
+        state = _log_state()
+        state["reading_list"] = [
+            {"id": f"{i:016x}", "title": str(i)}
+            for i in range(control.MAX_READING_LIST)
+        ]
+        control.cmd_read(EID, state, now=NOW)
+        self.assertEqual(len(state["reading_list"]), control.MAX_READING_LIST)
+        # Oldest dropped, newest (the new save) kept.
+        self.assertEqual(state["reading_list"][-1]["id"], EID)
+        self.assertNotEqual(state["reading_list"][0]["title"], "0")
+
+
+class MoreTest(unittest.TestCase):
+    def test_queues_request(self):
+        state = _log_state()
+        control.cmd_more(EID, state)
+        self.assertEqual(state["more_requests"], {EID: True})
+
+    def test_unknown_event_fails_closed(self):
+        state = _log_state()
+        control.cmd_more("0" * 16, state)
+        self.assertNotIn("more_requests", state)
+
+
+class LaterTest(unittest.TestCase):
+    def test_snapshots_the_event(self):
+        state = _log_state()
+        control.cmd_later(EID, 180, state, now=NOW)
+        entry = state["later"][EID]
+        self.assertEqual(entry["until"],
+                         (NOW + _dt.timedelta(minutes=180)).isoformat())
+        self.assertEqual(entry["snapshot"], {
+            "title": "Trailer", "detail": "Full detail line",
+            "url": "https://x/article", "source": "Movies", "topic": "movies",
+        })
+
+    def test_minutes_are_clamped(self):
+        state = _log_state()
+        control.cmd_later(EID, 999_999, state, now=NOW)
+        self.assertEqual(
+            state["later"][EID]["until"],
+            (NOW + _dt.timedelta(minutes=control.MAX_LATER_MINUTES)).isoformat())
+
+    def test_repeat_overwrites_not_duplicates(self):
+        state = _log_state()
+        control.cmd_later(EID, 60, state, now=NOW)
+        control.cmd_later(EID, 180, state, now=NOW)
+        self.assertEqual(len(state["later"]), 1)
+        self.assertEqual(state["later"][EID]["until"],
+                         (NOW + _dt.timedelta(minutes=180)).isoformat())
+
+    def test_queue_cap_drops_new_ids(self):
+        state = _log_state()
+        state["later"] = {f"{i:016x}": {"until": "x", "snapshot": {}}
+                          for i in range(control.MAX_LATER)}
+        control.cmd_later(EID, 60, state, now=NOW)
+        self.assertNotIn(EID, state["later"])
+
+    def test_unknown_event_fails_closed(self):
+        state = _log_state()
+        control.cmd_later("0" * 16, 60, state, now=NOW)
+        self.assertNotIn("later", state)
+
+
+class UnmuteTest(unittest.TestCase):
+    def test_removes_active_mute(self):
+        state = {"muted": {"movies": "2099-01-01T00:00:00+00:00"}}
+        control.cmd_unmute("movies", state)
+        self.assertEqual(state["muted"], {})
+
+    def test_unmuted_topic_is_a_noop(self):
+        state: dict = {}
+        control.cmd_unmute("movies", state)
+        self.assertEqual(state, {})
+
+
+class DispatchV2Test(unittest.TestCase):
+    def test_routes_item_level_verbs(self):
+        state = _log_state()
+        with mock.patch.object(control, "_utcnow", return_value=NOW):
+            control.dispatch(
+                [f"READ:{EID}", f"MORE:{EID}", f"LATER:{EID}:60",
+                 "MUTE:games:24", "UNMUTE:games"], state)
+        self.assertEqual(len(state["reading_list"]), 1)
+        self.assertIn(EID, state["more_requests"])
+        self.assertIn(EID, state["later"])
+        self.assertEqual(state["muted"], {})  # muted then unmuted
+
+    def test_malformed_ids_are_dropped(self):
+        state = _log_state()
+        control.dispatch(
+            ["READ:short", f"READ:{EID.upper()}", "READ:zz12cd34ef56ab78",
+             f"LATER:{EID}:abc", "MORE:", "UNMUTE:"], state)
+        self.assertNotIn("reading_list", state)
+        self.assertNotIn("more_requests", state)
+        self.assertNotIn("later", state)
+
+
+class ProcessPendingTest(unittest.TestCase):
+    def _due_later_state(self):
+        state = _log_state()
+        control.cmd_later(EID, 60, state, now=NOW - _dt.timedelta(hours=2))
+        return state
+
+    def test_due_later_refires_with_buttons_and_clears(self):
+        state = self._due_later_state()
+        with _env(NTFY_CONTROL_TOPIC="ctl"), capture_pushes() as sent:
+            control.process_pending(state, now=NOW)
+        self.assertEqual(len(sent), 1)
+        self.assertEqual(sent[0]["title"], "Reminder: Trailer")
+        self.assertEqual(sent[0]["message"], "Full detail line")
+        self.assertEqual(sent[0]["click_url"], "https://x/article")
+        self.assertEqual([a["body"] for a in sent[0]["actions"]],
+                         [f"LATER:{EID}:180", f"READ:{EID}"])
+        self.assertEqual(state["later"], {})
+
+    def test_not_due_later_stays_queued(self):
+        state = _log_state()
+        control.cmd_later(EID, 600, state, now=NOW)
+        with _env(NTFY_CONTROL_TOPIC="ctl"), capture_pushes() as sent:
+            control.process_pending(state, now=NOW)
+        self.assertEqual(sent, [])
+        self.assertIn(EID, state["later"])
+
+    def test_failed_refire_is_kept_for_retry(self):
+        state = self._due_later_state()
+        with _env(NTFY_CONTROL_TOPIC="ctl"), \
+                mock.patch.object(control.ntfy, "push", side_effect=OSError("boom")):
+            control.process_pending(state, now=NOW)
+        self.assertIn(EID, state["later"])
+
+    def test_more_push_includes_detail_and_related(self):
+        related = dict(LOG_ENTRY, id=EID2, title="Casting news",
+                       ts=(NOW - _dt.timedelta(days=2)).isoformat())
+        old = dict(LOG_ENTRY, id="ab12cd34ef56ab7a", title="Ancient news",
+                   ts=(NOW - _dt.timedelta(days=30)).isoformat())
+        state = _log_state([related, old])
+        control.cmd_more(EID, state)
+        with _env(NTFY_CONTROL_TOPIC="ctl"), capture_pushes() as sent:
+            control.process_pending(state, now=NOW)
+        self.assertEqual(len(sent), 1)
+        self.assertEqual(sent[0]["title"], "More: Trailer")
+        self.assertIn("Full detail line", sent[0]["message"])
+        self.assertIn("- Casting news", sent[0]["message"])
+        self.assertNotIn("Ancient news", sent[0]["message"])  # outside 7d window
+        self.assertEqual(state["more_requests"], {})
+
+    def test_more_for_aged_out_event_is_dropped(self):
+        state = _log_state()
+        state["more_requests"] = {"0" * 16: True}
+        with _env(NTFY_CONTROL_TOPIC="ctl"), capture_pushes() as sent:
+            control.process_pending(state, now=NOW)
+        self.assertEqual(sent, [])
+        self.assertEqual(state["more_requests"], {})
+
+    def test_read_resolves_pending_later_snapshot_after_log_ages_out(self):
+        # The Remind-again flow: log entry gone, but the LATER snapshot
+        # still resolves the id (so buttons on a re-fired push keep working).
+        state = _log_state()
+        control.cmd_later(EID, 600, state, now=NOW)
+        state["event_log"] = []          # ring aged out
+        control.cmd_read(EID, state, now=NOW)
+        self.assertEqual(state["reading_list"][0]["title"], "Trailer")
+
+
 class ButtonWiringTest(unittest.TestCase):
     def test_habit_push_has_no_actions_when_disabled(self):
         now = _dt.datetime(2026, 6, 10, 12, 0, tzinfo=UTC)
