@@ -38,10 +38,11 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
-from .. import changes, events, watchlist
+from .. import changes, events, health, watchlist
 
 log = logging.getLogger(__name__)
 
+TOPIC = "deals"
 STATE_KEY = "product_prices"  # { "<url>": <last_price_float> }
 # Some stores 403 a bare requests User-Agent; present as a normal browser.
 HEADERS = {
@@ -285,6 +286,8 @@ def run(state: dict) -> dict:
         return state
 
     bucket: dict = state.setdefault(STATE_KEY, {})
+    prices_seen = 0
+    last_check_error = ""
 
     for product in products:
         url = str(product.get("url") or "").strip()
@@ -302,11 +305,14 @@ def run(state: dict) -> dict:
                 if found is None:
                     log.warning("no price for %r: %s (%s)", name,
                                 _amazon_no_price_diagnosis(resp.text), url)
+                    last_check_error = f"{name}: no price parsed"
                     continue
             if found is None:
                 log.warning("no price found for %r (%s)", name, url)
+                last_check_error = f"{name}: no price parsed"
                 continue
             price, currency = found
+            prices_seen += 1
             log.info("product %r -> %s", name, _fmt(price, currency))
 
             previous = bucket.get(url)
@@ -353,5 +359,16 @@ def run(state: dict) -> dict:
             # A price rise just updates the baseline above; no notification.
         except Exception as exc:  # noqa: BLE001 - isolate each product
             log.error("product %r check failed: %s", name, exc)
+            last_check_error = f"{name}: {exc}"
+
+    # Health contract: ok while at least one product yielded a price;
+    # source_failed when every check failed (network down, every page
+    # bot-walled, or a layout change broke every parse).
+    if prices_seen:
+        health.source_ok(state, TOPIC, data_count=prices_seen)
+    else:
+        health.source_failed(
+            state, TOPIC,
+            f"no prices from {len(products)} product(s); last: {last_check_error}")
 
     return state

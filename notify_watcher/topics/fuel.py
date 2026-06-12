@@ -31,10 +31,11 @@ import re
 
 import requests
 
-from .. import changes, config, events
+from .. import changes, config, events, health
 
 log = logging.getLogger(__name__)
 
+TOPIC = "fuel"
 STATE_KEY = "fuel_prices"          # {fuel name: official RD$/gal} from the last notice
 LAST_PDF_KEY = "fuel_last_pdf"     # URL of the last notice we reported
 DEFAULT_PAGE = ("https://micm.gob.do/direcciones/combustibles/"
@@ -136,19 +137,25 @@ def run(state: dict) -> dict:
         pdf_url = _find_pdf(resp.text)
     except Exception as exc:  # noqa: BLE001 - a fetch failure is non-fatal
         log.error("fuel: listing fetch failed: %s", exc)
+        health.source_failed(state, TOPIC, f"listing fetch failed: {exc}")
         return state
 
     if not pdf_url:
         log.warning("fuel: no weekly notice PDF found on %s", page)
+        health.source_failed(state, TOPIC, "no weekly notice PDF found (layout change?)")
         return state
     if pdf_url == state.get(LAST_PDF_KEY):
         log.info("fuel: no new notice (still %s)", pdf_url.rsplit("/", 1)[-1])
+        # The listing is alive and still presenting the known notice: a true
+        # success with data, just nothing new to report.
+        health.source_ok(state, TOPIC, data_count=1, message="no new notice")
         return state
 
     try:
         from pypdf import PdfReader
     except ImportError:
         log.error("fuel: pypdf is not installed; skipping fuel prices")
+        health.source_failed(state, TOPIC, "pypdf is not installed")
         return state
 
     try:
@@ -158,6 +165,7 @@ def run(state: dict) -> dict:
         text = "\n".join((p.extract_text() or "") for p in reader.pages)
     except Exception as exc:  # noqa: BLE001
         log.error("fuel: notice PDF fetch/parse failed: %s", exc)
+        health.source_failed(state, TOPIC, f"notice PDF fetch/parse failed: {exc}")
         return state
 
     prices = _parse_prices(text)
@@ -165,7 +173,9 @@ def run(state: dict) -> dict:
         # Don't record the URL: leaving the dedup key untouched retries this
         # notice tomorrow instead of silently skipping a week.
         log.error("fuel: no prices parsed from %s (layout change?)", pdf_url)
+        health.source_failed(state, TOPIC, "no prices parsed from notice PDF (layout change?)")
         return state
+    health.source_ok(state, TOPIC, data_count=len(prices))
 
     prev = state.get(STATE_KEY) or {}
     if not prev:

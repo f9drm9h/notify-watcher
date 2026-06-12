@@ -15,10 +15,11 @@ import os
 
 import requests
 
-from .. import changes, config, events
+from .. import changes, config, events, health
 
 log = logging.getLogger(__name__)
 
+TOPIC = "fx"
 STATE_KEY = "fx_last_zone"
 RATE_KEY = "fx_last_rate"
 WEEK_KEY = "fx_week_baseline"
@@ -110,11 +111,14 @@ def run(state: dict) -> dict:
         rate = (data.get("rates") or {}).get(quote)
     except Exception as exc:  # noqa: BLE001 - a fetch/parse failure is non-fatal
         log.error("FX fetch failed: %s", exc)
+        health.source_failed(state, TOPIC, f"fetch failed: {exc}")
         return state
 
     if rate is None:
         log.warning("FX: no rate for %s in response", quote)
+        health.source_failed(state, TOPIC, f"no rate for {quote} in response")
         return state
+    health.source_ok(state, TOPIC, data_count=1)
 
     prev_rate = state.get(RATE_KEY)
     alert, zone, band = _evaluate(rate, cfg, state.get(STATE_KEY))

@@ -165,5 +165,38 @@ class RunTest(unittest.TestCase):
         self.assertEqual(state[youtube.STATE_KEY]["UC_ONE"], ["vid_old_222"])
 
 
+class HealthContractTest(unittest.TestCase):
+    """run() reports its source outcome (notify_watcher.health)."""
+
+    def _status(self, state):
+        from notify_watcher import health
+        return (state.get(health.STATUS_KEY) or {}).get("youtube")
+
+    def test_all_feeds_failing_reports_source_failed(self):
+        get = mock.Mock(side_effect=RuntimeError("connection refused"))
+        state, _ = _run({}, get=get)
+        status = self._status(state)
+        self.assertTrue(status["source_failed"])
+        self.assertIn("connection refused", status["message"])
+
+    def test_one_reachable_feed_reports_ok(self):
+        cfg = {"channels": [{"channel_id": "UC_BAD", "name": "Broken"},
+                            {"channel_id": "UC_ONE", "name": "Channel One"}]}
+
+        def get(url, **kwargs):
+            if "UC_BAD" in url:
+                raise RuntimeError("connection refused")
+            return _response(FEED_XML)
+
+        state, _ = _run({}, cfg=cfg, get=get)
+        status = self._status(state)
+        self.assertTrue(status["ok"])
+        self.assertEqual(status["data_count"], 2)  # both entries in FEED_XML
+
+    def test_no_channels_makes_no_claim(self):
+        state, _ = _run({}, cfg={})
+        self.assertIsNone(self._status(state))
+
+
 if __name__ == "__main__":
     unittest.main()

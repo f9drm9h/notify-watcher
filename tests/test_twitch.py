@@ -45,5 +45,39 @@ class FollowsMergeTest(unittest.TestCase):
         self.assertEqual(checked, ["Sparg0", "newstreamer"])
 
 
+class HealthContractTest(unittest.TestCase):
+    """run() reports its source outcome (notify_watcher.health)."""
+
+    def _run(self, get_side_effect, state=None):
+        with mock.patch.object(twitch.config, "section",
+                               side_effect=lambda n: {"streamers": ["Sparg0"]}
+                               if n == "twitch" else {}), \
+                mock.patch.object(twitch, "_get", side_effect=get_side_effect):
+            return twitch.run(state or {})
+
+    def _status(self, state):
+        from notify_watcher import health
+        return (state.get(health.STATUS_KEY) or {}).get("twitch")
+
+    def test_all_checks_failing_reports_source_failed(self):
+        state = self._run(OSError("decapi down"))
+        status = self._status(state)
+        self.assertTrue(status["source_failed"])
+        self.assertIn("decapi down", status["message"])
+
+    def test_offline_answer_is_a_healthy_check(self):
+        # "is offline" IS an answer from the source: ok, one check delivered.
+        state = self._run(lambda kind, user: f"{user} is offline")
+        status = self._status(state)
+        self.assertTrue(status["ok"])
+        self.assertEqual(status["data_count"], 1)
+
+    def test_no_streamers_makes_no_claim(self):
+        from notify_watcher import health
+        with mock.patch.object(twitch.config, "section", return_value={}):
+            state = twitch.run({})
+        self.assertNotIn(health.STATUS_KEY, state)
+
+
 if __name__ == "__main__":
     unittest.main()

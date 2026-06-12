@@ -112,5 +112,36 @@ class FormatAreasTest(unittest.TestCase):
         )
 
 
+class HealthContractTest(unittest.TestCase):
+    """run() reports its source outcome (notify_watcher.health)."""
+
+    def test_fetch_failure_reports_source_failed(self):
+        from unittest import mock
+        from notify_watcher import health
+        with mock.patch.object(onamet.requests, "get",
+                               side_effect=OSError("connection refused")), \
+                mock.patch.object(onamet.config, "section", return_value={}):
+            state = onamet.run({})
+        status = state[health.STATUS_KEY]["onamet"]
+        self.assertTrue(status["source_failed"])
+        self.assertIn("CAP feed fetch failed", status["message"])
+
+    def test_empty_feed_is_ok_with_zero_items(self):
+        # No active alerts is the normal state for a CAP feed: ok, but no
+        # last_data stamp (so the topic must never be in data_stale_days).
+        from unittest import mock
+        from notify_watcher import health
+        resp = mock.Mock()
+        resp.raise_for_status.return_value = None
+        resp.content = b'<?xml version="1.0"?><rss version="2.0"><channel></channel></rss>'
+        with mock.patch.object(onamet.requests, "get", return_value=resp), \
+                mock.patch.object(onamet.config, "section", return_value={}):
+            state = onamet.run({})
+        status = state[health.STATUS_KEY]["onamet"]
+        self.assertTrue(status["ok"])
+        self.assertEqual(status["data_count"], 0)
+        self.assertNotIn("topic_health", state)
+
+
 if __name__ == "__main__":
     unittest.main()

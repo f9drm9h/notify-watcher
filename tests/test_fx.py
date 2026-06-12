@@ -105,5 +105,49 @@ class WeeklyTrendTest(unittest.TestCase):
         self.assertNotIn(fx.WEEK_KEY, state)
 
 
+class HealthContractTest(unittest.TestCase):
+    """run() reports its source outcome (notify_watcher.health)."""
+
+    def _status(self, state):
+        from notify_watcher import health
+        return (state.get(health.STATUS_KEY) or {}).get("fx")
+
+    def test_fetch_failure_reports_source_failed(self):
+        with mock.patch.object(fx.requests, "get",
+                               side_effect=OSError("connection refused")), \
+                mock.patch.object(fx.config, "section",
+                                  side_effect=lambda n: CFG if n == "fx" else {}):
+            state = fx.run({})
+        status = self._status(state)
+        self.assertTrue(status["source_failed"])
+        self.assertIn("fetch failed", status["message"])
+
+    def test_missing_rate_reports_source_failed(self):
+        resp = mock.Mock()
+        resp.raise_for_status.return_value = None
+        resp.json.return_value = {"rates": {"EUR": 0.9}}
+        with mock.patch.object(fx.requests, "get", return_value=resp), \
+                mock.patch.object(fx.config, "section",
+                                  side_effect=lambda n: CFG if n == "fx" else {}), \
+                mock.patch.dict("os.environ", {"NOTIFY_DAILY": ""}):
+            state = fx.run({})
+        self.assertTrue(self._status(state)["source_failed"])
+
+    def test_good_rate_reports_ok_and_stamps_last_data(self):
+        resp = mock.Mock()
+        resp.raise_for_status.return_value = None
+        resp.json.return_value = {"rates": {"DOP": 59.0}}
+        with mock.patch.object(fx.requests, "get", return_value=resp), \
+                mock.patch.object(fx.config, "section",
+                                  side_effect=lambda n: CFG if n == "fx" else {}), \
+                mock.patch.dict("os.environ", {"NOTIFY_DAILY": ""}), \
+                capture_pushes():
+            state = fx.run({})
+        status = self._status(state)
+        self.assertTrue(status["ok"])
+        self.assertEqual(status["data_count"], 1)
+        self.assertIn("last_data", state["topic_health"]["fx"])
+
+
 if __name__ == "__main__":
     unittest.main()

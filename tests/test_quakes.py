@@ -158,5 +158,44 @@ class SteadyStateRoutingTest(unittest.TestCase):
         self.assertEqual(state[digest.BUFFER_KEY][0]["source"], "Earthquakes")
 
 
+class HealthContractTest(unittest.TestCase):
+    """run() reports its source outcome (notify_watcher.health)."""
+
+    SECTIONS = {"location": {"latitude": HOME[0], "longitude": HOME[1]},
+                "quakes": CFG}
+
+    def test_fetch_failure_reports_source_failed(self):
+        from notify_watcher import health
+        with mock.patch.object(quakes.requests, "get",
+                               side_effect=OSError("connection refused")), \
+                mock.patch.object(quakes.config, "section",
+                                  side_effect=lambda n: self.SECTIONS.get(n, {})):
+            state = quakes.run({})
+        status = state[health.STATUS_KEY]["quakes"]
+        self.assertTrue(status["source_failed"])
+        self.assertIn("USGS fetch failed", status["message"])
+
+    def test_feed_reports_ok_with_prefilter_feature_count(self):
+        from notify_watcher import health
+        resp = mock.Mock()
+        resp.json.return_value = {"features": [
+            _feature("far_tiny", 2.6, 35.0, 139.0, "Japan")]}
+        resp.raise_for_status.return_value = None
+        with mock.patch.object(quakes.requests, "get", return_value=resp), \
+                mock.patch.object(quakes.config, "section",
+                                  side_effect=lambda n: self.SECTIONS.get(n, {})), \
+                capture_pushes():
+            state = quakes.run({})
+        status = state[health.STATUS_KEY]["quakes"]
+        self.assertTrue(status["ok"])
+        self.assertEqual(status["data_count"], 1)
+
+    def test_no_location_makes_no_claim(self):
+        from notify_watcher import health
+        with mock.patch.object(quakes.config, "section", return_value={}):
+            state = quakes.run({})
+        self.assertNotIn(health.STATUS_KEY, state)
+
+
 if __name__ == "__main__":
     unittest.main()

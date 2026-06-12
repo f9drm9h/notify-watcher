@@ -2,11 +2,12 @@
 from __future__ import annotations
 
 import datetime as dt
+import os
 import unittest
 from unittest import mock
 
-from notify_watcher import ntfy
-from notify_watcher.topics import watchdog
+from notify_watcher import health, main, ntfy
+from notify_watcher.topics import fuel, watchdog
 from tests._util import capture_pushes
 
 NOW = dt.datetime(2026, 6, 9, 12, 0, tzinfo=dt.timezone.utc)
@@ -282,6 +283,93 @@ class RunTest(unittest.TestCase):
         with capture_pushes() as sent:
             state = watchdog.run(state)
         self.assertEqual(sent, [])
+
+
+def _iso_now(hours_ago: float) -> str:
+    """ISO timestamp relative to the REAL clock, for run()-level tests."""
+    return (dt.datetime.now(dt.timezone.utc)
+            - dt.timedelta(hours=hours_ago)).isoformat()
+
+
+class SwallowedFuelFailureTest(unittest.TestCase):
+    """End-to-end proof of the topic health contract: a fuel source failure
+    that fuel.run swallows internally (log + return state) must still cross
+    the watchdog's no-successful-run threshold and alert, because main.py now
+    stamps last_ok only for a true ok report and a soft failure stays sticky
+    across fuel's gated 3-hourly runs.
+    """
+
+    def _record(self, state: dict, name, run) -> dict:
+        """Mimic main.py's per-topic loop body for one topic."""
+        entry = state.setdefault("topic_health", {}).setdefault(name, {})
+        run_ts = dt.datetime.now(dt.timezone.utc).isoformat()
+        state = run(state)
+        status = health.consume(state, name)
+        main._record_outcome(entry, status, adopted=name in health.ADOPTED,
+                             run_ts=run_ts)
+        return state
+
+    def _swallowed_failure_run(self, state: dict) -> dict:
+        """One daily fuel run whose MICM fetch dies; fuel.run swallows it."""
+        with mock.patch.object(fuel.requests, "get",
+                               side_effect=OSError("connection refused")), \
+                mock.patch.dict(os.environ, {"NOTIFY_DAILY": "1"}):
+            return self._record(state, "fuel", fuel.run)
+
+    def test_swallowed_fuel_failure_alerts_after_threshold(self):
+        last_good = _iso_now(72)  # beyond the 48h stale_hours threshold
+        state = {"topic_health": {"fuel": {"last_ok": last_good}}}
+
+        state = self._swallowed_failure_run(state)
+        entry = state["topic_health"]["fuel"]
+        self.assertIn("listing fetch failed", entry["last_error"])
+        self.assertTrue(entry["source_failed"])
+        self.assertEqual(entry["last_ok"], last_good)  # NOT refreshed
+
+        # A gated 3-hourly run (no NOTIFY_DAILY) makes no claim and must not
+        # wipe the soft failure — the old behavior that hid dead sources.
+        with mock.patch.dict(os.environ, {"NOTIFY_DAILY": ""}):
+            state = self._record(state, "fuel", fuel.run)
+        self.assertEqual(state["topic_health"]["fuel"]["last_error"],
+                         entry["last_error"])
+        self.assertEqual(state["topic_health"]["fuel"]["last_ok"], last_good)
+
+        # The watchdog now sees 72h with no true success: one alert, then quiet.
+        with capture_pushes() as sent:
+            state = watchdog.run(state)
+        self.assertEqual(len(sent), 1)
+        self.assertIn("fuel", sent[0]["title"])
+        self.assertIn("listing fetch failed", sent[0]["message"])
+        with capture_pushes() as sent:
+            state = watchdog.run(state)
+        self.assertEqual(sent, [])
+
+    def test_under_threshold_is_silent(self):
+        state = {"topic_health": {"fuel": {"last_ok": _iso_now(24)}}}
+        state = self._swallowed_failure_run(state)
+        with capture_pushes() as sent:
+            watchdog.run(state)
+        self.assertEqual(sent, [])
+
+    def test_recovery_rearms_after_alert(self):
+        state = {"topic_health": {"fuel": {"last_ok": _iso_now(72)}}}
+        state = self._swallowed_failure_run(state)
+        with capture_pushes() as sent:
+            state = watchdog.run(state)
+        self.assertEqual(len(sent), 1)
+
+        def healthy_fuel(s):
+            health.source_ok(s, "fuel", data_count=6)
+            return s
+
+        state = self._record(state, "fuel", healthy_fuel)
+        entry = state["topic_health"]["fuel"]
+        self.assertNotIn("last_error", entry)
+        self.assertNotIn("source_failed", entry)
+        with capture_pushes() as sent:
+            state = watchdog.run(state)
+        self.assertEqual(sent, [])
+        self.assertNotIn("fuel", state[watchdog.ALERTED_KEY])
 
 
 if __name__ == "__main__":
