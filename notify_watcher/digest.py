@@ -91,7 +91,7 @@ def add(state: dict, item: dict, cfg: dict) -> None:
 
 
 def flush(state: dict, cfg: dict, header: str | None = None,
-          actions: list | None = None) -> bool:
+          actions: list | None = None, briefing: str | None = None) -> bool:
     """Send one grouped digest push and clear the buffer. Returns True if sent.
 
     Idempotent per day via digest_last_sent: a second flush on the same date is
@@ -101,7 +101,12 @@ def flush(state: dict, cfg: dict, header: str | None = None,
     `header`, when given, becomes the first line of the message (the digest
     topic passes the morning weather one-liner here). `actions`, when given,
     attaches ntfy reply buttons (the digest topic passes its fixed mute
-    buttons); omitted, the push is unchanged.
+    buttons); omitted, the push is unchanged. `briefing`, when given, is the
+    AI morning-briefing block (docs/design/05) rendered between the header and
+    the item list; the list is then capped harder (briefing.max_items_with_
+    briefing) to respect ntfy's ~4KB message limit. The briefing is a
+    RENDERING of the buffer, never its custodian: the buffer is cleared only
+    after the push succeeds, and every item is already in the event log.
     """
     if state.get(LAST_SENT_KEY) == _today():
         log.info("digest already sent today; skipping")
@@ -113,6 +118,10 @@ def flush(state: dict, cfg: dict, header: str | None = None,
         return False
 
     max_in_msg = int(cfg.get("max_items_in_message", _DEFAULT_MAX_IN_MSG))
+    if briefing:
+        bcfg = cfg.get("briefing") or {}
+        max_in_msg = min(max_in_msg,
+                         int(bcfg.get("max_items_with_briefing", 10)))
 
     # Rank by importance so the most significant items survive truncation and
     # surface first. Overflow now drops the LEAST important items; previously
@@ -136,6 +145,8 @@ def flush(state: dict, cfg: dict, header: str | None = None,
     lines: list[str] = []
     if header:
         lines.append(header)
+    if briefing:
+        lines += [briefing, "", "All items:"]
     for source in ordered_sources:
         lines.append(source.upper())
         for it in by_source[source]:
