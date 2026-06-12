@@ -205,6 +205,38 @@
       "title": "Report looks into next steps for port calls for nuclear-powered ships",
       "topic": "energy",
       "url": "https://www.world-nuclear-news.org//articles/report-looks-into-next-steps-for-port-calls-for-nuclear-powered-ships"
+    },
+    {
+      "detail": "",
+      "score": 62,
+      "source": "The Odyssey",
+      "title": "The Odyssey - Official 'In Studio: Ludwig G\u00f6ransson' Featurette - IGN",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNk1LSEhVeTRFcExWUU5IZDN1ZkJNQTh3OGo2a1Zabi0xMDlkNVZwMGY2Ump4a0x0dEJhQkFudU1jakVrRC1iU29PNWNDTm1vekxRdnEtQXlCWEVJaFpPSmxFUlhtODBZc3ZJNnNSR2FGbHhWMFBtWDhqa3pLQ1RsY0U2b3RfTG5iOW15Zg?oc=5"
+    },
+    {
+      "detail": "",
+      "score": 62,
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 Soundtrack Album Announced - Film Music Reporter",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWWdHU2V4em4wbkJmWW5UOFRYZDhvb095c2RDaC16VEJNaUFJaWlTUzEzRTVwbnB3ZUFVS3VTTTFWLWNrQUpqa2c1X01kSnF2ZUpxajRzZ0ZLOEV4b0R3cXVVbzlCSVRlRmtFakh6aU1tbzU4eFdtaF9MNFJtR056LTRIbUtyajdkbmV1aHhvQUJOZEpqTy1LOVR3OXp5N2c?oc=5"
+    },
+    {
+      "detail": "",
+      "score": 62,
+      "source": "The Batman Part II",
+      "title": "The Batman 2: Sebastian Stan Confirms Harvey Dent Will Become Two-Face in Sequel - IMDb",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5XUkJJOXo0Y0pRTWl2YzFoWUZMTXdVeHkxQzVDUnpMZU5MRENOOXNwMUtHMFFjc08wMkN0YjM3OUxiSnFkb3dwUHk3VWNScE1ZN2c?oc=5"
+    },
+    {
+      "detail": "",
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-06-12",
@@ -319,94 +351,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Epidiolex",
-      "title": "FDA updates approval for Epidiolex (Cannabidiol) (NDA210365)",
-      "topic": "fda",
-      "ts": "2026-06-09T19:38:57.332538+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=210365"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Vyepti",
-      "title": "FDA updates approval for Vyepti (Eptinezumab-Jjmr) (BLA761119)",
-      "topic": "fda",
-      "ts": "2026-06-09T19:38:57.332683+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761119"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-09T19:39:07.245683+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "Keep a glass of water within reach.",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-06-09T19:39:09.494619+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "What: Britain's Calder Hall became the world's first nuclear power station to deliver electricity on an industrial scale.\nWhy it matters: It moved nuclear power from laboratory demonstration to genuine commercial output.\nWhy you should care: It began the fleet of large reactors that today supply roughly a tenth of the world's electricity.\n(Source: World Nuclear Association)",
-      "score": 60,
-      "severity": "low",
-      "source": "Energy learning",
-      "title": "\u26a1 Today's spark \u2014 Calder Hall, first industrial-scale nuclear (1956)",
-      "topic": "energy_learn",
-      "ts": "2026-06-09T19:39:09.710785+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday's Official Cast List Omits 7 Major 'Endgame' Actors - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-09T20:00:24.891503+00:00",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE54Y0VuNmdROEsycmpDOTFDS0RoRFd1ZEtBb1BPbjd0MmZ4TjFVZFNJR3lkT3VmYlpIS25yRm8yX3l1NjNMOGVZS2FvRjVyVzNDX0RWSWkyUEZNVHM2RlRobVZPaFVqeWIxWW1LaEZ4VFRlS2hOQUtzenFTOVM?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday\u2019s \u201cPhase Zero\u201d Promise Officially Confirms The Moment We\u2019ve Been Waiting 7 Years For - ScreenRant",
-      "topic": "movies",
-      "ts": "2026-06-09T20:00:24.891977+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPRXFtV3N1enk4dy1VX2szRER0eG5OMXlUbjYwZEpuWmVrRS1LRnpKVWF6Q29KTktJNUFVU2tZYU9rWlpxYTkycFhXcWlyZjkySlZNalNpcGJFVDJVZTBSaVA0dENSWm9kTFVWTlVQdUNEMGFkVGNHdFhYVGpkSkptenNoVQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday's New Trailer Confirms 5 Biggest Changes From 'Endgame' - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-09T20:00:24.892193+00:00",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9YNUNyWklrXzBCTkE5M1BfR3NOYkJJdjFrLVNCQUJWUHJrNzd4aXpWbkxBeWN4cmk4NHgxa2xWeVNIZ1hmRkkxNXVPZkNha1V1N2thczFTRzlCZzh4cFZoTDFaRjN1RnFrcVB4NENUM1lhUTZybEF0OC01bw?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -5837,6 +5781,102 @@
       "topic": "learn",
       "ts": "2026-06-12T16:53:12.951895+00:00",
       "url": ""
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "ff154ec20ad42b06",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Marvel makes the Avengers: Doomsday announcement nobody wanted to hear - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-12T17:34:30.999209+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBVWXlEbjZhTHAyNUlldWdYdUhTT2pwamh1ZDhpODMtOXhuVFM1SlRSRDlkU3dCdFJrcUFiU0lzOXE1QXQ2TkdMOGU2UTNXZVRvekVBYjY0WndrMHpiU25wREFad1k1UG8?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "f6264c53e6d85157",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "New Spider-Man: Brand New Day trailer release date seemingly confirmed - Bam Smack Pow",
+      "topic": "movies",
+      "ts": "2026-06-12T17:34:31.538727+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZ1dJbkNuTVNoYXVvWC1KQnAtWHlSZlBNZHJNOTAtbTJuN2s5aElNTEZmNFUwMV93NDRMSmpudVAxSkduQjdYUmtsbzZ3SUltTXBlNTYwcmtTcjB6YXBWOEl2angzSTFDZHpMeHg5ZWgzcVBhOVYtS3hFakw3TEtZTDRrV3hySDhWWTFFNWZCV2dVWVRnSENwbGVoRHFPMFF0WEE?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "f8ca2ef68c1a756c",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "The Odyssey - Official 'In Studio: Ludwig G\u00f6ransson' Featurette - IGN",
+      "topic": "movies",
+      "ts": "2026-06-12T17:34:32.070118+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNk1LSEhVeTRFcExWUU5IZDN1ZkJNQTh3OGo2a1Zabi0xMDlkNVZwMGY2Ump4a0x0dEJhQkFudU1jakVrRC1iU29PNWNDTm1vekxRdnEtQXlCWEVJaFpPSmxFUlhtODBZc3ZJNnNSR2FGbHhWMFBtWDhqa3pLQ1RsY0U2b3RfTG5iOW15Zg?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "cae376555117bd20",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 Soundtrack Album Announced - Film Music Reporter",
+      "topic": "movies",
+      "ts": "2026-06-12T17:34:32.071154+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOWWdHU2V4em4wbkJmWW5UOFRYZDhvb095c2RDaC16VEJNaUFJaWlTUzEzRTVwbnB3ZUFVS3VTTTFWLWNrQUpqa2c1X01kSnF2ZUpxajRzZ0ZLOEV4b0R3cXVVbzlCSVRlRmtFakh6aU1tbzU4eFdtaF9MNFJtR056LTRIbUtyajdkbmV1aHhvQUJOZEpqTy1LOVR3OXp5N2c?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "f8c88ff89016a880",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "The Batman 2: Sebastian Stan Confirms Harvey Dent Will Become Two-Face in Sequel - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-12T17:34:33.171663+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5XUkJJOXo0Y0pRTWl2YzFoWUZMTXdVeHkxQzVDUnpMZU5MRENOOXNwMUtHMFFjc08wMkN0YjM3OUxiSnFkb3dwUHk3VWNScE1ZN2c?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Cold, Cold Heart - Dinah Washington\n(because you like Nina Simone)",
+      "id": "65f6e05accf9440e",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-12T17:34:38.930270+00:00",
+      "url": "https://www.deezer.com/track/548801842"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "136e5ef48d1f04cb",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-06-12T17:35:27.249137+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 5:12 AM - max 60deg, SW to NE. Look up!",
+      "id": "1428661683dddf23",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-06-12T17:35:47.666318+00:00",
+      "url": ""
     }
   ],
   "fda_seen_ids": [
@@ -6459,6 +6499,7 @@
     "iPadOS 12.5.8 (16H88)"
   ],
   "iss_seen_passes": [
+    "1b51e86fa4200383",
     "c7fb95cdca31144b",
     "d1291b97df844b44"
   ],
@@ -6475,8 +6516,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-06-12T17:14:46.715096+00:00"
+    "ok": 43,
+    "ts": "2026-06-12T17:34:26.868930+00:00"
   },
   "launch_seen_ids": [
     "4cc755b9dfaf231c",
@@ -6487,6 +6528,14 @@
   "learn_last_sent": "2026-06-12",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "75248e10c24e0250",
+      "1d4f2b22fe14a9e4",
+      "f237bc14500efd0a",
+      "dabb4f4f16310250",
+      "584597b45f4e6252",
+      "36c4c16eb46bc05c",
+      "d3040246e2188400",
+      "732c05038ffea1b2",
       "e5e652f156db2463",
       "08f11cf7f6036fd8",
       "616cf304332ff11b",
@@ -6578,15 +6627,7 @@
       "681438111fdf71e8",
       "6f93534429468051",
       "75f1d901c0ed35f1",
-      "e60d657ab8ea0811",
-      "43f3cb3c43f4c9ee",
-      "1f59955dfa0a09d6",
-      "20adbbbaa66de4c0",
-      "389ab91438ccb4d2",
-      "31bc49966b70ed49",
-      "505b6ce507858b88",
-      "f93b738669236285",
-      "ae1f8b0ea3f61c9b"
+      "e60d657ab8ea0811"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -6788,6 +6829,13 @@
       "b2f005934ccd795b"
     ],
     "Spider-Man: Brand New Day": [
+      "c7c9e5d12f5094f1",
+      "047f3504fc001d08",
+      "b34f837fb02fd1a2",
+      "71a5763469a0778a",
+      "b4ac0508ec0cc620",
+      "8e580a1d2f9616b3",
+      "10db35faa06c37cd",
       "62f9d3052d2cf305",
       "85258008ddbe6981",
       "ced97d44eb01b222",
@@ -6880,16 +6928,18 @@
       "2b932194cd748b89",
       "190c742435551df4",
       "60a44caeab9991aa",
-      "16f3130bd70bd975",
-      "ad0189dc48673399",
-      "7d91901c1d392f42",
-      "921bbe69334401ec",
-      "b36308bcc48728de",
-      "770046bfb3900f8d",
-      "731453f06e67197e",
-      "e55fd04788dccd24"
+      "16f3130bd70bd975"
     ],
     "The Batman Part II": [
+      "362ea35a991a4fba",
+      "64e1e6d40752fec0",
+      "6149901766788253",
+      "bef9fb96d30b4d58",
+      "fd8442d28c5f20ad",
+      "44c2c8333c751231",
+      "9577488c1f230d66",
+      "8ffd6d8f847f4da6",
+      "02833dafebfeb906",
       "8dbc409bf62e7ab7",
       "4288af67e0d5fedc",
       "f6e654f2f5ce2948",
@@ -6980,18 +7030,25 @@
       "6f9d0f18c11abe2b",
       "0ff569845ac2fe80",
       "58e2b79be7a78098",
-      "0f3f8dfab24b8ce1",
-      "6bb3c1cac37b73e8",
-      "1bbd8e7aed31a670",
-      "ac814a8c92b2d810",
-      "f708efc19910767b",
-      "cef704c812e16a61",
-      "8058245793f5bf4d",
-      "901160de9df51068",
-      "07f9b46ec3c52a70",
-      "24960559704d07dd"
+      "0f3f8dfab24b8ce1"
     ],
     "The Odyssey": [
+      "b377b06e34f9a724",
+      "56b83de3ef9ddb21",
+      "11d996e76d7be9c4",
+      "e382ecc0555cf732",
+      "4f47d8d5129eec2c",
+      "b588434170a6822d",
+      "50bfc1d4f55a78d1",
+      "b5144bae3616d66c",
+      "1c0920af31c93ac5",
+      "c63926cce1cb09f0",
+      "dff6be3e17ca8597",
+      "e73162899617564a",
+      "8665f8d3bd0619fc",
+      "672bb23162bbd5ee",
+      "5fa7aca4a618e9d0",
+      "fe9d6356671f12c7",
       "54bfa9b1b1b7fd00",
       "96e496a9627949bd",
       "5cbc317fee432860",
@@ -7075,23 +7132,7 @@
       "a584d87a24c6bdfc",
       "21e6227aa3ba5552",
       "e95f099559a174e9",
-      "986ddc7fb0ee0165",
-      "0d6a53713c983506",
-      "ecdb0953521b50ee",
-      "c477f39ac3fb4e58",
-      "09234e5d31e67981",
-      "f7bcc50aa650e13b",
-      "06ac23beacc9238a",
-      "072d533043fef96f",
-      "db568483ed8a3979",
-      "80b56493259d5408",
-      "b85062684d7aadaf",
-      "fd1d944b8255bda1",
-      "76f9f25e927f19f7",
-      "cd00b4d80db9be96",
-      "1322529b6b037724",
-      "7f70d9c8ade9d27e",
-      "190b86f56a7ad040"
+      "986ddc7fb0ee0165"
     ]
   },
   "movie_release_dates": {
@@ -7127,7 +7168,8 @@
     7631254,
     620,
     3280,
-    1342
+    1342,
+    6009
   ],
   "music_release_seen": [
     "68c25094c070b90b",
@@ -7163,6 +7205,15 @@
       "label": "Ray Charles",
       "payload": {
         "name": "Ray Charles"
+      }
+    },
+    "92d61192dec4533c": {
+      "applied": null,
+      "created": "2026-06-12T17:34:38.930228+00:00",
+      "kind": "artist",
+      "label": "Dinah Washington",
+      "payload": {
+        "name": "Dinah Washington"
       }
     }
   },
@@ -7373,137 +7424,137 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "deals": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "energy": {
-      "last_data": "2026-06-12T16:52:52.465709+00:00",
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_data": "2026-06-12T17:35:27.030076+00:00",
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "fda": {
-      "last_data": "2026-06-12T16:52:42.595955+00:00",
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_data": "2026-06-12T17:35:16.561528+00:00",
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "fuel": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "fx": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "games": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-12T16:52:03.353307+00:00",
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_data": "2026-06-12T17:34:40.554762+00:00",
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "groceries": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "movies": {
-      "last_data": "2026-06-12T16:51:58.772336+00:00",
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_data": "2026-06-12T17:34:33.171224+00:00",
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "music": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "onamet": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "outages": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "quakes": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "twitch": {
-      "last_ok": "2026-06-12T17:14:46.715096+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "weather": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "wwdc": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     },
     "youtube": {
-      "last_ok": "2026-06-12T16:51:52.755920+00:00"
+      "last_ok": "2026-06-12T17:34:26.868930+00:00"
     }
   },
   "twitch_live": [],
@@ -7519,10 +7570,11 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
-    "2026-06-12|15",
-    "2026-06-12|12"
+    "2026-06-12|12",
+    "2026-06-12|15"
   ],
   "weather_seen_ids": [
+    "51f4cc6fcf97d49f",
     "2418c22141e5cb54",
     "09f4ece7b5fb6348",
     "f1eab3ed5e8a313f",
