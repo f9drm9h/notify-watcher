@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "watchlist.json",
+  "description": "Curated entities to track (see notify_watcher/watchlist.py). CI validates the live file against this schema (tests/test_config_files.py); the runtime loader stays fail-soft.",
+  "type": "object",
+  "properties": {
+    "movies": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "games": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "url"],
+        "properties": {
+          "name": { "type": "string", "minLength": 1 },
+          "url": { "type": "string", "pattern": "^https?://" },
+          "target_price": { "type": "number", "exclusiveMinimum": 0 },
+          "group": { "type": "string", "minLength": 1 }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "patternProperties": { "^_": {} },
+  "additionalProperties": false
+}

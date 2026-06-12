@@ -12,7 +12,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read  # the unit suite never writes to the repo; least privilege
 
 jobs:
   unittest:
@@ -24,6 +24,8 @@ jobs:
           python-version: "3.11"
           cache: pip
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        # requirements-dev.txt = requirements.txt + CI-only extras (jsonschema
+        # for the config-file validation in tests/test_config_files.py).
+        run: pip install -r requirements-dev.txt
       - name: Run tests
         run: python -m unittest discover -s tests -v
