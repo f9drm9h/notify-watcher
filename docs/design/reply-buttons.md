@@ -36,9 +36,15 @@ the top of each GitHub Actions run.
 **Non-goals (v1)**
 
 - Free-text replies or arbitrary remote control (no `RUN:`, no config edits).
-- Muting *live* pushes — MUTE only suppresses digest-bound items, so a muted
-  topic's high/urgent alerts (quakes, hurricanes) still ring through.
 - Sub-15-minute command latency (bounded by the Actions cadence, see below).
+
+> **Amended (2026-06):** v1 shipped MUTE as digest-only ("muting live pushes"
+> was a non-goal), and field use immediately showed why that was wrong: the
+> user muted `movies` during a trailer-leak news storm and the storm kept
+> ringing, because every item scored "high" and routed as a live push that the
+> mute never touched. MUTE now also defers the muted topic's live pushes into
+> the morning digest (defer, don't drop). Only `critical`-severity events are
+> exempt — a hurricane warning still rings through a `weather` mute.
 
 ## Architecture
 
@@ -270,15 +276,18 @@ New state key:
 
 **Enforcement point: `events.emit`**, the single funnel every topic already
 goes through. After the routing decision (engine or legacy, and after the
-quiet-hours deferral), one new check:
+quiet-hours deferral), one new check (`events._apply_mute`; amended 2026-06,
+see Non-goals):
 
-> final action == `"digest"` **and** `event.topic` has an unexpired mute
-> → action = `"drop"`.
+> `event.topic` has an unexpired mute and severity != `critical`
+> → `"push"` becomes `"digest"` (deferred, not lost), `"digest"` becomes
+> `"drop"`.
 
 Properties that fall out of this placement:
 
-- Live pushes are untouched — a muted topic's high/urgent alerts still ring
-  (deliberate: muting `weather` chatter must never mute a hurricane warning).
+- `critical` severity is untouched — muting `weather` chatter can never mute
+  a hurricane warning, but ordinary "high" news pushes DO stop ringing (the
+  actual complaint that prompted the amendment).
 - A quiet-hours-deferred push that lands in the digest window of a muted topic
   is also dropped — consistent: it would have surfaced as a digest entry.
 - The drop is recorded in the event log with the normal `eventlog.record`
@@ -323,8 +332,9 @@ trusted with all push content today).
 **Blast radius is the real argument.** The command grammar is closed and every
 command is bounded and reversible: the worst an attacker with the topic name
 can do is mark your water habit done, snooze a reminder ≤ 30 days, or mute a
-topic's *digest entries* ≤ 30 days — live high/urgent alerts cannot be muted
-by design, no command reads or exfiltrates anything, none executes code or
+topic ≤ 30 days (its pushes defer into the daily digest rather than vanish,
+and `critical`-severity alerts cannot be muted at all — see the 2026-06
+amendment), no command reads or exfiltrates anything, none executes code or
 touches keys outside the table above. Parser fails closed on unknown
 verbs/ids/values and processing is capped per poll.
 

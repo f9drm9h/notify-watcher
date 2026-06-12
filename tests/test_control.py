@@ -174,16 +174,113 @@ class MuteTest(unittest.TestCase):
             )
         self.assertEqual(len(state["digest_buffer"]), 1)  # buffered as normal
 
-    def test_mute_never_touches_live_pushes(self):
+    def test_active_mute_defers_live_push_to_digest(self):
+        # THE fix for the field report "tapped MUTE, pushes kept firing":
+        # a muted topic's live push must stop ringing and land in the digest
+        # buffer instead (defer, don't drop).
         until = (_dt.datetime.now(UTC) + _dt.timedelta(hours=1)).isoformat()
         state = {"muted": {"movies": until}}
         with capture_pushes() as sent:
             events.emit(
-                state, title="Big premiere", topic="movies", source="Movies",
+                state, title="Trailer leak storm", topic="movies", source="Movies",
+                legacy_priority="high", legacy_action="push", score=10,
+                priority_cfg={}, digest_cfg={},
+            )
+        self.assertEqual(sent, [])  # no ring
+        buf = state.get("digest_buffer") or []
+        self.assertEqual(len(buf), 1)  # deferred, not lost
+        self.assertEqual(buf[0]["title"], "Trailer leak storm")
+
+    def test_critical_severity_breaks_through_mute(self):
+        # Muting chatty news must never silence a real alert.
+        until = (_dt.datetime.now(UTC) + _dt.timedelta(hours=1)).isoformat()
+        state = {"muted": {"weather": until}}
+        with capture_pushes() as sent:
+            events.emit(
+                state, title="Hurricane warning", topic="weather",
+                severity="critical", source="INDOMET",
+                legacy_priority="urgent", legacy_action="push",
+                priority_cfg={}, digest_cfg={},
+            )
+        self.assertEqual(len(sent), 1)
+
+    def test_mute_defers_engine_routed_push_too(self):
+        # Same enforcement on the priority-engine path (the production mode):
+        # a rule that scores movies above the push threshold still defers
+        # while the mute is active.
+        until = (_dt.datetime.now(UTC) + _dt.timedelta(hours=1)).isoformat()
+        state = {"muted": {"movies": until}}
+        engine_cfg = {"rules": [{"topic": "movies", "score": 80}]}
+        with capture_pushes() as sent:
+            events.emit(
+                state, title="Trailer leak storm", topic="movies", source="Movies",
+                severity="high", legacy_action="push",
+                priority_cfg=engine_cfg, digest_cfg={},
+            )
+        self.assertEqual(sent, [])
+        self.assertEqual(len(state.get("digest_buffer") or []), 1)
+
+    def test_mute_does_not_touch_other_topics(self):
+        until = (_dt.datetime.now(UTC) + _dt.timedelta(hours=1)).isoformat()
+        state = {"muted": {"movies": until}}
+        with capture_pushes() as sent:
+            events.emit(
+                state, title="New game date", topic="games", source="Games",
                 legacy_priority="high", legacy_action="push",
                 priority_cfg={}, digest_cfg={},
             )
-        self.assertEqual(len(sent), 1)  # a push routed live still rings
+        self.assertEqual(len(sent), 1)
+
+
+class MuteEndToEndTest(unittest.TestCase):
+    """The full reply-button mute flow: button POST -> poll -> dispatch ->
+    enforcement at emit -> expiry, exactly as a real run executes it."""
+
+    def _poll_and_dispatch(self, state):
+        ndjson = "\n".join([
+            '{"id": "m1", "event": "message", "message": "MUTE:movies:24"}',
+            '{"id": "m2", "event": "message", "message": "MUTE:games:24"}',
+        ])
+        resp = mock.Mock(text=ndjson)
+        resp.raise_for_status = mock.Mock()
+        with _env(NTFY_CONTROL_TOPIC="ctl"), \
+                mock.patch.object(control.requests, "get", return_value=resp):
+            control.dispatch(control.poll(state), state)
+
+    def test_button_tap_silences_both_topics_same_run(self):
+        state: dict = {}
+        self._poll_and_dispatch(state)
+        self.assertEqual(state["control"]["last_id"], "m2")
+        with capture_pushes() as sent:
+            events.emit(
+                state, title="Movie push", topic="movies", source="M",
+                legacy_priority="high", legacy_action="push", score=10,
+                priority_cfg={}, digest_cfg={},
+            )
+            events.emit(
+                state, title="Game digest item", topic="games", source="G",
+                legacy_action="digest", score=10,
+                priority_cfg={}, digest_cfg={},
+            )
+        self.assertEqual(sent, [])  # nothing rang
+        buf = state.get("digest_buffer") or []
+        self.assertEqual([i["title"] for i in buf], ["Movie push"])  # deferred
+        # The game digest item was dropped outright (the chatter the mute
+        # was aimed at), not buffered.
+
+    def test_mute_expires_and_pushes_resume(self):
+        state: dict = {}
+        self._poll_and_dispatch(state)
+        # Rewind both mutes into the past, as if 24h elapsed.
+        past = (_dt.datetime.now(UTC) - _dt.timedelta(minutes=1)).isoformat()
+        state["muted"] = {t: past for t in state["muted"]}
+        with capture_pushes() as sent:
+            events.emit(
+                state, title="Movie push", topic="movies", source="M",
+                legacy_priority="high", legacy_action="push",
+                priority_cfg={}, digest_cfg={},
+            )
+        self.assertEqual(len(sent), 1)  # rings again after expiry
 
 
 class UntilActiveTest(unittest.TestCase):

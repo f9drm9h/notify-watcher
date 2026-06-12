@@ -107,18 +107,42 @@ def _quiet_defers(ntfy_priority: Optional[str]) -> bool:
         return False
 
 
-def _mute_drops(state: dict, topic: str) -> bool:
+def _mute_active(state: dict, topic: str) -> bool:
     """True when the topic has an active reply-button mute (state["muted"]).
 
-    Checked only AFTER routing decides "digest", so a mute suppresses exactly
-    the digest-bound chatter — live high/urgent pushes never reach this check
-    and still ring through. Expired or malformed entries never suppress, and
-    any error fails open (no drop), so a mute can never silence by accident.
+    Expired or malformed entries never suppress, and any error fails open (no
+    suppression), so a mute can never silence by accident.
     """
     try:
         return control.until_active((state.get("muted") or {}).get(topic))
     except Exception:  # noqa: BLE001 - mute enforcement must never drop on error
         return False
+
+
+def _apply_mute(state: dict, event: Event, action: str) -> str:
+    """Downgrade a routed action while the event's topic is muted.
+
+        push   -> digest   the live ring stops, but the item lands in the next
+                           morning digest (defer, don't drop — nothing is lost)
+        digest -> drop     the chatter the mute was aimed at
+
+    ``critical`` severity is exempt: a mute aimed at chatty news must never
+    silence a real alert (storm warning, outage), so those still ring through.
+    This is what makes the "Mute movies 24h" button do what it says — before
+    this, only digest-bound items were muted and the noisy live pushes (e.g. a
+    trailer-leak news storm scoring "high") kept firing through the mute.
+    """
+    if action not in ("push", "digest") or event.severity == "critical":
+        return action
+    if not _mute_active(state, event.topic):
+        return action
+    if action == "push":
+        log.info("mute active for %r: deferring %r to the morning digest",
+                 event.topic, event.title)
+        return "digest"
+    log.info("mute active for %r: dropping digest-bound %r",
+             event.topic, event.title)
+    return "drop"
 
 
 def _to_digest(state: dict, event: Event, score: int, digest_cfg: Optional[dict]) -> None:
@@ -220,9 +244,7 @@ def emit(
         if action == "push" and _quiet_defers(legacy_priority):
             log.info("quiet hours: deferring %r to the morning digest", title)
             action = "digest"
-        if action == "digest" and _mute_drops(state, event.topic):
-            log.info("mute active for %r: dropping digest-bound %r", topic, title)
-            action = "drop"
+        action = _apply_mute(state, event, action)
         if action == "digest":
             _to_digest(state, event, score, digest_cfg)
         elif action != "drop":
@@ -236,9 +258,7 @@ def emit(
     if action == "push" and _quiet_defers(decision.ntfy_priority):
         log.info("quiet hours: deferring %r to the morning digest", title)
         action = "digest"
-    if action == "digest" and _mute_drops(state, event.topic):
-        log.info("mute active for %r: dropping digest-bound %r", topic, title)
-        action = "drop"
+    action = _apply_mute(state, event, action)
     if action == "push":
         _push(event, decision.ntfy_priority)
     elif action == "digest":
