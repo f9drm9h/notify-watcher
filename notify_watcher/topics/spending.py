@@ -145,13 +145,16 @@ def _parse_transactions(html: str) -> list[dict]:
     Estado is "Aprobada" are kept (a missing Estado column keeps the row — a
     bank table with no status column has nothing to filter on); rows with no
     parseable amount are skipped. The Comercio cell carries a reference/phone
-    number on a second line below the merchant name; only the first line is
-    kept so merchants group consistently.
+    number after the merchant name (inline or on a second line); it is
+    stripped so merchants group consistently.
     """
     out: list[dict] = []
     soup = BeautifulSoup(html or "", "html.parser")
     for table in soup.find_all("table"):
-        rows = table.find_all("tr")
+        # Only this table's OWN rows: the real alert nests the transaction
+        # table inside a wrapper table, and find_all("tr") recurses, so
+        # without this guard the wrapper parses the same rows a second time.
+        rows = [r for r in table.find_all("tr") if r.find_parent("table") is table]
         idx: dict[str, int] = {}
         header_at = None
         for r, row in enumerate(rows):
@@ -180,13 +183,19 @@ def _parse_transactions(html: str) -> list[dict]:
             if amount is None:
                 continue
             merchant = cells[idx["merchant"]] if "merchant" in idx else ""
+            # The bank appends a reference/phone number to the merchant —
+            # sometimes on its own line, sometimes inline ("CLARO RECAR
+            # 8099048592"). Keep the first line, then drop a trailing long
+            # digit run so the same merchant always groups under one name.
+            merchant = merchant.split("\n", 1)[0].strip()
+            merchant = re.sub(r"\s*\d{7,}$", "", merchant).strip()
             tx_type = cells[idx["type"]] if "type" in idx else ""
             out.append({
                 "date": _parse_date(cells[idx["date"]]),
                 "amount": amount,
                 "currency": _normalize_currency(
                     cells[idx["currency"]] if "currency" in idx else "RD"),
-                "merchant": merchant.split("\n", 1)[0].strip(),
+                "merchant": merchant,
                 "type": " ".join(tx_type.split()),
                 "source": "bhd_email",
             })
