@@ -72,7 +72,7 @@
   ],
   "blood_donation_last_notified": "2026-06-08",
   "control": {
-    "last_id": "2qJAxHWK2KCz"
+    "last_id": "7VD3qN7MIt0v"
   },
   "digest_buffer": [
     {
@@ -102,14 +102,6 @@
       "source": "Weather",
       "title": "Atlantic Tropical Weather Outlook",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "score": 62,
-      "source": "Avengers: Doomsday",
-      "title": "The next Avengers: Doomsday teaser trailer reportedly coming sooner than expected - Bam Smack Pow",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPT1NVS2lzU2s3UEdUYTBoTWZweTlxZ1NWTXlLVVAyUTdDYmxZeS1TcnlQWjRMRkd5VG1OSGQ3RE1IQWVVN2prM0pYZDVVVy1iUGozR0pfUHozdkliLTFvUkZnUlhqTmNLbm5KTF9NeEtHZmY4T0pSOWE3ZWw5V0stdTdVQkgySkdMcHp6NA?oc=5"
     },
     {
       "detail": "",
@@ -358,6 +350,46 @@
       "title": "La Sirena deal: Telefono Techtel Tt-605 Id",
       "topic": "groceries",
       "url": "https://www.sirena.do/techtel-telefono-tt-605-id-1545083/p"
+    },
+    {
+      "detail": "",
+      "score": 62,
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday's New Trailer Rewrites The Rules Of The MCU - The Direct",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Yb1NoenNoTmNKNWVQbVpFblZPWDFDWTlqVDlxMWxoMmhVcUlhVndPNUxtbHBRVnVNN2pJSjZYV0U3MUR3aTVEb3FoZndsWlY3alpLeXFpWkw2WVVPQ0IyU2RoVHpJZWI3RmhHUmxNSHdWRVU2cHE0SA?oc=5"
+    },
+    {
+      "detail": "White Christmas (Deluxe Edition) (2021-12-01)",
+      "score": 40,
+      "source": "Louis Armstrong",
+      "title": "New from Louis Armstrong",
+      "topic": "music",
+      "url": "https://www.deezer.com/album/275298382"
+    },
+    {
+      "detail": "We Have All the Time in the World (2021-10-08)",
+      "score": 40,
+      "source": "Louis Armstrong",
+      "title": "New from Louis Armstrong",
+      "topic": "music",
+      "url": "https://www.deezer.com/album/263274972"
+    },
+    {
+      "detail": "Spotlight on Louis Armstrong (2021-08-04)",
+      "score": 40,
+      "source": "Louis Armstrong",
+      "title": "New from Louis Armstrong",
+      "topic": "music",
+      "url": "https://www.deezer.com/album/248234032"
+    },
+    {
+      "detail": "White Christmas (2020-12-14)",
+      "score": 40,
+      "source": "Louis Armstrong",
+      "title": "New from Louis Armstrong",
+      "topic": "music",
+      "url": "https://www.deezer.com/album/191990582"
     }
   ],
   "digest_last_sent": "2026-06-12",
@@ -472,182 +504,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "The Odyssey",
-      "title": "You Can Watch \u2018The Odyssey\u2019 Trailer in All Its Various Aspect Ratios Right Now - Gizmodo",
-      "topic": "movies",
-      "ts": "2026-06-09T22:18:57.846654+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOW12cU9BTlQ0cF9PdlZ1UDQzdVN1YkhvbC1CenVFNHlYam9FcHVaODk4S1I1S1htc2JqM0RCbFp2aFBDbDh6Q0NISURCS3RaUmR5ajhhWV9zNlFnZHRza1Nxa2RFNnFfSFlYcldxQjBXdHZ4NjRReFdEdWVUNDhhWlZRWWhsNXUtT2RQMkpVa3U5LUQ2dWliaTlaTzhTX3J3c19HLVRCUUY1cEk?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "'The Odyssey' Trailer Is Officially the Most Disliked of Christopher Nolan's Career - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-09T22:18:57.847271+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwMjBsTFJoZk9UM3lOR1lFd1FKanpBOWo1SXJEeFhwampsQTByeTg0em00TThKT0hEZUNXOXR3R04yNVpOUi0wNEg2Sm44QVRNM21wc2lEMjdOcGJnNnZGdUlVcHgyZTg?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "Casting for The Batman 2 confirmed \u2013 and everything else we know so far - Cineworld",
-      "topic": "movies",
-      "ts": "2026-06-09T22:18:59.117309+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPRWtOWFVBd01FTGNzaDRCYjVzaHJRSDFRX1VwNHBDZDZwWHozOFEyNjIxS1FSV0RMUTdUb0c3VndSVEpHOUtMc0RjbnFSR29wb3V1TWhndUFfSGdISzR0NVpVRkFvckFVa19PNlUwd1l4bl9XNnB0bGpTa21vTGJ0ODl1SEFhT25RYlE?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves confirms star-studded cast for The Batman Part II - MSN",
-      "topic": "movies",
-      "ts": "2026-06-09T22:18:59.329435+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPa0xpN2JoQmpMV2V4TlJ4ZVRIN1phWGdTTjJjSTV6YlRMc2ZYOXQ1d2I4TzNZd2Y1UGlhMmIxSE5wUldKNzFRYXpzTVpOSW5jbHMzZEZVOFZJWGxjWE9zSlh6YUU0QVhiMHo1b0l5TUJiUTBWUVhUY3AwbExfeDRnYVN4bklwanlNMDJianN0aTN0dUhyRVBSMmx6UUs3SFlHWDl3eTNjRGlQYl9NM2dmWFNDbUZwYTNVSUo4MVV3emVQb2NrX2EwUE9ZOUZRbzJRaVpXTEhlTzhDT2MyMHoxdW05ODVqT19XNGRadC1mNzk2QXkzU3c?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "THE BATMAN PART II Casting List to Date - batman on film",
-      "topic": "movies",
-      "ts": "2026-06-09T22:18:59.329915+00:00",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5EbVJLU3Z6Ti03NXJqY0JUUU9nWWxpOWdQeXpNWVFYMHA0aU9ZQ0RlMUh3aDhDbFl1a1dBODBScEZLZW9SaFJxbEJvbXJmb1cwQ1NLT2luQ1F3RU1MTXNZUVNEaWphMUx4UjB4N2d6OXBMYWd4d2JiaVJCOGhNUdIBgwFBVV95cUxPYkhzRHFybUxqQmJvRlRfZnF4SGI1bWs3RDBxSjhKUVlnVWtMMFAxOU90RTQwMmJFOGZHbmdzUWZOTGdrUXRSdjlhMDU1ZDJZZDBBY0RxUmxUdC1DM0lUa0VVd0JwTUUzQ0xTVHgya1c1TVRjRGlMQWNHNVlFMTJWZi1YWQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "'The Batman Part II' Cast Shakeup: 2 Stars Exit, Several Confirmed to Return By Director Matt Reeves - Just Jared",
-      "topic": "movies",
-      "ts": "2026-06-09T22:18:59.330181+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQLU1PNVNKZjVEeVE0X2hvWjN5dnptUnpPY2M3cXpwR0JrRGRKeFh4RDVUcjk4YVk4b0x5ZVV4T2JKVnhPaXJuN2JVYmJWcDJ0TFdnc0xEb2RVdlRYMjZMX3BiNnlZQTBnZ1A2QnV5VGpzODh0bEg0UUdEbVprVFBZRnhkcmNqTHhKekZCNEZrTGt2eW5FTTRjMjItbzQwUjhTQWpFbmdDUkFMb1FxZUxJdHVQNmgtRTBfQURiZHZ2dGJVR2w1N2VIUXdTbkxoY05hZVE?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "Scarlett Johansson Confirmed for The Batman 2 as Director Teases New Cast Members for Sequel - People.com",
-      "topic": "movies",
-      "ts": "2026-06-09T22:18:59.330421+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPU2JLTDU0VlY5OGFvU0h5eW1GSWh3Z3dIQVpta3ZhbVNiMG5feS13cHR4TW1BQ1VhS0tuSFF5NWRET29PVWR5NEJweEF0NDJ6dkNGd08zYlV5bm8zRTViclAzV3hLVHRPRHpYWjR0aVY2M2dYdEJfWllBZERJUVFpTGxlRFlfX2tKSFF1bXFtSFRURzZtajU2YWJJNFVxcXBSZmd4VURB?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "Spider-Man: Beyond the Spider-Verse",
-      "title": "\u2018Spider-Man: Beyond the Spider-Verse\u2019 Moves 2027 Release Date a Week - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-09T22:19:00.688753+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9CQ2NnYVFacDNOcEM2V0lGR3BJUWdvR21CWGZDeW1HWXdvdi1tblBXNEJTbGZSUndyNjRhY3FSQ2p6UmwxVnJ5bkEwTjFEQQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "Spider-Man: Beyond the Spider-Verse",
-      "title": "\u2018Spider-Man: Beyond the Spider-Verse\u2019 Moves 2027 Release Date a Week - Variety",
-      "topic": "movies",
-      "ts": "2026-06-09T22:19:00.689272+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPcWhFd0xZT2xGVFlxQ1g2cUpycm1qcjlySER3MjdDUTFBdFVaMmlwRjFOSmZIR0s4NVFodmpXSWo2TDBRTUVoVWhkc0ltaG00S1dyd0dRYUx6TUJzWnppRmRDSUpDak5OTk95ZnJQV3pzZ3d0R2xnYjZleVM5eENBdk1zTkZFUTJBSWdpb08zZFM0QVlXN2h2UmtNVFZrd0U?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "Fast As A Shark - Destruction\n(because you like Nevermore)",
-      "score": 22,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-06-09T22:19:05.848681+00:00",
-      "url": "https://www.deezer.com/track/2833863802"
-    },
-    {
-      "action": "push",
-      "detail": "Water break! A few sips now keeps you sharp.",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-06-09T22:19:42.993423+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel makes the Avengers: Doomsday announcement nobody wanted to hear - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-09T22:51:22.708747+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMmc4djBiTndNX0dONlB6amExWnRZc2tQQmZqMll3T2p2a1N3SnlEaEI0TnhOSjlRR1RHRl9GUm9iQkV6X2JmcnNrNjU0QzU5bWN0SFlWV090blZjNWVvY25aNkE2YkJXbnNsMWtXUF9uQ29xaXZMQ1FpRVlxQlhDenl3cHRYV1k2QlZHaDZB?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Promo May Confirm the MCU\u2019s Third Character to Make a Deal With Mephisto - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-09T22:51:22.709112+00:00",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1CMVBhTjBUeHNPOVpOSmhMbER4M1VUbDg3ei03cDl2SGZQRWFnbjdRSTJ1eUpVdVF3a0VRUGI5LVVFQ1RUcUozSlBUVnBTUTgxcUtmRV9lRjM3dE04WVoyQjJ0R08zdWdWOGNIa1FIWUFpdkU?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Russo Bros Declare \u201cWe\u2019re Back to Phase Zero\u201d With \u2018Avengers: Doomsday\u2019 and Robert Downey Jr. - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-06-09T22:51:22.709439+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUHhHZWVwWDlEOGRvNTg2OGx2R1cxc0k4QTZFVGpnc25zUEc3NmdYd3VaZk1nQzZ4YUctX2M3VVc3MklYY3JCdVJJRF9IamFZcXJpUnVhWjFMZ29KM05nVUZSLWgyNmdRUmtRY1NkTldESWlEc0p5U1RXR2trYkNZbThVRHZZb0stYUx6LUVyZkgteGdPNHdEMWpGcE1oYWFHdnFQRWE5dlktY2FVN3Y0aEVFNzBRUQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Hyped Marvel Fans Get Trolled When Avengers: Doomsday Trailer Reveal Turns Out To Be A Tease For Coffee - Kotaku",
-      "topic": "movies",
-      "ts": "2026-06-09T22:51:22.709679+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdF9ta0Z1QTViamllR2s5SVk5Q3lqRGcyNngwajZTOUp0YXJ4MGluNzdRYjRDT2RhZ19keC1jR1NJQXpNVnJ0RjZIeW1wbmVxeHVFOURoVlBKdXB6VzdvRzVCYnd1d2QwNWpQOHA0cVQ5S3VSRWktaFNjZ3VpY0VwSHBkdXV3d1Q2WC1wY3dB?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday trailer expected release time (by each time zone), preview, and what to expect - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-09T22:51:22.709863+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNeEJTUEM0cUQ5QW9YdFpZaXkyUmpoWW5oT1J5UHl6Yk5VWGM4MTBER1ljQ0gwOHpUY3gyZEQ4QkR5Y2hvVS0zajRCSkVaZEpOczJPR3pXWDd6eHJTZGtORUdETFJocU1sRnN1dE1uT3l5eHJGVDJzVm5seERPb2VuNHdUcHpUbFBIQXBxS280MFh6QVhEVEZEWmlwdDhXMUMwM25Bcg?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6025,6 +5881,198 @@
       "topic": "iss",
       "ts": "2026-06-12T20:26:26.826839+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "0def4464e21f27dd",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday's New Trailer Rewrites The Rules Of The MCU - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-12T20:50:07.756914+00:00",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Yb1NoenNoTmNKNWVQbVpFblZPWDFDWTlqVDlxMWxoMmhVcUlhVndPNUxtbHBRVnVNN2pJSjZYV0U3MUR3aTVEb3FoZndsWlY3alpLeXFpWkw2WVVPQ0IyU2RoVHpJZWI3RmhHUmxNSHdWRVU2cHE0SA?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "d72c6c6883acabfb",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day Stills Reveal Possible Hulk Spoiler And Confirm Sadie Sink Leak - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-12T20:50:08.311133+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBPRl9KX0VqVGMwTDlLZEhpQmpZalFDME9JVnRmWEFqU2xKUDJZM1ZJdnZGdnZnZFV6ZjRZdFJRci0zdEJhQ2JMdGR1RFJzNU1EaVJqWlA2TEw0cTJ3TlBLMw?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "cbdcaaf7c26aa43a",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Matt Reeves Shares New Look at 'The Batman 2' as DC Sequel Begins Production - MovieWeb",
+      "topic": "movies",
+      "ts": "2026-06-12T20:50:10.056254+00:00",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE93cDVyR1ptTnE3Smg4OE44aW5laDY4TGtLSWN3NWxndkpGLTcwQWRnUW1NYXBTZ3I4eHZvR2hYMGZZU1hBUGtMSDJyR25vMThVR2F6RURfUHJSejFNejU0Ri1FMVByV282WEJj?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - Evo Grind | World Warrior Tomorrow",
+      "id": "6e3f471958653f43",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-12T20:50:11.996102+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
+    },
+    {
+      "action": "digest",
+      "detail": "La Vie En Rose (Deluxe Edition) (2025-02-15)",
+      "id": "95a942f515380956",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Louis Armstrong",
+      "title": "New from Louis Armstrong",
+      "topic": "music",
+      "ts": "2026-06-12T20:50:14.625228+00:00",
+      "url": "https://www.deezer.com/album/713230171"
+    },
+    {
+      "action": "digest",
+      "detail": "When the Saints Go Marching In (2025-01-24)",
+      "id": "de9a6faffd1a0320",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Louis Armstrong",
+      "title": "New from Louis Armstrong",
+      "topic": "music",
+      "ts": "2026-06-12T20:50:14.626187+00:00",
+      "url": "https://www.deezer.com/album/702238671"
+    },
+    {
+      "action": "digest",
+      "detail": "Wonderful World: The Best Of Louis Armstrong (2024-09-13)",
+      "id": "d1f23837e314d109",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Louis Armstrong",
+      "title": "New from Louis Armstrong",
+      "topic": "music",
+      "ts": "2026-06-12T20:50:14.626743+00:00",
+      "url": "https://www.deezer.com/album/639284511"
+    },
+    {
+      "action": "digest",
+      "detail": "Louis In London (Live At The BBC) (2024-07-12)",
+      "id": "41e5b58384ca78dc",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Louis Armstrong",
+      "title": "New from Louis Armstrong",
+      "topic": "music",
+      "ts": "2026-06-12T20:50:14.627258+00:00",
+      "url": "https://www.deezer.com/album/611127932"
+    },
+    {
+      "action": "digest",
+      "detail": "A Kiss To Build A Dream On (2021-09-17)",
+      "id": "e8814ca59e6668fa",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Louis Armstrong",
+      "title": "New from Louis Armstrong",
+      "topic": "music",
+      "ts": "2026-06-12T20:50:14.627803+00:00",
+      "url": "https://www.deezer.com/album/258061692"
+    },
+    {
+      "action": "digest",
+      "detail": "Louis Wishes You a Cool Yule (2022-10-28)",
+      "id": "75e94e4ce4acc6bc",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Louis Armstrong",
+      "title": "New from Louis Armstrong",
+      "topic": "music",
+      "ts": "2026-06-12T20:50:14.628409+00:00",
+      "url": "https://www.deezer.com/album/368442887"
+    },
+    {
+      "action": "digest",
+      "detail": "White Christmas (Deluxe Edition) (2021-12-01)",
+      "id": "4f2c7b244ebfb918",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Louis Armstrong",
+      "title": "New from Louis Armstrong",
+      "topic": "music",
+      "ts": "2026-06-12T20:50:14.628941+00:00",
+      "url": "https://www.deezer.com/album/275298382"
+    },
+    {
+      "action": "digest",
+      "detail": "We Have All the Time in the World (2021-10-08)",
+      "id": "3438fe63d4fd20b6",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Louis Armstrong",
+      "title": "New from Louis Armstrong",
+      "topic": "music",
+      "ts": "2026-06-12T20:50:14.629501+00:00",
+      "url": "https://www.deezer.com/album/263274972"
+    },
+    {
+      "action": "digest",
+      "detail": "Spotlight on Louis Armstrong (2021-08-04)",
+      "id": "c4083833371d8280",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Louis Armstrong",
+      "title": "New from Louis Armstrong",
+      "topic": "music",
+      "ts": "2026-06-12T20:50:14.630022+00:00",
+      "url": "https://www.deezer.com/album/248234032"
+    },
+    {
+      "action": "digest",
+      "detail": "White Christmas (2020-12-14)",
+      "id": "ed95fe3be175a288",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Louis Armstrong",
+      "title": "New from Louis Armstrong",
+      "topic": "music",
+      "ts": "2026-06-12T20:50:14.630551+00:00",
+      "url": "https://www.deezer.com/album/191990582"
+    },
+    {
+      "action": "push",
+      "detail": "Try Me - Esther Phillips\n(because you like Nina Simone)",
+      "id": "c37e1fbf9947f2b2",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-12T20:50:15.236752+00:00",
+      "url": "https://www.deezer.com/track/1123183312"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 5:12 AM - max 60deg, SW to NE. Look up!",
+      "id": "a6e779eb69bc5f62",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-06-12T20:51:31.540195+00:00",
+      "url": ""
     }
   ],
   "fda_seen_ids": [
@@ -6061,6 +6109,13 @@
     "51ffe951c9bbd202",
     "2cf0e7ea63f6b0d8"
   ],
+  "follows": {
+    "artists": [
+      {
+        "name": "Louis Armstrong"
+      }
+    ]
+  },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-13-19-JUN-DE-2026-ESCENARIO-B.pdf",
   "fuel_prices": {
     "GLP": 137.2,
@@ -6666,6 +6721,7 @@
     "iPadOS 12.5.8 (16H88)"
   ],
   "iss_seen_passes": [
+    "5f7d60e936e078af",
     "feb51a899cf47d12",
     "e4552ca4a442bedc",
     "1b51e86fa4200383",
@@ -6687,7 +6743,7 @@
   "last_run": {
     "failed": 0,
     "ok": 43,
-    "ts": "2026-06-12T20:25:11.283871+00:00"
+    "ts": "2026-06-12T20:50:05.106970+00:00"
   },
   "launch_seen_ids": [
     "4cc755b9dfaf231c",
@@ -6698,6 +6754,15 @@
   "learn_last_sent": "2026-06-12",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "002d2d2b6f81ab55",
+      "e955776a183eb69c",
+      "75dc6f649d44ba41",
+      "fa08e647e13d8340",
+      "93daf3501e7fb632",
+      "abf3c3bbf4bb5446",
+      "35d72495e727f6a6",
+      "6cffb2ccb4946890",
+      "64976910dec4b963",
       "cf5a8e0067072361",
       "681438111fdf71e8",
       "6f93534429468051",
@@ -6788,16 +6853,7 @@
       "de2fb15ca7ecb0be",
       "cacd3aa896388c32",
       "99d878edf84bafad",
-      "359a12da095eb99d",
-      "b24cbd7bfb2d23e9",
-      "2fdd27fabd663cd5",
-      "a2e06004c5c909f5",
-      "aa33d13538a7af36",
-      "c6c50c2d1b37bbb0",
-      "bc6898c940263819",
-      "b0278452e81705a8",
-      "acfb721047b562ca",
-      "3e2df8573945e5de"
+      "359a12da095eb99d"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -6999,6 +7055,13 @@
       "e366e8b5da8346fd"
     ],
     "Spider-Man: Brand New Day": [
+      "fed2462d2f838361",
+      "45a2c682cd584950",
+      "e1f1182977e190de",
+      "ffe211b2379c9e6b",
+      "d464d4852a11fcd4",
+      "766dfcceac1420c1",
+      "ad637f284ded8e24",
       "94602a2d2ad6a8bc",
       "f0344c8b9e95f5c9",
       "2b932194cd748b89",
@@ -7091,16 +7154,13 @@
       "ed517c56b70dafec",
       "67c7e36be6ec713f",
       "522122b72dde699a",
-      "88958c05c1057482",
-      "dcb45972c25586d2",
-      "a8493956f2daafad",
-      "2511ecc195911c2e",
-      "760f45ccfc223ca5",
-      "3896296a579c353e",
-      "1579c94fca859875",
-      "269296b780cbb0e6"
+      "88958c05c1057482"
     ],
     "The Batman Part II": [
+      "aac3b31d670030a1",
+      "af68620334f59dbe",
+      "ccd6f36cb63fb062",
+      "16f05f28c0f09136",
       "136c76a03d45377e",
       "a44a910a71758936",
       "d1a2593a4d556060",
@@ -7196,13 +7256,16 @@
       "95cd57732c25b03e",
       "04c3a0286513f2b4",
       "c96f48500dc82c9f",
-      "c091724025ec9682",
-      "ee21a64f60f5a3f1",
-      "60f18d05008687c9",
-      "4d56fa6db1dddccc",
-      "071fcbfc5cbcc69a"
+      "c091724025ec9682"
     ],
     "The Odyssey": [
+      "1f502f05186ec421",
+      "d441ea33d45dba4e",
+      "3ed007ba7999619c",
+      "67dcf14619835e27",
+      "d0790c8093f044a7",
+      "225bd7051de68a1e",
+      "e4c07baf4f6e8281",
       "3264a402c5f1a986",
       "e6e8ad38d04c5c19",
       "ddacb007393c1ab8",
@@ -7295,14 +7358,7 @@
       "3c86bf357c5c8feb",
       "079deafe2ccbfb2b",
       "1e9d1e04da7cb827",
-      "9c815f18b6355d51",
-      "433a1b9b4798ef05",
-      "5fbf537c916019ca",
-      "85c280bc82798bf5",
-      "9dc4cbba1c39714b",
-      "072b431b1a1b5af4",
-      "80d8d0f4ce3effd8",
-      "036cbc08c102ce69"
+      "9c815f18b6355d51"
     ]
   },
   "movie_release_dates": {
@@ -7341,9 +7397,20 @@
     1342,
     6009,
     1036,
-    2337
+    2337,
+    2749
   ],
   "music_release_seen": [
+    "8f6c139afd3314ac",
+    "b70622c9d556dfd6",
+    "3dc0eb69cc1f3270",
+    "f5d93f8ffa290988",
+    "b7e40c828f6fc79f",
+    "a48c12c2cbdfb5cc",
+    "220b285991ca9c83",
+    "6b2b810e8cd4c3f8",
+    "9fa40e1b7241419d",
+    "5c772c5cb47afde4",
     "68c25094c070b90b",
     "47a82db6a0f21074",
     "2e1388c3ee73b3b9",
@@ -7370,8 +7437,17 @@
     "movies": "2026-06-13T06:34:33.851350+00:00"
   },
   "offers": {
-    "26712b9ff77c3c87": {
+    "179a8b7d285e4925": {
       "applied": null,
+      "created": "2026-06-12T20:50:15.236718+00:00",
+      "kind": "artist",
+      "label": "Esther Phillips",
+      "payload": {
+        "name": "Esther Phillips"
+      }
+    },
+    "26712b9ff77c3c87": {
+      "applied": "2026-06-12T20:50:05.106787+00:00",
       "created": "2026-06-12T20:25:20.761217+00:00",
       "kind": "artist",
       "label": "Louis Armstrong",
@@ -7614,140 +7690,142 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "deals": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "energy": {
-      "last_data": "2026-06-12T20:26:07.648716+00:00",
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_data": "2026-06-12T20:51:12.037243+00:00",
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "fda": {
-      "last_data": "2026-06-12T20:25:56.609376+00:00",
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_data": "2026-06-12T20:51:01.033675+00:00",
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "fuel": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "fx": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "games": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-12T20:25:22.239689+00:00",
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_data": "2026-06-12T20:50:16.845793+00:00",
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "groceries": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "movies": {
-      "last_data": "2026-06-12T20:25:17.938106+00:00",
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_data": "2026-06-12T20:50:11.486573+00:00",
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "music": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "onamet": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "outages": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "quakes": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "twitch": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "weather": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "wwdc": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     },
     "youtube": {
-      "last_ok": "2026-06-12T20:25:11.283871+00:00"
+      "last_ok": "2026-06-12T20:50:05.106970+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_f4_dates_for_filing": "22DEC09",
   "visa_f4_final_action": "08NOV08",
   "watchdog_alerted": {},
@@ -7760,8 +7838,8 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
-    "2026-06-12|12",
     "2026-06-12|18",
+    "2026-06-12|12",
     "2026-06-12|15"
   ],
   "weather_seen_ids": [
