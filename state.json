@@ -5551,6 +5551,17 @@
       "topic": "quakes",
       "ts": "2026-06-12T02:55:33.306159+00:00",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71519623"
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - Chilling night! playing with Yukimaruwu !metafy English Espa\u00f1ol",
+      "score": 68,
+      "severity": "high",
+      "source": "mkleossb",
+      "title": "mkleossb is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-12T06:09:01.279084+00:00",
+      "url": "https://twitch.tv/mkleossb"
     }
   ],
   "fda_seen_ids": [
@@ -6172,8 +6183,8 @@
   ],
   "last_run": {
     "failed": 0,
-    "ok": 43,
-    "ts": "2026-06-12T02:54:24.204764+00:00"
+    "ok": 1,
+    "ts": "2026-06-12T06:09:00.359662+00:00"
   },
   "launch_seen_ids": [
     "4cc755b9dfaf231c",
@@ -7162,7 +7173,7 @@
       "last_ok": "2026-06-12T02:54:24.204764+00:00"
     },
     "twitch": {
-      "last_ok": "2026-06-12T02:54:24.204764+00:00"
+      "last_ok": "2026-06-12T06:09:00.359662+00:00"
     },
     "uv": {
       "last_ok": "2026-06-12T02:54:24.204764+00:00"
@@ -7183,7 +7194,9 @@
       "last_ok": "2026-06-12T02:54:24.204764+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "mkleossb"
+  ],
   "visa_f4_dates_for_filing": "22DEC09",
   "visa_f4_final_action": "08NOV08",
   "watchdog_alerted": {},
