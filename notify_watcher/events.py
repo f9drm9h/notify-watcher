@@ -225,6 +225,30 @@ def _apply_mute(state: dict, event: Event, action: str) -> str:
     return "drop"
 
 
+def _follow_upgrades(state: dict, event: Event, action: str) -> bool:
+    """True when an active FOLLOW should turn this digest-bound item into a
+    live push (at default priority).
+
+    Mirror of _apply_mute, with three deliberate asymmetries: only "digest"
+    upgrades (a "drop" stays dropped — the follow amplifies the middle band,
+    it doesn't resurrect what the engine judged noise), an active MUTE wins
+    over a follow, and any error fails open to "no boost".
+    """
+    if action != "digest":
+        return False
+    try:
+        if _mute_active(state, event.topic):
+            return False
+        if not control.until_active(
+                (state.get(control.FOLLOWED_KEY) or {}).get(event.topic)):
+            return False
+    except Exception:  # noqa: BLE001 - follow must never break routing
+        return False
+    log.info("follow active for %r: pushing %r instead of digesting",
+             event.topic, event.title)
+    return True
+
+
 def _to_digest(state: dict, event: Event, score: int, digest_cfg: Optional[dict]) -> None:
     """Buffer one event for the daily digest, storing `score` for ranking/eviction."""
     if digest_cfg is None:
@@ -240,6 +264,9 @@ def _to_digest(state: dict, event: Event, score: int, digest_cfg: Optional[dict]
             # keep their detail when digested; collector/news items have no body
             # and render title-only as before.
             "detail": event.body,
+            # Lets the digest flush offer a [Follow <hot topic>] button for
+            # the topic contributing the day's top item (docs/design/05).
+            "topic": event.topic,
         },
         digest_cfg,
     )
@@ -325,7 +352,10 @@ def emit(
             log.info("quiet hours: deferring %r to the morning digest", title)
             action = "digest"
         action = _apply_mute(state, event, action)
-        if action == "digest":
+        if _follow_upgrades(state, event, action):
+            _push(event, "default")
+            action = "push"
+        elif action == "digest":
             _to_digest(state, event, score, digest_cfg)
         elif action != "drop":
             _push(event, legacy_priority)
@@ -339,7 +369,10 @@ def emit(
         log.info("quiet hours: deferring %r to the morning digest", title)
         action = "digest"
     action = _apply_mute(state, event, action)
-    if action == "push":
+    if _follow_upgrades(state, event, action):
+        _push(event, "default")
+        action = "push"
+    elif action == "push":
         _push(event, decision.ntfy_priority)
     elif action == "digest":
         _to_digest(state, event, decision.score, digest_cfg)

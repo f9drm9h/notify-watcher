@@ -74,6 +74,10 @@ def add(state: dict, item: dict, cfg: dict) -> None:
         "source": src,
         "score": int(item.get("score", 0) or 0),
         "detail": (item.get("detail") or "")[:_MAX_DETAIL],
+        # Routing topic of the buffered event; lets the flush offer a
+        # [Follow <hot topic>] button. Older buffer entries lack it (fine —
+        # they just can't be the button's target).
+        "topic": item.get("topic", ""),
     })
 
     per_source = int(cfg.get("max_per_source", _DEFAULT_MAX_PER_SOURCE))

@@ -51,6 +51,7 @@ DEFAULT_SERVER = "https://ntfy.sh"
 STATE_KEY = "control"
 SNOOZED_KEY = "snoozed"
 MUTED_KEY = "muted"
+FOLLOWED_KEY = "followed"  # {topic: until_iso} — events.emit boosts digest->push
 READING_LIST_KEY = "reading_list"
 LATER_KEY = "later"
 MORE_KEY = "more_requests"
@@ -65,6 +66,7 @@ WATCHLIST_EXTRA_KEY = "watchlist_extra"  # {"movies": [], "games": []}
 # processed per run so a flooded control topic can't stall the watch run.
 MIN_SNOOZE_MINUTES, MAX_SNOOZE_MINUTES = 5, 43_200  # 5 min .. 30 d
 MIN_MUTE_HOURS, MAX_MUTE_HOURS = 1, 720             # 1 h .. 30 d
+MIN_FOLLOW_HOURS, MAX_FOLLOW_HOURS = 1, 720         # 1 h .. 30 d
 MIN_LATER_MINUTES, MAX_LATER_MINUTES = 5, 43_200    # 5 min .. 30 d
 MAX_PER_POLL = 50
 # Every phone-fillable list is capped so state.json growth is bounded by
@@ -97,6 +99,8 @@ _DONE_RE = re.compile(r"^DONE:([A-Za-z0-9_-]+)$")
 _SNOOZE_RE = re.compile(r"^SNOOZE:([A-Za-z0-9_-]+):(\d{1,6})$")
 _MUTE_RE = re.compile(r"^MUTE:([A-Za-z0-9_-]+):(\d{1,4})$")
 _UNMUTE_RE = re.compile(r"^UNMUTE:([A-Za-z0-9_-]+)$")
+_FOLLOW_RE = re.compile(r"^FOLLOW:([A-Za-z0-9_-]+):(\d{1,4})$")
+_UNFOLLOW_RE = re.compile(r"^UNFOLLOW:([A-Za-z0-9_-]+)$")
 _READ_RE = re.compile(r"^READ:([0-9a-f]{16})$")
 _MORE_RE = re.compile(r"^MORE:([0-9a-f]{16})$")
 _LATER_RE = re.compile(r"^LATER:([0-9a-f]{16}):(\d{1,6})$")
@@ -238,6 +242,14 @@ def dispatch(commands: list[str], state: dict) -> dict:
             if m:
                 cmd_unmute(m.group(1), state)
                 continue
+            m = _FOLLOW_RE.match(cmd)
+            if m:
+                cmd_follow(m.group(1), int(m.group(2)), state)
+                continue
+            m = _UNFOLLOW_RE.match(cmd)
+            if m:
+                cmd_unfollow(m.group(1), state)
+                continue
             m = _READ_RE.match(cmd)
             if m:
                 cmd_read(m.group(1), state)
@@ -343,6 +355,30 @@ def cmd_unmute(topic: str, state: dict) -> None:
         log.info("control: UNMUTE:%s", topic)
     else:
         log.info("control: UNMUTE:%s - topic was not muted; nothing to do", topic)
+
+
+def cmd_follow(topic: str, hours: int, state: dict,
+               now: Optional[_dt.datetime] = None) -> None:
+    """Follow a topic for N hours (clamped 1 h-30 d) — the mirror of MUTE.
+
+    While active, events.emit upgrades the topic's digest-bound items to live
+    pushes at default priority (drops stay dropped — a follow amplifies the
+    middle band, it doesn't resurrect what the engine judged noise; and an
+    active MUTE beats a follow). A repeated FOLLOW overwrites — idempotent.
+    """
+    hours = max(MIN_FOLLOW_HOURS, min(MAX_FOLLOW_HOURS, hours))
+    until = ((now or _utcnow()) + _dt.timedelta(hours=hours)).isoformat()
+    state.setdefault(FOLLOWED_KEY, {})[topic] = until
+    log.info("control: FOLLOW:%s until %s", topic, until)
+
+
+def cmd_unfollow(topic: str, state: dict) -> None:
+    """End a topic's follow now. Unknown/unfollowed topic is a logged no-op."""
+    if (state.get(FOLLOWED_KEY) or {}).pop(topic, None):
+        log.info("control: UNFOLLOW:%s", topic)
+    else:
+        log.info("control: UNFOLLOW:%s - topic was not followed; nothing to do",
+                 topic)
 
 
 # --- Offer registry (ADD / UNDO / IGNORE) -----------------------------------

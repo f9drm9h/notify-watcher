@@ -121,5 +121,33 @@ class FlushHeaderTest(unittest.TestCase):
         self.assertTrue(sent[0]["message"].startswith("ENERGY"))
 
 
+class FollowButtonTest(unittest.TestCase):
+    BUF = [
+        {"title": "a", "score": 10, "topic": "movies"},
+        {"title": "b", "score": 80, "topic": "games"},
+        {"title": "legacy item without topic", "score": 99},
+    ]
+
+    def _action(self, state, digest_cfg=None):
+        with mock.patch.dict("os.environ", {"NTFY_CONTROL_TOPIC": "ctl"}), \
+                mock.patch.object(digest_topic.config, "section",
+                                  return_value=digest_cfg or {}):
+            return digest_topic._follow_action(state)
+
+    def test_targets_the_top_scored_topic(self):
+        action = self._action({"digest_buffer": list(self.BUF)})
+        self.assertEqual(action["label"], "Follow games 3d")
+        self.assertEqual(action["body"], "FOLLOW:games:72")
+
+    def test_disabled_by_config(self):
+        self.assertIsNone(self._action({"digest_buffer": list(self.BUF)},
+                                       {"follow_button": False}))
+
+    def test_no_topic_carrying_items_means_no_button(self):
+        self.assertIsNone(self._action(
+            {"digest_buffer": [{"title": "legacy", "score": 99}]}))
+        self.assertIsNone(self._action({}))
+
+
 if __name__ == "__main__":
     unittest.main()
