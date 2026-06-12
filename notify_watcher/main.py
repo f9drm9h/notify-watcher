@@ -236,6 +236,9 @@ def main() -> int:
     # when NTFY_CONTROL_TOPIC is unset; a failure must never block the run.
     try:
         control.dispatch(control.poll(state), state)
+        # Due "remind later" re-fires and queued "show more" pushes ride the
+        # same cadence as the poll (every run, incl. the 15-min twitch runs).
+        control.process_pending(state)
     except Exception as exc:  # noqa: BLE001 - control errors are never fatal
         log.error("control channel failed: %s", exc)
 
