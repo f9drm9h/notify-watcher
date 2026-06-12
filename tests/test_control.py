@@ -473,6 +473,151 @@ class DispatchV2Test(unittest.TestCase):
         self.assertNotIn("later", state)
 
 
+PRODUCT = {"name": "Anker Prime 250W", "url": "https://anker.com/a1340"}
+
+
+class OfferRegistryTest(unittest.TestCase):
+    def test_register_returns_deterministic_id_and_records_offer(self):
+        s1, s2 = {}, {}
+        oid = control.register_offer(s1, "product", "Anker Prime 250W",
+                                     PRODUCT, now=NOW)
+        self.assertEqual(oid, control.register_offer(
+            s2, "product", "Anker Prime 250W", PRODUCT, now=NOW))
+        self.assertEqual(s1["offers"][oid], {
+            "kind": "product", "label": "Anker Prime 250W",
+            "payload": PRODUCT, "created": NOW.isoformat(), "applied": None,
+        })
+
+    def test_reregister_keeps_created_and_applied(self):
+        state: dict = {}
+        oid = control.register_offer(state, "product", "Old name", PRODUCT,
+                                     applied=True, now=NOW)
+        later = NOW + _dt.timedelta(days=3)
+        control.register_offer(state, "product", "New name", PRODUCT, now=later)
+        offer = state["offers"][oid]
+        self.assertEqual(offer["label"], "New name")          # refreshed
+        self.assertEqual(offer["created"], NOW.isoformat())   # kept
+        self.assertEqual(offer["applied"], NOW.isoformat())   # kept
+
+    def test_ignored_offer_returns_none(self):
+        state: dict = {}
+        oid = control.register_offer(state, "product", "P", PRODUCT, now=NOW)
+        control.cmd_ignore(oid, state, now=NOW)
+        self.assertIsNone(control.register_offer(state, "product", "P",
+                                                 PRODUCT, now=NOW))
+
+
+class AddUndoIgnoreTest(unittest.TestCase):
+    def _offered(self, applied=False):
+        state: dict = {}
+        oid = control.register_offer(state, "product", "P", PRODUCT,
+                                     applied=applied, now=NOW)
+        if applied:
+            # the auto-track case: the topic itself put it in auto_products
+            state["auto_products"] = [dict(PRODUCT)]
+        return state, oid
+
+    def test_add_applies_to_tracked_products(self):
+        state, oid = self._offered()
+        control.cmd_add(oid, state, now=NOW)
+        self.assertEqual(state["tracked_products"], [PRODUCT])
+        self.assertEqual(state["offers"][oid]["applied"], NOW.isoformat())
+
+    def test_add_is_idempotent(self):
+        state, oid = self._offered()
+        control.cmd_add(oid, state, now=NOW)
+        control.cmd_add(oid, state, now=NOW)
+        self.assertEqual(len(state["tracked_products"]), 1)
+
+    def test_add_unknown_offer_fails_closed(self):
+        state: dict = {}
+        control.cmd_add("0" * 16, state, now=NOW)
+        self.assertNotIn("tracked_products", state)
+
+    def test_add_respects_cap(self):
+        state, oid = self._offered()
+        state["tracked_products"] = [
+            {"name": str(i), "url": f"https://x/{i}"}
+            for i in range(control.MAX_TRACKED_PRODUCTS)
+        ]
+        control.cmd_add(oid, state, now=NOW)
+        self.assertEqual(len(state["tracked_products"]),
+                         control.MAX_TRACKED_PRODUCTS)
+        self.assertIsNone(state["offers"][oid]["applied"])
+
+    def test_ignore_unapplies_and_marks(self):
+        state, oid = self._offered(applied=True)
+        control.cmd_ignore(oid, state, now=NOW)
+        self.assertEqual(state["auto_products"], [])      # un-tracked
+        self.assertIsNone(state["offers"][oid]["applied"])
+        self.assertEqual(state["ignored"][oid]["was_applied"], True)
+
+    def test_undo_of_ignore_restores_auto_applied_offer(self):
+        state, oid = self._offered(applied=True)
+        control.cmd_ignore(oid, state, now=NOW)
+        control.cmd_undo(oid, state, now=NOW)
+        self.assertNotIn(oid, state["ignored"])
+        # re-applied into the ADD overlay (tracked_products)
+        self.assertEqual(state["tracked_products"], [PRODUCT])
+        self.assertEqual(state["offers"][oid]["applied"], NOW.isoformat())
+
+    def test_undo_of_plain_ignore_does_not_apply(self):
+        state, oid = self._offered(applied=False)
+        control.cmd_ignore(oid, state, now=NOW)
+        control.cmd_undo(oid, state, now=NOW)
+        self.assertNotIn(oid, state["ignored"])
+        self.assertEqual(state.get("tracked_products") or [], [])
+
+    def test_undo_of_add_removes_payload(self):
+        state, oid = self._offered()
+        control.cmd_add(oid, state, now=NOW)
+        control.cmd_undo(oid, state, now=NOW)
+        self.assertEqual(state["tracked_products"], [])
+        self.assertIsNone(state["offers"][oid]["applied"])
+
+    def test_dispatch_routes_offer_verbs(self):
+        state, oid = self._offered()
+        with mock.patch.object(control, "_utcnow", return_value=NOW):
+            control.dispatch([f"ADD:{oid}", f"IGNORE:{oid}", f"UNDO:{oid}"],
+                             state)
+        # add -> ignore (unapply) -> undo (restore): net applied again
+        self.assertEqual(state["tracked_products"], [PRODUCT])
+        self.assertNotIn(oid, state["ignored"])
+
+
+class PruneOffersTest(unittest.TestCase):
+    def test_expired_unapplied_pruned_applied_kept(self):
+        state: dict = {}
+        old = NOW - _dt.timedelta(days=control.OFFER_TTL_DAYS + 1)
+        stale = control.register_offer(state, "product", "stale",
+                                       {"url": "https://x/1"}, now=old)
+        kept = control.register_offer(state, "product", "kept-applied",
+                                      {"url": "https://x/2"}, applied=True,
+                                      now=old)
+        fresh = control.register_offer(state, "product", "fresh",
+                                       {"url": "https://x/3"}, now=NOW)
+        control._prune_offers(state, NOW)
+        self.assertNotIn(stale, state["offers"])
+        self.assertIn(kept, state["offers"])
+        self.assertIn(fresh, state["offers"])
+
+    def test_cap_evicts_oldest_unapplied_first(self):
+        state: dict = {}
+        for i in range(control.MAX_OFFERS + 2):
+            control.register_offer(
+                state, "product", f"p{i}", {"url": f"https://x/{i}"},
+                applied=(i < 2),  # the two oldest are applied
+                now=NOW + _dt.timedelta(minutes=i))
+        control._prune_offers(state, NOW)
+        offers = state["offers"]
+        self.assertEqual(len(offers), control.MAX_OFFERS)
+        # the applied ones survived even though they are oldest
+        labels = {o["label"] for o in offers.values()}
+        self.assertIn("p0", labels)
+        self.assertIn("p1", labels)
+        self.assertNotIn("p2", labels)  # oldest unapplied went first
+
+
 class ProcessPendingTest(unittest.TestCase):
     def _due_later_state(self):
         state = _log_state()

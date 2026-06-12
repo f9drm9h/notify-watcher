@@ -24,6 +24,9 @@ State keys owned by this module:
   reading_list  : list[{id,title,url,source,added}]   READ saves (recap/dashboard)
   later         : {event_id: {until, snapshot}}       LATER re-fire queue
   more_requests : {event_id: true}                    MORE pushes pending
+  offers        : {offer_id: {kind,label,payload,created,applied}}  ADD targets
+  ignored       : {offer_id: {label,since,was_applied}}  "Not interested" marks
+  tracked_products : list[{name,url}]   ADDed products, merged by deals.run
 """
 from __future__ import annotations
 
@@ -36,7 +39,7 @@ from typing import Optional
 
 import requests
 
-from . import ntfy
+from . import ids, ntfy
 
 log = logging.getLogger(__name__)
 
@@ -47,6 +50,9 @@ MUTED_KEY = "muted"
 READING_LIST_KEY = "reading_list"
 LATER_KEY = "later"
 MORE_KEY = "more_requests"
+OFFERS_KEY = "offers"
+IGNORED_KEY = "ignored"
+TRACKED_PRODUCTS_KEY = "tracked_products"
 
 # Clamps bound every command's effect; a malformed or hostile duration can
 # never snooze/mute longer than 30 days. At most MAX_PER_POLL commands are
@@ -59,6 +65,10 @@ MAX_PER_POLL = 50
 # constants, not usage (docs/design/05 — security: bounded blast radius).
 MAX_READING_LIST = 100
 MAX_LATER = 20
+MAX_OFFERS = 60
+OFFER_TTL_DAYS = 14
+MAX_IGNORED = 200
+MAX_TRACKED_PRODUCTS = 25
 # "Show more" related-items window: same topic, last N days, up to M lines.
 RELATED_DAYS = 7
 RELATED_MAX = 3
@@ -75,6 +85,9 @@ _UNMUTE_RE = re.compile(r"^UNMUTE:([A-Za-z0-9_-]+)$")
 _READ_RE = re.compile(r"^READ:([0-9a-f]{16})$")
 _MORE_RE = re.compile(r"^MORE:([0-9a-f]{16})$")
 _LATER_RE = re.compile(r"^LATER:([0-9a-f]{16}):(\d{1,6})$")
+_ADD_RE = re.compile(r"^ADD:([0-9a-f]{16})$")
+_UNDO_RE = re.compile(r"^UNDO:([0-9a-f]{16})$")
+_IGNORE_RE = re.compile(r"^IGNORE:([0-9a-f]{16})$")
 
 
 def _utcnow() -> _dt.datetime:
@@ -222,6 +235,18 @@ def dispatch(commands: list[str], state: dict) -> dict:
             if m:
                 cmd_later(m.group(1), int(m.group(2)), state)
                 continue
+            m = _ADD_RE.match(cmd)
+            if m:
+                cmd_add(m.group(1), state)
+                continue
+            m = _UNDO_RE.match(cmd)
+            if m:
+                cmd_undo(m.group(1), state)
+                continue
+            m = _IGNORE_RE.match(cmd)
+            if m:
+                cmd_ignore(m.group(1), state)
+                continue
             log.warning("control: dropping unknown command %r", cmd[:80])
         except Exception as exc:  # noqa: BLE001 - one bad command never blocks the rest
             log.error("control: command %r failed: %s", cmd[:80], exc)
@@ -303,6 +328,183 @@ def cmd_unmute(topic: str, state: dict) -> None:
         log.info("control: UNMUTE:%s", topic)
     else:
         log.info("control: UNMUTE:%s - topic was not muted; nothing to do", topic)
+
+
+# --- Offer registry (ADD / UNDO / IGNORE) -----------------------------------
+# The keystone of "notification-as-UI" (docs/design/05): a discovery push's
+# button carries only an offer ID; the full payload (name, URL) was written to
+# state by trusted topic code at push time. So a command can never inject a
+# URL or name — it can only point at data we already chose to offer.
+
+def offer_id(kind: str, payload: dict) -> str:
+    """Content-derived offer id: the same discovery always maps to the same id.
+
+    Keyed on the payload's most identifying field (url, falling back to name),
+    so a product re-discovered next month resolves to the same id — which is
+    what makes register_offer idempotent and an IGNORE durable.
+    """
+    key = str(payload.get("url") or payload.get("name") or "")
+    return ids.short(f"{kind}|{key}")
+
+
+def register_offer(state: dict, kind: str, label: str, payload: dict,
+                   applied: bool = False,
+                   now: Optional[_dt.datetime] = None) -> Optional[str]:
+    """Record an actionable discovery; returns its offer id, or None if the
+    user already said "Not interested" (callers must then skip the offer).
+
+    ``applied=True`` marks offers whose effect the topic applies itself at
+    discovery time (e.g. soundcore_pro auto-tracks), so the button is the
+    opt-OUT (IGNORE) and UNDO knows there is something to remove.
+    Re-registering an existing offer refreshes label/payload and keeps
+    created/applied — idempotent.
+    """
+    oid = offer_id(kind, payload)
+    if oid in (state.get(IGNORED_KEY) or {}):
+        log.info("control: offer %s (%r) is ignored; not offering", oid, label)
+        return None
+    offers = state.setdefault(OFFERS_KEY, {})
+    existing = offers.get(oid)
+    now_iso = (now or _utcnow()).isoformat()
+    offers[oid] = {
+        "kind": kind,
+        "label": label,
+        "payload": dict(payload),
+        "created": existing.get("created", now_iso) if existing else now_iso,
+        "applied": (existing or {}).get("applied") or (now_iso if applied else None),
+    }
+    return oid
+
+
+def _overlay_lists(state: dict, kind: str) -> list[list]:
+    """The state overlay list(s) an offer kind's payload lives in.
+
+    For products both the ADD overlay and the auto-track list are returned, so
+    UNDO/IGNORE of an auto-tracked discovery removes it wherever it landed.
+    """
+    if kind == "product":
+        return [state.setdefault(TRACKED_PRODUCTS_KEY, []),
+                state.setdefault("auto_products", [])]
+    return []
+
+
+def _payload_key(payload: dict) -> str:
+    return str(payload.get("url") or payload.get("name") or "")
+
+
+def _apply_offer(state: dict, offer: dict) -> bool:
+    """Add the offer's payload to its overlay (idempotent). False = unknown kind/full."""
+    kind, payload = offer.get("kind", ""), offer.get("payload") or {}
+    lists = _overlay_lists(state, kind)
+    if not lists:
+        log.warning("control: cannot apply offer of unknown kind %r", kind)
+        return False
+    target = lists[0]
+    key = _payload_key(payload)
+    for lst in lists:
+        if any(isinstance(p, dict) and _payload_key(p) == key for p in lst):
+            return True  # already applied somewhere — idempotent
+    if kind == "product" and len(target) >= MAX_TRACKED_PRODUCTS:
+        log.warning("control: tracked_products full (%d); not adding %r",
+                    MAX_TRACKED_PRODUCTS, offer.get("label"))
+        return False
+    target.append(dict(payload))
+    return True
+
+
+def _remove_offer_payload(state: dict, offer: dict) -> None:
+    """Remove the offer's payload from every overlay it may live in."""
+    key = _payload_key(offer.get("payload") or {})
+    for lst in _overlay_lists(state, offer.get("kind", "")):
+        lst[:] = [p for p in lst
+                  if not (isinstance(p, dict) and _payload_key(p) == key)]
+
+
+def cmd_add(oid: str, state: dict, now: Optional[_dt.datetime] = None) -> None:
+    """Apply a registered offer (e.g. start price-tracking). Unknown id drops."""
+    offer = (state.get(OFFERS_KEY) or {}).get(oid)
+    if offer is None:
+        log.warning("control: ADD for unknown offer %s dropped", oid)
+        return
+    (state.get(IGNORED_KEY) or {}).pop(oid, None)  # an ADD overrides a prior ignore
+    if _apply_offer(state, offer):
+        offer["applied"] = (now or _utcnow()).isoformat()
+        log.info("control: ADD %s applied (%s %r)", oid, offer.get("kind"),
+                 offer.get("label"))
+
+
+def cmd_ignore(oid: str, state: dict,
+               now: Optional[_dt.datetime] = None) -> None:
+    """Not interested: un-apply the offer (if applied) and never offer it again.
+
+    Reversible via UNDO (which also restores an auto-applied effect) or a
+    state.json edit. The ignored map is FIFO-capped at MAX_IGNORED.
+    """
+    offer = (state.get(OFFERS_KEY) or {}).get(oid)
+    if offer is None:
+        log.warning("control: IGNORE for unknown offer %s dropped", oid)
+        return
+    was_applied = bool(offer.get("applied"))
+    if was_applied:
+        _remove_offer_payload(state, offer)
+        offer["applied"] = None
+    ignored = state.setdefault(IGNORED_KEY, {})
+    ignored[oid] = {
+        "label": offer.get("label", ""),
+        "since": (now or _utcnow()).isoformat(),
+        "was_applied": was_applied,
+    }
+    while len(ignored) > MAX_IGNORED:
+        ignored.pop(next(iter(ignored)))
+    log.info("control: IGNORE %s (%r)", oid, offer.get("label"))
+
+
+def cmd_undo(oid: str, state: dict, now: Optional[_dt.datetime] = None) -> None:
+    """Reverse exactly what ADD or IGNORE of this offer did. No-ops are logged.
+
+    Undoing an IGNORE also re-applies the offer when the ignore had un-applied
+    it (the auto-track "Not interested" case), restoring the pre-tap state.
+    """
+    offer = (state.get(OFFERS_KEY) or {}).get(oid)
+    if offer is None:
+        log.warning("control: UNDO for unknown offer %s dropped", oid)
+        return
+    mark = (state.get(IGNORED_KEY) or {}).pop(oid, None)
+    if mark is not None:
+        if mark.get("was_applied") and _apply_offer(state, offer):
+            offer["applied"] = (now or _utcnow()).isoformat()
+        log.info("control: UNDO %s un-ignored (%r)", oid, offer.get("label"))
+        return
+    if offer.get("applied"):
+        _remove_offer_payload(state, offer)
+        offer["applied"] = None
+        log.info("control: UNDO %s un-applied (%r)", oid, offer.get("label"))
+        return
+    log.info("control: UNDO %s - nothing to reverse", oid)
+
+
+def _prune_offers(state: dict, now: _dt.datetime) -> None:
+    """Expire unapplied offers past their TTL and hard-cap the registry.
+
+    Applied offers are kept while possible (they are the UNDO record); when
+    the cap forces eviction, oldest-created go first regardless. A pruned
+    offer just means its button goes dead — the tap is logged and dropped.
+    """
+    offers = state.get(OFFERS_KEY)
+    if not offers:
+        return
+    cutoff = (now - _dt.timedelta(days=OFFER_TTL_DAYS)).isoformat()
+    for oid, offer in list(offers.items()):
+        if not isinstance(offer, dict):
+            offers.pop(oid, None)
+        elif not offer.get("applied") and str(offer.get("created", "")) < cutoff:
+            offers.pop(oid, None)
+    if len(offers) > MAX_OFFERS:
+        by_age = sorted(offers,
+                        key=lambda o: (bool(offers[o].get("applied")),
+                                       str(offers[o].get("created", ""))))
+        for oid in by_age[: len(offers) - MAX_OFFERS]:
+            offers.pop(oid, None)
 
 
 def _find_event(state: dict, event_id: str) -> Optional[dict]:
@@ -425,9 +627,11 @@ def process_pending(state: dict, now: Optional[_dt.datetime] = None) -> None:
     requested time within ~15 min. These pushes bypass the priority engine
     deliberately: the user explicitly asked for each one, so it must not be
     digested or dropped by routing. Per-entry failures keep the entry for a
-    retry next run; one bad entry never blocks the rest.
+    retry next run; one bad entry never blocks the rest. Also prunes the
+    offer registry (TTL + cap) so it stays bounded.
     """
     now = now or _utcnow()
+    _prune_offers(state, now)
 
     later = state.get(LATER_KEY) or {}
     for event_id, entry in list(later.items()):
