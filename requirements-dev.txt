@@ -1,0 +1,5 @@
+# CI/test-only dependencies. watch.yml and twitch.yml install requirements.txt
+# and must stay byte-for-byte unchanged: validation is a CI concern, the
+# runtime config loaders are deliberately fail-soft (docs/design/04).
+-r requirements.txt
+jsonschema>=4.21  # schema validation of the hand-edited config files in CI

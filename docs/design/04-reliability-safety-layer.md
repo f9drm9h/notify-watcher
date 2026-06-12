@@ -1,6 +1,6 @@
 # 04 — Reliability & Safety Layer
 
-**Status: PROPOSED** (design only; nothing in this document is implemented yet)
+**Status: Phase 1 (config validation) IMPLEMENTED; Phases 2–3 still proposed**
 
 Goal: no silent failures. Every way this system can break should eventually
 produce exactly one ntfy push saying what broke, or be blocked in CI before it
