@@ -1,0 +1,168 @@
+name: alert
+
+# Reliability layer, Phase 2 (docs/design/04-reliability-safety-layer.md):
+# push an ntfy notification when any monitored workflow fails, plus a
+# scheduled heartbeat that notices when `watch` stops running entirely — a
+# dropped/disabled schedule is the one failure the in-run watchdog can never
+# see, because it only executes inside a run.
+#
+# Boundary with the in-run watchdog: main.py always exits 0, so a per-topic
+# failure never turns a workflow red (the watchdog owns those), and a
+# workflow-level failure (pip/import/state-push) never reaches the topic
+# loop (this file owns those). No overlap by construction.
+#
+# Adding a future workflow = add its `name:` to the list below (one line).
+#
+# Deliberately dependency-free: no checkout, no pip — just curl and the
+# preinstalled gh CLI. The alert path must not depend on the repo's own
+# dependencies being installable, because that is one of the failures it
+# reports on. Stateless too: dedup comes from workflow_run firing once per
+# completed run, and streak suppression from asking the GitHub API for the
+# previous run's conclusion.
+#
+# Note: failure alerts curl ntfy directly at high priority, bypassing the
+# Python quiet-hours logic — same outcome, since high/urgent alerts always
+# ring through quiet hours by design (ntfy.py _ALWAYS_DELIVER).
+
+on:
+  workflow_run:
+    workflows: [watch, twitch, test]
+    types: [completed]
+  schedule:
+    # Heartbeat 4x/day, offset from the :00 grid the watchers use.
+    - cron: "30 5,11,17,23 * * *"
+  workflow_dispatch:
+    inputs:
+      test_alert:
+        description: "Send a sample failure alert (verifies ntfy delivery)"
+        type: boolean
+        default: false
+
+permissions:
+  actions: read # to query previous runs for streak suppression / heartbeat
+
+env:
+  NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
+  NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+
+jobs:
+  on-failure:
+    if: github.event_name == 'workflow_run' &&
+      github.event.workflow_run.conclusion == 'failure'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      # Everything from the triggering run goes through env vars, never
+      # inline ${{ }} in run: blocks — head_branch is fork-controllable text
+      # and must not be interpolated into shell source.
+      RUN_NAME: ${{ github.event.workflow_run.name }}
+      RUN_URL: ${{ github.event.workflow_run.html_url }}
+      RUN_BRANCH: ${{ github.event.workflow_run.head_branch }}
+      RUN_TS: ${{ github.event.workflow_run.updated_at }}
+      RUN_ID: ${{ github.event.workflow_run.id }}
+      WF_ID: ${{ github.event.workflow_run.workflow_id }}
+    steps:
+      - name: Alert only on the FIRST failure of a streak
+        id: streak
+        run: |
+          # workflow_run fires once per completed run, so per-run dedup is
+          # structural. Streak suppression handles the other spam source: a
+          # workflow that fails every cycle (twitch runs 96x/day) must push
+          # on its first failure only, then stay quiet until it recovers.
+          prev=$(gh api \
+            "repos/${{ github.repository }}/actions/workflows/${WF_ID}/runs?branch=$(jq -rn 'env.RUN_BRANCH|@uri')&status=completed&per_page=5" \
+            --jq '[.workflow_runs[] | select(.id != (env.RUN_ID | tonumber))][0].conclusion // "none"')
+          echo "previous run conclusion: ${prev}"
+          echo "prev=${prev}" >> "$GITHUB_OUTPUT"
+      - name: Push failure alert
+        if: steps.streak.outputs.prev != 'failure'
+        run: |
+          server="${NTFY_SERVER:-https://ntfy.sh}"
+          curl -fsS --retry 3 \
+            -H "Title: Workflow failed: ${RUN_NAME} (${RUN_BRANCH})" \
+            -H "Priority: high" \
+            -H "Tags: rotating_light" \
+            -H "Click: ${RUN_URL}" \
+            -d "The '${RUN_NAME}' workflow failed at ${RUN_TS}. Tap to open the failed run: ${RUN_URL}" \
+            "${server%/}/${NTFY_TOPIC}"
+
+  on-recovery:
+    # One calm push when a previously-failing workflow goes green again, so
+    # a failure alert is never left dangling ("is it still broken?").
+    if: github.event_name == 'workflow_run' &&
+      github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      RUN_NAME: ${{ github.event.workflow_run.name }}
+      RUN_URL: ${{ github.event.workflow_run.html_url }}
+      RUN_BRANCH: ${{ github.event.workflow_run.head_branch }}
+      RUN_ID: ${{ github.event.workflow_run.id }}
+      WF_ID: ${{ github.event.workflow_run.workflow_id }}
+    steps:
+      - name: Check whether the previous run failed
+        id: streak
+        run: |
+          prev=$(gh api \
+            "repos/${{ github.repository }}/actions/workflows/${WF_ID}/runs?branch=$(jq -rn 'env.RUN_BRANCH|@uri')&status=completed&per_page=5" \
+            --jq '[.workflow_runs[] | select(.id != (env.RUN_ID | tonumber))][0].conclusion // "none"')
+          echo "previous run conclusion: ${prev}"
+          echo "prev=${prev}" >> "$GITHUB_OUTPUT"
+      - name: Push recovery notice
+        if: steps.streak.outputs.prev == 'failure'
+        run: |
+          server="${NTFY_SERVER:-https://ntfy.sh}"
+          curl -fsS --retry 3 \
+            -H "Title: Workflow recovered: ${RUN_NAME} (${RUN_BRANCH})" \
+            -H "Tags: white_check_mark" \
+            -H "Click: ${RUN_URL}" \
+            -d "The '${RUN_NAME}' workflow is green again." \
+            "${server%/}/${NTFY_TOPIC}"
+
+  heartbeat:
+    # Catches failure mode 5 (docs/design/04 §2): GitHub drops or disables
+    # the schedule and nothing runs at all. watch runs every 3h; 7h of
+    # silence means at least two consecutive ticks vanished — a dead
+    # schedule, not normal GitHub jitter. A manual dispatch also runs this
+    # as a silent-if-healthy probe.
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Check that `watch` has completed within the last 7 hours
+        run: |
+          last=$(gh api \
+            "repos/${{ github.repository }}/actions/workflows/watch.yml/runs?status=completed&per_page=1" \
+            --jq '.workflow_runs[0].updated_at // empty')
+          now=$(date -u +%s)
+          last_s=$(date -u -d "${last:-1970-01-01T00:00:00Z}" +%s)
+          age_h=$(( (now - last_s) / 3600 ))
+          echo "last completed watch run: ${last:-never} (${age_h}h ago)"
+          if [ "$age_h" -ge 7 ]; then
+            server="${NTFY_SERVER:-https://ntfy.sh}"
+            curl -fsS --retry 3 \
+              -H "Title: watch has not run in ${age_h}h" \
+              -H "Priority: urgent" \
+              -H "Tags: skull" \
+              -H "Click: https://github.com/${{ github.repository }}/actions/workflows/watch.yml" \
+              -d "Last completed watch run: ${last:-never}. The schedule may have been dropped or disabled (GitHub disables crons after 60 days without repo activity). Tap to open the Actions tab." \
+              "${server%/}/${NTFY_TOPIC}"
+          fi
+
+  test-alert:
+    # Delivery self-test, mirroring watch.yml's test_push: send one sample
+    # failure-format push so the pipeline can be verified without breaking
+    # a real workflow. workflow_run can't be exercised before this file is
+    # on the default branch, so this is the post-merge smoke test.
+    if: github.event_name == 'workflow_dispatch' && inputs.test_alert
+    runs-on: ubuntu-latest
+    steps:
+      - name: Push sample alert
+        run: |
+          server="${NTFY_SERVER:-https://ntfy.sh}"
+          curl -fsS --retry 3 \
+            -H "Title: Sample workflow-failure alert" \
+            -H "Tags: white_check_mark" \
+            -d "Test push from alert.yml - workflow failure alerts are wired up. Real alerts look like: 'Workflow failed: watch (main)' at high priority." \
+            "${server%/}/${NTFY_TOPIC}"
