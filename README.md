@@ -245,23 +245,30 @@ digest simply goes out without it.
   sections: an "On this day" historical event and the day's Wikipedia featured
   article (both from Wikimedia's free, no-key feed), plus one vetted fact from a
   rotating curated channel — science, technology literacy, life skills, general
-  knowledge, Dominican history & culture, personal-finance basics, a
-  **word of the day**, or a **knowledge deep-dive** (`data/*.json`). The
-  word-of-the-day slot serves a curated vocabulary entry — word, pronunciation,
-  part of speech, definition, and example sentence — from `data/vocabulary.json`,
-  formatted verbatim (never LLM-reworded). The knowledge slot serves a titled,
-  2–3-sentence story from `data/knowledge.json` — 100 curated entries across ten
-  themes (early human breakthroughs, scientific discoveries, astronomy & space,
-  medical breakthroughs, technological revolutions, ancient civilizations, Greek
-  & Roman mythology, philosophy, mathematics history, and world-history turning
-  points). Its pick has memory: the entry's id is stamped into `state.json` so
-  nothing repeats within 30 days, the themes rotate cyclically so picks never
-  cluster on one topic, and the entry's own title becomes the section header
-  (body verbatim, never LLM-reworded). The Wikimedia feed is fixed per date and
-  the fact rotates by day-of-year, so the push is deterministic; each section
-  degrades independently, so a feed outage still sends the rest. The push also includes the **Wikipedia
+  knowledge, Dominican history & culture, personal-finance basics, or a
+  **word of the day** (`data/*.json`). The word-of-the-day slot serves a curated
+  vocabulary entry — word, pronunciation, part of speech, definition, and
+  example sentence — from `data/vocabulary.json`, formatted verbatim (never
+  LLM-reworded). The Wikimedia feed is fixed per date and the fact rotates by
+  day-of-year, so the push is deterministic; each section degrades independently,
+  so a feed outage still sends the rest. The push also includes the **Wikipedia
   picture of the day** as an inline image (via the `Attach` header), so the
   notification arrives with a visual — no extra config needed. Daily run only.
+- **Knowledge deep-dives** — one titled, 2–3-sentence story from a curated KB
+  (`data/knowledge.json`: 100 entries across ten themes — early human
+  breakthroughs, scientific discoveries, astronomy & space, medical
+  breakthroughs, technological revolutions, ancient civilizations, Greek &
+  Roman mythology, philosophy, mathematics history, world-history turning
+  points) on **every 3-hour run**, independent of the daily gate. The pick has
+  memory: shown entry ids are stamped into `state.json` so nothing repeats
+  within 30 days, themes rotate cyclically so consecutive pushes never cluster
+  on one topic, and the pick is seeded by the current 3-hour window, so a
+  re-run inside a window never drifts or double-sends. When every entry has
+  been shown within the window (at ~8 pushes/day a 100-entry KB cycles in
+  ~12–13 days), the least-recently-shown entry is reused — grow the KB by
+  appending to `data/knowledge.json` to lengthen the cycle. The entry's title
+  is the push header; the body goes out verbatim (never LLM-reworded). No
+  network, no key.
 - **Rocket launches** — imminent orbital launches via Launch Library 2 (no key);
   alerts once per launch within `launches.imminent_hours`, skipping routine ones
   (Starlink by default).
