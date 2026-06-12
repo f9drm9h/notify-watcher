@@ -54,17 +54,22 @@ Topics:
   the same way, one-day items once. A freshly posted term's PDF takes over
   automatically; each (activity, date, lead) alerts exactly once and the
   first run seeds silently.
-- **Movie release dates + streaming + news** — for each title in
-  `watchlist.json` → `movies`, tracks its TMDb release date and alerts on
-  first sight and on any date change (needs `TMDB_API_KEY`). Also watches
-  TMDb's watch-provider data and pushes once when a film becomes streamable
-  on a subscription service in the DR (e.g. "🎬 The Odyssey is now streaming
-  on Netflix in DO") — rent/buy listings don't count, and the first run seeds
+- **Movie release dates + streaming + news + countdowns** — for each title in
+  `watchlist.json` → `movies`, tracks its TMDb release date: a date CHANGE
+  (delay, moved up, or a date landing on a TBA film) pushes live, first sight
+  goes to the digest (needs `TMDB_API_KEY`). Also watches TMDb's
+  watch-provider data and pushes once when a film becomes streamable on a
+  subscription service in the DR (e.g. "🎬 The Odyssey is now streaming on
+  Netflix in DO") — rent/buy listings don't count, and the first run seeds
   silently so an already-streaming title stays quiet. Each title's Google
-  News headlines are
-  also scored via `movies_scoring` exactly like game news below: release
-  dates / trailers / delays push live, casting / reviews / box office go to
-  the daily digest, rankings / opinion / speculation are dropped.
+  News headlines are scored via `movies_scoring`, tuned so only high-signal
+  events push live: casting announcements, release-date moves, cancellations,
+  and real trailer/teaser drops push from any source; a leak pushes only when
+  confirmation language meets a trusted outlet; generic coverage, rumor
+  pieces, box office, reviews and awards chatter go to the daily digest or
+  are dropped. Every Monday one **countdown push** lists each watchlist film
+  with a confirmed release date in the next 60 days ("Avengers: Doomsday
+  releases in 18 days"); TBA films are skipped.
 - **Game release dates** — for each title in `watchlist.json` → `games`,
   tracks its RAWG release date and alerts the same way (a date change is a
   high-priority push). Needs `RAWG_API_KEY`. _Checked weekly (see below)._
