@@ -103,10 +103,29 @@ def run(state: dict) -> dict:
     # digest and drops its digest chatter; critical alerts still ring (see
     # events._apply_mute). make_action returns None when the control channel
     # is off, so the flush push is then byte-identical to before.
-    mutes = [a for a in (
+    actions = [a for a in (
         control.make_action("Mute movies 24h", "MUTE:movies:24"),
         control.make_action("Mute games 24h", "MUTE:games:24"),
+        _follow_action(state),
     ) if a]
     digest.flush(state, config.section("digest"), header=header,
-                 actions=mutes or None)
+                 actions=actions or None)
     return state
+
+
+def _follow_action(state: dict):
+    """[Follow <topic> 3d] for the topic of the digest's top-scored item.
+
+    The positive mirror of the mute buttons (docs/design/05): while followed,
+    that topic's digest-bound items push live. Gated by digest.follow_button
+    (default on); returns None when disabled, when no buffered item carries a
+    topic (pre-migration entries), or when the control channel is off.
+    """
+    if not config.section("digest").get("follow_button", True):
+        return None
+    items = [it for it in (state.get(digest.BUFFER_KEY) or [])
+             if isinstance(it, dict) and it.get("topic")]
+    if not items:
+        return None
+    hot = max(items, key=lambda it: it.get("score", 0))["topic"]
+    return control.make_action(f"Follow {hot} 3d", f"FOLLOW:{hot}:72")
