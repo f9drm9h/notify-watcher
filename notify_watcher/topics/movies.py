@@ -1,6 +1,7 @@
-"""Topic: movie release dates + streaming availability + news for a watchlist.
+"""Topic: movie release dates + streaming availability + news + countdowns
+for a watchlist.
 
-Three independent checks per title in watchlist.json["movies"]:
+Four independent checks per title in watchlist.json["movies"]:
 
 1. Release dates (via TMDb). We resolve each title to a TMDb movie and track
    its release date, pushing when first seen and whenever the date moves (a
@@ -26,16 +27,25 @@ The news path mirrors notify_watcher.topics.games: a quoted Google News query
 per title (plus optional aliases) and a token-subset relevance filter that keeps
 a search specific. The collected, already-relevance-filtered pool is then handed
 to notify_watcher.news.route, the shared scorer/router games uses: each fresh
-article is scored against the `movies_scoring` config in monitors.json and routed
-by tier (release date / trailer / delay headlines -> live push; casting / reviews
-/ interviews / set photos / box office -> daily digest; rankings / opinion /
-speculation -> dropped), instead of every relevance match being pushed live. The
-per-title dedup (capped at NEWS_MAX_PER_MOVIE) and silent first-run seeding live
-inside news.route, which records every evaluated id as seen so a dropped or
-digested article is never re-scored next run.
+article is scored against the `movies_scoring` config in monitors.json and
+routed by tier. Tuned (2026-06) so only high-signal events push live: a casting
+announcement, a release-date move (delay or moved up), a cancellation, or a
+real trailer/teaser drop pushes alone from any source, and a leak pushes only
+when confirmation language meets a tier1/official source; generic coverage,
+rumor pieces, box office, reviews and awards chatter route to the daily digest
+or drop. The per-title dedup (capped at NEWS_MAX_PER_MOVIE) and silent
+first-run seeding live inside news.route, which records every evaluated id as
+seen so a dropped or digested article is never re-scored next run.
+
+4. Weekly countdown. On the first daily run of each ISO week (Monday ~08:00
+   DR, same gate as recap), one consolidated push counts down every watchlist
+   film with a CONFIRMED release date inside the next COUNTDOWN_WINDOW_DAYS:
+   "Avengers: Doomsday releases in 18 days". TBA/undated films are skipped.
+   Needs TMDB_API_KEY; deduped per ISO week (``movies_countdown_week``).
 """
 from __future__ import annotations
 
+import datetime as _dt
 import logging
 import os
 import re
@@ -54,6 +64,10 @@ PROVIDERS_URL = "https://api.themoviedb.org/3/movie/{movie_id}/watch/providers"
 MOVIE_PAGE = "https://www.themoviedb.org/movie/"
 STATE_KEY = "movie_release_dates"  # { "<tmdb_id>": "YYYY-MM-DD" | "TBA" }
 TBA = "TBA"
+
+# --- Weekly release countdown ------------------------------------------------
+COUNTDOWN_KEY = "movies_countdown_week"  # ISO week the countdown last fired
+COUNTDOWN_WINDOW_DAYS = 60               # only films releasing this soon count
 
 # --- "Now streaming" (TMDb watch providers) ---------------------------------
 WATCH_REGION = "DO"  # Dominican Republic; the country whose catalogs we watch
@@ -186,13 +200,18 @@ def _track_release_dates(state: dict) -> dict:
                 # diff if a side is TBA), e.g. "moved from May 26 2027 ... (+115 days)".
                 ch = changes.diff(previous, current, kind="date", label=name)
                 body = ch.summary
+            # A date CHANGE (delay, moved up, or a date landing on a TBA film)
+            # is a top-tier event and must push live; under the engine's rules
+            # "high" routes to a push while the old "low" scored 15 — BELOW the
+            # digest floor — so date changes were being silently dropped.
+            # First sight ("now tracking") is informational -> digest.
             state = events.emit(
                 state,
                 title=f"Movie: {name}",
                 body=body,
                 change=ch,
                 topic="movies",
-                severity="low",
+                severity="moderate" if previous is None else "high",
                 source="Movies",
                 click_url=MOVIE_PAGE + mid,
                 tags="clapper",
@@ -384,11 +403,101 @@ def _track_news(state: dict) -> dict:
     return state
 
 
+def _iso_week(day: _dt.date) -> str:
+    y, w, _ = day.isocalendar()
+    return f"{y}-W{w:02d}"
+
+
+def _countdown_lines(films: list[tuple[str, str]], today: _dt.date,
+                     window_days: int = COUNTDOWN_WINDOW_DAYS) -> list[str]:
+    """Pure: countdown lines for films releasing within the window, soonest first.
+
+    ``films`` is (name, release_date) pairs as TMDb returns them. Only a
+    CONFIRMED parseable date counts down — TBA, empty, or malformed dates are
+    skipped, and so are films already released (negative days) or further out
+    than the window.
+    """
+    upcoming: list[tuple[int, str]] = []
+    for name, date_str in films:
+        try:
+            release = _dt.date.fromisoformat(str(date_str or "")[:10])
+        except ValueError:
+            continue  # TBA / undated: a countdown needs a confirmed date
+        days = (release - today).days
+        if 0 <= days <= window_days:
+            upcoming.append((days, name))
+    upcoming.sort()
+    lines = []
+    for days, name in upcoming:
+        when = ("today" if days == 0 else
+                "tomorrow" if days == 1 else f"in {days} days")
+        lines.append(f"{name} releases {when}")
+    return lines
+
+
+def _weekly_countdown(state: dict, today: _dt.date | None = None) -> dict:
+    """One Monday push counting down watchlist films releasing soon.
+
+    Rides the first daily run of each ISO week (same gate as recap: the
+    NOTIFY_DAILY env plus a per-week state stamp, so a dropped Monday cron
+    fires on Tuesday instead of skipping the week). Quiet when nothing on the
+    watchlist has a confirmed date inside COUNTDOWN_WINDOW_DAYS. The week is
+    not stamped while lookups fail and nothing was sent, so a TMDb outage on
+    Monday retries on the next daily run instead of losing the week.
+    """
+    if not os.environ.get("NOTIFY_DAILY"):
+        return state  # weekly work rides the daily run, like recap
+    today = today or _dt.date.today()
+    week = _iso_week(today)
+    if state.get(COUNTDOWN_KEY) == week:
+        return state
+    api_key = os.environ.get("TMDB_API_KEY", "").strip()
+    if not api_key:
+        log.info("TMDB_API_KEY not set; skipping movie countdown")
+        return state
+    wanted = watchlist.titles("movies")
+    if not wanted:
+        state[COUNTDOWN_KEY] = week
+        return state
+
+    films: list[tuple[str, str]] = []
+    failures = False
+    for title in wanted:
+        try:
+            movie = _search(title, api_key)
+        except Exception as exc:  # noqa: BLE001 - isolate each title
+            failures = True
+            log.error("movie countdown lookup %r failed: %s", title, exc)
+            continue
+        if movie is not None:
+            films.append((movie.get("title") or title,
+                          movie.get("release_date") or ""))
+
+    lines = _countdown_lines(films, today)
+    if lines:
+        state = events.emit(
+            state,
+            title="Movie countdown",
+            body="\n".join(lines),
+            topic="movies",
+            severity="high",  # a deliberate weekly reminder: must ring, not digest
+            source="Movies",
+            tags="clapper,calendar",
+            legacy_priority="low",
+            legacy_action="push",
+        )
+        log.info("movie countdown: sent %d film(s) for %s", len(lines), week)
+    if lines or not failures:
+        state[COUNTDOWN_KEY] = week
+    return state
+
+
 def run(state: dict) -> dict:
     """Release dates (TMDb) + streaming availability (TMDb) + news (Google
-    News), each additive and independently isolated so one can fail without
-    affecting the others."""
+    News) + the Monday countdown, each additive and independently isolated so
+    one can fail without affecting the others."""
     state = _track_release_dates(state)
     state = check_streaming(state)
     state = _track_news(state)
+    state = _weekly_countdown(state)
     return state

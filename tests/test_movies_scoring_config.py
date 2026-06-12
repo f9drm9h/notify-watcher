@@ -20,21 +20,36 @@ CONFIG = json.loads(
 MOVIES = CONFIG["movies_scoring"]
 
 # (headline, publisher, expected_route) where route is live / digest / drop.
-# Under high:7 / moderate:4, live requires an official-channel source plus a
-# strong signal, or two distinct strong signals; a single signal from an
-# unknown/tier1 outlet (e.g. a lone "trailer" or "delayed") routes to the daily
-# digest instead of pushing live. This is the deliberate noise cut from the
-# previous high:5/moderate:3 tuning, which sent almost every signal headline live.
+# 2026-06 tuning: the four high-value events — a casting announcement, a
+# release-date move (delay OR moved up), a cancellation, and a real trailer/
+# teaser drop — carry weight 7 and push live ALONE from any source. A leak
+# pushes live only when confirmation language meets a tier1/official source
+# (otherwise it digests or drops). Rumor / box office / awards / review /
+# listicle language is penalized into the digest or dropped.
 CASES = [
+    # High-signal events: live from any source.
     ("Marvel confirms Avengers: Doomsday release date for May 2026", "Marvel", "live"),
     ("New Superman trailer reveals the premiere date", "", "live"),
-    ("Watch the new Superman teaser trailer", "", "digest"),
-    ("The Batman Part II has been delayed to 2027", "", "digest"),
-    ("First look at Pedro Pascal in Fantastic Four", "", "digest"),
-    ("Pedro Pascal joins the cast of Dune 3", "", "digest"),
-    ("Avatar 3 box office and a director interview", "Variety", "digest"),
-    ("New set photos from the Dune 3 shoot leak", "", "drop"),
+    ("Watch the new Superman teaser trailer", "", "live"),
+    ("The Batman Part II has been delayed to 2027", "", "live"),
+    ("Pedro Pascal joins the cast of Dune 3", "", "live"),
+    ("Blade movie cancelled after years of delays at Marvel", "", "live"),
+    ("Avatar 4 moved up to December 2030", "", "live"),
+    ("Official trailer for The Odyssey released", "", "live"),
+    # Leaks: live only when confirmed AND from a reliable outlet.
+    ("Sony confirms Spider-Man trailer leak is real", "IGN", "live"),
+    ("Sony confirms Spider-Man trailer leak is real", "", "digest"),
+    ("Spider-Man: Brand New Day trailer 2 leaks online in full", "", "drop"),
+    # Generic / low-value coverage: digest at best, mostly dropped.
+    ("First look at Pedro Pascal in Fantastic Four", "", "drop"),
+    ("First look at Pedro Pascal in Fantastic Four", "Variety", "digest"),
+    ("Avatar 3 box office and a director interview", "Variety", "drop"),
+    ("Dune 3 dominates the weekend box office", "", "drop"),
+    ("Oscar nominations: Dune 3 leads the field", "", "drop"),
+    ("New set photos from the Dune 3 shoot leak", "", "digest"),
     ("Superman early reactions are in", "", "drop"),
+    # Rumor / speculation / listicle noise: dropped even with strong words.
+    ("Casting rumor: Henry Cavill might join Avengers", "", "drop"),
     ("Here is why Blade could be delayed again", "", "drop"),
     ("Top 10 most anticipated movies of 2026 ranked", "", "drop"),
     ("10 reasons why The Batman 2 deserves a sequel", "", "drop"),
