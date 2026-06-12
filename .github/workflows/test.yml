@@ -9,7 +9,7 @@ on:
     paths-ignore:
       - "state.json"  # the runner's "chore: update state" commits don't need CI
   pull_request:
-workflow_dispatch:
+  workflow_dispatch:
 
 permissions:
   contents: read
