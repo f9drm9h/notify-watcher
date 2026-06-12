@@ -159,7 +159,7 @@ def _track_release_dates(state: dict) -> dict:
         log.info("RAWG_API_KEY not set; skipping game watcher")
         return state
 
-    wanted = watchlist.titles("games")
+    wanted = watchlist.titles("games", state)
     if not wanted:
         log.info("no games in watchlist; nothing to do")
         return state
@@ -285,7 +285,7 @@ def _track_news(state: dict) -> dict:
     brand-new game on the list doesn't blast its backlog; only articles that
     appear afterwards are evaluated. Mirrors soundcore_pro's baseline seeding.
     """
-    wanted = watchlist.titles("games")
+    wanted = watchlist.titles("games", state)
     if not wanted:
         log.info("no games in watchlist; no news to check")
         return state

@@ -27,6 +27,10 @@ State keys owned by this module:
   offers        : {offer_id: {kind,label,payload,created,applied}}  ADD targets
   ignored       : {offer_id: {label,since,was_applied}}  "Not interested" marks
   tracked_products : list[{name,url}]   ADDed products, merged by deals.run
+  follows          : {artists/streamers/channels: list[dict]}  ADDed follows,
+                     merged by music/twitch/youtube at read time
+  watchlist_extra  : {movies/games: list[{name}]}  ADDed titles, merged by
+                     watchlist.titles(category, state)
 """
 from __future__ import annotations
 
@@ -53,6 +57,8 @@ MORE_KEY = "more_requests"
 OFFERS_KEY = "offers"
 IGNORED_KEY = "ignored"
 TRACKED_PRODUCTS_KEY = "tracked_products"
+FOLLOWS_KEY = "follows"                  # {"artists": [], "streamers": [], "channels": []}
+WATCHLIST_EXTRA_KEY = "watchlist_extra"  # {"movies": [], "games": []}
 
 # Clamps bound every command's effect; a malformed or hostile duration can
 # never snooze/mute longer than 30 days. At most MAX_PER_POLL commands are
@@ -69,6 +75,15 @@ MAX_OFFERS = 60
 OFFER_TTL_DAYS = 14
 MAX_IGNORED = 200
 MAX_TRACKED_PRODUCTS = 25
+MAX_FOLLOWS = 50          # per follows list (artists/streamers/channels)
+MAX_WATCHLIST_EXTRA = 25  # per watchlist_extra list (movies/games)
+
+# Per-kind overlay caps, enforced by _apply_offer.
+_KIND_CAPS = {
+    "product": MAX_TRACKED_PRODUCTS,
+    "artist": MAX_FOLLOWS, "streamer": MAX_FOLLOWS, "channel": MAX_FOLLOWS,
+    "movie": MAX_WATCHLIST_EXTRA, "game": MAX_WATCHLIST_EXTRA,
+}
 # "Show more" related-items window: same topic, last N days, up to M lines.
 RELATED_DAYS = 7
 RELATED_MAX = 3
@@ -339,12 +354,11 @@ def cmd_unmute(topic: str, state: dict) -> None:
 def offer_id(kind: str, payload: dict) -> str:
     """Content-derived offer id: the same discovery always maps to the same id.
 
-    Keyed on the payload's most identifying field (url, falling back to name),
-    so a product re-discovered next month resolves to the same id — which is
-    what makes register_offer idempotent and an IGNORE durable.
+    Keyed on the payload's most identifying field (url, then channel_id, then
+    name), so a product re-discovered next month resolves to the same id —
+    which is what makes register_offer idempotent and an IGNORE durable.
     """
-    key = str(payload.get("url") or payload.get("name") or "")
-    return ids.short(f"{kind}|{key}")
+    return ids.short(f"{kind}|{_payload_key(payload)}")
 
 
 def register_offer(state: dict, kind: str, label: str, payload: dict,
@@ -381,15 +395,42 @@ def _overlay_lists(state: dict, kind: str) -> list[list]:
 
     For products both the ADD overlay and the auto-track list are returned, so
     UNDO/IGNORE of an auto-tracked discovery removes it wherever it landed.
+    Topics merge these overlays with their config at read time (deals, music,
+    twitch, youtube, watchlist.titles) — config files are never written.
     """
     if kind == "product":
         return [state.setdefault(TRACKED_PRODUCTS_KEY, []),
                 state.setdefault("auto_products", [])]
+    if kind in ("artist", "streamer", "channel"):
+        plural = {"artist": "artists", "streamer": "streamers",
+                  "channel": "channels"}[kind]
+        return [state.setdefault(FOLLOWS_KEY, {}).setdefault(plural, [])]
+    if kind in ("movie", "game"):
+        return [state.setdefault(WATCHLIST_EXTRA_KEY, {})
+                     .setdefault(kind + "s", [])]
     return []
 
 
 def _payload_key(payload: dict) -> str:
-    return str(payload.get("url") or payload.get("name") or "")
+    return str(payload.get("url") or payload.get("channel_id")
+               or payload.get("name") or "")
+
+
+def follows(state: dict, plural: str) -> list[dict]:
+    """The follow overlay's dict entries for "artists"/"streamers"/"channels".
+
+    Read-time merge helper for music/twitch/youtube; tolerates missing keys
+    and non-dict junk so a hand-edited state.json can't crash a topic.
+    """
+    raw = (state.get(FOLLOWS_KEY) or {}).get(plural) or []
+    return [e for e in raw if isinstance(e, dict)]
+
+
+def extra_titles(state: dict, category: str) -> list[str]:
+    """The watchlist_extra overlay's names for "movies"/"games"."""
+    raw = (state.get(WATCHLIST_EXTRA_KEY) or {}).get(category) or []
+    return [str(e["name"]) for e in raw
+            if isinstance(e, dict) and e.get("name")]
 
 
 def _apply_offer(state: dict, offer: dict) -> bool:
@@ -404,9 +445,10 @@ def _apply_offer(state: dict, offer: dict) -> bool:
     for lst in lists:
         if any(isinstance(p, dict) and _payload_key(p) == key for p in lst):
             return True  # already applied somewhere — idempotent
-    if kind == "product" and len(target) >= MAX_TRACKED_PRODUCTS:
-        log.warning("control: tracked_products full (%d); not adding %r",
-                    MAX_TRACKED_PRODUCTS, offer.get("label"))
+    cap = _KIND_CAPS.get(kind)
+    if cap and len(target) >= cap:
+        log.warning("control: %s overlay full (%d); not adding %r",
+                    kind, cap, offer.get("label"))
         return False
     target.append(dict(payload))
     return True

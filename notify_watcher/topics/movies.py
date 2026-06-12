@@ -168,7 +168,7 @@ def _track_release_dates(state: dict) -> dict:
         log.info("TMDB_API_KEY not set; skipping movie watcher")
         return state
 
-    wanted = watchlist.titles("movies")
+    wanted = watchlist.titles("movies", state)
     if not wanted:
         log.info("no movies in watchlist; nothing to do")
         return state
@@ -258,7 +258,7 @@ def check_streaming(state: dict) -> dict:
         log.info("TMDB_API_KEY not set; skipping streaming check")
         return state
 
-    wanted = watchlist.titles("movies")
+    wanted = watchlist.titles("movies", state)
     if not wanted:
         log.info("no movies in watchlist; no streaming to check")
         return state
@@ -372,7 +372,7 @@ def _track_news(state: dict) -> dict:
     brand-new title on the list doesn't blast its backlog; only articles that
     appear afterwards are evaluated. Mirrors games.py.
     """
-    wanted = watchlist.titles("movies")
+    wanted = watchlist.titles("movies", state)
     if not wanted:
         log.info("no movies in watchlist; no news to check")
         return state
@@ -455,7 +455,7 @@ def _weekly_countdown(state: dict, today: _dt.date | None = None) -> dict:
     if not api_key:
         log.info("TMDB_API_KEY not set; skipping movie countdown")
         return state
-    wanted = watchlist.titles("movies")
+    wanted = watchlist.titles("movies", state)
     if not wanted:
         state[COUNTDOWN_KEY] = week
         return state

@@ -17,6 +17,7 @@ from __future__ import annotations
 import json
 import logging
 from pathlib import Path
+from typing import Optional
 
 log = logging.getLogger(__name__)
 
@@ -48,9 +49,19 @@ def entries(category: str) -> list[dict]:
     return [item for item in _load(category) if isinstance(item, dict)]
 
 
-def titles(category: str) -> list[str]:
-    """Return the de-duplicated, stripped list of titles for a category."""
-    raw = _load(category)
+def titles(category: str, state: Optional[dict] = None) -> list[str]:
+    """Return the de-duplicated, stripped list of titles for a category.
+
+    With ``state``, titles added from notifications (the [Add to watchlist]
+    reply button -> state["watchlist_extra"], see docs/design/05) are merged
+    after the file's own — so a button tap extends the watchlist without ever
+    writing the schema-validated watchlist.json. Without ``state`` the result
+    is exactly the file, unchanged.
+    """
+    raw = list(_load(category))
+    if state:
+        extra = (state.get("watchlist_extra") or {}).get(category) or []
+        raw += [e.get("name") for e in extra if isinstance(e, dict)]
     seen: set[str] = set()
     out: list[str] = []
     for item in raw:

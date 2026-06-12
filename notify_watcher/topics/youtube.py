@@ -18,7 +18,7 @@ import xml.etree.ElementTree as ET
 
 import requests
 
-from .. import config, events
+from .. import config, control, events
 
 log = logging.getLogger(__name__)
 
@@ -65,9 +65,16 @@ def run(state: dict) -> dict:
 
 
 def _run(state: dict) -> dict:
-    channels = config.section("youtube").get("channels") or []
+    # Config channels + ones followed from a notification ([Watch channel]
+    # -> state["follows"]["channels"], docs/design/05), deduped by channel_id.
+    channels = (list(config.section("youtube").get("channels") or [])
+                + control.follows(state, "channels"))
     channels = [c for c in channels
                 if isinstance(c, dict) and (c.get("channel_id") or "").strip()]
+    deduped: dict[str, dict] = {}
+    for c in channels:
+        deduped.setdefault(c["channel_id"].strip(), c)
+    channels = list(deduped.values())
     if not channels:
         log.info("no youtube channels configured; nothing to do")
         return state

@@ -2,7 +2,9 @@
 from __future__ import annotations
 
 import unittest
+from unittest import mock
 
+from notify_watcher import config, control
 from notify_watcher.topics import music
 
 
@@ -41,6 +43,35 @@ class PickRecommendationTest(unittest.TestCase):
             [{"id": 9, "name": ""}, {"id": 3, "name": "Fresh Artist"}],
             self.seed_set, self.seen_ids)
         self.assertEqual(rec["id"], 3)
+
+    def test_rerolls_past_an_ignored_artist(self):
+        # [Not my thing] on a past pick: that artist never comes back; the
+        # next candidate is chosen instead.
+        state: dict = {}
+        oid = control.register_offer(state, "artist", "Fresh Artist",
+                                     {"name": "Fresh Artist"})
+        control.cmd_ignore(oid, state)
+        rec = music._pick_recommendation(
+            self.related + [{"id": 4, "name": "Backup Artist"}],
+            self.seed_set, self.seen_ids, state["ignored"])
+        self.assertEqual(rec["name"], "Backup Artist")
+
+
+class ArtistsMergeTest(unittest.TestCase):
+    def test_followed_overlay_merges_after_config(self):
+        state: dict = {}
+        oid = control.register_offer(state, "artist", "Mitski",
+                                     {"name": "Mitski"})
+        control.cmd_add(oid, state)
+        with mock.patch.object(config, "section",
+                               return_value={"followed_artists": ["Bo Burnham"]}):
+            self.assertEqual(music._artists(state), ["Bo Burnham", "Mitski"])
+
+    def test_overlay_duplicate_of_config_is_dropped(self):
+        state = {"follows": {"artists": [{"name": "bo burnham"}]}}
+        with mock.patch.object(config, "section",
+                               return_value={"followed_artists": ["Bo Burnham"]}):
+            self.assertEqual(music._artists(state), ["Bo Burnham"])
 
 
 if __name__ == "__main__":
