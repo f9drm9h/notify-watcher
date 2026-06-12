@@ -66,6 +66,12 @@ class RunAttachesImageTest(unittest.TestCase):
         self._env = mock.patch.dict("os.environ", {"NOTIFY_DAILY": "1"})
         self._env.start()
         self.addCleanup(self._env.stop)
+        # Neutralize the standalone knowledge push (covered by
+        # tests/test_learn_knowledge.py) so only the daily push is asserted on.
+        self._knowledge = mock.patch.object(
+            learn, "_run_knowledge", side_effect=lambda state, now=None: state)
+        self._knowledge.start()
+        self.addCleanup(self._knowledge.stop)
 
     def test_run_passes_attach_url_from_feed_image(self):
         with mock.patch.object(learn, "_fetch_feed", return_value=self.FEED_WITH_IMAGE), \
