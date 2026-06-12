@@ -4,7 +4,8 @@ Bundles up to three short sections into a SINGLE daily notification:
   - On this day  - a historical event for today's date (Wikimedia featured feed)
   - Featured     - Wikipedia's featured article of the day (title + extract)
   - A curated fact - one vetted entry from a rotating knowledge-base channel
-                     (science / technology / life skills / general knowledge)
+                     (science / technology / life skills / general knowledge /
+                     the structured "Knowledge" deep-dive channel)
 
 Design choices that match the rest of the project:
   * Free / no key. The Wikimedia REST feed needs no auth; the KB channels are
@@ -27,6 +28,7 @@ from __future__ import annotations
 import datetime as _dt
 import logging
 import os
+import random
 
 import requests
 
@@ -52,7 +54,22 @@ CHANNELS: list[tuple[str, str]] = [
     ("Dominican culture", "dr_culture.json"),
     ("Money basics", "personal_finance.json"),
     ("Word of the Day", "vocabulary.json"),  # structured entries; never LLM-reworded
+    ("Knowledge", "knowledge.json"),  # structured entries; never LLM-reworded
 ]
+
+# --- "Knowledge" channel ----------------------------------------------------
+# Unlike the plain {text, src} channels above, knowledge.json entries are
+# structured ({id, category, title, body, tags}) and the pick has memory: the
+# id of each shown entry is stamped into state.json so nothing repeats within
+# KNOWLEDGE_REPEAT_DAYS, and a category pointer advances cyclically so
+# consecutive picks never cluster on one theme. The in-category pick is a
+# date-seeded RNG: random across days, identical on a same-day re-run (the
+# same re-run safety the day-of-year channels get for free).
+KNOWLEDGE_LABEL = "Knowledge"
+KNOWLEDGE_FILE = "knowledge.json"
+KNOWLEDGE_SEEN_KEY = "knowledge_seen"  # {entry_id: "YYYY-MM-DD" last shown}
+KNOWLEDGE_CATEGORY_KEY = "knowledge_last_category"
+KNOWLEDGE_REPEAT_DAYS = 30
 
 _REWORD_SYSTEM = (
     "You reword a single educational fact for a daily push notification. "
@@ -141,11 +158,73 @@ def _wotd_fact(day: _dt.date | None = None) -> tuple[str, str]:
     return "Word of the Day", _format_vocab_entry(chosen)
 
 
-def _curated_fact(day: _dt.date | None = None) -> tuple[str, str]:
+def _knowledge_entries() -> list[dict]:
+    """knowledge.json entries that carry everything the push needs."""
+    items = kb.load(kb.DATA_DIR / KNOWLEDGE_FILE, field="body")
+    return [e for e in items if e.get("id") and e.get("category") and e.get("title")]
+
+
+def _knowledge_recent(state: dict, day: _dt.date) -> dict[str, _dt.date]:
+    """{entry_id: last-shown date} for ids still inside the no-repeat window."""
+    recent: dict[str, _dt.date] = {}
+    for entry_id, stamp in (state.get(KNOWLEDGE_SEEN_KEY) or {}).items():
+        try:
+            seen = _dt.date.fromisoformat(str(stamp))
+        except ValueError:
+            continue  # malformed stamp: treat as never seen
+        if 0 <= (day - seen).days < KNOWLEDGE_REPEAT_DAYS:
+            recent[str(entry_id)] = seen
+    return recent
+
+
+def _knowledge_fact(state: dict, day: _dt.date | None = None) -> tuple[str, str]:
+    """(title, body) for today's knowledge entry; records the pick in state.
+
+    Rotates to the next category (sorted, cyclic after the one stamped in
+    state) that still has an entry unseen within KNOWLEDGE_REPEAT_DAYS, then
+    picks one of its eligible entries with a date-seeded RNG. If every entry
+    in the KB was shown recently (only possible while the KB is small), the
+    least recently shown one is reused so the section never goes silent.
+    """
+    day = day or _dt.date.today()
+    entries = _knowledge_entries()
+    if not entries:
+        return "", ""
+
+    recent = _knowledge_recent(state, day)
+    categories = sorted({str(e["category"]) for e in entries})
+    last = str(state.get(KNOWLEDGE_CATEGORY_KEY, ""))
+    start = (categories.index(last) + 1) % len(categories) if last in categories else 0
+    rotation = categories[start:] + categories[:start]
+
+    rng = random.Random(day.isoformat())
+    chosen: dict | None = None
+    for category in rotation:
+        eligible = [e for e in entries
+                    if str(e["category"]) == category and str(e["id"]) not in recent]
+        if eligible:
+            chosen = rng.choice(eligible)
+            break
+    if chosen is None:
+        chosen = min(entries, key=lambda e: recent.get(str(e["id"]), _dt.date.min))
+
+    # Rebuilding the seen-map from `recent` also prunes stamps that expired.
+    seen = {entry_id: shown.isoformat() for entry_id, shown in recent.items()}
+    seen[str(chosen["id"])] = day.isoformat()
+    state[KNOWLEDGE_SEEN_KEY] = seen
+    state[KNOWLEDGE_CATEGORY_KEY] = str(chosen["category"])
+    return str(chosen["title"]), str(chosen["body"])
+
+
+def _curated_fact(day: _dt.date | None = None,
+                  state: dict | None = None) -> tuple[str, str]:
     """(label, fact_text) from today's rotating KB channel; ('', '') if none."""
     label, filename = CHANNELS[kb.day_of_year(day) % len(CHANNELS)]
     if label == "Word of the Day":
         return _wotd_fact(day)
+    if label == KNOWLEDGE_LABEL:
+        # Header is the entry's own title; body verbatim (never LLM-reworded).
+        return _knowledge_fact(state if state is not None else {}, day)
     items = kb.load(kb.DATA_DIR / filename)
     chosen = kb.pick(items, day=day)
     if not chosen:
@@ -205,7 +284,7 @@ def run(state: dict) -> dict:
         sections.append((f"Featured: {title}", extract))
         click_url = url
 
-    label, fact = _curated_fact(today)
+    label, fact = _curated_fact(today, state)
     if fact:
         sections.append((label, fact))
 
