@@ -5,10 +5,11 @@ the network, and an in-memory state dict to inspect the digest buffer.
 """
 from __future__ import annotations
 
+import os
 import unittest
 from unittest import mock
 
-from notify_watcher import digest, events, ntfy
+from notify_watcher import digest, eventlog, events, ntfy
 from tests._util import capture_pushes
 
 # Same worked-example config used in test_priority.
@@ -249,6 +250,76 @@ class BackwardCompatTest(unittest.TestCase):
         self.assertEqual(len(buf), 1)
         self.assertEqual(buf[0]["score"], 5)  # caller's score, not an engine score
         self.assertEqual(buf[0]["source"], "EIA")
+
+
+class ButtonExpansionTest(unittest.TestCase):
+    """Declarative metadata["buttons"] + control.default_buttons -> ntfy actions."""
+
+    PUSH_CFG = {"threshold": 60, "digest_floor": 25, "default": 70,
+                "ntfy_bands": {"0": "default"}}
+
+    def setUp(self):
+        # Buttons require the control channel; point it at a fake topic.
+        self.env = mock.patch.dict(os.environ, {"NTFY_CONTROL_TOPIC": "nw-ctl-test"})
+        self.env.start()
+        self.addCleanup(self.env.stop)
+
+    def _emit(self, *, metadata=None, control_cfg=None, topic="movies"):
+        sections = {"control": control_cfg or {}}
+        with mock.patch.object(events.config, "section",
+                               side_effect=lambda name: sections.get(name, {})), \
+             capture_pushes() as sent:
+            state = events.emit(
+                {}, title="headline", topic=topic, source="S",
+                metadata=metadata, priority_cfg=self.PUSH_CFG, digest_cfg={},
+            )
+        return state, sent
+
+    def test_declarative_specs_become_actions_with_the_event_id(self):
+        state, sent = self._emit(metadata={"buttons": ["read", "more", "later:180"]})
+        actions = sent[0]["actions"]
+        event_id = state[eventlog.EVENT_LOG_KEY][-1]["id"]
+        self.assertEqual([a["label"] for a in actions],
+                         ["Read later", "Show more", "Remind 3h"])
+        self.assertEqual([a["body"] for a in actions],
+                         [f"READ:{event_id}", f"MORE:{event_id}",
+                          f"LATER:{event_id}:180"])
+
+    def test_config_default_buttons_apply_per_topic(self):
+        _, sent = self._emit(control_cfg={"default_buttons": {"movies": ["read"]}})
+        self.assertEqual([a["body"][:5] for a in sent[0]["actions"]], ["READ:"])
+
+    def test_defaults_skipped_for_other_topics(self):
+        _, sent = self._emit(control_cfg={"default_buttons": {"games": ["read"]}})
+        self.assertNotIn("actions", sent[0])
+
+    def test_explicit_actions_win_and_cap_is_three(self):
+        done = {"action": "http", "label": "Done", "url": "u", "method": "POST",
+                "body": "DONE:water", "clear": True}
+        _, sent = self._emit(metadata={"actions": [done],
+                                       "buttons": ["read", "more", "later:60"]})
+        actions = sent[0]["actions"]
+        self.assertEqual(len(actions), 3)            # ntfy hard cap
+        self.assertEqual(actions[0], done)           # explicit v1 action first
+        self.assertEqual([a["label"] for a in actions[1:]],
+                         ["Read later", "Show more"])
+
+    def test_unknown_spec_is_skipped_not_fatal(self):
+        _, sent = self._emit(metadata={"buttons": ["frobnicate", "later:oops", "read"]})
+        self.assertEqual([a["label"] for a in sent[0]["actions"]], ["Read later"])
+
+    def test_control_channel_off_means_no_buttons(self):
+        self.env.stop()  # NTFY_CONTROL_TOPIC unset -> make_action returns None
+        try:
+            _, sent = self._emit(metadata={"buttons": ["read", "more"]})
+            self.assertNotIn("actions", sent[0])  # byte-identical kill switch
+        finally:
+            self.env.start()
+
+    def test_later_labels_humanize(self):
+        self.assertEqual(events._later_label(45), "Remind 45m")
+        self.assertEqual(events._later_label(180), "Remind 3h")
+        self.assertEqual(events._later_label(2880), "Remind 2d")
 
 
 class NormalizationTest(unittest.TestCase):
