@@ -86,5 +86,51 @@ class RunSourceTest(unittest.TestCase):
         self.assertEqual(len(state["k"]), 100)
 
 
+class StampLastDataTest(unittest.TestCase):
+    """The last_data stamp feeding the watchdog's data-staleness check."""
+
+    def test_stamps_when_items_seen(self):
+        state: dict = {}
+        monitor.stamp_last_data(state, "fda", 3)
+        self.assertIn("last_data", state["topic_health"]["fda"])
+
+    def test_no_stamp_without_items_or_topic(self):
+        state: dict = {}
+        monitor.stamp_last_data(state, "fda", 0)
+        monitor.stamp_last_data(state, "", 3)
+        self.assertEqual(state, {})
+
+    def test_preserves_existing_health_fields(self):
+        state = {"topic_health": {"fda": {"last_ok": "2026-06-09T12:00:00+00:00"}}}
+        monitor.stamp_last_data(state, "fda", 1)
+        self.assertEqual(state["topic_health"]["fda"]["last_ok"],
+                         "2026-06-09T12:00:00+00:00")
+        self.assertIn("last_data", state["topic_health"]["fda"])
+
+    def test_run_source_stamps_even_on_the_seeding_run(self):
+        # The stamp tracks the SOURCE producing data, so it must land on the
+        # silent first run too (and the seeding must stay push-free).
+        with mock.patch("notify_watcher.config.section", return_value={}):
+            state: dict = {}
+            with capture_pushes() as sent:
+                state = monitor.run_source(
+                    state, state_key="k", items=[_item("a", "routine")],
+                    default_weight_key="trade", keywords=[], scoring_cfg=SCORING,
+                    digest_cfg=DIGEST, cap=100, live_title_prefix="Test",
+                    topic="fda",
+                )
+            self.assertEqual(sent, [])
+            self.assertIn("last_data", state["topic_health"]["fda"])
+
+    def test_run_source_without_topic_does_not_stamp(self):
+        with mock.patch("notify_watcher.config.section", return_value={}):
+            state = monitor.run_source(
+                {}, state_key="k", items=[_item("a", "routine")],
+                default_weight_key="trade", keywords=[], scoring_cfg=SCORING,
+                digest_cfg=DIGEST, cap=100, live_title_prefix="Test",
+            )
+        self.assertNotIn("topic_health", state)
+
+
 if __name__ == "__main__":
     unittest.main()

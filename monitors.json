@@ -105,8 +105,14 @@
   },
 
   "watchdog": {
-    "_comment": "Self-monitoring. main.py records every topic's last successful run and latest failure in state.topic_health; the watchdog pushes ONE heads-up when a topic has had no successful run for stale_hours (then stays quiet until that topic recovers, re-arming for the next outage). Several topics crossing the threshold on the same run are bundled into a single push.",
-    "stale_hours": 48
+    "_comment": "Self-monitoring. main.py records every topic's last successful run and latest failure in state.topic_health; the watchdog pushes ONE heads-up when a topic has had no successful run for stale_hours (then stays quiet until that topic recovers, re-arming for the next outage). Several topics crossing the threshold on the same run are bundled into a single push. data_stale_days ({topic: days}) is the opt-in second check: alert once when a listed topic has fetched ZERO items for that many days even though its runs 'succeed' - the scraper-broke-silently case. Only list topics whose sources produce items near daily (fda/energy/movies fetch every cycle; games fetches weekly, hence its longer window); a quiet-by-nature source here would false-alarm.",
+    "stale_hours": 48,
+    "data_stale_days": {
+      "fda": 14,
+      "energy": 14,
+      "movies": 14,
+      "games": 21
+    }
   },
 
   "visa_bulletin": {
