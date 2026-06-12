@@ -262,11 +262,14 @@ def _fmt(price: float, currency: str) -> str:
 
 
 def _merge_products(state: dict) -> list[dict]:
-    """watchlist products + auto-discovered ones (state["auto_products"]),
+    """watchlist products + auto-discovered ones (state["auto_products"]) +
+    reply-button ADDs (state["tracked_products"], see docs/design/05),
     de-duplicated by URL with the watchlist entry winning (it may carry a
     target_price). The series-discovery topic populates auto_products."""
     merged: dict[str, dict] = {}
-    for product in watchlist.entries("products") + list(state.get("auto_products", [])):
+    for product in (watchlist.entries("products")
+                    + list(state.get("auto_products", []))
+                    + list(state.get("tracked_products", []))):
         if not isinstance(product, dict):
             continue
         url = str(product.get("url") or "").strip()

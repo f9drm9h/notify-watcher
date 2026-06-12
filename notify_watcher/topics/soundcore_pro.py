@@ -26,7 +26,7 @@ import time
 
 import requests
 
-from .. import events
+from .. import control, events
 from . import deals
 
 log = logging.getLogger(__name__)
@@ -147,6 +147,17 @@ def run(state: dict) -> dict:
         url = PRODUCT_BASE + slug
         try:
             name, body = _describe(url, slug)
+            # Offer registry (docs/design/05): the discovery is auto-tracked
+            # (applied=True), and the push's [Not interested] button can undo
+            # that with one tap. A previously-ignored product returns None —
+            # the user already said no, so skip both the alert and tracking.
+            oid = control.register_offer(
+                state, "product", name, {"name": name, "url": url},
+                applied=True)
+            if oid is None:
+                seen.add(slug)
+                continue
+            ignore = control.make_action("Not interested", f"IGNORE:{oid}")
             log.info("new Liberty Pro discovered: %s (%s)", name, slug)
             events.emit(
                 state,
@@ -158,6 +169,7 @@ def run(state: dict) -> dict:
                 click_url=url,
                 tags="rocket",
                 legacy_action="push",
+                metadata={"actions": [ignore]} if ignore else None,
             )
             if url not in tracked_urls:
                 auto.append({"name": name, "url": url})
