@@ -450,7 +450,7 @@
   },
 
   "movies_scoring": {
-    "_comment": "Importance scorer for movie news headlines. score = source_weight + one-shot signal bonuses - one-shot noise penalties; tier = highest threshold met. Matching is case-insensitive SUBSTRING, so terms must not be substrings of innocent words (e.g. 'review' would match 'preview'). high -> live push, moderate -> daily digest, below moderate -> dropped.",
+    "_comment": "Importance scorer for movie news headlines. score = source_weight + one-shot signal bonuses - one-shot noise penalties; tier = highest threshold met. Matching is case-insensitive SUBSTRING, so terms must not be substrings of innocent words (e.g. a bare 'review' signal would match 'preview', 'to star' would match 'to start'). Tuned 2026-06 for high-signal-only live pushes: a casting announcement, release date move (delay OR moved up), cancellation, or a real trailer/teaser drop pushes live ALONE from any source (weight 7 >= high threshold); a leak pushes live only when paired with confirmation language AND a tier1/official source; rumor/box office/awards/review/listicle language is penalized into the digest or dropped. high -> live push, moderate -> daily digest, below moderate -> dropped.",
     "source_weights": { "official": 4, "tier1": 1, "unknown": 0 },
     "source_tiers": {
       "official": ["marvel", "disney", "warner bros", "dc studios", "dc comics",
@@ -461,23 +461,28 @@
                 "entertainment weekly", "indiewire", "slashfilm", "/film"]
     },
     "signal_bonuses": {
-      "launch_signals": { "weight": 5, "terms": ["release date", "premiere date",
+      "schedule_signals": { "weight": 7, "terms": ["release date", "premiere date",
         "in theaters", "hits theaters", "streaming date", "delayed", "delay",
-        "pushed back", "postponed", "out now", "release window"] },
-      "reveal_signals": { "weight": 5, "terms": ["trailer", "teaser",
-        "first look", "first footage", "first images", "poster", "sneak peek",
-        "clip released"] },
+        "pushed back", "postponed", "moved up", "moved forward", "new date",
+        "out now", "release window"] },
+      "cancel_signals": { "weight": 7, "terms": ["cancel", "shelved", "scrapped"] },
+      "reveal_signals": { "weight": 7, "terms": ["official trailer", "new trailer",
+        "first trailer", "final trailer", "teaser trailer", "new teaser",
+        "trailer debut", "trailer drop", "trailer released", "first footage"] },
+      "cast_signals": { "weight": 7, "terms": ["casting", "joins the cast",
+        "cast as", "starring", "star in", "will star", "set to star",
+        "set to play", "signs on", "lands role", "to direct", "will direct",
+        "new director"] },
+      "official_signals": { "weight": 4, "terms": ["confirm", "announce",
+        "official", "greenlit", "greenlight"] },
+      "leak_signals": { "weight": 2, "terms": ["leak"] },
       "content_signals": { "weight": 4, "terms": ["sequel", "prequel", "reboot",
         "spin-off", "spinoff", "sets release", "wraps filming", "begins filming",
         "production"] },
-      "cast_signals": { "weight": 4, "terms": ["casting", "joins the cast",
-        "to star", "set to play", "signs on", "lands role", "to direct",
-        "will direct", "new director"] },
-      "official_signals": { "weight": 4, "terms": ["confirm", "announce",
-        "official", "greenlit", "greenlight"] },
-      "moderate_signals": { "weight": 3, "terms": ["review", "interview",
-        "set photo", "behind the scenes", "box office", "rumor", "rumour",
-        "report", "leak", "preview", "first reactions", "early reactions"] }
+      "moderate_signals": { "weight": 3, "terms": ["interview", "set photo",
+        "behind the scenes", "first reactions", "early reactions", "first look",
+        "first images", "poster", "sneak peek", "clip released", "featurette",
+        "report"] }
     },
     "noise_penalties": {
       "listicle": { "weight": -6, "terms": ["best movies", "worst movies",
@@ -487,9 +492,12 @@
         "i watched", "why i "] },
       "speculation": { "weight": -5, "terms": ["could", "might", "maybe",
         "what if", "here's why", "reasons why", "fan theory", "fans want",
-        "we want", "predict", "speculation", "rumored to"] },
+        "we want", "predict", "speculation", "rumor", "rumour", "seemingly",
+        "allegedly", "everything we know"] },
       "clickbait": { "weight": -5, "terms": ["you won't believe", "shocking",
-        "this is why", "needs to", "deserves"] }
+        "this is why", "needs to", "deserves"] },
+      "lowvalue": { "weight": -4, "terms": ["box office", "review", "award",
+        "oscar", "golden globe", "bafta", "nominee", "nomination"] }
     },
     "thresholds": { "high": 7, "moderate": 4 }
   }
