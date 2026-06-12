@@ -473,6 +473,82 @@ class DispatchV2Test(unittest.TestCase):
         self.assertNotIn("later", state)
 
 
+class FollowTest(unittest.TestCase):
+    ENGINE = {"threshold": 60, "digest_floor": 25, "default": 40,
+              "ntfy_bands": {"0": "default"}}
+
+    def _followed(self, topic="movies", hours=72):
+        state: dict = {}
+        control.cmd_follow(topic, hours, state, now=_dt.datetime.now(UTC))
+        return state
+
+    def test_writes_until_iso_and_clamps(self):
+        state: dict = {}
+        control.cmd_follow("movies", 9999, state, now=NOW)
+        self.assertEqual(
+            state["followed"]["movies"],
+            (NOW + _dt.timedelta(hours=control.MAX_FOLLOW_HOURS)).isoformat())
+
+    def test_unfollow_removes(self):
+        state = self._followed()
+        control.cmd_unfollow("movies", state)
+        self.assertEqual(state["followed"], {})
+
+    def test_followed_digest_item_pushes_at_default(self):
+        state = self._followed()
+        with capture_pushes() as sent:
+            events.emit(
+                state, title="Trailer", topic="movies", source="M",
+                priority_cfg=self.ENGINE, digest_cfg={},  # 40 -> digest band
+            )
+        self.assertEqual(len(sent), 1)
+        self.assertEqual(sent[0]["priority"], "default")
+        self.assertFalse(state.get("digest_buffer"))
+        self.assertEqual(state["event_log"][-1]["action"], "push")
+
+    def test_follow_does_not_resurrect_drops(self):
+        state = self._followed()
+        cfg = dict(self.ENGINE, rules=[{"topic": "movies", "score": 5}])
+        with capture_pushes() as sent:
+            events.emit(state, title="Noise", topic="movies", source="M",
+                        priority_cfg=cfg, digest_cfg={})
+        self.assertEqual(sent, [])
+
+    def test_mute_beats_follow(self):
+        state = self._followed()
+        until = (_dt.datetime.now(UTC) + _dt.timedelta(hours=1)).isoformat()
+        state["muted"] = {"movies": until}
+        with capture_pushes() as sent:
+            events.emit(state, title="Trailer", topic="movies", source="M",
+                        priority_cfg=self.ENGINE, digest_cfg={})
+        self.assertEqual(sent, [])  # mute wins: digest-bound item dropped
+        self.assertFalse(state.get("digest_buffer"))
+
+    def test_legacy_path_upgrades_too(self):
+        state = self._followed(topic="energy")
+        with capture_pushes() as sent:
+            events.emit(state, title="EIA note", topic="energy", source="EIA",
+                        legacy_action="digest", score=5,
+                        priority_cfg={}, digest_cfg={})
+        self.assertEqual(len(sent), 1)
+        self.assertEqual(sent[0]["priority"], "default")
+
+    def test_expired_follow_digests_as_normal(self):
+        state: dict = {}
+        past = (_dt.datetime.now(UTC) - _dt.timedelta(hours=1)).isoformat()
+        state["followed"] = {"movies": past}
+        with capture_pushes() as sent:
+            events.emit(state, title="Trailer", topic="movies", source="M",
+                        priority_cfg=self.ENGINE, digest_cfg={})
+        self.assertEqual(sent, [])
+        self.assertEqual(len(state["digest_buffer"]), 1)
+
+    def test_dispatch_routes_follow_verbs(self):
+        state: dict = {}
+        control.dispatch(["FOLLOW:movies:72", "UNFOLLOW:movies"], state)
+        self.assertEqual(state["followed"], {})
+
+
 PRODUCT = {"name": "Anker Prime 250W", "url": "https://anker.com/a1340"}
 
 
