@@ -8,7 +8,7 @@ Context: notify-watcher is a Python personal notification hub running on GitHub
 Actions, pushing to my phone via ntfy.sh. Current shape (all merged & live on
 `main` as of 2026-06-09, PRs #1–#13, 396 unit tests green):
 
-- **33 topic modules** in `notify_watcher/topics/`: visa_bulletin, wwdc,
+- **32 topic modules** in `notify_watcher/topics/`: visa_bulletin,
   ios_release, movies (TMDb dates + scored Google-News headlines), games (RAWG
   dates + scored news, weekly), twitch, music, soundcore_pro, deals, fda,
   energy, weather, quakes, air_quality, fx (band alerts + weekly trend line),
@@ -84,7 +84,7 @@ Requirements:
    per-storm graphic URL can be derived from the NHC ATOM feed entry.
 6. **YouTube channel uploads** (easy) — every channel has a free no-key RSS
    feed; follow a configured channel list, one push per upload. Same pattern
-   as wwdc.py.
+   as ios_release.py.
 7. **Dominican baseball** (easy-medium) — MLB Stats API (free, no key): a
    daily-digest line for a followed team's result, or milestone alerts for
    Dominican players in season.
@@ -102,7 +102,7 @@ games currently.
 
 ## Known gaps (flag if you touch the area)
 
-- Topics with no dedicated unit-test file: wwdc, ios_release, marine,
+- Topics with no dedicated unit-test file: ios_release, marine,
   health_tip (failures are still isolated by main's try/except).
 - README "File layout" section lists only ~8 of 33 topics and none of the
   engine modules (events/priority/changes/eventlog/dashboard/news).

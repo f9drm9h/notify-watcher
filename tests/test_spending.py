@@ -199,8 +199,11 @@ class MergeTest(unittest.TestCase):
 
 
 class SummarizeTest(unittest.TestCase):
-    # Monday 2026-06-08: "last week" is Jun 1 (Mon) .. Jun 7 (Sun).
-    TODAY = date(2026, 6, 8)
+    # Thursday 2026-06-11: "this week" (current ISO week) is Jun 8 (Mon) ..
+    # Jun 14 (Sun); the prior week is Jun 1 (Mon) .. Jun 7 (Sun). The summary
+    # now reports the CURRENT week so spending made this week surfaces now
+    # instead of waiting for the following Monday's retrospective.
+    TODAY = date(2026, 6, 11)
 
     @staticmethod
     def _tx(day, amount, merchant, currency="DOP"):
@@ -212,40 +215,49 @@ class SummarizeTest(unittest.TestCase):
         self.assertIsNone(sp._summarize([], self.TODAY))
 
     def test_quiet_week_skips(self):
+        # Only old transactions, nothing dated in the current week.
         old = [self._tx("2026-05-01", 100, "X")]
         self.assertIsNone(sp._summarize(old, self.TODAY))
 
     def test_summary_totals_top_and_biggest(self):
         txs = [
-            self._tx("2026-06-01", 1250.50, "SIRENA MELLA"),
-            self._tx("2026-06-03", 250.00, "CLARO RECAR"),
-            self._tx("2026-06-05", 300.00, "SIRENA MELLA"),
-            self._tx("2026-06-06", 12.99, "NETFLIX.COM", currency="USD"),  # not DOP
-            self._tx("2026-06-08", 999.00, "THIS WEEK"),  # outside the window
+            self._tx("2026-06-08", 1250.50, "SIRENA MELLA"),   # this week
+            self._tx("2026-06-09", 250.00, "CLARO RECAR"),     # this week
+            self._tx("2026-06-11", 300.00, "SIRENA MELLA"),    # this week (today)
+            self._tx("2026-06-10", 12.99, "NETFLIX.COM", currency="USD"),  # not DOP
+            self._tx("2026-06-03", 999.00, "PRIOR WEEK"),      # outside the window
         ]
-        body, ch = sp._summarize(txs, self.TODAY)
+        body, ch, total = sp._summarize(txs, self.TODAY)
+        self.assertEqual(total, 1800.50)  # USD row and the prior-week row excluded
         self.assertIn("RD$1,800.50 across 3 transactions", body)
         self.assertIn("SIRENA MELLA RD$1,550.50", body)
         self.assertIn("Biggest: RD$1,250.50 at SIRENA MELLA", body)
-        self.assertIsNone(ch)  # no prior-week data -> no comparison line
+
+    def test_no_prior_week_omits_comparison(self):
+        # Current-week spending only -> no week-over-week line.
+        txs = [self._tx("2026-06-09", 750.00, "ONLY")]
+        body, ch, total = sp._summarize(txs, self.TODAY)
+        self.assertEqual(total, 750.00)
+        self.assertIsNone(ch)
         self.assertNotIn("vs prior week", body)
 
     def test_week_over_week_change(self):
         txs = [
-            self._tx("2026-05-26", 1000.00, "A"),  # prior week (May 25-31)
-            self._tx("2026-06-02", 1500.00, "B"),  # last week
+            self._tx("2026-06-02", 1000.00, "A"),  # prior week (Jun 1-7)
+            self._tx("2026-06-09", 1500.00, "B"),  # this week (Jun 8-14)
         ]
-        body, ch = sp._summarize(txs, self.TODAY)
+        body, ch, total = sp._summarize(txs, self.TODAY)
+        self.assertEqual(total, 1500.00)
         self.assertIsNotNone(ch)
         self.assertIn("vs prior week", body)
         self.assertEqual(ch.metadata["abs_delta"], 500.0)
 
     def test_flat_week_renders_unchanged(self):
         txs = [
-            self._tx("2026-05-26", 500.00, "A"),
-            self._tx("2026-06-02", 500.00, "B"),
+            self._tx("2026-06-02", 500.00, "A"),  # prior week
+            self._tx("2026-06-09", 500.00, "B"),  # this week
         ]
-        body, ch = sp._summarize(txs, self.TODAY)
+        body, ch, total = sp._summarize(txs, self.TODAY)
         self.assertIsNone(ch)  # changes.diff returns None on equal values
         self.assertIn("vs prior week: unchanged", body)
 
@@ -304,6 +316,10 @@ class EncryptedStorageTest(unittest.TestCase):
 
 
 class WeekBoundsTest(unittest.TestCase):
+    def test_current_week_from_midweek(self):
+        self.assertEqual(sp._week_bounds(date(2026, 6, 11), weeks_back=0),
+                         (date(2026, 6, 8), date(2026, 6, 14)))
+
     def test_last_week_from_monday(self):
         self.assertEqual(sp._week_bounds(date(2026, 6, 8)),
                          (date(2026, 6, 1), date(2026, 6, 7)))
