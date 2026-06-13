@@ -70,6 +70,7 @@ class Decision:
     action: str  # "push" | "digest" | "drop"
     score: int
     ntfy_priority: Optional[str]
+    reason: str = ""
 
 
 def _int(value: object, default: int) -> int:
@@ -184,4 +185,4 @@ def decide(event, cfg: dict) -> Optional[Decision]:
         return Decision("push", score, _ntfy_priority(score, cfg.get("ntfy_bands")))
     if score >= floor:
         return Decision("digest", score, None)
-    return Decision("drop", score, None)
+    return Decision("drop", score, None, f"score {score} below digest floor {floor}")
