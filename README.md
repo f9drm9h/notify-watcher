@@ -291,6 +291,27 @@ digest simply goes out without it.
   surrounding narrative is generated. Uses the `GEMINI_API_KEY` secret (Anthropic
   fallback). The figure's name is the push header; grow the channel by adding
   names to any `FIGURES` category.
+- **Literary passages** — a **real public-domain passage** plus a fresh
+  **Gemini-narrated literary guide** on **every 3-hour run**, independent of the
+  daily gate. Each run picks one work from a curated reading list (`WORKS` in
+  `notify_watcher/topics/gutenberg.py` — novels, philosophy/essays, poetry,
+  drama, adventure/science fiction, and gothic/mystery, 56 classics in all),
+  resolves its plain text through the free, no-key **Gutendex** API
+  (`gutendex.com`) and **Project Gutenberg**, strips the license boilerplate, and
+  samples a passage from the body. Gemini then narrates who the author was, when
+  and why they wrote it, what was happening in the world, where the passage sits
+  in the larger work, what it means, and why it still resonates, in at least
+  three paragraphs. The pick has the same memory as the knowledge and quotation
+  engines: shown work ids (`genre:gutenberg_id`) are stamped into `state.json` so
+  none repeats within 30 days, genres rotate cyclically, and both the work and
+  passage picks are seeded by the current 3-hour window so a re-run inside a
+  window is identical. The work is consumed and the window stamped only **after**
+  a passage is fetched *and* Gemini returns a story, so a failed fetch, a book
+  with no plain-text format, or an LLM outage skips cleanly and retries next run.
+  The passage is genuine public-domain text; only the surrounding narrative is
+  generated. Uses the `GEMINI_API_KEY` secret (Anthropic fallback). The work and
+  author are the push header; grow the channel by adding `book_id`/title/author
+  entries to any `WORKS` genre.
 - **Rocket launches** — imminent orbital launches via Launch Library 2 (no key);
   alerts once per launch within `launches.imminent_hours`, skipping routine ones
   (Starlink by default).
