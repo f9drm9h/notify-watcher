@@ -401,30 +401,64 @@ def _topic_verb(label: str, singular: str, plural: str) -> str:
     return plural if label.endswith("s") else singular
 
 
-def _status_message(topic: str, state: dict,
-                    now: Optional[_dt.datetime] = None) -> str:
-    """One-line diagnostic answer for a topic's mute/health state.
-
-    Active mutes answer first because they directly explain suppressed live
-    pushes. If there is no active mute, the topic_health contract answers when
-    the topic last succeeded, or surfaces its last recorded failure.
-    """
-    label = _topic_label(topic)
-    muted_until = (state.get(MUTED_KEY) or {}).get(topic)
-    if until_active(muted_until, now=now):
-        return f"{label} {_topic_verb(label, 'is', 'are')} currently muted until {muted_until}."
-
-    health = (state.get("topic_health") or {}).get(topic)
+def _status_health_line(label: str, health: object) -> str:
+    """Compact topic_health summary for a status reply."""
     if not isinstance(health, dict):
-        return f"{label} {_topic_verb(label, 'has', 'have')} no recorded status yet."
+        return f"Health: {label} {_topic_verb(label, 'has', 'have')} no recorded status yet."
 
+    parts: list[str] = []
     if health.get("last_ok"):
-        return f"{label} last ran successfully at {health['last_ok']}."
+        parts.append(f"last OK {health['last_ok']}")
     if health.get("last_error"):
         when = health.get("last_error_ts")
-        suffix = f" at {when}" if when else ""
-        return f"{label} last failed{suffix}: {health['last_error']}."
-    return f"{label} has a health record, but no success or failure timestamp yet."
+        err = f"last error {when}: {health['last_error']}" if when else (
+            f"last error: {health['last_error']}")
+        parts.append(err)
+    if health.get("source_failed"):
+        parts.append("source currently marked failed")
+    if health.get("last_data_count") is not None:
+        parts.append(f"last data count {health['last_data_count']}")
+    if not parts:
+        parts.append("health record exists, but no success or failure timestamp is set")
+    return "Health: " + "; ".join(parts) + "."
+
+
+def _status_digest_line(topic: str, state: dict,
+                        now: Optional[_dt.datetime] = None) -> str:
+    """Compact digest-buffer summary for a status reply."""
+    buf = [item for item in (state.get("digest_buffer") or [])
+           if isinstance(item, dict) and item.get("topic") == topic]
+    count = len(buf)
+    last_sent = state.get("digest_last_sent")
+    line = f"Digest: {count} pending item(s)"
+    if last_sent:
+        line += f"; last sent {last_sent}"
+    if count and last_sent == (now or _utcnow()).date().isoformat():
+        line += "; already sent today, so pending items wait for the next daily digest"
+    return line + "."
+
+
+def _status_message(topic: str, state: dict,
+                    now: Optional[_dt.datetime] = None) -> str:
+    """Concise diagnostic answer for a topic's mute/health/digest state.
+
+    This is read-only: it reports the active mute, topic_health telemetry, and
+    buffered digest items for the requested topic without mutating state.
+    """
+    label = _topic_label(topic)
+    lines = [f"Status for {label}:"]
+
+    muted_until = (state.get(MUTED_KEY) or {}).get(topic)
+    if until_active(muted_until, now=now):
+        lines.append(
+            f"Mute: active until {muted_until}.")
+    else:
+        lines.append("Mute: not active.")
+
+    health = (state.get("topic_health") or {}).get(topic)
+    lines.append(_status_health_line(label, health))
+    lines.append(_status_digest_line(topic, state, now=now))
+    return "\n".join(lines)
 
 
 def cmd_status(topic: str, state: dict,
