@@ -49,9 +49,10 @@ STATE_KEY = "product_prices"  # { "<url>": <last_price_float> }
 # beyond the UA, send the header set a real Chrome navigation carries (Accept,
 # client hints, Sec-Fetch-*). This clears *basic* Cloudflare/Akamai bot checks;
 # it cannot defeat IP-reputation/TLS-fingerprint blocks (see the Costco note
-# below) — for those, set DEALS_PROXY (see _proxies). Accept-Encoding is left at
-# "gzip, deflate" on purpose: advertising "br" without the brotli package
-# installed would hand us undecodable bytes.
+# below) — for those, set DEALS_PROXY (see _proxies). Accept-Encoding advertises
+# "br" to match a real Chrome: requirements.txt pins the brotli package so the
+# response stays decodable. "zstd" is deliberately omitted (no zstandard decoder
+# installed) — advertising an encoding we can't decode would hand us junk bytes.
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -62,7 +63,7 @@ HEADERS = {
         "image/avif,image/webp,image/apng,*/*;q=0.8"
     ),
     "Accept-Language": "en-US,en;q=0.9",
-    "Accept-Encoding": "gzip, deflate",
+    "Accept-Encoding": "gzip, deflate, br",
     "Upgrade-Insecure-Requests": "1",
     "Sec-Ch-Ua": '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
     "Sec-Ch-Ua-Mobile": "?0",
