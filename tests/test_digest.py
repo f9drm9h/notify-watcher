@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import datetime as _dt
 import unittest
+from unittest import mock
 
 from notify_watcher import digest
 from tests._util import capture_pushes
@@ -171,6 +172,91 @@ class DigestTest(unittest.TestCase):
         body = sent[0]["message"]
         # The source with the top-scoring item leads the message.
         self.assertLess(body.index("ENERGY"), body.index("FDA"))
+
+
+class _GeminiResponse:
+    text = (
+        "Energy has the most important update today, while FDA has a secondary "
+        "approval note. Nothing looks urgent, but these are worth a quick read."
+    )
+
+
+class _GeminiModel:
+    def __init__(self, fake):
+        self.fake = fake
+
+    def generate_content(self, prompt, **kwargs):
+        self.fake.prompts.append(prompt)
+        self.fake.kwargs.append(kwargs)
+        if self.fake.error:
+            raise RuntimeError("gemini down")
+        return _GeminiResponse()
+
+
+class _GeminiFake:
+    def __init__(self, error=False):
+        self.error = error
+        self.configured_key = None
+        self.model_name = None
+        self.prompts = []
+        self.kwargs = []
+
+    def configure(self, api_key):
+        self.configured_key = api_key
+
+    def GenerativeModel(self, model_name):
+        self.model_name = model_name
+        return _GeminiModel(self)
+
+
+class GeminiSummaryTest(unittest.TestCase):
+    CFG = {
+        "max_buffer": 10,
+        "max_items_in_message": 5,
+        "briefing": {"enabled": True, "max_items_in_prompt": 5, "max_chars": 400},
+    }
+
+    def _state(self):
+        state: dict = {}
+        digest.add(state, {"title": "FDA approval", "source": "FDA",
+                           "score": 40, "detail": "New supplement approved"}, self.CFG)
+        digest.add(state, {"title": "Grid demand spike", "source": "Energy",
+                           "score": 80, "detail": "Demand rose 12%"}, self.CFG)
+        return state
+
+    def test_gemini_summary_replaces_raw_digest_when_available(self):
+        fake = _GeminiFake()
+        state = self._state()
+        with mock.patch.object(digest, "genai", fake), \
+                mock.patch.dict("os.environ", {"GEMINI_API_KEY": "secret"}), \
+                capture_pushes() as sent:
+            self.assertTrue(digest.flush(state, self.CFG, header="Today: UV 8"))
+
+        self.assertEqual(fake.configured_key, "secret")
+        self.assertEqual(fake.model_name, digest.GEMINI_MODEL)
+        self.assertIn("You are a notification summarizer", fake.prompts[0])
+        self.assertLess(fake.prompts[0].index("Energy: Grid demand spike"),
+                        fake.prompts[0].index("FDA: FDA approval"))
+        self.assertIn("request_options", fake.kwargs[0])
+        body = sent[0]["message"]
+        self.assertTrue(body.startswith("Today: UV 8\nEnergy has"))
+        self.assertNotIn("ENERGY", body)
+        self.assertNotIn("  - Grid demand spike", body)
+        self.assertEqual(state[digest.BUFFER_KEY], [])
+
+    def test_gemini_failure_falls_back_to_raw_digest(self):
+        fake = _GeminiFake(error=True)
+        state = self._state()
+        with mock.patch.object(digest, "genai", fake), \
+                mock.patch.dict("os.environ", {"GEMINI_API_KEY": "secret"}), \
+                capture_pushes() as sent:
+            self.assertTrue(digest.flush(state, self.CFG))
+
+        body = sent[0]["message"]
+        self.assertIn("ENERGY", body)
+        self.assertIn("  - Grid demand spike - Demand rose 12%", body)
+        self.assertIn("FDA", body)
+        self.assertEqual(state[digest.BUFFER_KEY], [])
 
 
 if __name__ == "__main__":

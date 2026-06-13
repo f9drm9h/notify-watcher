@@ -142,6 +142,11 @@ The digest opens with a one-line morning weather summary for your `location` —
 `Today: 31 °C, rain 20%, UV 9` (current temperature, rain probability, max UV
 via Open-Meteo, free, no key); if the weather fetch fails for any reason the
 digest simply goes out without it.
+When `digest.briefing.enabled=true` and `GEMINI_API_KEY` is set, the flush also
+asks Gemini for a concise 3-sentence briefing of the pending items and sends
+that instead of the raw wall of alerts. If Gemini is unavailable, slow, or
+returns nothing, the digest automatically falls back to the standard grouped
+item list.
 
 - **FDA approvals** — reads the openFDA Drugs@FDA API (free, no key) and alerts
   on new drug/biologic (NDA/BLA) approvals. Generic (ANDA) approvals are

@@ -121,58 +121,6 @@ class FlushHeaderTest(unittest.TestCase):
         self.assertTrue(sent[0]["message"].startswith("ENERGY"))
 
 
-class BriefingTest(unittest.TestCase):
-    """digest_topic._briefing: prompt building, gating, truncation, fallback."""
-
-    BCFG = {"briefing": {"enabled": True, "max_chars": 60,
-                         "max_items_in_prompt": 2}}
-    BUF = [
-        {"title": "small", "score": 10, "topic": "movies", "detail": ""},
-        {"title": "big", "score": 90, "topic": "fda", "detail": "approved"},
-        {"title": "mid", "score": 50, "topic": "games", "detail": ""},
-    ]
-
-    def _briefing(self, state, cfg=None, ai=lambda system, user: "line1\nline2"):
-        with mock.patch.object(digest_topic.config, "section",
-                               return_value=self.BCFG if cfg is None else cfg), \
-                mock.patch.object(digest_topic.summarize, "brief",
-                                  side_effect=ai) as brief:
-            return digest_topic._briefing(state), brief
-
-    def test_prompt_is_ranked_and_capped(self):
-        _, brief = self._briefing({"digest_buffer": list(self.BUF)})
-        prompt = brief.call_args.args[1]
-        self.assertEqual(prompt.splitlines(), [
-            "[90] fda: big - approved",   # top score first, detail appended
-            "[50] games: mid",            # max_items_in_prompt=2 cut here
-        ])
-        self.assertIn("morning briefing", brief.call_args.args[0])
-
-    def test_disabled_or_missing_section_returns_none(self):
-        out, brief = self._briefing({"digest_buffer": list(self.BUF)},
-                                    cfg={"briefing": {"enabled": False}})
-        self.assertIsNone(out)
-        out, brief = self._briefing({"digest_buffer": list(self.BUF)}, cfg={})
-        self.assertIsNone(out)
-        brief.assert_not_called()
-
-    def test_ai_failure_returns_none(self):
-        out, _ = self._briefing({"digest_buffer": list(self.BUF)},
-                                ai=lambda *a, **k: None)
-        self.assertIsNone(out)
-
-    def test_truncates_at_line_boundary(self):
-        long = "x" * 50 + "\n" + "y" * 50
-        out, _ = self._briefing({"digest_buffer": list(self.BUF)},
-                                ai=lambda *a, **k: long)
-        self.assertEqual(out, "x" * 50)  # cut at the newline before max_chars
-
-    def test_empty_buffer_returns_none(self):
-        out, brief = self._briefing({})
-        self.assertIsNone(out)
-        brief.assert_not_called()
-
-
 class FlushBriefingTest(unittest.TestCase):
     def _state(self, n=3):
         state: dict = {}
