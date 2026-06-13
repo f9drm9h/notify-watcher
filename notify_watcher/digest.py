@@ -28,6 +28,7 @@ _DEFAULT_MAX_PER_SOURCE = 8
 # topics whose info lives in the body — holidays, reminders, fx — survive being
 # digested instead of pushed. Bounded so a long body can't blow up the message.
 _MAX_DETAIL = 160
+_MAX_PRESERVED_DETAIL = 1200
 
 
 def _today() -> str:
@@ -68,12 +69,15 @@ def add(state: dict, item: dict, cfg: dict) -> None:
     """
     buf: list = state.setdefault(BUFFER_KEY, [])
     src = item.get("source", "")
+    preserve_detail = bool(item.get("preserve_detail"))
+    detail_limit = _MAX_PRESERVED_DETAIL if preserve_detail else _MAX_DETAIL
     buf.append({
         "title": item.get("title", ""),
         "url": item.get("url", ""),
         "source": src,
         "score": int(item.get("score", 0) or 0),
-        "detail": (item.get("detail") or "")[:_MAX_DETAIL],
+        "detail": (item.get("detail") or "")[:detail_limit],
+        "preserve_detail": preserve_detail,
         # Routing topic of the buffered event; lets the flush offer a
         # [Follow <hot topic>] button. Older buffer entries lack it (fine —
         # they just can't be the button's target).
@@ -156,6 +160,13 @@ def flush(state: dict, cfg: dict, header: str | None = None,
             # render as before; body-informative ones append their detail so a
             # generic title ("Reminder") still conveys what happened.
             if detail:
+                if it.get("preserve_detail") and "\n" in detail:
+                    line = title or "Details"
+                    lines.append(f"  - {line}")
+                    for detail_line in detail.splitlines():
+                        if detail_line.strip():
+                            lines.append(f"    {detail_line}")
+                    continue
                 line = f"{title} - {detail}" if title else detail
             else:
                 line = title
