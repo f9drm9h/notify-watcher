@@ -9,9 +9,10 @@ page for the newest PDF (`monitors.json` -> `fuel`), pull the consumer fuels'
 official RD$/gal prices out of its table, and diff against last week via
 ``changes.diff``: any move of ``push_pct`` (default 5%) or more pushes live,
 smaller moves (and flat weeks) land one calm line in the daily digest, and the
-first run seeds silently. The PDF URL is the dedup key, so each weekly notice is
-reported exactly once. Daily-only (NOTIFY_DAILY) — prices change once a week, so
-polling every cycle buys nothing.
+first run seeds silently. Dedup is URL + PDF content hash: MICM has reused a
+notice URL before, so a same-URL notice is parsed again unless its stored hash
+also matches. Daily-only (NOTIFY_DAILY) — prices change once a week, so polling
+every cycle buys nothing.
 
 Price extraction leans on the table's arithmetic rather than column positions
 (pypdf text columns are unreliable): every row is importation parity + taxes +
@@ -23,6 +24,8 @@ also the maximum).
 """
 from __future__ import annotations
 
+import datetime as _dt
+import hashlib
 import html as _html
 import io
 import logging
@@ -38,6 +41,8 @@ log = logging.getLogger(__name__)
 TOPIC = "fuel"
 STATE_KEY = "fuel_prices"          # {fuel name: official RD$/gal} from the last notice
 LAST_PDF_KEY = "fuel_last_pdf"     # URL of the last notice we reported
+LAST_PDF_HASH_KEY = "fuel_last_pdf_hash"
+LAST_PRICES_SEEN_AT_KEY = "fuel_last_prices_seen_at"
 DEFAULT_PAGE = ("https://micm.gob.do/direcciones/combustibles/"
                 "avisos-semanales-de-precios/avisos-semanales-de-precios-de-combustibles/")
 DEFAULT_PUSH_PCT = 5.0
@@ -92,6 +97,14 @@ def _parse_prices(text: str) -> dict[str, float]:
     return prices
 
 
+def _hash_pdf(content: bytes) -> str:
+    return hashlib.sha256(content).hexdigest()
+
+
+def _stamp_prices_seen(state: dict) -> None:
+    state[LAST_PRICES_SEEN_AT_KEY] = _dt.datetime.now(_dt.timezone.utc).isoformat()
+
+
 def _evaluate(prev: dict, cur: dict, push_pct: float) -> tuple[str, str, changes.Change | None]:
     """Pure. Returns (action, body, biggest_change) for a new weekly notice.
 
@@ -144,11 +157,24 @@ def run(state: dict) -> dict:
         log.warning("fuel: no weekly notice PDF found on %s", page)
         health.source_failed(state, TOPIC, "no weekly notice PDF found (layout change?)")
         return state
-    if pdf_url == state.get(LAST_PDF_KEY):
-        log.info("fuel: no new notice (still %s)", pdf_url.rsplit("/", 1)[-1])
-        # The listing is alive and still presenting the known notice: a true
-        # success with data, just nothing new to report.
-        health.source_ok(state, TOPIC, data_count=1, message="no new notice")
+    try:
+        pdf = requests.get(pdf_url, headers=HEADERS, timeout=60)
+        pdf.raise_for_status()
+        pdf_hash = _hash_pdf(pdf.content)
+    except Exception as exc:  # noqa: BLE001
+        log.error("fuel: notice PDF fetch failed: %s", exc)
+        health.source_failed(state, TOPIC, f"notice PDF fetch failed: {exc}")
+        return state
+
+    known_url = pdf_url == state.get(LAST_PDF_KEY)
+    if known_url and pdf_hash == state.get(LAST_PDF_HASH_KEY):
+        log.info("fuel: no new notice (still %s, hash match)",
+                 pdf_url.rsplit("/", 1)[-1])
+        # The listing and PDF are alive and match the content we already parsed.
+        # Count the cached price rows as current source data for watchdog health.
+        cached_count = len(state.get(STATE_KEY) or {}) or 1
+        _stamp_prices_seen(state)
+        health.source_ok(state, TOPIC, data_count=cached_count, message="no new notice")
         return state
 
     try:
@@ -159,8 +185,6 @@ def run(state: dict) -> dict:
         return state
 
     try:
-        pdf = requests.get(pdf_url, headers=HEADERS, timeout=60)
-        pdf.raise_for_status()
         reader = PdfReader(io.BytesIO(pdf.content))
         text = "\n".join((p.extract_text() or "") for p in reader.pages)
     except Exception as exc:  # noqa: BLE001
@@ -176,10 +200,13 @@ def run(state: dict) -> dict:
         health.source_failed(state, TOPIC, "no prices parsed from notice PDF (layout change?)")
         return state
     health.source_ok(state, TOPIC, data_count=len(prices))
+    _stamp_prices_seen(state)
 
     prev = state.get(STATE_KEY) or {}
     if not prev:
         log.info("fuel: first run, seeded %d prices silently", len(prices))
+    elif known_url and prices == prev:
+        log.info("fuel: same URL parsed successfully; prices unchanged")
     else:
         action, body, biggest = _evaluate(prev, prices, push_pct)
         big = ("high" if action == "push" else "low")
@@ -193,6 +220,7 @@ def run(state: dict) -> dict:
             source="MICM",
             click_url=pdf_url,
             tags="fuelpump",
+            metadata={"preserve_detail": True},
             legacy_priority="high" if action == "push" else None,
             legacy_action=action,
         )
@@ -200,4 +228,5 @@ def run(state: dict) -> dict:
 
     state[STATE_KEY] = prices
     state[LAST_PDF_KEY] = pdf_url
+    state[LAST_PDF_HASH_KEY] = pdf_hash
     return state

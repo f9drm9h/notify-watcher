@@ -198,7 +198,8 @@ digest simply goes out without it.
   line per fuel in the morning digest ("Gasolina Premium: RD$339.80 (-4.70,
   -1.4%)"); any fuel moving by `fuel.push_pct` (default 5%) or more
   week-over-week pushes live instead, linking to the official PDF. The first
-  run seeds silently.
+  run seeds silently. Dedup uses both the PDF URL and a stored content hash, so
+  a corrected same-URL PDF is parsed and compared instead of skipped.
 - **Reminders / expiry** — a tiny date engine over `reminders.json` (no network):
   document/visa/ID expiry, subscription renewals, warranties, yearly birthdays.
   Fires once at each configured lead time (default 90/30/7/1/0 days before).

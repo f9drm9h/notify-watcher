@@ -134,6 +134,34 @@ class DigestTest(unittest.TestCase):
         digest.add(state, {"title": "t", "source": "s", "detail": "x" * 500}, CFG)
         self.assertLessEqual(len(state[digest.BUFFER_KEY][0]["detail"]), digest._MAX_DETAIL)
 
+    def test_preserved_multiline_detail_renders_all_lines(self):
+        state: dict = {}
+        lines = [
+            "Gasolina Premium: RD$339.80 (-4.70, -1.4%)",
+            "Gasolina Regular: RD$312.20 (-4.70, -1.5%)",
+            "Gasoil Regular: RD$263.10 (-3.30, -1.2%)",
+            "Gasoil Optimo: RD$290.20 (-3.10, -1.1%)",
+            "Kerosene: RD$312.40 (-4.10, -1.3%)",
+            "GLP: RD$137.20 (sin cambio)",
+        ]
+        digest.add(
+            state,
+            {
+                "title": "Combustibles: precios de la semana",
+                "source": "MICM",
+                "score": 5,
+                "detail": "\n".join(lines),
+                "preserve_detail": True,
+            },
+            CFG,
+        )
+        with capture_pushes() as sent:
+            digest.flush(state, CFG)
+
+        body = sent[0]["message"]
+        for line in lines:
+            self.assertIn(line, body)
+
     def test_flush_orders_by_score_highest_first(self):
         state: dict = {}
         digest.add(state, _item(1, "FDA", score=2), CFG)
