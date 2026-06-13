@@ -254,21 +254,23 @@ digest simply goes out without it.
   so a feed outage still sends the rest. The push also includes the **Wikipedia
   picture of the day** as an inline image (via the `Attach` header), so the
   notification arrives with a visual — no extra config needed. Daily run only.
-- **Knowledge deep-dives** — one titled, 2–3-sentence story from a curated KB
-  (`data/knowledge.json`: 100 entries across ten themes — early human
-  breakthroughs, scientific discoveries, astronomy & space, medical
-  breakthroughs, technological revolutions, ancient civilizations, Greek &
-  Roman mythology, philosophy, mathematics history, world-history turning
-  points) on **every 3-hour run**, independent of the daily gate. The pick has
-  memory: shown entry ids are stamped into `state.json` so nothing repeats
-  within 30 days, themes rotate cyclically so consecutive pushes never cluster
-  on one topic, and the pick is seeded by the current 3-hour window, so a
-  re-run inside a window never drifts or double-sends. When every entry has
-  been shown within the window (at ~8 pushes/day a 100-entry KB cycles in
-  ~12–13 days), the least-recently-shown entry is reused — grow the KB by
-  appending to `data/knowledge.json` to lengthen the cycle. The entry's title
-  is the push header; the body goes out verbatim (never LLM-reworded). No
-  network, no key.
+- **Knowledge deep-dives** — a rich, multi-paragraph **story written fresh by
+  Gemini** on **every 3-hour run**, independent of the daily gate. Each run
+  picks one topic from `data/knowledge_topics.json` (500+ topics across ten
+  categories — early humans, science, astronomy, medicine, technology, ancient
+  civilizations, mythology, philosophy, math history, and world history, 50+
+  each) and asks Gemini to narrate it as a documentary-style account: who was
+  involved, what happened, why it matters, what came before and after, and the
+  human drama, in at least four paragraphs. The pick has memory: shown topic
+  ids are stamped into `state.json` so nothing repeats within 30 days,
+  categories rotate cyclically so consecutive pushes never cluster on one
+  theme, and the pick is seeded by the current 3-hour window so a re-run inside
+  a window re-picks the same topic. The topic is consumed and the window
+  stamped only **after** Gemini returns a story, so an outage skips cleanly and
+  retries next run rather than burning a topic or crashing the sweep. Uses the
+  `GEMINI_API_KEY` secret (Anthropic is a fallback via `summarize.py`); grow the
+  KB by appending topics to any category. The story is clipped to fit ntfy's
+  message limit. The topic is the push header.
 - **Rocket launches** — imminent orbital launches via Launch Library 2 (no key);
   alerts once per launch within `launches.imminent_hours`, skipping routine ones
   (Starlink by default).
