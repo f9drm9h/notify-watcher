@@ -54,7 +54,10 @@ TBA = "TBA"
 # ISO week we last ran in state and skip until it rolls over, so the topic fires
 # on the first daily run of each week (Monday, or the next available day if
 # Monday's run was dropped). WEEK_STATE_KEY guards idempotency across the day's
-# repeated post-threshold runs.
+# repeated post-threshold runs. The week is stamped only when at least one
+# configured check completed (or nothing was configured), mirroring the movie
+# countdown, so a RAWG/Google News outage on Monday retries on the next daily
+# run instead of losing the whole week.
 WEEK_STATE_KEY = "games_week_last"
 
 # --- News (Google News RSS) -------------------------------------------------
@@ -153,18 +156,23 @@ def _release(game: dict) -> str:
     return TBA
 
 
-def _track_release_dates(state: dict) -> dict:
+def _track_release_dates(state: dict) -> tuple[dict, int, int]:
+    """Returns ``(state, successes, failures)``: per-title counters of checks
+    that completed against RAWG vs raised, so run() can tell a real outage
+    apart from a quiet week. ``(0, 0)`` means nothing was configured to check
+    (no API key or an empty watchlist)."""
     api_key = os.environ.get("RAWG_API_KEY", "").strip()
     if not api_key:
         log.info("RAWG_API_KEY not set; skipping game watcher")
-        return state
+        return state, 0, 0
 
     wanted = watchlist.titles("games", state)
     if not wanted:
         log.info("no games in watchlist; nothing to do")
-        return state
+        return state, 0, 0
 
     bucket: dict = state.setdefault(STATE_KEY, {})
+    failures = 0
 
     for title in wanted:
         try:
@@ -208,9 +216,10 @@ def _track_release_dates(state: dict) -> dict:
             )
             bucket[gid] = current
         except Exception as exc:  # noqa: BLE001 - isolate each title
+            failures += 1
             log.error("game %r check failed: %s", title, exc)
 
-    return state
+    return state, len(wanted) - failures, failures
 
 
 def _fetch_news(phrase: str) -> list:
@@ -226,7 +235,7 @@ def _published_key(entry) -> time.struct_time:
     return getattr(entry, "published_parsed", None) or time.gmtime(0)
 
 
-def _collect_news(title: str) -> list[news.Article]:
+def _collect_news(title: str) -> tuple[list[news.Article], bool]:
     """Merge relevant news for a title and each of its aliases into one pool.
 
     Queries the canonical title first, then every phrase in TITLE_ALIASES for
@@ -238,17 +247,24 @@ def _collect_news(title: str) -> list[news.Article]:
     can push the relevant pool well past the cap, and considering only the newest
     N keeps the stored-id window stable so dedup doesn't re-alert older articles
     that fall outside it. A single phrase's fetch failure is logged and skipped
-    so the others still contribute. Returns a list of (article_id, headline,
-    link, source); `source` is the publisher used for provenance weighting.
+    so the others still contribute.
+
+    Returns ``(articles, fetched_any)``: a list of (article_id, headline, link,
+    source) — `source` is the publisher used for provenance weighting — plus
+    whether at least one phrase's fetch succeeded. ``fetched_any`` False means
+    every query failed, so an empty pool is an outage rather than a quiet week
+    and the caller counts the title as a failed check.
     """
     max_age = config.section("news").get("max_age_days", news.DEFAULT_MAX_AGE_DAYS)
     merged: dict[str, tuple[time.struct_time, str, str, str, str]] = {}
+    fetched_any = False
     for phrase in [title, *TITLE_ALIASES.get(title, [])]:
         try:
             entries = _fetch_news(phrase)
         except Exception as exc:  # noqa: BLE001 - one phrase failing is non-fatal
             log.warning("game news query %r failed: %s", phrase, exc)
             continue
+        fetched_any = True
         kept = 0
         for e in entries:
             # Google News resurfaces months-old articles under fresh URLs, which
@@ -267,10 +283,10 @@ def _collect_news(title: str) -> list[news.Article]:
 
     ordered = sorted(merged.values(), key=lambda v: v[0], reverse=True)
     return [(aid, headline, link, source)
-            for _, aid, headline, link, source in ordered[:NEWS_MAX_PER_GAME]]
+            for _, aid, headline, link, source in ordered[:NEWS_MAX_PER_GAME]], fetched_any
 
 
-def _track_news(state: dict) -> dict:
+def _track_news(state: dict) -> tuple[dict, int, int]:
     """Score and route new, game-specific news per watchlist title.
 
     Each fresh article is scored deterministically against the `games_scoring`
@@ -284,19 +300,28 @@ def _track_news(state: dict) -> dict:
     First run per game seeds the current article ids silently (no alerts), so a
     brand-new game on the list doesn't blast its backlog; only articles that
     appear afterwards are evaluated. Mirrors soundcore_pro's baseline seeding.
+
+    Returns ``(state, successes, failures)``: per-title counters of checks
+    where at least one news query answered vs every query failed (or routing
+    raised). ``(0, 0)`` means an empty watchlist — nothing to check.
     """
     wanted = watchlist.titles("games", state)
     if not wanted:
         log.info("no games in watchlist; no news to check")
-        return state
+        return state, 0, 0
 
     bucket: dict = state.setdefault(NEWS_STATE_KEY, {})
     scoring_cfg = config.section("games_scoring")
     digest_cfg = config.section("digest")
+    failures = 0
 
     for title in wanted:
         try:
-            relevant = _collect_news(title)
+            relevant, fetched_any = _collect_news(title)
+            if not fetched_any:
+                failures += 1
+                log.error("game news %r: every news query failed", title)
+                continue
             log.info("game news %r: %d relevant article(s) across all queries", title, len(relevant))
             news.route(
                 state,
@@ -311,9 +336,10 @@ def _track_news(state: dict) -> dict:
                 topic="games",
             )
         except Exception as exc:  # noqa: BLE001 - isolate each title's news check
+            failures += 1
             log.error("game news %r check failed: %s", title, exc)
 
-    return state
+    return state, len(wanted) - failures, failures
 
 
 def _iso_week(day: _dt.date) -> str:
@@ -328,6 +354,10 @@ def run(state: dict) -> dict:
 
     Weekly: acts only on the daily run and only once per ISO week, so game
     updates arrive as a single batched catch-up rather than a constant drip.
+    The week is stamped only when at least one configured check completed (or
+    nothing was configured at all), mirroring the movie countdown: a RAWG or
+    Google News outage on Monday retries on the next daily run instead of
+    silently losing the whole week.
     """
     if not os.environ.get("NOTIFY_DAILY"):
         return state  # weekly topic acts only on the daily run
@@ -336,7 +366,12 @@ def run(state: dict) -> dict:
         log.info("games already checked this week (%s); skipping", week)
         return state
 
-    state = _track_release_dates(state)
-    state = _track_news(state)
-    state[WEEK_STATE_KEY] = week
+    state, releases_ok, releases_failed = _track_release_dates(state)
+    state, news_ok, news_failed = _track_news(state)
+    attempted = releases_ok + releases_failed + news_ok + news_failed
+    if releases_ok or news_ok or attempted == 0:
+        state[WEEK_STATE_KEY] = week
+    else:
+        log.warning("games: all %d check(s) failed; leaving %s unstamped so the "
+                    "next daily run retries", attempted, week)
     return state
