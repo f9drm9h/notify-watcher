@@ -8,7 +8,7 @@ name: alert
 #
 # Boundary with the in-run watchdog: main.py always exits 0, so a per-topic
 # failure never turns a workflow red (the watchdog owns those), and a
-# workflow-level failure (pip/import/state-push) never reaches the topic
+# workflow-level failure (pip/import/state-decode/state-push) never reaches the topic
 # loop (this file owns those). No overlap by construction.
 #
 # Adding a future workflow = add its `name:` to the list below (one line).
