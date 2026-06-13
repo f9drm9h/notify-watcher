@@ -16,10 +16,13 @@ Sources (all in ``monitors.json`` -> ``golden_sun``, no keys):
   (which changes its dedup hash) can never re-alert it.
 - **Reddit r/GoldenSun** — top posts of the week. The score-bearing JSON
   endpoint is tried first and filtered to ``reddit_min_score`` (default >50)
-  upvotes; Reddit 403s that endpoint from most non-residential IPs, so on
-  failure we fall back to the top-of-week RSS feed (no scores) and keep its
-  first ``reddit_top_n`` entries — "top of week" ordering is the closest
-  unauthenticated proxy for the same bar.
+  upvotes. Both Reddit fetches send a Reddit-compliant ``User-Agent`` (its API
+  rules want an honest, unique agent and actively 403/429 spoofed-browser ones
+  from data-center IPs) and retry with exponential backoff that honors any
+  ``Retry-After`` header. If the JSON endpoint still refuses, we fall back to
+  the top-of-week RSS feed (no scores) and keep its first ``reddit_top_n``
+  entries — "top of week" ordering is the closest unauthenticated proxy for the
+  same bar.
 - **Google News** — exact-phrase "Golden Sun" game search, age-gated like the
   other news topics and kept only when the headline itself names the game.
 
@@ -34,6 +37,7 @@ from __future__ import annotations
 import datetime as _dt
 import logging
 import re
+import time
 import urllib.parse
 
 import feedparser
@@ -57,13 +61,26 @@ DEFAULT_WIKI_MAX_AGE_DAYS = 60
 DEFAULT_REDDIT_MIN_SCORE = 50
 DEFAULT_REDDIT_TOP_N = 3
 REDDIT_JSON_CAP = 10  # even score-qualified posts: top week can't flood the pool
-# Reddit and the wiki's WAF both reject obvious bot agents; a desktop UA passes.
+# The wiki's WAF and Google News reject obvious bot agents; a desktop UA passes.
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
         "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
     ),
 }
+# Reddit is the opposite: its API rules ask for a unique, descriptive User-Agent
+# and explicitly tell clients NOT to spoof a browser — the desktop UA above is
+# exactly what its bot defenses 403/429 from data-center IPs (the GitHub Actions
+# runner). Identify honestly in the recommended
+# "<platform>:<app id>:<version> (by /u/<user>)" form. See
+# https://github.com/reddit-archive/reddit/wiki/API#rules
+REDDIT_HEADERS = {
+    "User-Agent": "github-actions:notify-watcher:1.0 (by /u/f9drm9h)",
+    "Accept": "application/json, application/atom+xml;q=0.9, */*;q=0.8",
+}
+_REDDIT_ATTEMPTS = 3
+_REDDIT_BACKOFF = 2.0     # base seconds, doubled each retry: 2s, 4s
+_REDDIT_MAX_SLEEP = 30.0  # cap so a long Retry-After can't stall the whole run
 
 # Wiki templates that render game titles inside news bullets.
 _WIKI_TEMPLATES = {
@@ -172,21 +189,69 @@ def _collect_wiki(cfg: dict) -> list[news.Article]:
             for iid, headline in items]
 
 
+def _retry_after_seconds(resp: "requests.Response | None") -> float | None:
+    """Seconds to wait from a 429/503 ``Retry-After`` header, when numeric.
+
+    Reddit usually sends a small integer count of seconds; the HTTP-date form is
+    ignored here so we just fall back to plain exponential backoff instead of
+    doing calendar math.
+    """
+    if resp is None:
+        return None
+    raw = resp.headers.get("Retry-After")
+    try:
+        return float(raw) if raw is not None else None
+    except (TypeError, ValueError):
+        return None
+
+
+def _reddit_get(url: str, *, timeout: int = 30) -> requests.Response:
+    """GET a Reddit URL with a compliant UA and exponential backoff.
+
+    Retries rate-limit and transient responses (HTTP 429 and 5xx) plus
+    connection errors, honoring a numeric ``Retry-After`` when present (capped so
+    a long cooloff can't stall the run), then raises for status so the caller's
+    JSON -> RSS fallback still triggers when Reddit stays unavailable.
+    """
+    last_exc: Exception | None = None
+    for attempt in range(_REDDIT_ATTEMPTS):
+        resp: requests.Response | None = None
+        try:
+            resp = requests.get(url, headers=REDDIT_HEADERS, timeout=timeout)
+            if resp.status_code not in (429, 500, 502, 503, 504):
+                resp.raise_for_status()
+                return resp
+            last_exc = requests.HTTPError(
+                f"{resp.status_code} from Reddit", response=resp)
+        except requests.RequestException as exc:
+            last_exc = exc
+            resp = getattr(exc, "response", None)
+        if attempt < _REDDIT_ATTEMPTS - 1:
+            wait = _retry_after_seconds(resp)
+            if wait is None:
+                wait = _REDDIT_BACKOFF * (2 ** attempt)
+            wait = min(wait, _REDDIT_MAX_SLEEP)
+            log.info("golden_sun: reddit %s; retrying in %.0fs (%d/%d)",
+                     last_exc, wait, attempt + 1, _REDDIT_ATTEMPTS)
+            time.sleep(wait)
+    raise last_exc if last_exc else RuntimeError("reddit unreachable")
+
+
 def _collect_reddit(cfg: dict) -> list[news.Article]:
-    """Score-filtered JSON first; top-of-week RSS top-N when Reddit blocks it."""
+    """Score-filtered JSON first; top-of-week RSS top-N when Reddit blocks it.
+
+    Both fetches go through ``_reddit_get`` (compliant UA + backoff), so a 403
+    (bot UA) or 429 (rate limit) gets a real chance to recover before we drop to
+    the unscored RSS path."""
     min_score = int(cfg.get("reddit_min_score", DEFAULT_REDDIT_MIN_SCORE))
     try:
-        resp = requests.get(cfg.get("reddit_json", DEFAULT_REDDIT_JSON),
-                            headers=HEADERS, timeout=30)
-        resp.raise_for_status()
+        resp = _reddit_get(cfg.get("reddit_json", DEFAULT_REDDIT_JSON))
         posts = _parse_reddit_json(resp.json(), min_score)
         return [(rid, title, link, "Reddit r/GoldenSun")
                 for rid, title, link in posts]
     except Exception as exc:  # noqa: BLE001 - expected: Reddit 403s bot IPs
         log.info("golden_sun: reddit JSON unavailable (%s); using RSS fallback", exc)
-    resp = requests.get(cfg.get("reddit_rss", DEFAULT_REDDIT_RSS),
-                        headers=HEADERS, timeout=30)
-    resp.raise_for_status()
+    resp = _reddit_get(cfg.get("reddit_rss", DEFAULT_REDDIT_RSS))
     entries = feedparser.parse(resp.content).entries
     top_n = int(cfg.get("reddit_top_n", DEFAULT_REDDIT_TOP_N))
     out: list[news.Article] = []
