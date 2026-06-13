@@ -411,17 +411,6 @@
   ],
   "event_log": [
     {
-      "action": "push",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "New Spider-Man: Brand New Day trailer release date seemingly confirmed - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-10T12:16:35.909581+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQZ1dJbkNuTVNoYXVvWC1KQnAtWHlSZlBNZHJNOTAtbTJuN2s5aElNTEZmNFUwMV93NDRMSmpudVAxSkduQjdYUmtsbzZ3SUltTXBlNTYwcmtTcjB6YXBWOEl2angzSTFDZHpMeHg5ZWgzcVBhOVYtS3hFakw3TEtZTDRrV3hySDhWWTFFNWZCV2dVWVRnSENwbGVoRHFPMFF0WEE?oc=5"
-    },
-    {
       "action": "digest",
       "detail": "",
       "score": 28,
@@ -6116,6 +6105,18 @@
       "topic": "wikiquote",
       "ts": "2026-06-13T15:01:45.299027+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - World Warrior #1 !bracket",
+      "id": "8e2128e4ecf01456",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-13T17:53:12.497150+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "fda_seen_ids": [
@@ -6822,7 +6823,7 @@
   "last_run": {
     "failed": 0,
     "ok": 1,
-    "ts": "2026-06-13T16:24:12.349861+00:00"
+    "ts": "2026-06-13T17:53:11.299430+00:00"
   },
   "launch_seen_ids": [
     "4cc755b9dfaf231c",
@@ -7949,9 +7950,9 @@
       "last_ok": "2026-06-13T15:00:07.630366+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-13T16:24:14.211562+00:00",
+      "last_data": "2026-06-13T17:53:14.418074+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-13T16:24:12.349861+00:00"
+      "last_ok": "2026-06-13T17:53:11.299430+00:00"
     },
     "uv": {
       "last_ok": "2026-06-13T15:00:07.630366+00:00"
@@ -7979,7 +7980,9 @@
       "last_ok": "2026-06-13T15:00:07.630366+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_f4_dates_for_filing": "22DEC09",
   "visa_f4_final_action": "08NOV08",
   "watch_schedule": {
