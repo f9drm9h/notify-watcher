@@ -381,7 +381,7 @@
     "max_per_source": 4,
     "max_items_in_message": 30,
     "briefing": {
-      "_comment": "AI morning briefing (docs/design/05) rendered above the item list, via summarize.brief (Gemini -> Anthropic, both optional). Any failure or enabled=false sends exactly the plain digest; raw items always survive in the event log + dashboard. max_items_with_briefing caps the visible list when the briefing is present (ntfy ~4KB).",
+      "_comment": "AI morning briefing for the daily digest. When enabled and GEMINI_API_KEY is set, digest.flush asks Gemini for a clean 3-sentence summary of the ranked pending items and sends that instead of the raw wall of items. Any failure, timeout, missing key, or enabled=false sends exactly the plain grouped digest; raw items always survive in the event log + dashboard.",
       "enabled": true,
       "max_chars": 900,
       "max_items_in_prompt": 30,
