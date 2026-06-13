@@ -133,9 +133,8 @@ TOPICS: list[tuple[str, Topic]] = [
     # run-to-run.
     ("groceries", groceries.run),
     # Domain monitors: collectors score items and either push live (high/
-    # breakthrough) or buffer moderate ones. digest_topic must run AFTER the
-    # collectors so same-day items are flushed; both digest_topic and health_tip
-    # act only on the daily run (NOTIFY_DAILY).
+    # breakthrough) or buffer moderate ones. The digest flush runs near the end
+    # of TOPICS so every producer below gets a chance to add same-run items.
     ("fda", fda.run),
     ("energy", energy.run),
     # Safety + life monitors. weather/quakes are geo-aware (live for a near, real
@@ -167,7 +166,6 @@ TOPICS: list[tuple[str, Topic]] = [
     # across the 3-hourly grid, so this runs every cycle (not daily-only) and
     # dedups per slot per habit in state.
     ("habits", habits.run),
-    ("digest", digest_topic.run),
     ("health_tip", health_tip.run),
     # learn's consolidated push is daily-only; its standalone knowledge push
     # fires every cycle (guarded per 3-hour window in state). reminders is
@@ -220,6 +218,10 @@ TOPICS: list[tuple[str, Topic]] = [
     # beach_day fires only on the configured weekdays (default Saturday): one
     # 0-10 "is today a beach day?" score from waves + rain + UV + temperature.
     ("beach_day", beach_day.run),
+    # digest flushes after all digest-producing topics so daily-only items
+    # created in this same run are not stranded until tomorrow. Watchdog still
+    # stays last because it reads the health stamps produced by every topic.
+    ("digest", digest_topic.run),
     # watchdog runs LAST: it reads the topic_health entries this loop stamped for
     # every topic above and pushes once when one has been failing for 48h+ — so a
     # dead feed can't go silently unnoticed. Pure state inspection, no network.
