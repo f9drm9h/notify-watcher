@@ -30,7 +30,7 @@ import logging
 from dataclasses import dataclass, field
 from typing import Optional, TYPE_CHECKING
 
-from . import config, control, digest, eventlog, ntfy, priority
+from . import audit, config, control, digest, eventlog, ntfy, priority
 
 if TYPE_CHECKING:
     from .changes import Change
@@ -225,6 +225,28 @@ def _apply_mute(state: dict, event: Event, action: str) -> str:
     return "drop"
 
 
+def _mute_drop_reason(state: dict, event: Event) -> str:
+    until = (state.get("muted") or {}).get(event.topic)
+    if until:
+        return f"topic muted until {until}; digest-bound item dropped"
+    return "topic muted; digest-bound item dropped"
+
+
+def _record_drop(event: Event, reason: str, score: int) -> None:
+    """Best-effort audit logging; diagnostics must never block routing."""
+    try:
+        audit.record(
+            event.topic,
+            event.title,
+            reason or "routed to drop",
+            source=event.source,
+            score=score,
+        )
+    except Exception as exc:  # noqa: BLE001 - audit must never break the sweep
+        log.warning("audit: failed to record drop for %s/%r: %s",
+                    event.topic, event.title, exc)
+
+
 def _follow_upgrades(state: dict, event: Event, action: str) -> bool:
     """True when an active FOLLOW should turn this digest-bound item into a
     live push (at default priority).
@@ -349,10 +371,14 @@ def emit(
         # the same overnight deferral the engine path gets, so quiet hours are
         # equally safe to enable in legacy mode).
         action = legacy_action
+        drop_reason = "legacy routing requested drop" if action == "drop" else ""
         if action == "push" and _quiet_defers(legacy_priority):
             log.info("quiet hours: deferring %r to the morning digest", title)
             action = "digest"
+        before_mute = action
         action = _apply_mute(state, event, action)
+        if before_mute == "digest" and action == "drop":
+            drop_reason = _mute_drop_reason(state, event)
         if _follow_upgrades(state, event, action):
             _push(event, "default")
             action = "push"
@@ -360,16 +386,22 @@ def emit(
             _to_digest(state, event, score, digest_cfg)
         elif action != "drop":
             _push(event, legacy_priority)
+        else:
+            _record_drop(event, drop_reason, score)
         # Log under the caller's within-domain score so history is complete even
         # when the engine is off (the dashboard reads this regardless of mode).
         eventlog.record(state, event, action, score, priority_cfg)
         return state
 
     action = decision.action
+    drop_reason = decision.reason if action == "drop" else ""
     if action == "push" and _quiet_defers(decision.ntfy_priority):
         log.info("quiet hours: deferring %r to the morning digest", title)
         action = "digest"
+    before_mute = action
     action = _apply_mute(state, event, action)
+    if before_mute == "digest" and action == "drop":
+        drop_reason = _mute_drop_reason(state, event)
     if _follow_upgrades(state, event, action):
         _push(event, "default")
         action = "push"
@@ -377,6 +409,8 @@ def emit(
         _push(event, decision.ntfy_priority)
     elif action == "digest":
         _to_digest(state, event, decision.score, digest_cfg)
+    else:
+        _record_drop(event, drop_reason, decision.score)
     # "drop" -> intentionally nothing
     # Record every routed Event (push/digest/drop) with its global score so the
     # dashboard has a durable, cross-topic history that outlives the digest flush.

@@ -45,7 +45,7 @@ from typing import Optional
 
 import requests
 
-from . import ids, ntfy
+from . import audit, ids, ntfy
 
 log = logging.getLogger(__name__)
 
@@ -110,6 +110,7 @@ _ADD_RE = re.compile(r"^ADD:([0-9a-f]{16})$")
 _UNDO_RE = re.compile(r"^UNDO:([0-9a-f]{16})$")
 _IGNORE_RE = re.compile(r"^IGNORE:([0-9a-f]{16})$")
 _STATUS_RE = re.compile(r"^status\s+([A-Za-z0-9_-]+)\s*$", re.IGNORECASE)
+_EXPLAIN_RE = re.compile(r"^explain\s+([A-Za-z0-9_-]+)\s*$", re.IGNORECASE)
 
 
 def _utcnow() -> _dt.datetime:
@@ -280,6 +281,10 @@ def dispatch(commands: list[str], state: dict) -> dict:
             m = _STATUS_RE.match(cmd)
             if m:
                 cmd_status(m.group(1).lower(), state)
+                continue
+            m = _EXPLAIN_RE.match(cmd)
+            if m:
+                cmd_explain(m.group(1).lower())
                 continue
             log.warning("control: dropping unknown command %r", cmd[:80])
         except Exception as exc:  # noqa: BLE001 - one bad command never blocks the rest
@@ -472,6 +477,37 @@ def cmd_status(topic: str, state: dict,
         priority="high",
     )
     log.info("control: status reply sent for %s", topic)
+
+
+def _explain_message(topic: str) -> str:
+    """Concise diagnostic answer for ``explain <topic>`` admin commands."""
+    label = _topic_label(topic)
+    items = audit.recent(topic)
+    if not items:
+        return f"No recently dropped items for {label}."
+
+    lines = [f"Recently dropped items for {label}:"]
+    for item in items:
+        title = str(item.get("title") or "(untitled)")
+        reason = str(item.get("reason") or "dropped by routing")
+        score = item.get("score")
+        source = str(item.get("source") or "").strip()
+        prefix = f"{source}: " if source else ""
+        suffix = f" (score {score})" if score is not None else ""
+        lines.append(f"- {prefix}{title}{suffix}")
+        lines.append(f"  Reason: {reason}")
+    return "\n".join(lines)
+
+
+def cmd_explain(topic: str) -> None:
+    """Reply with the last few audited drops for ``explain <topic>``."""
+    ntfy.push(
+        title=f"Explain: {_topic_label(topic)}",
+        message=_explain_message(topic),
+        tags="mag",
+        priority="high",
+    )
+    log.info("control: explain reply sent for %s", topic)
 
 
 # --- Offer registry (ADD / UNDO / IGNORE) -----------------------------------
