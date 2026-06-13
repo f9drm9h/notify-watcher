@@ -264,6 +264,7 @@ def _to_digest(state: dict, event: Event, score: int, digest_cfg: Optional[dict]
             # keep their detail when digested; collector/news items have no body
             # and render title-only as before.
             "detail": event.body,
+            "preserve_detail": bool(event.metadata.get("preserve_detail")),
             # Lets the digest flush offer a [Follow <hot topic>] button for
             # the topic contributing the day's top item (docs/design/05).
             "topic": event.topic,

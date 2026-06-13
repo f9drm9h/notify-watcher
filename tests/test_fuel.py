@@ -143,14 +143,23 @@ class RunHealthContractTest(unittest.TestCase):
         self.assertIn("no weekly notice PDF", status["message"])
 
     def test_known_notice_is_a_true_success(self):
-        # The listing answering with the already-seen PDF is a healthy source.
-        state = {fuel.LAST_PDF_KEY: PDF_URL}
+        # The listing/PDF answering with the already-seen content is healthy.
+        pdf_bytes = b"same notice"
+        prices = fuel._parse_prices(SAMPLE_TEXT)
+        state = {
+            fuel.LAST_PDF_KEY: PDF_URL,
+            fuel.LAST_PDF_HASH_KEY: fuel._hash_pdf(pdf_bytes),
+            fuel.STATE_KEY: prices,
+        }
         with mock.patch.object(fuel.requests, "get",
-                               return_value=_Resp(text=LISTING_HTML)):
+                               side_effect=[_Resp(text=LISTING_HTML),
+                                            _Resp(content=pdf_bytes)]):
             state = fuel.run(state)
         status = self._status(state)
         self.assertTrue(status["ok"])
+        self.assertEqual(status["data_count"], len(prices))
         self.assertIn("last_data", state["topic_health"]["fuel"])
+        self.assertIn(fuel.LAST_PRICES_SEEN_AT_KEY, state)
 
     def test_unparseable_notice_reports_source_failed(self):
         state: dict = {}
@@ -164,13 +173,16 @@ class RunHealthContractTest(unittest.TestCase):
         self.assertTrue(status["source_failed"])
         self.assertIn("no prices parsed", status["message"])
         self.assertNotIn(fuel.LAST_PDF_KEY, state)  # dedup key kept for a retry
+        self.assertNotIn(fuel.LAST_PDF_HASH_KEY, state)
 
     def test_new_notice_reports_ok_with_price_count(self):
         state: dict = {}
+        pdf_bytes = b"new notice"
         page = mock.Mock()
         page.pages = [mock.Mock(extract_text=mock.Mock(return_value=SAMPLE_TEXT))]
         with mock.patch.object(fuel.requests, "get",
-                               side_effect=[_Resp(text=LISTING_HTML), _Resp()]), \
+                               side_effect=[_Resp(text=LISTING_HTML),
+                                            _Resp(content=pdf_bytes)]), \
                 mock.patch("pypdf.PdfReader", return_value=page):
             state = fuel.run(state)
         status = self._status(state)
@@ -178,6 +190,56 @@ class RunHealthContractTest(unittest.TestCase):
         self.assertEqual(status["data_count"], len(fuel.FUELS))
         self.assertIn("last_data", state["topic_health"]["fuel"])
         self.assertEqual(state[fuel.LAST_PDF_KEY], PDF_URL)
+        self.assertEqual(state[fuel.LAST_PDF_HASH_KEY], fuel._hash_pdf(pdf_bytes))
+        self.assertIn(fuel.LAST_PRICES_SEEN_AT_KEY, state)
+
+    def test_same_url_changed_prices_are_processed(self):
+        old_prices = fuel._parse_prices(SAMPLE_TEXT)
+        old_prices["Gasolina Premium"] = 330.00
+        state = {
+            fuel.LAST_PDF_KEY: PDF_URL,
+            fuel.LAST_PDF_HASH_KEY: fuel._hash_pdf(b"old notice"),
+            fuel.STATE_KEY: old_prices,
+        }
+        pdf_bytes = b"changed notice"
+        page = mock.Mock()
+        page.pages = [mock.Mock(extract_text=mock.Mock(return_value=SAMPLE_TEXT))]
+
+        def section(name):
+            return {"push_pct": 50.0} if name == "fuel" else {}
+
+        with mock.patch.object(fuel.requests, "get",
+                               side_effect=[_Resp(text=LISTING_HTML),
+                                            _Resp(content=pdf_bytes)]), \
+                mock.patch("pypdf.PdfReader", return_value=page), \
+                mock.patch.object(fuel.config, "section", side_effect=section):
+            state = fuel.run(state)
+
+        self.assertTrue(self._status(state)["ok"])
+        self.assertEqual(state[fuel.LAST_PDF_KEY], PDF_URL)
+        self.assertEqual(state[fuel.LAST_PDF_HASH_KEY], fuel._hash_pdf(pdf_bytes))
+        self.assertEqual(state[fuel.STATE_KEY]["Gasolina Premium"], 339.80)
+        buf = state.get("digest_buffer") or []
+        self.assertEqual(len(buf), 1)
+        self.assertTrue(buf[0]["preserve_detail"])
+        self.assertIn("Gasolina Premium: RD$339.80", buf[0]["detail"])
+        self.assertIn("GLP: RD$137.20", buf[0]["detail"])
+
+    def test_same_url_without_hash_parses_but_unchanged_prices_do_not_redigest(self):
+        prices = fuel._parse_prices(SAMPLE_TEXT)
+        state = {fuel.LAST_PDF_KEY: PDF_URL, fuel.STATE_KEY: prices}
+        pdf_bytes = b"same notice with newly stored hash"
+        page = mock.Mock()
+        page.pages = [mock.Mock(extract_text=mock.Mock(return_value=SAMPLE_TEXT))]
+        with mock.patch.object(fuel.requests, "get",
+                               side_effect=[_Resp(text=LISTING_HTML),
+                                            _Resp(content=pdf_bytes)]), \
+                mock.patch("pypdf.PdfReader", return_value=page):
+            state = fuel.run(state)
+
+        self.assertTrue(self._status(state)["ok"])
+        self.assertEqual(state[fuel.LAST_PDF_HASH_KEY], fuel._hash_pdf(pdf_bytes))
+        self.assertNotIn("digest_buffer", state)
 
     def test_gated_run_makes_no_claim(self):
         with mock.patch.dict(os.environ, {"NOTIFY_DAILY": ""}):
