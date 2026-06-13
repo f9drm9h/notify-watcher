@@ -6,10 +6,14 @@ Bundles up to three short sections into a SINGLE daily notification:
   - A curated fact - one vetted entry from a rotating knowledge-base channel
                      (science / technology / life skills / general knowledge)
 
-Also owns the standalone "Knowledge" push: one titled deep-dive entry from
-data/knowledge.json on EVERY watcher run (every 3 hours), independent of the
-daily gate. Guarded by a per-3-hour-window stamp so a re-run inside the same
-window never double-sends; see _run_knowledge.
+Also owns the standalone "Knowledge" push: a rich, multi-paragraph story
+generated on demand by Gemini on EVERY watcher run (every 3 hours), independent
+of the daily gate. The topic is chosen from data/knowledge_topics.json (500+
+topics across ten categories) using category rotation + a 30-day no-repeat
+window; the narrative itself is written fresh each time by summarize.brief, so
+no bodies are stored. If Gemini is unavailable the push is skipped cleanly and
+retried next run. Guarded by a per-3-hour-window stamp so a re-run inside the
+same window never double-sends; see _run_knowledge.
 
 Design choices that match the rest of the project:
   * Free / no key. The Wikimedia REST feed needs no auth; the KB channels are
@@ -30,6 +34,7 @@ learn_last_sent so a duplicate or drifted run never double-sends.
 from __future__ import annotations
 
 import datetime as _dt
+import json
 import logging
 import os
 import random
@@ -61,23 +66,40 @@ CHANNELS: list[tuple[str, str]] = [
 ]
 
 # --- "Knowledge" push (every run, not part of the daily rotation) -----------
-# Unlike the plain {text, src} channels above, knowledge.json entries are
-# structured ({id, category, title, body, tags}) and the pick has memory: the
-# id of each shown entry is stamped into state.json so nothing repeats within
-# KNOWLEDGE_REPEAT_DAYS, and a category pointer advances cyclically so
-# consecutive picks never cluster on one theme. One entry goes out as its own
-# push on every watcher run (the every-3-hours cron), independent of
-# NOTIFY_DAILY. The in-category pick is seeded with the current 3-hour window
-# (date + hour-of-day bucket): each window picks its own entry, while a re-run
-# inside the same window re-picks the same one. KNOWLEDGE_SENT_KEY stamps the
-# window so a re-run never double-sends at all.
+# A Gemini-powered story engine. knowledge_topics.json maps each category to a
+# list of topic prompts (no bodies); the pick has memory — the id (category:topic)
+# of each shown topic is stamped into state.json so nothing repeats within
+# KNOWLEDGE_REPEAT_DAYS, and a category pointer advances cyclically so consecutive
+# picks never cluster on one theme. On every watcher run (the every-3-hours cron,
+# independent of NOTIFY_DAILY) one topic is chosen and narrated fresh by Gemini.
+# The in-category pick is seeded with the current 3-hour window (date + hour-of-day
+# bucket): each window picks its own topic, while a re-run inside the same window
+# re-picks the same one. The chosen topic is recorded (and KNOWLEDGE_SENT_KEY
+# stamps the window) ONLY after Gemini returns a story, so a generation failure
+# leaves the window unstamped and the topic unconsumed and simply retries next run.
 KNOWLEDGE_LABEL = "Knowledge"
-KNOWLEDGE_FILE = "knowledge.json"
-KNOWLEDGE_SEEN_KEY = "knowledge_seen"  # {entry_id: "YYYY-MM-DD" last shown}
+KNOWLEDGE_FILE = "knowledge_topics.json"
+KNOWLEDGE_SEEN_KEY = "knowledge_seen"  # {topic_id: "YYYY-MM-DD" last shown}
 KNOWLEDGE_CATEGORY_KEY = "knowledge_last_category"
 KNOWLEDGE_SENT_KEY = "knowledge_last_sent"  # "YYYY-MM-DDTn" 3-hour window
 KNOWLEDGE_REPEAT_DAYS = 30
 KNOWLEDGE_WINDOW_HOURS = 3  # the watcher cron's cadence
+
+# Story generation budget. ~1024 output tokens comfortably covers four
+# substantial paragraphs; the result is clipped to KNOWLEDGE_CLIP_CHARS so a
+# long narrative stays under ntfy's ~4 KB message limit (clip on a sentence
+# boundary so it never ends mid-word).
+KNOWLEDGE_STORY_TOKENS = 1024
+KNOWLEDGE_CLIP_CHARS = 3500
+
+_STORY_SYSTEM = (
+    "You are a documentary narrator writing for an intelligent, curious adult. "
+    "Write rich, narrative, storytelling prose — never bullet points and never a "
+    "dry encyclopedia entry. Cover who was involved, what happened, why it "
+    "matters, what came before and after, and any compelling human drama. Write "
+    "at least four substantial paragraphs. Plain text only: no markdown, no "
+    "headings, no lists."
+)
 
 _REWORD_SYSTEM = (
     "You reword a single educational fact for a daily push notification. "
@@ -167,9 +189,34 @@ def _wotd_fact(day: _dt.date | None = None) -> tuple[str, str]:
 
 
 def _knowledge_entries() -> list[dict]:
-    """knowledge.json entries that carry everything the push needs."""
-    items = kb.load(kb.DATA_DIR / KNOWLEDGE_FILE, field="body")
-    return [e for e in items if e.get("id") and e.get("category") and e.get("title")]
+    """Flatten knowledge_topics.json into [{id, category, title}] topic entries.
+
+    The file maps each category to a list of topic prompt strings; there are no
+    stored bodies (Gemini writes the story per push). The id is a stable
+    ``category:title`` slug so the 30-day seen-map keeps working across runs. A
+    missing or malformed file yields [] (logged), so a bad KB never crashes the
+    run — the caller treats empty as "nothing to send".
+    """
+    path = kb.DATA_DIR / KNOWLEDGE_FILE
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError) as exc:
+        log.error("could not load knowledge topics %s: %s", KNOWLEDGE_FILE, exc)
+        return []
+    categories = data.get("categories") if isinstance(data, dict) else None
+    if not isinstance(categories, dict):
+        log.error("knowledge topics %s has no 'categories' map", KNOWLEDGE_FILE)
+        return []
+    entries: list[dict] = []
+    for category, topics in categories.items():
+        if not isinstance(topics, list):
+            continue
+        for topic in topics:
+            if isinstance(topic, str) and topic.strip():
+                title = topic.strip()
+                entries.append({"id": f"{category}:{title}",
+                                "category": str(category), "title": title})
+    return entries
 
 
 def _knowledge_recent(state: dict, day: _dt.date) -> dict[str, _dt.date]:
@@ -195,53 +242,89 @@ def _knowledge_window(now: _dt.datetime) -> str:
     return f"{now.date().isoformat()}T{now.hour // KNOWLEDGE_WINDOW_HOURS}"
 
 
-def _knowledge_fact(state: dict, now: _dt.datetime | None = None) -> tuple[str, str]:
-    """(title, body) for this run's knowledge entry; records the pick in state.
+def _knowledge_pick(state: dict, now: _dt.datetime | None = None) -> dict | None:
+    """The topic entry to narrate this run, or None when the KB is empty.
 
-    Rotates to the next category (sorted, cyclic after the one stamped in
-    state) that still has an entry unseen within KNOWLEDGE_REPEAT_DAYS, then
-    picks one of its eligible entries with an RNG seeded by the current
-    3-hour window - each window picks its own entry, a re-run inside the
-    window re-picks the same one. If every entry in the KB was shown recently,
-    the least recently shown one is reused so the push never goes silent.
+    Pure selection — does NOT mutate state. Rotates to the next category
+    (sorted, cyclic after the one stamped in state) that still has a topic
+    unseen within KNOWLEDGE_REPEAT_DAYS, then picks one of its eligible topics
+    with an RNG seeded by the current 3-hour window — each window picks its own
+    topic, a re-run inside the window re-picks the same one. If every topic was
+    shown recently, the least recently shown one is reused so the push is never
+    starved. Recording the pick is the caller's job (_knowledge_commit), done
+    only after a story is successfully generated.
     """
     now = now or _dt.datetime.now()
-    day = now.date()
     entries = _knowledge_entries()
     if not entries:
-        return "", ""
+        return None
 
-    recent = _knowledge_recent(state, day)
+    recent = _knowledge_recent(state, now.date())
     categories = sorted({str(e["category"]) for e in entries})
     last = str(state.get(KNOWLEDGE_CATEGORY_KEY, ""))
     start = (categories.index(last) + 1) % len(categories) if last in categories else 0
     rotation = categories[start:] + categories[:start]
 
     rng = random.Random(_knowledge_window(now))
-    chosen: dict | None = None
     for category in rotation:
         eligible = [e for e in entries
                     if str(e["category"]) == category and str(e["id"]) not in recent]
         if eligible:
-            chosen = rng.choice(eligible)
-            break
-    if chosen is None:
-        chosen = min(entries, key=lambda e: recent.get(str(e["id"]), _dt.date.min))
+            return rng.choice(eligible)
+    return min(entries, key=lambda e: recent.get(str(e["id"]), _dt.date.min))
 
-    # Rebuilding the seen-map from `recent` also prunes stamps that expired.
-    seen = {entry_id: shown.isoformat() for entry_id, shown in recent.items()}
+
+def _knowledge_commit(state: dict, chosen: dict, day: _dt.date) -> None:
+    """Record `chosen` as shown today and advance the category pointer.
+
+    Rebuilding the seen-map from `recent` also prunes stamps that expired.
+    """
+    recent = _knowledge_recent(state, day)
+    seen = {topic_id: shown.isoformat() for topic_id, shown in recent.items()}
     seen[str(chosen["id"])] = day.isoformat()
     state[KNOWLEDGE_SEEN_KEY] = seen
     state[KNOWLEDGE_CATEGORY_KEY] = str(chosen["category"])
-    return str(chosen["title"]), str(chosen["body"])
+
+
+def _clip_story(text: str, limit: int = KNOWLEDGE_CLIP_CHARS) -> str:
+    """Trim a story to `limit` chars on a sentence boundary (never mid-word)."""
+    text = (text or "").strip()
+    if len(text) <= limit:
+        return text
+    head = text[:limit]
+    cut = max(head.rfind(". "), head.rfind("! "), head.rfind("? "))
+    if cut > limit // 2:
+        return head[:cut + 1]
+    return head.rsplit(" ", 1)[0].rstrip() + "…"
+
+
+def _generate_story(topic: str) -> str | None:
+    """A rich, multi-paragraph narrative for `topic` via Gemini, or None.
+
+    Delegates to summarize.brief (Gemini first, Anthropic fallback, both
+    optional), which never raises and returns None when no provider key is set
+    or every call fails — so a flaky/absent LLM skips the push cleanly rather
+    than crashing the sweep. The result is clipped to fit ntfy's message limit.
+    """
+    prompt = (
+        f"Write a rich, narrative, storytelling account of {topic}. Cover who "
+        "was involved, what happened, why it matters, what came before and "
+        "after, and any compelling human drama. Write at least four substantial "
+        "paragraphs. Do not use bullet points. Write as a documentary narrator "
+        "for an intelligent, curious adult."
+    )
+    story = summarize.brief(_STORY_SYSTEM, prompt, max_tokens=KNOWLEDGE_STORY_TOKENS)
+    return _clip_story(story) if story else None
 
 
 def _run_knowledge(state: dict, now: _dt.datetime | None = None) -> dict:
-    """Send one knowledge entry per 3-hour window; runs on every cycle.
+    """Send one Gemini-narrated knowledge story per 3-hour window; every cycle.
 
-    The entry's title is the push header and the body goes out verbatim
-    (never LLM-reworded). The window stamp in KNOWLEDGE_SENT_KEY makes a
-    re-run inside the same window a no-op.
+    Picks the topic, then asks Gemini for the narrative. The topic is recorded
+    and the window stamped ONLY after a story comes back, so a generation
+    failure leaves both untouched and the next run retries (never crashing the
+    sweep). The window stamp in KNOWLEDGE_SENT_KEY makes a re-run inside the
+    same window a no-op.
     """
     now = now or _dt.datetime.now()
     window = _knowledge_window(now)
@@ -249,15 +332,22 @@ def _run_knowledge(state: dict, now: _dt.datetime | None = None) -> dict:
         log.info("knowledge push already sent this window; skipping")
         return state
 
-    title, body = _knowledge_fact(state, now)
-    if not body:
-        log.warning("knowledge KB has nothing to send; skipping")
+    chosen = _knowledge_pick(state, now)
+    if chosen is None:
+        log.warning("knowledge KB has no topics to send; skipping")
         return state
 
+    story = _generate_story(chosen["title"])
+    if not story:
+        log.warning("knowledge story generation failed for %r; retrying next run",
+                    chosen["title"])
+        return state
+
+    _knowledge_commit(state, chosen, now.date())
     events.emit(
         state,
-        title=title,
-        body=body,
+        title=chosen["title"],
+        body=story,
         topic="learn",
         severity="low",
         source="Learning",
@@ -265,7 +355,7 @@ def _run_knowledge(state: dict, now: _dt.datetime | None = None) -> dict:
         legacy_priority="low",
         legacy_action="push",
     )
-    log.info("sent knowledge push for window %s", window)
+    log.info("sent knowledge story %r for window %s", chosen["title"], window)
     state[KNOWLEDGE_SENT_KEY] = window
     return state
 
