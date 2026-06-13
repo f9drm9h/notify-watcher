@@ -70,6 +70,7 @@ from .topics import (
     visa_bulletin,
     watchdog,
     weather,
+    wikiquote,
     wwdc,
     youtube,
 )
@@ -171,6 +172,10 @@ TOPICS: list[tuple[str, Topic]] = [
     # daily-only too. Independent of digest, so order among the daily-only
     # topics doesn't matter.
     ("learn", learn.run),
+    # wikiquote fires every cycle (guarded per 3-hour window in state, like
+    # learn's knowledge push): a real Wikiquote quote from a curated figure,
+    # wrapped in a fresh Gemini-narrated story. Standalone, not daily-gated.
+    ("wikiquote", wikiquote.run),
     # energy_learn is daily-only too: one calm educational "Today's spark" push.
     # Order doesn't matter among the daily-only topics; it reads the event_log
     # (populated by the collectors earlier this run) for its occasional news slot.

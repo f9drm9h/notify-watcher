@@ -68,6 +68,7 @@
       { "topic": "air_quality", "severity": "moderate", "score": 60 },
       { "topic": "health_tip", "score": 60 },
       { "topic": "learn", "score": 60 },
+      { "topic": "wikiquote", "score": 60 },
       { "topic": "energy_learn", "score": 60 },
       { "topic": "recap", "score": 60 },
       { "topic": "life_dashboard", "score": 60 },
