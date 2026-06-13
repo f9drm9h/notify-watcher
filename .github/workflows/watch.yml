@@ -29,7 +29,7 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
-  contents: write  # needed to commit state.json back to the repo
+  contents: write  # needed to commit runtime state files back to the repo
 
 jobs:
   run:
@@ -119,16 +119,17 @@ jobs:
         run: |
           # data/spending.json.enc is created by the spending topic on the
           # runner, so it must ride the state commit or every run re-parses from
-          # scratch. git status --porcelain (unlike git diff) also sees it while
-          # untracked.
-          if git diff --quiet -- state.json docs/dashboard \
+          # scratch. audit.json is also runner-written and must persist across
+          # ephemeral runners for explain diagnostics. git status --porcelain
+          # (unlike git diff) also sees files while untracked.
+          if git diff --quiet -- state.json audit.json docs/dashboard \
              && [ -z "$(git status --porcelain -- data/spending.json.enc)" ]; then
-            echo "state.json, dashboard and spending log unchanged, nothing to commit"
+            echo "state.json, audit.json, dashboard and spending log unchanged, nothing to commit"
             exit 0
           fi
           git config user.name  "notify-watcher-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add state.json docs/dashboard
+          git add state.json audit.json docs/dashboard
           if [ -f data/spending.json.enc ]; then git add data/spending.json.enc; fi
           git commit -m "chore: update state + dashboard [skip ci]"
           # Push with rebase-and-retry: if a concurrent/queued run advanced the

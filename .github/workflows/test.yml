@@ -8,6 +8,7 @@ on:
     branches: ["**"]
     paths-ignore:
       - "state.json"  # the runner's "chore: update state" commits don't need CI
+      - "audit.json"  # same: short-term explain diagnostics updated by watcher
   pull_request:
   workflow_dispatch:
 
