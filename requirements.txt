@@ -4,3 +4,4 @@ feedparser>=6.0
 pypdf>=4.0  # EDEESTE publishes its weekly outage program as a PDF
 cryptography>=42.0  # Fernet encryption of the committed spending log
 anthropic>=0.40  # optional WWDC summary; only used when ANTHROPIC_API_KEY is set
+brotli>=1.1  # lets requests decode br responses, so deals.py headers can advertise a Chrome-realistic Accept-Encoding

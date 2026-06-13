@@ -33,6 +33,7 @@ from __future__ import annotations
 
 import json
 import logging
+import os
 import re
 
 import requests
@@ -44,14 +45,51 @@ log = logging.getLogger(__name__)
 
 TOPIC = "deals"
 STATE_KEY = "product_prices"  # { "<url>": <last_price_float> }
-# Some stores 403 a bare requests User-Agent; present as a normal browser.
+# Some stores 403 a bare requests User-Agent, so present as a normal browser:
+# beyond the UA, send the header set a real Chrome navigation carries (Accept,
+# client hints, Sec-Fetch-*). This clears *basic* Cloudflare/Akamai bot checks;
+# it cannot defeat IP-reputation/TLS-fingerprint blocks (see the Costco note
+# below) — for those, set DEALS_PROXY (see _proxies). Accept-Encoding advertises
+# "br" to match a real Chrome: requirements.txt pins the brotli package so the
+# response stays decodable. "zstd" is deliberately omitted (no zstandard decoder
+# installed) — advertising an encoding we can't decode would hand us junk bytes.
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-        "(KHTML, like Gecko) Chrome/124.0 Safari/537.36"
+        "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    ),
+    "Accept": (
+        "text/html,application/xhtml+xml,application/xml;q=0.9,"
+        "image/avif,image/webp,image/apng,*/*;q=0.8"
     ),
     "Accept-Language": "en-US,en;q=0.9",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Upgrade-Insecure-Requests": "1",
+    "Sec-Ch-Ua": '"Chromium";v="124", "Google Chrome";v="124", "Not-A.Brand";v="99"',
+    "Sec-Ch-Ua-Mobile": "?0",
+    "Sec-Ch-Ua-Platform": '"Windows"',
+    "Sec-Fetch-Dest": "document",
+    "Sec-Fetch-Mode": "navigate",
+    "Sec-Fetch-Site": "none",
+    "Sec-Fetch-User": "?1",
+    "Connection": "keep-alive",
 }
+
+
+def _proxies() -> dict | None:
+    """Optional egress proxy for stores that block the runner's data-center IP.
+
+    Costco and a few others sit behind Akamai/Cloudflare bot protection that
+    403s by IP reputation no matter what headers we send, so the only real fix
+    is a different source IP. Rather than bake in a free public proxy — dead
+    half the time, and a man-in-the-middle on every page we read — we honor an
+    OPERATOR-supplied one: set ``DEALS_PROXY`` (or ``DEALS_PROXY_URL``) to a
+    trusted rotating/residential endpoint and every fetch routes through it;
+    leave it unset and fetches go direct, exactly as before. (requests also
+    honors the standard ``HTTPS_PROXY`` env on its own.)
+    """
+    url = os.environ.get("DEALS_PROXY") or os.environ.get("DEALS_PROXY_URL")
+    return {"http": url, "https": url} if url else None
 
 # --- Multi-retailer coverage notes -----------------------------------------
 # This topic is store-agnostic: any URL added to watchlist.json["products"]
@@ -80,11 +118,16 @@ HEADERS = {
 #   * Costco (p/... product pages): behind Akamai bot protection — returns 403
 #     to any non-browser client (verified 2026-06-11 with plain requests, full
 #     Chrome header sets, and curl alike), and a GitHub Actions data-center IP
-#     fares no better. There is no static JSON-LD to read even on success. The
-#     Highland Tactical Foxtrot entry keeps the Costco URL as its primary
-#     source so it starts working the moment Costco unblocks; until then each
-#     run logs the failed fetch and the Amazon listing (same `group`) carries
-#     the price tracking.
+#     fares no better. The full browser header set HEADERS now sends clears
+#     *basic* bot checks but NOT Akamai's IP-reputation block, which keys off the
+#     source IP regardless of headers. The only real fix is a different egress
+#     IP: set the DEALS_PROXY env (see _proxies) to a trusted rotating/residential
+#     proxy and the fetch routes through it. (A free public proxy is deliberately
+#     NOT baked in — they're unreliable and a man-in-the-middle risk.) There is
+#     also no static JSON-LD to read even on a 200. Until a proxy is configured,
+#     the Highland Tactical Foxtrot entry keeps the Costco URL as its primary
+#     source so it resumes the moment Costco is reachable; each run logs the 403
+#     as a bot wall and the Amazon listing (same `group`) carries the tracking.
 
 
 def _iter_jsonld(soup: BeautifulSoup):
@@ -297,7 +340,17 @@ def run(state: dict) -> dict:
         name = str(product.get("name") or url).strip()
         target = product.get("target_price")
         try:
-            resp = requests.get(url, headers=HEADERS, timeout=30)
+            resp = requests.get(url, headers=HEADERS, proxies=_proxies(),
+                                timeout=30)
+            if resp.status_code in (403, 429):
+                # Akamai/Cloudflare IP block (typical for Costco from a CI IP).
+                # Report it as a bot wall, not a generic crash, and move on: a
+                # grouped sibling source (e.g. Amazon) still carries the price,
+                # and DEALS_PROXY can route around it when configured.
+                log.warning("%r: bot-walled (HTTP %d) at %s; set DEALS_PROXY to "
+                            "fetch via a trusted proxy", name, resp.status_code, url)
+                last_check_error = f"{name}: HTTP {resp.status_code} (bot wall)"
+                continue
             resp.raise_for_status()
             found = _extract_price(resp.text)
             if found is None and "amazon." in url:
