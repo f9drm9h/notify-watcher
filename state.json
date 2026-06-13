@@ -169,6 +169,42 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day- Tom Holland starrer to arrive sooner in India, release date announced - WION",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQSEtuVEVDLU0wbTlKYmtvMGdsNUVZZnpqaUFHYjVqRl9PN3FQRjlWeEhHcF9fNFMxQndtMnhLYmJSSldlR2V2MGpSZ0pWbXk0T1Bfd0lUQWJvR3NBdmVGMXJiWlc1amZsYnB0Y2p2d1lWbUIyOGdsdUZTRXQyZWRuemozOU9UVDVqZmx4a0tfTENuS19RSENnTUgtNjNIOV9NTE9Eek5wWlRxS3hwTmhyZGVCaXI0LUFMYVFDdUpIazhhVXFYcXg3S1VqN3AyZ2tWVEsxdVpSakRqSE5sOHotaUlFSWlhWC0yc2Jj0gHwAUFVX3lxTE1Jc1ZCLS1VeVBPaE4zYlhNaG9KbkxpTFBLcmhWdFRuUHFKaTJjN3dkaGxMRnlvQVM3djFhdmtrSUJaTUJBZExucTRLdl9XeE5jTXBReUw3cUYydjFHWE1ZbzZDbExkSUpwckwzb3Fmc2dQVmtIT3BRaUJEZUoyaXE3TTh6cTZJak5tc1NjQ1phaEJJb3BRTjVkeXJ6TjRBbVJwVGg3ZzN5X20xRUNSeHZwZkE3TkhockFHSHl3Y0VIcmJ4SHBPeUg3MEk3aFE2WkR0eGpJbTBDVENVSkVzWTh0SU85TUxnLTVJQjF6S19LcA?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day Chinese Poster Released As Synopsis Confirms Peter Parker's New [Spoilers] - IMDb",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0Y0dmOUNTd0NaZVFkejNMeDVLWmh4NHk3S29zVVd5QTRiSXJ3aGgyaEYxSlJpSF9nZm9wV1FMS1VwblMybHRkNXBVRkFuUQ?oc=5"
+    },
+    {
+      "detail": "DOP 6,895.00 (was DOP 8,595.00, -20%)",
+      "preserve_detail": false,
+      "score": 45,
+      "source": "La Sirena",
+      "title": "La Sirena deal: Air Fryer Black & Decker 5.7 Lt Hf5055b",
+      "topic": "groceries",
+      "url": "https://www.sirena.do/b-d-air-fryer-5-7lt-hf5055b-1990576/p"
+    },
+    {
+      "detail": "DOP 795.00",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "La Sirena",
+      "title": "La Sirena deal: Audifono Grande Argom Hs-0075",
+      "topic": "groceries",
+      "url": "https://www.sirena.do/argom-audif-grande-hs-0075-1593329/p"
     }
   ],
   "digest_last_sent": "2026-06-13",
@@ -284,116 +320,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "'The Batman: Part II' News - Everything We Know About the Upcoming Sequel - ELLE",
-      "topic": "movies",
-      "ts": "2026-06-09T23:24:57.126369+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPbkE5MWVJSGVMUDZYc3lrelJXb016cXpPRjRubmRWdFRfN0h2NTdLVUkteGxWMkhqcHRpYjd0djJOdEhlSjBqa2hsRXZwVmJXcHc2QW5zbWdOUjJvWnRGVUpCUFN0UHFfMGZES2lwbUhfb2tpc0ZXSVcybzh3N0E4Qk5yWlo5SzJZMTY1aHpvUzJwRDY4N3c?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman Part II\u2019 supporting cast grows as Sebastian Stan, Scarlett Johansson join Robert Pattinson-led sequel - Gold Derby",
-      "topic": "movies",
-      "ts": "2026-06-09T23:24:57.126593+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOdTVpaU5nczVTWHFBdWdjY2l4ZjAtSkhvcGQtU2tXaTg3NDROVWJYR015WHhiNlZCWjNaNm1oT3dHeW1DeFlFV2JYRjVYLVVuN0dLTmxndUFtcGpRX2lPR2xzVjF5U2ZaZlFxYm1Cak9JcVVXblF4OXJ4RWVEN3AycjdQZXVYcnJJMXozeDZpdXA2S3N0ZkltTm50RkNIWXhHV1NJZ2tiY0dXRHlraUZJallsd0lIV0VqVkwxZko4Yk9iakMyM3hZ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Reveals Snowy First Look at \u2018The Batman: Part 2\u2019 Batmobile - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-09T23:24:57.126930+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAwanp0TUc5d2l1VG1sV3BiaXRLN0c4T0ZaUnVwaGZzbHZPX2xBZ2RyalNNaUtJVWgxUkNCem5SNGNReXZTRzRnemQyS0R5UQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman: Part 2 has finally started filming as it gets snowy first look after long delay - Digital Spy",
-      "topic": "movies",
-      "ts": "2026-06-09T23:24:57.127247+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVUFaWGVmdVhkZlFHV19abjExNmhLT0RWV1lNNVNKN0UxN0o2TGlWazFMeTdUV0hkTnlSdlRSRFExbHRWb0JkUlJHa0pLZUFvYVp0dzV1NERaNDhJeUxzSXBLY0FBbnRwWEVLczNLVF8xUG5VREstb29Rb2lOTFZ2LVhzMF8?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The rumors are true: The Batman 2 is set in winter as Matt Reeves delivers perfect first look - GamesRadar+",
-      "topic": "movies",
-      "ts": "2026-06-09T23:24:57.175036+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPZmNCY3FyQUhiNFUxWWd5VkR3UGgxaTE5eXdadC1MMEJwVWZoQU1BdTNoR0t0bm1RRU9RNXNnQll0Smp2ZTY3M05jNjluTGEyS2hUUjBSSksxSHgzb3prMmJMVW02b3EzaTYyVVU2dWVINTlmTHZtMGMyMlJsS1hGaU5hdWRpbERhbUFSU241Tm9PalhxVlBWR0tBUGhHeXlfZnBOMkVyMGwwU2FCMzJLa2FwNDRHWXNwSmExTk9OQlZlUkt3c1hOaHBXRjNMSWpXSEQ2RE5fSTBRRTFE?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman 2's Setting Confirmed In First Official Behind-The-Scenes Photos - SlashFilm",
-      "topic": "movies",
-      "ts": "2026-06-09T23:24:57.225528+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPUnc4empGTmctT3A5WVktR2dtNTFkbTFHSzdJTGZkYkZjMG5TNEpDcnVIT0V5RmJLU2hjWjV2TlRmN2VWSG1wR3pydTlLTHBFYWd0dGtLc3RyNFR3dmFIdDZ3WW1FWk83UE5YOVhjajNMUnU2ajduYkx3VTJyeEJ1WVVzT0NLdXBnN0J4RHNnRFZWRkFLSHVr?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Reveals First Look at \u2018The Batman Part 2\u2019 \u2013 Plot Detail Revealed - Men's Journal",
-      "topic": "movies",
-      "ts": "2026-06-09T23:24:57.226006+00:00",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1jMU54WDhXeDZSdEZGekFpb1NzNVpzemh6NzFFb2RGc1NsRzFTN1JaWjZfZ2lsdEFjWXpEMkhmLUEzRnA4aTVYa2lodjJEN3lsbm1pTHFlRXd2MHc3STdxWlFVazBqWTBuWHpZcVRFT09STUFwNmNB?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman: Part II\u2019 First Look Teases a Batmobile Upgrade and the Sequel\u2019s Setting - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-09T23:24:57.226275+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5Kb0JDQkZYdU9XVlVEYTdma0ljNGMxUDRSX241WDg5STlSNTFmak1FTmJyMFRsbjRkamp6Yk45TWZDS3hhQ29FTnBSX3NWZw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 33,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Reveals Snowy First Look at \u2018The Batman: Part 2\u2019 Batmobile - Variety",
-      "topic": "movies",
-      "ts": "2026-06-09T23:24:57.273942+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPUDZfY1dCX2wyRXNtUlp2X1dJeXhEeS1GcGo4SThzMUZRYUdtTFJHSTBlUE1adlRlcVJSd2ZBUFlvLTBISmN0SmJmdGxZb1hOV1U4a09iV1hUNTc2bHppY3NJRjJqVkNkcm95MjZhcFZrOHNZUV9FRW1MYkg1QWpDVjVyTHVrcU81ckpsak1UZw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman: Part II\u2019 First Look Teases a Batmobile Upgrade and the Sequel\u2019s Setting - TheWrap",
-      "topic": "movies",
-      "ts": "2026-06-09T23:24:57.274450+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOOHlvdEtjT0RFTXl4aUpCbnFXV09SQ0xKcXJrdTdvajN1andjaW5tYXpISUFyc0NibUp2eExodXptQ1ltYTU0R1ZQX1JXZ0MxWm5YZGhBa2dvSm52dHRzTmxYZ2VxZUFXejdDbjVkaUtxZDZyYjk5WmRuSWxNdVpmc29VQWo5bXdfZmZkWQ?oc=5"
-    },
     {
       "action": "push",
       "detail": "",
@@ -5929,6 +5855,126 @@
       "topic": "gutenberg",
       "ts": "2026-06-13T08:22:30.662117+00:00",
       "url": ""
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "9a2720034867a6d8",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday Will Feature 7 Fantastic Four Characters (Confirmed) - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-13T08:55:55.216941+00:00",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1hNmFJQnM4RUFEN291OWVvM0pMY3lMWWxBX2lsSzBJOGJrRXd5bG54THhMNWxlcVE5M1I5bG5OWDE5ck1FQ2dlSHFBWFVmeHlPN3lfLVVGeWJLMkt0cjJjVElxdE9DdDItT0tFMlRnRkhMUC1ySzZoZDV4UFo1Zw?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "e0fadba66b33a4c6",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Marvel makes the Avengers: Doomsday announcement nobody wanted to hear - Bam Smack Pow",
+      "topic": "movies",
+      "ts": "2026-06-13T08:55:55.217734+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMmc4djBiTndNX0dONlB6amExWnRZc2tQQmZqMll3T2p2a1N3SnlEaEI0TnhOSjlRR1RHRl9GUm9iQkV6X2JmcnNrNjU0QzU5bWN0SFlWV090blZjNWVvY25aNkE2YkJXbnNsMWtXUF9uQ29xaXZMQ1FpRVlxQlhDenl3cHRYV1k2QlZHaDZB?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "f05416c45a0cc593",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day- Tom Holland starrer to arrive sooner in India, release date announced - WION",
+      "topic": "movies",
+      "ts": "2026-06-13T08:55:55.753811+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQSEtuVEVDLU0wbTlKYmtvMGdsNUVZZnpqaUFHYjVqRl9PN3FQRjlWeEhHcF9fNFMxQndtMnhLYmJSSldlR2V2MGpSZ0pWbXk0T1Bfd0lUQWJvR3NBdmVGMXJiWlc1amZsYnB0Y2p2d1lWbUIyOGdsdUZTRXQyZWRuemozOU9UVDVqZmx4a0tfTENuS19RSENnTUgtNjNIOV9NTE9Eek5wWlRxS3hwTmhyZGVCaXI0LUFMYVFDdUpIazhhVXFYcXg3S1VqN3AyZ2tWVEsxdVpSakRqSE5sOHotaUlFSWlhWC0yc2Jj0gHwAUFVX3lxTE1Jc1ZCLS1VeVBPaE4zYlhNaG9KbkxpTFBLcmhWdFRuUHFKaTJjN3dkaGxMRnlvQVM3djFhdmtrSUJaTUJBZExucTRLdl9XeE5jTXBReUw3cUYydjFHWE1ZbzZDbExkSUpwckwzb3Fmc2dQVmtIT3BRaUJEZUoyaXE3TTh6cTZJak5tc1NjQ1phaEJJb3BRTjVkeXJ6TjRBbVJwVGg3ZzN5X20xRUNSeHZwZkE3TkhockFHSHl3Y0VIcmJ4SHBPeUg3MEk3aFE2WkR0eGpJbTBDVENVSkVzWTh0SU85TUxnLTVJQjF6S19LcA?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "6680747c7fe65ca6",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day Chinese Poster Released As Synopsis Confirms Peter Parker's New [Spoilers] - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-13T08:55:55.755225+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0Y0dmOUNTd0NaZVFkejNMeDVLWmh4NHk3S29zVVd5QTRiSXJ3aGgyaEYxSlJpSF9nZm9wV1FMS1VwblMybHRkNXBVRkFuUQ?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "4e006d0aa94b1109",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Beloved DC star announces reduced role in The Batman - Part II - Bam Smack Pow",
+      "topic": "movies",
+      "ts": "2026-06-13T08:55:57.332290+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9tWmIzeXYzQnVrcWd6Y2MzT2ktSTZCVVduZWRsVlp0NGZnUmhjWWhMOFYxZ1I3NFFyR0ktLThHMTZpZnBpODJEX0tJZFFfUmxJZkVzWjR2aUNTZTUtOHMyTlFwSHhGTkFh?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Can't Stop - Red Hot Chili Peppers\n(because you like Nirvana)",
+      "id": "2f0cdc5ae63b1153",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-13T08:56:03.026686+00:00",
+      "url": "https://www.deezer.com/track/725971"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 6,895.00 (was DOP 8,595.00, -20%)",
+      "id": "f193d5ef670b79cb",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Air Fryer Black & Decker 5.7 Lt Hf5055b",
+      "topic": "groceries",
+      "ts": "2026-06-13T08:56:42.978104+00:00",
+      "url": "https://www.sirena.do/b-d-air-fryer-5-7lt-hf5055b-1990576/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 795.00",
+      "id": "d8d3160a4893c305",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Audifono Grande Argom Hs-0075",
+      "topic": "groceries",
+      "ts": "2026-06-13T08:56:42.978754+00:00",
+      "url": "https://www.sirena.do/argom-audif-grande-hs-0075-1593329/p"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 5:12 AM - max 60deg, SW to NE. Look up!",
+      "id": "900bba8ec6d1ab56",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-06-13T08:57:16.312988+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cAlmost every evening [in their common early-Cubist years, in Paris], either I went to Braque's studio or Braque came to mine. Each of us had to see what the other had done during the day. We criticized each other's paintings. A canvas wasn't less both of us fear p. 311\u201d\n\u2014 Pablo Picasso\n\nIt was in the vibrant, intoxicating crucible of early 20th-century Paris that a radical new vision of art began to coalesce, forged in the intense, almost symbiotic relationship between two young, ambitious painters. Pablo Picasso, a prodigiously talented Spaniard, already a legend in his own mind and well on his way to becoming one in the wider world, found an unexpected intellectual and creative sparring partner in Georges Braque, a quieter, more methodical Frenchman. This period, roughly from 1907 to 1914, would be marked by a relentless pursuit of new ways to represent reality, driven by a shared dissatisfaction with the limitations of traditional perspective and the fleeting impressions of Impressionism. They were explorers, venturing into uncharted territory, and their canvases became battlegrounds for ideas, experiments, and revolutionary breakthroughs. Picasso\u2019s quote, \"Almost every evening, either I went to Braque's studio or Braque came to mine. Each of us had to see what the other had done during the day. We criticized each other's paintings. A canvas wasn't less both of us fear,\" encapsulates the spirit of this extraordinary collaboration, a dynamic exchange that would fundamentally alter the course of modern art.\n\nThe world outside their studios was a cauldron of change, mirroring the revolutionary spirit brewing within. Europe stood on the precipice of World War I, its grand empires teetering. Scientific advancements, from Einstein's theory of relativity to Freud's exploration of the subconscious, were challenging long-held certainties about time, space, and human nature. Photography and cinema were redefining how people perceived reality, freeing painters from the need for mere literal representation. Picasso and Braque, acutely aware of these shifts, sought to create an art that reflected the fractured, multifaceted experience of modern life. They dismantled objects, flattening them, fragmenting them, and reassembling them from multiple viewpoints on a single canvas \u2013 a radical departure that would come to be known as Cubism. This wasn't merely an aesthetic choice; it was a philosophical statement, an attempt to capture the essence of an object rather than its superficial appearance, to explore its underlying structure and the very nature of perception. Their late-night critiques, their shared anxieties, and their mutual admiration fueled this groundbreaking journey.\n\nThe resonance of Picasso's words extends far beyond the history of Cubism. It speaks to the fundamental human need for collaboration, for intellectual exchange, and for the courage to challenge established norms. In a world increasingly defined by specialization and individual achievement, the story of Picasso and Braque reminds us of the power of collective endeavor, of the synergy that arises when two brilliant minds converge on a common goal. Their fearless experimentation, born of intense discussion and shared vulnerability, serves as a timeless testament to the iterative nature of creativity.",
+      "id": "ceb30cd31ec52bf7",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Pablo Picasso",
+      "topic": "wikiquote",
+      "ts": "2026-06-13T08:57:23.083235+00:00",
+      "url": ""
     }
   ],
   "fda_seen_ids": [
@@ -5976,7 +6022,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-13-19-JUN-DE-2026-ESCENARIO-B.pdf",
   "fuel_last_pdf_hash": "ae670879fa8033736dfb39d8d8165a100cf1ca299cd8559e978132c494580ca8",
-  "fuel_last_prices_seen_at": "2026-06-13T03:40:09.956718+00:00",
+  "fuel_last_prices_seen_at": "2026-06-13T08:57:14.536692+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -6319,6 +6365,8 @@
       "1b7d9e5ab11b51a5"
     ],
     "La Sirena": [
+      "ccdf14fe2838bc6a",
+      "150b23e9b7285068",
       "9b91acac8f6eb020",
       "8acd37e689478ac0",
       "33c6203978e36a44",
@@ -6592,6 +6640,7 @@
     "iPadOS 12.5.8 (16H88)"
   ],
   "iss_seen_passes": [
+    "251d9ad4a2141add",
     "6cfb9f937b466651",
     "abc1247ce14fea03",
     "5835522bc9b14a40",
@@ -6624,7 +6673,7 @@
   "last_run": {
     "failed": 0,
     "ok": 47,
-    "ts": "2026-06-13T08:20:25.945787+00:00"
+    "ts": "2026-06-13T08:55:51.914867+00:00"
   },
   "launch_seen_ids": [
     "4cc755b9dfaf231c",
@@ -6635,6 +6684,16 @@
   "learn_last_sent": "2026-06-13",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "27923f9aeb491ee6",
+      "f4726f25f41e4afd",
+      "cb09271ec2d6fb47",
+      "9728dd411600f9cb",
+      "2792b866a07049f7",
+      "1e4d239e0fce4aaf",
+      "9a7c827aec89f777",
+      "d2d99efe0c012cc9",
+      "c8b8b30cc442c7e4",
+      "b39c3e92489d9066",
       "c1542618c9269e46",
       "c03749ee283b3bfb",
       "d2c7cd6f9bc275a5",
@@ -6724,17 +6783,7 @@
       "914f75dc351f3bd0",
       "308e6637524fa96f",
       "cb592435e3d10e99",
-      "c5ec18dbea541e73",
-      "4d0cc35a2b483935",
-      "ca07082003399bce",
-      "044eed6030561107",
-      "ae04897e16bef83c",
-      "9a9d458bb3c33ae8",
-      "8ab65481450ad70d",
-      "e9eec9c30a2e69d9",
-      "6b1d1b57350d815a",
-      "994f766c1e25085e",
-      "ee13098f45c577da"
+      "c5ec18dbea541e73"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -6936,6 +6985,18 @@
       "6d3409e6a4b16c01"
     ],
     "Spider-Man: Brand New Day": [
+      "6b70758f3d5fbfcc",
+      "f13b87bebeb23517",
+      "ce647f61b28c2894",
+      "993f7f04139c708e",
+      "b4240febd20d157c",
+      "da5f6cb4e3398d96",
+      "146eac9a71d871f3",
+      "339c6855cb3bea2f",
+      "4e685f8fef05f59f",
+      "cab56770482c0136",
+      "b5c9d6905643accb",
+      "48204ef1bab46780",
       "82ab6223d816627b",
       "5ae7ef4bbb2dbc6b",
       "43df46b333d8556a",
@@ -7023,21 +7084,22 @@
       "51580e5e82a4f108",
       "f0d1d73ed562a7c6",
       "bca852b64365fb73",
-      "bb15fb973d5fb4bc",
-      "3830a1a23c1e4b84",
-      "fae1d919adffcd9c",
-      "90a78ec234ed7efc",
-      "336b77d9e2503466",
-      "32ad5542582aeaca",
-      "a937f635950fbbc0",
-      "5dec8b2bb91a6c9f",
-      "2cf7bb804c63f9a5",
-      "ac29ab6b8eebc4ff",
-      "497ced80ac7be251",
-      "4bc9b337f2ef64ab",
-      "26e979b22cb4d13a"
+      "bb15fb973d5fb4bc"
     ],
     "The Batman Part II": [
+      "3f79a0208ef8ca20",
+      "c69853654ca8fa61",
+      "3fd5eebf1f0b5536",
+      "362ea35a991a4fba",
+      "64e1e6d40752fec0",
+      "bef9fb96d30b4d58",
+      "fd8442d28c5f20ad",
+      "44c2c8333c751231",
+      "8dbc409bf62e7ab7",
+      "1cc75733fa806752",
+      "bfad1d64ba3af242",
+      "02833dafebfeb906",
+      "d17558fa744e04ee",
       "a7851f71f830e956",
       "b8da7e39254c0f2a",
       "f683bb216c14e113",
@@ -7124,22 +7186,14 @@
       "61783448e2175a9b",
       "380d03a3d0a9d7be",
       "8a5d689d1936bcdd",
-      "2897059f7dae4858",
-      "710ffcb655aa3af0",
-      "ee21a64f60f5a3f1",
-      "60f18d05008687c9",
-      "aac3b31d670030a1",
-      "af68620334f59dbe",
-      "ccd6f36cb63fb062",
-      "16f05f28c0f09136",
-      "136c76a03d45377e",
-      "a44a910a71758936",
-      "d1a2593a4d556060",
-      "9843418d830f48c3",
-      "dbcf973d14d57c50",
-      "a4459e58bf660541"
+      "2897059f7dae4858"
     ],
     "The Odyssey": [
+      "309d5e8205f1103a",
+      "69a762719ecb65e7",
+      "ea704a25450f3cfa",
+      "cf4a668f87cec664",
+      "a0764a0b93dc1444",
       "bfd74b3e5e2b8fdf",
       "55dcddfe8ce42e0e",
       "db71598c7c440c80",
@@ -7234,12 +7288,7 @@
       "fbbc56baf0189969",
       "75c048bd9c8691e9",
       "7e3f425ed1f818f5",
-      "5345768bd2f7e74e",
-      "035b43ce7a7f431a",
-      "2252cbb02daee879",
-      "d54ccbc94815db1c",
-      "20d5ee33ffe1634d",
-      "0a08769a7fb7b1ae"
+      "5345768bd2f7e74e"
     ]
   },
   "movie_release_dates": {
@@ -7282,7 +7331,8 @@
     2749,
     2393,
     2059,
-    1319
+    1319,
+    182
   ],
   "music_release_seen": [
     "8f6c139afd3314ac",
@@ -7373,6 +7423,15 @@
       "label": "Sarah Vaughan",
       "payload": {
         "name": "Sarah Vaughan"
+      }
+    },
+    "c27be1dfb17ba405": {
+      "applied": null,
+      "created": "2026-06-13T08:56:03.026648+00:00",
+      "kind": "artist",
+      "label": "Red Hot Chili Peppers",
+      "payload": {
+        "name": "Red Hot Chili Peppers"
       }
     },
     "cf25a66dfc34206c": {
@@ -7576,169 +7635,169 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "deals": {
-      "last_data": "2026-06-13T08:21:07.182747+00:00",
-      "last_data_count": 11,
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_data": "2026-06-13T08:56:30.347157+00:00",
+      "last_data_count": 12,
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "energy": {
-      "last_data": "2026-06-13T08:21:18.851609+00:00",
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_data": "2026-06-13T08:56:53.806370+00:00",
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "fda": {
-      "last_data": "2026-06-13T08:21:07.685821+00:00",
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_data": "2026-06-13T08:56:43.364124+00:00",
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-13T03:40:09.956707+00:00",
+      "last_data": "2026-06-13T08:57:14.536717+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-13T03:38:17.453402+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "fx": {
-      "last_data": "2026-06-13T08:21:38.561913+00:00",
+      "last_data": "2026-06-13T08:57:12.961721+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "games": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-13T08:20:36.493839+00:00",
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_data": "2026-06-13T08:56:04.729649+00:00",
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-13T03:39:39.301620+00:00",
-      "last_data_count": 200,
-      "last_ok": "2026-06-13T03:38:17.453402+00:00"
+      "last_data": "2026-06-13T08:56:42.977799+00:00",
+      "last_data_count": 223,
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "movies": {
-      "last_data": "2026-06-13T08:20:32.242586+00:00",
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_data": "2026-06-13T08:55:58.844034+00:00",
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "music": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-13T08:21:19.574552+00:00",
+      "last_data": "2026-06-13T08:56:54.597262+00:00",
       "last_data_count": 50,
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "outages": {
-      "last_data": "2026-06-13T08:21:37.888056+00:00",
+      "last_data": "2026-06-13T08:57:12.170379+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-13T08:21:38.047426+00:00",
-      "last_data_count": 39,
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_data": "2026-06-13T08:57:12.262192+00:00",
+      "last_data_count": 38,
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-13T08:20:33.414150+00:00",
+      "last_data": "2026-06-13T08:56:00.730925+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "weather": {
-      "last_data": "2026-06-13T08:21:19.061634+00:00",
+      "last_data": "2026-06-13T08:56:54.021469+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "wwdc": {
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-13T08:21:41.769463+00:00",
+      "last_data": "2026-06-13T08:57:18.264627+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-13T08:20:25.945787+00:00"
+      "last_ok": "2026-06-13T08:55:51.914867+00:00"
     }
   },
   "twitch_live": [],
@@ -7780,10 +7839,11 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "activists_thinkers",
-  "wikiquote_last_sent": "2026-06-13T1",
+  "wikiquote_last_category": "innovators_artists",
+  "wikiquote_last_sent": "2026-06-13T2",
   "wikiquote_seen": {
-    "activists_thinkers:Susan B. Anthony": "2026-06-13"
+    "activists_thinkers:Susan B. Anthony": "2026-06-13",
+    "innovators_artists:Pablo Picasso": "2026-06-13"
   },
   "wwdc_seen_urls": [
     "https://www.apple.com/newsroom/2026/05/apple-kicks-off-worldwide-developers-conference-on-june-8/",
