@@ -56,6 +56,7 @@ from .topics import (
     launches,
     learn,
     life_dashboard,
+    library_of_congress,
     marine,
     movies,
     music,
@@ -182,6 +183,9 @@ TOPICS: list[tuple[str, Topic]] = [
     # narrated by Gemini into a literary/historical context guide. Standalone,
     # not daily-gated.
     ("gutenberg", gutenberg.run),
+    # library_of_congress fires every cycle too: a public LOC historical item,
+    # with an attached image when available, narrated fresh by Gemini.
+    ("library_of_congress", library_of_congress.run),
     # energy_learn is daily-only too: one calm educational "Today's spark" push.
     # Order doesn't matter among the daily-only topics; it reads the event_log
     # (populated by the collectors earlier this run) for its occasional news slot.
