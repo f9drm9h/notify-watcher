@@ -7,12 +7,17 @@ of read state, because the account owner reads their own bank alerts and an
 UNSEEN filter would race them and silently lose transactions. The mailbox is
 opened read-only and never modified; re-parsing an already-recorded email is
 harmless because transactions dedup on date + amount + merchant. Approved
-transactions are appended to the encrypted log. On the first daily run of
-each ISO week
-(Monday morning) it pushes a summary of the completed week: total spent in
-DOP, top merchants, the biggest single expense, and a week-over-week
-comparison rendered by ``changes.diff``. With no transactions recorded yet the
-summary skips cleanly, so the topic is silent until the mailbox is wired up.
+transactions are appended to the encrypted log. On each daily run it pushes a
+summary of the CURRENT ISO week, so spending made *this* week surfaces promptly
+instead of waiting until the following Monday for a retrospective (the old
+behavior — it summarized the already-completed prior week, so current-week
+transactions stayed invisible for up to a week and the dashboard queue showed
+nothing). The summary carries the total spent in DOP, top merchants, the
+biggest single expense, and a week-over-week comparison vs the prior week
+rendered by ``changes.diff``. The push refreshes only when the week's running
+total has changed since it last fired, so a day with no new spending stays
+silent; with no transactions dated in the current week the summary skips
+cleanly, so the topic is silent until the mailbox is wired up.
 
 Gmail access is plain IMAP with an app password (``GMAIL_USER`` +
 ``GMAIL_APP_PASSWORD`` secrets; imaplib is stdlib, no new dependency). An MCP
@@ -52,6 +57,9 @@ from .. import changes, config, events
 
 log = logging.getLogger(__name__)
 
+# Dedup token for the weekly push: "<ISO week>:<rounded DOP total>". Keyed on
+# the running total (not just the week) so a new transaction this week re-fires
+# the refreshed summary instead of being suppressed by an already-stamped week.
 WEEK_KEY = "spending_week_summarized"
 SPENDING_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "spending.json.enc"
 # A bare domain: IMAP FROM is a substring match over the header, and the
@@ -302,10 +310,15 @@ def _ingest_emails(cfg: dict) -> int:
 
     sender = cfg.get("sender", DEFAULT_SENDER)
     wanted_subject = cfg.get("subject", DEFAULT_SUBJECT)
-    since = _dt.date.today() - _dt.timedelta(days=int(cfg.get("lookback_days", 7)))
+    lookback = int(cfg.get("lookback_days", 7))
+    since = _dt.date.today() - _dt.timedelta(days=lookback)
     since_str = f"{since.day:02d}-{_IMAP_MONTHS[since.month - 1]}-{since.year}"
+    log.debug("spending: polling IMAP FROM %r SINCE %s (lookback %d days), "
+              "subject %r", sender, since_str, lookback, wanted_subject)
 
     parsed: list[dict] = []
+    ids: list[bytes] = []
+    subject_hits = 0
     imap = imaplib.IMAP4_SSL(IMAP_HOST)
     try:
         imap.login(user, password)
@@ -317,13 +330,19 @@ def _ingest_emails(cfg: dict) -> int:
         if status != "OK":
             log.warning("spending: IMAP search failed: %s", status)
             return 0
-        for num in (data[0] or b"").split():
+        ids = (data[0] or b"").split()
+        log.debug("spending: IMAP search matched %d message(s) from %s since %s",
+                  len(ids), sender, since_str)
+        for num in ids:
             status, fetched = imap.fetch(num, "(BODY.PEEK[])")
             if status != "OK" or not fetched or not fetched[0]:
+                log.debug("spending: fetch of message %s failed (status=%s); skipping",
+                          num.decode(errors="replace"), status)
                 continue
             msg = email.message_from_bytes(fetched[0][1], policy=email.policy.default)
             if not _subject_matches(str(msg.get("Subject", "")), wanted_subject):
                 continue  # other mail from the bank, not a transaction alert
+            subject_hits += 1
             parsed.extend(_parse_transactions(_html_from_message(msg)))
     finally:
         try:
@@ -331,11 +350,16 @@ def _ingest_emails(cfg: dict) -> int:
         except Exception:  # noqa: BLE001 - a logout hiccup is irrelevant
             pass
 
+    log.debug("spending: %d/%d message(s) matched subject; parsed %d transaction(s)",
+              subject_hits, len(ids), len(parsed))
     if not parsed:
         return 0
     merged, added = _merge(existing, parsed)
     if added:
         _save_spending(merged)
+    else:
+        log.debug("spending: parsed %d transaction(s), all already recorded "
+                  "(deduped on date+amount+merchant)", len(parsed))
     return added
 
 
@@ -370,18 +394,25 @@ def _week_slice(transactions: list[dict], start: date, end: date) -> list[dict]:
     return out
 
 
-def _summarize(transactions: list[dict], today: date) -> tuple[str, object] | None:
-    """Pure. (body, Change|None) for last week's spending, or None to skip.
+def _summarize(transactions: list[dict], today: date) -> tuple[str, object, float] | None:
+    """Pure. (body, Change|None, total) for THIS week's spending, or None.
 
-    None means "nothing to say": no transactions recorded at all, or none in
-    the completed week (a quiet card is not worth a Monday push). The change
-    is week-over-week vs the week before, omitted when that week is empty.
+    Summarizes the CURRENT ISO week — the week the most recent transactions
+    fall in — so spending made this week surfaces now instead of waiting a full
+    week for a retrospective of the already-completed prior week. None means
+    "nothing to say": no transactions recorded at all, or none dated in the
+    current week yet (a quiet card is not worth a push). ``total`` is the
+    rounded DOP total, used by ``run`` to refresh the push only when the week's
+    spending grows. The change is week-over-week vs the immediately prior week,
+    omitted when that week is empty.
     """
     if not transactions:
         return None
-    start, end = _week_bounds(today)
+    start, end = _week_bounds(today, weeks_back=0)
     week = _week_slice(transactions, start, end)
     if not week:
+        log.debug("spending: no DOP transactions dated in %s..%s (current week) "
+                  "out of %d recorded; summary skipped", start, end, len(transactions))
         return None
 
     total = sum(t["amount"] for t in week)
@@ -391,6 +422,8 @@ def _summarize(transactions: list[dict], today: date) -> tuple[str, object] | No
         by_merchant[name] = by_merchant.get(name, 0.0) + t["amount"]
     top = sorted(by_merchant.items(), key=lambda kv: kv[1], reverse=True)[:5]
     biggest = max(week, key=lambda t: t["amount"])
+    log.debug("spending: current week %s..%s has %d DOP transaction(s) totaling "
+              "RD$%.2f", start, end, len(week), total)
 
     lines = [
         f"{start:%b %d}-{end:%b %d}: RD${total:,.2f} across "
@@ -399,7 +432,7 @@ def _summarize(transactions: list[dict], today: date) -> tuple[str, object] | No
         f"Biggest: RD${biggest['amount']:,.2f} at {biggest.get('merchant') or '(unknown)'}",
     ]
 
-    prev = _week_slice(transactions, *_week_bounds(today, weeks_back=2))
+    prev = _week_slice(transactions, *_week_bounds(today, weeks_back=1))
     ch = None
     if prev:
         prev_total = sum(t["amount"] for t in prev)
@@ -407,7 +440,7 @@ def _summarize(transactions: list[dict], today: date) -> tuple[str, object] | No
                           label="Weekly spending", fmt=lambda v: f"RD${v:,.2f}")
         lines.append(f"vs prior week: {ch.summary}" if ch
                      else "vs prior week: unchanged")
-    return "\n".join(lines), ch
+    return "\n".join(lines), ch, round(total, 2)
 
 
 def run(state: dict) -> dict:
@@ -416,6 +449,8 @@ def run(state: dict) -> dict:
         added = _ingest_emails(cfg)
         if added:
             log.info("spending: recorded %d new transaction(s)", added)
+        else:
+            log.debug("spending: ingestion added no new transactions this run")
     except SpendingLocked as exc:
         log.error("spending: log locked, ingestion skipped: %s", exc)
     except Exception as exc:  # noqa: BLE001 - mail being down must not kill the run
@@ -423,25 +458,38 @@ def run(state: dict) -> dict:
 
     if not os.environ.get("NOTIFY_DAILY"):
         return state  # the summary rides the daily run, like recap
-    today = _dt.date.today()
-    week = _iso_week(today)
-    if state.get(WEEK_KEY) == week:
-        return state
 
+    today = _dt.date.today()
     try:
         transactions = _load_spending()
     except SpendingLocked as exc:
         log.error("spending: log locked, weekly summary skipped: %s", exc)
         return state
+
     result = _summarize(transactions, today)
     if result is None:
-        # Nothing recorded (yet): stay silent and DON'T stamp the week, so the
-        # first week of real data still gets its summary even if ingestion
-        # starts mid-week.
-        log.info("spending: no transactions for last week; summary skipped")
+        # Nothing dated in the current week yet: stay silent and DON'T stamp,
+        # so the first transaction of the week still triggers its summary even
+        # when ingestion starts mid-week.
+        log.info("spending: no transactions dated in the current week; "
+                 "summary skipped (%d total in log)", len(transactions))
         return state
 
-    body, ch = result
+    body, ch, total = result
+    # Dedup on week + running total: re-push when this week's spending has grown
+    # since the last summary, stay quiet on a day with no new spending. Keying
+    # on the total (not just the ISO week) is the fix for the silent failure —
+    # the old code stamped the week on the FIRST daily run while summarizing the
+    # PRIOR week, so transactions made during the current week never re-fired
+    # the push and showed 0 in the dashboard queue.
+    signature = f"{_iso_week(today)}:{total:.2f}"
+    if state.get(WEEK_KEY) == signature:
+        log.info("spending: current-week total unchanged (RD$%.2f); already "
+                 "pushed this cycle", total)
+        return state
+
+    log.info("spending: pushing current-week summary RD$%.2f (signature %s -> %s)",
+             total, state.get(WEEK_KEY), signature)
     state = events.emit(
         state,
         title="Weekly spending summary",
@@ -454,5 +502,5 @@ def run(state: dict) -> dict:
         legacy_action="push",
         score=60,
     )
-    state[WEEK_KEY] = week
+    state[WEEK_KEY] = signature
     return state

@@ -84,7 +84,6 @@
       { "topic": "bills", "score": 62 },
 
       { "topic": "weather", "severity": "moderate", "score": 50 },
-      { "topic": "wwdc", "score": 45 },
       { "topic": "reminders", "severity": "moderate", "score": 45 },
       { "topic": "fx", "score": 45 },
       { "topic": "fuel", "score": 45 },

@@ -73,7 +73,6 @@ from .topics import (
     watchdog,
     weather,
     wikiquote,
-    wwdc,
     youtube,
 )
 
@@ -104,7 +103,6 @@ def _is_daily_run() -> bool:
 
 TOPICS: list[tuple[str, Topic]] = [
     ("visa_bulletin", visa_bulletin.run),
-    ("wwdc", wwdc.run),
     ("ios_release", ios_release.run),
     ("movies", movies.run),
     # games is weekly: it self-gates to the first daily run of each ISO week

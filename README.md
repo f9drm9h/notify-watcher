@@ -16,9 +16,6 @@ Topics:
   pace only. Each January/April/July/October a low-priority quarterly check-in
   lands in the digest comparing the recent pace against the full history, so
   the estimate stays visible even while the cutoff crawls.
-- **WWDC announcements** — watches Apple Newsroom RSS for any post whose title
-  contains "WWDC" or "Worldwide Developers Conference", and alerts on each new
-  one (headline + link).
 - **iOS / iPadOS releases** — watches the Apple Developer Releases RSS feed and
   alerts once per new *stable* iOS/iPadOS build (betas and RCs are skipped) so
   you know an update is available. The body is a one-line "major vs.
@@ -555,8 +552,6 @@ tiny memory file (`state.json`) that records what it last alerted on:
 
 - **Visa**: stores the F4 date string. If today's value matches the stored
   one, no push. If different, push and overwrite the stored value.
-- **WWDC**: stores a list of article URLs already pushed. Any feed item
-  whose URL is not in that list is pushed and then added.
 - **iOS releases**: stores a list of release titles (version + build) already
   pushed; a build not in that list is pushed and added.
 - **Deals**: stores the last seen price per product URL. A push fires when the
@@ -599,9 +594,6 @@ anything not already recorded in `state.json`.
 ```powershell
 # Visa only
 python -c "from notify_watcher import state; from notify_watcher.topics import visa_bulletin; s = state.load(); s = visa_bulletin.run(s); state.save(s)"
-
-# WWDC only
-python -c "from notify_watcher import state; from notify_watcher.topics import wwdc; s = state.load(); s = wwdc.run(s); state.save(s)"
 ```
 
 ### Force a re-alert (for testing)
@@ -697,7 +689,6 @@ notify-watcher/
 │       ├── visa_bulletin.py         F4 Final Action + Dates for Filing
 │       ├── watchdog.py              self-monitoring over topic_health
 │       ├── weather.py               NHC hurricane/tropical-storm alerts
-│       ├── wwdc.py                  Apple Newsroom RSS, WWDC items
 │       └── youtube.py               new uploads from followed channels
 ├── data/                            curated KB content (learn/energy_learn/…)
 ├── docs/
@@ -715,7 +706,7 @@ notify-watcher/
 
 ## Optional AI summaries
 
-The WWDC and iOS-release topics can render a one-line AI summary as the
+The iOS-release topic can render a one-line AI summary as the
 notification body. The provider plumbing lives in `notify_watcher/summarize.py`
 (`one_line(system, user_text)`), which tries **Gemini** (free tier) first, then
 **Anthropic**, and returns `None` so the caller falls back to a plain body when

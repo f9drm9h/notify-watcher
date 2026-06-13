@@ -96,7 +96,7 @@ def _countdown(until: _dt.datetime, now: _dt.datetime) -> str:
 def _label(slug: str) -> str:
     """``anthropic_news`` -> ``Anthropic News`` (with a few nicer special cases)."""
     special = {"fx": "FX", "uv": "UV", "iss": "ISS", "apod": "APOD",
-               "fda": "FDA", "itsc": "ITSC", "wwdc": "WWDC", "ios_release": "iOS Release"}
+               "fda": "FDA", "itsc": "ITSC", "ios_release": "iOS Release"}
     if slug in special:
         return special[slug]
     return " ".join(p.capitalize() for p in slug.replace("-", "_").split("_") if p) or slug
