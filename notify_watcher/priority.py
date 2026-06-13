@@ -44,11 +44,18 @@ _DEFAULT_DIGEST_FLOOR = 25
 _DEFAULT_BASE = 30
 # Fallback ntfy band table if cfg omits ntfy_bands: score -> ntfy priority name.
 _DEFAULT_BANDS = {"90": "urgent", "70": "high"}
+_HIGH_PRIORITY_FLOOR = 70
 
 # Event fields a rule/override may constrain. All are matched EXACTLY (the
 # controlled vocab of topic/severity, and the source label); fuzzy/substring
 # matching lives in the boost groups, not here.
 _MATCH_KEYS = ("topic", "severity", "source")
+
+_ANTHROPIC_MODEL_TERMS = ("claude", "opus", "sonnet", "haiku", "model")
+_ANTHROPIC_RELEASE_TERMS = (
+    "introducing", "announce", "announcing", "release", "released", "launch",
+    "available", "new",
+)
 
 
 @dataclass(frozen=True)
@@ -86,6 +93,25 @@ def _rule_matches(rule: dict, event) -> bool:
         if key in rule and rule[key] != getattr(event, key):
             return False
     return True
+
+
+def _is_anthropic_model_release(event) -> bool:
+    """True for official Anthropic model-release announcements.
+
+    The Anthropic topic already filters to source="Anthropic"; this core-layer
+    guard exists because those posts are time-sensitive even when the topic emits
+    moderate severity. Raising their score into the high ntfy band lets them ring
+    through quiet hours without teaching the topic scraper about delivery policy.
+    """
+    if getattr(event, "topic", "") != "anthropic_news":
+        return False
+    if "anthropic" not in str(getattr(event, "source", "")).lower():
+        return False
+    text = f"{getattr(event, 'title', '')}\n{getattr(event, 'body', '')}".lower()
+    return (
+        _contains_any(text, _ANTHROPIC_MODEL_TERMS)
+        and _contains_any(text, _ANTHROPIC_RELEASE_TERMS)
+    )
 
 
 def _ntfy_priority(score: int, bands: object) -> str:
@@ -143,6 +169,9 @@ def decide(event, cfg: dict) -> Optional[Decision]:
     for boost in cfg.get("severity_boosts") or []:
         if isinstance(boost, dict) and boost.get("severity") == event.severity:
             score += _int(boost.get("add"), 0)
+
+    if _is_anthropic_model_release(event):
+        score = max(score, _HIGH_PRIORITY_FLOOR)
 
     # 3) Overrides: a matching user-defined rule clamps the final score.
     for override in cfg.get("overrides") or []:
