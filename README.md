@@ -272,6 +272,15 @@ digest simply goes out without it.
   `GEMINI_API_KEY` secret (Anthropic is a fallback via `summarize.py`); grow the
   KB by appending topics to any category. The story is clipped to fit ntfy's
   message limit. The topic is the push header.
+- **Library of Congress stories** — every 3-hour run rotates through historical
+  focus areas (American milestones, world-war photographs, civil rights,
+  presidential documents, early-20th-century life, maps/exploration, and
+  invention records), fetches a public item from the Library of Congress JSON
+  API, and asks Gemini for a four-paragraph documentary-style account. Items
+  with usable images are preferred and attached inline; no-image items still
+  send as text. The selected item id/link is held out for 30 days, and state is
+  stamped only after the story push succeeds, so LOC or Gemini outages skip
+  cleanly and retry next run.
 - **Quotation stories** — a **real quote** plus a fresh **Gemini-narrated story**
   on **every 3-hour run**, independent of the daily gate. Each run picks one
   figure from a curated list (`FIGURES` in `notify_watcher/topics/wikiquote.py` —
@@ -662,6 +671,7 @@ notify-watcher/
 │       ├── itsc.py                  ITSC academic-calendar deadline heads-ups
 │       ├── launches.py              imminent rocket launches (Launch Library)
 │       ├── learn.py                 consolidated daily learning push
+│       ├── library_of_congress.py   LOC historical item stories
 │       ├── marine.py                rough-seas heads-up (Open-Meteo Marine)
 │       ├── movies.py                TMDb release dates + DO streaming (watchlist)
 │       ├── music.py                 followed-artist releases + discovery pick
