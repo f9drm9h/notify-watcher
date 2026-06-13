@@ -54,6 +54,7 @@ from .topics import (
     itsc,
     launches,
     learn,
+    life_dashboard,
     marine,
     movies,
     music,
@@ -185,6 +186,10 @@ TOPICS: list[tuple[str, Topic]] = [
     # recap is weekly: on the first daily run of each ISO week it summarizes the
     # past week's event log + topic health into one Monday-morning push.
     ("recap", recap.run),
+    # life_dashboard is weekly too: on Sunday it stitches the week's event log,
+    # topic health, fx state and bills into one themed life-digest push. Runs
+    # late so it reads the same accumulated history recap does.
+    ("life_dashboard", life_dashboard.run),
     ("blood_donation", blood_donation.run),
     # Daily-only "today" summaries: holiday heads-up, high-UV and rough-seas
     # alerts (threshold-gated), and the astronomy almanac.
