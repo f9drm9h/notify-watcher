@@ -272,6 +272,25 @@ digest simply goes out without it.
   `GEMINI_API_KEY` secret (Anthropic is a fallback via `summarize.py`); grow the
   KB by appending topics to any category. The story is clipped to fit ntfy's
   message limit. The topic is the push header.
+- **Quotation stories** — a **real quote** plus a fresh **Gemini-narrated story**
+  on **every 3-hour run**, independent of the daily gate. Each run picks one
+  figure from a curated list (`FIGURES` in `notify_watcher/topics/wikiquote.py` —
+  scientists, philosophers, writers, leaders, innovators/artists, and
+  activists/thinkers, 60 in all), fetches one of their genuine quotes from
+  **Wikiquote** (the free, no-key MediaWiki `action=parse` API — only top-level
+  quote bullets, skipping the "Quotes about" / disputed sections), and asks
+  Gemini to narrate who they were, the context of the quote, what was happening
+  in their life and the world, and why it still resonates, in at least three
+  paragraphs. The pick has the same memory as the knowledge engine: shown figure
+  ids are stamped into `state.json` so none repeats within 30 days, categories
+  rotate cyclically, and both the figure and quote picks are seeded by the
+  current 3-hour window so a re-run inside a window is identical. The figure is
+  consumed and the window stamped only **after** the quote is fetched *and*
+  Gemini returns a story, so a failed fetch, an unparseable page, or an LLM
+  outage skips cleanly and retries next run. The quote is genuine; only the
+  surrounding narrative is generated. Uses the `GEMINI_API_KEY` secret (Anthropic
+  fallback). The figure's name is the push header; grow the channel by adding
+  names to any `FIGURES` category.
 - **Rocket launches** — imminent orbital launches via Launch Library 2 (no key);
   alerts once per launch within `launches.imminent_hours`, skipping routine ones
   (Starlink by default).
