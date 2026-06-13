@@ -2,10 +2,12 @@
 
 Notification action buttons (ntfy `http` actions) POST a small command string —
 ``DONE:water``, ``SNOOZE:passport:60``, ``MUTE:movies:24`` — to a second private
-ntfy topic (``NTFY_CONTROL_TOPIC``). ntfy's server-side message cache (~12 h) is
-the queue; ``poll`` drains it at the top of every run and ``dispatch`` routes
-each command to a handler that mutates state. The topics then run against the
-mutated state, so a command takes effect in the same run that reads it.
+ntfy topic (``NTFY_CONTROL_TOPIC``). Free-text admin diagnostics such as
+``status movies`` are accepted too and reply through the normal ntfy topic.
+ntfy's server-side message cache (~12 h) is the queue; ``poll`` drains it at the
+top of every run and ``dispatch`` routes each command to a handler. Mutating
+commands update state before topics run, so a command takes effect in the same
+run that reads it.
 
 Kill switch: an unset/empty ``NTFY_CONTROL_TOPIC`` disables everything — ``poll``
 returns [] immediately and ``make_action`` returns None so no buttons are
@@ -107,6 +109,7 @@ _LATER_RE = re.compile(r"^LATER:([0-9a-f]{16}):(\d{1,6})$")
 _ADD_RE = re.compile(r"^ADD:([0-9a-f]{16})$")
 _UNDO_RE = re.compile(r"^UNDO:([0-9a-f]{16})$")
 _IGNORE_RE = re.compile(r"^IGNORE:([0-9a-f]{16})$")
+_STATUS_RE = re.compile(r"^status\s+([A-Za-z0-9_-]+)\s*$", re.IGNORECASE)
 
 
 def _utcnow() -> _dt.datetime:
@@ -274,6 +277,10 @@ def dispatch(commands: list[str], state: dict) -> dict:
             if m:
                 cmd_ignore(m.group(1), state)
                 continue
+            m = _STATUS_RE.match(cmd)
+            if m:
+                cmd_status(m.group(1).lower(), state)
+                continue
             log.warning("control: dropping unknown command %r", cmd[:80])
         except Exception as exc:  # noqa: BLE001 - one bad command never blocks the rest
             log.error("control: command %r failed: %s", cmd[:80], exc)
@@ -379,6 +386,58 @@ def cmd_unfollow(topic: str, state: dict) -> None:
     else:
         log.info("control: UNFOLLOW:%s - topic was not followed; nothing to do",
                  topic)
+
+
+def _topic_label(topic: str) -> str:
+    """Human label for a topic slug, e.g. ``anthropic_news`` -> ``Anthropic News``."""
+    return " ".join(part.capitalize() for part in str(topic).replace("-", "_").split("_")
+                    if part) or "Topic"
+
+
+def _topic_verb(label: str, singular: str, plural: str) -> str:
+    """Use natural wording for plural-looking topic labels such as Movies."""
+    if label.endswith("News"):
+        return singular
+    return plural if label.endswith("s") else singular
+
+
+def _status_message(topic: str, state: dict,
+                    now: Optional[_dt.datetime] = None) -> str:
+    """One-line diagnostic answer for a topic's mute/health state.
+
+    Active mutes answer first because they directly explain suppressed live
+    pushes. If there is no active mute, the topic_health contract answers when
+    the topic last succeeded, or surfaces its last recorded failure.
+    """
+    label = _topic_label(topic)
+    muted_until = (state.get(MUTED_KEY) or {}).get(topic)
+    if until_active(muted_until, now=now):
+        return f"{label} {_topic_verb(label, 'is', 'are')} currently muted until {muted_until}."
+
+    health = (state.get("topic_health") or {}).get(topic)
+    if not isinstance(health, dict):
+        return f"{label} {_topic_verb(label, 'has', 'have')} no recorded status yet."
+
+    if health.get("last_ok"):
+        return f"{label} last ran successfully at {health['last_ok']}."
+    if health.get("last_error"):
+        when = health.get("last_error_ts")
+        suffix = f" at {when}" if when else ""
+        return f"{label} last failed{suffix}: {health['last_error']}."
+    return f"{label} has a health record, but no success or failure timestamp yet."
+
+
+def cmd_status(topic: str, state: dict,
+               now: Optional[_dt.datetime] = None) -> None:
+    """Reply with a quick diagnostic for ``status <topic>`` admin commands."""
+    message = _status_message(topic, state, now=now)
+    ntfy.push(
+        title=f"Status: {_topic_label(topic)}",
+        message=message,
+        tags="mag",
+        priority="high",
+    )
+    log.info("control: status reply sent for %s", topic)
 
 
 # --- Offer registry (ADD / UNDO / IGNORE) -----------------------------------
