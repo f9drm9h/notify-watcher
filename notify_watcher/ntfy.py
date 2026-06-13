@@ -22,7 +22,9 @@ log = logging.getLogger(__name__)
 DEFAULT_SERVER = "https://ntfy.sh"
 
 # Priorities that always ring through, even during quiet hours: real, timely
-# threats (earthquakes, hurricanes, tsunami advisories) are sent at these tiers.
+# threats and explicitly high-priority announcements are sent at these tiers.
+# The priority engine is responsible for deciding when a non-safety topic, such
+# as an official Anthropic model release, belongs here.
 _ALWAYS_DELIVER = {"high", "urgent"}
 
 

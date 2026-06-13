@@ -294,10 +294,12 @@ def main() -> int:
 
     state = state_mod.load()
 
-    # Reply-button control channel: poll + dispatch BEFORE the topic loop so a
-    # command takes effect in the same run that reads it, and regardless of
-    # NOTIFY_ONLY so the frequent twitch run keeps command latency low. A no-op
-    # when NTFY_CONTROL_TOPIC is unset; a failure must never block the run.
+    # Reply-button/control channel: poll + dispatch BEFORE the topic loop so a
+    # mutating command takes effect in the same run that reads it. Free-text
+    # diagnostics ("status movies") reply immediately from the current state.
+    # This runs regardless of NOTIFY_ONLY so the frequent twitch run keeps
+    # command latency low. A no-op when NTFY_CONTROL_TOPIC is unset; a failure
+    # must never block the run.
     try:
         control.dispatch(control.poll(state), state)
         # Due "remind later" re-fires and queued "show more" pushes ride the
