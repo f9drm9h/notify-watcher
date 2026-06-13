@@ -6,3 +6,10 @@ venv/
 .secrets/
 .idea/
 .vscode/
+
+# Local-preview status dashboard and its wallpapers. The HTML is regenerated
+# from state.json on demand (notify_watcher/generate_dashboard.py); the
+# wallpapers/ folder holds large, machine-local art/video that must stay off
+# the repo. Both are intentionally untracked.
+wallpapers/
+dashboard.html

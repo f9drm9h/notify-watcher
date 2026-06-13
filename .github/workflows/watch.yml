@@ -148,3 +148,13 @@ jobs:
           done
           echo "could not push state.json after 5 attempts" >&2
           exit 1
+
+      - name: Generate status dashboard (cinematic UI)
+        if: ${{ always() }}
+        # The very last step: regenerate dashboard.html from the now-updated
+        # state.json so the cinematic status console stays perfectly in sync with
+        # every run. It is a pure reader (never touches state, never notifies) and
+        # is gitignored — it depends on the local wallpapers/ folder, so it is a
+        # build artifact, not a committed file. always()+|| guarantee it can never
+        # fail the run or block anything that came before it.
+        run: python -m notify_watcher.generate_dashboard || echo "dashboard.html generation failed (non-fatal)"
