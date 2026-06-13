@@ -15,8 +15,11 @@ watchlist.json are unaffected; deals de-dupes by URL.
 
 Source: https://www.soundcore.com/server-sitemap-index-products.xml (the
 authoritative list of every product URL — far more stable than scraping a
-marketing page). Matching is slug-based with an accessory/refurb/locale denylist
-verified to isolate exactly the flagship Pro earbuds.
+marketing page). Matching anchors each slug to the flagship model shape
+(Liberty N Pro / Pro Max) and accepts only standalone earbud descriptors after
+it, so promotional bundles that append a second product or giveaway
+(…-pro-max-anker-nano-cargador-usb-c…) and accessories (…-pro-charging-case)
+are rejected by construction rather than chased with an ever-growing denylist.
 """
 from __future__ import annotations
 
@@ -58,17 +61,17 @@ PRODUCT_BASE = "https://www.soundcore.com/products/"
 SEEN_KEY = "soundcore_pro_seen"   # list[str] of flagship slugs already known
 AUTO_KEY = "auto_products"        # list[dict]; also consumed by deals.run
 
-# A flagship Pro earbud slug contains "liberty" + "pro" and one of these
-# product markers...
-REQUIRE_ANY = ("earbuds", "-anc", "tws", "pro-max", "pro-anc")
-# ...and none of these accessory / variant / refurb / localized tokens, which
-# otherwise pollute the match (verified against the live sitemap).
-DENY = (
-    "replacement", "refurbished", "renewed", "tips", "-case", "charging",
-    "ladecase", "power-bank", "without", "left-and-right", "ear-fins", "fins",
-    "komfort", "ersatz", "ohr", "stopsel", "laptop", "prime", "semi-in-ear",
-    "capsule", "eartips",
-)
+# A *standalone* flagship slug is the model name and nothing else:
+#   liberty-4-pro-earbuds   liberty-5-pro-max-tws   soundcore-liberty-6-pro-anc
+# i.e. "Liberty <N> Pro" (optionally "Pro Max"), an optional brand prefix, then
+# ONLY product-type descriptors from the closed set below. Promotional bundles
+# and accessories tack on a second product, brand, or part whose tokens aren't
+# descriptors — e.g. "liberty-5-pro-max-anker-nano-cargador-usb-c-..." (a
+# giveaway charger that 404s as a product page) or "liberty-4-pro-charging-case".
+# Anchoring the whole slug to the model shape rejects those by construction
+# instead of denylisting each new giveaway one token at a time.
+_MODEL = re.compile(r"^(?:soundcore-)?liberty-\d+-pro(-max)?")
+_DESCRIPTORS = frozenset({"earbuds", "tws", "anc", "wireless", "ai", "clear"})
 
 
 def _slug(url: str) -> str:
@@ -76,11 +79,18 @@ def _slug(url: str) -> str:
 
 
 def _is_flagship_pro(slug: str) -> bool:
-    if "liberty" not in slug or "pro" not in slug:
+    m = _MODEL.match(slug)
+    if not m:
         return False
-    if not any(k in slug for k in REQUIRE_ANY):
+    has_max = m.group(1) is not None
+    extras = [tok for tok in slug[m.end():].split("-") if tok]
+    # Bare "liberty-N-pro" (no Max, no descriptor) is a collection/landing slug,
+    # not a product page — don't track it.
+    if not has_max and not extras:
         return False
-    return not any(d in slug for d in DENY)
+    # Any token after the model that isn't a known descriptor means this is a
+    # bundle / accessory / variant, not the standalone earbuds.
+    return all(tok in _DESCRIPTORS for tok in extras)
 
 
 def _current_slugs(xml: str) -> set[str]:
