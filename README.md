@@ -299,6 +299,16 @@ digest simply goes out without it.
   event log: live pushes vs. digested vs. dropped, the busiest topics, the
   highest-priority story, and whether every topic is healthy. No network, no
   key.
+- **Weekly life dashboard** — one rich Sunday push that stitches the week into
+  themed, emoji-headed sections: 💪 habit-nudge activity, 💰 finance (the BHD
+  spending summary, the week's USD→DOP move, and bills due in the next 7 days),
+  🌤 weather & environment (weather alerts plus UV/air-quality warnings logged
+  this week), 🎬 entertainment & news (the top-scored movie/game release, Golden
+  Sun community items, and AI news that fired), and ⚙️ system health (topics
+  that errored this week and the total notifications pushed). Pure state
+  inspection over the event log + `topic_health` + the fx/bills state — no
+  network, no key. Empty sections are skipped; a dataless week stays silent.
+  Deduped per ISO week (`life_dashboard_last_week`).
 - **Watchdog (self-monitoring)** — every run, `main.py` records each topic's
   last successful run and latest failure in `state.json` → `topic_health`. The
   watchdog reads that record and pushes one heads-up when any topic has had no
