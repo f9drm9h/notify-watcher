@@ -24,8 +24,10 @@ are rejected by construction rather than chased with an ever-growing denylist.
 from __future__ import annotations
 
 import logging
+from html import unescape
 import re
 import time
+from urllib.parse import urlparse
 
 import requests
 
@@ -34,32 +36,53 @@ from . import deals
 
 log = logging.getLogger(__name__)
 
-# The sitemap is generated on demand and occasionally 500s for data-center IPs
-# (the GitHub Actions runner) even though product pages serve fine. Retry a few
-# times with backoff before giving up, so a transient blip doesn't skip a run.
-SITEMAP_HEADERS = {**deals.HEADERS, "Accept": "application/xml,text/xml,*/*"}
-_RETRIES = 4
-_BACKOFF = 3  # seconds, multiplied by attempt number
+SITEMAP_URL = "https://www.soundcore.com/server-sitemap-index-products.xml"
+FALLBACK_SITEMAP_URL = "https://www.soundcore.com/server-sitemap-index-pages.xml"
+PRODUCT_BASE = "https://www.soundcore.com/products/"
+SEEN_KEY = "soundcore_pro_seen"   # list[str] of flagship slugs already known
+AUTO_KEY = "auto_products"        # list[dict]; also consumed by deals.run
+
+# The product sitemap is generated on demand and can timeout or 500 for
+# data-center IPs (GitHub Actions) even when product pages serve fine. Retry the
+# product sitemap briefly, then fall back to the pages sitemap, which currently
+# carries model-code product/launch URLs such as
+# /a3954-liberty-4-pro-tws-earbuds-pre-launch.
+SITEMAP_HEADERS = {
+    **deals.HEADERS,
+    "Accept": "application/xml,text/xml,text/html;q=0.9,*/*;q=0.8",
+}
+_RETRIES = 2
+_BACKOFF = 2  # seconds, multiplied by attempt number
+
+
+def _fetch_url(url: str) -> str:
+    resp = requests.get(url, headers=SITEMAP_HEADERS, timeout=20)
+    resp.raise_for_status()
+    text = resp.text or ""
+    if "<loc" not in text:
+        raise RuntimeError(f"{url} did not contain sitemap <loc> entries")
+    return text
 
 
 def _fetch_sitemap() -> str:
     last: Exception | None = None
     for attempt in range(1, _RETRIES + 1):
         try:
-            resp = requests.get(SITEMAP_URL, headers=SITEMAP_HEADERS, timeout=30)
-            resp.raise_for_status()
-            return resp.text
-        except requests.RequestException as exc:
+            return _fetch_url(SITEMAP_URL)
+        except (requests.RequestException, RuntimeError) as exc:
             last = exc
-            log.warning("sitemap fetch attempt %d/%d failed: %s", attempt, _RETRIES, exc)
+            log.warning("product sitemap fetch attempt %d/%d failed: %s",
+                        attempt, _RETRIES, exc)
             if attempt < _RETRIES:
                 time.sleep(_BACKOFF * attempt)
-    raise RuntimeError(f"sitemap unreachable after {_RETRIES} attempts: {last}")
 
-SITEMAP_URL = "https://www.soundcore.com/server-sitemap-index-products.xml"
-PRODUCT_BASE = "https://www.soundcore.com/products/"
-SEEN_KEY = "soundcore_pro_seen"   # list[str] of flagship slugs already known
-AUTO_KEY = "auto_products"        # list[dict]; also consumed by deals.run
+    try:
+        log.warning("product sitemap unavailable; falling back to pages sitemap")
+        return _fetch_url(FALLBACK_SITEMAP_URL)
+    except (requests.RequestException, RuntimeError) as exc:
+        raise RuntimeError(
+            f"Soundcore sitemaps unreachable; product={last}; fallback={exc}"
+        ) from exc
 
 # A *standalone* flagship slug is the model name and nothing else:
 #   liberty-4-pro-earbuds   liberty-5-pro-max-tws   soundcore-liberty-6-pro-anc
@@ -70,12 +93,31 @@ AUTO_KEY = "auto_products"        # list[dict]; also consumed by deals.run
 # giveaway charger that 404s as a product page) or "liberty-4-pro-charging-case".
 # Anchoring the whole slug to the model shape rejects those by construction
 # instead of denylisting each new giveaway one token at a time.
-_MODEL = re.compile(r"^(?:soundcore-)?liberty-\d+-pro(-max)?")
-_DESCRIPTORS = frozenset({"earbuds", "tws", "anc", "wireless", "ai", "clear"})
+_MODEL = re.compile(
+    r"^(?:soundcore-)?(?:[a-z]?\d{3,4}[a-z0-9]*-)?liberty-\d+-pro(-max)?"
+)
+_DESCRIPTORS = frozenset({
+    "earbuds", "tws", "anc", "wireless", "ai", "clear",
+})
+_TRAILING_PAGE_TOKENS = re.compile(r"-(?:pre-launch(?:-boa)?|boa)$")
+_LOCALE_PREFIXES = {
+    "ae-en", "ca", "cl", "de", "es", "eu", "fr", "pl", "sg", "uk",
+}
 
 
 def _slug(url: str) -> str:
-    return url.rsplit("/products/", 1)[-1].split("?")[0].strip("/").lower()
+    """Normalize product and launch-page URLs into a comparable slug."""
+    path = urlparse(unescape(url)).path.strip("/")
+    if "/products/" in path:
+        slug = path.rsplit("/products/", 1)[-1]
+    elif "/collections/" in path:
+        slug = path.rsplit("/collections/", 1)[-1]
+    else:
+        parts = [p for p in path.split("/") if p]
+        if parts and parts[0].lower() in _LOCALE_PREFIXES:
+            parts = parts[1:]
+        slug = parts[-1] if parts else path
+    return _TRAILING_PAGE_TOKENS.sub("", slug.split("?", 1)[0].strip("/").lower())
 
 
 def _is_flagship_pro(slug: str) -> bool:
@@ -100,6 +142,10 @@ def _current_slugs(xml: str) -> set[str]:
         for loc in re.findall(r"<loc>(.*?)</loc>", xml)
         if _is_flagship_pro(s := _slug(loc))
     }
+
+
+def _product_url(slug: str) -> str:
+    return PRODUCT_BASE + slug
 
 
 def _pretty(slug: str) -> str:
@@ -130,7 +176,11 @@ def _describe(url: str, slug: str) -> tuple[str, str]:
 
 
 def run(state: dict) -> dict:
-    current = _current_slugs(_fetch_sitemap())
+    try:
+        current = _current_slugs(_fetch_sitemap())
+    except Exception as exc:  # noqa: BLE001 - topic must degrade, not crash run
+        log.warning("soundcore_pro skipped: could not fetch/parse sitemap: %s", exc)
+        return state
     log.info("flagship Liberty Pro products in catalog: %d", len(current))
     # Guard against an empty/garbled sitemap response (e.g. a WAF HTML page that
     # still returned 200) wiping nothing but also seeding nothing useful.
@@ -154,7 +204,7 @@ def run(state: dict) -> dict:
     auto: list = state.setdefault(AUTO_KEY, [])
     tracked_urls = {str(p.get("url", "")) for p in auto if isinstance(p, dict)}
     for slug in new:
-        url = PRODUCT_BASE + slug
+        url = _product_url(slug)
         try:
             name, body = _describe(url, slug)
             # Offer registry (docs/design/05): the discovery is auto-tracked
