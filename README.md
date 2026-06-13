@@ -490,6 +490,11 @@ The three buttons you'll see:
 | Reminder | **Snooze 1h** | re-delivers that reminder after ~an hour (on the next full 3-hourly run) |
 | Daily digest | **Mute movies 24h** / **Mute games 24h** | silences that topic for 24 h: its live pushes are deferred into the next morning digest and its digest chatter is dropped; `critical` alerts still ring through |
 
+You can also send plain text to the control topic for diagnostics:
+`status movies` replies with the topic's mute, health, and digest-buffer state;
+`explain movies` replies with the last five intentionally dropped movie items
+and their routing reasons from `audit.json`.
+
 Commands are deliberately low-stakes: the worst anyone who learns the control
 topic name could do is skip a nudge, snooze a reminder, or mute a topic for a
 bounded while (≤ 30 days, deferred into the digest rather than lost, and
