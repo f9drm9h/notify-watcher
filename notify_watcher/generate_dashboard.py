@@ -460,9 +460,8 @@ _TAIL = r"""
 (function () {
   // --- configure your wallpapers here (paths are relative to dashboard.html) ---
   var WALLPAPERS = [
-    'wallpapers/image1.jpg',
-    'wallpapers/image2.jpg',
-    'wallpapers/live.mp4'
+    'wallpapers/arlecchino-elemental-burst-wallpapers-4k-v0-8vhujjhxja0d1.png',
+    'wallpapers/arlecchino-genshin-impact-4k-live.mp4'
   ];
   var ROTATE_MS = 5 * 60 * 1000;   // 5 minutes
 
