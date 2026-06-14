@@ -164,6 +164,18 @@ const commands = [
     name: "readlater",
     description: "Save the current item to your reading list.",
   },
+  {
+    name: "run",
+    description: "Run an on-demand check for one topic now.",
+    options: [
+      {
+        type: STRING,
+        name: "topic",
+        description: "Topic to check right now (comma-separated allowed).",
+        required: true,
+      },
+    ],
+  },
 ];
 
 // ----- register (bulk overwrite) ---------------------------------------

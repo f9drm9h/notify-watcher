@@ -91,9 +91,7 @@ async function handleSlashCommand(interaction, env) {
 
     // --- ON-DEMAND run (Phase 3): trigger a GitHub Actions sweep --------
     case "run":
-      // TODO (B6): POST to GITHUB_DISPATCH_URL with the new "only" input so
-      // the sweep runs just opts.topic and posts a fresh result.
-      return reply("On-demand run is not wired up yet.");
+      return await cmdRun(opts.topic, env);
 
     default:
       return reply(`Unknown command: ${name}`);
@@ -180,6 +178,36 @@ async function cmdExplain(topic, env) {
     if (meta) lines.push(`  ${meta}`);
   }
   return reply(lines.join("\n").slice(0, 1900));
+}
+
+async function cmdRun(topic, env) {
+  if (!env.GITHUB_TOKEN || !env.GITHUB_DISPATCH_URL) {
+    return reply("On-demand run is not configured yet.");
+  }
+  const only = String(topic || "").trim().toLowerCase();
+  if (!only) return reply("Tell me which topic to run, e.g. /run topic:movies.");
+
+  let res;
+  try {
+    res = await fetch(env.GITHUB_DISPATCH_URL, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${env.GITHUB_TOKEN}`,
+        Accept: "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "notify-watcher-worker",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ ref: "main", inputs: { only } }),
+    });
+  } catch {
+    return reply("Could not reach GitHub to start the run.");
+  }
+
+  if (res.status === 204) {
+    return reply(`Started an on-demand check for ${human(only)}. A fresh result will post shortly if anything changed.`);
+  }
+  return reply(`Could not start the run (GitHub returned ${res.status}).`);
 }
 
 async function fetchRepoJson(env, name) {
