@@ -1,0 +1,11 @@
+name = "notify-watcher"
+main = "src/index.js"
+compatibility_date = "2026-06-14"
+workers_dev = true
+
+# Public, non-secret runtime variable. The Worker reads the latest committed
+# state.json from the PUBLIC repo over raw.githubusercontent.com (read-only).
+# Secrets (DISCORD_PUBLIC_KEY, DISCORD_TOKEN, channel ids) are NOT defined here —
+# they live as encrypted Worker secrets and are preserved across deploys.
+[vars]
+STATE_BASE_URL = "https://raw.githubusercontent.com/f9drm9h/notify-watcher/main"
