@@ -476,105 +476,6 @@
     {
       "action": "digest",
       "detail": "",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Provocholine",
-      "title": "FDA updates approval for Provocholine (Methacholine Chloride) (NDA019193)",
-      "topic": "fda",
-      "ts": "2026-06-10T20:22:38.866429+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019193"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Hympavzi",
-      "title": "FDA updates approval for Hympavzi (Marstacimab-Hncq) (BLA761369)",
-      "topic": "fda",
-      "ts": "2026-06-10T20:22:38.866634+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761369"
-    },
-    {
-      "action": "push",
-      "detail": "Sip some water - your body will thank you.",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-06-10T20:22:53.324001+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Super Smash Bros. Ultimate - Cashbox wednesday! grind continues",
-      "score": 68,
-      "severity": "high",
-      "source": "mkleossb",
-      "title": "mkleossb is live on Twitch",
-      "topic": "twitch",
-      "ts": "2026-06-10T22:07:07.480732+00:00",
-      "url": "https://twitch.tv/mkleossb"
-    },
-    {
-      "action": "push",
-      "detail": "Super Smash Bros. Ultimate - MY SECRET CHARACTER IS YOUNG LINK!!!",
-      "score": 68,
-      "severity": "high",
-      "source": "Sparg0",
-      "title": "Sparg0 is live on Twitch",
-      "topic": "twitch",
-      "ts": "2026-06-10T22:07:08.484963+00:00",
-      "url": "https://twitch.tv/Sparg0"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Kevin Feige Confirms Ant-Man\u2019s New Job In Avengers: Doomsday - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-10T22:49:37.213575+00:00",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBISzJIQkxaUXdRaHVwaXlKSWRYMzRvZFUxS29qMHY2MnoyZjN1ZUlIanNlcnpBdG9jc2wyakd3bkRlUF9VaDRNMFFneVlTWGxDWTlWY215LXVORDJkYmJ3eDNNcU9KYkQza0FrZ1hzdUFoZl8xMlE?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel makes the Avengers: Doomsday announcement nobody wanted to hear - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-10T22:49:37.213955+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMmc4djBiTndNX0dONlB6amExWnRZc2tQQmZqMll3T2p2a1N3SnlEaEI0TnhOSjlRR1RHRl9GUm9iQkV6X2JmcnNrNjU0QzU5bWN0SFlWV090blZjNWVvY25aNkE2YkJXbnNsMWtXUF9uQ29xaXZMQ1FpRVlxQlhDenl3cHRYV1k2QlZHaDZB?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Russo Bros Declare \u201cWe\u2019re Back to Phase Zero\u201d With \u2018Avengers: Doomsday\u2019 and Robert Downey Jr. - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-06-10T22:49:37.214285+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQUHhHZWVwWDlEOGRvNTg2OGx2R1cxc0k4QTZFVGpnc25zUEc3NmdYd3VaZk1nQzZ4YUctX2M3VVc3MklYY3JCdVJJRF9IamFZcXJpUnVhWjFMZ29KM05nVUZSLWgyNmdRUmtRY1NkTldESWlEc0p5U1RXR2trYkNZbThVRHZZb0stYUx6LUVyZkgteGdPNHdEMWpGcE1oYWFHdnFQRWE5dlktY2FVN3Y0aEVFNzBRUQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday trailer expected release time (by each time zone), preview, and what to expect - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-10T22:49:37.214549+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNeEJTUEM0cUQ5QW9YdFpZaXkyUmpoWW5oT1J5UHl6Yk5VWGM4MTBER1ljQ0gwOHpUY3gyZEQ4QkR5Y2hvVS0zajRCSkVaZEpOczJPR3pXWDd6eHJTZGtORUdETFJocU1sRnN1dE1uT3l5eHJGVDJzVm5seERPb2VuNHdUcHpUbFBIQXBxS280MFh6QVhEVEZEWmlwdDhXMUMwM25Bcg?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
       "score": 28,
       "severity": "moderate",
       "source": "Avengers: Doomsday",
@@ -6234,6 +6135,114 @@
       "topic": "wikiquote",
       "ts": "2026-06-14T06:23:28.566778+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "0064c4eace85769c",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Is Officially the Longest Spider-Man Movie in History - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-14T10:03:29.768119+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9QVFl5MFRWd0hBdzhubm4zX3FmbGpKRUwyM3dxWGwzUmxpM3ROTnFXVDNzU0JmS0NRUW9oZmVUWWhHcGpQSWNFYnBaQm1xWDZ1TjhEbWg0NHJDS1hHMEVFSENlXzRpMlk?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "560691c4160b2c60",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "SPIDER-MAN: BRAND NEW DAY Poster and Video Confirm Major MCU Ticket Sale Announcement - GeekTyrant",
+      "topic": "movies",
+      "ts": "2026-06-14T10:03:29.768687+00:00",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQSUFhbnNwOHF3ck1oQ2RMYmxKSjRLMEJlOXVOeGp3d3NpSlM4amJYRUlTQjNqdVdFaTkydk1jUFhuODdDLXpmWkpqaERZME0zOFhZZzVRRnViOG5INmNyb0RvRkh2QWMycWVLRjNPbnZ5UXNOWHMzVVU3RGt1R3FqSzNnNlkySmtVMGNNd0wxeE1wT3hwOHA1QTQ3SVgtbWJHVzVPdmtOanRPbzlJd3RjNmNn?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "6a2404875b48b5c7",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Mark Ruffalo's Hulk Form Officially Confirmed For Spider-Man: Brand New Day - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-14T10:03:30.043197+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE80ek4yNXdoUzdXSmVwakNEQU1BMENXUXRZamZGVGFfSzhnMFBTRHhsMVUyZTNOWHdWS1MzRVI1OXE0NUxrREx1cW5SN2dCU1ZfT0ttUWdxNzI2blhIa253NFB4bC1HTWc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "847ad5b500a33ba1",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "The Batman 2: Sebastian Stan Confirms Harvey Dent Will Become Two-Face in Sequel - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-14T10:03:31.627383+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1DbTVxcUpBNThsZnlOQXZMVDZaM0gyWllVRWdVQnltZmZ2eUNPUzRaeDRBY2kyUkhTS3d5aW9yMFlxekl4Q2hISWxHak5KUlVEenc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "0aa1c0e6201902d1",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "The Batman Part II First Look: Matt Reeves Shares Sequel's First Shot - But Whose Body Is That? - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-14T10:03:31.865890+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBScWJSUFRlSU1ZLXdpNHM1aVItcEJzTDJ2cGlOdDJaUUY4ZmxMbWZDQV9sb1QzdGxBNEp1NWVqaGpYbTE1Nkl1Q2lkSUxGSlVvekZUTFlDVlB5dVpBRDljbm5lUko?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "ae1d98c36e15027c",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Beloved DC star announces reduced role in The Batman - Part II - Bam Smack Pow",
+      "topic": "movies",
+      "ts": "2026-06-14T10:03:32.073065+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9tWmIzeXYzQnVrcWd6Y2MzT2ktSTZCVVduZWRsVlp0NGZnUmhjWWhMOFYxZ1I3NFFyR0ktLThHMTZpZnBpODJEX0tJZFFfUmxJZkVzWjR2aUNTZTUtOHMyTlFwSHhGTkFh?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "4c0e86200961c35b",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Colin Farrell Confirms Penguin\u2019s Return in The Batman Part II \u2014 But There\u2019s a Catch That Changes Everything - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-14T10:03:32.073621+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBfVFpIVWlFbWppWXZvQnBFOU9oWHIycVBHZHQ4enFFQ2VzdDJGVUItOGt2eG13ajFUTXZ6ZlUtWVpXQTFERUNOeEdVTkthZWNQUmEtNjVvNUdkcnhZU1piZEVFcmZUdw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "The stage for Pandora's fateful arrival was set by a grand act of defiance. Prometheus, the Titan, a being of immense foresight and cunning, had dared to steal fire from the gods, a sacred flame he then bestowed upon humanity. This was no mere warmth or light; it was the spark of progress, of innovation, of a civilization that might one day challenge the very heavens. Zeus, the king of Olympus, a deity known for his thunderous wrath and meticulous sense of cosmic order, could not let such an transgression go unpunished. His initial target was Prometheus himself, who was bound to a mountain and subjected to an eternity of torment, his liver devoured daily by an eagle. But Zeus's vengeance was not complete; it extended to humanity, the beneficiaries of Prometheus's audacious gift, and for them, he conceived a punishment far more insidious, a gift designed to unleash a different kind of fire upon the world.\n\nThus, Pandora was fashioned, a being of breathtaking beauty and enchanting allure, sculpted by Hephaestus, the divine craftsman, and bestowed with gifts from every god and goddess. Athena taught her weaving, Aphrodite graced her with irresistible charm, Hermes imbued her with a silver tongue and a curious mind. Her very name, Pandora, meaning \"all-gifted,\" belied the true nature of her purpose. She was presented to Epimetheus, Prometheus's less astute brother, who, despite his brother's solemn warning to accept no gifts from Zeus, was utterly captivated by her. Alongside her, a large jar \u2013 not a box, as popular retellings often mistakenly claim \u2013 was delivered, a vessel brimming with an unknown cargo, accompanied by a strict injunction never to open it. This was the crux of Zeus's cunning plan: to appeal to the very human weakness of curiosity, to tempt with the forbidden, and to witness the inevitable unraveling.\n\nThe human drama that unfolded was one of irresistible temptation and devastating consequence. Pandora, armed with her divinely instilled curiosity, found herself increasingly drawn to the forbidden jar. The whispers of its contents, imagined horrors and wonders, gnawed at her resolve. Perhaps it was a trick of the gods, a test of her obedience; perhaps it contained treasures beyond imagination. The weight of the world, or at least its future woes, rested on her delicate shoulders, unknowingly so. The moment her fingers clasped the lid, the air must have crackled with an unseen tension. When she finally lifted it, not a single item but a torrent of misfortunes burst forth, a horrifying deluge of pestilence, sorrow, disease, old age, and a thousand other bitter pains that had until then been unknown to a world living in a state of naive bliss. They flew out like angry wasps, stinging humanity with their venomous presence, forever altering the fabric of existence.\n\nIn the ensuing chaos, as humanity grappled with the sudden onslaught of suffering, one final entity remained trapped within the jar: Elpis, or Hope. Pandora, in a sudden realization of the catastrophe she had unleashed, slammed the lid shut, inadvertently preserving this last, precious gift. Why Hope remained is a subject of endless interpretation. Was it a final, cruel twist from Zeus, an almost mocking reminder of what could have been? Or was it a hidden kindness, a necessary antidote to the evils now plaguing the world, a faint glimmer of light in the encroaching darkness?",
+      "id": "bc04d20e74fba19d",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Pandora and the jar of evils",
+      "topic": "learn",
+      "ts": "2026-06-14T10:04:58.880985+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cMeditations on the Divine Will (from an undated manuscript found among his papers by one of his secretaries found among his papers, now generally known as the \"Meditations on the Divine Will\"):\u201d\n\u2014 Abraham Lincoln\n\nThe name Abraham Lincoln conjures an image of stoic resolve, a man whose features were etched by the weight of a nation tearing itself apart. Yet, beneath the public persona of the Great Emancipator and the Commander-in-Chief, lay a deeply introspective, often melancholy soul wrestling with forces far grander than political maneuverings or battlefield strategies. The \"Meditations on the Divine Will,\" an undated manuscript discovered among his papers after his assassination, offers a rare, unfiltered glimpse into this private struggle. It\u2019s not a speech, nor a letter intended for publication, but rather the raw, unedited workings of a mind grappling with the unfathomable. Imagine Lincoln, perhaps late at night in the Executive Mansion, the sounds of a city at war muted by thick walls, his pen scratching across paper, not to convince or persuade, but to understand. He was not merely leading a war; he was trying to comprehend the will of a God that allowed such a cataclysmic conflict to unfold, a God that seemed to favor neither North nor South unequivocally.\n\nThe world in which Lincoln penned these thoughts was a crucible of unimaginable suffering and moral reckoning. The American Civil War was in full, brutal swing, its casualty lists lengthening with each passing month, stretching beyond anything the young nation had ever conceived. Families were torn asunder, not just geographically, but ideologically. Slavery, the institution that had festered at the heart of the republic since its inception, was now being violently purged, or desperately defended, depending on one's allegiance. Lincoln himself bore the immense personal toll of this conflict. His own son, Willie, had died in the White House just months before, a tragedy that deepened the already profound melancholic strain in his character. He was a man steeped in pragmatism, a lawyer and politician by trade, yet he found himself thrust into a role that demanded not just political acumen, but a theological understanding of justice, fate, and the very nature of human will versus divine design. The \"Meditations\" reflect this profound wrestling, a search for meaning in the midst of the apocalypse, a desperate attempt to reconcile the horrific reality of war with the notion of a just and benevolent God.\n\nThe enduring resonance of Lincoln's \"Meditations on the Divine Will\" lies in its timeless exploration of humanity's relationship with forces beyond its control. In an age often defined by the illusion of human mastery, Lincoln reminds us of the humbling reality that sometimes, despite our best efforts, our plans, and our desires, we are swept up in currents far larger than ourselves. His struggle to discern the \"Divine Will\" speaks to every individual who has ever faced an inexplicable tragedy, a seemingly insurmountable obstacle, or a moral dilemma where right and wrong blur into a desolate grey. It\u2019s a testament to the courage not just to lead, but to *think* deeply, to question, and to seek understanding even when answers are elusive.",
+      "id": "4b6cef179839b630",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Abraham Lincoln",
+      "topic": "wikiquote",
+      "ts": "2026-06-14T10:05:04.152166+00:00",
+      "url": ""
     }
   ],
   "fda_seen_ids": [
@@ -6926,8 +6935,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "medicine",
-  "knowledge_last_sent": "2026-06-14T2",
+  "knowledge_last_category": "mythology",
+  "knowledge_last_sent": "2026-06-14T3",
   "knowledge_seen": {
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
     "astronomy:The hidden oceans of Europa and Enceladus": "2026-06-13",
@@ -6937,6 +6946,7 @@
     "hearing_spacetime_ring": "2026-06-12",
     "math_history:Andrew Wiles and the final proof": "2026-06-14",
     "medicine:Walter Reed and the conquest of yellow fever": "2026-06-14",
+    "mythology:Pandora and the jar of evils": "2026-06-14",
     "philosophy:Augustine and the Confessions": "2026-06-13",
     "pyramid_skyscraper": "2026-06-12",
     "science:Marie Curie and the discovery of radioactivity": "2026-06-13",
@@ -6948,7 +6958,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-06-14T06:21:56.235197+00:00"
+    "ts": "2026-06-14T10:03:26.064895+00:00"
   },
   "launch_seen_ids": [
     "a86ceb6171424b9b",
@@ -6960,6 +6970,12 @@
   "learn_last_sent": "2026-06-13",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "0e95a71756ffd31f",
+      "ad97f1967fea0aab",
+      "8b296ad9bf9b5d12",
+      "c2155e5902b094bc",
+      "cf5a8e0067072361",
+      "abf3c3bbf4bb5446",
       "8602e13c2ddeb3b6",
       "5459fbb6dc7dafd9",
       "ed675343a3ed4898",
@@ -7053,13 +7069,7 @@
       "3e2df8573945e5de",
       "b24cbd7bfb2d23e9",
       "2fdd27fabd663cd5",
-      "a2e06004c5c909f5",
-      "aa33d13538a7af36",
-      "c6c50c2d1b37bbb0",
-      "bc6898c940263819",
-      "b0278452e81705a8",
-      "002d2d2b6f81ab55",
-      "e955776a183eb69c"
+      "a2e06004c5c909f5"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7261,6 +7271,18 @@
       "6d3409e6a4b16c01"
     ],
     "Spider-Man: Brand New Day": [
+      "e54d9e23fb9a3501",
+      "807315790c7a25dd",
+      "44f7c32c3e28fe7f",
+      "df853a73524cdab1",
+      "28b1d477193f90f5",
+      "f24748211b7ea10a",
+      "ed517c56b70dafec",
+      "66593506b11d16a9",
+      "6bf93169e66ab339",
+      "c816caba5070763a",
+      "2526f4dcf7ccdabe",
+      "dbe492c455459739",
       "7e1dab90683701bc",
       "c4691b83628e7d97",
       "832b909393e85cca",
@@ -7348,21 +7370,27 @@
       "4e685f8fef05f59f",
       "cab56770482c0136",
       "b5c9d6905643accb",
-      "48204ef1bab46780",
-      "82ab6223d816627b",
-      "5ae7ef4bbb2dbc6b",
-      "43df46b333d8556a",
-      "c1d97154c475cb79",
-      "3d62c4911bd0465b",
-      "b31f23de240af9ce",
-      "02de88c9113cf081",
-      "d49ecc0b20443cb3",
-      "f7a7c6fa32f79649",
-      "755bba3220a82db4",
-      "47c8ea59c3598a40",
-      "78a248f9fc73e323"
+      "48204ef1bab46780"
     ],
     "The Batman Part II": [
+      "5a323f0735f45c75",
+      "7a2f425bcb0a9120",
+      "caeb68735c339cc8",
+      "96fdbafa3224b490",
+      "809b00dfd3374e7f",
+      "242937b08c7c2543",
+      "3f79a0208ef8ca20",
+      "c69853654ca8fa61",
+      "3fd5eebf1f0b5536",
+      "362ea35a991a4fba",
+      "64e1e6d40752fec0",
+      "bef9fb96d30b4d58",
+      "fd8442d28c5f20ad",
+      "8dbc409bf62e7ab7",
+      "bfad1d64ba3af242",
+      "02833dafebfeb906",
+      "9e36809d439d6a8c",
+      "146c8b33e9452a7d",
       "b8da7e39254c0f2a",
       "c7de8c55c70c4557",
       "6f58803e888a6199",
@@ -7444,27 +7472,15 @@
       "380d03a3d0a9d7be",
       "ca0c3e81ef84a4f2",
       "7878f7b15edc8e41",
-      "a63b2a465471c9f0",
-      "8a5d689d1936bcdd",
-      "2897059f7dae4858",
-      "c8114564f394fa3e",
-      "d9878406943b2fb3",
-      "41162a454de4d93f",
-      "d742209fdbf15c93",
-      "af68620334f59dbe",
-      "136c76a03d45377e",
-      "16f05f28c0f09136",
-      "d1a2593a4d556060",
-      "c089277111847e33",
-      "862120ef71e6c94a",
-      "bf5843f1a1f08adb",
-      "9843418d830f48c3",
-      "dbcf973d14d57c50",
-      "a4459e58bf660541",
-      "bf7d9fe524cfefbc",
-      "ee21a64f60f5a3f1"
+      "a63b2a465471c9f0"
     ],
     "The Odyssey": [
+      "b4ee9d24a2770ace",
+      "0fd6d15b332e0531",
+      "471eb8ccfa041fdf",
+      "36815071d9f97d4e",
+      "1ea416168e2a8ea8",
+      "8f2f1981640eeb08",
       "0e76faa512ef6d15",
       "755f76d3848fcdda",
       "9dc4cbba1c39714b",
@@ -7558,13 +7574,7 @@
       "55dcddfe8ce42e0e",
       "db71598c7c440c80",
       "d06bf3f86b13a649",
-      "2d0305582e06751a",
-      "427a851af50a97ec",
-      "172aeeb66df74fb1",
-      "17db8bcb46af9cbe",
-      "1f5e65219415d596",
-      "50735e0491fb30a0",
-      "9980ffe468eef693"
+      "2d0305582e06751a"
     ]
   },
   "movie_release_dates": {
@@ -7972,47 +7982,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "deals": {
-      "last_data": "2026-06-14T06:22:49.214345+00:00",
+      "last_data": "2026-06-14T10:04:24.609762+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "energy": {
-      "last_data": "2026-06-14T06:22:58.753450+00:00",
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_data": "2026-06-14T10:04:34.043296+00:00",
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "fda": {
-      "last_data": "2026-06-14T06:22:49.733559+00:00",
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_data": "2026-06-14T10:04:25.051372+00:00",
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "fuel": {
       "last_data": "2026-06-13T22:04:38.879753+00:00",
@@ -8020,16 +8030,16 @@
       "last_ok": "2026-06-13T22:03:06.460266+00:00"
     },
     "fx": {
-      "last_data": "2026-06-14T06:23:16.166735+00:00",
+      "last_data": "2026-06-14T10:04:50.417460+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "games": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-14T06:22:07.298683+00:00",
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_data": "2026-06-14T10:03:37.842845+00:00",
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "groceries": {
       "last_data": "2026-06-13T22:04:12.056215+00:00",
@@ -8037,111 +8047,111 @@
       "last_ok": "2026-06-13T22:03:06.460266+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "movies": {
-      "last_data": "2026-06-14T06:22:03.215085+00:00",
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_data": "2026-06-14T10:03:33.471893+00:00",
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "music": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-14T06:22:59.401851+00:00",
+      "last_data": "2026-06-14T10:04:34.835378+00:00",
       "last_data_count": 50,
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "outages": {
-      "last_data": "2026-06-14T06:23:15.522593+00:00",
+      "last_data": "2026-06-14T10:04:49.825916+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-14T06:23:15.573498+00:00",
-      "last_data_count": 38,
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_data": "2026-06-14T10:04:49.887739+00:00",
+      "last_data_count": 36,
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-14T06:22:04.186139+00:00",
+      "last_data": "2026-06-14T10:03:34.678143+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "weather": {
-      "last_data": "2026-06-14T06:22:58.971184+00:00",
+      "last_data": "2026-06-14T10:04:34.245244+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-14T06:23:18.534203+00:00",
+      "last_data": "2026-06-14T10:04:53.497572+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-14T06:21:56.235197+00:00"
+      "last_ok": "2026-06-14T10:03:26.064895+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "22DEC09",
   "visa_f4_final_action": "08NOV08",
   "watch_schedule": {
-    "last_full_window": "164946"
+    "last_full_window": "164947"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8180,13 +8190,14 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "innovators_artists",
-  "wikiquote_last_sent": "2026-06-14T2",
+  "wikiquote_last_category": "leaders",
+  "wikiquote_last_sent": "2026-06-14T3",
   "wikiquote_seen": {
     "activists_thinkers:Mother Teresa": "2026-06-14",
     "activists_thinkers:Susan B. Anthony": "2026-06-13",
     "innovators_artists:Pablo Picasso": "2026-06-13",
     "innovators_artists:Thomas Edison": "2026-06-14",
+    "leaders:Abraham Lincoln": "2026-06-14",
     "leaders:Mikhail Gorbachev": "2026-06-13",
     "philosophers:Socrates": "2026-06-13",
     "science_pioneers:Charles Darwin": "2026-06-13",
