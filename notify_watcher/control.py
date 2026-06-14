@@ -475,6 +475,7 @@ def cmd_status(topic: str, state: dict,
         message=message,
         tags="mag",
         priority="high",
+        topic="control",
     )
     log.info("control: status reply sent for %s", topic)
 
@@ -506,6 +507,7 @@ def cmd_explain(topic: str) -> None:
         message=_explain_message(topic),
         tags="mag",
         priority="high",
+        topic="control",
     )
     log.info("control: explain reply sent for %s", topic)
 
@@ -858,6 +860,7 @@ def process_pending(state: dict, now: Optional[_dt.datetime] = None) -> None:
                 click_url=snap.get("url") or None,
                 tags="alarm_clock",
                 priority="default",
+                topic="control",
                 **({"actions": actions} if actions else {}),
             )
         except Exception as exc:  # noqa: BLE001 - keep for retry next run
@@ -886,6 +889,7 @@ def process_pending(state: dict, now: Optional[_dt.datetime] = None) -> None:
                 click_url=entry.get("url") or None,
                 tags="mag",
                 priority="default",
+                topic=entry.get("topic") or "control",
             )
         except Exception as exc:  # noqa: BLE001 - keep for retry next run
             log.warning("control: MORE push for %s failed (will retry): %s",

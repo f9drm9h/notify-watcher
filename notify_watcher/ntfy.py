@@ -1,25 +1,30 @@
-"""Send a push notification via ntfy.sh.
+"""Outbound notification delivery + quiet-hours policy.
 
-Reads NTFY_TOPIC (required) and NTFY_SERVER (optional, defaults to
-https://ntfy.sh) from environment variables. Nothing is hardcoded so this
-file is safe to commit to a public repo.
+Historically this module POSTed to ntfy.sh. The transport is now Discord (see
+``discord_delivery``): ``push`` renders a rich embed and delivers it to the
+topic's routed channel. The module name and the ``push``/``would_suppress``
+surface are kept deliberately — every topic calls ``ntfy.push`` through the
+shared module object and the test suite patches it as the single delivery seam,
+so keeping the seam stable made the transport swap a drop-in.
+
+What stayed: the entire quiet-hours engine. Whether the underlying transport is
+ntfy or Discord, "don't ring my phone at 3am for low-priority chatter" is the
+same routing decision, so ``_quiet_suppresses`` / ``would_suppress`` are
+unchanged and still consulted by ``events.emit`` before it routes.
+
+Configuration now lives in ``discord_delivery`` (DISCORD_TOKEN + the CHANNEL_*
+channel ids). Nothing secret is hardcoded here, so this file is safe to commit.
 """
 from __future__ import annotations
 
-import base64
 import datetime as _dt
-import json
 import logging
 import os
 from typing import Optional
 
-import requests
-
-from . import config
+from . import config, discord_delivery
 
 log = logging.getLogger(__name__)
-
-DEFAULT_SERVER = "https://ntfy.sh"
 
 # Priorities that always ring through, even during quiet hours: real, timely
 # threats and explicitly high-priority announcements are sent at these tiers.
@@ -27,9 +32,8 @@ DEFAULT_SERVER = "https://ntfy.sh"
 # as an official Anthropic model release, belongs here.
 _ALWAYS_DELIVER = {"high", "urgent"}
 
-
-class NtfyConfigError(RuntimeError):
-    pass
+# Back-compat alias: external references to the old config error keep importing.
+DiscordConfigError = discord_delivery.DiscordConfigError
 
 
 def _parse_hhmm(value: object) -> Optional[int]:
@@ -100,34 +104,6 @@ def would_suppress(priority: Optional[str]) -> bool:
     return _is_quiet_now(priority)
 
 
-def _encode_header(value: str) -> str:
-    """Make a header value safe for ntfy without mangling non-ASCII text.
-
-    HTTP/ntfy header values must be ASCII (requests encodes them latin-1). A pure
-    ASCII title passes through unchanged. Anything with accents/emoji is wrapped
-    as a single RFC 2047 base64 encoded-word (``=?UTF-8?B?...?=``), which ntfy
-    decodes back to UTF-8 — so "Café" renders as "Café" instead of the "CafÃ©"
-    you got from the old utf-8-bytes-as-latin-1 reinterpretation.
-    """
-    try:
-        value.encode("ascii")
-        return value
-    except UnicodeEncodeError:
-        b64 = base64.b64encode(value.encode("utf-8")).decode("ascii")
-        return f"=?UTF-8?B?{b64}?="
-
-
-def _config() -> tuple[str, str]:
-    topic = os.environ.get("NTFY_TOPIC", "").strip()
-    if not topic:
-        raise NtfyConfigError(
-            "NTFY_TOPIC environment variable is not set. "
-            "Set it to your private ntfy topic name."
-        )
-    server = os.environ.get("NTFY_SERVER", "").strip() or DEFAULT_SERVER
-    return server.rstrip("/"), topic
-
-
 def push(
     title: str,
     message: str,
@@ -137,27 +113,29 @@ def push(
     attach_url: Optional[str] = None,
     actions: Optional[list] = None,
     timeout: float = 15.0,
+    topic: Optional[str] = None,
+    severity: Optional[str] = None,
 ) -> None:
-    """POST a notification to the configured ntfy topic.
+    """Deliver a notification as a Discord rich embed to the topic's channel.
 
-    `priority` is an optional ntfy priority name ("min", "low", "default",
-    "high", "urgent"); when None the server applies its default, so existing
-    callers are unaffected. Used by the scored domain monitors to make
-    breakthrough/high-tier alerts ring louder than routine ones.
+    `topic` drives routing (see discord_delivery.category_for): finance topics
+    land in CHANNEL_FINANCE, discovery in CHANNEL_DISCOVERY, system/errors in
+    CHANNEL_LOGS, the Gemini summaries in CHANNEL_BRIEFING, and anything
+    unmapped in CHANNEL_GENERAL. `severity` tints the embed (critical -> red).
 
-    `attach_url` sets the ntfy `Attach` header: the app fetches the URL and,
-    for images, renders the picture inline in the notification. The server
-    only stores the link (not the file), so any size works on the free tier.
+    `priority` is no longer a transport header — it is retained because the
+    quiet-hours engine bands on it ("high"/"urgent" always ring; lower tiers can
+    be held overnight). `click_url`, `tags`, and `attach_url` are folded into the
+    embed (link, emoji cue, inline image).
 
-    `actions` is an optional list of ntfy action-button dicts (up to three),
-    serialized into the `Actions` header as a JSON array. The reply-button
-    feature uses `http` actions built by control.make_action, which POST a
-    command string back to the private control topic. json.dumps with the
-    default ensure_ascii=True yields a single-line ASCII header value, so no
-    RFC 2047 encoding is needed.
+    `actions` (the old ntfy reply buttons) is accepted but not delivered: those
+    were ntfy http-action headers. The Discord equivalent is interactive message
+    components handled by the gateway bot (bot.py) and is intentionally out of
+    scope for this transport swap — see the migration note in the PR/commit.
 
-    Raises requests.HTTPError on a non-2xx response so callers can decide
-    whether to retry or log-and-continue.
+    Raises discord_delivery.DiscordConfigError when unconfigured and
+    requests.HTTPError on a non-2xx Discord response, so callers that gate on a
+    successful send (e.g. the digest buffer clear) behave as before.
 
     When quiet hours are enabled (monitors.json -> quiet_hours) and active, a
     low/default/min push is dropped silently; high/urgent alerts always ring.
@@ -166,28 +144,17 @@ def push(
         log.info("quiet hours active; suppressing %r push", title)
         return
 
-    server, topic = _config()
-    url = f"{server}/{topic}"
-
-    headers: dict[str, str] = {}
-    # ntfy header values must be ASCII; RFC 2047-encode non-ASCII titles so
-    # accented characters survive instead of being mojibake'd through latin-1.
-    headers["Title"] = _encode_header(title)
-    if click_url:
-        headers["Click"] = click_url
-    if tags:
-        headers["Tags"] = tags
-    if priority:
-        headers["Priority"] = priority
-    if attach_url:
-        headers["Attach"] = attach_url
     if actions:
-        headers["Actions"] = json.dumps(actions)
+        log.debug("discord transport ignores %d ntfy action button(s) for %r",
+                  len(actions), title)
 
-    resp = requests.post(
-        url,
-        data=message.encode("utf-8"),
-        headers=headers,
+    discord_delivery.send(
+        topic,
+        title,
+        message,
+        click_url=click_url,
+        tags=tags,
+        severity=severity,
+        attach_url=attach_url,
         timeout=timeout,
     )
-    resp.raise_for_status()

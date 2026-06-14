@@ -80,31 +80,42 @@ class IsQuietNowTest(unittest.TestCase):
             self.assertFalse(ntfy._is_quiet_now("low"))
 
 
-class PushIntegrationTest(unittest.TestCase):
+class PushDeliveryTest(unittest.TestCase):
+    """push() gates on quiet hours, then hands off to the Discord transport."""
+
     def test_push_drops_when_quiet(self):
         with mock.patch.object(ntfy, "_is_quiet_now", return_value=True), \
-             mock.patch.object(ntfy.requests, "post") as post:
-            ntfy.push(title="hi", message="there", priority="low")
-        post.assert_not_called()
+             mock.patch.object(ntfy.discord_delivery, "send") as send:
+            ntfy.push(title="hi", message="there", priority="low", topic="fx")
+        send.assert_not_called()
 
-    def test_push_sends_when_not_quiet(self):
+    def test_push_delivers_when_not_quiet(self):
         with mock.patch.object(ntfy, "_is_quiet_now", return_value=False), \
-             mock.patch.dict("os.environ", {"NTFY_TOPIC": "t"}, clear=False), \
-             mock.patch.object(ntfy.requests, "post") as post:
-            ntfy.push(title="hi", message="there", priority="low")
-        post.assert_called_once()
+             mock.patch.object(ntfy.discord_delivery, "send") as send:
+            ntfy.push(title="hi", message="there", priority="low",
+                      topic="fx", severity="moderate")
+        send.assert_called_once()
+        # topic/title/message are positional; routing hints are keyword.
+        self.assertEqual(send.call_args.args[0], "fx")
+        self.assertEqual(send.call_args.kwargs.get("severity"), "moderate")
 
-    def test_attach_url_sets_attach_header(self):
+    def test_attach_url_forwarded_to_transport(self):
         with mock.patch.object(ntfy, "_is_quiet_now", return_value=False), \
-             mock.patch.dict("os.environ", {"NTFY_TOPIC": "t"}, clear=False), \
-             mock.patch.object(ntfy.requests, "post") as post:
-            ntfy.push(title="hi", message="there",
+             mock.patch.object(ntfy.discord_delivery, "send") as send:
+            ntfy.push(title="hi", message="there", topic="apod",
                       attach_url="https://example.com/pic.jpg")
-            ntfy.push(title="hi", message="there")  # no attach -> no header
-        first, second = post.call_args_list
-        self.assertEqual(first.kwargs["headers"]["Attach"],
+        self.assertEqual(send.call_args.kwargs.get("attach_url"),
                          "https://example.com/pic.jpg")
-        self.assertNotIn("Attach", second.kwargs["headers"])
+
+    def test_ntfy_actions_are_not_forwarded(self):
+        # The old ntfy reply buttons have no Discord-embed equivalent here; they
+        # must be dropped, not passed through to the transport.
+        with mock.patch.object(ntfy, "_is_quiet_now", return_value=False), \
+             mock.patch.object(ntfy.discord_delivery, "send") as send:
+            ntfy.push(title="hi", message="there", topic="fx",
+                      actions=[{"action": "view", "label": "x"}])
+        send.assert_called_once()
+        self.assertNotIn("actions", send.call_args.kwargs)
 
 
 if __name__ == "__main__":

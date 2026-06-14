@@ -288,6 +288,7 @@ def main() -> int:
             title="notify-watcher test",
             message="Test push - your notify-watcher pipeline is working.",
             tags="white_check_mark",
+            topic="system",
         )
         log.info("test push sent")
         return 0
