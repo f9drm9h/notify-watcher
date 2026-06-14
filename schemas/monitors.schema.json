@@ -66,7 +66,7 @@
         "threshold": { "type": "integer" },
         "digest_floor": { "type": "integer" },
         "default": { "type": "integer" },
-        "ntfy_bands": {
+        "urgency_bands": {
           "type": "object",
           "patternProperties": {
             "^[0-9]+$": { "enum": ["min", "low", "default", "high", "urgent"] },

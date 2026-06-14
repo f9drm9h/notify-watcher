@@ -467,7 +467,7 @@ class DispatchV2Test(unittest.TestCase):
 
 class FollowTest(unittest.TestCase):
     ENGINE = {"threshold": 60, "digest_floor": 25, "default": 40,
-              "ntfy_bands": {"0": "default"}}
+              "urgency_bands": {"0": "default"}}
 
     def _followed(self, topic="movies", hours=72):
         state: dict = {}
