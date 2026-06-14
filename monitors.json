@@ -28,11 +28,11 @@
   },
 
   "priority": {
-    "_comment": "Personal Priority Engine. Every topic emits a normalized event; the first matching rule sets a cross-topic score (default if none), boosts add, overrides clamp. score>=threshold pushes now (ntfy priority from ntfy_bands: >=90 urgent, >=70 high, else default - and quiet_hours holds default/low overnight while high/urgent ring through); digest_floor<=score<threshold buffers to the daily digest; below digest_floor is dropped. Rules match by topic and optional severity (info<low<moderate<high<critical). Every emitting topic has a rule below; the digest topic itself has none by design (it flushes the buffer, it never emits). Remove this whole section to turn the engine OFF (every topic reverts to its legacy push/digest).",
+    "_comment": "Personal Priority Engine. Every topic emits a normalized event; the first matching rule sets a cross-topic score (default if none), boosts add, overrides clamp. score>=threshold pushes now (ntfy priority from urgency_bands: >=90 urgent, >=70 high, else default - and quiet_hours holds default/low overnight while high/urgent ring through); digest_floor<=score<threshold buffers to the daily digest; below digest_floor is dropped. Rules match by topic and optional severity (info<low<moderate<high<critical). Every emitting topic has a rule below; the digest topic itself has none by design (it flushes the buffer, it never emits). Remove this whole section to turn the engine OFF (every topic reverts to its legacy push/digest).",
     "threshold": 60,
     "digest_floor": 25,
     "default": 30,
-    "ntfy_bands": { "90": "urgent", "70": "high", "0": "default" },
+    "urgency_bands": { "90": "urgent", "70": "high", "0": "default" },
     "rules": [
       { "topic": "visa_bulletin", "severity": "low", "score": 45 },
       { "topic": "visa_bulletin", "score": 100 },

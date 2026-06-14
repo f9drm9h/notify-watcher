@@ -42,7 +42,7 @@ from typing import Iterable, Optional
 _DEFAULT_THRESHOLD = 60
 _DEFAULT_DIGEST_FLOOR = 25
 _DEFAULT_BASE = 30
-# Fallback ntfy band table if cfg omits ntfy_bands: score -> ntfy priority name.
+# Fallback ntfy band table if cfg omits urgency_bands: score -> ntfy priority name.
 _DEFAULT_BANDS = {"90": "urgent", "70": "high"}
 _HIGH_PRIORITY_FLOOR = 70
 
@@ -182,7 +182,7 @@ def decide(event, cfg: dict) -> Optional[Decision]:
 
     # 4) Band the result.
     if score >= threshold:
-        return Decision("push", score, _ntfy_priority(score, cfg.get("ntfy_bands")))
+        return Decision("push", score, _ntfy_priority(score, cfg.get("urgency_bands")))
     if score >= floor:
         return Decision("digest", score, None)
     return Decision("drop", score, None, f"score {score} below digest floor {floor}")
