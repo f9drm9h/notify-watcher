@@ -6,3 +6,5 @@ cryptography>=42.0  # Fernet encryption of the committed spending log
 anthropic>=0.40  # optional WWDC summary; only used when ANTHROPIC_API_KEY is set
 brotli>=1.1  # lets requests decode br responses, so deals.py headers can advertise a Chrome-realistic Accept-Encoding
 google-generativeai>=0.8  # Gemini daily digest summarizer
+discord.py>=2.3  # 24/7 "Mission Control" Discord bot (bot.py)
+python-dotenv>=1.0  # loads DISCORD_TOKEN from the gitignored .env for bot.py

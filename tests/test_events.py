@@ -191,6 +191,8 @@ class TitlePrefixTest(unittest.TestCase):
             "tags": "zap",
             "priority": "high",
             "attach_url": None,
+            "topic": "fda",          # routing hint for the Discord transport
+            "severity": "high",      # tints the embed
         })
 
     def test_title_prefix_drops_separator_when_source_blank(self):
@@ -225,6 +227,8 @@ class BackwardCompatTest(unittest.TestCase):
             "tags": "iphone",
             "priority": None,
             "attach_url": None,
+            "topic": "ios_release",  # routing hint for the Discord transport
+            "severity": "moderate",  # emit's default severity
         })
 
     def test_legacy_push_preserves_explicit_priority(self):

@@ -1,8 +1,8 @@
 name: alert
 
 # Reliability layer, Phase 2 (docs/design/04-reliability-safety-layer.md):
-# push an ntfy notification when any monitored workflow fails, plus a
-# scheduled heartbeat that notices when `watch` stops running entirely — a
+# post a Discord embed when any monitored workflow fails, plus a scheduled
+# heartbeat that notices when `watch` stops running entirely — a
 # dropped/disabled schedule is the one failure the in-run watchdog can never
 # see, because it only executes inside a run.
 #
@@ -13,16 +13,18 @@ name: alert
 #
 # Adding a future workflow = add its `name:` to the list below (one line).
 #
-# Deliberately dependency-free: no checkout, no pip — just curl and the
-# preinstalled gh CLI. The alert path must not depend on the repo's own
-# dependencies being installable, because that is one of the failures it
-# reports on. Stateless too: dedup comes from workflow_run firing once per
-# completed run, and streak suppression from asking the GitHub API for the
-# previous run's conclusion.
+# Deliberately dependency-free: no checkout, no pip — just curl, jq, and the
+# preinstalled gh CLI (all on the ubuntu runner image). The alert path must not
+# depend on the repo's own dependencies being installable, because that is one
+# of the failures it reports on. Stateless too: dedup comes from workflow_run
+# firing once per completed run, and streak suppression from asking the GitHub
+# API for the previous run's conclusion.
 #
-# Note: failure alerts curl ntfy directly at high priority, bypassing the
-# Python quiet-hours logic — same outcome, since high/urgent alerts always
-# ring through quiet hours by design (ntfy.py _ALWAYS_DELIVER).
+# Note: alerts curl the Discord REST API directly (POST a red/green embed to the
+# LOGS channel) rather than going through notify_watcher — that Python path is
+# itself one of the things this watchdog reports on, so it must stay decoupled.
+# These are always-deliver alerts; quiet hours never applies to "your watcher
+# died" (mirrors ntfy.py _ALWAYS_DELIVER, which always rings high/urgent).
 
 on:
   workflow_run:
@@ -34,7 +36,7 @@ on:
   workflow_dispatch:
     inputs:
       test_alert:
-        description: "Send a sample failure alert (verifies ntfy delivery)"
+        description: "Send a sample failure alert (verifies Discord delivery)"
         type: boolean
         default: false
 
@@ -42,8 +44,10 @@ permissions:
   actions: read # to query previous runs for streak suppression / heartbeat
 
 env:
-  NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
-  NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+  # Failure/heartbeat alerts go to the LOGS channel via the bot token. Both are
+  # workflow-level so every job below inherits them.
+  DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+  CHANNEL_LOGS: ${{ secrets.CHANNEL_LOGS }}
 
 jobs:
   on-failure:
@@ -54,7 +58,8 @@ jobs:
       GH_TOKEN: ${{ github.token }}
       # Everything from the triggering run goes through env vars, never
       # inline ${{ }} in run: blocks — head_branch is fork-controllable text
-      # and must not be interpolated into shell source.
+      # and must not be interpolated into shell source. jq --arg then folds it
+      # safely into JSON (no injection, no broken payload on quotes/newlines).
       RUN_NAME: ${{ github.event.workflow_run.name }}
       RUN_URL: ${{ github.event.workflow_run.html_url }}
       RUN_BRANCH: ${{ github.event.workflow_run.head_branch }}
@@ -77,14 +82,15 @@ jobs:
       - name: Push failure alert
         if: steps.streak.outputs.prev != 'failure'
         run: |
-          server="${NTFY_SERVER:-https://ntfy.sh}"
           curl -fsS --retry 3 \
-            -H "Title: Workflow failed: ${RUN_NAME} (${RUN_BRANCH})" \
-            -H "Priority: high" \
-            -H "Tags: rotating_light" \
-            -H "Click: ${RUN_URL}" \
-            -d "The '${RUN_NAME}' workflow failed at ${RUN_TS}. Tap to open the failed run: ${RUN_URL}" \
-            "${server%/}/${NTFY_TOPIC}"
+            -H "Authorization: Bot ${DISCORD_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d "$(jq -nc \
+                  --arg t "Workflow failed: ${RUN_NAME} (${RUN_BRANCH})" \
+                  --arg d "The '${RUN_NAME}' workflow failed at ${RUN_TS}. Tap to open the failed run: ${RUN_URL}" \
+                  --arg u "${RUN_URL}" \
+                  '{embeds:[{title:$t,description:$d,url:$u,color:15158332}]}')" \
+            "https://discord.com/api/v10/channels/${CHANNEL_LOGS}/messages"
 
   on-recovery:
     # One calm push when a previously-failing workflow goes green again, so
@@ -111,13 +117,15 @@ jobs:
       - name: Push recovery notice
         if: steps.streak.outputs.prev == 'failure'
         run: |
-          server="${NTFY_SERVER:-https://ntfy.sh}"
           curl -fsS --retry 3 \
-            -H "Title: Workflow recovered: ${RUN_NAME} (${RUN_BRANCH})" \
-            -H "Tags: white_check_mark" \
-            -H "Click: ${RUN_URL}" \
-            -d "The '${RUN_NAME}' workflow is green again." \
-            "${server%/}/${NTFY_TOPIC}"
+            -H "Authorization: Bot ${DISCORD_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d "$(jq -nc \
+                  --arg t "Workflow recovered: ${RUN_NAME} (${RUN_BRANCH})" \
+                  --arg d "The '${RUN_NAME}' workflow is green again." \
+                  --arg u "${RUN_URL}" \
+                  '{embeds:[{title:$t,description:$d,url:$u,color:3066993}]}')" \
+            "https://discord.com/api/v10/channels/${CHANNEL_LOGS}/messages"
 
   heartbeat:
     # Catches failure mode 5 (docs/design/04 §2): GitHub drops or disables
@@ -140,14 +148,16 @@ jobs:
           age_h=$(( (now - last_s) / 3600 ))
           echo "last completed watch run: ${last:-never} (${age_h}h ago)"
           if [ "$age_h" -ge 7 ]; then
-            server="${NTFY_SERVER:-https://ntfy.sh}"
+            url="https://github.com/${{ github.repository }}/actions/workflows/watch.yml"
             curl -fsS --retry 3 \
-              -H "Title: watch has not run in ${age_h}h" \
-              -H "Priority: urgent" \
-              -H "Tags: skull" \
-              -H "Click: https://github.com/${{ github.repository }}/actions/workflows/watch.yml" \
-              -d "Last completed watch run: ${last:-never}. The schedule may have been dropped or disabled (GitHub disables crons after 60 days without repo activity). Tap to open the Actions tab." \
-              "${server%/}/${NTFY_TOPIC}"
+              -H "Authorization: Bot ${DISCORD_TOKEN}" \
+              -H "Content-Type: application/json" \
+              -d "$(jq -nc \
+                    --arg t "watch has not run in ${age_h}h" \
+                    --arg d "Last completed watch run: ${last:-never}. The schedule may have been dropped or disabled (GitHub disables crons after 60 days without repo activity). Tap to open the Actions tab." \
+                    --arg u "$url" \
+                    '{embeds:[{title:$t,description:$d,url:$u,color:15158332}]}')" \
+              "https://discord.com/api/v10/channels/${CHANNEL_LOGS}/messages"
           fi
 
   test-alert:
@@ -160,9 +170,11 @@ jobs:
     steps:
       - name: Push sample alert
         run: |
-          server="${NTFY_SERVER:-https://ntfy.sh}"
           curl -fsS --retry 3 \
-            -H "Title: Sample workflow-failure alert" \
-            -H "Tags: white_check_mark" \
-            -d "Test push from alert.yml - workflow failure alerts are wired up. Real alerts look like: 'Workflow failed: watch (main)' at high priority." \
-            "${server%/}/${NTFY_TOPIC}"
+            -H "Authorization: Bot ${DISCORD_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d "$(jq -nc \
+                  --arg t "Sample workflow-failure alert" \
+                  --arg d "Test push from alert.yml - workflow failure alerts are wired up. Real alerts look like: 'Workflow failed: watch (main)' as a red embed in this channel." \
+                  '{embeds:[{title:$t,description:$d,color:3066993}]}')" \
+            "https://discord.com/api/v10/channels/${CHANNEL_LOGS}/messages"

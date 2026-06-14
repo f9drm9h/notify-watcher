@@ -1,7 +1,36 @@
 # notify-watcher
 
-Personal multi-topic monitor. Runs on a schedule in GitHub Actions, pushes
-matches to your phone via [ntfy.sh](https://ntfy.sh). 100% free to run.
+Personal multi-topic monitor. Runs on a schedule in GitHub Actions, routes
+alerts into Discord channels as rich embeds, and uses a small always-on Discord
+bot for interactive diagnostics. 100% free to run on GitHub Actions' public-repo
+free tier.
+
+## Phase 5 architecture
+
+The project no longer uses ntfy as a user-facing notification service. Delivery
+now goes through Discord:
+
+- **Scheduled watcher**: `.github/workflows/watch.yml` runs every 15 minutes.
+  Every run checks latency-sensitive Twitch alerts; the first surviving run in
+  each 3-hour UTC window performs the full sweep. The workflow commits
+  `state.json`, `audit.json`, and dashboard output back to the repo so ephemeral
+  runners keep memory between runs.
+- **Discord rich embeds**: `notify_watcher/discord_delivery.py` renders every
+  alert as a Discord embed, adds topic/category coloring, preserves click/image
+  metadata, and posts to Discord's REST API with `DISCORD_TOKEN`.
+- **Channel routing**: topics are routed by category into Finance, Discovery,
+  Logs, Briefing, or General. A Terminal channel is the recommended command room
+  for the interactive bot.
+- **Mission Control bot**: `bot.py` is the always-on Discord gateway process.
+  It currently supports `!ping` and `!explain <topic>`. The explain command reads
+  `audit.json` and replies with the last recorded routing decisions for that
+  topic.
+- **Compatibility note**: some internal modules still have historical names such
+  as `notify_watcher/ntfy.py` because the rest of the code and tests already call
+  that stable delivery function. That file is now a Discord wrapper plus
+  quiet-hours policy; it does not require an ntfy topic or ntfy account.
+
+## Features
 
 Topics:
 
@@ -255,8 +284,8 @@ item list.
   LLM-reworded). The Wikimedia feed is fixed per date and the fact rotates by
   day-of-year, so the push is deterministic; each section degrades independently,
   so a feed outage still sends the rest. The push also includes the **Wikipedia
-  picture of the day** as an inline image (via the `Attach` header), so the
-  notification arrives with a visual — no extra config needed. Daily run only.
+  picture of the day** as an inline Discord embed image, so the alert arrives
+  with a visual — no extra config needed. Daily run only.
 - **Knowledge deep-dives** — a rich, multi-paragraph **story written fresh by
   Gemini** on **every 3-hour run**, independent of the daily gate. Each run
   picks one topic from `data/knowledge_topics.json` (500+ topics across ten
@@ -272,8 +301,8 @@ item list.
   stamped only **after** Gemini returns a story, so an outage skips cleanly and
   retries next run rather than burning a topic or crashing the sweep. Uses the
   `GEMINI_API_KEY` secret (Anthropic is a fallback via `summarize.py`); grow the
-  KB by appending topics to any category. The story is clipped to fit ntfy's
-  message limit. The topic is the push header.
+  KB by appending topics to any category. The story is clipped to fit Discord's
+  embed description limit. The topic is the embed header.
 - **Library of Congress stories** — every 3-hour run rotates through historical
   focus areas (American milestones, world-war photographs, civil rights,
   presidential documents, early-20th-century life, maps/exploration, and
@@ -300,7 +329,7 @@ item list.
   Gemini returns a story, so a failed fetch, an unparseable page, or an LLM
   outage skips cleanly and retries next run. The quote is genuine; only the
   surrounding narrative is generated. Uses the `GEMINI_API_KEY` secret (Anthropic
-  fallback). The figure's name is the push header; grow the channel by adding
+  fallback). The figure's name is the embed title; grow the channel by adding
   names to any `FIGURES` category.
 - **Literary passages** — a **real public-domain passage** plus a fresh
   **Gemini-narrated literary guide** on **every 3-hour run**, independent of the
@@ -321,7 +350,7 @@ item list.
   with no plain-text format, or an LLM outage skips cleanly and retries next run.
   The passage is genuine public-domain text; only the surrounding narrative is
   generated. Uses the `GEMINI_API_KEY` secret (Anthropic fallback). The work and
-  author are the push header; grow the channel by adding `book_id`/title/author
+  author are the embed title; grow the channel by adding `book_id`/title/author
   entries to any `WORKS` genre.
 - **Rocket launches** — imminent orbital launches via Launch Library 2 (no key);
   alerts once per launch within `launches.imminent_hours`, skipping routine ones
@@ -397,27 +426,37 @@ The app is structured so adding more topics later is a small change in
 
 ## One-time setup
 
-You only do this once. Allow ~10 minutes.
+You only do this once. Allow ~15 minutes.
 
-### 1. Pick an ntfy topic name
+### 1. Create the Discord app and bot
 
-ntfy.sh is free and needs no account. Subscribing to a topic = anyone who
-knows the topic name can read every notification you send. So pick a
-**long, random, hard-to-guess name** — treat it like a password.
+In the [Discord Developer Portal](https://discord.com/developers/applications):
 
-Example: `f4-wwdc-aB7xQ9k2pZ-personal` (don't use this exact one).
+- Create an application, then open **Bot** and create/reset the bot token.
+- Copy the token. Treat it like a password; it becomes `DISCORD_TOKEN`.
+- Enable **Message Content Intent** under **Privileged Gateway Intents**. Prefix
+  commands like `!explain movies` need this so the bot can read command text.
+- Use **OAuth2 -> URL Generator** to invite the bot to your server with `bot`
+  scope and at least these permissions: **Send Messages**, **Embed Links**,
+  **Read Message History**, and **Attach Files**.
 
-### 2. Install the ntfy app on your phone and subscribe
+### 2. Create the Discord channels
 
-- iOS: search "ntfy" in the App Store.
-- Android: Play Store, or F-Droid.
-- In the app: **Subscribe to topic** → enter the topic name from step 1.
+Create these channels in your server, then turn on Discord **Developer Mode**
+and copy each channel ID:
 
-Send a test from the command line to confirm it lands on your phone:
+| Channel | Purpose | Secret/env var |
+| --- | --- | --- |
+| Terminal | Admin command room for `!ping` and `!explain <topic>` | `CHANNEL_TERMINAL` optional/reserved; the current bot replies wherever you run the command |
+| Briefing | Daily digest, weekly recap, life dashboard, long AI summaries | `CHANNEL_BRIEFING` |
+| Logs | Watchdog, workflow failures, health alerts, system diagnostics | `CHANNEL_LOGS` |
+| Finance | FX, spending, bills, fuel, money-related alerts | `CHANNEL_FINANCE` |
+| Discovery | Movies, games, Twitch, music, AI/news, products, learning finds | `CHANNEL_DISCOVERY` |
+| General | Catch-all fallback for anything unmapped | `CHANNEL_GENERAL` |
 
-```bash
-curl -d "hello from ntfy" https://ntfy.sh/<your-topic-name>
-```
+The scheduled watcher requires `DISCORD_TOKEN` plus the five routed channel IDs:
+Finance, Discovery, Logs, Briefing, and General. Terminal is still useful as the
+human-facing command room for the always-on bot.
 
 ### 3. Create the GitHub repo and push this code
 
@@ -434,25 +473,31 @@ git push -u origin main
 > **Why public?** Public repos get unlimited GitHub Actions minutes for
 > free. Private repos are also free but capped (currently 2000 min/month),
 > which is plenty for this app but unnecessary to deal with. There are no
-> secrets in this code — the only secret (the ntfy topic name) lives in
-> repo Secrets, not in code.
+> secrets in this code. The Discord bot token, channel IDs, API keys, and Gmail
+> credentials live in repo Secrets or your local `.env`, not in code.
 
 ### 4. Add the secrets to the GitHub repo
 
 On github.com → your repo → **Settings → Secrets and variables → Actions
 → New repository secret**. Add:
 
-| Secret name    | Value                                              |
-| -------------- | -------------------------------------------------- |
-| `NTFY_TOPIC`   | the topic name from step 1                         |
-| `NTFY_SERVER`  | (optional) leave unset to use the default `https://ntfy.sh` |
-| `NTFY_CONTROL_TOPIC` | (optional) a second random private topic name, for the reply buttons below; leave unset to disable them |
-| `TMDB_API_KEY` | (optional) free TMDb v3 API key, for the movie watcher |
-| `RAWG_API_KEY` | (optional) free RAWG API key, for the game watcher |
-| `NASA_API_KEY` | (optional) free api.nasa.gov key for the APOD picture; without it the shared `DEMO_KEY` quota is used |
-| `GMAIL_USER` | (optional) Gmail address for the BHD spending tracker |
-| `GMAIL_APP_PASSWORD` | (optional) a Gmail **app password** (myaccount.google.com/apppasswords; requires 2-Step Verification) for the spending tracker |
-| `SPENDING_KEY` | (required with the Gmail secrets) Fernet key that encrypts the committed spending log (`data/spending.json.enc`); generate with `python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"` and keep a copy in `.secrets/spending.key` to read the log locally |
+| Secret name | Value |
+| --- | --- |
+| `DISCORD_TOKEN` | Required. Discord bot token used by the workflow REST sender and by `bot.py`. |
+| `CHANNEL_FINANCE` | Required. Discord channel ID for finance embeds. |
+| `CHANNEL_DISCOVERY` | Required. Discord channel ID for discovery/media/tech embeds. |
+| `CHANNEL_LOGS` | Required. Discord channel ID for system, watchdog, and workflow failure embeds. |
+| `CHANNEL_BRIEFING` | Required. Discord channel ID for digest/recap/life-dashboard embeds. |
+| `CHANNEL_GENERAL` | Required. Discord channel ID for unmapped fallback embeds. |
+| `CHANNEL_TERMINAL` | Optional/reserved. Recommended command-room channel ID for bot hosts that want to restrict commands. |
+| `TMDB_API_KEY` | Optional. Free TMDb v3 API key, for the movie watcher. |
+| `RAWG_API_KEY` | Optional. Free RAWG API key, for the game watcher. |
+| `GEMINI_API_KEY` | Optional. Google AI Studio key for story topics and digest summaries. |
+| `ANTHROPIC_API_KEY` | Optional. Claude API key used as an AI fallback where supported. |
+| `NASA_API_KEY` | Optional. Free api.nasa.gov key for the APOD picture; without it the shared `DEMO_KEY` quota is used. |
+| `GMAIL_USER` | Optional. Gmail address for the BHD spending tracker. |
+| `GMAIL_APP_PASSWORD` | Optional. Gmail **app password** (myaccount.google.com/apppasswords; requires 2-Step Verification) for the spending tracker. |
+| `SPENDING_KEY` | Required with the Gmail secrets. Fernet key that encrypts the committed spending log (`data/spending.json.enc`); generate with `python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"` and keep a copy in `.secrets/spending.key` to read the log locally. |
 
 The movie/game watchers only run if their key is set; without it they skip
 quietly. Get the keys here (both free, ~2 min, no cost):
@@ -460,9 +505,6 @@ quietly. Get the keys here (both free, ~2 min, no cost):
 - **TMDb**: themoviedb.org → Settings → API → request a developer key →
   copy the **"API Key (v3 auth)"** value.
 - **RAWG**: rawg.io/apidocs → "Get API Key" → sign up → copy the key.
-
-(The AI-summary keys, `GEMINI_API_KEY` / `ANTHROPIC_API_KEY`, are also
-optional — see "Optional AI summaries" at the bottom.)
 
 Besides the secrets, the workflows steer a run with three plain env toggles
 you normally never set by hand: `NOTIFY_DAILY=1` marks the once-a-day run
@@ -473,36 +515,46 @@ main.py also sets it automatically on the first run past 12:00 UTC),
 sends a single delivery-test notification and exits (the `test_push=true`
 manual dispatch input).
 
-### Reply buttons (optional): talk back to your notifications
+### 5. Run the Mission Control bot
 
-Set the `NTFY_CONTROL_TOPIC` secret to a **second** random private topic name
-(treat it like a password, e.g. `nw-ctl-x7k2m9q4w1z8r5t3`) and selected pushes
-gain tappable action buttons. A tap POSTs a small command to that private
-topic; the next watcher run picks it up and adjusts behavior — no server, no
-extra infrastructure. The notification is dismissed when the tap goes through
-(that's the ack; there is no confirmation push). Leave the secret unset and
-the feature is fully off: no buttons, no polling, behavior identical to
-before.
+The GitHub Actions watcher sends embeds without a long-running process. The
+interactive commands need `bot.py` running somewhere always-on: your PC, a small
+VPS, a Raspberry Pi, or another host that can run Python continuously.
 
-The three buttons you'll see:
+Create a gitignored `.env` file at the project root:
 
-| Push | Button | What it does |
-| --- | --- | --- |
-| Habit nudge (e.g. drink water) | **Done** | marks the habit done now and skips its next scheduled nudge today (later slots still fire) |
-| Reminder | **Snooze 1h** | re-delivers that reminder after ~an hour (on the next full 3-hourly run) |
-| Daily digest | **Mute movies 24h** / **Mute games 24h** | silences that topic for 24 h: its live pushes are deferred into the next morning digest and its digest chatter is dropped; `critical` alerts still ring through |
+```dotenv
+DISCORD_TOKEN=your-bot-token-here
+CHANNEL_FINANCE=123456789012345678
+CHANNEL_DISCOVERY=123456789012345678
+CHANNEL_LOGS=123456789012345678
+CHANNEL_BRIEFING=123456789012345678
+CHANNEL_GENERAL=123456789012345678
+# Optional/reserved command room:
+CHANNEL_TERMINAL=123456789012345678
+```
 
-You can also send plain text to the control topic for diagnostics:
-`status movies` replies with the topic's mute, health, and digest-buffer state;
-`explain movies` replies with the last five intentionally dropped movie items
-and their routing reasons from `audit.json`.
+Then run:
 
-Commands are deliberately low-stakes: the worst anyone who learns the control
-topic name could do is skip a nudge, snooze a reminder, or mute a topic for a
-bounded while (≤ 30 days, deferred into the digest rather than lost, and
-`critical` alerts can never be muted). Nothing reads data, edits config, or
-executes code; see `docs/design/reply-buttons.md` for the full design and
-threat model.
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+python bot.py
+```
+
+You should see `Mission Control Online` in the terminal. In Discord, try:
+
+```text
+!ping
+!explain movies
+```
+
+`!explain <topic>` reads `audit.json` and replies with the last few routing
+decisions for that topic: dropped below threshold, deferred to digest, muted,
+or any other audited reason. If there is no memory for the topic yet, the bot
+answers with a polite "no memory yet" embed. The command is diagnostic only; it
+does not edit state, config, or code.
 
 ### Pick what to watch: `watchlist.json`
 
@@ -530,15 +582,15 @@ behind JavaScript. The price is read from the page's `application/ld+json`
 Product data, so any standards-compliant shop works; the matched price is
 logged so you can sanity-check it.
 
-### 5. Trigger the workflow once to verify
+### 6. Trigger the workflow once to verify
 
 On github.com → your repo → **Actions → watch → Run workflow**. After it
 finishes (green check), you should:
 
-- See a push notification on your phone for at least one of the topics
-  (because it's the first run and everything is "new").
-- See a new commit on `main` titled `chore: update state [skip ci]` if any
-  topic recorded state.
+- See at least one Discord embed in the correct routed channel, or in General
+  if the topic has no explicit route yet.
+- See a new commit on `main` titled `chore: update state + dashboard [skip ci]`
+  if any topic recorded state, audit memory, spending data, or dashboard output.
 
 After this, the workflow runs by itself every 15 minutes for Twitch and does
 the full sweep once per 3-hour window.
@@ -579,15 +631,21 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 
-# every time you test
-$env:NTFY_TOPIC = "<your-topic-name>"
-# $env:NTFY_SERVER = "https://ntfy.sh"  # optional, only if not default
+# every time you test scheduled delivery
+$env:DISCORD_TOKEN = "<your-bot-token>"
+$env:CHANNEL_FINANCE = "<finance-channel-id>"
+$env:CHANNEL_DISCOVERY = "<discovery-channel-id>"
+$env:CHANNEL_LOGS = "<logs-channel-id>"
+$env:CHANNEL_BRIEFING = "<briefing-channel-id>"
+$env:CHANNEL_GENERAL = "<general-channel-id>"
 
 python -m notify_watcher.main
 ```
 
-You should see one log line per topic and a notification on your phone for
-anything not already recorded in `state.json`.
+You should see one log line per topic and Discord embeds for anything not
+already recorded in `state.json`. To test the interactive bot locally, put the
+same values in `.env`, run `python bot.py`, then send `!ping` or
+`!explain movies` in Discord.
 
 ### Test a single topic
 
@@ -615,7 +673,7 @@ python -m unittest discover -s tests -v
 These also run automatically on every push/PR via `.github/workflows/test.yml`.
 `tests/test_games_scoring_config.py` is a golden test that pins how the real
 `monitors.json` keyword lists route — so a config edit that breaks tiering (or
-re-introduces a substring collision) fails CI instead of your phone.
+re-introduces a substring collision) fails CI instead of your live alerts.
 
 ---
 
@@ -623,22 +681,26 @@ re-introduces a substring collision) fails CI instead of your phone.
 
 ```
 notify-watcher/
+├── bot.py                           Mission Control Discord bot (!ping, !explain)
 ├── .github/workflows/
 │   ├── watch.yml                    15-min scheduler: Twitch every run, full sweep once per 3-hour window
+│   ├── alert.yml                    Discord workflow failure + heartbeat alerts
 │   └── test.yml                     CI: full test suite on every push/PR
 ├── notify_watcher/                  — engine —
 │   ├── main.py                      runs each topic, isolates failures
 │   ├── events.py                    Event normalizer: every topic emits through here
 │   ├── priority.py                  Personal Priority Engine (pure, cross-topic scorer)
 │   ├── digest.py                    daily digest buffer (rank, evict, flush)
+│   ├── discord_delivery.py          Discord rich embeds + topic→channel routing
+│   ├── audit.py                     rolling explain memory in audit.json
 │   ├── eventlog.py                  capped history of every routed event
 │   ├── dashboard.py                 renders state into docs/dashboard/index.html
 │   ├── changes.py                   reusable before/after diffs ("A → B, +N%")
 │   ├── news.py                      shared scoring/routing for per-title news
 │   ├── monitor.py                   shared collector engine (FDA, energy, …)
 │   ├── scoring.py                   deterministic keyword importance scorer
-│   ├── control.py                   reply-button command channel (ntfy poll)
-│   ├── ntfy.py                      push transport + quiet-hours suppression
+│   ├── control.py                   legacy control helpers/status formatting
+│   ├── ntfy.py                      compatibility wrapper: Discord delivery + quiet hours
 │   ├── config.py                    loads monitors.json sections
 │   ├── state.py                     load/save state.json
 │   ├── watchlist.py                 reads watchlist.json titles/entries
@@ -700,6 +762,7 @@ notify-watcher/
 ├── reminders.json                   personal expiry/deadline reminders
 ├── habits.json                      recurring habit nudges (water, stand, eyes)
 ├── state.json                       dedup memory (committed by workflow)
+├── audit.json                       rolling diagnostic memory for !explain
 ├── requirements.txt
 └── README.md
 ```
