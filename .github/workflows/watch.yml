@@ -75,8 +75,17 @@ jobs:
 
       - name: Run watcher mode
         env:
-          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
-          NTFY_SERVER: ${{ secrets.NTFY_SERVER }}
+          # Outbound delivery is now Discord rich embeds (notify_watcher.discord_delivery).
+          # DISCORD_TOKEN is the bot token; the CHANNEL_* ids route each topic
+          # category to its channel (finance/discovery/logs/briefing/general).
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+          CHANNEL_FINANCE: ${{ secrets.CHANNEL_FINANCE }}
+          CHANNEL_DISCOVERY: ${{ secrets.CHANNEL_DISCOVERY }}
+          CHANNEL_LOGS: ${{ secrets.CHANNEL_LOGS }}
+          CHANNEL_BRIEFING: ${{ secrets.CHANNEL_BRIEFING }}
+          CHANNEL_GENERAL: ${{ secrets.CHANNEL_GENERAL }}
+          # Inbound reply-button control loop (control.poll) is still ntfy-based;
+          # migrating it to Discord interactions is tracked as future work.
           NTFY_CONTROL_TOPIC: ${{ secrets.NTFY_CONTROL_TOPIC }}
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}  # movie watcher (optional)
           RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}  # game watcher (optional)
