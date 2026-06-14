@@ -22,9 +22,18 @@ now goes through Discord:
   Logs, Briefing, or General. A Terminal channel is the recommended command room
   for the interactive bot.
 - **Mission Control bot**: `bot.py` is the always-on Discord gateway process.
-  It currently supports `!ping` and `!explain <topic>`. The explain command reads
+  It supports `!ping` and `!explain <topic>` (the explain command reads
   `audit.json` and replies with the last recorded routing decisions for that
-  topic.
+  topic), and it is the always-on half of the control loop below.
+- **Discord-native control loop**: every notification carries native reply
+  buttons (Snooze / Mute / Read later / Follow …). A tap is caught by `bot.py`
+  and relayed as a command to a private control channel (`DISCORD_CONTROL_CHANNEL`);
+  the next sweep drains that channel (`notify_watcher/discord_control.py`) and
+  applies it through the existing command grammar and `state["muted"]`
+  enforcement. You can also type commands straight into the channel
+  (`status movies`, `explain fx`, `MUTE:games:24`) — those work with no bot
+  running, since the runner reads the channel directly. This replaces the old
+  ntfy-based control topic; ntfy is no longer in the path.
 - **Compatibility note**: some internal modules still have historical names such
   as `notify_watcher/ntfy.py` because the rest of the code and tests already call
   that stable delivery function. That file is now a Discord wrapper plus
@@ -447,6 +456,7 @@ and copy each channel ID:
 
 | Channel | Purpose | Secret/env var |
 | --- | --- | --- |
+| Control | Reply-button/command room: the bot relays button taps here and the sweep drains it; you can also type commands directly | `DISCORD_CONTROL_CHANNEL` |
 | Terminal | Admin command room for `!ping` and `!explain <topic>` | `CHANNEL_TERMINAL` optional/reserved; the current bot replies wherever you run the command |
 | Briefing | Daily digest, weekly recap, life dashboard, long AI summaries | `CHANNEL_BRIEFING` |
 | Logs | Watchdog, workflow failures, health alerts, system diagnostics | `CHANNEL_LOGS` |
@@ -455,8 +465,9 @@ and copy each channel ID:
 | General | Catch-all fallback for anything unmapped | `CHANNEL_GENERAL` |
 
 The scheduled watcher requires `DISCORD_TOKEN` plus the five routed channel IDs:
-Finance, Discovery, Logs, Briefing, and General. Terminal is still useful as the
-human-facing command room for the always-on bot.
+Finance, Discovery, Logs, Briefing, and General. Add `DISCORD_CONTROL_CHANNEL`
+(a private channel only you and the bot can see) to enable the reply-button
+control loop; leave it unset and notifications simply ship without buttons.
 
 ### 3. Create the GitHub repo and push this code
 
@@ -489,6 +500,7 @@ On github.com → your repo → **Settings → Secrets and variables → Actions
 | `CHANNEL_LOGS` | Required. Discord channel ID for system, watchdog, and workflow failure embeds. |
 | `CHANNEL_BRIEFING` | Required. Discord channel ID for digest/recap/life-dashboard embeds. |
 | `CHANNEL_GENERAL` | Required. Discord channel ID for unmapped fallback embeds. |
+| `DISCORD_CONTROL_CHANNEL` | Optional. Private channel ID for the reply-button control loop. Set it to enable Snooze/Mute/etc. buttons and typed commands; unset means notifications ship without buttons. |
 | `CHANNEL_TERMINAL` | Optional/reserved. Recommended command-room channel ID for bot hosts that want to restrict commands. |
 | `TMDB_API_KEY` | Optional. Free TMDb v3 API key, for the movie watcher. |
 | `RAWG_API_KEY` | Optional. Free RAWG API key, for the game watcher. |
@@ -530,6 +542,8 @@ CHANNEL_DISCOVERY=123456789012345678
 CHANNEL_LOGS=123456789012345678
 CHANNEL_BRIEFING=123456789012345678
 CHANNEL_GENERAL=123456789012345678
+# Reply-button control loop (the bot relays button taps here):
+DISCORD_CONTROL_CHANNEL=123456789012345678
 # Optional/reserved command room:
 CHANNEL_TERMINAL=123456789012345678
 ```
@@ -555,6 +569,15 @@ decisions for that topic: dropped below threshold, deferred to digest, muted,
 or any other audited reason. If there is no memory for the topic yet, the bot
 answers with a polite "no memory yet" embed. The command is diagnostic only; it
 does not edit state, config, or code.
+
+With `DISCORD_CONTROL_CHANNEL` set, the running bot also powers the reply-button
+control loop: tap **Snooze 1h** / **Mute 24h** (or Read later / Follow) under any
+notification and the bot relays the command to the control channel, which the
+next sweep applies. The bot is a pure courier — it never edits state itself, so
+there is no race with the scheduled runner, and the buttons keep working across
+bot restarts. You can also type commands straight into the control channel
+(`status movies`, `MUTE:games:24`); those are applied even when the bot is not
+running, because the runner reads the channel directly.
 
 ### Pick what to watch: `watchlist.json`
 
@@ -681,7 +704,7 @@ re-introduces a substring collision) fails CI instead of your live alerts.
 
 ```
 notify-watcher/
-├── bot.py                           Mission Control Discord bot (!ping, !explain)
+├── bot.py                           Mission Control Discord bot (!ping, !explain, reply-button relay)
 ├── .github/workflows/
 │   ├── watch.yml                    15-min scheduler: Twitch every run, full sweep once per 3-hour window
 │   ├── alert.yml                    Discord workflow failure + heartbeat alerts
@@ -699,7 +722,8 @@ notify-watcher/
 │   ├── news.py                      shared scoring/routing for per-title news
 │   ├── monitor.py                   shared collector engine (FDA, energy, …)
 │   ├── scoring.py                   deterministic keyword importance scorer
-│   ├── control.py                   legacy control helpers/status formatting
+│   ├── control.py                   reply-button command grammar, handlers, status/explain
+│   ├── discord_control.py           Discord-native control loop: button components + channel poll
 │   ├── ntfy.py                      compatibility wrapper: Discord delivery + quiet hours
 │   ├── config.py                    loads monitors.json sections
 │   ├── state.py                     load/save state.json

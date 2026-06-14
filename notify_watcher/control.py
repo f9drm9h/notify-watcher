@@ -1,17 +1,20 @@
-"""Two-way control channel: poll a private ntfy topic for reply-button commands.
+"""Two-way control channel: reply-button commands + the handlers that apply them.
 
-Notification action buttons (ntfy `http` actions) POST a small command string —
-``DONE:water``, ``SNOOZE:passport:60``, ``MUTE:movies:24`` — to a second private
-ntfy topic (``NTFY_CONTROL_TOPIC``). Free-text admin diagnostics such as
-``status movies`` are accepted too and reply through the normal ntfy topic.
-ntfy's server-side message cache (~12 h) is the queue; ``poll`` drains it at the
-top of every run and ``dispatch`` routes each command to a handler. Mutating
-commands update state before topics run, so a command takes effect in the same
-run that reads it.
+This module owns the transport-neutral core of the control loop: the command
+grammar, the per-verb handlers, ``make_action`` (the ``{label, command}`` button
+descriptor every topic builds), ``dispatch`` (routes a command string to its
+handler), and the free-text admin replies (``status``/``explain``). A small
+command string — ``DONE:water``, ``SNOOZE:passport:60``, ``MUTE:movies:24`` —
+flows in from a button tap or a typed message; mutating commands update state
+before topics run, so a command takes effect in the same run that reads it.
 
-Kill switch: an unset/empty ``NTFY_CONTROL_TOPIC`` disables everything — ``poll``
-returns [] immediately and ``make_action`` returns None so no buttons are
-attached, leaving push behavior byte-identical to a build without this module.
+The active transport is **Discord** (see ``discord_control``): a button's tap is
+relayed by ``bot.py`` to a private control channel, and the sweep drains that
+channel into ``dispatch``. The ntfy ``poll`` below is retained only as a dormant
+fallback — an unset/empty ``NTFY_CONTROL_TOPIC`` makes it return [] immediately,
+so it is a no-op unless a legacy ntfy control topic is still configured. The
+Discord transport's own kill switch (``discord_control.enabled()``) decides
+whether buttons render; ``make_action`` always returns a descriptor.
 
 Every command is idempotent and bounded (durations clamped, per-poll cap,
 strict per-verb regexes that fail closed on anything unknown), so a replayed,
@@ -125,27 +128,21 @@ def _server() -> str:
     return (os.environ.get("NTFY_SERVER", "").strip() or DEFAULT_SERVER).rstrip("/")
 
 
-def make_action(label: str, command: str) -> Optional[dict]:
-    """One ntfy ``http`` action button that POSTs `command` to the control topic.
+def make_action(label: str, command: str) -> dict:
+    """One transport-neutral reply-button descriptor: a label + a command.
 
-    Returns None when NTFY_CONTROL_TOPIC is unset (feature off), so callers can
-    build their button list unconditionally and attach metadata only when it is
-    non-empty — pushes stay byte-identical with the feature disabled.
+    Every topic builds its buttons by calling this; the active transport decides
+    how to render them. The Discord transport (``discord_control.actions_to_components``)
+    turns each descriptor into a native message component whose custom_id carries
+    ``command``; the bot relays a tap's command back to the control channel, where
+    the next sweep dispatches it through :func:`dispatch`.
 
-    ``clear: true`` dismisses the notification once the tap's POST succeeds,
-    which doubles as the delivery ack (no confirmation push is sent).
+    ``command`` is the same strict grammar dispatch understands (``MUTE:movies:24``,
+    ``READ:<event_id>``). The descriptor is always returned — the kill switch now
+    lives in the transport (``discord_control.enabled()``), so a build with no
+    control channel configured simply renders no buttons.
     """
-    topic = _topic()
-    if not topic:
-        return None
-    return {
-        "action": "http",
-        "label": label,
-        "url": f"{_server()}/{topic}",
-        "method": "POST",
-        "body": command,
-        "clear": True,
-    }
+    return {"label": label, "command": command}
 
 
 def until_active(until_iso: object, now: Optional[_dt.datetime] = None) -> bool:

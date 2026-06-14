@@ -45,13 +45,13 @@
       "properties": {
         "default_buttons": {
           "type": "object",
-          "description": "topic -> button specs ('read', 'more', 'later:<minutes>') attached to that topic's live pushes",
+          "description": "topic -> button specs attached to that topic's live pushes, rendered as native Discord components. Item-level: 'read', 'more', 'later:<minutes>'. Topic-level: 'mute:<hours>', 'snooze:<hours>', 'follow:<hours>', 'unmute', 'unfollow'.",
           "patternProperties": {
             "^_": {},
             "^[A-Za-z0-9][A-Za-z0-9_-]*$": {
               "type": "array",
-              "maxItems": 3,
-              "items": { "type": "string", "pattern": "^(read|more|later:[0-9]{1,6})$" }
+              "maxItems": 5,
+              "items": { "type": "string", "pattern": "^(read|more|later:[0-9]{1,6}|mute:[0-9]{1,4}|snooze:[0-9]{1,4}|follow:[0-9]{1,4}|unmute|unfollow)$" }
             }
           },
           "additionalProperties": false

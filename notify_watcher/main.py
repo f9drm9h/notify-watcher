@@ -25,7 +25,7 @@ import sys
 import traceback
 from typing import Callable
 
-from . import control, health, ntfy
+from . import control, discord_control, health, ntfy
 from . import state as state_mod
 from .topics import (
     air_quality,
@@ -298,11 +298,14 @@ def main() -> int:
     # Reply-button/control channel: poll + dispatch BEFORE the topic loop so a
     # mutating command takes effect in the same run that reads it. Free-text
     # diagnostics ("status movies") reply immediately from the current state.
-    # This runs regardless of NOTIFY_ONLY so the frequent twitch run keeps
-    # command latency low. A no-op when NTFY_CONTROL_TOPIC is unset; a failure
-    # must never block the run.
+    # The transport is Discord (a private DISCORD_CONTROL_CHANNEL); the legacy
+    # ntfy poll is kept but is a no-op unless NTFY_CONTROL_TOPIC is still set.
+    # Both feed the same control.dispatch — the command grammar is shared. This
+    # runs regardless of NOTIFY_ONLY so the frequent twitch run keeps command
+    # latency low; a failure must never block the run.
     try:
-        control.dispatch(control.poll(state), state)
+        control.dispatch(control.poll(state), state)            # legacy ntfy (off by default)
+        control.dispatch(discord_control.poll(state), state)    # Discord control channel
         # Due "remind later" re-fires and queued "show more" pushes ride the
         # same cadence as the poll (every run, incl. the 15-min twitch runs).
         control.process_pending(state)

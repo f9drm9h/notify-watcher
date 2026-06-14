@@ -215,7 +215,11 @@ def build_embed(
     return embed
 
 
-def _post(channel_id: str, embed: "discord.Embed", token: str, timeout: float) -> None:
+def _post(channel_id: str, embed: "discord.Embed", token: str, timeout: float,
+          components: Optional[list] = None) -> None:
+    payload: dict = {"embeds": [embed.to_dict()]}
+    if components:
+        payload["components"] = components
     resp = requests.post(
         f"{API_BASE}/channels/{channel_id}/messages",
         headers={
@@ -223,7 +227,7 @@ def _post(channel_id: str, embed: "discord.Embed", token: str, timeout: float) -
             "Content-Type": "application/json",
             "User-Agent": "notify-watcher (https://github.com, 1.0)",
         },
-        json={"embeds": [embed.to_dict()]},
+        json=payload,
         timeout=timeout,
     )
     resp.raise_for_status()
@@ -239,9 +243,15 @@ def send(
     severity: Optional[str] = None,
     source: str = "",
     attach_url: Optional[str] = None,
+    components: Optional[list] = None,
     timeout: float = 15.0,
 ) -> None:
     """Route `topic` to a channel, render an embed, and POST it to Discord.
+
+    ``components`` is an optional list of Discord message-component action rows
+    (the native reply buttons built by ``discord_control.actions_to_components``);
+    when present they are delivered alongside the embed, otherwise the message is
+    embed-only exactly as before.
 
     Raises DiscordConfigError when the token or a channel id is missing, and
     requests.HTTPError on a non-2xx Discord response, so callers that gate on a
@@ -266,5 +276,5 @@ def send(
         click_url=click_url, tags=tags, severity=severity,
         source=source, attach_url=attach_url,
     )
-    _post(channel_id, embed, token, timeout)
+    _post(channel_id, embed, token, timeout, components=components)
     log.info("discord: delivered %r to #%s (%s)", title, channel_id, category_for(topic))

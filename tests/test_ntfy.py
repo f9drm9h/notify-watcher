@@ -107,15 +107,31 @@ class PushDeliveryTest(unittest.TestCase):
         self.assertEqual(send.call_args.kwargs.get("attach_url"),
                          "https://example.com/pic.jpg")
 
-    def test_ntfy_actions_are_not_forwarded(self):
-        # The old ntfy reply buttons have no Discord-embed equivalent here; they
-        # must be dropped, not passed through to the transport.
-        with mock.patch.object(ntfy, "_is_quiet_now", return_value=False), \
+    _CTRL_ENV = {"DISCORD_TOKEN": "tok", "DISCORD_CONTROL_CHANNEL": "555"}
+
+    def test_actions_become_components_when_control_loop_on(self):
+        # Reply-button descriptors are rendered as native Discord components and
+        # forwarded as `components` (never as a raw `actions` kwarg).
+        with mock.patch.dict("os.environ", self._CTRL_ENV, clear=False), \
+             mock.patch.object(ntfy, "_is_quiet_now", return_value=False), \
              mock.patch.object(ntfy.discord_delivery, "send") as send:
             ntfy.push(title="hi", message="there", topic="fx",
-                      actions=[{"action": "view", "label": "x"}])
+                      actions=[{"label": "Mute 24h", "command": "MUTE:fx:24"}])
         send.assert_called_once()
         self.assertNotIn("actions", send.call_args.kwargs)
+        rows = send.call_args.kwargs.get("components")
+        self.assertEqual(rows[0]["components"][0]["custom_id"], "nw|MUTE:fx:24")
+
+    def test_actions_render_nothing_when_control_loop_off(self):
+        with mock.patch.dict("os.environ",
+                             {"DISCORD_TOKEN": "", "DISCORD_CONTROL_CHANNEL": ""},
+                             clear=False), \
+             mock.patch.object(ntfy, "_is_quiet_now", return_value=False), \
+             mock.patch.object(ntfy.discord_delivery, "send") as send:
+            ntfy.push(title="hi", message="there", topic="fx",
+                      actions=[{"label": "Mute 24h", "command": "MUTE:fx:24"}])
+        send.assert_called_once()
+        self.assertIsNone(send.call_args.kwargs.get("components"))
 
 
 if __name__ == "__main__":

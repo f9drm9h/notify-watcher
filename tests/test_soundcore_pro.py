@@ -162,7 +162,7 @@ class DiscoveryOfferTest(unittest.TestCase):
         self.assertEqual(len(sent), 1)
         oid = control.offer_id("product", {"name": "Liberty 6 Pro",
                                            "url": self.URL})
-        self.assertEqual(sent[0]["actions"][0]["body"], f"IGNORE:{oid}")
+        self.assertEqual(sent[0]["actions"][0]["command"], f"IGNORE:{oid}")
         self.assertEqual(state["auto_products"], [{"name": "Liberty 6 Pro",
                                                    "url": self.URL}])
         self.assertEqual(state["offers"][oid]["applied"] is not None, True)

@@ -324,21 +324,13 @@ class DispatchTest(unittest.TestCase):
 
 
 class MakeActionTest(unittest.TestCase):
-    def test_disabled_returns_none(self):
+    def test_builds_transport_neutral_descriptor(self):
+        # make_action no longer depends on any transport env: it always returns a
+        # {label, command} descriptor. The kill switch lives in the transport
+        # (discord_control.enabled()), not here.
         with _env():
-            self.assertIsNone(control.make_action("Done", "DONE:water"))
-
-    def test_builds_http_action_for_control_topic(self):
-        with _env(NTFY_CONTROL_TOPIC="ctl-abc"):
-            action = control.make_action("Done", "DONE:water")
-        self.assertEqual(action, {
-            "action": "http",
-            "label": "Done",
-            "url": "https://ntfy.sh/ctl-abc",
-            "method": "POST",
-            "body": "DONE:water",
-            "clear": True,
-        })
+            self.assertEqual(control.make_action("Done", "DONE:water"),
+                             {"label": "Done", "command": "DONE:water"})
 
 
 EID = "ab12cd34ef56ab78"   # a valid 16-hex event-log id
@@ -750,7 +742,7 @@ class ProcessPendingTest(unittest.TestCase):
         self.assertEqual(sent[0]["title"], "Reminder: Trailer")
         self.assertEqual(sent[0]["message"], "Full detail line")
         self.assertEqual(sent[0]["click_url"], "https://x/article")
-        self.assertEqual([a["body"] for a in sent[0]["actions"]],
+        self.assertEqual([a["command"] for a in sent[0]["actions"]],
                          [f"LATER:{EID}:180", f"READ:{EID}"])
         self.assertEqual(state["later"], {})
 
@@ -804,17 +796,16 @@ class ProcessPendingTest(unittest.TestCase):
 
 
 class ButtonWiringTest(unittest.TestCase):
-    def test_habit_push_has_no_actions_when_disabled(self):
+    def test_habit_push_carries_done_descriptor(self):
+        # make_action is transport-neutral now, so the Done button rides every
+        # habit push as a {label, command} descriptor; whether it renders as a
+        # Discord component is decided later by the transport (see
+        # tests/test_discord_control.py for the enabled/disabled gating).
         now = _dt.datetime(2026, 6, 10, 12, 0, tzinfo=UTC)
-        with _env(), capture_pushes() as sent:
+        with capture_pushes() as sent:
             habits._run_one({}, WATER, now)
-        self.assertNotIn("actions", sent[0])  # byte-identical to today
-
-    def test_habit_push_carries_done_button_when_enabled(self):
-        now = _dt.datetime(2026, 6, 10, 12, 0, tzinfo=UTC)
-        with _env(NTFY_CONTROL_TOPIC="ctl"), capture_pushes() as sent:
-            habits._run_one({}, WATER, now)
-        self.assertEqual(sent[0]["actions"][0]["body"], "DONE:water")
+        self.assertEqual(sent[0]["actions"][0],
+                         {"label": "Done", "command": "DONE:water"})
 
 
 if __name__ == "__main__":
