@@ -221,6 +221,7 @@ def flush(state: dict, cfg: dict, header: str | None = None,
             message="\n".join(lines),
             tags="clipboard",
             priority="default",
+            topic="digest",
             **({"actions": actions} if actions else {}),
         )
         log.info("sent Gemini summarized daily digest with %d item(s)", len(buf))
@@ -281,6 +282,7 @@ def flush(state: dict, cfg: dict, header: str | None = None,
         message="\n".join(lines),
         tags="clipboard",
         priority="default",
+        topic="digest",
         **({"actions": actions} if actions else {}),
     )
     log.info("sent daily digest with %d item(s)", len(buf))

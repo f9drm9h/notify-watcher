@@ -165,6 +165,8 @@ def _push(event: Event, ntfy_priority: Optional[str]) -> None:
         tags=event.metadata.get("tags") or None,
         priority=ntfy_priority,
         attach_url=event.metadata.get("attach_url") or None,
+        topic=event.topic,
+        severity=event.severity,
         **({"actions": actions} if actions else {}),
     )
 
