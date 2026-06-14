@@ -3,8 +3,16 @@
 This is the always-on companion to the scheduled ``notify_watcher`` sweep. It
 reads the package read-only — the audit trail (``notify_watcher.audit``) for the
 ``!explain`` command and the topic→channel router (``notify_watcher.discord_delivery``)
-for consistent embed coloring — and never touches the scraping logic. The
-scheduled watcher keeps running exactly as before.
+for consistent embed coloring — and never touches the scraping logic or state.
+
+It is also the always-on half of the **Discord-native control loop**: every
+notification carries native reply buttons (Snooze / Mute / Read later …) whose
+custom_id is ``nw|<command>``. This bot catches a tap and relays the bare command
+to the private control channel (``DISCORD_CONTROL_CHANNEL``); the next scheduled
+sweep drains that channel and applies it (see ``notify_watcher.discord_control``).
+The bot is a pure courier — it never mutates state — so there is no race with the
+runner, and a button keeps working across bot restarts. The scheduled watcher
+keeps running exactly as before.
 
 Run it with the project venv:
 
@@ -28,7 +36,7 @@ import discord
 from discord.ext import commands
 from dotenv import load_dotenv
 
-from notify_watcher import audit, discord_delivery
+from notify_watcher import audit, discord_control, discord_delivery
 
 logging.basicConfig(
     level=logging.INFO,
@@ -59,6 +67,93 @@ async def on_ready() -> None:
 async def ping(ctx: commands.Context) -> None:
     """Two-way comms test: `!ping` -> `Pong!`."""
     await ctx.send("Pong!")
+
+
+# --- Reply-button control loop ----------------------------------------------
+# Notifications delivered by the sweep carry native Discord buttons whose
+# custom_id is ``nw|<command>`` (see notify_watcher.discord_control). This bot is
+# the always-on half of the loop: it catches the button tap and relays the bare
+# command into the control channel, where the next scheduled sweep drains it via
+# discord_control.poll -> control.dispatch. The bot never touches state itself,
+# so there is no race with the runner — it is a pure courier.
+
+def _humanize_topic(slug: str) -> str:
+    """``golden_sun`` -> ``Golden Sun`` for friendly acknowledgements."""
+    return " ".join(p.capitalize() for p in slug.replace("-", "_").split("_") if p) or slug
+
+
+def _ack_for(command: str) -> str:
+    """Best-effort friendly confirmation for a relayed command (never raises)."""
+    try:
+        verb, _, rest = command.partition(":")
+        parts = rest.split(":") if rest else []
+        if verb == "MUTE" and len(parts) == 2:
+            topic, hours = _humanize_topic(parts[0]), int(parts[1])
+            if hours <= 1:
+                return f"🔇 Snoozed **{topic}** for an hour."
+            return f"🔇 Muted **{topic}** for {hours}h."
+        if verb == "UNMUTE" and parts:
+            return f"🔔 Unmuted **{_humanize_topic(parts[0])}**."
+        if verb == "FOLLOW" and len(parts) == 2:
+            return f"📌 Following **{_humanize_topic(parts[0])}** for {int(parts[1])}h."
+        if verb == "UNFOLLOW" and parts:
+            return f"Unfollowed **{_humanize_topic(parts[0])}**."
+        if verb == "DONE":
+            return "✅ Marked done — I'll skip the next nudge."
+        if verb == "SNOOZE" and len(parts) == 2:
+            return f"⏰ Snoozed — back in ~{int(parts[1])} min."
+        if verb == "READ":
+            return "🔖 Saved to your reading list."
+        if verb == "MORE":
+            return "🔎 I'll send the fuller story on the next sweep."
+        if verb == "LATER" and len(parts) == 2:
+            return f"⏰ I'll remind you in ~{int(parts[1])} min."
+        if verb == "ADD":
+            return "➕ Added."
+        if verb == "IGNORE":
+            return "🚫 Got it — I won't surface that again."
+        if verb == "UNDO":
+            return "↩️ Undone."
+    except (ValueError, IndexError):
+        pass
+    return "Got it — I'll apply that on the next sweep."
+
+
+async def _relay_command(command: str) -> None:
+    """POST a bare command string into the control channel for the runner."""
+    raw = (os.getenv("DISCORD_CONTROL_CHANNEL") or "").strip()
+    if not raw or not raw.isdigit():
+        raise RuntimeError("DISCORD_CONTROL_CHANNEL is not set to a channel id")
+    channel = bot.get_channel(int(raw)) or await bot.fetch_channel(int(raw))
+    await channel.send(command)
+
+
+@bot.event
+async def on_interaction(interaction: discord.Interaction) -> None:
+    """Relay a reply-button tap (``nw|<command>``) to the control channel.
+
+    Handled at the raw-interaction level rather than via a registered View, so a
+    button keeps working after the bot restarts — nothing in memory has to
+    survive, only the custom_id on the message. Non-``nw|`` interactions (e.g.
+    slash commands) are ignored. Every failure path answers the user instead of
+    leaving Discord's "interaction failed" spinner.
+    """
+    if interaction.type != discord.InteractionType.component:
+        return
+    custom_id = (interaction.data or {}).get("custom_id", "")
+    if not custom_id.startswith(discord_control.CUSTOM_ID_PREFIX):
+        return
+    command = custom_id[len(discord_control.CUSTOM_ID_PREFIX):].strip()
+    try:
+        await _relay_command(command)
+    except Exception:  # noqa: BLE001 - a bad tap must never take the bot down
+        log.exception("failed to relay control command %r", command)
+        if not interaction.response.is_done():
+            await interaction.response.send_message(
+                "Sorry — I couldn't reach the control channel.", ephemeral=True)
+        return
+    log.info("relayed control command %r", command)
+    await interaction.response.send_message(_ack_for(command), ephemeral=True)
 
 
 def _fmt_ts(raw: object) -> str:

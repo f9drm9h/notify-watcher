@@ -5,7 +5,6 @@ the network, and an in-memory state dict to inspect the digest buffer.
 """
 from __future__ import annotations
 
-import os
 import unittest
 from unittest import mock
 
@@ -257,16 +256,16 @@ class BackwardCompatTest(unittest.TestCase):
 
 
 class ButtonExpansionTest(unittest.TestCase):
-    """Declarative metadata["buttons"] + control.default_buttons -> ntfy actions."""
+    """Declarative metadata["buttons"] + control.default_buttons -> button descriptors.
+
+    These assert what events.emit hands the transport (a list of {label, command}
+    descriptors). Whether they render as native Discord components — and the
+    enabled/disabled kill switch — is the transport's job, covered in
+    tests/test_discord_control.py.
+    """
 
     PUSH_CFG = {"threshold": 60, "digest_floor": 25, "default": 70,
                 "ntfy_bands": {"0": "default"}}
-
-    def setUp(self):
-        # Buttons require the control channel; point it at a fake topic.
-        self.env = mock.patch.dict(os.environ, {"NTFY_CONTROL_TOPIC": "nw-ctl-test"})
-        self.env.start()
-        self.addCleanup(self.env.stop)
 
     def _emit(self, *, metadata=None, control_cfg=None, topic="movies"):
         sections = {"control": control_cfg or {}}
@@ -285,40 +284,45 @@ class ButtonExpansionTest(unittest.TestCase):
         event_id = state[eventlog.EVENT_LOG_KEY][-1]["id"]
         self.assertEqual([a["label"] for a in actions],
                          ["Read later", "Show more", "Remind 3h"])
-        self.assertEqual([a["body"] for a in actions],
+        self.assertEqual([a["command"] for a in actions],
                          [f"READ:{event_id}", f"MORE:{event_id}",
                           f"LATER:{event_id}:180"])
 
+    def test_topic_level_specs_use_the_topic(self):
+        _, sent = self._emit(metadata={"buttons": ["snooze:1", "mute:24", "follow:72"]},
+                             topic="games")
+        actions = sent[0]["actions"]
+        self.assertEqual([a["label"] for a in actions],
+                         ["Snooze 1h", "Mute 24h", "Follow 3d"])
+        self.assertEqual([a["command"] for a in actions],
+                         ["MUTE:games:1", "MUTE:games:24", "FOLLOW:games:72"])
+
     def test_config_default_buttons_apply_per_topic(self):
         _, sent = self._emit(control_cfg={"default_buttons": {"movies": ["read"]}})
-        self.assertEqual([a["body"][:5] for a in sent[0]["actions"]], ["READ:"])
+        self.assertEqual([a["command"][:5] for a in sent[0]["actions"]], ["READ:"])
 
     def test_defaults_skipped_for_other_topics(self):
         _, sent = self._emit(control_cfg={"default_buttons": {"games": ["read"]}})
         self.assertNotIn("actions", sent[0])
 
-    def test_explicit_actions_win_and_cap_is_three(self):
-        done = {"action": "http", "label": "Done", "url": "u", "method": "POST",
-                "body": "DONE:water", "clear": True}
+    def test_explicit_actions_win_and_cap_is_five(self):
+        done = {"label": "Done", "command": "DONE:water"}
         _, sent = self._emit(metadata={"actions": [done],
-                                       "buttons": ["read", "more", "later:60"]})
+                                       "buttons": ["read", "more", "later:60",
+                                                   "mute:24", "snooze:1"]})
         actions = sent[0]["actions"]
-        self.assertEqual(len(actions), 3)            # ntfy hard cap
-        self.assertEqual(actions[0], done)           # explicit v1 action first
+        self.assertEqual(len(actions), 5)            # Discord action-row cap
+        self.assertEqual(actions[0], done)           # explicit action first
         self.assertEqual([a["label"] for a in actions[1:]],
-                         ["Read later", "Show more"])
+                         ["Read later", "Show more", "Remind 1h", "Mute 24h"])
 
     def test_unknown_spec_is_skipped_not_fatal(self):
         _, sent = self._emit(metadata={"buttons": ["frobnicate", "later:oops", "read"]})
         self.assertEqual([a["label"] for a in sent[0]["actions"]], ["Read later"])
 
-    def test_control_channel_off_means_no_buttons(self):
-        self.env.stop()  # NTFY_CONTROL_TOPIC unset -> make_action returns None
-        try:
-            _, sent = self._emit(metadata={"buttons": ["read", "more"]})
-            self.assertNotIn("actions", sent[0])  # byte-identical kill switch
-        finally:
-            self.env.start()
+    def test_no_buttons_requested_means_no_actions(self):
+        _, sent = self._emit()
+        self.assertNotIn("actions", sent[0])  # byte-identical when nothing asks
 
     def test_later_labels_humanize(self):
         self.assertEqual(events._later_label(45), "Remind 45m")

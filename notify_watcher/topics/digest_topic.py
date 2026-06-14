@@ -109,8 +109,9 @@ def run(state: dict) -> dict:
     # Reply buttons: a fixed pair of 24h mutes (movies/games, the two
     # chattiest topics). A mute defers the topic's live pushes into the next
     # digest and drops its digest chatter; critical alerts still ring (see
-    # events._apply_mute). make_action returns None when the control channel
-    # is off, so the flush push is then byte-identical to before.
+    # events._apply_mute). These descriptors always attach; the transport only
+    # renders them when the control loop is on (discord_control.enabled()), so
+    # the flush push stays byte-identical to before when it is off.
     actions = [a for a in (
         control.make_action("Mute movies 24h", "MUTE:movies:24"),
         control.make_action("Mute games 24h", "MUTE:games:24"),
@@ -126,8 +127,9 @@ def _follow_action(state: dict):
 
     The positive mirror of the mute buttons (docs/design/05): while followed,
     that topic's digest-bound items push live. Gated by digest.follow_button
-    (default on); returns None when disabled, when no buffered item carries a
-    topic (pre-migration entries), or when the control channel is off.
+    (default on); returns None when disabled or when no buffered item carries a
+    topic (pre-migration entries). The descriptor renders only when the control
+    loop is on (discord_control.enabled()).
     """
     if not config.section("digest").get("follow_button", True):
         return None

@@ -84,8 +84,12 @@ jobs:
           CHANNEL_LOGS: ${{ secrets.CHANNEL_LOGS }}
           CHANNEL_BRIEFING: ${{ secrets.CHANNEL_BRIEFING }}
           CHANNEL_GENERAL: ${{ secrets.CHANNEL_GENERAL }}
-          # Inbound reply-button control loop (control.poll) is still ntfy-based;
-          # migrating it to Discord interactions is tracked as future work.
+          # Inbound reply-button control loop is now Discord-native: the sweep
+          # drains a private control channel (discord_control.poll) for the
+          # commands relayed by bot.py's button taps and any free-text admin
+          # commands typed into it. NTFY_CONTROL_TOPIC is retained only as a
+          # dormant fallback (a no-op unless still set).
+          DISCORD_CONTROL_CHANNEL: ${{ secrets.DISCORD_CONTROL_CHANNEL }}
           NTFY_CONTROL_TOPIC: ${{ secrets.NTFY_CONTROL_TOPIC }}
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}  # movie watcher (optional)
           RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}  # game watcher (optional)
