@@ -8,11 +8,13 @@
   },
 
   "control": {
-    "_comment": "Reply-button channel extras (docs/design/05). default_buttons attaches item-level buttons to a topic's LIVE pushes: 'read' saves to the reading list (weekly recap + dashboard), 'more' sends a fuller-story push on the next run, 'later:<minutes>' re-pushes the item after that delay. Max 3 buttons per push (ntfy limit); inert when NTFY_CONTROL_TOPIC is unset.",
+    "_comment": "Reply-button channel extras (docs/design/05). default_buttons attaches buttons to a topic's LIVE pushes, rendered as native Discord components. Item-level specs: 'read' saves to the reading list (weekly recap + dashboard), 'more' sends a fuller-story push on the next run, 'later:<minutes>' re-pushes the item after that delay. Topic-level specs: 'mute:<hours>' / 'snooze:<hours>' silence the topic (a snooze is a short mute), 'follow:<hours>' amplifies it, 'unmute'/'unfollow' undo. Max 5 buttons per push (Discord action-row limit); inert when the control loop is off (DISCORD_CONTROL_CHANNEL unset).",
     "default_buttons": {
-      "movies": ["read", "more"],
-      "games": ["read", "more"],
-      "golden_sun": ["read", "more"]
+      "movies": ["read", "more", "mute:24"],
+      "games": ["read", "more", "mute:24"],
+      "golden_sun": ["read", "more", "mute:24"],
+      "deals": ["mute:24"],
+      "music": ["mute:24"]
     }
   },
 

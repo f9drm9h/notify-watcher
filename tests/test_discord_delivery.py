@@ -127,6 +127,22 @@ class SendTest(unittest.TestCase):
             with self.assertRaises(dd.DiscordConfigError):
                 dd.send("fx", "t", "m")
 
+    def test_send_includes_components_when_given(self):
+        rows = [{"type": 1, "components": [
+            {"type": 2, "style": 4, "label": "Mute 24h", "custom_id": "nw|MUTE:fx:24"}]}]
+        with mock.patch.dict("os.environ", ENV, clear=True), \
+             mock.patch.object(dd.requests, "post",
+                               return_value=self._ok_response()) as post:
+            dd.send("fx", "USD up", "rate moved", components=rows)
+        self.assertEqual(post.call_args.kwargs["json"]["components"], rows)
+
+    def test_send_omits_components_key_when_none(self):
+        with mock.patch.dict("os.environ", ENV, clear=True), \
+             mock.patch.object(dd.requests, "post",
+                               return_value=self._ok_response()) as post:
+            dd.send("fx", "USD up", "rate moved")
+        self.assertNotIn("components", post.call_args.kwargs["json"])
+
     def test_send_propagates_http_error(self):
         resp = mock.Mock()
         resp.raise_for_status.side_effect = requests.HTTPError("429")

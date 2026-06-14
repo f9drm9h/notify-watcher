@@ -175,7 +175,7 @@ class FollowButtonTest(unittest.TestCase):
     def test_targets_the_top_scored_topic(self):
         action = self._action({"digest_buffer": list(self.BUF)})
         self.assertEqual(action["label"], "Follow games 3d")
-        self.assertEqual(action["body"], "FOLLOW:games:72")
+        self.assertEqual(action["command"], "FOLLOW:games:72")
 
     def test_disabled_by_config(self):
         self.assertIsNone(self._action({"digest_buffer": list(self.BUF)},

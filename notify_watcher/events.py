@@ -41,8 +41,8 @@ log = logging.getLogger(__name__)
 # breakthrough -> "critical", high -> "high", moderate -> "moderate".
 SEVERITIES = ("info", "low", "moderate", "high", "critical")
 
-# ntfy renders at most three action buttons per notification.
-MAX_BUTTONS = 3
+# Discord renders at most five buttons in one action row per notification.
+MAX_BUTTONS = 5
 
 
 @dataclass(frozen=True)
@@ -70,19 +70,25 @@ def _later_label(minutes: int) -> str:
     return f"Remind {minutes}m"
 
 
-def _spec_action(spec: str, event_id: str) -> Optional[dict]:
-    """One declarative button spec -> a concrete ntfy action, or None.
+def _spec_action(spec: str, event_id: str, topic: str) -> Optional[dict]:
+    """One declarative button spec -> a transport-neutral action, or None.
 
     Specs are the small vocabulary topics (and ``control.default_buttons``
-    config) use to request item-level buttons without knowing the event id:
+    config) use to request buttons without knowing the event id. Item-level
+    specs reference this push's event; topic-level specs reference its topic:
 
         "read"        -> [Read later]  READ:<event_id>
         "more"        -> [Show more]   MORE:<event_id>
         "later:180"   -> [Remind 3h]   LATER:<event_id>:180
+        "mute:24"     -> [Mute 24h]    MUTE:<topic>:24
+        "snooze:1"    -> [Snooze 1h]   MUTE:<topic>:1   (a snooze is a short mute)
+        "unmute"      -> [Unmute]      UNMUTE:<topic>
+        "follow:72"   -> [Follow 3d]   FOLLOW:<topic>:72
 
-    Unknown or malformed specs return None (skipped with a log line) so a
-    config typo can never break a push, and ``control.make_action`` returns
-    None when the control channel is off — both fail closed to "no button".
+    Unknown or malformed specs return None (skipped with a log line) so a config
+    typo can never break a push. Topic-level specs need a topic; without one they
+    are skipped. ``control.make_action`` always returns a descriptor — whether it
+    renders is the transport's call (``discord_control.enabled()``).
     """
     try:
         if spec == "read":
@@ -94,6 +100,24 @@ def _spec_action(spec: str, event_id: str) -> Optional[dict]:
             if minutes > 0:
                 return control.make_action(
                     _later_label(minutes), f"LATER:{event_id}:{minutes}")
+        if topic:
+            if spec == "unmute":
+                return control.make_action("Unmute", f"UNMUTE:{topic}")
+            if spec == "unfollow":
+                return control.make_action("Unfollow", f"UNFOLLOW:{topic}")
+            if spec.startswith("mute:"):
+                hours = int(spec.split(":", 1)[1])
+                if hours > 0:
+                    return control.make_action(f"Mute {hours}h", f"MUTE:{topic}:{hours}")
+            if spec.startswith("snooze:"):
+                hours = int(spec.split(":", 1)[1])
+                if hours > 0:
+                    return control.make_action(f"Snooze {hours}h", f"MUTE:{topic}:{hours}")
+            if spec.startswith("follow:"):
+                hours = int(spec.split(":", 1)[1])
+                if hours > 0:
+                    label = f"Follow {hours // 24}d" if hours % 24 == 0 else f"Follow {hours}h"
+                    return control.make_action(label, f"FOLLOW:{topic}:{hours}")
     except (ValueError, AttributeError):
         pass
     log.warning("ignoring unknown button spec %r", spec)
@@ -101,20 +125,22 @@ def _spec_action(spec: str, event_id: str) -> Optional[dict]:
 
 
 def _build_actions(event: Event) -> Optional[list]:
-    """Assemble the push's action buttons (explicit + declarative + defaults).
+    """Assemble the push's reply-button descriptors (explicit + declarative + defaults).
 
-    Three sources, in priority order under the hard ntfy cap of MAX_BUTTONS:
+    Three sources, in priority order under the Discord action-row cap of MAX_BUTTONS:
 
-      1. ``metadata["actions"]``  — fully-built v1 actions (habits' Done,
-         reminders' Snooze). Forwarded untouched, always first.
+      1. ``metadata["actions"]``  — descriptors a topic built directly via
+         control.make_action (habits' Done, reminders' Snooze). Forwarded first.
       2. ``metadata["buttons"]``  — declarative specs from the topic, expanded
-         with this event's log id (see _spec_action).
+         with this event's log id / topic (see _spec_action).
       3. ``control.default_buttons[topic]`` from monitors.json — per-topic
-         default specs, so giving every news push a [Read later] is a config
+         default specs, so giving every movies push a [Mute 24h] is a config
          edit, not a code change across topics.
 
-    Returns None when nothing applies, keeping buttonless pushes
-    byte-identical to before. Config errors fail closed to "no defaults".
+    Returns transport-neutral descriptors (or None when nothing applies); the
+    delivery transport turns them into native Discord components, or renders
+    nothing when the control loop is disabled. Config errors fail closed to
+    "no defaults".
     """
     explicit = list(event.metadata.get("actions") or [])
     specs = list(event.metadata.get("buttons") or [])
@@ -132,7 +158,7 @@ def _build_actions(event: Event) -> Optional[list]:
         for spec in specs:
             if len(actions) >= MAX_BUTTONS:
                 break
-            action = _spec_action(str(spec), event_id)
+            action = _spec_action(str(spec), event_id, event.topic)
             if action:
                 actions.append(action)
     return actions or None
@@ -154,9 +180,10 @@ def _push(event: Event, ntfy_priority: Optional[str]) -> None:
     else:
         title = event.title
         message = event.body
-    # Reply buttons: explicit metadata["actions"] (v1) plus declarative specs
-    # and config defaults, capped at ntfy's three (see _build_actions). A push
-    # with none of those stays byte-identical to before.
+    # Reply buttons: explicit metadata["actions"] plus declarative specs and
+    # config defaults, capped at MAX_BUTTONS (see _build_actions). The transport
+    # renders these as native Discord components; a push with none of them — or
+    # one delivered with the control loop off — stays byte-identical to before.
     actions = _build_actions(event)
     ntfy.push(
         title=title,

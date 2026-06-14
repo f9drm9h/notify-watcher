@@ -22,7 +22,7 @@ import logging
 import os
 from typing import Optional
 
-from . import config, discord_delivery
+from . import config, discord_control, discord_delivery
 
 log = logging.getLogger(__name__)
 
@@ -128,10 +128,12 @@ def push(
     be held overnight). `click_url`, `tags`, and `attach_url` are folded into the
     embed (link, emoji cue, inline image).
 
-    `actions` (the old ntfy reply buttons) is accepted but not delivered: those
-    were ntfy http-action headers. The Discord equivalent is interactive message
-    components handled by the gateway bot (bot.py) and is intentionally out of
-    scope for this transport swap — see the migration note in the PR/commit.
+    `actions` are the transport-neutral reply-button descriptors topics build via
+    control.make_action (``{"label", "command"}``). When the Discord control loop
+    is configured (``discord_control.enabled()``) they are rendered as native
+    message components below the embed; a tap is relayed by bot.py to the control
+    channel and dispatched on the next sweep. With the control loop off they are
+    silently ignored, so a push stays byte-identical to a build without it.
 
     Raises discord_delivery.DiscordConfigError when unconfigured and
     requests.HTTPError on a non-2xx Discord response, so callers that gate on a
@@ -144,9 +146,7 @@ def push(
         log.info("quiet hours active; suppressing %r push", title)
         return
 
-    if actions:
-        log.debug("discord transport ignores %d ntfy action button(s) for %r",
-                  len(actions), title)
+    components = discord_control.actions_to_components(actions) if actions else None
 
     discord_delivery.send(
         topic,
@@ -156,5 +156,6 @@ def push(
         tags=tags,
         severity=severity,
         attach_url=attach_url,
+        components=components,
         timeout=timeout,
     )
