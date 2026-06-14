@@ -20,6 +20,10 @@ on:
         description: "Also run the daily digest + health tip on this manual run"
         type: boolean
         default: false
+      only:
+        description: "Run just this one topic now (comma-separated allowed); empty runs the normal sweep"
+        type: string
+        default: ""
 
 # Prevent two scheduled runs from racing each other on the state file. Because
 # pending runs can be replaced in this group, do not encode important behavior
@@ -111,18 +115,18 @@ jobs:
           NOTIFY_DAILY: ${{ inputs.daily && '1' || '' }}
           # Twitch-only mode keeps the 15-minute live alerts lightweight. Full
           # mode leaves NOTIFY_ONLY empty so main.py runs every topic in order.
-          NOTIFY_ONLY: ${{ steps.mode.outputs.run_mode == 'twitch' && 'twitch' || '' }}
+          NOTIFY_ONLY: ${{ inputs.only != '' && inputs.only || (steps.mode.outputs.run_mode == 'twitch' && 'twitch' || '') }}
         run: python -m notify_watcher.main
 
       - name: Stamp full sweep window
-        if: ${{ steps.mode.outputs.run_mode == 'full' && (github.event_name != 'workflow_dispatch' || inputs.test_push != true) }}
+        if: ${{ steps.mode.outputs.run_mode == 'full' && inputs.only == '' && (github.event_name != 'workflow_dispatch' || inputs.test_push != true) }}
         env:
           FULL_WINDOW: ${{ steps.mode.outputs.full_window }}
         run: |
           python -c "import json, os, pathlib; p=pathlib.Path('state.json'); s=json.loads(p.read_text()) if p.exists() else {}; s.setdefault('watch_schedule', {})['last_full_window']=os.environ['FULL_WINDOW']; p.write_text(json.dumps(s, indent=2, sort_keys=True) + '\n')"
 
       - name: Build dashboard
-        if: ${{ steps.mode.outputs.run_mode == 'full' && (github.event_name != 'workflow_dispatch' || inputs.test_push != true) }}
+        if: ${{ steps.mode.outputs.run_mode == 'full' && inputs.only == '' && (github.event_name != 'workflow_dispatch' || inputs.test_push != true) }}
         # Pure reader of the committed state -> docs/dashboard/index.html, which
         # GitHub Pages serves (Settings -> Pages -> Deploy from branch, /docs). A
         # build failure must never fail the run or block the state commit.
