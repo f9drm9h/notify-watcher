@@ -117,15 +117,6 @@
       "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050671"
     },
     {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
       "detail": "DOP 6,895.00 (was DOP 8,595.00, -20%)",
       "preserve_detail": false,
       "score": 45,
@@ -358,6 +349,15 @@
       "title": "M3.1 - 46 km NE of Punta Cana, Dominican Republic (~184 km away)",
       "topic": "quakes",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71519763"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-06-13",
@@ -473,116 +473,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Every Major \u2018Spider-Man: Brand New Day\u2019 and \u2018Avengers: Doomsday\u2019 Leak So Far, From Trailer Footage to Toy Reveals - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-10T20:21:44.181469+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9LM042bEszTzhLMWd5cFJnVFVfLUpjVTlUNFlCYVlNRFBzUGlMbEVjdlllcno1WUFWRGNlMlo0VTEyeHlBdWM3R3hlSm5qQ2pXUnlGdXBVSUZRcDU4ZHhOM29tUjNuUQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' trailer LEAKED online again; teases Spider-Man vs Hulk showdown - WATCH - The Times of India",
-      "topic": "movies",
-      "ts": "2026-06-10T20:21:44.233746+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNdW8zNnFyYm5pQVJUUllhTjVhbDFhTl83SjJ3S0FTZnVFdGl5U0piVC1GOHhpZ3NDenVuU0RLVVNNXzVIX1JvZHJwQms5RkF2TDFsOUVwY2xHUXI5WTBONGxxNTg5WWJMclJ2YlFyMGdOTWc3VjBkNy1RQmpfeTVRbEVUdGRXRTJ0ODl1UEl5VmtiRmhQckkycFpNNU5DU0xVUzZmUVg1SVU0Tml4bXNHdFk1ZmFtTUx0aVFiWGFXMmYxRVk4dEVsbG14OTlkUE9YenZHRlZocmdwQjJwc252QW9oN1VSQk14RHZJYngzQXJmR05lWFh1amxLRGstWGtaMnVzY09vSjJ3QjVoZ0s2MW51RF9MZGlPQlZaRNIBogJBVV95cUxPQ3JTeGxhSzNYSG8tUWp1c0pmU2Q4alRheG9RTE13Q1pBZThVbFc3S3haZ2thVkE4NlBLZ21pVHhEcEl4RGozVUVRZkM4N09fdnhVUU1FOHdVZ1VEWjR6clQ5VVpWbVNnTmZhREU4ZXZWU3FDU2hQRzJuUkdocDREajYxeHhjODF3Z2FhODZ3R0pwOVM3OUFHOG9fd0lmRE50SXg0d25BdjRqNG9pSklTcjZRYk83ejVDbmNQYmh2T2dmdjN3V2xHSHQ4TmJWYk1lWU5Ndk9FdGZHVnhGZ0pCTk9fWVJfMXQ1QUptNFVFbnVGMGNJU2pkdDhjMVhwTm5LQ0dzUzlDNVhSeGgydWVib3puaTE1X1lsbEM1ckJWUFNaUQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Second Trailer Reportedly Leaks With Spoilers - Newsweek",
-      "topic": "movies",
-      "ts": "2026-06-10T20:21:44.283259+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdzhkYk1haHdSR2RDbkg2NFhKdlB6MmRTSGZOOXhPY2gwZWk1U3pTZ2xicFZ1Z3YyXzJ2UVVvRlQtNEx6NWxEczVHS1JuVmZ1NUlCR0NPWUdOQ3BQUDdWaGZGZDZINjVkYm9mRl9uTzFfZlZWMG5DY3lYdVl5VmY5RTd0cVVyaFgtZkRtSGRscjJUckxDbGZXSVNqdUlOTU1CdjVVVnRnUVhaWjlObjVZbnpPb1VCUjlXSmdiVkJOb0Zvc2s?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\"Spider-Man: Brand New Day\" Trailer 2 Leaks? - Dark Horizons",
-      "topic": "movies",
-      "ts": "2026-06-10T20:21:44.332845+00:00",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBPRy1sb1FEaUpPSXNLT2ZGcGxKSlczY2dUb2Ryd3hqaXRzbTVpTmEtak5LdzlpWFUtT2VLV1pIRUtpejNyTkhIQ1l0TWYzOGJTUC11YmpUTXRjZjVGWHlHU0JzdFAtU1A1Zkl3d0pqRElyR2NBN2RRdw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Amazon Prime Will Officially Release 'Spider-Man: Brand New Day' 2 Days Early - Collider",
-      "topic": "movies",
-      "ts": "2026-06-10T20:21:44.381770+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeTl2ZExycXoxc21xUFIzOUlkRU9Yd1RINUEybXFndkVVTUUzM0Y3anVBSUtsdUFXR2w1U2x2cnRoT3B2aXp6dlR2cjcxM3VMQXpEbEkwNHB5THlsQ29kTm1xeXY4UVJQcTJick05WGk0Q0thVFNjdWlBbzRGei1RU0dsUVoyRFFQZXRxWVBick9GVU52aF9jSWtBRUVBeUdoNnU2aEo2dFhHTWZt?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Odyssey",
-      "title": "Update: The Odyssey Poster Finds Odysseus Facing Down The Laestrygonians; New BTS Featurette Released - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-10T20:21:44.910545+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBEaVpVUURtcTVXMzJDb296bVN2S202LWY4ZExqYlVGNDVRU2FTRGdzR2YwNURWLXY1UkhTQ01lemZvS1hlaUlYbGhWX2JBSWtic19xaGlTVWJhRDRXTTI1UQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Odyssey",
-      "title": "\u2018The Odyssey\u2019 Website Lets You Watch the Trailer in All Six Different Formats - PetaPixel",
-      "topic": "movies",
-      "ts": "2026-06-10T20:21:44.910940+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPVW9YUGdIMnhsTnIzNnJPdURwUWoxVVhaUk1NSUxQbGJ1Tkl6bHcySGlid2IzelpBYUFhWk1BbWxnSmlNc2ZVYXZkeGlzNThNUVF4Z2xHbVlJQnc3dnhsdUNkRlpzeXJRaHVPT3RabWV2dDdXSkhDc3hlRUpXOVZiTUd2UmVlaklXMHlnOEkzR1ZYa1QtSFRYcVFtdHNlSDVDMXJqRHo4X1k5WmVONFE?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Odyssey",
-      "title": "The Odyssey | 2026, Movie, Film, Length, Cast, Release Date, Christopher Nolan, & Locations - Britannica",
-      "topic": "movies",
-      "ts": "2026-06-10T20:21:44.911311+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE12OTJHTFZmQ0FldS1MOHU3bHZyWVA1NlU0dkM1Q2dSd0ljSFRLR3FxeWR3OW94VVEwWFhobDBkVzRaUzlvV3lhR00tWmFHYzFmX3BCODJrdzFvbXR0V2QzWEdNOWIwbW00WUE?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "'The Odyssey' Trailer Is Officially the Most Disliked of Christopher Nolan's Career - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-10T20:21:44.911630+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFAwMjBsTFJoZk9UM3lOR1lFd1FKanpBOWo1SXJEeFhwampsQTByeTg0em00TThKT0hEZUNXOXR3R04yNVpOUi0wNEg2Sm44QVRNM21wc2lEMjdOcGJnNnZGdUlVcHgyZTg?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "Pull Me Under - Dream Theater\n(because you like Nevermore)",
-      "score": 22,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-06-10T20:21:50.110734+00:00",
-      "url": "https://www.deezer.com/track/2814112"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6224,6 +6114,126 @@
       "topic": "wikiquote",
       "ts": "2026-06-14T01:44:27.334405+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "5a967e21b926a0b9",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Update: Have The Russo Brothers Just Revealed The Avengers: Doomsday Trailer Release Date? - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-14T06:21:58.765612+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1reFJVUXA4VzNySlgtOVhrbXhnSlZZYjNMRF9iQ0xDSnhDekRGcEF1RUVJWHdWU1VNZTEwcGkyeTNNUHBmRFVneEVsNzZQSnNjMU52Mk5BclVzT1dXdzZxWnJtUzZ1U1E?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "f506e065f70626f3",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Mark Ruffalo's Hulk Form Officially Confirmed For Spider-Man: Brand New Day - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-14T06:21:59.560205+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBMSWZXaE9ZVG5uNjdFRzhmMGhiTU9ZZklfYkNUN0RtREl5cWZWZk5DMlJodXBldkhaOFZ1NTBxaUFZeDhDUTRHaXRmYkdnS25oT2JUQ09EVDFNYlJvV253YXlPVi16bFU?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "04402333aaac1ee7",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Shop Marvel Must Haves: Celebrate 'Spider-Man: Brand New Day\u2019 with Official Spidey Merch - Marvel.com",
+      "topic": "movies",
+      "ts": "2026-06-14T06:21:59.560778+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcGdrOUU1R0trV2NDQnhZdC1vNUZTT1RYV0dndVNjbGNmLUx4RkVpQlJXS2pxSHRURGZGVFRtRHg4NExhRXhhX2ZGVGJyRkVwdi1fMXVuTnV5Q2N4S3dNdVFQTDBPVDYtRDZWQVZ2WUtFYURSLWJqMjlCcGJ2OUs2NzNvcklLTDgwa1g3Sg?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "9bdbbd2707f8794c",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "The Batman: Part 2: Matt Reeves shares first set photo as film officially begins shooting - Cinema Express",
+      "topic": "movies",
+      "ts": "2026-06-14T06:22:01.240259+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPS0NNbXBla05wZmVaaW1JcnktWjdQYmp2cGpJQmwwUUl6cmtBOTVCNnR4LS1oMjZQZzAzTWlicVpjRVJRSkFpdE9rSGpWWnhzcjVsWWZ6dnRUaFQ5V1NiUmhQM0NQTFpHVUh0S2hUY01rSVZvbWg5OW1CWURCRDItTTZUYkpFV1lUeEpFaUFZVU44R2dEWTFjalRpbDZoVmo5Y3R6VndhUXVERDkwNGJrM3lKRDEtbE5sckxXb2FIOXBXbnZfamNYbFI1WWxhZEM4ZDBYRjlGWll6Z9IB5wFBVV95cUxNWjZMQnJFdGViZUFDZVhJOW9sUEE3T3NXOG1PRWpXY3ZGRWsxTWpMa1Ezc0JUYlJkZlN5SzIxQkIwN0VxcUQybWRSVDlmUUZMdmRXSjZnLUlWMWw4eWRERDR6QTNFQWh2Z1lFbUl4QnpXSHRaeEVPdHdXT2E0aGloR1hDb3JXeXJoQ1E0VHVZdnZZVmoxaGRQY1Nxa2dDd2pkVmN4ZkxLbUhPM1F2M053TDFGRUFBMGZyYjZFR3BZazJsbXNmS1pZNE1ldnh0U24wSS1EWFh4endyUmJ3YURqQVBZeHF5dnM?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "4df2cdb2a1e7a190",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Production begins on \u2018The Batman: Part II\u2019 in London, Matt Reeves shares photo from set - Telegraph India",
+      "topic": "movies",
+      "ts": "2026-06-14T06:22:01.460291+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQLXAxNXBHWFlnWUxsOG1PNmJMbFdxUEt3djZJY2VBeEZST280TTFNTEtOUGIxTnZ6aE9VZDZRR2VjV3pWRTBRTFVNbmhfTS1aclhpYTUybWZIN0tGQnlGTG5PQ09CRWIzd0JRc2plN1Z2S0Q4aUY2UjBQakRFenIwUFh3eWx1b1IwV0pDWURGRE1xVzIzMWN1RXUwRzYzOGRlOE1hZ2d3emU5MkxzN2F1M3R4blFvQU5OTHRFS2U1UmxOVkp2WFd6TWtvRHE4M2xuczVVS1JYRdIB3AFBVV95cUxNZGtqU2JhNTJkSXUtblVTLS1CczFHUzV4RFNLeE9lYUt0WmVaVGZUWV9mTU5Ma21TckpUNnN4cHlJTVE1blJWc2ZTYkUyazRpSlF5bFZvMUxxX1JTSTNtaWUxTEV6TUtxVEJqcy15V1k2TzdGX3hrcTRzcGttdmVxdlNTWjZ6N2VmX3BqcnBsU3Vrbm1rLVNXU2dTakVGVGczSGFfWlpCNG8wbWlrWEVjVDd3WGtPeVg0RHB5QmdyVkgxOVFhYzhFUzh3T0xDWVZVOE5TT2pRQXpqc2RY?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "b070ff2127b2a16a",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "\u2018The Batman Part II\u2019 Begins Filming, Writer & Director Matt Reeves Confirms - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-14T06:22:01.461076+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8tUmpCTXJ3bG8wUlJoSndOemhWSEZrcldUakM2QlNlY2tiWnotMWlhbU9pTE5HVHlNZWl4NHBrZ3J6NWt5a2x6a1MxdHNsQmRzWXl3cnh3OGkzOHV3SmdMSlRDeGJpNVJxaHc?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "108ee91ef2b57d53",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-06-14T06:22:58.971386+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Kinetica 1 | Unknown Payload launches in ~21h.",
+      "id": "a774f811b799c9e2",
+      "score": 62,
+      "severity": "moderate",
+      "source": "Launches",
+      "title": "Rocket launch",
+      "topic": "launches",
+      "ts": "2026-06-14T06:23:16.311615+00:00",
+      "url": "https://ll.thespacedevs.com/2.2.0/launch/ffc0aee1-fdd7-4638-b098-9d0c01b40663/"
+    },
+    {
+      "action": "push",
+      "detail": "For centuries, a silent, relentless predator stalked the tropical and subtropical regions of the Americas, its name whispered in terror: yellow fever. It was a disease of paradoxes, its victims often exhibiting a fleeting recovery before the true horror began \u2013 jaundice that turned skin a ghastly yellow, internal hemorrhaging leading to the black vomit, and then, inevitably, death. Cities would be paralyzed, economies shattered, and armies decimated by this unseen enemy. In the humid, mosquito-ridden climes of Cuba, following the Spanish-American War, American soldiers and civilians were falling by the hundreds, mirroring the devastation that had plagued Napoleon's forces in Haiti a century prior and foiled the French attempt to build the Panama Canal. Despite prevailing theories pointing to filth and contaminated air as the culprits, the true agent of transmission remained shrouded in mystery, a medical enigma that demanded resolution.\n\nInto this crucible of fear and scientific uncertainty stepped Major Walter Reed, a physician and bacteriologist with a quiet determination and a keen intellect. Appointed in 1900 to lead the U.S. Army Yellow Fever Commission, Reed arrived in Cuba with a small but dedicated team: James Carroll, Jesse Lazear, and Aristides Agramonte. Their mission was clear, yet daunting: to definitively identify the cause and mode of transmission of yellow fever. What had long plagued medical understanding was the sheer scale of the outbreaks and the inability to replicate the disease consistently in animals, leaving human volunteers as the only viable path to discovery. This ethical dilemma was profound, weighing heavily on Reed and his colleagues, yet the urgency of the situation and the countless lives at stake propelled them forward.\n\nThe breakthrough came through a meticulous, almost agonizingly slow process of elimination, building upon the earlier, largely ignored work of Cuban physician Carlos Finlay, who had theorized that mosquitoes were the vector. Reed and his team designed a series of carefully controlled experiments at Camp Lazear, named for Jesse Lazear, who had tragically succumbed to yellow fever after intentionally allowing himself to be bitten by infected mosquitoes \u2013 a poignant and horrific sacrifice. Volunteers, often American soldiers motivated by a sense of duty and a small financial incentive, were isolated in special huts. Some were exposed to infected bedding and clothing, proving the \"fomites\" theory false. Others were systematically bitten by mosquitoes that had previously fed on yellow fever patients. The results were undeniable: only those exposed to the infected mosquitoes contracted the disease. The specific culprit was identified as the *Aedes aegypti* mosquito, a common household insect. This discovery, published in 1901, marked a pivotal moment in medical history.\n\nThe implications of Reed's findings were immediate and profound. With the mode of transmission finally understood, a strategy for control could be developed. The systematic eradication of *Aedes aegypti* breeding grounds \u2013 stagnant water in barrels, pots, and ditches \u2013 became the key. Under the leadership of William Crawford Gorgas, who applied Reed\u2019s principles with ruthless efficiency, Havana was transformed. Within months, the incidence of yellow fever plummeted, and eventually, the disease was virtually eliminated from the city.",
+      "id": "8390539d12ce3958",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Walter Reed and the conquest of yellow fever",
+      "topic": "learn",
+      "ts": "2026-06-14T06:23:23.508930+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cEveryone steals in commerce and industry. I've stolen a lot, myself. But I know how to steal! They don't know how to steal!\u201d\n\u2014 Thomas Edison\n\nThomas Edison, the Wizard of Menlo Park, a man whose name became synonymous with innovation and American ingenuity, uttered these words from a landscape far removed from our own, yet unsettlingly familiar. Imagine the late 19th and early 20th centuries: an era of explosive technological advancement, but also of cutthroat competition, where the rules of engagement were still being written, often in the smoky backrooms of nascent industries. Edison, by this point, was not merely an inventor; he was an empire builder, presiding over vast laboratories and factories, navigating a complex web of patents, lawsuits, and corporate espionage. The incandescent light bulb, the phonograph, the motion picture camera \u2013 these weren\u2019t just brilliant ideas; they were products, commodities in a burgeoning market, and the intellectual property surrounding them was fiercely contested. He himself was a notorious litigant, often initiating legal battles to protect his own inventions, but equally adept at navigating the legal loopholes and sometimes the moral ambiguities of the era to advance his own interests.\n\nThe specific context of this quote, while not tied to a single, widely documented event, reflects the ethos of the time and Edison's pragmatic, often ruthless, approach to business. He understood that invention rarely sprung forth in a vacuum, but rather built upon existing knowledge, previous attempts, and often, the uncredited work of others. His \"stealing,\" in this sense, was less about outright plagiarism and more about strategic appropriation, refinement, and commercialization. He was a master of observation, of dissecting existing technologies, understanding their flaws, and then, crucially, improving upon them in ways that were commercially viable and patentable. When he says, \"They don't know how to steal!\" he's not condoning petty theft; he\u2019s lamenting the amateurism of his competitors, who might copy an idea but lacked the deeper understanding of engineering, manufacturing, and market penetration that separated a brilliant concept from a successful product. He believed his genius lay not just in the initial flash of insight, but in the methodical, relentless process of turning that insight into a tangible, profitable reality, often by whatever means necessary within the flexible ethical framework of the emerging industrial age.\n\nThis quote, delivered with characteristic bluntness, resonates today precisely because the fundamental dynamics of innovation and competition have not changed. In an age of digital intellectual property, open-source software, and rapid global dissemination of ideas, the lines between inspiration, iteration, and outright infringement remain blurry. Corporations fiercely guard their patents, engage in vast legal battles over algorithms and designs, and constantly monitor competitors for any perceived appropriation of their work. The Silicon Valley titans, much like Edison, have built empires by identifying needs, leveraging existing technologies, and relentlessly optimizing them for the market, often with a similar disregard for conventional niceties.",
+      "id": "eb36b73fff7e829c",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Thomas Edison",
+      "topic": "wikiquote",
+      "ts": "2026-06-14T06:23:28.566778+00:00",
+      "url": ""
     }
   ],
   "fda_seen_ids": [
@@ -6916,8 +6926,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "math_history",
-  "knowledge_last_sent": "2026-06-14T0",
+  "knowledge_last_category": "medicine",
+  "knowledge_last_sent": "2026-06-14T2",
   "knowledge_seen": {
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
     "astronomy:The hidden oceans of Europa and Enceladus": "2026-06-13",
@@ -6926,6 +6936,7 @@
     "first_artists": "2026-06-12",
     "hearing_spacetime_ring": "2026-06-12",
     "math_history:Andrew Wiles and the final proof": "2026-06-14",
+    "medicine:Walter Reed and the conquest of yellow fever": "2026-06-14",
     "philosophy:Augustine and the Confessions": "2026-06-13",
     "pyramid_skyscraper": "2026-06-12",
     "science:Marie Curie and the discovery of radioactivity": "2026-06-13",
@@ -6935,11 +6946,12 @@
     "world_history:The Rwandan genocide": "2026-06-13"
   },
   "last_run": {
-    "failed": 1,
-    "ok": 45,
-    "ts": "2026-06-14T01:43:24.038918+00:00"
+    "failed": 0,
+    "ok": 46,
+    "ts": "2026-06-14T06:21:56.235197+00:00"
   },
   "launch_seen_ids": [
+    "a86ceb6171424b9b",
     "4cc755b9dfaf231c",
     "efc597fa5a5f89c3",
     "9cf78ee44cb96c21",
@@ -6948,6 +6960,14 @@
   "learn_last_sent": "2026-06-13",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "8602e13c2ddeb3b6",
+      "5459fbb6dc7dafd9",
+      "ed675343a3ed4898",
+      "8b54c19fa0934753",
+      "1f59955dfa0a09d6",
+      "dabb4f4f16310250",
+      "54b980e64c3ad8b0",
+      "6f93534429468051",
       "20adbbbaa66de4c0",
       "389ab91438ccb4d2",
       "75248e10c24e0250",
@@ -7039,15 +7059,7 @@
       "bc6898c940263819",
       "b0278452e81705a8",
       "002d2d2b6f81ab55",
-      "e955776a183eb69c",
-      "75dc6f649d44ba41",
-      "fa08e647e13d8340",
-      "93daf3501e7fb632",
-      "abf3c3bbf4bb5446",
-      "35d72495e727f6a6",
-      "6cffb2ccb4946890",
-      "64976910dec4b963",
-      "cf5a8e0067072361"
+      "e955776a183eb69c"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7249,6 +7261,16 @@
       "6d3409e6a4b16c01"
     ],
     "Spider-Man: Brand New Day": [
+      "7e1dab90683701bc",
+      "c4691b83628e7d97",
+      "832b909393e85cca",
+      "6e1c43603e633b5a",
+      "c8156a80234a639c",
+      "2b932194cd748b89",
+      "67c7e36be6ec713f",
+      "522122b72dde699a",
+      "88958c05c1057482",
+      "3b8838561815f200",
       "9ac0aac31a4fb91b",
       "f207d1f517f37389",
       "ddc4736b31069dab",
@@ -7338,19 +7360,22 @@
       "f7a7c6fa32f79649",
       "755bba3220a82db4",
       "47c8ea59c3598a40",
-      "78a248f9fc73e323",
-      "66593506b11d16a9",
-      "6bf93169e66ab339",
-      "42a02bcb75fd37e0",
-      "d2688409a58abd6f",
-      "807315790c7a25dd",
-      "b6dbc6cf231f4016",
-      "df853a73524cdab1",
-      "28b1d477193f90f5",
-      "c816caba5070763a",
-      "de2fb15ca7ecb0be"
+      "78a248f9fc73e323"
     ],
     "The Batman Part II": [
+      "b8da7e39254c0f2a",
+      "c7de8c55c70c4557",
+      "6f58803e888a6199",
+      "f683bb216c14e113",
+      "91c05061193f423c",
+      "d2d0067425e266a6",
+      "d53c3d4b8943a0b1",
+      "425a5c5fd68f35dc",
+      "8c886236f1ef5dd9",
+      "cc7eea5420341820",
+      "91f6a8b0f55eed4d",
+      "2989eb15e8007762",
+      "d17558fa744e04ee",
       "73aeff6b46f5ae28",
       "c28c20716251f5f4",
       "77bb5077edf3ea24",
@@ -7437,22 +7462,16 @@
       "dbcf973d14d57c50",
       "a4459e58bf660541",
       "bf7d9fe524cfefbc",
-      "ee21a64f60f5a3f1",
-      "60f18d05008687c9",
-      "3f79a0208ef8ca20",
-      "c69853654ca8fa61",
-      "3fd5eebf1f0b5536",
-      "362ea35a991a4fba",
-      "64e1e6d40752fec0",
-      "bef9fb96d30b4d58",
-      "fd8442d28c5f20ad",
-      "44c2c8333c751231",
-      "8dbc409bf62e7ab7",
-      "1cc75733fa806752",
-      "bfad1d64ba3af242",
-      "02833dafebfeb906"
+      "ee21a64f60f5a3f1"
     ],
     "The Odyssey": [
+      "0e76faa512ef6d15",
+      "755f76d3848fcdda",
+      "9dc4cbba1c39714b",
+      "079deafe2ccbfb2b",
+      "3c86bf357c5c8feb",
+      "1e9d1e04da7cb827",
+      "b6f1f8861324d058",
       "fcadf7cc818c0a28",
       "1f502f05186ec421",
       "a584d87a24c6bdfc",
@@ -7545,14 +7564,7 @@
       "17db8bcb46af9cbe",
       "1f5e65219415d596",
       "50735e0491fb30a0",
-      "9980ffe468eef693",
-      "a53d6c7d8350470a",
-      "6293e911e09c62c0",
-      "e5852db12a0e426d",
-      "1ea416168e2a8ea8",
-      "36815071d9f97d4e",
-      "0fd6d15b332e0531",
-      "b4ee9d24a2770ace"
+      "9980ffe468eef693"
     ]
   },
   "movie_release_dates": {
@@ -7960,47 +7972,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "deals": {
-      "last_data": "2026-06-14T01:44:00.696272+00:00",
-      "last_data_count": 12,
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_data": "2026-06-14T06:22:49.214345+00:00",
+      "last_data_count": 11,
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "energy": {
-      "last_data": "2026-06-14T01:44:11.735168+00:00",
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_data": "2026-06-14T06:22:58.753450+00:00",
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "fda": {
-      "last_data": "2026-06-14T01:44:01.198396+00:00",
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_data": "2026-06-14T06:22:49.733559+00:00",
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "fuel": {
       "last_data": "2026-06-13T22:04:38.879753+00:00",
@@ -8008,16 +8020,16 @@
       "last_ok": "2026-06-13T22:03:06.460266+00:00"
     },
     "fx": {
-      "last_data": "2026-06-14T01:44:13.754680+00:00",
+      "last_data": "2026-06-14T06:23:16.166735+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "games": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-14T01:43:37.140287+00:00",
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_data": "2026-06-14T06:22:07.298683+00:00",
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "groceries": {
       "last_data": "2026-06-13T22:04:12.056215+00:00",
@@ -8025,114 +8037,111 @@
       "last_ok": "2026-06-13T22:03:06.460266+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "movies": {
-      "last_data": "2026-06-14T01:43:31.319065+00:00",
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_data": "2026-06-14T06:22:03.215085+00:00",
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "music": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-14T01:44:12.557164+00:00",
+      "last_data": "2026-06-14T06:22:59.401851+00:00",
       "last_data_count": 50,
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "outages": {
-      "last_data": "2026-06-13T22:04:37.258337+00:00",
+      "last_data": "2026-06-14T06:23:15.522593+00:00",
       "last_data_count": 2,
-      "last_error": "EDEESTE archive unreachable or parsed to 0 packages",
-      "last_error_ts": "2026-06-14T01:43:24.038918+00:00",
-      "last_ok": "2026-06-13T22:03:06.460266+00:00",
-      "source_failed": true
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-14T01:44:12.956502+00:00",
-      "last_data_count": 39,
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_data": "2026-06-14T06:23:15.573498+00:00",
+      "last_data_count": 38,
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-14T01:43:33.341605+00:00",
+      "last_data": "2026-06-14T06:22:04.186139+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "weather": {
-      "last_data": "2026-06-14T01:44:11.931350+00:00",
+      "last_data": "2026-06-14T06:22:58.971184+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-14T01:44:16.599795+00:00",
+      "last_data": "2026-06-14T06:23:18.534203+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-14T01:43:24.038918+00:00"
+      "last_ok": "2026-06-14T06:21:56.235197+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "22DEC09",
   "visa_f4_final_action": "08NOV08",
   "watch_schedule": {
-    "last_full_window": "164944"
+    "last_full_window": "164946"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8143,11 +8152,10 @@
     "games": "2026-06-12T12:15:55.633492+00:00",
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
-  "watchdog_failing_since": {
-    "outages": "2026-06-14T01:43:24.038918+00:00"
-  },
+  "watchdog_failing_since": {},
   "water_slots_sent": [],
   "weather_seen_ids": [
+    "21ce453627b94eb7",
     "228bf2197c756060",
     "23a0989662847ef2",
     "461f2e172db0b186",
@@ -8172,12 +8180,13 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "activists_thinkers",
-  "wikiquote_last_sent": "2026-06-14T0",
+  "wikiquote_last_category": "innovators_artists",
+  "wikiquote_last_sent": "2026-06-14T2",
   "wikiquote_seen": {
     "activists_thinkers:Mother Teresa": "2026-06-14",
     "activists_thinkers:Susan B. Anthony": "2026-06-13",
     "innovators_artists:Pablo Picasso": "2026-06-13",
+    "innovators_artists:Thomas Edison": "2026-06-14",
     "leaders:Mikhail Gorbachev": "2026-06-13",
     "philosophers:Socrates": "2026-06-13",
     "science_pioneers:Charles Darwin": "2026-06-13",
