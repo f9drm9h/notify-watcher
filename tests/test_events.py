@@ -16,7 +16,7 @@ CFG = {
     "threshold": 60,
     "digest_floor": 25,
     "default": 30,
-    "ntfy_bands": {"90": "urgent", "70": "high", "0": "default"},
+    "urgency_bands": {"90": "urgent", "70": "high", "0": "default"},
     "rules": [
         {"topic": "visa_bulletin", "score": 100},
         {"topic": "fda", "score": 70},
@@ -101,7 +101,7 @@ class QuietDeferTest(unittest.TestCase):
             events.emit(
                 state, title="Streamer live", topic="twitch", source="Twitch",
                 priority_cfg={"threshold": 60, "digest_floor": 25, "default": 62,
-                              "ntfy_bands": {"90": "urgent", "70": "high", "0": "default"}},
+                              "urgency_bands": {"90": "urgent", "70": "high", "0": "default"}},
                 digest_cfg=DIGEST_CFG,
             )
         return sent
@@ -127,7 +127,7 @@ class QuietDeferTest(unittest.TestCase):
             events.emit(
                 state, title="Quake nearby", topic="quakes", severity="critical",
                 priority_cfg={"threshold": 60, "digest_floor": 25, "default": 30,
-                              "ntfy_bands": {"90": "urgent", "70": "high", "0": "default"},
+                              "urgency_bands": {"90": "urgent", "70": "high", "0": "default"},
                               "rules": [{"topic": "quakes", "severity": "critical", "score": 95}]},
                 digest_cfg=DIGEST_CFG,
             )
@@ -163,7 +163,7 @@ class QuietDeferTest(unittest.TestCase):
             events.emit(
                 state, title="Streamer live", topic="twitch",
                 priority_cfg={"threshold": 60, "digest_floor": 25, "default": 62,
-                              "ntfy_bands": {"0": "default"}},
+                              "urgency_bands": {"0": "default"}},
                 digest_cfg=DIGEST_CFG,
             )
         self.assertEqual(len(sent), 1)
@@ -265,7 +265,7 @@ class ButtonExpansionTest(unittest.TestCase):
     """
 
     PUSH_CFG = {"threshold": 60, "digest_floor": 25, "default": 70,
-                "ntfy_bands": {"0": "default"}}
+                "urgency_bands": {"0": "default"}}
 
     def _emit(self, *, metadata=None, control_cfg=None, topic="movies"):
         sections = {"control": control_cfg or {}}

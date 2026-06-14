@@ -15,7 +15,7 @@ CFG = {
     "threshold": 60,
     "digest_floor": 25,
     "default": 30,
-    "ntfy_bands": {"90": "urgent", "70": "high", "0": "default"},
+    "urgency_bands": {"90": "urgent", "70": "high", "0": "default"},
     "rules": [
         {"topic": "visa_bulletin", "score": 100},
         {"topic": "weather", "severity": "critical", "score": 95},
@@ -144,9 +144,9 @@ class BandingTest(unittest.TestCase):
         self.assertEqual(priority.decide(ev(), cfg).action, "drop")
 
     def test_ntfy_band_selection(self):
-        self.assertEqual(priority._ntfy_priority(95, CFG["ntfy_bands"]), "urgent")
-        self.assertEqual(priority._ntfy_priority(70, CFG["ntfy_bands"]), "high")
-        self.assertEqual(priority._ntfy_priority(65, CFG["ntfy_bands"]), "default")
+        self.assertEqual(priority._ntfy_priority(95, CFG["urgency_bands"]), "urgent")
+        self.assertEqual(priority._ntfy_priority(70, CFG["urgency_bands"]), "high")
+        self.assertEqual(priority._ntfy_priority(65, CFG["urgency_bands"]), "default")
 
 
 class FailSoftTest(unittest.TestCase):
