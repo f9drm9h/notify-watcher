@@ -61,6 +61,52 @@ async def ping(ctx: commands.Context) -> None:
     await ctx.send("Pong!")
 
 
+class NotificationActionView(discord.ui.View):
+    """Temporary Discord-native action buttons for manual UI testing."""
+
+    async def _ack(
+        self,
+        interaction: discord.Interaction,
+        action: str,
+        message: str,
+    ) -> None:
+        print(f"Discord UI action selected: {action}")
+        await interaction.response.send_message(message, ephemeral=True)
+
+    @discord.ui.button(label="Snooze 1H", style=discord.ButtonStyle.primary)
+    async def snooze_1h(
+        self,
+        interaction: discord.Interaction,
+        button: discord.ui.Button,
+    ) -> None:
+        await self._ack(interaction, "snooze_1h", "Snoozed for 1 hour.")
+
+    @discord.ui.button(label="Mute Topic", style=discord.ButtonStyle.danger)
+    async def mute_topic(
+        self,
+        interaction: discord.Interaction,
+        button: discord.ui.Button,
+    ) -> None:
+        await self._ack(interaction, "mute_topic", "Topic muted.")
+
+    @discord.ui.button(label="Acknowledge", style=discord.ButtonStyle.secondary)
+    async def acknowledge(
+        self,
+        interaction: discord.Interaction,
+        button: discord.ui.Button,
+    ) -> None:
+        await self._ack(interaction, "acknowledge", "Acknowledged.")
+
+
+@bot.command(name="testbuttons")
+async def testbuttons(ctx: commands.Context) -> None:
+    """Spawn a disposable Discord UI component test panel."""
+    await ctx.send(
+        "Discord UI component test:",
+        view=NotificationActionView(timeout=300),
+    )
+
+
 def _fmt_ts(raw: object) -> str:
     """ISO timestamp -> 'Jun 13, 19:05 UTC' (best-effort, never raises)."""
     try:
