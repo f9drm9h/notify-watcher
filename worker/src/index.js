@@ -87,9 +87,7 @@ async function handleSlashCommand(interaction, env) {
     case "status":
       return await cmdStatus(opts.topic, env);
     case "explain":
-      // TODO (B5): fetch audit.json from STATE_BASE_URL and summarise the
-      // last few routing decisions for opts.topic, like bot.py's !explain.
-      return reply(`explain is not wired up yet for "${opts.topic}".`);
+      return await cmdExplain(opts.topic, env);
 
     // --- ON-DEMAND run (Phase 3): trigger a GitHub Actions sweep --------
     case "run":
@@ -154,16 +152,47 @@ async function cmdStatus(topic, env) {
   return reply(lines.join("\n"));
 }
 
-async function fetchState(env) {
+async function cmdExplain(topic, env) {
+  const audit = await fetchRepoJson(env, "audit.json");
+  if (!audit) return reply("Could not read the audit log right now.");
+
+  const key = String(topic || "").trim().toLowerCase();
+  const items = Array.isArray(audit[key]) ? audit[key].slice(-5) : [];
+
+  if (items.length === 0) {
+    return reply(
+      `No memory yet for ${human(key)}. I haven't recorded any routing ` +
+      `decisions for it, or the name doesn't match a tracked topic. ` +
+      `Try one like movies, fx, spending, twitch, or games.`
+    );
+  }
+
+  const lines = [`Why I acted or stayed quiet on ${human(key)} (last ${items.length}, oldest first):`];
+  for (const it of items) {
+    const title = String(it.title || "(untitled)").slice(0, 140);
+    const reason = String(it.reason || "dropped by routing");
+    const meta = [
+      String(it.source || "").trim(),
+      it.score != null ? `score ${it.score}` : "",
+      fmtTs(it.ts),
+    ].filter(Boolean).join(" \u00b7 ");
+    lines.push("", `\u2022 ${title}`, `  ${reason}`);
+    if (meta) lines.push(`  ${meta}`);
+  }
+  return reply(lines.join("\n").slice(0, 1900));
+}
+
+async function fetchRepoJson(env, name) {
   try {
-    const res = await fetch(`${env.STATE_BASE_URL}/state.json`, {
-      cf: { cacheTtl: 30 }, // brief cache so rapid taps do not hammer GitHub
-    });
+    const res = await fetch(`${env.STATE_BASE_URL}/${name}`, { cf: { cacheTtl: 30 } });
     if (!res.ok) return null;
     return await res.json();
   } catch {
     return null;
   }
+}
+async function fetchState(env) {
+  return await fetchRepoJson(env, "state.json");
 }
 
 // ----- friendly acknowledgements (ported from bot.py _ack_for) ----------
@@ -196,6 +225,14 @@ function human(slug) {
   if (!slug) return "that topic";
   return slug.replace(/-/g, "_").split("_").filter(Boolean)
     .map((p) => p[0].toUpperCase() + p.slice(1)).join(" ");
+}
+
+function fmtTs(raw) {
+  const d = new Date(raw);
+  if (isNaN(d.getTime())) return String(raw || "unknown time");
+  const months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+  const p = (n) => String(n).padStart(2, "0");
+  return `${months[d.getUTCMonth()]} ${p(d.getUTCDate())}, ${p(d.getUTCHours())}:${p(d.getUTCMinutes())} UTC`;
 }
 
 function optionMap(options) {
