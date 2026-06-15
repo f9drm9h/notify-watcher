@@ -6282,7 +6282,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-13-19-JUN-DE-2026-ESCENARIO-B.pdf",
   "fuel_last_pdf_hash": "ae670879fa8033736dfb39d8d8165a100cf1ca299cd8559e978132c494580ca8",
-  "fuel_last_prices_seen_at": "2026-06-15T02:44:42.078739+00:00",
+  "fuel_last_prices_seen_at": "2026-06-15T02:50:18.636721+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -6953,7 +6953,7 @@
   "last_run": {
     "failed": 0,
     "ok": 1,
-    "ts": "2026-06-15T02:44:40.511011+00:00"
+    "ts": "2026-06-15T02:50:17.625971+00:00"
   },
   "launch_seen_ids": [
     "33d98a2ee7da3b97",
@@ -8073,9 +8073,9 @@
       "last_ok": "2026-06-15T02:05:27.712610+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-15T02:44:42.078758+00:00",
+      "last_data": "2026-06-15T02:50:18.636740+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-15T02:44:40.511011+00:00"
+      "last_ok": "2026-06-15T02:50:17.625971+00:00"
     },
     "fx": {
       "last_data": "2026-06-15T02:06:58.823645+00:00",
