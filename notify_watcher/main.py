@@ -271,6 +271,19 @@ def _selected_topics(only: str) -> list[tuple[str, Topic]]:
     return [(name, run) for name, run in TOPICS if name in wanted]
 
 
+def _is_topic_dispatch_run() -> bool:
+    """True for /run-style manual single-topic dispatches.
+
+    Scheduled Twitch-only runs also set NOTIFY_ONLY, but they are the normal
+    low-latency control lane. Only workflow_dispatch + NOTIFY_ONLY is the
+    on-demand path that should avoid flushing unrelated pending/control work.
+    """
+    return (
+        os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch"
+        and bool(os.environ.get("NOTIFY_ONLY", "").strip())
+    )
+
+
 def main() -> int:
     logging.basicConfig(
         level=logging.INFO,
@@ -295,22 +308,28 @@ def main() -> int:
 
     state = state_mod.load()
 
+    topic_dispatch = _is_topic_dispatch_run()
+
     # Reply-button/control channel: poll + dispatch BEFORE the topic loop so a
     # mutating command takes effect in the same run that reads it. Free-text
     # diagnostics ("status movies") reply immediately from the current state.
     # The transport is Discord (a private DISCORD_CONTROL_CHANNEL); the legacy
     # ntfy poll is kept but is a no-op unless NTFY_CONTROL_TOPIC is still set.
-    # Both feed the same control.dispatch — the command grammar is shared. This
-    # runs regardless of NOTIFY_ONLY so the frequent twitch run keeps command
-    # latency low; a failure must never block the run.
-    try:
-        control.dispatch(control.poll(state), state)            # legacy ntfy (off by default)
-        control.dispatch(discord_control.poll(state), state)    # Discord control channel
-        # Due "remind later" re-fires and queued "show more" pushes ride the
-        # same cadence as the poll (every run, incl. the 15-min twitch runs).
-        control.process_pending(state)
-    except Exception as exc:  # noqa: BLE001 - control errors are never fatal
-        log.error("control channel failed: %s", exc)
+    # Both feed the same control.dispatch — the command grammar is shared.
+    # Scheduled runs, including the frequent twitch-only run, keep this control
+    # latency. /run-style workflow_dispatch+NOTIFY_ONLY skips it so an on-demand
+    # topic check cannot flush unrelated LATER/MORE or status/explain replies.
+    if topic_dispatch:
+        log.info("single-topic dispatch active: skipping control channel/pending work")
+    else:
+        try:
+            control.dispatch(control.poll(state), state)            # legacy ntfy (off by default)
+            control.dispatch(discord_control.poll(state), state)    # Discord control channel
+            # Due "remind later" re-fires and queued "show more" pushes ride the
+            # same cadence as the poll (every run, incl. the 15-min twitch runs).
+            control.process_pending(state)
+        except Exception as exc:  # noqa: BLE001 - control errors are never fatal
+            log.error("control channel failed: %s", exc)
 
     # Enable the daily-only topics on the first run past DAILY_UTC_HOUR. Setting
     # the env var keeps each daily topic's existing NOTIFY_DAILY check unchanged.
