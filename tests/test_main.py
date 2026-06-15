@@ -12,7 +12,9 @@ failure stays sticky until a true success.
 """
 from __future__ import annotations
 
+import os
 import unittest
+from unittest import mock
 
 from notify_watcher import health, main
 
@@ -185,6 +187,78 @@ class OnDemandSingleTopicTest(unittest.TestCase):
         self.assertEqual(saved["last_run"]["ok"], 1)
         self.assertEqual(saved["last_run"]["failed"], 0)
         self.assertEqual(sent, [])
+
+
+class MainLoopControlPhaseTest(unittest.TestCase):
+    """Control/pending work runs on scheduled sweeps, not /run topic dispatches."""
+
+    def _run_main(self, *, event_name: str, notify_only: str):
+        calls: list[str] = []
+
+        def selected_topic(state):
+            calls.append("topic")
+            return state
+
+        state: dict = {}
+        with mock.patch.object(main, "TOPICS", [(notify_only or "movies", selected_topic)]), \
+                mock.patch.object(main.state_mod, "load", return_value=state), \
+                mock.patch.object(main.state_mod, "save") as save, \
+                mock.patch.object(main, "_is_daily_run", return_value=False), \
+                mock.patch.object(main.control, "poll", return_value=["status fx"]) as ntfy_poll, \
+                mock.patch.object(main.discord_control, "poll",
+                                  return_value=["explain movies"]) as discord_poll, \
+                mock.patch.object(main.control, "dispatch",
+                                  side_effect=lambda commands, state: calls.append(
+                                      f"dispatch:{commands[0]}")), \
+                mock.patch.object(main.control, "process_pending",
+                                  side_effect=lambda state: calls.append("pending")) as pending, \
+                mock.patch.dict(os.environ, {
+                    "GITHUB_EVENT_NAME": event_name,
+                    "NOTIFY_ONLY": notify_only,
+                    "NOTIFY_TEST_PUSH": "",
+                    "NTFY_CONTROL_TOPIC": "",
+                }, clear=False):
+            self.assertEqual(main.main(), 0)
+
+        save.assert_called_once()
+        return calls, ntfy_poll, discord_poll, pending
+
+    def test_topic_workflow_dispatch_skips_control_and_pending_work(self):
+        calls, ntfy_poll, discord_poll, pending = self._run_main(
+            event_name="workflow_dispatch", notify_only="movies")
+
+        self.assertEqual(calls, ["topic"])
+        ntfy_poll.assert_not_called()
+        discord_poll.assert_not_called()
+        pending.assert_not_called()
+
+    def test_scheduled_notify_only_keeps_control_and_pending_work(self):
+        calls, ntfy_poll, discord_poll, pending = self._run_main(
+            event_name="schedule", notify_only="twitch")
+
+        self.assertEqual(calls, ["dispatch:status fx",
+                                 "dispatch:explain movies",
+                                 "pending",
+                                 "topic"])
+        ntfy_poll.assert_called_once()
+        discord_poll.assert_called_once()
+        pending.assert_called_once()
+
+    def test_full_manual_dispatch_keeps_control_and_pending_work(self):
+        # workflow_dispatch with no NOTIFY_ONLY is a FULL manual run, not a
+        # /run topic:x dispatch, so it must process control + pending like a
+        # scheduled sweep. This exercises the bool(NOTIFY_ONLY) half of the
+        # gate: workflow_dispatch alone must NOT skip control work.
+        calls, ntfy_poll, discord_poll, pending = self._run_main(
+            event_name="workflow_dispatch", notify_only="")
+
+        self.assertEqual(calls, ["dispatch:status fx",
+                                 "dispatch:explain movies",
+                                 "pending",
+                                 "topic"])
+        ntfy_poll.assert_called_once()
+        discord_poll.assert_called_once()
+        pending.assert_called_once()
 
 
 if __name__ == "__main__":
