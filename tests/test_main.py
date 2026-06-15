@@ -212,6 +212,7 @@ class MainLoopControlPhaseTest(unittest.TestCase):
                                       f"dispatch:{commands[0]}")), \
                 mock.patch.object(main.control, "process_pending",
                                   side_effect=lambda state: calls.append("pending")) as pending, \
+                mock.patch.object(main.ntfy, "push") as push, \
                 mock.patch.dict(os.environ, {
                     "GITHUB_EVENT_NAME": event_name,
                     "NOTIFY_ONLY": notify_only,
@@ -221,10 +222,10 @@ class MainLoopControlPhaseTest(unittest.TestCase):
             self.assertEqual(main.main(), 0)
 
         save.assert_called_once()
-        return calls, ntfy_poll, discord_poll, pending
+        return calls, ntfy_poll, discord_poll, pending, push
 
     def test_topic_workflow_dispatch_skips_control_and_pending_work(self):
-        calls, ntfy_poll, discord_poll, pending = self._run_main(
+        calls, ntfy_poll, discord_poll, pending, _ = self._run_main(
             event_name="workflow_dispatch", notify_only="movies")
 
         self.assertEqual(calls, ["topic"])
@@ -233,7 +234,7 @@ class MainLoopControlPhaseTest(unittest.TestCase):
         pending.assert_not_called()
 
     def test_scheduled_notify_only_keeps_control_and_pending_work(self):
-        calls, ntfy_poll, discord_poll, pending = self._run_main(
+        calls, ntfy_poll, discord_poll, pending, _ = self._run_main(
             event_name="schedule", notify_only="twitch")
 
         self.assertEqual(calls, ["dispatch:status fx",
@@ -249,7 +250,7 @@ class MainLoopControlPhaseTest(unittest.TestCase):
         # /run topic:x dispatch, so it must process control + pending like a
         # scheduled sweep. This exercises the bool(NOTIFY_ONLY) half of the
         # gate: workflow_dispatch alone must NOT skip control work.
-        calls, ntfy_poll, discord_poll, pending = self._run_main(
+        calls, ntfy_poll, discord_poll, pending, _ = self._run_main(
             event_name="workflow_dispatch", notify_only="")
 
         self.assertEqual(calls, ["dispatch:status fx",
@@ -259,6 +260,58 @@ class MainLoopControlPhaseTest(unittest.TestCase):
         ntfy_poll.assert_called_once()
         discord_poll.assert_called_once()
         pending.assert_called_once()
+
+
+class TopicDispatchFeedbackTest(unittest.TestCase):
+    """Single-topic /run dispatches report completion when nothing was pushed."""
+
+    def _run_main(self, *, event_name: str, notify_only: str, topic_pushes: bool = False):
+        def selected_topic(state):
+            if topic_pushes:
+                main.ntfy.push(title="Movie: Example", message="new", topic="movies")
+            return state
+
+        state: dict = {}
+        with mock.patch.object(main, "TOPICS", [("movies", selected_topic)]), \
+                mock.patch.object(main.state_mod, "load", return_value=state), \
+                mock.patch.object(main.state_mod, "save"), \
+                mock.patch.object(main, "_is_daily_run", return_value=False), \
+                mock.patch.object(main.ntfy, "push") as push, \
+                mock.patch.dict(os.environ, {
+                    "GITHUB_EVENT_NAME": event_name,
+                    "NOTIFY_ONLY": notify_only,
+                    "NOTIFY_TEST_PUSH": "",
+                    "NTFY_CONTROL_TOPIC": "",
+                }, clear=False):
+            self.assertEqual(main.main(), 0)
+        return push
+
+    def test_single_topic_dispatch_sends_no_new_items_feedback(self):
+        push = self._run_main(event_name="workflow_dispatch", notify_only="movies")
+
+        push.assert_called_once_with(
+            title="Run complete",
+            message="Checked movies. No new notifications sent.",
+            tags="white_check_mark",
+            priority="high",
+            topic="control",
+        )
+
+    def test_single_topic_dispatch_with_real_push_sends_no_feedback(self):
+        push = self._run_main(event_name="workflow_dispatch", notify_only="movies",
+                              topic_pushes=True)
+
+        push.assert_called_once_with(title="Movie: Example", message="new", topic="movies")
+
+    def test_scheduled_notify_only_sends_no_feedback(self):
+        push = self._run_main(event_name="schedule", notify_only="movies")
+
+        push.assert_not_called()
+
+    def test_full_manual_dispatch_sends_no_feedback(self):
+        push = self._run_main(event_name="workflow_dispatch", notify_only="")
+
+        push.assert_not_called()
 
 
 if __name__ == "__main__":

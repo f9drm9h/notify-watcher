@@ -284,6 +284,33 @@ def _is_topic_dispatch_run() -> bool:
     )
 
 
+def _run_counting_pushes(run: Topic, state: dict) -> tuple[dict, int]:
+    """Run one topic while counting push attempts through the shared transport."""
+    sent = 0
+    original_push = ntfy.push
+
+    def counted_push(*args, **kwargs):
+        nonlocal sent
+        sent += 1
+        return original_push(*args, **kwargs)
+
+    ntfy.push = counted_push  # type: ignore[assignment]
+    try:
+        return run(state), sent
+    finally:
+        ntfy.push = original_push  # type: ignore[assignment]
+
+
+def _send_topic_dispatch_feedback(topic: str) -> None:
+    ntfy.push(
+        title="Run complete",
+        message=f"Checked {topic}. No new notifications sent.",
+        tags="white_check_mark",
+        priority="high",
+        topic="control",
+    )
+
+
 def main() -> int:
     logging.basicConfig(
         level=logging.INFO,
@@ -346,14 +373,19 @@ def main() -> int:
     ok_count = fail_count = 0
 
     topics = _selected_topics(os.environ.get("NOTIFY_ONLY", ""))
+    feedback_topic = topics[0][0] if topic_dispatch and len(topics) == 1 else ""
     if len(topics) != len(TOPICS):
         log.info("NOTIFY_ONLY active: running %d of %d topics", len(topics), len(TOPICS))
 
     for name, run in topics:
         log.info("[%s] starting", name)
         entry = topic_health.setdefault(name, {})
+        sent_count = 0
         try:
-            state = run(state)
+            if name == feedback_topic:
+                state, sent_count = _run_counting_pushes(run, state)
+            else:
+                state = run(state)
         except Exception as exc:  # noqa: BLE001 - we deliberately swallow
             health.consume(state, name)  # discard any half-written report
             entry["last_error"] = str(exc)
@@ -368,6 +400,8 @@ def main() -> int:
                            adopted=name in health.ADOPTED, run_ts=run_ts):
             ok_count += 1
             log.info("[%s] ok", name)
+            if name == feedback_topic and sent_count == 0:
+                _send_topic_dispatch_feedback(name)
         else:
             fail_count += 1
             log.error("[%s] source failed: %s", name, entry["last_error"])
