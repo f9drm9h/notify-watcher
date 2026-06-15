@@ -148,6 +148,15 @@
       "title": "Swedish new nuclear project selects Rolls-Royce SMRs",
       "topic": "energy",
       "url": "https://www.world-nuclear-news.org//articles/swedish-new-nuclear-project-selects-rolls-royce-smrs"
+    },
+    {
+      "detail": "DOP 7,995.00 (was DOP 9,995.00, -20%)",
+      "preserve_detail": false,
+      "score": 45,
+      "source": "La Sirena",
+      "title": "La Sirena deal: Bocina Amplificada Sbx 6.5 P Sbx-2065",
+      "topic": "groceries",
+      "url": "https://www.sirena.do/sbx-bocina-amplificada-6-5p-sbx-2065-2039392/p"
     }
   ],
   "digest_last_sent": "2026-06-15",
@@ -273,127 +282,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "The Great Pyramid of Giza, finished around 2560 BCE from some 2.3 million stone blocks, stood as the tallest human structure on Earth for nearly 3,800 years. Archaeology has overturned the slave-labor myth: excavated workers' villages with bakeries, breweries, and medical care show it was built by rotating crews of paid, well-fed Egyptian laborers. Its base is level to within a couple of centimeters.",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The 4,500-Year-Old Skyscraper",
-      "topic": "learn",
-      "ts": "2026-06-12T06:23:23.219945+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "On this day\n1999: In the aftermath of the bombing of Yugoslavia and the Kosovo War, the NATO-led Kosovo Force entered the territory with a mandate of establishing a secure environment.\n\nFeatured: Love Is Embarrassing\n\"Love Is Embarrassing\" is a song by American singer-songwriter Olivia Rodrigo from her second studio album, Guts (2023). Rodrigo wrote the song with its producer, Dan Nigro. It became available as the album's ninth track on September 8, 2023, when it was released by Geffen...\n\nLife skill\nHand-washing with soap for 20 seconds is one of the most effective ways to prevent the spread of illness. (Source: CDC)",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Daily learning",
-      "topic": "learn",
-      "ts": "2026-06-12T06:23:24.649750+00:00",
-      "url": "https://en.wikipedia.org/wiki/Love_Is_Embarrassing"
-    },
-    {
-      "action": "push",
-      "detail": "What: The Itaipu Dam on the Paran\u00e1 River is jointly owned and operated by Brazil and Paraguay, with about 14,000 megawatts of capacity.\nWhy it matters: It's a rare bi-national power plant, splitting both the electricity and the governance between two countries.\nWhy you should care: It supplies most of Paraguay's power and a big share of Brazil's \u2014 proof that shared energy projects can work.\n(Source: Itaipu Binacional)",
-      "score": 60,
-      "severity": "low",
-      "source": "Energy learning",
-      "title": "\u26a1 Today's spark \u2014 Itaipu \u2014 a dam shared by two nations",
-      "topic": "energy_learn",
-      "ts": "2026-06-12T06:23:24.843626+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Jun 01-Jun 07: RD$4,428.70 across 7 transactions\nTop: JUMBO MELLA RD$2,073.70; BANCO BHD RD$800.00; WENDYS SAMBIL RD$605.00; KRISPY KREME SIRENA CDG RD$300.01; HELADOS BON SAMBIL KENNED RD$249.99\nBiggest: RD$2,073.70 at JUMBO MELLA",
-      "score": 60,
-      "severity": "moderate",
-      "source": "BHD",
-      "title": "Weekly spending summary",
-      "topic": "spending",
-      "ts": "2026-06-12T06:23:30.312354+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Ends Saturday 13 June (tomorrow). Tap for the academic calendar (PDF).",
-      "score": 62,
-      "severity": "high",
-      "source": "ITSC",
-      "title": "ITSC: Solicitud Cambio de Carrera / Reingreso 2026-3 / Readmisi\u00f3n",
-      "topic": "itsc",
-      "ts": "2026-06-12T06:23:31.880305+00:00",
-      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/05/Calendario-academico-2026-2-MAYO-AGOSTO-_-Actualizado_.pdf"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Fan Detective Work May Have Uncovered \u2018Avengers: Doomsday\u2019 Trailer Release Date - Murphy's Multiverse",
-      "topic": "movies",
-      "ts": "2026-06-12T07:18:50.567931+00:00",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNSzdqaTZYN1B3VUVQS3JDVXV2Sl9YOUhkamtrUUctZHo0Y0htWG9pcy1DWEZobjBtekZHaVZFODdIc3pDT2ZHd3ZvQVpzOThmZjQ2YUljbTVQZks2TXVaMlZlaU9xamlyc1VzWFZPNy1wWlVVdGRFMlc3Mkh6NHNxS25DYjVreDVzOW4xMklxQ2JmNEdqTXBvek5OODdRd0owdlBJQ0ZRdXNRUThscTFVRg?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Sony Officially Responds To Spider-Man Brand New Day Trailer 2 Leaks - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-12T07:18:51.119944+00:00",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBnU3p0anVfaWdQZ0xiaFJnbldqN1BoQ3FRNGlrR1dlYnpEaHBvM3JFX1c0REhXVHFGWHdSbnBObG5JQnFBam1IR2ZmVDFlNEFBUEc1WkxDeGg3Vmc2Yms3b1pLdGJ3OEU1S3VMX2VtM3JnOVF5UlR1eEM5RG1kQQ?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Trailer Leak Confirmed: Sony DMCA Backfires, June 17 Event Stands - Tech Times",
-      "topic": "movies",
-      "ts": "2026-06-12T07:18:51.120423+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdU1XUEJyY09PamtpMzd3dHQzSWUya3hSRHJaVGIzSDJPbDF3VDVqQWlCblBqWlZqNDZBaUs0RHVzLTFiVW91OEhuZ3JIaVRWd0lUMUpvNUZxVkQ5eVl2dG5yTm5ubWc2SmJFSUx4bEJ3elZobzVBa1p2NGs0dUx3UjM4akw3S1JlZno3REdYQzE2Qm5JZGVEQU9wR1BHOVhreWd3UHpvSURVN1NlSzFXQzlxQmI3dUxvckhYMTdVby1BYXNOOTdPLUdYMm9SdU1mSHFhMW83ak9UaHM?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' Officially Confirms Its Major MCU Villains - Collider",
-      "topic": "movies",
-      "ts": "2026-06-12T12:13:54.605585+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQ3I0aDhmYUM0Q2t5a0VfVEJ1dGl6Y1N5NFBMWmpTUUJidjZjcUlwQ1NKOWNuam14MS1wbDJhTFlRU0NSam1JcFNKNVVOUm5scDlWMFJKVGZKQ2xvLWhQcllpY3NBNzhtalhUSmNxWFFpUFRkZlBoaUFjY09TMmFQbXRfME0?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day India Release Date: Tom Holland\u2019s Film To Swing into Cinemas On 30th July - Telugu Times",
-      "topic": "movies",
-      "ts": "2026-06-12T12:13:54.606105+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOMHY0ajYtYktPNGRGM28yU3FFSVNuaTNPNVVyT0thYlo0bDBJR1NPdmx3RGNJWHh4a3drWUR0WkxweWhzdkFtQXhoeVgzSUtfcmdVSkRseUl5b29Vb2xSSHl5ZTJLM2UwaHAxU1lQTXZqenFQd0tEb1k0bVhBVml0WkVhUVc3bVQzRS1KaUFKcWNUQWVCQWxVNXBQU3FhTVBoSzZrcFNwM2I3c0xRdFV0SnNGRVJ5cWp6WjdfUTFHcGNVM1E3aDFxdmF0UXotUmM2d2JIc3ZFZW8zYnlQWUItR05lYmUwS1VyVWJEa1V3NEs?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Gets Early Release Date in 1 Major International Market - AOL.com",
-      "topic": "movies",
-      "ts": "2026-06-12T12:13:54.607469+00:00",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB5UTh4VmpVQk12WE1EY3cyZHNOWGliLTlNVWh2VkFRVUtCQm1ZbDhPOWdIMDc5bWVQeEFHeDFCYXZYTEJsalQ2NkRVQ3dXYTlrQV9ScnlRdXZnY0pxNUM1NUF2Um1hckpVSzl3TmlwcFJpR3hsRmVPeg?oc=5"
-    },
     {
       "action": "drop",
       "detail": "",
@@ -6249,6 +6137,138 @@
       "topic": "apod",
       "ts": "2026-06-15T18:18:58.874345+00:00",
       "url": "https://apod.nasa.gov/apod/image/2606/TripleSunShock_Winkopp_1108.jpg"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "9bd724688f2feb96",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "New Official Spider-Man: Brand New Day Synopsis Mentions Mysterious Villain Plus Spidey Tracker Launches - LRMonline",
+      "topic": "movies",
+      "ts": "2026-06-15T21:31:53.386917+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQWGRuTUZlSkw5MnRQOXlidTJSS2VPMHpxdW1qR1lydnN5WTRiM2xtaUlaRDN5Ymc2NTZ1U2RoNDhiZDlrbWxJcDlwRXlVS3lXeFQ0MWg3STRoVUVxdUVOMU1KZjhsMExRYTlLbWNiaTVDMFFMNl9CMDcwSHRueVROVDczNkNYUkVvQU9rVm5KR2tUam94dHdzbGZTY2g0SENtdHpidHFNNVBBc0RiSG1FaUw4YjBmVmV5b05HOEFtaGQ5amx6bTdUUWtiVdIB0AFBVV95cUxOUFJYalZ3ZUlJa0N6NkJyTzB0WU1QdHVJNHJYcGdYVTFiSXhxX3U1Wmg2VXhEeV9HVmlIanlmYTdtWjlYQWxzRFJEZXBfYzNOdkJLZlJRQnh2d1dLclBXRE5TU28yRVVmQWszZ3dYd21oMTNnQjZYclFLM01ZeEdwQ2VvdlYtYUhZd2xPQUJiajUzMlZ5XzVtWHU4MDVsSmdNTXZsQTNEc3lHb2hfZHlzT1NOSHE5T3cxVWEwNEdfeUNYMW1Yd2x2MENPMXcyalNB?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "474d982de5608a11",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Matt Reeves Shares New Look at 'The Batman 2' as Sequel Begins Production - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-15T21:31:55.103794+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE41VnppUFBVWlgyY2VCVmdwd3JmcE5jQkY0R1JldHBZeXVoVTFBelZNWmYteGJsLUFrT0RhWnBaSHc3ZDRIOVpuWXVZTnFvMTRzdmZQRU9FWm1nZGdwc3lXWG11S25ORzg?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "862c2795e09284c5",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Colin Farrell Confirms The Penguin's Role In The Batman Part II - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-15T21:31:55.104689+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4wRlVnN1k4ZFNsZmZSZUFXMDFodWw1STM1ME1qRW1GOTBBMVNVN3ZzNjRabldRSHZ0V0sxOXFmU1NNWHBzemQxYU85WXU4cjMzcG9vTUl5aFFRRlZGME1MQUFGT2JuU2M?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "5d813330766ab0da",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Beloved DC star announces reduced role in The Batman - Part II - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-15T21:31:55.105768+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9Rd1BUYVpJeVFQZTZHTExvamFyajlVZ3ZGUThpaVJJUlgtMjhDVm5fd2EzZGg2NUhTRmpMVjhPV19XNWpDSG9TbHNZUjhRU1Q3dzZpaWt3ZFY5Ri1zd29tUFJoZkc?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "43aca374ca91a3c9",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Colin Farrell Officially Confirms Penguin's Return in 'The Batman Part II,' But There's a Catch [Exclusive] - Collider",
+      "topic": "movies",
+      "ts": "2026-06-15T21:31:55.106431+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaVRObjVWNjZ6TWFmUDdsUTViUENYTzRuZFRLMDBlcWFuMndjRVBaeFlTRXFHZkR4d1hUc0JJNjNTZ3JGa01XcEh6ckpTNThUZ0dMdm8zTXpSMk1EQjJwY3g2Y2lIUEQ2NVp4OUYyTkVLd3hBMEZMOFhzQmlLcjNFdjNEdDI?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Hate It Or Love It - The Game\n(because you like Obie Trice)",
+      "id": "07a777bbb7f26b12",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-15T21:32:01.926448+00:00",
+      "url": "https://www.deezer.com/track/4586924"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 7,995.00 (was DOP 9,995.00, -20%)",
+      "id": "b38ff6f380432d2f",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Bocina Amplificada Sbx 6.5 P Sbx-2065",
+      "topic": "groceries",
+      "ts": "2026-06-15T21:33:01.311837+00:00",
+      "url": "https://www.sirena.do/sbx-bocina-amplificada-6-5p-sbx-2065-2039392/p"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 4:26 AM - max 55deg, SW to NE. Look up!",
+      "id": "b4415b33b0492355",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-06-15T21:33:29.519515+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Pause for a moment and have a drink of water.",
+      "id": "f1fdf5e361ffde0c",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-15T21:33:31.310537+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "In the ancient city of Alexandria, a bustling intellectual hub on the Egyptian coast, lived a man whose very name would become synonymous with a branch of mathematics: Euclid.  While much of his personal life remains shrouded in the mists of history\u2014we know neither his precise birth and death dates nor the details of his upbringing\u2014his monumental achievement, *The Elements*, shines with a clarity that has endured for over two millennia. He was not merely a mathematician; he was an architect of thought, a cartographer of logic, who took the scattered insights and practical knowledge of his predecessors and forged them into a single, cohesive, and breathtakingly rigorous system. Before Euclid, the Egyptians and Babylonians possessed remarkable geometric understanding, constructing pyramids and surveying lands with astonishing accuracy, but their knowledge often stemmed from empirical observation and specific examples. What Euclid offered was something fundamentally different: a deductive framework, a logical journey from self-evident truths to complex theorems.\n\n*The Elements* is not simply a textbook; it is a profound philosophical statement about the nature of truth and how it can be arrived at through pure reason. Across thirteen books, Euclid begins with a set of definitions\u2014what a point is, a line, a circle\u2014then moves to five postulates, foundational assumptions that cannot be proven but are accepted as true, such as \"through any two points there is exactly one straight line.\" From this bedrock, he constructs a towering edifice of propositions, each one rigorously proven from what came before it. This systematic progression, from simple axioms to intricate geometric proofs, was revolutionary. It demonstrated, perhaps for the first time in such a comprehensive manner, the power of deductive reasoning, the ability to derive undeniable conclusions from unproven but intuitively true starting points. The famous story of Ptolemy I asking if there was a shorter way to learn geometry, only to be told by Euclid, \"There is no royal road to geometry,\" encapsulates the demanding yet ultimately rewarding intellectual journey *The Elements* represents.\n\nThe impact of *The Elements* is almost impossible to overstate. For nearly 2,000 years, it was the definitive textbook for geometry, shaping the minds of countless mathematicians, philosophers, and scientists. It was one of the first books to be printed after the invention of the printing press, and its influence extended far beyond the realm of mathematics. The rigorous, step-by-step method of logical proof laid out by Euclid became a paradigm for scientific inquiry itself. Ren\u00e9 Descartes, for instance, in developing his own philosophical method, explicitly sought to emulate the clarity and certainty of Euclidean geometry. Isaac Newton's *Principia Mathematica*, the foundational text of classical mechanics, is structured in a manner directly inspired by *The Elements*, beginning with definitions, axioms, and then propositions. The very concept of a mathematical proof, a chain of reasoning leading to an incontrovertible conclusion, is largely a legacy of Euclid's work.\n\nEven as mathematical understanding evolved, *The Elements* continued to resonate. For centuries, the fifth postulate, the parallel postulate, which essentially states that through a point not on a given line, there is exactly one line parallel to the given line, proved a source of enduring fascination and frustration.",
+      "id": "20679afe83ec6b5a",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Euclid's Elements",
+      "topic": "learn",
+      "ts": "2026-06-15T21:33:36.841104+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cSome 2,000 years ago Aristotle declared that eels were generated spontaneously from mud.\u201d\n\u2014 Aristotle\n\nThe voice of Aristotle, echoing across millennia, conjures images not just of a philosopher, but of a tireless observer, a polymath whose intellect reached into nearly every corner of ancient Greek thought. Born in Stagira in 384 BCE, he was not of Athenian stock, a detail that subtly shaped his career and perhaps even his worldview. His father was a physician to the Macedonian king Amyntas III, imbuing young Aristotle with an early appreciation for empirical observation and the natural world, a stark contrast to Plato\u2019s more abstract, idealist bent, even though Aristotle would become his most famous student at the Academy in Athens. For nearly two decades, Aristotle absorbed, debated, and refined his understanding under Plato's tutelage, before eventually striking out on his own intellectual path, a path that led him to establish his own school, the Lyceum, and to become tutor to none other than Alexander the Great \u2013 an appointment that would profoundly influence the trajectory of his life and the reach of his ideas.\n\nIt was against this backdrop of rigorous philosophical inquiry and burgeoning scientific observation that Aristotle, in his grand taxonomic project to understand and categorize all living things, tackled the enigma of the eel. In his monumental \"History of Animals,\" a work that laid the very foundations of zoology, he grappled with a creature that defied conventional reproductive understanding. Unlike most fish, eels offered no visible signs of breeding; no eggs, no young, no discernible mating rituals were ever observed by the keenest eyes of ancient naturalists. Faced with this profound biological mystery, and lacking the microscopes and genetic sequencing that would eventually reveal the eels\u2019 intricate life cycle across vast ocean distances, Aristotle proposed what seemed, at the time, the most logical explanation: spontaneous generation. \"Some 2,000 years ago Aristotle declared that eels were generated spontaneously from mud,\" he wrote, a statement born not of ignorance, but of the limits of observation and the prevailing scientific paradigms of his era, where the idea that life could arise from non-living matter under specific conditions was widely accepted for certain organisms. His meticulously detailed observations of other species, however, provided the bedrock upon which future scientific method would be built.\n\nToday, Aristotle\u2019s pronouncement on eels resonates not as a testament to scientific error, but as a powerful reminder of the relentless human drive to understand the world, even in the face of profound unknowns. It speaks to the courage of intellectual inquiry, the willingness to formulate hypotheses based on available evidence, and the essential role of observation in the scientific process. While our understanding of the eel\u2019s remarkable migratory journey and complex reproductive cycle is now infinitely more sophisticated, the story of Aristotle and his mud-born eels serves as a humbling historical marker.",
+      "id": "795d937b3bec76d4",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Aristotle",
+      "topic": "wikiquote",
+      "ts": "2026-06-15T21:33:41.458320+00:00",
+      "url": ""
     }
   ],
   "fda_seen_ids": [
@@ -6299,7 +6319,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-13-19-JUN-DE-2026-ESCENARIO-B.pdf",
   "fuel_last_pdf_hash": "ae670879fa8033736dfb39d8d8165a100cf1ca299cd8559e978132c494580ca8",
-  "fuel_last_prices_seen_at": "2026-06-15T18:18:41.902805+00:00",
+  "fuel_last_prices_seen_at": "2026-06-15T21:33:28.708112+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -6643,6 +6663,7 @@
       "1b7d9e5ab11b51a5"
     ],
     "La Sirena": [
+      "0b053333d8ecf7b5",
       "e6ab1ef4a6d1efa1",
       "c90fa1f62e398c99",
       "ccdf14fe2838bc6a",
@@ -6957,6 +6978,7 @@
     "iPadOS 12.5.8 (16H88)"
   ],
   "iss_seen_passes": [
+    "2896bfda0d7a3f9b",
     "02bfbc86832bf190",
     "e077c9c99a887585",
     "251d9ad4a2141add",
@@ -6978,8 +7000,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "early_humans",
-  "knowledge_last_sent": "2026-06-15T6",
+  "knowledge_last_category": "math_history",
+  "knowledge_last_sent": "2026-06-15T7",
   "knowledge_seen": {
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
     "ancient_civilizations:Qin Shi Huang and the Terracotta Army": "2026-06-15",
@@ -6991,6 +7013,7 @@
     "first_artists": "2026-06-12",
     "hearing_spacetime_ring": "2026-06-12",
     "math_history:Andrew Wiles and the final proof": "2026-06-14",
+    "math_history:Euclid's Elements": "2026-06-15",
     "medicine:Walter Reed and the conquest of yellow fever": "2026-06-14",
     "mythology:Pandora and the jar of evils": "2026-06-14",
     "philosophy:Augustine and the Confessions": "2026-06-13",
@@ -7008,7 +7031,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-06-15T18:16:57.973053+00:00"
+    "ts": "2026-06-15T21:31:49.652476+00:00"
   },
   "launch_seen_ids": [
     "b01d10e94f685948",
@@ -7023,6 +7046,20 @@
   "life_dashboard_last_week": "2026-W24",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "2646e1879e321e0d",
+      "1ae19510f327aa81",
+      "43403a0574958650",
+      "7e199180bf7fb5e7",
+      "c59f4ed97d0adba3",
+      "d34608c17d5ad03b",
+      "5459fbb6dc7dafd9",
+      "8602e13c2ddeb3b6",
+      "1f59955dfa0a09d6",
+      "389ab91438ccb4d2",
+      "75248e10c24e0250",
+      "303d27646832a7c5",
+      "60d65cd098044a95",
+      "54b980e64c3ad8b0",
       "299bd6c3a7e412ce",
       "48fadc8835fc75b0",
       "f9b4494d21ac8953",
@@ -7108,21 +7145,7 @@
       "359a12da095eb99d",
       "fe4ae181e51d1d3a",
       "3e2df8573945e5de",
-      "8a76e6a34f79f09c",
-      "4998fd21cf235fb5",
-      "b24cbd7bfb2d23e9",
-      "6cffb2ccb4946890",
-      "57df2736db186584",
-      "002d2d2b6f81ab55",
-      "c6c50c2d1b37bbb0",
-      "bc6898c940263819",
-      "b0278452e81705a8",
-      "0e95a71756ffd31f",
-      "ad97f1967fea0aab",
-      "8b296ad9bf9b5d12",
-      "c2155e5902b094bc",
-      "cf5a8e0067072361",
-      "abf3c3bbf4bb5446"
+      "8a76e6a34f79f09c"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7324,6 +7347,23 @@
       "7d25edcee1a4cc81"
     ],
     "Spider-Man: Brand New Day": [
+      "4cbf3b9016c217e9",
+      "f527c9cc4336b00c",
+      "3d62c4911bd0465b",
+      "43df46b333d8556a",
+      "f607946cd7ea129f",
+      "12a5967fb020d3fa",
+      "ebc6676988eb4573",
+      "136f239aa1998b79",
+      "2a74924e2ffd10fc",
+      "8f23f890007ba860",
+      "921aba91ca45d2de",
+      "80362cd8376d0db1",
+      "df853a73524cdab1",
+      "ed517c56b70dafec",
+      "da5f6cb4e3398d96",
+      "02de88c9113cf081",
+      "f7a7c6fa32f79649",
       "9e9e417a7cbb8632",
       "61c70c033b9a50a9",
       "fb432726ba6342b1",
@@ -7406,26 +7446,27 @@
       "fae1d919adffcd9c",
       "336b77d9e2503466",
       "497ced80ac7be251",
-      "4bc9b337f2ef64ab",
-      "cb8bb1e7a4d1fea8",
-      "4492319e964ec32e",
-      "902c3fd3db2339a4",
-      "bca3c3ee21eae4b8",
-      "d5a0365c5afd950e",
-      "c750f7fc23883527",
-      "61d4906a994869f0",
-      "45a2c682cd584950",
-      "6b70758f3d5fbfcc",
-      "f13b87bebeb23517",
-      "ce647f61b28c2894",
-      "26e979b22cb4d13a",
-      "cab56770482c0136",
-      "ac29ab6b8eebc4ff",
-      "38b16b77d3a63905",
-      "c1d97154c475cb79",
-      "993f7f04139c708e"
+      "4bc9b337f2ef64ab"
     ],
     "The Batman Part II": [
+      "69dbf07438882207",
+      "9e2c588376f911ae",
+      "994244d6fe5e5ecd",
+      "5cb03f953c5f589d",
+      "acdba57ed20b51a6",
+      "50488034e265da68",
+      "b64edb7524004960",
+      "85bccf8e504bbc80",
+      "ccd6f36cb63fb062",
+      "c5ef3a2660c74126",
+      "f9d136828d9365cc",
+      "fcf1089026438889",
+      "8623c9c3c2d12cb6",
+      "aed8e96e3c42a4a1",
+      "aafe0114ee801e51",
+      "ba9d25ec043d5f84",
+      "6b6aabf1acd4b354",
+      "47b9ff0b62460f0c",
       "cf630ffddd894923",
       "e1fa28225983828f",
       "c7de8c55c70c4557",
@@ -7507,27 +7548,19 @@
       "0194959db71e86ed",
       "26fcc45553000894",
       "494302d5d766e004",
-      "b9fb65d28e4c522f",
-      "a11e1382e9791aa3",
-      "a04120b4eaa6beb5",
-      "be2c07828f52a7fe",
-      "48e39a042ab17b45",
-      "531f7e6205572add",
-      "8d557536d2ba1a0b",
-      "f4becd9a21ad841d",
-      "95cd57732c25b03e",
-      "04c3a0286513f2b4",
-      "d8fd6d512b762d6a",
-      "bdcc003070da19e5",
-      "380d03a3d0a9d7be",
-      "b1eefdf4adaf0832",
-      "27748211046059dd",
-      "89572d6f116d76a7",
-      "44c2c8333c751231",
-      "9577488c1f230d66",
-      "81d0c5185a57e742"
+      "b9fb65d28e4c522f"
     ],
     "The Odyssey": [
+      "c4625828b615a96f",
+      "9dc4cbba1c39714b",
+      "a584d87a24c6bdfc",
+      "36815071d9f97d4e",
+      "079deafe2ccbfb2b",
+      "1ea416168e2a8ea8",
+      "3c86bf357c5c8feb",
+      "1e9d1e04da7cb827",
+      "b6f1f8861324d058",
+      "b3de85b5fcec1e57",
       "a4b92020742ff991",
       "2b5dde80aafdea33",
       "e7f1dfe0045c7d15",
@@ -7617,17 +7650,7 @@
       "cf4a668f87cec664",
       "a0764a0b93dc1444",
       "db71598c7c440c80",
-      "d06bf3f86b13a649",
-      "2d0305582e06751a",
-      "6fd227a2a3ef1181",
-      "172aeeb66df74fb1",
-      "17db8bcb46af9cbe",
-      "1f5e65219415d596",
-      "83eb0bd724c7ca78",
-      "9980ffe468eef693",
-      "8bdbb2121224da67",
-      "208c3350aad4ff3c",
-      "b4ee9d24a2770ace"
+      "d06bf3f86b13a649"
     ]
   },
   "movie_release_dates": {
@@ -7683,7 +7706,8 @@
     4811669,
     891594,
     417645,
-    737
+    737,
+    393
   ],
   "music_release_seen": [
     "e36ca06bb131deea",
@@ -7793,6 +7817,15 @@
       "label": "Ray Charles",
       "payload": {
         "name": "Ray Charles"
+      }
+    },
+    "43bbb1ce338bbc17": {
+      "applied": null,
+      "created": "2026-06-15T21:32:01.926423+00:00",
+      "kind": "artist",
+      "label": "The Game",
+      "payload": {
+        "name": "The Game"
       }
     },
     "465c6ceb2b6111a7": {
@@ -8108,177 +8141,177 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "deals": {
-      "last_data": "2026-06-15T18:18:03.049427+00:00",
-      "last_data_count": 11,
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_data": "2026-06-15T21:32:54.684160+00:00",
+      "last_data_count": 12,
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "energy": {
-      "last_data": "2026-06-15T18:18:25.323077+00:00",
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_data": "2026-06-15T21:33:12.215407+00:00",
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "fda": {
-      "last_data": "2026-06-15T18:18:14.943103+00:00",
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_data": "2026-06-15T21:33:01.819435+00:00",
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-15T18:18:41.902825+00:00",
+      "last_data": "2026-06-15T21:33:28.708131+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "fx": {
-      "last_data": "2026-06-15T18:18:40.307332+00:00",
+      "last_data": "2026-06-15T21:33:27.326882+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "games": {
       "last_data": "2026-06-15T13:41:05.025187+00:00",
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-15T18:17:12.929690+00:00",
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_data": "2026-06-15T21:32:03.882004+00:00",
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-15T18:18:14.578092+00:00",
+      "last_data": "2026-06-15T21:33:01.311552+00:00",
       "last_data_count": 250,
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "movies": {
-      "last_data": "2026-06-15T18:17:05.162817+00:00",
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_data": "2026-06-15T21:31:56.620801+00:00",
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "music": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-15T18:18:26.594044+00:00",
+      "last_data": "2026-06-15T21:33:13.034942+00:00",
       "last_data_count": 50,
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-15T18:18:39.552037+00:00",
-      "last_data_count": 41,
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_data": "2026-06-15T21:33:26.475206+00:00",
+      "last_data_count": 42,
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-15T18:17:07.316063+00:00",
+      "last_data": "2026-06-15T21:31:58.192202+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "weather": {
-      "last_data": "2026-06-15T18:18:25.537711+00:00",
+      "last_data": "2026-06-15T21:33:12.439879+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-15T18:18:46.091241+00:00",
+      "last_data": "2026-06-15T21:33:31.309949+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-15T18:16:57.973053+00:00"
+      "last_ok": "2026-06-15T21:31:49.652476+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "22DEC09",
   "visa_f4_final_action": "08NOV08",
   "watch_schedule": {
-    "last_full_window": "164958"
+    "last_full_window": "164959"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8291,9 +8324,10 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
-    "2026-06-15|18",
+    "2026-06-15|12",
     "2026-06-15|15",
-    "2026-06-15|12"
+    "2026-06-15|21",
+    "2026-06-15|18"
   ],
   "weather_seen_ids": [
     "f32b5eb9b621e5c0",
@@ -8327,8 +8361,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "leaders",
-  "wikiquote_last_sent": "2026-06-15T2",
+  "wikiquote_last_category": "philosophers",
+  "wikiquote_last_sent": "2026-06-15T7",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-14",
     "activists_thinkers:Mother Teresa": "2026-06-14",
@@ -8339,6 +8373,7 @@
     "leaders:Abraham Lincoln": "2026-06-14",
     "leaders:Benjamin Franklin": "2026-06-15",
     "leaders:Mikhail Gorbachev": "2026-06-13",
+    "philosophers:Aristotle": "2026-06-15",
     "philosophers:Plato": "2026-06-14",
     "philosophers:Socrates": "2026-06-13",
     "science_pioneers:Ada Lovelace": "2026-06-14",
