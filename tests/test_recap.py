@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import datetime as dt
+import types
 import unittest
 from unittest import mock
 
@@ -9,6 +10,20 @@ from notify_watcher.topics import recap
 from tests._util import capture_pushes
 
 NOW = dt.datetime(2026, 6, 8, 12, 30, tzinfo=dt.timezone.utc)  # Monday, 2026-W24
+
+
+class _FrozenDateTime(dt.datetime):
+    """datetime whose now() is pinned to NOW.
+
+    recap.run reads the wall clock (recap._dt.datetime.now) and recap._window
+    keeps only the trailing week, so a test fixture anchored to NOW silently
+    ages out of the window once real time passes it. Freezing now() makes
+    RunTest deterministic without touching production behavior.
+    """
+
+    @classmethod
+    def now(cls, tz=None):
+        return NOW
 
 
 def _entry(days_ago: float, topic="movies", action="push", score=50, title="T"):
@@ -60,6 +75,18 @@ class RunTest(unittest.TestCase):
         self._env = mock.patch.dict("os.environ", {"NOTIFY_DAILY": "1"})
         self._env.start()
         self.addCleanup(self._env.stop)
+        # Freeze recap's clock to NOW so the trailing-week window is
+        # deterministic. Scoped to the recap module's _dt reference so the
+        # global datetime is untouched; timedelta/timezone stay real.
+        frozen_dt = types.SimpleNamespace(
+            datetime=_FrozenDateTime,
+            timedelta=dt.timedelta,
+            timezone=dt.timezone,
+            date=dt.date,
+        )
+        self._clock = mock.patch.object(recap, "_dt", frozen_dt)
+        self._clock.start()
+        self.addCleanup(self._clock.stop)
 
     def test_sends_once_per_week(self):
         state = {"event_log": [_entry(1, action="push", score=70, title="Big")]}
