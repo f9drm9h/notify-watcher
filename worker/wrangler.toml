@@ -9,3 +9,4 @@ workers_dev = true
 # they live as encrypted Worker secrets and are preserved across deploys.
 [vars]
 STATE_BASE_URL = "https://raw.githubusercontent.com/f9drm9h/notify-watcher/main"
+GITHUB_DISPATCH_URL = "https://api.github.com/repos/f9drm9h/notify-watcher/actions/workflows/watch.yml/dispatches"
