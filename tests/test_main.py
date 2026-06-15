@@ -145,5 +145,47 @@ class MainLoopHealthTest(unittest.TestCase):
         self.assertEqual(saved["last_run"]["ok"], 1)
 
 
+class OnDemandSingleTopicTest(unittest.TestCase):
+    """The /run <topic> decoupling, proven at the main.main() level.
+
+    A /run games dispatch sets NOTIFY_ONLY=games but leaves NOTIFY_DAILY unset
+    (the workflow no longer couples the two). The behavior that must hold:
+    a single-topic on-demand run of a *weekly* topic must NOT stamp its week
+    guard, so it can never silently consume (and thus skip) the real scheduled
+    weekly run. The topic-level early-return is pinned in test_games; this pins
+    the same guarantee through the full selection + daily-gate path.
+    """
+
+    def test_on_demand_games_run_does_not_stamp_week_guard(self):
+        import os
+        from unittest import mock
+
+        from notify_watcher.topics import games
+        from tests._util import capture_pushes
+
+        # _is_daily_run() is mocked False to model "daily mode is off"
+        # deterministically — without it the UTC-hour fallback would set
+        # NOTIFY_DAILY on any run past 12:00 UTC and make this time-dependent.
+        with mock.patch.object(main, "TOPICS", [("games", games.run)]), \
+                mock.patch.object(main.state_mod, "load", return_value={}), \
+                mock.patch.object(main.state_mod, "save") as save, \
+                mock.patch.object(main, "_is_daily_run", return_value=False), \
+                mock.patch.dict(os.environ, {"NOTIFY_ONLY": "games",
+                                             "NOTIFY_DAILY": "",
+                                             "NOTIFY_TEST_PUSH": "",
+                                             "NTFY_CONTROL_TOPIC": ""}), \
+                capture_pushes() as sent:
+            self.assertEqual(main.main(), 0)
+
+        saved = save.call_args[0][0]
+        # Core guarantee: the weekly slot is left intact for the scheduled run.
+        self.assertNotIn(games.WEEK_STATE_KEY, saved)
+        # Non-vacuous: games was actually selected and ran (legacy no-report ->
+        # counts ok) but, with daily off, did nothing and emitted nothing.
+        self.assertEqual(saved["last_run"]["ok"], 1)
+        self.assertEqual(saved["last_run"]["failed"], 0)
+        self.assertEqual(sent, [])
+
+
 if __name__ == "__main__":
     unittest.main()
