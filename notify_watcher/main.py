@@ -284,6 +284,20 @@ def _is_topic_dispatch_run() -> bool:
     )
 
 
+def _force_pending_flush() -> bool:
+    """True when NOTIFY_PROCESS_PENDING explicitly opts an on-demand run back in
+    to the control/pending work that :func:`_is_topic_dispatch_run` otherwise
+    skips.
+
+    The skip exists so a manual ``/run topic:x`` can't surprise-fire old LATER/
+    MORE pushes; this is the deliberate override for the rare run where flushing
+    those *is* what you want. It only matters on a topic-dispatch run — scheduled
+    and full manual runs already process pending — so setting it elsewhere is a
+    harmless no-op.
+    """
+    return bool(os.environ.get("NOTIFY_PROCESS_PENDING", "").strip())
+
+
 def _run_counting_pushes(run: Topic, state: dict) -> tuple[dict, int]:
     """Run one topic while counting push attempts through the shared transport."""
     sent = 0
@@ -345,10 +359,14 @@ def main() -> int:
     # Both feed the same control.dispatch — the command grammar is shared.
     # Scheduled runs, including the frequent twitch-only run, keep this control
     # latency. /run-style workflow_dispatch+NOTIFY_ONLY skips it so an on-demand
-    # topic check cannot flush unrelated LATER/MORE or status/explain replies.
-    if topic_dispatch:
+    # topic check cannot flush unrelated LATER/MORE or status/explain replies —
+    # unless NOTIFY_PROCESS_PENDING explicitly opts this run back in.
+    if topic_dispatch and not _force_pending_flush():
         log.info("single-topic dispatch active: skipping control channel/pending work")
     else:
+        if topic_dispatch:
+            log.info("single-topic dispatch: NOTIFY_PROCESS_PENDING set, "
+                     "processing control/pending work anyway")
         try:
             control.dispatch(control.poll(state), state)            # legacy ntfy (off by default)
             control.dispatch(discord_control.poll(state), state)    # Discord control channel

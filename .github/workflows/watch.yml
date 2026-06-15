@@ -24,6 +24,10 @@ on:
         description: "Run just this one topic now (comma-separated allowed); empty runs the normal sweep"
         type: string
         default: ""
+      process_pending:
+        description: "On an on-demand 'only' run, also flush due remind-later / show-more pushes (normally skipped)"
+        type: boolean
+        default: false
 
 # Prevent two scheduled runs from racing each other on the state file. Because
 # pending runs can be replaced in this group, do not encode important behavior
@@ -116,6 +120,10 @@ jobs:
           # Twitch-only mode keeps the 15-minute live alerts lightweight. Full
           # mode leaves NOTIFY_ONLY empty so main.py runs every topic in order.
           NOTIFY_ONLY: ${{ inputs.only != '' && inputs.only || (steps.mode.outputs.run_mode == 'twitch' && 'twitch' || '') }}
+          # Opt-in: re-enable control/pending work (due LATER re-fires, queued
+          # MORE pushes) on an on-demand single-topic dispatch, which otherwise
+          # skips it. Empty/unset on schedule and full runs (they already flush).
+          NOTIFY_PROCESS_PENDING: ${{ inputs.process_pending && '1' || '' }}
         run: python -m notify_watcher.main
 
       - name: Stamp full sweep window
