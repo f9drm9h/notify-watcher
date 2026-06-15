@@ -112,7 +112,7 @@ jobs:
           # Force the daily work (digest/health tip/learn) on a manual run with
           # daily=true. On schedule it's left empty: main._is_daily_run() decides
           # by UTC hour instead, so a dropped cron can't skip the daily push.
-          NOTIFY_DAILY: ${{ inputs.daily && '1' || '' }}
+          NOTIFY_DAILY: ${{ (inputs.daily || inputs.only != '') && '1' || '' }}
           # Twitch-only mode keeps the 15-minute live alerts lightweight. Full
           # mode leaves NOTIFY_ONLY empty so main.py runs every topic in order.
           NOTIFY_ONLY: ${{ inputs.only != '' && inputs.only || (steps.mode.outputs.run_mode == 'twitch' && 'twitch' || '') }}
