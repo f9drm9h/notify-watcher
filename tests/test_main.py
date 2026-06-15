@@ -192,7 +192,8 @@ class OnDemandSingleTopicTest(unittest.TestCase):
 class MainLoopControlPhaseTest(unittest.TestCase):
     """Control/pending work runs on scheduled sweeps, not /run topic dispatches."""
 
-    def _run_main(self, *, event_name: str, notify_only: str):
+    def _run_main(self, *, event_name: str, notify_only: str,
+                  process_pending: str = ""):
         calls: list[str] = []
 
         def selected_topic(state):
@@ -216,6 +217,7 @@ class MainLoopControlPhaseTest(unittest.TestCase):
                 mock.patch.dict(os.environ, {
                     "GITHUB_EVENT_NAME": event_name,
                     "NOTIFY_ONLY": notify_only,
+                    "NOTIFY_PROCESS_PENDING": process_pending,
                     "NOTIFY_TEST_PUSH": "",
                     "NTFY_CONTROL_TOPIC": "",
                 }, clear=False):
@@ -259,6 +261,34 @@ class MainLoopControlPhaseTest(unittest.TestCase):
                                  "topic"])
         ntfy_poll.assert_called_once()
         discord_poll.assert_called_once()
+        pending.assert_called_once()
+
+    def test_topic_dispatch_with_process_pending_optin_runs_control(self):
+        # NOTIFY_PROCESS_PENDING is the explicit opt-in: an on-demand single-
+        # topic dispatch that would normally skip control work flushes due
+        # LATER/MORE (and polls control) anyway, then still runs the topic.
+        calls, ntfy_poll, discord_poll, pending, _ = self._run_main(
+            event_name="workflow_dispatch", notify_only="movies",
+            process_pending="1")
+
+        self.assertEqual(calls, ["dispatch:status fx",
+                                 "dispatch:explain movies",
+                                 "pending",
+                                 "topic"])
+        ntfy_poll.assert_called_once()
+        discord_poll.assert_called_once()
+        pending.assert_called_once()
+
+    def test_process_pending_optin_is_noop_when_not_a_topic_dispatch(self):
+        # The opt-in only matters on a topic dispatch; on a scheduled run that
+        # already processes pending, setting it changes nothing (no double run).
+        calls, ntfy_poll, discord_poll, pending, _ = self._run_main(
+            event_name="schedule", notify_only="twitch", process_pending="1")
+
+        self.assertEqual(calls, ["dispatch:status fx",
+                                 "dispatch:explain movies",
+                                 "pending",
+                                 "topic"])
         pending.assert_called_once()
 
 
