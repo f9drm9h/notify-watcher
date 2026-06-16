@@ -176,6 +176,13 @@ const commands = [
       },
     ],
   },
+  {
+    name: "latest",
+    description: "Show the most recent saved item for a topic.",
+    options: [
+      { type: STRING, name: "topic", description: "Topic to look up.", required: true },
+    ],
+  },
 ];
 
 // ----- register (bulk overwrite) ---------------------------------------
