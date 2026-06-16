@@ -132,21 +132,33 @@ async function cmdStatus(topic, env) {
 
   if (!topic) {
     const last = state.last_run || {};
+    const pendingDigest = Array.isArray(state.digest_buffer) ? state.digest_buffer.length : 0;
+    const remindLater = state.later ? Object.keys(state.later).length : 0;
+    const showMore = state.more_requests ? Object.keys(state.more_requests).length : 0;
+    const mutedCount = state.muted ? Object.keys(state.muted).length : 0;
     return reply(
-      `Last sweep: ${last.ok ?? "?"} ok, ${last.failed ?? "?"} failed (${last.ts ?? "unknown"}).`
+      [
+        `Last sweep: ${last.ok ?? "?"} ok, ${last.failed ?? "?"} failed (${last.ts ?? "unknown"}).`,
+        `Pending: ${pendingDigest} digest, ${remindLater} remind-later, ${showMore} show-more.`,
+        `Muted topics: ${mutedCount}.`,
+      ].join("\n")
     );
   }
+
   // NOTE (Phase 0 trap): muted topics live in state.muted; the live control
   // cursor is state.discord_control.last_id, NOT state.control (that one is the
   // dormant legacy ntfy cursor). And state.follows is the artist/streamer
   // overlay, while a followed TOPIC would live under state.followed.
   const muted = state.muted?.[topic];
-  const health = state.topic_health?.[topic]?.last_ok;
+  const th = state.topic_health?.[topic] || {};
   const lines = [
     `Status for ${human(topic)}:`,
     muted ? `Muted until ${muted}.` : "Not muted.",
-    health ? `Last ran OK at ${health}.` : "No recent run recorded.",
+    th.last_ok ? `Last ran OK at ${th.last_ok}.` : "No recent successful run recorded.",
   ];
+  if (th.last_error) {
+    lines.push(`Last error: ${String(th.last_error).slice(0, 200)}${th.last_error_ts ? ` (${th.last_error_ts})` : ""}.`);
+  }
   return reply(lines.join("\n"));
 }
 
