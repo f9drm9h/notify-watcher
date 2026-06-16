@@ -295,8 +295,13 @@ class MainLoopControlPhaseTest(unittest.TestCase):
 class TopicDispatchFeedbackTest(unittest.TestCase):
     """Single-topic /run dispatches report completion when nothing was pushed."""
 
-    def _run_main(self, *, event_name: str, notify_only: str, topic_pushes: bool = False):
+    def _run_main(self, *, event_name: str, notify_only: str, topic_pushes: bool = False,
+                  raises: bool = False, ran: list | None = None):
         def selected_topic(state):
+            if ran is not None:
+                ran.append("movies")
+            if raises:
+                raise RuntimeError("boom")
             if topic_pushes:
                 main.ntfy.push(title="Movie: Example", message="new", topic="movies")
             return state
@@ -340,6 +345,44 @@ class TopicDispatchFeedbackTest(unittest.TestCase):
 
     def test_full_manual_dispatch_sends_no_feedback(self):
         push = self._run_main(event_name="workflow_dispatch", notify_only="")
+
+        push.assert_not_called()
+
+    def test_unknown_topic_dispatch_sends_unknown_reply_and_runs_nothing(self):
+        # /run topic:nope -> NOTIFY_ONLY=nope selects no real topic, so the loop
+        # never runs; the dispatch must still say so instead of going silent.
+        ran: list = []
+        push = self._run_main(event_name="workflow_dispatch", notify_only="nope",
+                              ran=ran)
+
+        self.assertEqual(ran, [])
+        push.assert_called_once_with(
+            title="Unknown topic",
+            message="No topic named nope. Nothing was checked. "
+                    "Double-check the spelling.",
+            tags="grey_question",
+            priority="high",
+            topic="control",
+        )
+
+    def test_single_topic_dispatch_failure_sends_failure_reply(self):
+        # The dispatched topic raised: report the failure rather than nothing.
+        push = self._run_main(event_name="workflow_dispatch", notify_only="movies",
+                              raises=True)
+
+        push.assert_called_once_with(
+            title="Run failed",
+            message="Checked movies, but it hit an error and could not finish. "
+                    "Check the GitHub Actions log for details.",
+            tags="warning",
+            priority="high",
+            topic="control",
+        )
+
+    def test_scheduled_unknown_topic_sends_no_feedback(self):
+        # The unknown reply is gated on a real /run (workflow_dispatch); a
+        # scheduled NOTIFY_ONLY run with an unknown name must stay silent.
+        push = self._run_main(event_name="schedule", notify_only="nope")
 
         push.assert_not_called()
 
