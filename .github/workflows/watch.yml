@@ -2,14 +2,16 @@ name: watch
 
 on:
   schedule:
-    # Every 15 minutes. Each run always checks Twitch latency-sensitive alerts;
+    # Every 15 minutes, offset to :07/:22/:37/:52 to dodge the contention at round
+    # minutes (GitHub drops scheduled runs at :00/:15/:30/:45 most). Each run still
+    # checks Twitch latency-sensitive alerts;
     # the first surviving run in each 3-hour UTC window performs the full sweep.
     # This avoids a separate twitch.yml workflow sharing the same concurrency
     # group: GitHub concurrency allows one running + one pending run, and a newer
     # queued run replaces the older pending one even with cancel-in-progress:
     # false. Deciding "is a full sweep due?" at runtime makes that replacement
     # harmless — the latest pending run simply does the overdue full sweep.
-    - cron: "*/15 * * * *"
+    - cron: "7,22,37,52 * * * *"
   workflow_dispatch:
     inputs:
       test_push:
