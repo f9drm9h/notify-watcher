@@ -325,6 +325,29 @@ def _send_topic_dispatch_feedback(topic: str) -> None:
     )
 
 
+def _send_topic_dispatch_failure(topic: str) -> None:
+    ntfy.push(
+        title="Run failed",
+        message=f"Checked {topic}, but it hit an error and could not finish. "
+                f"Check the GitHub Actions log for details.",
+        tags="warning",
+        priority="high",
+        topic="control",
+    )
+
+
+def _send_topic_dispatch_unknown(names: list[str]) -> None:
+    joined = ", ".join(names)
+    ntfy.push(
+        title="Unknown topic",
+        message=f"No topic named {joined}. Nothing was checked. "
+                f"Double-check the spelling.",
+        tags="grey_question",
+        priority="high",
+        topic="control",
+    )
+
+
 def main() -> int:
     logging.basicConfig(
         level=logging.INFO,
@@ -392,6 +415,15 @@ def main() -> int:
 
     topics = _selected_topics(os.environ.get("NOTIFY_ONLY", ""))
     feedback_topic = topics[0][0] if topic_dispatch and len(topics) == 1 else ""
+    # _selected_topics silently drops names that aren't real topics, so a
+    # misspelled /run topic:x would otherwise check nothing and reply nothing.
+    # Call it out on a dispatch run — independently of the success/failure reply,
+    # since a mixed list (movies,bogus) can both run a topic and name an unknown.
+    known_names = {name for name, _ in TOPICS}
+    requested = [n.strip() for n in os.environ.get("NOTIFY_ONLY", "").split(",") if n.strip()]
+    unknown = [n for n in requested if n not in known_names]
+    if topic_dispatch and unknown:
+        _send_topic_dispatch_unknown(unknown)
     if len(topics) != len(TOPICS):
         log.info("NOTIFY_ONLY active: running %d of %d topics", len(topics), len(TOPICS))
 
@@ -410,6 +442,8 @@ def main() -> int:
             entry["last_error_ts"] = run_ts
             entry.pop("source_failed", None)
             fail_count += 1
+            if name == feedback_topic:
+                _send_topic_dispatch_failure(name)
             log.error("[%s] failed: %s", name, exc)
             log.debug("[%s] traceback:\n%s", name, traceback.format_exc())
             continue
@@ -422,6 +456,8 @@ def main() -> int:
                 _send_topic_dispatch_feedback(name)
         else:
             fail_count += 1
+            if name == feedback_topic:
+                _send_topic_dispatch_failure(name)
             log.error("[%s] source failed: %s", name, entry["last_error"])
 
     # The contract reports are per-run scratch; never persist them.
