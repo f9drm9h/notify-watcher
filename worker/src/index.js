@@ -88,6 +88,8 @@ async function handleSlashCommand(interaction, env) {
       return await cmdStatus(opts.topic, env);
     case "explain":
       return await cmdExplain(opts.topic, env);
+    case "latest":
+      return await cmdLatest(opts.topic, env);
 
     // --- ON-DEMAND run (Phase 3): trigger a GitHub Actions sweep --------
     case "run":
@@ -159,6 +161,29 @@ async function cmdStatus(topic, env) {
   if (th.last_error) {
     lines.push(`Last error: ${String(th.last_error).slice(0, 200)}${th.last_error_ts ? ` (${th.last_error_ts})` : ""}.`);
   }
+  return reply(lines.join("\n"));
+}
+
+async function cmdLatest(topic, env) {
+  const state = await fetchState(env);
+  if (!state) return reply("Could not read the latest state right now.");
+  const key = String(topic || "").trim().toLowerCase();
+  const log = Array.isArray(state.event_log) ? state.event_log : [];
+  let found = null;
+  for (let i = log.length - 1; i >= 0; i--) {
+    const e = log[i];
+    if (e && String(e.topic).toLowerCase() === key && e.action === "push") {
+      found = e;
+      break;
+    }
+  }
+  if (!found) return reply(`No saved latest item for ${human(key)} yet.`);
+  const lines = [
+    `Latest ${human(key)}: ${found.title || "(untitled)"}`,
+    found.source ? `Source: ${found.source}` : "",
+    found.ts ? `When: ${found.ts}` : "",
+    found.url || "",
+  ].filter(Boolean);
   return reply(lines.join("\n"));
 }
 
