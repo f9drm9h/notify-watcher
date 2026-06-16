@@ -288,17 +288,6 @@
       "score": 28,
       "severity": "moderate",
       "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Reportedly Adds Third Writer Less Than Two Months Before Release - IGN India",
-      "topic": "movies",
-      "ts": "2026-06-12T12:13:54.608413+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQRjVOWHU5QnU0UFdpVDRmdXpuQ0tSc1h2UmxMWU1QV19Hd3ZNdkNJa0VTQm91eHlJWFVBOTN6WkpmQ19CNzVIenVWelQwbVN6eXVJbjRwVDB6SGFZS21EWGMxSmZfWG8yX0hwZjlEOFFONjdvS09hZUVRckZGSEYzNjd3SHpmWENxNG56SjZrRkYxUXZCczg2TTBrRENfbGNnYzNfZWJEbkRMSTFscHdIbXZiYTh3cHJ4M055OUQ4WWc3TkdJdWRzQmhFSDltVDBOOFBZZUpaQQ?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
       "title": "Spider-Man: Brand New Day Chinese Promo Teases \"Mysterious Villains\" And Confirms New Superpower - ComicBookMovie.com",
       "topic": "movies",
       "ts": "2026-06-12T12:13:54.609005+00:00",
@@ -6269,6 +6258,18 @@
       "topic": "wikiquote",
       "ts": "2026-06-15T21:33:41.458320+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - Evo Practice",
+      "id": "a9347de70decb600",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-16T01:11:23.750673+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "fda_seen_ids": [
@@ -7030,8 +7031,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 0,
-    "ts": "2026-06-16T01:10:50.469007+00:00"
+    "ok": 1,
+    "ts": "2026-06-16T01:11:23.174793+00:00"
   },
   "launch_seen_ids": [
     "b01d10e94f685948",
@@ -8277,9 +8278,9 @@
       "last_ok": "2026-06-15T21:31:49.652476+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-15T23:24:49.060673+00:00",
+      "last_data": "2026-06-16T01:11:24.824608+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-15T23:24:47.932407+00:00"
+      "last_ok": "2026-06-16T01:11:23.174793+00:00"
     },
     "uv": {
       "last_ok": "2026-06-15T21:31:49.652476+00:00"
@@ -8307,7 +8308,9 @@
       "last_ok": "2026-06-15T21:31:49.652476+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_f4_dates_for_filing": "22DEC09",
   "visa_f4_final_action": "08NOV08",
   "watch_schedule": {
