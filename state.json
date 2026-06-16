@@ -329,18 +329,6 @@
   "event_log": [
     {
       "action": "digest",
-      "detail": "DOP 995.00",
-      "id": "9ddb22429af0147e",
-      "score": 28,
-      "severity": "low",
-      "source": "La Sirena",
-      "title": "La Sirena deal: Mouse M100 Logitech M170",
-      "topic": "groceries",
-      "ts": "2026-06-12T16:52:41.983409+00:00",
-      "url": "https://www.sirena.do/logitech-mouse-m100-m170-1460077/p"
-    },
-    {
-      "action": "digest",
       "detail": "DOP 74.95 (was DOP 79.95, -6%)",
       "id": "d578f6dbfadc6b38",
       "score": 28,
@@ -6326,6 +6314,18 @@
       "topic": "learn",
       "ts": "2026-06-16T02:08:54.828502+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - Late night games with andrik!! English Espa\u00f1ol",
+      "id": "50d3b9283379d2e9",
+      "score": 68,
+      "severity": "high",
+      "source": "mkleossb",
+      "title": "mkleossb is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-16T07:14:45.221595+00:00",
+      "url": "https://twitch.tv/mkleossb"
     }
   ],
   "fda_seen_ids": [
@@ -7090,7 +7090,7 @@
   "last_run": {
     "failed": 0,
     "ok": 1,
-    "ts": "2026-06-16T05:46:08.719821+00:00"
+    "ts": "2026-06-16T07:14:44.656565+00:00"
   },
   "launch_seen_ids": [
     "b01d10e94f685948",
@@ -8336,9 +8336,9 @@
       "last_ok": "2026-06-16T02:07:21.970152+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-16T02:07:30.235005+00:00",
+      "last_data": "2026-06-16T07:14:46.106714+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-16T02:07:21.970152+00:00"
+      "last_ok": "2026-06-16T07:14:44.656565+00:00"
     },
     "uv": {
       "last_ok": "2026-06-16T02:07:21.970152+00:00"
@@ -8367,7 +8367,7 @@
     }
   },
   "twitch_live": [
-    "RiddlesMK"
+    "mkleossb"
   ],
   "visa_f4_dates_for_filing": "22DEC09",
   "visa_f4_final_action": "08NOV08",
