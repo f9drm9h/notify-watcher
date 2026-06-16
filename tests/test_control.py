@@ -808,5 +808,94 @@ class ButtonWiringTest(unittest.TestCase):
                          {"label": "Done", "command": "DONE:water"})
 
 
+class OverviewTest(unittest.TestCase):
+    """The bare ``status``/``health`` read-only system snapshot (cmd_overview)."""
+
+    def _state(self):
+        # A populated state covering every section the overview reports.
+        return {
+            "last_run": {"ts": "2026-06-10T12:00:00+00:00", "ok": 30, "failed": 2},
+            "topic_health": {
+                "movies": {"last_ok": "2026-06-10T12:00:00+00:00"},
+                "fx": {"source_failed": True,
+                       "last_error_ts": "2026-06-10T09:00:00+00:00"},
+                "fuel": {"source_failed": True},
+            },
+            "later": {"a" * 16: {"until": "x"}, "b" * 16: {"until": "y"}},
+            "more_requests": {"c" * 16: True},
+            "digest_buffer": [{"topic": "movies"}, {"topic": "fx"}, {"topic": "fx"}],
+            "reading_list": [{"id": "x"}],
+            "muted": {"movies": "2026-06-10T18:00:00+00:00",     # active
+                      "games": "2026-06-09T00:00:00+00:00"},     # expired -> hidden
+            "followed": {"fx": "2026-06-10T18:00:00+00:00"},
+        }
+
+    def test_message_reports_every_section(self):
+        msg = control._overview_message(self._state(), now=NOW)
+        self.assertIn("Last run: 30 ok, 2 failed at 2026-06-10T12:00:00+00:00.", msg)
+        self.assertIn("Topics: 3 tracked, 2 currently failing.", msg)
+        self.assertIn("Failing: fuel, fx", msg)  # sorted
+        self.assertIn("Pending: 2 remind-later, 1 show-more, 3 digest, 1 read-later.", msg)
+        self.assertIn("Muted: movies", msg)       # active only
+        self.assertNotIn("games", msg)            # expired mute is hidden
+        self.assertIn("Followed: fx", msg)
+
+    def test_message_is_read_only(self):
+        import copy
+        state = self._state()
+        before = copy.deepcopy(state)
+        control._overview_message(state, now=NOW)
+        self.assertEqual(state, before)  # pure read: nothing mutated
+
+    def test_empty_state_has_safe_defaults(self):
+        msg = control._overview_message({}, now=NOW)
+        self.assertIn("Last run: none recorded yet.", msg)
+        self.assertIn("Topics: 0 tracked, 0 currently failing.", msg)
+        self.assertIn("Pending: 0 remind-later, 0 show-more, 0 digest, 0 read-later.", msg)
+        self.assertIn("Muted: none", msg)
+        self.assertIn("Followed: none", msg)
+
+    def test_long_failing_list_is_capped(self):
+        health = {f"t{i}": {"source_failed": True} for i in range(12)}
+        msg = control._overview_message({"topic_health": health}, now=NOW)
+        self.assertIn("Topics: 12 tracked, 12 currently failing.", msg)
+        self.assertIn("+4 more", msg)  # 12 - _OVERVIEW_LIST_CAP(8)
+
+    def test_control_reachability_when_loop_disabled(self):
+        with mock.patch("notify_watcher.discord_control.enabled", return_value=False):
+            msg = control._overview_message({}, now=NOW)
+        self.assertIn("Control: Discord control loop not configured (inert).", msg)
+
+    def test_control_reachability_when_enabled_and_seeded(self):
+        with mock.patch("notify_watcher.discord_control.enabled", return_value=True):
+            msg = control._overview_message(
+                {"discord_control": {"last_id": "12345"}}, now=NOW)
+        self.assertIn("Control: Discord control loop enabled (last message 12345).", msg)
+
+    def test_cmd_overview_pushes_to_control_topic(self):
+        with capture_pushes() as sent:
+            control.cmd_overview(self._state(), now=NOW)
+        self.assertEqual(len(sent), 1)
+        self.assertEqual(sent[0]["title"], "System status")
+        self.assertEqual(sent[0]["topic"], "control")
+        self.assertEqual(sent[0]["priority"], "high")  # always rings through
+
+    def test_dispatch_routes_bare_status_and_health_to_overview(self):
+        with mock.patch.object(control, "cmd_overview") as overview, \
+                mock.patch.object(control, "cmd_status") as per_topic:
+            control.dispatch(["status", "health", "STATUS"], {})
+        self.assertEqual(overview.call_count, 3)
+        per_topic.assert_not_called()
+
+    def test_dispatch_still_routes_status_topic_to_per_topic(self):
+        # Regression guard: a topic argument must keep hitting cmd_status, not
+        # the new no-arg overview.
+        with mock.patch.object(control, "cmd_overview") as overview, \
+                mock.patch.object(control, "cmd_status") as per_topic:
+            control.dispatch(["status fx"], {})
+        per_topic.assert_called_once_with("fx", {})
+        overview.assert_not_called()
+
+
 if __name__ == "__main__":
     unittest.main()

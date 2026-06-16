@@ -114,6 +114,14 @@ _UNDO_RE = re.compile(r"^UNDO:([0-9a-f]{16})$")
 _IGNORE_RE = re.compile(r"^IGNORE:([0-9a-f]{16})$")
 _STATUS_RE = re.compile(r"^status\s+([A-Za-z0-9_-]+)\s*$", re.IGNORECASE)
 _EXPLAIN_RE = re.compile(r"^explain\s+([A-Za-z0-9_-]+)\s*$", re.IGNORECASE)
+# A bare "status"/"health" (no topic) asks for the whole-system snapshot. It is
+# mutually exclusive with _STATUS_RE (which requires a topic argument), so a
+# typed "status fx" still routes to the per-topic reply.
+_OVERVIEW_RE = re.compile(r"^(?:status|health)\s*$", re.IGNORECASE)
+
+# Cap how many names the overview lists per section before collapsing the rest
+# into "+N more", so a wide outage or a long mute list can't balloon the reply.
+_OVERVIEW_LIST_CAP = 8
 
 
 def _utcnow() -> _dt.datetime:
@@ -274,6 +282,10 @@ def dispatch(commands: list[str], state: dict) -> dict:
             m = _IGNORE_RE.match(cmd)
             if m:
                 cmd_ignore(m.group(1), state)
+                continue
+            m = _OVERVIEW_RE.match(cmd)
+            if m:
+                cmd_overview(state)
                 continue
             m = _STATUS_RE.match(cmd)
             if m:
@@ -507,6 +519,109 @@ def cmd_explain(topic: str) -> None:
         topic="control",
     )
     log.info("control: explain reply sent for %s", topic)
+
+
+def _active_until_names(mapping: object, now: _dt.datetime) -> list[str]:
+    """Names from a {name: until_iso} map whose 'until' is still in the future.
+
+    Shared by the overview's muted/followed lines; mirrors events.emit's
+    enforcement (expired entries are ignored). Non-dict junk yields []."""
+    if not isinstance(mapping, dict):
+        return []
+    return sorted(name for name, until in mapping.items()
+                  if until_active(until, now=now))
+
+
+def _capped_names(names: list[str]) -> str:
+    """Comma-join names, collapsing the overflow past the cap into '+N more'."""
+    if not names:
+        return "none"
+    if len(names) <= _OVERVIEW_LIST_CAP:
+        return ", ".join(names)
+    shown = ", ".join(names[:_OVERVIEW_LIST_CAP])
+    return f"{shown}, +{len(names) - _OVERVIEW_LIST_CAP} more"
+
+
+def _control_reachability_line(state: dict) -> str:
+    """One read-only line on whether the Discord control loop is reachable.
+
+    Function-level import keeps control.py free of a module-level transport
+    dependency, and the whole thing fails soft: a diagnostic must never raise.
+    A seeded cursor (``discord_control.last_id``) means the channel has been
+    polled at least once, i.e. the loop is actually live, not just configured.
+    """
+    try:
+        from . import discord_control
+        if not discord_control.enabled():
+            return "Control: Discord control loop not configured (inert)."
+        seeded = (state.get("discord_control") or {}).get("last_id")
+        if seeded:
+            return f"Control: Discord control loop enabled (last message {seeded})."
+        return "Control: Discord control loop enabled (not yet seeded)."
+    except Exception:  # noqa: BLE001 - a diagnostic must never raise
+        return "Control: reachability unknown."
+
+
+def _overview_message(state: dict, now: Optional[_dt.datetime] = None) -> str:
+    """Read-only whole-system snapshot for the bare ``status``/``health`` command.
+
+    Reports last-run telemetry, topic health (and the sticky source_failed set),
+    the pending LATER/MORE/digest/read-later counts, any active mutes/follows,
+    and control reachability — using only ``state.get`` reads, so asking 'what's
+    happening' never mutates state or triggers a watcher.
+    """
+    now = now or _utcnow()
+    lines: list[str] = ["System status:"]
+
+    # Last run telemetry: main writes state["last_run"] = {ts, ok, failed} once
+    # per sweep, so this is the freshest "did the watchers run, and how clean".
+    last_run = state.get("last_run")
+    if isinstance(last_run, dict):
+        lines.append(
+            f"Last run: {last_run.get('ok', 0)} ok, "
+            f"{last_run.get('failed', 0)} failed at "
+            f"{last_run.get('ts', 'unknown')}.")
+    else:
+        lines.append("Last run: none recorded yet.")
+
+    # Topic health + currently-failing sources (the sticky source_failed flag is
+    # the canonical "this feed is down right now" signal; see main._record_outcome).
+    health = state.get("topic_health")
+    health = health if isinstance(health, dict) else {}
+    failing = [name for name, entry in health.items()
+               if isinstance(entry, dict) and entry.get("source_failed")]
+    lines.append(
+        f"Topics: {len(health)} tracked, {len(failing)} currently failing.")
+    if failing:
+        lines.append("Failing: " + _capped_names(sorted(failing)))
+
+    # Pending work the user queued — counts only; the overview never flushes it.
+    later = state.get(LATER_KEY)
+    more = state.get(MORE_KEY)
+    digest = state.get("digest_buffer")
+    reading = state.get(READING_LIST_KEY)
+    lines.append(
+        f"Pending: {len(later) if isinstance(later, dict) else 0} remind-later, "
+        f"{len(more) if isinstance(more, dict) else 0} show-more, "
+        f"{len(digest) if isinstance(digest, list) else 0} digest, "
+        f"{len(reading) if isinstance(reading, list) else 0} read-later.")
+
+    lines.append("Muted: " + _capped_names(_active_until_names(state.get(MUTED_KEY), now)))
+    lines.append("Followed: " + _capped_names(_active_until_names(state.get(FOLLOWED_KEY), now)))
+    lines.append(_control_reachability_line(state))
+    return "\n".join(lines)
+
+
+def cmd_overview(state: dict, now: Optional[_dt.datetime] = None) -> None:
+    """Reply with the read-only system snapshot for a bare ``status``/``health``."""
+    ntfy.push(
+        title="System status",
+        message=_overview_message(state, now=now),
+        tags="bar_chart",
+        priority="high",
+        topic="control",
+    )
+    log.info("control: system status reply sent")
 
 
 # --- Offer registry (ADD / UNDO / IGNORE) -----------------------------------
