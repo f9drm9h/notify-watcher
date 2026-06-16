@@ -214,30 +214,6 @@
   "event_log": [
     {
       "action": "digest",
-      "detail": "La Vie En Rose (Deluxe Edition) (2025-02-15)",
-      "id": "95a942f515380956",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Louis Armstrong",
-      "title": "New from Louis Armstrong",
-      "topic": "music",
-      "ts": "2026-06-12T20:50:14.625228+00:00",
-      "url": "https://www.deezer.com/album/713230171"
-    },
-    {
-      "action": "digest",
-      "detail": "When the Saints Go Marching In (2025-01-24)",
-      "id": "de9a6faffd1a0320",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Louis Armstrong",
-      "title": "New from Louis Armstrong",
-      "topic": "music",
-      "ts": "2026-06-12T20:50:14.626187+00:00",
-      "url": "https://www.deezer.com/album/702238671"
-    },
-    {
-      "action": "digest",
       "detail": "Wonderful World: The Best Of Louis Armstrong (2024-09-13)",
       "id": "d1f23837e314d109",
       "score": 40,
@@ -6211,6 +6187,30 @@
       "topic": "apod",
       "ts": "2026-06-16T12:35:03.422446+00:00",
       "url": "https://apod.nasa.gov/apod/image/2606/SaturnRingsMoons_Cassini_960.jpg"
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - MDS No boders invitational! English Espa\u00f1ol",
+      "id": "1a7912167bc08024",
+      "score": 68,
+      "severity": "high",
+      "source": "mkleossb",
+      "title": "mkleossb is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-16T19:00:22.481535+00:00",
+      "url": "https://twitch.tv/mkleossb"
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - DAY 3 YLINK ENTERS ANOTHER WIFI TOURNAMENT FT MKLEO SONIX OUCH AND MORE",
+      "id": "b7f719618cc6c200",
+      "score": 68,
+      "severity": "high",
+      "source": "Sparg0",
+      "title": "Sparg0 is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-16T19:00:23.905782+00:00",
+      "url": "https://twitch.tv/Sparg0"
     }
   ],
   "fda_seen_ids": [
@@ -6982,7 +6982,7 @@
   "last_run": {
     "failed": 0,
     "ok": 1,
-    "ts": "2026-06-16T17:51:42.748732+00:00"
+    "ts": "2026-06-16T19:00:21.553515+00:00"
   },
   "launch_seen_ids": [
     "73daa333dc939c2d",
@@ -8242,9 +8242,9 @@
       "last_ok": "2026-06-16T12:33:10.102287+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-16T12:33:17.703557+00:00",
+      "last_data": "2026-06-16T19:00:24.574766+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-16T12:33:10.102287+00:00"
+      "last_ok": "2026-06-16T19:00:21.553515+00:00"
     },
     "uv": {
       "last_ok": "2026-06-16T12:33:10.102287+00:00"
@@ -8273,7 +8273,8 @@
     }
   },
   "twitch_live": [
-    "Acola_lui"
+    "Sparg0",
+    "mkleossb"
   ],
   "visa_f4_dates_for_filing": "22DEC09",
   "visa_f4_final_action": "08NOV08",
