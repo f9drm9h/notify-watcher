@@ -386,18 +386,6 @@
     {
       "action": "push",
       "detail": "",
-      "id": "6dcae02e5a403395",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Scrapped Idea Would Have Been Adorable - Yahoo",
-      "topic": "movies",
-      "ts": "2026-06-14T19:25:52.289444+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTDNoOFVnNU9fekhsd2R1Q1lVdmRXSUt0NDlKZkcxcXhlRHE1ZGFfZ20tWFZKV3BKdnVpVWJHeU9feFNCUG1WTWw3WEkwTURFZUtHNmlOM2lTbGhubWpKMkFzemFfWkRYT3ROcmt2TFg1NUpRWUlueVlyZjAyMmQwTnpqNVJhRHNJNUlfcDB4LVpZQ0k0SU05VDZaNFU?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
       "id": "b70b0bfa608af6cb",
       "score": 62,
       "severity": "high",
@@ -6382,6 +6370,18 @@
       "topic": "wikiquote",
       "ts": "2026-06-17T21:27:23.298253+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - Evo Grind | Yasmine Reacting and TNS",
+      "id": "6c1c7aaa854a22a8",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-17T21:31:50.527432+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "f4_history": [
@@ -7182,8 +7182,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 46,
-    "ts": "2026-06-17T21:24:50.598574+00:00"
+    "ok": 1,
+    "ts": "2026-06-17T21:31:49.610002+00:00"
   },
   "launch_seen_ids": [
     "a24af622a80bb043",
@@ -8506,9 +8506,9 @@
       "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-17T21:25:38.450721+00:00",
+      "last_data": "2026-06-17T21:31:51.964621+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-17T21:24:50.598574+00:00"
+      "last_ok": "2026-06-17T21:31:49.610002+00:00"
     },
     "uv": {
       "last_ok": "2026-06-17T21:24:50.598574+00:00"
@@ -8536,7 +8536,9 @@
       "last_ok": "2026-06-17T21:24:50.598574+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
