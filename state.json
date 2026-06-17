@@ -63,7 +63,8 @@
     823619,
     823617,
     824503,
-    824912
+    824912,
+    823044
   ],
   "baseball_results_seen": [
     822804,
@@ -101,24 +102,6 @@
       "title": "Chris Evans Officially Reveals Captain America's Fate in 'Avengers: Doomsday' - Collider",
       "topic": "movies",
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBLcEtTT2xGT3I1UEdoU25vOHc1UnJXQmZIY3Y1S2FqdnFPM01CS2pDQTlmb2k2WDZjUGotUEtidFlZckZXZWltb3o0M0xNcU40VFlWY0tyRFZRUnl3dEFsRng3YVpaUzVRVllJRGJqemE3cm5CSzlYTXh4QQ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "CJ 4DPLEX ANNOUNCES SONY PICTURES' 'SPIDER-MAN: BRAND NEW DAY' SHOT FOR SCREENX - PR Newswire",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQVThlNEl4bHB6UVBSYUNvMGNvU3pLQVpwcHp0Qy12cWUwRzdKcXByYUNUajlhZkE5YVR3WlhIbFdvUnVPbWkwLVN6MWdTYTRFYURsWk1TaGtlZE1GTnNkN29DQUZESFBXbUI0TmlvTmUtV3llUnk2bHZrblJkdGVWNW5HSUVQTVcwYTBoeGd6RDVqa1lEQmVKUUE4YXVmaHh0Z0wwOHM3VlJFQmx5dzgzS0N1QWVkUHJZMnhMeDJfeWZCSmZlbTc2YVE3UQ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Official Synopsis Teases Mysterious New Villain That 'No One Can See' - IGN Southeast Asia",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPOVhJUmJnZlpUSEU2Zkdjd01OQU5kY0Q2N0ZxQjVCMFI4TVVKTVFJeWRHU01SdTRXZHl4MVFabVRGY2VQdWcwZlFGZ0lhRHluaEJvaXVELUNHUTh6cUNvSDc2NnZuYnpSMzJnN2gtSnN4TW53dkd3WlBEN0xYNDNfWmtVenBPSmgtWW1nd0NMWHJVeHh6LTV5bVFUbFBtSzlGVVNVOHh4YTdWWEdueUdZSmlidlpWSnYxTUd1NUY0RjFVWjlBZ1ZybW9IamJWaERxWWJCSFB4azJxR3JZR3pwTTA4bmFUQQ?oc=5"
     },
     {
       "detail": "",
@@ -186,65 +169,83 @@
     {
       "detail": "",
       "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' Trailer Officially Reveals Savage Hulk, Scorpion & More - MovieWeb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE92SlVrbkFiLXdqRm9ucU1fVkVMc1NXc0lKTy1SNE40aVg5SFA0UjRFdFByaDAxblVxZEUxLTVmZHZnYlVXYjlrd0VfTmsxU3VBbkhnX0Z2ajFCY0tpcUpyVUJqU052VVdfZ3F5bk9ud1RvWVdGM28yZFhR?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' Trailer 2 Unveiled - The Hollywood Reporter",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONDJfR3ZyX01URVhVMTRTdUMwRWxFR0x0eDhJV2ZYSHR4VjRTbklrWWxwWVFEZkdfMXRuRnk1Ym5uMVpQa0FCcmpIU2tEMWZaZWt4TjNyNlhCZzdMcGQ3V290QXhJSGhTMDQ3eFJiVW1tdUhoRG1BQVhVc3RpZkcxSGJYSl9qUkgwelhsZWI0ZnpES2N4d0FzNHlETHhnMWJtX0R6ZnBIYzhwWWhw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "THE BATMAN PART II: Official Logo Revealed - batman on film",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQN0lQZE9iSXl0QkZJdFVQY3h1QlpBMHljTEtGbjlJaFAwWGpMVURoZG85Mm4wbDBwY2hSV253TzVYdWJFZ1BPVHRmUHA5c2Y2T0lueTNYMno0ODl3Ry1JdUVibTZSRGFUSHM2RjdvZ0tjS1ZXN2lIbHBGUThUckZHZNIB2gJBVV95cUxNSGtMUmpVLVJJZV9TeTk5aVlnQjlGUzNLSzlMeW9jVXZoWk8ydlJuVUdhNmxOcXVBNTUyOUI4THNEZkdiOGlndXFUQzB2OUJjNW5wSkV0b3hnUGN3cTdqSDJEQmphN2FUMTZBbVAzdnFNSnRDTkI1SDJ1NEtRaldYRkNlOWRzY2otbzlyaHFhSjZlczdNd0luY09zNlFKYlo5Wl8yTFBDckFGZ29sbUNQVGU3M1J0QllSLWVpdFJJNUszbjdzZVlFVlBPLTFDWnI4eGhpeEp0VjZyNTV5dlpCUWpsTGpLNUNYaDhBeVhSQmtYWVJsczdWNjhmMlZtQXpNMi05UkQzQUxwaGRQWEpRWFNfTl9zVTRudXhIYXVQT1hBaGZUWUt3MmVTbThCRGt0cEVyc0FFZ1dGTFpzQU10MkExdmF0R0NHTm1Wc3JSU1BINTVyc1VfSUR3?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Just Revealed the Very First Shot of \u2018The Batman Part II\u2019 as Filming Officially Begins - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yYUhaMmRWd2VvMVFmYld3YmNhQUU0eEdpRjV6Q0tuWjZDdUdfRlFrYVpadk0yajJ3MXdLaVNoY2V3U1BpcFVaRHVvcVdHSmJ4VG1uWXVnNl8xX3k5Snd3MTROZm4?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "The Batman 2 Director Matt Reeves Announces Filming Start With New Photo - AOL.com",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSHlCTXRLZGhaWjBSdHNBdU1ETV84MkVtWVVDaVdoREI4UnFkRjY2X0ZBbkVvWEVQNGJyQnN4MDNKY19PTmxJZjVQWUFWQmIzT1pMNGZzTzV6TXRnSVh1Vk9QM052Z2lwUHhUa2dwTW5UVjU2LUwxMjI2Y0VIcU5TOExqOHI?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "Colin Farrell hints at 'dark' themes in 'The Batman 2' as he confirms his return - The News International",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPYzlMWEppZ2dEMHNjOFJWbEVrc2lWVW5RNHNMZnVNc1BuNDdoenhJcXRJMFlaVmdVclpOdDZ0VFAtb0FRWWV1YV91d2VEdXpUTWRxWDlweWE1VWhnN1VGWlFqTzBYYXJ6NHIzZDExMXNDRWNvRjVORVg5M3J0UmxvQTlvb3cwV1BrSXYtdmFPTTZWSVlLZE0wUVFVbnpwQng3ZHJGTjdpVkV5ZmF5MkUzRHJnT1ItUHBXSmc?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
       "score": 50,
       "source": "Weather",
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer Gives First Look At Mark Ruffalo\u2019s Hulk - Deadline",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQm55VU92U3hTREt5NkpuaFZ6SkdhV3ZUeXVBSTdlUlN1cU81Zk1JRVhSSmlDUEJVMmhEYnNiUWFLYjVBN0pZaXlkOHZ4QXRka0prX0lVM1hXRTBuM1c1RXRNUnVHemgwWWlBVWVwUlJ6UEUwaTdkRmo5SFE4azNZQXNJWTltY2kxYUJhNlVSNUxzSXhJbUk5alVrVTkwYV9zXzlxag?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "CJ 4DPLEX Announces Sony Pictures\u2019 SPIDER-MAN: BRAND NEW DAY Shot for ScreenX - Boxoffice Pro",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOY2lTMTdUWHB3TkNFcDFXUEhNbGtoemdaZUVsZlVkSUYxd1QtZWNBclY1NGI2eUtYV1NURHBLZHVfOHFDd0VCUDNPdmZ4UjV5dWlsQVRHbGdIckhCX0lleHp0R3h1Y3lVdmkzdkJTRWpzeTdoaHZWN0duUVZabXk0UjBDLW1QRF9GTTFVb1NRVHJsWWtMZkM5MGdpTlRCZGZyUTVCQWtHTnA?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day Announces Special Theatrical Release With Extra Footage - The Direct",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNX1lWS1VJd3BHaHdwamU2cDNGM2x4b3lWQ3huUzNQTnVuWF9GRVh6NmswSXdLSjVMSVl0V3VMc2dpS3JjN1NuejQ3MGFYWWdZOU4wTENOenJTRF9EWU41Q0c3SlRsVVpxZm1rVlhoVXctVXZ6RkVIQk4zZFc4VEMydXU3eklWM3gxZGVsVQ?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day Launches \"Spidey Tracker\" As Movie Is Confirmed For San Diego Comic-Con Panel - IMDb",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Ld2F1R25ZVjlsMVc0UG1haFBFUm5vWUpQcWZaeEpZNEtaTnJyZlg4M1lOMXJHSlljTlk1SDd4ZXFTbFV3aG1pODk2eVdRZFlJVlhNZ3RaZ3NJSzVXd3Y3RDZqeHBQLUU?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Batman Part II",
+      "title": "Colin Farrell Confirms He'll Reprise Penguin Role in The Batman 2 , Teases a 'Terrifying' Script - People.com",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRFlVcUtldjJzVjBWLWl3Rzl6SFI4d0FmUnFab0Q0N1o0NXpqR0w0c3doTWwtS1pLeWpUYktiVFVEeUdiUThHcWRpSThNeVBra2U1djZHQ1JBSUt2UFcyVU1OMGp6OXJHTmtCb2xJdlhCMFAyMWIxMFROdFVDV0Z3UEhmQk1obmNTQ1VDbnVjZXpSaU9HZkR4UG11Zw?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Batman Part II",
+      "title": "Matt Reeves Shares New Look at 'The Batman 2' as DC Sequel Begins Production - MovieWeb",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE93cDVyR1ptTnE3Smg4OE44aW5laDY4TGtLSWN3NWxndkpGLTcwQWRnUW1NYXBTZ3I4eHZvR2hYMGZZU1hBUGtMSDJyR25vMThVR2F6RURfUHJSejFNejU0Ri1FMVByV282WEJj?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Batman Part II",
+      "title": "Beloved DC star announces reduced role in The Batman - Part II - IMDb",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9DaXNUTXU4OWFaQUxpZktFUlplWU9vSFRsdVVKYXhiRjl5a3JPeE1GNjc5R0o4QUxTbXVsQzN2dkdpWXAzWk0ySGxYWThMdi1VTmI1NFNDWnFlREpTOE12ZHlMUnVvN0k?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Batman Part II",
+      "title": "Colin Farrell Officially Confirms Penguin's Return in 'The Batman Part II,' But There's a Catch [Exclusive] - Collider",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaVRObjVWNjZ6TWFmUDdsUTViUENYTzRuZFRLMDBlcWFuMndjRVBaeFlTRXFHZkR4d1hUc0JJNjNTZ3JGa01XcEh6ckpTNThUZ0dMdm8zTXpSMk1EQjJwY3g2Y2lIUEQ2NVp4OUYyTkVLd3hBMEZMOFhzQmlLcjNFdjNEdDI?oc=5"
     }
   ],
   "digest_last_sent": "2026-06-17",
@@ -382,582 +383,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "id": "847ad5b500a33ba1",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman 2: Sebastian Stan Confirms Harvey Dent Will Become Two-Face in Sequel - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-14T10:03:31.627383+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1DbTVxcUpBNThsZnlOQXZMVDZaM0gyWllVRWdVQnltZmZ2eUNPUzRaeDRBY2kyUkhTS3d5aW9yMFlxekl4Q2hISWxHak5KUlVEenc?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "0aa1c0e6201902d1",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II First Look: Matt Reeves Shares Sequel's First Shot - But Whose Body Is That? - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-14T10:03:31.865890+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBScWJSUFRlSU1ZLXdpNHM1aVItcEJzTDJ2cGlOdDJaUUY4ZmxMbWZDQV9sb1QzdGxBNEp1NWVqaGpYbTE1Nkl1Q2lkSUxGSlVvekZUTFlDVlB5dVpBRDljbm5lUko?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "ae1d98c36e15027c",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Beloved DC star announces reduced role in The Batman - Part II - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-14T10:03:32.073065+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE9tWmIzeXYzQnVrcWd6Y2MzT2ktSTZCVVduZWRsVlp0NGZnUmhjWWhMOFYxZ1I3NFFyR0ktLThHMTZpZnBpODJEX0tJZFFfUmxJZkVzWjR2aUNTZTUtOHMyTlFwSHhGTkFh?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "4c0e86200961c35b",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Colin Farrell Confirms Penguin\u2019s Return in The Batman Part II \u2014 But There\u2019s a Catch That Changes Everything - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-14T10:03:32.073621+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBfVFpIVWlFbWppWXZvQnBFOU9oWHIycVBHZHQ4enFFQ2VzdDJGVUItOGt2eG13ajFUTXZ6ZlUtWVpXQTFERUNOeEdVTkthZWNQUmEtNjVvNUdkcnhZU1piZEVFcmZUdw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "The stage for Pandora's fateful arrival was set by a grand act of defiance. Prometheus, the Titan, a being of immense foresight and cunning, had dared to steal fire from the gods, a sacred flame he then bestowed upon humanity. This was no mere warmth or light; it was the spark of progress, of innovation, of a civilization that might one day challenge the very heavens. Zeus, the king of Olympus, a deity known for his thunderous wrath and meticulous sense of cosmic order, could not let such an transgression go unpunished. His initial target was Prometheus himself, who was bound to a mountain and subjected to an eternity of torment, his liver devoured daily by an eagle. But Zeus's vengeance was not complete; it extended to humanity, the beneficiaries of Prometheus's audacious gift, and for them, he conceived a punishment far more insidious, a gift designed to unleash a different kind of fire upon the world.\n\nThus, Pandora was fashioned, a being of breathtaking beauty and enchanting allure, sculpted by Hephaestus, the divine craftsman, and bestowed with gifts from every god and goddess. Athena taught her weaving, Aphrodite graced her with irresistible charm, Hermes imbued her with a silver tongue and a curious mind. Her very name, Pandora, meaning \"all-gifted,\" belied the true nature of her purpose. She was presented to Epimetheus, Prometheus's less astute brother, who, despite his brother's solemn warning to accept no gifts from Zeus, was utterly captivated by her. Alongside her, a large jar \u2013 not a box, as popular retellings often mistakenly claim \u2013 was delivered, a vessel brimming with an unknown cargo, accompanied by a strict injunction never to open it. This was the crux of Zeus's cunning plan: to appeal to the very human weakness of curiosity, to tempt with the forbidden, and to witness the inevitable unraveling.\n\nThe human drama that unfolded was one of irresistible temptation and devastating consequence. Pandora, armed with her divinely instilled curiosity, found herself increasingly drawn to the forbidden jar. The whispers of its contents, imagined horrors and wonders, gnawed at her resolve. Perhaps it was a trick of the gods, a test of her obedience; perhaps it contained treasures beyond imagination. The weight of the world, or at least its future woes, rested on her delicate shoulders, unknowingly so. The moment her fingers clasped the lid, the air must have crackled with an unseen tension. When she finally lifted it, not a single item but a torrent of misfortunes burst forth, a horrifying deluge of pestilence, sorrow, disease, old age, and a thousand other bitter pains that had until then been unknown to a world living in a state of naive bliss. They flew out like angry wasps, stinging humanity with their venomous presence, forever altering the fabric of existence.\n\nIn the ensuing chaos, as humanity grappled with the sudden onslaught of suffering, one final entity remained trapped within the jar: Elpis, or Hope. Pandora, in a sudden realization of the catastrophe she had unleashed, slammed the lid shut, inadvertently preserving this last, precious gift. Why Hope remained is a subject of endless interpretation. Was it a final, cruel twist from Zeus, an almost mocking reminder of what could have been? Or was it a hidden kindness, a necessary antidote to the evils now plaguing the world, a faint glimmer of light in the encroaching darkness?",
-      "id": "bc04d20e74fba19d",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Pandora and the jar of evils",
-      "topic": "learn",
-      "ts": "2026-06-14T10:04:58.880985+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cMeditations on the Divine Will (from an undated manuscript found among his papers by one of his secretaries found among his papers, now generally known as the \"Meditations on the Divine Will\"):\u201d\n\u2014 Abraham Lincoln\n\nThe name Abraham Lincoln conjures an image of stoic resolve, a man whose features were etched by the weight of a nation tearing itself apart. Yet, beneath the public persona of the Great Emancipator and the Commander-in-Chief, lay a deeply introspective, often melancholy soul wrestling with forces far grander than political maneuverings or battlefield strategies. The \"Meditations on the Divine Will,\" an undated manuscript discovered among his papers after his assassination, offers a rare, unfiltered glimpse into this private struggle. It\u2019s not a speech, nor a letter intended for publication, but rather the raw, unedited workings of a mind grappling with the unfathomable. Imagine Lincoln, perhaps late at night in the Executive Mansion, the sounds of a city at war muted by thick walls, his pen scratching across paper, not to convince or persuade, but to understand. He was not merely leading a war; he was trying to comprehend the will of a God that allowed such a cataclysmic conflict to unfold, a God that seemed to favor neither North nor South unequivocally.\n\nThe world in which Lincoln penned these thoughts was a crucible of unimaginable suffering and moral reckoning. The American Civil War was in full, brutal swing, its casualty lists lengthening with each passing month, stretching beyond anything the young nation had ever conceived. Families were torn asunder, not just geographically, but ideologically. Slavery, the institution that had festered at the heart of the republic since its inception, was now being violently purged, or desperately defended, depending on one's allegiance. Lincoln himself bore the immense personal toll of this conflict. His own son, Willie, had died in the White House just months before, a tragedy that deepened the already profound melancholic strain in his character. He was a man steeped in pragmatism, a lawyer and politician by trade, yet he found himself thrust into a role that demanded not just political acumen, but a theological understanding of justice, fate, and the very nature of human will versus divine design. The \"Meditations\" reflect this profound wrestling, a search for meaning in the midst of the apocalypse, a desperate attempt to reconcile the horrific reality of war with the notion of a just and benevolent God.\n\nThe enduring resonance of Lincoln's \"Meditations on the Divine Will\" lies in its timeless exploration of humanity's relationship with forces beyond its control. In an age often defined by the illusion of human mastery, Lincoln reminds us of the humbling reality that sometimes, despite our best efforts, our plans, and our desires, we are swept up in currents far larger than ourselves. His struggle to discern the \"Divine Will\" speaks to every individual who has ever faced an inexplicable tragedy, a seemingly insurmountable obstacle, or a moral dilemma where right and wrong blur into a desolate grey. It\u2019s a testament to the courage not just to lead, but to *think* deeply, to question, and to seek understanding even when answers are elusive.",
-      "id": "4b6cef179839b630",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Abraham Lincoln",
-      "topic": "wikiquote",
-      "ts": "2026-06-14T10:05:04.152166+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "9a909e8bf248fe59",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday's New Trailer Rewrites The Rules Of The MCU - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-14T10:14:59.332985+00:00",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Yb1NoenNoTmNKNWVQbVpFblZPWDFDWTlqVDlxMWxoMmhVcUlhVndPNUxtbHBRVnVNN2pJSjZYV0U3MUR3aTVEb3FoZndsWlY3alpLeXFpWkw2WVVPQ0IyU2RoVHpJZWI3RmhHUmxNSHdWRVU2cHE0SA?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "41357a2d23a48e64",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Amazon Prime Will Officially Release 'Spider-Man: Brand New Day' 2 Days Early - Collider",
-      "topic": "movies",
-      "ts": "2026-06-14T10:15:00.258023+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQeTl2ZExycXoxc21xUFIzOUlkRU9Yd1RINUEybXFndkVVTUUzM0Y3anVBSUtsdUFXR2w1U2x2cnRoT3B2aXp6dlR2cjcxM3VMQXpEbEkwNHB5THlsQ29kTm1xeXY4UVJQcTJick05WGk0Q0thVFNjdWlBbzRGei1RU0dsUVoyRFFQZXRxWVBick9GVU52aF9jSWtBRUVBeUdoNnU2aEo2dFhHTWZt?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "aba0cb7acfa62397",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Shares New Look at 'The Batman 2' as DC Sequel Begins Production - MovieWeb",
-      "topic": "movies",
-      "ts": "2026-06-14T10:15:02.096263+00:00",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE93cDVyR1ptTnE3Smg4OE44aW5laDY4TGtLSWN3NWxndkpGLTcwQWRnUW1NYXBTZ3I4eHZvR2hYMGZZU1hBUGtMSDJyR25vMThVR2F6RURfUHJSejFNejU0Ri1FMVByV282WEJj?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Outer Wilds - Andrew Prahlow\n(because you like OST Remastered)",
-      "id": "86892b9a9f9fa433",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-06-14T10:15:08.874892+00:00",
-      "url": "https://www.deezer.com/track/1563909472"
-    },
-    {
-      "action": "digest",
-      "detail": "Final, 2026-06-13",
-      "id": "b13c7f43692cc811",
-      "score": 40,
-      "severity": "low",
-      "source": "Baseball",
-      "title": "Blue Jays 1 \u2013 Yankees 3 (L)",
-      "topic": "baseball",
-      "ts": "2026-06-14T10:15:11.757798+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "Final, 2026-06-13",
-      "id": "f63fdb25665d15cb",
-      "score": 40,
-      "severity": "low",
-      "source": "Baseball",
-      "title": "Dodgers 7 \u2013 White Sox 1 (W)",
-      "topic": "baseball",
-      "ts": "2026-06-14T10:15:12.014014+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 669.95 (was DOP 789.95, -15%)",
-      "id": "92823d243a127f85",
-      "score": 45,
-      "severity": "moderate",
-      "source": "Nacional",
-      "title": "Nacional deal: Pechuga de Pavo  Fryer's Boar's Head Lb.",
-      "topic": "groceries",
-      "ts": "2026-06-14T10:16:07.653934+00:00",
-      "url": "https://supermercadosnacional.com/ofertas/pechuga-de-pavo-fryer-s-boar-s-head-lb-2240879"
-    },
-    {
-      "action": "push",
-      "detail": "To stop the spread of illness, wash hands with soap for at least 20 seconds. (Source: CDC)",
-      "id": "3e19eaa535724847",
-      "score": 60,
-      "severity": "low",
-      "source": "Health",
-      "title": "Health tip",
-      "topic": "health_tip",
-      "ts": "2026-06-14T10:16:40.516072+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "On this day\n1992: Swedish woman Helena Andersson disappeared in Mariestad, one suspect were \u201dthe man with the pilot glasses\".\n\nFeatured: Early life and education of Donald Trump\nDonald Trump, the 45th and 47th president of the United States, was born on June 14, 1946, in New York City to Fred Trump, a real-estate developer, and Mary Anne MacLeod Trump, a Scottish immigrant. Trump was raised in a strict household and developed a rebellious and arrogant...\n\nDominican culture\nFounded in 1538 in Santo Domingo, the Universidad Santo Tomas de Aquino (today's UASD) was the first university in the Americas. (Source: Britannica)",
-      "id": "f8daa7b4f807361d",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Daily learning",
-      "topic": "learn",
-      "ts": "2026-06-14T10:16:41.921033+00:00",
-      "url": "https://en.wikipedia.org/wiki/Early_life_and_education_of_Donald_Trump"
-    },
-    {
-      "action": "push",
-      "detail": "What: Base-load plants run steadily around the clock; peaking plants switch on briefly to cover spikes, like a hot evening when everyone runs air conditioning.\nWhy it matters: Cheap-to-run but slow plants cover the steady demand, while fast, pricier ones handle short peaks.\nWhy you should care: This mix is why electricity can cost far more at 6 p.m. than at 3 a.m. \u2014 and why shifting use saves money.\n(Source: U.S. Energy Information Administration)",
-      "id": "2a67be9ad50d10aa",
-      "score": 60,
-      "severity": "low",
-      "source": "Energy learning",
-      "title": "\u26a1 Today's spark \u2014 Base-load versus peaking plants",
-      "topic": "energy_learn",
-      "ts": "2026-06-14T10:17:12.698085+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\ud83d\udcaa HABITS\n- Habit nudges sent: water (11)\n\n\ud83d\udcb0 FINANCE\n- Spending: Jun 08-Jun 14: RD$10,275.64 across 5 transactions\n- USD/DOP: 58.16 -> 58.43 (+0.27, +0.47%)\n\n\ud83c\udf24 WEATHER & ENVIRONMENT\n- Weather alerts logged: 18 (latest: Atlantic Tropical Weather Outlook)\n\n\ud83c\udfac ENTERTAINMENT & NEWS\n- Top release: [62] Spider-Man: Brand New Day Chinese Poster Released As Synopsis Confirms Peter Parker's New [Spoilers] - IMDb\n- AI news: 4 item(s); latest: \"Anthropic\"\n\n\u2699\ufe0f SYSTEM HEALTH\n- 191 notification(s) pushed this week",
-      "id": "f2e6030db20a5c5d",
-      "score": 60,
-      "severity": "low",
-      "source": "Life Dashboard",
-      "title": "Your week in review",
-      "topic": "life_dashboard",
-      "ts": "2026-06-14T10:17:15.775454+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "New moon tonight - darkest skies for stargazing",
-      "id": "5d206b7f728976ba",
-      "score": 60,
-      "severity": "low",
-      "source": "Astronomy",
-      "title": "Sky tonight",
-      "topic": "astronomy",
-      "ts": "2026-06-14T10:17:47.946803+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Venus and Jupiter may have caught your attention lately. The recent close conjunction of the two brightest planets in recent evening skies has been hard to miss. With Jupiter at the top, starting on May 30 and ending on June 8, their close approach was chronicled daily, left to...\n(c) Aditya Pawar",
-      "id": "28b1e73ba6eb359e",
-      "score": 60,
-      "severity": "low",
-      "source": "NASA APOD",
-      "title": "APOD: 10 Days of Venus and Jupiter",
-      "topic": "apod",
-      "ts": "2026-06-14T10:17:50.678765+00:00",
-      "url": "https://apod.nasa.gov/apod/image/2606/VenusJupiter10_Pawar_1080.jpg"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "2c3f1205516894a1",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "The next Avengers: Doomsday teaser trailer reportedly coming sooner than expected - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-14T12:15:42.612797+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPT1NVS2lzU2s3UEdUYTBoTWZweTlxZ1NWTXlLVVAyUTdDYmxZeS1TcnlQWjRMRkd5VG1OSGQ3RE1IQWVVN2prM0pYZDVVVy1iUGozR0pfUHozdkliLTFvUkZnUlhqTmNLbm5KTF9NeEtHZmY4T0pSOWE3ZWw5V0stdTdVQkgySkdMcHp6NA?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "c63111be15a9c4f7",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Chinese Poster Released As Synopsis Confirms Peter Parker's New [Spoilers] - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-14T12:15:43.508570+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFA0Y0dmOUNTd0NaZVFkejNMeDVLWmh4NHk3S29zVVd5QTRiSXJ3aGgyaEYxSlJpSF9nZm9wV1FMS1VwblMybHRkNXBVRkFuUQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "c9d77e3e2d26a119",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Odyssey",
-      "title": "\u2018The Odyssey\u2019 Star Matt Damon Confirms He\u2019s Looking to Revive the Bourne Franchise: \u201cAlways Looking\u201d - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-14T12:15:44.165192+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1xVzN5VlBnUllIaHhTcHk4V1pKSmdqSkg4cVVlT0pGNE1mUnhvdnMxSElXQ0xHREx0elBHNzhnT0xBZmRMNWZIb2Via2ZmN0k5MUVQUGY3VnBhblJZX0tlOVIwNXFYRmc?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "bfc26cc9d6d1577e",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Odyssey",
-      "title": "'The Odyssey' Star Matt Damon Confirms He\u2019s Looking to Revive the Bourne Franchise: \"Always Looking\" - Comic Basics",
-      "topic": "movies",
-      "ts": "2026-06-14T12:15:44.165615+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSEZBcUdmUUt6TEZZcW1PZzF2enhwajVCQ0NjTDFOazdIMkdyWTJXSFBhQmtGVlptSGdMdWZiN2oxRmRwU2VMcy1rcm5wR3hxWlRtYlRpeUxHckQtVVJRZjhvQkFrMHRkRmljWjNPdjRXOWRMSGJQZUw2NHlBd3lGWVZsYnZVOGFWR2xTdGNvblZ4X3gtMzFBcGh4UTY2RHljX2pUbDJrMl85SzFGUVRnRkU5YUdpQUpHWEd4R1h5d0I?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "36a96537f8205a83",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Colin Farrell hints at 'dark' themes in 'The Batman 2' as he confirms his return - The News International",
-      "topic": "movies",
-      "ts": "2026-06-14T12:15:45.222431+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPYzlMWEppZ2dEMHNjOFJWbEVrc2lWVW5RNHNMZnVNc1BuNDdoenhJcXRJMFlaVmdVclpOdDZ0VFAtb0FRWWV1YV91d2VEdXpUTWRxWDlweWE1VWhnN1VGWlFqTzBYYXJ6NHIzZDExMXNDRWNvRjVORVg5M3J0UmxvQTlvb3cwV1BrSXYtdmFPTTZWSVlLZE0wUVFVbnpwQng3ZHJGTjdpVkV5ZmF5MkUzRHJnT1ItUHBXSmc?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "a68b202d28145add",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Unveils First Official Look At The Batman Part 2 - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-14T12:15:45.222933+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1iNzB0aUFVcFZ1dmtDU2VIQTctZGN5blhZOExfTlRaaEM4SEJVUFlTWF9mS1R2eS01YktaVHpRbURmQ01vc2FtMjQ4eXBmSDNESEY1Zy14MHJIU2lwbU44SlVtQ3E1OGtlZmpkVERqSWRNV01MQmR6QjJn?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "3acb69934bab7da3",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman Part II\u2019 Begins Filming, Writer & Director Matt Reeves Confirms - Just Jared",
-      "topic": "movies",
-      "ts": "2026-06-14T12:15:45.223323+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPY1dicDZZUnlqM2dCTmZhdFpuVzllZHAxa2xvQ3NDd0w2OTFVUF9zQXFtdnNORnBIS2t5S1Z3N085Q2l1VFQzRmx4YXlocG9sbnJ0eTdSYy1ELWtDNG01UHFpRVJSX08yVloyTGdzcXlQeDBPZEduOTFUaTVXSjA5a25yeVdFeFV2MVF2RVNEYktiT2ZXS1NTZ1BPWk9wTDZ1VDN5ajdkTkZQZEp0?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "dc248d2c33eced8e",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves shares first look at The Batman Part II as the sequel begins shooting - JoBlo",
-      "topic": "movies",
-      "ts": "2026-06-14T12:15:45.399920+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1yR05hY19BMmdfajdZMHFGOUdmckRNVTZDczFibFp5QXoybjFINDBaeFUwUDFzVFJyak5nWThfODFydHZtaXVpZ280X2hpaGFkLU5hQS1BU19TQzJxaXl3ajFB0gFnQVVfeXFMTXF1bWxGNE1CS293ckZCZ0trRm1nWGxuQmh3MGM0aW9pMFVKUWxJYTRnbXhWclJoQU15NGFIdTk3N2hFd0llZlpROVlUQXRvVXNHbnJiVWlHUEdzMl8tZG05d2tkeWJENA?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "02a89d621e72e725",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Colin Farrell Confirms He'll Reprise Penguin Role in The Batman 2 , Teases a 'Terrifying' Script - People.com",
-      "topic": "movies",
-      "ts": "2026-06-14T12:15:45.561539+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRFlVcUtldjJzVjBWLWl3Rzl6SFI4d0FmUnFab0Q0N1o0NXpqR0w0c3doTWwtS1pLeWpUYktiVFVEeUdiUThHcWRpSThNeVBra2U1djZHQ1JBSUt2UFcyVU1OMGp6OXJHTmtCb2xJdlhCMFAyMWIxMFROdFVDV0Z3UEhmQk1obmNTQ1VDbnVjZXpSaU9HZkR4UG11Zw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "bbd4922d4b8af922",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Jeffrey Wright Says Matt Reeves Has Written An \u201cInsanely Brilliant\u201d Script For \u2018The Batman: Part II\u2019 & Production Starts Next Week [Exclusive] - The Playlist",
-      "topic": "movies",
-      "ts": "2026-06-14T12:15:45.562087+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWGp1VFR4UGZNdGxTUlhoNm0xM05wM0xHZmY5Tkk1aHNPY0ctU29UMUNENVA4MHRzM1Jxdy13Ujd6RDJMVXNRSHlUeTB4dzdBOGg5c3luVHYteldMdDBVSXBMeUhPTHhiQU54RFN3cVJFdV8tNS1NYV9Ec0twX0Q1RDdzclhhLS01Qm56UkphMlVjT25qZlZ0blNR?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Professor Layton's Theme (Live Recording Version) - Tomohito Nishiura\n(because you like OST Remastered)",
-      "id": "da9eb932656024db",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-06-14T12:15:50.206467+00:00",
-      "url": "https://www.deezer.com/track/1488131592"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "22271eeb9f200854",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-14T12:16:49.371539+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "42b86e72590aa89a",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Earthquakes",
-      "title": "M3.2 - 23 km WSW of Stella, Puerto Rico (~250 km away)",
-      "topic": "quakes",
-      "ts": "2026-06-14T12:17:07.010329+00:00",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71519863"
-    },
-    {
-      "action": "push",
-      "detail": "Quick reminder to drink some water.",
-      "id": "c429f070b945c360",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-06-14T12:17:11.463175+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "For centuries, nestled within the quiet halls of philosophical thought, a curious conundrum has persisted, its tendrils reaching out from the ancient world to entangle modern minds. This is the paradox of the Ship of Theseus, a seemingly simple thought experiment that probes the very essence of identity, change, and what it means for something to remain the same. The \"who\" involved isn't a single person but a multitude of thinkers, from the earliest chroniclers of Theseus's legend to the philosophers of the Enlightenment and beyond, all grappling with a fundamental question: when every part of an object is replaced, is it still the same object?\n\nThe genesis of the paradox lies in the legendary ship of Theseus, the mythical founder-hero of Athens. After his triumphant return from Crete, having slain the Minotaur and liberated his people, his vessel was preserved by the Athenians as a sacred memorial. Over the long centuries that followed, as timbers decayed and ropes frayed, the Athenians diligently replaced each worn-out part with a new one, ensuring the ship's perpetual maintenance. The \"what happened\" is this gradual, almost imperceptible transformation. Eventually, a point arrived where not a single original plank or mast remained. The question then arose: was this meticulously maintained vessel still *the* Ship of Theseus, or had it become an entirely new ship, merely occupying the same space and bearing the same name? The drama here is subtle but profound, a slow erosion of material reality that throws into sharp relief the abstract concept of identity.\n\nThe paradox deepens when one considers the subsequent thought experiment attributed to some ancient philosophers, most notably Plutarch in his *Life of Theseus*. What if, as each original plank was removed, it was carefully stored away and later reassembled into a second ship? Now we have two ships: the continuously repaired vessel in the harbor, and the newly reconstructed ship made entirely of the original parts. Which, if either, is the *true* Ship of Theseus? This further layer of complexity highlights the arbitrary nature of our classifications and the challenge of defining an object's essence. It matters because it forces us to confront our assumptions about continuity and change. Do we define identity by the sum of its parts, its historical trajectory, its function, or something more intangible? This isn't just an abstract game; it has implications for understanding personal identity, the identity of nations, and even the nature of art.\n\nThe legacy of the Ship of Theseus extends far beyond ancient Greece. This enduring paradox has been debated by philosophers like Thomas Hobbes, who mused on its implications for political bodies, and by contemporary thinkers exploring the nature of consciousness and the self. If every cell in our body replaces itself over a period of years, are we, as individuals, the same person we were a decade ago? The compelling human drama here lies in our innate desire for permanence in a world of constant flux. We seek to anchor our understanding of ourselves and the world around us, yet the Ship of Theseus reminds us that even the most cherished identities are subject to the relentless currents of change. It is a timeless riddle, a mirror reflecting our own attempts to define what it means to be and to remain.",
-      "id": "b93e00e11e5d2645",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The paradox of the Ship of Theseus",
-      "topic": "learn",
-      "ts": "2026-06-14T12:17:16.185923+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cWonder is the feeling of a philosopher, and philosophy begins in wonder.\u201d\n\u2014 Plato\n\nImagine a world without the written word as we know it, where knowledge was passed through spoken discourse, public debate, and the close apprenticeship of master and student. This was the Athens of Plato, a city-state pulsating with intellectual fervor and the lingering anxieties of recent military defeat. Born into an aristocratic family around 428/427 BCE, Plato grew up in the shadow of the Peloponnesian War, a protracted and brutal conflict that ultimately saw Athens humbled by Sparta. This period of turmoil deeply influenced his philosophical outlook, particularly his quest for an unchanging truth in a world seemingly consumed by chaos and relativism. His early life was marked by political aspirations, but a pivotal encounter changed his course forever: his meeting with Socrates. Socrates, an eccentric and brilliant philosopher who questioned everything and everyone, became Plato\u2019s mentor, profoundly shaping his intellectual development. The unexamined life, Socrates famously declared, was not worth living. This relentless pursuit of self-knowledge and ethical understanding, often through challenging the conventional wisdom of the day, instilled in Plato a similar passion for truth and an enduring skepticism towards superficial appearances.\n\nThe quote, \"Wonder is the feeling of a philosopher, and philosophy begins in wonder,\" is often attributed to Plato in the context of his dialogues, particularly in the Theaetetus. This dialogue explores the nature of knowledge, and here, Socrates (often a mouthpiece for Plato's own ideas) suggests that the starting point of philosophical inquiry is not certainty, but rather a profound sense of awe and curiosity about the world. It wasn't merely a casual observation but a foundational statement about the very nature of human inquiry. Plato, observing the political corruption and moral decay he believed permeated Athenian society, saw philosophy not as an academic exercise, but as a vital tool for societal reform and individual enlightenment. He witnessed the trial and execution of his beloved teacher, Socrates, condemned by the Athenian democracy for impiety and corrupting the youth \u2013 a traumatic event that solidified his conviction that true wisdom often clashes with popular opinion and that the pursuit of truth is a dangerous, yet essential, endeavor. For Plato, wonder was not a fleeting emotion but a sustained state of intellectual humility, an open-ended questioning that propelled the mind beyond the obvious and into the realm of deeper understanding.\n\nCenturies later, Plato's words still resonate with a profound simplicity and timeless truth. In an age saturated with information, where answers are often just a search engine query away, the capacity for genuine wonder can feel diminished. Yet, the human impulse to question, to marvel at the inexplicable, and to seek meaning beyond the mundane remains fundamental. Whether it's a child gazing at the stars, a scientist unraveling the mysteries of the cosmos, or an artist contemplating the nature of beauty, the spark of wonder ignites the desire to know.",
-      "id": "1a2f613e0789f02e",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Plato",
-      "topic": "wikiquote",
-      "ts": "2026-06-14T12:17:21.037445+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "1d8ec2fe3ca1175f",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day- Tom Holland starrer to arrive sooner in India, release date announced - WION",
-      "topic": "movies",
-      "ts": "2026-06-14T16:12:31.468182+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQSEtuVEVDLU0wbTlKYmtvMGdsNUVZZnpqaUFHYjVqRl9PN3FQRjlWeEhHcF9fNFMxQndtMnhLYmJSSldlR2V2MGpSZ0pWbXk0T1Bfd0lUQWJvR3NBdmVGMXJiWlc1amZsYnB0Y2p2d1lWbUIyOGdsdUZTRXQyZWRuemozOU9UVDVqZmx4a0tfTENuS19RSENnTUgtNjNIOV9NTE9Eek5wWlRxS3hwTmhyZGVCaXI0LUFMYVFDdUpIazhhVXFYcXg3S1VqN3AyZ2tWVEsxdVpSakRqSE5sOHotaUlFSWlhWC0yc2Jj0gHwAUFVX3lxTE1Jc1ZCLS1VeVBPaE4zYlhNaG9KbkxpTFBLcmhWdFRuUHFKaTJjN3dkaGxMRnlvQVM3djFhdmtrSUJaTUJBZExucTRLdl9XeE5jTXBReUw3cUYydjFHWE1ZbzZDbExkSUpwckwzb3Fmc2dQVmtIT3BRaUJEZUoyaXE3TTh6cTZJak5tc1NjQ1phaEJJb3BRTjVkeXJ6TjRBbVJwVGg3ZzN5X20xRUNSeHZwZkE3TkhockFHSHl3Y0VIcmJ4SHBPeUg3MEk3aFE2WkR0eGpJbTBDVENVSkVzWTh0SU85TUxnLTVJQjF6S19LcA?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "d8c12bc705fc8a48",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Trailer Leak Confirmed: Sony DMCA Backfires, June 17 Event Stands - Tech Times",
-      "topic": "movies",
-      "ts": "2026-06-14T16:12:31.739973+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNdU1XUEJyY09PamtpMzd3dHQzSWUya3hSRHJaVGIzSDJPbDF3VDVqQWlCblBqWlZqNDZBaUs0RHVzLTFiVW91OEhuZ3JIaVRWd0lUMUpvNUZxVkQ5eVl2dG5yTm5ubWc2SmJFSUx4bEJ3elZobzVBa1p2NGs0dUx3UjM4akw3S1JlZno3REdYQzE2Qm5JZGVEQU9wR1BHOVhreWd3UHpvSURVN1NlSzFXQzlxQmI3dUxvckhYMTdVby1BYXNOOTdPLUdYMm9SdU1mSHFhMW83ak9UaHM?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "8bd10c7b3ba35949",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Empire's Spider-Man: Brand New Day issue \u2013 take a sneak peek inside - empireonline.com",
-      "topic": "movies",
-      "ts": "2026-06-14T16:12:31.740622+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQcHQ2bUNUS1ZaTm5zZVJyNllwSi1GclFQTkV1MVhORkFzNTE4V25YQThiNXdDVTNnR2RMSGlWQkNVR2JXdDFPMTV4RkJIWUhhNjU4QzR0a0wyWkJ1Q2NnS2ttWjdmUEJVSFY4dHZGVl9sRDBZejlUd044aWwtakh5dkthQzlHSDExYVc0SlhKaU1Gd1h3M21aVFF3dnNWMWVwWTQ1WjEwU0xMZ1hpQV9Pakk1VWlJUQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "1e584f0b51d0de19",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Beloved DC star announces reduced role in The Batman - Part II - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-14T16:12:33.557281+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1Vem5aTFc0RmV1VnhlRldKQW9BMXJaSGRZZ0U5cENGZ0xEWjRIQTktRWdDUUhpRExURkNfZzVrdzU3b2RyR1pDUFhSeU52Q0wzZEtNamdGZW9qNkh3dzVCSFRrbjFSZw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "The Roost (From \"Animal Crossing: New Horizons\") (Piano Version) - Mois\u00e9s Nieto\n(because you like OST Remastered)",
-      "id": "361c490d15f93bec",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-06-14T16:12:38.440727+00:00",
-      "url": "https://www.deezer.com/track/1527568572"
-    },
-    {
-      "action": "push",
-      "detail": "Pause for a moment and have a drink of water.",
-      "id": "a4658c5b9010cac1",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-06-14T16:14:07.029474+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "The first decade of the 20th century was a time of intense scientific exploration, particularly in the realm of extreme cold. Scientists were pushing the boundaries of what was physically possible, driven by a thirst for understanding the fundamental properties of matter. Heike Kamerlingh Onnes, a Dutch physicist and a pioneer in cryogenics, stood at the forefront of this endeavor. His laboratory at Leiden University was a crucible of innovation, a place where the air was thick with the scent of liquid gases and the hum of scientific apparatus. Onnes had already achieved a monumental feat in 1908 by successfully liquefying helium, the last of the so-called \"permanent\" gases to succumb to human manipulation. This accomplishment was not merely a technical triumph; it opened a new frontier for physics, allowing researchers to explore temperatures just a few degrees above absolute zero, a realm where the rules of classical physics often seemed to bend and break.\n\nWith liquid helium at his disposal, Onnes embarked on a series of experiments designed to investigate how the electrical resistance of various metals behaved at these ultracold temperatures. The prevailing theory at the time, proposed by Lord Kelvin, suggested that the resistance of a pure metal should gradually decrease as it cooled, eventually plateauing at a small, finite value due to impurities and imperfections in the crystal lattice. However, another school of thought, championed by Walther Nernst, predicted that resistance would drop to zero at absolute zero. Onnes, meticulous and methodical, chose mercury for his initial experiments due to its high purity and ease of handling. On a fateful day in April 1911, as his assistant, Gerrit Jan Flim, carefully lowered the mercury sample into the dewar of liquid helium, something extraordinary happened. As the temperature dipped below 4.2 Kelvin, the mercury's resistance, instead of gradually decreasing or plateauing, plummeted precipitously to an immeasurably small value \u2013 effectively zero. This was not a subtle effect; it was a sudden and dramatic disappearance of resistance, a phenomenon utterly unexpected and profoundly baffling.\n\nOnnes, initially skeptical, repeated the experiment numerous times, meticulously checking his instruments and ruling out any potential errors. Each time, the result was the same: at 4.2 Kelvin, mercury lost all resistance to the flow of electricity. He named this astonishing new state \"superconductivity.\" The implications were immediate and revolutionary. Imagine a world where electricity could be transmitted without any energy loss, where powerful magnets could be created without the need for constant power input, and where electronic devices could operate with unprecedented efficiency. The discovery shattered existing theoretical frameworks and presented a profound challenge to physicists of the era, who struggled to explain how electrons could flow through a material without encountering any resistance whatsoever. The prevailing understanding of electrical conductivity, based on the scattering of electrons by atoms and imperfections, simply couldn't account for this frictionless flow.\n\nThe human drama surrounding this discovery lay in the sheer unexpectedness of the phenomenon and the intellectual struggle that followed. Onnes, a brilliant experimentalist, had stumbled upon a fundamental property of matter that defied the scientific wisdom of his time.",
-      "id": "268ccd1910ffe988",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The discovery of superconductivity",
-      "topic": "learn",
-      "ts": "2026-06-14T16:14:12.392262+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cOur family are an alternate stratification of poetry and mathematics.\u201d\n\u2014 Ada Lovelace\n\nIn the hushed, intellectual salons of the 19th century, where the boundaries between art and science were often less rigid than we perceive them today, Augusta Ada Byron, Countess of Lovelace, navigated a landscape both familiar and utterly unique. Born in 1815, Ada was the legitimate, though largely estranged, daughter of Lord Byron, the tempestuous and celebrated Romantic poet. Her mother, Annabella Milbanke, a woman nicknamed \u201cthe Princess of Parallelograms\u201d by Byron himself for her formidable intellect and love of mathematics, was determined to steer her daughter away from what she considered the dangerous, irrational passions of the poetic father. Thus, Ada\u2019s early education was rigorously focused on science, logic, and above all, mathematics. It was a calculated attempt to inoculate her against a perceived inherited madness, a fascinating and somewhat tragic social experiment that ultimately shaped a mind unlike any other. This backdrop of deliberate intellectual engineering, coupled with the lingering shadow of a poetic genius she barely knew, explains the profound insight behind her observation: 'Our family are an alternate stratification of poetry and mathematics.'\n\nThe world Ada inhabited was on the cusp of profound change. The Industrial Revolution was gathering steam, transforming landscapes and labor. In the intellectual sphere, the age of Enlightenment\u2019s rationalism was giving way to new modes of thought, and the very concept of computation was being reimagined. It was into this fertile ground that Charles Babbage, the eccentric and brilliant inventor, introduced his vision of the Analytical Engine \u2013 a conceptual mechanical general-purpose computer. Ada, with her unique mathematical prowess and poetic sensibility, recognized its potential far beyond mere calculation. She saw not just numbers, but the manipulation of symbols, a fabric from which music, art, and even thought itself could be woven. Her detailed notes accompanying her translation of an article on the Engine contained what is widely considered the first algorithm intended to be carried out by a machine, making her, in essence, the world's first computer programmer. Her life, though cut tragically short at 36, was a testament to the power of interdisciplinary thinking, a bridge between the seemingly disparate worlds her parents embodied.\n\nAda Lovelace's quote, and indeed her legacy, resonates with striking clarity in our modern age. We live in a world increasingly defined by the interplay of technology and creativity. From artificial intelligence that generates art and music, to data visualization that transforms complex information into beautiful narratives, the \"stratification of poetry and mathematics\" is no longer an alternative family structure, but a fundamental characteristic of our digital civilization. Ada\u2019s ability to foresee the non-numerical applications of computing, to imagine a machine that could do more than just crunch numbers, speaks to a holistic understanding that transcends disciplinary boundaries.",
-      "id": "777b64e8c215c136",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Ada Lovelace",
-      "topic": "wikiquote",
-      "ts": "2026-06-14T16:14:16.931130+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "773db18ad71089b5",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday's Official Cast List Omits 7 Major 'Endgame' Actors - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-14T19:25:51.491936+00:00",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE54Y0VuNmdROEsycmpDOTFDS0RoRFd1ZEtBb1BPbjd0MmZ4TjFVZFNJR3lkT3VmYlpIS25yRm8yX3l1NjNMOGVZS2FvRjVyVzNDX0RWSWkyUEZNVHM2RlRobVZPaFVqeWIxWW1LaEZ4VFRlS2hOQUtzenFTOVM?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "19e3310b461b782d",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Leaked Trailer Breakdown: Everything We Learned From The Amazing Sneak Peek - ComicBookMovie.com",
-      "topic": "movies",
-      "ts": "2026-06-14T19:25:52.106340+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQSFBXckFiX0M4ZVE2U2c0NTh1b1NRdi1ycGZuazh6cktEdEZvYzBERXhUU1JZaGtibG1HYmFrTk93M1V6eC1sQ0pfUlBOWjhMS2paQnZ2bWtrLURESFF0LVFScncwZk84VUdHd1M5N0JVU2hvSUJnakJCWElBWU1HckZLVHBzSGtjcGRpcE9TZll0MHB6SW5ZckQzMmFkMnZ3NVd0MjNjZzk4d2c1UVFMbkpwdUVpeHQydDYySGJ0NHF0Zi14M21XZ2tQcFVDU3R2RnhrQ2FmRnlmN3lCMVEtTkUtTVQ0N3hRck43Z3ZRaDRHeWNnaWNOeGRCSno0SjA?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "da262e29e42f0f00",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Gets Early Release Date in 1 Major International Market - AOL.com",
-      "topic": "movies",
-      "ts": "2026-06-14T19:25:52.106815+00:00",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFB5UTh4VmpVQk12WE1EY3cyZHNOWGliLTlNVWh2VkFRVUtCQm1ZbDhPOWdIMDc5bWVQeEFHeDFCYXZYTEJsalQ2NkRVQ3dXYTlrQV9ScnlRdXZnY0pxNUM1NUF2Um1hckpVSzl3TmlwcFJpR3hsRmVPeg?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "016c3bb09ab1b9cc",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Sony Officially Responds To Spider-Man Brand New Day Trailer 2 Leaks - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-14T19:25:52.288514+00:00",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBnU3p0anVfaWdQZ0xiaFJnbldqN1BoQ3FRNGlrR1dlYnpEaHBvM3JFX1c0REhXVHFGWHdSbnBObG5JQnFBam1IR2ZmVDFlNEFBUEc1WkxDeGg3Vmc2Yms3b1pLdGJ3OEU1S3VMX2VtM3JnOVF5UlR1eEM5RG1kQQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "c6b4f061ecde91a8",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Second Trailer Reportedly Leaks With Spoilers - Newsweek",
-      "topic": "movies",
-      "ts": "2026-06-14T19:25:52.289092+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdzhkYk1haHdSR2RDbkg2NFhKdlB6MmRTSGZOOXhPY2gwZWk1U3pTZ2xicFZ1Z3YyXzJ2UVVvRlQtNEx6NWxEczVHS1JuVmZ1NUlCR0NPWUdOQ3BQUDdWaGZGZDZINjVkYm9mRl9uTzFfZlZWMG5DY3lYdVl5VmY5RTd0cVVyaFgtZkRtSGRscjJUckxDbGZXSVNqdUlOTU1CdjVVVnRnUVhaWjlObjVZbnpPb1VCUjlXSmdiVkJOb0Zvc2s?oc=5"
-    },
     {
       "action": "push",
       "detail": "",
@@ -6381,6 +5806,582 @@
       "topic": "wikiquote",
       "ts": "2026-06-17T19:17:02.770598+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "0c1ab744dce9c625",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "New \u2018Spider-Man: Brand New Day\u2019 Trailer Debuts, Peter Parker Enlists Help From Hulk & Punisher \u2013 Watch Now! - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-17T21:24:53.966675+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5oeEpkQ0tOWjg0ZUU3bUxUUHVvUGFZOXlUc0FQSEdjZndhcGppd245dUtEa2hmelhuOFdqTTc5c2JsUXA5dGhpTElzZFluRnQtVWFzbURZRG1HNFg3cWxOdWRVZDN2N2dld0E?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "15fabc6fb63de0b3",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "New \u2018Spider-Man: Brand New Day\u2019 Trailer Debuts, Peter Parker Enlists Help From Hulk & Punisher \u2013 Watch Now! - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-17T21:24:55.461444+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1yLUJqaHRXMjZqU2kzZjlDRkdMZUZNM3EtRmJzdml6cHpjREVwQ3A0alFjMFk0UnRCUF94NlByQS01elByQ0ZuaUxSbFNrTjVLOWpqNFFZZDBtbkFMbkRGeExMcjYwXzZURnc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "691f9d3c2382dfc7",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Sony Celebrates SPIDER-MAN: BRAND NEW DAY Tickets Going on Sale With a Huge New Trailer - Get Your Comic On",
+      "topic": "movies",
+      "ts": "2026-06-17T21:24:56.144332+00:00",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPS3U0VEl2RHpTRHNwdy02Q2Vnby1fMlRVX01Tc2o3ajd1MlhxSWVzRjFfMFJTUm02UlFTU0xqNlRZOV9vWjBya2F0N1R6dUFSd0FibE5qN002c3RyY2NfY2R6UjlfSjJIZnFMYXNVUmFhTTFYM09EY2RvdDRlWjFEVVNsN3hfT0FHQ01HZ3hsaEJ1aDJmLXRXazlGQ2NNTGFhUUd2TTlWamJ1enJuMTFJY1VfOVdVTzBFMTEzajRnU3FseUZQLThXeGdOdUQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "279f2e33e7d34b45",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 New Trailer Breakdown - Nexus Point News",
+      "topic": "movies",
+      "ts": "2026-06-17T21:24:56.740611+00:00",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UOUdLdl93RjJvdVpNSEdVcEZxMElfeUdaclhwaFZHRy13LXBLY3BzajZYcHZHMlFSbEtlVExxVGFkTEZ6WUJ4QUVOWkp6OFZ5UVh1QjhuVVliWTloNHZNNFdSNFZoNmYxOFREcjQxdVdGYkNzbFpjS3lWMVNFYjQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "f2c75c95a76ecc79",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day is still hiding Sadie Sink from us as new trailer lands - Digital Spy",
+      "topic": "movies",
+      "ts": "2026-06-17T21:24:57.100725+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc2owM241clEzLURiLWdzel9XN3d3RGlVanBlOWR6aVo0QW9qNWpFTHZCSW9vdno0MGh5VGFBdmhMMzFJN04wd1Z6WWVIb1FSc2hVRGw0aDltZkN6QTNfdWxzTGdCNkQxMjA2bzBsdFZPSHBubGNfWGlnQW5NQnJzSHdsOTdZRGxseE1udUJPRXpQcXB5X1Bib1NmZzdjZw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "49a9d9f80cc24914",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Second Trailer for 'Spider-Man: Brand New Day' Starring Tom Holland - FirstShowing",
+      "topic": "movies",
+      "ts": "2026-06-17T21:24:57.844368+00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVjdyYUNTbkhvQmxFZWpZbll2RUxBR2g3N05KVFpGbEhPNWVmaWw2SkV2TXVNT0Y1UTZvRUUtSnNKQW03Q2UzUnFKWEthLThiR2NzWDBiYnVOcnVXU0d2Y0lZZmMzNExBbGhFU3BJc0ltaVpBb2Qtb2hEeWM3UU4zMlRpODBTZ1JtVm52bjFiQ21CcHBRTElySjA2ZVdURGZR?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "6bb623fb465ffd56",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Second SPIDER-MAN: BRAND NEW DAY trailer drops - comicsbeat.com",
+      "topic": "movies",
+      "ts": "2026-06-17T21:24:59.066112+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TRm53VHR4M1A2LWdpRElSMGlab250dVZBUEZIQ01MVVQ0M19Qell3OWh6ZDQ1eEtFVkd5YkNUUEE1REpIRHdNZXo3WnlNYU51dHlZTGVneXVSUjVzdVhoczBB?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "4d53a204494ab615",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day's new trailer tells so much of the story, is it worth going to see the movie? - Popverse",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:02.773670+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSS1BRldydEdoQXBHZ09yVnNYQ1lVZlVuRE5mNTQ5Qk9URjFUY0M2eUEwZGYxM0JyMVV5a1kyVEhqNmp1bkRxSl9ucTNmWEFnMFdFbGNpVFA0cU5rN0pQZFFyb3c0Tm9ZQjctcmF3TzVSNi04bC12b0thT09MWklzVUJuZ0ZINzBjdjhaLXlqelNwRHV1UFRVRFZaWXhKVUw4RE5N?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "3efdc68f087a4641",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider Man: Brand New Day' Trailer Drops, Already 1M Views on YouTube in Less Than An Hour - World of Reel",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:03.361484+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWkxGRVdZN0xadVV1OFE1eVRZN2lCYlp6ZUt2SkE0MGZ0WWtKUlFuWlBqaFdEbEthZnU3cjRCSnVBdjBqdE53MmVXZm9UTUQxemtCeXVZQ3pRMGRDQVFxWVVzdWVhd1pDUnZGNmR6Y3NfOWx4TTJwSTcxUEIyT1BlZw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "f96dbcc9e22c3248",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Awesome New Trailer For SPIDER-MAN: BRAND NEW DAY Brings Hulk, Punisher, and Total Chaos - GeekTyrant",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:05.945394+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORVQzbEQ3X1VNLXJxY2d6WXBVbS10ZjhhV0FLNG8tZG1hT1QzU3JkMEhDX01DbWpkTklaM183cDE4am12bzE1WXlORFpZTEZZVlNPclBQWXZndmVmcFVrUkpUWUZtVGtsLTFiTU1WSjdMQmhMN09HTVBuYjBidnM3QnlDcVVBb29GRFBBUmtoRHp3bzBENE96ZVFqNEVjc3o1b2xRMDh1elFJV1FnblRKTE9vVQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "87630aef39d8286f",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day\u2019s new trailer has the Hulk, and \u201ca powerful villain no one can even see.\u201d - The Verge",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:07.308895+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQd3ZpWUIzSkt6ZTlrWm9XOVV6TGpuT1c4cDA1Xzh0djdZT0EteEpIUE10b1ZJNlFqSUhUMmJBcXJseVR6bUJBWXdyRmVva2Q1LUlNNkFMNXZSbjhuOHFMTjNmTW10aDZrVzVaNFNjSTNreVNzZVQzWGM4ZE1QNkVrSUI1ZkJfeVVfY0NNRGZfd19pNEFCdzNteFJ1c05tRnFxR2xta0VOa1lTX1lIUXFPb2ZnZHVjRk5SVk5MaXpfWWdDel8wMjdkZnpFWXFLU0hhVl9SNktB?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "259be652e800e6b0",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day - New Trailer - Gamereactor UK",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:07.865934+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNRjBkR2Z2NnA2OGYzRUV5eGFidGcwUjM5SFd6d3NmUlZaMWxteXc4VVp0SFB6MHZlV1RZWjl2UFZ3TkNCb1RQR2pvQi1fSndURHpwVWVvYVlrTjRMYmV0TGFtOURLY3JiaVpRT194QmFYNF93OW04RVRSMzlWUHlEdXRCS0h1Zw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "ebe540613f12480a",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer Gives First Look At Mark Ruffalo\u2019s Hulk - Deadline",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:08.220561+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQm55VU92U3hTREt5NkpuaFZ6SkdhV3ZUeXVBSTdlUlN1cU81Zk1JRVhSSmlDUEJVMmhEYnNiUWFLYjVBN0pZaXlkOHZ4QXRka0prX0lVM1hXRTBuM1c1RXRNUnVHemgwWWlBVWVwUlJ6UEUwaTdkRmo5SFE4azNZQXNJWTltY2kxYUJhNlVSNUxzSXhJbUk5alVrVTkwYV9zXzlxag?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "f687c2fb64b474a2",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Has a Brand New Trailer, and Spidey Is Freaking Out - Rolling Stone",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:08.220963+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaExDemM2TW9qaHdoaUlOV3hhT0pnbDJWUW1FYUczN1F2WXdLZHRkVC0zNnY1Wk55Z19lQ3d6ZGFNY1B0UldtcDgtazJDWGpGeGpRenJOUTBFenIzRlFKUS03WW5XeUJ4WEc5UUVuZWl1V2dVSzMzc3pDdXhmLWN3emlONGdCUXFLam1FMTlfSUVCQTlCUlpXd3hVWHlheDFxWlI0?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "ecbaa41b436ff778",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Video: SPIDER-MAN: BRAND NEW DAY Debuts New Trailer - BroadwayWorld",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:09.772099+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOcDNOeUV6RHVkdjFPcjROSHN3djFES01IT1ZHYXhhYmcxS3hVSHdZOUVUQzBNc2NRRjhfQTBreV9ta1pyX0d0blJXc00yNGJ1VmdsamVqMVc0QmdZdWhHLTVaWWMxeFpjbUFIM05SZUhSc05weTIza016TkROVVkydkNrOWRuMXBFYTNKdXRTclozOVpmNDFpOEdlM0RKTGNzV3ZwUQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "514db4d4bb0a962b",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "New 'Spider-Man: Brand New Day' Trailer Debuts, Peter Parker Enlists Help From Hulk & Punisher - Watch Now! - Just Jared",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:11.366303+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQTTRKNEVCSk1hRWtoU2NjNW5kVUJwYVY5THluSXZsSjlFMUtLZmlZMzNpb01leFhuUVduWnBzZjZBQkNKQ1RBLTlyS2wzdHB5NXhRdFRJOUw2M1FyeXBCdEpka1RQNmxiVFJrbHIxQXUwTnhuemFZXzdJMnh1cXdtemRwemZXdm1SZTlKcWloVm9RWnpuVVNRd2NYSTNzVE9OaW94eFh0aUJ0OFplUUhqbW9zQjBZS05oVng0aE0zSmdkS0dmMjdsb1cwaV9kVnlKakE?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "c0eeb74de3faaf47",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "CJ 4DPLEX Announces Sony Pictures\u2019 SPIDER-MAN: BRAND NEW DAY Shot for ScreenX - Boxoffice Pro",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:13.617933+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOY2lTMTdUWHB3TkNFcDFXUEhNbGtoemdaZUVsZlVkSUYxd1QtZWNBclY1NGI2eUtYV1NURHBLZHVfOHFDd0VCUDNPdmZ4UjV5dWlsQVRHbGdIckhCX0lleHp0R3h1Y3lVdmkzdkJTRWpzeTdoaHZWN0duUVZabXk0UjBDLW1QRF9GTTFVb1NRVHJsWWtMZkM5MGdpTlRCZGZyUTVCQWtHTnA?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "7da76ce7b8111666",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day Gets New Trailer - SciFiNow",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:13.618487+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOTjZkYzdwY3pwMkZkeUJuXy1wRGZkVmZDQmh6S2JFei16amhTcklacnRydW5ibWVHQV9DYjNDaVFSNWdrRkhicHJFVUh3XzB4Z1JiUFloYk1oZGtMNnA4OEZjUDZ3a290dnhLTmJ5WjJJNTFQS2pqS2JNVVlmUEt4NHRB?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "2eb0350be6c1d876",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Here's Spider-Man Brand New Day release date, super tickets - El Paso Times",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:14.078237+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNLUVaT25td1p1b1lnM3l2Y2Y2ODlkZjlxYkx3YWkzcURkOHlfQnFtUnRhOWRBN1A0dmpxVE5wYXhKSV9hckZhTmI3eHZ2NmItU1VaeDdkTHo2Z3IwSzNJdGRRcXdNMmhKMmF4NF9QOWQ2bmQ3ZXR0RjdfS1ZGMDdxcU5JaW9yR3FVaFRtMzI2NWRyZUY5d1h0aUxrWnRLbGlIbjZkS0JXRUdFNmJhX1ppZ2c4bGEzdjNyU1pLOW1jRkkyeGZOQVpnM1l0TmtYYWxtbVV5REtpTTRwR1dzYXpOOG1jWQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "6db00dde41e72df6",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "The New Trailer for Spider-Man: Brand New Day Drops - Vital Thrills",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:16.473798+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOam5qcnplUGw0LUItZk1fa0g4ZXV4dVVTYWtUNTFMdzZZd0JuOHJKNUh4Yk56YTNPcVI5aGpWR202X2l6TGE3dUhMSlY2eW96UGJtaWFEWE5tUzFPZUg4Vnhwa0xiUmZOZTBsa3IxbWZibzc1ZEh1VG1fMTljOUVlcmdNSUNyUDA?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "dd38f670ca2a7ca2",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day Announces Special Theatrical Release With Extra Footage - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:18.943814+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNX1lWS1VJd3BHaHdwamU2cDNGM2x4b3lWQ3huUzNQTnVuWF9GRVh6NmswSXdLSjVMSVl0V3VMc2dpS3JjN1NuejQ3MGFYWWdZOU4wTENOenJTRF9EWU41Q0c3SlRsVVpxZm1rVlhoVXctVXZ6RkVIQk4zZFc4VEMydXU3eklWM3gxZGVsVQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "05827c7922a025f1",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Samsung Galaxy Gets Starring Role in \u2018Spider Man: Brand New Day\u2019 - Variety",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:18.944257+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNzBBN3I4bTNMcFZCcVUwWHdKc3lMaWF0LVRQdHJEQkNEb2I0X0t6UDVvYkltQW9qbXhBQ3pKcE1jYXhXN09aSl9JVWxkd3d1eHRkSHdxUVdqandnWmR4RVNJc0tiMWNJNzNmbUV2dU9EcmdxS0dmWFZTamxDeW1LMks1bG9FTjF3ZXRycw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "4050a8b0bd488512",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day Launches \"Spidey Tracker\" As Movie Is Confirmed For San Diego Comic-Con Panel - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:21.227357+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Ld2F1R25ZVjlsMVc0UG1haFBFUm5vWUpQcWZaeEpZNEtaTnJyZlg4M1lOMXJHSlljTlk1SDd4ZXFTbFV3aG1pODk2eVdRZFlJVlhNZ3RaZ3NJSzVXd3Y3RDZqeHBQLUU?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "88e5466bcbcd1b9b",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "The Batman 2 Casting Report Sparks Fan Debate Over Sebastian Stan - The Movie Blog",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:22.776141+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVWE1Z0M2Zi1KMUhSU09jOV91S0laMzJYRHJjcHNwN1g2UTktSC0tRHlyYkdqaWdIaXlWQ0tJLVg1cjJJM3NFQlZyMnJ4aFVxQVAtd2x4dUdYc2ZURzB4aGZ0a01DZWRkWHFVWm1kY0IybDhVZTNybzYySGEwQ1Vwdjk2bDRuS1RsVzVNZldPV1F0V2lHUUk5alZaMXV2Rk5pZW40QWtB?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "41199c50f25158d6",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "Scarlett Johansson, Sebastian Stan and More Confirmed for \u2018The Batman: Part II\u2019 | THR News Video - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:24.578192+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNY09hRTdWaE1nbjFNRU5EMWRkNjFHdUFUaUNDOGNSRTB1UUl5TUhZSUtBR01OeUVvN1RVeE9ZUGt3aU81a19nOFFZZk1kT1hIMXIweU9XZEtkbHJSZ3ZzVjNhc2M1V2pzS3FBck9iR0pkb1ZnTGlRWGtFX3VNZnF4X0xuYU45aHhfTzZiZWhRRUh5dGRRVWlGSlVGTkdpYVg4d2x0YTR1Q2lkZlBn?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "cf78e05cd1e07c64",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "The Batman 2\u2019s HD Logo Revealed as Matt Reeves Begins Filming - AOL.com",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:26.369192+00:00",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9Sa3Y4TWJwN0dPZFJ3OUJhaG1NZU1zQ2NEc0d3a0NMREpGeGlvWXFaNjZ1ZzRYZWMwUXk4OXNIR2wtakgtTkVYSU5WbUlKYzhnbWpEQXg3b2V2X3B1cV9HS1VSczhVXzljUDRhaTY3TGpuQ1RNTDVqNQ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "365ff97dca5f01d5",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Does The Batman 2 Director Matt Reeves' Cryptic BTS Photo Hint At The Sequel's Villains? - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:26.369611+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5VODdMcGk1ZVFOVmVMdHotYXQwaGNJX3hEQmF2QVo2LVNTUDZ1U1hxcmVnclRmd0g5eVd3QzhiVVJOTklGVHVmZWhEVXBWc0hSem5QYUJSdlo3TG90enA4WS1jSDV3dDQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "a22aa3802b6fc2a7",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "The Batman 2 cryptic behind-the-scenes image may have confirmed the sequel's villains - GamesRadar+",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:26.369840+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQ3BDdkFOQUMyMUlva0hYX0dkdzlqeWk3WnBHT3ZyZ2REcTNWeDRxWDZWQ3Mwd21aYmNCZTlSMkxQWkZjcE4telp0dTdoM3FkTWNwa09LbGxNRElzX21yQ2EzVFVvWHgySVdtTXN0bURqVXpMejg1Q1ZXWVdZN1hwdGR0V2R1TnRlek5CeVRrcklxVVJqeUg2MDhsWUp0QlRjTnE4bDlaRlQxUjBtcm1ZbmxTMVFUUkhzWDIyX1BBRC1Yc1ZQa2FzT081bzhVV0tkMXc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "78a1a3aff9cd0d9d",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "The Batman 2 cryptic behind-the-scenes image may have confirmed the sequel's villains - Yahoo",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:26.997507+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQem0wR3NCV0sxN1VYdmQ1TmRpVmV3T2x6SDdocERZU011WjNpbmpYNmg5TEJ3N29IdXM4c1hzaVl0NDJrSnhIOWdoNlZIZXR6MGVMMU5NNDFYY3VwVkZ4am51c21PVE5oWHFTZ01zQVJualRwbkFIdk1OaHNtaVVhTHVPdi1CN1Qxb3otRlNLVnVrZ3lyVnFyQzdMN3l0dw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "15299f57eec7c599",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "THE BATMAN PART II: Official Logo Revealed - batman on film",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:27.545549+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQN0lQZE9iSXl0QkZJdFVQY3h1QlpBMHljTEtGbjlJaFAwWGpMVURoZG85Mm4wbDBwY2hSV253TzVYdWJFZ1BPVHRmUHA5c2Y2T0lueTNYMno0ODl3Ry1JdUVibTZSRGFUSHM2RjdvZ0tjS1ZXN2lIbHBGUThUckZHZNIB2gJBVV95cUxNSGtMUmpVLVJJZV9TeTk5aVlnQjlGUzNLSzlMeW9jVXZoWk8ydlJuVUdhNmxOcXVBNTUyOUI4THNEZkdiOGlndXFUQzB2OUJjNW5wSkV0b3hnUGN3cTdqSDJEQmphN2FUMTZBbVAzdnFNSnRDTkI1SDJ1NEtRaldYRkNlOWRzY2otbzlyaHFhSjZlczdNd0luY09zNlFKYlo5Wl8yTFBDckFGZ29sbUNQVGU3M1J0QllSLWVpdFJJNUszbjdzZVlFVlBPLTFDWnI4eGhpeEp0VjZyNTV5dlpCUWpsTGpLNUNYaDhBeVhSQmtYWVJsczdWNjhmMlZtQXpNMi05UkQzQUxwaGRQWEpRWFNfTl9zVTRudXhIYXVQT1hBaGZUWUt3MmVTbThCRGt0cEVyc0FFZ1dGTFpzQU10MkExdmF0R0NHTm1Wc3JSU1BINTVyc1VfSUR3?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "239abf4cec069b99",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "The Batman: Part 2: Matt Reeves shares first set photo as film officially begins shooting - The New Indian Express",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:27.545956+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNd0FTQXZSZDBzMGdNZ0FPbU5DaTJZRnRZOTJqMDlmMUZfX1h4bjR1QXpZZEZtamVyd2lHU011cXIwVmN5UFhYMjJUV3BCdEkxNFlPby1hZGNPU2tIaU12T3NoaDRackNsbmEtMWJWaWV0VC1fQmZmeGJ3ZG1XUG5UX0otN0NGVEowUlEyQTNySUlGRXE3MFNFYnh3X3FkMmxZQ2JIbXBWSWpNcHpobU4yaWFiR1I5dUh2Z0E5ajNkNkFZOU1WYnM2ZmZCMDRUdnJCaVB4VWc2ckhnZEstNW1NaGJFNDJTSGlfNXJjc2RnZURMTm92T2FYVzVCcDZNYmx6Q19wUNIBkgJBVV95cUxNdVlaeEVZTE9GMXo4V2VIbERmbUlyYjFFTDdqcjlHNzdHQ1FCM3g2X0lWbVNTTENEdlNXWXlNcEtTZzNhUWwwZTFHWHdYOXRmZDRJTGJCcEFVTUkxMXk3akFyTHdWUFZlTVQtM2E4QjBDbzIyMUZ0Z3hhZmxsZzFndElWV3JuTU96THNhbWpmb2dvQmNDdDVleV9yR2RlY0g4eEo3SFE0cXNvcHU4VC1DWVJrcy1JTmw1dEN0elYxTThHQXpOVXJfeEhyVUhEREM5QnkzWnVOYXFJR19Md05JdVdWdHNIeEQ0NUd3UGNtc21EWUd2eENvRVByUmZaTnFOc0lGNlB6bUV6Ym9vekRCU0xB?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "6491dd75e941a91b",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Matt Reeves Just Revealed the Very First Shot of \u2018The Batman Part II\u2019 as Filming Officially Begins - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:27.888711+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yYUhaMmRWd2VvMVFmYld3YmNhQUU0eEdpRjV6Q0tuWjZDdUdfRlFrYVpadk0yajJ3MXdLaVNoY2V3U1BpcFVaRHVvcVdHSmJ4VG1uWXVnNl8xX3k5Snd3MTROZm4?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "e4c6b5f02b327b71",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "The Batman 2: Sebastian Stan Confirms Harvey Dent Will Become Two-Face in Sequel - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:27.889254+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1DbTVxcUpBNThsZnlOQXZMVDZaM0gyWllVRWdVQnltZmZ2eUNPUzRaeDRBY2kyUkhTS3d5aW9yMFlxekl4Q2hISWxHak5KUlVEenc?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "cc2a89e63d30dd7e",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "The Batman 2 Director Matt Reeves Announces Filming Start With New Photo - AOL.com",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:31.089714+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSHlCTXRLZGhaWjBSdHNBdU1ETV84MkVtWVVDaVdoREI4UnFkRjY2X0ZBbkVvWEVQNGJyQnN4MDNKY19PTmxJZjVQWUFWQmIzT1pMNGZzTzV6TXRnSVh1Vk9QM052Z2lwUHhUa2dwTW5UVjU2LUwxMjI2Y0VIcU5TOExqOHI?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "3a44eff8a394c189",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "\u2018The Batman Part II\u2019 Begins Filming, Writer & Director Matt Reeves Confirms - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:31.090096+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE8tUmpCTXJ3bG8wUlJoSndOemhWSEZrcldUakM2QlNlY2tiWnotMWlhbU9pTE5HVHlNZWl4NHBrZ3J6NWt5a2x6a1MxdHNsQmRzWXl3cnh3OGkzOHV3SmdMSlRDeGJpNVJxaHc?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "71a58f891c522bb7",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Colin Farrell hints at 'dark' themes in 'The Batman 2' as he confirms his return - The News International",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:32.642820+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPYzlMWEppZ2dEMHNjOFJWbEVrc2lWVW5RNHNMZnVNc1BuNDdoenhJcXRJMFlaVmdVclpOdDZ0VFAtb0FRWWV1YV91d2VEdXpUTWRxWDlweWE1VWhnN1VGWlFqTzBYYXJ6NHIzZDExMXNDRWNvRjVORVg5M3J0UmxvQTlvb3cwV1BrSXYtdmFPTTZWSVlLZE0wUVFVbnpwQng3ZHJGTjdpVkV5ZmF5MkUzRHJnT1ItUHBXSmc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "3be1928f710d694b",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "The Batman Part II First Look: Matt Reeves Shares Sequel's First Shot - But Whose Body Is That? - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:32.643203+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBScWJSUFRlSU1ZLXdpNHM1aVItcEJzTDJ2cGlOdDJaUUY4ZmxMbWZDQV9sb1QzdGxBNEp1NWVqaGpYbTE1Nkl1Q2lkSUxGSlVvekZUTFlDVlB5dVpBRDljbm5lUko?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "6b7cef02dff5e1e0",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Matt Reeves Unveils First Official Look At The Batman Part 2 - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:33.030225+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1iNzB0aUFVcFZ1dmtDU2VIQTctZGN5blhZOExfTlRaaEM4SEJVUFlTWF9mS1R2eS01YktaVHpRbURmQ01vc2FtMjQ4eXBmSDNESEY1Zy14MHJIU2lwbU44SlVtQ3E1OGtlZmpkVERqSWRNV01MQmR6QjJn?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "33391537d69920f5",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "\u2018The Batman Part II\u2019 Begins Filming, Writer & Director Matt Reeves Confirms - Just Jared",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:33.030652+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPY1dicDZZUnlqM2dCTmZhdFpuVzllZHAxa2xvQ3NDd0w2OTFVUF9zQXFtdnNORnBIS2t5S1Z3N085Q2l1VFQzRmx4YXlocG9sbnJ0eTdSYy1ELWtDNG01UHFpRVJSX08yVloyTGdzcXlQeDBPZEduOTFUaTVXSjA5a25yeVdFeFV2MVF2RVNEYktiT2ZXS1NTZ1BPWk9wTDZ1VDN5ajdkTkZQZEp0?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "3930067d5e1876bf",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Colin Farrell Confirms He'll Reprise Penguin Role in The Batman 2 , Teases a 'Terrifying' Script - People.com",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:34.014961+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRFlVcUtldjJzVjBWLWl3Rzl6SFI4d0FmUnFab0Q0N1o0NXpqR0w0c3doTWwtS1pLeWpUYktiVFVEeUdiUThHcWRpSThNeVBra2U1djZHQ1JBSUt2UFcyVU1OMGp6OXJHTmtCb2xJdlhCMFAyMWIxMFROdFVDV0Z3UEhmQk1obmNTQ1VDbnVjZXpSaU9HZkR4UG11Zw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "1fb3d4a56b66436f",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Matt Reeves Shares New Look at 'The Batman 2' as DC Sequel Begins Production - MovieWeb",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:34.015464+00:00",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE93cDVyR1ptTnE3Smg4OE44aW5laDY4TGtLSWN3NWxndkpGLTcwQWRnUW1NYXBTZ3I4eHZvR2hYMGZZU1hBUGtMSDJyR25vMThVR2F6RURfUHJSejFNejU0Ri1FMVByV282WEJj?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "daa5b81d4a6b64a9",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Beloved DC star announces reduced role in The Batman - Part II - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:34.015817+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9DaXNUTXU4OWFaQUxpZktFUlplWU9vSFRsdVVKYXhiRjl5a3JPeE1GNjc5R0o4QUxTbXVsQzN2dkdpWXAzWk0ySGxYWThMdi1VTmI1NFNDWnFlREpTOE12ZHlMUnVvN0k?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "9ffd22f22792dfc4",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Colin Farrell Officially Confirms Penguin's Return in 'The Batman Part II,' But There's a Catch [Exclusive] - Collider",
+      "topic": "movies",
+      "ts": "2026-06-17T21:25:34.015998+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOaVRObjVWNjZ6TWFmUDdsUTViUENYTzRuZFRLMDBlcWFuMndjRVBaeFlTRXFHZkR4d1hUc0JJNjNTZ3JGa01XcEh6ckpTNThUZ0dMdm8zTXpSMk1EQjJwY3g2Y2lIUEQ2NVp4OUYyTkVLd3hBMEZMOFhzQmlLcjNFdjNEdDI?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Stitches - Shawn Mendes\n(because you like One Direction)",
+      "id": "dce39c3169d2a77c",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-17T21:25:41.372045+00:00",
+      "url": "https://www.deezer.com/track/113418500"
+    },
+    {
+      "action": "push",
+      "detail": "\ud83c\udde9\ud83c\uddf4 Fernando Tatis Jr. \u2014 3 hits vs St. Louis Cardinals",
+      "id": "7f6f0d769f24d5a1",
+      "score": 64,
+      "severity": "high",
+      "source": "Baseball",
+      "title": "Baseball: Fernando Tatis Jr.",
+      "topic": "baseball",
+      "ts": "2026-06-17T21:25:46.692926+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Time for a glass of water. Stay hydrated!",
+      "id": "f01128cad3dc4ce9",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-17T21:27:04.284114+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Imagine a world not so different from our own, yet profoundly alien. A world where the breath of a glacier could be felt across continents, and the very sky seemed to hold a heavier, colder weight. This was the Last Glacial Maximum, an epoch not of singular, dramatic event, but of relentless, grinding transformation. It was a time when our ancestors, the intrepid Homo sapiens, were not merely observers but active participants, their very survival a testament to their ingenuity and resilience against a backdrop of unparalleled environmental upheaval. These weren't the people of grand empires or complex cities, but small, interconnected bands, their lives interwoven with the rhythms of migrating herds and the shifting boundaries of ice. Their story during this period isn't etched in stone monuments, but in the scattered flints, the ochre cave paintings, and the very genetic code that speaks of their journeys and their endurance.\n\nAround 26,500 years ago, the Earth shivered with a cold so profound that it manifested in colossal ice sheets, some two to three miles thick, that smothered vast swathes of North America, Europe, and Asia. These weren't just localized phenomena; their gravitational pull was immense, drawing water from the oceans and dropping global sea levels by an astounding 120 meters. Coastlines we recognize today were dramatically altered, revealing immense land bridges that once connected continents \u2013 most famously, Beringia, the land bridge linking Siberia and Alaska, a vital corridor for the peopling of the Americas. What we often forget is the sheer scale of this transformation. Forests withered, replaced by expansive tundra and cold steppes, teeming with megafauna like woolly mammoths, giant ground sloths, and saber-toothed cats, all adapted to this frigid, arid world. The very atmosphere held less moisture, making large inland areas into veritable deserts, even as the ice sheets advanced.\n\nThe human drama unfolding within this frozen crucible is nothing short of epic. For our ancestors, the Last Glacial Maximum was a period of both immense challenge and profound adaptation. Faced with dwindling resources in some areas and the relentless advance of ice, populations were forced to migrate, to innovate, and to specialize. In Europe, the Cro-Magnons honed their hunting skills, developing sophisticated tools and cooperative strategies to track the enormous herds of reindeer and bison that roamed the periglacial landscapes. Their cave art, like that at Lascaux and Altamira, speaks not just of their artistic prowess, but of a deep understanding of the animal world and perhaps even spiritual connection to their environment. In Asia, groups navigated the shifting landscape, their movements dictated by the availability of game and the harsh dictates of the climate. It was during this period that the ancestors of today's Native Americans are believed to have begun their journey across Beringia, pushing south into an unpeopled continent, a testament to an indomitable human spirit of exploration and survival.\n\nThe end of the Last Glacial Maximum, beginning around 19,000 years ago, was not a sudden thaw, but a complex series of warming and cooling events, often punctuated by dramatic meltwater pulses. As the ice retreated, the landscape was profoundly reshaped, leaving behind the lakes, rivers, and fertile plains we know today. Sea levels rose, submerging those vital land bridges and reshaping coastlines once more.",
+      "id": "9181888a390996e8",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The Last Glacial Maximum",
+      "topic": "learn",
+      "ts": "2026-06-17T21:27:17.360948+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cSich Alles, was zum leiblichen Wohlseyn beitr\u00e4gt, zu verschaffen, ist der Zweck seines Lebens. Gl\u00fccklich genug, wenn dieser ihm viel zu schaffen macht! Denn, sind jene G\u00fcter ihm schon zum voraus oktroyirt; so f\u00e4llt er unausbleiblich der Langenweile anheim.\u201d\n\u2014 Arthur Schopenhauer\n\nThe man who penned these words, Arthur Schopenhauer, was not one for easy platitudes or comforting fables. Born in Danzig in 1788, into a world on the cusp of profound change \u2013 the French Revolution a recent memory, industrialization gathering pace \u2013 he inherited a keen intellect and a considerable fortune, a combination that allowed him the luxury, and perhaps the curse, of uninhibited contemplation. His father, a prosperous merchant, tragically committed suicide when Arthur was a teenager, an event that undoubtedly cast a long shadow over his philosophical outlook. His mother, an independently minded writer, ran a fashionable literary salon, fostering a stimulating but often tumultuous relationship with her son, who found her social life frivolous and her literary pursuits superficial. Schopenhauer, for his part, was drawn to the darker currents of existence, a solitary figure who found companionship in his poodle, Atman, and solace in the ancient wisdom of the Upanishads and Buddhist texts, long before they gained widespread Western recognition. He was a man deeply immersed in the intellectual ferment of his age, familiar with Kant and Plato, yet increasingly disillusioned with the optimistic rationalism that characterized much of Enlightenment thought.\n\nIt was from this crucible of personal tragedy, intellectual isolation, and a profound sensitivity to suffering that Schopenhauer forged his philosophy, one often characterized as pessimistic. The quote, \"To acquire everything that contributes to bodily well-being is the purpose of one's life. Happy enough if this gives him much to do! For, if those goods are already bestowed upon him in advance; then he inevitably falls prey to boredom,\" encapsulates a core tenet of his worldview. He wasn't advocating for a life of asceticism or self-denial; rather, he was observing a fundamental truth about human nature. He saw that the pursuit of material comfort, while seemingly the driving force of existence, was a Sisyphean task. The fleeting pleasure of acquiring something new quickly fades, replaced by a fresh desire, an endless treadmill of craving and temporary satisfaction. Schopenhauer, largely unburdened by the necessity of earning a living, experienced this ennui firsthand. He witnessed the idle rich, for whom every material desire was easily met, succumb to the gnawing emptiness of boredom, a state he considered a form of profound suffering, the mirror image of want. His own life, spent in academic isolation and largely unacknowledged during his prime, offered ample opportunity to reflect on the nature of human striving and its often disappointing results.\n\nEven today, in our hyper-consumerist society, Schopenhauer's words resonate with an almost prophetic power. We are surrounded by advertisements promising happiness through acquisition, by social media feeds filled with curated lives of apparent fulfillment, yet beneath the surface, a sense of dissatisfaction often persists. The modern phenomenon of \"affluenza,\" where individuals experience psychological distress despite material wealth, directly echoes Schopenhauer's observation about the perils of having all needs met.",
+      "id": "b7a0abca6f27f1bc",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Arthur Schopenhauer",
+      "topic": "wikiquote",
+      "ts": "2026-06-17T21:27:23.298253+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6449,7 +6450,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-13-19-JUN-DE-2026-ESCENARIO-B.pdf",
   "fuel_last_pdf_hash": "ae670879fa8033736dfb39d8d8165a100cf1ca299cd8559e978132c494580ca8",
-  "fuel_last_prices_seen_at": "2026-06-17T19:16:48.676824+00:00",
+  "fuel_last_prices_seen_at": "2026-06-17T21:27:00.927229+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7142,8 +7143,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "astronomy",
-  "knowledge_last_sent": "2026-06-17T6",
+  "knowledge_last_category": "early_humans",
+  "knowledge_last_sent": "2026-06-17T7",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7153,6 +7154,7 @@
     "astronomy:The hidden oceans of Europa and Enceladus": "2026-06-13",
     "death_sentence_to_daily_shot": "2026-06-12",
     "early_humans:The Acheulean hand axe": "2026-06-13",
+    "early_humans:The Last Glacial Maximum": "2026-06-17",
     "early_humans:The Venus of Willendorf": "2026-06-15",
     "first_artists": "2026-06-12",
     "hearing_spacetime_ring": "2026-06-12",
@@ -7181,7 +7183,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-06-17T19:14:55.840830+00:00"
+    "ts": "2026-06-17T21:24:50.598574+00:00"
   },
   "launch_seen_ids": [
     "a24af622a80bb043",
@@ -7202,6 +7204,17 @@
   "life_dashboard_last_week": "2026-W24",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "0eeacd70e07809c2",
+      "08da9fdbf50224ca",
+      "4df06811a425dd11",
+      "c1bec6bd7a0996e6",
+      "ad236ed1fc88ca5d",
+      "32bcaddd19cfec53",
+      "e217dde2da868aa7",
+      "9bb0b3ba9cca9a08",
+      "890a698e907501a9",
+      "cacd3aa896388c32",
+      "99d878edf84bafad",
       "067c6e14823779fd",
       "425f4e2852f7e267",
       "597c64ee41072198",
@@ -7290,18 +7303,7 @@
       "abed50e4cd0cc8d0",
       "e049237151ca7c2d",
       "e8fbb671429fa510",
-      "7d52a88003f399fb",
-      "51ed229a4daf8bc0",
-      "6fdec408265db8dc",
-      "995a5f0bc983d212",
-      "a97ce9c8fb405161",
-      "5ea55c51dbedcc30",
-      "7d7d5835fe098d29",
-      "f2157e9afb617fd1",
-      "8aab0a07ee9356a1",
-      "30bd3e9c58d11d90",
-      "db50ec1601cea97a",
-      "cff8fd62e5e691e8"
+      "7d52a88003f399fb"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7503,6 +7505,73 @@
       "ce707419f2d5b9ef"
     ],
     "Spider-Man: Brand New Day": [
+      "9318c7cb94c45134",
+      "9a86da3d2343a93e",
+      "5ff7ab513eeb9f5d",
+      "fd085d11839cd60e",
+      "b5b9e92a63cdffd3",
+      "69ea9ada1ae5dd76",
+      "82dfd503da4cdd5f",
+      "909af47db2d74c90",
+      "c64a501aefd6ea58",
+      "4af9455cdfba4575",
+      "ba618339a0e45342",
+      "1a37628250091ff1",
+      "46ef203fd653a436",
+      "55e323946dd5ae52",
+      "cdb5855ee555e84e",
+      "f4c02f98b3b04523",
+      "ae1dce16e2c836b0",
+      "e6434fa48b5bd469",
+      "52a1aa11e81de426",
+      "fa872e4efbdca1d9",
+      "4c73fdfea12cd54c",
+      "a9d29b26ed629f1c",
+      "ceb6769fc022e075",
+      "0aa611a5dcc0026d",
+      "5142d94ff3978e18",
+      "907aeb50e87c7759",
+      "bb6c80813e1a2a56",
+      "2a0154515ffd9388",
+      "84bf152f4831607e",
+      "8226c721333a6260",
+      "9fab1670ac538ab9",
+      "e1fede6cb4a74a05",
+      "d958eb022ad4c146",
+      "eea38520fb1ad572",
+      "578565e1ea43a040",
+      "36f1a3967dc58c32",
+      "482f543647769e13",
+      "625175f152c2206b",
+      "b312d8fefaae30f3",
+      "e1960d3a2b395ce4",
+      "3014977fd16315c8",
+      "f5178c7df72b5796",
+      "cee126606eb6f770",
+      "184d6d0f0d57c88b",
+      "d4e13a315c4d369b",
+      "b56926d1c22eba93",
+      "3324aaa4e6ef8005",
+      "e7ef8f3ab1d6565a",
+      "5eb06e6c34e078cc",
+      "6d8d5e83e92360e7",
+      "8bfe2702164b6068",
+      "f566547c036a1aac",
+      "741da2770739fa35",
+      "cd198d25302d5927",
+      "24d12f8a09b70ffa",
+      "20eac427f256ec52",
+      "883130bc53db7095",
+      "9ccaf390d84f1007",
+      "430804aee89e9eaf",
+      "35500d374885f641",
+      "bb067200ec8d925f",
+      "11372e84a02ed60f",
+      "f56d5000054b46f2",
+      "c0f4a76a8e025a6e",
+      "0a7333aeaebef1cd",
+      "921aba91ca45d2de",
+      "3641bd4c40c73c0f",
       "37b6f7a8a36eaf95",
       "4bb6612fa45a0217",
       "e58af0f6ff0c518e",
@@ -7535,76 +7604,59 @@
       "535032f5ff7c744d",
       "02e95a15d0574bf3",
       "0c37f690aaaa99ef",
-      "49ca9eb0e8239adf",
-      "e7de89d893da2556",
-      "927c8202eb5a8c6e",
-      "a090145ba4c8e237",
-      "673494a43c7e1021",
-      "30ea1db86b0098b5",
-      "3904341e9aec4381",
-      "20fa4ac7bfc9f5bc",
-      "7c44da495faf5e3c",
-      "2cd7552c3c2dee2b",
-      "46dff4ccde84a358",
-      "956fec4e55a59bd4",
-      "b88951e361b0cef5",
-      "e7175f95341d2e4d",
-      "b05a0252d65d0acc",
-      "7d008c29c5f29110",
-      "a1a524560497b22d",
-      "30da16dcf333abe9",
-      "47181424644e982c",
-      "f5562075e601fc9d",
-      "b17cc057f784ca97",
-      "66fa06413f23b315",
-      "2a899f63756e99d5",
-      "fed2462d2f838361",
-      "6e1c43603e633b5a",
-      "4f928a8026b084c8",
-      "57a85834ac6ad46f",
-      "e18c4d46b34b12bf",
-      "13a89265c833b756",
-      "2c5a38281197983b",
-      "a3a790fd05d7a433",
-      "b93cf25ae6340d9a",
-      "f4319a1d17511bd2",
-      "6c7ac17226bbb5b9",
-      "d3a47d4a66148414",
-      "5a126360ac759360",
-      "0f349ea86ddd9256",
-      "ca7a3477a185bb37",
-      "f4b3673181e04c3b",
-      "50b8e00817959cf2",
-      "cd3f4d6316fb0767",
-      "7bb12bb2c3a4d6e2",
-      "847e72fe70001bca",
-      "df3520081557cb1a",
-      "943c91867f59b50b",
-      "d71931e67abab28f",
-      "dbe492c455459739",
-      "e55fd04788dccd24",
-      "d42b2d787b699ad0",
-      "3fae428c5e079e01",
-      "882baea3fd9cbe08",
-      "7a4e54bb60b7c449",
-      "4963427dd83001e1",
-      "2e44a9a253c9771b",
-      "30c73b364d96b51f",
-      "f9548c43930065d7",
-      "159c90ce37e530f2",
-      "cbe44e5c85c17438",
-      "f3bfb457ad3d70a1",
-      "497ced80ac7be251",
-      "86c02721dad6564e",
-      "cb8bb1e7a4d1fea8",
-      "b5c9d6905643accb",
-      "a4f7b220ee56d2a6",
-      "eb10876ed404c18b",
-      "2c8c14e046f3ecf1",
-      "a54b2f608d07f6f9",
-      "80362cd8376d0db1"
+      "49ca9eb0e8239adf"
     ],
     "The Batman Part II": [
+      "3b70ab740a9c98ec",
+      "638d691db2c6c597",
+      "ca6d64e7a102cf6a",
+      "19a351ecbdab486e",
+      "796157dfe77b8980",
+      "4f2c597409b403ea",
+      "a43042ad91da8784",
+      "78b3f5f0ba95dbf7",
+      "2f0b1b8a84e405e2",
+      "c7b041aff192f00e",
+      "a0b71bb2ae829607",
+      "91f6a8b0f55eed4d",
+      "28a320ca7b46c497",
+      "7ced8fceec97e3c5",
+      "1a0ebfe5c0e31f89",
+      "2fe6a74a78c9c44a",
+      "994244d6fe5e5ecd",
+      "5a323f0735f45c75",
+      "caeb68735c339cc8",
+      "acdba57ed20b51a6",
+      "e2e22c9bad243796",
+      "ad1b285988c21964",
+      "cc7eea5420341820",
+      "50488034e265da68",
+      "1ba2498a9a58c469",
+      "96fdbafa3224b490",
+      "201e42a658fca734",
+      "85bccf8e504bbc80",
+      "4f133b925aa79650",
+      "ec6eca76b778ade5",
+      "7878f7b15edc8e41",
+      "61783448e2175a9b",
+      "41162a454de4d93f",
+      "8a5d689d1936bcdd",
+      "2897059f7dae4858",
+      "af68620334f59dbe",
+      "d1a2593a4d556060",
+      "9843418d830f48c3",
+      "dbcf973d14d57c50",
+      "a4459e58bf660541",
+      "3f79a0208ef8ca20",
+      "48e39a042ab17b45",
+      "7fbe0b95d11a900c",
+      "81d0c5185a57e742",
+      "fcf1089026438889",
+      "aed8e96e3c42a4a1",
+      "26fcc45553000894",
+      "aafe0114ee801e51",
+      "95cd57732c25b03e",
+      "d17558fa744e04ee",
       "9845549c245a190f",
       "ac4f13c2ba3c9e74",
       "ad91f9464184f784",
@@ -7654,59 +7706,27 @@
       "9e2c588376f911ae",
       "494302d5d766e004",
       "bdcc003070da19e5",
-      "8d403c0a925d6fe7",
-      "959d6a6d080614da",
-      "6ecb724ac585f29a",
-      "7df9e7b35e176c26",
-      "c28c20716251f5f4",
-      "a11e1382e9791aa3",
-      "85a0013512bdc818",
-      "809b00dfd3374e7f",
-      "a04120b4eaa6beb5",
-      "b1eefdf4adaf0832",
-      "89d011a97140ca28",
-      "be2c07828f52a7fe",
-      "620025e8b7515427",
-      "b2bc06259de60422",
-      "c027b14700686493",
-      "c9efc3b7a0639081",
-      "943ff8455a1cabd7",
-      "cd5ecda128a54504",
-      "1a3c99fc093972d6",
-      "84f8023da10ea6d9",
-      "5e3528049019d493",
-      "630fef9f143c92db",
-      "5d4bd6ba62e3afd3",
-      "35163cf639d8932d",
-      "86d142ca099ac731",
-      "69dbf07438882207",
-      "91c05061193f423c",
-      "3c21ed9e72d91ac2",
-      "a63b2a465471c9f0",
-      "aa7e4ffcec590fe3",
-      "862120ef71e6c94a",
-      "89572d6f116d76a7",
-      "bf7d9fe524cfefbc",
-      "44c2c8333c751231",
-      "8ffd6d8f847f4da6",
-      "e5987e35676aff7c",
-      "4361bd46948a0722",
-      "6bd66561158af514",
-      "531f7e6205572add",
-      "8d557536d2ba1a0b",
-      "c091724025ec9682",
-      "ba9d25ec043d5f84",
-      "81a99d5e3c4c41ae",
-      "270c704c908ee2a6",
-      "432ce8ff9cca0685",
-      "1054bfb57f253047",
-      "803ab03a43d55376",
-      "c9e502047ddbd952",
-      "ca0c3e81ef84a4f2",
-      "cf630ffddd894923",
-      "e1fa28225983828f"
+      "8d403c0a925d6fe7"
     ],
     "The Odyssey": [
+      "58bfc8b08f7cfcfd",
+      "2c9c9607b85c445b",
+      "a33c805703ec8ba5",
+      "21ddb5b362ea7e08",
+      "5fab9db8a57b89d2",
+      "6e58ca705fe426a1",
+      "f4f156379715906b",
+      "0b7ca8387facfb7b",
+      "fb52cd4a05594ed1",
+      "b4a86ffc4f8f2cfd",
+      "85c280bc82798bf5",
+      "1c0920af31c93ac5",
+      "c63926cce1cb09f0",
+      "e95f099559a174e9",
+      "c477f39ac3fb4e58",
+      "ecdb0953521b50ee",
+      "0d6a53713c983506",
+      "09234e5d31e67981",
       "c2edaf64f30e4d93",
       "f2079c53d3135b17",
       "71da27263fb0b142",
@@ -7788,25 +7808,7 @@
       "ddacb007393c1ab8",
       "225bd7051de68a1e",
       "3ed007ba7999619c",
-      "d0790c8093f044a7",
-      "67dcf14619835e27",
-      "d441ea33d45dba4e",
-      "826ef727cb56ee5e",
-      "a910b734513f20c3",
-      "2c4bc02079d50a67",
-      "148d71eecbe59e10",
-      "365ede1367cb23ea",
-      "cf5bde374c2183a3",
-      "e5afce42e72aad06",
-      "0b414db78e320d1c",
-      "1d411eb3df529437",
-      "eb25228f58db1266",
-      "04a85b599de45e89",
-      "1de959cb44647168",
-      "fe7cdade3138267e",
-      "a239eb995faff987",
-      "72b9c57ddf0e9e93",
-      "a11545133e6959f0"
+      "d0790c8093f044a7"
     ]
   },
   "movie_release_dates": {
@@ -7869,7 +7871,8 @@
     5866223,
     4794265,
     4794264,
-    12246
+    12246,
+    5962948
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8025,6 +8028,15 @@
       "label": "Niall Horan",
       "payload": {
         "name": "Niall Horan"
+      }
+    },
+    "632b058d681b0b68": {
+      "applied": null,
+      "created": "2026-06-17T21:25:41.372016+00:00",
+      "kind": "artist",
+      "label": "Shawn Mendes",
+      "payload": {
+        "name": "Shawn Mendes"
       }
     },
     "68c8131769f5cbb8": {
@@ -8358,177 +8370,177 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "deals": {
-      "last_data": "2026-06-17T19:16:05.010663+00:00",
+      "last_data": "2026-06-17T21:26:19.506491+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "energy": {
-      "last_data": "2026-06-17T19:16:31.137634+00:00",
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_data": "2026-06-17T21:26:38.008449+00:00",
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "fda": {
-      "last_data": "2026-06-17T19:16:21.757166+00:00",
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_data": "2026-06-17T21:26:28.097939+00:00",
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-17T19:16:48.676853+00:00",
+      "last_data": "2026-06-17T21:27:00.927253+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "fx": {
-      "last_data": "2026-06-17T19:16:47.386150+00:00",
+      "last_data": "2026-06-17T21:26:57.481314+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "games": {
       "last_data": "2026-06-15T13:41:05.025187+00:00",
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-17T19:15:15.587663+00:00",
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_data": "2026-06-17T21:25:46.052579+00:00",
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-17T19:16:21.219407+00:00",
+      "last_data": "2026-06-17T21:26:27.734349+00:00",
       "last_data_count": 251,
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "movies": {
-      "last_data": "2026-06-17T19:15:07.952482+00:00",
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_data": "2026-06-17T21:25:36.437363+00:00",
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "music": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-17T19:16:31.961147+00:00",
+      "last_data": "2026-06-17T21:26:38.848894+00:00",
       "last_data_count": 50,
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-17T19:16:46.655880+00:00",
-      "last_data_count": 56,
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_data": "2026-06-17T21:26:56.687043+00:00",
+      "last_data_count": 54,
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-17T19:15:09.962558+00:00",
+      "last_data": "2026-06-17T21:25:38.450721+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "weather": {
-      "last_data": "2026-06-17T19:16:31.332701+00:00",
+      "last_data": "2026-06-17T21:26:38.195729+00:00",
       "last_data_count": 10,
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-17T19:16:52.938147+00:00",
+      "last_data": "2026-06-17T21:27:04.283668+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-17T19:14:55.840830+00:00"
+      "last_ok": "2026-06-17T21:24:50.598574+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "164974"
+    "last_full_window": "164975"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8541,8 +8553,9 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
-    "2026-06-17|12",
     "2026-06-17|18",
+    "2026-06-17|21",
+    "2026-06-17|12",
     "2026-06-17|15"
   ],
   "weather_seen_ids": [
@@ -8585,8 +8598,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "leaders",
-  "wikiquote_last_sent": "2026-06-17T6",
+  "wikiquote_last_category": "philosophers",
+  "wikiquote_last_sent": "2026-06-17T7",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-14",
     "activists_thinkers:Helen Keller": "2026-06-16",
@@ -8601,6 +8614,7 @@
     "leaders:Mikhail Gorbachev": "2026-06-13",
     "leaders:Thomas Jefferson": "2026-06-17",
     "philosophers:Aristotle": "2026-06-15",
+    "philosophers:Arthur Schopenhauer": "2026-06-17",
     "philosophers:Plato": "2026-06-14",
     "philosophers:Socrates": "2026-06-13",
     "science_pioneers:Ada Lovelace": "2026-06-14",
