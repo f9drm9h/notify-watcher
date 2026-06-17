@@ -386,18 +386,6 @@
     {
       "action": "digest",
       "detail": "",
-      "id": "49634e13c2bbdca8",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Odyssey",
-      "title": "Christopher Nolan\u2019s \u2018The Odyssey\u2019 to Get 3-Week Run at Westwood Village Theatre - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-06-14T19:25:53.338830+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOZGxSNk9sbzNWZU9HRmhIbm0zaWxCQmhjNmJ6Sm1ScFRzN1daNDdZVEZkNnRzNzNnMjQ1bVRmcFl3SUJnRlBubDIxM0ZGZ25JRi1lbzJxLTkwam1iT0E2bm1tWDJveWhlQlVIeXVuc2J1ODM0cExnXzkyNDl6aFR1UHlMcERPUFE4bXNvQl9nMTNLQjFGdVp4WjhlNk1KYnhKandoWGRFM0dNa0dkMGwyUWVoMS1IczFIWDk0?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
       "id": "01828df8f008a323",
       "score": 28,
       "severity": "moderate",
@@ -6382,6 +6370,18 @@
       "topic": "twitch",
       "ts": "2026-06-17T22:08:16.966823+00:00",
       "url": "https://twitch.tv/mkleossb"
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - La CODOSALA online! entra juye",
+      "id": "5f3e25a22ea3988a",
+      "score": 68,
+      "severity": "high",
+      "source": "elcodo22",
+      "title": "elcodo22 is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-17T23:03:35.897787+00:00",
+      "url": "https://twitch.tv/elcodo22"
     }
   ],
   "f4_history": [
@@ -7183,7 +7183,7 @@
   "last_run": {
     "failed": 0,
     "ok": 1,
-    "ts": "2026-06-17T22:08:15.907927+00:00"
+    "ts": "2026-06-17T23:03:33.506835+00:00"
   },
   "launch_seen_ids": [
     "a24af622a80bb043",
@@ -8506,9 +8506,9 @@
       "last_ok": "2026-06-17T21:24:50.598574+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-17T22:08:17.963409+00:00",
+      "last_data": "2026-06-17T23:03:37.204083+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-17T22:08:15.907927+00:00"
+      "last_ok": "2026-06-17T23:03:33.506835+00:00"
     },
     "uv": {
       "last_ok": "2026-06-17T21:24:50.598574+00:00"
@@ -8538,6 +8538,7 @@
   },
   "twitch_live": [
     "RiddlesMK",
+    "elcodo22",
     "mkleossb"
   ],
   "visa_f4_dates_for_filing": "01MAR10",
