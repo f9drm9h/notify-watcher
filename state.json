@@ -47,7 +47,7 @@
     "29db49f64ce68661",
     "a8b1aff056453d2f"
   ],
-  "apod_last_sent": "2026-06-17",
+  "apod_last_sent": "2026-06-18",
   "astronomy_sent": [
     "2026-06-14|New moon tonight - d"
   ],
@@ -80,7 +80,10 @@
     823938,
     824750,
     823535,
-    823939
+    823939,
+    824746,
+    823536,
+    823940
   ],
   "beach_day_last_sent": "2026-06-13",
   "bills_sent": [
@@ -93,260 +96,17 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "The Odyssey - Official 'Fantastic Voyage' Behind-the-Scenes Video - IGN India",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPWUYxdzVhcTNIQUNXbnk0SEdmRjN3UmU0SXFOanNTdEQtYzQ0MHlLbkVkTC1zNmhWVlBfOElyNXVEYzc4QWRYSXRKODJZNkRWZmJvQ1Q2YXY4U3lJaUNUdV9XY2lDSC0yOUlUUzl1M2kwQ1FnakVvS1VmWkIwbjE0Q2p0THlMOV9wTzRpMU9Nb2l0ZEVCWnQ4WG1HMDRFRmhBMmhKME9UMA?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "Golden Sun",
-      "title": "Game Boy Micro experience is something to behold",
-      "topic": "golden_sun",
-      "url": "https://www.reddit.com/r/GoldenSun/comments/1u4xi8j/game_boy_micro_experience_is_something_to_behold/"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "World Nuclear News",
-      "title": "Podcast: Urenco expansion plans to fuel nuclear growth",
-      "topic": "energy",
-      "url": "https://www.world-nuclear-news.org//articles/podcast-urenco-expansion-plans-to-fuel-nuclear-growth"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "World Nuclear News",
-      "title": "Sweden's Parliament approves reclassification of uranium mining",
-      "topic": "energy",
-      "url": "https://www.world-nuclear-news.org//articles/parliament-approves-amendments-to-swedish-nuclear-law"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "World Nuclear News",
-      "title": "TerraPower\u2019s Natrium reactor begins UK GDA process",
-      "topic": "energy",
-      "url": "https://www.world-nuclear-news.org//articles/terrapowers-natrium-reactor-begins-uk-gda-process"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "World Nuclear News",
-      "title": "Core Power to assess BWXT SMRs for floating nuclear power plants",
-      "topic": "energy",
-      "url": "https://www.world-nuclear-news.org//articles/core-power-to-assess-bwxt-smrs-for-floating-power-plants"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "A Big \u2018Avengers: Doomsday\u2019 Leak Reportedly Arrives, But Its Validity Is Debatable - Forbes",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWWxfeWxRTE1FeXZHUjlGXzZkbkh5ME02YjROVHlEbk9pbXpua0Z5cHVMN1FHYmtGRHktdW9id3ZTN0QwZENDY2ZMUm13WklaYTdKM29jNEk4QVVkMnNlaFJBNF9CYzZ4R3BIQURmRE1ZRUcwbVItcF9aNFh5SE9OaXMxUUZTUlA5U3BMTi1XT3U2UnFUNS1zYVhXd2FzVlU4dWtoRjgyR0hBWnMtc09KaFhOeWtrZkJOeEJQSGt5OW5SY0d5T1Nz?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Rextovy",
-      "title": "FDA updates approval for Rextovy (Naloxone Hydrochloride) (NDA208969)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208969"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Skyrizi",
-      "title": "FDA updates approval for Skyrizi (Risankizumab-Rzaa) (BLA761105)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761105"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Skyrizi",
-      "title": "FDA updates approval for Skyrizi (Risankizumab-Rzaa) (BLA761262)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761262"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.1 - 37 km ENE of Miches, Dominican Republic (~133 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000su76"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "'Avengers: Doomsday' Announcement From Russo Brothers Leaves MCU Fans Angry - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5jZFNnWm92cERQbFptR09LWl9kRWpxNE0xdlVKSXp0S3NRMGZGSzJvYmptNHFHN3gycEhqMlRFNWszdTlTcFVUa1l6czd1blJOTXdkTGVIZy1acnRkUzlhM0FjcVpKY2c?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Marvel makes the Avengers: Doomsday announcement nobody wanted to hear - Bam Smack Pow",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMmc4djBiTndNX0dONlB6amExWnRZc2tQQmZqMll3T2p2a1N3SnlEaEI0TnhOSjlRR1RHRl9GUm9iQkV6X2JmcnNrNjU0QzU5bWN0SFlWV090blZjNWVvY25aNkE2YkJXbnNsMWtXUF9uQ29xaXZMQ1FpRVlxQlhDenl3cHRYV1k2QlZHaDZB?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' Trailer Officially Reveals Savage Hulk, Scorpion & More - MovieWeb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE92SlVrbkFiLXdqRm9ucU1fVkVMc1NXc0lKTy1SNE40aVg5SFA0UjRFdFByaDAxblVxZEUxLTVmZHZnYlVXYjlrd0VfTmsxU3VBbkhnX0Z2ajFCY0tpcUpyVUJqU052VVdfZ3F5bk9ud1RvWVdGM28yZFhR?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland Is Back Swinging in \u2018Spider-Man: Brand New Day\u2019 Trailer - The Hollywood Reporter",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONDJfR3ZyX01URVhVMTRTdUMwRWxFR0x0eDhJV2ZYSHR4VjRTbklrWWxwWVFEZkdfMXRuRnk1Ym5uMVpQa0FCcmpIU2tEMWZaZWt4TjNyNlhCZzdMcGQ3V290QXhJSGhTMDQ3eFJiVW1tdUhoRG1BQVhVc3RpZkcxSGJYSl9qUkgwelhsZWI0ZnpES2N4d0FzNHlETHhnMWJtX0R6ZnBIYzhwWWhw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Launches \"Spidey Tracker\" As Movie Is Confirmed For San Diego Comic-Con Panel - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Ld2F1R25ZVjlsMVc0UG1haFBFUm5vWUpQcWZaeEpZNEtaTnJyZlg4M1lOMXJHSlljTlk1SDd4ZXFTbFV3aG1pODk2eVdRZFlJVlhNZ3RaZ3NJSzVXd3Y3RDZqeHBQLUU?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.4 - 67 km SE of Punta Cana, Dominican Republic (~196 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71520363"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Marvel Confirms Massive \u2018Avengers: Doomsday\u2019 Leak as MCU 'X-Men' Are Officially Retconned - Inside the Magic",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPSTIzUnpmbVNWbTJyd0xRc1p6RlNpQ2UwTmJoanp4d25rdE40MU0zeDN1SGtnYlo4a0ZnYVo3STgtUTdjcXJjRXhIUkdjVEstLXVrUm1KZDJmSzRnenZUNjFvZ2JEeVBVckxIX3JvQU5yYk10WHRCMlZKRWxQSUpHUXNfVTRpdW5NV1Fya3pWUmVGaHRRM2lqeng5dTlQREhFeHNUZmd5UENqU1hfcmhodndiOTJObDVYVWxacVQzTVNHZw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer Gives First Look At Mark Ruffalo\u2019s Hulk - Deadline",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQm55VU92U3hTREt5NkpuaFZ6SkdhV3ZUeXVBSTdlUlN1cU81Zk1JRVhSSmlDUEJVMmhEYnNiUWFLYjVBN0pZaXlkOHZ4QXRka0prX0lVM1hXRTBuM1c1RXRNUnVHemgwWWlBVWVwUlJ6UEUwaTdkRmo5SFE4azNZQXNJWTltY2kxYUJhNlVSNUxzSXhJbUk5alVrVTkwYV9zXzlxag?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "The Odyssey - Official 'Fantastic Voyage' Behind-the-Scenes Video - IGN Africa",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNTUUyblpGRjJJekc3dHE4MWQxcksxd0piOGRJNHU2dlNINlRKNFQtc0VsdU96aWJ0Z2s2eVpHWlNaT2djZC1Ka1Azck83VlE5T1BCWXZmYk1xVjdPMmd4VXk4dm9fSF9ndjlNeUh3MGt4NV9NZDYxNjVVQXo5UWszY0RXN0tyQnozQ01GYm9OeTBDemFEY1VMbVp2amU1VTJtMDlQQzFnSVlGaUlnaDFJUkdWU0xjUGtC?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "The Batman 2\u2019s HD Logo Revealed as Matt Reeves Begins Filming - AOL.com",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1PazB0YWtNSE9ObnFWeG5EOW5QODE3SXdUOUZ3TC1tSGZ3c3FmOHVRaXB2UGJMYzVON0xvZjg2VEtNN3h6djQxbkxERDdyM1M3U2VLa1NTRkx0OHQ4Q3BFNmJJLUFLc3VwVU1ad1JfY0pnaWJoUnR3ck9BVWg5NVk?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "DC Studios Reveals HD Look At The Batman Part 2's Official Logo - The Direct",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcDJDc1RCejFqWE5QeFVsRVdSSFFwNmR0aS1ycGNpVEhRNWV0ekNKMDgtQ3U0dmVORmFuek5wcV9BeXRmZWEzeDRNaVJrMHNsbDRldF9NbVpoQlVZNDhJeXVrbk42YkpvamhUSDJlX0ZHN1U0N0VzTE04S1NFTGpmUw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "The Batman Part II Official Logo Revealed; Jeffrey Wright Teases Jim Gordon Return With New BTS Photo - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBFck9icFBIMk9uWjFQRldsZWEydk1vSHhBNnlPbk1VRm9xV1ViaUhuVzN1UVBsZnJSTEc0UEdyTGJBZG9pNlNpVzFqTlFHS3dQTl85cFBqbDNyUnpmUVFwVEhOeW9fbjA?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Shares New Look at 'The Batman 2' as Sequel Begins Production - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE41VnppUFBVWlgyY2VCVmdwd3JmcE5jQkY0R1JldHBZeXVoVTFBelZNWmYteGJsLUFrT0RhWnBaSHc3ZDRIOVpuWXVZTnFvMTRzdmZQRU9FWm1nZGdwc3lXWG11S25ORzg?oc=5"
-    }
-  ],
-  "digest_last_sent": "2026-06-17",
+  "digest_buffer": [],
+  "digest_last_sent": "2026-06-18",
   "discord_control": {
     "last_id": "1516803501101940894"
   },
   "energy_learn_last_news": "2026-06-15",
-  "energy_learn_last_sent": "2026-06-17",
+  "energy_learn_last_sent": "2026-06-18",
   "energy_learn_seen": {
     "facts": [
-      "baseload-vs-peaking"
+      "baseload-vs-peaking",
+      "why-copper-aluminium"
     ],
     "history": [
       "calder-hall-1956",
@@ -362,6 +122,8 @@
     ]
   },
   "energy_seen_ids": [
+    "ef36f722244fd846",
+    "9f9760ae3950d40c",
     "f7a3b5f033acf8e1",
     "50f4c458db54e2d4",
     "7c3f0a7d3691b355",
@@ -473,414 +235,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "\u201cHe has paid dear, very dear, for his whistle.\u201d\n\u2014 Benjamin Franklin\n\nBenjamin Franklin, a man whose very name evokes the Enlightenment's spirit, penned those words in a letter to Madame Brillon in 1779, during the depths of the American Revolution. He wasn't reflecting on some grand geopolitical maneuver or the intricacies of diplomacy, though he was certainly embroiled in both. Instead, he was recounting a childhood memory, a simple anecdote from his formative years that had, for him, crystallized a profound truth about human nature and the price we pay for our desires. He was in France at the time, a seasoned statesman and a revered intellectual, charming the French court, securing vital alliances and funds for the struggling American cause. Yet, amidst the weighty burdens of war and nation-building, his mind drifted back to a youthful indiscretion, a moment of fleeting joy purchased at too great a cost.\n\nThe anecdote itself is disarmingly simple: as a child, Benjamin was given a handful of coppers. He immediately ran to a toy shop and, mesmerized by a whistle, bought it for all his money. His joy was short-lived. His siblings, upon learning the price he had paid, ridiculed him, pointing out he could have had many more toys for the same sum. The pleasure of the whistle quickly evaporated, replaced by the bitter sting of regret and the realization of his folly. This wasn't just a nostalgic musing; it was a carefully chosen narrative, a pedagogical tool from a master communicator. Franklin was a pragmatic philosopher, an individual who believed in self-improvement and the careful management of one's life. He saw in this childish error a universal human tendency: to overvalue immediate gratification, to succumb to impulsive desires, and to later discover the exorbitant price paid for something ultimately trivial. This reflection came at a time when the nascent American republic was literally paying dear, very dear, for its independence, both in blood and treasure, a struggle Franklin understood intimately.\n\nAnd so, \"He has paid dear, very dear, for his whistle\" transcends its origin as a personal anecdote. It\u2019s a timeless aphorism that resonates across centuries and cultures because it speaks to a fundamental human experience. We all, at some point, acquire our own metaphorical whistles: a coveted job that comes with unbearable stress, a luxurious item that bankrupts us, a relationship pursued with reckless abandon that leaves a trail of emotional devastation. It\u2019s about the opportunity cost, the hidden sacrifices, and the unforeseen consequences of our choices. In a world saturated with instant gratification and relentless consumerism, Franklin\u2019s simple wisdom serves as a poignant reminder to pause, to weigh the true value of our desires, and to consider the long-term price before we eagerly hand over all our coppers for a fleeting moment of pleasure. It's a call for prudence, for foresight, and for a deeper understanding of what truly contributes to a well-lived life, a message as vital today as it was in 1779.",
-      "id": "d9cb1fe016ca3d3f",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Benjamin Franklin",
-      "topic": "wikiquote",
-      "ts": "2026-06-15T07:40:39.368532+00:00",
-      "url": ""
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "ec00c2ff201c6679",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Launches \"Spidey Tracker\" As Movie Is Confirmed For San Diego Comic-Con Panel - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-15T13:40:54.644768+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Ld2F1R25ZVjlsMVc0UG1haFBFUm5vWUpQcWZaeEpZNEtaTnJyZlg4M1lOMXJHSlljTlk1SDd4ZXFTbFV3aG1pODk2eVdRZFlJVlhNZ3RaZ3NJSzVXd3Y3RDZqeHBQLUU?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "1637abf3ec5146fc",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland Called Sony Pictures Boss to Delay \u2018Spider-Man: Brand New Day\u2019 Filming So He Could Star in \u2018The Odyssey\u2019: \u2018A Tough Pill to Swallow\u2019 at First - Variety",
-      "topic": "movies",
-      "ts": "2026-06-15T13:40:54.646191+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNc3VlUTR3d1BvVUg5U0xCZ0xmSHNqMjFjd3NBeUN2dFFwdVRYeUwxRVBLaGxjdVR2SXhTbGFncTdOZS1PdENHaXQzTGZlaW1FT2pXaXYtRXp2dENQWmxXZ01IYlhlcjV4Y2V6WU41M3I0MzZwZFpWWmFGZjdyRWZRLWdJb0VxR2VHNXFRU2NXZGE4amN5UTNtZ0p5T19qbTF3Qk03Tmh4LUpydw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "08ea98f0a64af6dd",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman: Part 2: Matt Reeves shares first set photo as film officially begins shooting - The New Indian Express",
-      "topic": "movies",
-      "ts": "2026-06-15T13:40:56.333712+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNd0FTQXZSZDBzMGdNZ0FPbU5DaTJZRnRZOTJqMDlmMUZfX1h4bjR1QXpZZEZtamVyd2lHU011cXIwVmN5UFhYMjJUV3BCdEkxNFlPby1hZGNPU2tIaU12T3NoaDRackNsbmEtMWJWaWV0VC1fQmZmeGJ3ZG1XUG5UX0otN0NGVEowUlEyQTNySUlGRXE3MFNFYnh3X3FkMmxZQ2JIbXBWSWpNcHpobU4yaWFiR1I5dUh2Z0E5ajNkNkFZOU1WYnM2ZmZCMDRUdnJCaVB4VWc2ckhnZEstNW1NaGJFNDJTSGlfNXJjc2RnZURMTm92T2FYVzVCcDZNYmx6Q19wUNIBkgJBVV95cUxNdVlaeEVZTE9GMXo4V2VIbERmbUlyYjFFTDdqcjlHNzdHQ1FCM3g2X0lWbVNTTENEdlNXWXlNcEtTZzNhUWwwZTFHWHdYOXRmZDRJTGJCcEFVTUkxMXk3akFyTHdWUFZlTVQtM2E4QjBDbzIyMUZ0Z3hhZmxsZzFndElWV3JuTU96THNhbWpmb2dvQmNDdDVleV9yR2RlY0g4eEo3SFE0cXNvcHU4VC1DWVJrcy1JTmw1dEN0elYxTThHQXpOVXJfeEhyVUhEREM5QnkzWnVOYXFJR19Md05JdVdWdHNIeEQ0NUd3UGNtc21EWUd2eENvRVByUmZaTnFOc0lGNlB6bUV6Ym9vekRCU0xB?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "d1aeb603f386b210",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman 2: Sebastian Stan Confirms Harvey Dent Will Become Two-Face in Sequel - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-15T13:40:56.334787+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1DbTVxcUpBNThsZnlOQXZMVDZaM0gyWllVRWdVQnltZmZ2eUNPUzRaeDRBY2kyUkhTS3d5aW9yMFlxekl4Q2hISWxHak5KUlVEenc?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "188a453a380d9a95",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Just Revealed the Very First Shot of 'The Batman Part II' as Filming Officially Begins - Comic Basics",
-      "topic": "movies",
-      "ts": "2026-06-15T13:40:56.335701+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNT1hTLUJvTWVzWXZhNUdya3JXWXVtX0lzRndJZ211WWN2LTM3NWJpQ3ZMSTBNTWhKOHdjTFFoNDhXb200RlZ1SzF2Z09uU3B6M2dManlXSUNXR09jOExiOUFGNFNtdHEwTEVTRldnX0t5UEw1WFVDTFlMbklPZVRuOHFGaXBaX1pfSDBjZWxmRFB3SkYtYVAyTTRSeHlsdHloWF9ONzAwdkpfNkFmeHZ3WVdnRm9GZTFmYjV0QlpyUDNkSzQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "ae432bd36874e7d8",
-      "score": 64,
-      "severity": "high",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA 6 Release Date Update Dropped Ahead Of Trailer 3 - OpenCritic",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:01.475565+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdkpJNzVTNUhBeUpkODdDdklBdnU2NzhsQ0ptUXBTMHhIN0dEcnRPenJIWUtyZV9UMjFJZy1qVTYwRUQ1YjNPUGFPdWpWZXZNYkNTeHVxUVVNb3YtMnFhaGV4MU1QeGc1VXh4RXZwc1VkNWxJVWpQRTdFdDNiRWxKQlc2bW4wcjBYSDJfX2ZxZw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "e7c6d5ed905feff3",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "According to an insider, there is no reason to believe GTA VI will be delayed again - Instant Gaming News",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:01.860271+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOV1VpNFJValY5bE1IMnZEZTk2b0FWWlB2UG50dmRzd2VYU0NCVEdEc0lrS2ZYeTViMEN5SUZzRzFFaDY2S3hPWVdKWFZ3bUh3bk9rMHcyMkRWei13YkJHNFhsQzVvYnhvSUdVZWJXMlo0VWNyRVRDQWZ3OVdyTmdwRU8zNzg5Nm1nR3FNVnBYLXZTdWJqZFpiZGJuMlVwTlMtMWlZYW1QZGh0NUJ2V19fSzBTRVRKRlZsWk1RMzlTTy1reHJEbVNZU0NnbXA?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "2b900ba6b877ee03",
-      "score": 64,
-      "severity": "high",
-      "source": "Grand Theft Auto VI",
-      "title": "Nine Independent Sources Have Confirmed GTA 6 Is Not Getting Delayed - GTA BOOM",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:01.860786+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQa0d0Y2RYdkJHRjIzcnNjWllhSlBTZndiVHliTlRQVllKRWF0dDNaQmh0MFc0UjA0WjZFczhZd0ZRVmxlSjZMWDBQZ1ZSY1dtY0NtdGNhbXJWeVdFWDZ5LUhTT0cyXzB0SG9jdHNSNnpqd0Y1YVdOWDh5YmFZdDE2bEdsVkJlZGN0REdQZ1pSblJIOXAyWm83SzVUMFd4UQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "217492bedb647800",
-      "score": 64,
-      "severity": "high",
-      "source": "Grand Theft Auto VI",
-      "title": "Insider pours cold water on rumors of Rockstar delaying GTA 6 release into 2027 - TweakTown",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:02.067807+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQX2Q5Q21yOXpIUzdUQ3drOWotY0lyZXgzellWNW9KV0xnZExSdXI2TmVtekpUQk5yeWpIa0Zkcm8wR2ZsQ1pkaGJrcjZEN1VVQnF4RjJ5NUNQb0tjRnJZNXdFT3BPSVgzT0ZhTjg4RE9jb0tUazZoQUk2OGh1cnY0T3JlYVhQcU9HTS14M05tQWwyX0YwQ2Foa2gyVnBIUzk1bC1PT3FIaTFPRE1aSXhaUW9LRFlTUzBHZFZYSVRnN0ZuQVFCbVJj?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "bd939cc266a81258",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA 6 Fans Stunned At Gap Between Trailer 2 And Trailer 3 - ScreenRant",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:02.308967+00:00",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE11UUpNYzlnV2ZWX1JVbEhhQzNjUi1MdktJSmtIZVN1SVRTeGRPZk1QbTgxcjloVGxWZ1FMdHpZWkpLVFBEZmpPN3BEQXpnMUNpd2RBdDhmV25FZENWeTJYUHJ2UDFVY05RNDNYb2RJS1JZRkhn?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "9096f303b11a3d9e",
-      "score": 64,
-      "severity": "high",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA 6 Won\u2019t Miss November Release Date According to Popular Leaker - VICE",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:02.309462+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPUW10ZkVkMVVsN3dzc2pqTG1yZU4wZXY5SldDUlhhQlFCdVczTE1mVVV5YXlmMHQ2bHJqV3l4cTdhUVgxYW5oVGZoalNpUGdkSmZRVENyT005LXNLcTR4bFc5c2lQS25hTlBNNGVQVkxaUEtQakdMZ3FvU09uU0pUbU9OckVBdGdKRDZvRmsxYVpOU1kzeVMwSW54TU9YQTg?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "0cd400f8c9097057",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "Sucker Punch Celebrates \"Grand Theft Auto VI\" Delay; \"Ghost of Yotei\" Creative Director: \"We're Still Hungover\" - \u73a9\u5177\u4eba TOY PEOPLE",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:02.543417+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBqNXRTenUxaFBKSkNYVUt6OEtIeTVRNjhXS08xeUhpWVliS2UxSHVtRXFTU21OWDhCY2NGNF94Y2NtRnk1dTByc0pVdFVkUWtq?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "f74f7d18ac5377dd",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "S-Game says GTA 6 did not drive Phantom Blade Zero release delay - Notebookcheck",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:02.544000+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQN215MmFERlV0Q2h5NTNfY095QWRlWTZHTHRZZGFuU2Iycm1McV9CbEZNeXVDeUpUVjR6dHNDMXZzcGU3dFV0NVR2X1NrQnRaWTJON05vRjNSRUI4ektzUHZBNkQ3bWQ0ZUI4VzdCeTJhYzVOX1FmbzJ3UXZtX1lRMTIxRUVWSU4ycUNpcUVxUmxhRWV0OHNPQUhDeVFuSlU3SlRfWFBBMzVGMFl4NVE?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "9fbd02ffe56e3b84",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA 6 finally has a worthy challenger for its November release date - Polygon.com",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:02.544435+00:00",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5JN05pVjJLd2FwbVdsVGJObFNTTjRxOWZBMlNaaS1sdjZrUThOQmJSbjREcUl4N1NlVnZrSkRFUWY0THB3Q09VRG56anEwV3BxYzdaMjVWQVFaSUNzT1Q2MjBTNjN3M0xyWFFHcmRmRW1Hb0l0T0Jz?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "5597581210f627f8",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "This Guy Is Trying to Vibe Code GTA 6 Before Its Official Release - Gizmodo",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:02.544760+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQV0JCczU0V3h2UUVtRWRLS1l3b2NnM3BtejU5clcxODVNYTB5RFJMQ3BTQXl1VlVGc2FKNUx4anZTRlVCUE1qZWxyVVc5TEMxVnFIczJSdVp0Vzd5ZjJ1QXlLQUJyT0FYQ19EbU15SnFxd0MtNFc0TmduVjBFUWVLOUd4bUhfWk1yMVhIa3ZEbnJNbktRR2d5eTlsRGI?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "5ffaa804e863be9f",
-      "score": 64,
-      "severity": "high",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA 6 Trailer 3 is coming soon, and a leak puts the PC version in February 2027 - AltChar",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:02.545078+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPS09UT1RQVjJFdm01MFdhTmFHTkh1eHVneXQxRVliNlhXSU1GSElqOWpsOTlaUlVmT3FCdEJRajZSNnM2ekoybHpxeWU0cHlBYWZ4ckpsdjZIWGp4MWsxN1l5ako0Tlp5Z2prZUdrZGhneDVFd19aUGs1X0FXeE5RT1FJek0xYy1Tc3BsQUs1bXRPYVJzYUZqZUVKYkVwS3pDZGpoZjdBaHlDbEc1MzY5SGV4Um1KWUExV1BxeTVxV1M4RGM?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "59685b83265a4aa5",
-      "score": 64,
-      "severity": "high",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA 6 PC Launch Date Leak Makes No Sense As Trailer 3 Release Is Imminent - autoevolution",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:02.773219+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQVklXZlRBdEhGNGMzZ296dkl2ZzdrME54ZnRPZmQwRWFrdUI1VGYxRHNmNDlMNkNRQ1B3Ti1YREk2U3BnUjZSWGNXaE9sdVMzOW9XZ1lMZnVibm1kV3I1OEt3MEtkd0V3c0w5aWdic1JnN0ZzZmtPdk9HLUpnbWF2Y0t5WmFacVlHX3pQanhTQ2ppSW1FSk9tajduZ2ZFellSLVVUMm9Edy1fTjRRRW91NnMyWHc0enZzay1IQQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "ad9b1f85538694b7",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "Grand Theft Auto VI Delayed Again to November 2026: Rockstar Cites \"Pursuit of Perfection\" as Take-Two Posts Record Quarter - \u73a9\u5177\u4eba TOY PEOPLE",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:03.250373+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1HMjFGYWNLbVpHMEM3azRjdGgzMmlQWkp4NmpoZGY3cVNKcDF2ZGdqbmR4aGl0T0Z2MHFpZ3paSHhNUktsYVVnT1hnVHVWZ1FY?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "ad3ca46a9e6b8c40",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "Testing Grand Theft Auto VI\u2122 First Look Gameplay | PS5 (Concept) Taylor Frankie Paul (pzFKca8k89) - Mshale",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:03.250941+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9jYm4xTzdKYUdZV2VaMGZTX2N0b0JWbFN2TFkyNFQ4TUJzNzJKSk1sRjAxWnFLajBSVXdxcnhxWS1kSUVXUXVtajlRUHpMUzgwVHVKSThFdGdxSjA?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "2997c0219f736c95",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "Grand Theft Auto VI Trailer 2 Reaction Novak Djokovic (bEZVM6gHAj) - Mshale",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:03.251296+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE02cHJZMHVkRGU3SkIwcVpndC1ZckNWd1FlTDRVYWVvSkJVYUFkZEdGaTlOZzdsQTJJZEZKaGFUd1JlYmpNdW1yZHVhckR3d0JwRVNiRGtqSWJVRXc?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "ca082233f20ee47a",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "New Setting Confirmed for Marvel's Wolverine PS5 Game - OpenCritic",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:03.911003+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcTNWT1JZMUF1X19XM29IQXdScDhEak9FRnJBWGowSHUyUE10aWhBZkNKTWg0cUZHQnBxT3Y4eXRGeGpPLXA3blh6Z2hPN2RhWXVpWXFMRHVza2FDTFFrQXduY2g5d25zMkNsRDdBVHNFTk9wdVZQSXRpM0p3a0lES0otczd2R0ktMk9NNFVtOA?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "7e794bfa7aaef965",
-      "score": 64,
-      "severity": "high",
-      "source": "Marvel's Wolverine",
-      "title": "PS5 \"Marvel's Wolverine\" Unleashes Official Gameplay Trailer: \"Marvel's Spider-Man\" Team Delivers Bloody, Brutal Style for Fall 2026 Release - \u73a9\u5177\u4eba TOY PEOPLE",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:03.911485+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1aR0lKSVdpd2tfMmM5c2h5MVFHbHVOX28zMFh0WGI0S2YtazF5XzRELV9KdU4yZnZLcVFuX0ZsTWM5YVRpZG9zWG9NdXNYX2FB?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "e7757b7a1d2b5ba2",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine Confirms Surprising Number Of Playable Characters As Fans Call For The X-Men - GAMINGbible",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:04.327976+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQQjc2Yko2TzJ3aGh0RXd2OW9EMWxZeWxhSDNzZldVaUZRRHEwWFQ2N3VIdkktYnJGUktOMW8xMlZGejVDNlhrcVNrT0gxQUJUNTIyaU9pOEM1WDY2ZU1OcmI1aEdtbU9Rd2NkYThhWjQ2S3k3Ykh4Qm9oNlB3Z0ktMEtWd1NoTkhrczFuS3Fjd1VfMzVOLVVaX3VLclI4bE02WEg0UUsyUEdfeTlHbG5sZlJNeEtuNjhOQmNsM0RWOG9XY2tadVJ3MGtpYlQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "5b3161d29fd5c4da",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine Officially Confirms Number Of Playable Characters - IMDb",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:04.328445+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1XZzEtTjNVYkM2TUxJbnRXOUkwV1pWLXRYV3ZLMTFsRjVMZk53NkdocjRQMHR0Mld2Z2NWZmM1UWhQNEpJaFFWYV9MSEVjajBhMkx0Vk9UUWsxVkIwVGhTYkZLWkJ2OFNn?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "71190dee4b120674",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine Officially Confirms Number Of Playable Characters - ScreenRant",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:04.328767+00:00",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1VcmZYRklUQzh6OG5tbzhaUjhXZGRRdjl0OEV3ZzhpX0xJZXJIbXoyeDhKTHVrVDQ3dzluQm1XQkVhOU4xYzBWbjl6Tzhwa0JPNkRBLXA4dE0yWnlmYmtXVVpwWkdSV3h6LXc3dDJkQmc3ZEZEckRuUm5yVQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "7bbd81c2dea99712",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Love Me Love Me - Official Teaser | Prime Video Marvel's Wolverine (p3Y7jp6EJ4) - Mshale",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:04.329240+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5PVzl6UV9IZXZHZW9MM0oxVHl0bE92cWNhYUNjSUpYQnRtdGFlQmhUMXkyekhwVUQzRnpzeE93eGJLNVFxS3ZHYjdSRFRtZE1id1J6bTlTd1UtNTQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "c245cae18577b127",
-      "score": 64,
-      "severity": "high",
-      "source": "God of War Laufey",
-      "title": "God of War Laufey release date 'revealed' by industry insider - Indy100",
-      "topic": "games",
-      "ts": "2026-06-15T13:41:05.025468+00:00",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5Gd1ctX1piM3Z5empiRmxfTFE2S0ZkVFJrU0pINWI4ek9IQ1FVcDI1dHNkdC16SjVvalVETDNXVDFsQkwwXzdaYXRLV2FoWGcyRkpqSUlJWlNsNWJDNzIxSFlybzE1ZTlOVWNKMDVkZFJ6MzZZTTFsSnFzVVI?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Super Smash Bros. Ultimate - \u5fa9\u6d3b\u306e\u30b9\u30de\u30d6\u30e9 DD\u4f7f\u3044\u307e\u3059 1680\uff5e\u3010\u30b9\u30de\u30d6\u30e9SP\u3011",
-      "id": "a0ebdc644baa3bc1",
-      "score": 68,
-      "severity": "high",
-      "source": "Acola_lui",
-      "title": "Acola_lui is live on Twitch",
-      "topic": "twitch",
-      "ts": "2026-06-15T13:41:07.999006+00:00",
-      "url": "https://twitch.tv/Acola_lui"
-    },
-    {
-      "action": "push",
-      "detail": "My Band - D12\n(because you like Obie Trice)",
-      "id": "4bb60c36c98808af",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-06-15T13:41:11.384863+00:00",
-      "url": "https://www.deezer.com/track/1102401"
-    },
-    {
-      "action": "digest",
-      "detail": "Final, 2026-06-14",
-      "id": "e5adfd5339321ce1",
-      "score": 40,
-      "severity": "low",
-      "source": "Baseball",
-      "title": "Blue Jays 3 \u2013 Yankees 8 (L)",
-      "topic": "baseball",
-      "ts": "2026-06-15T13:41:13.743880+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "Final, 2026-06-14",
-      "id": "4a3f109f62d603a1",
-      "score": 40,
-      "severity": "low",
-      "source": "Baseball",
-      "title": "Dodgers 4 \u2013 White Sox 6 (L)",
-      "topic": "baseball",
-      "ts": "2026-06-15T13:41:13.987464+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 294.95 (was DOP 349.95, -16%)",
-      "id": "4d2291f5a129cfe2",
-      "score": 45,
-      "severity": "moderate",
-      "source": "Nacional",
-      "title": "Nacional deal: Queso Mozzarella De Leche Entera Boar's Head Lb",
-      "topic": "groceries",
-      "ts": "2026-06-15T13:41:53.120979+00:00",
-      "url": "https://supermercadosnacional.com/queso-mozzarella-de-leche-entera-boar-s-head-lb-2195179"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 609.95 (was DOP 749.95, -19%)",
-      "id": "f3737af993034e90",
-      "score": 45,
-      "severity": "moderate",
-      "source": "Nacional",
-      "title": "Nacional deal: Filete De Res Importado (Peso Aprox. 5 Libras)",
-      "topic": "groceries",
-      "ts": "2026-06-15T13:41:53.121624+00:00",
-      "url": "https://supermercadosnacional.com/filete-de-res-importado-peso-aprox-5-libras-2045313"
-    },
     {
       "action": "digest",
       "detail": "DOP 164.95 (was DOP 203.95, -19%)",
@@ -6472,6 +5826,414 @@
       "topic": "learn",
       "ts": "2026-06-18T09:51:10.530029+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "30f74329a46e893a",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Chris Evans confirms the first major spoiler for \u2018Avengers: Doomsday\u2019 even before Its release: \u201cI can\u2019t keep s - Diario AS",
+      "topic": "movies",
+      "ts": "2026-06-18T12:43:21.006460+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQeUpHTmFNLWEzTGpKR2xpZDhreHMtNUVjVjVJVGVpaXdLNDBGdTU0aXljaHlnV2doMzg2ZlB4VHRha2dJUnM5cGJYZkttVC1IeXl2MmtQb1FNU2hzRTBnUFk1U3p4WV9BWndQWHdzdnhjRV92LUpmVVJvU0pJV2JCYzNQS0sxY3MxNW5icEtnbEdVeEE0TDlFb3NkcFhLNU9PUlJrbUFDTHlHQUFSaTc4MDZqYk9QOFFhTmFmQkNxblRFanpULXpfQmFBTlJjM2J1MGxlUEJpeGRIX0tfMU9WS3dXVmJfMmtVNC1HNtIBgAJBVV95cUxNUkJTS0FSeWtyRFJPTGpFVmY1QXJvLXZYWkpSa1FVMzVKTUtTQ2hreE1mdzZFSy1FYklGaDJYdm01UVVmNF9EYV90d3FObzFwMkI4dHAtbUZpVXpIOERUUGVtSm5sczVzV2FOT0VHZGVkdlNXMXVieVZtUUlZdHp6Z1hYdUVmcnE2Vk1XWjF2bW5ZQUEyVnN2VkhiM2pqNldiR0xQV19lMlVQVU9rd0puNnZvOVAzVzRUQXc3ZzVJZW8wb192bEdiZ2hqeThLaXczd0NSY3ZfS1ppSVN3M2YzZnVxNEtVNmhtU0hVZnM1OWgwelBSVklHY0FZR1JMQmNY?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "69e7a1dc721e4053",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday Will Feature 7 Fantastic Four Characters (Confirmed) - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-18T12:43:21.007300+00:00",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1hNmFJQnM4RUFEN291OWVvM0pMY3lMWWxBX2lsSzBJOGJrRXd5bG54THhMNWxlcVE5M1I5bG5OWDE5ck1FQ2dlSHFBWFVmeHlPN3lfLVVGeWJLMkt0cjJjVElxdE9DdDItT0tFMlRnRkhMUC1ySzZoZDV4UFo1Zw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "0159e6d565999faa",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Is Already Breaking Records Before It Even Hits Theaters - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-18T12:43:21.641067+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9EVllNSUczcFpvdFRCWmV0anMzd3A2aEdPQ2xJdWZJcXFscnl3ZWUyQWxQMlc5SUo4eFRYbEZQeHhyOXNEV08tQm9WSzU5VDNVallxZ2J3Zl9fTGItbHU2SExFNWJScjA?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "06bbf0f0b0efa6b7",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Marvel fans think we will see more of Savage Hulk in Spider-Man: Brand New Day thanks to the new trailer - GamesRadar+",
+      "topic": "movies",
+      "ts": "2026-06-18T12:43:21.889782+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPMjJ4MURtUVdHVXlKX0UwZXBKSjd2SkN5cXJTelVIbF9ySm1RYjlIZzdRTlUtZUVOOUMta2lBd3lzX3BYbG02aXVMc1BaOHRJYTNaVEtjNU9BSXFaWl9iUDhvdDY0SUJpUEMzaE0tUVdLSVlDRDdGYlpXdDVyem83ZHhpb2hIRkF3TUFJcUFzOXNxWjdwMWlEcTdkb1Y5b0hwNDVYZVVkTU5hQXFMQzRjelI3Sm9URnh0ekk1R0VhcEFGU1dIcnNjVXhZNUJ4c3doVmxZa2REdV80eTQ5X0pqNVVJd1NyMU9mVlYySkRhY1E?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "1b160afbb6b3542c",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man- Brand New Day: Marvel drops new trailer of Tom Holland starrer, gives a glimpse of battle with Hulk - WION",
+      "topic": "movies",
+      "ts": "2026-06-18T12:43:22.173101+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPWVk5NjA0RkpPWmVGVElFMnZFSEtIQVYwVWVrTDJULWxJR19NZTdGdWJ2OHRESzIxQmsxZHJucGY0dmNvc0ZMU19SclpsaGlYVTNIQUNMZEFPVXM0U2xsQlktMHRaN2ZxdEhjOVduSHJaMjQtMk5xY3Jac3hPUWRlanFWVzhwWUktRjA5d0huUDZDQVpkUF90cERoQk1RMkVZOGVvbDA0ekpBdVc3czRVdTFRNUU3aXo2Tnk1Znh5b1NycTV1eTZ6WF9CY0gzbE9wemZuekV1TU9VWEpHNUV0QUJ5cmFjVnhlUF84NG9GYXBkcjdq0gH6AUFVX3lxTE9UcHJGYlQ1THZQX0k1YzlIcUpRN0pPYmJwYzd5cGJaOFZIZExGeDhSYThvVkRWY1pRczVEQUpWMlhvR2lOUWZSdEFiaTN0RWJKVW5sYUlQcTJCMXBiMklZbzlHNElhbE42SGcxMlo5M3VyTzZNSXYyTUllSWsxbXBvV1hZWnplb3VXX1RxR2twc0V0M0tTZ0FZTEJxY0FBNTJvQ1JBMkcwU0RLc241Nk1Ra1hYNVZGQVV3T1VTWjFpaTFjaERRTGV3cXNvSFZ6MUM5b1F5NlNNR0RoeFBSaklXRU1KZXFpNnplemw0SmlzOEZuZ1B0Y1o3b0E?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "1a06d37334e94e43",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day gets a new trailer - Live for Films",
+      "topic": "movies",
+      "ts": "2026-06-18T12:43:22.498774+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOZi1GNFVERTZqenNyZG9KZlFyWnhQeDVsMGxPZVVpRXVKVHFnWUZmZ1hpUzFEUFhBLW5PUG9JaHFoNVQzd2lvWHpaVGtvSFUwSy1fNTE3OWgwbld0bGRNcjg1X3lWRldLTHgwYTJwWk10ZW95TU1oU2V4UFQ3M1U1bnlhN2tOMDBDNC1B?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "daba1a5fb872c120",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man Brand New Day new trailer: An isolated Tom Holland battles Hulk - India Today",
+      "topic": "movies",
+      "ts": "2026-06-18T12:43:22.690186+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPYjEwYnFkMTZPUm9QSElwQ0dLUklJT2xvMVZTcWdqTm1WRzhHaTF0WGZIN2pCOTd0Tk9rdUtwcTJhWXczWG9ja09fTnlrZk5WLUUyWE5qaU9JQTQ3MkZ3eU9qZVE0Zkdibm9oLVctcldaY3EtYUo3YkVSVmwyUkp5aGpHeDUxcTBzUWtqTTQwSFpTaWVXcTI3ZHV0Z3VEd01COXB2MnhxWmt2WXFNTXU4anNGNjIxXzd5S01rcjYzWEFPQ0hSMG9Na0NRZnNMMk5TSFVj?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "9317182f88ad080b",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man Brand New Day New Trailer: Peter Parker Has Never Been More Alone. Bonus - The Hulk Showdown - NDTV",
+      "topic": "movies",
+      "ts": "2026-06-18T12:43:22.941219+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPLVBQelNzTDJLMnJTX2NKLW0tX2lMNkllc1A1cS15Y0lKbF9UZ0ZQbGxmOE9qNzA5SlJOQk9hTFVtbVBiVkNqbVFzcDBCYzMyM0JNQ0s5dGtvN2lCUGphR3ZlaHJMWHh2SU9pemVKTllkUjRESjVja2NGZjJBVWRScENNcEF6UUI5RTE2eE9sTWhnMjVWUU9uN1Q0bHNfSVJPOTVNczNTaWZTR2RRQ0E3eW5IVTB1TjNQUlNLNzRWQWJLcWJvbUxMNkF2X0ZINnRta2xtc1UyeEl1RXPSAeMBQVVfeXFMTWRDVVpNb1M5aDB6YzRhcFZjczVXQ204RlppNDZmVmNZeDhzbmlPaE1fVDBkZkd2cmNqSEgwdDF6ZTV2RkhHVHpKMEVpMGpIVVd0T0dpbGJyNVFVU1NmMFdpNmFSS1FuZTBjWWx1YUhBVVNpWmc2S0hoVkhKdjdKbFA1TE9xTWc2NmRQU0oyS1hJNUlONjFBNE1iSTN5Ynp5LWZfSVZONXhUR20yN2tyZVdSWUFoTjdsTWVhaTVHdVduQTZuRE55VFJfTnZkSnRvclR3Rzl3MWNtSkZQUklUUzBoSTg?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "4b496835840d76b5",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer Gives First Look At Mark Ruffalo\u2019s Hulk - Deadline",
+      "topic": "movies",
+      "ts": "2026-06-18T12:43:23.211084+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQm55VU92U3hTREt5NkpuaFZ6SkdhV3ZUeXVBSTdlUlN1cU81Zk1JRVhSSmlDUEJVMmhEYnNiUWFLYjVBN0pZaXlkOHZ4QXRka0prX0lVM1hXRTBuM1c1RXRNUnVHemgwWWlBVWVwUlJ6UEUwaTdkRmo5SFE4azNZQXNJWTltY2kxYUJhNlVSNUxzSXhJbUk5alVrVTkwYV9zXzlxag?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "849efb32cc75bf28",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "The Batman: Part II Officially Teases The Court of Owls' Live-Action Movie Debut - Comic Book Resources",
+      "topic": "movies",
+      "ts": "2026-06-18T12:43:24.937851+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9IVVdjRFJ1Y2MwMU4tYkZsUjVEd1B5Q0Z6UzN4UVVkSTFTalZTQm9CRmlNMGRjb01RbWZKV2VUUWtrT0FPbnFKTXBKZlJrUDczUkVBSlh4aGxIWlV5MmFRYWFNY2duS2ozdjhaZ3J1U3BmTDlOVVZlcnBB?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "0eef9c2ba3159967",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "The Batman 2\u2019s Brian Tyree Henry Casting Report Isn\u2019t Winning Over All Fans - Yahoo",
+      "topic": "movies",
+      "ts": "2026-06-18T12:43:24.938418+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNN3BSZTNQZ0hLZGVFWlQyaTlONEpXVUI3Y1hDQ3RwZi1MbUFpa1RuMmhoWXZ0dnk1SmltTzR1ZkdzamtWWEtLdFVZR045aDZRc0Z2c2lsV0tHc1pEakIzVXJvVFdWamMzN01xSERSb2dwaWpidzdmOGZ4clRMOEM5NjM3V1ExVDU4NGdJMkZEeEtvNERTdTB2eQ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "825437e6492ac4fe",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "The Batman 2\u2019s HD Logo Revealed as Matt Reeves Begins Filming - AOL.com",
+      "topic": "movies",
+      "ts": "2026-06-18T12:43:25.169290+00:00",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1PazB0YWtNSE9ObnFWeG5EOW5QODE3SXdUOUZ3TC1tSGZ3c3FmOHVRaXB2UGJMYzVON0xvZjg2VEtNN3h6djQxbkxERDdyM1M3U2VLa1NTRkx0OHQ4Q3BFNmJJLUFLc3VwVU1ad1JfY0pnaWJoUnR3ck9BVWg5NVk?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "46dedec4444e0a86",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "Matt Reeves shares first look at The Batman Part II as the sequel begins shooting - JoBlo",
+      "topic": "movies",
+      "ts": "2026-06-18T12:43:25.169800+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1yR05hY19BMmdfajdZMHFGOUdmckRNVTZDczFibFp5QXoybjFINDBaeFUwUDFzVFJyak5nWThfODFydHZtaXVpZ280X2hpaGFkLU5hQS1BU19TQzJxaXl3ajFB0gFnQVVfeXFMTXF1bWxGNE1CS293ckZCZ0trRm1nWGxuQmh3MGM0aW9pMFVKUWxJYTRnbXhWclJoQU15NGFIdTk3N2hFd0llZlpROVlUQXRvVXNHbnJiVWlHUEdzMl8tZG05d2tkeWJENA?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "a609b62b7500833b",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "DC Studios Reveals HD Look At The Batman Part 2's Official Logo - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-18T12:43:25.418245+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcDJDc1RCejFqWE5QeFVsRVdSSFFwNmR0aS1ycGNpVEhRNWV0ekNKMDgtQ3U0dmVORmFuek5wcV9BeXRmZWEzeDRNaVJrMHNsbDRldF9NbVpoQlVZNDhJeXVrbk42YkpvamhUSDJlX0ZHN1U0N0VzTE04S1NFTGpmUw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "87dfca8171b06d52",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "The Batman Part II Official Logo Revealed; Jeffrey Wright Teases Jim Gordon Return With New BTS Photo - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-18T12:43:25.418908+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBFck9icFBIMk9uWjFQRldsZWEydk1vSHhBNnlPbk1VRm9xV1ViaUhuVzN1UVBsZnJSTEc0UEdyTGJBZG9pNlNpVzFqTlFHS3dQTl85cFBqbDNyUnpmUVFwVEhOeW9fbjA?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "63f0e95ffb45e9d2",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Matt Reeves Shares New Look at 'The Batman 2' as Sequel Begins Production - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-18T12:43:25.419252+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE41VnppUFBVWlgyY2VCVmdwd3JmcE5jQkY0R1JldHBZeXVoVTFBelZNWmYteGJsLUFrT0RhWnBaSHc3ZDRIOVpuWXVZTnFvMTRzdmZQRU9FWm1nZGdwc3lXWG11S25ORzg?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Je Sais Qui Je Suis - Florent Pagny\n(because you like Patrick Fiori)",
+      "id": "adbcbf0009fd3305",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-18T12:43:32.005155+00:00",
+      "url": "https://www.deezer.com/track/3455829021"
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-06-17",
+      "id": "6ae78f1de3260c9c",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Blue Jays 3 \u2013 Red Sox 0 (W)",
+      "topic": "baseball",
+      "ts": "2026-06-18T12:43:34.824579+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-06-17",
+      "id": "7057689fa94d1db4",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Yankees 10 \u2013 White Sox 5 (W)",
+      "topic": "baseball",
+      "ts": "2026-06-18T12:43:34.986129+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-06-17",
+      "id": "f046a4c0c87f381f",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Dodgers 5 \u2013 Rays 4 (W)",
+      "topic": "baseball",
+      "ts": "2026-06-18T12:43:35.113250+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 314.95 (was DOP 369.95, -15%)",
+      "id": "266b794d0586dd33",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Carne de Pavo Molida Butterball para Tacos 16 oz",
+      "topic": "groceries",
+      "ts": "2026-06-18T12:44:14.206674+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/carne-de-pavo-molida-butterball-para-tacos-16-oz-2235297"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 109.95 (was DOP 139.95, -21%)",
+      "id": "3ec83aabbf815b8a",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Cerveza Bebida Estrella Galicia Sin Gluten Lata 330 ml.",
+      "topic": "groceries",
+      "ts": "2026-06-18T12:44:14.207384+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/cerveza-bebida-estrella-galicia-sin-gluten-lata-330-ml-2239375"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "b75bf9c69823684f",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "What changes are needed to help rollout of advanced nuclear technologies in UK?",
+      "topic": "energy",
+      "ts": "2026-06-18T12:44:24.853311+00:00",
+      "url": "https://www.world-nuclear-news.org//articles/what-changes-needed-advanced-nuclear-technologies-rollout-uk"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "5201802c10763074",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Sites selected for Korean nuclear new build",
+      "topic": "energy",
+      "ts": "2026-06-18T12:44:24.853736+00:00",
+      "url": "https://www.world-nuclear-news.org//articles/sites-selected-for-korean-nuclear-new-build"
+    },
+    {
+      "action": "push",
+      "detail": "000<br />ABNT20 KNHC 181149<br />TWOAT <br /><br />Tropical Weather Outlook<br />NWS National Hurricane Center Miami FL<br />800 AM EDT Thu Jun 18 2026<br /><br />For the North Atlantic...Caribbean Sea and the Gulf of America:<br /><br />Offshore East Coast of the United States (Remnants of Arthur):",
+      "id": "79b8988b2713aa77",
+      "score": 95,
+      "severity": "critical",
+      "source": "Weather",
+      "title": "Weather alert: Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-06-18T12:44:24.981257+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "ce464b5907a1746d",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.8 - 3 km N of Guaymate, Dominican Republic (~90 km away)",
+      "topic": "quakes",
+      "ts": "2026-06-18T12:44:37.977168+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr2026168002"
+    },
+    {
+      "action": "push",
+      "detail": "Water break! A few sips now keeps you sharp.",
+      "id": "c22c0dcac7b50769",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-18T12:44:42.695657+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Limit daily salt to under 5 grams (about one teaspoon) to help control blood pressure. (Source: WHO)",
+      "id": "2d4dcc171e0a3bd2",
+      "score": 60,
+      "severity": "low",
+      "source": "Health",
+      "title": "Health tip",
+      "topic": "health_tip",
+      "ts": "2026-06-18T12:44:43.627976+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "In the ancient world, where the Aegean Sea, with its countless islands and treacherous currents, served as both highway and graveyard, there existed perils beyond the storm and the reef. Among these, few were as insidiously captivating, as exquisitely fatal, as the Sirens. Not monstrous leviathans of the deep, nor ravenous beasts of the land, but creatures of sublime, deceptive beauty. Their true form is debated by scholars and poets \u2013 some speak of bird-women with iridescent plumage and human heads, others of mermaid-like figures, half-woman, half-fish, rising from the waves. What is undeniable, however, is their instrument of destruction: not tooth or claw, but a voice. A song of such unearthly sweetness, such perfect harmony, that it promised to unlock the very secrets of the cosmos, to reveal the deepest desires of the human heart, and to transport the listener to a realm of pure, unadulterated bliss.\n\nThe drama of the Sirens lay in their irresistible allure. They did not chase their victims, did not ambush them in the manner of pirates or sea monsters. Instead, they waited, perched on their rocky isle, their voices carrying across the sun-dappled waves. Any sailor who heard that song, even a faint echo, was immediately gripped by an inexplicable compulsion. All reason, all caution, all instinct for self-preservation vanished. The oarsmen would drop their blades, the helmsman would abandon the rudder, their minds singularly focused on reaching the source of that divine sound. And as they drew closer, the song intensified, each note a silken thread drawing them inexorably towards the jagged cliffs that ringed the Sirens' lair. There, upon the bleached bones of countless forgotten sailors, their ships dashed to splinters, their bodies forever silenced, the Sirens would continue their lament, ever hungry for the next doomed listener.\n\nIt was Odysseus, the wily king of Ithaca, a man renowned for his cunning and his resilience, who would finally confront this ancient menace and live to tell the tale. Warned by the sorceress Circe of the Sirens' deadly power, and having already navigated the perils of the Lotus-Eaters and the Cyclops, Odysseus understood the unique nature of this threat. He knew that physical strength was useless, that even the sharpest sword could not parry a song. His strategy, therefore, was one of both deprivation and experience. He ordered his men to plug their ears with beeswax, rendering them deaf to the enchanting melody. But for himself, he chose a different path. He commanded his crew to bind him, hand and foot, to the mast of his ship, no matter how much he pleaded or struggled, so that he alone might hear the Sirens' song and survive the encounter.\n\nThe passage past the Sirens' island was a crucible for Odysseus. As his ship approached, the air shimmered with the unearthly music. He heard it all: the promise of home, the secrets of the gods, the siren call of glory. His mind reeled, his body strained against the ropes, his eyes wild with desire to join them on the shore. He begged, he pleaded, he threatened his men, but they, deaf to his pleas and steadfast in their obedience, only tightened his bonds. The human drama lay in his profound suffering, the exquisite torture of having the greatest desire of his heart offered, only to be denied.",
+      "id": "7c821b1a9e3514a0",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The Sirens and their deadly song",
+      "topic": "learn",
+      "ts": "2026-06-18T12:44:49.489046+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "On this day\n1967: American musician Jimi Hendrix burned his guitar on stage at the end of a performance at the Monterey International Pop Festival in California.\n\nFeatured: Forever (Mariah Carey song)\n\"Forever\" is a rock and roll and pop song recorded by American singer Mariah Carey for her fifth studio album, Daydream (1995). Columbia Records released it to American radio stations for airplay on June 18, 1996, as the album's fifth single. The lyrics, written by Carey, are...\n\nTechnology\nEnable multi-factor authentication (MFA) everywhere it is an option; it stops most automated account hacks. (Source: CISA)",
+      "id": "3032c3ed1898824e",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Daily learning",
+      "topic": "learn",
+      "ts": "2026-06-18T12:44:50.494767+00:00",
+      "url": "https://en.wikipedia.org/wiki/Forever_(Mariah_Carey_song)"
+    },
+    {
+      "action": "push",
+      "detail": "\u201cIt is time to be old, To take in sail: \u2014 The god of bounds, Who sets to seas a shore, Came to me in his fatal rounds, And said: 'No more!\u201d\n\u2014 Ralph Waldo Emerson\n\nRalph Waldo Emerson, a figure whose very name conjures images of Concordian tranquility and profound thought, uttered these lines not from a serene perch, but from the precipice of his own mortality. Born in 1803 into a lineage of New England ministers, Emerson was destined, it seemed, for a life of intellectual pursuit. He was a man steeped in the Enlightenment's grand traditions, yet equally a harbinger of American individualism, challenging the very institutions his ancestors had upheld. By the time these words formed on his lips, the world had spun through extraordinary transformations. The Industrial Revolution had irrevocably reshaped society, bringing with it both unprecedented prosperity and stark social inequalities. The American experiment, still relatively young, was grappling with its own internal contradictions, soon to erupt in the Civil War. Emerson himself, a spiritual and philosophical architect of his age, had witnessed the rise of abolitionism, the expansion of the frontier, and the dawn of new scientific understandings that threatened old theological certainties. He had wrestled with personal grief, the loss of his beloved first wife and then his young son, experiences that undoubtedly deepened his contemplation of life's transient nature. This wasn't simply a poet's musing; it was the quiet surrender of a formidable mind to the inevitable currents of time, a poignant acknowledgment that even the most robust intellect eventually encounters its boundaries.\n\n  The context of Emerson's declaration, \"It is time to be old, To take in sail,\" speaks volumes about the man and his era. He had spent a lifetime urging others to chart their own course, to \"trust thyself,\" to embrace self-reliance and the unfettered spirit. Now, the metaphorical ship of his own life, having traversed vast intellectual oceans and weathered many storms, was being called back to port. The \"god of bounds,\" a resonant classical allusion to Terminus, the Roman deity of borders and endings, was a powerful image for an age still deeply rooted in classical education and symbolic language. This wasn't a sudden, dramatic pronouncement, but rather the culmination of years of observation, reflection, and, no doubt, the physical realities of aging itself. His later years were marked by a gradual decline in his memory and intellectual acuity, a cruel irony for a man whose mind had been his most potent instrument. The \"No more!\" was less a cry of despair and more a quiet acceptance, a recognition of the natural cycle of things, even for those who had championed boundless possibility. It was the wisdom of a man who had not shied away from life's complexities, but had sought to understand them, to articulate the ineffable.\n\n  And why does this seemingly personal sentiment resonate so profoundly with us today, a century and a half later? In an age obsessed with eternal youth, with pushing boundaries and defying limitations, Emerson's words offer a profound counterpoint. They speak to the universal human experience of aging, of confronting our own finitude, of the necessary act of surrender.",
+      "id": "61acead529948240",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Ralph Waldo Emerson",
+      "topic": "wikiquote",
+      "ts": "2026-06-18T12:44:56.091183+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "What: Copper conducts electricity superbly and is used in homes; long overhead lines use aluminium because it's much lighter and cheaper.\nWhy it matters: Lighter wire means fewer and cheaper support towers over hundreds of kilometres, even if aluminium conducts a bit less well.\nWhy you should care: It's a daily engineering trade-off \u2014 performance versus cost and weight \u2014 visible in the lines overhead.\n(Source: IEEE)",
+      "id": "936080ed12095ff0",
+      "score": 60,
+      "severity": "low",
+      "source": "Energy learning",
+      "title": "\u26a1 Today's spark \u2014 Why wires are copper and aluminium",
+      "topic": "energy_learn",
+      "ts": "2026-06-18T12:44:56.526656+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Ends Thursday 25 June (in 7 days). Tap for the academic calendar (PDF).",
+      "id": "5ef29c4515827c5e",
+      "score": 62,
+      "severity": "moderate",
+      "source": "ITSC",
+      "title": "ITSC: Aplicaci\u00f3n Pruebas POMA y Psicom\u00e9tricas",
+      "topic": "itsc",
+      "ts": "2026-06-18T12:45:01.026110+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/05/Calendario-academico-2026-2-MAYO-AGOSTO-_-Actualizado_.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Do you see that blue blob to the lower right of the image center? Astronomers think that it shows where a massive star exploded as a supernova whose light reached Earth 1,700 years ago. The image combines optical data from the PanSTARRS telescopes in Hawaii (background stars in...\n(c) X-ray: NASA/CXC/UCLA/Z. Zhu et al.; ESA/XMM-Newton; Optical: PanSTARRS; Radio: MeerKAT; Image Processing: NASA/CXC/SAO/L. Frattare and P. Edmonds Text: Cecilia Chirenti (NASA GSFC, UMCP, CRESST II)",
+      "id": "a6b681a2ad3d79e9",
+      "score": 60,
+      "severity": "low",
+      "source": "NASA APOD",
+      "title": "APOD: Possible Supernova Remnant in Galactic Center",
+      "topic": "apod",
+      "ts": "2026-06-18T12:45:04.836525+00:00",
+      "url": "https://apod.nasa.gov/apod/image/2606/sgrc_lg.jpg"
     }
   ],
   "f4_history": [
@@ -6544,7 +6306,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-13-19-JUN-DE-2026-ESCENARIO-B.pdf",
   "fuel_last_pdf_hash": "ae670879fa8033736dfb39d8d8165a100cf1ca299cd8559e978132c494580ca8",
-  "fuel_last_prices_seen_at": "2026-06-17T21:27:00.927229+00:00",
+  "fuel_last_prices_seen_at": "2026-06-18T12:44:40.253134+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7102,6 +6864,8 @@
       "997e525f302628c6"
     ],
     "Nacional": [
+      "dc9b66af95ea4985",
+      "e9753a42167a71c7",
       "286bc3e6c8f507e3",
       "dc0f83e345cf2a1e",
       "8e9b16ad16ddd7de",
@@ -7178,7 +6942,7 @@
     "gothic_and_mystery:1064": "2026-06-13",
     "novels:1400": "2026-06-13"
   },
-  "health_tip_last_sent": "2026-06-17",
+  "health_tip_last_sent": "2026-06-18",
   "holidays_sent": [],
   "ignored": {
     "4071c13d0b9dc18b": {
@@ -7232,13 +6996,14 @@
     "d1291b97df844b44"
   ],
   "itsc_sent_ids": [
+    "1a1f311b66d385ba",
     "5a89cf511570e508",
     "fd64320b1c8294eb",
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "medicine",
-  "knowledge_last_sent": "2026-06-18T3",
+  "knowledge_last_category": "mythology",
+  "knowledge_last_sent": "2026-06-18T4",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7260,6 +7025,7 @@
     "medicine:Walter Reed and the conquest of yellow fever": "2026-06-14",
     "mythology:Marduk and the creation in the Enuma Elish": "2026-06-16",
     "mythology:Pandora and the jar of evils": "2026-06-14",
+    "mythology:The Sirens and their deadly song": "2026-06-18",
     "philosophy:Augustine and the Confessions": "2026-06-13",
     "philosophy:John Rawls and the veil of ignorance": "2026-06-16",
     "philosophy:The paradox of the Ship of Theseus": "2026-06-14",
@@ -7279,7 +7045,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-06-18T09:49:39.553980+00:00"
+    "ts": "2026-06-18T12:43:19.067402+00:00"
   },
   "launch_seen_ids": [
     "a24af622a80bb043",
@@ -7296,10 +7062,26 @@
     "9cf78ee44cb96c21",
     "7621aad01d0821be"
   ],
-  "learn_last_sent": "2026-06-17",
+  "learn_last_sent": "2026-06-18",
   "life_dashboard_last_week": "2026-W24",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "9adf294993fe0aa2",
+      "cf045455e14b33a8",
+      "d5ad709200a3ac99",
+      "5edb8bad52fed114",
+      "2fc94bdec0849249",
+      "cff8fd62e5e691e8",
+      "9d3b891061ebab53",
+      "c162edd414f78dda",
+      "d7c908ca5a392e4c",
+      "d69edd4b6d1ee39b",
+      "ef9661ab07766079",
+      "916535f7daa7e26c",
+      "6cd3808f77d1458d",
+      "85b97222565a5cf0",
+      "27923f9aeb491ee6",
+      "c5ec18dbea541e73",
       "66a3ed6402e20169",
       "4118b337b012caac",
       "8eed3ed8c1245ecd",
@@ -7383,23 +7165,7 @@
       "52f2fc15fa11a0df",
       "d759a8d5f8eef2f0",
       "3e59651a3d03c4c1",
-      "f93b738669236285",
-      "cb09271ec2d6fb47",
-      "e4d1ed054c70e5e8",
-      "c0046ea1b520d8c2",
-      "972981cb6c850384",
-      "57dc8810d465c0b8",
-      "28e40c161b149106",
-      "289ec9155e776322",
-      "3339ee073d51e1a1",
-      "860379a5d1c9a79c",
-      "a86343eb5193faf6",
-      "7d78898fe155b149",
-      "b1f9500893c7e8bc",
-      "bc7142ca9b7ca3bb",
-      "1fc018ef3c6bfd45",
-      "a0e8c5ceb180644e",
-      "c8698bcc8e2b5ec1"
+      "f93b738669236285"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7805,6 +7571,14 @@
       "8d403c0a925d6fe7"
     ],
     "The Odyssey": [
+      "7f8bd10235bec302",
+      "29900b05616db90a",
+      "4e7c7e5dde26425c",
+      "d0e4142a779fdc48",
+      "d87c1201dd5b9f4c",
+      "66b400e71f5d18b2",
+      "36815071d9f97d4e",
+      "a186c790c04daac9",
       "63fa5da70274b394",
       "a67b559727d3ca5d",
       "b792f2b671aab097",
@@ -7896,15 +7670,7 @@
       "53937f52b05d8110",
       "571c4cdca9a4f1ad",
       "d4612bfd2df66f4b",
-      "a6ffc554810d7cd1",
-      "5d874933704fd1b3",
-      "9ba89ca6b7cda111",
-      "52d81eee78259e2e",
-      "c4625828b615a96f",
-      "2b5dde80aafdea33",
-      "9dc4cbba1c39714b",
-      "a584d87a24c6bdfc",
-      "079deafe2ccbfb2b"
+      "a6ffc554810d7cd1"
     ]
   },
   "movie_release_dates": {
@@ -7968,7 +7734,8 @@
     4794265,
     4794264,
     12246,
-    5962948
+    5962948,
+    6815
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8278,6 +8045,15 @@
       "payload": {
         "name": "Guillaume Ferran"
       }
+    },
+    "fe4c9d0ac894333a": {
+      "applied": null,
+      "created": "2026-06-18T12:43:32.005134+00:00",
+      "kind": "artist",
+      "label": "Florent Pagny",
+      "payload": {
+        "name": "Florent Pagny"
+      }
     }
   },
   "onamet_active": {},
@@ -8367,6 +8143,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "eb4195a5c8f52929",
     "45359e577a96d693",
     "d7a8c94a468460a6",
     "9f61e0a2da038413",
@@ -8468,177 +8245,177 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "deals": {
-      "last_data": "2026-06-18T09:50:30.693985+00:00",
+      "last_data": "2026-06-18T12:43:59.183018+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "energy": {
-      "last_data": "2026-06-18T09:50:42.492476+00:00",
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_data": "2026-06-18T12:44:24.853044+00:00",
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "fda": {
-      "last_data": "2026-06-18T09:50:31.171255+00:00",
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_data": "2026-06-18T12:44:14.451920+00:00",
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-17T21:27:00.927253+00:00",
+      "last_data": "2026-06-18T12:44:40.253152+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-17T21:24:50.598574+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "fx": {
-      "last_data": "2026-06-18T09:50:56.293439+00:00",
+      "last_data": "2026-06-18T12:44:38.668769+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "games": {
       "last_data": "2026-06-15T13:41:05.025187+00:00",
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-18T09:49:54.770512+00:00",
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_data": "2026-06-18T12:43:33.756576+00:00",
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-17T21:26:27.734349+00:00",
+      "last_data": "2026-06-18T12:44:14.206083+00:00",
       "last_data_count": 251,
-      "last_ok": "2026-06-17T21:24:50.598574+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "movies": {
-      "last_data": "2026-06-18T09:49:48.416732+00:00",
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_data": "2026-06-18T12:43:26.995359+00:00",
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "music": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-18T09:50:43.210114+00:00",
+      "last_data": "2026-06-18T12:44:25.790537+00:00",
       "last_data_count": 50,
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-18T09:50:55.546540+00:00",
-      "last_data_count": 46,
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_data": "2026-06-18T12:44:37.976904+00:00",
+      "last_data_count": 39,
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-18T09:49:51.449495+00:00",
+      "last_data": "2026-06-18T12:43:29.121037+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "weather": {
-      "last_data": "2026-06-18T09:50:42.614900+00:00",
-      "last_data_count": 8,
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_data": "2026-06-18T12:44:24.981016+00:00",
+      "last_data_count": 2,
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-18T09:51:05.881451+00:00",
+      "last_data": "2026-06-18T12:44:42.695069+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-18T09:49:39.553980+00:00"
+      "last_ok": "2026-06-18T12:43:19.067402+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "164979"
+    "last_full_window": "164980"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8650,8 +8427,11 @@
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
   "watchdog_failing_since": {},
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-06-18|12"
+  ],
   "weather_seen_ids": [
+    "51c69aa408ab4162",
     "7c237051dfbc5f49",
     "084234307d178ba1",
     "79cc2f7c3a709fd8",
@@ -8693,12 +8473,13 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "writers",
-  "wikiquote_last_sent": "2026-06-18T1",
+  "wikiquote_last_category": "activists_thinkers",
+  "wikiquote_last_sent": "2026-06-18T4",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-14",
     "activists_thinkers:Helen Keller": "2026-06-16",
     "activists_thinkers:Mother Teresa": "2026-06-14",
+    "activists_thinkers:Ralph Waldo Emerson": "2026-06-18",
     "activists_thinkers:Susan B. Anthony": "2026-06-13",
     "innovators_artists:Henry Ford": "2026-06-15",
     "innovators_artists:Ludwig van Beethoven": "2026-06-17",
