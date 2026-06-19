@@ -66,7 +66,8 @@
     824503,
     824912,
     823044,
-    824748
+    824748,
+    823448
   ],
   "baseball_results_seen": [
     822804,
@@ -154,24 +155,6 @@
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE45THlTUXZ6TXpWS1gtMk9INEpGZ1ZnVFNCc0RpTndZQ1VIbk9DUnUyRlhWZ1plVkw3Z3BxcW1RZl9YNU1JUWo0bTZ4STNmdTdtbURUR2xIOWdFRnpSWWZWYUIxdEpRNEE?oc=5"
     },
     {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer Gives First Look At Mark Ruffalo\u2019s Hulk - Deadline",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQm55VU92U3hTREt5NkpuaFZ6SkdhV3ZUeXVBSTdlUlN1cU81Zk1JRVhSSmlDUEJVMmhEYnNiUWFLYjVBN0pZaXlkOHZ4QXRka0prX0lVM1hXRTBuM1c1RXRNUnVHemgwWWlBVWVwUlJ6UEUwaTdkRmo5SFE4azNZQXNJWTltY2kxYUJhNlVSNUxzSXhJbUk5alVrVTkwYV9zXzlxag?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "The Batman Part 2 Star Reveals Reduced Role in Sequel - The Direct",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZVld3Z1dyMWswa0t3NjdBdTE1OGpFY0VWQ2FqekMyT1A5T1hIMmRZZW1EMjJhUUwwRk42aFFsMU93MHF3ZjlqTzFiRlltN3JfUmR2Tjc4Q29zRjFMVEhtSHdwQXVCR1FTMk1hQ2hNSnJGekE0VHc?oc=5"
-    },
-    {
       "detail": "DOP 1,795.00 (was DOP 2,495.00, -28%)",
       "preserve_detail": false,
       "score": 45,
@@ -188,6 +171,24 @@
       "title": "Chris Evans Officially Reveals Captain America's Fate in 'Avengers: Doomsday' - Collider",
       "topic": "movies",
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBLcEtTT2xGT3I1UEdoU25vOHc1UnJXQmZIY3Y1S2FqdnFPM01CS2pDQTlmb2k2WDZjUGotUEtidFlZckZXZWltb3o0M0xNcU40VFlWY0tyRFZRUnl3dEFsRng3YVpaUzVRVllJRGJqemE3cm5CSzlYTXh4QQ?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Does \u2018Spider-Man: Brand New Day\u2019s\u2019 Newly Revealed Character Confirm Sadie Sink Is Playing Jean Grey? - IMDb",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBzU2lRSXp0TjQ3eVViX25GNngwRFRmRG41MTJfdDBPN1ZFeHpvZ3JJVDJFbk1sWE5fQWk3SzhtM2VSMkp3dDhOUEpUbWZJWG1YWjVfT0pITy1tNUlxS05IVUV0c2N1QXc?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Batman Part II",
+      "title": "Colin Farrell Confirms The Penguin's Role In The Batman Part II - IMDb",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4wRlVnN1k4ZFNsZmZSZUFXMDFodWw1STM1ME1qRW1GOTBBMVNVN3ZzNjRabldRSHZ0V0sxOXFmU1NNWHBzemQxYU85WXU4cjMzcG9vTUl5aFFRRlZGME1MQUFGT2JuU2M?oc=5"
     },
     {
       "detail": "",
@@ -387,246 +388,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "f1210d57cb3b727f",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u201cSpider-Man: Brand New Day\u201d stars Tom Holland and Zendaya were seen again together on the red carpet in Madrid, Spain to kick off the movie\u2019s press tour. Earlier this year, Zendaya\u2019s stylist Law Roach confirmed that the pair have gotten married. (\ud83d\udcf8: Spider- - facebook.com",
-      "topic": "movies",
-      "ts": "2026-06-16T02:07:25.059909+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQX3lxZlJjOHpTZ3FHNElzNDAzY1JrN3U2dmVzdDZ4RmpiaUZMVTllX21YZnNFQWJOTGhXcFh4RWRKZ1JCTlc4S0ZiVFJWNjVaLUhkYUZaaVRhbkdUZUlzWTZMYkhpc2cwMjczbG0zVUE4Y2EzekxpdTQxUG5lcGVHc0FTcjkyX25JUlBhZFRVRk5hVFBXN0Z5eEVBTFFqUDk5VF9kNlR3ems3VWh3X3N3TVZsOTc4TE9CdG5qYXRRSDI4ME5XZUlIMElxUkVWdVUxLWg5Wk40OA?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "1df2ba41e3a6d251",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' First Footage Has Fans Stunned Over Peter Parker's Heartbreaking New Reality - Yahoo Creators",
-      "topic": "movies",
-      "ts": "2026-06-16T02:07:25.061185+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNaDh1ZEY5aHVFLUwtY3VQUUpLZWYtU25TZ3FVbVczZTQyNGxjdkRCVU1Dc3dVNFhqU1dqblljblZpSllXZEVCTTQtcnZrUm9qbENnVHduNmFmTmcxN3RLOVplbGhIdzdBV2pxejFvTHhWUzk4c19ZcVUyUXNCSmhtNi0zSzZWaThES25ESkJFZ2dCZXkzNy1fOWJ0c3Ffc0xNU1RnNHRPbm1ydWQ5eEZBQW9Temd1M1JLbW1OQnM4VjBHbUZqYi04aEdzMy1jaEJRQk1MWjE2akNZRVR1U1FWZ3VRcm5YSzVVUENCWU5tcw?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "2cabb2afaf901678",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day confirmed for San Diego Comic-Con - JoBlo",
-      "topic": "movies",
-      "ts": "2026-06-16T02:07:25.062203+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5UNlZQMmc1ZTlHblgybnl3NU1sM3RWWmdKaU43aGFQVXBibTJodjlPNE41TmdUN0U1bjRkbUZvdjdidXBlYXNibF8yUGNMZVdaNS1raVloVWpJcmtjRmxxSHVtWlQ4THVC0gFuQVVfeXFMTkhUeDBHY2hIdjRqcEljRjNIX2pLdkJ2MDZLdTY3VnR2ekZMUVc5UXhCS25Ibzgxa3FWc3ZGT2R0R3NWSHRZcEJ4QWRWd2FEajdlRC13V1hJd2dhejdESDI1SW1oRXBpY3B4RFBYUUE?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "870c1b970664660d",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Second Trailer Reportedly Leaks With Spoilers - Newsweek",
-      "topic": "movies",
-      "ts": "2026-06-16T02:07:25.063486+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdzhkYk1haHdSR2RDbkg2NFhKdlB6MmRTSGZOOXhPY2gwZWk1U3pTZ2xicFZ1Z3YyXzJ2UVVvRlQtNEx6NWxEczVHS1JuVmZ1NUlCR0NPWUdOQ3BQUDdWaGZGZDZINjVkYm9mRl9uTzFfZlZWMG5DY3lYdVl5VmY5RTd0cVVyaFgtZkRtSGRscjJUckxDbGZXSVNqdUlOTU1CdjVVVnRnUVhaWjlObjVZbnpPb1VCUjlXSmdiVkJOb0Zvc2s?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "655c187ffed70398",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Scrapped Idea Would Have Been Adorable - Yahoo",
-      "topic": "movies",
-      "ts": "2026-06-16T02:07:25.064327+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQTDNoOFVnNU9fekhsd2R1Q1lVdmRXSUt0NDlKZkcxcXhlRHE1ZGFfZ20tWFZKV3BKdnVpVWJHeU9feFNCUG1WTWw3WEkwTURFZUtHNmlOM2lTbGhubWpKMkFzemFfWkRYT3ROcmt2TFg1NUpRWUlueVlyZjAyMmQwTnpqNVJhRHNJNUlfcDB4LVpZQ0k0SU05VDZaNFU?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "cfd09852fa78d56b",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland Called Sony Boss to Delay \u2018Spider-Man: Brand New Day\u2019 for Christopher Nolan\u2019s \u2018The Odyssey\u2019 - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-06-16T02:07:25.065618+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVW5BTjc1OWFuWUtuVm9HdWxZcGlHUlFiaGRuMF9nc2E0VEdqOVdFSXE5SmxQY1lJWE1saHk0ampzVjh4NTJjUDlKX0xfb0NxUjRBNXozQUxzb1NSS2FEWHQ5dWtRVWladnQ2a1hsTzVFeFZVMFc2ckRCSzd3SGtVNkRVWDVpUGI1UG8tYlY0dWs1QmFVdEFXODZ0UWVieUtmOEhWYkUyVnEzZ2Z3ZGtkRHNVU1BZbzlOWHc?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "b79141f1bf86d02c",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "DC Studios Reveals Official The Batman 2 Logo As Matt Reeves Shares New Look At Filming - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-16T02:07:26.760792+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5JUTkweDJOd3haY3hlYnJMZ0MyVy1wZzkxc0hycU9Md2FsaVBFc1pVbTB1OEVnNUEtcHlzOEdaQk5qamVhemVaQWpzZXQwUTdJWm1nYXdLdFJ1Mm1jQldVZktVczMtTHc?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "59f3adbb4653f303",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "DC Studios Reveals HD Look At The Batman Part 2's Official Logo - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-16T02:07:26.761770+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcDJDc1RCejFqWE5QeFVsRVdSSFFwNmR0aS1ycGNpVEhRNWV0ekNKMDgtQ3U0dmVORmFuek5wcV9BeXRmZWEzeDRNaVJrMHNsbDRldF9NbVpoQlVZNDhJeXVrbk42YkpvamhUSDJlX0ZHN1U0N0VzTE04S1NFTGpmUw?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "f07b94881b7ea3c1",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II Official Logo Revealed; Jeffrey Wright Teases Jim Gordon Return With New BTS Photo - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-16T02:07:26.762559+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBFck9icFBIMk9uWjFQRldsZWEydk1vSHhBNnlPbk1VRm9xV1ViaUhuVzN1UVBsZnJSTEc0UEdyTGJBZG9pNlNpVzFqTlFHS3dQTl85cFBqbDNyUnpmUVFwVEhOeW9fbjA?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "3652acab0152d15b",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "DC Studios Reveals Official The Batman 2 Logo As Matt Reeves Shares New Look At Filming - ScreenRant",
-      "topic": "movies",
-      "ts": "2026-06-16T02:07:26.763305+00:00",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBEUDRfRHJ5VGhJT2FxN05jMHRZRmhFNnI2N0NYZkVVOWNLWm1pZnhPcmtaamZyWVZSQUhlaUI2Z2tBd3ltcEJ4RktlZ3dGU2IxeWhlTUU3SUlIaW5lNUxUZ2Nsb1RpbmFTeHJyZ2w2RQ?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "84dc458806f81723",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Just Revealed the Very First Shot of \u2018The Batman Part II\u2019 as Filming Officially Begins - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-16T02:07:26.764115+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBrZjNZaGUyYVBDdVExcUw3cjV0bWtJbWxQelluYThmS0VpQUpITXFfd0lGa2huNmgwUmFHelBwemxPSXBJYjlfcF9ZdHluZ0lweW9FLUk4Uml3b3UzY1dNRDZGOGFRX3M?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "4e86cf581abba046",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Slideshow: The Batman: Part II - Who's Who in Matt Reeves' DC Sequel - IGN Nordic",
-      "topic": "movies",
-      "ts": "2026-06-16T02:07:26.764914+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE52MHRWdjRrVXk1N3MyVDRyS0QzQVpPQ1dQbUZEeVBiU284MkVRejgwTWRsT0VDUHNkWVozZl80b25sS3E1c3pZZkl0cEVRRFAzdWZiNTRmcXVueEE?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "32af184556e2b59c",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman 2 Director Matt Reeves Announces Filming Start With New Photo - AOL.com",
-      "topic": "movies",
-      "ts": "2026-06-16T02:07:26.765659+00:00",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB1OHdzMEhaRVJHX08xZ0loeVcxYWZJVWEzWmo4NWlEN3M3RldqSVNwakxDZWF4ZjBjQXh4Qk1sdlBmSEZSWWNmUmhLcUxYcmpFVV9wRl80cmZTSFE0emdLelVEbVJkX2RYaTRQOVJuVTNsRFhJVXZ2TGVTOXo3QQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "5a9c7e9cdd4596ea",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "Robert Pattinson says the delay of The Batman 2 production is to thank for his stacked 2026 filmography - GamesRadar+",
-      "topic": "movies",
-      "ts": "2026-06-16T02:07:26.766684+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQSzA5aW4wdVg5bTJIWnV4ZktXbGh5NXVHUGFCTjdzUVF1REd0R0hUUW1famRpeWNpdFA3V0Vtc3FTN3FFVG1oRnN2SWVobUN6TzBYQWlKWVB4a2JFcWgxQmRGNF9rX3RDd3hieWlvdUp3WFBPb1FnYVdUNnBnZ09LS3pyRDRGbmJDbFh2TlFaSHRoSWxTblZ1a2VTdWh1MTdndUplUDllTUlmMHlpMGs1RjBVSGdYdzgwUGEzQ0szQzQ4RGptSEF2Mzd3eFRVaC1jTXBWNUM0MmlER1UxVEZ5UXhtaWhqVXBrODhV?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "000<br />ABNT20 KNHC 152321<br />TWOAT <br /><br />Tropical Weather Outlook<br />NWS National Hurricane Center Miami FL<br />800 PM EDT Mon Jun 15 2026<br /><br />For the North Atlantic...Caribbean Sea and the Gulf of America:<br /><br />Northwestern Gulf of America:<br />A trough of low pressure lo",
-      "id": "b7d0b4ec19e872ac",
-      "score": 95,
-      "severity": "critical",
-      "source": "Weather",
-      "title": "Weather alert: Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-16T02:08:32.477506+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "Visible pass at 4:26 AM - max 55deg, SW to NE. Look up!",
-      "id": "f6fbee27a0cf408a",
-      "score": 62,
-      "severity": "low",
-      "source": "ISS",
-      "title": "ISS pass overhead",
-      "topic": "iss",
-      "ts": "2026-06-16T02:08:48.223087+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "The year 1967 found humanity locked in an ancient, brutal struggle with a microscopic foe: variola, the smallpox virus. For millennia, smallpox had stalked the globe, a capricious executioner that claimed the lives of perhaps a third of its victims and left the survivors scarred, often blinded, and forever marked by its terrifying passage. Entire civilizations had been ravaged, and its devastating spread had even played a cruel role in the colonization of the Americas. Attempts at control, from the early, dangerous practice of variolation \u2013 deliberate infection with a mild form of the disease \u2013 to the groundbreaking work of Edward Jenner and his cowpox-derived vaccine, had offered glimmers of hope. But while affluent nations had largely pushed the disease to the periphery, smallpox remained endemic in vast swaths of Asia and Africa, a constant threat that could, and often did, erupt into new outbreaks, reminding the world of its persistent menace.\n\nIt was against this backdrop of pervasive fear and recurring tragedy that the World Health Organization (WHO) launched its Intensified Smallpox Eradication Programme. This was no mere vaccination campaign; it was an audacious, unprecedented logistical and scientific undertaking. At its helm was a diverse cast of characters: Dr. D.A. Henderson, an American epidemiologist with a quiet determination, who led the global effort from Geneva; legions of international advisors, often young and idealistic, who ventured into remote villages; and, most crucially, hundreds of thousands of local health workers, who were the true foot soldiers in this biological war. They faced daunting challenges: civil unrest, impassable terrain, extreme climates, cultural skepticism, and the ever-present threat of the disease itself. They travelled by jeep, by boat, by donkey, and on foot, carrying fragile vials of vaccine in iceboxes, their mission to find every last case and contain its spread.\n\nThe strategy employed was revolutionary in its simplicity and effectiveness: \"surveillance and containment.\" Instead of trying to vaccinate every single person on Earth, a near-impossible feat in many regions, the teams focused on identifying outbreaks, vaccinating everyone in the immediate vicinity, and tracing every potential contact. This \"ring vaccination\" approach was like building a firebreak around each spark of infection. Compelling human dramas unfolded daily. There were harrowing journeys into war zones, where truce lines were momentarily respected for the sake of the vaccine. There were health workers who stayed for weeks in remote communities, building trust and patiently explaining the importance of the shots. There were moments of despair when a new outbreak was discovered, and moments of triumph when a village, once ravaged, finally received its immunity. This wasn't just about medicine; it was about human connection, perseverance, and a shared belief in a better future.\n\nThe last naturally occurring case of smallpox was recorded in Somalia in 1977. Three years later, in 1980, the WHO officially declared smallpox eradicated \u2013 the first, and to this day, only human disease to be completely wiped out from the face of the Earth. The implications were profound. A disease that had killed hundreds of millions in the 20th century alone, that had blinded, disfigured, and terrorized generations, was gone.",
-      "id": "dc7a733a304c770e",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The global eradication of smallpox",
-      "topic": "learn",
-      "ts": "2026-06-16T02:08:54.828502+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Super Smash Bros. Ultimate - Late night games with andrik!! English Espa\u00f1ol",
-      "id": "50d3b9283379d2e9",
-      "score": 68,
-      "severity": "high",
-      "source": "mkleossb",
-      "title": "mkleossb is live on Twitch",
-      "topic": "twitch",
-      "ts": "2026-06-16T07:14:45.221595+00:00",
-      "url": "https://twitch.tv/mkleossb"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "feff0f3616cc4f5b",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' Officially Confirms Its Major MCU Villains - Collider",
-      "topic": "movies",
-      "ts": "2026-06-16T07:42:58.943716+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQ3I0aDhmYUM0Q2t5a0VfVEJ1dGl6Y1N5NFBMWmpTUUJidjZjcUlwQ1NKOWNuam14MS1wbDJhTFlRU0NSam1JcFNKNVVOUm5scDlWMFJKVGZKQ2xvLWhQcllpY3NBNzhtalhUSmNxWFFpUFRkZlBoaUFjY09TMmFQbXRfME0?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "49f62338f787bd1e",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Sony Officially Responds To Spider-Man Brand New Day Trailer 2 Leaks - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-16T07:42:58.944741+00:00",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBnU3p0anVfaWdQZ0xiaFJnbldqN1BoQ3FRNGlrR1dlYnpEaHBvM3JFX1c0REhXVHFGWHdSbnBObG5JQnFBam1IR2ZmVDFlNEFBUEc1WkxDeGg3Vmc2Yms3b1pLdGJ3OEU1S3VMX2VtM3JnOVF5UlR1eEM5RG1kQQ?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6386,6 +6147,246 @@
       "topic": "wikiquote",
       "ts": "2026-06-18T21:16:54.275354+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "685797baf3cc761d",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday's New Trailer Rewrites The Rules Of The MCU - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-19T02:08:55.318506+00:00",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Yb1NoenNoTmNKNWVQbVpFblZPWDFDWTlqVDlxMWxoMmhVcUlhVndPNUxtbHBRVnVNN2pJSjZYV0U3MUR3aTVEb3FoZndsWlY3alpLeXFpWkw2WVVPQ0IyU2RoVHpJZWI3RmhHUmxNSHdWRVU2cHE0SA?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "7c1f4c1a5e061272",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "'Spider-Man: Brand New Day' starring Tom Holland has posted the best U.S. first-day presales for any film in years. Read more below. - facebook.com",
+      "topic": "movies",
+      "ts": "2026-06-19T02:08:56.218378+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMFB3Y2pjXzBLcXNZcUM1bldqWkhoMDhENlM0NDBqWG4yekZWc0J6a0FzcnNDa2ZoMHloR3pLZDRUbmtlNXlhOUUyNHpBV1hzTWpMYzBzbzBjMDRTMnJzV3FiRVZZc1lyR1Z5TG1yNFc5b2JnQkJndzVjOVhpdFl3SmlMdk9qc3UtUTROaFlHT0E0LV9US0RkVlFyMmNXc2tSOWQ4Szg1VlZBSV9EaFJqRWpQNFRpM192ZzFtUXYwWV9yLVJQdmJjdHEtUU5NUFdtdHZtNA?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "814c477f010f33c0",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "'Spider-Man: Brand New Day' Drops Action-Packed New Trailer Featuring Tom Holland, Mark Ruffalo, and Sadie Sink - FanBolt",
+      "topic": "movies",
+      "ts": "2026-06-19T02:08:56.417379+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOT1pqdENmM1VxbDJRUlpxZ21wdEVIWWYxNC1SWm1rQmVrS2RwV3dDbHM1WjdjMVBLQ0llblFBME9FQ25wREhQY3pGUUwzLXRkQ0JtcTNMckIyY0lXdzJhS1ItUG9PRGdVWFZMMnJMRGFxZk5DSWlfLVJzV0llbjdWa0xaSk5WNEthVENyc2NpM01Rd3hvNVBtd0s1UXk4U0pOX0xud0ZKYWtyRU5JeF91U3g4MVBsUzFFRllGLWNEQnk5RGcyZXI2dVZlQjE2TmRpbUI2MA?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "e0aa6d145b8eb8c0",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Video New 'Spider-Man: Brand New Day' trailer debuts during global tour - ABC News - Breaking News, Latest News and Videos",
+      "topic": "movies",
+      "ts": "2026-06-19T02:08:56.691667+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5sblRWVGU3Y2JWdUgzWVd0VUtrN292MHBKMTZ6cnJVZl9VTmxNRmhVXzRsOGxGRkVpdktDUUlkRGpqbzN0aXdxenR3Y0Q?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "ee9a77346d796750",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day's latest trailer officially confirms X-Men character - Digital Spy",
+      "topic": "movies",
+      "ts": "2026-06-19T02:08:56.979471+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTEoxWkxFWDFxVnVkUUFwanNmTUV6aVZpYk1RTENQSDRqUUhEUUhHWW9FeXdYRDVWZWI0LUhSUXE1bHNaZ05IUVF5dFY3Q0V6N2dWSG1iRG1kZWZMTlFVZmpHTU5wb2JDbUp3TVEwTlZBTkZ6ajBoSGZZa0ItRVM4Zk5UXy1rOWc1aGdWY18tVEZLeGRTMGc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "cc0520c55b80f5c2",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "'Spider-Man: Brand New Day' starring Tom Holland has posted the best U.S. first-day presales for any film in years. - Deadline",
+      "topic": "movies",
+      "ts": "2026-06-19T02:08:56.980056+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbUp1RzA3dl9wMTRjWHIzbW9kd3ljRXZBc0dvemNodm8xNkpueDRudVVUeEpKcmN2U0R2eVBxeUhobE9NRzRVSlo3VzhpTWV3eEZHZ2N3UWNxTXZoQkRuM19VRV9ObnZLanhTQmRld0kwcjM0Y19PNDRtQ0tyZC16cXBHak1zNFU2?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "f04216e6e6b982dd",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019: Every Easter Egg in the New Trailer - ScreenCrush",
+      "topic": "movies",
+      "ts": "2026-06-19T02:08:57.171567+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOWjFrY3ZNcGhoY0ttTEZva2NRcWp4S3cxU3ByMTNfcENfZTRWWDJsTWlUZ0txX1lyRU5CVk1LNDZ6YV91b1pBRlFRV0FpcWdIQW0teFl1Q2EwbWE4Y0FhcXRFNDZTUndSdnJjcGFqRFZfNkt2bGVOZDBydVQyQmk3UlFQYV9LNmxRS2JSOUNpRDVDUQ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "f82c8649e6504037",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "SPIDER-MAN: BRAND NEW DAY Director Urges Fans to Watch It \"As If It\u2019s The Last Spider-Man\" Movie as He Confirms SHANG-CHI 2 is Still Happening - GeekTyrant",
+      "topic": "movies",
+      "ts": "2026-06-19T02:08:57.395563+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPUnU0T2pmYVdsRENTMGltbHBFMVB4ZG9zSHY0MG1BakJEY3oyV0NXWjdNQ2hRTkhDbC1nVXVPUndnNGdnUU5nVU5OR2FQSDBPSWNEaHNaaFlSLTdiUmZySzV0UWNKdjZVV1FGczJEUzBYRk9qaDNXcllHQXRlY250NS01aUNaaXdHb25hX2g4aEFOQUxJb29YQ19qYzFPUGFXQUU3ektndXF3SEN3UzFlOGdQWmVzOEp2ZHdnazJYRFpUMnZfRjVqa2hNYmQxV3RucDZ6eG0zaEg0ODItUHdPS1J4cHVXM09HQmdVWkRKejRyVVZyaVIya1Rn?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "0fd4d2d64d4024af",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Does \u2018Spider-Man: Brand New Day\u2019s\u2019 Newly Revealed Character Confirm Sadie Sink Is Playing Jean Grey? - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-19T02:08:57.396178+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBzU2lRSXp0TjQ3eVViX25GNngwRFRmRG41MTJfdDBPN1ZFeHpvZ3JJVDJFbk1sWE5fQWk3SzhtM2VSMkp3dDhOUEpUbWZJWG1YWjVfT0pITy1tNUlxS05IVUV0c2N1QXc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "21d86aba7546371a",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Is Already Breaking Records Before It Even Hits Theaters - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-19T02:08:57.396647+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9EVllNSUczcFpvdFRCWmV0anMzd3A2aEdPQ2xJdWZJcXFscnl3ZWUyQWxQMlc5SUo4eFRYbEZQeHhyOXNEV08tQm9WSzU5VDNVallxZ2J3Zl9fTGItbHU2SExFNWJScjA?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "ebbecd19603a09bc",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "The Batman Part II First Look: Matt Reeves Shares Sequel's First Shot - But Whose Body Is That? - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-19T02:08:59.385773+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9JTm5ZOFdkU01pS3RseDFzazRkcmVEMnlkbTFDY0hnU3cxME8xSEpOb25rc0N3MnZKbWRyaFd2X0VWNEtlcG9rNkRaTWxqUQ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "954d42c144d31d12",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "DC Studios Reveals Official The Batman 2 Logo As Matt Reeves Shares New Look At Filming - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-19T02:08:59.650132+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5JUTkweDJOd3haY3hlYnJMZ0MyVy1wZzkxc0hycU9Md2FsaVBFc1pVbTB1OEVnNUEtcHlzOEdaQk5qamVhemVaQWpzZXQwUTdJWm1nYXdLdFJ1Mm1jQldVZktVczMtTHc?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "9ff6d7c765dbc589",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "THE BATMAN \u2013 PART II Shares Official Logo - Yahoo",
+      "topic": "movies",
+      "ts": "2026-06-19T02:08:59.650819+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNb3pTRXBTVllJNnZfdVA1RkxfNUR3RXlxc1J6bjRmTFB6dE4yTy1UQ19aRDQ3aC1meWcxclFEOVVsMllPbk9ERnA4emFFUlJTOUkwd2VsZ3ZyblVaX2dqbEU0Vi0tdmhlUGlPQWxDY0FQQzU3QVRRMzdiZ0JhZ2RuakVzRWJLb2FNMV83aDExb0tucWotR3l1NEVRbHBSQQ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "402f1a24887c6ed8",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Colin Farrell Confirms The Penguin's Role In The Batman Part II - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-19T02:08:59.651307+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4wRlVnN1k4ZFNsZmZSZUFXMDFodWw1STM1ME1qRW1GOTBBMVNVN3ZzNjRabldRSHZ0V0sxOXFmU1NNWHBzemQxYU85WXU4cjMzcG9vTUl5aFFRRlZGME1MQUFGT2JuU2M?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "cc602597c76934f9",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "\u2018The Batman: Part II\u2019 begins filming as networks cancel shows - MSN",
+      "topic": "movies",
+      "ts": "2026-06-19T02:08:59.651656+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOUkJjWlFRNjhZUnhialRjZGZoLTN4VTVWOUk4T3huU1k0QVVNQURKZUxLeFJCZjZBV1ZkOVltR3RmWVRUX0dVOHhkMWxjOWdqQVg5Y3JfQkNteklZS1dOUmxLdlkyS2NMdHpYeFYtQmk2amx3RmhYTFkwd1RqMnVzTVpTWl9ZbUtzQnlYUTM4NXhRLXdVcVJNWVprV1VWcE9LdjZyNnZUazNlQ05QbmFwTVVJMlp6QkNxLUx0WXZ6R053XzhaV2Y4VlViMWFXZ1piOWRUYk0xZm1XWXo1MFppQmlUV25jVjRHdGduRzg1aVZZUQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "\ud83c\udde9\ud83c\uddf4 Juan Soto \u2014 2 HR vs Philadelphia Phillies",
+      "id": "7e9fc909370b2bb7",
+      "score": 64,
+      "severity": "high",
+      "source": "Baseball",
+      "title": "Baseball: Juan Soto",
+      "topic": "baseball",
+      "ts": "2026-06-19T02:09:08.259418+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "000<br />ABNT20 KNHC 182343<br />TWOAT <br /><br />Tropical Weather Outlook<br />NWS National Hurricane Center Miami FL<br />800 PM EDT Thu Jun 18 2026<br /><br />For the North Atlantic...Caribbean Sea and the Gulf of America:<br /><br />Offshore the East Coast of the United States (Remnants of Arth",
+      "id": "09ea13d5ee7ca399",
+      "score": 95,
+      "severity": "critical",
+      "source": "Weather",
+      "title": "Weather alert: Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-06-19T02:10:03.538866+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "THIS ONLINE TOURNAMENT WAS STACKED",
+      "id": "e69e8393d277c167",
+      "score": 62,
+      "severity": "moderate",
+      "source": "MKLeo17",
+      "title": "MKLeo17 uploaded a new video",
+      "topic": "youtube",
+      "ts": "2026-06-19T02:10:19.604712+00:00",
+      "url": "https://www.youtube.com/watch?v=BxzaMYPe1Yg"
+    },
+    {
+      "action": "push",
+      "detail": "The air in the late 19th century crackled with a new kind of energy, a promise of light and power that would forever transform the human experience. At the forefront of this nascent electrical revolution stood two titans, men whose names would become synonymous with progress and, for a time, bitter rivalry: Thomas Edison and George Westinghouse. Edison, the Wizard of Menlo Park, had already captivated the world with his incandescent light bulb, a delicate glass sphere that banished the flickering gaslights of old. He championed direct current, or DC, a steady, unidirectional flow of electricity that had its undeniable advantages in simplicity and direct application for early electrical devices. Westinghouse, a visionary engineer and industrialist, arrived on the scene with a different proposition, one that would spark a heated and often venomous debate: alternating current, or AC.\n\nThe fundamental disagreement between these two giants stemmed from a basic principle of physics: how to efficiently transmit electricity over long distances. Edison\u2019s DC system was limited by voltage drop; power plants needed to be located every mile or so to maintain sufficient voltage for homes and businesses. This meant a sprawling, inefficient network of power stations, each serving a relatively small radius. Westinghouse, however, saw the potential of AC, which could be easily transformed to higher voltages for long-distance transmission and then stepped down again for local use. This dramatically reduced the number of power plants required and opened up the possibility of electrifying entire cities, even rural areas, from a central generating station. The inherent efficiency and scalability of AC were clear to Westinghouse and his brilliant engineer, Nikola Tesla, who had developed the groundbreaking AC induction motor.\n\nWhat began as a technical debate soon devolved into a full-blown propaganda war, a public spectacle designed to sway opinion and undermine the opposition. Edison, a master of public relations and a fierce protector of his inventions, launched a relentless smear campaign against AC. He painted it as inherently dangerous, a lethal force that would electrocute anyone who came into contact with it. He funded grisly demonstrations where animals \u2013 dogs, cats, even a circus elephant named Topsy \u2013 were publicly electrocuted with AC to illustrate its supposed deadly nature. He even lobbied for the first electric chair to use AC, hoping to indelibly link Westinghouse's current with capital punishment. This was a dark chapter in Edison's otherwise brilliant career, a testament to the lengths to which commercial rivalry could push even the most revered innovators.\n\nDespite Edison's desperate attempts to discredit it, alternating current ultimately prevailed. The advantages of AC in terms of efficiency, cost-effectiveness, and scalability proved too compelling to ignore. The World's Columbian Exposition in Chicago in 1893, famously \"lit up\" by Westinghouse, served as a stunning demonstration of AC's power and potential, showcasing a dazzling spectacle of light that captivated millions. The Niagara Falls hydroelectric project, completed a few years later, further cemented AC's dominance, proving its ability to harness immense power and transmit it over vast distances. The War of the Currents wasn't just a technical battle; it was a clash of wills, a dramatic struggle between entrenched innovation and revolutionary progress.",
+      "id": "c57d9261dc9650b7",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The War of the Currents: Edison versus Westinghouse",
+      "topic": "learn",
+      "ts": "2026-06-19T02:10:26.217598+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cThe desert grows: woe to him in whom deserts hide ...\u201d\n\u2014 Friedrich Nietzsche\n\nThe voice of Friedrich Nietzsche, a philosopher often misunderstood, echoes across more than a century, his words sharp and unsettling, particularly this stark pronouncement: \"The desert grows: woe to him in whom deserts hide.\" To truly grasp the weight of this statement, we must first journey into the mind of the man himself, a figure of profound intellect and equally profound suffering. Born in 1844, Nietzsche was a classical philologist before turning fully to philosophy, a brilliant academic who, even in his youth, displayed a restless spirit and an unsettling capacity for introspection. His life was a constant battle against ill health \u2013 crippling migraines, failing eyesight, and a litany of other ailments that would plague him until his mental collapse in 1889. He was a solitary figure, often isolated by his radical ideas and his physical infirmities, finding solace primarily in long walks through the Swiss Alps or along the Italian Riviera. It was in this crucible of intellectual intensity and physical torment that his most challenging and influential works were forged, works that sought to dismantle the moral and philosophical foundations of Western thought.\n\nThe context of \"The desert grows\" is deeply intertwined with Nietzsche's broader critique of modernity and what he perceived as the creeping nihilism of his age. Europe in the late 19th century was a continent in flux, grappling with the seismic shifts brought by industrialization, scientific advancement, and the decline of traditional religious belief. The certainties of the past were eroding, and in their place, Nietzsche saw a vacuum, a spiritual emptiness that he metaphorically termed \"the desert.\" For him, this wasn't a physical wasteland but an internal one, a loss of meaning, purpose, and values. He believed that the Enlightenment's emphasis on reason, while liberating in some respects, had also stripped humanity of its vital instincts, its will to power, and its capacity for genuine self-overcoming. \"Woe to him in whom deserts hide\" is a dire warning, a prophesy against those who fail to recognize this internal desolation, those who allow their own inner landscape to become barren, devoid of creativity, passion, and the courage to forge new values. He wasn't advocating for a return to old dogmas but for a radical re-evaluation, a self-creation that could fill the void left by crumbling traditions.\n\nToday, Nietzsche's ominous pronouncement resonates with startling relevance, perhaps even more acutely than in his own time. We live in an era characterized by unprecedented connectivity yet often profound individual isolation, by an overload of information yet a frequent scarcity of meaning. The \"desert\" he spoke of can be seen in the pervasive anxieties of modern life: the digital echo chambers that reinforce existing biases, the relentless pursuit of superficial validation, the erosion of deep engagement in favor of fleeting distractions, and the existential dread that can accompany a life devoid of genuine purpose.",
+      "id": "b2d5ca69d25dc426",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Friedrich Nietzsche",
+      "topic": "wikiquote",
+      "ts": "2026-06-19T02:10:31.644465+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6467,7 +6468,7 @@
     "Gasolina Regular": 315.7,
     "Kerosene": 307.9
   },
-  "fx_last_rate": 58.572626,
+  "fx_last_rate": 58.63194,
   "fx_last_zone": "within",
   "fx_week_baseline": {
     "rate": 58.629474,
@@ -7156,8 +7157,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "science",
-  "knowledge_last_sent": "2026-06-18T7",
+  "knowledge_last_category": "technology",
+  "knowledge_last_sent": "2026-06-19T0",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7190,6 +7191,7 @@
     "science:The discovery of superconductivity": "2026-06-14",
     "science:The discovery of the neutrino": "2026-06-16",
     "technology:The Haber-Bosch process and synthetic fertilizer": "2026-06-14",
+    "technology:The War of the Currents: Edison versus Westinghouse": "2026-06-19",
     "technology:The dynamo and the generation of electricity": "2026-06-13",
     "technology:The invention of the integrated circuit": "2026-06-16",
     "theorem_older_than_pythagoras": "2026-06-12",
@@ -7200,8 +7202,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-06-18T23:12:36.840250+00:00"
+    "ok": 46,
+    "ts": "2026-06-19T02:08:52.313615+00:00"
   },
   "launch_seen_ids": [
     "a24af622a80bb043",
@@ -7222,6 +7224,20 @@
   "life_dashboard_last_week": "2026-W24",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "cacdbb2f478b8bd2",
+      "45f1020bc246c448",
+      "3adde01d4fc0c78f",
+      "43375c5cfac6de33",
+      "d2bf006beb1235c8",
+      "4a2f341071228799",
+      "13fbe8cafe4da443",
+      "c982d7c4555afc4f",
+      "b1f9500893c7e8bc",
+      "b283e15c69cf3ad7",
+      "1ae19510f327aa81",
+      "7e199180bf7fb5e7",
+      "002d2d2b6f81ab55",
+      "b24cbd7bfb2d23e9",
       "ad612d69998cd949",
       "3980e4793fd2212c",
       "fc5a3353fad0e2e5",
@@ -7307,21 +7323,7 @@
       "f2157e9afb617fd1",
       "2fdd27fabd663cd5",
       "0eeacd70e07809c2",
-      "08da9fdbf50224ca",
-      "4df06811a425dd11",
-      "c1bec6bd7a0996e6",
-      "ad236ed1fc88ca5d",
-      "32bcaddd19cfec53",
-      "e217dde2da868aa7",
-      "9bb0b3ba9cca9a08",
-      "890a698e907501a9",
-      "cacd3aa896388c32",
-      "99d878edf84bafad",
-      "067c6e14823779fd",
-      "425f4e2852f7e267",
-      "597c64ee41072198",
-      "449910f3a882812c",
-      "effb4f95e0113f90"
+      "08da9fdbf50224ca"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7727,6 +7729,20 @@
       "b73acda86e5b0769"
     ],
     "The Odyssey": [
+      "e40be21a70e15248",
+      "57319ff36c710816",
+      "2fe945c97f8c2859",
+      "48420bce46ec0837",
+      "7d61651127cfd8f5",
+      "815c0fbe4246d5f6",
+      "6461fe11354ba28b",
+      "d1b448bdb5f592fb",
+      "289dbb1731b257ff",
+      "5ec72566a8ccd4a5",
+      "0634ca1ceefe770a",
+      "5cbc317fee432860",
+      "b588434170a6822d",
+      "8665f8d3bd0619fc",
       "5d19d9f692150356",
       "f006e50307a6af32",
       "827d520d9af02325",
@@ -7812,21 +7828,7 @@
       "c477f39ac3fb4e58",
       "ecdb0953521b50ee",
       "0d6a53713c983506",
-      "09234e5d31e67981",
-      "c2edaf64f30e4d93",
-      "f2079c53d3135b17",
-      "71da27263fb0b142",
-      "d4ca1b74ccca1dd8",
-      "549fa9730e000e0d",
-      "0c89bf57e22116cc",
-      "e59e27d7826490e9",
-      "734e8770c24193d4",
-      "d7cb90f916d6e4bc",
-      "6c85819117d00a65",
-      "846cf2a7ff0ab80d",
-      "6aa73b57f2baa5ec",
-      "b7fb789628e5cd0c",
-      "5a81ea1ec35d6657"
+      "09234e5d31e67981"
     ]
   },
   "movie_release_dates": {
@@ -8431,47 +8433,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "deals": {
-      "last_data": "2026-06-18T21:16:00.818086+00:00",
+      "last_data": "2026-06-19T02:09:53.749180+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "energy": {
-      "last_data": "2026-06-18T21:16:25.556674+00:00",
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_data": "2026-06-19T02:10:03.426618+00:00",
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "fda": {
-      "last_data": "2026-06-18T21:16:14.105610+00:00",
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_data": "2026-06-19T02:09:54.048831+00:00",
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "fuel": {
       "last_data": "2026-06-18T21:16:41.340878+00:00",
@@ -8479,17 +8481,17 @@
       "last_ok": "2026-06-18T21:15:04.463348+00:00"
     },
     "fx": {
-      "last_data": "2026-06-18T21:16:39.909293+00:00",
+      "last_data": "2026-06-19T02:10:17.495683+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "games": {
       "last_data": "2026-06-15T13:41:05.025187+00:00",
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-18T21:15:20.465759+00:00",
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_data": "2026-06-19T02:09:07.855917+00:00",
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "groceries": {
       "last_data": "2026-06-18T21:16:13.810649+00:00",
@@ -8497,111 +8499,111 @@
       "last_ok": "2026-06-18T21:15:04.463348+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "movies": {
-      "last_data": "2026-06-18T21:15:13.465227+00:00",
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_data": "2026-06-19T02:09:01.575149+00:00",
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "music": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-18T21:16:26.270207+00:00",
+      "last_data": "2026-06-19T02:10:04.523573+00:00",
       "last_data_count": 50,
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-18T21:16:39.199936+00:00",
-      "last_data_count": 39,
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_data": "2026-06-19T02:10:16.784652+00:00",
+      "last_data_count": 43,
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-18T23:12:41.239503+00:00",
+      "last_data": "2026-06-19T02:09:04.075126+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-18T23:12:36.840250+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "weather": {
-      "last_data": "2026-06-18T21:16:25.666153+00:00",
+      "last_data": "2026-06-19T02:10:03.538574+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-18T21:16:44.164352+00:00",
+      "last_data": "2026-06-19T02:10:20.613565+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-18T21:15:04.463348+00:00"
+      "last_ok": "2026-06-19T02:08:52.313615+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "164983"
+    "last_full_window": "164984"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8613,13 +8615,9 @@
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
   "watchdog_failing_since": {},
-  "water_slots_sent": [
-    "2026-06-18|15",
-    "2026-06-18|18",
-    "2026-06-18|12",
-    "2026-06-18|21"
-  ],
+  "water_slots_sent": [],
   "weather_seen_ids": [
+    "b083c48d4b41c180",
     "6389f910788acc00",
     "51c69aa408ab4162",
     "7c237051dfbc5f49",
@@ -8663,8 +8661,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "leaders",
-  "wikiquote_last_sent": "2026-06-18T7",
+  "wikiquote_last_category": "philosophers",
+  "wikiquote_last_sent": "2026-06-19T0",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-14",
     "activists_thinkers:Helen Keller": "2026-06-16",
@@ -8683,6 +8681,7 @@
     "leaders:Thomas Jefferson": "2026-06-17",
     "philosophers:Aristotle": "2026-06-15",
     "philosophers:Arthur Schopenhauer": "2026-06-17",
+    "philosophers:Friedrich Nietzsche": "2026-06-19",
     "philosophers:Plato": "2026-06-14",
     "philosophers:Socrates": "2026-06-13",
     "science_pioneers:Ada Lovelace": "2026-06-14",
@@ -8817,7 +8816,8 @@
       "WNsygx4TUY0",
       "wHcQSqDnUyM",
       "FK8R4h7KW6g",
-      "fs2p5fy6kjE"
+      "fs2p5fy6kjE",
+      "BxzaMYPe1Yg"
     ]
   }
 }
