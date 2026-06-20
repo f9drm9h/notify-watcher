@@ -188,6 +188,24 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Avengers: Doomsday",
+      "title": "Marvel\u2019s DMCA War Over \u2018Avengers: Doomsday\u2019 Leaks Is Now Confirming What Everyone Suspected - IMDb",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE84SWk4NFNyZmVNY0RsNENYOTZ5SHlFOGx0NDlZb1ctUVFucDNtdWhIaEdzNklZVFhvVndhNk9IQjJkUS15UWNpQjNJOHFhNGdoWGNpeWRNWm1oQ1NUZ0w3VTZiRHV1VFU?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Does \u2018Spider-Man: Brand New Day\u2019s\u2019 Newly Revealed Character Confirm Sadie Sink Is Playing Jean Grey? - IMDb",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9fQjg0dUFZcXV2U0JNOXJ5bXJjSlpfOEpYbXhpak0tbi0yQ3pOYVRsZzUxQXlkWWh3M2FNX2E5dkVRSEtMR3dpS2RuM1hnZHUwbGtwWmtWbGlxTzl1VDFtVGpQZ0JjUDg?oc=5"
     }
   ],
   "digest_last_sent": "2026-06-20",
@@ -338,114 +356,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "Drive Safe - Niall Horan\n(because you like One Direction)",
-      "id": "6836a6bad06122c6",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-06-17T16:50:07.146337+00:00",
-      "url": "https://www.deezer.com/track/3811288132"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "826d38fee075972a",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Golden Sun",
-      "title": "Game Boy Micro experience is something to behold",
-      "topic": "golden_sun",
-      "ts": "2026-06-17T16:50:08.690247+00:00",
-      "url": "https://www.reddit.com/r/GoldenSun/comments/1u4xi8j/game_boy_micro_experience_is_something_to_behold/"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "e25d0587db2aa9ba",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Podcast: Urenco expansion plans to fuel nuclear growth",
-      "topic": "energy",
-      "ts": "2026-06-17T16:51:19.852512+00:00",
-      "url": "https://www.world-nuclear-news.org//articles/podcast-urenco-expansion-plans-to-fuel-nuclear-growth"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "2028eaf4239bb921",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Sweden's Parliament approves reclassification of uranium mining",
-      "topic": "energy",
-      "ts": "2026-06-17T16:51:19.853044+00:00",
-      "url": "https://www.world-nuclear-news.org//articles/parliament-approves-amendments-to-swedish-nuclear-law"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "9eb0de2d738f2f77",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "TerraPower\u2019s Natrium reactor begins UK GDA process",
-      "topic": "energy",
-      "ts": "2026-06-17T16:51:19.853366+00:00",
-      "url": "https://www.world-nuclear-news.org//articles/terrapowers-natrium-reactor-begins-uk-gda-process"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "14974d5fc36427e8",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Core Power to assess BWXT SMRs for floating nuclear power plants",
-      "topic": "energy",
-      "ts": "2026-06-17T16:51:19.853714+00:00",
-      "url": "https://www.world-nuclear-news.org//articles/core-power-to-assess-bwxt-smrs-for-floating-power-plants"
-    },
-    {
-      "action": "push",
-      "detail": "Hydration check: grab some water before you carry on.",
-      "id": "d0024fbe29c30d7c",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-06-17T16:51:41.265100+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "To understand the arc of empire, one must often look to the individual whose will forged its initial contours. Before Cyrus, the Near East was a mosaic of powerful, often warring, kingdoms: the Neo-Babylonian Empire, which had recently laid waste to Assyria; the formidable Lydians, legendary for their wealth; and the Medes, a powerful Iranian people to the east, who held sway over a confederation of tribes, including the Persians. Cyrus, a Persian prince, began his story as a vassal of his Median grandfather, Astyages. The ancient chroniclers, particularly Herodotus, imbue his early life with a dramatic tale of prophecy and abandonment: Astyages, warned by a dream that his grandson would usurp his throne, ordered the infant Cyrus killed. Yet, the child was spared, raised by a shepherd, and his true identity eventually revealed. This narrative, whether entirely factual or embellished with the patina of legend, speaks to a powerful human drama\u2014the struggle against destiny, the vulnerability of power, and the unexpected rise of a charismatic leader. Cyrus was not merely a warrior; he possessed a profound strategic mind, both on the battlefield and in the hearts of his subjects.\n\nCyrus's rebellion against Astyages in 550 BCE marked the true genesis of the Achaemenid Persian Empire. It was not merely a coup but a masterful consolidation of power. Having absorbed the Median kingdom, Cyrus then turned his attention westward. His next target was the opulent Lydian king Croesus, whose kingdom controlled vital trade routes and was famed for its gold. Croesus, having consulted the Oracle of Delphi and misunderstood its prophecy that \"a great empire would fall\" if he went to war, met his doom at the hands of Cyrus. The story of Croesus, condemned to the pyre and saved by Cyrus's clemency, is another testament to the Persian king's strategic blend of ruthlessness and magnanimity. Then came the ultimate prize: Babylon. In 539 BCE, Cyrus marched on the Neo-Babylonian Empire, ruled by Nabonidus, a king more interested in antiquarian pursuits than in the defense of his realm. The city, seemingly impregnable with its massive walls, fell with surprising ease, either through a clever diversion of the Euphrates River or, as some accounts suggest, through the internal discontent of its populace who welcomed Cyrus as a liberator. The famous Cyrus Cylinder, a clay artifact inscribed with a royal declaration, describes how Cyrus restored temples, returned deported peoples to their homes, and respected local customs and gods \u2013 a policy of benevolent assimilation radically different from the brutal subjugation practiced by earlier empires.\n\nThis policy of tolerance and respect for diverse cultures was the bedrock of the Achaemenid Empire's success and why it matters so profoundly to the course of human history. Unlike the Assyrians, who relied on terror and mass deportations, Cyrus understood that a stable empire was built not on fear, but on consent and cooperation. He allowed subjugated peoples to maintain their religions, languages, and local governance, so long as they paid tribute and contributed to the imperial infrastructure. This radical departure from previous imperial models fostered a sense of loyalty among his vast and diverse subjects, paving the way for an empire that would span three continents, from the Aegean Sea to the Indus Valley.",
-      "id": "525a255523e5cfac",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Cyrus the Great and the Persian Empire",
-      "topic": "learn",
-      "ts": "2026-06-17T16:51:48.123421+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "0df3186a7cd1dc66",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "\u2018Avengers: Doomsday\u2019 the \u201cMost Mature, Emotionally Complex\u201d in Franchise, Joe Russo Says - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-06-17T19:14:59.750890+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaHRCRlJtaXQ1ZVJLc2dRaUFuTkktcjRCN0F3Q0hlOWZOQXdXX18yZ3dvbTFCZTlFUDV2aXNkNDhxMVpVVFRGelItaW9JVmVPYjd5RVpBMS15ci1xakw1RWxrc3Rsb3I0aW1QT01xN29kUzdveDRyX3JuUjdYMF9hUnBwWklBZWZKUENPRkR3V1NMaFlLU29acEh6ZElteVhYSGRWNFk5UnBKOE1E?oc=5"
-    },
     {
       "action": "push",
       "detail": "",
@@ -6337,6 +6247,114 @@
       "topic": "wikiquote",
       "ts": "2026-06-20T18:23:40.760284+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "f90c778c750dcad4",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Marvel\u2019s DMCA War Over \u2018Avengers: Doomsday\u2019 Leaks Is Now Confirming What Everyone Suspected - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-20T21:25:32.047642+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE84SWk4NFNyZmVNY0RsNENYOTZ5SHlFOGx0NDlZb1ctUVFucDNtdWhIaEdzNklZVFhvVndhNk9IQjJkUS15UWNpQjNJOHFhNGdoWGNpeWRNWm1oQ1NUZ0w3VTZiRHV1VFU?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "224dcc2c6c15df5f",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers Doomsday\u2019s First Trailer Now Closer Than Ever After Marvel Displays New Promo - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-20T21:25:32.048512+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMEpSN3ZGZThVdTZSNlAyLW0ycFZXN002dVhSd0xtdzdNX29PaTdVNjBCRHZTZy0tcWRtc2l4Q3k1Q3VhdHBJY1UwMWdkZXdPYkRBeEJnSGZqUmE0LVRCME9KVEdZLXlrTG1oLVNxbWh5LVRvb2xsekhOT2ktX1BZNjNfUXUtTVQ3cDIw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "a2d7971ab362a9b5",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Does \u2018Spider-Man: Brand New Day\u2019s\u2019 Newly Revealed Character Confirm Sadie Sink Is Playing Jean Grey? - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-20T21:25:33.190650+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9fQjg0dUFZcXV2U0JNOXJ5bXJjSlpfOEpYbXhpak0tbi0yQ3pOYVRsZzUxQXlkWWh3M2FNX2E5dkVRSEtMR3dpS2RuM1hnZHUwbGtwWmtWbGlxTzl1VDFtVGpQZ0JjUDg?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "a068561ee166f7a5",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day - Official Trailer 2 - IGN Adria",
+      "topic": "movies",
+      "ts": "2026-06-20T21:25:33.191289+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNa0Rsb3Vac18zMXFWWUt2bWlMQmllcWluT3huUGhpbGpZVkdSdmFqemRFMjFNN3hURHd5WGRRVy1rQnhBaW5uTVJjV1FHclIwY3NkLWtHRUtuS0JEVVlkVm1YaVFmdHZSbGtIcGJVa21CbTRSUkJfdlhjQXM4M2N0RXJrZVIwa3FsWEh4YU13SG5HU21lY3FxX0xQY2hzTFFmbDVlOFpR?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "82f32a920fff33c3",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "Matt Reeves shares first look at The Batman Part II as the sequel begins shooting - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-20T21:25:34.964844+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE56aS1PREQzeENUUGxQRlhtM0ZQeGxTRng2ckw1ZUpZZEs5WWJyU09FRVFQYU9EaDIxY0hXamx4Z2RZc1BXSTF0T0JSbjZvaXdIMmsxRlJZNVIwUDBWQ1BTbl9IX2c?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Lied meines Lebens - Claudia Jung\n(because you like Peggy March)",
+      "id": "0012e00fba4eed29",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-20T21:25:40.568824+00:00",
+      "url": "https://www.deezer.com/track/2742276581"
+    },
+    {
+      "action": "push",
+      "detail": "Keep a glass of water within reach.",
+      "id": "c289da1785b76801",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-20T21:26:45.828961+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "The air in Saigon on April 29, 1975, was thick with more than just the usual humid tropical heat. It hummed with a palpable dread, a frantic energy born of imminent collapse. For decades, the city had been a symbol, first of French colonial power, then of American intervention, and always, a beacon, however flickering, of a non-communist South Vietnam. But now, the North Vietnamese Army, after a swift and brutal offensive, was at the gates. The fall was not a sudden cataclysm, but the culmination of years of geopolitical maneuvering, military commitment, and the slow erosion of resolve. What began as a distant rumble of ideological conflict in the aftermath of World War II had escalated into a proxy war that tore Vietnam apart and profoundly reshaped American foreign policy. The withdrawal of U.S. troops in 1973, under the Paris Peace Accords, had left the Army of the Republic of Vietnam (ARVN) to face the well-supplied and highly motivated North Vietnamese almost entirely on their own, a task for which they ultimately proved ill-prepared.\n\nThe evacuation efforts that day, codenamed Operation Frequent Wind, were a testament to both human ingenuity and the chaotic desperation of the moment. On the rooftop of the U.S. Embassy, and at various other designated points around the city, hundreds, then thousands, of South Vietnamese citizens, along with remaining American personnel and foreign nationals, clamored for a place on the helicopters. Images seared into collective memory depict Chinook and Huey helicopters, overloaded with people, lifting off from precarious perches, leaving behind a sea of upturned, desperate faces. The courage of American pilots, flying into a city on the verge of capture, under the threat of anti-aircraft fire and the uncertainty of a hostile takeover, was immense. Equally poignant was the agony of those left behind, families torn apart by the impossible choices of who to save, who to leave to an unknown fate. Many tried to escape by boat, flooding waterways, hoping to reach the open sea and eventual rescue, a harrowing journey fraught with peril.\n\nThe ultimate irony, and a symbol of the entire war\u2019s tragic conclusion, was the scene at the presidential palace. On April 30th, a North Vietnamese tank, specifically a T-54, crashed through the gates of what was then called the Independence Palace. Inside, General Duong Van Minh, who had been president for a mere two days, formally surrendered. His words, delivered to a victor\u2019s microphone, were stark: \"I hand over the power of government, in order to stop the boundless shedding of blood.\" For the victorious North Vietnamese, it was a moment of profound triumph, the realization of a decades-long struggle for national unification and independence, however costly. For the millions in the South, it was the end of one era and the terrifying beginning of another, a period marked by re-education camps, political purges, and the forced integration into a communist system.\n\nThe fall of Saigon, rebranded Ho Chi Minh City, reverberated globally. For the United States, it marked not only the end of a deeply divisive war but also a crisis of confidence, a period of introspection about the limits of its power and the wisdom of interventionism. The \"Vietnam Syndrome\" would influence foreign policy decisions for decades to come, leading to a more cautious approach to military involvement abroad.",
+      "id": "1c095a72571e6f9d",
+      "score": 75,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The fall of Saigon",
+      "topic": "learn",
+      "ts": "2026-06-20T21:26:51.113106+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cTo make a contented slave it is necessary to make a thoughtless one. It is necessary to darken the moral and mental vision and, as far as possible, to annihilate the power of reason.\u201d\n\u2014 Frederick Douglass\n\nFrederick Douglass, born a slave on a Maryland plantation in 1818, understood the chilling truth behind his own words with an intimacy that few could fathom. His early life was a crucible of depravity and intellectual awakening, a paradox of dehumanizing labor and a burning desire for knowledge. He famously bartered bread for lessons in reading from white children in Baltimore, his nascent literacy quickly identified by his enslavers as a dangerous spark. This quote, \"To make a contented slave it is necessary to make a thoughtless one. It is necessary to darken the moral and mental vision and, as far as possible, to annihilate the power of reason,\" isn't merely an observation; it is a profound declaration forged in the fires of personal experience. It speaks to the deliberate, systemic psychological warfare waged against enslaved people, a calculated effort to extinguish their very humanity by denying them the tools of thought, reflection, and self-determination. Douglass, in gaining his literacy, wasn't just learning to read words; he was learning to read the blueprint of his own oppression, recognizing the insidious genius behind a system designed to keep minds as shackled as bodies.\n\nThe context in which Douglass uttered such a powerful statement was one of profound national moral crisis. Having escaped slavery in 1838, he swiftly became one of the most eloquent and persuasive voices in the abolitionist movement. He traveled tirelessly across America and even to Great Britain, delivering speeches that, according to some accounts, moved audiences to tears and outrage. This quote likely stems from the period after his autobiography, Narrative of the Life of Frederick Douglass, an American Slave, was published in 1845, a book so detailed and vivid that many doubted it could have been written by a former slave, questioning his very identity. Douglass, by speaking and writing, was not just arguing against slavery but actively dismantling the very foundations of its existence, which relied heavily on the premise of the intellectual inferiority and inherent contentment of enslaved people. His words were a direct assault on the carefully constructed narrative of the slaveholder, exposing the deliberate cruelty of an institution that understood that a thinking, reasoning person could never truly be a contented slave. The nation was hurtling towards civil war, and Douglass, through his activism and his powerful rhetoric, was one of the many forces pushing it towards that inevitable reckoning, demanding that America confront the brutal reality of its ideals versus its practices.\n\nToday, Douglass\u2019s words resonate with an enduring power because they speak to a fundamental human truth that extends far beyond the specific horror of chattel slavery. While the institution of slavery has been abolished, the tactics he describes\u2014the deliberate suppression of critical thought, the darkening of moral and mental vision to foster complacency or manipulate populations\u2014remain chillingly relevant.",
+      "id": "f3a9dec80feb0920",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Frederick Douglass",
+      "topic": "wikiquote",
+      "ts": "2026-06-20T21:26:56.209401+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6409,7 +6427,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-20-26-JUN-DE-2026.pdf",
   "fuel_last_pdf_hash": "df5bf29864420fdf3ae48c6b803e8715064f631b1998f09ad9d6c6ddfd00a535",
-  "fuel_last_prices_seen_at": "2026-06-20T18:23:27.245652+00:00",
+  "fuel_last_prices_seen_at": "2026-06-20T21:26:41.958841+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7114,8 +7132,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "technology",
-  "knowledge_last_sent": "2026-06-20T6",
+  "knowledge_last_category": "world_history",
+  "knowledge_last_sent": "2026-06-20T7",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7165,12 +7183,13 @@
     "world_history:The Chernobyl disaster": "2026-06-17",
     "world_history:The Holocaust": "2026-06-14",
     "world_history:The Rwandan genocide": "2026-06-13",
+    "world_history:The fall of Saigon": "2026-06-20",
     "world_history:The liberation of Paris": "2026-06-19"
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-06-20T20:00:19.579446+00:00"
+    "ok": 46,
+    "ts": "2026-06-20T21:25:29.616757+00:00"
   },
   "launch_seen_ids": [
     "a24af622a80bb043",
@@ -7191,6 +7210,24 @@
   "life_dashboard_last_week": "2026-W24",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "dedf76b246857e6f",
+      "7eab48127502532a",
+      "7b27b69d9db95e0c",
+      "3eddab5e75604314",
+      "5ed912024a82dc05",
+      "c6f1e75e0930bbcd",
+      "87969447b2c653b4",
+      "4d4ae636fc770116",
+      "623bec3037a8b837",
+      "df3eb20ae636258c",
+      "47f8265b5b17e064",
+      "11d86733f5e79baf",
+      "8eed3ed8c1245ecd",
+      "4e14c3a9d2e48698",
+      "935d34b79633a2c8",
+      "c1bec6bd7a0996e6",
+      "7b9047c820450e23",
+      "c5ec18dbea541e73",
       "7afc1677fd889c9d",
       "6e9ebd0513e656da",
       "c06e9ccc3219e3e4",
@@ -7272,25 +7309,7 @@
       "5243d58aa7297a4f",
       "425f4e2852f7e267",
       "a0e8c5ceb180644e",
-      "3339ee073d51e1a1",
-      "5edb8bad52fed114",
-      "bc7142ca9b7ca3bb",
-      "8f4de9bbcd00777a",
-      "389363134e243147",
-      "be2c354833b6569a",
-      "b4214d205fbcf714",
-      "f387b61db32e05ea",
-      "333dae298ea67ed4",
-      "55006c364c1c9a6e",
-      "542e6a4c87daaaf3",
-      "0f78fdbb0760ef2b",
-      "cd65f7d84ba7616e",
-      "d7c908ca5a392e4c",
-      "6cd3808f77d1458d",
-      "85b97222565a5cf0",
-      "cfb4883aa17cff6c",
-      "3c1dc054f5f8f9ab",
-      "79cac33612c3623a"
+      "3339ee073d51e1a1"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7492,6 +7511,23 @@
       "59eee1eb6b983c19"
     ],
     "Spider-Man: Brand New Day": [
+      "da704e99dbea323d",
+      "c3598d730a3e1a0c",
+      "8f51e1309f0e7c2c",
+      "6b97803d7a3e5ed0",
+      "391dab2515014d80",
+      "d6b80a63ca7a026a",
+      "28447dd41f405723",
+      "e6405a4c758cc462",
+      "fb066bbdb6c2f34a",
+      "db606d782d278fbb",
+      "e58af0f6ff0c518e",
+      "37b6f7a8a36eaf95",
+      "f566547c036a1aac",
+      "6d8b34c1efa42682",
+      "5d87bdc8f0a4c6d9",
+      "bace9110f4ba2a2f",
+      "c0f4a76a8e025a6e",
       "28899fa647f11ea2",
       "30c52db9d587f6e3",
       "f5273b73998224e8",
@@ -7574,26 +7610,13 @@
       "430804aee89e9eaf",
       "6f5f5928ae4979cf",
       "cf18d956b22400bf",
-      "ec97133bb73ec826",
-      "280bc00800ec534d",
-      "1a06452457c8ad2f",
-      "b23281f7e2faceb3",
-      "57880045b14e8a72",
-      "8372a5d5c6cbe381",
-      "c79ff05e0fca113e",
-      "9b4c6ce2ce5de9b5",
-      "87d50f34fd8721aa",
-      "c13888c10b6fb677",
-      "6e0d234a506b1f6d",
-      "0219a21539531e1e",
-      "fdd2bd3f6427c959",
-      "6eb8c528ba8c1016",
-      "68db9ef7fe2efef1",
-      "f5178c7df72b5796",
-      "5eb06e6c34e078cc",
-      "ae1dce16e2c836b0"
+      "ec97133bb73ec826"
     ],
     "The Batman Part II": [
+      "48d77c191df90ec7",
+      "994244d6fe5e5ecd",
+      "5cb03f953c5f589d",
+      "a9ede372b5a384d3",
       "b90d5df20efbe4db",
       "d17726e40b15e758",
       "86fc4958aaa12fc0",
@@ -7689,13 +7712,12 @@
       "a0b71bb2ae829607",
       "8252baaab8f3c950",
       "91f6a8b0f55eed4d",
-      "28a320ca7b46c497",
-      "9e2c588376f911ae",
-      "7ced8fceec97e3c5",
-      "e1fa28225983828f",
-      "0f8c9c0fdad2c7bc"
+      "28a320ca7b46c497"
     ],
     "The Odyssey": [
+      "aa376cb1a2c51cea",
+      "392e59f45d283236",
+      "b958e700443f3cc0",
       "ae0c107c87c12e7a",
       "23cd4fb961d4b98a",
       "6dd81f68a74586a4",
@@ -7792,10 +7814,7 @@
       "a6ffc554810d7cd1",
       "21f13b03f94903d3",
       "471eb8ccfa041fdf",
-      "d54ccbc94815db1c",
-      "0ba2e7e1a11ebf25",
-      "e9269dd826b9a60f",
-      "79e95cc3d3642241"
+      "d54ccbc94815db1c"
     ]
   },
   "movie_release_dates": {
@@ -7870,7 +7889,8 @@
     6301,
     16593,
     71181,
-    72908
+    72908,
+    81007
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8235,6 +8255,15 @@
         "name": "Aretha Franklin"
       }
     },
+    "ec3cb1c19ea28daa": {
+      "applied": null,
+      "created": "2026-06-20T21:25:40.568803+00:00",
+      "kind": "artist",
+      "label": "Claudia Jung",
+      "payload": {
+        "name": "Claudia Jung"
+      }
+    },
     "ee91c9cbc50cdfd7": {
       "applied": null,
       "created": "2026-06-14T16:12:38.440698+00:00",
@@ -8474,179 +8503,177 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "deals": {
-      "last_data": "2026-06-20T18:22:50.210342+00:00",
+      "last_data": "2026-06-20T21:26:08.619984+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "energy": {
-      "last_data": "2026-06-20T18:23:11.297279+00:00",
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_data": "2026-06-20T21:26:27.001521+00:00",
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "fda": {
-      "last_data": "2026-06-20T18:23:00.274131+00:00",
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_data": "2026-06-20T21:26:15.746386+00:00",
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-20T18:23:27.245674+00:00",
+      "last_data": "2026-06-20T21:26:41.958868+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "fx": {
-      "last_data": "2026-06-20T18:23:26.226328+00:00",
+      "last_data": "2026-06-20T21:26:40.909500+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "games": {
       "last_data": "2026-06-15T13:41:05.025187+00:00",
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-20T18:21:59.771403+00:00",
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_data": "2026-06-20T21:25:42.215879+00:00",
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-20T18:22:59.459819+00:00",
+      "last_data": "2026-06-20T21:26:15.194866+00:00",
       "last_data_count": 251,
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "movies": {
-      "last_data": "2026-06-20T18:21:53.399323+00:00",
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_data": "2026-06-20T21:25:36.203518+00:00",
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "music": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-20T18:23:11.998589+00:00",
+      "last_data": "2026-06-20T21:26:27.754409+00:00",
       "last_data_count": 50,
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-20T18:23:25.621495+00:00",
-      "last_data_count": 36,
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_data": "2026-06-20T21:26:40.308649+00:00",
+      "last_data_count": 29,
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-20T20:00:21.339841+00:00",
+      "last_data": "2026-06-20T21:25:38.279608+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-20T20:00:19.579446+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "weather": {
-      "last_data": "2026-06-20T18:23:11.538203+00:00",
+      "last_data": "2026-06-20T21:26:27.211301+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-20T18:23:29.422980+00:00",
+      "last_data": "2026-06-20T21:26:45.828523+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-20T18:21:46.411592+00:00"
+      "last_ok": "2026-06-20T21:25:29.616757+00:00"
     }
   },
-  "twitch_live": [
-    "RiddlesMK"
-  ],
+  "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "164998"
+    "last_full_window": "164999"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8659,9 +8686,10 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
+    "2026-06-20|12",
+    "2026-06-20|21",
     "2026-06-20|15",
-    "2026-06-20|18",
-    "2026-06-20|12"
+    "2026-06-20|18"
   ],
   "weather_seen_ids": [
     "80d1affba4a71c91",
@@ -8715,8 +8743,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "innovators_artists",
-  "wikiquote_last_sent": "2026-06-20T6",
+  "wikiquote_last_category": "leaders",
+  "wikiquote_last_sent": "2026-06-20T7",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-14",
     "activists_thinkers:Helen Keller": "2026-06-16",
@@ -8734,6 +8762,7 @@
     "innovators_artists:Walt Disney": "2026-06-19",
     "leaders:Abraham Lincoln": "2026-06-14",
     "leaders:Benjamin Franklin": "2026-06-15",
+    "leaders:Frederick Douglass": "2026-06-20",
     "leaders:Mikhail Gorbachev": "2026-06-13",
     "leaders:Nelson Mandela": "2026-06-18",
     "leaders:Thomas Jefferson": "2026-06-17",
