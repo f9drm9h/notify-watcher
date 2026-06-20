@@ -359,18 +359,6 @@
     {
       "action": "push",
       "detail": "",
-      "id": "b8a74923e2b58e51",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel Confirms Drastic \u2018Avengers: Doomsday\u2019 Change as Mutant History Is Officially Rewritten - Disney Fanatic",
-      "topic": "movies",
-      "ts": "2026-06-17T19:14:59.751475+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOR3FDeW1GZWl5VkpQekN6cVRrV2tXRDNFUS0tckFOSlRraW5STjZRRXFLMnRmaFRPdUZtQVJmbWVsOWlwMzlORXBCSmJic1RuY01nNm43LUt6MnZuX3Y3S3lwM0NicGxiZHVjQmhEbzMxbWFhUkFFa0NOel81b28zRVlMczItaF9CXzVndkd2N1dUZ2t6LWppbG90eDhmNTRQRGg4ZE45LV9fa0c0b1NKbkFoR0phcWhLR1NpVEtGdlhCeHM?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
       "id": "a89106c34a37a8c8",
       "score": 62,
       "severity": "high",
@@ -6355,6 +6343,18 @@
       "topic": "wikiquote",
       "ts": "2026-06-20T21:26:56.209401+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - Fight Night #3 Recovery! FT MkLeo, MkBigboss, Chag, Javi, MkLaw, Diegod, Guilheww, Reisen, Yukimaruwu and more",
+      "id": "b945c16d9d7b0a97",
+      "score": 68,
+      "severity": "high",
+      "source": "mkleossb",
+      "title": "mkleossb is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-20T22:45:48.398119+00:00",
+      "url": "https://twitch.tv/mkleossb"
     }
   ],
   "f4_history": [
@@ -7188,8 +7188,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 46,
-    "ts": "2026-06-20T21:25:29.616757+00:00"
+    "ok": 1,
+    "ts": "2026-06-20T22:45:46.953402+00:00"
   },
   "launch_seen_ids": [
     "a24af622a80bb043",
@@ -8639,9 +8639,9 @@
       "last_ok": "2026-06-20T21:25:29.616757+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-20T21:25:38.279608+00:00",
+      "last_data": "2026-06-20T22:45:49.981649+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-20T21:25:29.616757+00:00"
+      "last_ok": "2026-06-20T22:45:46.953402+00:00"
     },
     "uv": {
       "last_ok": "2026-06-20T21:25:29.616757+00:00"
@@ -8669,7 +8669,9 @@
       "last_ok": "2026-06-20T21:25:29.616757+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "mkleossb"
+  ],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
