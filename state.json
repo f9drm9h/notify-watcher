@@ -296,18 +296,6 @@
     {
       "action": "digest",
       "detail": "",
-      "id": "9f411cfdec3b215e",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Chris Evans Officially Reveals Captain America's Fate in 'Avengers: Doomsday' - Collider",
-      "topic": "movies",
-      "ts": "2026-06-17T16:49:56.173353+00:00",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBLcEtTT2xGT3I1UEdoU25vOHc1UnJXQmZIY3Y1S2FqdnFPM01CS2pDQTlmb2k2WDZjUGotUEtidFlZckZXZWltb3o0M0xNcU40VFlWY0tyRFZRUnl3dEFsRng3YVpaUzVRVllJRGJqemE3cm5CSzlYTXh4QQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
       "id": "dd5b6ad44de2a304",
       "score": 28,
       "severity": "moderate",
@@ -6292,6 +6280,18 @@
       "topic": "apod",
       "ts": "2026-06-20T15:19:01.731357+00:00",
       "url": "https://apod.nasa.gov/apod/image/2606/Venus_Moon_2026_06_17.jpg"
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - Evo Grind",
+      "id": "140ee2c80e36857a",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-20T16:54:46.044347+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "f4_history": [
@@ -7120,8 +7120,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 46,
-    "ts": "2026-06-20T15:17:17.601971+00:00"
+    "ok": 1,
+    "ts": "2026-06-20T16:54:45.425278+00:00"
   },
   "launch_seen_ids": [
     "a24af622a80bb043",
@@ -8551,9 +8551,9 @@
       "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-20T15:17:26.116860+00:00",
+      "last_data": "2026-06-20T16:54:47.912888+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-20T15:17:17.601971+00:00"
+      "last_ok": "2026-06-20T16:54:45.425278+00:00"
     },
     "uv": {
       "last_ok": "2026-06-20T15:17:17.601971+00:00"
@@ -8581,7 +8581,9 @@
       "last_ok": "2026-06-20T15:17:17.601971+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
