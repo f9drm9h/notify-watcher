@@ -50,7 +50,7 @@
     "29db49f64ce68661",
     "a8b1aff056453d2f"
   ],
-  "apod_last_sent": "2026-06-19",
+  "apod_last_sent": "2026-06-20",
   "astronomy_sent": [
     "2026-06-14|New moon tonight - d"
   ],
@@ -107,7 +107,44 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [],
+  "digest_buffer": [
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Avengers: Doomsday",
+      "title": "A Big \u2018Avengers: Doomsday\u2019 Leak Reportedly Arrives, But Its Validity Is Debatable - Forbes",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWWxfeWxRTE1FeXZHUjlGXzZkbkh5ME02YjROVHlEbk9pbXpua0Z5cHVMN1FHYmtGRHktdW9id3ZTN0QwZENDY2ZMUm13WklaYTdKM29jNEk4QVVkMnNlaFJBNF9CYzZ4R3BIQURmRE1ZRUcwbVItcF9aNFh5SE9OaXMxUUZTUlA5U3BMTi1XT3U2UnFUNS1zYVhXd2FzVlU4dWtoRjgyR0hBWnMtc09KaFhOeWtrZkJOeEJQSGt5OW5SY0d5T1Nz?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Batman Part II",
+      "title": "Colin Farrell Confirms He'll Reprise Penguin Role in The Batman 2 , Teases a 'Terrifying' Script - People.com",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRFlVcUtldjJzVjBWLWl3Rzl6SFI4d0FmUnFab0Q0N1o0NXpqR0w0c3doTWwtS1pLeWpUYktiVFVEeUdiUThHcWRpSThNeVBra2U1djZHQ1JBSUt2UFcyVU1OMGp6OXJHTmtCb2xJdlhCMFAyMWIxMFROdFVDV0Z3UEhmQk1obmNTQ1VDbnVjZXpSaU9HZkR4UG11Zw?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Batman Part II",
+      "title": "Matt Reeves Shares New Look at 'The Batman 2' as DC Sequel Begins Production - MovieWeb",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE93cDVyR1ptTnE3Smg4OE44aW5laDY4TGtLSWN3NWxndkpGLTcwQWRnUW1NYXBTZ3I4eHZvR2hYMGZZU1hBUGtMSDJyR25vMThVR2F6RURfUHJSejFNejU0Ri1FMVByV282WEJj?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Batman Part II",
+      "title": "Matt Reeves Unveils First Official Look At The Batman Part 2 - The Direct",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1iNzB0aUFVcFZ1dmtDU2VIQTctZGN5blhZOExfTlRaaEM4SEJVUFlTWF9mS1R2eS01YktaVHpRbURmQ01vc2FtMjQ4eXBmSDNESEY1Zy14MHJIU2lwbU44SlVtQ3E1OGtlZmpkVERqSWRNV01MQmR6QjJn?oc=5"
+    }
+  ],
   "digest_last_sent": "2026-06-20",
   "discord_control": {
     "last_id": "1516803501101940894"
@@ -256,138 +293,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "Final, 2026-06-16",
-      "id": "77818f1599af87cf",
-      "score": 40,
-      "severity": "low",
-      "source": "Baseball",
-      "title": "Blue Jays 6 \u2013 Red Sox 1 (W)",
-      "topic": "baseball",
-      "ts": "2026-06-17T13:52:05.133904+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "Final, 2026-06-16",
-      "id": "160f3d18f2c9df07",
-      "score": 40,
-      "severity": "low",
-      "source": "Baseball",
-      "title": "Yankees 12 \u2013 White Sox 2 (W)",
-      "topic": "baseball",
-      "ts": "2026-06-17T13:52:05.268182+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "Final, 2026-06-16",
-      "id": "6ee48d4756a58050",
-      "score": 40,
-      "severity": "low",
-      "source": "Baseball",
-      "title": "Dodgers 1 \u2013 Rays 0 (W)",
-      "topic": "baseball",
-      "ts": "2026-06-17T13:52:05.392378+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 374.95 (was DOP 419.95, -11%)",
-      "id": "7c763e411649e7a0",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Alimento Perro Ringo +Pro Cachorros Alta Prote\u00edna 2 kg",
-      "topic": "groceries",
-      "ts": "2026-06-17T13:52:59.653205+00:00",
-      "url": "https://supermercadosnacional.com/ofertas/alimento-perro-ringo-pro-cachorros-alta-proteina-2-kg-2236953"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 194.95 (was DOP 217.95, -11%)",
-      "id": "216140bd16863161",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Alimento Perro Ringo +Pro Cachorros Alta Prote\u00edna 1 kg",
-      "topic": "groceries",
-      "ts": "2026-06-17T13:52:59.653878+00:00",
-      "url": "https://supermercadosnacional.com/ofertas/alimento-perro-ringo-pro-cachorros-alta-proteina-1-kg-2236952"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "e8f7d62ac777b2fe",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-17T13:53:09.448748+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "Pause for a moment and have a drink of water.",
-      "id": "ab97fdbc4799889f",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-06-17T13:53:28.510207+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Keep current on recommended vaccines, like the annual flu shot, to prevent serious illness. (Source: CDC)",
-      "id": "03406884e1ddef62",
-      "score": 60,
-      "severity": "low",
-      "source": "Health",
-      "title": "Health tip",
-      "topic": "health_tip",
-      "ts": "2026-06-17T13:53:29.386282+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "On this day\n1940: Second World War: RMS Lancastria was sunk by German aircraft near Saint-Nazaire, France, causing thousands of fatalities in Britain's worst maritime disaster.\n\nFeatured: Cedric Howell\nCedric Ernest Howell was an Australian fighter pilot and flying ace of the First World War. Born in Adelaide, South Australia, he enlisted in the Australian Imperial Force in 1916 for service in the First World War and was posted to the 46th Battalion on the Western Front. In...\n\nScience\nBecause light from the Sun takes 8 minutes and 20 seconds to reach Earth, you are always seeing the Sun as it appeared in the past. (Source: NASA)",
-      "id": "f87e2a4ee4c646ed",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Daily learning",
-      "topic": "learn",
-      "ts": "2026-06-17T13:53:33.469098+00:00",
-      "url": "https://en.wikipedia.org/wiki/Cedric_Howell"
-    },
-    {
-      "action": "push",
-      "detail": "What: Alessandro Volta stacked discs of zinc and copper separated by brine-soaked cloth, producing the first steady source of electric current.\nWhy it matters: Before the 'voltaic pile', electricity was only fleeting static sparks; Volta gave science a continuous current to experiment with.\nWhy you should care: Every battery in your phone, car, and remote control is a descendant of this simple stack of metal discs.\n(Source: IEEE / Smithsonian)",
-      "id": "eccf9388f8408f06",
-      "score": 60,
-      "severity": "low",
-      "source": "Energy learning",
-      "title": "\u26a1 Today's spark \u2014 Volta builds the first battery (1800)",
-      "topic": "energy_learn",
-      "ts": "2026-06-17T13:53:34.672919+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "How did a hamster wheel get into space? The Hamster Wheel Nebula (Longmore 8) was discovered by Andrew Longmore in 1976 as a part of a larger survey of the southern sky. This survey employed several improvements in photographic technology, including the use of highly sensitive...\n(c) Mazlin, Parker, Forman, Magill, Hanson Text: Keighley Rockcliffe (NASA GSFC, UMBC CSST, CRESST II)",
-      "id": "cc9287a8015a35e2",
-      "score": 60,
-      "severity": "low",
-      "source": "NASA APOD",
-      "title": "APOD: Longmore 8: The Hamster Wheel Nebula",
-      "topic": "apod",
-      "ts": "2026-06-17T13:53:42.861390+00:00",
-      "url": "https://apod.nasa.gov/apod/image/2606/hamster.jpg"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6255,6 +6160,138 @@
       "topic": "beach_day",
       "ts": "2026-06-20T13:11:10.475369+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "4376d7be36071725",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "A Big \u2018Avengers: Doomsday\u2019 Leak Reportedly Arrives, But Its Validity Is Debatable - Forbes",
+      "topic": "movies",
+      "ts": "2026-06-20T15:17:20.428911+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWWxfeWxRTE1FeXZHUjlGXzZkbkh5ME02YjROVHlEbk9pbXpua0Z5cHVMN1FHYmtGRHktdW9id3ZTN0QwZENDY2ZMUm13WklaYTdKM29jNEk4QVVkMnNlaFJBNF9CYzZ4R3BIQURmRE1ZRUcwbVItcF9aNFh5SE9OaXMxUUZTUlA5U3BMTi1XT3U2UnFUNS1zYVhXd2FzVlU4dWtoRjgyR0hBWnMtc09KaFhOeWtrZkJOeEJQSGt5OW5SY0d5T1Nz?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "881130d0de40096f",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "The Batman Part 2 Officially Begins Filming as Matt Reeves Shares First Set Image - IGN Pakistan",
+      "topic": "movies",
+      "ts": "2026-06-20T15:17:22.562778+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT0pzYmFYRkpxY3VjclJ1b0ZBeFB3R1VUeTZ1cjh0aWFXOHdjeFBXSU40d3NyNk1KRzJyelkzU2N5aV9rNDlRVF8zWmRVTFNOVzJKUmxOUmhSdEFGM01EU1NTQktWTlNwN29ZRm5FTTl5RExXWnZzQ1lUejQ4SzRySVVjWjVhZVVUd21mYVlyUlg1S0VqY2VwMjQ2RjFNMlVIVkFTRUtRek5mNEVVZ2RtWHF0SE4xLWRFNWlzNg?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "7bcd6f37d1980477",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "\u2018The Batman Part II\u2019 Begins Filming, Writer & Director Matt Reeves Confirms - Just Jared",
+      "topic": "movies",
+      "ts": "2026-06-20T15:17:22.958182+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPY1dicDZZUnlqM2dCTmZhdFpuVzllZHAxa2xvQ3NDd0w2OTFVUF9zQXFtdnNORnBIS2t5S1Z3N085Q2l1VFQzRmx4YXlocG9sbnJ0eTdSYy1ELWtDNG01UHFpRVJSX08yVloyTGdzcXlQeDBPZEduOTFUaTVXSjA5a25yeVdFeFV2MVF2RVNEYktiT2ZXS1NTZ1BPWk9wTDZ1VDN5ajdkTkZQZEp0?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "cabe8fe53f19989b",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Colin Farrell Confirms He'll Reprise Penguin Role in The Batman 2 , Teases a 'Terrifying' Script - People.com",
+      "topic": "movies",
+      "ts": "2026-06-20T15:17:23.219037+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRFlVcUtldjJzVjBWLWl3Rzl6SFI4d0FmUnFab0Q0N1o0NXpqR0w0c3doTWwtS1pLeWpUYktiVFVEeUdiUThHcWRpSThNeVBra2U1djZHQ1JBSUt2UFcyVU1OMGp6OXJHTmtCb2xJdlhCMFAyMWIxMFROdFVDV0Z3UEhmQk1obmNTQ1VDbnVjZXpSaU9HZkR4UG11Zw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "76108854c9588c16",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Matt Reeves Shares New Look at 'The Batman 2' as DC Sequel Begins Production - MovieWeb",
+      "topic": "movies",
+      "ts": "2026-06-20T15:17:23.219608+00:00",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE93cDVyR1ptTnE3Smg4OE44aW5laDY4TGtLSWN3NWxndkpGLTcwQWRnUW1NYXBTZ3I4eHZvR2hYMGZZU1hBUGtMSDJyR25vMThVR2F6RURfUHJSejFNejU0Ri1FMVByV282WEJj?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "266df1e065d80d8c",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Matt Reeves Unveils First Official Look At The Batman Part 2 - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-20T15:17:23.220080+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1iNzB0aUFVcFZ1dmtDU2VIQTctZGN5blhZOExfTlRaaEM4SEJVUFlTWF9mS1R2eS01YktaVHpRbURmQ01vc2FtMjQ4eXBmSDNESEY1Zy14MHJIU2lwbU44SlVtQ3E1OGtlZmpkVERqSWRNV01MQmR6QjJn?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Lass mein Knie, Joe - Wencke Myhre\n(because you like Peggy March)",
+      "id": "9c4075ada789d4c9",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-20T15:17:28.915546+00:00",
+      "url": "https://www.deezer.com/track/598430"
+    },
+    {
+      "action": "push",
+      "detail": "Sip some water - your body will thank you.",
+      "id": "1e065fa1a7c0895b",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-20T15:18:45.093009+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "The year is 1935, and the world of physics is in a tumultuous state. Quantum mechanics, a revolutionary new theory, is challenging the very foundations of how we understand reality. At its heart lies the principle of superposition, which states that a quantum particle can exist in multiple states simultaneously until it is observed. This bizarre idea, while mathematically elegant, was proving difficult for many to reconcile with their everyday experience. Among the most vocal critics was Albert Einstein, who famously scoffed, \"God does not play dice with the universe.\" But it was an Austrian physicist named Erwin Schr\u00f6dinger, a key architect of quantum mechanics himself, who would craft a thought experiment so enduringly unsettling it continues to haunt discussions about quantum reality to this day.\n\nSchr\u00f6dinger, a man of wide-ranging interests that spanned philosophy and biology, found himself increasingly troubled by the implications of the Copenhagen interpretation of quantum mechanics, particularly its insistence on the observer's role in collapsing a superposition. To illustrate the absurdity he perceived when scaling quantum principles to the macroscopic world, he envisioned a grim scenario. Inside a sealed steel chamber, a cat is placed alongside a devilishly contrived device. At its core is a tiny bit of radioactive material, so small that over the course of an hour, there's a 50% chance one atom will decay, and a 50% chance it won't. If the atom decays, it triggers a Geiger counter, which in turn releases a hammer that shatters a vial of hydrocyanic acid, instantly killing the cat. If the atom doesn't decay, the cat lives. The crucial point, Schr\u00f6dinger argued, was that according to the Copenhagen interpretation, until someone opens the box and observes the outcome, the radioactive atom exists in a superposition of decayed and undecayed states. This, in turn, meant the cat itself must exist in a superposition of being both dead and alive simultaneously.\n\nThe human drama inherent in this thought experiment is profound. Schr\u00f6dinger, a physicist whose equations elegantly described the wave function of particles, was not trying to promote the idea of a half-dead, half-alive cat. Instead, he intended it as a *reductio ad absurdum*, a dramatic demonstration of what he saw as the logical flaws and the philosophical discomfort of extending quantum rules to the macroscopic world. He wanted to highlight the stark contrast between the fuzzy, probabilistic world of quantum particles and the seemingly definite reality we experience. His cat, an innocent victim in this intellectual gladiatorial arena, became a powerful symbol of the paradoxes at the heart of quantum theory, forcing physicists to confront the very nature of observation and reality itself. The thought experiment was, in essence, a challenge to the prevailing interpretation, a demand for a more complete understanding.\n\nSchr\u00f6dinger's cat, far from being a mere historical curiosity, remains a vibrant topic of debate and inspiration. It spurred the development of alternative interpretations of quantum mechanics, such as the Many-Worlds interpretation, which posits that every quantum measurement causes the universe to split into multiple parallel realities, each corresponding to a different outcome.",
+      "id": "75f65684dddf09ed",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Schr\u00f6dinger's cat thought experiment",
+      "topic": "learn",
+      "ts": "2026-06-20T15:18:49.990616+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cI did not get on the bus to get arrested. I got on the bus to go home.\u201d\n\u2014 Rosa Parks\n\nRosa Parks, a name synonymous with defiance and the civil rights movement, was far more than the tired seamstress often portrayed in simplified history books. She was an activist, a meticulous secretary for the NAACP's Montgomery chapter, and a woman deeply embedded in the struggle for racial equality long before that pivotal December evening in 1955. Her life was a testament to the grinding, often anonymous work of community organizing, of documenting injustices, and of preparing for the moment when a spark could ignite a fire. She had attended workshops on nonviolent civil disobedience, she had interviewed victims of racial violence, and she had spent years experiencing the daily indignities of Jim Crow segregation in Montgomery, Alabama. The buses, in particular, were a moving symbol of this oppression, with their \"colored\" sections in the back and the arbitrary power wielded by white drivers who could demand Black passengers give up their seats at a whim, even after paying their fare. This was her world, a world where the simple act of commuting was fraught with racial politics and the constant threat of humiliation or worse.\n\nOn that particular day, December 1, 1955, Rosa Parks was indeed tired, not just from a day's work, but from the cumulative exhaustion of living under systemic racism. She boarded the Cleveland Avenue bus, paid her fare, and sat in the first row of the \"colored\" section, the rows immediately behind the section reserved for white passengers. As the bus filled up and more white passengers boarded, the driver, James Blake, demanded that four Black passengers, including Parks, move to the back. Three complied. Rosa Parks did not. Her refusal was not a spur-of-the-moment decision born of physical weariness alone; it was a deeply considered act of resistance, rooted in years of activism and a profound sense of justice. When she uttered the words, \"I did not get on the bus to get arrested. I got on the bus to go home,\" she wasn't denying the legal ramifications of her action; she was asserting her fundamental right to exist, to commute, to simply go about her day without being subjugated by a racist system. She was reclaiming her humanity in a world that sought to deny it, not for a grand political statement initially, but for the basic dignity of her own person.\n\nThe quote resonates so powerfully today because it strips away the myth of the accidental hero and reveals the profound, everyday courage of those who push back against oppression. It speaks to the human desire for normalcy, for the simple freedom to move through the world unhindered by prejudice. It reminds us that significant societal change often begins not with a planned revolution, but with an individual's refusal to accept injustice in their personal life, in their daily routines. Rosa Parks's act, born from a desire to simply go home, ignited the Montgomery Bus Boycott, a year-long struggle that galvanized the Civil Rights Movement and ultimately led to the desegregation of public transportation.",
+      "id": "d69a8be2239cb379",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Rosa Parks",
+      "topic": "wikiquote",
+      "ts": "2026-06-20T15:18:55.257164+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Venus is now appearing on the celestial stage as Earth's brilliant evening star, performing with the Moon, other wandering planets, and bright stars in western skies. For evening sky gazers on June 17, the celestial beacon rose after sunset close by a young, slender, crescent...\n(c) Debra Ceravolo",
+      "id": "95256874bf65a193",
+      "score": 60,
+      "severity": "low",
+      "source": "NASA APOD",
+      "title": "APOD: Daytime Moon Meets Evening Star",
+      "topic": "apod",
+      "ts": "2026-06-20T15:19:01.731357+00:00",
+      "url": "https://apod.nasa.gov/apod/image/2606/Venus_Moon_2026_06_17.jpg"
     }
   ],
   "f4_history": [
@@ -6327,7 +6364,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-20-26-JUN-DE-2026.pdf",
   "fuel_last_pdf_hash": "df5bf29864420fdf3ae48c6b803e8715064f631b1998f09ad9d6c6ddfd00a535",
-  "fuel_last_prices_seen_at": "2026-06-20T13:09:49.971783+00:00",
+  "fuel_last_prices_seen_at": "2026-06-20T15:18:42.394779+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7029,8 +7066,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "philosophy",
-  "knowledge_last_sent": "2026-06-20T4",
+  "knowledge_last_category": "science",
+  "knowledge_last_sent": "2026-06-20T5",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7066,6 +7103,7 @@
     "philosophy:The paradox of the Ship of Theseus": "2026-06-14",
     "pyramid_skyscraper": "2026-06-12",
     "science:Marie Curie and the discovery of radioactivity": "2026-06-13",
+    "science:Schr\u00f6dinger's cat thought experiment": "2026-06-20",
     "science:The discovery of nuclear fission by Meitner and Hahn": "2026-06-18",
     "science:The discovery of superconductivity": "2026-06-14",
     "science:The discovery of the neutrino": "2026-06-16",
@@ -7083,7 +7121,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-06-20T13:08:13.145313+00:00"
+    "ts": "2026-06-20T15:17:17.601971+00:00"
   },
   "launch_seen_ids": [
     "a24af622a80bb043",
@@ -7104,6 +7142,15 @@
   "life_dashboard_last_week": "2026-W24",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "ec986ab700c1dd14",
+      "f0fb5960003e71e6",
+      "f22213416b71281b",
+      "02085062913c8c82",
+      "64eae01104eeb0c3",
+      "fa402a8b28c13776",
+      "08da9fdbf50224ca",
+      "067c6e14823779fd",
+      "5ea55c51dbedcc30",
       "5959b38e15f833f0",
       "61edc6dc4673cb24",
       "4c5fb90503cdde35",
@@ -7194,16 +7241,7 @@
       "9069e7e5f1439099",
       "da7b45e907fd63cd",
       "2fdd27fabd663cd5",
-      "11d86733f5e79baf",
-      "2951167e6225c875",
-      "7d49beef5b90a4e0",
-      "546694831664a1ab",
-      "a06ff269a1627583",
-      "f2157e9afb617fd1",
-      "030c5519054f74df",
-      "508d74ac09b2fb84",
-      "3387b1d697a68fb9",
-      "a7b1a96ae3722005"
+      "11d86733f5e79baf"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7405,6 +7443,18 @@
       "59eee1eb6b983c19"
     ],
     "Spider-Man: Brand New Day": [
+      "53138a18b56cec51",
+      "47923743f7d5ae3b",
+      "81240469cac93fd2",
+      "dcd0db237ccc08d6",
+      "efa22abd8d8478ff",
+      "c05d39d775b20717",
+      "4d32c8fceeadcdfc",
+      "8bceaec2f57a24cc",
+      "ee402ad8673fc7e9",
+      "32f4ebfe73164f62",
+      "1088e8fc80ea04a7",
+      "fd085d11839cd60e",
       "264b8b9058d37fa7",
       "f8148c4debbbe6cd",
       "f43df7346382c153",
@@ -7492,21 +7542,21 @@
       "e58af0f6ff0c518e",
       "37b6f7a8a36eaf95",
       "6d8b34c1efa42682",
-      "bace9110f4ba2a2f",
-      "35500d374885f641",
-      "803decc1e23ae8af",
-      "3c037dce74464a56",
-      "018be3ea7a31d2ea",
-      "bb067200ec8d925f",
-      "30a24274abc9b73f",
-      "4f928a8026b084c8",
-      "e18c4d46b34b12bf",
-      "523309e34f74bf24",
-      "fffd1a44dd947309",
-      "4cbf3b9016c217e9",
-      "8e7cc8f462a79ca5"
+      "bace9110f4ba2a2f"
     ],
     "The Batman Part II": [
+      "f345733a6b0aacdc",
+      "ad5b362981be3527",
+      "c42d57bd6564da75",
+      "50488034e265da68",
+      "ec6eca76b778ade5",
+      "7878f7b15edc8e41",
+      "2897059f7dae4858",
+      "af68620334f59dbe",
+      "a44a910a71758936",
+      "89572d6f116d76a7",
+      "6a56f258c83e5547",
+      "201e42a658fca734",
       "c92f2c9734c518b0",
       "d1a2593a4d556060",
       "9843418d830f48c3",
@@ -7594,21 +7644,10 @@
       "994244d6fe5e5ecd",
       "5cb03f953c5f589d",
       "a9ede372b5a384d3",
-      "bdcc003070da19e5",
-      "d17726e40b15e758",
-      "dbcf973d14d57c50",
-      "2dc71125a31c96ba",
-      "81d0c5185a57e742",
-      "bfad1d64ba3af242",
-      "86fc4958aaa12fc0",
-      "aed8e96e3c42a4a1",
-      "7a2f425bcb0a9120",
-      "caeb68735c339cc8",
-      "acdba57ed20b51a6",
-      "e2e22c9bad243796",
-      "ad1b285988c21964"
+      "bdcc003070da19e5"
     ],
     "The Odyssey": [
+      "23cd4fb961d4b98a",
       "6dd81f68a74586a4",
       "ad03d794aefeddaa",
       "3543add76481bcc9",
@@ -7707,8 +7746,7 @@
       "0ba2e7e1a11ebf25",
       "e9269dd826b9a60f",
       "79e95cc3d3642241",
-      "b958e700443f3cc0",
-      "ae0c107c87c12e7a"
+      "b958e700443f3cc0"
     ]
   },
   "movie_release_dates": {
@@ -7781,7 +7819,8 @@
     1892,
     2416,
     6301,
-    16593
+    16593,
+    71181
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8000,6 +8039,15 @@
       "label": "Dinah Washington",
       "payload": {
         "name": "Dinah Washington"
+      }
+    },
+    "9a153da759c0fdbd": {
+      "applied": null,
+      "created": "2026-06-20T15:17:28.915517+00:00",
+      "kind": "artist",
+      "label": "Wencke Myhre",
+      "payload": {
+        "name": "Wencke Myhre"
       }
     },
     "a2688e648bf6735a": {
@@ -8367,177 +8415,177 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "deals": {
-      "last_data": "2026-06-20T13:09:10.316482+00:00",
+      "last_data": "2026-06-20T15:18:13.434759+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "energy": {
-      "last_data": "2026-06-20T13:09:33.445375+00:00",
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_data": "2026-06-20T15:18:28.077944+00:00",
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "fda": {
-      "last_data": "2026-06-20T13:09:23.216618+00:00",
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_data": "2026-06-20T15:18:17.804189+00:00",
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-20T13:09:49.971804+00:00",
+      "last_data": "2026-06-20T15:18:42.394801+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "fx": {
-      "last_data": "2026-06-20T13:09:48.738475+00:00",
+      "last_data": "2026-06-20T15:18:41.273041+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "games": {
       "last_data": "2026-06-15T13:41:05.025187+00:00",
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-20T13:08:26.540472+00:00",
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_data": "2026-06-20T15:17:30.536031+00:00",
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-20T13:09:22.466856+00:00",
-      "last_data_count": 251,
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_data": "2026-06-20T15:18:17.309053+00:00",
+      "last_data_count": 249,
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "movies": {
-      "last_data": "2026-06-20T13:08:20.203212+00:00",
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_data": "2026-06-20T15:17:24.278647+00:00",
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "music": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-20T13:09:34.074741+00:00",
+      "last_data": "2026-06-20T15:18:28.797834+00:00",
       "last_data_count": 50,
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-20T13:09:48.257153+00:00",
-      "last_data_count": 40,
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_data": "2026-06-20T15:18:40.690262+00:00",
+      "last_data_count": 42,
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-20T13:08:22.186419+00:00",
+      "last_data": "2026-06-20T15:17:26.116860+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "weather": {
-      "last_data": "2026-06-20T13:09:33.643073+00:00",
+      "last_data": "2026-06-20T15:18:28.285987+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-20T13:09:53.242583+00:00",
+      "last_data": "2026-06-20T15:18:45.092396+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-20T13:08:13.145313+00:00"
+      "last_ok": "2026-06-20T15:17:17.601971+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "164996"
+    "last_full_window": "164997"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8550,6 +8598,7 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
+    "2026-06-20|15",
     "2026-06-20|12"
   ],
   "weather_seen_ids": [
@@ -8603,14 +8652,15 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "writers",
-  "wikiquote_last_sent": "2026-06-20T4",
+  "wikiquote_last_category": "activists_thinkers",
+  "wikiquote_last_sent": "2026-06-20T5",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-14",
     "activists_thinkers:Helen Keller": "2026-06-16",
     "activists_thinkers:Martin Luther King, Jr.": "2026-06-19",
     "activists_thinkers:Mother Teresa": "2026-06-14",
     "activists_thinkers:Ralph Waldo Emerson": "2026-06-18",
+    "activists_thinkers:Rosa Parks": "2026-06-20",
     "activists_thinkers:Susan B. Anthony": "2026-06-13",
     "innovators_artists:Frida Kahlo": "2026-06-18",
     "innovators_artists:Henry Ford": "2026-06-15",
