@@ -50,9 +50,10 @@
     "29db49f64ce68661",
     "a8b1aff056453d2f"
   ],
-  "apod_last_sent": "2026-06-20",
+  "apod_last_sent": "2026-06-21",
   "astronomy_sent": [
-    "2026-06-14|New moon tonight - d"
+    "2026-06-14|New moon tonight - d",
+    "2026-06-21|June solstice today"
   ],
   "auto_products": [
     {
@@ -94,7 +95,10 @@
     823533,
     824663,
     823534,
-    823936
+    823936,
+    824665,
+    823532,
+    823937
   ],
   "beach_day_last_sent": "2026-06-20",
   "bills_sent": [
@@ -107,167 +111,13 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "A Big \u2018Avengers: Doomsday\u2019 Leak Reportedly Arrives, But Its Validity Is Debatable - Forbes",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWWxfeWxRTE1FeXZHUjlGXzZkbkh5ME02YjROVHlEbk9pbXpua0Z5cHVMN1FHYmtGRHktdW9id3ZTN0QwZENDY2ZMUm13WklaYTdKM29jNEk4QVVkMnNlaFJBNF9CYzZ4R3BIQURmRE1ZRUcwbVItcF9aNFh5SE9OaXMxUUZTUlA5U3BMTi1XT3U2UnFUNS1zYVhXd2FzVlU4dWtoRjgyR0hBWnMtc09KaFhOeWtrZkJOeEJQSGt5OW5SY0d5T1Nz?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Unveils First Official Look At The Batman Part 2 - The Direct",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1iNzB0aUFVcFZ1dmtDU2VIQTctZGN5blhZOExfTlRaaEM4SEJVUFlTWF9mS1R2eS01YktaVHpRbURmQ01vc2FtMjQ4eXBmSDNESEY1Zy14MHJIU2lwbU44SlVtQ3E1OGtlZmpkVERqSWRNV01MQmR6QjJn?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "Golden Sun",
-      "title": "Fast travel in the first game would be nice",
-      "topic": "golden_sun",
-      "url": "https://www.reddit.com/r/GoldenSun/comments/1u9mgbg/fast_travel_in_the_first_game_would_be_nice/"
-    },
-    {
-      "detail": "DOP 225.00",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "La Sirena",
-      "title": "La Sirena deal: Control Para Aire Universal Kt-E08",
-      "topic": "groceries",
-      "url": "https://www.sirena.do/control-p-aire-universal-kt-e08-2045492/p"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Marvel\u2019s DMCA War Over \u2018Avengers: Doomsday\u2019 Leaks Is Now Confirming What Everyone Suspected - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE84SWk4NFNyZmVNY0RsNENYOTZ5SHlFOGx0NDlZb1ctUVFucDNtdWhIaEdzNklZVFhvVndhNk9IQjJkUS15UWNpQjNJOHFhNGdoWGNpeWRNWm1oQ1NUZ0w3VTZiRHV1VFU?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Does \u2018Spider-Man: Brand New Day\u2019s\u2019 Newly Revealed Character Confirm Sadie Sink Is Playing Jean Grey? - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9fQjg0dUFZcXV2U0JNOXJ5bXJjSlpfOEpYbXhpak0tbi0yQ3pOYVRsZzUxQXlkWWh3M2FNX2E5dkVRSEtMR3dpS2RuM1hnZHUwbGtwWmtWbGlxTzl1VDFtVGpQZ0JjUDg?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 62,
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Leaks - Resurfaced Set Photo May Confirm Recent Photo & Video Are Genuine - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ZTEd2Z0tGazBsX3d0UDUxaE1yUXdMalAwRFB0SjFQNTlkUmI1aktGYTU1WjVKUFdnM3ZyOE1wV2IyZEc2RkJqbzBHdWwxOEFwX2M3Z1FVcVB2bDliMGFLQTNRaWxnSDg?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 62,
-      "source": "Spider-Man: Brand New Day",
-      "title": "New 'Spider-Man: Brand New Day' trailer debuts during global tour - Good Morning America",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZ3R1LWFEZkRzRmVlRWk5UWQzZlRTRktCamRDQTBoalpDMngyckFsQlVTVlZfWjFTVkNqVS1WaUJQOHVFYnJ2eGE5b3dRR2VIYnJHVDg4VEkzUVNURTNTSDVRUkg0R1FVTmJDSkh3NXE1eUM2Vm1GaU5Gb292anRGVkRvSjRKQ2FGdnVEWWlhZDhLc0Q2OXNHUUZSZnJLYVpI0gGmAUFVX3lxTE45MkRZcVdVRFI2NUJLZjBmVF9OdHRKcFhRS21rODR2Z1pldTU4SDdzdnBxMy1lRTkxd3pFalE4US1tYnZkS1dDRjZBbWMtQ29hcDIwX3MxQlNUSTZfYV9qQmt5a2F6SE5WZUpRcUYxRm1KMDlqQm51dzNFUXlpdE14Q3RicFdkY2JEN0hGTEJJUjZpenB2UmtVR2VBU0FrSk9jUm1VQVE?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 62,
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Has a Brand New Trailer, and Spidey Is Freaking Out - Rolling Stone",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaExDemM2TW9qaHdoaUlOV3hhT0pnbDJWUW1FYUczN1F2WXdLZHRkVC0zNnY1Wk55Z19lQ3d6ZGFNY1B0UldtcDgtazJDWGpGeGpRenJOUTBFenIzRlFKUS03WW5XeUJ4WEc5UUVuZWl1V2dVSzMzc3pDdXhmLWN3emlONGdCUXFLam1FMTlfSUVCQTlCUlpXd3hVWHlheDFxWlI0?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 62,
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman: Part II\u2019 begins filming as networks cancel shows - MSN",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOUkJjWlFRNjhZUnhialRjZGZoLTN4VTVWOUk4T3huU1k0QVVNQURKZUxLeFJCZjZBV1ZkOVltR3RmWVRUX0dVOHhkMWxjOWdqQVg5Y3JfQkNteklZS1dOUmxLdlkyS2NMdHpYeFYtQmk2amx3RmhYTFkwd1RqMnVzTVpTWl9ZbUtzQnlYUTM4NXhRLXdVcVJNWVprV1VWcE9LdjZyNnZUazNlQ05QbmFwTVVJMlp6QkNxLUx0WXZ6R053XzhaV2Y4VlViMWFXZ1piOWRUYk0xZm1XWXo1MFppQmlUV25jVjRHdGduRzg1aVZZUQ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "Golden Sun",
-      "title": "I study Golden sun artwork :D not quite there yet but I think it turned out okay ;v",
-      "topic": "golden_sun",
-      "url": "https://www.reddit.com/r/GoldenSun/comments/1uakxah/i_study_golden_sun_artwork_d_not_quite_there_yet/"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.2 - 66 km NW of Rinc\u00f3n, Puerto Rico (~230 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71520763"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 62,
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' starring Tom Holland has posted the best U.S. first-day presales for any film in years. - Deadline",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbUp1RzA3dl9wMTRjWHIzbW9kd3ljRXZBc0dvemNodm8xNkpueDRudVVUeEpKcmN2U0R2eVBxeUhobE9NRzRVSlo3VzhpTWV3eEZHZ2N3UWNxTXZoQkRuM19VRV9ObnZLanhTQmRld0kwcjM0Y19PNDRtQ0tyZC16cXBHak1zNFU2?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 62,
-      "source": "The Batman Part II",
-      "title": "The Batman 2 cryptic behind-the-scenes image may have confirmed the sequel's villains - Yahoo",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQem0wR3NCV0sxN1VYdmQ1TmRpVmV3T2x6SDdocERZU011WjNpbmpYNmg5TEJ3N29IdXM4c1hzaVl0NDJrSnhIOWdoNlZIZXR6MGVMMU5NNDFYY3VwVkZ4am51c21PVE5oWHFTZ01zQVJualRwbkFIdk1OaHNtaVVhTHVPdi1CN1Qxb3otRlNLVnVrZ3lyVnFyQzdMN3l0dw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 62,
-      "source": "The Batman Part II",
-      "title": "The Batman Part II First Look: Matt Reeves Shares Sequel's First Shot - But Whose Body Is That? - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBhdGNwU2NBa2RfRW93MFlnbUs3OGJpa2JkbThqTG85RHp3cnlsWEFwVF9HMXJCVE9taXY1d2lnUS16WGRTZVdKXy0yUWxJal9VVXF1bWVyQVA4eDVMaHZENEZORzFGc1k?oc=5"
-    }
-  ],
-  "digest_last_sent": "2026-06-20",
+  "digest_buffer": [],
+  "digest_last_sent": "2026-06-21",
   "discord_control": {
     "last_id": "1518065380260843570"
   },
   "energy_learn_last_news": "2026-06-20",
-  "energy_learn_last_sent": "2026-06-20",
+  "energy_learn_last_sent": "2026-06-21",
   "energy_learn_seen": {
     "facts": [
       "baseload-vs-peaking",
@@ -276,7 +126,8 @@
     "history": [
       "calder-hall-1956",
       "vindeby-offshore-1991",
-      "voltaic-pile-1800"
+      "voltaic-pile-1800",
+      "bell-solar-cell-1954"
     ],
     "infrastructure": [
       "itaipu-dam",
@@ -410,282 +261,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "id": "15fabc6fb63de0b3",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "New \u2018Spider-Man: Brand New Day\u2019 Trailer Debuts, Peter Parker Enlists Help From Hulk & Punisher \u2013 Watch Now! - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-17T21:24:55.461444+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1yLUJqaHRXMjZqU2kzZjlDRkdMZUZNM3EtRmJzdml6cHpjREVwQ3A0alFjMFk0UnRCUF94NlByQS01elByQ0ZuaUxSbFNrTjVLOWpqNFFZZDBtbkFMbkRGeExMcjYwXzZURnc?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "691f9d3c2382dfc7",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Sony Celebrates SPIDER-MAN: BRAND NEW DAY Tickets Going on Sale With a Huge New Trailer - Get Your Comic On",
-      "topic": "movies",
-      "ts": "2026-06-17T21:24:56.144332+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPS3U0VEl2RHpTRHNwdy02Q2Vnby1fMlRVX01Tc2o3ajd1MlhxSWVzRjFfMFJTUm02UlFTU0xqNlRZOV9vWjBya2F0N1R6dUFSd0FibE5qN002c3RyY2NfY2R6UjlfSjJIZnFMYXNVUmFhTTFYM09EY2RvdDRlWjFEVVNsN3hfT0FHQ01HZ3hsaEJ1aDJmLXRXazlGQ2NNTGFhUUd2TTlWamJ1enJuMTFJY1VfOVdVTzBFMTEzajRnU3FseUZQLThXeGdOdUQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "279f2e33e7d34b45",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 New Trailer Breakdown - Nexus Point News",
-      "topic": "movies",
-      "ts": "2026-06-17T21:24:56.740611+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UOUdLdl93RjJvdVpNSEdVcEZxMElfeUdaclhwaFZHRy13LXBLY3BzajZYcHZHMlFSbEtlVExxVGFkTEZ6WUJ4QUVOWkp6OFZ5UVh1QjhuVVliWTloNHZNNFdSNFZoNmYxOFREcjQxdVdGYkNzbFpjS3lWMVNFYjQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "f2c75c95a76ecc79",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day is still hiding Sadie Sink from us as new trailer lands - Digital Spy",
-      "topic": "movies",
-      "ts": "2026-06-17T21:24:57.100725+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc2owM241clEzLURiLWdzel9XN3d3RGlVanBlOWR6aVo0QW9qNWpFTHZCSW9vdno0MGh5VGFBdmhMMzFJN04wd1Z6WWVIb1FSc2hVRGw0aDltZkN6QTNfdWxzTGdCNkQxMjA2bzBsdFZPSHBubGNfWGlnQW5NQnJzSHdsOTdZRGxseE1udUJPRXpQcXB5X1Bib1NmZzdjZw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "49a9d9f80cc24914",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Second Trailer for 'Spider-Man: Brand New Day' Starring Tom Holland - FirstShowing",
-      "topic": "movies",
-      "ts": "2026-06-17T21:24:57.844368+00:00",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVjdyYUNTbkhvQmxFZWpZbll2RUxBR2g3N05KVFpGbEhPNWVmaWw2SkV2TXVNT0Y1UTZvRUUtSnNKQW03Q2UzUnFKWEthLThiR2NzWDBiYnVOcnVXU0d2Y0lZZmMzNExBbGhFU3BJc0ltaVpBb2Qtb2hEeWM3UU4zMlRpODBTZ1JtVm52bjFiQ21CcHBRTElySjA2ZVdURGZR?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "6bb623fb465ffd56",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Second SPIDER-MAN: BRAND NEW DAY trailer drops - comicsbeat.com",
-      "topic": "movies",
-      "ts": "2026-06-17T21:24:59.066112+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TRm53VHR4M1A2LWdpRElSMGlab250dVZBUEZIQ01MVVQ0M19Qell3OWh6ZDQ1eEtFVkd5YkNUUEE1REpIRHdNZXo3WnlNYU51dHlZTGVneXVSUjVzdVhoczBB?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "4d53a204494ab615",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day's new trailer tells so much of the story, is it worth going to see the movie? - Popverse",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:02.773670+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPSS1BRldydEdoQXBHZ09yVnNYQ1lVZlVuRE5mNTQ5Qk9URjFUY0M2eUEwZGYxM0JyMVV5a1kyVEhqNmp1bkRxSl9ucTNmWEFnMFdFbGNpVFA0cU5rN0pQZFFyb3c0Tm9ZQjctcmF3TzVSNi04bC12b0thT09MWklzVUJuZ0ZINzBjdjhaLXlqelNwRHV1UFRVRFZaWXhKVUw4RE5N?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "3efdc68f087a4641",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider Man: Brand New Day' Trailer Drops, Already 1M Views on YouTube in Less Than An Hour - World of Reel",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:03.361484+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWkxGRVdZN0xadVV1OFE1eVRZN2lCYlp6ZUt2SkE0MGZ0WWtKUlFuWlBqaFdEbEthZnU3cjRCSnVBdjBqdE53MmVXZm9UTUQxemtCeXVZQ3pRMGRDQVFxWVVzdWVhd1pDUnZGNmR6Y3NfOWx4TTJwSTcxUEIyT1BlZw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "f96dbcc9e22c3248",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Awesome New Trailer For SPIDER-MAN: BRAND NEW DAY Brings Hulk, Punisher, and Total Chaos - GeekTyrant",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:05.945394+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORVQzbEQ3X1VNLXJxY2d6WXBVbS10ZjhhV0FLNG8tZG1hT1QzU3JkMEhDX01DbWpkTklaM183cDE4am12bzE1WXlORFpZTEZZVlNPclBQWXZndmVmcFVrUkpUWUZtVGtsLTFiTU1WSjdMQmhMN09HTVBuYjBidnM3QnlDcVVBb29GRFBBUmtoRHp3bzBENE96ZVFqNEVjc3o1b2xRMDh1elFJV1FnblRKTE9vVQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "87630aef39d8286f",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day\u2019s new trailer has the Hulk, and \u201ca powerful villain no one can even see.\u201d - The Verge",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:07.308895+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQd3ZpWUIzSkt6ZTlrWm9XOVV6TGpuT1c4cDA1Xzh0djdZT0EteEpIUE10b1ZJNlFqSUhUMmJBcXJseVR6bUJBWXdyRmVva2Q1LUlNNkFMNXZSbjhuOHFMTjNmTW10aDZrVzVaNFNjSTNreVNzZVQzWGM4ZE1QNkVrSUI1ZkJfeVVfY0NNRGZfd19pNEFCdzNteFJ1c05tRnFxR2xta0VOa1lTX1lIUXFPb2ZnZHVjRk5SVk5MaXpfWWdDel8wMjdkZnpFWXFLU0hhVl9SNktB?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "259be652e800e6b0",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day - New Trailer - Gamereactor UK",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:07.865934+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNRjBkR2Z2NnA2OGYzRUV5eGFidGcwUjM5SFd6d3NmUlZaMWxteXc4VVp0SFB6MHZlV1RZWjl2UFZ3TkNCb1RQR2pvQi1fSndURHpwVWVvYVlrTjRMYmV0TGFtOURLY3JiaVpRT194QmFYNF93OW04RVRSMzlWUHlEdXRCS0h1Zw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "ebe540613f12480a",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer Gives First Look At Mark Ruffalo\u2019s Hulk - Deadline",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:08.220561+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQm55VU92U3hTREt5NkpuaFZ6SkdhV3ZUeXVBSTdlUlN1cU81Zk1JRVhSSmlDUEJVMmhEYnNiUWFLYjVBN0pZaXlkOHZ4QXRka0prX0lVM1hXRTBuM1c1RXRNUnVHemgwWWlBVWVwUlJ6UEUwaTdkRmo5SFE4azNZQXNJWTltY2kxYUJhNlVSNUxzSXhJbUk5alVrVTkwYV9zXzlxag?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "f687c2fb64b474a2",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Has a Brand New Trailer, and Spidey Is Freaking Out - Rolling Stone",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:08.220963+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaExDemM2TW9qaHdoaUlOV3hhT0pnbDJWUW1FYUczN1F2WXdLZHRkVC0zNnY1Wk55Z19lQ3d6ZGFNY1B0UldtcDgtazJDWGpGeGpRenJOUTBFenIzRlFKUS03WW5XeUJ4WEc5UUVuZWl1V2dVSzMzc3pDdXhmLWN3emlONGdCUXFLam1FMTlfSUVCQTlCUlpXd3hVWHlheDFxWlI0?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "ecbaa41b436ff778",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Video: SPIDER-MAN: BRAND NEW DAY Debuts New Trailer - BroadwayWorld",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:09.772099+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOcDNOeUV6RHVkdjFPcjROSHN3djFES01IT1ZHYXhhYmcxS3hVSHdZOUVUQzBNc2NRRjhfQTBreV9ta1pyX0d0blJXc00yNGJ1VmdsamVqMVc0QmdZdWhHLTVaWWMxeFpjbUFIM05SZUhSc05weTIza016TkROVVkydkNrOWRuMXBFYTNKdXRTclozOVpmNDFpOEdlM0RKTGNzV3ZwUQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "514db4d4bb0a962b",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "New 'Spider-Man: Brand New Day' Trailer Debuts, Peter Parker Enlists Help From Hulk & Punisher - Watch Now! - Just Jared",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:11.366303+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQTTRKNEVCSk1hRWtoU2NjNW5kVUJwYVY5THluSXZsSjlFMUtLZmlZMzNpb01leFhuUVduWnBzZjZBQkNKQ1RBLTlyS2wzdHB5NXhRdFRJOUw2M1FyeXBCdEpka1RQNmxiVFJrbHIxQXUwTnhuemFZXzdJMnh1cXdtemRwemZXdm1SZTlKcWloVm9RWnpuVVNRd2NYSTNzVE9OaW94eFh0aUJ0OFplUUhqbW9zQjBZS05oVng0aE0zSmdkS0dmMjdsb1cwaV9kVnlKakE?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "c0eeb74de3faaf47",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "CJ 4DPLEX Announces Sony Pictures\u2019 SPIDER-MAN: BRAND NEW DAY Shot for ScreenX - Boxoffice Pro",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:13.617933+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOY2lTMTdUWHB3TkNFcDFXUEhNbGtoemdaZUVsZlVkSUYxd1QtZWNBclY1NGI2eUtYV1NURHBLZHVfOHFDd0VCUDNPdmZ4UjV5dWlsQVRHbGdIckhCX0lleHp0R3h1Y3lVdmkzdkJTRWpzeTdoaHZWN0duUVZabXk0UjBDLW1QRF9GTTFVb1NRVHJsWWtMZkM5MGdpTlRCZGZyUTVCQWtHTnA?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "7da76ce7b8111666",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Gets New Trailer - SciFiNow",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:13.618487+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOTjZkYzdwY3pwMkZkeUJuXy1wRGZkVmZDQmh6S2JFei16amhTcklacnRydW5ibWVHQV9DYjNDaVFSNWdrRkhicHJFVUh3XzB4Z1JiUFloYk1oZGtMNnA4OEZjUDZ3a290dnhLTmJ5WjJJNTFQS2pqS2JNVVlmUEt4NHRB?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "2eb0350be6c1d876",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Here's Spider-Man Brand New Day release date, super tickets - El Paso Times",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:14.078237+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNLUVaT25td1p1b1lnM3l2Y2Y2ODlkZjlxYkx3YWkzcURkOHlfQnFtUnRhOWRBN1A0dmpxVE5wYXhKSV9hckZhTmI3eHZ2NmItU1VaeDdkTHo2Z3IwSzNJdGRRcXdNMmhKMmF4NF9QOWQ2bmQ3ZXR0RjdfS1ZGMDdxcU5JaW9yR3FVaFRtMzI2NWRyZUY5d1h0aUxrWnRLbGlIbjZkS0JXRUdFNmJhX1ppZ2c4bGEzdjNyU1pLOW1jRkkyeGZOQVpnM1l0TmtYYWxtbVV5REtpTTRwR1dzYXpOOG1jWQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "6db00dde41e72df6",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "The New Trailer for Spider-Man: Brand New Day Drops - Vital Thrills",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:16.473798+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOam5qcnplUGw0LUItZk1fa0g4ZXV4dVVTYWtUNTFMdzZZd0JuOHJKNUh4Yk56YTNPcVI5aGpWR202X2l6TGE3dUhMSlY2eW96UGJtaWFEWE5tUzFPZUg4Vnhwa0xiUmZOZTBsa3IxbWZibzc1ZEh1VG1fMTljOUVlcmdNSUNyUDA?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "dd38f670ca2a7ca2",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Announces Special Theatrical Release With Extra Footage - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:18.943814+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNX1lWS1VJd3BHaHdwamU2cDNGM2x4b3lWQ3huUzNQTnVuWF9GRVh6NmswSXdLSjVMSVl0V3VMc2dpS3JjN1NuejQ3MGFYWWdZOU4wTENOenJTRF9EWU41Q0c3SlRsVVpxZm1rVlhoVXctVXZ6RkVIQk4zZFc4VEMydXU3eklWM3gxZGVsVQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "05827c7922a025f1",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Samsung Galaxy Gets Starring Role in \u2018Spider Man: Brand New Day\u2019 - Variety",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:18.944257+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPNzBBN3I4bTNMcFZCcVUwWHdKc3lMaWF0LVRQdHJEQkNEb2I0X0t6UDVvYkltQW9qbXhBQ3pKcE1jYXhXN09aSl9JVWxkd3d1eHRkSHdxUVdqandnWmR4RVNJc0tiMWNJNzNmbUV2dU9EcmdxS0dmWFZTamxDeW1LMks1bG9FTjF3ZXRycw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "4050a8b0bd488512",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Launches \"Spidey Tracker\" As Movie Is Confirmed For San Diego Comic-Con Panel - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:21.227357+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5Ld2F1R25ZVjlsMVc0UG1haFBFUm5vWUpQcWZaeEpZNEtaTnJyZlg4M1lOMXJHSlljTlk1SDd4ZXFTbFV3aG1pODk2eVdRZFlJVlhNZ3RaZ3NJSzVXd3Y3RDZqeHBQLUU?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "88e5466bcbcd1b9b",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman 2 Casting Report Sparks Fan Debate Over Sebastian Stan - The Movie Blog",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:22.776141+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPVWE1Z0M2Zi1KMUhSU09jOV91S0laMzJYRHJjcHNwN1g2UTktSC0tRHlyYkdqaWdIaXlWQ0tJLVg1cjJJM3NFQlZyMnJ4aFVxQVAtd2x4dUdYc2ZURzB4aGZ0a01DZWRkWHFVWm1kY0IybDhVZTNybzYySGEwQ1Vwdjk2bDRuS1RsVzVNZldPV1F0V2lHUUk5alZaMXV2Rk5pZW40QWtB?oc=5"
-    },
     {
       "action": "push",
       "detail": "",
@@ -6409,6 +5984,282 @@
       "topic": "wikiquote",
       "ts": "2026-06-21T09:06:19.344084+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "f883aa919daf2bd7",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday\u2019s First Trailer Gets Impressive Fan Recreation (Watch) - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-21T13:27:59.494970+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQVU9aM2F3NE1WbXQwZXZuVkp0dGlMUk1uekllUERKTk4zN09IVFUtRFlYekMzajZacVlBa2tka1AzWFpxWGI2NXNUMGR2OExRMzlqby1XbzMxTTNVWjRGa1ZKWTlHLXZZWElXLXVxQldHcUNLYW1hYzRzR292RkktRE8zSUdTNnpxVXc?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "d5902bab5c39204e",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer Gives First Look At Mark Ruffalo\u2019s Hulk - Deadline",
+      "topic": "movies",
+      "ts": "2026-06-21T13:28:00.283006+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQm55VU92U3hTREt5NkpuaFZ6SkdhV3ZUeXVBSTdlUlN1cU81Zk1JRVhSSmlDUEJVMmhEYnNiUWFLYjVBN0pZaXlkOHZ4QXRka0prX0lVM1hXRTBuM1c1RXRNUnVHemgwWWlBVWVwUlJ6UEUwaTdkRmo5SFE4azNZQXNJWTltY2kxYUJhNlVSNUxzSXhJbUk5alVrVTkwYV9zXzlxag?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "66699ef4b61ade2e",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Shop Marvel Must Haves: Celebrate 'Spider-Man: Brand New Day\u2019 with Official Spidey Merch - Marvel.com",
+      "topic": "movies",
+      "ts": "2026-06-21T13:28:00.284180+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcGdrOUU1R0trV2NDQnhZdC1vNUZTT1RYV0dndVNjbGNmLUx4RkVpQlJXS2pxSHRURGZGVFRtRHg4NExhRXhhX2ZGVGJyRkVwdi1fMXVuTnV5Q2N4S3dNdVFQTDBPVDYtRDZWQVZ2WUtFYURSLWJqMjlCcGJ2OUs2NzNvcklLTDgwa1g3Sg?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "fc1eb421058bb5bd",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Matt Reeves Confirms 'The Batman: Part II' Script Complete; Robert Pattinson's Reaction Revealed - \u73a9\u5177\u4eba TOY PEOPLE",
+      "topic": "movies",
+      "ts": "2026-06-21T13:28:01.851527+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1td3R6Sk0wUGpvbm1ZRllKRlJRZGhPUEJNaklYZkl4QXA0M0MzRkluOWhWTGZ6NVY5SVBjMTBYOVVQaFVXOHpuWEo5bC1QN003?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "e6f781fd8a75616f",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "THE BATMAN \u2013 PART II Shares Official Logo - Nerdist",
+      "topic": "movies",
+      "ts": "2026-06-21T13:28:01.852560+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdVdfYnRDM0tXU2V3Z08tU3o4VEZUU2hFMWZCWlZIdmRRa2hfYmZXLUxGTlV2Q1FiT1VPa3d4VV9iWGpnZU5JOWQwZHp1VE9OOUwtLWZNUlhOU0h0ZFRTVF9tLVZuek43Q2FjMEZzV0RtZDdORFpFdWhRbjNKRWg5aUFvbE5UODBVUW5IMTJNc05XMUVfd2Jub3MxOElyVFk2X3fSAacBQVVfeXFMTXJtcVMxVlJxS0tULVJmY2xPNU1fUU05Wk1hcjFKODk1a0JNNGdsU2ZZREpDSkNuaEx4bEpQaml0ZzJ0Z1BqdllTZ1JEWFhPOHc4dW5wQ1lTRnpqUWFpZnVQV094ampKQ05CMGx1WU1aT0dqTFZaZEtkUFhsQ2h5djVkMTZ6em56emtHbFBGSFBsU0tRckd3ZWNON3pCTGRtVWFtcjJPMjg?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "ee052ae8717ce4f3",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Does The Batman 2 Director Matt Reeves' Cryptic BTS Photo Hint At The Sequel's Villains? - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-21T13:28:01.853429+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5VODdMcGk1ZVFOVmVMdHotYXQwaGNJX3hEQmF2QVo2LVNTUDZ1U1hxcmVnclRmd0g5eVd3QzhiVVJOTklGVHVmZWhEVXBWc0hSem5QYUJSdlo3TG90enA4WS1jSDV3dDQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Not Strong Enough - Boygenius\n(because you like Phoebe Bridgers)",
+      "id": "bb8d08a826ee7087",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-21T13:28:07.676554+00:00",
+      "url": "https://www.deezer.com/track/2216546997"
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-06-20",
+      "id": "ab2ec778c288e217",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Blue Jays 8 \u2013 Cubs 6 (W)",
+      "topic": "baseball",
+      "ts": "2026-06-21T13:28:09.865830+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-06-20",
+      "id": "e647ac10b37e595a",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Yankees 2 \u2013 Reds 10 (L)",
+      "topic": "baseball",
+      "ts": "2026-06-21T13:28:09.936785+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-06-20",
+      "id": "8f08c168cef138c6",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Dodgers 2 \u2013 Orioles 3 (L)",
+      "topic": "baseball",
+      "ts": "2026-06-21T13:28:10.018167+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 5,695.00 (was DOP 6,695.00, -15%)",
+      "id": "d9fa37af7cc074c0",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Abanico De Piso Westinghouse 20 Pulgada Ind 72716",
+      "topic": "groceries",
+      "ts": "2026-06-21T13:29:04.465802+00:00",
+      "url": "https://www.sirena.do/westinghouse-abanico-piso-20p-ind-72716-1691477/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 3,695.00 (was DOP 4,295.00, -14%)",
+      "id": "0767fd2141d07f6d",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Abanico De Piso Westinghouse 16 Pulgada 72780",
+      "topic": "groceries",
+      "ts": "2026-06-21T13:29:04.466496+00:00",
+      "url": "https://www.sirena.do/westinghouse-abanico-c-piso-16-72780-1777566/p"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "276aa2fe08c3b909",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-06-21T13:29:16.312102+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Quick reminder to drink some water.",
+      "id": "8650c818a6435020",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-21T13:29:36.778869+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "To lower skin-cancer risk, use SPF 15+ sunscreen and seek shade midday. (Source: CDC)",
+      "id": "0ff38ec922d508e1",
+      "score": 60,
+      "severity": "low",
+      "source": "Health",
+      "title": "Health tip",
+      "topic": "health_tip",
+      "ts": "2026-06-21T13:29:37.671353+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "For much of human history, the great epic of our dispersal across the globe was a story told in whispers and fragments. Anthropologists and archaeologists painstakingly pieced together narratives from scattered stone tools, ancient hearths, and the shifting sands of desert pathways. They hypothesized about the exodus from Africa, the peopling of the continents, and the dramatic voyages that bridged vast oceans. But these were often static snapshots, lacking the vibrant, flowing narrative of movement itself, the intricate dance of populations meeting, merging, and sometimes diverging. The very concept of \"race\" was a crude and often damaging construct, attempting to categorize humanity based on superficial traits, utterly failing to capture the underlying unity and complex tapestry of our shared lineage.\n\nThe true revolution arrived with the advent of molecular genetics. In the late 20th and early 21st centuries, scientists like Allan Wilson, Rebecca Cann, and Spencer Wells began to unlock the secrets held within our very cells. They focused on specific genetic markers, particularly mitochondrial DNA (mtDNA), passed down exclusively from mother to child, and the Y-chromosome, passed exclusively from father to child. These segments of our genome act like molecular clocks, accumulating mutations at a relatively predictable rate. By comparing these markers across different populations, scientists could construct phylogenetic trees, tracing back the branching points where groups diverged, and thus, mapping the ancient migration routes our ancestors took, not in terms of millennia, but with astonishing precision. The \"Out of Africa\" theory, once a strong hypothesis, became a certainty, backed by irrefutable genetic evidence.\n\nThis groundbreaking work didn't just confirm previous theories; it painted a vastly more detailed and often surprising picture. It revealed bottlenecks, periods when our ancestral population dwindled to perhaps a few thousand individuals, a testament to the precariousness of early human existence. It illuminated instances of interbreeding with archaic hominins like Neanderthals and Denisovans, adding unexpected branches to our family tree and challenging simplistic notions of \"pure\" ancestry. The human drama inherent in this research is profound: imagine the early mothers, carrying the mtDNA that would eventually populate entire continents, or the pioneering fathers whose Y-chromosomes would become ubiquitous in distant lands. It\u2019s a story of incredible resilience, adaptability, and an insatiable curiosity that drove our ancestors to explore every corner of the Earth.\n\nThe implications of tracing human migration through genetics extend far beyond academic curiosity. It profoundly reshapes our understanding of identity, revealing the deep interconnectedness of all humanity, often transcending modern political and social boundaries. The very idea of fixed, isolated populations dissolves under the weight of genetic evidence, which consistently shows a history of constant movement, mixing, and cultural exchange. It helps us understand the spread of diseases, the development of unique adaptations to different environments, and even sheds light on linguistic patterns.",
+      "id": "8886223b615c66cb",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Tracing human migration through genetics",
+      "topic": "learn",
+      "ts": "2026-06-21T13:29:41.945376+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "On this day\n1864: New Zealand Wars: A British victory against the M\u0101ori King Movement brought the Tauranga campaign to an end.\n\nFeatured: Tatannuaq\nTatannuaq, also known as Tattannoeuck or Augustus, was an Inuk interpreter for two of John Franklin's Arctic expeditions in what is now Canada. Originally from a group of Inuit living 320 km (200 mi) north of Churchill, then part of Rupert's Land, he was employed as an...\n\nDominican culture\nNovember 25 is the International Day for the Elimination of Violence against Women, chosen by the UN to honor the Mirabal sisters, Dominican activists assassinated in 1960. (Source: United Nations)",
+      "id": "d6514c0ed195e803",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Daily learning",
+      "topic": "learn",
+      "ts": "2026-06-21T13:29:42.846792+00:00",
+      "url": "https://en.wikipedia.org/wiki/Tatannuaq"
+    },
+    {
+      "action": "push",
+      "detail": "\u201cIt is all a matter of time scale. An event that would be unthinkable in a hundred years may be inevitable in a hundred million.\u201d\n\u2014 Carl Sagan\n\nCarl Sagan was more than just an astronomer; he was a poet of the cosmos, a public intellectual who possessed the unique ability to translate the complex grandeur of the universe into terms that resonated with everyday people. Born in 1934 in Brooklyn, New York, Sagan's childhood was steeped in the wonders of science fiction and the burgeoning space age. He devoured books on astronomy, dreaming of distant worlds long before humanity had even ventured beyond Earth's immediate orbit. His career path led him to the intellectual crucible of the University of Chicago and later Cornell, where he distinguished himself not only through groundbreaking research into planetary atmospheres, particularly Venus and Mars, but also through his exceptional talent for communication. He was a principal investigator on the Voyager missions, a true pioneer in the nascent field of astrobiology, and an ardent advocate for the search for extraterrestrial intelligence. But it was arguably his 1980 television series \"Cosmos: A Personal Voyage\" that cemented his legacy, captivating a global audience of hundreds of millions and igniting a passion for science in an entire generation.\n\n  The quote, \"It is all a matter of time scale. An event that would be unthinkable in a hundred years may be inevitable in a hundred million,\" encapsulates a core tenet of Sagan's worldview, often articulated within the context of deep time and the vastness of cosmic evolution. While the precise moment he uttered these words is elusive, similar sentiments permeated his work throughout the late 20th century, particularly during the Cold War era. This was a period overshadowed by the existential threat of nuclear annihilation, where humanity's short-term decisions held catastrophic potential. Sagan, a vocal opponent of the arms race, often contrasted the fleeting squabbles and immediate dangers faced by civilization with the immense, patient processes of the universe. He spoke about the \"cosmic calendar,\" compressing the 13.8 billion-year history of the cosmos into a single year, revealing how fleeting humanity's presence truly is. Within this vast temporal landscape, the seemingly impossible \u2013 the evolution of intelligent life, the formation of planets, the eventual demise of stars \u2013 becomes not just possible, but a natural consequence of physical laws playing out over immense durations. He was urging us to broaden our perspective beyond the immediate, to consider the long arc of history and the universe's inexorable march.\n\n  Today, Sagan's words resonate with an even deeper urgency. We confront global challenges that demand a shift in our temporal perspective: climate change, species extinction, and the very long-term sustainability of our technological civilization. The \"unthinkable in a hundred years\" \u2013 perhaps the melting of vast ice sheets or the collapse of ecosystems \u2013 is, in the context of geological time, a rapidly unfolding inevitability if current trends persist. Conversely, the \"inevitable in a hundred million\" reminds us of the profound transformations our planet has undergone, and will continue to undergo, regardless of human actions.",
+      "id": "96329c561503041c",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Carl Sagan",
+      "topic": "wikiquote",
+      "ts": "2026-06-21T13:29:47.773831+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "What: Bell Labs demonstrated the first practical silicon photovoltaic cell, converting about 6% of sunlight into electricity.\nWhy it matters: It was the first solar cell efficient enough to be useful, first powering satellites and remote equipment.\nWhy you should care: That same silicon technology, now far cheaper and more efficient, sits on rooftops and solar farms worldwide.\n(Source: Bell Labs)",
+      "id": "60220a0111162eb1",
+      "score": 60,
+      "severity": "low",
+      "source": "Energy learning",
+      "title": "\u26a1 Today's spark \u2014 Bell Labs unveils the silicon solar cell (1954)",
+      "topic": "energy_learn",
+      "ts": "2026-06-21T13:29:48.126363+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\ud83d\udcaa HABITS\n- Habit nudges sent: water (14)\n\n\ud83d\udcb0 FINANCE\n- Spending: Jun 15-Jun 21: RD$290.00 across 2 transactions\n- USD/DOP: 58.63 -> 59.24 (+0.61, +1.04%)\n- Upcoming bills: Internet bill due 2026-06-22 (tomorrow)\n\n\ud83c\udf24 WEATHER & ENVIRONMENT\n- Weather alerts logged: 14 (latest: Atlantic Tropical Weather Outlook)\n\n\ud83c\udfac ENTERTAINMENT & NEWS\n- Top release: [62] Samsung Galaxy Gets Starring Role in \u2018Spider Man: Brand New Day\u2019 - Variety\n- Golden Sun: 3 item(s); latest: \"I study Golden sun artwork :D not quite there yet but I think it turned out okay ;v\"\n- AI news: 3 item(s); latest: \"Anthropic\"\n\n\u2699\ufe0f SYSTEM HEALTH\n- 267 notification(s) pushed this week",
+      "id": "c7d6ae0fa5aff4fd",
+      "score": 60,
+      "severity": "low",
+      "source": "Life Dashboard",
+      "title": "Your week in review",
+      "topic": "life_dashboard",
+      "ts": "2026-06-21T13:29:49.546291+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Ends Monday 22 June (tomorrow). Tap for the academic calendar (PDF).",
+      "id": "1bfb9814ca324735",
+      "score": 62,
+      "severity": "high",
+      "source": "ITSC",
+      "title": "ITSC: Recepci\u00f3n Docs: Otras Carreras",
+      "topic": "itsc",
+      "ts": "2026-06-21T13:29:50.779683+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/05/Calendario-academico-2026-2-MAYO-AGOSTO-_-Actualizado_.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "June solstice today",
+      "id": "d8e562319fb67dbc",
+      "score": 60,
+      "severity": "low",
+      "source": "Astronomy",
+      "title": "Sky tonight",
+      "topic": "astronomy",
+      "ts": "2026-06-21T13:29:51.962717+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "What if you could see the entire sky -- all at once -- for an entire year? That, very nearly, is what is pictured here. Every 15 seconds during 2025, an all-sky camera took an image of the sky over the Netherlands. Central columns from these images were then aligned and combined...",
+      "id": "d1a027e74e4cf8d7",
+      "score": 60,
+      "severity": "low",
+      "source": "NASA APOD",
+      "title": "APOD: Keogram: The Sky in 2025",
+      "topic": "apod",
+      "ts": "2026-06-21T13:29:54.975000+00:00",
+      "url": "https://apod.nasa.gov/apod/image/2606/Keogram2025_Bassa_960.jpg"
     }
   ],
   "f4_history": [
@@ -6481,7 +6332,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-20-26-JUN-DE-2026.pdf",
   "fuel_last_pdf_hash": "df5bf29864420fdf3ae48c6b803e8715064f631b1998f09ad9d6c6ddfd00a535",
-  "fuel_last_prices_seen_at": "2026-06-20T21:26:41.958841+00:00",
+  "fuel_last_prices_seen_at": "2026-06-21T13:29:30.004468+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -6831,6 +6682,8 @@
       "1b7d9e5ab11b51a5"
     ],
     "La Sirena": [
+      "634e7c284fe8078c",
+      "2cd211ee5554b2b0",
       "7cd72d588465bb4e",
       "4f82550e26ef5c19",
       "f6fd9c6505fccc10",
@@ -7127,7 +6980,7 @@
     "gothic_and_mystery:1064": "2026-06-13",
     "novels:1400": "2026-06-13"
   },
-  "health_tip_last_sent": "2026-06-20",
+  "health_tip_last_sent": "2026-06-21",
   "holidays_sent": [],
   "ignored": {
     "4071c13d0b9dc18b": {
@@ -7181,14 +7034,15 @@
     "d1291b97df844b44"
   ],
   "itsc_sent_ids": [
+    "f1d87cea6e675232",
     "1a1f311b66d385ba",
     "5a89cf511570e508",
     "fd64320b1c8294eb",
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "astronomy",
-  "knowledge_last_sent": "2026-06-21T3",
+  "knowledge_last_category": "early_humans",
+  "knowledge_last_sent": "2026-06-21T4",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7205,6 +7059,7 @@
     "early_humans:The Last Glacial Maximum": "2026-06-17",
     "early_humans:The Venus of Willendorf": "2026-06-15",
     "early_humans:The earliest evidence of human cannibalism": "2026-06-19",
+    "early_humans:Tracing human migration through genetics": "2026-06-21",
     "first_artists": "2026-06-12",
     "hearing_spacetime_ring": "2026-06-12",
     "math_history:Al-Khwarizmi and the birth of algebra": "2026-06-19",
@@ -7245,8 +7100,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-06-21T13:03:36.010923+00:00"
+    "ok": 46,
+    "ts": "2026-06-21T13:27:57.363605+00:00"
   },
   "launch_seen_ids": [
     "a24af622a80bb043",
@@ -7263,10 +7118,20 @@
     "9cf78ee44cb96c21",
     "7621aad01d0821be"
   ],
-  "learn_last_sent": "2026-06-20",
-  "life_dashboard_last_week": "2026-W24",
+  "learn_last_sent": "2026-06-21",
+  "life_dashboard_last_week": "2026-W25",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "5f1878dea21fe968",
+      "d9f75fa2f6be0f91",
+      "4662edc99a6113a5",
+      "8fdd93d084ce8806",
+      "b8046a779af427f0",
+      "ec906ef731c75b06",
+      "1fe73c0b70c64e41",
+      "71f9ccceb2f6c20d",
+      "4b44d6f6fa825a16",
+      "860379a5d1c9a79c",
       "8d1b4273334f7e3e",
       "8d37a00cf711b8c2",
       "c9eaa0be0b68ef27",
@@ -7356,17 +7221,7 @@
       "9cf582912392e808",
       "ad612d69998cd949",
       "3980e4793fd2212c",
-      "fc5a3353fad0e2e5",
-      "4675d5b894b85d5f",
-      "dec9c330f005a7f2",
-      "31ac9cd98fea558b",
-      "1ae19510f327aa81",
-      "f9b4494d21ac8953",
-      "5459fbb6dc7dafd9",
-      "8602e13c2ddeb3b6",
-      "a68c1f2512b97c0b",
-      "9273668b0c2f61ca",
-      "b24cbd7bfb2d23e9"
+      "fc5a3353fad0e2e5"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7568,6 +7423,20 @@
       "59eee1eb6b983c19"
     ],
     "Spider-Man: Brand New Day": [
+      "5ab902b1fc30649b",
+      "3b2af1a5463960a2",
+      "ffd2c7055c45780b",
+      "7ee18d14299a7aa6",
+      "7953345e7ed8c447",
+      "8ac661eddea95707",
+      "d958eb022ad4c146",
+      "3014977fd16315c8",
+      "c686fbe59aa84e31",
+      "8fed34dbfb6cbf19",
+      "e7175f95341d2e4d",
+      "13a89265c833b756",
+      "6e1c43603e633b5a",
+      "15caa1703c40218c",
       "00510cde636b97eb",
       "ec97133bb73ec826",
       "e7ad5e9542efa0cc",
@@ -7653,23 +7522,15 @@
       "f43df7346382c153",
       "e7eac5618e55676c",
       "ceb6769fc022e075",
-      "cdb5855ee555e84e",
-      "4f2f36945bb02966",
-      "5ff7ab513eeb9f5d",
-      "e6434fa48b5bd469",
-      "52a1aa11e81de426",
-      "bb6c80813e1a2a56",
-      "2a0154515ffd9388",
-      "84bf152f4831607e",
-      "8226c721333a6260",
-      "36f1a3967dc58c32",
-      "30c73b364d96b51f",
-      "a090145ba4c8e237",
-      "20fa4ac7bfc9f5bc",
-      "47181424644e982c",
-      "a133fb9568d7c7db"
+      "cdb5855ee555e84e"
     ],
     "The Batman Part II": [
+      "73aeff6b46f5ae28",
+      "75925abb3ca00cce",
+      "796157dfe77b8980",
+      "a43042ad91da8784",
+      "db121353780ed139",
+      "8d557536d2ba1a0b",
       "a58d253d956fbbe8",
       "78b3f5f0ba95dbf7",
       "2f0b1b8a84e405e2",
@@ -7763,15 +7624,13 @@
       "8623c9c3c2d12cb6",
       "ca6d64e7a102cf6a",
       "3b70ab740a9c98ec",
-      "638d691db2c6c597",
-      "19a351ecbdab486e",
-      "cf630ffddd894923",
-      "9c2dfe348cf76e86",
-      "6ecb724ac585f29a",
-      "44c2c8333c751231",
-      "c027b14700686493"
+      "638d691db2c6c597"
     ],
     "The Odyssey": [
+      "e799950999635361",
+      "1a7b13c6539a972f",
+      "899daf2545318258",
+      "755f76d3848fcdda",
       "19b6dfec0cd2ea49",
       "275397a9ee67ac2e",
       "53937f52b05d8110",
@@ -7867,11 +7726,7 @@
       "5cbc317fee432860",
       "b588434170a6822d",
       "8665f8d3bd0619fc",
-      "5d19d9f692150356",
-      "f006e50307a6af32",
-      "827d520d9af02325",
-      "7d0f5594b0d978b5",
-      "914ce575e362b9ff"
+      "5d19d9f692150356"
     ]
   },
   "movie_release_dates": {
@@ -7947,7 +7802,8 @@
     16593,
     71181,
     72908,
-    81007
+    81007,
+    5457940
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8121,6 +7977,15 @@
       "label": "Shawn Mendes",
       "payload": {
         "name": "Shawn Mendes"
+      }
+    },
+    "6396d278d54bb95b": {
+      "applied": null,
+      "created": "2026-06-21T13:28:07.676530+00:00",
+      "kind": "artist",
+      "label": "Boygenius",
+      "payload": {
+        "name": "Boygenius"
       }
     },
     "6818a61aa1cdc2e8": {
@@ -8561,177 +8426,177 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-21T13:03:36.010923+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "deals": {
-      "last_data": "2026-06-21T09:05:38.921527+00:00",
+      "last_data": "2026-06-21T13:28:56.766506+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "energy": {
-      "last_data": "2026-06-21T09:05:48.853229+00:00",
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_data": "2026-06-21T13:29:16.168645+00:00",
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "fda": {
-      "last_data": "2026-06-21T09:05:39.425893+00:00",
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_data": "2026-06-21T13:29:04.978856+00:00",
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-20T21:26:41.958868+00:00",
+      "last_data": "2026-06-21T13:29:30.004491+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-20T21:25:29.616757+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "fx": {
-      "last_data": "2026-06-21T09:06:02.904294+00:00",
+      "last_data": "2026-06-21T13:29:28.853618+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "games": {
       "last_data": "2026-06-15T13:41:05.025187+00:00",
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-21T09:04:48.705653+00:00",
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_data": "2026-06-21T13:28:09.300741+00:00",
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-20T21:26:15.194866+00:00",
+      "last_data": "2026-06-21T13:29:04.465250+00:00",
       "last_data_count": 251,
-      "last_ok": "2026-06-20T21:25:29.616757+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "movies": {
-      "last_data": "2026-06-21T09:04:42.011020+00:00",
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_data": "2026-06-21T13:28:03.029540+00:00",
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "music": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-21T09:05:49.672496+00:00",
+      "last_data": "2026-06-21T13:29:16.735079+00:00",
       "last_data_count": 50,
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-21T09:06:02.154974+00:00",
-      "last_data_count": 32,
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_data": "2026-06-21T13:29:28.337900+00:00",
+      "last_data_count": 33,
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-21T11:51:00.965711+00:00",
+      "last_data": "2026-06-21T13:28:04.821797+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-21T11:50:58.875315+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "weather": {
-      "last_data": "2026-06-21T09:05:49.046464+00:00",
+      "last_data": "2026-06-21T13:29:16.311902+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-21T09:06:08.203690+00:00",
+      "last_data": "2026-06-21T13:29:36.778314+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-21T09:04:34.295401+00:00"
+      "last_ok": "2026-06-21T13:27:57.363605+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165003"
+    "last_full_window": "165004"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8743,8 +8608,11 @@
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
   "watchdog_failing_since": {},
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-06-21|12"
+  ],
   "weather_seen_ids": [
+    "df9a8144c197ec13",
     "4fc32a44c8bc50b9",
     "80d1affba4a71c91",
     "dce698b5e64e4464",
@@ -8797,8 +8665,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "philosophers",
-  "wikiquote_last_sent": "2026-06-21T3",
+  "wikiquote_last_category": "science_pioneers",
+  "wikiquote_last_sent": "2026-06-21T4",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-14",
     "activists_thinkers:Helen Keller": "2026-06-16",
@@ -8829,6 +8697,7 @@
     "philosophers:Socrates": "2026-06-13",
     "philosophers:Voltaire": "2026-06-20",
     "science_pioneers:Ada Lovelace": "2026-06-14",
+    "science_pioneers:Carl Sagan": "2026-06-21",
     "science_pioneers:Charles Darwin": "2026-06-13",
     "science_pioneers:Galileo Galilei": "2026-06-16",
     "science_pioneers:Marie Curie": "2026-06-18",
