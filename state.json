@@ -111,7 +111,26 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [],
+  "digest_buffer": [
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Second Trailer for 'Spider-Man: Brand New Day' Starring Tom Holland - FirstShowing",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVjdyYUNTbkhvQmxFZWpZbll2RUxBR2g3N05KVFpGbEhPNWVmaWw2SkV2TXVNT0Y1UTZvRUUtSnNKQW03Q2UzUnFKWEthLThiR2NzWDBiYnVOcnVXU0d2Y0lZZmMzNExBbGhFU3BJc0ltaVpBb2Qtb2hEeWM3UU4zMlRpODBTZ1JtVm52bjFiQ21CcHBRTElySjA2ZVdURGZR?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider Man: Brand New Day' Trailer Drops, Already 1M Views on YouTube in Less Than An Hour - World of Reel",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWkxGRVdZN0xadVV1OFE1eVRZN2lCYlp6ZUt2SkE0MGZ0WWtKUlFuWlBqaFdEbEthZnU3cjRCSnVBdjBqdE53MmVXZm9UTUQxemtCeXVZQ3pRMGRDQVFxWVVzdWVhd1pDUnZGNmR6Y3NfOWx4TTJwSTcxUEIyT1BlZw?oc=5"
+    }
+  ],
   "digest_last_sent": "2026-06-21",
   "discord_control": {
     "last_id": "1518065380260843570"
@@ -261,114 +280,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "id": "41199c50f25158d6",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "Scarlett Johansson, Sebastian Stan and More Confirmed for \u2018The Batman: Part II\u2019 | THR News Video - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:24.578192+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNY09hRTdWaE1nbjFNRU5EMWRkNjFHdUFUaUNDOGNSRTB1UUl5TUhZSUtBR01OeUVvN1RVeE9ZUGt3aU81a19nOFFZZk1kT1hIMXIweU9XZEtkbHJSZ3ZzVjNhc2M1V2pzS3FBck9iR0pkb1ZnTGlRWGtFX3VNZnF4X0xuYU45aHhfTzZiZWhRRUh5dGRRVWlGSlVGTkdpYVg4d2x0YTR1Q2lkZlBn?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "cf78e05cd1e07c64",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman 2\u2019s HD Logo Revealed as Matt Reeves Begins Filming - AOL.com",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:26.369192+00:00",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9Sa3Y4TWJwN0dPZFJ3OUJhaG1NZU1zQ2NEc0d3a0NMREpGeGlvWXFaNjZ1ZzRYZWMwUXk4OXNIR2wtakgtTkVYSU5WbUlKYzhnbWpEQXg3b2V2X3B1cV9HS1VSczhVXzljUDRhaTY3TGpuQ1RNTDVqNQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "365ff97dca5f01d5",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Does The Batman 2 Director Matt Reeves' Cryptic BTS Photo Hint At The Sequel's Villains? - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:26.369611+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5VODdMcGk1ZVFOVmVMdHotYXQwaGNJX3hEQmF2QVo2LVNTUDZ1U1hxcmVnclRmd0g5eVd3QzhiVVJOTklGVHVmZWhEVXBWc0hSem5QYUJSdlo3TG90enA4WS1jSDV3dDQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "a22aa3802b6fc2a7",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman 2 cryptic behind-the-scenes image may have confirmed the sequel's villains - GamesRadar+",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:26.369840+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQ3BDdkFOQUMyMUlva0hYX0dkdzlqeWk3WnBHT3ZyZ2REcTNWeDRxWDZWQ3Mwd21aYmNCZTlSMkxQWkZjcE4telp0dTdoM3FkTWNwa09LbGxNRElzX21yQ2EzVFVvWHgySVdtTXN0bURqVXpMejg1Q1ZXWVdZN1hwdGR0V2R1TnRlek5CeVRrcklxVVJqeUg2MDhsWUp0QlRjTnE4bDlaRlQxUjBtcm1ZbmxTMVFUUkhzWDIyX1BBRC1Yc1ZQa2FzT081bzhVV0tkMXc?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "78a1a3aff9cd0d9d",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman 2 cryptic behind-the-scenes image may have confirmed the sequel's villains - Yahoo",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:26.997507+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQem0wR3NCV0sxN1VYdmQ1TmRpVmV3T2x6SDdocERZU011WjNpbmpYNmg5TEJ3N29IdXM4c1hzaVl0NDJrSnhIOWdoNlZIZXR6MGVMMU5NNDFYY3VwVkZ4am51c21PVE5oWHFTZ01zQVJualRwbkFIdk1OaHNtaVVhTHVPdi1CN1Qxb3otRlNLVnVrZ3lyVnFyQzdMN3l0dw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "15299f57eec7c599",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "THE BATMAN PART II: Official Logo Revealed - batman on film",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:27.545549+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQN0lQZE9iSXl0QkZJdFVQY3h1QlpBMHljTEtGbjlJaFAwWGpMVURoZG85Mm4wbDBwY2hSV253TzVYdWJFZ1BPVHRmUHA5c2Y2T0lueTNYMno0ODl3Ry1JdUVibTZSRGFUSHM2RjdvZ0tjS1ZXN2lIbHBGUThUckZHZNIB2gJBVV95cUxNSGtMUmpVLVJJZV9TeTk5aVlnQjlGUzNLSzlMeW9jVXZoWk8ydlJuVUdhNmxOcXVBNTUyOUI4THNEZkdiOGlndXFUQzB2OUJjNW5wSkV0b3hnUGN3cTdqSDJEQmphN2FUMTZBbVAzdnFNSnRDTkI1SDJ1NEtRaldYRkNlOWRzY2otbzlyaHFhSjZlczdNd0luY09zNlFKYlo5Wl8yTFBDckFGZ29sbUNQVGU3M1J0QllSLWVpdFJJNUszbjdzZVlFVlBPLTFDWnI4eGhpeEp0VjZyNTV5dlpCUWpsTGpLNUNYaDhBeVhSQmtYWVJsczdWNjhmMlZtQXpNMi05UkQzQUxwaGRQWEpRWFNfTl9zVTRudXhIYXVQT1hBaGZUWUt3MmVTbThCRGt0cEVyc0FFZ1dGTFpzQU10MkExdmF0R0NHTm1Wc3JSU1BINTVyc1VfSUR3?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "239abf4cec069b99",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman: Part 2: Matt Reeves shares first set photo as film officially begins shooting - The New Indian Express",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:27.545956+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNd0FTQXZSZDBzMGdNZ0FPbU5DaTJZRnRZOTJqMDlmMUZfX1h4bjR1QXpZZEZtamVyd2lHU011cXIwVmN5UFhYMjJUV3BCdEkxNFlPby1hZGNPU2tIaU12T3NoaDRackNsbmEtMWJWaWV0VC1fQmZmeGJ3ZG1XUG5UX0otN0NGVEowUlEyQTNySUlGRXE3MFNFYnh3X3FkMmxZQ2JIbXBWSWpNcHpobU4yaWFiR1I5dUh2Z0E5ajNkNkFZOU1WYnM2ZmZCMDRUdnJCaVB4VWc2ckhnZEstNW1NaGJFNDJTSGlfNXJjc2RnZURMTm92T2FYVzVCcDZNYmx6Q19wUNIBkgJBVV95cUxNdVlaeEVZTE9GMXo4V2VIbERmbUlyYjFFTDdqcjlHNzdHQ1FCM3g2X0lWbVNTTENEdlNXWXlNcEtTZzNhUWwwZTFHWHdYOXRmZDRJTGJCcEFVTUkxMXk3akFyTHdWUFZlTVQtM2E4QjBDbzIyMUZ0Z3hhZmxsZzFndElWV3JuTU96THNhbWpmb2dvQmNDdDVleV9yR2RlY0g4eEo3SFE0cXNvcHU4VC1DWVJrcy1JTmw1dEN0elYxTThHQXpOVXJfeEhyVUhEREM5QnkzWnVOYXFJR19Md05JdVdWdHNIeEQ0NUd3UGNtc21EWUd2eENvRVByUmZaTnFOc0lGNlB6bUV6Ym9vekRCU0xB?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "6491dd75e941a91b",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Just Revealed the Very First Shot of \u2018The Batman Part II\u2019 as Filming Officially Begins - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:27.888711+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9yYUhaMmRWd2VvMVFmYld3YmNhQUU0eEdpRjV6Q0tuWjZDdUdfRlFrYVpadk0yajJ3MXdLaVNoY2V3U1BpcFVaRHVvcVdHSmJ4VG1uWXVnNl8xX3k5Snd3MTROZm4?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "e4c6b5f02b327b71",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman 2: Sebastian Stan Confirms Harvey Dent Will Become Two-Face in Sequel - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-17T21:25:27.889254+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1DbTVxcUpBNThsZnlOQXZMVDZaM0gyWllVRWdVQnltZmZ2eUNPUzRaeDRBY2kyUkhTS3d5aW9yMFlxekl4Q2hISWxHak5KUlVEenc?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6260,6 +6171,114 @@
       "topic": "apod",
       "ts": "2026-06-21T13:29:54.975000+00:00",
       "url": "https://apod.nasa.gov/apod/image/2606/Keogram2025_Bassa_960.jpg"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "bc75af330652516a",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Leaked 'Avengers: Doomsday' Footage Gives the World Its First Look at Cyclops and Beast in the MCU - Comic Basics",
+      "topic": "movies",
+      "ts": "2026-06-21T15:29:32.973174+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOMk9RcnNoX05MTmtfWjA1YVUxSllqUEpSODdsekxaTUJsem9WYlp4bXhESUlha0VVdi1CbVloN041NENlRDFuOHVwbWlLUkRNWUoySnpsUzZUMFlkNUZyZFhVR2MxbDU5aTVSRGNnbm03S25tZlQ0YWgtVVVHN2RsTW5vWWJXUTJPT09TOVlsUWVNY0xpZzZZVnp6MVhsbnhNcHNpX0p4ZXBadk1rS3M0bzlkOHhqVVR6Mjh2VVF3RFdwUQ?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "4fcb024199a9bad8",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Officially Confirms a Major Change to the Hulk - Collider",
+      "topic": "movies",
+      "ts": "2026-06-21T15:29:33.538754+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZkNCQ2QwRWcyRGpDX0xDV1hOZ1JDTk9lMjFScWtuQmJ2VVdjV05NUUVPa05sdW1fUmJ4eDFIVXNtanpMRTFYZWZrdHdxUkZURDIzdjdlblphN2lNeURrV1NWZzZGbE9PN1ZPX0JOcTV1Zi1iTGloNmZFYkh5eGhhZzk2UThhZFk4bmc?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "8a4298bf3fc48f17",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Second Trailer for 'Spider-Man: Brand New Day' Starring Tom Holland - FirstShowing",
+      "topic": "movies",
+      "ts": "2026-06-21T15:29:33.539905+00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVjdyYUNTbkhvQmxFZWpZbll2RUxBR2g3N05KVFpGbEhPNWVmaWw2SkV2TXVNT0Y1UTZvRUUtSnNKQW03Q2UzUnFKWEthLThiR2NzWDBiYnVOcnVXU0d2Y0lZZmMzNExBbGhFU3BJc0ltaVpBb2Qtb2hEeWM3UU4zMlRpODBTZ1JtVm52bjFiQ21CcHBRTElySjA2ZVdURGZR?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "b88822f2b68254b4",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider Man: Brand New Day' Trailer Drops, Already 1M Views on YouTube in Less Than An Hour - World of Reel",
+      "topic": "movies",
+      "ts": "2026-06-21T15:29:33.541265+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWkxGRVdZN0xadVV1OFE1eVRZN2lCYlp6ZUt2SkE0MGZ0WWtKUlFuWlBqaFdEbEthZnU3cjRCSnVBdjBqdE53MmVXZm9UTUQxemtCeXVZQ3pRMGRDQVFxWVVzdWVhd1pDUnZGNmR6Y3NfOWx4TTJwSTcxUEIyT1BlZw?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "5ab6d37f4b9e8964",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "The Batman Part 2 Star Reveals Reduced Role in Sequel - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-21T15:29:35.223493+00:00",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZVld3Z1dyMWswa0t3NjdBdTE1OGpFY0VWQ2FqekMyT1A5T1hIMmRZZW1EMjJhUUwwRk42aFFsMU93MHF3ZjlqTzFiRlltN3JfUmR2Tjc4Q29zRjFMVEhtSHdwQXVCR1FTMk1hQ2hNSnJGekE0VHc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "House of the Rising Sun - Lizzy McAlpine\n(because you like Phoebe Bridgers)",
+      "id": "0762fe97985aa9f4",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-21T15:29:41.598890+00:00",
+      "url": "https://www.deezer.com/track/3804077732"
+    },
+    {
+      "action": "push",
+      "detail": "Pause for a moment and have a drink of water.",
+      "id": "f98c959aaa7ed821",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-21T15:31:06.551805+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "The continuum hypothesis, at its heart, is a deceptively simple question posed by one of mathematics' most revolutionary figures, Georg Cantor.  Imagine the integers \u2013 1, 2, 3, and so on \u2013 a collection we understand to be infinite. Now consider the real numbers, all the points on a continuous line, including fractions, irrational numbers like pi, and everything in between. Cantor, in the late 19th century, daringly proved that these two infinities are not the same size. The set of real numbers, he showed, is \"larger\" than the set of natural numbers; it cannot be put into one-to-one correspondence with them. This opened up a breathtaking new landscape: an hierarchy of infinities. The continuum hypothesis, then, asks a profound follow-up: Is there an infinity strictly between the size of the natural numbers and the size of the real numbers? Is the \"next\" largest infinity after the count of natural numbers precisely the count of real numbers, or does an even stranger, intermediate infinity lurk in the mathematical shadows?\n\nCantor's life was a testament to both intellectual brilliance and immense personal struggle, a drama often intertwined with his groundbreaking work on infinities. His ideas were met with significant skepticism, even outright hostility, from many contemporaries, including the influential Leopold Kronecker, who famously dismissed set theory as \"humbug\" and \"a disease.\" This rejection deeply affected Cantor, contributing to periods of severe mental illness and depression that plagued him throughout his life. Yet, driven by an unwavering conviction in the truth of his mathematical discoveries, Cantor persevered, laying the foundations for modern set theory. The continuum hypothesis, a direct extension of his cardinal number theory, became a central problem he wrestled with for decades, tantalizingly close yet always just out of reach, a source of both profound inspiration and exasperating frustration. He yearned to resolve it, believing it held a key to unlocking further mysteries of the infinite.\n\nThe eventual \"resolution\" of the continuum hypothesis is perhaps even more fascinating and complex than the question itself. In the 1930s, Kurt G\u00f6del, a titan of 20th-century logic, demonstrated that the continuum hypothesis cannot be disproven from the standard axioms of Zermelo-Fraenkel set theory (ZF). This meant that assuming the continuum hypothesis to be true would not lead to any contradictions within the system. However, the story didn't end there. Decades later, in the 1960s, Paul Cohen, using a revolutionary technique he called \"forcing,\" proved that the continuum hypothesis cannot be proven from ZF either. This dual result, G\u00f6del's and Cohen's, was a bombshell: it established that the continuum hypothesis is \"independent\" of the Zermelo-Fraenkel axioms. It's a statement whose truth or falsity cannot be determined by the very foundations we use to build mathematics.\n\nThis independence has profound implications for our understanding of mathematical truth. It suggests that there isn't one single, universally determined \"size\" of the continuum, but rather that its size can vary depending on which additional axioms one chooses to adopt beyond the basic ZF set theory. For an intelligent curious adult, this is a mind-bending revelation. It's akin to discovering that in geometry, the parallel postulate isn't inherently true or false, but rather leads to different, equally consistent geometries (Euclidean vs. non-Euclidean).",
+      "id": "f0431dc701132978",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The continuum hypothesis",
+      "topic": "learn",
+      "ts": "2026-06-21T15:31:12.212744+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cIt is sweet to dance to violins When Love and Life are fair: To dance to flutes, to dance to lutes Is delicate and rare: But it is not sweet with nimble feet To dance upon the air!\u201d\n\u2014 Oscar Wilde\n\nThe world of Oscar Wilde was one of dazzling wit and sharp societal critique, a world he navigated with the flamboyant grace of a natural performer. Born in Dublin in 1854, Wilde emerged onto the Victorian scene not as a quiet scholar, though he was certainly brilliant, but as a dandy, an aesthete, a man who believed in art for art's sake and who lived his life as a carefully constructed masterpiece. He cultivated an image of refined indolence, often seen draped in velvet, a green carnation in his lapel, his conversation a cascade of epigrams and paradoxes. This was the man who penned plays like \"The Importance of Being Earnest\" and \"Lady Windermere's Fan,\" works that satirized the very social conventions he so masterfully defied in his personal life. He charmed London's elite, his soir\u00e9es were legendary, and his pronouncements on beauty, truth, and morality were eagerly absorbed, often with a frisson of scandal. The late 19th century was a time of immense change \u2013 industrialization, empire, and a tightening grip of Victorian morality that Wilde, with his subversive intellect and open embrace of the unconventional, subtly but persistently challenged.\n\n  It is against this backdrop of both glittering success and simmering societal tension that Wilde's words, \"It is sweet to dance to violins When Love and Life are fair: To dance to flutes, to dance to lutes Is delicate and rare: But it is not sweet with nimble feet To dance upon the air!\" take on their poignant weight. This particular quote, often found in various forms, hints at a profound shift in his circumstances. While the exact context can be elusive, such sentiments often appear in the shadow of his trial and conviction for gross indecency in 1895. The \"nimble feet\" dancing \"upon the air\" is a chilling euphemism for hanging, a capital punishment of the era, and speaks to the existential dread and the very real threat of execution that loomed over those accused of homosexual acts. The \"sweet\" dances of violins, flutes, and lutes represent the joyous, carefree existence he once led, filled with love, art, and intellectual camaraderie. The swift and brutal reversal of his fortunes, from darling of society to condemned criminal, was a stark reminder of the precariousness of defying Victorian norms, especially for someone as boldly individual as Wilde. His descent into Reading Gaol, where he would write \"The Ballad of Reading Gaol,\" marked the end of the public persona and the beginning of a profound and painful personal transformation.\n\n  Even today, over a century later, Wilde's haunting lines resonate with an enduring power. They speak to the universal human experience of soaring highs and devastating lows, to the fragility of happiness and the sudden, brutal impact of societal judgment. The \"sweetness\" of life's dances, whether in love or success, remains a cherished ideal, while the chilling image of dancing \"upon the air\" serves as a stark metaphor for the consequences of standing outside conventional boundaries, of societal ostracization, or even the loss of freedom and life itself.",
+      "id": "f01a4a63b881bdd8",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Oscar Wilde",
+      "topic": "wikiquote",
+      "ts": "2026-06-21T15:31:18.049934+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6332,7 +6351,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-20-26-JUN-DE-2026.pdf",
   "fuel_last_pdf_hash": "df5bf29864420fdf3ae48c6b803e8715064f631b1998f09ad9d6c6ddfd00a535",
-  "fuel_last_prices_seen_at": "2026-06-21T13:29:30.004468+00:00",
+  "fuel_last_prices_seen_at": "2026-06-21T15:31:01.365022+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7041,8 +7060,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "early_humans",
-  "knowledge_last_sent": "2026-06-21T4",
+  "knowledge_last_category": "math_history",
+  "knowledge_last_sent": "2026-06-21T5",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7066,6 +7085,7 @@
     "math_history:Andrew Wiles and the final proof": "2026-06-14",
     "math_history:Euclid's Elements": "2026-06-15",
     "math_history:Riemann and the geometry of curved space": "2026-06-18",
+    "math_history:The continuum hypothesis": "2026-06-21",
     "medicine:Barry Marshall and the cause of stomach ulcers": "2026-06-18",
     "medicine:The discovery of anesthesia's risks and refinements": "2026-06-20",
     "medicine:The global eradication of smallpox": "2026-06-16",
@@ -7101,7 +7121,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-06-21T13:27:57.363605+00:00"
+    "ts": "2026-06-21T15:29:29.999040+00:00"
   },
   "launch_seen_ids": [
     "a24af622a80bb043",
@@ -7122,6 +7142,15 @@
   "life_dashboard_last_week": "2026-W25",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "b8c3270c8e150f41",
+      "2943391933dfa8a5",
+      "214b250f1254a58e",
+      "4675d5b894b85d5f",
+      "1ae19510f327aa81",
+      "5459fbb6dc7dafd9",
+      "8602e13c2ddeb3b6",
+      "9273668b0c2f61ca",
+      "cb09271ec2d6fb47",
       "5f1878dea21fe968",
       "d9f75fa2f6be0f91",
       "4662edc99a6113a5",
@@ -7212,16 +7241,7 @@
       "ad236ed1fc88ca5d",
       "effb4f95e0113f90",
       "cacd3aa896388c32",
-      "99d878edf84bafad",
-      "226199f9100800cd",
-      "7cedf576b93a2307",
-      "5ead808e99543f9f",
-      "9d88e9b9ecb31b6c",
-      "b7c0737737d7b183",
-      "9cf582912392e808",
-      "ad612d69998cd949",
-      "3980e4793fd2212c",
-      "fc5a3353fad0e2e5"
+      "99d878edf84bafad"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7423,6 +7443,19 @@
       "59eee1eb6b983c19"
     ],
     "Spider-Man: Brand New Day": [
+      "c79ff05e0fca113e",
+      "4f2f36945bb02966",
+      "5ff7ab513eeb9f5d",
+      "e6434fa48b5bd469",
+      "52a1aa11e81de426",
+      "bb6c80813e1a2a56",
+      "2a0154515ffd9388",
+      "8226c721333a6260",
+      "36f1a3967dc58c32",
+      "30c73b364d96b51f",
+      "a090145ba4c8e237",
+      "20fa4ac7bfc9f5bc",
+      "47181424644e982c",
       "5ab902b1fc30649b",
       "3b2af1a5463960a2",
       "ffd2c7055c45780b",
@@ -7509,22 +7542,18 @@
       "47923743f7d5ae3b",
       "81240469cac93fd2",
       "dcd0db237ccc08d6",
-      "efa22abd8d8478ff",
-      "c05d39d775b20717",
-      "4d32c8fceeadcdfc",
-      "8bceaec2f57a24cc",
-      "ee402ad8673fc7e9",
-      "32f4ebfe73164f62",
-      "1088e8fc80ea04a7",
-      "fd085d11839cd60e",
-      "264b8b9058d37fa7",
-      "f8148c4debbbe6cd",
-      "f43df7346382c153",
-      "e7eac5618e55676c",
-      "ceb6769fc022e075",
-      "cdb5855ee555e84e"
+      "efa22abd8d8478ff"
     ],
     "The Batman Part II": [
+      "19a351ecbdab486e",
+      "2bce4130882fac7c",
+      "5b6ff01e3a563800",
+      "cf630ffddd894923",
+      "9c2dfe348cf76e86",
+      "44c2c8333c751231",
+      "6ecb724ac585f29a",
+      "c027b14700686493",
+      "943ff8455a1cabd7",
       "73aeff6b46f5ae28",
       "75925abb3ca00cce",
       "796157dfe77b8980",
@@ -7615,18 +7644,12 @@
       "630fef9f143c92db",
       "5d4bd6ba62e3afd3",
       "35163cf639d8932d",
-      "69dbf07438882207",
-      "ca0c3e81ef84a4f2",
-      "1bd35867d020a596",
-      "96fdbafa3224b490",
-      "8dbc409bf62e7ab7",
-      "cd5ecda128a54504",
-      "8623c9c3c2d12cb6",
-      "ca6d64e7a102cf6a",
-      "3b70ab740a9c98ec",
-      "638d691db2c6c597"
+      "69dbf07438882207"
     ],
     "The Odyssey": [
+      "017bc7b06ac3f9bf",
+      "f006e50307a6af32",
+      "914ce575e362b9ff",
       "e799950999635361",
       "1a7b13c6539a972f",
       "899daf2545318258",
@@ -7723,10 +7746,7 @@
       "289dbb1731b257ff",
       "5ec72566a8ccd4a5",
       "0634ca1ceefe770a",
-      "5cbc317fee432860",
-      "b588434170a6822d",
-      "8665f8d3bd0619fc",
-      "5d19d9f692150356"
+      "5cbc317fee432860"
     ]
   },
   "movie_release_dates": {
@@ -7803,7 +7823,8 @@
     71181,
     72908,
     81007,
-    5457940
+    5457940,
+    14157839
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8031,6 +8052,15 @@
       "label": "Taylor Swift",
       "payload": {
         "name": "Taylor Swift"
+      }
+    },
+    "9239c4e3457b7688": {
+      "applied": null,
+      "created": "2026-06-21T15:29:41.598646+00:00",
+      "kind": "artist",
+      "label": "Lizzy McAlpine",
+      "payload": {
+        "name": "Lizzy McAlpine"
       }
     },
     "92d61192dec4533c": {
@@ -8426,177 +8456,177 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "deals": {
-      "last_data": "2026-06-21T13:28:56.766506+00:00",
+      "last_data": "2026-06-21T15:30:07.047897+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "energy": {
-      "last_data": "2026-06-21T13:29:16.168645+00:00",
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_data": "2026-06-21T15:30:43.105861+00:00",
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "fda": {
-      "last_data": "2026-06-21T13:29:04.978856+00:00",
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_data": "2026-06-21T15:30:32.602201+00:00",
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-21T13:29:30.004491+00:00",
+      "last_data": "2026-06-21T15:31:01.365051+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "fx": {
-      "last_data": "2026-06-21T13:29:28.853618+00:00",
+      "last_data": "2026-06-21T15:30:59.612205+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "games": {
       "last_data": "2026-06-15T13:41:05.025187+00:00",
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-21T13:28:09.300741+00:00",
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_data": "2026-06-21T15:29:43.478996+00:00",
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-21T13:29:04.465250+00:00",
-      "last_data_count": 251,
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_data": "2026-06-21T15:30:32.278768+00:00",
+      "last_data_count": 200,
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "movies": {
-      "last_data": "2026-06-21T13:28:03.029540+00:00",
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_data": "2026-06-21T15:29:36.313564+00:00",
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "music": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-21T13:29:16.735079+00:00",
+      "last_data": "2026-06-21T15:30:43.811506+00:00",
       "last_data_count": 50,
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-21T13:29:28.337900+00:00",
-      "last_data_count": 33,
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_data": "2026-06-21T15:30:58.916280+00:00",
+      "last_data_count": 32,
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-21T13:28:04.821797+00:00",
+      "last_data": "2026-06-21T15:29:38.893132+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "weather": {
-      "last_data": "2026-06-21T13:29:16.311902+00:00",
+      "last_data": "2026-06-21T15:30:43.204798+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-21T13:29:36.778314+00:00",
+      "last_data": "2026-06-21T15:31:06.551259+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-21T13:27:57.363605+00:00"
+      "last_ok": "2026-06-21T15:29:29.999040+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165004"
+    "last_full_window": "165005"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8609,6 +8639,7 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
+    "2026-06-21|15",
     "2026-06-21|12"
   ],
   "weather_seen_ids": [
@@ -8665,8 +8696,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "science_pioneers",
-  "wikiquote_last_sent": "2026-06-21T4",
+  "wikiquote_last_category": "writers",
+  "wikiquote_last_sent": "2026-06-21T5",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-14",
     "activists_thinkers:Helen Keller": "2026-06-16",
@@ -8708,6 +8739,7 @@
     "writers:George Orwell": "2026-06-19",
     "writers:Leo Tolstoy": "2026-06-20",
     "writers:Maya Angelou": "2026-06-13",
+    "writers:Oscar Wilde": "2026-06-21",
     "writers:Virginia Woolf": "2026-06-16"
   },
   "wwdc_seen_urls": [
