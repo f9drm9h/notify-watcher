@@ -201,6 +201,33 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Avengers: Doomsday",
+      "title": "Marvel Studios officially responds to those Avengers: Doomsday leaks - Bam Smack Pow",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOS0YxTkVmTk1FN3ZXZ0tBVkJWTGRVdndPaUowbEVRV2JjVDQ2UkJPdWsxU05sdjFqc2JLMGVKSUx5REtWb2l5WkpDVk9JLXduTVgtdUcwSGZMcFRqbEVqOV94Z0Rldmx1aGdWSzVaRGVsZkpvU21EVS1Lck9PTm4xYjd6X05VZw?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Avengers: Doomsday",
+      "title": "Marvel Officially Confirms New Avengers Lineup Before Avengers: Doomsday - Comic Book Resources",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPV3ZIZ2ltcDUyTzM0d2xaUVIwLXJHN2tkdnJabGlNd2QzQTMxVnc4VkdhWG85ZHR5VDdORHNsMXJiZXRsMGdNQTNLY2FHRlZXTWFBRjBtUnB5Y2tMeU1Jc3BjNC1EM01GZFlqVHE3N3VOQWFHM01mWnZpYTRxUFl4RFN3MEFGZw?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-06-21",
@@ -352,162 +379,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "01edc0c67804511b",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Skyrizi",
-      "title": "FDA updates approval for Skyrizi (Risankizumab-Rzaa) (BLA761262)",
-      "topic": "fda",
-      "ts": "2026-06-18T00:25:32.860168+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761262"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "9a68f683981fdd35",
-      "score": 70,
-      "severity": "high",
-      "source": "Bayer Healthcare Pharms",
-      "title": "FDA approves Bayer Healthcare Pharms (NDA219627)",
-      "topic": "fda",
-      "ts": "2026-06-18T00:25:32.860449+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219627"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "f9174a7f63e0cf0b",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-18T00:25:43.271460+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "581703ae35ca1f9e",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Earthquakes",
-      "title": "M3.1 - 37 km ENE of Miches, Dominican Republic (~133 km away)",
-      "topic": "quakes",
-      "ts": "2026-06-18T00:25:56.909946+00:00",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000su76"
-    },
-    {
-      "action": "push",
-      "detail": "Anything but the 3 run! Marth??? English Espa\u00f1ol",
-      "id": "b0615c358cf66e33",
-      "score": 62,
-      "severity": "moderate",
-      "source": "MKLeo17",
-      "title": "MKLeo17 uploaded a new video",
-      "topic": "youtube",
-      "ts": "2026-06-18T00:25:59.746433+00:00",
-      "url": "https://www.youtube.com/watch?v=fs2p5fy6kjE"
-    },
-    {
-      "action": "push",
-      "detail": "In the mid-19th century, mathematics, particularly geometry, seemed a settled discipline. For two millennia, since the time of Euclid, the axioms and theorems of geometry had stood as an unassailable edifice of pure reason, a reflection of the very structure of the physical universe. Parallel lines, everyone knew, never met. The sum of angles in a triangle was always 180 degrees. Space was flat, infinite, and immutable. This was the bedrock of our understanding of measurement, surveying, and even astronomy. But cracks had begun to appear in this ancient foundation, whispered doubts about Euclid's fifth postulate \u2013 the parallel postulate \u2013 leading to the strange, beautiful, and ultimately world-shattering non-Euclidean geometries of Bolyai and Lobachevsky, where parallel lines could diverge, and triangles could have angle sums less than 180 degrees. These were intellectual curiosities, fascinating thought experiments, but they lacked a unifying framework, a way to connect these seemingly disparate geometries and understand their potential physical relevance.\n\nEnter Bernhard Riemann, a frail and often sickly young man from a small German village, possessed of an intellect that burned with an almost otherworldly intensity. In 1854, as part of his habilitation lecture \u2013 the necessary step to become a university lecturer \u2013 Riemann delivered a talk titled \"On the Hypotheses Which Lie at the Bases of Geometry.\" The lecture, given before the faculty at G\u00f6ttingen, including the aging titan Carl Friedrich Gauss, was a tour de force, a work of such profound insight that it would fundamentally reshape not just mathematics, but our understanding of reality itself. Riemann did not merely add another non-Euclidean geometry to the growing collection; he transcended them. He envisioned a universal framework for geometry, where space could be intrinsically curved, not just extrinsically, like a sphere embedded in higher dimensions. He introduced the revolutionary idea of a \"manifold,\" a space that locally appears Euclidean but globally could possess a complex, intrinsic curvature, defined by a metric tensor that varied from point to point.\n\nRiemann's genius lay in his ability to generalize. He did not ask what kind of space we *live in*, but rather what *kinds of spaces are possible*. He showed that the properties of space \u2013 how distances are measured, how lines behave \u2013 could be determined by an internal \"metric,\" a set of numbers that describe the local curvature at every point. Euclidean geometry, with its flat space, and the non-Euclidean geometries of Bolyai and Lobachevsky, were simply special cases within this grander, more flexible system. He laid the mathematical groundwork for understanding spaces of any number of dimensions, with any conceivable curvature. It was a purely abstract, mathematical endeavor, with no immediate experimental verification or practical application. Indeed, it would be decades before its true significance would be recognized outside of esoteric mathematical circles.\n\nThe profound implications of Riemann's work would finally burst forth onto the world stage some sixty years later, when Albert Einstein, grappling with the nature of gravity, found himself stymied by the limitations of traditional physics. He needed a way to describe gravity not as a force acting across space, but as a manifestation of space-time itself.",
-      "id": "a12fcd80d9b6215c",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Riemann and the geometry of curved space",
-      "topic": "learn",
-      "ts": "2026-06-18T00:26:05.712510+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cOne never notices what has been done; one can only see what remains to be done.\u201d\n\u2014 Marie Curie\n\nThe name Marie Curie evokes images of glowing test tubes and groundbreaking discovery, a figure almost mythical in her singular pursuit of knowledge. Yet, behind the legend was a woman of relentless practicality, driven by an insatiable curiosity that often overshadowed her own remarkable achievements. Born Maria Sk\u0142odowska in Warsaw in 1867, a time when Poland was under Russian rule and women were largely excluded from higher education, her early life was a testament to her fierce intellect and determination. She worked as a governess, saving every franc, until she could finally make her way to Paris and the Sorbonne, where she immersed herself in a world of science. It was there she met Pierre Curie, a brilliant physicist, and their partnership would redefine the very fabric of physics and chemistry. Together, they toiled in a makeshift laboratory, a drafty shed, isolating minute quantities of new, powerful elements \u2013 radium and polonium. They were not merely identifying substances; they were unveiling the secrets of atomic structure, challenging centuries of scientific dogma.\n\n  It's against this backdrop of ceaseless, often grueling work that Marie Curie's observation, \"One never notices what has been done; one can only see what remains to be done,\" truly comes into focus. This wasn't a lament, but rather a profound statement of her operational philosophy. By 1911, the year she would receive her second Nobel Prize, this time in Chemistry for her isolation of pure radium, she had already endured immense personal tragedy with Pierre's sudden death in 1906. The world, still reeling from the burgeoning industrial age, was on the cusp of unprecedented change. Einstein's theory of relativity was less than a decade old, and the seeds of quantum mechanics were being sown. For Curie, the discovery of radioactivity wasn't an endpoint but a gateway to an entirely new universe of inquiry. Her work was instrumental in developing early cancer treatments and in shaping the understanding of atomic energy, laying foundations for technologies that would both heal and harm. She saw beyond the accolades, beyond the tangible achievements, always looking to the next question, the next experiment, the next frontier.\n\n  And why does this seemingly simple statement resonate so powerfully today, more than a century later? Because it encapsulates the very essence of human striving, particularly in fields of innovation and progress. Whether in scientific research, artistic creation, or social reform, the feeling that there is always more to accomplish, more to perfect, more to understand, is a universal motivator. In our fast-paced, constantly evolving world, where solutions quickly become new problems and breakthroughs open up new vistas of inquiry, Curie's words serve as a reminder that true progress is an ongoing journey, not a destination. It\u2019s the spirit of the scientist who, having answered one question, immediately formulates ten more; of the artist who, completing one masterpiece, envisions the next; of the activist who, having secured one victory, turns their gaze to the next injustice.",
-      "id": "1982e10b9519ce23",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Marie Curie",
-      "topic": "wikiquote",
-      "ts": "2026-06-18T00:26:10.575543+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "e6d9c97283c5fbae",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "'Avengers: Doomsday' Announcement From Russo Brothers Leaves MCU Fans Angry - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-18T05:21:16.759087+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5jZFNnWm92cERQbFptR09LWl9kRWpxNE0xdlVKSXp0S3NRMGZGSzJvYmptNHFHN3gycEhqMlRFNWszdTlTcFVUa1l6czd1blJOTXdkTGVIZy1acnRkUzlhM0FjcVpKY2c?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "fe9a023448dea634",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel makes the Avengers: Doomsday announcement nobody wanted to hear - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-18T05:21:16.759572+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMmc4djBiTndNX0dONlB6amExWnRZc2tQQmZqMll3T2p2a1N3SnlEaEI0TnhOSjlRR1RHRl9GUm9iQkV6X2JmcnNrNjU0QzU5bWN0SFlWV090blZjNWVvY25aNkE2YkJXbnNsMWtXUF9uQ29xaXZMQ1FpRVlxQlhDenl3cHRYV1k2QlZHaDZB?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "99c2fde288df62c4",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day new trailer: Peter Parker asks Hulk for help controlling his mutating DNA - Cinema Express",
-      "topic": "movies",
-      "ts": "2026-06-18T05:21:17.348929+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOc2VtMjl6OHhpX3BGd3dBQ2tKLWhZaWs3VEZ3U2FURWRnY0tLTUlWNDdhVnFmdDFCNmdpekV5V3I4ZFJLaW1oR3pWQ3hwblF1YVd2MXExS1dKVEhFUnlMZTNqdGIwSWVYQVlIcjdUS01zRTJJemRJV1pXN1hpTlp3MjNuZDBxUWlqVWtzV3g1UF9nbURCbWJSUmh1d2NiZXNjNzRlbzhRVXAtUG4wcGhfTGdWR3gxUXU1NDI3RDUzUFZ6WHFCNmJTVl96Mjc2cFlpYmxMdjR4YTZpejdTaTI4ZHdVMndUaGfSAfQBQVVfeXFMT0UwZHVNcUphUkpSN3Q5ek9hOEstZ2Z0eF9RVFVfQ2NPRnJKbVQ4dXByTWFKYTl4cFNselRoNFpvbkJNaGg5OE5PaE1hUjZuaWxucVBpTHZ4V0FmM2szR3NXOExMeWJGdERRazRobWZ1QV9Jc3VqblZ5eHc0RGZPcVlCYUUzc184UGpudW1ac3dEWUhCa1hpczg4Yl94VHoyY3l5SG1mLW9oUEotZU1BZ01FQ0pRYnEzUVdITDhycEd0c3pwN1hwc1ZlM3J6b2plYlBYVHA1QWdFOVZ3aGN5M252aElyN3FoTFdxUmM0Zl93dEdfQQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "cd72d9a0365a94ef",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Watch: the new trailer for 'Spider-Man: Brand New Day'. - Coup de Main Magazine",
-      "topic": "movies",
-      "ts": "2026-06-18T05:21:17.905205+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9pVzkxWlVITFZPWk5OajlVLUx1YzktUnZCU0NDTEdpNXRnbHlvSnN0aGR1enRvOFJ6cUpNSlhIRy11dzRCZ2FubzJqU2NxM3RWall2WUdvQ2RVNGd6SldfYg?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "6c62d7e17ca35969",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "SPIDER-MAN: BRAND NEW DAY New Trailer - Spotlight Report",
-      "topic": "movies",
-      "ts": "2026-06-18T05:21:18.204874+00:00",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBMT1RpczBEaFo1dkp6SDFOb3pCTE9sc1JLM25NRkVGM1V5VkJIekVMZ0VmUHNGYkw0Zm9rcng3QnpBWUM1Y3BGMDAwQ083dHMzZzUzd2tjc0VBYjhmVC1VTnluRjlKWmxwT0JLdnp3V1BWWU8yNjhTdjdlc0NNd9IBgwFBVV95cUxPR1Y0bHVYQnVYWXF3Q0Mtd0t1SGZBaXprM19HN3J6bWdTMjBGeld1aWZnLTIydXU5VC1xWHdyMVVhUEZtM0hVcHZ3akhZR1BUblg3WjlYdjU2c3BqVGpuRm9xZFkya09NbXVFZHY2RGxTOUQxdE9xNnA0NS1ZR19GZFZMaw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "f2f2ae8fd0c75f4f",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Sony Pictures just released a new trailer for Spider-Man: Brand New Day, which includes a first look at Mark Ruffalo's reprisal of the Hulk. Read more below. - facebook.com",
-      "topic": "movies",
-      "ts": "2026-06-18T05:21:18.441649+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOejA1bFVVVWpzQVFQOXhQUVQ0Sl9BNkhWN2hFWGQtYVptTUtsbG55NndDT2ZpZzl6aW1fdlloZm5zREJmdjU0ZGExVUd4ZGhYUE5GLUF0SUVESWNQYU1RYkc1ZXEyWDBCQURldVZXOXppWkdPcmFXeDF1cXBTWkZHSVRna1M4MldnZkdvRVk5UVVWRFNtcnlnUU5DNGRNcWF2WGdTc1JOall4LUxEX2pLNnkxaWVYOUYtM3Zkd1NwQW1ndGsxZm5kbGZ0MllOYUlRRmVoVw?oc=5"
-    },
     {
       "action": "push",
       "detail": "",
@@ -6351,6 +6222,162 @@
       "topic": "wikiquote",
       "ts": "2026-06-22T02:12:05.560626+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "17e12f7fa720ce4e",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Marvel Studios officially responds to those Avengers: Doomsday leaks - Bam Smack Pow",
+      "topic": "movies",
+      "ts": "2026-06-22T07:44:32.918340+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOS0YxTkVmTk1FN3ZXZ0tBVkJWTGRVdndPaUowbEVRV2JjVDQ2UkJPdWsxU05sdjFqc2JLMGVKSUx5REtWb2l5WkpDVk9JLXduTVgtdUcwSGZMcFRqbEVqOV94Z0Rldmx1aGdWSzVaRGVsZkpvU21EVS1Lck9PTm4xYjd6X05VZw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "6faeb0b6e91bfa5f",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Marvel Officially Confirms New Avengers Lineup Before Avengers: Doomsday - Comic Book Resources",
+      "topic": "movies",
+      "ts": "2026-06-22T07:44:32.919090+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPV3ZIZ2ltcDUyTzM0d2xaUVIwLXJHN2tkdnJabGlNd2QzQTMxVnc4VkdhWG85ZHR5VDdORHNsMXJiZXRsMGdNQTNLY2FHRlZXTWFBRjBtUnB5Y2tMeU1Jc3BjNC1EM01GZFlqVHE3N3VOQWFHM01mWnZpYTRxUFl4RFN3MEFGZw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "e9a67416e3b67193",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "'Toy Story 5' Boffo; 'Dungeon Crawler Carl' TV Series Greenlit; Netflix Adds 'Sesame Street' Movie Rights; 'Spider-Man: Brand New Day,' 'Shrek 5' and 'Gatto' Trailers - ICv2",
+      "topic": "movies",
+      "ts": "2026-06-22T07:44:33.526165+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNUy03akFIYmFuVm9lY1NlWDlWRkJMMTR5d0l4YmhEa1pfOTAyaGdKLVh1dDBUeFNGdVQzSjBmMkZzVFZNdXZjcG55dG44RnpkMGJmNkNUMldwZHp1dlI1ZGhlVFh1R2FZbjZvUFZub3BmU0VVTk1ubWJEd2dvUmNEd0VMRXktX1l1Y0Z3SWVTMVdVS3hlZTFJWlV1cG5oRDR4cTRlc2UyWk1DcXVCWTdHSkw1S0cyaGt4MGdIUkx4ZWpUMEwzUWY0cGc5NzB6ejVLVXVkbEtBR21pVUlUSjlrLWhtQmRXeUNwemJ0bEJJYTdUZWFkRjFSYW1nd194djkxdnZRR3J5TDlaY1dGQmdIX2Q3d0lhUQ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "965607c172bc51d5",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Previously unannounced villain officially confirmed to appear in Spider-Man: Brand New Day - Bam Smack Pow",
+      "topic": "movies",
+      "ts": "2026-06-22T07:44:33.526622+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMVZ2eUxCZ29HSUNkOXhHd3JnZ1VLNUVZNzNMNTVKUWdKYkFuZG5jR09LMVdqTWRaTHJ3V1dvdGx3V01fSzJrY1lxTTFDT3VCSVppLWJ4ZVI4bE5qOFgyTE1BYWhRWmVFY2Y0U2UwVHJiaHNIWXJpa01XdWZUQkxhcQ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "271d1544a9cebb5c",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Does \u2018Spider-Man: Brand New Day\u2019s\u2019 Newly Revealed Character Confirm Sadie Sink Is Playing Jean Grey? - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-22T07:44:33.527189+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9fQjg0dUFZcXV2U0JNOXJ5bXJjSlpfOEpYbXhpak0tbi0yQ3pOYVRsZzUxQXlkWWh3M2FNX2E5dkVRSEtMR3dpS2RuM1hnZHUwbGtwWmtWbGlxTzl1VDFtVGpQZ0JjUDg?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "4272e6f4908d7203",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "'Spider-Man: Brand New Day' trailer #2 breakdown live \u2014 everything we spotted in the new Marvel movie's latest teaser starring Tom Holland - TechRadar",
+      "topic": "movies",
+      "ts": "2026-06-22T07:44:33.527546+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMFNXMjBZajhDeG5vZXo4VFdYVzBMUkNNaTRVNFI1U2JhMjZPenZaTzNjY3ItUjNVVlpma0t3d1hHRVdub0dpMFVJbzVGYWg0TFg4WDVQNnU2VjItQzlkczhrOHVHN3FxNjF4V3BDSUlVYmY0eG9hOUdKY0htWERqQVo0a1Z1NmxRVE5fTQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "a03e523e89e442f9",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "The Batman - Part II reportedly just lost its 'perfect' casting (and DC fans are upset) - Bam Smack Pow",
+      "topic": "movies",
+      "ts": "2026-06-22T07:44:35.430621+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNby1qby1Yb3JRZXMxTE9taVBta3VKa1JBV3c4OVJBQ1J6WGNrbHVTWHMtNTl5dkhvbDNiZEd0aEZ6djJmNURPMlh3Y25SY3NOaUtvQTRBc2NHZ2ZoS3owUXpWcFhmUGctVEc3SHptNHBPSW03U2tNaHF3MTFzbnBZV3JxSkJKX3Y1VWxmYzZn?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "ca2c3a3d17c33f02",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "THE BATMAN \u2013 PART II Shares Official Logo - Yahoo",
+      "topic": "movies",
+      "ts": "2026-06-22T07:44:35.867361+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNb3pTRXBTVllJNnZfdVA1RkxfNUR3RXlxc1J6bjRmTFB6dE4yTy1UQ19aRDQ3aC1meWcxclFEOVVsMllPbk9ERnA4emFFUlJTOUkwd2VsZ3ZyblVaX2dqbEU0Vi0tdmhlUGlPQWxDY0FQQzU3QVRRMzdiZ0JhZ2RuakVzRWJLb2FNMV83aDExb0tucWotR3l1NEVRbHBSQQ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "698d5396b3b508c6",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "\u2018The Batman Part II\u2019 Has an Official Logo and Gotham Is Open for Business Again - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-22T07:44:35.867987+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE56QUx1TkpsV3NSMDkySV9XS1A4VTlZOEFFTFVsWjlET29MeUVXUUhUbzQ5UHd1MnRIb2FFVTJmYnY3Z2Zmak14S0JYYi1VLUhhX09zbW5YNnlhTlVpZUdDM0ljV18?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "f54acb42ae6fbeec",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Beloved DC star announces reduced role in The Batman - Part II - Yahoo",
+      "topic": "movies",
+      "ts": "2026-06-22T07:44:35.868594+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQN1dvM3JEQjA4ejB2VUxCd2E2bnI0SmNJWGNJcWVGUUN6UW1pQWxpblpsWkxIaFNhQ3IxUUE3VDZZOU9VdFpFTE5ndTZpRkRvazVkNUt4MjkzSWFqNHZIMTY4cHZRZ3BjMThhbDdBMHpOQmNDVkR3Rjg4bWlYYjY2c1ZvLXZ4SExVR3BnS0dIOC1VVEZJRXlEQ1QwcW9Ub2syNlE?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "c066ae711e37a7e1",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-06-22T07:45:41.694018+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "For centuries, the very notion of atoms remained a philosophical curiosity, a mental construct debated by ancient Greeks and renaissance thinkers. It was a theoretical elegance, a comforting explanation for the vastness of the material world that offered discrete, fundamental building blocks. But proof, empirical, undeniable evidence of these minuscule, invisible entities, was stubbornly elusive. How could one observe something designed, by its very nature, to be beyond the reach of the naked eye, or even the most powerful early microscopes? The scientific world, in its burgeoning empiricism, demanded more than just elegant theories; it demanded demonstrable reality. This intellectual chasm between theory and observation set the stage for one of science's most compelling human dramas, a tale of meticulous observation, an accidental discovery, and a flash of profound insight that would irrevocably alter our understanding of the universe.\n\nThe story truly begins in 1827 with Robert Brown, a Scottish botanist of considerable repute. He was engaged in what might seem, to modern eyes, a rather mundane task: examining pollen grains suspended in water under his microscope. Brown was a meticulous observer, and as he peered through the lens, he noticed something peculiar. The pollen grains, far from remaining still, were engaged in a ceaseless, jiggling dance, a chaotic, agitated movement that defied explanation. At first, he suspected a biological origin, perhaps a form of \"life\" inherent in the pollen itself. To test this, he repeated the experiment with inanimate dust particles, and to his surprise, they too exhibited the same restless motion. This eliminated any biological explanation. The movement was inherent to the tiny particles suspended in the fluid, but its cause remained a baffling enigma. Brown diligently documented his observations, recognizing the phenomenon's significance, but he ultimately confessed his inability to explain its underlying mechanism. For decades, \"Brownian motion\" remained a fascinating but unresolved scientific puzzle, a persistent hum in the background of scientific inquiry.\n\nThe stage was now set for the theoretical genius of Albert Einstein, who, in 1905, in his \"annus mirabilis\" \u2013 his miracle year \u2013 would finally provide the definitive explanation for Brown's perplexing observations. Einstein, at the time a relatively unknown patent clerk, was not directly working on Brownian motion. Instead, he was grappling with the fundamental nature of matter and the reality of atoms, an idea still met with skepticism in some scientific circles. He theorized that if water, or any fluid, was not a continuous medium but rather composed of countless tiny, invisible atoms and molecules in constant, random motion, then these molecules would incessantly collide with the larger suspended particles. Each collision, though individually imperceptible, would impart a tiny impulse, and the cumulative effect of these countless, random impacts from all sides would be to buffet the larger particle, causing it to jiggle and dance in precisely the way Brown had observed. Einstein's brilliance lay in translating this intuitive idea into a precise mathematical model, predicting how the extent of the particle's movement would depend on factors like temperature and the viscosity of the fluid.\n\nEinstein's 1905 paper on Brownian motion was not just an elegant explanation for a long-standing puzzle; it was a profound declaration.",
+      "id": "dacdc941dcce0e4a",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Brownian motion and the reality of atoms",
+      "topic": "learn",
+      "ts": "2026-06-22T07:46:05.034906+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cLet your occupations be few,\" says the sage, \"if you would lead a tranquil life.\u201d\n\u2014 Marcus Aurelius\n\nThe voice echoes from a distant, golden age, a world both profoundly alien and strangely familiar. Marcus Aurelius, the philosopher-emperor, sat at the apex of the Roman Empire, a domain stretching from the sands of Syria to the misty reaches of Britannia. He was a man burdened by an empire, by the relentless demands of governance, by a never-ending series of wars along the frontiers, and by a devastating plague that swept across his lands, claiming millions. Yet, amidst this maelstrom of responsibility and suffering, he sought to cultivate an inner tranquility, a stillness of mind that would allow him to navigate the chaos with wisdom and grace. The quote, \"Let your occupations be few,\" speaks not of idleness, but of a deliberate, mindful curation of one's activities, a recognition that scattering one's energy too widely inevitably diminishes both the quality of the work and the peace of the soul.\n\nHe was no cloistered monk, detached from the world's demands. Marcus was a general, often campaigning on the frozen Danube frontier, facing down Germanic tribes. He was a judge, sifting through countless legal disputes. He was a father, mourning the loss of several children, and a husband, grappling with the complexities of imperial marriage. His personal writings, later compiled as \"Meditations,\" were never intended for publication but were instead a private dialogue, a spiritual exercise to fortify his stoic resolve. It was within this context of immense external pressure and internal struggle that he penned these reflections, urging himself \u2013 and implicitly, us \u2013 to simplify, to focus on what truly matters, to avoid the tyranny of the urgent and the trivial. He understood that each additional task, each new commitment, chipped away at his mental bandwidth, making it harder to maintain his philosophical composure and exercise sound judgment.\n\nTwo millennia later, Marcus Aurelius's counsel resonates with an almost startling contemporary relevance. We, too, live in a world of relentless demands, often feeling overwhelmed by an endless stream of notifications, emails, and societal expectations. The modern mantra of \"busyness\" often masks a deeper anxiety, a fear of missing out, or a misguided belief that our worth is measured by the sheer volume of our activities. Marcus reminds us that true strength lies not in doing everything, but in doing the right things, and doing them well. His wisdom invites us to pause, to reflect on our own lives, and to consider whether our myriad \"occupations\" genuinely serve our deepest values and contribute to a tranquil, meaningful existence. In an age of information overload and constant distraction, the stoic emperor's plea for fewer, more deliberate engagements offers a powerful antidote, a path back to clarity, focus, and an enduring inner peace.",
+      "id": "2b812a8eb81f146b",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Marcus Aurelius",
+      "topic": "wikiquote",
+      "ts": "2026-06-22T07:46:09.634047+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -7132,8 +7159,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "philosophy",
-  "knowledge_last_sent": "2026-06-22T0",
+  "knowledge_last_category": "science",
+  "knowledge_last_sent": "2026-06-22T2",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7175,6 +7202,7 @@
     "philosophy:Sartre and existentialist freedom": "2026-06-18",
     "philosophy:The paradox of the Ship of Theseus": "2026-06-14",
     "pyramid_skyscraper": "2026-06-12",
+    "science:Brownian motion and the reality of atoms": "2026-06-22",
     "science:Marie Curie and the discovery of radioactivity": "2026-06-13",
     "science:Schr\u00f6dinger's cat thought experiment": "2026-06-20",
     "science:The discovery of nuclear fission by Meitner and Hahn": "2026-06-18",
@@ -7196,7 +7224,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-06-22T02:10:52.752710+00:00"
+    "ts": "2026-06-22T07:44:29.861499+00:00"
   },
   "launch_seen_ids": [
     "64606b0ed933edd1",
@@ -7218,6 +7246,23 @@
   "life_dashboard_last_week": "2026-W25",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "41c2215fa06bf267",
+      "434423a8bc8c02f3",
+      "6a8dd71af8d1670e",
+      "6e9ebd0513e656da",
+      "c06e9ccc3219e3e4",
+      "968ca7f67f88a36b",
+      "92980ffcc104ad52",
+      "ec986ab700c1dd14",
+      "ab1eea058d1e35f1",
+      "0f78fdbb0760ef2b",
+      "2951167e6225c875",
+      "508d74ac09b2fb84",
+      "3387b1d697a68fb9",
+      "f0fb5960003e71e6",
+      "c1bec6bd7a0996e6",
+      "7b9047c820450e23",
+      "f2157e9afb617fd1",
       "c68c4763370a982e",
       "1379260234035c1f",
       "99e80f32f1911bae",
@@ -7300,24 +7345,7 @@
       "3c1dc054f5f8f9ab",
       "79cac33612c3623a",
       "cd65f7d84ba7616e",
-      "b41b91b5c7509bdd",
-      "d7c908ca5a392e4c",
-      "85b97222565a5cf0",
-      "8f4de9bbcd00777a",
-      "dedf76b246857e6f",
-      "7eab48127502532a",
-      "7b27b69d9db95e0c",
-      "3eddab5e75604314",
-      "5ed912024a82dc05",
-      "c6f1e75e0930bbcd",
-      "87969447b2c653b4",
-      "4d4ae636fc770116",
-      "623bec3037a8b837",
-      "df3eb20ae636258c",
-      "47f8265b5b17e064",
-      "11d86733f5e79baf",
-      "8eed3ed8c1245ecd",
-      "4e14c3a9d2e48698"
+      "b41b91b5c7509bdd"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7519,6 +7547,17 @@
       "59eee1eb6b983c19"
     ],
     "Spider-Man: Brand New Day": [
+      "b36f075d804d04dc",
+      "13dc3eb643d3d350",
+      "391dab2515014d80",
+      "d6b80a63ca7a026a",
+      "28447dd41f405723",
+      "e6405a4c758cc462",
+      "fb066bbdb6c2f34a",
+      "7bb12bb2c3a4d6e2",
+      "e58af0f6ff0c518e",
+      "37b6f7a8a36eaf95",
+      "f566547c036a1aac",
       "0acbd0557567742d",
       "72fd89651be205b1",
       "9340122022c7c5b0",
@@ -7607,20 +7646,18 @@
       "57880045b14e8a72",
       "8372a5d5c6cbe381",
       "703a06e8bb769cdd",
-      "9b4c6ce2ce5de9b5",
-      "87d50f34fd8721aa",
-      "c13888c10b6fb677",
-      "0219a21539531e1e",
-      "fdd2bd3f6427c959",
-      "6eb8c528ba8c1016",
-      "68db9ef7fe2efef1",
-      "f5178c7df72b5796",
-      "5eb06e6c34e078cc",
-      "018be3ea7a31d2ea",
-      "da704e99dbea323d",
-      "c3598d730a3e1a0c"
+      "9b4c6ce2ce5de9b5"
     ],
     "The Batman Part II": [
+      "8c91b68b240f5c11",
+      "478c8c7a29309c41",
+      "3692b2eb01e497eb",
+      "046f4d1c04b209e6",
+      "494302d5d766e004",
+      "d2d0067425e266a6",
+      "fd8442d28c5f20ad",
+      "61783448e2175a9b",
+      "3e4bdc7dfa6edfa4",
       "6ea1ea2ff7644933",
       "20054aec063a4665",
       "6a91f27cfc7bf6d5",
@@ -7711,18 +7748,12 @@
       "9843418d830f48c3",
       "a4459e58bf660541",
       "9577488c1f230d66",
-      "3f79a0208ef8ca20",
-      "c69853654ca8fa61",
-      "ad811e4f45ed3019",
-      "3bf9552d3411f67c",
-      "fcf1089026438889",
-      "531f7e6205572add",
-      "26fcc45553000894",
-      "9e0c311fad657de7",
-      "62c4342d04ffa32d",
-      "673041460bf12460"
+      "3f79a0208ef8ca20"
     ],
     "The Odyssey": [
+      "e40be21a70e15248",
+      "2fe945c97f8c2859",
+      "827d520d9af02325",
       "ad49fa6590f25f6f",
       "7d61651127cfd8f5",
       "6461fe11354ba28b",
@@ -7819,10 +7850,7 @@
       "734e8770c24193d4",
       "d7cb90f916d6e4bc",
       "6c85819117d00a65",
-      "846cf2a7ff0ab80d",
-      "6aa73b57f2baa5ec",
-      "b7fb789628e5cd0c",
-      "5a81ea1ec35d6657"
+      "846cf2a7ff0ab80d"
     ]
   },
   "movie_release_dates": {
@@ -8552,47 +8580,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "deals": {
-      "last_data": "2026-06-22T02:11:27.302625+00:00",
+      "last_data": "2026-06-22T07:45:31.472109+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "energy": {
-      "last_data": "2026-06-22T02:11:37.956644+00:00",
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_data": "2026-06-22T07:45:41.295616+00:00",
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "fda": {
-      "last_data": "2026-06-22T02:11:28.015151+00:00",
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_data": "2026-06-22T07:45:31.749712+00:00",
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "fuel": {
       "last_data": "2026-06-21T22:05:56.489856+00:00",
@@ -8600,17 +8628,17 @@
       "last_ok": "2026-06-21T22:04:27.208824+00:00"
     },
     "fx": {
-      "last_data": "2026-06-22T02:11:50.790321+00:00",
+      "last_data": "2026-06-22T07:45:56.904698+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "games": {
       "last_data": "2026-06-15T13:41:05.025187+00:00",
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-22T02:11:03.528871+00:00",
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_data": "2026-06-22T07:44:42.835386+00:00",
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "groceries": {
       "last_data": "2026-06-21T22:05:30.013456+00:00",
@@ -8618,113 +8646,111 @@
       "last_ok": "2026-06-21T22:04:27.208824+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "movies": {
-      "last_data": "2026-06-22T02:10:58.296086+00:00",
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_data": "2026-06-22T07:44:36.907040+00:00",
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "music": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-22T02:11:38.684418+00:00",
+      "last_data": "2026-06-22T07:45:42.326905+00:00",
       "last_data_count": 47,
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-22T02:11:50.354862+00:00",
-      "last_data_count": 42,
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_data": "2026-06-22T07:45:56.222099+00:00",
+      "last_data_count": 45,
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-22T02:10:59.791899+00:00",
+      "last_data": "2026-06-22T07:44:39.529881+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "weather": {
-      "last_data": "2026-06-22T02:11:38.259371+00:00",
+      "last_data": "2026-06-22T07:45:41.693798+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-22T02:11:54.015766+00:00",
+      "last_data": "2026-06-22T07:45:59.439740+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-22T02:10:52.752710+00:00"
+      "last_ok": "2026-06-22T07:44:29.861499+00:00"
     }
   },
-  "twitch_live": [
-    "Sparg0"
-  ],
+  "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165008"
+    "last_full_window": "165010"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8738,6 +8764,7 @@
   "watchdog_failing_since": {},
   "water_slots_sent": [],
   "weather_seen_ids": [
+    "ad2ee1c278c8f01c",
     "aea94b746b9b9761",
     "e81f7f60689ce73d",
     "df9a8144c197ec13",
@@ -8793,8 +8820,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "leaders",
-  "wikiquote_last_sent": "2026-06-22T0",
+  "wikiquote_last_category": "philosophers",
+  "wikiquote_last_sent": "2026-06-22T2",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-14",
     "activists_thinkers:Helen Keller": "2026-06-16",
@@ -8824,6 +8851,7 @@
     "philosophers:Arthur Schopenhauer": "2026-06-17",
     "philosophers:Confucius": "2026-06-21",
     "philosophers:Friedrich Nietzsche": "2026-06-19",
+    "philosophers:Marcus Aurelius": "2026-06-22",
     "philosophers:Plato": "2026-06-14",
     "philosophers:Socrates": "2026-06-13",
     "philosophers:Voltaire": "2026-06-20",
