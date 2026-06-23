@@ -1,5 +1,6 @@
 {
   "anthropic_seen": [
+    "57fb544d55fe540d",
     "9c7ad5665087f6e8",
     "ec71aa015ae88370",
     "a7a9319d0f2c7ee4",
@@ -134,6 +135,24 @@
       "title": "M3.4 - 46 km NNW of San Antonio, Puerto Rico (~265 km away)",
       "topic": "quakes",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71520998"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Shop Marvel Must Haves: Celebrate 'Spider-Man: Brand New Day\u2019 with Official Spidey Merch - Marvel.com",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcGdrOUU1R0trV2NDQnhZdC1vNUZTT1RYV0dndVNjbGNmLUx4RkVpQlJXS2pxSHRURGZGVFRtRHg4NExhRXhhX2ZGVGJyRkVwdi1fMXVuTnV5Q2N4S3dNdVFQTDBPVDYtRDZWQVZ2WUtFYURSLWJqMjlCcGJ2OUs2NzNvcklLTDgwa1g3Sg?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-06-23",
@@ -297,126 +316,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "id": "c0509d5e3596ee3a",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019: Every Easter Egg in the New Trailer - ScreenCrush",
-      "topic": "movies",
-      "ts": "2026-06-19T07:32:21.998365+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOWjFrY3ZNcGhoY0ttTEZva2NRcWp4S3cxU3ByMTNfcENfZTRWWDJsTWlUZ0txX1lyRU5CVk1LNDZ6YV91b1pBRlFRV0FpcWdIQW0teFl1Q2EwbWE4Y0FhcXRFNDZTUndSdnJjcGFqRFZfNkt2bGVOZDBydVQyQmk3UlFQYV9LNmxRS2JSOUNpRDVDUQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "b6472be8a5e37c18",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "SPIDER-MAN: BRAND NEW DAY Director Urges Fans to Watch It \"As If It\u2019s The Last Spider-Man\" Movie as He Confirms SHANG-CHI 2 is Still Happening - GeekTyrant",
-      "topic": "movies",
-      "ts": "2026-06-19T07:32:22.171012+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPUnU0T2pmYVdsRENTMGltbHBFMVB4ZG9zSHY0MG1BakJEY3oyV0NXWjdNQ2hRTkhDbC1nVXVPUndnNGdnUU5nVU5OR2FQSDBPSWNEaHNaaFlSLTdiUmZySzV0UWNKdjZVV1FGczJEUzBYRk9qaDNXcllHQXRlY250NS01aUNaaXdHb25hX2g4aEFOQUxJb29YQ19qYzFPUGFXQUU3ektndXF3SEN3UzFlOGdQWmVzOEp2ZHdnazJYRFpUMnZfRjVqa2hNYmQxV3RucDZ6eG0zaEg0ODItUHdPS1J4cHVXM09HQmdVWkRKejRyVVZyaVIya1Rn?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "925f154759a5b341",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Does \u2018Spider-Man: Brand New Day\u2019s\u2019 Newly Revealed Character Confirm Sadie Sink Is Playing Jean Grey? - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-19T07:32:22.171649+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBzU2lRSXp0TjQ3eVViX25GNngwRFRmRG41MTJfdDBPN1ZFeHpvZ3JJVDJFbk1sWE5fQWk3SzhtM2VSMkp3dDhOUEpUbWZJWG1YWjVfT0pITy1tNUlxS05IVUV0c2N1QXc?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "be578d501a2c678c",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer Gives First Look At Mark Ruffalo\u2019s Hulk - Deadline",
-      "topic": "movies",
-      "ts": "2026-06-19T07:32:22.172458+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQm55VU92U3hTREt5NkpuaFZ6SkdhV3ZUeXVBSTdlUlN1cU81Zk1JRVhSSmlDUEJVMmhEYnNiUWFLYjVBN0pZaXlkOHZ4QXRka0prX0lVM1hXRTBuM1c1RXRNUnVHemgwWWlBVWVwUlJ6UEUwaTdkRmo5SFE4azNZQXNJWTltY2kxYUJhNlVSNUxzSXhJbUk5alVrVTkwYV9zXzlxag?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "a50c255179649d50",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Has a Brand New Trailer, and Spidey Is Freaking Out - rollingstone.com",
-      "topic": "movies",
-      "ts": "2026-06-19T07:32:22.172842+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaExDemM2TW9qaHdoaUlOV3hhT0pnbDJWUW1FYUczN1F2WXdLZHRkVC0zNnY1Wk55Z19lQ3d6ZGFNY1B0UldtcDgtazJDWGpGeGpRenJOUTBFenIzRlFKUS03WW5XeUJ4WEc5UUVuZWl1V2dVSzMzc3pDdXhmLWN3emlONGdCUXFLam1FMTlfSUVCQTlCUlpXd3hVWHlheDFxWlI0?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "2ca59235b665acf3",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Trailer Confirms Hulk And A Villain \"No One Can Even See\" - Cosmic Book News",
-      "topic": "movies",
-      "ts": "2026-06-19T07:32:22.353874+00:00",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4xX2FuUDJiWkZXTzRMRkd6VUZHcjR3WWtRT2xoTUhfQzJDOWVlVUJtSTQ5cE4xSGJuN2R4MVFLVmIyRTZreWlJTFJaQTdrVUdCYXdoRnpTSFVrMVB2YkpERW15S3hfUXZ4eGtJVA?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "99d2813e02658464",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day's new trailer is here and still keeping its 'villain' a secret - Polygon.com",
-      "topic": "movies",
-      "ts": "2026-06-19T07:32:22.354254+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOcDA1aUlzM1ptc1E0NmFqWXp5WlJ6UGZFUWdHaVJYazh3QlQ4NW43Si1BZHdWMW9BWDlWZUJfV1lKc0w1Y2pWTjM4U2NYZU1qdUhzVUNJVUpzV29VQnc4SUUxbGpqTU5PMWNFTkRxU1VXVU9MZmRTLUZmV0VGMWV6dg?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "fdb907177fd9c707",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "DC Studios Reveals Official The Batman 2 Logo As Matt Reeves Shares New Look At Filming - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-19T07:32:24.299167+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5JUTkweDJOd3haY3hlYnJMZ0MyVy1wZzkxc0hycU9Md2FsaVBFc1pVbTB1OEVnNUEtcHlzOEdaQk5qamVhemVaQWpzZXQwUTdJWm1nYXdLdFJ1Mm1jQldVZktVczMtTHc?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "138185fb799d7162",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "THE BATMAN \u2013 PART II Shares Official Logo - Yahoo",
-      "topic": "movies",
-      "ts": "2026-06-19T07:32:24.299681+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNb3pTRXBTVllJNnZfdVA1RkxfNUR3RXlxc1J6bjRmTFB6dE4yTy1UQ19aRDQ3aC1meWcxclFEOVVsMllPbk9ERnA4emFFUlJTOUkwd2VsZ3ZyblVaX2dqbEU0Vi0tdmhlUGlPQWxDY0FQQzU3QVRRMzdiZ0JhZ2RuakVzRWJLb2FNMV83aDExb0tucWotR3l1NEVRbHBSQQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "47583b98262e431c",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman Part 2 Officially Begins Filming as Matt Reeves Shares First Set Image - IGN Pakistan",
-      "topic": "movies",
-      "ts": "2026-06-19T07:32:24.300335+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT0pzYmFYRkpxY3VjclJ1b0ZBeFB3R1VUeTZ1cjh0aWFXOHdjeFBXSU40d3NyNk1KRzJyelkzU2N5aV9rNDlRVF8zWmRVTFNOVzJKUmxOUmhSdEFGM01EU1NTQktWTlNwN29ZRm5FTTl5RExXWnZzQ1lUejQ4SzRySVVjWjVhZVVUd21mYVlyUlg1S0VqY2VwMjQ2RjFNMlVIVkFTRUtRek5mNEVVZ2RtWHF0SE4xLWRFNWlzNg?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6296,6 +6195,126 @@
       "topic": "learn",
       "ts": "2026-06-23T16:34:00.437517+00:00",
       "url": ""
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "9104f726fa1acbf6",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday Official Synopsis Finally Confirms What We All Expected About X-Men, Fantastic Four, and Avengers - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-23T18:24:53.577274+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTUFnaTBGRFYxQnB0TjN2bXJjWGd1Y1FYS2RacU43Z1Z2SHoxbW5FSnh6MFhSYU9Qem9sejVETGJaTnB0VGNFU3pDYy1PRDk3TjVtenZFcjFaOVN2YU5qOS02b0Y5NkM0bjA4UUNxQm9xNUtJVmpmYUdxLUo5NW5YaGN3NEpuTDFWbzV6dmtNVQ?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "bec70a3788c649a4",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "New Avengers: Doomsday leaks unveil first look at Doctor Doom - Bam Smack Pow",
+      "topic": "movies",
+      "ts": "2026-06-23T18:24:53.578293+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxNUGZLSHFlWFhhOU5xcHBiMWtMMXNnbUY4SnNYM2V0Q05wWU9sNk1FR212T3JoRlh0MmhONzg1cGtJbUY4RUNsbUluRldhZk9RQWtBd0pGdE5Rb2RVRUQwMGkzcE9NSlZpbHllVHF1S3FnMVBBbXBTYUlRYkNNZzlqR25tZmNoQ1BqTktSMHRBb0JrYVpjeHd3d0dhZFdXNlpkX1A1QjFVdU0ybjdhQkNaY1RyOXRQT0JRckxrSXk4SjNTRVljcnlCdkdlVlNkYVJ1Mml2bDByUFhLM2VlTHJDMWYxTGhzZHpqeHNjeGczLUM4M1BkWEVOZjNVXzEyZw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "5d7c6346f1e8d784",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Shop Marvel Must Haves: Celebrate 'Spider-Man: Brand New Day\u2019 with Official Spidey Merch - Marvel.com",
+      "topic": "movies",
+      "ts": "2026-06-23T18:24:54.342335+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcGdrOUU1R0trV2NDQnhZdC1vNUZTT1RYV0dndVNjbGNmLUx4RkVpQlJXS2pxSHRURGZGVFRtRHg4NExhRXhhX2ZGVGJyRkVwdi1fMXVuTnV5Q2N4S3dNdVFQTDBPVDYtRDZWQVZ2WUtFYURSLWJqMjlCcGJ2OUs2NzNvcklLTDgwa1g3Sg?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "0fadf6090ddec6c5",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Michael Caine Confirmed For New The Odyssey Role Ahead Of Christopher Nolan\u2019s $250M Epic - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-23T18:24:54.930943+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0zN3VvQWVRMEtPSFgxajI1N0R0MWZhaUtOMTFTcGFmeDQ4LVJYSjdwai14UVBYYnBMNi03SFpIdlRPYlUwa1ZUT3Y1X2hZMl82aTVJRTBQS2Q0QVFmdXFlRnNfcmxIZVk?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Mucho para M\u00ed - santa rm\n(because you like Porta)",
+      "id": "0265068d66583da7",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-23T18:25:02.590659+00:00",
+      "url": "https://www.deezer.com/track/1564311542"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "5565d9335af1da74",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-06-23T18:26:13.181185+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Introducing Claude Tag - Anthropic",
+      "id": "96537803e5c371cf",
+      "score": 70,
+      "severity": "moderate",
+      "source": "Anthropic",
+      "title": "Anthropic",
+      "topic": "anthropic_news",
+      "ts": "2026-06-23T18:26:28.822064+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9iZjJCVWRWdnpWLWtMTGVEcy1RbmFuWGY3UHhfVmFlQkRZalpoOFZMMzhLeEZhYVBTcjhKR0FZaEF5QlpNVzB2bXVIczF0X0RWbmN4NDM4VmUtZGxyU2dHbGRSWQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Keep a glass of water within reach.",
+      "id": "5d8739cbc9634e1e",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-23T18:26:29.890375+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "The year is 1921, and we find ourselves in the grim reality of a world where Type 1 diabetes is a death sentence, often swift and agonizing. Children, once vibrant and full of life, would waste away, their bodies starving even as they consumed food, their parents watching helplessly as their beloved sons and daughters succumbed to the metabolic chaos. Insulin, a substance we now take for granted, was then a phantom, a whisper of a potential cure that had eluded scientists for decades. This was the landscape when a young, determined surgeon named Frederick Banting, a man with more grit than laboratory experience, walked into the office of Professor John Macleod at the University of Toronto. Banting had an idea, a radical departure from conventional thinking about isolating the pancreatic secretion, and he needed a lab, dogs, and a young assistant. Macleod, perhaps somewhat dismissively, granted him limited resources and a medical student for the summer, a twenty-two-year-old named Charles Best.\n\nThe scene that unfolds in the dusty, sweltering laboratory throughout that summer is a testament to perseverance, frustration, and the unique alchemy that can arise from unlikely partnerships. Banting, intense and driven, and Best, a brilliant but unassuming student, embarked on a series of painstaking experiments, often working sixteen-hour days. Their initial hypothesis, that a hormone in the pancreas could regulate blood sugar and that the digestive enzymes of the pancreas destroyed it before it could be isolated, led them to ligate the pancreatic ducts of dogs, allowing the enzyme-producing cells to atrophy. They then extracted a substance from the remaining islet cells, a substance they called \"isletin.\" The drama was palpable as they injected this extract into diabetic dogs, witnessing, to their astonishment and growing excitement, a dramatic drop in blood sugar and a restoration of vitality. There were setbacks, of course, the ever-present challenges of purity, dosage, and consistent results, but the flickering flame of hope grew into a roaring fire of conviction.\n\nThe human drama deepened significantly as the team expanded to include James Collip, a biochemist brought in by Macleod to purify the crude extract, and J.J.R. Macleod himself, who began to recognize the profound significance of the work he had initially approached with skepticism. Collip's expertise was crucial, but the initial process of purification was a brutal trial and error, leading to a period of intense rivalry and intellectual sparring. The first human trial, on a dying fourteen-year-old boy named Leonard Thompson, was a moment of breathtaking suspense. The initial injection caused an allergic reaction, but after Collip refined the extract, a second injection brought about a miraculous improvement. Leonard, who had been fading fast, began to recover, his strength returning, his blood sugar stabilizing. It was a moment that reverberated across the world, a scientific breakthrough that was also a profound human triumph.\n\nThe discovery of insulin, a word we now instantly associate with life and management of diabetes, was not just a scientific achievement; it was a revolution that saved countless lives and continues to do so today. The immediate aftermath saw a rapid scale-up of production, a testament to the collaborative spirit that, despite initial tensions, ultimately prevailed.",
+      "id": "db28ee033ffa5c9f",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The discovery of insulin by Banting and Best",
+      "topic": "learn",
+      "ts": "2026-06-23T18:26:35.330241+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cIn man (as the only rational creature on earth) those natural capacities which are directed to the use of his reason are to be fully developed only in the race, not in the individual.\u201d\n\u2014 Immanuel Kant\n\nImmanuel Kant, a figure whose intellectual shadow still stretches long across the landscape of Western thought, was a man of precise habits and formidable intellect. Born in K\u00f6nigsberg, then a bustling Prussian city, in 1724, he rarely ventured beyond its environs throughout his long life. His daily routine was legendarily meticulous \u2013 so much so that locals were said to set their clocks by his afternoon stroll. Yet, within the confines of his study, his mind roamed across the vast expanses of human experience, grappling with questions of morality, knowledge, and the very nature of reality. He was a product of the Enlightenment, an era ablaze with the fires of reason, a time when ancient dogmas were being challenged and new frameworks for understanding the world were being forged. Kant, with his rigorous analytical approach, sought to build a philosophical system that could stand independent of both religious revelation and empirical observation, grounding human knowledge and morality in the inherent structures of the mind itself.\n\nThe quote, \"In man (as the only rational creature on earth) those natural capacities which are directed to the use of his reason are to be fully developed only in the race, not in the individual,\" speaks directly to this Enlightenment spirit and Kant's broader philosophical project, particularly his reflections on history and progress. At the time he penned these words, Europe was a crucible of change. The American Revolution had recently concluded, the French Revolution was on the horizon, and industrialization was beginning to subtly reshape societies. Kant, while a champion of individual autonomy and moral duty, also recognized the limitations inherent in a single human lifespan. He understood that the grand march of reason, the slow and arduous process of cultivating our rational faculties, was not something that could be completed by one person, however brilliant. Instead, it was a collective endeavor, a baton passed down through generations, each individual contributing their small part to the larger development of humanity's intellectual and moral potential. He envisioned history not as a random series of events, but as a teleological process, moving towards an ultimate, albeit distant, perfection of human reason.\n\nToday, in an age grappling with existential threats, rapid technological advancements, and persistent societal inequalities, Kant's words resonate with an almost prophetic quality. We are confronted daily with the profound complexity of human challenges, from climate change and artificial intelligence ethics to the pursuit of global justice. No single individual, no matter how gifted, possesses all the answers or the capacity to solve these monumental problems alone. The development of our collective reason \u2013 our scientific understanding, our ethical frameworks, our capacity for empathy and collaboration \u2013 is more critical than ever. Kant reminds us that progress is not a solitary sprint, but a generational relay race.",
+      "id": "c11d9fff24af9dfa",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Immanuel Kant",
+      "topic": "wikiquote",
+      "ts": "2026-06-23T18:26:40.063595+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6372,7 +6391,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-20-26-JUN-DE-2026.pdf",
   "fuel_last_pdf_hash": "df5bf29864420fdf3ae48c6b803e8715064f631b1998f09ad9d6c6ddfd00a535",
-  "fuel_last_prices_seen_at": "2026-06-23T16:33:53.004928+00:00",
+  "fuel_last_prices_seen_at": "2026-06-23T18:26:27.632593+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7109,8 +7128,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "math_history",
-  "knowledge_last_sent": "2026-06-23T5",
+  "knowledge_last_category": "medicine",
+  "knowledge_last_sent": "2026-06-23T6",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7141,6 +7160,7 @@
     "math_history:The continuum hypothesis": "2026-06-21",
     "medicine:Barry Marshall and the cause of stomach ulcers": "2026-06-18",
     "medicine:The discovery of anesthesia's risks and refinements": "2026-06-20",
+    "medicine:The discovery of insulin by Banting and Best": "2026-06-23",
     "medicine:The discovery of the cause of beriberi": "2026-06-21",
     "medicine:The global eradication of smallpox": "2026-06-16",
     "medicine:Walter Reed and the conquest of yellow fever": "2026-06-14",
@@ -7180,7 +7200,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-06-23T16:32:21.789813+00:00"
+    "ts": "2026-06-23T18:24:50.728831+00:00"
   },
   "launch_seen_ids": [
     "f1fed8fbf29f7123",
@@ -7203,6 +7223,11 @@
   "life_dashboard_last_week": "2026-W25",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "3ed21e009920bd48",
+      "0b389fe2b1797a2f",
+      "5b08e7f35afad590",
+      "c68c4763370a982e",
+      "7b9047c820450e23",
       "39a0f85123daeb80",
       "99e80f32f1911bae",
       "733f06349682d7d1",
@@ -7297,12 +7322,7 @@
       "968ca7f67f88a36b",
       "92980ffcc104ad52",
       "ec986ab700c1dd14",
-      "ab1eea058d1e35f1",
-      "0f78fdbb0760ef2b",
-      "2951167e6225c875",
-      "508d74ac09b2fb84",
-      "3387b1d697a68fb9",
-      "f0fb5960003e71e6"
+      "ab1eea058d1e35f1"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7504,6 +7524,17 @@
       "10e3216038c70432"
     ],
     "Spider-Man: Brand New Day": [
+      "4105dddc91a02524",
+      "ce602cfd3bfe7e46",
+      "c3fcf939a5791a7b",
+      "425ad69cb40a16f3",
+      "fa607576cde70e4c",
+      "44af97eec243f5ca",
+      "90538ebf2e2f9677",
+      "3351f94ae3ce046a",
+      "13a89265c833b756",
+      "6e1c43603e633b5a",
+      "15caa1703c40218c",
       "7ff75822b18b04ab",
       "a21029cad15f45f2",
       "a3cfcaadc9d5b47d",
@@ -7592,20 +7623,10 @@
       "afde1c0cfa6c7882",
       "26f36407d0d8b513",
       "1378a166ce050b7f",
-      "1a42f53c0b479b5d",
-      "92e97e0dd342b3c2",
-      "a5f7af527ec362d7",
-      "bf2ae1d9ed6fc5cd",
-      "acb36bdbe2200dde",
-      "19068fa78d83e47f",
-      "ffd2c7055c45780b",
-      "e90f3284f5972419",
-      "26be8b56f41fcefa",
-      "8ac661eddea95707",
-      "3014977fd16315c8",
-      "8fed34dbfb6cbf19"
+      "1a42f53c0b479b5d"
     ],
     "The Batman Part II": [
+      "8252baaab8f3c950",
       "c28c20716251f5f4",
       "e46cd20c6c1cc6af",
       "c7b041aff192f00e",
@@ -7704,10 +7725,17 @@
       "a58d253d956fbbe8",
       "78b3f5f0ba95dbf7",
       "2f0b1b8a84e405e2",
-      "554a6b956dd5a86c",
-      "a0b71bb2ae829607"
+      "554a6b956dd5a86c"
     ],
     "The Odyssey": [
+      "af61b9a0a289b39e",
+      "3e25d4122e5ef19d",
+      "b771b42b0a1281ed",
+      "a0696649ff66a21d",
+      "8eff931ec20cdc57",
+      "52c3292b2cb87051",
+      "80da1b2aa602c89c",
+      "2d0305582e06751a",
       "e9b93071d2642240",
       "b88cd4cd6f1c8692",
       "236bf47ae0658cb9",
@@ -7799,15 +7827,7 @@
       "9dc4cbba1c39714b",
       "bb38f18c5051373e",
       "95f417e408d62c85",
-      "e82f22ecc9d3ca64",
-      "bbf8452227f2dbed",
-      "5fab9db8a57b89d2",
-      "7bc678a8c3f9c6d7",
-      "b65d3aec88cb709f",
-      "ff642460481f251e",
-      "7a8e05271c53ad4f",
-      "a33c805703ec8ba5",
-      "480db22afdfd6e91"
+      "e82f22ecc9d3ca64"
     ]
   },
   "movie_release_dates": {
@@ -7892,7 +7912,8 @@
     15613,
     5721,
     81195,
-    117842022
+    117842022,
+    469886
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8120,6 +8141,15 @@
       "label": "Foo Fighters",
       "payload": {
         "name": "Foo Fighters"
+      }
+    },
+    "835432ee26d3015e": {
+      "applied": null,
+      "created": "2026-06-23T18:25:02.590623+00:00",
+      "kind": "artist",
+      "label": "santa rm",
+      "payload": {
+        "name": "santa rm"
       }
     },
     "89cb1a8d7d383dc5": {
@@ -8589,179 +8619,177 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "deals": {
-      "last_data": "2026-06-23T16:33:15.423814+00:00",
+      "last_data": "2026-06-23T18:25:54.138952+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "energy": {
-      "last_data": "2026-06-23T16:33:37.946259+00:00",
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_data": "2026-06-23T18:26:12.949276+00:00",
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "fda": {
-      "last_data": "2026-06-23T16:33:26.856629+00:00",
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_data": "2026-06-23T18:26:01.871762+00:00",
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-23T16:33:53.004954+00:00",
+      "last_data": "2026-06-23T18:26:27.632614+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "fx": {
-      "last_data": "2026-06-23T16:33:51.003666+00:00",
+      "last_data": "2026-06-23T18:26:26.558770+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "games": {
       "last_data": "2026-06-22T13:21:53.280804+00:00",
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-23T16:32:34.792831+00:00",
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_data": "2026-06-23T18:25:04.707738+00:00",
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-23T16:33:26.060479+00:00",
+      "last_data": "2026-06-23T18:26:01.174889+00:00",
       "last_data_count": 248,
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "movies": {
-      "last_data": "2026-06-23T16:32:27.536717+00:00",
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_data": "2026-06-23T18:24:57.234842+00:00",
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "music": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-23T16:33:38.619637+00:00",
+      "last_data": "2026-06-23T18:26:13.539718+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-23T16:33:50.517537+00:00",
+      "last_data": "2026-06-23T18:26:25.997205+00:00",
       "last_data_count": 43,
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-23T16:32:30.284290+00:00",
+      "last_data": "2026-06-23T18:24:59.718651+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "weather": {
-      "last_data": "2026-06-23T16:33:38.298206+00:00",
+      "last_data": "2026-06-23T18:26:13.180945+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-23T16:33:54.991178+00:00",
+      "last_data": "2026-06-23T18:26:29.889737+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-23T16:32:21.789813+00:00"
+      "last_ok": "2026-06-23T18:24:50.728831+00:00"
     }
   },
-  "twitch_live": [
-    "Acola_lui"
-  ],
+  "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165021"
+    "last_full_window": "165022"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8774,10 +8802,12 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
-    "2026-06-23|15",
-    "2026-06-23|12"
+    "2026-06-23|18",
+    "2026-06-23|12",
+    "2026-06-23|15"
   ],
   "weather_seen_ids": [
+    "e70d037bd504c918",
     "28d36eb1abe83602",
     "dfad6b95ee9ea912",
     "c5897ccbf7828d05",
@@ -8839,8 +8869,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "leaders",
-  "wikiquote_last_sent": "2026-06-23T3",
+  "wikiquote_last_category": "philosophers",
+  "wikiquote_last_sent": "2026-06-23T6",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-14",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -8873,6 +8903,7 @@
     "philosophers:Arthur Schopenhauer": "2026-06-17",
     "philosophers:Confucius": "2026-06-21",
     "philosophers:Friedrich Nietzsche": "2026-06-19",
+    "philosophers:Immanuel Kant": "2026-06-23",
     "philosophers:Marcus Aurelius": "2026-06-22",
     "philosophers:Plato": "2026-06-14",
     "philosophers:Socrates": "2026-06-13",
