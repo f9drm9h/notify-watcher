@@ -116,7 +116,26 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [],
+  "digest_buffer": [
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 35,
+      "source": "World Nuclear News",
+      "title": "Fusion supply chain spend up, but challenges remain",
+      "topic": "energy",
+      "url": "https://www.world-nuclear-news.org//articles/fusion-supply-chain-spend-up-big-challenges-remain"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Earthquakes",
+      "title": "M3.4 - 46 km NNW of San Antonio, Puerto Rico (~265 km away)",
+      "topic": "quakes",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71520998"
+    }
+  ],
   "digest_last_sent": "2026-06-23",
   "discord_control": {
     "last_id": "1518771924174372914"
@@ -146,6 +165,9 @@
     ]
   },
   "energy_seen_ids": [
+    "df2c4b22f12d6a10",
+    "315a79de54fd7aed",
+    "a97ca08176f9c98d",
     "8a1ee70586053c12",
     "c28348c1713e26e6",
     "3b4168777db15819",
@@ -275,126 +297,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "id": "cc602597c76934f9",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman: Part II\u2019 begins filming as networks cancel shows - MSN",
-      "topic": "movies",
-      "ts": "2026-06-19T02:08:59.651656+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOUkJjWlFRNjhZUnhialRjZGZoLTN4VTVWOUk4T3huU1k0QVVNQURKZUxLeFJCZjZBV1ZkOVltR3RmWVRUX0dVOHhkMWxjOWdqQVg5Y3JfQkNteklZS1dOUmxLdlkyS2NMdHpYeFYtQmk2amx3RmhYTFkwd1RqMnVzTVpTWl9ZbUtzQnlYUTM4NXhRLXdVcVJNWVprV1VWcE9LdjZyNnZUazNlQ05QbmFwTVVJMlp6QkNxLUx0WXZ6R053XzhaV2Y4VlViMWFXZ1piOWRUYk0xZm1XWXo1MFppQmlUV25jVjRHdGduRzg1aVZZUQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "\ud83c\udde9\ud83c\uddf4 Juan Soto \u2014 2 HR vs Philadelphia Phillies",
-      "id": "7e9fc909370b2bb7",
-      "score": 64,
-      "severity": "high",
-      "source": "Baseball",
-      "title": "Baseball: Juan Soto",
-      "topic": "baseball",
-      "ts": "2026-06-19T02:09:08.259418+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "000<br />ABNT20 KNHC 182343<br />TWOAT <br /><br />Tropical Weather Outlook<br />NWS National Hurricane Center Miami FL<br />800 PM EDT Thu Jun 18 2026<br /><br />For the North Atlantic...Caribbean Sea and the Gulf of America:<br /><br />Offshore the East Coast of the United States (Remnants of Arth",
-      "id": "09ea13d5ee7ca399",
-      "score": 95,
-      "severity": "critical",
-      "source": "Weather",
-      "title": "Weather alert: Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-19T02:10:03.538866+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "THIS ONLINE TOURNAMENT WAS STACKED",
-      "id": "e69e8393d277c167",
-      "score": 62,
-      "severity": "moderate",
-      "source": "MKLeo17",
-      "title": "MKLeo17 uploaded a new video",
-      "topic": "youtube",
-      "ts": "2026-06-19T02:10:19.604712+00:00",
-      "url": "https://www.youtube.com/watch?v=BxzaMYPe1Yg"
-    },
-    {
-      "action": "push",
-      "detail": "The air in the late 19th century crackled with a new kind of energy, a promise of light and power that would forever transform the human experience. At the forefront of this nascent electrical revolution stood two titans, men whose names would become synonymous with progress and, for a time, bitter rivalry: Thomas Edison and George Westinghouse. Edison, the Wizard of Menlo Park, had already captivated the world with his incandescent light bulb, a delicate glass sphere that banished the flickering gaslights of old. He championed direct current, or DC, a steady, unidirectional flow of electricity that had its undeniable advantages in simplicity and direct application for early electrical devices. Westinghouse, a visionary engineer and industrialist, arrived on the scene with a different proposition, one that would spark a heated and often venomous debate: alternating current, or AC.\n\nThe fundamental disagreement between these two giants stemmed from a basic principle of physics: how to efficiently transmit electricity over long distances. Edison\u2019s DC system was limited by voltage drop; power plants needed to be located every mile or so to maintain sufficient voltage for homes and businesses. This meant a sprawling, inefficient network of power stations, each serving a relatively small radius. Westinghouse, however, saw the potential of AC, which could be easily transformed to higher voltages for long-distance transmission and then stepped down again for local use. This dramatically reduced the number of power plants required and opened up the possibility of electrifying entire cities, even rural areas, from a central generating station. The inherent efficiency and scalability of AC were clear to Westinghouse and his brilliant engineer, Nikola Tesla, who had developed the groundbreaking AC induction motor.\n\nWhat began as a technical debate soon devolved into a full-blown propaganda war, a public spectacle designed to sway opinion and undermine the opposition. Edison, a master of public relations and a fierce protector of his inventions, launched a relentless smear campaign against AC. He painted it as inherently dangerous, a lethal force that would electrocute anyone who came into contact with it. He funded grisly demonstrations where animals \u2013 dogs, cats, even a circus elephant named Topsy \u2013 were publicly electrocuted with AC to illustrate its supposed deadly nature. He even lobbied for the first electric chair to use AC, hoping to indelibly link Westinghouse's current with capital punishment. This was a dark chapter in Edison's otherwise brilliant career, a testament to the lengths to which commercial rivalry could push even the most revered innovators.\n\nDespite Edison's desperate attempts to discredit it, alternating current ultimately prevailed. The advantages of AC in terms of efficiency, cost-effectiveness, and scalability proved too compelling to ignore. The World's Columbian Exposition in Chicago in 1893, famously \"lit up\" by Westinghouse, served as a stunning demonstration of AC's power and potential, showcasing a dazzling spectacle of light that captivated millions. The Niagara Falls hydroelectric project, completed a few years later, further cemented AC's dominance, proving its ability to harness immense power and transmit it over vast distances. The War of the Currents wasn't just a technical battle; it was a clash of wills, a dramatic struggle between entrenched innovation and revolutionary progress.",
-      "id": "c57d9261dc9650b7",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The War of the Currents: Edison versus Westinghouse",
-      "topic": "learn",
-      "ts": "2026-06-19T02:10:26.217598+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cThe desert grows: woe to him in whom deserts hide ...\u201d\n\u2014 Friedrich Nietzsche\n\nThe voice of Friedrich Nietzsche, a philosopher often misunderstood, echoes across more than a century, his words sharp and unsettling, particularly this stark pronouncement: \"The desert grows: woe to him in whom deserts hide.\" To truly grasp the weight of this statement, we must first journey into the mind of the man himself, a figure of profound intellect and equally profound suffering. Born in 1844, Nietzsche was a classical philologist before turning fully to philosophy, a brilliant academic who, even in his youth, displayed a restless spirit and an unsettling capacity for introspection. His life was a constant battle against ill health \u2013 crippling migraines, failing eyesight, and a litany of other ailments that would plague him until his mental collapse in 1889. He was a solitary figure, often isolated by his radical ideas and his physical infirmities, finding solace primarily in long walks through the Swiss Alps or along the Italian Riviera. It was in this crucible of intellectual intensity and physical torment that his most challenging and influential works were forged, works that sought to dismantle the moral and philosophical foundations of Western thought.\n\nThe context of \"The desert grows\" is deeply intertwined with Nietzsche's broader critique of modernity and what he perceived as the creeping nihilism of his age. Europe in the late 19th century was a continent in flux, grappling with the seismic shifts brought by industrialization, scientific advancement, and the decline of traditional religious belief. The certainties of the past were eroding, and in their place, Nietzsche saw a vacuum, a spiritual emptiness that he metaphorically termed \"the desert.\" For him, this wasn't a physical wasteland but an internal one, a loss of meaning, purpose, and values. He believed that the Enlightenment's emphasis on reason, while liberating in some respects, had also stripped humanity of its vital instincts, its will to power, and its capacity for genuine self-overcoming. \"Woe to him in whom deserts hide\" is a dire warning, a prophesy against those who fail to recognize this internal desolation, those who allow their own inner landscape to become barren, devoid of creativity, passion, and the courage to forge new values. He wasn't advocating for a return to old dogmas but for a radical re-evaluation, a self-creation that could fill the void left by crumbling traditions.\n\nToday, Nietzsche's ominous pronouncement resonates with startling relevance, perhaps even more acutely than in his own time. We live in an era characterized by unprecedented connectivity yet often profound individual isolation, by an overload of information yet a frequent scarcity of meaning. The \"desert\" he spoke of can be seen in the pervasive anxieties of modern life: the digital echo chambers that reinforce existing biases, the relentless pursuit of superficial validation, the erosion of deep engagement in favor of fleeting distractions, and the existential dread that can accompany a life devoid of genuine purpose.",
-      "id": "b2d5ca69d25dc426",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Friedrich Nietzsche",
-      "topic": "wikiquote",
-      "ts": "2026-06-19T02:10:31.644465+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "1c8c089264883971",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel Confirms Drastic \u2018Avengers: Doomsday\u2019 Change as Mutant History Is Officially Rewritten - Disney Fanatic",
-      "topic": "movies",
-      "ts": "2026-06-19T07:32:19.973036+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOR3FDeW1GZWl5VkpQekN6cVRrV2tXRDNFUS0tckFOSlRraW5STjZRRXFLMnRmaFRPdUZtQVJmbWVsOWlwMzlORXBCSmJic1RuY01nNm43LUt6MnZuX3Y3S3lwM0NicGxiZHVjQmhEbzMxbWFhUkFFa0NOel81b28zRVlMczItaF9CXzVndkd2N1dUZ2t6LWppbG90eDhmNTRQRGg4ZE45LV9fa0c0b1NKbkFoR0phcWhLR1NpVEtGdlhCeHM?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "6e145ae81d8940bd",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' starring Tom Holland has posted the best U.S. first-day presales for any film in years. Read more below. - facebook.com",
-      "topic": "movies",
-      "ts": "2026-06-19T07:32:20.923657+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMFB3Y2pjXzBLcXNZcUM1bldqWkhoMDhENlM0NDBqWG4yekZWc0J6a0FzcnNDa2ZoMHloR3pLZDRUbmtlNXlhOUUyNHpBV1hzTWpMYzBzbzBjMDRTMnJzV3FiRVZZc1lyR1Z5TG1yNFc5b2JnQkJndzVjOVhpdFl3SmlMdk9qc3UtUTROaFlHT0E0LV9US0RkVlFyMmNXc2tSOWQ4Szg1VlZBSV9EaFJqRWpQNFRpM192ZzFtUXYwWV9yLVJQdmJjdHEtUU5NUFdtdHZtNA?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "4cc5c3c61e93d71e",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day's latest trailer officially confirms X-Men character - Digital Spy",
-      "topic": "movies",
-      "ts": "2026-06-19T07:32:21.826195+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTEoxWkxFWDFxVnVkUUFwanNmTUV6aVZpYk1RTENQSDRqUUhEUUhHWW9FeXdYRDVWZWI0LUhSUXE1bHNaZ05IUVF5dFY3Q0V6N2dWSG1iRG1kZWZMTlFVZmpHTU5wb2JDbUp3TVEwTlZBTkZ6ajBoSGZZa0ItRVM4Zk5UXy1rOWc1aGdWY18tVEZLeGRTMGc?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "596f61c368319111",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' starring Tom Holland has posted the best U.S. first-day presales for any film in years. - Deadline",
-      "topic": "movies",
-      "ts": "2026-06-19T07:32:21.826747+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbUp1RzA3dl9wMTRjWHIzbW9kd3ljRXZBc0dvemNodm8xNkpueDRudVVUeEpKcmN2U0R2eVBxeUhobE9NRzRVSlo3VzhpTWV3eEZHZ2N3UWNxTXZoQkRuM19VRV9ObnZLanhTQmRld0kwcjM0Y19PNDRtQ0tyZC16cXBHak1zNFU2?oc=5"
-    },
     {
       "action": "push",
       "detail": "",
@@ -6274,6 +6176,126 @@
       "topic": "apod",
       "ts": "2026-06-23T14:04:02.536879+00:00",
       "url": "https://apod.nasa.gov/apod/image/2606/TritonPass_voyager2.mp4"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "9a28d70781e12258",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Michael Caine Lends His AI Clone to Voice \u2018The Odyssey\u2019 Audiobook - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-06-23T16:32:25.386148+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORHZ6Y0xnM0pQRDM0dHdjR1d6RkVtMlB1bTREYTBMT2g5U2J1NFhmbFhtdGswVHk2UlBOekgzMC1oTFVUbjl0amNiYzhiejAxR2x1UEV4aDR1cm5xMS1VQWZHbmZsSktFTHlUSkw5dGk0UXJ2b0JkSzQwd0xIZmlEaE1CYm9fOHpEaDBlcnZXLUhHNllGeDFHcG5GUG1XTXp3V2RVNkYtck0?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "f64fae69ee44b391",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Michael Caine Announces He's Narrating The Odyssey \u2014 But Not the Christopher Nolan Movie, And Also His Voice is Actually AI - IGN Southeast Asia",
+      "topic": "movies",
+      "ts": "2026-06-23T16:32:25.387190+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxQNHFDZmdZMFpYc3VHcDZXdk02TThoZHlWU1lfXzkzZEhuVDJIaFdBTTc5OHU0Z3V6b2VIbjhnY0VrSjd6OUdsd01feFFpalZZRzZwN3lJcmI0azREQ1RtdWxlU2FqSzViYmFWdTdqV3pVRFlXWVJ1cEpOcjZtM3B6NXFsRWxGbnl0Y1NUalFpd1RPOFl5Nks1SmVFU2JRZkFRNmJheUtmVWtGZkR6ZXNRVlZ3MDFoQ1VwSW9qTG1wLTB5dS1lWXplMmplWVhLdFBkNXJuVU5LcGVJT19zNTdzdFZZWVhxMk9KUVRIQ081MWI0azJOS2sySlJjYUpZbjZxVjlz?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "1c1098216eb311d0",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "The Batman 2\u2019s Brian Tyree Henry Plays Iconic DC Villain in Sequel Movie - AOL.com",
+      "topic": "movies",
+      "ts": "2026-06-23T16:32:26.468276+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNS2Q3eWlUSzhvRXJtZk5aZjNSeDNrSkpvYkxyT1U0azNZUDAxMUxoQ1BPb21Gc1B4Y21EajZTQmNuWnV4X0FJU2RYNENJOGhITUZKYUNoZmpjSy1aTTNTdXAxV1FTNi1JT0JIQTl0MFFCRjdpLVl0bzdGX0FEWGVGSg?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Pok\u00e9mon Champions - \u69cb\u7bc9\u8a18\u4e8b\u3092\u8aad\u3082\u3046\u306e\u304b\u3044\u3010\u30dd\u30b1\u30e2\u30f3\u30c1\u30e3\u30f3\u30d4\u30aa\u30f3\u30ba\u3011",
+      "id": "a6fa59051b3cbdc4",
+      "score": 68,
+      "severity": "high",
+      "source": "Acola_lui",
+      "title": "Acola_lui is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-23T16:32:29.612877+00:00",
+      "url": "https://twitch.tv/Acola_lui"
+    },
+    {
+      "action": "push",
+      "detail": "El Jard\u00edn - She\n(because you like Porta)",
+      "id": "3dabc626bbbb8401",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-23T16:32:33.116426+00:00",
+      "url": "https://www.deezer.com/track/3935000681"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "8e4a1a1320ddcd2d",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Fusion supply chain spend up, but challenges remain",
+      "topic": "energy",
+      "ts": "2026-06-23T16:33:37.946592+00:00",
+      "url": "https://www.world-nuclear-news.org//articles/fusion-supply-chain-spend-up-big-challenges-remain"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "f3283faa238dcf9e",
+      "score": 60,
+      "severity": "high",
+      "source": "World Nuclear News",
+      "title": "Major component milestone for Indian reactor",
+      "topic": "energy",
+      "ts": "2026-06-23T16:33:37.947106+00:00",
+      "url": "https://www.world-nuclear-news.org//articles/major-component-milestone-for-indian-reactor"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "6385d2009daa0be8",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.4 - 46 km NNW of San Antonio, Puerto Rico (~265 km away)",
+      "topic": "quakes",
+      "ts": "2026-06-23T16:33:50.518002+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71520998"
+    },
+    {
+      "action": "push",
+      "detail": "Time for a glass of water. Stay hydrated!",
+      "id": "62c9b2fe86d6241a",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-23T16:33:54.991838+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "The P versus NP problem, a tantalizing enigma at the heart of theoretical computer science, is a question of profound practical and philosophical consequence.  Imagine a lock, intricate and complex. You\u2019re handed a key and told to verify if it opens the lock. This is generally an easy task \u2013 a quick turn, and you know. This ease of *verification* is a hallmark of problems that lie within the class NP (Nondeterministic Polynomial time). Now, imagine you have no key, but are instead tasked with *finding* the key to that same complex lock. This is a far harder problem, often requiring exhaustive searching or clever heuristics. The P versus NP question, then, asks if these two seemingly distinct challenges \u2013 finding a solution versus verifying one \u2013 are fundamentally the same. Is it always just as hard to find a solution as it is to check one, or are there truly problems where verification is inherently much simpler than discovery?\n\nThis quest for an answer, considered one of the seven Millennium Prize Problems by the Clay Mathematics Institute with a million-dollar reward for its solution, has attracted the brightest minds in mathematics and computer science for decades. Pioneers like Stephen Cook, whose seminal 1971 paper \"The Complexity of Theorem Proving Procedures\" formally introduced the concept of NP-completeness, laid the groundwork for this monumental challenge. Cook, along with Leonid Levin, independently showed that there exist problems within NP that are, in a sense, the \"hardest\" problems in that class \u2013 if you can find a fast solution for one of these \"NP-complete\" problems, you can find a fast solution for *all* problems in NP. This revelation ignited a furious debate: if even one NP-complete problem can be solved quickly, then P=NP, meaning the power of finding a solution is no greater than verifying one. If, however, even a single NP-complete problem resists efficient solution, then P\u2260NP, a statement that would forever underscore the inherent difficulty of certain computational tasks.\n\nThe human drama in this intellectual struggle is palpable. Researchers have dedicated their entire careers, some even their entire lives, to grappling with this question. There's the persistent hope, the occasional false alarm of a supposed breakthrough, and the crushing reality of yet another refutation. For computer scientists, a proof that P=NP would revolutionize industries from cryptography to drug discovery. Imagine being able to efficiently solve problems like protein folding or optimal resource allocation, tasks currently intractable for even the most powerful supercomputers. Cryptographic security, which relies on the assumption that certain problems (like factoring large numbers) are hard to solve, would crumble, necessitating a complete re-evaluation of digital security. Conversely, a proof that P\u2260NP would offer a profound understanding of the fundamental limits of computation, solidifying the belief that some problems are inherently difficult and will always demand significant computational effort or clever human insight.\n\nThe stakes could not be higher. Beyond the prize money and academic accolades, the resolution of P versus NP would reshape our understanding of intelligence itself, both artificial and natural. If P=NP, it suggests that creativity, problem-solving, and perhaps even consciousness could, in principle, be reduced to efficient algorithms.",
+      "id": "f2c632f943eab756",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The P versus NP problem",
+      "topic": "learn",
+      "ts": "2026-06-23T16:34:00.437517+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6350,7 +6372,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-20-26-JUN-DE-2026.pdf",
   "fuel_last_pdf_hash": "df5bf29864420fdf3ae48c6b803e8715064f631b1998f09ad9d6c6ddfd00a535",
-  "fuel_last_prices_seen_at": "2026-06-23T14:03:40.348215+00:00",
+  "fuel_last_prices_seen_at": "2026-06-23T16:33:53.004928+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7087,8 +7109,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "early_humans",
-  "knowledge_last_sent": "2026-06-23T4",
+  "knowledge_last_category": "math_history",
+  "knowledge_last_sent": "2026-06-23T5",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7115,6 +7137,7 @@
     "math_history:Andrew Wiles and the final proof": "2026-06-14",
     "math_history:Euclid's Elements": "2026-06-15",
     "math_history:Riemann and the geometry of curved space": "2026-06-18",
+    "math_history:The P versus NP problem": "2026-06-23",
     "math_history:The continuum hypothesis": "2026-06-21",
     "medicine:Barry Marshall and the cause of stomach ulcers": "2026-06-18",
     "medicine:The discovery of anesthesia's risks and refinements": "2026-06-20",
@@ -7157,7 +7180,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-06-23T14:01:59.656176+00:00"
+    "ts": "2026-06-23T16:32:21.789813+00:00"
   },
   "launch_seen_ids": [
     "f1fed8fbf29f7123",
@@ -7180,6 +7203,11 @@
   "life_dashboard_last_week": "2026-W25",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "39a0f85123daeb80",
+      "99e80f32f1911bae",
+      "733f06349682d7d1",
+      "5959b38e15f833f0",
+      "ede3c81858d0ee84",
       "ab49523da875d762",
       "a46cdf71779bca61",
       "edc4bbec64d25ef8",
@@ -7274,12 +7302,7 @@
       "2951167e6225c875",
       "508d74ac09b2fb84",
       "3387b1d697a68fb9",
-      "f0fb5960003e71e6",
-      "c1bec6bd7a0996e6",
-      "7b9047c820450e23",
-      "f2157e9afb617fd1",
-      "c68c4763370a982e",
-      "1379260234035c1f"
+      "f0fb5960003e71e6"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7481,6 +7504,12 @@
       "10e3216038c70432"
     ],
     "Spider-Man: Brand New Day": [
+      "7ff75822b18b04ab",
+      "a21029cad15f45f2",
+      "a3cfcaadc9d5b47d",
+      "ea191ffde6f5f511",
+      "3b45eb451b4d32cf",
+      "86c02721dad6564e",
       "e3c0596c8a24990d",
       "5bd7fcd3d5bf3874",
       "521206e6eb4da2fe",
@@ -7574,15 +7603,10 @@
       "26be8b56f41fcefa",
       "8ac661eddea95707",
       "3014977fd16315c8",
-      "8fed34dbfb6cbf19",
-      "e7175f95341d2e4d",
-      "13a89265c833b756",
-      "6e1c43603e633b5a",
-      "47181424644e982c",
-      "15caa1703c40218c",
-      "90538ebf2e2f9677"
+      "8fed34dbfb6cbf19"
     ],
     "The Batman Part II": [
+      "c28c20716251f5f4",
       "e46cd20c6c1cc6af",
       "c7b041aff192f00e",
       "e1fa28225983828f",
@@ -7681,10 +7705,21 @@
       "78b3f5f0ba95dbf7",
       "2f0b1b8a84e405e2",
       "554a6b956dd5a86c",
-      "a0b71bb2ae829607",
-      "8252baaab8f3c950"
+      "a0b71bb2ae829607"
     ],
     "The Odyssey": [
+      "e9b93071d2642240",
+      "b88cd4cd6f1c8692",
+      "236bf47ae0658cb9",
+      "b3f23616900a9a97",
+      "2f7611c21abd8cdc",
+      "1dacda63765b6d4e",
+      "e99dfeee252c9240",
+      "3d688db20ae74381",
+      "e8ca73e7fd734243",
+      "63d8196c88839a03",
+      "58bfc8b08f7cfcfd",
+      "b4a86ffc4f8f2cfd",
       "1dcac3dca4d76799",
       "219f652e5afdf33c",
       "a76f73f8de4df5c1",
@@ -7772,19 +7807,7 @@
       "ff642460481f251e",
       "7a8e05271c53ad4f",
       "a33c805703ec8ba5",
-      "480db22afdfd6e91",
-      "c8db402a9454f4ef",
-      "80da1b2aa602c89c",
-      "a910b734513f20c3",
-      "ae662e4aa1523b52",
-      "04a85b599de45e89",
-      "e382ecc0555cf732",
-      "2d0305582e06751a",
-      "650d54c6188e98f0",
-      "a6b33c76bd04b997",
-      "c316f17e7a0eee55",
-      "c31bc16f1cb19fba",
-      "76024071556019b7"
+      "480db22afdfd6e91"
     ]
   },
   "movie_release_dates": {
@@ -7868,7 +7891,8 @@
     2176,
     15613,
     5721,
-    81195
+    81195,
+    117842022
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8224,6 +8248,15 @@
         "name": "Sarah Vaughan"
       }
     },
+    "bbdadb7ec8f0092f": {
+      "applied": null,
+      "created": "2026-06-23T16:32:33.116397+00:00",
+      "kind": "artist",
+      "label": "She",
+      "payload": {
+        "name": "She"
+      }
+    },
     "c27be1dfb17ba405": {
       "applied": "2026-06-13T10:56:58.130168+00:00",
       "created": "2026-06-13T08:56:03.026648+00:00",
@@ -8447,6 +8480,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "9684b359fa2e0b42",
     "d1e65d3fbed17d19",
     "667e5a0dfd938427",
     "86363a5c160a5731",
@@ -8555,177 +8589,179 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "deals": {
-      "last_data": "2026-06-23T14:03:02.200508+00:00",
+      "last_data": "2026-06-23T16:33:15.423814+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "energy": {
-      "last_data": "2026-06-23T14:03:23.929176+00:00",
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_data": "2026-06-23T16:33:37.946259+00:00",
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "fda": {
-      "last_data": "2026-06-23T14:03:12.528618+00:00",
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_data": "2026-06-23T16:33:26.856629+00:00",
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-23T14:03:40.348237+00:00",
+      "last_data": "2026-06-23T16:33:53.004954+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "fx": {
-      "last_data": "2026-06-23T14:03:38.850015+00:00",
+      "last_data": "2026-06-23T16:33:51.003666+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "games": {
       "last_data": "2026-06-22T13:21:53.280804+00:00",
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-23T14:02:13.278905+00:00",
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_data": "2026-06-23T16:32:34.792831+00:00",
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-23T14:03:12.210617+00:00",
+      "last_data": "2026-06-23T16:33:26.060479+00:00",
       "last_data_count": 248,
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "movies": {
-      "last_data": "2026-06-23T14:02:06.194934+00:00",
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_data": "2026-06-23T16:32:27.536717+00:00",
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "music": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-23T14:03:24.559413+00:00",
+      "last_data": "2026-06-23T16:33:38.619637+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-23T14:03:38.085691+00:00",
-      "last_data_count": 41,
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_data": "2026-06-23T16:33:50.517537+00:00",
+      "last_data_count": 43,
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-23T14:02:08.900053+00:00",
+      "last_data": "2026-06-23T16:32:30.284290+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "weather": {
-      "last_data": "2026-06-23T14:03:24.074248+00:00",
+      "last_data": "2026-06-23T16:33:38.298206+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-23T14:03:44.868653+00:00",
+      "last_data": "2026-06-23T16:33:54.991178+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-23T14:01:59.656176+00:00"
+      "last_ok": "2026-06-23T16:32:21.789813+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "Acola_lui"
+  ],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165020"
+    "last_full_window": "165021"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8738,6 +8774,7 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
+    "2026-06-23|15",
     "2026-06-23|12"
   ],
   "weather_seen_ids": [
