@@ -153,6 +153,78 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "Spider-Man: Brand New Day",
+      "title": "'Spider-Man: Brand New Day' starring Tom Holland has posted the best U.S. first-day presales for any film in years. - Deadline",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbUp1RzA3dl9wMTRjWHIzbW9kd3ljRXZBc0dvemNodm8xNkpueDRudVVUeEpKcmN2U0R2eVBxeUhobE9NRzRVSlo3VzhpTWV3eEZHZ2N3UWNxTXZoQkRuM19VRV9ObnZLanhTQmRld0kwcjM0Y19PNDRtQ0tyZC16cXBHak1zNFU2?oc=5"
+    },
+    {
+      "detail": "DOP 276.47 (was DOP 394.95, -30%)",
+      "preserve_detail": false,
+      "score": 45,
+      "source": "Nacional",
+      "title": "Nacional deal: Toallitas H\u00famedas Para Bebe Sensitive Travel Pampers 56 Und/Paq",
+      "topic": "groceries",
+      "url": "https://supermercadosnacional.com/toallitas-humedas-para-bebe-sensitive-travel-pampers-56-und-paq-2003975"
+    },
+    {
+      "detail": "DOP 134.95 (was DOP 159.95, -16%)",
+      "preserve_detail": false,
+      "score": 45,
+      "source": "Nacional",
+      "title": "Nacional deal: Papas Congeladas Shoe String Mydibel 1 Kg",
+      "topic": "groceries",
+      "url": "https://supermercadosnacional.com/papas-congeladas-shoe-string-mydibel-1-kg-2135818"
+    },
+    {
+      "detail": "DOP 225.95 (was DOP 268.95, -16%)",
+      "preserve_detail": false,
+      "score": 45,
+      "source": "Nacional",
+      "title": "Nacional deal: Jabon En Barra Blanco Dove 3 Und/Paq 90 Gr",
+      "topic": "groceries",
+      "url": "https://supermercadosnacional.com/jabon-en-barra-blanco-dove-3-und-paq-90-gr-2215220"
+    },
+    {
+      "detail": "DOP 116.95 (was DOP 128.95, -9%)",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Nacional",
+      "title": "Nacional deal: Toallas Sanitarias Nosotras Buenas Noches Natural 10 Und",
+      "topic": "groceries",
+      "url": "https://supermercadosnacional.com/toallas-sanitarias-nosotras-buenas-noches-natural-10-und-2005081"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Morphine Sulfate",
+      "title": "FDA updates approval for Morphine Sulfate (NDA022195)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022195"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Oxycodone Hydrochloride",
+      "title": "FDA updates approval for Oxycodone Hydrochloride (NDA201194)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=201194"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Earthquakes",
+      "title": "M3.3 - 90 km NW of San Antonio, Puerto Rico (~237 km away)",
+      "topic": "quakes",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71521008"
     }
   ],
   "digest_last_sent": "2026-06-23",
@@ -316,234 +388,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "9304bed216ca6eac",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman 2 Director Matt Reeves Announces Filming Start With New Photo - AOL.com",
-      "topic": "movies",
-      "ts": "2026-06-19T07:32:24.486382+00:00",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB1OHdzMEhaRVJHX08xZ0loeVcxYWZJVWEzWmo4NWlEN3M3RldqSVNwakxDZWF4ZjBjQXh4Qk1sdlBmSEZSWWNmUmhLcUxYcmpFVV9wRl80cmZTSFE0emdLelVEbVJkX2RYaTRQOVJuVTNsRFhJVXZ2TGVTOXo3QQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "28443ab77a45ffa9",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Jeffrey Wright Says Matt Reeves Has Written An \u201cInsanely Brilliant\u201d Script For \u2018The Batman: Part II\u2019 & Production Starts Next Week [Exclusive] - The Playlist",
-      "topic": "movies",
-      "ts": "2026-06-19T07:32:24.486915+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWGp1VFR4UGZNdGxTUlhoNm0xM05wM0xHZmY5Tkk1aHNPY0ctU29UMUNENVA4MHRzM1Jxdy13Ujd6RDJMVXNRSHlUeTB4dzdBOGg5c3luVHYteldMdDBVSXBMeUhPTHhiQU54RFN3cVJFdV8tNS1NYV9Ec0twX0Q1RDdzclhhLS01Qm56UkphMlVjT25qZlZ0blNR?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "9b008e69a8bc2902",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Beloved DC star announces reduced role in The Batman - Part II - Yahoo",
-      "topic": "movies",
-      "ts": "2026-06-19T07:32:24.487487+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQN1dvM3JEQjA4ejB2VUxCd2E2bnI0SmNJWGNJcWVGUUN6UW1pQWxpblpsWkxIaFNhQ3IxUUE3VDZZOU9VdFpFTE5ndTZpRkRvazVkNUt4MjkzSWFqNHZIMTY4cHZRZ3BjMThhbDdBMHpOQmNDVkR3Rjg4bWlYYjY2c1ZvLXZ4SExVR3BnS0dIOC1VVEZJRXlEQ1QwcW9Ub2syNlE?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "000<br />ABNT20 KNHC 190503<br />TWOAT <br /><br />Tropical Weather Outlook<br />NWS National Hurricane Center Miami FL<br />200 AM EDT Fri Jun 19 2026<br /><br />For the North Atlantic...Caribbean Sea and the Gulf of America:<br /><br />Offshore the East Coast of the United States (Remnants of Arth",
-      "id": "95ab144949a88fdf",
-      "score": 95,
-      "severity": "critical",
-      "source": "Weather",
-      "title": "Weather alert: Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-19T07:33:28.874776+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "Project Fetch: Phase two - Anthropic",
-      "id": "4a57af01bcfe944d",
-      "score": 64,
-      "severity": "moderate",
-      "source": "Anthropic",
-      "title": "Anthropic",
-      "topic": "anthropic_news",
-      "ts": "2026-06-19T07:33:42.813733+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9saUVaZG42NkhtVU5GSC1Ba2tBazJIME1ZeFcySm92NEpPR243ME0tVkdTYUtZeEt1alZEVXBzYzhPdUZwa2JVRTJFSkxFSVkyV0VxMmhCU1JLRERDOUxDbncxY1Y?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Dos amigos en la carcel",
-      "id": "76cede691a4f13b4",
-      "score": 62,
-      "severity": "moderate",
-      "source": "MIGALA666",
-      "title": "MIGALA666 uploaded a new video",
-      "topic": "youtube",
-      "ts": "2026-06-19T07:33:43.180587+00:00",
-      "url": "https://www.youtube.com/watch?v=WlGZmxg_CYM"
-    },
-    {
-      "action": "push",
-      "detail": "Late Chill night playing viewers and subs! English Espa\u00f1ol",
-      "id": "3ceb6bb10505673c",
-      "score": 62,
-      "severity": "moderate",
-      "source": "MKLeo17",
-      "title": "MKLeo17 uploaded a new video",
-      "topic": "youtube",
-      "ts": "2026-06-19T07:33:43.458782+00:00",
-      "url": "https://www.youtube.com/watch?v=9ZHy6Pu16tk"
-    },
-    {
-      "action": "push",
-      "detail": "For four long years, Paris, the city of light and love, had languished under the iron heel of Nazi occupation. Its grand boulevards, once bustling with caf\u00e9 life and artistic fervor, now echoed with the guttural commands of German soldiers and the drone of military vehicles. The iconic Eiffel Tower, a symbol of French defiance and innovation, bore a swastika banner, a stark and humiliating reminder of the nation\u2019s defeat. But beneath the surface of enforced order, a spark of resistance flickered, fueled by the humiliation of occupation and the hope of liberation. The FFI, the French Forces of the Interior, a clandestine army of partisans and patriots, had been meticulously laying the groundwork for an uprising, their numbers growing as the tide of war began to turn in the Allies' favor.\n\nThe summer of 1944 brought with it an electric anticipation. D-Day had shattered the illusion of German invincibility, and the Allied forces were steadily pushing across France. As their armies approached Paris, the FFI, no longer content to wait, began their own insurgency. On August 19th, fueled by a mixture of patriotic fervor and desperation, they rose up, seizing key police stations and government buildings, their makeshift barricades springing up like mushrooms after a rain. The fight was fierce and often desperate. Lightly armed and poorly coordinated against the well-equipped German garrison under General Dietrich von Choltitz, the FFI fought street to street, house to house, their courage often their only weapon. The civilians of Paris, too, played their part, risking their lives to deliver messages, provide cover, and even participate in the fighting, their collective spirit a testament to the enduring human desire for freedom.\n\nThe plight of the FFI, fighting with incredible bravery but facing overwhelming odds, was quickly recognized by the Allied high command. General Charles de Gaulle, the indomitable leader of the Free French, understood the immense symbolic importance of Paris being liberated by its own people, or at least with significant French involvement. Against the initial strategic advice of some Allied commanders who preferred to bypass Paris to pursue the retreating German army, de Gaulle passionately argued for sending troops into the city. He saw not just a military objective, but a profound psychological and political imperative. The French, he insisted, must be seen to liberate themselves, to reclaim their capital and their honor. His unwavering determination ultimately swayed Eisenhower, and the 2nd French Armored Division, under the command of General Philippe Leclerc, was given the order to advance on Paris.\n\nOn August 25th, the roar of Leclerc's tanks, emblazoned with French tricolors and names like \"Romilly\" and \"Cherbourg,\" shattered the oppressive quiet of the city. The Parisians erupted, their cheers echoing through the streets as they swarmed the tanks, throwing flowers, offering wine, and embracing their liberators in an outpouring of joy and relief. The remaining German resistance, though sometimes fierce, was ultimately futile against the combined might of the French 2nd Armored Division and the surging FFI. General von Choltitz, defying Hitler's fanatical order to destroy the city, wisely surrendered, sparing Paris from unimaginable devastation.",
-      "id": "8c17532b00b2ff3f",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The liberation of Paris",
-      "topic": "learn",
-      "ts": "2026-06-19T07:33:49.360095+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cThe fact that you are not sure means that it is possible that there is another way someday.\u201d\n\u2014 Richard Feynman\n\nRichard Feynman, a name that evokes images of a playful genius, a bongo-playing physicist who cracked safes at Los Alamos and redefined the boundaries of human understanding. Born in Far Rockaway, New York, in 1918, Feynman was a man perpetually curious, with an insatiable desire to unravel the universe\u2019s mysteries. His mind was a kaleidoscope of ideas, always questioning, always experimenting, never content with the conventional. He was the quintessential scientist, but one who embraced life with a joyful irreverence, a charismatic storyteller who could captivate an audience with his vivid explanations of complex concepts. His early life was marked by a fascination with electricity and mechanics, a hands-on approach to learning that he carried throughout his illustrious career. He famously taught himself calculus before college, a testament to his innate brilliance and independent spirit.\n\nThe quote, \"The fact that you are not sure means that it is possible that there is another way someday,\" encapsulates Feynman's profound philosophical approach to science and life itself. While pinpointing the exact moment and context of every Feynman quote can be challenging, this sentiment perfectly aligns with his worldview, particularly during and after his involvement in the Manhattan Project. The 1940s were a turbulent time, with the world embroiled in World War II, and scientific endeavors were often driven by the urgent needs of the war effort. Feynman, a brilliant young physicist, found himself at Los Alamos, New Mexico, working on the atomic bomb, a project that forced scientists to confront the ethical implications of their discoveries. In this high-stakes environment, where groundbreaking physics was being applied to unprecedented destructive power, the idea of \"not being sure\" was not a weakness but a necessary condition for progress. It meant constantly re-evaluating, challenging assumptions, and seeking novel solutions. After the war, Feynman grappled with the implications of his work, and his focus shifted to fundamental physics, exploring quantum electrodynamics, for which he would later win the Nobel Prize. His lectures at Caltech, where he spent most of his academic career, were legendary for their clarity and unconventional approach, always emphasizing intuition and understanding over rote memorization. In a world still reeling from the war, and with the Cold War looming, the scientific community was grappling with both the immense potential and the devastating consequences of their work. Feynman\u2019s quote, in this context, served as a beacon, reminding us that uncertainty is not a roadblock but an invitation to explore new avenues, to innovate, and to keep pushing the boundaries of what we know.\n\nToday, Feynman's words resonate with an even deeper significance in an age defined by rapid technological advancements, global challenges, and an ever-evolving understanding of the universe. From climate change to artificial intelligence, from personalized medicine to the exploration of deep space, humanity faces complex problems that demand innovative solutions.",
-      "id": "b0224207898e5486",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Richard Feynman",
-      "topic": "wikiquote",
-      "ts": "2026-06-19T07:33:54.701579+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "f3981a425ad11d3b",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "A Big \u2018Avengers: Doomsday\u2019 Leak Reportedly Arrives, But Its Validity Is Debatable - Forbes",
-      "topic": "movies",
-      "ts": "2026-06-19T11:51:00.643781+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWWxfeWxRTE1FeXZHUjlGXzZkbkh5ME02YjROVHlEbk9pbXpua0Z5cHVMN1FHYmtGRHktdW9id3ZTN0QwZENDY2ZMUm13WklaYTdKM29jNEk4QVVkMnNlaFJBNF9CYzZ4R3BIQURmRE1ZRUcwbVItcF9aNFh5SE9OaXMxUUZTUlA5U3BMTi1XT3U2UnFUNS1zYVhXd2FzVlU4dWtoRjgyR0hBWnMtc09KaFhOeWtrZkJOeEJQSGt5OW5SY0d5T1Nz?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "419253e623e02434",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Video New 'Spider-Man: Brand New Day' trailer debuts during global tour - ABC News - Breaking News, Latest News and Videos",
-      "topic": "movies",
-      "ts": "2026-06-19T11:51:01.201851+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5sblRWVGU3Y2JWdUgzWVd0VUtrN292MHBKMTZ6cnJVZl9VTmxNRmhVXzRsOGxGRkVpdktDUUlkRGpqbzN0aXdxenR3Y0Q?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "ce60136155383e6f",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Trailer Confirms Secret X-Men Villain Casting - Yahoo",
-      "topic": "movies",
-      "ts": "2026-06-19T11:51:01.507467+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQVEM1SFpqcTZzbkZ3M1JJS1M5R3A5UnlIcVB2Zl9vclhQOFYzdFlTUXBkX0ZnSmswU2k5eng0R3NuWlNISUlqZWdwNjdGTTB5cDB6eTRMcWU3YmZKQjJ3d3hqQWxKVV9CQ1ZIUkJQMV9Va0xiUlRfOWtucHhXZzJ0NlBKTHRRYndGdVJiMXhPdjE1ZkItVWxUN0Zhbw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "a3bd15e40f0eb3f4",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day is still hiding Sadie Sink from us as new trailer lands - Digital Spy",
-      "topic": "movies",
-      "ts": "2026-06-19T11:51:01.741468+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc2owM241clEzLURiLWdzel9XN3d3RGlVanBlOWR6aVo0QW9qNWpFTHZCSW9vdno0MGh5VGFBdmhMMzFJN04wd1Z6WWVIb1FSc2hVRGw0aDltZkN6QTNfdWxzTGdCNkQxMjA2bzBsdFZPSHBubGNfWGlnQW5NQnJzSHdsOTdZRGxseE1udUJPRXpQcXB5X1Bib1NmZzdjZw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "345b2b1b38202788",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Officially Confirms a Major Change to the Hulk - Collider",
-      "topic": "movies",
-      "ts": "2026-06-19T11:51:01.922099+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZkNCQ2QwRWcyRGpDX0xDV1hOZ1JDTk9lMjFScWtuQmJ2VVdjV05NUUVPa05sdW1fUmJ4eDFIVXNtanpMRTFYZWZrdHdxUkZURDIzdjdlblphN2lNeURrV1NWZzZGbE9PN1ZPX0JOcTV1Zi1iTGloNmZFYkh5eGhhZzk2UThhZFk4bmc?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "449e992f497f958a",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day lands earlier UK release date - Digital Spy",
-      "topic": "movies",
-      "ts": "2026-06-19T11:51:01.922590+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQN0NWcjFQRW5fRGRmMWVKOFZ6eU42OEVQaXBvYVE3Qm96R3Fnbi1UaEhQRTI4cGpzUVVzdlRyVGlOSVhxeHFreXQyZ2VLcEhSNjhBNUloSVNKUWxzNVZpNWdkbmdFNmdLNGFzSVpWdFlzS0E2Z0Iwbmp2eDdydWk4c2tWcjlaZ3FMOV9SUzFfUmlJU2xTcWY4OA?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "75186431d8a45e51",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 New Trailer Breakdown - Nexus Point News",
-      "topic": "movies",
-      "ts": "2026-06-19T11:51:02.144190+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UOUdLdl93RjJvdVpNSEdVcEZxMElfeUdaclhwaFZHRy13LXBLY3BzajZYcHZHMlFSbEtlVExxVGFkTEZ6WUJ4QUVOWkp6OFZ5UVh1QjhuVVliWTloNHZNNFdSNFZoNmYxOFREcjQxdVdGYkNzbFpjS3lWMVNFYjQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "d9bd7462e7b36607",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Second Trailer for 'Spider-Man: Brand New Day' Starring Tom Holland - FirstShowing",
-      "topic": "movies",
-      "ts": "2026-06-19T11:51:02.336458+00:00",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVjdyYUNTbkhvQmxFZWpZbll2RUxBR2g3N05KVFpGbEhPNWVmaWw2SkV2TXVNT0Y1UTZvRUUtSnNKQW03Q2UzUnFKWEthLThiR2NzWDBiYnVOcnVXU0d2Y0lZZmMzNExBbGhFU3BJc0ltaVpBb2Qtb2hEeWM3UU4zMlRpODBTZ1JtVm52bjFiQ21CcHBRTElySjA2ZVdURGZR?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "a75c54412bda6ad1",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman 2\u2019s HD Logo Revealed as Matt Reeves Begins Filming - Yahoo",
-      "topic": "movies",
-      "ts": "2026-06-19T11:51:04.277372+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQX1o1TEdQMTAta3VQX3JKM280c0FmbVA2RW9lQUFDb1RyVWRjcGZJbE52VmJ2V0RBLTdHYzZqbm5XNllhOEJERFZsc1lxZWNkREloSnNrT29BdkczdWhlSG0zNG9oN2ZaUXhQck5LY181U1Zxaks1V25OS3d4S0h0Rk4xLWJsUXZMRkJKTjhPMlFsc1RfbXZB?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "d6e28ce6787e7182",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II First Look: Matt Reeves Shares Sequel's First Shot - But Whose Body Is That? - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-19T11:51:04.277862+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBhdGNwU2NBa2RfRW93MFlnbUs3OGJpa2JkbThqTG85RHp3cnlsWEFwVF9HMXJCVE9taXY1d2lnUS16WGRTZVdKXy0yUWxJal9VVXF1bWVyQVA4eDVMaHZENEZORzFGc1k?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6315,6 +6159,234 @@
       "topic": "wikiquote",
       "ts": "2026-06-23T18:26:40.063595+00:00",
       "url": ""
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "f26560939f9ad6d8",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "New Avengers: Doomsday leaks unveil first look at Doctor Doom - Bam Smack Pow",
+      "topic": "movies",
+      "ts": "2026-06-23T22:06:00.554928+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaTJaaXFZQURBU2p6RzFFR0ZENXRQcWh4ZlMxQktkT0l4aVpJQ2pESGtfSjFfVF9TU21oUzRtY2JNLVdROXBfQ1FpeWVzZXEzQlJzQzFHbTRUcktTSDRrcG5fUnJ5emozUWx3WExmNERlVFdNZ3ZaWnVBdVd4bUFsbjEwem4wSVUyaDA5ZjQ1QjNKZzlHN2c?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "491a06393d13acbb",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "'Spider-Man: Brand New Day' starring Tom Holland has posted the best U.S. first-day presales for any film in years. - Deadline",
+      "topic": "movies",
+      "ts": "2026-06-23T22:06:01.086174+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbUp1RzA3dl9wMTRjWHIzbW9kd3ljRXZBc0dvemNodm8xNkpueDRudVVUeEpKcmN2U0R2eVBxeUhobE9NRzRVSlo3VzhpTWV3eEZHZ2N3UWNxTXZoQkRuM19VRV9ObnZLanhTQmRld0kwcjM0Y19PNDRtQ0tyZC16cXBHak1zNFU2?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "a639c6db0034db22",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer Gives First Look At Mark Ruffalo\u2019s Hulk - Deadline",
+      "topic": "movies",
+      "ts": "2026-06-23T22:06:01.087098+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQm55VU92U3hTREt5NkpuaFZ6SkdhV3ZUeXVBSTdlUlN1cU81Zk1JRVhSSmlDUEJVMmhEYnNiUWFLYjVBN0pZaXlkOHZ4QXRka0prX0lVM1hXRTBuM1c1RXRNUnVHemgwWWlBVWVwUlJ6UEUwaTdkRmo5SFE4azNZQXNJWTltY2kxYUJhNlVSNUxzSXhJbUk5alVrVTkwYV9zXzlxag?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "216c047ac307f16f",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "The Batman 2 writer says Disney turned down real-time Rocketeer legacy sequel about how \"viscerally insane... - Yahoo",
+      "topic": "movies",
+      "ts": "2026-06-23T22:06:02.647200+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPemxENGpGV1FoR05DbXp0ZUFXYk5YVTN0Zk1lOXdRTE4tblR5R3dOWGVQU2xFc2tvZ3dwOXM4SnVMZmhqcmdubnhJZmlnc3lFNUN4WWdsM3N6d3o3ZEI3V1pyQV9IR2hUY2xzQTVzRzRCNjFoYVdaay1hZ0VoaFVfMEo2cHRoUGFUYzA0VTg4TFpQam5vV1daSnZR?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "286799fa8d32cba0",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Matt Reeves Reveals First Official Look at The Batman 2 - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-23T22:06:02.648063+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE55YWh1SWZuWFZDT0ctOEZNcllfRUczN29QWTRjSlpwS1BIazM3Wk9uc01XUEp3V0RVSng2elJSOG5VVWtneVNacExGMnZHYlN4clZaeTN1YzJZd1hLbUpwNy1sdmhlRjA?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Mundo Hip\u00f3crita - Green A\n(because you like Porta)",
+      "id": "fdf05b3acdbfffc5",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-23T22:06:09.954782+00:00",
+      "url": "https://www.deezer.com/track/538944472"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 276.47 (was DOP 394.95, -30%)",
+      "id": "86a2b78988687b1b",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Toallitas H\u00famedas Para Bebe Sensitive Travel Pampers 56 Und/Paq",
+      "topic": "groceries",
+      "ts": "2026-06-23T22:07:10.823376+00:00",
+      "url": "https://supermercadosnacional.com/toallitas-humedas-para-bebe-sensitive-travel-pampers-56-und-paq-2003975"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 1,074.00 (was DOP 1,200.00, -10%)",
+      "id": "b699bf9106768d80",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Strip Loin Certified Angus Beef, Lb (Peso Aprox. 1 Libra)",
+      "topic": "groceries",
+      "ts": "2026-06-23T22:07:10.823972+00:00",
+      "url": "https://supermercadosnacional.com/strip-loin-certified-angus-beef-lb-peso-aprox-1-libra-2089964"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 179.95 (was DOP 208.95, -14%)",
+      "id": "43ea1392b319c08a",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Queso Mini Babybel La Vaca Qui Rie 4.5 Onz",
+      "topic": "groceries",
+      "ts": "2026-06-23T22:07:10.824402+00:00",
+      "url": "https://supermercadosnacional.com/queso-mini-babybel-la-vaca-qui-rie-4-5-onz-2021174"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 134.95 (was DOP 159.95, -16%)",
+      "id": "3992ecbe5cca47f3",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Papas Congeladas Shoe String Mydibel 1 Kg",
+      "topic": "groceries",
+      "ts": "2026-06-23T22:07:10.824790+00:00",
+      "url": "https://supermercadosnacional.com/papas-congeladas-shoe-string-mydibel-1-kg-2135818"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 229.95 (was DOP 239.95, -4%)",
+      "id": "85ce08a7f1596398",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Salchicha Parrillera Tradicional El Criollo 450 Gr",
+      "topic": "groceries",
+      "ts": "2026-06-23T22:07:10.825154+00:00",
+      "url": "https://supermercadosnacional.com/salchicha-parrillera-tradicional-el-criollo-450-gr-2210065"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 225.95 (was DOP 268.95, -16%)",
+      "id": "dd00514bbd1fdc22",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Jabon En Barra Blanco Dove 3 Und/Paq 90 Gr",
+      "topic": "groceries",
+      "ts": "2026-06-23T22:07:10.825544+00:00",
+      "url": "https://supermercadosnacional.com/jabon-en-barra-blanco-dove-3-und-paq-90-gr-2215220"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 116.95 (was DOP 128.95, -9%)",
+      "id": "38e7a0074ec586f8",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Toallas Sanitarias Nosotras Buenas Noches Natural 10 Und",
+      "topic": "groceries",
+      "ts": "2026-06-23T22:07:10.825916+00:00",
+      "url": "https://supermercadosnacional.com/toallas-sanitarias-nosotras-buenas-noches-natural-10-und-2005081"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "b16e007696d820ea",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Morphine Sulfate",
+      "title": "FDA updates approval for Morphine Sulfate (NDA022195)",
+      "topic": "fda",
+      "ts": "2026-06-23T22:07:11.102677+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022195"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "ad4ac3de359b325a",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Oxycodone Hydrochloride",
+      "title": "FDA updates approval for Oxycodone Hydrochloride (NDA201194)",
+      "topic": "fda",
+      "ts": "2026-06-23T22:07:11.102929+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=201194"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "8f0ebc382bb2abc2",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.3 - 90 km NW of San Antonio, Puerto Rico (~237 km away)",
+      "topic": "quakes",
+      "ts": "2026-06-23T22:07:35.603809+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71521008"
+    },
+    {
+      "action": "push",
+      "detail": "Water break! A few sips now keeps you sharp.",
+      "id": "4925e8e93687f2e9",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-23T22:07:40.344687+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "The oracle's pronouncement hung heavy in the air of Argos, a chilling prophecy for King Acrisius: his own grandson would be the instrument of his death. Fear, a potent poison, twisted the king's heart. He imprisoned his beautiful daughter, Dana\u00eb, in a brazen tower, a futile attempt to defy fate and the amorous gaze of the gods. But even walls of bronze could not deter Zeus, who, smitten by Dana\u00eb's beauty, descended upon her in a shower of golden rain, a divine impregnation that resulted in the birth of Perseus. Acrisius, unwilling to directly slay his own blood, yet desperate to avoid his grim destiny, cast Dana\u00eb and the infant Perseus adrift in a wooden chest upon the merciless sea. This desperate act, born of a king's terror, set the stage for the dramatic journey of a hero unknowingly destined for greatness.\n\nMiraculously, Dana\u00eb and Perseus survived, washing ashore on the island of Seriphos, where they were discovered and sheltered by Dictys, a kind fisherman. However, Dictys's brother, King Polydectes, a man of lesser character and predatory lust, soon set his sights on Dana\u00eb. As Perseus grew into a strong young man, he became a protector of his mother, a shield against Polydectes's unwanted advances. To rid himself of this bothersome obstacle, Polydectes cunningly announced his engagement to Hippodamia and demanded a magnificent wedding gift from all his subjects. Knowing Perseus, a humble fisherman's son, possessed nothing of value, the king pressed him, hoping to humiliate him into exile. In a burst of youthful pride and a desire to prove his worth, Perseus impulsively boasted he could bring any gift, even the head of the Gorgon Medusa. Polydectes, a cruel smile playing on his lips, seized upon this rash promise, knowing full well that such a quest was a suicide mission, and so, the unsuspecting hero was dispatched on a journey to the very edge of the world.\n\nPerseus's quest, born of a desperate boast, was not one he could accomplish through mere strength. Medusa, once a beautiful priestess of Athena, had been cursed by the goddess into a monstrous form with snakes for hair and a gaze that turned all who beheld it to stone, a consequence of her violation by Poseidon within Athena's temple. Her two immortal sisters, Stheno and Euryale, guarded her fiercely. To succeed, Perseus needed divine intervention, and it came in the form of Athena and Hermes. Athena, perhaps still bearing a grudge against Medusa, provided a highly polished bronze shield, a mirror to reflect Medusa's deadly gaze without direct contact. Hermes, the messenger of the gods, lent his winged sandals, allowing Perseus to fly, and a sharp, adamantine sword, capable of severing the Gorgon's scaly neck. He was also directed to seek out the Graeae, three ancient sisters who shared one eye and one tooth, for they alone knew the path to the Nymphs who possessed three crucial items: the cap of invisibility, a magical pouch, and winged sandals. This journey, a perilous odyssey guided by the gods, transformed a youth's rash promise into a true hero's undertaking.\n\nArmed with these magical artifacts and divine guidance, Perseus embarked on the final leg of his harrowing journey. He found the Gorgons asleep in their lair, a gruesome tableau of petrified men and beasts, a testament to Medusa's power. Using Athena's shield as a mirror, he carefully approached, guiding his sword by the reflection.",
+      "id": "fe8c0f5c580e0741",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Perseus and the slaying of Medusa",
+      "topic": "learn",
+      "ts": "2026-06-23T22:07:46.804364+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cIf I had foreseen Hiroshima and Nagasaki, I would have torn up my formula in 1905.\u201d\n\u2014 Albert Einstein\n\nThe voice of Albert Einstein, etched in history not just for his groundbreaking theories, but for the profound moral anguish that shadowed his later years, rings with a particular resonance in the statement: \"If I had foreseen Hiroshima and Nagasaki, I would have torn up my formula in 1905.\" This wasn't merely a lament; it was a testament to the tragic chasm between pure scientific discovery and its devastating application, a chasm that haunted the man whose name became synonymous with genius. By 1905, the year of his annus mirabilis, Einstein was a young, relatively unknown patent clerk in Bern, Switzerland. He was wrestling with the fundamental laws of the universe, conceiving of special relativity and the equivalence of mass and energy \u2013 E=mc\u00b2 \u2013 a formula that, in its elegant simplicity, unlocked the secrets of the atom. The world at that time, though simmering with geopolitical tensions that would soon erupt into the First World War, was decades away from nuclear fission, let alone the apocalyptic visions of mushroom clouds. Einstein's intellectual pursuits were driven by a profound curiosity, a desire to understand the very fabric of existence, not by any foresight of humanity's capacity for self-destruction.\n\nYet, as the decades unfolded, Einstein's scientific contributions, particularly E=mc\u00b2, began to take on a terrifying new dimension. By the late 1930s, the implications of mass-energy conversion were becoming alarmingly clear to physicists worldwide. The ominous rise of Nazism in Germany, forcing Einstein himself, a Jew, to flee his homeland for America, intensified the urgency. The fear that Nazi Germany might develop an atomic bomb galvanized many scientists. It was this fear, and the desperate hope of preventing Hitler from acquiring such a weapon, that led Einstein, in 1939, to sign a letter to President Franklin D. Roosevelt, urging the United States to embark on its own atomic research. This was a man of peace, a pacifist at heart, reluctantly advocating for the development of the most destructive weapon ever conceived, driven by the belief that the alternative was unthinkable. The success of the Manhattan Project, culminating in the bombs dropped on Hiroshima and Nagasaki in August 1945, brought the war to a swift end, but at an unimaginable human cost. The relief of victory was, for Einstein, intertwined with a deep personal torment, a sense of responsibility for the terrible genie that had been unleashed, a genie whose existence he, perhaps more than anyone, had conceptually enabled.\n\nEinstein's poignant hypothetical, uttered years after the war, encapsulates this lifelong struggle. It speaks to the inherent ethical responsibility of the scientist, a burden often unforeseen at the moment of discovery. The formula he conceived in 1905, a purely theoretical marvel, became, in the hands of humanity, a tool for unprecedented devastation. This quote still resonates today because it confronts us with the enduring tension between scientific progress and moral accountability. It forces us to ask: What are the unintended consequences of our most brilliant innovations?",
+      "id": "f48edbb1821ab20d",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Albert Einstein",
+      "topic": "wikiquote",
+      "ts": "2026-06-23T22:07:51.973386+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6324,6 +6396,8 @@
     }
   ],
   "fda_seen_ids": [
+    "7bb826146f40a7db",
+    "5188d8ebb30a71fb",
     "d4e92b4d652f0d48",
     "5adbb8e504d6ef5c",
     "05425f551309fb31",
@@ -6391,7 +6465,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-20-26-JUN-DE-2026.pdf",
   "fuel_last_pdf_hash": "df5bf29864420fdf3ae48c6b803e8715064f631b1998f09ad9d6c6ddfd00a535",
-  "fuel_last_prices_seen_at": "2026-06-23T18:26:27.632593+00:00",
+  "fuel_last_prices_seen_at": "2026-06-23T22:07:37.853511+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -6962,6 +7036,13 @@
       "997e525f302628c6"
     ],
     "Nacional": [
+      "9aaac8eded710094",
+      "6d18a9c7b0e8fa73",
+      "d318cec11fd69030",
+      "3c05b841781121db",
+      "27334acf2a15febb",
+      "80fdd21189fc907f",
+      "f07437d98b0cb38a",
       "2309f976911fa80a",
       "36608e8e4e02f17e",
       "0dabacd164d5cc94",
@@ -7128,8 +7209,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "medicine",
-  "knowledge_last_sent": "2026-06-23T6",
+  "knowledge_last_category": "mythology",
+  "knowledge_last_sent": "2026-06-23T7",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7167,6 +7248,7 @@
     "mythology:Amaterasu, the Japanese sun goddess": "2026-06-20",
     "mythology:Marduk and the creation in the Enuma Elish": "2026-06-16",
     "mythology:Pandora and the jar of evils": "2026-06-14",
+    "mythology:Perseus and the slaying of Medusa": "2026-06-23",
     "mythology:Ra's nightly journey through the underworld": "2026-06-21",
     "mythology:The Sirens and their deadly song": "2026-06-18",
     "philosophy:Aristotle and the foundations of logic": "2026-06-22",
@@ -7199,8 +7281,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-06-23T20:40:12.298160+00:00"
+    "ok": 46,
+    "ts": "2026-06-23T22:05:57.950544+00:00"
   },
   "launch_seen_ids": [
     "f1fed8fbf29f7123",
@@ -7223,6 +7305,12 @@
   "life_dashboard_last_week": "2026-W25",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "9b57d07fd9e53f88",
+      "1725a628540fb0bd",
+      "0c9a77a7f2a7a9d4",
+      "109fadda33d8f14f",
+      "4c5fb90503cdde35",
+      "508d74ac09b2fb84",
       "3ed21e009920bd48",
       "0b389fe2b1797a2f",
       "5b08e7f35afad590",
@@ -7316,13 +7404,7 @@
       "e61a3cf8fde4d2d7",
       "41c2215fa06bf267",
       "434423a8bc8c02f3",
-      "6a8dd71af8d1670e",
-      "6e9ebd0513e656da",
-      "c06e9ccc3219e3e4",
-      "968ca7f67f88a36b",
-      "92980ffcc104ad52",
-      "ec986ab700c1dd14",
-      "ab1eea058d1e35f1"
+      "6a8dd71af8d1670e"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7524,6 +7606,21 @@
       "10e3216038c70432"
     ],
     "Spider-Man: Brand New Day": [
+      "3349ec93f83059bb",
+      "8d933b7e5f5091b5",
+      "f3e07e3dc9f8e1c5",
+      "6bba048248524d93",
+      "6d4fe708821a8053",
+      "00ca83cb5a296787",
+      "fec70d74b1f9a85f",
+      "19068fa78d83e47f",
+      "ffd2c7055c45780b",
+      "e90f3284f5972419",
+      "26be8b56f41fcefa",
+      "8ac661eddea95707",
+      "3014977fd16315c8",
+      "8fed34dbfb6cbf19",
+      "47181424644e982c",
       "4105dddc91a02524",
       "ce602cfd3bfe7e46",
       "c3fcf939a5791a7b",
@@ -7608,24 +7705,12 @@
       "561ad2d8d9fd5981",
       "ba81492e1965ad19",
       "7274a856fe489e24",
-      "9e5b6516d17edfee",
-      "1088e8fc80ea04a7",
-      "ceb6769fc022e075",
-      "cdb5855ee555e84e",
-      "4f2f36945bb02966",
-      "5ff7ab513eeb9f5d",
-      "52a1aa11e81de426",
-      "bb6c80813e1a2a56",
-      "2a0154515ffd9388",
-      "8226c721333a6260",
-      "30c73b364d96b51f",
-      "a090145ba4c8e237",
-      "afde1c0cfa6c7882",
-      "26f36407d0d8b513",
-      "1378a166ce050b7f",
-      "1a42f53c0b479b5d"
+      "9e5b6516d17edfee"
     ],
     "The Batman Part II": [
+      "c7064ff68a817eef",
+      "2c9da906bf9aaa53",
+      "e5987e35676aff7c",
       "8252baaab8f3c950",
       "c28c20716251f5f4",
       "e46cd20c6c1cc6af",
@@ -7722,12 +7807,15 @@
       "a43042ad91da8784",
       "db121353780ed139",
       "8d557536d2ba1a0b",
-      "a58d253d956fbbe8",
-      "78b3f5f0ba95dbf7",
-      "2f0b1b8a84e405e2",
-      "554a6b956dd5a86c"
+      "a58d253d956fbbe8"
     ],
     "The Odyssey": [
+      "1cf5a7bd854544a4",
+      "43c14c7dee3b4fa8",
+      "a8997ad1aee71df9",
+      "e9a955f71b048627",
+      "cce6c7c91d768a5c",
+      "d5e4c484e04183bb",
       "af61b9a0a289b39e",
       "3e25d4122e5ef19d",
       "b771b42b0a1281ed",
@@ -7821,13 +7909,7 @@
       "ad03d794aefeddaa",
       "3543add76481bcc9",
       "7f8bd10235bec302",
-      "29900b05616db90a",
-      "4e7c7e5dde26425c",
-      "d0e4142a779fdc48",
-      "9dc4cbba1c39714b",
-      "bb38f18c5051373e",
-      "95f417e408d62c85",
-      "e82f22ecc9d3ca64"
+      "29900b05616db90a"
     ]
   },
   "movie_release_dates": {
@@ -7913,7 +7995,8 @@
     5721,
     81195,
     117842022,
-    469886
+    469886,
+    11007322
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8421,6 +8504,15 @@
       "payload": {
         "name": "Florent Pagny"
       }
+    },
+    "ff9653dbff0f2e0a": {
+      "applied": null,
+      "created": "2026-06-23T22:06:09.954757+00:00",
+      "kind": "artist",
+      "label": "Green A",
+      "payload": {
+        "name": "Green A"
+      }
     }
   },
   "onamet_active": {},
@@ -8510,6 +8602,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "5e81a8fb8cd46525",
     "9684b359fa2e0b42",
     "d1e65d3fbed17d19",
     "667e5a0dfd938427",
@@ -8619,177 +8712,177 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "deals": {
-      "last_data": "2026-06-23T18:25:54.138952+00:00",
-      "last_data_count": 11,
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_data": "2026-06-23T22:07:00.867121+00:00",
+      "last_data_count": 12,
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "energy": {
-      "last_data": "2026-06-23T18:26:12.949276+00:00",
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_data": "2026-06-23T22:07:22.775952+00:00",
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "fda": {
-      "last_data": "2026-06-23T18:26:01.871762+00:00",
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_data": "2026-06-23T22:07:11.102587+00:00",
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-23T18:26:27.632614+00:00",
+      "last_data": "2026-06-23T22:07:37.853534+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "fx": {
-      "last_data": "2026-06-23T18:26:26.558770+00:00",
+      "last_data": "2026-06-23T22:07:36.301409+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "games": {
       "last_data": "2026-06-22T13:21:53.280804+00:00",
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-23T18:25:04.707738+00:00",
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_data": "2026-06-23T22:06:11.479992+00:00",
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-23T18:26:01.174889+00:00",
-      "last_data_count": 248,
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_data": "2026-06-23T22:07:10.823011+00:00",
+      "last_data_count": 234,
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "movies": {
-      "last_data": "2026-06-23T18:24:57.234842+00:00",
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_data": "2026-06-23T22:06:03.636170+00:00",
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "music": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-23T18:26:13.539718+00:00",
+      "last_data": "2026-06-23T22:07:23.349657+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-23T18:26:25.997205+00:00",
-      "last_data_count": 43,
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_data": "2026-06-23T22:07:35.603559+00:00",
+      "last_data_count": 40,
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-23T20:40:13.787598+00:00",
+      "last_data": "2026-06-23T22:06:07.060524+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-23T20:40:12.298160+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "weather": {
-      "last_data": "2026-06-23T18:26:13.180945+00:00",
+      "last_data": "2026-06-23T22:07:22.879013+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-23T18:26:29.889737+00:00",
+      "last_data": "2026-06-23T22:07:40.344353+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-23T18:24:50.728831+00:00"
+      "last_ok": "2026-06-23T22:05:57.950544+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165022"
+    "last_full_window": "165023"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8803,8 +8896,9 @@
   "watchdog_failing_since": {},
   "water_slots_sent": [
     "2026-06-23|18",
+    "2026-06-23|15",
     "2026-06-23|12",
-    "2026-06-23|15"
+    "2026-06-23|21"
   ],
   "weather_seen_ids": [
     "e70d037bd504c918",
@@ -8869,8 +8963,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "philosophers",
-  "wikiquote_last_sent": "2026-06-23T6",
+  "wikiquote_last_category": "science_pioneers",
+  "wikiquote_last_sent": "2026-06-23T7",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-14",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -8909,6 +9003,7 @@
     "philosophers:Socrates": "2026-06-13",
     "philosophers:Voltaire": "2026-06-20",
     "science_pioneers:Ada Lovelace": "2026-06-14",
+    "science_pioneers:Albert Einstein": "2026-06-23",
     "science_pioneers:Carl Sagan": "2026-06-21",
     "science_pioneers:Charles Darwin": "2026-06-13",
     "science_pioneers:Galileo Galilei": "2026-06-16",
