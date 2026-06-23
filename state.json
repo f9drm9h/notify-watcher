@@ -127,15 +127,6 @@
       "detail": "",
       "preserve_detail": false,
       "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland Confirms Only One Person Remembers Peter Parker in \u2018Spider-Man: Brand New Day\u2019 - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBHdkVudDJBaUR4aDVmNV9QQmJIcDBGcXdUTFdrSjRIVnEyc0ktVVBFMC1ZY0pLYWhXZl8yaTMwT0l3MVRjSEQxb3dvNHcxVnRuZVltay1rNzF5LVNWZHI3bnl0UllHWW8?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
       "source": "The Batman Part II",
       "title": "DC Studios Reveals Official The Batman 2 Logo As Matt Reeves Shares New Look At Filming - IMDb",
       "topic": "movies",
@@ -293,11 +284,38 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "Spider-Man: Brand New Day",
+      "title": "'Spider-Man: Brand New Day' starring Tom Holland has posted the best U.S. first-day presales for any film in years. Read more below. - facebook.com",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMFB3Y2pjXzBLcXNZcUM1bldqWkhoMDhENlM0NDBqWG4yekZWc0J6a0FzcnNDa2ZoMHloR3pLZDRUbmtlNXlhOUUyNHpBV1hzTWpMYzBzbzBjMDRTMnJzV3FiRVZZc1lyR1Z5TG1yNFc5b2JnQkJndzVjOVhpdFl3SmlMdk9qc3UtUTROaFlHT0E0LV9US0RkVlFyMmNXc2tSOWQ4Szg1VlZBSV9EaFJqRWpQNFRpM192ZzFtUXYwWV9yLVJQdmJjdHEtUU5NUFdtdHZtNA?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day's new trailer is here and still keeping its 'villain' a secret - Polygon.com",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOcDA1aUlzM1ptc1E0NmFqWXp5WlJ6UGZFUWdHaVJYazh3QlQ4NW43Si1BZHdWMW9BWDlWZUJfV1lKc0w1Y2pWTjM4U2NYZU1qdUhzVUNJVUpzV29VQnc4SUUxbGpqTU5PMWNFTkRxU1VXVU9MZmRTLUZmV0VGMWV6dg?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 35,
+      "source": "Golden Sun",
+      "title": "Man I got lost in this place",
+      "topic": "golden_sun",
+      "url": "https://www.reddit.com/r/GoldenSun/comments/1ubxjqr/man_i_got_lost_in_this_place/"
     }
   ],
   "digest_last_sent": "2026-06-22",
   "discord_control": {
-    "last_id": "1518065380260843570"
+    "last_id": "1518771924174372914"
   },
   "energy_learn_last_news": "2026-06-20",
   "energy_learn_last_sent": "2026-06-22",
@@ -450,102 +468,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "000<br />ABNT20 KNHC 181733<br />TWOAT <br /><br />Tropical Weather Outlook<br />NWS National Hurricane Center Miami FL<br />200 PM EDT Thu Jun 18 2026<br /><br />For the North Atlantic...Caribbean Sea and the Gulf of America:<br /><br />Offshore the East Coast of the United States (Remnants of Arth",
-      "id": "c60bfc1e3bc750c0",
-      "score": 95,
-      "severity": "critical",
-      "source": "Weather",
-      "title": "Weather alert: Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-18T18:39:40.390220+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "Project Fetch: Phase two - Anthropic",
-      "id": "019704f5775a24dc",
-      "score": 64,
-      "severity": "moderate",
-      "source": "Anthropic",
-      "title": "Anthropic",
-      "topic": "anthropic_news",
-      "ts": "2026-06-18T18:39:57.416198+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5TLWJxbE9YblE2Wk13TmJ2N0ZxekNHM2R1M01JUnQ0emxWWTBHczk0MzdCajhRSWd2N3l5NEFtQ2pyd1RPM29ncFdfWEdWbWFaOFk4cW13dTVkQWMzY2xYOXl6d3dJaUdlV0E?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Pause for a moment and have a drink of water.",
-      "id": "ba18aa957890c498",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-06-18T18:40:00.467669+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "53d356c1970f210f",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Chris Evans Officially Reveals Captain America's Fate in 'Avengers: Doomsday' - Collider",
-      "topic": "movies",
-      "ts": "2026-06-18T21:15:06.779500+00:00",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBLcEtTT2xGT3I1UEdoU25vOHc1UnJXQmZIY3Y1S2FqdnFPM01CS2pDQTlmb2k2WDZjUGotUEtidFlZckZXZWltb3o0M0xNcU40VFlWY0tyRFZRUnl3dEFsRng3YVpaUzVRVllJRGJqemE3cm5CSzlYTXh4QQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "8d96330faae7be17",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' Drops Action-Packed New Trailer Featuring Tom Holland, Mark Ruffalo, and Sadie Sink - FanBolt",
-      "topic": "movies",
-      "ts": "2026-06-18T21:15:07.406399+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOT1pqdENmM1VxbDJRUlpxZ21wdEVIWWYxNC1SWm1rQmVrS2RwV3dDbHM1WjdjMVBLQ0llblFBME9FQ25wREhQY3pGUUwzLXRkQ0JtcTNMckIyY0lXdzJhS1ItUG9PRGdVWFZMMnJMRGFxZk5DSWlfLVJzV0llbjdWa0xaSk5WNEthVENyc2NpM01Rd3hvNVBtd0s1UXk4U0pOX0xud0ZKYWtyRU5JeF91U3g4MVBsUzFFRllGLWNEQnk5RGcyZXI2dVZlQjE2TmRpbUI2MA?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "dff9d758687af92c",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Video New 'Spider-Man: Brand New Day' trailer debuts during global tour - ABC News - Breaking News, Latest News and Videos",
-      "topic": "movies",
-      "ts": "2026-06-18T21:15:07.771712+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5sblRWVGU3Y2JWdUgzWVd0VUtrN292MHBKMTZ6cnJVZl9VTmxNRmhVXzRsOGxGRkVpdktDUUlkRGpqbzN0aXdxenR3Y0Q?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "2c09d7b1485069e3",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day's latest trailer officially confirms X-Men character - Digital Spy",
-      "topic": "movies",
-      "ts": "2026-06-18T21:15:07.984087+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTEoxWkxFWDFxVnVkUUFwanNmTUV6aVZpYk1RTENQSDRqUUhEUUhHWW9FeXdYRDVWZWI0LUhSUXE1bHNaZ05IUVF5dFY3Q0V6N2dWSG1iRG1kZWZMTlFVZmpHTU5wb2JDbUp3TVEwTlZBTkZ6ajBoSGZZa0ItRVM4Zk5UXy1rOWc1aGdWY18tVEZLeGRTMGc?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "0da8a23b5a405e31",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' starring Tom Holland has posted the best U.S. first-day presales for any film in years. - Deadline",
-      "topic": "movies",
-      "ts": "2026-06-18T21:15:07.984819+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbUp1RzA3dl9wMTRjWHIzbW9kd3ljRXZBc0dvemNodm8xNkpueDRudVVUeEpKcmN2U0R2eVBxeUhobE9NRzRVSlo3VzhpTWV3eEZHZ2N3UWNxTXZoQkRuM19VRV9ObnZLanhTQmRld0kwcjM0Y19PNDRtQ0tyZC16cXBHak1zNFU2?oc=5"
-    },
     {
       "action": "push",
       "detail": "",
@@ -6449,6 +6371,102 @@
       "topic": "wikiquote",
       "ts": "2026-06-23T00:18:30.476856+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "27e0d7f899c3b0f8",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "'Spider-Man: Brand New Day' starring Tom Holland has posted the best U.S. first-day presales for any film in years. Read more below. - facebook.com",
+      "topic": "movies",
+      "ts": "2026-06-23T04:32:56.762787+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMFB3Y2pjXzBLcXNZcUM1bldqWkhoMDhENlM0NDBqWG4yekZWc0J6a0FzcnNDa2ZoMHloR3pLZDRUbmtlNXlhOUUyNHpBV1hzTWpMYzBzbzBjMDRTMnJzV3FiRVZZc1lyR1Z5TG1yNFc5b2JnQkJndzVjOVhpdFl3SmlMdk9qc3UtUTROaFlHT0E0LV9US0RkVlFyMmNXc2tSOWQ4Szg1VlZBSV9EaFJqRWpQNFRpM192ZzFtUXYwWV9yLVJQdmJjdHEtUU5NUFdtdHZtNA?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "5af991a148622c9b",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day Trailer Confirms Hulk And A Villain \"No One Can Even See\" - Cosmic Book News",
+      "topic": "movies",
+      "ts": "2026-06-23T04:32:56.764213+00:00",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4xX2FuUDJiWkZXTzRMRkd6VUZHcjR3WWtRT2xoTUhfQzJDOWVlVUJtSTQ5cE4xSGJuN2R4MVFLVmIyRTZreWlJTFJaQTdrVUdCYXdoRnpTSFVrMVB2YkpERW15S3hfUXZ4eGtJVA?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "51de944db4570421",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Tom Holland Is Back Swinging in \u2018Spider-Man: Brand New Day\u2019 Trailer - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-06-23T04:32:56.765176+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONDJfR3ZyX01URVhVMTRTdUMwRWxFR0x0eDhJV2ZYSHR4VjRTbklrWWxwWVFEZkdfMXRuRnk1Ym5uMVpQa0FCcmpIU2tEMWZaZWt4TjNyNlhCZzdMcGQ3V290QXhJSGhTMDQ3eFJiVW1tdUhoRG1BQVhVc3RpZkcxSGJYSl9qUkgwelhsZWI0ZnpES2N4d0FzNHlETHhnMWJtX0R6ZnBIYzhwWWhw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "daa43c24d35ad879",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day's new trailer is here and still keeping its 'villain' a secret - Polygon.com",
+      "topic": "movies",
+      "ts": "2026-06-23T04:32:56.766043+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOcDA1aUlzM1ptc1E0NmFqWXp5WlJ6UGZFUWdHaVJYazh3QlQ4NW43Si1BZHdWMW9BWDlWZUJfV1lKc0w1Y2pWTjM4U2NYZU1qdUhzVUNJVUpzV29VQnc4SUUxbGpqTU5PMWNFTkRxU1VXVU9MZmRTLUZmV0VGMWV6dg?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - Quick Evo Grind",
+      "id": "c314b22369274d1e",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-23T04:33:01.412908+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "fd70e4b13a7aaf16",
+      "score": 35,
+      "severity": "moderate",
+      "source": "Golden Sun",
+      "title": "Man I got lost in this place",
+      "topic": "golden_sun",
+      "ts": "2026-06-23T04:33:05.982156+00:00",
+      "url": "https://www.reddit.com/r/GoldenSun/comments/1ubxjqr/man_i_got_lost_in_this_place/"
+    },
+    {
+      "action": "push",
+      "detail": "The year is 117 AD, and the Roman Empire stretches from the sun-drenched sands of North Africa to the misty moors of Britannia, from the rugged mountains of Hispania to the fertile crescent of Mesopotamia. This colossal entity, a testament to centuries of relentless ambition and organizational genius, now encompasses nearly a quarter of the world's population. At its heart sits Rome, the eternal city, a sprawling metropolis of a million souls, a vibrant crucible of commerce, culture, and cutthroat politics. This is the zenith, the very peak of Roman power, a moment born from the ashes of a nascent republic, forged in the fires of civil war, and cemented by the imperial vision of Augustus and his successors. The Pax Romana, a period of unprecedented peace and prosperity, has allowed for an explosion of infrastructure, trade, and intellectual pursuit, creating a societal framework that would leave an indelible mark on the course of Western civilization.\n\nThe man presiding over this golden age is Emperor Trajan, a Spaniard by birth, a military commander of unmatched skill, and a ruler renowned for his pragmatism and benevolence. Unlike some of his more flamboyant or tyrannical predecessors, Trajan understood the delicate balance of power, engaging with the Senate and maintaining the loyalty of his legions. His reign saw the empire\u2019s greatest territorial expansion, culminating in the conquest of Dacia and the annexation of parts of Parthia, pushing the boundaries to their absolute limit. But Trajan was more than a conqueror; he was a builder. The majestic Trajan\u2019s Forum, with its towering column depicting his Dacian campaigns, stands as a testament to his ambition and the engineering prowess of the age. This wasn't merely about personal glory; it was about solidifying Roman identity, projecting an image of unassailable strength, and providing tangible benefits to a vast and diverse populace. The very idea of an empire, a unified dominion under a single authority, was reaching its most fully realized expression.\n\nYet, even at its height, the seeds of future challenges were being sown. The sheer scale of the empire, its vast borders, and its increasingly complex administration, presented a logistical nightmare. Maintaining control over such disparate cultures and geographies required constant vigilance, an immense military apparatus, and a sophisticated bureaucracy. The legions, once agents of expansion, were now primarily guardians of the existing frontiers, a defensive posture that would only grow more pronounced in the centuries to come. The economic engine, fueled by conquest and slavery, would eventually face limitations, and the internal strains of maintaining a sprawling, multicultural state would begin to fray at the edges. The human drama, then, lay not just in the grand narratives of emperors and battles, but in the everyday lives of countless individuals caught within this immense system \u2013 the legionary standing guard on the Danube, the merchant haggling in Alexandria, the scholar debating in Athens, all living under the shadow and protection of the Roman eagle.\n\nWhat transpired after Trajan's reign was a slow, inexorable process of consolidation, retrenchment, and eventually, decline. His successor, Hadrian, famously recognized the limits of expansion, withdrawing from many of Trajan's eastern conquests and prioritizing the strengthening of existing borders, most notably with the construction of Hadrian's Wall in Britannia.",
+      "id": "5c382c12aecae989",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The Roman Empire at its height",
+      "topic": "learn",
+      "ts": "2026-06-23T04:34:29.714431+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cThe lover is moved by the beloved object as the senses are by sensual objects; and they unite and become one and the same thing. The work is the first thing born of this union; if the thing loved is base the lover becomes base.\u201d\n\u2014 Leonardo da Vinci\n\nLeonardo da Vinci, the very name conjures images of a towering intellect, a polymath whose curiosity knew no bounds. He was not merely an artist, though the Mona Lisa and The Last Supper stand as testaments to his unparalleled skill, but an anatomist who dissected hundreds of bodies in secret, an engineer whose visionary designs often predated the technology to build them, and a philosopher who sought to understand the very fabric of existence. Born in 1452 in the Tuscan hillside village of Anchiano, the illegitimate son of a notary and a peasant woman, Leonardo's early life was marked by a lack of formal schooling in the classical sense. Instead, he was apprenticed at a young age to Andrea del Verrocchio in Florence, a workshop that served as a crucible for some of the greatest artists of the Renaissance. It was here that his innate observational powers were honed, his hands trained, and his mind encouraged to question, explore, and create.\n\n  The quote, \"The lover is moved by the beloved object as the senses are by sensual objects; and they unite and become one and the same thing. The work is the first thing born of this union; if the thing loved is base the lover becomes base,\" likely comes from Leonardo's vast and often enigmatic notebooks, a chaotic treasure trove of his thoughts, observations, and theories. These notebooks were not intended for public consumption, but rather served as his private laboratory, a place where he wrestled with ideas, recorded experiments, and jotted down philosophical musings. The specific context of this quote is difficult to pinpoint precisely, as many of his entries lack clear dates or surrounding narrative. However, we can infer that it reflects his profound understanding of the interconnectedness of all things, a cornerstone of Renaissance thought. He lived in a period of intense intellectual ferment, where the rediscovery of classical texts, the rise of humanism, and groundbreaking scientific inquiry were challenging established dogmas. Florence, at the time, was a bustling hub of art, commerce, and innovation, and Leonardo was at its very heart, absorbing and contributing to this extraordinary cultural explosion. His life was a constant pursuit of beauty and truth, whether in the delicate curve of a human muscle, the intricate flow of water, or the profound depths of human emotion.\n\n  Why does this quote resonate so deeply today, centuries after its utterance? Because it speaks to the transformative power of passion and purpose, a universal human experience. Leonardo, through his life and work, embodied this very principle. He was utterly consumed by his \"beloved objects\" \u2013 be it the flight of birds, the mechanics of the human body, or the subtle play of light on a face. And through this intense devotion, he transcended the ordinary, creating works that continue to inspire awe and wonder. The quote serves as a powerful reminder that what we choose to dedicate ourselves to, what we pour our energy and affection into, inevitably shapes who we become.",
+      "id": "37f64cf67f1b1204",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Leonardo da Vinci",
+      "topic": "wikiquote",
+      "ts": "2026-06-23T04:34:34.509464+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6532,7 +6550,7 @@
     "Gasolina Regular": 315.5,
     "Kerosene": 283.4
   },
-  "fx_last_rate": 59.238335,
+  "fx_last_rate": 58.502228,
   "fx_last_zone": "within",
   "fx_week_baseline": {
     "rate": 59.238335,
@@ -6855,6 +6873,7 @@
   "games_week_last": "2026-W26",
   "golden_sun_seen": {
     "Golden Sun": [
+      "59e037a3d9b785ae",
       "728458d99e6191bf",
       "b45fbb37e9f452b1",
       "ae4d03e0c9c5d888",
@@ -7256,12 +7275,13 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "world_history",
-  "knowledge_last_sent": "2026-06-22T7",
+  "knowledge_last_category": "ancient_civilizations",
+  "knowledge_last_sent": "2026-06-23T1",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
     "ancient_civilizations:Qin Shi Huang and the Terracotta Army": "2026-06-15",
+    "ancient_civilizations:The Roman Empire at its height": "2026-06-23",
     "ancient_civilizations:The Shang dynasty and ancient China": "2026-06-21",
     "ancient_civilizations:The Silk Road and the exchange of worlds": "2026-06-19",
     "astronomy:The Antikythera mechanism, an ancient computer": "2026-06-17",
@@ -7321,9 +7341,9 @@
     "world_history:The rise of Adolf Hitler": "2026-06-22"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 46,
-    "ts": "2026-06-23T00:17:05.860034+00:00"
+    "failed": 1,
+    "ok": 45,
+    "ts": "2026-06-23T04:32:53.794276+00:00"
   },
   "launch_seen_ids": [
     "f1fed8fbf29f7123",
@@ -7346,6 +7366,16 @@
   "life_dashboard_last_week": "2026-W25",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "d0f2b8970ae766e2",
+      "d1f6897819b39bad",
+      "13af8daf9b0f056d",
+      "9cbbfe648ec9a1ea",
+      "214b250f1254a58e",
+      "9d88e9b9ecb31b6c",
+      "b7c0737737d7b183",
+      "9cf582912392e808",
+      "542413eb18d1aeaf",
+      "3980e4793fd2212c",
       "1da6646f01387695",
       "a081e88d7f3f4c82",
       "3fef98c39abd544e",
@@ -7435,17 +7465,7 @@
       "5ea55c51dbedcc30",
       "a4453c4a258d5c05",
       "6bdd3ab5c1ad83c6",
-      "bf93d8c359c6b582",
-      "6df6e29f507a8a7d",
-      "733f06349682d7d1",
-      "b4214d205fbcf714",
-      "3adde01d4fc0c78f",
-      "d2bf006beb1235c8",
-      "c982d7c4555afc4f",
-      "ad236ed1fc88ca5d",
-      "effb4f95e0113f90",
-      "cacd3aa896388c32",
-      "99d878edf84bafad"
+      "bf93d8c359c6b582"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7647,6 +7667,23 @@
       "eb1ff2bac9a2c34d"
     ],
     "Spider-Man: Brand New Day": [
+      "30c61052e0f44eb4",
+      "cd760ef0572d3603",
+      "b32f7735cfa27972",
+      "32503776ef29c58d",
+      "e26009c3a2383116",
+      "c05d39d775b20717",
+      "8bceaec2f57a24cc",
+      "81c27ad5f24af3c1",
+      "2769c33aff32988d",
+      "36570d6d0afd14cf",
+      "0b3aeb05daa4b90b",
+      "54039504c8484d98",
+      "35500d374885f641",
+      "803decc1e23ae8af",
+      "3c037dce74464a56",
+      "bb067200ec8d925f",
+      "30a24274abc9b73f",
       "6f8d7fa86e88dbb0",
       "684b731cf762a718",
       "7a6b61059d72382f",
@@ -7729,26 +7766,13 @@
       "f5178c7df72b5796",
       "5eb06e6c34e078cc",
       "65bb05e8bf37b9a9",
-      "018be3ea7a31d2ea",
-      "b36f075d804d04dc",
-      "13dc3eb643d3d350",
-      "391dab2515014d80",
-      "d6b80a63ca7a026a",
-      "28447dd41f405723",
-      "e6405a4c758cc462",
-      "fb066bbdb6c2f34a",
-      "7bb12bb2c3a4d6e2",
-      "e58af0f6ff0c518e",
-      "37b6f7a8a36eaf95",
-      "f566547c036a1aac",
-      "0acbd0557567742d",
-      "72fd89651be205b1",
-      "9340122022c7c5b0",
-      "30c52db9d587f6e3",
-      "f5273b73998224e8",
-      "cf18d956b22400bf"
+      "018be3ea7a31d2ea"
     ],
     "The Batman Part II": [
+      "3021ae3437c51443",
+      "eda35ee36eabfd79",
+      "b9fb65d28e4c522f",
+      "dbcf973d14d57c50",
       "53d92dec2cded737",
       "981b62695ec3463e",
       "994244d6fe5e5ecd",
@@ -7844,13 +7868,10 @@
       "28a320ca7b46c497",
       "ec34fa5ceea7884d",
       "e720838eb3c5f24d",
-      "e46cd20c6c1cc6af",
-      "9e2c588376f911ae",
-      "7ced8fceec97e3c5",
-      "e1fa28225983828f",
-      "0f8c9c0fdad2c7bc"
+      "e46cd20c6c1cc6af"
     ],
     "The Odyssey": [
+      "12b5e7b96d68061a",
       "f528cae7499b3cc7",
       "fcaa943e84f7ec4e",
       "678592d644b09e44",
@@ -7949,8 +7970,7 @@
       "3bbd2e1f04b63d80",
       "3e696be941de217f",
       "27565673c9e2d9c9",
-      "f4f156379715906b",
-      "0b7ca8387facfb7b"
+      "f4f156379715906b"
     ]
   },
   "movie_release_dates": {
@@ -8080,7 +8100,7 @@
   ],
   "muted": {
     "games": "2026-06-14T04:04:41.990631+00:00",
-    "movies": "2026-06-22T05:10:25.852312+00:00"
+    "movies": "2026-06-24T04:32:53.794151+00:00"
   },
   "offers": {
     "01b82bf0e7169e1c": {
@@ -8710,47 +8730,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "deals": {
-      "last_data": "2026-06-23T00:17:55.044914+00:00",
+      "last_data": "2026-06-23T04:33:54.680949+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "energy": {
-      "last_data": "2026-06-23T00:18:05.692711+00:00",
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_data": "2026-06-23T04:34:06.204389+00:00",
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "fda": {
-      "last_data": "2026-06-23T00:17:55.656950+00:00",
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_data": "2026-06-23T04:33:55.220808+00:00",
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "fuel": {
       "last_data": "2026-06-22T21:11:48.243579+00:00",
@@ -8758,17 +8778,17 @@
       "last_ok": "2026-06-22T21:10:29.082434+00:00"
     },
     "fx": {
-      "last_data": "2026-06-23T00:18:21.669067+00:00",
+      "last_data": "2026-06-23T04:34:20.611427+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "games": {
       "last_data": "2026-06-22T13:21:53.280804+00:00",
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-23T00:17:18.071983+00:00",
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_data": "2026-06-23T04:33:05.982021+00:00",
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "groceries": {
       "last_data": "2026-06-22T21:11:22.903113+00:00",
@@ -8776,96 +8796,96 @@
       "last_ok": "2026-06-22T21:10:29.082434+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "movies": {
-      "last_data": "2026-06-23T00:17:12.782131+00:00",
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_data": "2026-06-23T04:32:59.569783+00:00",
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "music": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-23T00:18:06.411546+00:00",
-      "last_data_count": 47,
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_data": "2026-06-23T04:34:06.803502+00:00",
+      "last_data_count": 26,
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-23T00:18:21.184630+00:00",
-      "last_data_count": 51,
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_data": "2026-06-23T04:34:20.140958+00:00",
+      "last_data_count": 50,
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-23T00:17:14.782360+00:00",
+      "last_data": "2026-06-23T04:33:02.556943+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "weather": {
-      "last_data": "2026-06-23T00:18:05.949497+00:00",
+      "last_data": "2026-06-23T04:34:06.497891+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_ok": "2026-06-23T04:32:53.794276+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
@@ -8873,16 +8893,19 @@
     "youtube": {
       "last_data": "2026-06-23T00:18:23.972769+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-23T00:17:05.860034+00:00"
+      "last_error": "all 7 channel feed(s) failed; last: PabloELECTRUM: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UC9DS-MY8CZzLh7vQG000uug",
+      "last_error_ts": "2026-06-23T04:32:53.794276+00:00",
+      "last_ok": "2026-06-23T00:17:05.860034+00:00",
+      "source_failed": true
     }
   },
   "twitch_live": [
-    "elcodo22"
+    "RiddlesMK"
   ],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165016"
+    "last_full_window": "165017"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8893,7 +8916,9 @@
     "games": "2026-06-12T12:15:55.633492+00:00",
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
-  "watchdog_failing_since": {},
+  "watchdog_failing_since": {
+    "youtube": "2026-06-23T04:32:53.794276+00:00"
+  },
   "water_slots_sent": [],
   "weather_seen_ids": [
     "c5897ccbf7828d05",
@@ -8955,8 +8980,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "activists_thinkers",
-  "wikiquote_last_sent": "2026-06-23T0",
+  "wikiquote_last_category": "innovators_artists",
+  "wikiquote_last_sent": "2026-06-23T1",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-14",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -8969,6 +8994,7 @@
     "activists_thinkers:Susan B. Anthony": "2026-06-13",
     "innovators_artists:Frida Kahlo": "2026-06-18",
     "innovators_artists:Henry Ford": "2026-06-15",
+    "innovators_artists:Leonardo da Vinci": "2026-06-23",
     "innovators_artists:Ludwig van Beethoven": "2026-06-17",
     "innovators_artists:Pablo Picasso": "2026-06-13",
     "innovators_artists:Steve Jobs": "2026-06-21",
