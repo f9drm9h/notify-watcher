@@ -391,18 +391,6 @@
     {
       "action": "digest",
       "detail": "",
-      "id": "0834db3dcced8fe6",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Slideshow: The Batman: Part II - Who's Who in Matt Reeves' DC Sequel - IGN Nordic",
-      "topic": "movies",
-      "ts": "2026-06-19T11:51:04.461773+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE52MHRWdjRrVXk1N3MyVDRyS0QzQVpPQ1dQbUZEeVBiU284MkVRejgwTWRsT0VDUHNkWVozZl80b25sS3E1c3pZZkl0cEVRRFAzdWZiNTRmcXVueEE?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
       "id": "cc761fb03724da9e",
       "score": 28,
       "severity": "moderate",
@@ -6387,6 +6375,18 @@
       "topic": "wikiquote",
       "ts": "2026-06-23T22:07:51.973386+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - Quick Evo Grind",
+      "id": "1b2bc336bbcbe659",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-23T23:18:51.380662+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "f4_history": [
@@ -7281,8 +7281,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 46,
-    "ts": "2026-06-23T22:05:57.950544+00:00"
+    "ok": 1,
+    "ts": "2026-06-23T23:18:49.078699+00:00"
   },
   "launch_seen_ids": [
     "f1fed8fbf29f7123",
@@ -8848,9 +8848,9 @@
       "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-23T22:06:07.060524+00:00",
+      "last_data": "2026-06-23T23:18:54.381546+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-23T22:05:57.950544+00:00"
+      "last_ok": "2026-06-23T23:18:49.078699+00:00"
     },
     "uv": {
       "last_ok": "2026-06-23T22:05:57.950544+00:00"
@@ -8878,7 +8878,9 @@
       "last_ok": "2026-06-23T22:05:57.950544+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
