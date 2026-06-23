@@ -257,6 +257,42 @@
       "title": "Nacional deal: Whisky White Label 8 A\u00f1os Dewars 75 Cl",
       "topic": "groceries",
       "url": "https://supermercadosnacional.com/whisky-white-label-8-anos-dewars-75-cl-2010896"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Officially Confirms a Major Change to the Hulk - Collider",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZkNCQ2QwRWcyRGpDX0xDV1hOZ1JDTk9lMjFScWtuQmJ2VVdjV05NUUVPa05sdW1fUmJ4eDFIVXNtanpMRTFYZWZrdHdxUkZURDIzdjdlblphN2lNeURrV1NWZzZGbE9PN1ZPX0JOcTV1Zi1iTGloNmZFYkh5eGhhZzk2UThhZFk4bmc?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Morphine Sulfate",
+      "title": "FDA updates approval for Morphine Sulfate (NDA022207)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022207"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Nucynta",
+      "title": "FDA updates approval for Nucynta (Tapentadol Hydrochloride) (NDA203794)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203794"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-06-22",
@@ -414,126 +450,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "39823ca666e86502",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Shares New Look at 'The Batman 2' as Sequel Begins Production - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-18T18:38:20.601869+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE41VnppUFBVWlgyY2VCVmdwd3JmcE5jQkY0R1JldHBZeXVoVTFBelZNWmYteGJsLUFrT0RhWnBaSHc3ZDRIOVpuWXVZTnFvMTRzdmZQRU9FWm1nZGdwc3lXWG11S25ORzg?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "32012d7c076cfd18",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Does The Batman 2 Director Matt Reeves' Cryptic BTS Photo Hint At The Sequel's Villains? - ComicBookMovie.com",
-      "topic": "movies",
-      "ts": "2026-06-18T18:38:20.602339+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQSHU2eUxQTnAzMHd2RlR4NU1yUkZtYUtCV3BWVE13WC1PUGFsdDV2UE9NRGRxZGh0SnJmakRBNFRadHhuUG9GenR4Q1lBdTROVGRKWW91aklaMk1HRjM0dXRMT3NrclFLUms2WXRmb3pyb1BWdTI3UXNvNmRKY2dkcUNTVmZHcFZ3MGNFZmVkbWU1WU9WbDNJNGxYN1pvRDYyT3oybUR3ZjViWlhrNjh1UmdOVmxVdmlrSm9SUkFvTm8wTEZvY3l5Mjl6NTN6VXRYYWZnOUFDVQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "d12533e7733f62c6",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Production begins on \u2018The Batman: Part II\u2019 in London, Matt Reeves shares photo from set - Telegraph India",
-      "topic": "movies",
-      "ts": "2026-06-18T18:38:20.602737+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQLXAxNXBHWFlnWUxsOG1PNmJMbFdxUEt3djZJY2VBeEZST280TTFNTEtOUGIxTnZ6aE9VZDZRR2VjV3pWRTBRTFVNbmhfTS1aclhpYTUybWZIN0tGQnlGTG5PQ09CRWIzd0JRc2plN1Z2S0Q4aUY2UjBQakRFenIwUFh3eWx1b1IwV0pDWURGRE1xVzIzMWN1RXUwRzYzOGRlOE1hZ2d3emU5MkxzN2F1M3R4blFvQU5OTHRFS2U1UmxOVkp2WFd6TWtvRHE4M2xuczVVS1JYRdIB3AFBVV95cUxNZGtqU2JhNTJkSXUtblVTLS1CczFHUzV4RFNLeE9lYUt0WmVaVGZUWV9mTU5Ma21TckpUNnN4cHlJTVE1blJWc2ZTYkUyazRpSlF5bFZvMUxxX1JTSTNtaWUxTEV6TUtxVEJqcy15V1k2TzdGX3hrcTRzcGttdmVxdlNTWjZ6N2VmX3BqcnBsU3Vrbm1rLVNXU2dTakVGVGczSGFfWlpCNG8wbWlrWEVjVDd3WGtPeVg0RHB5QmdyVkgxOVFhYzhFUzh3T0xDWVZVOE5TT2pRQXpqc2RY?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "8b020629b547885d",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman 2\u2019s Brian Tyree Henry Plays Iconic DC Villain in Sequel Movie - AOL.com",
-      "topic": "movies",
-      "ts": "2026-06-18T18:38:20.603230+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNS2Q3eWlUSzhvRXJtZk5aZjNSeDNrSkpvYkxyT1U0azNZUDAxMUxoQ1BPb21Gc1B4Y21EajZTQmNuWnV4X0FJU2RYNENJOGhITUZKYUNoZmpjSy1aTTNTdXAxV1FTNi1JT0JIQTl0MFFCRjdpLVl0bzdGX0FEWGVGSg?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "09cf1470014a84fa",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman 2 Director Matt Reeves Announces Filming Start With New Photo - AOL.com",
-      "topic": "movies",
-      "ts": "2026-06-18T18:38:20.603816+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPd0ZwVlA5SWdfalcxNHliV2xtaGxoX3IxRFpaTDNvcFJlRU9ETDVROGVVYlJlYlhaOWFZQ2M0RmNvc3Qzc2V4UlVodnlXTXBjSERMX3Y5OTV2ZW9jMFlHa2pCY0I3cTc3ZXMtRlhFLW1kbkc1M1R2b3VhZTB5VkRfYm51R1o?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "5cf6e9fe5cb33443",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman Part 2 Star Reveals Reduced Role in Sequel - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-18T18:38:20.604374+00:00",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZVld3Z1dyMWswa0t3NjdBdTE1OGpFY0VWQ2FqekMyT1A5T1hIMmRZZW1EMjJhUUwwRk42aFFsMU93MHF3ZjlqTzFiRlltN3JfUmR2Tjc4Q29zRjFMVEhtSHdwQXVCR1FTMk1hQ2hNSnJGekE0VHc?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "160037c9751dcd75",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman 2 Delays Were the Best Thing to Happen to Robert Pattinson\u2019s Career - Yahoo",
-      "topic": "movies",
-      "ts": "2026-06-18T18:38:20.604946+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbEVEd1NUTnhwUlJjeFEyQk0tMVZhLXB5YTVsM215Um1RZEVfc1JzVmI3bWpFckltRjhYQ1FkblpNN2ZMVThWaHJJRFQwX1A2YTBBc0ktbzVRWjVPM2FyR2RqakN6RGVUeWszZmdjOC01aFMyQ09RQnhUQ0RKT3c0eXVjMUlHTjZjcjJ2V09BYlZLNXNDX2pn?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "H\u00e9l\u00e8ne - Roch Voisine\n(because you like Patrick Fiori)",
-      "id": "6ba60603ff71d6e4",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-06-18T18:38:28.541909+00:00",
-      "url": "https://www.deezer.com/track/602705"
-    },
-    {
-      "action": "push",
-      "detail": "\ud83c\udde9\ud83c\uddf4 Vladimir Guerrero Jr. \u2014 1 HR vs Boston Red Sox",
-      "id": "881fb7b29fadb63e",
-      "score": 64,
-      "severity": "high",
-      "source": "Baseball",
-      "title": "Baseball: Vladimir Guerrero Jr.",
-      "topic": "baseball",
-      "ts": "2026-06-18T18:38:31.284292+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 1,795.00 (was DOP 2,495.00, -28%)",
-      "id": "4bc01e6338c9173e",
-      "score": 45,
-      "severity": "moderate",
-      "source": "La Sirena",
-      "title": "La Sirena deal: Abanico De Pared Nikkei UW-2046/2049",
-      "topic": "groceries",
-      "ts": "2026-06-18T18:39:28.217228+00:00",
-      "url": "https://www.sirena.do/nikkei-abanic-pared-uw-2046-2049-1557410/p"
-    },
     {
       "action": "push",
       "detail": "000<br />ABNT20 KNHC 181733<br />TWOAT <br /><br />Tropical Weather Outlook<br />NWS National Hurricane Center Miami FL<br />200 PM EDT Thu Jun 18 2026<br /><br />For the North Atlantic...Caribbean Sea and the Gulf of America:<br /><br />Offshore the East Coast of the United States (Remnants of Arth",
@@ -6413,6 +6329,126 @@
       "topic": "twitch",
       "ts": "2026-06-22T22:57:30.485395+00:00",
       "url": "https://twitch.tv/elcodo22"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "70a34f6ae70b9037",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday\u2019s First Trailer Gets Impressive Fan Recreation (Watch) - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-23T00:17:08.264113+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQVU9aM2F3NE1WbXQwZXZuVkp0dGlMUk1uekllUERKTk4zN09IVFUtRFlYekMzajZacVlBa2tka1AzWFpxWGI2NXNUMGR2OExRMzlqby1XbzMxTTNVWjRGa1ZKWTlHLXZZWElXLXVxQldHcUNLYW1hYzRzR292RkktRE8zSUdTNnpxVXc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "154fcba1bb0168fb",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day is still hiding Sadie Sink from us as new trailer lands - Digital Spy",
+      "topic": "movies",
+      "ts": "2026-06-23T00:17:09.172919+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc2owM241clEzLURiLWdzel9XN3d3RGlVanBlOWR6aVo0QW9qNWpFTHZCSW9vdno0MGh5VGFBdmhMMzFJN04wd1Z6WWVIb1FSc2hVRGw0aDltZkN6QTNfdWxzTGdCNkQxMjA2bzBsdFZPSHBubGNfWGlnQW5NQnJzSHdsOTdZRGxseE1udUJPRXpQcXB5X1Bib1NmZzdjZw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "b34cf510dbea50bf",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Officially Confirms a Major Change to the Hulk - Collider",
+      "topic": "movies",
+      "ts": "2026-06-23T00:17:09.417997+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZkNCQ2QwRWcyRGpDX0xDV1hOZ1JDTk9lMjFScWtuQmJ2VVdjV05NUUVPa05sdW1fUmJ4eDFIVXNtanpMRTFYZWZrdHdxUkZURDIzdjdlblphN2lNeURrV1NWZzZGbE9PN1ZPX0JOcTV1Zi1iTGloNmZFYkh5eGhhZzk2UThhZFk4bmc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "eb056b5dd90c4e65",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "Matt Reeves shares first look at The Batman Part II as the sequel begins shooting - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-23T00:17:11.262177+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE56aS1PREQzeENUUGxQRlhtM0ZQeGxTRng2ckw1ZUpZZEs5WWJyU09FRVFQYU9EaDIxY0hXamx4Z2RZc1BXSTF0T0JSbjZvaXdIMmsxRlJZNVIwUDBWQ1BTbl9IX2c?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "11a09523b5e82132",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Beyond the Spider-Verse",
+      "title": "We're officially 1 year away from Spider-Man: Beyond the Spider-Verse's release date - MSN",
+      "topic": "movies",
+      "ts": "2026-06-23T00:17:12.782388+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxOYXBGQVlrRkE2Vlk1aW01MUhyYm9KbmFWMjJ2eVR3WHp6LTRYS0ZXTHFqUXZpTmRxZno3UnJPZGtFb2Nwa0EzSzV2V2pTVmgtNnd4RzFadi1kRUJ5eTFMaDg3cnFteDBOWXZyLVRldVJZc3B0UE5WV3ZPZWZ0TEhscjFMZjVKZlItN2tHTVpNYW5LbE01eHZ0V19DOG14aGdTYVFIUVo1cGJxaE1DN0ZERHlOUUxUcHBaaldSdlk4bE1QRERwU0VudXVOa292c296STdnUll1bFoyck9lQ0QzQU1fZ1ZjZXFGQXdHNnQtYjh2UURteGpoT3FhMU9tTXFHM1JzR2dld0dfZWFaYjFKME15aTNaT1p4RnF1elUwb3V3ZkRvOWxnc1V6YTJqZXduYk9uUG5TWURTR0VmZDhUZGMyVm52eks4N0NMSGY2UUNvNjd5X1VVdkVkUlB2bURoNmc?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "9dc637abf2401d6a",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Morphine Sulfate",
+      "title": "FDA updates approval for Morphine Sulfate (NDA022207)",
+      "topic": "fda",
+      "ts": "2026-06-23T00:17:55.657065+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022207"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "3cdb7dc76c785bf4",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Nucynta",
+      "title": "FDA updates approval for Nucynta (Tapentadol Hydrochloride) (NDA203794)",
+      "topic": "fda",
+      "ts": "2026-06-23T00:17:55.657407+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203794"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "4bbc4f6b74f93224",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-06-23T00:18:05.949733+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Yo no tengo enemigos, nadie los tiene",
+      "id": "a88dd5f0ae0d300e",
+      "score": 62,
+      "severity": "moderate",
+      "source": "MIGALA666",
+      "title": "MIGALA666 uploaded a new video",
+      "topic": "youtube",
+      "ts": "2026-06-23T00:18:22.881377+00:00",
+      "url": "https://www.youtube.com/watch?v=FwXQZaRMSl0"
+    },
+    {
+      "action": "push",
+      "detail": "\u201cThe unprecedented leap the Negro made when freed from the oppressing withes of bondage is more than deserving of a high place in history. It can never be chronicled. The world needs to know of what mettle these people are built.\u201d\n\u2014 Booker T. Washington\n\nBooker T. Washington, born into slavery in Franklin County, Virginia, understood the seismic shift of emancipation not just as an abstract legal decree, but as a profoundly personal and collective liberation. His own journey, from the dirt floor of a slave cabin to the hallowed halls of academia and national prominence, embodied the very \"unprecedented leap\" he spoke of. When he uttered these words, likely in the latter part of his career, perhaps on a speaking tour or in one of his many influential essays and books, he was not merely reflecting on history, but actively shaping its narrative. He was the pragmatic voice of Black progress in a nation grappling with the immense, often violent, challenges of Reconstruction and its bitter aftermath. The 1890s and early 1900s, the height of Washington's influence, were marked by the tightening grip of Jim Crow laws, a resurgence of white supremacy, and the Plessy v. Ferguson decision, which codified \"separate but equal.\" Yet, against this backdrop of systemic oppression and racial terrorism, Washington saw and championed the remarkable resilience, entrepreneurial spirit, and intellectual hunger of newly freed people, often overlooked by a white-dominated society keen to dismiss Black capabilities.\n\nThe context of Washington's life was one of relentless struggle and strategic negotiation. He rose to international fame as the founder and principal of the Tuskegee Normal and Industrial Institute, transforming it from a dilapidated shanty into a sprawling, self-sufficient campus that trained Black men and women in trades, agriculture, and teaching. His philosophy, often encapsulated in the \"Atlanta Compromise\" speech of 1895, advocated for economic self-sufficiency and vocational training as the primary path to racial uplift, suggesting that social and political equality would follow naturally once Black Americans proved their worth. While controversial among some of his contemporaries like W.E.B. Du Bois, who argued for immediate political and civil rights, Washington's approach was a strategic maneuver in a brutally hostile environment. He navigated the treacherous waters of white philanthropy and political power, often presenting a public face of accommodation while privately working to challenge injustice. His words here speak to this dual consciousness: the deep understanding of the immense, almost miraculous, progress made, and the urgent need to ensure this story was not lost or diminished by the prevailing racist narratives of the era.\n\nToday, Washington's quote resonates with an enduring power precisely because the \"mettle\" he spoke of continues to be tested, and the history he insisted \"can never be chronicled\" in its fullness, remains an ongoing act of recovery and recognition. In an age grappling with systemic inequities, the legacy of slavery, and the persistent struggle for racial justice, his call to acknowledge the profound resilience, innovation, and intellectual fortitude demonstrated by generations of Black Americans after emancipation remains vital.",
+      "id": "252c155061d29be6",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Booker T. Washington",
+      "topic": "wikiquote",
+      "ts": "2026-06-23T00:18:30.476856+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6422,6 +6458,8 @@
     }
   ],
   "fda_seen_ids": [
+    "05425f551309fb31",
+    "d23f3f0ba36202d9",
     "6a0f6e0da7764f56",
     "cbbcf9c8f61a1115",
     "f0ed7d3dae329bf7",
@@ -7284,8 +7322,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-06-22T22:57:28.475344+00:00"
+    "ok": 46,
+    "ts": "2026-06-23T00:17:05.860034+00:00"
   },
   "launch_seen_ids": [
     "f1fed8fbf29f7123",
@@ -7308,6 +7346,20 @@
   "life_dashboard_last_week": "2026-W25",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "1da6646f01387695",
+      "a081e88d7f3f4c82",
+      "3fef98c39abd544e",
+      "ec6694d64fb61f59",
+      "c9835e7d8cf60711",
+      "563d64bfa177bf4d",
+      "5fa4069c06726015",
+      "8c227d8af70ea569",
+      "4662edc99a6113a5",
+      "8fdd93d084ce8806",
+      "ec906ef731c75b06",
+      "1fe73c0b70c64e41",
+      "5459fbb6dc7dafd9",
+      "9273668b0c2f61ca",
       "2f57c055943f40d2",
       "9e95544cb1fb729d",
       "a686f1bfe4b2aa49",
@@ -7393,21 +7445,7 @@
       "ad236ed1fc88ca5d",
       "effb4f95e0113f90",
       "cacd3aa896388c32",
-      "99d878edf84bafad",
-      "d0f2b8970ae766e2",
-      "d1f6897819b39bad",
-      "f1e85e8395f00dc0",
-      "9cbbfe648ec9a1ea",
-      "13af8daf9b0f056d",
-      "5fcfa0784f674e81",
-      "9d88e9b9ecb31b6c",
-      "b7c0737737d7b183",
-      "9cf582912392e808",
-      "3980e4793fd2212c",
-      "b8c3270c8e150f41",
-      "2943391933dfa8a5",
-      "214b250f1254a58e",
-      "4675d5b894b85d5f"
+      "99d878edf84bafad"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7507,6 +7545,7 @@
       "f64039d17f3a85ea"
     ],
     "Spider-Man: Beyond the Spider-Verse": [
+      "e3a997eb5215abdb",
       "876065b288ff1431",
       "99dab2d7b4b5d6df",
       "d228c2b7c8086540",
@@ -7605,10 +7644,30 @@
       "ba01dfcd01feccde",
       "4ee9e90a06cba59e",
       "10e3216038c70432",
-      "eb1ff2bac9a2c34d",
-      "59eee1eb6b983c19"
+      "eb1ff2bac9a2c34d"
     ],
     "Spider-Man: Brand New Day": [
+      "6f8d7fa86e88dbb0",
+      "684b731cf762a718",
+      "7a6b61059d72382f",
+      "35b621fae73f9ca2",
+      "27e04140524c5053",
+      "2b2267e036ea9932",
+      "561ad2d8d9fd5981",
+      "ba81492e1965ad19",
+      "7274a856fe489e24",
+      "9e5b6516d17edfee",
+      "1088e8fc80ea04a7",
+      "ceb6769fc022e075",
+      "cdb5855ee555e84e",
+      "4f2f36945bb02966",
+      "5ff7ab513eeb9f5d",
+      "52a1aa11e81de426",
+      "bb6c80813e1a2a56",
+      "2a0154515ffd9388",
+      "8226c721333a6260",
+      "30c73b364d96b51f",
+      "a090145ba4c8e237",
       "afde1c0cfa6c7882",
       "26f36407d0d8b513",
       "1378a166ce050b7f",
@@ -7687,30 +7746,14 @@
       "9340122022c7c5b0",
       "30c52db9d587f6e3",
       "f5273b73998224e8",
-      "cf18d956b22400bf",
-      "b4ac4f8fa41b1943",
-      "0b3aeb05daa4b90b",
-      "6d8b34c1efa42682",
-      "35500d374885f641",
-      "c0f4a76a8e025a6e",
-      "10b3563f151d6f84",
-      "53138a18b56cec51",
-      "dcd0db237ccc08d6",
-      "efa22abd8d8478ff",
-      "36570d6d0afd14cf",
-      "803decc1e23ae8af",
-      "3c037dce74464a56",
-      "bb067200ec8d925f",
-      "30a24274abc9b73f",
-      "4f928a8026b084c8",
-      "523309e34f74bf24",
-      "4cbf3b9016c217e9",
-      "722976aee1ffb8ff",
-      "713934a856597f44",
-      "c05d39d775b20717",
-      "4d32c8fceeadcdfc"
+      "cf18d956b22400bf"
     ],
     "The Batman Part II": [
+      "53d92dec2cded737",
+      "981b62695ec3463e",
+      "994244d6fe5e5ecd",
+      "6de141ae84452444",
+      "a9ede372b5a384d3",
       "ec5f60c553b0d942",
       "c42d57bd6564da75",
       "2897059f7dae4858",
@@ -7805,14 +7848,10 @@
       "9e2c588376f911ae",
       "7ced8fceec97e3c5",
       "e1fa28225983828f",
-      "0f8c9c0fdad2c7bc",
-      "eda35ee36eabfd79",
-      "dbcf973d14d57c50",
-      "5dfef437e8b3f9e3",
-      "34d1a487a324f296",
-      "48d77c191df90ec7"
+      "0f8c9c0fdad2c7bc"
     ],
     "The Odyssey": [
+      "f528cae7499b3cc7",
       "fcaa943e84f7ec4e",
       "678592d644b09e44",
       "9bedea290e140523",
@@ -7911,8 +7950,7 @@
       "3e696be941de217f",
       "27565673c9e2d9c9",
       "f4f156379715906b",
-      "0b7ca8387facfb7b",
-      "85c280bc82798bf5"
+      "0b7ca8387facfb7b"
     ]
   },
   "movie_release_dates": {
@@ -8672,47 +8710,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "deals": {
-      "last_data": "2026-06-22T21:11:09.125885+00:00",
+      "last_data": "2026-06-23T00:17:55.044914+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "energy": {
-      "last_data": "2026-06-22T21:11:32.823053+00:00",
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_data": "2026-06-23T00:18:05.692711+00:00",
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "fda": {
-      "last_data": "2026-06-22T21:11:23.168834+00:00",
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_data": "2026-06-23T00:17:55.656950+00:00",
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "fuel": {
       "last_data": "2026-06-22T21:11:48.243579+00:00",
@@ -8720,17 +8758,17 @@
       "last_ok": "2026-06-22T21:10:29.082434+00:00"
     },
     "fx": {
-      "last_data": "2026-06-22T21:11:46.693695+00:00",
+      "last_data": "2026-06-23T00:18:21.669067+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "games": {
       "last_data": "2026-06-22T13:21:53.280804+00:00",
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-22T21:10:45.717129+00:00",
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_data": "2026-06-23T00:17:18.071983+00:00",
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "groceries": {
       "last_data": "2026-06-22T21:11:22.903113+00:00",
@@ -8738,104 +8776,104 @@
       "last_ok": "2026-06-22T21:10:29.082434+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "movies": {
-      "last_data": "2026-06-22T21:10:38.100984+00:00",
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_data": "2026-06-23T00:17:12.782131+00:00",
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "music": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-22T21:11:33.569928+00:00",
+      "last_data": "2026-06-23T00:18:06.411546+00:00",
       "last_data_count": 47,
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-22T21:11:45.987314+00:00",
-      "last_data_count": 55,
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_data": "2026-06-23T00:18:21.184630+00:00",
+      "last_data_count": 51,
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-22T22:57:31.907536+00:00",
+      "last_data": "2026-06-23T00:17:14.782360+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-22T22:57:28.475344+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "weather": {
-      "last_data": "2026-06-22T21:11:32.944975+00:00",
+      "last_data": "2026-06-23T00:18:05.949497+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-22T21:11:51.540584+00:00",
+      "last_data": "2026-06-23T00:18:23.972769+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-22T21:10:29.082434+00:00"
+      "last_ok": "2026-06-23T00:17:05.860034+00:00"
     }
   },
   "twitch_live": [
@@ -8844,7 +8882,7 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165015"
+    "last_full_window": "165016"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8856,13 +8894,9 @@
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
   "watchdog_failing_since": {},
-  "water_slots_sent": [
-    "2026-06-22|21",
-    "2026-06-22|12",
-    "2026-06-22|18",
-    "2026-06-22|15"
-  ],
+  "water_slots_sent": [],
   "weather_seen_ids": [
+    "c5897ccbf7828d05",
     "c162b31a5602d620",
     "248e9b8cf17bc94d",
     "ad2ee1c278c8f01c",
@@ -8921,10 +8955,11 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "writers",
-  "wikiquote_last_sent": "2026-06-22T7",
+  "wikiquote_last_category": "activists_thinkers",
+  "wikiquote_last_sent": "2026-06-23T0",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-14",
+    "activists_thinkers:Booker T. Washington": "2026-06-23",
     "activists_thinkers:Helen Keller": "2026-06-16",
     "activists_thinkers:Henry David Thoreau": "2026-06-21",
     "activists_thinkers:Martin Luther King, Jr.": "2026-06-19",
@@ -9057,7 +9092,8 @@
       "VASdWHtHDow",
       "WlGZmxg_CYM",
       "j1nPVO5ZWf8",
-      "W9zSa7gALCw"
+      "W9zSa7gALCw",
+      "FwXQZaRMSl0"
     ],
     "UCeqwEzPy8tgfk11OXaUCOpw": [
       "si782Iy6s80",
