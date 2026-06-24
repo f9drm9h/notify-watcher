@@ -361,6 +361,15 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Avengers: Doomsday",
+      "title": "\u2018Avengers: Doomsday\u2019 the \u201cMost Mature, Emotionally Complex\u201d in Franchise, Joe Russo Says - The Hollywood Reporter",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaHRCRlJtaXQ1ZVJLc2dRaUFuTkktcjRCN0F3Q0hlOWZOQXdXX18yZ3dvbTFCZTlFUDV2aXNkNDhxMVpVVFRGelItaW9JVmVPYjd5RVpBMS15ci1xakw1RWxrc3Rsb3I0aW1QT01xN29kUzdveDRyX3JuUjdYMF9hUnBwWklBZWZKUENPRkR3V1NMaFlLU29acEh6ZElteVhYSGRWNFk5UnBKOE1E?oc=5"
     }
   ],
   "digest_last_sent": "2026-06-23",
@@ -524,78 +533,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "id": "9e5a3c13d8025f23",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day lands earlier UK release date - Digital Spy",
-      "topic": "movies",
-      "ts": "2026-06-19T17:00:52.338418+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQN0NWcjFQRW5fRGRmMWVKOFZ6eU42OEVQaXBvYVE3Qm96R3Fnbi1UaEhQRTI4cGpzUVVzdlRyVGlOSVhxeHFreXQyZ2VLcEhSNjhBNUloSVNKUWxzNVZpNWdkbmdFNmdLNGFzSVpWdFlzS0E2Z0Iwbmp2eDdydWk4c2tWcjlaZ3FMOV9SUzFfUmlJU2xTcWY4OA?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "82ed12c957e90130",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 New Trailer Breakdown - Nexus Point News",
-      "topic": "movies",
-      "ts": "2026-06-19T17:00:52.743758+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UOUdLdl93RjJvdVpNSEdVcEZxMElfeUdaclhwaFZHRy13LXBLY3BzajZYcHZHMlFSbEtlVExxVGFkTEZ6WUJ4QUVOWkp6OFZ5UVh1QjhuVVliWTloNHZNNFdSNFZoNmYxOFREcjQxdVdGYkNzbFpjS3lWMVNFYjQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "0a2fd78d3e98986d",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Second Trailer for 'Spider-Man: Brand New Day' Starring Tom Holland - FirstShowing",
-      "topic": "movies",
-      "ts": "2026-06-19T17:00:53.019411+00:00",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVjdyYUNTbkhvQmxFZWpZbll2RUxBR2g3N05KVFpGbEhPNWVmaWw2SkV2TXVNT0Y1UTZvRUUtSnNKQW03Q2UzUnFKWEthLThiR2NzWDBiYnVOcnVXU0d2Y0lZZmMzNExBbGhFU3BJc0ltaVpBb2Qtb2hEeWM3UU4zMlRpODBTZ1JtVm52bjFiQ21CcHBRTElySjA2ZVdURGZR?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "d793d9266c4f49da",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Second SPIDER-MAN: BRAND NEW DAY trailer drops - comicsbeat.com",
-      "topic": "movies",
-      "ts": "2026-06-19T17:00:53.304140+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TRm53VHR4M1A2LWdpRElSMGlab250dVZBUEZIQ01MVVQ0M19Qell3OWh6ZDQ1eEtFVkd5YkNUUEE1REpIRHdNZXo3WnlNYU51dHlZTGVneXVSUjVzdVhoczBB?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "68cd06782fd65275",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider Man: Brand New Day' Trailer Drops, Already 1M Views on YouTube in Less Than An Hour - World of Reel",
-      "topic": "movies",
-      "ts": "2026-06-19T17:00:53.629259+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWkxGRVdZN0xadVV1OFE1eVRZN2lCYlp6ZUt2SkE0MGZ0WWtKUlFuWlBqaFdEbEthZnU3cjRCSnVBdjBqdE53MmVXZm9UTUQxemtCeXVZQ3pRMGRDQVFxWVVzdWVhd1pDUnZGNmR6Y3NfOWx4TTJwSTcxUEIyT1BlZw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "04c9fee8b420a383",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Shop Marvel Must Haves: Celebrate 'Spider-Man: Brand New Day\u2019 with Official Spidey Merch - Marvel.com",
-      "topic": "movies",
-      "ts": "2026-06-19T17:00:53.968316+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcGdrOUU1R0trV2NDQnhZdC1vNUZTT1RYV0dndVNjbGNmLUx4RkVpQlJXS2pxSHRURGZGVFRtRHg4NExhRXhhX2ZGVGJyRkVwdi1fMXVuTnV5Q2N4S3dNdVFQTDBPVDYtRDZWQVZ2WUtFYURSLWJqMjlCcGJ2OUs2NzNvcklLTDgwa1g3Sg?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6523,6 +6460,78 @@
       "topic": "wikiquote",
       "ts": "2026-06-24T08:17:43.156415+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "f2dcfd9d497750c6",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "\u2018Avengers: Doomsday\u2019 the \u201cMost Mature, Emotionally Complex\u201d in Franchise, Joe Russo Says - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-06-24T11:19:23.490113+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaHRCRlJtaXQ1ZVJLc2dRaUFuTkktcjRCN0F3Q0hlOWZOQXdXX18yZ3dvbTFCZTlFUDV2aXNkNDhxMVpVVFRGelItaW9JVmVPYjd5RVpBMS15ci1xakw1RWxrc3Rsb3I0aW1QT01xN29kUzdveDRyX3JuUjdYMF9hUnBwWklBZWZKUENPRkR3V1NMaFlLU29acEh6ZElteVhYSGRWNFk5UnBKOE1E?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "09bdaf59019d2e3c",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "The Odyssey | 2026, Movie, Film, Length, Cast, Release Date, Christopher Nolan, & Locations - Britannica",
+      "topic": "movies",
+      "ts": "2026-06-24T11:19:24.699999+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE12OTJHTFZmQ0FldS1MOHU3bHZyWVA1NlU0dkM1Q2dSd0ljSFRLR3FxeWR3OW94VVEwWFhobDBkVzRaUzlvV3lhR00tWmFHYzFmX3BCODJrdzFvbXR0V2QzWEdNOWIwbW00WUE?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "0e952c9b8e6ec4fe",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "The Batman 2 cryptic behind-the-scenes image may have confirmed the sequel's villains - Yahoo",
+      "topic": "movies",
+      "ts": "2026-06-24T11:19:26.209272+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQem0wR3NCV0sxN1VYdmQ1TmRpVmV3T2x6SDdocERZU011WjNpbmpYNmg5TEJ3N29IdXM4c1hzaVl0NDJrSnhIOWdoNlZIZXR6MGVMMU5NNDFYY3VwVkZ4am51c21PVE5oWHFTZ01zQVJualRwbkFIdk1OaHNtaVVhTHVPdi1CN1Qxb3otRlNLVnVrZ3lyVnFyQzdMN3l0dw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "ce7ff9e2691eda1a",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "Matt Reeves shares first look at The Batman Part II as the sequel begins shooting - JoBlo",
+      "topic": "movies",
+      "ts": "2026-06-24T11:19:26.504452+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1yR05hY19BMmdfajdZMHFGOUdmckRNVTZDczFibFp5QXoybjFINDBaeFUwUDFzVFJyak5nWThfODFydHZtaXVpZ280X2hpaGFkLU5hQS1BU19TQzJxaXl3ajFB0gFnQVVfeXFMTXF1bWxGNE1CS293ckZCZ0trRm1nWGxuQmh3MGM0aW9pMFVKUWxJYTRnbXhWclJoQU15NGFIdTk3N2hFd0llZlpROVlUQXRvVXNHbnJiVWlHUEdzMl8tZG05d2tkeWJENA?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "66e328f4f825539a",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "\u2018The Batman Part II\u2019 Begins Filming, Writer & Director Matt Reeves Confirms - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-24T11:19:26.765960+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBWVkE4ZWxoeVl6UGVFYVF2RE9YRkZVa1lYSU9CRlJaZlZmR281ZERUUTZfa3BkeEJ3WjBJOGVDNzdLTExYQ2dPZzZXbjRqMUJpN3c?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Al pan pan y al vino vino",
+      "id": "cf6a84018a90985f",
+      "score": 62,
+      "severity": "moderate",
+      "source": "MIGALA666",
+      "title": "MIGALA666 uploaded a new video",
+      "topic": "youtube",
+      "ts": "2026-06-24T11:23:46.354111+00:00",
+      "url": "https://www.youtube.com/watch?v=roLdDcGml5k"
     }
   ],
   "f4_history": [
@@ -7424,7 +7433,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-06-24T08:16:06.917610+00:00"
+    "ts": "2026-06-24T11:19:20.505199+00:00"
   },
   "launch_seen_ids": [
     "f1fed8fbf29f7123",
@@ -7447,6 +7456,21 @@
   "life_dashboard_last_week": "2026-W25",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "41a11f6dc8215afa",
+      "49511cfa576614f4",
+      "d836142f471ea673",
+      "4dfd6161fc86e165",
+      "7f3ca49c5749381b",
+      "3369ec00e8b83c25",
+      "bf510d26c27babff",
+      "9d9f080193537ae9",
+      "fc6ea54d3a5c2ab1",
+      "d391e125e7ae8ba8",
+      "389363134e243147",
+      "55006c364c1c9a6e",
+      "542e6a4c87daaaf3",
+      "ad612d69998cd949",
+      "425f4e2852f7e267",
       "d11bc8dc29fa6df8",
       "f8b161651701b0cd",
       "2e034bdf3610eeaa",
@@ -7531,22 +7555,7 @@
       "5fa4069c06726015",
       "8c227d8af70ea569",
       "4662edc99a6113a5",
-      "8fdd93d084ce8806",
-      "ec906ef731c75b06",
-      "1fe73c0b70c64e41",
-      "5459fbb6dc7dafd9",
-      "9273668b0c2f61ca",
-      "2f57c055943f40d2",
-      "9e95544cb1fb729d",
-      "a686f1bfe4b2aa49",
-      "2387c7bcc583051f",
-      "8d1b4273334f7e3e",
-      "c781bdf373067c77",
-      "259a21a6bdd7859a",
-      "9128141949c596ef",
-      "c9b74dffcaec0aca",
-      "8d37a00cf711b8c2",
-      "3444df68686b14f8"
+      "8fdd93d084ce8806"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7748,6 +7757,20 @@
       "4ee9e90a06cba59e"
     ],
     "Spider-Man: Brand New Day": [
+      "2823b32f1b5ad128",
+      "1e31d2ae729af119",
+      "c87de0e4346260d4",
+      "22c6ee26800df6be",
+      "a39f862c31108b60",
+      "698863adebea3d41",
+      "6e0d234a506b1f6d",
+      "9fc4a6089d9dd3a0",
+      "37b6f7a8a36eaf95",
+      "30c73b364d96b51f",
+      "252c65b28a05d4ea",
+      "ff1433e135932fd2",
+      "9071d9be41153b0f",
+      "b6dbc6cf231f4016",
       "62c5051d5776e167",
       "7db7524e62b1521e",
       "30c61052e0f44eb4",
@@ -7833,23 +7856,25 @@
       "8372a5d5c6cbe381",
       "9b4c6ce2ce5de9b5",
       "f5562075e601fc9d",
-      "1d126201f08b3f8b",
-      "9fa898330a61ffa3",
-      "8f768ee848fcd20f",
-      "4ffbd845b95e6e5c",
-      "7bc0e6551dd843bf",
-      "cb41c95074072bd3",
-      "b7a6d9db88b04d0a",
-      "0219a21539531e1e",
-      "fdd2bd3f6427c959",
-      "6eb8c528ba8c1016",
-      "f5178c7df72b5796",
-      "5eb06e6c34e078cc",
-      "65bb05e8bf37b9a9",
-      "018be3ea7a31d2ea",
-      "e27db08c1b2d057a"
+      "1d126201f08b3f8b"
     ],
     "The Batman Part II": [
+      "e6c7d51feafe1e90",
+      "0632f674480606ec",
+      "638d691db2c6c597",
+      "19a351ecbdab486e",
+      "4df2b39dc3673612",
+      "2bce4130882fac7c",
+      "a0b71bb2ae829607",
+      "5b6ff01e3a563800",
+      "ca0c3e81ef84a4f2",
+      "9cd5e48ef5bad52e",
+      "8623c9c3c2d12cb6",
+      "8dbc409bf62e7ab7",
+      "44c2c8333c751231",
+      "c089277111847e33",
+      "cd5ecda128a54504",
+      "24a19cc1fb1b25f8",
       "362ea35a991a4fba",
       "73aeff6b46f5ae28",
       "2944a3b923348f01",
@@ -7933,25 +7958,14 @@
       "588694857cc1d5e5",
       "013aedc634716325",
       "17ae93afe19a2a24",
-      "bdcc003070da19e5",
-      "f4ad5652563e1542",
-      "64e1e6d40752fec0",
-      "bef9fb96d30b4d58",
-      "89d011a97140ca28",
-      "02370b895c73b0e8",
-      "60f18d05008687c9",
-      "630fef9f143c92db",
-      "5d4bd6ba62e3afd3",
-      "35163cf639d8932d",
-      "69dbf07438882207",
-      "1a0ebfe5c0e31f89",
-      "5a323f0735f45c75",
-      "ee0fc7f0fcff7efe",
-      "b8da7e39254c0f2a",
-      "3cde539ee9e1c253",
-      "4f133b925aa79650"
+      "bdcc003070da19e5"
     ],
     "The Odyssey": [
+      "584ed71ac556ac37",
+      "862a34d40654a0fe",
+      "f7bcc50aa650e13b",
+      "1a7b13c6539a972f",
+      "53937f52b05d8110",
       "feb6d4d03a354089",
       "f026fd2fb2edc346",
       "b732489c386ac57a",
@@ -8046,12 +8060,7 @@
       "0634ca1ceefe770a",
       "5cbc317fee432860",
       "552946c010740832",
-      "5d19d9f692150356",
-      "5e68c208e8e4a79b",
-      "b588434170a6822d",
-      "017bc7b06ac3f9bf",
-      "f006e50307a6af32",
-      "914ce575e362b9ff"
+      "5d19d9f692150356"
     ]
   },
   "movie_release_dates": {
@@ -8854,47 +8863,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "deals": {
-      "last_data": "2026-06-24T08:17:06.168024+00:00",
-      "last_data_count": 11,
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_data": "2026-06-24T11:23:21.052472+00:00",
+      "last_data_count": 7,
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "energy": {
-      "last_data": "2026-06-24T08:17:15.840905+00:00",
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_data": "2026-06-24T11:23:30.800739+00:00",
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "fda": {
-      "last_data": "2026-06-24T08:17:06.639260+00:00",
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_data": "2026-06-24T11:23:21.548846+00:00",
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "fuel": {
       "last_data": "2026-06-23T22:07:37.853534+00:00",
@@ -8902,17 +8911,17 @@
       "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "fx": {
-      "last_data": "2026-06-24T08:17:30.358196+00:00",
+      "last_data": "2026-06-24T11:23:44.510500+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "games": {
       "last_data": "2026-06-22T13:21:53.280804+00:00",
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-24T08:16:18.392741+00:00",
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_data": "2026-06-24T11:19:34.486234+00:00",
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "groceries": {
       "last_data": "2026-06-23T22:07:10.823011+00:00",
@@ -8920,111 +8929,111 @@
       "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "movies": {
-      "last_data": "2026-06-24T08:16:13.367236+00:00",
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_data": "2026-06-24T11:19:28.085664+00:00",
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "music": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-24T08:17:16.369091+00:00",
+      "last_data": "2026-06-24T11:23:31.463586+00:00",
       "last_data_count": 21,
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-24T08:17:29.837367+00:00",
-      "last_data_count": 40,
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_data": "2026-06-24T11:23:43.751983+00:00",
+      "last_data_count": 44,
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-24T08:16:15.066069+00:00",
+      "last_data": "2026-06-24T11:19:30.012121+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "weather": {
-      "last_data": "2026-06-24T08:17:15.985431+00:00",
+      "last_data": "2026-06-24T11:23:30.997465+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-24T08:17:33.716742+00:00",
+      "last_data": "2026-06-24T11:23:48.178377+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-24T08:16:06.917610+00:00"
+      "last_ok": "2026-06-24T11:19:20.505199+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165026"
+    "last_full_window": "165027"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9247,7 +9256,8 @@
       "WlGZmxg_CYM",
       "j1nPVO5ZWf8",
       "W9zSa7gALCw",
-      "FwXQZaRMSl0"
+      "FwXQZaRMSl0",
+      "roLdDcGml5k"
     ],
     "UCeqwEzPy8tgfk11OXaUCOpw": [
       "si782Iy6s80",
