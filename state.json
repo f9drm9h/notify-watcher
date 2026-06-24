@@ -514,30 +514,6 @@
   ],
   "event_log": [
     {
-      "action": "push",
-      "detail": "\u201cNous cherchons tous le bonheur, mais sans savoir o\u00f9, comme les ivrognes qui cherchent leur maison, sachant confus\u00e9ment qu'ils en ont une.\u201d\n\u2014 Voltaire\n\nVoltaire, born Fran\u00e7ois-Marie Arouet, was not merely a philosopher; he was a phenomenon, a literary titan whose wit and intellect sparkled like a diamond in the often-murky waters of the 18th century. Imagine a man who, despite facing exile, imprisonment, and constant censorship, never truly ceased to challenge the established order. His early life, steeped in Jesuit education, ironically instilled in him a critical eye for dogma, setting the stage for a lifetime of advocating for reason, tolerance, and liberty. He hobnobbed with royalty, yet mocked their pretensions; he wrote epic poems and scathing satires, historical accounts and philosophical treatises, all with a pen that dripped with both brilliance and irreverence. The quote, \"Nous cherchons tous le bonheur, mais sans savoir o\u00f9, comme les ivrognes qui cherchent leur maison, sachant confus\u00e9ment qu'ils en ont une\" \u2013 \"We all seek happiness, but without knowing where, like drunks who search for their house, vaguely knowing that they have one\" \u2013 likely emerged from a period of profound disillusionment. Voltaire had witnessed the horrors of war, the irrationality of religious persecution, and the endemic injustice of the legal system. He saw humanity, with all its grand aspirations, stumbling blindly through life, driven by instincts and desires it scarcely understood.\n\nThe mid-18th century was a tumultuous epoch, a powder keg of intellectual ferment and political unrest that would eventually erupt into revolution. The Enlightenment was in full swing, with thinkers like Rousseau, Diderot, and Montesquieu dissecting the very foundations of society, government, and human nature. Voltaire, for his part, was often at the center of these intellectual storms. He had spent years in England, absorbing the ideas of Locke and Newton, witnessing a society that, while far from perfect, offered a degree of freedom and scientific inquiry unknown in his native France. This experience deepened his conviction that reason and individual liberty were paramount. Upon his return, he became a tireless advocate for reform, using his prodigious literary output to critique the abuses of the Church, the arbitrary power of the monarchy, and the rampant superstition that held sway over the masses. His magnum opus, \"Candide,\" a satirical novella, perfectly encapsulates the cynicism embedded in this quote, as its protagonist endures a relentless barrage of misfortunes, exposing the absurdity of naive optimism and the elusive nature of true contentment in a world riddled with suffering. Voltaire\u2019s personal life, too, was a mosaic of triumphs and tribulations \u2013 love affairs, professional rivalries, periods of immense wealth and influence, punctuated by periods of danger and flight. This constant oscillation between privilege and persecution, adoration and accusation, undoubtedly fueled his keen observations on the human condition and the often-farcical pursuit of happiness.\n\nToday, Voltaire\u2019s poignant analogy still resonates with an unsettling clarity because the human quest for happiness remains as central and as confounding as ever.",
-      "id": "24992c530dab9411",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Voltaire",
-      "topic": "wikiquote",
-      "ts": "2026-06-20T01:34:19.033433+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "02a5a391c1318b8e",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday\u2019s First Trailer Gets Impressive Fan Recreation (Watch) - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-20T05:59:38.693233+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQVU9aM2F3NE1WbXQwZXZuVkp0dGlMUk1uekllUERKTk4zN09IVFUtRFlYekMzajZacVlBa2tka1AzWFpxWGI2NXNUMGR2OExRMzlqby1XbzMxTTNVWjRGa1ZKWTlHLXZZWElXLXVxQldHcUNLYW1hYzRzR292RkktRE8zSUdTNnpxVXc?oc=5"
-    },
-    {
       "action": "digest",
       "detail": "",
       "id": "67927474a798655c",
@@ -6512,6 +6488,30 @@
       "topic": "spending",
       "ts": "2026-06-24T21:41:14.345107+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - Cashbox wednesday!",
+      "id": "06bb107c0cedb5f6",
+      "score": 68,
+      "severity": "high",
+      "source": "mkleossb",
+      "title": "mkleossb is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-24T22:55:18.557438+00:00",
+      "url": "https://twitch.tv/mkleossb"
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - I WILL DEFEAT MKLEO TODAY; CASHBOX RUN",
+      "id": "03955b0e3b8cb3ba",
+      "score": 68,
+      "severity": "high",
+      "source": "Sparg0",
+      "title": "Sparg0 is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-24T22:55:19.845928+00:00",
+      "url": "https://twitch.tv/Sparg0"
     }
   ],
   "f4_history": [
@@ -7425,8 +7425,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 46,
-    "ts": "2026-06-24T21:39:46.762118+00:00"
+    "ok": 1,
+    "ts": "2026-06-24T22:55:17.369694+00:00"
   },
   "launch_seen_ids": [
     "f1fed8fbf29f7123",
@@ -9032,9 +9032,9 @@
       "last_ok": "2026-06-24T21:39:46.762118+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-24T21:39:56.173457+00:00",
+      "last_data": "2026-06-24T22:55:20.577818+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-24T21:39:46.762118+00:00"
+      "last_ok": "2026-06-24T22:55:17.369694+00:00"
     },
     "uv": {
       "last_ok": "2026-06-24T21:39:46.762118+00:00"
@@ -9063,7 +9063,9 @@
     }
   },
   "twitch_live": [
-    "RiddlesMK"
+    "RiddlesMK",
+    "Sparg0",
+    "mkleossb"
   ],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
