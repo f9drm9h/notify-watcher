@@ -72,7 +72,8 @@
     823044,
     824748,
     823448,
-    823853
+    823853,
+    823286
   ],
   "baseball_results_seen": [
     822804,
@@ -252,6 +253,51 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Avengers: Doomsday",
+      "title": "Marvel Studios officially responds to those Avengers: Doomsday leaks - Bam Smack Pow",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOS0YxTkVmTk1FN3ZXZ0tBVkJWTGRVdndPaUowbEVRV2JjVDQ2UkJPdWsxU05sdjFqc2JLMGVKSUx5REtWb2l5WkpDVk9JLXduTVgtdUcwSGZMcFRqbEVqOV94Z0Rldmx1aGdWSzVaRGVsZkpvU21EVS1Lck9PTm4xYjd6X05VZw?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Has Spider-Man Fought Ninjas Before? Major MCU Villains Confirmed for \u2018Spider-Man: Brand New Day\u2019 - Collider",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQ3I0aDhmYUM0Q2t5a0VfVEJ1dGl6Y1N5NFBMWmpTUUJidjZjcUlwQ1NKOWNuam14MS1wbDJhTFlRU0NSam1JcFNKNVVOUm5scDlWMFJKVGZKQ2xvLWhQcllpY3NBNzhtalhUSmNxWFFpUFRkZlBoaUFjY09TMmFQbXRfME0?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Batman Part II",
+      "title": "The Batman 2 writer says Disney turned down real-time Rocketeer legacy sequel about how \"viscerally insane it is to strap yourself to a rocket\" - GamesRadar+",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxOQlNhNC1md2Rwblp1U0FoZi04Z0tGdU1VbVNiY29WTzdyWmNzZDEyVm9YX2hkZkcwRy1DUUU2WEFPYXJ4eWlHcDVBcl9PYUx2MWZlSlNIeWt5a0hoN01vTFlFWVQteGVabWFYcTdmVEc3U3VHMFpnSS1GTnNoeW1iTHl1aDJCR3dLcl93Y3JUVmFZOHQ1Q3NMOGM1WURNNXNNbkVUZ1R5T0FTRGExYzZqMzJMMy1haDRMZTQzRHF3aDBETG1vbTFhd0NRR190aC1QNm82TnhNYlkyZXhtZm8zZEZiMWpHa1BDUGY1djR4cC01cktDM3E2a1pPN1ZBR3NmTlhmM2ViR29oYlp2Vi1HSmE3YVZCOXVtRUVYaW1n?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Batman Part II",
+      "title": "The Batman 2 Writer Details \u2018Viscerally Insane\u2019 Superhero Sequel That\u2019ll Never Happen - Yahoo",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVVhScVQxbUVncndTbWVjVXRaNEtIZF9mR2xpNWdZWDd5NXZ4M3J4bVJFZVhlS0dWTkhvak9KRldMUTZmMnhSb1AzeHl6VTdmMEJILXlGd3NpV2F6c2ZwMmpBNVVHeWg0QnFPS1lESE51UWpCcUlyMlVWZzBTVldBWkFtUE04VFctN3VVOHVYUFh6WGpXa0hLV3JYbzJNWlZMZ0RN?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Batman Part II",
+      "title": "Jeffrey Wright Says Matt Reeves Has Written An \u201cInsanely Brilliant\u201d Script For \u2018The Batman: Part II\u2019 & Production Starts Next Week [Exclusive] - The Playlist",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWGp1VFR4UGZNdGxTUlhoNm0xM05wM0xHZmY5Tkk1aHNPY0ctU29UMUNENVA4MHRzM1Jxdy13Ujd6RDJMVXNRSHlUeTB4dzdBOGg5c3luVHYteldMdDBVSXBMeUhPTHhiQU54RFN3cVJFdV8tNS1NYV9Ec0twX0Q1RDdzclhhLS01Qm56UkphMlVjT25qZlZ0blNR?oc=5"
     }
   ],
   "digest_last_sent": "2026-06-23",
@@ -415,174 +461,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "09e06834c56282f5",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "'Avengers: Doomsday' Announcement From Russo Brothers Leaves MCU Fans Angry - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-19T14:32:27.473660+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5jZFNnWm92cERQbFptR09LWl9kRWpxNE0xdlVKSXp0S3NRMGZGSzJvYmptNHFHN3gycEhqMlRFNWszdTlTcFVUa1l6czd1blJOTXdkTGVIZy1acnRkUzlhM0FjcVpKY2c?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "118d9b9d1b77e5e8",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland Confirms Marriage to Zendaya Ahead of Spider-Man: Brand New Day - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-19T14:32:28.095570+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1Dem0zRm9HQjNnbTFGQ0EtT3FrMVJmUWs2dDFFWGotaTNuVU02ekc2YzU3WTkxQzF4ZXlJYVU0N1AxNzJHLTlCdnpxcW9ReGN2VVFsU1ZoaWpNWHRaWEFMbVJsejltZXM?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "ad83a2157840084e",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day is still hiding Sadie Sink from us as new trailer lands - Digital Spy",
-      "topic": "movies",
-      "ts": "2026-06-19T14:32:28.096753+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc2owM241clEzLURiLWdzel9XN3d3RGlVanBlOWR6aVo0QW9qNWpFTHZCSW9vdno0MGh5VGFBdmhMMzFJN04wd1Z6WWVIb1FSc2hVRGw0aDltZkN6QTNfdWxzTGdCNkQxMjA2bzBsdFZPSHBubGNfWGlnQW5NQnJzSHdsOTdZRGxseE1udUJPRXpQcXB5X1Bib1NmZzdjZw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "2da1a4988e1cd0df",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Officially Confirms a Major Change to the Hulk - Collider",
-      "topic": "movies",
-      "ts": "2026-06-19T14:32:28.386528+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZkNCQ2QwRWcyRGpDX0xDV1hOZ1JDTk9lMjFScWtuQmJ2VVdjV05NUUVPa05sdW1fUmJ4eDFIVXNtanpMRTFYZWZrdHdxUkZURDIzdjdlblphN2lNeURrV1NWZzZGbE9PN1ZPX0JOcTV1Zi1iTGloNmZFYkh5eGhhZzk2UThhZFk4bmc?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "5cf9e107764e1b86",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day lands earlier UK release date - Digital Spy",
-      "topic": "movies",
-      "ts": "2026-06-19T14:32:28.387146+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQN0NWcjFQRW5fRGRmMWVKOFZ6eU42OEVQaXBvYVE3Qm96R3Fnbi1UaEhQRTI4cGpzUVVzdlRyVGlOSVhxeHFreXQyZ2VLcEhSNjhBNUloSVNKUWxzNVZpNWdkbmdFNmdLNGFzSVpWdFlzS0E2Z0Iwbmp2eDdydWk4c2tWcjlaZ3FMOV9SUzFfUmlJU2xTcWY4OA?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "3bc6db332b12d685",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer and Movie Tickets Go Live - Marvel.com",
-      "topic": "movies",
-      "ts": "2026-06-19T14:32:28.729526+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeXFwTXhVZEhCQVNTaHJESC1GbDZfcXZ1RjVGZ21fNWxJMVdDMVIzeVBKdjFlelVyLUJ5dmRJcFZvMWUwNU5ZelZIQ29vZ1JHVVhNMElXNHVCakZlYWljazNOUTBFQUVZSVJxVXl2NExFS1g0dWZueXpGOHpBeXdVM2xTYmt4eEFKdXdtSFNNYlZCTXJlX24zMkowYS14UQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "3e9551cbd2c5c293",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 New Trailer Breakdown - Nexus Point News",
-      "topic": "movies",
-      "ts": "2026-06-19T14:32:28.730078+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UOUdLdl93RjJvdVpNSEdVcEZxMElfeUdaclhwaFZHRy13LXBLY3BzajZYcHZHMlFSbEtlVExxVGFkTEZ6WUJ4QUVOWkp6OFZ5UVh1QjhuVVliWTloNHZNNFdSNFZoNmYxOFREcjQxdVdGYkNzbFpjS3lWMVNFYjQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "2e7ad664dd5f41b2",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Second Trailer for 'Spider-Man: Brand New Day' Starring Tom Holland - FirstShowing",
-      "topic": "movies",
-      "ts": "2026-06-19T14:32:28.897519+00:00",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVjdyYUNTbkhvQmxFZWpZbll2RUxBR2g3N05KVFpGbEhPNWVmaWw2SkV2TXVNT0Y1UTZvRUUtSnNKQW03Q2UzUnFKWEthLThiR2NzWDBiYnVOcnVXU0d2Y0lZZmMzNExBbGhFU3BJc0ltaVpBb2Qtb2hEeWM3UU4zMlRpODBTZ1JtVm52bjFiQ21CcHBRTElySjA2ZVdURGZR?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "8979c9614c406b46",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Second SPIDER-MAN: BRAND NEW DAY trailer drops - comicsbeat.com",
-      "topic": "movies",
-      "ts": "2026-06-19T14:32:29.044262+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9TRm53VHR4M1A2LWdpRElSMGlab250dVZBUEZIQ01MVVQ0M19Qell3OWh6ZDQ1eEtFVkd5YkNUUEE1REpIRHdNZXo3WnlNYU51dHlZTGVneXVSUjVzdVhoczBB?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "ed197f83ec8598a7",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider Man: Brand New Day' Trailer Drops, Already 1M Views on YouTube in Less Than An Hour - World of Reel",
-      "topic": "movies",
-      "ts": "2026-06-19T14:32:29.177547+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWkxGRVdZN0xadVV1OFE1eVRZN2lCYlp6ZUt2SkE0MGZ0WWtKUlFuWlBqaFdEbEthZnU3cjRCSnVBdjBqdE53MmVXZm9UTUQxemtCeXVZQ3pRMGRDQVFxWVVzdWVhd1pDUnZGNmR6Y3NfOWx4TTJwSTcxUEIyT1BlZw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "ed3a5050e13a4a81",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Confirms 'The Batman: Part II' Script Complete; Robert Pattinson's Reaction Revealed - \u73a9\u5177\u4eba TOY PEOPLE",
-      "topic": "movies",
-      "ts": "2026-06-19T14:32:31.257715+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1td3R6Sk0wUGpvbm1ZRllKRlJRZGhPUEJNaklYZkl4QXA0M0MzRkluOWhWTGZ6NVY5SVBjMTBYOVVQaFVXOHpuWEo5bC1QN003?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "84b0ddab4c5d3c98",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman Part II\u2019 Officially Starts Filming - Dark Knight News",
-      "topic": "movies",
-      "ts": "2026-06-19T14:32:31.258191+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPR1AzRTd5dnRENEFEVm4tWC1Nc205SnJiN1pScWdpM1VHeTdUMUVGUzNzQVlYeHlJaHlLemRRUmFwLXUzbzBXZ3R4OEdxQmZBbG1CcWxOTHZoRDdaN2dPbzZKNlF5cGJMblgzbmdHZUpKNXJETlE2aWJpclFhWWVJZ29ESk43VG44MkhaRVJmaTk?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "8d2260ffa1a1fbc7",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Colin Farrell Confirms The Penguin's Role In The Batman Part II - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-19T14:32:31.258658+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4wRlVnN1k4ZFNsZmZSZUFXMDFodWw1STM1ME1qRW1GOTBBMVNVN3ZzNjRabldRSHZ0V0sxOXFmU1NNWHBzemQxYU85WXU4cjMzcG9vTUl5aFFRRlZGME1MQUFGT2JuU2M?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "9bd6fd933fbbd4c1",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman: Part II\u2019 begins filming as networks cancel shows - MSN",
-      "topic": "movies",
-      "ts": "2026-06-19T14:32:31.259009+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOUkJjWlFRNjhZUnhialRjZGZoLTN4VTVWOUk4T3huU1k0QVVNQURKZUxLeFJCZjZBV1ZkOVltR3RmWVRUX0dVOHhkMWxjOWdqQVg5Y3JfQkNteklZS1dOUmxLdlkyS2NMdHpYeFYtQmk2amx3RmhYTFkwd1RqMnVzTVpTWl9ZbUtzQnlYUTM4NXhRLXdVcVJNWVprV1VWcE9LdjZyNnZUazNlQ05QbmFwTVVJMlp6QkNxLUx0WXZ6R053XzhaV2Y4VlViMWFXZ1piOWRUYk0xZm1XWXo1MFppQmlUV25jVjRHdGduRzg1aVZZUQ?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6414,6 +6292,174 @@
       "topic": "wikiquote",
       "ts": "2026-06-24T00:16:06.311277+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "8933cbf95c51d2c2",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Marvel Studios officially responds to those Avengers: Doomsday leaks - Bam Smack Pow",
+      "topic": "movies",
+      "ts": "2026-06-24T04:40:57.700401+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOS0YxTkVmTk1FN3ZXZ0tBVkJWTGRVdndPaUowbEVRV2JjVDQ2UkJPdWsxU05sdjFqc2JLMGVKSUx5REtWb2l5WkpDVk9JLXduTVgtdUcwSGZMcFRqbEVqOV94Z0Rldmx1aGdWSzVaRGVsZkpvU21EVS1Lck9PTm4xYjd6X05VZw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "95feee7b70183631",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday's New Trailer Rewrites The Rules Of The MCU - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-24T04:40:57.701228+00:00",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5Yb1NoenNoTmNKNWVQbVpFblZPWDFDWTlqVDlxMWxoMmhVcUlhVndPNUxtbHBRVnVNN2pJSjZYV0U3MUR3aTVEb3FoZndsWlY3alpLeXFpWkw2WVVPQ0IyU2RoVHpJZWI3RmhHUmxNSHdWRVU2cHE0SA?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "d728fd567cb1d3ab",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "BERO Spider-Man: Brand New Day x Pendry Pop-Up - San Diego Comic-Con Unofficial Blog",
+      "topic": "movies",
+      "ts": "2026-06-24T04:40:58.619700+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOVmNPcHRZU2hDQ0NEbkEteVFMS1QtWTJ5VUlYRUs2TmlHcU9JTlZSelZZMk9qSFBFTWZ2M2wyclhhVWZJUnVvZXU1TGtFcXU5NWV1ajctTFFESWotOW5FR19nMFEtR3dFZUtkUUJiQjVBWEZVcnJMSV9tdlJ1cERSdEVSZU85TFBNRVE?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "85e05950b027d7d3",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 New Trailer Breakdown - Nexus Point News",
+      "topic": "movies",
+      "ts": "2026-06-24T04:40:58.620736+00:00",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UOUdLdl93RjJvdVpNSEdVcEZxMElfeUdaclhwaFZHRy13LXBLY3BzajZYcHZHMlFSbEtlVExxVGFkTEZ6WUJ4QUVOWkp6OFZ5UVh1QjhuVVliWTloNHZNNFdSNFZoNmYxOFREcjQxdVdGYkNzbFpjS3lWMVNFYjQ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "79a6c7c34b1216a0",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Has Spider-Man Fought Ninjas Before? Major MCU Villains Confirmed for \u2018Spider-Man: Brand New Day\u2019 - Collider",
+      "topic": "movies",
+      "ts": "2026-06-24T04:40:58.863538+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQ3I0aDhmYUM0Q2t5a0VfVEJ1dGl6Y1N5NFBMWmpTUUJidjZjcUlwQ1NKOWNuam14MS1wbDJhTFlRU0NSam1JcFNKNVVOUm5scDlWMFJKVGZKQ2xvLWhQcllpY3NBNzhtalhUSmNxWFFpUFRkZlBoaUFjY09TMmFQbXRfME0?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "9384759b99f7bfeb",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "The Batman 2 writer says Disney turned down real-time Rocketeer legacy sequel about how \"viscerally insane it is to strap yourself to a rocket\" - GamesRadar+",
+      "topic": "movies",
+      "ts": "2026-06-24T04:41:00.508388+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxOQlNhNC1md2Rwblp1U0FoZi04Z0tGdU1VbVNiY29WTzdyWmNzZDEyVm9YX2hkZkcwRy1DUUU2WEFPYXJ4eWlHcDVBcl9PYUx2MWZlSlNIeWt5a0hoN01vTFlFWVQteGVabWFYcTdmVEc3U3VHMFpnSS1GTnNoeW1iTHl1aDJCR3dLcl93Y3JUVmFZOHQ1Q3NMOGM1WURNNXNNbkVUZ1R5T0FTRGExYzZqMzJMMy1haDRMZTQzRHF3aDBETG1vbTFhd0NRR190aC1QNm82TnhNYlkyZXhtZm8zZEZiMWpHa1BDUGY1djR4cC01cktDM3E2a1pPN1ZBR3NmTlhmM2ViR29oYlp2Vi1HSmE3YVZCOXVtRUVYaW1n?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "21a6beee2c7f44dd",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "The Batman 2 Writer Details \u2018Viscerally Insane\u2019 Superhero Sequel That\u2019ll Never Happen - Yahoo",
+      "topic": "movies",
+      "ts": "2026-06-24T04:41:00.508859+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVVhScVQxbUVncndTbWVjVXRaNEtIZF9mR2xpNWdZWDd5NXZ4M3J4bVJFZVhlS0dWTkhvak9KRldMUTZmMnhSb1AzeHl6VTdmMEJILXlGd3NpV2F6c2ZwMmpBNVVHeWg0QnFPS1lESE51UWpCcUlyMlVWZzBTVldBWkFtUE04VFctN3VVOHVYUFh6WGpXa0hLV3JYbzJNWlZMZ0RN?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "2071cca2e6d72730",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "The Batman: Part 2: Matt Reeves shares first set photo as film officially begins shooting - Cinema Express",
+      "topic": "movies",
+      "ts": "2026-06-24T04:41:00.509306+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPS0NNbXBla05wZmVaaW1JcnktWjdQYmp2cGpJQmwwUUl6cmtBOTVCNnR4LS1oMjZQZzAzTWlicVpjRVJRSkFpdE9rSGpWWnhzcjVsWWZ6dnRUaFQ5V1NiUmhQM0NQTFpHVUh0S2hUY01rSVZvbWg5OW1CWURCRDItTTZUYkpFV1lUeEpFaUFZVU44R2dEWTFjalRpbDZoVmo5Y3R6VndhUXVERDkwNGJrM3lKRDEtbE5sckxXb2FIOXBXbnZfamNYbFI1WWxhZEM4ZDBYRjlGWll6Z9IB5wFBVV95cUxNWjZMQnJFdGViZUFDZVhJOW9sUEE3T3NXOG1PRWpXY3ZGRWsxTWpMa1Ezc0JUYlJkZlN5SzIxQkIwN0VxcUQybWRSVDlmUUZMdmRXSjZnLUlWMWw4eWRERDR6QTNFQWh2Z1lFbUl4QnpXSHRaeEVPdHdXT2E0aGloR1hDb3JXeXJoQ1E0VHVZdnZZVmoxaGRQY1Nxa2dDd2pkVmN4ZkxLbUhPM1F2M053TDFGRUFBMGZyYjZFR3BZazJsbXNmS1pZNE1ldnh0U24wSS1EWFh4endyUmJ3YURqQVBZeHF5dnM?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "6b789442d95cd4bd",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "\u2018The Batman Part II\u2019 Begins Filming, Writer & Director Matt Reeves Confirms - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-24T04:41:00.764125+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9PaUtQM1BtM2hzRGlleHY2ODZIMmdvd25QOG84Sy1GbXkxYUE5cEYyTkhvZXVKZUhpRTVrcUhrMDBhSEhQaFY4cEdTdjJiSXV0aUk4OTlhMlBSckpDQ1NDNm5td1h4aEt2bXc?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "070c5b486728603c",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Jeffrey Wright Says Matt Reeves Has Written An \u201cInsanely Brilliant\u201d Script For \u2018The Batman: Part II\u2019 & Production Starts Next Week [Exclusive] - The Playlist",
+      "topic": "movies",
+      "ts": "2026-06-24T04:41:00.995091+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWGp1VFR4UGZNdGxTUlhoNm0xM05wM0xHZmY5Tkk1aHNPY0ctU29UMUNENVA4MHRzM1Jxdy13Ujd6RDJMVXNRSHlUeTB4dzdBOGg5c3luVHYteldMdDBVSXBMeUhPTHhiQU54RFN3cVJFdV8tNS1NYV9Ec0twX0Q1RDdzclhhLS01Qm56UkphMlVjT25qZlZ0blNR?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - Anything but the 3 but with items on!",
+      "id": "1cc32c0e8d30ee9a",
+      "score": 68,
+      "severity": "high",
+      "source": "mkleossb",
+      "title": "mkleossb is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-24T04:41:04.092753+00:00",
+      "url": "https://twitch.tv/mkleossb"
+    },
+    {
+      "action": "push",
+      "detail": "\ud83c\udde9\ud83c\uddf4 Fernando Tatis Jr. \u2014 1 HR vs Atlanta Braves",
+      "id": "ccbe93a36663f1bf",
+      "score": 64,
+      "severity": "high",
+      "source": "Baseball",
+      "title": "Baseball: Fernando Tatis Jr.",
+      "topic": "baseball",
+      "ts": "2026-06-24T04:41:09.555302+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Before the turn of the 20th century, the universe, as understood by science, was a clockwork marvel. Newton's laws of motion and gravitation had, for over two centuries, accurately described everything from falling apples to orbiting planets. Light, too, had been deciphered, Maxwell's equations elegantly unifying electricity and magnetism into a single electromagnetic force, predicting light as a wave propagating through a mysterious, invisible medium called the luminiferous aether. This aether was thought to be omnipresent, providing a universal frame of reference against which all motion could be measured. It was a comfortable, seemingly complete picture, yet a few stubborn anomalies, particularly concerning the speed of light, refused to fit neatly into this grand, mechanistic vision. Experiments, most famously by Michelson and Morley, repeatedly failed to detect Earth's motion through this ubiquitous aether, leaving physicists scratching their heads at this perplexing void where the aether should have been.\n\nInto this intellectual ferment stepped a young, largely unknown patent clerk in Bern, Switzerland. Albert Einstein, a man whose prodigious intellect often chafed against conventional academic structures, found himself wrestling with these very paradoxes. He was not a lone wolf; luminaries like Hendrik Lorentz and Henri Poincar\u00e9 were also grappling with similar issues, proposing transformations that allowed Maxwell's equations to hold true in different inertial frames. But Einstein's approach, published in his \"Annus Mirabilis\" paper of 1905, titled \"On the Electrodynamics of Moving Bodies,\" was revolutionary in its simplicity and audacity. He didn't try to find the aether; he simply did away with it. His special theory of relativity rested on two deceptively simple postulates: first, that the laws of physics are the same for all observers in uniform motion relative to one another (the principle of relativity); and second, that the speed of light in a vacuum is the same for all inertial observers, regardless of the motion of the light source. These weren't derived from complex mathematics; they were fundamental assumptions, a profound reimagining of reality itself.\n\nThe implications of these postulates were nothing short of shattering to the Newtonian worldview. If the speed of light is constant for everyone, then something else must give way. And what gave way were the bedrock concepts of absolute space and absolute time. Einstein showed that time itself is relative, ticking at different rates for observers in relative motion, leading to the phenomenon of time dilation. Lengths, too, contract in the direction of motion, a phenomenon known as length contraction. Perhaps most dramatically, the theory revealed the profound equivalence of mass and energy through the iconic equation E=mc\u00b2. This wasn't merely a theoretical curiosity; it was a revelation that matter and energy are two sides of the same coin, capable of being converted into one another, with mind-boggling implications for everything from stellar fusion to nuclear weapons.",
+      "id": "b1885b1a8c4b2690",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Einstein's special theory of relativity",
+      "topic": "learn",
+      "ts": "2026-06-24T04:42:25.195115+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cIn a situation where a lifelong school break was being imposed upon us by the terrorists, rising up against that became very important, essential.\u201d\n\u2014 Malala Yousafzai\n\nThe year was 2007, and in the Swat Valley of Pakistan, the idyllic mountain region once known as \"Little Switzerland\" was undergoing a chilling transformation. The Taliban, a radical Islamist movement, had steadily tightened its grip, replacing the vibrant local culture with an austere interpretation of Sharia law. Among their most devastating edicts was the ban on girls' education. For a young girl named Malala Yousafzai, born into a family that championed learning and intellectual curiosity, this was not merely a political decree; it was a personal affront, an assault on her very being. Her father, Ziauddin, a teacher and school owner, had instilled in her a profound love for knowledge and the belief in every child's right to pursue it. As the sound of military operations and the propaganda of local mullahs filled the air, Malala, then just 10 years old, began to grasp the monumental injustice unfolding around her. The world she knew, filled with the promise of education and the joy of school, was crumbling under the weight of an extremist ideology.\n\nIt was against this backdrop of escalating fear and the systematic dismantling of education that Malala, in 2008, began to speak out. Under the pseudonym Gul Makai, she penned a diary for the BBC Urdu service, offering a rare and courageous glimpse into the daily life of a girl living under Taliban rule. Her entries chronicled the fear, the uncertainty, and the profound longing for the normalcy of school. She wrote about her dreams of becoming a doctor, her love for learning, and the simple act of putting on her uniform. These seemingly ordinary details, shared with the world, became extraordinary acts of defiance. The quote, \"In a situation where a lifelong school break was being imposed upon us by the terrorists, rising up against that became very important, essential,\" encapsulates the moral imperative that drove her. It wasn't about seeking fame or challenging a government; it was about reclaiming a fundamental human right, a right that was being stolen from an entire generation of girls. Her words, though uttered by a child, carried the weight of a profound understanding of freedom and the importance of an informed citizenry.\n\nToday, Malala\u2019s words resonate with an enduring power, transcending the specific circumstances of the Swat Valley. Her story, culminating in a Nobel Peace Prize and a global platform, has become a potent symbol of resilience in the face of oppression. In countless regions across the globe, girls continue to be denied access to education due to poverty, conflict, cultural norms, or extremist ideologies. From war-torn countries where schools are bombed to communities where girls are married off as children, the \"lifelong school break\" Malala spoke of remains a stark reality for millions. Her unwavering belief in the transformative power of education, and her courage in speaking truth to power, serves as an inspiration for advocates worldwide. The \"essential\" act of rising up against such injustice, whether through advocacy, grassroots movements, or individual acts of defiance, remains as critical now as it was then.",
+      "id": "d0d23832e193c726",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Malala Yousafzai",
+      "topic": "wikiquote",
+      "ts": "2026-06-24T04:42:29.952016+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6501,7 +6547,7 @@
     "Gasolina Regular": 315.5,
     "Kerosene": 283.4
   },
-  "fx_last_rate": 58.502228,
+  "fx_last_rate": 58.606109,
   "fx_last_zone": "within",
   "fx_week_baseline": {
     "rate": 59.238335,
@@ -7236,8 +7282,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "philosophy",
-  "knowledge_last_sent": "2026-06-24T0",
+  "knowledge_last_category": "science",
+  "knowledge_last_sent": "2026-06-24T1",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7287,6 +7333,7 @@
     "philosophy:The trial and death of Socrates": "2026-06-24",
     "pyramid_skyscraper": "2026-06-12",
     "science:Brownian motion and the reality of atoms": "2026-06-22",
+    "science:Einstein's special theory of relativity": "2026-06-24",
     "science:Marie Curie and the discovery of radioactivity": "2026-06-13",
     "science:Schr\u00f6dinger's cat thought experiment": "2026-06-20",
     "science:The discovery of nuclear fission by Meitner and Hahn": "2026-06-18",
@@ -7308,9 +7355,9 @@
     "world_history:The rise of Adolf Hitler": "2026-06-22"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 46,
-    "ts": "2026-06-24T00:14:30.185387+00:00"
+    "failed": 1,
+    "ok": 45,
+    "ts": "2026-06-24T04:40:54.755879+00:00"
   },
   "launch_seen_ids": [
     "f1fed8fbf29f7123",
@@ -7333,6 +7380,19 @@
   "life_dashboard_last_week": "2026-W25",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "b3c45df4eade2d9c",
+      "0f0d237dd078f303",
+      "84caf314dfec99e8",
+      "434423a8bc8c02f3",
+      "6a8dd71af8d1670e",
+      "71f9ccceb2f6c20d",
+      "7d78898fe155b149",
+      "860379a5d1c9a79c",
+      "4d033da14d53616b",
+      "8602e13c2ddeb3b6",
+      "8b54c19fa0934753",
+      "d0dbee29c6508312",
+      "002d2d2b6f81ab55",
       "6e9ebd0513e656da",
       "c06e9ccc3219e3e4",
       "968ca7f67f88a36b",
@@ -7419,20 +7479,7 @@
       "128aa9e5d5359431",
       "389363134e243147",
       "be2c354833b6569a",
-      "542e6a4c87daaaf3",
-      "3c1dc054f5f8f9ab",
-      "e437d9180551fe42",
-      "0c8fa4f86aa1c7b9",
-      "592bb7adcd9fe338",
-      "f9e538219f9f8c9e",
-      "62f5aa8f4a9a38e7",
-      "775bd455904eb3b1",
-      "c2f8ccc4cb0b09cf",
-      "ac4ca9ca6bd41308",
-      "c9ee072bd0d29510",
-      "dedf76b246857e6f",
-      "7eab48127502532a",
-      "df3eb20ae636258c"
+      "542e6a4c87daaaf3"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7634,6 +7681,21 @@
       "4ee9e90a06cba59e"
     ],
     "Spider-Man: Brand New Day": [
+      "fe20f651fed76901",
+      "c09b74052408c013",
+      "74408e0ff9129a08",
+      "fc2810751bc4466b",
+      "27e04140524c5053",
+      "bf2ae1d9ed6fc5cd",
+      "93fa0fc0f646f995",
+      "b797a746bfbb0b27",
+      "43db76d94a3b82fc",
+      "87d50f34fd8721aa",
+      "9a86da3d2343a93e",
+      "1a37628250091ff1",
+      "bb067200ec8d925f",
+      "30a24274abc9b73f",
+      "f3bfb457ad3d70a1",
       "b1cc267975b1194f",
       "35d74ce762d274d6",
       "884c12016fd68bdc",
@@ -7718,24 +7780,17 @@
       "30c52db9d587f6e3",
       "e58af0f6ff0c518e",
       "37b6f7a8a36eaf95",
-      "f566547c036a1aac",
-      "30c61052e0f44eb4",
-      "cd760ef0572d3603",
-      "b32f7735cfa27972",
-      "32503776ef29c58d",
-      "e26009c3a2383116",
-      "c05d39d775b20717",
-      "8bceaec2f57a24cc",
-      "81c27ad5f24af3c1",
-      "2769c33aff32988d",
-      "36570d6d0afd14cf",
-      "0b3aeb05daa4b90b",
-      "54039504c8484d98",
-      "35500d374885f641",
-      "803decc1e23ae8af",
-      "3c037dce74464a56"
+      "f566547c036a1aac"
     ],
     "The Batman Part II": [
+      "2666556ab740e55a",
+      "31b70f80a1883b49",
+      "f683bb216c14e113",
+      "6fc30d2a06a15bbd",
+      "a44a910a71758936",
+      "c8114564f394fa3e",
+      "4361bd46948a0722",
+      "8d557536d2ba1a0b",
       "78b3f5f0ba95dbf7",
       "554a6b956dd5a86c",
       "c7064ff68a817eef",
@@ -7827,17 +7882,16 @@
       "5b6ff01e3a563800",
       "cf630ffddd894923",
       "9c2dfe348cf76e86",
-      "44c2c8333c751231",
-      "6ecb724ac585f29a",
-      "c027b14700686493",
-      "943ff8455a1cabd7",
-      "73aeff6b46f5ae28",
-      "75925abb3ca00cce",
-      "796157dfe77b8980",
-      "a43042ad91da8784",
-      "db121353780ed139"
+      "44c2c8333c751231"
     ],
     "The Odyssey": [
+      "7863fd5786e70f7d",
+      "b2bf2b61d33072e4",
+      "393937ffe044e972",
+      "4c25ddee8306a8e2",
+      "392e59f45d283236",
+      "ae0c107c87c12e7a",
+      "e382ecc0555cf732",
       "a6d67329446b617b",
       "533662f3b1588451",
       "485d5ba3fba42251",
@@ -7930,14 +7984,7 @@
       "21f13b03f94903d3",
       "a584d87a24c6bdfc",
       "271ede7ddd4a4af4",
-      "dbf928b9dc8c5a04",
-      "ebe3b6633509ef5a",
-      "3265278caa70e729",
-      "8ec730de4933caea",
-      "e9269dd826b9a60f",
-      "79e95cc3d3642241",
-      "a67b559727d3ca5d",
-      "3ed54fc121622a56"
+      "dbf928b9dc8c5a04"
     ]
   },
   "movie_release_dates": {
@@ -8740,47 +8787,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "deals": {
-      "last_data": "2026-06-24T00:15:29.746427+00:00",
+      "last_data": "2026-06-24T04:41:51.973605+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "energy": {
-      "last_data": "2026-06-24T00:15:40.446596+00:00",
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_data": "2026-06-24T04:42:01.793916+00:00",
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "fda": {
-      "last_data": "2026-06-24T00:15:30.411695+00:00",
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_data": "2026-06-24T04:41:52.200013+00:00",
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "fuel": {
       "last_data": "2026-06-23T22:07:37.853534+00:00",
@@ -8788,17 +8835,17 @@
       "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "fx": {
-      "last_data": "2026-06-24T00:15:53.935773+00:00",
+      "last_data": "2026-06-24T04:42:16.254730+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "games": {
       "last_data": "2026-06-22T13:21:53.280804+00:00",
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-24T00:14:41.316995+00:00",
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_data": "2026-06-24T04:41:09.147693+00:00",
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "groceries": {
       "last_data": "2026-06-23T22:07:10.823011+00:00",
@@ -8806,96 +8853,96 @@
       "last_ok": "2026-06-23T22:05:57.950544+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "movies": {
-      "last_data": "2026-06-24T00:14:35.985449+00:00",
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_data": "2026-06-24T04:41:02.048185+00:00",
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "music": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-24T00:15:40.898907+00:00",
-      "last_data_count": 26,
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_data": "2026-06-24T04:42:02.405193+00:00",
+      "last_data_count": 21,
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-24T00:15:53.502047+00:00",
-      "last_data_count": 39,
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_data": "2026-06-24T04:42:15.551008+00:00",
+      "last_data_count": 42,
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-24T00:14:38.088955+00:00",
+      "last_data": "2026-06-24T04:41:06.034635+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "weather": {
-      "last_data": "2026-06-24T00:15:40.598237+00:00",
+      "last_data": "2026-06-24T04:42:01.920751+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_ok": "2026-06-24T04:40:54.755879+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
@@ -8903,17 +8950,21 @@
     "youtube": {
       "last_data": "2026-06-24T00:15:57.575106+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-24T00:14:30.185387+00:00"
+      "last_error": "all 7 channel feed(s) failed; last: PabloELECTRUM: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UC9DS-MY8CZzLh7vQG000uug",
+      "last_error_ts": "2026-06-24T04:40:54.755879+00:00",
+      "last_ok": "2026-06-24T00:14:30.185387+00:00",
+      "source_failed": true
     }
   },
   "twitch_live": [
     "RiddlesMK",
-    "Sparg0"
+    "Sparg0",
+    "mkleossb"
   ],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165024"
+    "last_full_window": "165025"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8924,7 +8975,9 @@
     "games": "2026-06-12T12:15:55.633492+00:00",
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
-  "watchdog_failing_since": {},
+  "watchdog_failing_since": {
+    "youtube": "2026-06-24T04:40:54.755879+00:00"
+  },
   "water_slots_sent": [],
   "weather_seen_ids": [
     "9166fd4031d78408",
@@ -8990,13 +9043,14 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "writers",
-  "wikiquote_last_sent": "2026-06-24T0",
+  "wikiquote_last_category": "activists_thinkers",
+  "wikiquote_last_sent": "2026-06-24T1",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-14",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
     "activists_thinkers:Helen Keller": "2026-06-16",
     "activists_thinkers:Henry David Thoreau": "2026-06-21",
+    "activists_thinkers:Malala Yousafzai": "2026-06-24",
     "activists_thinkers:Martin Luther King, Jr.": "2026-06-19",
     "activists_thinkers:Mother Teresa": "2026-06-14",
     "activists_thinkers:Ralph Waldo Emerson": "2026-06-18",
