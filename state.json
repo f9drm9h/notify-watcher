@@ -76,9 +76,6 @@
     823286
   ],
   "baseball_results_seen": [
-    822804,
-    824428,
-    823372,
     823371,
     822803,
     824588,
@@ -105,7 +102,10 @@
     823934,
     822800,
     824261,
-    823692
+    823692,
+    822799,
+    824262,
+    823690
   ],
   "beach_day_last_sent": "2026-06-20",
   "bills_sent": [
@@ -118,266 +118,13 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "World Nuclear News",
-      "title": "Fusion supply chain spend up, but challenges remain",
-      "topic": "energy",
-      "url": "https://www.world-nuclear-news.org//articles/fusion-supply-chain-spend-up-big-challenges-remain"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.4 - 46 km NNW of San Antonio, Puerto Rico (~265 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71520998"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 62,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Shop Marvel Must Haves: Celebrate 'Spider-Man: Brand New Day\u2019 with Official Spidey Merch - Marvel.com",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcGdrOUU1R0trV2NDQnhZdC1vNUZTT1RYV0dndVNjbGNmLUx4RkVpQlJXS2pxSHRURGZGVFRtRHg4NExhRXhhX2ZGVGJyRkVwdi1fMXVuTnV5Q2N4S3dNdVFQTDBPVDYtRDZWQVZ2WUtFYURSLWJqMjlCcGJ2OUs2NzNvcklLTDgwa1g3Sg?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 62,
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' starring Tom Holland has posted the best U.S. first-day presales for any film in years. - Deadline",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbUp1RzA3dl9wMTRjWHIzbW9kd3ljRXZBc0dvemNodm8xNkpueDRudVVUeEpKcmN2U0R2eVBxeUhobE9NRzRVSlo3VzhpTWV3eEZHZ2N3UWNxTXZoQkRuM19VRV9ObnZLanhTQmRld0kwcjM0Y19PNDRtQ0tyZC16cXBHak1zNFU2?oc=5"
-    },
-    {
-      "detail": "DOP 276.47 (was DOP 394.95, -30%)",
-      "preserve_detail": false,
-      "score": 45,
-      "source": "Nacional",
-      "title": "Nacional deal: Toallitas H\u00famedas Para Bebe Sensitive Travel Pampers 56 Und/Paq",
-      "topic": "groceries",
-      "url": "https://supermercadosnacional.com/toallitas-humedas-para-bebe-sensitive-travel-pampers-56-und-paq-2003975"
-    },
-    {
-      "detail": "DOP 134.95 (was DOP 159.95, -16%)",
-      "preserve_detail": false,
-      "score": 45,
-      "source": "Nacional",
-      "title": "Nacional deal: Papas Congeladas Shoe String Mydibel 1 Kg",
-      "topic": "groceries",
-      "url": "https://supermercadosnacional.com/papas-congeladas-shoe-string-mydibel-1-kg-2135818"
-    },
-    {
-      "detail": "DOP 225.95 (was DOP 268.95, -16%)",
-      "preserve_detail": false,
-      "score": 45,
-      "source": "Nacional",
-      "title": "Nacional deal: Jabon En Barra Blanco Dove 3 Und/Paq 90 Gr",
-      "topic": "groceries",
-      "url": "https://supermercadosnacional.com/jabon-en-barra-blanco-dove-3-und-paq-90-gr-2215220"
-    },
-    {
-      "detail": "DOP 116.95 (was DOP 128.95, -9%)",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Nacional",
-      "title": "Nacional deal: Toallas Sanitarias Nosotras Buenas Noches Natural 10 Und",
-      "topic": "groceries",
-      "url": "https://supermercadosnacional.com/toallas-sanitarias-nosotras-buenas-noches-natural-10-und-2005081"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Morphine Sulfate",
-      "title": "FDA updates approval for Morphine Sulfate (NDA022195)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022195"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Oxycodone Hydrochloride",
-      "title": "FDA updates approval for Oxycodone Hydrochloride (NDA201194)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=201194"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.3 - 90 km NW of San Antonio, Puerto Rico (~237 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71521008"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 62,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day is still hiding Sadie Sink from us as new trailer lands - Digital Spy",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOc2owM241clEzLURiLWdzel9XN3d3RGlVanBlOWR6aVo0QW9qNWpFTHZCSW9vdno0MGh5VGFBdmhMMzFJN04wd1Z6WWVIb1FSc2hVRGw0aDltZkN6QTNfdWxzTGdCNkQxMjA2bzBsdFZPSHBubGNfWGlnQW5NQnJzSHdsOTdZRGxseE1udUJPRXpQcXB5X1Bib1NmZzdjZw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 62,
-      "source": "Spider-Man: Beyond the Spider-Verse",
-      "title": "We're officially 1 year away from Spider-Man: Beyond the Spider-Verse's release date - MSN",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPeld5S1BrYmNRQ0JqZkNoSmZCXzRPWDh5bFJGb05YOWw2cGdWa3JEUF9IeUhRQ0FiN2p5U0VaaHlmQ1o4Vmhtc0ozc1JiWnRvVXBDVmsxUXJ0c2VTVjlyU3pWaW05NzJfZXJBbmlpb0I5aldEVGVPS3RzMS0zUHNHWE9HOXhxYWFFSnF6WEg0R1p2b19ydDlZNWhha3JLUE1POFNlQ05jM1hXMnhtaFQyX3FjS1JXQjZtTkpzcndOcEZaT0xXeFBQMmZqTQ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Marvel Studios officially responds to those Avengers: Doomsday leaks - Bam Smack Pow",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOS0YxTkVmTk1FN3ZXZ0tBVkJWTGRVdndPaUowbEVRV2JjVDQ2UkJPdWsxU05sdjFqc2JLMGVKSUx5REtWb2l5WkpDVk9JLXduTVgtdUcwSGZMcFRqbEVqOV94Z0Rldmx1aGdWSzVaRGVsZkpvU21EVS1Lck9PTm4xYjd6X05VZw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Marvel\u2019s DMCA War Over \u2018Avengers: Doomsday\u2019 Leaks Is Now Confirming What Everyone Suspected - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE84SWk4NFNyZmVNY0RsNENYOTZ5SHlFOGx0NDlZb1ctUVFucDNtdWhIaEdzNklZVFhvVndhNk9IQjJkUS15UWNpQjNJOHFhNGdoWGNpeWRNWm1oQ1NUZ0w3VTZiRHV1VFU?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Chris Evans Officially Reveals Captain America's Fate in 'Avengers: Doomsday' - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE45THlTUXZ6TXpWS1gtMk9INEpGZ1ZnVFNCc0RpTndZQ1VIbk9DUnUyRlhWZ1plVkw3Z3BxcW1RZl9YNU1JUWo0bTZ4STNmdTdtbURUR2xIOWdFRnpSWWZWYUIxdEpRNEE?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland Is Back Swinging in \u2018Spider-Man: Brand New Day\u2019 Trailer - The Hollywood Reporter",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONDJfR3ZyX01URVhVMTRTdUMwRWxFR0x0eDhJV2ZYSHR4VjRTbklrWWxwWVFEZkdfMXRuRnk1Ym5uMVpQa0FCcmpIU2tEMWZaZWt4TjNyNlhCZzdMcGQ3V290QXhJSGhTMDQ3eFJiVW1tdUhoRG1BQVhVc3RpZkcxSGJYSl9qUkgwelhsZWI0ZnpES2N4d0FzNHlETHhnMWJtX0R6ZnBIYzhwWWhw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "Production underway on Warner Bros\u2019 \u2018The Batman Part II\u2019 in UK - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBYRkJzaC1vVTI2eEtGT2hpZFNKVjlxVThUc1otaG0ybkpkbFp6eldoZE9VQldVUlRvSl9XMTNVRVNPMkdNMzE3TXUyZ3V4UQ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "Does The Batman 2 Director Matt Reeves' Cryptic BTS Photo Hint At The Sequel's Villains? - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5VODdMcGk1ZVFOVmVMdHotYXQwaGNJX3hEQmF2QVo2LVNTUDZ1U1hxcmVnclRmd0g5eVd3QzhiVVJOTklGVHVmZWhEVXBWc0hSem5QYUJSdlo3TG90enA4WS1jSDV3dDQ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "Colin Farrell Confirms The Penguin's Role In The Batman Part II - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4wRlVnN1k4ZFNsZmZSZUFXMDFodWw1STM1ME1qRW1GOTBBMVNVN3ZzNjRabldRSHZ0V0sxOXFmU1NNWHBzemQxYU85WXU4cjMzcG9vTUl5aFFRRlZGME1MQUFGT2JuU2M?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "The Batman Part 2 Star Reveals Reduced Role in Sequel - The Direct",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZVld3Z1dyMWswa0t3NjdBdTE1OGpFY0VWQ2FqekMyT1A5T1hIMmRZZW1EMjJhUUwwRk42aFFsMU93MHF3ZjlqTzFiRlltN3JfUmR2Tjc4Q29zRjFMVEhtSHdwQXVCR1FTMk1hQ2hNSnJGekE0VHc?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Oxycodone Hydrochloride",
-      "title": "FDA updates approval for Oxycodone Hydrochloride (NDA200534)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=200534"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Nucynta Er",
-      "title": "FDA updates approval for Nucynta Er (Tapentadol Hydrochloride) (NDA200533)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=200533"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Oxycodone Hydrochloride",
-      "title": "FDA updates approval for Oxycodone Hydrochloride (NDA200535)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=200535"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "\u2018Avengers: Doomsday\u2019 the \u201cMost Mature, Emotionally Complex\u201d in Franchise, Joe Russo Says - The Hollywood Reporter",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaHRCRlJtaXQ1ZVJLc2dRaUFuTkktcjRCN0F3Q0hlOWZOQXdXX18yZ3dvbTFCZTlFUDV2aXNkNDhxMVpVVFRGelItaW9JVmVPYjd5RVpBMS15ci1xakw1RWxrc3Rsb3I0aW1QT01xN29kUzdveDRyX3JuUjdYMF9hUnBwWklBZWZKUENPRkR3V1NMaFlLU29acEh6ZElteVhYSGRWNFk5UnBKOE1E?oc=5"
-    }
-  ],
-  "digest_last_sent": "2026-06-23",
+  "digest_buffer": [],
+  "digest_last_sent": "2026-06-24",
   "discord_control": {
     "last_id": "1518771924174372914"
   },
   "energy_learn_last_news": "2026-06-20",
-  "energy_learn_last_sent": "2026-06-23",
+  "energy_learn_last_sent": "2026-06-24",
   "energy_learn_seen": {
     "facts": [
       "baseload-vs-peaking",
@@ -392,7 +139,8 @@
     ],
     "infrastructure": [
       "itaipu-dam",
-      "iceland-grid"
+      "iceland-grid",
+      "champlain-hudson"
     ],
     "modern": [
       "perovskite-solar",
@@ -401,6 +149,7 @@
     ]
   },
   "energy_seen_ids": [
+    "862f8e3a6a1e74c3",
     "df2c4b22f12d6a10",
     "315a79de54fd7aed",
     "a97ca08176f9c98d",
@@ -533,258 +282,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "22869aebe6645481",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Official Synopsis Teases Mysterious New Villain That 'No One Can See' - IGN",
-      "topic": "movies",
-      "ts": "2026-06-19T17:00:54.212378+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQUxDMzhQRWZYMzI3SmJrMDV2b3RtamdqYnJrRkFMeDQxQzVtYzhjU0lwckVlVHcyVGlpVjZyZlRzcFVZQkhDOUx4VDlDU1JlVVpBNm1iOGZqME4tc0tRWHI1OXJNb08zUm1ONF9vN3NRZnV6OEhLQnhlY1UzVzJ0MDVHNXBTSE42cW5OU2tVcndXeXRTZWVPYlRhOGRpMkxLVjJlUHJMRGlGaWpGWXdYbGRFenI4SVlCcG1VOHJR?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "c24c582a8961828c",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman 2: Sebastian Stan Confirms Harvey Dent Will Become Two-Face in Sequel - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-19T17:00:56.205378+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1DbTVxcUpBNThsZnlOQXZMVDZaM0gyWllVRWdVQnltZmZ2eUNPUzRaeDRBY2kyUkhTS3d5aW9yMFlxekl4Q2hISWxHak5KUlVEenc?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "429b51135bad47a3",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman 2 Director Matt Reeves Announces Filming Start With New Photo - AOL.com",
-      "topic": "movies",
-      "ts": "2026-06-19T17:00:56.492601+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSHlCTXRLZGhaWjBSdHNBdU1ETV84MkVtWVVDaVdoREI4UnFkRjY2X0ZBbkVvWEVQNGJyQnN4MDNKY19PTmxJZjVQWUFWQmIzT1pMNGZzTzV6TXRnSVh1Vk9QM052Z2lwUHhUa2dwTW5UVjU2LUwxMjI2Y0VIcU5TOExqOHI?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "48912a698577d58a",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Colin Farrell hints at 'dark' themes in 'The Batman 2' as he confirms his return - The News International",
-      "topic": "movies",
-      "ts": "2026-06-19T17:00:56.493020+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPYzlMWEppZ2dEMHNjOFJWbEVrc2lWVW5RNHNMZnVNc1BuNDdoenhJcXRJMFlaVmdVclpOdDZ0VFAtb0FRWWV1YV91d2VEdXpUTWRxWDlweWE1VWhnN1VGWlFqTzBYYXJ6NHIzZDExMXNDRWNvRjVORVg5M3J0UmxvQTlvb3cwV1BrSXYtdmFPTTZWSVlLZE0wUVFVbnpwQng3ZHJGTjdpVkV5ZmF5MkUzRHJnT1ItUHBXSmc?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "2c65e29fbcb59987",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Unveils First Official Look At The Batman Part 2 - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-19T17:00:56.493326+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1iNzB0aUFVcFZ1dmtDU2VIQTctZGN5blhZOExfTlRaaEM4SEJVUFlTWF9mS1R2eS01YktaVHpRbURmQ01vc2FtMjQ4eXBmSDNESEY1Zy14MHJIU2lwbU44SlVtQ3E1OGtlZmpkVERqSWRNV01MQmR6QjJn?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "755fcdf4513950c2",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman Part II\u2019 Begins Filming, Writer & Director Matt Reeves Confirms - Just Jared",
-      "topic": "movies",
-      "ts": "2026-06-19T17:00:56.493661+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPY1dicDZZUnlqM2dCTmZhdFpuVzllZHAxa2xvQ3NDd0w2OTFVUF9zQXFtdnNORnBIS2t5S1Z3N085Q2l1VFQzRmx4YXlocG9sbnJ0eTdSYy1ELWtDNG01UHFpRVJSX08yVloyTGdzcXlQeDBPZEduOTFUaTVXSjA5a25yeVdFeFV2MVF2RVNEYktiT2ZXS1NTZ1BPWk9wTDZ1VDN5ajdkTkZQZEp0?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "3f960e497558668c",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Colin Farrell Confirms He'll Reprise Penguin Role in The Batman 2 , Teases a 'Terrifying' Script - People.com",
-      "topic": "movies",
-      "ts": "2026-06-19T17:00:56.730247+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRFlVcUtldjJzVjBWLWl3Rzl6SFI4d0FmUnFab0Q0N1o0NXpqR0w0c3doTWwtS1pLeWpUYktiVFVEeUdiUThHcWRpSThNeVBra2U1djZHQ1JBSUt2UFcyVU1OMGp6OXJHTmtCb2xJdlhCMFAyMWIxMFROdFVDV0Z3UEhmQk1obmNTQ1VDbnVjZXpSaU9HZkR4UG11Zw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "ba729c6572266b2e",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Shares New Look at 'The Batman 2' as DC Sequel Begins Production - MovieWeb",
-      "topic": "movies",
-      "ts": "2026-06-19T17:00:56.730786+00:00",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE93cDVyR1ptTnE3Smg4OE44aW5laDY4TGtLSWN3NWxndkpGLTcwQWRnUW1NYXBTZ3I4eHZvR2hYMGZZU1hBUGtMSDJyR25vMThVR2F6RURfUHJSejFNejU0Ri1FMVByV282WEJj?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Oh, Pretty Woman - Roy Orbison\n(because you like Paul Anka)",
-      "id": "7f48399f66aa2412",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-06-19T17:01:06.929047+00:00",
-      "url": "https://www.deezer.com/track/78033230"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 4,495.00 (was DOP 5,295.00, -15%)",
-      "id": "eb6526f93579124b",
-      "score": 45,
-      "severity": "moderate",
-      "source": "La Sirena",
-      "title": "La Sirena deal: Abanico De Piso Westinghouse 20 Pulgadas 72948",
-      "topic": "groceries",
-      "ts": "2026-06-19T17:01:56.127610+00:00",
-      "url": "https://www.sirena.do/westinghouse-abanico-piso-20p-72948-2034793/p"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 1,354.95 (was DOP 1,599.95, -15%)",
-      "id": "d4ad06c73178683d",
-      "score": 45,
-      "severity": "moderate",
-      "source": "Nacional",
-      "title": "Nacional deal: PONDS BRIGHT MIRACLE CREMA DIA 50 GR",
-      "topic": "groceries",
-      "ts": "2026-06-19T17:01:56.128382+00:00",
-      "url": "https://supermercadosnacional.com/ofertas/ponds-bright-miracle-crema-dia-50-gr"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "9d3848b47d540255",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Earthquakes",
-      "title": "M3.4 - 58 km SSE of Boca de Yuma, Dominican Republic (~165 km away)",
-      "topic": "quakes",
-      "ts": "2026-06-19T17:02:24.702037+00:00",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71520603"
-    },
-    {
-      "action": "push",
-      "detail": "Keep a glass of water within reach.",
-      "id": "a94eb98f88b6a8a2",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-06-19T17:02:30.847012+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "7848ff04ab686712",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Leaks - Resurfaced Set Photo May Confirm Recent Photo & Video Are Genuine - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-19T19:03:43.742017+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1ZTEd2Z0tGazBsX3d0UDUxaE1yUXdMalAwRFB0SjFQNTlkUmI1aktGYTU1WjVKUFdnM3ZyOE1wV2IyZEc2RkJqbzBHdWwxOEFwX2M3Z1FVcVB2bDliMGFLQTNRaWxnSDg?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "5052fcec41482f0a",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers Doomsday\u2019s First Trailer Now Closer Than Ever After Marvel Displays New Promo - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-19T19:03:44.069374+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMEpSN3ZGZThVdTZSNlAyLW0ycFZXN002dVhSd0xtdzdNX29PaTdVNjBCRHZTZy0tcWRtc2l4Q3k1Q3VhdHBJY1UwMWdkZXdPYkRBeEJnSGZqUmE0LVRCME9KVEdZLXlrTG1oLVNxbWh5LVRvb2xsekhOT2ktX1BZNjNfUXUtTVQ3cDIw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "3cd709a6e7882e21",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Trailer Confirms Hulk And A Villain \"No One Can Even See\" - Cosmic Book News",
-      "topic": "movies",
-      "ts": "2026-06-19T19:03:45.038055+00:00",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE4xX2FuUDJiWkZXTzRMRkd6VUZHcjR3WWtRT2xoTUhfQzJDOWVlVUJtSTQ5cE4xSGJuN2R4MVFLVmIyRTZreWlJTFJaQTdrVUdCYXdoRnpTSFVrMVB2YkpERW15S3hfUXZ4eGtJVA?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "b534cd04b90a468f",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland Is Back Swinging in \u2018Spider-Man: Brand New Day\u2019 Trailer - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-06-19T19:03:45.038562+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONDJfR3ZyX01URVhVMTRTdUMwRWxFR0x0eDhJV2ZYSHR4VjRTbklrWWxwWVFEZkdfMXRuRnk1Ym5uMVpQa0FCcmpIU2tEMWZaZWt4TjNyNlhCZzdMcGQ3V290QXhJSGhTMDQ3eFJiVW1tdUhoRG1BQVhVc3RpZkcxSGJYSl9qUkgwelhsZWI0ZnpES2N4d0FzNHlETHhnMWJtX0R6ZnBIYzhwWWhw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "2c4a1d8728cc3ea1",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day's new trailer is here and still keeping its 'villain' a secret - Polygon.com",
-      "topic": "movies",
-      "ts": "2026-06-19T19:03:45.039011+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOcDA1aUlzM1ptc1E0NmFqWXp5WlJ6UGZFUWdHaVJYazh3QlQ4NW43Si1BZHdWMW9BWDlWZUJfV1lKc0w1Y2pWTjM4U2NYZU1qdUhzVUNJVUpzV29VQnc4SUUxbGpqTU5PMWNFTkRxU1VXVU9MZmRTLUZmV0VGMWV6dg?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "07a9c2e85363ccf1",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "DC Studios reveals official The Batman 2 logo as Matt Reeves shares new look at filming - MSN",
-      "topic": "movies",
-      "ts": "2026-06-19T19:03:47.084800+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPbXQ0RG5UVkloM0EwYkFoLTVFc2Rkd0NwbXlnb1EyUDVFYzI3T3V3OFVubXFPZ0ZjQlRLMENfSkdadVZNQmRKMkgxcVJoVm9FZHRKWEphN19qVFRMQ3FWM3kwRzBCODFFMHhpNUJ3b2p2OUdLamJnQjB4ZXdYcGJNbExWUmNUMWltNDFybzFHQTkzcnQ0aHVPV1ZSQ3VFNjFCanhjTFVVSDEycUo4TFJNWTJwcTRGclVNeS1jcDkwbHFiZ1R3VndkRi1CVHlzYnRGbjlUWDNHWmpCY3FGV1FwMU8wNktBdm5uMkRZQWpmalhjVEw3?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "f2986e0c584ad84c",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II First Look: Matt Reeves Shares Sequel's First Shot - But Whose Body Is That? - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-19T19:03:47.085296+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9JTm5ZOFdkU01pS3RseDFzazRkcmVEMnlkbTFDY0hnU3cxME8xSEpOb25rc0N3MnZKbWRyaFd2X0VWNEtlcG9rNkRaTWxqUQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "b77bfb28228b61da",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Confirms 'The Batman: Part II' Script Complete; Robert Pattinson's Reaction Revealed - \u73a9\u5177\u4eba TOY PEOPLE",
-      "topic": "movies",
-      "ts": "2026-06-19T19:03:47.289136+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1td3R6Sk0wUGpvbm1ZRllKRlJRZGhPUEJNaklYZkl4QXA0M0MzRkluOWhWTGZ6NVY5SVBjMTBYOVVQaFVXOHpuWEo5bC1QN003?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6532,6 +6029,258 @@
       "topic": "youtube",
       "ts": "2026-06-24T11:23:46.354111+00:00",
       "url": "https://www.youtube.com/watch?v=roLdDcGml5k"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "604c4ef7a71c2091",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday Delay To 2027 Rumour Debunked, No Official Change In Release - News18",
+      "topic": "movies",
+      "ts": "2026-06-24T13:31:56.534447+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNdFpXU3B5NUdldlE2TEhsRkZJTU5UV0ltTGZ2OF80VzNOMjRVNVhQQ3I2bFgyckpYVkdJQTJnc19KNHlwTnFFbGp3ZWFzYkRvVHNLdWdteGtpRTBMc2tMUmxZUHpwTnMwdzQtdlNKSGJPcFhVYV91Z2lWaXRqTUVHWEl5eHdfdGNFX1hPUlhHSk9MMm4wM3JoN1pudENjR3R5V292azJ2RElDczVBNEZ6YXFJQ0luSTROQ0VZeHMtd3FXSmxyTUY3ZFJ3SdIB0AFBVV95cUxQLWYwOXhuRjJobl9RTlRua0NqTkFzamRMdDcyQUt3cHE4bG1rcENoWWNIZ0FmSkRVWFoyRjd1bV9vMU9PUFhGbVhLUUF4VDd3VnNuRDdZYU52UDdxWW9Xa1dmTGNZWERHOFdSYTRqbllhZ2tEdDNtb0FiX05kUFNHWkNxcHdYdDZvc3BhaU01blAtWTFjNnE4NlV4TjNOZklPNmdDbkFxTEZCZlQxdmhWYm9fSmpJTXloV3ZhaW80b0pFY3JSZ01KYkczRzktT2Zp?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "106c1a7ade00597b",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Disney Takedowns Confirm Avengers: Doomsday Leak Chaos: Doom, X-Men, More - Cosmic Book News",
+      "topic": "movies",
+      "ts": "2026-06-24T13:31:56.535039+00:00",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1SYko5OUVkaGEyaUxUQy1zM3hiRE0tSzVCeWNMNzhXOWZuS2xjYlR5MEVkenRvdlNCVHp2VUY2aDZEY3RiOFVMRm5qVTl4LWwzNWRMUDVzRzdCUHUxa1ZXMVNZMXRnRGJpZER5cXNpcjlLaVU?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "b37eeb8e800e9113",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday\u2019s First Trailer Gets Impressive Fan Recreation (Watch) - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-24T13:31:56.535710+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQVU9aM2F3NE1WbXQwZXZuVkp0dGlMUk1uekllUERKTk4zN09IVFUtRFlYekMzajZacVlBa2tka1AzWFpxWGI2NXNUMGR2OExRMzlqby1XbzMxTTNVWjRGa1ZKWTlHLXZZWElXLXVxQldHcUNLYW1hYzRzR292RkktRE8zSUdTNnpxVXc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "7ab2a575f0438a73",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Little Caesars, in collaboration with Sony Pictures' \"Spider-Man: Brand New Day,\" is releasing a cheese-filled web-themed pizza ahead of the movie's release date in July. - facebook.com",
+      "topic": "movies",
+      "ts": "2026-06-24T13:31:57.391625+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNaFNyVzQ0NC1KUXdxUnVUaVFYTTc3YzQ1T1kzWkNvT2RONHJmd1ViZEduWjREWm5NYmF2ZkZkRUZOU0Y4WWNmLUhSTERfTmRwWjFNODJpSTN2S2dMdW9mQk5nTEgzbDl1WDJydVJmdWwtVGZUazR0bVBrb2hUSk0tQlZNR2hyaXp1a2pDS2ZmTFFNZV9nWnF3Y0FWZFdyV2toSnVJZlNiakJpcTlPMDdBeU96dFJ3WC12d3FEQmRUYWhMTFpOc2lpdUpyd0FOTG41dUhLakdJWlRCYm51SmpB?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "c8eb903646d21e66",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Tom Holland confirms the Spider-Man: Brand New Day villain is still a secret and is \"unlike anything we've seen\" before in the MCU - GamesRadar+",
+      "topic": "movies",
+      "ts": "2026-06-24T13:31:57.560809+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOaGx4cHBpbnA3OFdQbDhSdV9RMlhyd0ZLUzJnTjhUUU9ubTR5STVnVHlPZEtfTzA2MEJzOXZFT3FmNHJuRzFsLUtidXotblJ1YndNYURvMnpMWU5IRFIwVUQzNkFKQ3JfT0lURjhhWmRFWmpSNWZWbjRBZm5XbkJVanFOZTg2TnB1M0hKRXcwQnRNN0JZZksydVRDYnpIU0NYMlY2UzJfdW44TWNWd2VuM3N4WGtkaGlUekpDS3hBQnpfNEF6VGE2RV91Z0JlVmxnQ0NzSzFfZzVoZnRtTWlvTUdkZEl6SU9laVNZR1drZDZLMkFuVW5fSXhMUzVzUVRFODBEdG54ajNZR20wNnRn?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "7553db51a7f57972",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer and Movie Tickets Go Live - Marvel.com",
+      "topic": "movies",
+      "ts": "2026-06-24T13:31:57.561572+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeXFwTXhVZEhCQVNTaHJESC1GbDZfcXZ1RjVGZ21fNWxJMVdDMVIzeVBKdjFlelVyLUJ5dmRJcFZvMWUwNU5ZelZIQ29vZ1JHVVhNMElXNHVCakZlYWljazNOUTBFQUVZSVJxVXl2NExFS1g0dWZueXpGOHpBeXdVM2xTYmt4eEFKdXdtSFNNYlZCTXJlX24zMkowYS14UQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "934e97090bb7888f",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Has a Brand New Trailer, and Spidey Is Freaking Out - Rolling Stone",
+      "topic": "movies",
+      "ts": "2026-06-24T13:31:57.562049+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaExDemM2TW9qaHdoaUlOV3hhT0pnbDJWUW1FYUczN1F2WXdLZHRkVC0zNnY1Wk55Z19lQ3d6ZGFNY1B0UldtcDgtazJDWGpGeGpRenJOUTBFenIzRlFKUS03WW5XeUJ4WEc5UUVuZWl1V2dVSzMzc3pDdXhmLWN3emlONGdCUXFLam1FMTlfSUVCQTlCUlpXd3hVWHlheDFxWlI0?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "0609e155bdfd52f7",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "The Batman 2 Writer Details \u2018Viscerally Insane\u2019 Superhero Sequel That\u2019ll Never Happen - Yahoo",
+      "topic": "movies",
+      "ts": "2026-06-24T13:31:59.405079+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQOWFWYllTekY5Z09Zckd2Q2dkSkczT2JLWUkyU3lpOC1saUh1ZjRUNEljTnlsd29TQXVvdi0xZ1RuRldDREZsZW16MTJYeFh0bHRzNGJrcy1kNWdzd1ZaU3lmdHNHcVV4blJlLXRIeU5DNHotNkJZYnlrS3JJR2h1ZEZvMlVFQ2hHbkMyQURQZVRSMFBQX0JKSjBEckN4aFJ3aUow?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "595df4473bacaf60",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "DC Studios Reveals Official The Batman 2 Logo As Matt Reeves Shares New Look At Filming - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-24T13:31:59.405614+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBHVGhlQzR0VWVTNDVxdjJGdi12VFZ0RU5DcDlfU0Z6SlFTT2NidHc4OTlMYW5tM3NuYXVKZzc5cC1EWm9tS0hIam53S0xlXzB4cjEtNWJBRGVhYWk5V1NVU1F1YXl5Zw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Losin Control - Russ\n(because you like Post Malone)",
+      "id": "e520cac1103f5790",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-24T13:32:04.923434+00:00",
+      "url": "https://www.deezer.com/track/129252010"
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-06-23",
+      "id": "14bc43b08eb753f5",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Blue Jays 7 \u2013 Astros 9 (L)",
+      "topic": "baseball",
+      "ts": "2026-06-24T13:32:07.332333+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-06-23",
+      "id": "20fac03855676854",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Yankees 4 \u2013 Tigers 3 (W)",
+      "topic": "baseball",
+      "ts": "2026-06-24T13:32:07.431260+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-06-23",
+      "id": "56dd1a8d7765b807",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Dodgers 12 \u2013 Twins 3 (W)",
+      "topic": "baseball",
+      "ts": "2026-06-24T13:32:07.543362+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "e89f16c01fa61e50",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Holtec and EDF submit UK SMR project proposal",
+      "topic": "energy",
+      "ts": "2026-06-24T13:33:14.981313+00:00",
+      "url": "https://www.world-nuclear-news.org//articles/holtec-and-edf-submit-uk-smr-project-proposal"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "b6105f548e54500b",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-06-24T13:33:15.188380+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Pause for a moment and have a drink of water.",
+      "id": "b1c67ca515bbbb13",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-24T13:33:32.939486+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Keep alcohol within low-risk limits; less is better, and no amount is the safest option for overall health. (Source: WHO)",
+      "id": "4b656978827378a3",
+      "score": 60,
+      "severity": "low",
+      "source": "Health",
+      "title": "Health tip",
+      "topic": "health_tip",
+      "ts": "2026-06-24T13:33:35.220464+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "On this day\n1559: The Book of Common Prayer, a major component of the Elizabethan religious settlement, was introduced as the liturgy of the Church of England through the Act of Uniformity 1558.\n\nFeatured: Vatican City at the 2022 Mediterranean Games\nVatican City competed as guests at the 2022 Mediterranean Games, which were held in Oran, Algeria, from 25 June to 6 July 2022. The nation's appearance at these games marked its debut in the Mediterranean Games, and its debut in any international multi-sport event. The team...\n\nScience\nTrees move water from roots to leaves largely by transpiration pulling on cohesive water columns - no pump required. (Source: USDA)",
+      "id": "22b0e53fdfe8adb3",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Daily learning",
+      "topic": "learn",
+      "ts": "2026-06-24T13:33:37.377106+00:00",
+      "url": "https://en.wikipedia.org/wiki/Vatican_City_at_the_2022_Mediterranean_Games"
+    },
+    {
+      "action": "push",
+      "detail": "What: The Champlain Hudson Power Express is a high-voltage line buried underground and underwater to carry Canadian hydropower into New York City.\nWhy it matters: Burying it avoids the visual and permitting battles that block many overhead transmission projects.\nWhy you should care: It's a model for delivering distant clean power into dense cities without a forest of new pylons.\n(Source: U.S. Dept. of Energy)",
+      "id": "eb51d5071b7bb91a",
+      "score": 60,
+      "severity": "low",
+      "source": "Energy learning",
+      "title": "\u26a1 Today's spark \u2014 A buried line bringing hydro to New York City",
+      "topic": "energy_learn",
+      "ts": "2026-06-24T13:33:38.809317+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Jun 22-Jun 28: RD$3,108.94 across 2 transactions\nTop: ALTICE -APP ECOMM RD$2,515.94; APREZIO INVIVIENDA RD$593.00\nBiggest: RD$2,515.94 at ALTICE -APP ECOMM\nvs prior week: Weekly spending moved from RD$290.00 to RD$3,108.94 (+RD$2,818.94, +972.05%)",
+      "id": "2e0311cb1aa6ecff",
+      "score": 60,
+      "severity": "moderate",
+      "source": "BHD",
+      "title": "Weekly spending summary",
+      "topic": "spending",
+      "ts": "2026-06-24T13:33:40.095722+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Ends Thursday 25 June (tomorrow). Tap for the academic calendar (PDF).",
+      "id": "54c81ce9ee7877cd",
+      "score": 62,
+      "severity": "high",
+      "source": "ITSC",
+      "title": "ITSC: Aplicaci\u00f3n Pruebas POMA y Psicom\u00e9tricas",
+      "topic": "itsc",
+      "ts": "2026-06-24T13:33:41.245822+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/05/Calendario-academico-2026-2-MAYO-AGOSTO-_-Actualizado_.pdf"
     }
   ],
   "f4_history": [
@@ -6613,7 +6362,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-20-26-JUN-DE-2026.pdf",
   "fuel_last_pdf_hash": "df5bf29864420fdf3ae48c6b803e8715064f631b1998f09ad9d6c6ddfd00a535",
-  "fuel_last_prices_seen_at": "2026-06-23T22:07:37.853511+00:00",
+  "fuel_last_prices_seen_at": "2026-06-24T13:33:30.647454+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7295,7 +7044,7 @@
     "gothic_and_mystery:1064": "2026-06-13",
     "novels:1400": "2026-06-13"
   },
-  "health_tip_last_sent": "2026-06-23",
+  "health_tip_last_sent": "2026-06-24",
   "holidays_sent": [],
   "ignored": {
     "4071c13d0b9dc18b": {
@@ -7349,6 +7098,7 @@
     "d1291b97df844b44"
   ],
   "itsc_sent_ids": [
+    "946187150e6f3993",
     "93aff39308dd5eb2",
     "f1d87cea6e675232",
     "1a1f311b66d385ba",
@@ -7433,7 +7183,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-06-24T11:19:20.505199+00:00"
+    "ts": "2026-06-24T13:31:54.674789+00:00"
   },
   "launch_seen_ids": [
     "f1fed8fbf29f7123",
@@ -7452,10 +7202,33 @@
     "9cf78ee44cb96c21",
     "7621aad01d0821be"
   ],
-  "learn_last_sent": "2026-06-23",
+  "learn_last_sent": "2026-06-24",
   "life_dashboard_last_week": "2026-W25",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "75e7ef0941ef9130",
+      "2f57c055943f40d2",
+      "9e95544cb1fb729d",
+      "2387c7bcc583051f",
+      "fa5ebac42f1f6c6e",
+      "623bec3037a8b837",
+      "62f5aa8f4a9a38e7",
+      "c2f8ccc4cb0b09cf",
+      "ac4ca9ca6bd41308",
+      "8d1b4273334f7e3e",
+      "c781bdf373067c77",
+      "259a21a6bdd7859a",
+      "9128141949c596ef",
+      "c9b74dffcaec0aca",
+      "f3db7b45c2e49001",
+      "7afc1677fd889c9d",
+      "4d4ae636fc770116",
+      "8d37a00cf711b8c2",
+      "3444df68686b14f8",
+      "ec906ef731c75b06",
+      "d2bf006beb1235c8",
+      "5459fbb6dc7dafd9",
+      "d759a8d5f8eef2f0",
       "41a11f6dc8215afa",
       "49511cfa576614f4",
       "d836142f471ea673",
@@ -7532,30 +7305,7 @@
       "c3f7d615d766052c",
       "6df6e29f507a8a7d",
       "d42a204822ef000d",
-      "e2f6c04f2b9b62c4",
-      "3adde01d4fc0c78f",
-      "c982d7c4555afc4f",
-      "effb4f95e0113f90",
-      "d0f2b8970ae766e2",
-      "d1f6897819b39bad",
-      "13af8daf9b0f056d",
-      "9cbbfe648ec9a1ea",
-      "214b250f1254a58e",
-      "9d88e9b9ecb31b6c",
-      "b7c0737737d7b183",
-      "9cf582912392e808",
-      "542413eb18d1aeaf",
-      "3980e4793fd2212c",
-      "1da6646f01387695",
-      "a081e88d7f3f4c82",
-      "3fef98c39abd544e",
-      "ec6694d64fb61f59",
-      "c9835e7d8cf60711",
-      "563d64bfa177bf4d",
-      "5fa4069c06726015",
-      "8c227d8af70ea569",
-      "4662edc99a6113a5",
-      "8fdd93d084ce8806"
+      "e2f6c04f2b9b62c4"
     ],
     "Godzilla x Kong: Supernova": [
       "d4938cd259327d40",
@@ -7757,6 +7507,19 @@
       "4ee9e90a06cba59e"
     ],
     "Spider-Man: Brand New Day": [
+      "8723cea38cc2405d",
+      "ad892c7cd701a00f",
+      "868be71740aff0f9",
+      "8f768ee848fcd20f",
+      "e27db08c1b2d057a",
+      "32503776ef29c58d",
+      "b7a6d9db88b04d0a",
+      "0219a21539531e1e",
+      "fdd2bd3f6427c959",
+      "6eb8c528ba8c1016",
+      "f5178c7df72b5796",
+      "f566547c036a1aac",
+      "018be3ea7a31d2ea",
       "2823b32f1b5ad128",
       "1e31d2ae729af119",
       "c87de0e4346260d4",
@@ -7843,22 +7606,18 @@
       "a3cfcaadc9d5b47d",
       "ea191ffde6f5f511",
       "3b45eb451b4d32cf",
-      "86c02721dad6564e",
-      "e3c0596c8a24990d",
-      "5bd7fcd3d5bf3874",
-      "521206e6eb4da2fe",
-      "569a7c84770572a3",
-      "51a289790bcf22b7",
-      "487c64c7933ca205",
-      "b78c67ad84c54cd4",
-      "806ac19ac9324adb",
-      "57880045b14e8a72",
-      "8372a5d5c6cbe381",
-      "9b4c6ce2ce5de9b5",
-      "f5562075e601fc9d",
-      "1d126201f08b3f8b"
+      "86c02721dad6564e"
     ],
     "The Batman Part II": [
+      "cb96bb52ad67f9ab",
+      "3cde539ee9e1c253",
+      "0bb348d180fc415b",
+      "ee0fc7f0fcff7efe",
+      "91f6a8b0f55eed4d",
+      "64e1e6d40752fec0",
+      "bef9fb96d30b4d58",
+      "89d011a97140ca28",
+      "b8da7e39254c0f2a",
       "e6c7d51feafe1e90",
       "0632f674480606ec",
       "638d691db2c6c597",
@@ -7949,18 +7708,15 @@
       "494302d5d766e004",
       "d2d0067425e266a6",
       "fd8442d28c5f20ad",
-      "61783448e2175a9b",
-      "3e4bdc7dfa6edfa4",
-      "6ea1ea2ff7644933",
-      "20054aec063a4665",
-      "6a91f27cfc7bf6d5",
-      "8dd3ec73ae867b6d",
-      "588694857cc1d5e5",
-      "013aedc634716325",
-      "17ae93afe19a2a24",
-      "bdcc003070da19e5"
+      "61783448e2175a9b"
     ],
     "The Odyssey": [
+      "3d8553d62a9d4af2",
+      "e55958862f828498",
+      "017bc7b06ac3f9bf",
+      "dbf928b9dc8c5a04",
+      "f006e50307a6af32",
+      "844038a230a74661",
       "584ed71ac556ac37",
       "862a34d40654a0fe",
       "f7bcc50aa650e13b",
@@ -8054,13 +7810,7 @@
       "ad49fa6590f25f6f",
       "7d61651127cfd8f5",
       "6461fe11354ba28b",
-      "d1b448bdb5f592fb",
-      "5ec72566a8ccd4a5",
-      "c4625828b615a96f",
-      "0634ca1ceefe770a",
-      "5cbc317fee432860",
-      "552946c010740832",
-      "5d19d9f692150356"
+      "d1b448bdb5f592fb"
     ]
   },
   "movie_release_dates": {
@@ -8147,7 +7897,8 @@
     81195,
     117842022,
     469886,
-    11007322
+    11007322,
+    616943
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8620,6 +8371,15 @@
         "name": "Mois\u00e9s Nieto"
       }
     },
+    "f2593e4e27d4d5cc": {
+      "applied": null,
+      "created": "2026-06-24T13:32:04.923408+00:00",
+      "kind": "artist",
+      "label": "Russ",
+      "payload": {
+        "name": "Russ"
+      }
+    },
     "f296480ba038d570": {
       "applied": null,
       "created": "2026-06-19T19:03:57.734308+00:00",
@@ -8852,7 +8612,7 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spending_week_summarized": "2026-W26:593.00",
+  "spending_week_summarized": "2026-W26:3108.94",
   "streaming_seen": {
     "1003596": [],
     "1288438": [],
@@ -8863,177 +8623,177 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "deals": {
-      "last_data": "2026-06-24T11:23:21.052472+00:00",
-      "last_data_count": 7,
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_data": "2026-06-24T13:32:57.440007+00:00",
+      "last_data_count": 11,
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "energy": {
-      "last_data": "2026-06-24T11:23:30.800739+00:00",
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_data": "2026-06-24T13:33:14.981005+00:00",
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "fda": {
-      "last_data": "2026-06-24T11:23:21.548846+00:00",
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_data": "2026-06-24T13:33:05.974986+00:00",
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-23T22:07:37.853534+00:00",
+      "last_data": "2026-06-24T13:33:30.647473+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-23T22:05:57.950544+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "fx": {
-      "last_data": "2026-06-24T11:23:44.510500+00:00",
+      "last_data": "2026-06-24T13:33:29.631661+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "games": {
       "last_data": "2026-06-22T13:21:53.280804+00:00",
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-24T11:19:34.486234+00:00",
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_data": "2026-06-24T13:32:06.636981+00:00",
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-23T22:07:10.823011+00:00",
-      "last_data_count": 234,
-      "last_ok": "2026-06-23T22:05:57.950544+00:00"
+      "last_data": "2026-06-24T13:33:05.390789+00:00",
+      "last_data_count": 232,
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "movies": {
-      "last_data": "2026-06-24T11:19:28.085664+00:00",
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_data": "2026-06-24T13:32:00.473865+00:00",
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "music": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-24T11:23:31.463586+00:00",
+      "last_data": "2026-06-24T13:33:15.459214+00:00",
       "last_data_count": 21,
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-24T11:23:43.751983+00:00",
-      "last_data_count": 44,
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_data": "2026-06-24T13:33:29.110300+00:00",
+      "last_data_count": 45,
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-24T11:19:30.012121+00:00",
+      "last_data": "2026-06-24T13:32:02.546321+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "weather": {
-      "last_data": "2026-06-24T11:23:30.997465+00:00",
+      "last_data": "2026-06-24T13:33:15.188138+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-24T11:23:48.178377+00:00",
+      "last_data": "2026-06-24T13:33:32.939019+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-24T11:19:20.505199+00:00"
+      "last_ok": "2026-06-24T13:31:54.674789+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165027"
+    "last_full_window": "165028"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9045,8 +8805,11 @@
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
   "watchdog_failing_since": {},
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-06-24|12"
+  ],
   "weather_seen_ids": [
+    "b04b4627463164b8",
     "64b0316094d53f06",
     "9166fd4031d78408",
     "e70d037bd504c918",
