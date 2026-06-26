@@ -7514,8 +7514,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 46,
-    "ts": "2026-06-26T21:57:26.594828+00:00"
+    "ok": 1,
+    "ts": "2026-06-26T23:17:11.048655+00:00"
   },
   "launch_seen_ids": [
     "be8b1880c67afb06",
@@ -8637,15 +8637,6 @@
         "name": "Garou"
       }
     },
-    "b6d3f456c17c191e": {
-      "applied": null,
-      "created": "2026-06-12T22:20:33.174619+00:00",
-      "kind": "artist",
-      "label": "Sarah Vaughan",
-      "payload": {
-        "name": "Sarah Vaughan"
-      }
-    },
     "b6f18d8c34106e34": {
       "applied": null,
       "created": "2026-06-26T12:21:12.127907+00:00",
@@ -8743,15 +8734,6 @@
       "label": "David Guetta",
       "payload": {
         "name": "David Guetta"
-      }
-    },
-    "e7696bd4e6c333f7": {
-      "applied": null,
-      "created": "2026-06-12T22:42:29.254541+00:00",
-      "kind": "artist",
-      "label": "Aretha Franklin",
-      "payload": {
-        "name": "Aretha Franklin"
       }
     },
     "ec3cb1c19ea28daa": {
@@ -9172,9 +9154,9 @@
       "last_ok": "2026-06-26T21:57:26.594828+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-26T21:57:34.414178+00:00",
+      "last_data": "2026-06-26T23:17:13.515762+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-26T21:57:26.594828+00:00"
+      "last_ok": "2026-06-26T23:17:11.048655+00:00"
     },
     "uv": {
       "last_ok": "2026-06-26T21:57:26.594828+00:00"
