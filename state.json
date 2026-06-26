@@ -492,18 +492,6 @@
   ],
   "event_log": [
     {
-      "action": "push",
-      "detail": "",
-      "id": "2f1ec699899dc97c",
-      "score": 64,
-      "severity": "high",
-      "source": "Grand Theft Auto VI",
-      "title": "Grand Theft Auto 6 Trailer 3: Expected Release Date And Details - Forbes",
-      "topic": "games",
-      "ts": "2026-06-22T13:21:51.644037+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOVWVReWpRZDdrWmZTYlZxNFlaNXhjMHVpVkQ3Q2pkTVNxWG02Rjc5SU51UDNDR21UZnlUVGZMam8zSlZDem8tY0JhdHVUZS1Pa2NqRlZIcDhXZXpzcXhIbzNxT1draWFWOVpnOWpqM1NmMlp1TmY3VjE5NkZEblVfQ2ZDd0JKcW9jekRBSkE5c2FLcS0yRGtxcGxVWVdJUUxzRHRRTTllelFWVURvaXVnNHNHMEZ0Q0k?oc=5"
-    },
-    {
       "action": "digest",
       "detail": "",
       "id": "b9637e5effd058b1",
@@ -6490,6 +6478,18 @@
       "topic": "wikiquote",
       "ts": "2026-06-26T19:01:55.985726+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - RisingStyles X SpecktraGames #10 - TORNEO EN FRIKIPLAZA CDMX - Ft. MkLeo, Maister, Chag, Guilheww I SpecktraGames",
+      "id": "946a79ef493ab52a",
+      "score": 68,
+      "severity": "high",
+      "source": "mkleossb",
+      "title": "mkleossb is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-26T20:50:11.710344+00:00",
+      "url": "https://twitch.tv/mkleossb"
     }
   ],
   "f4_history": [
@@ -7459,8 +7459,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 46,
-    "ts": "2026-06-26T19:00:12.546892+00:00"
+    "ok": 1,
+    "ts": "2026-06-26T20:50:10.740352+00:00"
   },
   "launch_seen_ids": [
     "be8b1880c67afb06",
@@ -8320,15 +8320,6 @@
         "name": "Louis Tomlinson"
       }
     },
-    "4071c13d0b9dc18b": {
-      "applied": null,
-      "created": "2026-06-12T20:02:03.447214+00:00",
-      "kind": "artist",
-      "label": "Billie Holiday",
-      "payload": {
-        "name": "Billie Holiday"
-      }
-    },
     "4087ae711afc7767": {
       "applied": null,
       "created": "2026-06-22T13:21:59.043990+00:00",
@@ -9125,9 +9116,9 @@
       "last_ok": "2026-06-26T19:00:12.546892+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-26T19:00:22.663740+00:00",
+      "last_data": "2026-06-26T20:50:12.798059+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-26T19:00:12.546892+00:00"
+      "last_ok": "2026-06-26T20:50:10.740352+00:00"
     },
     "uv": {
       "last_ok": "2026-06-26T19:00:12.546892+00:00"
@@ -9155,7 +9146,9 @@
       "last_ok": "2026-06-26T19:00:12.546892+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "mkleossb"
+  ],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
