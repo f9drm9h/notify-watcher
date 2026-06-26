@@ -51,7 +51,7 @@
     "29db49f64ce68661",
     "a8b1aff056453d2f"
   ],
-  "apod_last_sent": "2026-06-25",
+  "apod_last_sent": "2026-06-26",
   "astronomy_sent": [
     "2026-06-14|New moon tonight - d",
     "2026-06-21|June solstice today"
@@ -77,8 +77,6 @@
     823208
   ],
   "baseball_results_seen": [
-    822802,
-    824587,
     822801,
     824586,
     823938,
@@ -106,7 +104,9 @@
     823690,
     822798,
     824259,
-    823691
+    823691,
+    822797,
+    824747
   ],
   "beach_day_last_sent": "2026-06-20",
   "bills_sent": [
@@ -119,307 +119,19 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Michael Caine Confirmed For New The Odyssey Role Ahead Of Christopher Nolan\u2019s $250M Epic - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5MZ1pyYXctekkzNUg1Y2RBRWFZeTcwUFVmdVZfWUlBNmRWRE8wRDktRU1SMG0zWHF6aS1Oai1ielBPQ1BacVdjR3pGc1FyUjJpNVZxMW96OE0yOHdYN1hnRWJ6VkljY3M?oc=5"
-    },
-    {
-      "detail": "DOP 149.95 (was DOP 178.95, -16%)",
-      "preserve_detail": false,
-      "score": 45,
-      "source": "Nacional",
-      "title": "Nacional deal: Guacamole Suave Macapi Luv 7 Onz",
-      "topic": "groceries",
-      "url": "https://supermercadosnacional.com/guacamole-suave-macapi-luv-7-onz-2182741"
-    },
-    {
-      "detail": "DOP 39.95 (was DOP 49.95, -20%)",
-      "preserve_detail": false,
-      "score": 45,
-      "source": "Nacional",
-      "title": "Nacional deal: Refresco Seven Up 1 Lt.",
-      "topic": "groceries",
-      "url": "https://supermercadosnacional.com/refresco-seven-up-1-lt-2230062"
-    },
-    {
-      "detail": "DOP 184.95 (was DOP 218.95, -16%)",
-      "preserve_detail": false,
-      "score": 45,
-      "source": "Nacional",
-      "title": "Nacional deal: Doritos Super Nacho Familiar 255 Gr",
-      "topic": "groceries",
-      "url": "https://supermercadosnacional.com/doritos-super-nacho-familiar-255-gr-2009491"
-    },
-    {
-      "detail": "DOP 1,499.95 (was DOP 1,749.95, -14%)",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Nacional",
-      "title": "Nacional deal: Vodka Tito's Handmade 75 Cl",
-      "topic": "groceries",
-      "url": "https://supermercadosnacional.com/vodka-tito-s-handmade-75-cl-2156261"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "World Nuclear News",
-      "title": "UK fusion sector poised for industrial scale-up",
-      "topic": "energy",
-      "url": "https://www.world-nuclear-news.org//articles/uk-fusion-sector-poised-for-industrial-scale-up"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "World Nuclear News",
-      "title": "OSGE signs agreement with W\u0142oc\u0142awek for SMR plant",
-      "topic": "energy",
-      "url": "https://www.world-nuclear-news.org//articles/osge-signs-agreement-with-wloclawek-for-smr-plant"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Michael Caine Lends His AI Clone to Voice \u2018The Odyssey\u2019 Audiobook - The Hollywood Reporter",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORHZ6Y0xnM0pQRDM0dHdjR1d6RkVtMlB1bTREYTBMT2g5U2J1NFhmbFhtdGswVHk2UlBOekgzMC1oTFVUbjl0amNiYzhiejAxR2x1UEV4aDR1cm5xMS1VQWZHbmZsSktFTHlUSkw5dGk0UXJ2b0JkSzQwd0xIZmlEaE1CYm9fOHpEaDBlcnZXLUhHNllGeDFHcG5GUG1XTXp3V2RVNkYtck0?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "Golden Sun",
-      "title": "Toby Fox, you sly... fox",
-      "topic": "golden_sun",
-      "url": "https://www.reddit.com/r/GoldenSun/comments/1uehiva/toby_fox_you_sly_fox/"
-    },
-    {
-      "detail": "DOP 240.00",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "La Sirena",
-      "title": "La Sirena deal: Audifonos Argom Hs-0525b",
-      "topic": "groceries",
-      "url": "https://www.sirena.do/argom-audif-hs-0525b-1593338/p"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Has Spider-Man Fought Ninjas Before? Major MCU Villains Confirmed for \u2018Spider-Man: Brand New Day\u2019 - Collider",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQ3I0aDhmYUM0Q2t5a0VfVEJ1dGl6Y1N5NFBMWmpTUUJidjZjcUlwQ1NKOWNuam14MS1wbDJhTFlRU0NSam1JcFNKNVVOUm5scDlWMFJKVGZKQ2xvLWhQcllpY3NBNzhtalhUSmNxWFFpUFRkZlBoaUFjY09TMmFQbXRfME0?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Christopher Nolan\u2019s \u2018The Odyssey\u2019 to Skip Social Media Influencer Screenings - The Hollywood Reporter",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWkVWQlZsUFhDWlVHbEd2aW9xMkdvYkNuTmJBd3hjLUg5ZTFTYUpnNTRfamxLaXhXd2RoXzloUXlwOEhNU2NabWEyNUx6TG8wM1R0LTBPem9XTmxpeWdHRDNKZnppX01xUUtEU3lHa3g4ODF5UkxMQ3dxZU1vbEt1ZjdMb3FPNkxLUnZ5VXFNYnVyeFVkZHpHa3pMSFRERVh6RjJsVkFBaGZ3N3N2WkFFNTVFNW1ndw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "The Batman 2 Writer Details \u2018Viscerally Insane\u2019 Superhero Sequel That\u2019ll Never Happen - Yahoo",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVVhScVQxbUVncndTbWVjVXRaNEtIZF9mR2xpNWdZWDd5NXZ4M3J4bVJFZVhlS0dWTkhvak9KRldMUTZmMnhSb1AzeHl6VTdmMEJILXlGd3NpV2F6c2ZwMmpBNVVHeWg0QnFPS1lESE51UWpCcUlyMlVWZzBTVldBWkFtUE04VFctN3VVOHVYUFh6WGpXa0hLV3JYbzJNWlZMZ0RN?oc=5"
-    },
-    {
-      "detail": "DOP 1,250.00",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "La Sirena",
-      "title": "La Sirena deal: Auricular Blanco Coby Tws Cetw542wh",
-      "topic": "groceries",
-      "url": "https://www.sirena.do/coby-tws-mini-auricular-ngo-cetw542wh-2075003/p"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Disney Officially Confirms A 3-Part X-Men Comeback Ahead Of Avengers: Doomsday - ScreenRant",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNWtsZjZqckdKM3Bsay02dW9xckNmcXBlS3Etd2ltSDNnNVBJWmNPd2ozZnJZX2FfRC1hbXpHRWxTdU1KQ2cxbjNXOGUyRjVVS1NHaXFWNjRvSU5iNkxSd2ROQkxpMnhUZzM1YnJ4djBkYjc5ZEhURGZSNVB3ejQxSkdHRlg0bEtZbzYw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Michael Caine The Odyssey Adaptation Announced by AI Company That Officially Licensed His Voice - IGN",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNMGJjN1FiVEZxZHg1bndHcjdqemNLZEo3MkFPcmYyOVVTd1JvWEZYcVduX3dfMGh5RS0yd2RiRldGcU8wSGpxczNjeENSR3pQaUFXS1VwTk1hWDB4VTA3NWxrdXFuWEk3WWwta1Rtdm9yc0hRbTBPQU5taXNVRkRNUk9RMEVVZDNqMXRUekRzRkJJeXl6dWs4YkhkRkp1T1ZNLW9UbHg1VXFxaFEzd2loYXlsYl9HRGYxeUFCcEQ4RkFGWVRjMTBGOTJpV1F3Vm53QURwVnVpMmhmOVMxeHloWnVn?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "The Batman 2 writer says Disney turned down real-time Rocketeer legacy sequel about how \"viscerally insane it is to strap yourself to a rocket\" - GamesRadar+",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxOQlNhNC1md2Rwblp1U0FoZi04Z0tGdU1VbVNiY29WTzdyWmNzZDEyVm9YX2hkZkcwRy1DUUU2WEFPYXJ4eWlHcDVBcl9PYUx2MWZlSlNIeWt5a0hoN01vTFlFWVQteGVabWFYcTdmVEc3U3VHMFpnSS1GTnNoeW1iTHl1aDJCR3dLcl93Y3JUVmFZOHQ1Q3NMOGM1WURNNXNNbkVUZ1R5T0FTRGExYzZqMzJMMy1haDRMZTQzRHF3aDBETG1vbTFhd0NRR190aC1QNm82TnhNYlkyZXhtZm8zZEZiMWpHa1BDUGY1djR4cC01cktDM3E2a1pPN1ZBR3NmTlhmM2ViR29oYlp2Vi1HSmE3YVZCOXVtRUVYaW1n?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Prolia",
-      "title": "FDA updates approval for Prolia (Denosumab) (BLA125320)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125320"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Columvi",
-      "title": "FDA updates approval for Columvi (Glofitamab-Gxbm) (BLA761309)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761309"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Copaxone",
-      "title": "FDA updates approval for Copaxone (Glatiramer Acetate) (NDA020622)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020622"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "A Big \u2018Avengers: Doomsday\u2019 Leak Reportedly Arrives, But Its Validity Is Debatable - Forbes",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWWxfeWxRTE1FeXZHUjlGXzZkbkh5ME02YjROVHlEbk9pbXpua0Z5cHVMN1FHYmtGRHktdW9id3ZTN0QwZENDY2ZMUm13WklaYTdKM29jNEk4QVVkMnNlaFJBNF9CYzZ4R3BIQURmRE1ZRUcwbVItcF9aNFh5SE9OaXMxUUZTUlA5U3BMTi1XT3U2UnFUNS1zYVhXd2FzVlU4dWtoRjgyR0hBWnMtc09KaFhOeWtrZkJOeEJQSGt5OW5SY0d5T1Nz?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' Clip Confirms Popular Aunt May Theory - The Direct",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5kd0d0bTFZM0RpSVZLaGtHWlllVVA5ZmtuTFJhWEJrcjg1YUlzNnA4TVp3Tng2OXFXMEh2UE5xNEJ2TkR3STdpdWNFZFB4RTVoNEh3bnpsUXRQNVZmMFNNNzBBOUJTVXNtUWpCQUlVZFpJaThnVWdV?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Zendaya Stuns in Vintage $35 Spider-Man T-Shirt for \u2018Brand New Day\u2019 Event in Paris - The Hollywood Reporter",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM2VoSGFyUUh1ZDIxRUtYeWFEQWNnOERXR1p1dU05MWNDb0J1SnRkLXVMdnpLRnJOTjBlVHpROU85b2x0WXlTa1JScldsSTRyYV95dlhWMnZhdW1pbDB0dkF0Z2UtU3pLVXJLa21xOTdyS2RJTEFnbEdUQS01M0p4anc1SERnRkdOVlBOdnB4Qld6LVhhdHV1Zg?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer and Movie Tickets Go Live - Marvel.com",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeXFwTXhVZEhCQVNTaHJESC1GbDZfcXZ1RjVGZ21fNWxJMVdDMVIzeVBKdjFlelVyLUJ5dmRJcFZvMWUwNU5ZelZIQ29vZ1JHVVhNMElXNHVCakZlYWljazNOUTBFQUVZSVJxVXl2NExFS1g0dWZueXpGOHpBeXdVM2xTYmt4eEFKdXdtSFNNYlZCTXJlX24zMkowYS14UQ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "Does The Batman 2 Director Matt Reeves' Cryptic BTS Photo Hint At The Sequel's Villains? - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBQVVN1enpWS0ZzblM3MkJ4UFYya00xZnpNSFMxenkyMTVQRU5qbnlRZnRhSjR4WW9KVldqd1VJLTlwcVh0cW9LR09sS0Vvdw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "Production begins on \u2018The Batman: Part II\u2019 in London, Matt Reeves shares photo from set - Telegraph India",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQLXAxNXBHWFlnWUxsOG1PNmJMbFdxUEt3djZJY2VBeEZST280TTFNTEtOUGIxTnZ6aE9VZDZRR2VjV3pWRTBRTFVNbmhfTS1aclhpYTUybWZIN0tGQnlGTG5PQ09CRWIzd0JRc2plN1Z2S0Q4aUY2UjBQakRFenIwUFh3eWx1b1IwV0pDWURGRE1xVzIzMWN1RXUwRzYzOGRlOE1hZ2d3emU5MkxzN2F1M3R4blFvQU5OTHRFS2U1UmxOVkp2WFd6TWtvRHE4M2xuczVVS1JYRdIB3AFBVV95cUxNZGtqU2JhNTJkSXUtblVTLS1CczFHUzV4RFNLeE9lYUt0WmVaVGZUWV9mTU5Ma21TckpUNnN4cHlJTVE1blJWc2ZTYkUyazRpSlF5bFZvMUxxX1JTSTNtaWUxTEV6TUtxVEJqcy15V1k2TzdGX3hrcTRzcGttdmVxdlNTWjZ6N2VmX3BqcnBsU3Vrbm1rLVNXU2dTakVGVGczSGFfWlpCNG8wbWlrWEVjVDd3WGtPeVg0RHB5QmdyVkgxOVFhYzhFUzh3T0xDWVZVOE5TT2pRQXpqc2RY?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Will Include 7 God-Tier Characters (Confirmed) - The Direct",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1Hc3FpSzBBLTFFOGJaN29UNVR2c1NJNWxteXhIdUgyTWN5U0MwcVY3bGlyYW45elFzOUUtOW1jb3dWSjUxTG52TlZWLVdfOWVkZTZ1U2tFY09WWEpOTlNUMDYtcjZVS2tDVDBNdnFsZ3RyelFSSnc?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Chris Evans Officially Reveals Captain America's Fate in 'Avengers: Doomsday' - Collider",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBLcEtTT2xGT3I1UEdoU25vOHc1UnJXQmZIY3Y1S2FqdnFPM01CS2pDQTlmb2k2WDZjUGotUEtidFlZckZXZWltb3o0M0xNcU40VFlWY0tyRFZRUnl3dEFsRng3YVpaUzVRVllJRGJqemE3cm5CSzlYTXh4QQ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Butrans",
-      "title": "FDA updates approval for Butrans (Buprenorphine) (NDA021306)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021306"
-    }
-  ],
-  "digest_last_sent": "2026-06-25",
+  "digest_buffer": [],
+  "digest_last_sent": "2026-06-26",
   "discord_control": {
     "last_id": "1519883605067698186"
   },
   "energy_learn_last_news": "2026-06-25",
-  "energy_learn_last_sent": "2026-06-25",
+  "energy_learn_last_sent": "2026-06-26",
   "energy_learn_seen": {
     "facts": [
       "baseload-vs-peaking",
       "why-copper-aluminium",
-      "most-plants-boil-water"
+      "most-plants-boil-water",
+      "how-wind-turbines-work"
     ],
     "history": [
       "calder-hall-1956",
@@ -439,6 +151,8 @@
     ]
   },
   "energy_seen_ids": [
+    "1eda6fe5095690a0",
+    "471440e720b0ec1b",
     "84fbcf662f4a02f1",
     "bfa4f254e3a65d45",
     "500b4e4403801f89",
@@ -583,426 +297,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "b808ee50665d12b8",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland Is Back Swinging in \u2018Spider-Man: Brand New Day\u2019 Trailer - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-06-21T22:04:30.618226+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONDJfR3ZyX01URVhVMTRTdUMwRWxFR0x0eDhJV2ZYSHR4VjRTbklrWWxwWVFEZkdfMXRuRnk1Ym5uMVpQa0FCcmpIU2tEMWZaZWt4TjNyNlhCZzdMcGQ3V290QXhJSGhTMDQ3eFJiVW1tdUhoRG1BQVhVc3RpZkcxSGJYSl9qUkgwelhsZWI0ZnpES2N4d0FzNHlETHhnMWJtX0R6ZnBIYzhwWWhw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "7cf74203163fb67b",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day's new trailer is here and still keeping its 'villain' a secret - Polygon.com",
-      "topic": "movies",
-      "ts": "2026-06-21T22:04:30.618880+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOcDA1aUlzM1ptc1E0NmFqWXp5WlJ6UGZFUWdHaVJYazh3QlQ4NW43Si1BZHdWMW9BWDlWZUJfV1lKc0w1Y2pWTjM4U2NYZU1qdUhzVUNJVUpzV29VQnc4SUUxbGpqTU5PMWNFTkRxU1VXVU9MZmRTLUZmV0VGMWV6dg?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "ba583f1c4fe1e016",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "DC Studios Reveals HD Look At The Batman Part 2's Official Logo - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-21T22:04:32.074104+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQcDJDc1RCejFqWE5QeFVsRVdSSFFwNmR0aS1ycGNpVEhRNWV0ekNKMDgtQ3U0dmVORmFuek5wcV9BeXRmZWEzeDRNaVJrMHNsbDRldF9NbVpoQlVZNDhJeXVrbk42YkpvamhUSDJlX0ZHN1U0N0VzTE04S1NFTGpmUw?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "88266b1348ef9da3",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II Official Logo Revealed; Jeffrey Wright Teases Jim Gordon Return With New BTS Photo - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-21T22:04:32.074962+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBFck9icFBIMk9uWjFQRldsZWEydk1vSHhBNnlPbk1VRm9xV1ViaUhuVzN1UVBsZnJSTEc0UEdyTGJBZG9pNlNpVzFqTlFHS3dQTl85cFBqbDNyUnpmUVFwVEhOeW9fbjA?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "314730ab11e06fb7",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Shares New Look at 'The Batman 2' as Sequel Begins Production - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-21T22:04:32.075492+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE41VnppUFBVWlgyY2VCVmdwd3JmcE5jQkY0R1JldHBZeXVoVTFBelZNWmYteGJsLUFrT0RhWnBaSHc3ZDRIOVpuWXVZTnFvMTRzdmZQRU9FWm1nZGdwc3lXWG11S25ORzg?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "0b6c5d64c5243f90",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman: Part 2: Matt Reeves shares first set photo as film officially begins shooting - The New Indian Express",
-      "topic": "movies",
-      "ts": "2026-06-21T22:04:32.076084+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxNd0FTQXZSZDBzMGdNZ0FPbU5DaTJZRnRZOTJqMDlmMUZfX1h4bjR1QXpZZEZtamVyd2lHU011cXIwVmN5UFhYMjJUV3BCdEkxNFlPby1hZGNPU2tIaU12T3NoaDRackNsbmEtMWJWaWV0VC1fQmZmeGJ3ZG1XUG5UX0otN0NGVEowUlEyQTNySUlGRXE3MFNFYnh3X3FkMmxZQ2JIbXBWSWpNcHpobU4yaWFiR1I5dUh2Z0E5ajNkNkFZOU1WYnM2ZmZCMDRUdnJCaVB4VWc2ckhnZEstNW1NaGJFNDJTSGlfNXJjc2RnZURMTm92T2FYVzVCcDZNYmx6Q19wUNIBkgJBVV95cUxNdVlaeEVZTE9GMXo4V2VIbERmbUlyYjFFTDdqcjlHNzdHQ1FCM3g2X0lWbVNTTENEdlNXWXlNcEtTZzNhUWwwZTFHWHdYOXRmZDRJTGJCcEFVTUkxMXk3akFyTHdWUFZlTVQtM2E4QjBDbzIyMUZ0Z3hhZmxsZzFndElWV3JuTU96THNhbWpmb2dvQmNDdDVleV9yR2RlY0g4eEo3SFE0cXNvcHU4VC1DWVJrcy1JTmw1dEN0elYxTThHQXpOVXJfeEhyVUhEREM5QnkzWnVOYXFJR19Md05JdVdWdHNIeEQ0NUd3UGNtc21EWUd2eENvRVByUmZaTnFOc0lGNlB6bUV6Ym9vekRCU0xB?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Super Smash Bros. Ultimate - The worst FT Sparg0-Waka-Bici-Alan Diiis - Astromer-nexus marvelous-rugal",
-      "id": "d86c035977645c5c",
-      "score": 68,
-      "severity": "high",
-      "source": "Sparg0",
-      "title": "Sparg0 is live on Twitch",
-      "topic": "twitch",
-      "ts": "2026-06-21T22:04:36.186696+00:00",
-      "url": "https://twitch.tv/Sparg0"
-    },
-    {
-      "action": "push",
-      "detail": "Night Shift - Lucy Dacus\n(because you like Phoebe Bridgers)",
-      "id": "4128b98c0dc31823",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-06-21T22:04:39.904045+00:00",
-      "url": "https://www.deezer.com/track/463177942"
-    },
-    {
-      "action": "push",
-      "detail": "Sip some water - your body will thank you.",
-      "id": "fc00af1f0638cffe",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-06-21T22:06:00.764653+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "As the sun dipped below the western horizon, painting the sky in fiery hues, the Egyptians believed that the world plunged into a perilous darkness. This was not merely the absence of light, but a cosmic battleground where the forces of chaos threatened to devour all creation. Central to this nightly drama was Ra, the mighty sun god, whose daily journey across the heavens was mirrored by an equally vital, albeit terrifying, voyage through the Duat, the underworld. His boat, the Mesektet, which had carried him across the daylight sky, now transformed into a vessel for the dead, bearing not just Ra but the souls of the departed, awaiting judgment or renewal, all dependent on the sun god's success in navigating the treacherous nether regions.\n\nThe journey through the twelve hours of the night was an odyssey fraught with peril and populated by a phantasmagoria of creatures, both benevolent and malevolent. Ra, often depicted as a ram-headed man or a beetle (Khepri, the form of the rising sun), was not alone in this perilous voyage. He was accompanied by an eclectic crew of gods and goddesses, each with a specific role in ensuring his safe passage. Among them were Sia, the personification of perception, who held the sacred scroll, and Hu, the god of authoritative utterance, who spoke the divine word. Most crucial, however, was Set, the god of chaos and storms, surprisingly, who protected Ra by battling various monstrous entities, a paradoxical alliance reflecting the complex nature of Egyptian theology. Even the deceased, whose coffins were often adorned with spells and maps of the Duat, were thought to assist Ra in their own way, their presence bolstering his power and the cosmic order.\n\nThe ultimate adversary, the embodiment of all that threatened creation, was Apep, the colossal serpent of chaos. Apep, whose very existence was an affront to Ma'at, the principle of cosmic order and justice, lay in wait for Ra's boat in the deepest parts of the Duat. This wasn't a static monster but a constantly regenerating force, capable of mesmerizing Ra, of swallowing the waters that bore his boat, and of attempting to devour the sun god himself. The nightly battle against Apep was not a simple triumph; it was a repeated struggle, a cosmic tug-of-war where the victory, though assured by the eventual dawn, was never easily won. Set, wielding his spear, would engage Apep in fierce combat, while other deities would bind the serpent with magical chains, or even stab it with knives, their collective efforts ensuring that Apep, though never truly destroyed, was temporarily subdued.\n\nWhy did this nightly drama matter so profoundly to the ancient Egyptians? Because Ra\u2019s successful traversal of the Duat was not merely about a god\u2019s personal journey; it was the very guarantee of life, renewal, and the continuation of time itself. If Ra failed, the world would be plunged into eternal darkness, chaos would reign supreme, and all existence would cease. His rebirth at dawn, emerging as Khepri, the scarab beetle, symbolized the eternal cycle of creation, resurrection, and the triumph of order over chaos. This belief imbued every sunset with both trepidation and anticipation, and every sunrise with immense relief and gratitude. It was a narrative that underscored the fragile balance of the cosmos, the ongoing struggle between light and darkness, and the profound human desire for enduring order in a world perpetually threatened by the unknown.",
-      "id": "5602a08da23f01fe",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Ra's nightly journey through the underworld",
-      "topic": "learn",
-      "ts": "2026-06-21T22:06:05.993329+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cThey're babes in the woods. I think I can help turn Alvy and Ed into businessmen.\u201d\n\u2014 Steve Jobs\n\n\"They're babes in the woods. I think I can help turn Alvy and Ed into businessmen.\" The year is 1986, and Steve Jobs, recently ousted from the company he co-founded, Apple, is embarking on a new venture. The company is Pixar, a small computer graphics division he purchased from Lucasfilm, and the \"babes in the woods\" are Alvy Ray Smith and Ed Catmull, two brilliant computer scientists with a passion for animation and a complete disinterest in the cutthroat world of corporate finance. Jobs, still reeling from his very public and painful departure from Apple, saw in Pixar not just a technological marvel, but a chance to prove his detractors wrong. He was, at this point, a man with something to prove, and his hunger for success was palpable. The world, too, was on the cusp of a digital revolution, though few could fully grasp its implications. The personal computer was still a novelty, and the idea of computer-generated imagery in film was largely confined to niche academic circles. Jobs, however, possessed an uncanny ability to see around corners, to anticipate the future with an almost mystical prescience.\n\nJobs's arrival at Pixar was a clash of cultures. Alvy and Ed, along with their small team of artists and engineers, were driven by an idealism rooted in artistic and scientific exploration. They dreamed of animating entire films with computers, of pushing the boundaries of what was visually possible, but the financial realities of running a cutting-edge tech company were far from their minds. Jobs, on the other hand, was a pragmatist, a visionary with a laser focus on market dominance and profitability. He saw the immense potential in their technology, the power to revolutionize an entire industry, but he also recognized their vulnerability. Without a strong business acumen, their groundbreaking work risked remaining a fascinating but ultimately unprofitable curiosity. He understood that innovation alone wasn't enough; it needed a commercial engine to truly thrive and reach the masses. His words, blunt and undeniably paternalistic, reflect this understanding: he recognized their genius but also their naivet\u00e9 in a world that was rapidly becoming more complex and competitive.\n\nThe resonance of Jobs's quote extends far beyond the specific circumstances of Pixar's early days. It speaks to the perennial tension between artistic vision and commercial viability, between the pure pursuit of innovation and the practical demands of the marketplace. For every brilliant inventor or artist, there is often a need for someone with the business savvy to translate their dreams into tangible, sustainable success. Jobs, for all his flaws, possessed that rare combination of vision and ruthless execution. He saw the raw potential in Alvy and Ed's work and, despite the immense financial challenges and personal struggles of Pixar's early years, he ultimately did help turn them into \"businessmen\" \u2013 or at least, helped create an environment where their artistic and technological brilliance could flourish and eventually dominate the global entertainment landscape.",
-      "id": "793bacf351f848c2",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Steve Jobs",
-      "topic": "wikiquote",
-      "ts": "2026-06-21T22:06:10.657410+00:00",
-      "url": ""
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "588d1d1487e6a2ea",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday | Cast Announce Shane Campbell (s9MIAoDMuk) - Fathom Journal",
-      "topic": "movies",
-      "ts": "2026-06-22T02:10:55.193050+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBfYlNHZUFQUTRPNmt1OUtfcXlRaXdQX05XTVBIamktNEhrYkJpbWVKQWR2R0FiSTF4aEYyd2pmTE1kTUpwVzNKRkNmVi15U2I2cUt4LS1zWmVrNmhDeFp6NVB3VDU?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "439304dbf7c0c196",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "A Big \u2018Avengers: Doomsday\u2019 Leak Reportedly Arrives, But Its Validity Is Debatable - Forbes",
-      "topic": "movies",
-      "ts": "2026-06-22T02:10:55.194678+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWWxfeWxRTE1FeXZHUjlGXzZkbkh5ME02YjROVHlEbk9pbXpua0Z5cHVMN1FHYmtGRHktdW9id3ZTN0QwZENDY2ZMUm13WklaYTdKM29jNEk4QVVkMnNlaFJBNF9CYzZ4R3BIQURmRE1ZRUcwbVItcF9aNFh5SE9OaXMxUUZTUlA5U3BMTi1XT3U2UnFUNS1zYVhXd2FzVlU4dWtoRjgyR0hBWnMtc09KaFhOeWtrZkJOeEJQSGt5OW5SY0d5T1Nz?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "4e9a90d01a0fc1b1",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "DC Studios reveals official The Batman 2 logo as Matt Reeves shares new look at filming - MSN",
-      "topic": "movies",
-      "ts": "2026-06-22T02:10:57.319069+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPbXQ0RG5UVkloM0EwYkFoLTVFc2Rkd0NwbXlnb1EyUDVFYzI3T3V3OFVubXFPZ0ZjQlRLMENfSkdadVZNQmRKMkgxcVJoVm9FZHRKWEphN19qVFRMQ3FWM3kwRzBCODFFMHhpNUJ3b2p2OUdLamJnQjB4ZXdYcGJNbExWUmNUMWltNDFybzFHQTkzcnQ0aHVPV1ZSQ3VFNjFCanhjTFVVSDEycUo4TFJNWTJwcTRGclVNeS1jcDkwbHFiZ1R3VndkRi1CVHlzYnRGbjlUWDNHWmpCY3FGV1FwMU8wNktBdm5uMkRZQWpmalhjVEw3?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "a937e33ef1339889",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II First Look: Matt Reeves Shares Sequel's First Shot - But Whose Body Is That? - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-22T02:10:57.320196+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9JTm5ZOFdkU01pS3RseDFzazRkcmVEMnlkbTFDY0hnU3cxME8xSEpOb25rc0N3MnZKbWRyaFd2X0VWNEtlcG9rNkRaTWxqUQ?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "4beb729d2484a5b1",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "THE BATMAN PART II: Official Logo Revealed - batman on film",
-      "topic": "movies",
-      "ts": "2026-06-22T02:10:57.321235+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQN0lQZE9iSXl0QkZJdFVQY3h1QlpBMHljTEtGbjlJaFAwWGpMVURoZG85Mm4wbDBwY2hSV253TzVYdWJFZ1BPVHRmUHA5c2Y2T0lueTNYMno0ODl3Ry1JdUVibTZSRGFUSHM2RjdvZ0tjS1ZXN2lIbHBGUThUckZHZNIBhgFBVV95cUxPVFh3eElWXzZJMS16QnRYSHprYU5iREV2ZUJud2xmRFBOako5ZGR0U2RQYzhWMnFlVHRPMC1OWWxUQkZDckFRUjJ3dTBDM0R5bWJBb241SnA1akh4UXVyeVhtd01TXzZkZFFlVUZITm1tYldXcUh1eDFSZ0Nqa1BpUG96MHRVZw?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "0cc040340aa03371",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman 2\u2019s HD Logo Revealed as Matt Reeves Begins Filming - AOL.com",
-      "topic": "movies",
-      "ts": "2026-06-22T02:10:57.322096+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1PazB0YWtNSE9ObnFWeG5EOW5QODE3SXdUOUZ3TC1tSGZ3c3FmOHVRaXB2UGJMYzVON0xvZjg2VEtNN3h6djQxbkxERDdyM1M3U2VLa1NTRkx0OHQ4Q3BFNmJJLUFLc3VwVU1ad1JfY0pnaWJoUnR3ck9BVWg5NVk?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "225aa5001ff2373c",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Just Revealed the Very First Shot of \u2018The Batman Part II\u2019 as Filming Officially Begins - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-22T02:10:57.322906+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBrZjNZaGUyYVBDdVExcUw3cjV0bWtJbWxQelluYThmS0VpQUpITXFfd0lGa2huNmgwUmFHelBwemxPSXBJYjlfcF9ZdHluZ0lweW9FLUk4Uml3b3UzY1dNRDZGOGFRX3M?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "bb8820f92b80b19d",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman 2: Sebastian Stan Confirms Harvey Dent Will Become Two-Face in Sequel - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-22T02:10:57.323718+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE0zc28xMk5CZVcwUkZxaGxmNHh2cXhkeWZVWVE1MUV4eXVnYktEQUxVOC1hLWVzbGdFaEVvQkZGZUVPaW5MQWJ1aGJWZ1ptYnF2NHc?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "ab2b7a1c2332dcdc",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-22T02:11:38.259620+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "Long March 7A | Unknown Payload launches in ~24h.",
-      "id": "f901d5db4b8da5b9",
-      "score": 62,
-      "severity": "moderate",
-      "source": "Launches",
-      "title": "Rocket launch",
-      "topic": "launches",
-      "ts": "2026-06-22T02:11:51.717888+00:00",
-      "url": "https://ll.thespacedevs.com/2.2.0/launch/f72c6ea1-dc44-4f0e-bb51-1c52eff9efe8/"
-    },
-    {
-      "action": "push",
-      "detail": "Before Aristotle, the world of thought, particularly in Greece, was a vibrant, often chaotic, landscape of ideas. Pre-Socratic philosophers grappled with the fundamental nature of reality, debating the prime substance of the cosmos \u2013 was it water, air, fire, or an indeterminate \"apeiron\"? Then came Socrates, who turned philosophy inwards, focusing on ethics and the examination of human virtue, famously using a method of persistent questioning to expose contradictions and ignorance. Plato, Socrates' student, built upon this, proposing a world of perfect Forms beyond our sensory perception, where true knowledge resided. While these thinkers certainly employed reasoning, their approaches were often intuitive, rhetorical, or grounded in metaphysical assumptions. There was no systematic framework for how one ought to think, no codified rules to distinguish a sound argument from a fallacious one. The art of persuasion, particularly in the Athenian assembly or courts, often relied more on emotional appeal and rhetorical flourish than on rigorous logical demonstration.\n\nIt was into this intellectual ferment that Aristotle, a student of Plato for two decades, stepped. While deeply respectful of his teacher, Aristotle was also a pragmatist, a keen observer of the natural world, and a meticulous classifier. He saw the need for a precise tool, a method for distinguishing valid inferences from invalid ones, a way to navigate the complexities of argument and inquiry with greater clarity. He didn't invent reasoning, of course; humans had been reasoning, however imperfectly, since they began to speak. But Aristotle was the first to systematically study and codify the principles of valid inference. His work, later compiled and known as the \"Organon\" \u2013 meaning \"instrument\" or \"tool\" \u2013 laid the bedrock for what we now call formal logic. At its heart was the syllogism, a form of deductive reasoning where a conclusion is drawn from two given or assumed propositions. The classic example, \"All men are mortal; Socrates is a man; therefore, Socrates is mortal,\" isn't just a simple statement, but a profound illustration of a structure of argument where the truth of the premises guarantees the truth of the conclusion.\n\nAristotle meticulously categorized different types of propositions, analyzed their relationships, and identified valid patterns of inference, particularly focusing on categorical syllogisms. He explored concepts like terms, premises, conclusions, and the various figures and moods of syllogisms. He also delved into fallacies, identifying common errors in reasoning that could lead to mistaken conclusions, thereby providing a defense against sophistry and illogical arguments. This was revolutionary. It provided a universal framework, independent of the specific content of an argument, to assess its structural validity. It offered a method for clear thinking, a discipline for the mind, and a pathway to more reliable knowledge. This wasn't merely an academic exercise; it had profound implications for every field of inquiry, from natural philosophy to ethics and politics. By providing a common language and a shared set of rules for argument, Aristotle\u2019s logic became the foundational tool for systematic inquiry and intellectual discourse for centuries to come.\n\nThe impact of Aristotle's logical work cannot be overstated. For over two millennia, his Organon was the primary, and often the sole, textbook on logic in the Western world.",
-      "id": "987815df9b6d9d55",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Aristotle and the foundations of logic",
-      "topic": "learn",
-      "ts": "2026-06-22T02:11:59.335562+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cOne of the objects of a newspaper is to understand popular feeling and to give expression to it; another is to arouse among the people certain desirable sentiments; and the third is fearlessly to expose popular defects.\u201d\n\u2014 Mahatma Gandhi\n\nMohandas Karamchand Gandhi, a figure of almost mythic stature in the annals of the 20th century, was far more than a simple political leader; he was a moral compass, a philosopher of action, and an unlikely revolutionary who dared to challenge the mightiest empire of his age with the weapon of non-violence. Born in 1869 in Porbandar, Gujarat, into a relatively affluent Hindu Modh Bania family, Gandhi\u2019s early life hardly presaged the colossal impact he would later have. His journey began with an earnest, if somewhat unremarkable, pursuit of a legal education in London, followed by a pivotal stint in South Africa. It was there, confronted with the brutal realities of racial discrimination against Indian immigrants, that the seeds of his transformative philosophy of Satyagraha, or truth-force, were sown. This period, from 1893 to 1915, was his crucible, forging a shy, unassuming barrister into a determined activist who first experimented with civil disobedience, hunger strikes, and community organizing. When he returned to India, the country was simmering under British colonial rule, a vast and diverse land yearning for self-determination, yet often fragmented by internal divisions. The First World War had just concluded, leaving behind a world reshaped, and in India, a heightened sense of national identity coupled with growing disillusionment with broken British promises of greater autonomy.\n\nIt was against this backdrop of nascent nationalism and simmering discontent that Gandhi embarked on his mission to awaken India to its own strength. He understood the profound power of communication, not merely as a tool for propaganda, but as a vehicle for education, introspection, and collective action. His involvement with newspapers, particularly as editor of 'Young India' and 'Harijan,' was central to his strategy. The quote regarding the objects of a newspaper \u2013 to understand and express popular feeling, to cultivate desirable sentiments, and to fearlessly expose popular defects \u2013 likely emerged from this period of intense engagement with public opinion and the intricate dance of leadership. He wasn't just dictating; he was listening, processing, and then articulating a path forward. The 'popular feeling' he sought to understand was the deep-seated yearning for freedom, the frustrations of economic exploitation, and the indignities of foreign rule. The 'desirable sentiments' he aimed to arouse were those of unity across religious and caste lines, courage in the face of oppression, and an unwavering commitment to non-violent resistance. And the 'popular defects' he fearlessly exposed were not just those of the British Raj, but also the internal divisions, the social injustices, the untouchability that plagued Indian society itself. He believed that true liberation required not only freedom from external oppressors but also from internal flaws.\n\nThe enduring resonance of Gandhi's words on the role of a newspaper, and by extension, all forms of public communication, is strikingly relevant in our contemporary world.",
-      "id": "b39183f1aa461667",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Mahatma Gandhi",
-      "topic": "wikiquote",
-      "ts": "2026-06-22T02:12:05.560626+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "17e12f7fa720ce4e",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel Studios officially responds to those Avengers: Doomsday leaks - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-22T07:44:32.918340+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOS0YxTkVmTk1FN3ZXZ0tBVkJWTGRVdndPaUowbEVRV2JjVDQ2UkJPdWsxU05sdjFqc2JLMGVKSUx5REtWb2l5WkpDVk9JLXduTVgtdUcwSGZMcFRqbEVqOV94Z0Rldmx1aGdWSzVaRGVsZkpvU21EVS1Lck9PTm4xYjd6X05VZw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "6faeb0b6e91bfa5f",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel Officially Confirms New Avengers Lineup Before Avengers: Doomsday - Comic Book Resources",
-      "topic": "movies",
-      "ts": "2026-06-22T07:44:32.919090+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPV3ZIZ2ltcDUyTzM0d2xaUVIwLXJHN2tkdnJabGlNd2QzQTMxVnc4VkdhWG85ZHR5VDdORHNsMXJiZXRsMGdNQTNLY2FHRlZXTWFBRjBtUnB5Y2tMeU1Jc3BjNC1EM01GZFlqVHE3N3VOQWFHM01mWnZpYTRxUFl4RFN3MEFGZw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "e9a67416e3b67193",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Toy Story 5' Boffo; 'Dungeon Crawler Carl' TV Series Greenlit; Netflix Adds 'Sesame Street' Movie Rights; 'Spider-Man: Brand New Day,' 'Shrek 5' and 'Gatto' Trailers - ICv2",
-      "topic": "movies",
-      "ts": "2026-06-22T07:44:33.526165+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgJBVV95cUxNUy03akFIYmFuVm9lY1NlWDlWRkJMMTR5d0l4YmhEa1pfOTAyaGdKLVh1dDBUeFNGdVQzSjBmMkZzVFZNdXZjcG55dG44RnpkMGJmNkNUMldwZHp1dlI1ZGhlVFh1R2FZbjZvUFZub3BmU0VVTk1ubWJEd2dvUmNEd0VMRXktX1l1Y0Z3SWVTMVdVS3hlZTFJWlV1cG5oRDR4cTRlc2UyWk1DcXVCWTdHSkw1S0cyaGt4MGdIUkx4ZWpUMEwzUWY0cGc5NzB6ejVLVXVkbEtBR21pVUlUSjlrLWhtQmRXeUNwemJ0bEJJYTdUZWFkRjFSYW1nd194djkxdnZRR3J5TDlaY1dGQmdIX2Q3d0lhUQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "965607c172bc51d5",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Previously unannounced villain officially confirmed to appear in Spider-Man: Brand New Day - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-22T07:44:33.526622+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPMVZ2eUxCZ29HSUNkOXhHd3JnZ1VLNUVZNzNMNTVKUWdKYkFuZG5jR09LMVdqTWRaTHJ3V1dvdGx3V01fSzJrY1lxTTFDT3VCSVppLWJ4ZVI4bE5qOFgyTE1BYWhRWmVFY2Y0U2UwVHJiaHNIWXJpa01XdWZUQkxhcQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "271d1544a9cebb5c",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Does \u2018Spider-Man: Brand New Day\u2019s\u2019 Newly Revealed Character Confirm Sadie Sink Is Playing Jean Grey? - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-22T07:44:33.527189+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9fQjg0dUFZcXV2U0JNOXJ5bXJjSlpfOEpYbXhpak0tbi0yQ3pOYVRsZzUxQXlkWWh3M2FNX2E5dkVRSEtMR3dpS2RuM1hnZHUwbGtwWmtWbGlxTzl1VDFtVGpQZ0JjUDg?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "4272e6f4908d7203",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' trailer #2 breakdown live \u2014 everything we spotted in the new Marvel movie's latest teaser starring Tom Holland - TechRadar",
-      "topic": "movies",
-      "ts": "2026-06-22T07:44:33.527546+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMFNXMjBZajhDeG5vZXo4VFdYVzBMUkNNaTRVNFI1U2JhMjZPenZaTzNjY3ItUjNVVlpma0t3d1hHRVdub0dpMFVJbzVGYWg0TFg4WDVQNnU2VjItQzlkczhrOHVHN3FxNjF4V3BDSUlVYmY0eG9hOUdKY0htWERqQVo0a1Z1NmxRVE5fTQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "a03e523e89e442f9",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman - Part II reportedly just lost its 'perfect' casting (and DC fans are upset) - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-22T07:44:35.430621+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNby1qby1Yb3JRZXMxTE9taVBta3VKa1JBV3c4OVJBQ1J6WGNrbHVTWHMtNTl5dkhvbDNiZEd0aEZ6djJmNURPMlh3Y25SY3NOaUtvQTRBc2NHZ2ZoS3owUXpWcFhmUGctVEc3SHptNHBPSW03U2tNaHF3MTFzbnBZV3JxSkJKX3Y1VWxmYzZn?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "ca2c3a3d17c33f02",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "THE BATMAN \u2013 PART II Shares Official Logo - Yahoo",
-      "topic": "movies",
-      "ts": "2026-06-22T07:44:35.867361+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNb3pTRXBTVllJNnZfdVA1RkxfNUR3RXlxc1J6bjRmTFB6dE4yTy1UQ19aRDQ3aC1meWcxclFEOVVsMllPbk9ERnA4emFFUlJTOUkwd2VsZ3ZyblVaX2dqbEU0Vi0tdmhlUGlPQWxDY0FQQzU3QVRRMzdiZ0JhZ2RuakVzRWJLb2FNMV83aDExb0tucWotR3l1NEVRbHBSQQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "698d5396b3b508c6",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman Part II\u2019 Has an Official Logo and Gotham Is Open for Business Again - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-22T07:44:35.867987+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE56QUx1TkpsV3NSMDkySV9XS1A4VTlZOEFFTFVsWjlET29MeUVXUUhUbzQ5UHd1MnRIb2FFVTJmYnY3Z2Zmak14S0JYYi1VLUhhX09zbW5YNnlhTlVpZUdDM0ljV18?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "f54acb42ae6fbeec",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Beloved DC star announces reduced role in The Batman - Part II - Yahoo",
-      "topic": "movies",
-      "ts": "2026-06-22T07:44:35.868594+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQN1dvM3JEQjA4ejB2VUxCd2E2bnI0SmNJWGNJcWVGUUN6UW1pQWxpblpsWkxIaFNhQ3IxUUE3VDZZOU9VdFpFTE5ndTZpRkRvazVkNUt4MjkzSWFqNHZIMTY4cHZRZ3BjMThhbDdBMHpOQmNDVkR3Rjg4bWlYYjY2c1ZvLXZ4SExVR3BnS0dIOC1VVEZJRXlEQ1QwcW9Ub2syNlE?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "c066ae711e37a7e1",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-22T07:45:41.694018+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "For centuries, the very notion of atoms remained a philosophical curiosity, a mental construct debated by ancient Greeks and renaissance thinkers. It was a theoretical elegance, a comforting explanation for the vastness of the material world that offered discrete, fundamental building blocks. But proof, empirical, undeniable evidence of these minuscule, invisible entities, was stubbornly elusive. How could one observe something designed, by its very nature, to be beyond the reach of the naked eye, or even the most powerful early microscopes? The scientific world, in its burgeoning empiricism, demanded more than just elegant theories; it demanded demonstrable reality. This intellectual chasm between theory and observation set the stage for one of science's most compelling human dramas, a tale of meticulous observation, an accidental discovery, and a flash of profound insight that would irrevocably alter our understanding of the universe.\n\nThe story truly begins in 1827 with Robert Brown, a Scottish botanist of considerable repute. He was engaged in what might seem, to modern eyes, a rather mundane task: examining pollen grains suspended in water under his microscope. Brown was a meticulous observer, and as he peered through the lens, he noticed something peculiar. The pollen grains, far from remaining still, were engaged in a ceaseless, jiggling dance, a chaotic, agitated movement that defied explanation. At first, he suspected a biological origin, perhaps a form of \"life\" inherent in the pollen itself. To test this, he repeated the experiment with inanimate dust particles, and to his surprise, they too exhibited the same restless motion. This eliminated any biological explanation. The movement was inherent to the tiny particles suspended in the fluid, but its cause remained a baffling enigma. Brown diligently documented his observations, recognizing the phenomenon's significance, but he ultimately confessed his inability to explain its underlying mechanism. For decades, \"Brownian motion\" remained a fascinating but unresolved scientific puzzle, a persistent hum in the background of scientific inquiry.\n\nThe stage was now set for the theoretical genius of Albert Einstein, who, in 1905, in his \"annus mirabilis\" \u2013 his miracle year \u2013 would finally provide the definitive explanation for Brown's perplexing observations. Einstein, at the time a relatively unknown patent clerk, was not directly working on Brownian motion. Instead, he was grappling with the fundamental nature of matter and the reality of atoms, an idea still met with skepticism in some scientific circles. He theorized that if water, or any fluid, was not a continuous medium but rather composed of countless tiny, invisible atoms and molecules in constant, random motion, then these molecules would incessantly collide with the larger suspended particles. Each collision, though individually imperceptible, would impart a tiny impulse, and the cumulative effect of these countless, random impacts from all sides would be to buffet the larger particle, causing it to jiggle and dance in precisely the way Brown had observed. Einstein's brilliance lay in translating this intuitive idea into a precise mathematical model, predicting how the extent of the particle's movement would depend on factors like temperature and the viscosity of the fluid.\n\nEinstein's 1905 paper on Brownian motion was not just an elegant explanation for a long-standing puzzle; it was a profound declaration.",
-      "id": "dacdc941dcce0e4a",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Brownian motion and the reality of atoms",
-      "topic": "learn",
-      "ts": "2026-06-22T07:46:05.034906+00:00",
-      "url": ""
-    },
     {
       "action": "push",
       "detail": "\u201cLet your occupations be few,\" says the sage, \"if you would lead a tranquil life.\u201d\n\u2014 Marcus Aurelius\n\nThe voice echoes from a distant, golden age, a world both profoundly alien and strangely familiar. Marcus Aurelius, the philosopher-emperor, sat at the apex of the Roman Empire, a domain stretching from the sands of Syria to the misty reaches of Britannia. He was a man burdened by an empire, by the relentless demands of governance, by a never-ending series of wars along the frontiers, and by a devastating plague that swept across his lands, claiming millions. Yet, amidst this maelstrom of responsibility and suffering, he sought to cultivate an inner tranquility, a stillness of mind that would allow him to navigate the chaos with wisdom and grace. The quote, \"Let your occupations be few,\" speaks not of idleness, but of a deliberate, mindful curation of one's activities, a recognition that scattering one's energy too widely inevitably diminishes both the quality of the work and the peace of the soul.\n\nHe was no cloistered monk, detached from the world's demands. Marcus was a general, often campaigning on the frozen Danube frontier, facing down Germanic tribes. He was a judge, sifting through countless legal disputes. He was a father, mourning the loss of several children, and a husband, grappling with the complexities of imperial marriage. His personal writings, later compiled as \"Meditations,\" were never intended for publication but were instead a private dialogue, a spiritual exercise to fortify his stoic resolve. It was within this context of immense external pressure and internal struggle that he penned these reflections, urging himself \u2013 and implicitly, us \u2013 to simplify, to focus on what truly matters, to avoid the tyranny of the urgent and the trivial. He understood that each additional task, each new commitment, chipped away at his mental bandwidth, making it harder to maintain his philosophical composure and exercise sound judgment.\n\nTwo millennia later, Marcus Aurelius's counsel resonates with an almost startling contemporary relevance. We, too, live in a world of relentless demands, often feeling overwhelmed by an endless stream of notifications, emails, and societal expectations. The modern mantra of \"busyness\" often masks a deeper anxiety, a fear of missing out, or a misguided belief that our worth is measured by the sheer volume of our activities. Marcus reminds us that true strength lies not in doing everything, but in doing the right things, and doing them well. His wisdom invites us to pause, to reflect on our own lives, and to consider whether our myriad \"occupations\" genuinely serve our deepest values and contribute to a tranquil, meaningful existence. In an age of information overload and constant distraction, the stoic emperor's plea for fewer, more deliberate engagements offers a powerful antidote, a path back to clarity, focus, and an enduring inner peace.",
@@ -6582,6 +5876,426 @@
       "topic": "wikiquote",
       "ts": "2026-06-26T09:55:39.671139+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "b11bd236b1f5fbeb",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday Official Synopsis Finally Confirms What We All Expected About X-Men, Fantastic Four, and Avengers - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-26T12:21:04.517982+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTUFnaTBGRFYxQnB0TjN2bXJjWGd1Y1FYS2RacU43Z1Z2SHoxbW5FSnh6MFhSYU9Qem9sejVETGJaTnB0VGNFU3pDYy1PRDk3TjVtenZFcjFaOVN2YU5qOS02b0Y5NkM0bjA4UUNxQm9xNUtJVmpmYUdxLUo5NW5YaGN3NEpuTDFWbzV6dmtNVQ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "bd980fa377305fee",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "New Avengers: Doomsday leaks unveil first look at Doctor Doom - Bam Smack Pow",
+      "topic": "movies",
+      "ts": "2026-06-26T12:21:04.518478+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaTJaaXFZQURBU2p6RzFFR0ZENXRQcWh4ZlMxQktkT0l4aVpJQ2pESGtfSjFfVF9TU21oUzRtY2JNLVdROXBfQ1FpeWVzZXEzQlJzQzFHbTRUcktTSDRrcG5fUnJ5emozUWx3WExmNERlVFdNZ3ZaWnVBdVd4bUFsbjEwem4wSVUyaDA5ZjQ1QjNKZzlHN2c?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "98269c4eeb5e2ef8",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Shop Marvel Must Haves: Celebrate 'Spider-Man: Brand New Day\u2019 with Official Spidey Merch - Marvel.com",
+      "topic": "movies",
+      "ts": "2026-06-26T12:21:05.064421+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcGdrOUU1R0trV2NDQnhZdC1vNUZTT1RYV0dndVNjbGNmLUx4RkVpQlJXS2pxSHRURGZGVFRtRHg4NExhRXhhX2ZGVGJyRkVwdi1fMXVuTnV5Q2N4S3dNdVFQTDBPVDYtRDZWQVZ2WUtFYURSLWJqMjlCcGJ2OUs2NzNvcklLTDgwa1g3Sg?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "e06156da982e2446",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Tom Holland confirms the Spider-Man: Brand New Day villain is still a secret and is \"unlike anything we've seen\" before in the MCU - GamesRadar+",
+      "topic": "movies",
+      "ts": "2026-06-26T12:21:05.538354+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOaGx4cHBpbnA3OFdQbDhSdV9RMlhyd0ZLUzJnTjhUUU9ubTR5STVnVHlPZEtfTzA2MEJzOXZFT3FmNHJuRzFsLUtidXotblJ1YndNYURvMnpMWU5IRFIwVUQzNkFKQ3JfT0lURjhhWmRFWmpSNWZWbjRBZm5XbkJVanFOZTg2TnB1M0hKRXcwQnRNN0JZZksydVRDYnpIU0NYMlY2UzJfdW44TWNWd2VuM3N4WGtkaGlUekpDS3hBQnpfNEF6VGE2RV91Z0JlVmxnQ0NzSzFfZzVoZnRtTWlvTUdkZEl6SU9laVNZR1drZDZLMkFuVW5fSXhMUzVzUVRFODBEdG54ajNZR20wNnRn?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "c192e9f7b48612e5",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Matt Reeves Confirms 'The Batman: Part II' Script Complete; Robert Pattinson's Reaction Revealed - \u73a9\u5177\u4eba TOY PEOPLE",
+      "topic": "movies",
+      "ts": "2026-06-26T12:21:07.145265+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1td3R6Sk0wUGpvbm1ZRllKRlJRZGhPUEJNaklYZkl4QXA0M0MzRkluOWhWTGZ6NVY5SVBjMTBYOVVQaFVXOHpuWEo5bC1QN003?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "2c3d5cb837426e73",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Production underway on Warner Bros\u2019 \u2018The Batman Part II\u2019 in UK - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-26T12:21:07.145763+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBYRkJzaC1vVTI2eEtGT2hpZFNKVjlxVThUc1otaG0ybkpkbFp6eldoZE9VQldVUlRvSl9XMTNVRVNPMkdNMzE3TXUyZ3V4UQ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "edf73ac9fc5c24bd",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "DC Studios Reveals Official The Batman 2 Logo As Matt Reeves Shares New Look At Filming - ScreenRant",
+      "topic": "movies",
+      "ts": "2026-06-26T12:21:07.146167+00:00",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBEUDRfRHJ5VGhJT2FxN05jMHRZRmhFNnI2N0NYZkVVOWNLWm1pZnhPcmtaamZyWVZSQUhlaUI2Z2tBd3ltcEJ4RktlZ3dGU2IxeWhlTUU3SUlIaW5lNUxUZ2Nsb1RpbmFTeHJyZ2w2RQ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "Baby - Quality Control\n(because you like Quavo)",
+      "id": "8a604f8b08f2c89f",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-26T12:21:12.127936+00:00",
+      "url": "https://www.deezer.com/track/713653452"
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-06-25",
+      "id": "e5eccd7ed30140c2",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Blue Jays 5 \u2013 Rangers 6 (L)",
+      "topic": "baseball",
+      "ts": "2026-06-26T12:21:13.943151+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-06-25",
+      "id": "378e1587bbee7bf1",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Yankees 3 \u2013 Red Sox 6 (L)",
+      "topic": "baseball",
+      "ts": "2026-06-26T12:21:14.017235+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 1,295.00 (was DOP 1,595.00, -19%)",
+      "id": "01257ecf01dc16d3",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Plancha Black & Decker IRBD300",
+      "topic": "groceries",
+      "ts": "2026-06-26T12:22:09.526368+00:00",
+      "url": "https://www.sirena.do/b-d-plancha-irbd300-1990551/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 1,214.00 (was DOP 1,349.00, -10%)",
+      "id": "15cb5b6e3f0eb407",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Ribeye Certified Angus Beef, Lb (Peso Aprox. 1.5 Libra)",
+      "topic": "groceries",
+      "ts": "2026-06-26T12:22:09.527251+00:00",
+      "url": "https://supermercadosnacional.com/ribeye-certified-angus-beef-lb-peso-aprox-1-5-libra-2089962"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 799.95 (was DOP 999.95, -20%)",
+      "id": "56f56e9e5a864e2d",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Costillas De Cerdo En Salsa Bbq Food Club 32 Onz",
+      "topic": "groceries",
+      "ts": "2026-06-26T12:22:09.527828+00:00",
+      "url": "https://supermercadosnacional.com/costillas-de-cerdo-en-salsa-bbq-food-club-32-onz-2116851"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 549.95 (was DOP 649.95, -15%)",
+      "id": "21d6409b08a90eda",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Jam\u00f3n De Cerdo Boar's Head Maple Glazed Honey Coat, Lb",
+      "topic": "groceries",
+      "ts": "2026-06-26T12:22:09.528366+00:00",
+      "url": "https://supermercadosnacional.com/jamon-de-cerdo-boar-s-head-maple-glazed-honey-coat-lb-2195188"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 244.95 (was DOP 278.95, -12%)",
+      "id": "fd11816ae08411fb",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Tostitos Restaurant Style Familiar 283.5 Gr",
+      "topic": "groceries",
+      "ts": "2026-06-26T12:22:09.528869+00:00",
+      "url": "https://supermercadosnacional.com/tostitos-restaurant-style-familiar-283-5-gr-2009494"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 1,484.95 (was DOP 1,749.95, -15%)",
+      "id": "0580593093517e82",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Vodka Tito's Handmade 75 Cl",
+      "topic": "groceries",
+      "ts": "2026-06-26T12:22:09.529403+00:00",
+      "url": "https://supermercadosnacional.com/vodka-tito-s-handmade-75-cl-2156261"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 79.95 (was DOP 91.95, -13%)",
+      "id": "8fb0eb34a9b19094",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Refresco Coca Cola Sin Azucar 2 Lt",
+      "topic": "groceries",
+      "ts": "2026-06-26T12:22:09.529897+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/refresco-coca-cola-sin-azucar-2-lt-2096182"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 289.95 (was DOP 339.95, -15%)",
+      "id": "cb386083cf8433f5",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Salami Genoa L\u00edder 200 Gr.",
+      "topic": "groceries",
+      "ts": "2026-06-26T12:22:09.530431+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/salami-genoa-lider-200-gr-2236222"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 264.95 (was DOP 379.95, -30%)",
+      "id": "bd08980071c6c26d",
+      "score": 64,
+      "severity": "high",
+      "source": "Nacional",
+      "title": "Nacional deal: Prosciutto L\u00edder 160 Gr.",
+      "topic": "groceries",
+      "ts": "2026-06-26T12:22:09.530924+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/prosciutto-lider-160-gr-2236221"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 219.95 (was DOP 259.95, -15%)",
+      "id": "ff703d22b8076d8e",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Bebida Energizante Para Revitalizar Bloom Straw Watermelon 12oz.",
+      "topic": "groceries",
+      "ts": "2026-06-26T12:22:09.712791+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/bebida-energizante-para-revitalizar-bloom-straw-watermelon-12oz-2237750"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 219.95 (was DOP 259.95, -15%)",
+      "id": "625848c7347bc73b",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Bebida Energizante Para Revitalizar Bloom Raspberry Lemon 12oz.",
+      "topic": "groceries",
+      "ts": "2026-06-26T12:22:09.713508+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/bebida-energizante-para-revitalizar-bloom-raspberry-lemon-12oz-2237749"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 69.95 (was DOP 79.95, -13%)",
+      "id": "647ea283a32909a8",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Bebida Para Hidrataci\u00f3n Gatorlit Fresa Kiwi 591 ml.",
+      "topic": "groceries",
+      "ts": "2026-06-26T12:22:09.714050+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/bebida-para-hidratacion-gatorlit-fresa-kiwi-591-ml-2239189"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 69.95 (was DOP 79.95, -13%)",
+      "id": "c711a667f6deb01a",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Bebida Para Hidrataci\u00f3n Gatorlit Sabor Uva 591 ml.",
+      "topic": "groceries",
+      "ts": "2026-06-26T12:22:09.714590+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/bebida-para-hidratacion-gatorlit-sabor-uva-591-ml-2239188"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 69.95 (was DOP 79.95, -13%)",
+      "id": "1b730500f1015666",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Bebida Para Hidrataci\u00f3n Gatorlit Naranja 591 ml.",
+      "topic": "groceries",
+      "ts": "2026-06-26T12:22:09.715116+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/bebida-para-hidratacion-gatorlit-naranja-591-ml-2239187"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 69.95 (was DOP 79.95, -13%)",
+      "id": "faf4cf7ecee0d360",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Bebida Para Hidrataci\u00f3n Gatorlit Sabor Mora 591 ml.",
+      "topic": "groceries",
+      "ts": "2026-06-26T12:22:09.715615+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/bebida-para-hidratacion-gatorlit-sabor-mora-591-ml-2239186"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 69.95 (was DOP 79.95, -13%)",
+      "id": "b9447c1165a6a568",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Bebida Para Hidrataci\u00f3n Gatorlit Sabor Coco 591 ml.",
+      "topic": "groceries",
+      "ts": "2026-06-26T12:22:09.716134+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/bebida-para-hidratacion-gatorlit-sabor-coco-591-ml-2239185"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "4e7f7bd29d2994fd",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-06-26T12:22:21.740341+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Time for a glass of water. Stay hydrated!",
+      "id": "539d65cab5414f40",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-26T12:22:38.695231+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Choosing stairs over elevators whenever possible helps accumulate short bursts of activity throughout your day. (Source: CDC)",
+      "id": "04194f5d8eae801a",
+      "score": 60,
+      "severity": "low",
+      "source": "Health",
+      "title": "Health tip",
+      "topic": "health_tip",
+      "ts": "2026-06-26T12:22:39.494712+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "On the morning of July 4th, 1054, a new star appeared in the eastern sky, burning with a brilliance that outshone Venus and was visible even in broad daylight for weeks. To the astronomers and astrologers of the Song Dynasty in China, this was an event of immense significance, meticulously recorded in official histories. They noted its precise position in the constellation Taurus, its dazzling intensity, and its gradual fading over the course of nearly two years. Their observations, detailed and consistent, speak not only to their sophisticated understanding of celestial mechanics but also to a culture that placed profound importance on cosmic events as reflections of earthly power and future destiny. Yet, the story of this celestial firestorm is far broader than just the imperial courts of ancient China.\n\nAcross the globe, in the canyons and mesas of the American Southwest, the Ancestral Puebloans also witnessed this cosmic spectacle. While their records took the form of petroglyphs and pictographs etched into rock faces, rather than written treatises, modern astronomers have compellingly linked certain rock art to the supernova. Images depicting a crescent moon, a handprint, and a bright star, sometimes positioned near the horizon, strongly suggest a contemporary observation of the same event. These visual records, often found at astronomical observation sites, reveal a shared human impulse to document and understand the heavens, even across vastly different cultures and belief systems. For these early sky-watchers, the sudden appearance of such a luminous object in the familiar night sky must have been a profoundly awe-inspiring, perhaps even terrifying, experience.\n\nWhat these ancient observers saw was not a new star, but the cataclysmic death of a massive one: a supernova. The progenitor star, perhaps eight to ten times the mass of our Sun, had exhausted its nuclear fuel, collapsing under its own immense gravity before rebounding in an explosion of unimaginable power. For a brief period, the dying star shone brighter than an entire galaxy, radiating energy equivalent to billions of suns. The light that reached Earth in 1054 had traveled for thousands of years across the vast emptiness of space, a cosmic echo of an event that occurred long before human civilization began to record history. The supernova of 1054 wasn't just a fleeting bright spot; it was the birth of one of the most studied and iconic objects in modern astronomy: the Crab Nebula.\n\nToday, nearly a millennium later, the ghostly remnants of that ancient explosion still glow across the electromagnetic spectrum. The Crab Nebula, a sprawling, intricate cloud of gas and dust, is an expanding testament to the star's demise. At its heart lies a rapidly spinning neutron star, the super-dense core of the former giant, rotating thirty times a second and emitting powerful beams of radiation across space \u2013 a cosmic lighthouse born from a star's death throes. The nebula itself is a dynamic laboratory for astrophysics, allowing scientists to study the processes of stellar evolution, the formation of heavy elements, and the fundamental forces that shape our universe. From the meticulous records of imperial astronomers to the enigmatic etchings on ancient cliffs, the supernova of 1054 reminds us of humanity's enduring fascination with the cosmos and our ever-deepening understanding of the violent, beautiful dance of creation and destruction in the universe.",
+      "id": "db4509178886078a",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The supernova of 1054 and the Crab Nebula",
+      "topic": "learn",
+      "ts": "2026-06-26T12:22:44.017488+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "On this day\n2013: The U.S. Supreme Court granted federal recognition to same-sex marriage when it overturned the Defense of Marriage Act.\n\nFeatured: Donkey Kong\nDonkey Kong is a video game series and media franchise created by the Japanese game designer Shigeru Miyamoto for Nintendo. It follows the adventures of Donkey Kong, a large, powerful gorilla, and other members of the Kong family of simians. Donkey Kong games include the...\n\nLife skill\nTo find the best value, compare unit prices (price per ounce or liter) rather than the overall sticker prices of products. (Source: FTC)",
+      "id": "23fae859a47df635",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Daily learning",
+      "topic": "learn",
+      "ts": "2026-06-26T12:22:44.976263+00:00",
+      "url": "https://en.wikipedia.org/wiki/Donkey_Kong"
+    },
+    {
+      "action": "push",
+      "detail": "\u201c[...] engine is the material expression of any indefinite function of any degree of generality and complexity.\u201d\n\u2014 Ada Lovelace\n\nThe year is 1843, and the air in London is thick with the promise of a new industrial age, a time when steam engines are not just pulling trains, but pulling humanity into an unprecedented future. It's against this backdrop of burgeoning mechanization and intellectual ferment that Ada Lovelace, daughter of the tempestuous Lord Byron and the mathematically rigorous Annabella Milbanke, pens her groundbreaking Notes on Charles Babbage's Analytical Engine. She\u2019s in her late twenties, brilliant, and possessed of a rare intuitive grasp of a machine that, even in concept, is decades, if not a century, ahead of its time. Babbage, the cantankerous inventor, saw his engine as a prodigious calculator, a grinder of numbers. But Lovelace, with her poetic sensibility inherited from her father and her mother\u2019s precise logic, saw something far more profound. She saw the engine as a loom weaving algebraic patterns, and in doing so, articulated a vision that would define the very essence of computing itself.\n\nIt was within these extensive annotations to Luigi Menabrea's article on Babbage's machine that Lovelace's extraordinary insight truly bloomed. She wasn't just translating; she was expanding, critiquing, and, crucially, envisioning. Her now famous \"Note G,\" which details a method for the Analytical Engine to calculate a sequence of Bernoulli numbers, is widely considered the world's first computer program. But it was her broader conceptualization, crystallized in the declaration that the engine is \"the material expression of any indefinite function of any degree of generality and complexity,\" that truly set her apart. She understood that the machine\u2019s power lay not in performing predefined calculations, but in its ability to be programmed to execute any logically definable task. This wasn't just about arithmetic; it was about the manipulation of symbols, about representing and processing information in a generalized way, a conceptual leap from mere calculator to a universal information processor.\n\nToday, nearly two centuries later, Lovelace\u2019s words echo with astonishing prescience. Every smartphone, every intricate piece of software that governs our world, from artificial intelligence algorithms to genetic sequencing, is a testament to her foundational insight. The \"indefinite function\" she spoke of is the countless applications we now take for granted, each a manifestation of a programmable machine\u2019s ability to embody a vast array of logical operations. She foresaw the digital age before electricity was widely harnessed, understanding that a machine could transcend its physical purpose to become a medium for expressing abstract ideas and solving complex problems across an infinite spectrum. Her quote isn't merely historical curiosity; it is the philosophical cornerstone of modern computing, a testament to a visionary mind that saw not just what a machine *could* do, but what it *represented* for the future of human intellect and invention.",
+      "id": "3996cc7ff7df4510",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Ada Lovelace",
+      "topic": "wikiquote",
+      "ts": "2026-06-26T12:22:49.551779+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "What: Wind pushes shaped blades that spin a shaft; gearing speeds it up to turn a generator, making electricity.\nWhy it matters: Bigger blades sweep more air, so modern turbines are huge \u2014 some blades are longer than a football pitch.\nWhy you should care: A single large offshore turbine can power thousands of homes, which is why they keep getting taller.\n(Source: U.S. Dept. of Energy)",
+      "id": "4e345e7c690be015",
+      "score": 60,
+      "severity": "low",
+      "source": "Energy learning",
+      "title": "\u26a1 Today's spark \u2014 How wind turbines convert wind",
+      "topic": "energy_learn",
+      "ts": "2026-06-26T12:22:49.885184+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Jun 22-Jun 28: RD$5,073.93 across 8 transactions\nTop: ALTICE -APP ECOMM RD$2,515.94; SHELL CARR MELLA RD$600.00; APREZIO INVIVIENDA RD$593.00; MC DONALDS CHURCHILL RD$590.00; HELADOS BON INVIVIENDA RD$250.00\nBiggest: RD$2,515.94 at ALTICE -APP ECOMM\nvs prior week: Weekly spending moved from RD$290.00 to RD$5,073.93 (+RD$4,783.93, +1649.63%)",
+      "id": "82a6067e7b82b3d6",
+      "score": 60,
+      "severity": "moderate",
+      "source": "BHD",
+      "title": "Weekly spending summary",
+      "topic": "spending",
+      "ts": "2026-06-26T12:22:51.920158+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "In a cosmic vista you can never see, the Milky Way arcs through the night above Seoul, South Korea. Remarkably, this urban night skyscape reveals our galaxy's faintly luminous central region and dark obscuring dust clouds in spite of the brilliant city lights. To overcome the...\n(c) Shingoo Lee",
+      "id": "6ebc4bd8f15ea0cb",
+      "score": 60,
+      "severity": "low",
+      "source": "NASA APOD",
+      "title": "APOD: Milky Way Urban Style",
+      "topic": "apod",
+      "ts": "2026-06-26T12:22:54.768821+00:00",
+      "url": "https://apod.nasa.gov/apod/image/2606/MilkyWaySeoulShingooLee.jpg"
     }
   ],
   "f4_history": [
@@ -6672,7 +6386,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-20-26-JUN-DE-2026.pdf",
   "fuel_last_pdf_hash": "df5bf29864420fdf3ae48c6b803e8715064f631b1998f09ad9d6c6ddfd00a535",
-  "fuel_last_prices_seen_at": "2026-06-25T22:09:50.533188+00:00",
+  "fuel_last_prices_seen_at": "2026-06-26T12:22:34.667816+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7026,6 +6740,7 @@
       "1b7d9e5ab11b51a5"
     ],
     "La Sirena": [
+      "48603aaf078e2bb3",
       "2a23f039f5a2efc7",
       "b16c4fdeca1bae9d",
       "153c03504e5aca3d",
@@ -7252,6 +6967,21 @@
       "997e525f302628c6"
     ],
     "Nacional": [
+      "91786d917bdc9e99",
+      "63bf9b672bfe6249",
+      "fdc27def3f824901",
+      "b420eee1b0983a33",
+      "b7ce7059ecc07301",
+      "a96ae13b832e13d2",
+      "406e31d3874f739b",
+      "2cb779c4b8643d0b",
+      "9ed68793275ed61d",
+      "3cdb46cc8226bd3f",
+      "2fc868da7ab59c9b",
+      "c2c42f1716f90506",
+      "5bf41a8382bd0ff3",
+      "3f24d957db0387b4",
+      "268a05eb7bef21e4",
       "ec750bc83bbccc44",
       "6657ac6f09681735",
       "0aa4070e12bbb050",
@@ -7374,7 +7104,7 @@
     "gothic_and_mystery:1064": "2026-06-13",
     "novels:1400": "2026-06-13"
   },
-  "health_tip_last_sent": "2026-06-25",
+  "health_tip_last_sent": "2026-06-26",
   "holidays_sent": [],
   "ignored": {
     "4071c13d0b9dc18b": {
@@ -7437,8 +7167,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "ancient_civilizations",
-  "knowledge_last_sent": "2026-06-26T3",
+  "knowledge_last_category": "astronomy",
+  "knowledge_last_sent": "2026-06-26T4",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7454,6 +7184,7 @@
     "astronomy:The first image of a black hole": "2026-06-23",
     "astronomy:The hidden oceans of Europa and Enceladus": "2026-06-13",
     "astronomy:The multimessenger detection of a neutron star merger": "2026-06-21",
+    "astronomy:The supernova of 1054 and the Crab Nebula": "2026-06-26",
     "astronomy:Yuri Gagarin, the first human in space": "2026-06-25",
     "death_sentence_to_daily_shot": "2026-06-12",
     "early_humans:G\u00f6bekli Tepe and the first temple": "2026-06-23",
@@ -7525,7 +7256,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-06-26T09:54:26.538678+00:00"
+    "ts": "2026-06-26T12:21:02.188254+00:00"
   },
   "launch_seen_ids": [
     "be8b1880c67afb06",
@@ -7545,10 +7276,16 @@
     "9cf78ee44cb96c21",
     "7621aad01d0821be"
   ],
-  "learn_last_sent": "2026-06-25",
+  "learn_last_sent": "2026-06-26",
   "life_dashboard_last_week": "2026-W25",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "cc24264e37d3ea52",
+      "0b389fe2b1797a2f",
+      "109fadda33d8f14f",
+      "d3b1f93a346ea986",
+      "c68c4763370a982e",
+      "92980ffcc104ad52",
       "ee05419047ac729f",
       "ab49523da875d762",
       "edc4bbec64d25ef8",
@@ -7642,13 +7379,7 @@
       "5ed912024a82dc05",
       "6e9ebd0513e656da",
       "c06e9ccc3219e3e4",
-      "71f9ccceb2f6c20d",
-      "7d78898fe155b149",
-      "8602e13c2ddeb3b6",
-      "0112b2352f1a13d3",
-      "dfb4ee271af8e827",
-      "32f599dab7e9538f",
-      "889b3b4d70967b08"
+      "71f9ccceb2f6c20d"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -7852,6 +7583,17 @@
       "4ee9e90a06cba59e"
     ],
     "Spider-Man: Brand New Day": [
+      "7f394639e2cbd933",
+      "ada0039688d8565f",
+      "1e31d2ae729af119",
+      "07f4a6e74f73f613",
+      "6e1c43603e633b5a",
+      "6bba048248524d93",
+      "8f768ee848fcd20f",
+      "3b45eb451b4d32cf",
+      "13a89265c833b756",
+      "15caa1703c40218c",
+      "f5562075e601fc9d",
       "43840d36e18f27fe",
       "e9db79392e2728b1",
       "1c67f98912e51f11",
@@ -7940,20 +7682,14 @@
       "c87de0e4346260d4",
       "4105dddc91a02524",
       "425ad69cb40a16f3",
-      "fa607576cde70e4c",
-      "a21029cad15f45f2",
-      "a3cfcaadc9d5b47d",
-      "b7a6d9db88b04d0a",
-      "5ff7ab513eeb9f5d",
-      "37b6f7a8a36eaf95",
-      "8fed34dbfb6cbf19",
-      "3014977fd16315c8",
-      "f1956efdbb16bb9a",
-      "5e504b2ee0dbc9ff",
-      "82869fa298762d56",
-      "4b2097379a9af9ff"
+      "fa607576cde70e4c"
     ],
     "The Batman Part II": [
+      "362ea35a991a4fba",
+      "ec5f60c553b0d942",
+      "73aeff6b46f5ae28",
+      "2944a3b923348f01",
+      "86d142ca099ac731",
       "dde810a5e6183053",
       "796157dfe77b8980",
       "caeb68735c339cc8",
@@ -8048,14 +7784,19 @@
       "a0b71bb2ae829607",
       "5b6ff01e3a563800",
       "ca0c3e81ef84a4f2",
-      "9cd5e48ef5bad52e",
-      "8623c9c3c2d12cb6",
-      "8dbc409bf62e7ab7",
-      "44c2c8333c751231",
-      "c089277111847e33",
-      "cd5ecda128a54504"
+      "9cd5e48ef5bad52e"
     ],
     "The Odyssey": [
+      "1dc36389d191b130",
+      "c92f42a4073ffccf",
+      "b6b2395972d82cd3",
+      "6e340dea27b49b98",
+      "2428728606af90eb",
+      "3cbe994788e80d93",
+      "ee72bc6c99125b96",
+      "5ec72566a8ccd4a5",
+      "c4625828b615a96f",
+      "0634ca1ceefe770a",
       "02d7745781077759",
       "fecfff6b7d0291e3",
       "a1f54471fbc198f7",
@@ -8145,17 +7886,7 @@
       "629f624cfbf79cd0",
       "4794690511fed652",
       "e28e643a0e0d8b1d",
-      "734b12d98fcca4c9",
-      "fcaa943e84f7ec4e",
-      "ee7f00e7e5279b28",
-      "cbf1393ce1d25ec1",
-      "5dd76c04b42b21c9",
-      "0d544e26d542984e",
-      "e10d19de2aee3516",
-      "08bc47d000067e44",
-      "98bbf3db56ede50d",
-      "f354c741f53a2e9c",
-      "f71d409a270d0526"
+      "734b12d98fcca4c9"
     ]
   },
   "movie_release_dates": {
@@ -8250,7 +7981,8 @@
     68334,
     4989034,
     1622596,
-    4962010
+    4962010,
+    498918
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8661,6 +8393,15 @@
         "name": "Sarah Vaughan"
       }
     },
+    "b6f18d8c34106e34": {
+      "applied": null,
+      "created": "2026-06-26T12:21:12.127907+00:00",
+      "kind": "artist",
+      "label": "Quality Control",
+      "payload": {
+        "name": "Quality Control"
+      }
+    },
     "b7a39ad4a06e550a": {
       "applied": null,
       "created": "2026-06-24T18:03:51.306346+00:00",
@@ -9030,7 +8771,7 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spending_week_summarized": "2026-W26:4483.93",
+  "spending_week_summarized": "2026-W26:5073.93",
   "streaming_seen": {
     "1003596": [],
     "1288438": [],
@@ -9041,177 +8782,177 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "deals": {
-      "last_data": "2026-06-26T09:55:00.865494+00:00",
+      "last_data": "2026-06-26T12:22:04.314978+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "energy": {
-      "last_data": "2026-06-26T09:55:11.960681+00:00",
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_data": "2026-06-26T12:22:21.489421+00:00",
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "fda": {
-      "last_data": "2026-06-26T09:55:01.334883+00:00",
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_data": "2026-06-26T12:22:10.311057+00:00",
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-25T22:09:50.533212+00:00",
+      "last_data": "2026-06-26T12:22:34.667841+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-25T22:08:10.655691+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "fx": {
-      "last_data": "2026-06-26T09:55:24.822632+00:00",
+      "last_data": "2026-06-26T12:22:33.549718+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "games": {
       "last_data": "2026-06-22T13:21:53.280804+00:00",
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-26T09:54:39.452984+00:00",
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_data": "2026-06-26T12:21:13.480209+00:00",
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-25T22:09:24.464040+00:00",
-      "last_data_count": 240,
-      "last_ok": "2026-06-25T22:08:10.655691+00:00"
+      "last_data": "2026-06-26T12:22:09.526021+00:00",
+      "last_data_count": 242,
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "movies": {
-      "last_data": "2026-06-26T09:54:34.127816+00:00",
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_data": "2026-06-26T12:21:08.570319+00:00",
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "music": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-26T09:55:12.542048+00:00",
+      "last_data": "2026-06-26T12:22:22.031462+00:00",
       "last_data_count": 17,
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-26T09:55:24.139401+00:00",
-      "last_data_count": 41,
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_data": "2026-06-26T12:22:33.111651+00:00",
+      "last_data_count": 43,
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-26T09:54:36.162657+00:00",
+      "last_data": "2026-06-26T12:21:09.528497+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "weather": {
-      "last_data": "2026-06-26T09:55:12.077998+00:00",
+      "last_data": "2026-06-26T12:22:21.740131+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-26T09:55:27.985400+00:00",
+      "last_data": "2026-06-26T12:22:38.694789+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-26T09:54:26.538678+00:00"
+      "last_ok": "2026-06-26T12:21:02.188254+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165043"
+    "last_full_window": "165044"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9223,8 +8964,11 @@
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
   "watchdog_failing_since": {},
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-06-26|12"
+  ],
   "weather_seen_ids": [
+    "cc2401f347814b3a",
     "633d190db6453820",
     "04706349b2082dc7",
     "bea10636f09ce2b8",
@@ -9297,8 +9041,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "activists_thinkers",
-  "wikiquote_last_sent": "2026-06-26T3",
+  "wikiquote_last_category": "science_pioneers",
+  "wikiquote_last_sent": "2026-06-26T4",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-14",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -9340,7 +9084,7 @@
     "philosophers:Seneca the Younger": "2026-06-25",
     "philosophers:Socrates": "2026-06-25",
     "philosophers:Voltaire": "2026-06-20",
-    "science_pioneers:Ada Lovelace": "2026-06-14",
+    "science_pioneers:Ada Lovelace": "2026-06-26",
     "science_pioneers:Albert Einstein": "2026-06-23",
     "science_pioneers:Carl Sagan": "2026-06-21",
     "science_pioneers:Charles Darwin": "2026-06-25",
