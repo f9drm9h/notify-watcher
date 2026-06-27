@@ -51,7 +51,7 @@
     "29db49f64ce68661",
     "a8b1aff056453d2f"
   ],
-  "apod_last_sent": "2026-06-26",
+  "apod_last_sent": "2026-06-27",
   "astronomy_sent": [
     "2026-06-14|New moon tonight - d",
     "2026-06-21|June solstice today"
@@ -77,9 +77,6 @@
     823208
   ],
   "baseball_results_seen": [
-    822801,
-    824586,
-    823938,
     824750,
     823535,
     823939,
@@ -106,9 +103,12 @@
     824259,
     823691,
     822797,
-    824747
+    824747,
+    822796,
+    824743,
+    823285
   ],
-  "beach_day_last_sent": "2026-06-20",
+  "beach_day_last_sent": "2026-06-27",
   "bills_sent": [
     "internet|2026-06-22|5",
     "internet|2026-06-22|1",
@@ -119,293 +119,13 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman Part II\u2019 Officially Starts Filming - Dark Knight News",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOX1dRRnY2cm45bGhwWTh5Z24tZVVuTzV3SjZNN1J6a3ZZRzZMSXBLTW9Qb2Z6dHNtUU1JUmdUSWZGVndXWUlVdXltMzEzQ2VBNnhfcE5YRllUdXg5Q3lYNEdFNDdaS0c5SEZ1Tmxib2MzYXNFYm5NVks2cUVHOFZUWkxWaUFVbUFmYUow?oc=5"
-    },
-    {
-      "detail": "POP DAT THANG - DaBaby\n(because you like Quavo)",
-      "preserve_detail": false,
-      "score": 62,
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "url": "https://www.deezer.com/track/3789424042"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "EIA Today in Energy",
-      "title": "Metered electricity demand in the New York ISO falls midday because of small-scale solar",
-      "topic": "energy",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67806"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland confirms the Spider-Man: Brand New Day villain is still a secret and is \"unlike anything we've... - Yahoo",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOZF92MzdxOE5IeGNxWGpCYVFZdWZvRjJ4M1U0WDJLbDlFVW5aclYtQ2J6VklhaUtudFlwSnZuTVVkdDNCck1oVEtnOTVtbTRwU09HanVUTmdLc3RMSU5LTkFMU09mVVE0dFlabWktd0R2X3U3UVE2b1VNMHNMdGtETmVNU2NWNTF0QzhwbUdmWS1ucTctLWZ1MXkxQVhGNlk?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Michael Caine Confirmed For New The Odyssey Role Ahead Of Christopher Nolan\u2019s $250M Epic - ScreenRant",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4xZUFoRm1ZYWZlcDRBMXdlcmR4YXA2Wm9keFZwUnNfb19UeWJGajh1dndROFVmc0NQbE5SUTN4WFc2dFlaUVUwY04xNHBUVUY5SmlxSDZEbk5GMHZBMHJmMkNOcmZRY2JRRmx2ckFtQkhmOTNNTXc?oc=5"
-    },
-    {
-      "detail": "The Box - Roddy Ricch\n(because you like Quavo)",
-      "preserve_detail": false,
-      "score": 62,
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "url": "https://www.deezer.com/track/825986992"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Trodelvy",
-      "title": "FDA updates approval for Trodelvy (Sacituzumab Govitecan-Hziy) (BLA761115)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761115"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Spravato",
-      "title": "FDA updates approval for Spravato (Esketamine Hydrochloride) (NDA211243)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211243"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Tryngolza (Autoinjector)",
-      "title": "FDA updates approval for Tryngolza (Autoinjector) (Olezarsen Sodium) (NDA218614)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=218614"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Keytruda Qlex",
-      "title": "FDA updates approval for Keytruda Qlex (Pembrolizumab, Berahyaluronidase Alfa-Pmph) (BLA761467)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761467"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Ibrance",
-      "title": "FDA updates approval for Ibrance (Palbociclib) (NDA207103)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207103"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Ibrance",
-      "title": "FDA updates approval for Ibrance (Palbociclib) (NDA212436)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=212436"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Keytruda",
-      "title": "FDA updates approval for Keytruda (Pembrolizumab) (BLA125514)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125514"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Adrenalin",
-      "title": "FDA updates approval for Adrenalin (Epinephrine) (NDA204640)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204640"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Wegovy",
-      "title": "FDA updates approval for Wegovy (Semaglutide) (NDA218316)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=218316"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Marvel's aggressive response to new Avengers: Doomsday leaks confirm what fans suspected - Bam Smack Pow",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZnBMeVlLNEtqbnBmcTVaQ3Qwa0hSNzFFcjVNcnQzQS1SNWtnTC1zX2VXek42WWpySFB6NVNjU0dOb0RJRF9Kay1HQzA3MWpRTkJaalZPUzRBdU9fVXNSWjJxbERpaDl3UjVJSERSMzRxYVhxUzlPYVN2UkJyeHVnenBEd013cGNva2lYZzhFdTRxUQ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Christopher Nolan's 'The Odyssey' Officially Making Major Change to Its Release - MovieWeb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5vUHVCU3VWdVB2TmZsM2xQb2pXT3ljTm1mdS1NSWhBQUxWNjhIaWZKTDhRbkJJdnJfVENDbllrZ1A5NTJWZWhuSnR2ZTd2elNFZmpFNE41QXVrUFFzNHcxNDNud0hXemdEU2t1WF9hRFVVODMxb201TWJWOA?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Michael Caine Lends His AI Clone to Voice \u2018The Odyssey\u2019 Audiobook - The Hollywood Reporter",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORHZ6Y0xnM0pQRDM0dHdjR1d6RkVtMlB1bTREYTBMT2g5U2J1NFhmbFhtdGswVHk2UlBOekgzMC1oTFVUbjl0amNiYzhiejAxR2x1UEV4aDR1cm5xMS1VQWZHbmZsSktFTHlUSkw5dGk0UXJ2b0JkSzQwd0xIZmlEaE1CYm9fOHpEaDBlcnZXLUhHNllGeDFHcG5GUG1XTXp3V2RVNkYtck0?oc=5"
-    },
-    {
-      "detail": "Go Crazy - Young Thug\n(because you like Quavo)",
-      "preserve_detail": false,
-      "score": 62,
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "url": "https://www.deezer.com/track/954203752"
-    },
-    {
-      "detail": "Gasolina Premium: RD$346.60 (+0.40, +0.1%)\nGasolina Regular: RD$315.80 (+0.30, +0.1%)\nGasoil Regular: RD$266.30 (sin cambio)\nGasoil \u00d3ptimo: RD$296.80 (+0.40, +0.1%)\nKerosene: RD$269.60 (-13.80, -4.9%)\nGLP: RD$137.20 (sin cambio)",
-      "preserve_detail": true,
-      "score": 45,
-      "source": "MICM",
-      "title": "Combustibles: precios de la semana",
-      "topic": "fuel",
-      "url": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-27-JUN-03-JUL-DE-2026.pdf"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Marvel Officially Reveals New Doctor Doom Mask Ahead Of Avengers: Doomsday - ScreenRant",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBhOXlFRTl4M1ZoRTZxRTBUaG5MT0ZfNnZGNDB3TmxQN0FRcWVCaVR5RHh2MXZZYUJVZzNta0phV1BHQi02RnQwTi1GRUVfZWR5bHc3azZkRmdGSkNrU0t6dXZpbjkxbmtkN2I1eTN3?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "\u2018Avengers: Doomsday\u2019 the \u201cMost Mature, Emotionally Complex\u201d in Franchise, Joe Russo Says - The Hollywood Reporter",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaHRCRlJtaXQ1ZVJLc2dRaUFuTkktcjRCN0F3Q0hlOWZOQXdXX18yZ3dvbTFCZTlFUDV2aXNkNDhxMVpVVFRGelItaW9JVmVPYjd5RVpBMS15ci1xakw1RWxrc3Rsb3I0aW1QT01xN29kUzdveDRyX3JuUjdYMF9hUnBwWklBZWZKUENPRkR3V1NMaFlLU29acEh6ZElteVhYSGRWNFk5UnBKOE1E?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland Is Back Swinging in \u2018Spider-Man: Brand New Day\u2019 Trailer - The Hollywood Reporter",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONDJfR3ZyX01URVhVMTRTdUMwRWxFR0x0eDhJV2ZYSHR4VjRTbklrWWxwWVFEZkdfMXRuRnk1Ym5uMVpQa0FCcmpIU2tEMWZaZWt4TjNyNlhCZzdMcGQ3V290QXhJSGhTMDQ3eFJiVW1tdUhoRG1BQVhVc3RpZkcxSGJYSl9qUkgwelhsZWI0ZnpES2N4d0FzNHlETHhnMWJtX0R6ZnBIYzhwWWhw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Christopher Nolan\u2019s \u2018The Odyssey\u2019 to Skip Social Media Influencer Screenings - The Hollywood Reporter",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWkVWQlZsUFhDWlVHbEd2aW9xMkdvYkNuTmJBd3hjLUg5ZTFTYUpnNTRfamxLaXhXd2RoXzloUXlwOEhNU2NabWEyNUx6TG8wM1R0LTBPem9XTmxpeWdHRDNKZnppX01xUUtEU3lHa3g4ODF5UkxMQ3dxZU1vbEt1ZjdMb3FPNkxLUnZ5VXFNYnVyeFVkZHpHa3pMSFRERVh6RjJsVkFBaGZ3N3N2WkFFNTVFNW1ndw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "Diaprojekcija: The Batman: Part II - Who's Who in Matt Reeves' DC Sequel - IGN Adria",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQTNHNGFEWWxLTU01bUctOWUyVFRyNXRzUzhOaEdMWjlIY2pVX19yTjVoRUlGSVEzakVja3FWXy1wNC1Jbmg3T3BQTW5jRHhmUDl6QUFScng2d0E1YVpGb09iOUw1MUx4TDVKa3ZMQVR2blVheF9hNkk2NmR5NXNNUWNnWFUzX0NDN1N0YWdFeVVQeVpVRVQzT1NRd0R5Y3QxTEVxODZOVTg?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer and Movie Tickets Go Live - Marvel.com",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeXFwTXhVZEhCQVNTaHJESC1GbDZfcXZ1RjVGZ21fNWxJMVdDMVIzeVBKdjFlelVyLUJ5dmRJcFZvMWUwNU5ZelZIQ29vZ1JHVVhNMElXNHVCakZlYWljazNOUTBFQUVZSVJxVXl2NExFS1g0dWZueXpGOHpBeXdVM2xTYmt4eEFKdXdtSFNNYlZCTXJlX24zMkowYS14UQ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Debuts Its Official Slogan - And It's Perfect - The Direct",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1IXzNTYUp6RDA2OWQwdHhRT3ZlekY5NEd6cm9wemtIVUZ5YTM5Qy1oMmNzT2E4OFJaZTN1NnhnSDViSmZwTU9tZFBJWHc4bzlFd1FVeXZlb05HOXF0bDA0bVhfVEtwc3ZmUUVQQg?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' Clip Confirms Popular Aunt May Theory - The Direct",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5kd0d0bTFZM0RpSVZLaGtHWlllVVA5ZmtuTFJhWEJrcjg1YUlzNnA4TVp3Tng2OXFXMEh2UE5xNEJ2TkR3STdpdWNFZFB4RTVoNEh3bnpsUXRQNVZmMFNNNzBBOUJTVXNtUWpCQUlVZFpJaThnVWdV?oc=5"
-    }
-  ],
-  "digest_last_sent": "2026-06-26",
+  "digest_buffer": [],
+  "digest_last_sent": "2026-06-27",
   "discord_control": {
     "last_id": "1519883605067698186"
   },
   "energy_learn_last_news": "2026-06-25",
-  "energy_learn_last_sent": "2026-06-26",
+  "energy_learn_last_sent": "2026-06-27",
   "energy_learn_seen": {
     "facts": [
       "baseload-vs-peaking",
@@ -427,7 +147,8 @@
     "modern": [
       "perovskite-solar",
       "data-center-demand",
-      "green-hydrogen"
+      "green-hydrogen",
+      "grid-forming-inverters"
     ]
   },
   "energy_seen_ids": [
@@ -581,282 +302,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "4740ccd55bfe1654",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "IAEA produces global mapping tool of used nuclear fuel",
-      "topic": "energy",
-      "ts": "2026-06-22T18:00:03.182349+00:00",
-      "url": "https://www.world-nuclear-news.org//articles/iaea-produces-global-mapping tool-of-used-nuclear-fuel"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "3f6975b2cae2e569",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-22T18:00:03.436808+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "Quick reminder to drink some water.",
-      "id": "e81edde0eec4caa4",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-06-22T18:00:19.845888+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "295efaf7a6901561",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Disney Takedowns Confirm Avengers: Doomsday Leak Chaos: Doom, X-Men, More - Cosmic Book News",
-      "topic": "movies",
-      "ts": "2026-06-22T21:10:31.781307+00:00",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1SYko5OUVkaGEyaUxUQy1zM3hiRE0tSzVCeWNMNzhXOWZuS2xjYlR5MEVkenRvdlNCVHp2VUY2aDZEY3RiOFVMRm5qVTl4LWwzNWRMUDVzRzdCUHUxa1ZXMVNZMXRnRGJpZER5cXNpcjlLaVU?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "98b07ff41c6794d8",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "\u2018Avengers: Doomsday\u2019 the \u201cMost Mature, Emotionally Complex\u201d in Franchise, Joe Russo Says - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-06-22T21:10:31.782007+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaHRCRlJtaXQ1ZVJLc2dRaUFuTkktcjRCN0F3Q0hlOWZOQXdXX18yZ3dvbTFCZTlFUDV2aXNkNDhxMVpVVFRGelItaW9JVmVPYjd5RVpBMS15ci1xakw1RWxrc3Rsb3I0aW1QT01xN29kUzdveDRyX3JuUjdYMF9hUnBwWklBZWZKUENPRkR3V1NMaFlLU29acEh6ZElteVhYSGRWNFk5UnBKOE1E?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "953e8b824c0b1c91",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' starring Tom Holland has posted the best U.S. first-day presales for any film in years. - Deadline",
-      "topic": "movies",
-      "ts": "2026-06-22T21:10:32.303958+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbUp1RzA3dl9wMTRjWHIzbW9kd3ljRXZBc0dvemNodm8xNkpueDRudVVUeEpKcmN2U0R2eVBxeUhobE9NRzRVSlo3VzhpTWV3eEZHZ2N3UWNxTXZoQkRuM19VRV9ObnZLanhTQmRld0kwcjM0Y19PNDRtQ0tyZC16cXBHak1zNFU2?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "d7aff433c09aae78",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer Gives First Look At Mark Ruffalo\u2019s Hulk - Deadline",
-      "topic": "movies",
-      "ts": "2026-06-22T21:10:32.683336+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQm55VU92U3hTREt5NkpuaFZ6SkdhV3ZUeXVBSTdlUlN1cU81Zk1JRVhSSmlDUEJVMmhEYnNiUWFLYjVBN0pZaXlkOHZ4QXRka0prX0lVM1hXRTBuM1c1RXRNUnVHemgwWWlBVWVwUlJ6UEUwaTdkRmo5SFE4azNZQXNJWTltY2kxYUJhNlVSNUxzSXhJbUk5alVrVTkwYV9zXzlxag?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "9d54c93411435ede",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Shop Marvel Must Haves: Celebrate 'Spider-Man: Brand New Day\u2019 with Official Spidey Merch - Marvel.com",
-      "topic": "movies",
-      "ts": "2026-06-22T21:10:32.683984+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcGdrOUU1R0trV2NDQnhZdC1vNUZTT1RYV0dndVNjbGNmLUx4RkVpQlJXS2pxSHRURGZGVFRtRHg4NExhRXhhX2ZGVGJyRkVwdi1fMXVuTnV5Q2N4S3dNdVFQTDBPVDYtRDZWQVZ2WUtFYURSLWJqMjlCcGJ2OUs2NzNvcklLTDgwa1g3Sg?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "7e89ed653bab5577",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman Part 2 Officially Begins Filming as Matt Reeves Shares First Set Image - IGN Pakistan",
-      "topic": "movies",
-      "ts": "2026-06-22T21:10:34.445191+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNT0pzYmFYRkpxY3VjclJ1b0ZBeFB3R1VUeTZ1cjh0aWFXOHdjeFBXSU40d3NyNk1KRzJyelkzU2N5aV9rNDlRVF8zWmRVTFNOVzJKUmxOUmhSdEFGM01EU1NTQktWTlNwN29ZRm5FTTl5RExXWnZzQ1lUejQ4SzRySVVjWjVhZVVUd21mYVlyUlg1S0VqY2VwMjQ2RjFNMlVIVkFTRUtRek5mNEVVZ2RtWHF0SE4xLWRFNWlzNg?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "c2e0e6da7f98e41c",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman Part II\u2019 Begins Filming, Writer & Director Matt Reeves Confirms - Just Jared",
-      "topic": "movies",
-      "ts": "2026-06-22T21:10:36.838662+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPY1dicDZZUnlqM2dCTmZhdFpuVzllZHAxa2xvQ3NDd0w2OTFVUF9zQXFtdnNORnBIS2t5S1Z3N085Q2l1VFQzRmx4YXlocG9sbnJ0eTdSYy1ELWtDNG01UHFpRVJSX08yVloyTGdzcXlQeDBPZEduOTFUaTVXSjA5a25yeVdFeFV2MVF2RVNEYktiT2ZXS1NTZ1BPWk9wTDZ1VDN5ajdkTkZQZEp0?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "01b33ae1f4c99632",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Colin Farrell Confirms He'll Reprise Penguin Role in The Batman 2 , Teases a 'Terrifying' Script - People.com",
-      "topic": "movies",
-      "ts": "2026-06-22T21:10:37.036888+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRFlVcUtldjJzVjBWLWl3Rzl6SFI4d0FmUnFab0Q0N1o0NXpqR0w0c3doTWwtS1pLeWpUYktiVFVEeUdiUThHcWRpSThNeVBra2U1djZHQ1JBSUt2UFcyVU1OMGp6OXJHTmtCb2xJdlhCMFAyMWIxMFROdFVDV0Z3UEhmQk1obmNTQ1VDbnVjZXpSaU9HZkR4UG11Zw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "70a33d5c085786fd",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Shares New Look at 'The Batman 2' as DC Sequel Begins Production - MovieWeb",
-      "topic": "movies",
-      "ts": "2026-06-22T21:10:37.037328+00:00",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE93cDVyR1ptTnE3Smg4OE44aW5laDY4TGtLSWN3NWxndkpGLTcwQWRnUW1NYXBTZ3I4eHZvR2hYMGZZU1hBUGtMSDJyR25vMThVR2F6RURfUHJSejFNejU0Ri1FMVByV282WEJj?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Smile In Your Sleep - Silverstein\n(because you like Picture Me Broken)",
-      "id": "274b176c8ac7452e",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-06-22T21:10:44.189441+00:00",
-      "url": "https://www.deezer.com/track/1286105002"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "7eadbae78b5a7cc7",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Golden Sun",
-      "title": "Getting started",
-      "topic": "golden_sun",
-      "ts": "2026-06-22T21:10:45.717196+00:00",
-      "url": "https://www.reddit.com/r/GoldenSun/comments/1u90d1p/getting_started/"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 79.95 (was DOP 91.95, -13%)",
-      "id": "953df867657da28d",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Refresco Coca Cola Original 2 Lt",
-      "topic": "groceries",
-      "ts": "2026-06-22T21:11:22.903717+00:00",
-      "url": "https://supermercadosnacional.com/refresco-coca-cola-original-2-lt-2002968"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 154.95 (was DOP 184.95, -16%)",
-      "id": "55cee90a2e9ec290",
-      "score": 45,
-      "severity": "moderate",
-      "source": "Nacional",
-      "title": "Nacional deal: Yogurt Griego Sabor Blueberry Chobani 5.3 Onz",
-      "topic": "groceries",
-      "ts": "2026-06-22T21:11:22.904336+00:00",
-      "url": "https://supermercadosnacional.com/yogurt-griego-sabor-blueberry-chobani-5-3-onz-2138713"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 184.95 (was DOP 203.95, -9%)",
-      "id": "96fbf51d62215b9f",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Mayonesa Regular Kraft 15 Onz",
-      "topic": "groceries",
-      "ts": "2026-06-22T21:11:22.904867+00:00",
-      "url": "https://supermercadosnacional.com/mayonesa-regular-kraft-15-onz-2009290"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 149.95 (was DOP 174.95, -14%)",
-      "id": "57703bc6afba15bb",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Pan Multicereales Masa Madre La Panera 400 Gr.",
-      "topic": "groceries",
-      "ts": "2026-06-22T21:11:22.905371+00:00",
-      "url": "https://supermercadosnacional.com/pan-multicereales-masa-madre-la-panera-400-gr-2230181"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 19.95 (was DOP 24.95, -20%)",
-      "id": "5dd86437f755373b",
-      "score": 45,
-      "severity": "moderate",
-      "source": "Nacional",
-      "title": "Nacional deal: Sprite Sin Azucar 400 Ml.",
-      "topic": "groceries",
-      "ts": "2026-06-22T21:11:22.905893+00:00",
-      "url": "https://supermercadosnacional.com/sprite-sin-azucar-400-ml-2224493"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 89.95 (was DOP 98.95, -9%)",
-      "id": "e274997201592442",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Avena Instant\u00e1nea Nutre Mas Quaker 618 Gr",
-      "topic": "groceries",
-      "ts": "2026-06-22T21:11:22.906386+00:00",
-      "url": "https://supermercadosnacional.com/avena-instantanea-nutre-mas-quaker-618-gr-2094569"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 154.95 (was DOP 184.95, -16%)",
-      "id": "472b570c4a518542",
-      "score": 45,
-      "severity": "moderate",
-      "source": "Nacional",
-      "title": "Nacional deal: Yogurt Griego Sabor Vainilla Chobani 5.3 Onz",
-      "topic": "groceries",
-      "ts": "2026-06-22T21:11:22.906922+00:00",
-      "url": "https://supermercadosnacional.com/yogurt-griego-sabor-vainilla-chobani-5-3-onz-2132342"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 479.95 (was DOP 534.95, -10%)",
-      "id": "3f125f01e494de4f",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Aceite De Canola Wesson 64 Onz",
-      "topic": "groceries",
-      "ts": "2026-06-22T21:11:22.907407+00:00",
-      "url": "https://supermercadosnacional.com/aceite-de-canola-wesson-64-onz-2036125"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 164.95 (was DOP 174.95, -6%)",
-      "id": "77f576bb3931c642",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Carne De Cerdo Molida Super Especial Lb, (Peso Aprox. 1.5 Libras)",
-      "topic": "groceries",
-      "ts": "2026-06-22T21:11:22.907915+00:00",
-      "url": "https://supermercadosnacional.com/carne-de-cerdo-molida-super-especial-lb-peso-aprox-1-5-libras-2800379"
-    },
     {
       "action": "digest",
       "detail": "DOP 899.00 (was DOP 1,090.00, -18%)",
@@ -6580,6 +6025,282 @@
       "topic": "wikiquote",
       "ts": "2026-06-27T10:28:07.858561+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "4089ff5325736044",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Mark Ruffalo's Hulk Replacement Officially Revealed, Debuts After 'Spider-Man: Brand New Day' - Inside the Magic",
+      "topic": "movies",
+      "ts": "2026-06-27T14:01:50.356975+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOSkI3S3ROV3FjeVlNeDlRRjJfNTluNG5wM0NHcHV6cVcza1RVRWFjWjVzb1FMOVpNLXpSNVVHTUtUZ2ZfSko4SDQ1SGktSkIyTEpUbjkwVmEtRUJSWm1vS2lEdkRPZkxPb1dTQXpDWDdXRXRZMnJtOVdEU2ZPMmVZRm9Sby1ZSGhoMEZLdDg4ZEZSdw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "bdf4fc3e21dd4989",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Zendaya Stuns in Vintage $35 Spider-Man T-Shirt for \u2018Brand New Day\u2019 Event in Paris - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-06-27T14:01:50.357620+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM2VoSGFyUUh1ZDIxRUtYeWFEQWNnOERXR1p1dU05MWNDb0J1SnRkLXVMdnpLRnJOTjBlVHpROU85b2x0WXlTa1JScldsSTRyYV95dlhWMnZhdW1pbDB0dkF0Z2UtU3pLVXJLa21xOTdyS2RJTEFnbEdUQS01M0p4anc1SERnRkdOVlBOdnB4Qld6LVhhdHV1Zg?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "a3914ecff1d441d0",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Shop Marvel Must Haves: Celebrate 'Spider-Man: Brand New Day\u2019 with Official Spidey Merch - Marvel.com",
+      "topic": "movies",
+      "ts": "2026-06-27T14:01:50.358038+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcGdrOUU1R0trV2NDQnhZdC1vNUZTT1RYV0dndVNjbGNmLUx4RkVpQlJXS2pxSHRURGZGVFRtRHg4NExhRXhhX2ZGVGJyRkVwdi1fMXVuTnV5Q2N4S3dNdVFQTDBPVDYtRDZWQVZ2WUtFYURSLWJqMjlCcGJ2OUs2NzNvcklLTDgwa1g3Sg?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "02c267446ad05ed2",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer Gives First Look At Mark Ruffalo\u2019s Hulk - Deadline",
+      "topic": "movies",
+      "ts": "2026-06-27T14:01:50.698652+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQm55VU92U3hTREt5NkpuaFZ6SkdhV3ZUeXVBSTdlUlN1cU81Zk1JRVhSSmlDUEJVMmhEYnNiUWFLYjVBN0pZaXlkOHZ4QXRka0prX0lVM1hXRTBuM1c1RXRNUnVHemgwWWlBVWVwUlJ6UEUwaTdkRmo5SFE4azNZQXNJWTltY2kxYUJhNlVSNUxzSXhJbUk5alVrVTkwYV9zXzlxag?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Start Me Up (Remastered 2009) - The Rolling Stones\n(because you like Queen)",
+      "id": "75c5bf2c91d209b6",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-27T14:01:59.365056+00:00",
+      "url": "https://www.deezer.com/track/4125592"
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-06-26",
+      "id": "dc51e89e187738d7",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Blue Jays 4 \u2013 Rangers 5 (L)",
+      "topic": "baseball",
+      "ts": "2026-06-27T14:02:02.043147+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-06-26",
+      "id": "61a9d43e48be6325",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Yankees 1 \u2013 Red Sox 6 (L)",
+      "topic": "baseball",
+      "ts": "2026-06-27T14:02:02.181235+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-06-26",
+      "id": "d446a7d50f591334",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Dodgers 1 \u2013 Padres 7 (L)",
+      "topic": "baseball",
+      "ts": "2026-06-27T14:02:02.292653+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 2,895.00 (was DOP 3,595.00, -19%)",
+      "id": "4ae8d6d830afbb5e",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Abanico De Pared Universal 18 Pulgadas Us-1808",
+      "topic": "groceries",
+      "ts": "2026-06-27T14:02:52.460934+00:00",
+      "url": "https://www.sirena.do/universal-abanico-pared-18p-us-1808-1962772/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 33,195.00 (was DOP 38,995.00, -15%)",
+      "id": "2b0d0ece7d2d6b93",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Estufa Whirlpool 30 Pulgadas LWFR5200D00",
+      "topic": "groceries",
+      "ts": "2026-06-27T14:02:52.461686+00:00",
+      "url": "https://www.sirena.do/whirlpool-estufa-30p-lwfr5200d00-1865238/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 22,495.00 (was DOP 24,995.00, -10%)",
+      "id": "8ebc44c1417a58f0",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Lavadora Daewoo Semi-Automatica 20 KG DWT-2001G",
+      "topic": "groceries",
+      "ts": "2026-06-27T14:02:52.462229+00:00",
+      "url": "https://www.sirena.do/daewoo-lavadora-20kg-semi-aut-dwt-2001g-2052689/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 11,995.00 (was DOP 12,995.00, -8%)",
+      "id": "172ed8e86a493a21",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Bebedero Daiwa Negro DWWDBL60523",
+      "topic": "groceries",
+      "ts": "2026-06-27T14:02:52.462744+00:00",
+      "url": "https://www.sirena.do/daiwa-bebedero-ngo-dwwdbl60523-2038739/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 11,495.00",
+      "id": "d3e19efe7e30a5f2",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Tablet Samsung Galaxy A9 Gris X110NZSAL15",
+      "topic": "groceries",
+      "ts": "2026-06-27T14:02:52.463233+00:00",
+      "url": "https://www.sirena.do/samsung-galaxy-tablet-a9-gry-x110nzsal15-2081362/p"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "512723f4ec28da36",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-06-27T14:03:04.842267+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 11:43 PM - max 61deg, SW to NE. Look up!",
+      "id": "d9911470f7ff4f9b",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-06-27T14:03:19.515183+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Hydration check: grab some water before you carry on.",
+      "id": "134a60b3e97a5304",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-27T14:03:22.518642+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Brush your teeth twice a day and floss once daily to protect your gums and teeth. (Source: MedlinePlus)",
+      "id": "41e0519570120613",
+      "score": 60,
+      "severity": "low",
+      "source": "Health",
+      "title": "Health tip",
+      "topic": "health_tip",
+      "ts": "2026-06-27T14:03:23.427320+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "The twilight of the 19th century was a period pregnant with scientific possibility, a time when the invisible forces of nature were slowly yielding their secrets to the persistent prodding of human curiosity. Among the most diligent and methodical of these explorers was Wilhelm Conrad R\u00f6ntgen, a German physicist of quiet demeanor and meticulous habits, then Rector of the University of W\u00fcrzburg. His laboratory, a sanctuary of glass tubes, induction coils, and various electrical apparatus, was his preferred domain, a place where the ordinary laws of the visible world often seemed to bend and stretch. It was here, in this haven of experimentation, that R\u00f6ntgen would stumble upon something utterly unprecedented, a discovery that would not only reshape the landscape of physics and medicine but also permanently alter humanity's perception of itself.\n\nThe evening of November 8, 1895, began like many others for R\u00f6ntgen. He was engrossed in studying cathode rays, streams of electrons emitted from a cathode in a vacuum tube \u2013 a popular subject of inquiry at the time. His setup involved a Crookes tube, a partially evacuated glass device, through which he passed an electrical current. To better observe the faint luminescence produced by the cathode rays, he had meticulously darkened his laboratory, even encasing the Crookes tube in a thick, black cardboard sheath to block any visible light. It was a seemingly trivial precaution, yet it proved to be the crucible in which the extraordinary would be forged. As he energized the tube, a peculiar green glow emanated from a small, chemically coated barium platinocyanide screen lying several feet away on a bench. This was utterly baffling; the tube was completely covered, emitting no visible light. Yet, something invisible, something unknown, was passing through the cardboard, through the air, and causing the screen to fluoresce. R\u00f6ntgen, ever the disciplined empiricist, repeated the experiment, convinced it was an illusion or an error. But the glow persisted, unwavering. He had, quite literally, seen the unseen.\n\nFor the next several weeks, R\u00f6ntgen practically lived in his laboratory, driven by an intense, almost feverish, desire to understand this mysterious phenomenon. He called them \"X-rays\" \u2013 'X' for unknown, a testament to his humility and scientific rigor in the face of the inexplicable. He systematically tested their properties, discovering they could penetrate various materials, their degree of penetration depending on the material's density. Wood offered little resistance, paper even less, but lead proved to be an effective barrier. The most dramatic and, in many ways, most humanly compelling moment came when he asked his wife, Anna Bertha, to place her hand between the X-ray source and a photographic plate. The resulting image was astounding: the shadowy outlines of her flesh, but starkly visible within, were the bones of her hand, and even the faint glint of her wedding ring. It was a visceral, undeniable proof of this new form of radiation's power, a window into the living human body that had previously been unimaginable. The photograph of Anna Bertha's hand, skeletal and haunting, would become an iconic image, instantly conveying the revolutionary potential of R\u00f6ntgen's discovery.\n\nThe impact of X-rays was immediate and profound, a scientific seismic event that sent ripples across the globe.",
+      "id": "181f69e0de1b2901",
+      "score": 75,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The discovery of X-rays by Wilhelm R\u00f6ntgen",
+      "topic": "learn",
+      "ts": "2026-06-27T14:03:29.555978+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "On this day\n1571: Queen Elizabeth I issued a royal charter establishing Jesus College, the first Protestant college at the University of Oxford.\n\nFeatured: The One Where Michael Leaves\n\"The One Where Michael Leaves\" is the second season premiere of the American television satirical sitcom Arrested Development. It was written by series creator Mitchell Hurwitz and co-executive producer Richard Rosenstock, and was directed by Lee Shallat Chemel. It originally...\n\nDid you know\nOxford University, with teaching as old as 1096, predates the Aztec Empire, whose capital, Tenochtitlan, was founded in 1325. (Source: Britannica)",
+      "id": "55a8d229d8b9c223",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Daily learning",
+      "topic": "learn",
+      "ts": "2026-06-27T14:03:30.628263+00:00",
+      "url": "https://en.wikipedia.org/wiki/The_One_Where_Michael_Leaves"
+    },
+    {
+      "action": "push",
+      "detail": "\u201c\u1f04\u03bd\u03b5\u03c5 \u03b3\u1f70\u03c1 \u03c6\u03af\u03bb\u03c9\u03bd \u03bf\u1f50\u03b4\u03b5\u1f76\u03c2 \u1f15\u03bb\u03bf\u03b9\u03c4\u1fbd \u1f02\u03bd \u03b6\u1fc6\u03bd, \u1f14\u03c7\u03c9\u03bd \u03c4\u1f70 \u03bb\u03bf\u03b9\u03c0\u1f70 \u1f00\u03b3\u03b1\u03b8\u1f70 \u03c0\u03ac\u03bd\u03c4\u03b1\u201d\n\u2014 Aristotle\n\nThe sun beat down on the Lyceum, an Athenian gymnasium where Aristotle, a man of immense intellect and insatiable curiosity, paced amidst his students. His voice, measured and authoritative, would have carried across the olive trees, elucidating on ethics, politics, and the very nature of existence. He was not merely a philosopher; he was a polymath, a keen observer of the natural world, a logician who laid the groundwork for scientific inquiry. Born in Stagira, a small Greek city, he had been tutored by Plato, yet developed his own distinct philosophical system, one rooted in empiricism and a practical understanding of human flourishing. This particular statement, \"\u1f04\u03bd\u03b5\u03c5 \u03b3\u1f70\u03c1 \u03c6\u03af\u03bb\u03c9\u03bd \u03bf\u1f50\u03b4\u03b5\u1f76\u03c2 \u1f15\u03bb\u03bf\u03b9\u03c4\u1fbd \u1f02\u03bd \u03b6\u1fc6\u03bd, \u1f14\u03c7\u03c9\u03bd \u03c4\u1f70 \u03bb\u03bf\u03b9\u03c0\u1f70 \u1f00\u03b3\u03b1\u03b8\u1f70 \u03c0\u03ac\u03bd\u03c4\u03b1\" \u2014 \"no one would choose to live without friends, even if they had all other good things\" \u2014 likely emerged from his ethical lectures, perhaps within the larger framework of his Nicomachean Ethics, a profound exploration of human virtue and the path to eudaimonia, a concept often translated as 'flourishing' or 'the good life'.\n\nThe world in which Aristotle lived was one of vibrant intellectual ferment, but also of political upheaval. Athens, though a democracy, was a city grappling with its past glory and a complex geopolitical landscape. Alexander the Great, Aristotle\u2019s former pupil, was carving out an empire, a testament to the philosopher\u2019s influence on shaping one of history\u2019s most formidable minds. While Alexander was conquering distant lands, Aristotle was meticulously dissecting frogs, classifying plants, and pondering the human soul. He was a bridge between the abstract idealism of Plato and the empirical realism that would characterize later scientific thought. His writings, though often dense and demanding, reveal a profound understanding of human nature, a recognition that for all our striving for material wealth or intellectual prowess, there remains a fundamental social need, an intrinsic human desire for connection and companionship.\n\nCenturies later, Aristotle\u2019s assertion remains startlingly relevant. We live in an age of unprecedented technological connectivity, yet often feel a profound sense of isolation. Social media, designed to bring us closer, can paradoxically foster a superficiality that leaves us longing for deeper bonds. In a world increasingly driven by consumerism and the pursuit of individual success, Aristotle\u2019s words serve as a powerful counter-narrative. They remind us that true well-being isn't found in accumulated possessions or even in solitary intellectual achievement. It lies, in large part, in the richness of our relationships, the shared laughter, the quiet understanding, the mutual support that only true friendship can offer. It is a timeless truth, echoing from the ancient Athenian academy into the clamor of our modern lives, a testament to the enduring wisdom of a philosopher who understood the human heart as profoundly as he understood the natural world.",
+      "id": "ab395616621c26e8",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Aristotle",
+      "topic": "wikiquote",
+      "ts": "2026-06-27T14:03:38.138865+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "What: Grid-forming inverters let batteries and solar set the grid's voltage and frequency themselves, mimicking the steadying role of spinning generators.\nWhy it matters: As fossil plants retire, the grid loses their natural stability; smart electronics can recreate it.\nWhy you should care: This quiet upgrade is key to running a reliable grid on mostly wind, solar, and batteries.\n(Source: National Renewable Energy Laboratory)",
+      "id": "b7de6c1bcfba5f3b",
+      "score": 60,
+      "severity": "low",
+      "source": "Energy learning",
+      "title": "\u26a1 Today's spark \u2014 Electronics that steady a green grid",
+      "topic": "energy_learn",
+      "ts": "2026-06-27T14:03:38.561462+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "In this recent HiRISE view from the Mars Reconnaissance Orbiter, the little green dot indicated on the surface of the big Red Planet is the Perseverance Mars rover. Recorded on June 13, the car-sized, six-wheeled robot was imaged a day before completing a Martian marathon...",
+      "id": "3b682139abf9e500",
+      "score": 60,
+      "severity": "low",
+      "source": "NASA APOD",
+      "title": "APOD: Mars Marathon by Perseverance",
+      "topic": "apod",
+      "ts": "2026-06-27T14:03:44.197452+00:00",
+      "url": "https://apod.nasa.gov/apod/image/2606/PIA26726.jpg"
+    },
+    {
+      "action": "push",
+      "detail": "Waves 1.0 m | Rain 100% | UV 8 | 31 C\nHigh rain chance (100%).",
+      "id": "81f2e76f0e3e6753",
+      "score": 60,
+      "severity": "low",
+      "source": "Beach day",
+      "title": "Beach day: 5/10 - iffy - check the notes",
+      "topic": "beach_day",
+      "ts": "2026-06-27T14:03:45.939316+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6679,7 +6400,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-27-JUN-03-JUL-DE-2026.pdf",
   "fuel_last_pdf_hash": "f8498e031891b450b3caa406b4e9889ad0596d4b83780850ebf173674f103f51",
-  "fuel_last_prices_seen_at": "2026-06-26T21:59:05.570892+00:00",
+  "fuel_last_prices_seen_at": "2026-06-27T14:03:18.790785+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7033,6 +6754,11 @@
       "1b7d9e5ab11b51a5"
     ],
     "La Sirena": [
+      "1096adb02b7de170",
+      "713aaeaeb35d3bf4",
+      "fb7df50d613f22b1",
+      "5a0ed4a5cca779aa",
+      "107a65831d5c53ca",
       "48603aaf078e2bb3",
       "2a23f039f5a2efc7",
       "b16c4fdeca1bae9d",
@@ -7397,7 +7123,7 @@
     "gothic_and_mystery:1064": "2026-06-13",
     "novels:1400": "2026-06-13"
   },
-  "health_tip_last_sent": "2026-06-26",
+  "health_tip_last_sent": "2026-06-27",
   "holidays_sent": [],
   "ignored": {
     "4071c13d0b9dc18b": {
@@ -7431,6 +7157,7 @@
     "iPadOS 12.5.8 (16H88)"
   ],
   "iss_seen_passes": [
+    "5369a588f02057d0",
     "053b248f4e616d2f",
     "b8aaf0b86786614a",
     "3350ac6d9d01edd2",
@@ -7463,8 +7190,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "philosophy",
-  "knowledge_last_sent": "2026-06-27T3",
+  "knowledge_last_category": "science",
+  "knowledge_last_sent": "2026-06-27T4",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7531,6 +7258,7 @@
     "science:Einstein's special theory of relativity": "2026-06-24",
     "science:Marie Curie and the discovery of radioactivity": "2026-06-13",
     "science:Schr\u00f6dinger's cat thought experiment": "2026-06-20",
+    "science:The discovery of X-rays by Wilhelm R\u00f6ntgen": "2026-06-27",
     "science:The discovery of nuclear fission by Meitner and Hahn": "2026-06-18",
     "science:The discovery of superconductivity": "2026-06-14",
     "science:The discovery of the neutrino": "2026-06-16",
@@ -7556,8 +7284,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-06-27T11:57:30.229560+00:00"
+    "ok": 46,
+    "ts": "2026-06-27T14:01:46.635622+00:00"
   },
   "launch_seen_ids": [
     "be8b1880c67afb06",
@@ -7577,10 +7305,20 @@
     "9cf78ee44cb96c21",
     "7621aad01d0821be"
   ],
-  "learn_last_sent": "2026-06-26",
+  "learn_last_sent": "2026-06-27",
   "life_dashboard_last_week": "2026-W25",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "c18ba4c7796cdd9f",
+      "8653c5b8b896b8ec",
+      "a06a2aaccb2a15d1",
+      "fc9c89e515179583",
+      "d59ad9eeb422c562",
+      "75e7ef0941ef9130",
+      "ee2406cec16e0531",
+      "563d64bfa177bf4d",
+      "5fa4069c06726015",
+      "60c6b6e7a7fc3b0f",
       "b13b8b694e22dc44",
       "12749b11dc37f1db",
       "4bef590070c8d306",
@@ -7670,17 +7408,7 @@
       "13af8daf9b0f056d",
       "f9b4494d21ac8953",
       "ed40fb8d5a7ec653",
-      "96b07993d593fbb4",
-      "ec6694d64fb61f59",
-      "6df6e29f507a8a7d",
-      "5959b38e15f833f0",
-      "08da9fdbf50224ca",
-      "05ecd37855cf4550",
-      "5ea55c51dbedcc30",
-      "48fadc8835fc75b0",
-      "82f59156ca72814f",
-      "a426785678d80505",
-      "a081e88d7f3f4c82"
+      "96b07993d593fbb4"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -7884,6 +7612,18 @@
       "4ee9e90a06cba59e"
     ],
     "Spider-Man: Brand New Day": [
+      "0e5bfec6c514af8d",
+      "d4037501461b8e83",
+      "7f394639e2cbd933",
+      "ef53cb6c5b24b512",
+      "868be71740aff0f9",
+      "6e1c43603e633b5a",
+      "a3cfcaadc9d5b47d",
+      "b7a6d9db88b04d0a",
+      "8372a5d5c6cbe381",
+      "8fed34dbfb6cbf19",
+      "3014977fd16315c8",
+      "80362cd8376d0db1",
       "48c862bab41ed109",
       "cf3e754380cc3ab8",
       "d6f4bb2f9b8de3e9",
@@ -7971,19 +7711,7 @@
       "4671319c65a5c7b4",
       "5232f73aa567027f",
       "3f6e258cffeb26d4",
-      "adfdfb8b8ae179e1",
-      "9960874375002ebe",
-      "46fa61af42eab23e",
-      "6d6eb06332503542",
-      "84738f9a1b199075",
-      "d9fbcfa41179b70b",
-      "fa607576cde70e4c",
-      "51a289790bcf22b7",
-      "8b8a3a69a84ec7e4",
-      "70b04ccebce8eea2",
-      "ad6e3769456f834c",
-      "8d05421a882bd667",
-      "de160253ac4482b4"
+      "adfdfb8b8ae179e1"
     ],
     "The Batman Part II": [
       "4df2b39dc3673612",
@@ -8088,6 +7816,16 @@
       "91f6a8b0f55eed4d"
     ],
     "The Odyssey": [
+      "59b005693b724808",
+      "a33501d0210bf94e",
+      "2dfe25a70f367d69",
+      "49c6f4177e0f9822",
+      "7643132e9341090a",
+      "0403fa4dcbc9961d",
+      "5dd76c04b42b21c9",
+      "f71d409a270d0526",
+      "49b72fea0b259983",
+      "98bbf3db56ede50d",
       "cc86089f28df99af",
       "c8dae5f5b3d2dd42",
       "8429b311324c5ed1",
@@ -8177,17 +7915,7 @@
       "7f2f98e7aaed4b18",
       "a6f7b9a9de2cc7ba",
       "1e26ca1f20105ffb",
-      "3825e3f0530645ef",
-      "c7dbe5840b944083",
-      "986d60d880ffeee7",
-      "4b2cef2a6f55193b",
-      "baabfc4c13c43e85",
-      "504c88cf88833451",
-      "bd089c609671bbc3",
-      "629f624cfbf79cd0",
-      "4794690511fed652",
-      "e28e643a0e0d8b1d",
-      "2d9c1b94ca43f3c4"
+      "3825e3f0530645ef"
     ]
   },
   "movie_release_dates": {
@@ -8286,7 +8014,8 @@
     498918,
     11363014,
     13594287,
-    1590752
+    1590752,
+    11
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8371,6 +8100,15 @@
       "label": "Louis Armstrong",
       "payload": {
         "name": "Louis Armstrong"
+      }
+    },
+    "28a9fcba8b33f86b": {
+      "applied": null,
+      "created": "2026-06-27T14:01:59.365027+00:00",
+      "kind": "artist",
+      "label": "The Rolling Stones",
+      "payload": {
+        "name": "The Rolling Stones"
       }
     },
     "33afc46121d1bef4": {
@@ -8506,15 +8244,6 @@
       "label": "Metallica",
       "payload": {
         "name": "Metallica"
-      }
-    },
-    "70649d6d8834119e": {
-      "applied": null,
-      "created": "2026-06-13T12:52:56.634804+00:00",
-      "kind": "artist",
-      "label": "Foo Fighters",
-      "payload": {
-        "name": "Foo Fighters"
       }
     },
     "7831ed3aa27ec966": {
@@ -9051,177 +8780,177 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "deals": {
-      "last_data": "2026-06-27T10:27:29.424266+00:00",
-      "last_data_count": 11,
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_data": "2026-06-27T14:02:28.228059+00:00",
+      "last_data_count": 12,
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "energy": {
-      "last_data": "2026-06-27T10:27:41.126458+00:00",
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_data": "2026-06-27T14:03:04.624121+00:00",
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "fda": {
-      "last_data": "2026-06-27T10:27:29.699656+00:00",
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_data": "2026-06-27T14:02:53.188239+00:00",
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-26T21:59:05.570878+00:00",
+      "last_data": "2026-06-27T14:03:18.790808+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-26T21:57:26.594828+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "fx": {
-      "last_data": "2026-06-27T10:27:54.138145+00:00",
+      "last_data": "2026-06-27T14:03:17.473723+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "games": {
       "last_data": "2026-06-22T13:21:53.280804+00:00",
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-27T10:26:44.116965+00:00",
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_data": "2026-06-27T14:02:01.380543+00:00",
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-26T21:58:39.455785+00:00",
-      "last_data_count": 242,
-      "last_ok": "2026-06-26T21:57:26.594828+00:00"
+      "last_data": "2026-06-27T14:02:52.460430+00:00",
+      "last_data_count": 200,
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "movies": {
-      "last_data": "2026-06-27T10:26:37.531671+00:00",
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_data": "2026-06-27T14:01:54.342489+00:00",
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "music": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-27T10:27:41.943147+00:00",
+      "last_data": "2026-06-27T14:03:05.243892+00:00",
       "last_data_count": 17,
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-27T10:27:53.441458+00:00",
-      "last_data_count": 35,
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_data": "2026-06-27T14:03:16.649728+00:00",
+      "last_data_count": 37,
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-27T11:57:32.067917+00:00",
+      "last_data": "2026-06-27T14:01:55.735668+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-27T11:57:30.229560+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "weather": {
-      "last_data": "2026-06-27T10:27:41.487310+00:00",
+      "last_data": "2026-06-27T14:03:04.842018+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-27T10:27:57.064789+00:00",
+      "last_data": "2026-06-27T14:03:22.518047+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-27T10:26:31.096919+00:00"
+      "last_ok": "2026-06-27T14:01:46.635622+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165051"
+    "last_full_window": "165052"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9233,8 +8962,11 @@
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
   "watchdog_failing_since": {},
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-06-27|12"
+  ],
   "weather_seen_ids": [
+    "9829e29a99e53f49",
     "c04c61557fff53c8",
     "2ae55e9274a8ff54",
     "6424e0ed6b7a11bd",
@@ -9311,8 +9043,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "activists_thinkers",
-  "wikiquote_last_sent": "2026-06-27T3",
+  "wikiquote_last_category": "philosophers",
+  "wikiquote_last_sent": "2026-06-27T4",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -9344,7 +9076,7 @@
     "leaders:Theodore Roosevelt": "2026-06-24",
     "leaders:Thomas Jefferson": "2026-06-17",
     "leaders:Winston Churchill": "2026-06-19",
-    "philosophers:Aristotle": "2026-06-15",
+    "philosophers:Aristotle": "2026-06-27",
     "philosophers:Arthur Schopenhauer": "2026-06-17",
     "philosophers:Confucius": "2026-06-21",
     "philosophers:Friedrich Nietzsche": "2026-06-19",
