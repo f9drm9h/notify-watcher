@@ -119,7 +119,26 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [],
+  "digest_buffer": [
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Avengers: Doomsday",
+      "title": "A Big \u2018Avengers: Doomsday\u2019 Leak Reportedly Arrives, But Its Validity Is Debatable - Forbes",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWWxfeWxRTE1FeXZHUjlGXzZkbkh5ME02YjROVHlEbk9pbXpua0Z5cHVMN1FHYmtGRHktdW9id3ZTN0QwZENDY2ZMUm13WklaYTdKM29jNEk4QVVkMnNlaFJBNF9CYzZ4R3BIQURmRE1ZRUcwbVItcF9aNFh5SE9OaXMxUUZTUlA5U3BMTi1XT3U2UnFUNS1zYVhXd2FzVlU4dWtoRjgyR0hBWnMtc09KaFhOeWtrZkJOeEJQSGt5OW5SY0d5T1Nz?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Tom Holland confirms a surprising Spider-Man: Brand New Day twist - Bam Smack Pow",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOb0hCYjJGbEdfZk9HMllBMy1SODdydVFKZmN4VTBiLV82V2VwdkhTX0lnT04tS2k1SzhNNHFMaDExS3RycExwaWZUdE1JMGpoaEt4WmJHWENDek5CMHZrUzljQjBjVFEweDhTdXdqQml2RDcxaGZlelptZWlWSHV5YzlkWm92QQ?oc=5"
+    }
+  ],
   "digest_last_sent": "2026-06-27",
   "discord_control": {
     "last_id": "1519883605067698186"
@@ -302,102 +321,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "DOP 899.00 (was DOP 1,090.00, -18%)",
-      "id": "521f205f72ac7db9",
-      "score": 45,
-      "severity": "moderate",
-      "source": "Nacional",
-      "title": "Nacional deal: Flat Iron Certified Angus Beef, Lb (Peso Aprox. 2 Libras)",
-      "topic": "groceries",
-      "ts": "2026-06-22T21:11:22.908398+00:00",
-      "url": "https://supermercadosnacional.com/flat-iron-certified-angus-beef-lb-peso-aprox-2-libras-2090342"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 109.95 (was DOP 118.95, -8%)",
-      "id": "fed43eae9a90b5d1",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Guandules Verdes La Famosa 15 Onz",
-      "topic": "groceries",
-      "ts": "2026-06-22T21:11:22.908983+00:00",
-      "url": "https://supermercadosnacional.com/guandules-verdes-la-famosa-15-onz-2004394"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 89.95 (was DOP 98.95, -9%)",
-      "id": "9275598da0b336f5",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Galletas De Soda Hatuey 9 Und/Paq",
-      "topic": "groceries",
-      "ts": "2026-06-22T21:11:22.909514+00:00",
-      "url": "https://supermercadosnacional.com/galletas-de-soda-hatuey-9-und-paq-2018778"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 206.95 (was DOP 228.95, -10%)",
-      "id": "35e566e525245c7a",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Galletas De Vainilla Oreo 15.24 Onz",
-      "topic": "groceries",
-      "ts": "2026-06-22T21:11:22.910024+00:00",
-      "url": "https://supermercadosnacional.com/galletas-de-vainilla-oreo-15-24-onz-2138941"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 2,127.97 (was DOP 3,039.95, -30%)",
-      "id": "d9afb2c6f1ec15a4",
-      "score": 45,
-      "severity": "moderate",
-      "source": "Nacional",
-      "title": "Nacional deal: Pa\u00f1ales Swaddlers S4 Super Pack Pampers 66 Und/Paq",
-      "topic": "groceries",
-      "ts": "2026-06-22T21:11:22.910529+00:00",
-      "url": "https://supermercadosnacional.com/panales-swaddlers-s4-super-pack-pampers-66-und-paq-2165915"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 226.95 (was DOP 263.95, -14%)",
-      "id": "c83d87b1f762d53a",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Toallas H\u00famedas Huggies Natural Care 56 Unidades",
-      "topic": "groceries",
-      "ts": "2026-06-22T21:11:22.911020+00:00",
-      "url": "https://supermercadosnacional.com/toallas-humedas-huggies-natural-care-56-unidades-2128767"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 182.95 (was DOP 214.95, -15%)",
-      "id": "fa7e16fc828ee448",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Suavizante Amanecer Downy 700 Ml",
-      "topic": "groceries",
-      "ts": "2026-06-22T21:11:22.911532+00:00",
-      "url": "https://supermercadosnacional.com/suavizante-amanecer-downy-700-ml-2216342"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 3,229.95 (was DOP 3,799.95, -15%)",
-      "id": "0d98dac9a7286846",
-      "score": 45,
-      "severity": "moderate",
-      "source": "Nacional",
-      "title": "Nacional deal: Whisky 12 A\u00f1os Glenfiddich 75 Cl",
-      "topic": "groceries",
-      "ts": "2026-06-22T21:11:22.912020+00:00",
-      "url": "https://supermercadosnacional.com/whisky-12-anos-glenfiddich-75-cl-2002033"
-    },
     {
       "action": "digest",
       "detail": "DOP 1,699.95 (was DOP 1,999.95, -15%)",
@@ -6301,6 +6224,102 @@
       "topic": "beach_day",
       "ts": "2026-06-27T14:03:45.939316+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "a2e0304626143ee3",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday Leaks - Resurfaced Set Photo May Confirm Recent Photo & Video Are Genuine - ComicBookMovie.com",
+      "topic": "movies",
+      "ts": "2026-06-27T15:22:01.917453+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQMWhIbTIyNm9fX1hXS0pGWmpXbktObGhQNnRFSy0xQlVoeXVtbWdlbEhiM2Y4T1VQS0Jzc2ZqbkpxSllWemh5RmlFaWItSEMzTF9XLWNUQ2ZnSjBiMi1nNl91N2VFSUh3RG1vUm9CclU2VDR3Si1idEpQVXpIMUZpSU52c0JkVEZlMHVvZlFIZjJrY05oUm54YkZvWmxpVmpGc0NIeXFNdTJJSG11STQ2emtjR1BKb1hPai1sV1FJa2ZCUFJ4MkQ1blZ5dUdvQ0MwM19ibXdzU0VtYnNfQk94LUdST0VkUQ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "3e196915b74128e2",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "A Big \u2018Avengers: Doomsday\u2019 Leak Reportedly Arrives, But Its Validity Is Debatable - Forbes",
+      "topic": "movies",
+      "ts": "2026-06-27T15:22:02.543989+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWWxfeWxRTE1FeXZHUjlGXzZkbkh5ME02YjROVHlEbk9pbXpua0Z5cHVMN1FHYmtGRHktdW9id3ZTN0QwZENDY2ZMUm13WklaYTdKM29jNEk4QVVkMnNlaFJBNF9CYzZ4R3BIQURmRE1ZRUcwbVItcF9aNFh5SE9OaXMxUUZTUlA5U3BMTi1XT3U2UnFUNS1zYVhXd2FzVlU4dWtoRjgyR0hBWnMtc09KaFhOeWtrZkJOeEJQSGt5OW5SY0d5T1Nz?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "d7fbb9f8f528a596",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Tom Holland confirms a surprising Spider-Man: Brand New Day twist - Bam Smack Pow",
+      "topic": "movies",
+      "ts": "2026-06-27T15:22:03.170397+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOb0hCYjJGbEdfZk9HMllBMy1SODdydVFKZmN4VTBiLV82V2VwdkhTX0lnT04tS2k1SzhNNHFMaDExS3RycExwaWZUdE1JMGpoaEt4WmJHWENDek5CMHZrUzljQjBjVFEweDhTdXdqQml2RDcxaGZlelptZWlWSHV5YzlkWm92QQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Dancing In the Dark - Bruce Springsteen\n(because you like Queen)",
+      "id": "d32ceb70264b557b",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-27T15:22:12.529218+00:00",
+      "url": "https://www.deezer.com/track/15586246"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 11:43 PM - max 61deg, SW to NE. Look up!",
+      "id": "aeda3652dd5c1f11",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-06-27T15:23:37.145271+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Sip some water - your body will thank you.",
+      "id": "3ce59b46a234f2d9",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-27T15:23:39.088608+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Before the humble shipping container revolutionized global trade, the world of cargo was a chaotic, labor-intensive affair. Picture the bustling docks of New York or London in the mid-20th century: a cacophony of shouting stevedores, the clatter of winches, and the rhythmic thud of sacks and barrels being hoisted from ships' holds. Each item, whether a crate of machinery parts or a sack of coffee beans, was handled individually, meticulously tallied, and often repackaged multiple times before reaching its final destination. This \"break bulk\" cargo system was slow, expensive, and incredibly vulnerable to damage and pilferage. It created bottlenecks at every port, limiting the volume of goods that could be moved across oceans and significantly inflating the cost of international commerce. The inefficiency was a tangible barrier to prosperity, a physical impediment to a truly interconnected global economy, and a daily source of back-breaking toil for thousands of longshoremen.\n\nThen came the vision of Malcolm McLean, a trucking magnate from North Carolina. Frustrated by the delays and costs of traditional shipping, he conceived of a standardized, reusable metal box that could be moved seamlessly from truck to ship to train without ever being unpacked. His initial experiments in the mid-1950s, using converted tanker ships to carry truck trailers, proved the concept. But the real breakthrough came on April 26, 1956, when the *Ideal X*, a converted World War II tanker, sailed from Newark, New Jersey, to Houston, Texas, carrying 58 custom-built 35-foot containers. This maiden voyage, while modest in scope, marked a quiet but profound turning point in human history. It wasn't just a technological innovation; it was a conceptual leap, a challenge to centuries of established practice, and the beginning of a relentless drive for efficiency that would reshape industries and economies worldwide.\n\nThe adoption of the shipping container was not without its resistance and human drama. Port communities, long dependent on the labor-intensive break-bulk system, faced the stark reality of automation and job displacement. Longshoremen, whose livelihoods were tied to the handling of individual parcels, found their skills becoming obsolete as gantry cranes, operated by a fraction of the workforce, effortlessly moved entire containers. Strikes and bitter negotiations erupted in ports around the world, as unions fought to protect their members' jobs and secure fair compensation in a rapidly changing industry. Yet, the economic advantages of containerization were too immense to ignore. The speed, security, and drastic reduction in handling costs meant goods could be transported across vast distances for pennies on the dollar, making previously unviable trade routes profitable and ushering in an era of unprecedented global interconnectedness. This period was a microcosm of the broader tension between technological progress and its human cost, a recurring theme throughout industrial history.\n\nThe shipping container, in its elegant simplicity, became the silent engine of globalization. It allowed for the decentralization of manufacturing, enabling companies to source components from anywhere in the world and assemble products in distant factories, drastically lowering production costs. It fueled the rise of consumer culture by making an unimaginable variety of goods affordable and accessible to populations across the globe.",
+      "id": "644a673203131a6d",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The shipping container and global trade",
+      "topic": "learn",
+      "ts": "2026-06-27T15:23:44.784953+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cOur new Constitution is now established, and has an appearance that promises permanency; but in this world nothing can be said to be certain, except death and taxes!\u201d\n\u2014 Benjamin Franklin\n\nBenjamin Franklin, the quintessential polymath of the American Enlightenment, uttered those famous words in a letter to Jean-Baptiste Leroy in 1789, just as the fledgling United States was finding its sea legs. By this point, Franklin was a titan, not merely of American affairs but of the global intellectual stage. His life had been a ceaseless, extraordinary ascent from humble beginnings as a printer\u2019s apprentice in Boston to an internationally renowned statesman, scientist, inventor, and philosopher. He had charmed the French court, negotiated critical alliances, designed a more efficient stove, charted the Gulf Stream, and even invented bifocals. Yet, even with such a litany of achievements, Franklin's enduring pragmatism, born from decades of navigating political currents and personal hardships, remained his most defining trait. At 83 years old, infirm but ever sharp, he had just presided over the Constitutional Convention, a crucible of clashing ideologies that ultimately forged the framework for American governance. The document was a monumental achievement, a testament to the power of reasoned debate and compromise, yet Franklin, ever the realist, understood the inherent fragility of human constructs, even those born of lofty ideals.\n\nThe context of his remark speaks volumes about the precarious state of the nascent American republic. The Articles of Confederation, the nation\u2019s first governing document, had proven inadequate, leading to economic instability, interstate disputes, and a general sense of disarray. Shays' Rebellion, an uprising of indebted farmers in Massachusetts, had vividly demonstrated the weaknesses of a decentralized government incapable of effectively maintaining order. Franklin, along with fellow framers like James Madison and George Washington, had labored through sweltering Philadelphia summers, attempting to craft a government strong enough to unite the disparate states but not so powerful as to recreate the tyranny they had just overthrown. The Constitution, a revolutionary experiment in self-governance, was a delicate balance of powers, a carefully constructed edifice designed to withstand the inevitable storms of political disagreement and human ambition. Franklin's pronouncement, therefore, wasn't cynicism but rather a profound wisdom, an acknowledgment of the eternal forces that transcend even the most meticulously crafted political structures. He knew that while a nation could be born, its true permanence would always be an ongoing struggle against human nature and the inexorable march of time.\n\nThat Franklin\u2019s words, \"nothing can be said to be certain, except death and taxes,\" resonate so deeply today is a testament to their timeless truth. In an era marked by rapid technological change, shifting geopolitical landscapes, and a constant barrage of information, the only constants seem to be the human condition itself. We still grapple with mortality, and governments, regardless of their form or philosophy, invariably rely on taxation to fund their operations.",
+      "id": "ad9afcc0cb40b55a",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Benjamin Franklin",
+      "topic": "wikiquote",
+      "ts": "2026-06-27T15:23:49.960101+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6400,7 +6419,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-27-JUN-03-JUL-DE-2026.pdf",
   "fuel_last_pdf_hash": "f8498e031891b450b3caa406b4e9889ad0596d4b83780850ebf173674f103f51",
-  "fuel_last_prices_seen_at": "2026-06-27T14:03:18.790785+00:00",
+  "fuel_last_prices_seen_at": "2026-06-27T15:23:36.041182+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7157,6 +7176,7 @@
     "iPadOS 12.5.8 (16H88)"
   ],
   "iss_seen_passes": [
+    "5dcea596d69ddb68",
     "5369a588f02057d0",
     "053b248f4e616d2f",
     "b8aaf0b86786614a",
@@ -7190,8 +7210,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "science",
-  "knowledge_last_sent": "2026-06-27T4",
+  "knowledge_last_category": "technology",
+  "knowledge_last_sent": "2026-06-27T5",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7271,6 +7291,7 @@
     "technology:The dynamo and the generation of electricity": "2026-06-13",
     "technology:The invention of the integrated circuit": "2026-06-16",
     "technology:The mechanical clock and the measurement of time": "2026-06-22",
+    "technology:The shipping container and global trade": "2026-06-27",
     "theorem_older_than_pythagoras": "2026-06-12",
     "wings_of_wax": "2026-06-13",
     "world_history:The Chernobyl disaster": "2026-06-17",
@@ -7285,7 +7306,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-06-27T14:01:46.635622+00:00"
+    "ts": "2026-06-27T15:21:59.142312+00:00"
   },
   "launch_seen_ids": [
     "be8b1880c67afb06",
@@ -7309,6 +7330,25 @@
   "life_dashboard_last_week": "2026-W25",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "c4b4d157ff5bdb41",
+      "0e0480281e5419ae",
+      "6de217b87013328c",
+      "278fe21404614ec6",
+      "31c5fd28ab10b984",
+      "dd489e309e541d6f",
+      "7dfa2a49248fc82f",
+      "6f0f05d6a62f04dc",
+      "a46cdf71779bca61",
+      "4ca72dccb1a6256f",
+      "05fa0868f5879b5e",
+      "c96b9db0b65425fb",
+      "333dae298ea67ed4",
+      "1f53a58d24d57d21",
+      "55006c364c1c9a6e",
+      "d1c46c8b99314e26",
+      "08da9fdbf50224ca",
+      "5ea55c51dbedcc30",
+      "48fadc8835fc75b0",
       "c18ba4c7796cdd9f",
       "8653c5b8b896b8ec",
       "a06a2aaccb2a15d1",
@@ -7389,26 +7429,7 @@
       "9a96247527239043",
       "49df125591fdf2a2",
       "95edc2af3fc834fb",
-      "32f599dab7e9538f",
-      "4c5fb90503cdde35",
-      "2adeb3e29fd1d80c",
-      "7d78898fe155b149",
-      "8602e13c2ddeb3b6",
-      "cc24264e37d3ea52",
-      "0b389fe2b1797a2f",
-      "109fadda33d8f14f",
-      "d3b1f93a346ea986",
-      "c68c4763370a982e",
-      "92980ffcc104ad52",
-      "ee05419047ac729f",
-      "ab49523da875d762",
-      "edc4bbec64d25ef8",
-      "99e80f32f1911bae",
-      "3444df68686b14f8",
-      "13af8daf9b0f056d",
-      "f9b4494d21ac8953",
-      "ed40fb8d5a7ec653",
-      "96b07993d593fbb4"
+      "32f599dab7e9538f"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -7612,6 +7633,15 @@
       "4ee9e90a06cba59e"
     ],
     "Spider-Man: Brand New Day": [
+      "679951badc4bcf00",
+      "87f9921507a3f3d2",
+      "ad6e3769456f834c",
+      "d84d3f647f7a3c58",
+      "46fa61af42eab23e",
+      "d9fbcfa41179b70b",
+      "fa607576cde70e4c",
+      "6865cd545c5f07cf",
+      "3b45eb451b4d32cf",
       "0e5bfec6c514af8d",
       "d4037501461b8e83",
       "7f394639e2cbd933",
@@ -7702,16 +7732,7 @@
       "8ac661eddea95707",
       "e90f3284f5972419",
       "19068fa78d83e47f",
-      "2a0154515ffd9388",
-      "8226c721333a6260",
-      "8d46ff507eb93d47",
-      "a8aef1169f849729",
-      "b3042f8f7927419c",
-      "6153b4b48a06c3ae",
-      "4671319c65a5c7b4",
-      "5232f73aa567027f",
-      "3f6e258cffeb26d4",
-      "adfdfb8b8ae179e1"
+      "2a0154515ffd9388"
     ],
     "The Batman Part II": [
       "4df2b39dc3673612",
@@ -7816,6 +7837,17 @@
       "91f6a8b0f55eed4d"
     ],
     "The Odyssey": [
+      "c761f483efd42a1b",
+      "09d6c86bf8668503",
+      "a1c3b33de2962ed6",
+      "bedba7634f6eb10e",
+      "c7dbe5840b944083",
+      "4b2cef2a6f55193b",
+      "504c88cf88833451",
+      "629f624cfbf79cd0",
+      "4794690511fed652",
+      "2d9c1b94ca43f3c4",
+      "fcaa943e84f7ec4e",
       "59b005693b724808",
       "a33501d0210bf94e",
       "2dfe25a70f367d69",
@@ -7904,18 +7936,7 @@
       "4dc90d20f739286d",
       "4c681a500e13b793",
       "d9058042ff96c96a",
-      "734b12d98fcca4c9",
-      "1dacda63765b6d4e",
-      "3a5f066c1b93dcbc",
-      "17323d4e37f67390",
-      "c0a3e916324c27c7",
-      "df69a7ad7a9b3d3c",
-      "e77aff3019e7ca28",
-      "d1e3a81e39ada98e",
-      "7f2f98e7aaed4b18",
-      "a6f7b9a9de2cc7ba",
-      "1e26ca1f20105ffb",
-      "3825e3f0530645ef"
+      "734b12d98fcca4c9"
     ]
   },
   "movie_release_dates": {
@@ -8015,7 +8036,8 @@
     11363014,
     13594287,
     1590752,
-    11
+    11,
+    4762
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8082,6 +8104,15 @@
       "label": "Lloyd Banks",
       "payload": {
         "name": "Lloyd Banks"
+      }
+    },
+    "1bae16d15abc0bf6": {
+      "applied": null,
+      "created": "2026-06-27T15:22:12.529194+00:00",
+      "kind": "artist",
+      "label": "Bruce Springsteen",
+      "payload": {
+        "name": "Bruce Springsteen"
       }
     },
     "21da12371bb452f3": {
@@ -8352,15 +8383,6 @@
       "label": "Wencke Myhre",
       "payload": {
         "name": "Wencke Myhre"
-      }
-    },
-    "a2688e648bf6735a": {
-      "applied": null,
-      "created": "2026-06-13T15:00:17.195887+00:00",
-      "kind": "artist",
-      "label": "The Smashing Pumpkins",
-      "payload": {
-        "name": "The Smashing Pumpkins"
       }
     },
     "a6923caf70eba0d1": {
@@ -8780,177 +8802,177 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "deals": {
-      "last_data": "2026-06-27T14:02:28.228059+00:00",
-      "last_data_count": 12,
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_data": "2026-06-27T15:23:01.456923+00:00",
+      "last_data_count": 11,
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "energy": {
-      "last_data": "2026-06-27T14:03:04.624121+00:00",
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_data": "2026-06-27T15:23:20.870187+00:00",
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "fda": {
-      "last_data": "2026-06-27T14:02:53.188239+00:00",
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_data": "2026-06-27T15:23:10.345264+00:00",
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-27T14:03:18.790808+00:00",
+      "last_data": "2026-06-27T15:23:36.041203+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "fx": {
-      "last_data": "2026-06-27T14:03:17.473723+00:00",
+      "last_data": "2026-06-27T15:23:34.317385+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "games": {
       "last_data": "2026-06-22T13:21:53.280804+00:00",
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-27T14:02:01.380543+00:00",
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_data": "2026-06-27T15:22:14.192045+00:00",
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-27T14:02:52.460430+00:00",
-      "last_data_count": 200,
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_data": "2026-06-27T15:23:10.060764+00:00",
+      "last_data_count": 242,
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "movies": {
-      "last_data": "2026-06-27T14:01:54.342489+00:00",
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_data": "2026-06-27T15:22:06.832761+00:00",
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "music": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-27T14:03:05.243892+00:00",
+      "last_data": "2026-06-27T15:23:21.457580+00:00",
       "last_data_count": 17,
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-27T14:03:16.649728+00:00",
+      "last_data": "2026-06-27T15:23:33.637470+00:00",
       "last_data_count": 37,
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-27T14:01:55.735668+00:00",
+      "last_data": "2026-06-27T15:22:09.702440+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "weather": {
-      "last_data": "2026-06-27T14:03:04.842018+00:00",
+      "last_data": "2026-06-27T15:23:20.983108+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-27T14:03:22.518047+00:00",
+      "last_data": "2026-06-27T15:23:39.088184+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-27T14:01:46.635622+00:00"
+      "last_ok": "2026-06-27T15:21:59.142312+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165052"
+    "last_full_window": "165053"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8963,6 +8985,7 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
+    "2026-06-27|15",
     "2026-06-27|12"
   ],
   "weather_seen_ids": [
@@ -9043,8 +9066,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "philosophers",
-  "wikiquote_last_sent": "2026-06-27T4",
+  "wikiquote_last_category": "leaders",
+  "wikiquote_last_sent": "2026-06-27T5",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -9067,7 +9090,7 @@
     "innovators_artists:Vincent van Gogh": "2026-06-20",
     "innovators_artists:Walt Disney": "2026-06-19",
     "leaders:Abraham Lincoln": "2026-06-26",
-    "leaders:Benjamin Franklin": "2026-06-15",
+    "leaders:Benjamin Franklin": "2026-06-27",
     "leaders:Eleanor Roosevelt": "2026-06-23",
     "leaders:Frederick Douglass": "2026-06-20",
     "leaders:Mahatma Gandhi": "2026-06-22",
