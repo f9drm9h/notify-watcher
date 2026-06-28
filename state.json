@@ -121,7 +121,26 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [],
+  "digest_buffer": [
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Zendaya Stuns in Vintage $35 Spider-Man T-Shirt for \u2018Brand New Day\u2019 Event in Paris - The Hollywood Reporter",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM2VoSGFyUUh1ZDIxRUtYeWFEQWNnOERXR1p1dU05MWNDb0J1SnRkLXVMdnpLRnJOTjBlVHpROU85b2x0WXlTa1JScldsSTRyYV95dlhWMnZhdW1pbDB0dkF0Z2UtU3pLVXJLa21xOTdyS2RJTEFnbEdUQS01M0p4anc1SERnRkdOVlBOdnB4Qld6LVhhdHV1Zg?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Earthquakes",
+      "title": "M3.8 - 20 km SSE of Punta Cana, Dominican Republic (~156 km away)",
+      "topic": "quakes",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr2026179002"
+    }
+  ],
   "digest_last_sent": "2026-06-28",
   "discord_control": {
     "last_id": "1519883605067698186"
@@ -305,90 +324,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "DOP 1,074.00 (was DOP 1,200.00, -10%)",
-      "id": "b699bf9106768d80",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Strip Loin Certified Angus Beef, Lb (Peso Aprox. 1 Libra)",
-      "topic": "groceries",
-      "ts": "2026-06-23T22:07:10.823972+00:00",
-      "url": "https://supermercadosnacional.com/strip-loin-certified-angus-beef-lb-peso-aprox-1-libra-2089964"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 179.95 (was DOP 208.95, -14%)",
-      "id": "43ea1392b319c08a",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Queso Mini Babybel La Vaca Qui Rie 4.5 Onz",
-      "topic": "groceries",
-      "ts": "2026-06-23T22:07:10.824402+00:00",
-      "url": "https://supermercadosnacional.com/queso-mini-babybel-la-vaca-qui-rie-4-5-onz-2021174"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 134.95 (was DOP 159.95, -16%)",
-      "id": "3992ecbe5cca47f3",
-      "score": 45,
-      "severity": "moderate",
-      "source": "Nacional",
-      "title": "Nacional deal: Papas Congeladas Shoe String Mydibel 1 Kg",
-      "topic": "groceries",
-      "ts": "2026-06-23T22:07:10.824790+00:00",
-      "url": "https://supermercadosnacional.com/papas-congeladas-shoe-string-mydibel-1-kg-2135818"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 229.95 (was DOP 239.95, -4%)",
-      "id": "85ce08a7f1596398",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Salchicha Parrillera Tradicional El Criollo 450 Gr",
-      "topic": "groceries",
-      "ts": "2026-06-23T22:07:10.825154+00:00",
-      "url": "https://supermercadosnacional.com/salchicha-parrillera-tradicional-el-criollo-450-gr-2210065"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 225.95 (was DOP 268.95, -16%)",
-      "id": "dd00514bbd1fdc22",
-      "score": 45,
-      "severity": "moderate",
-      "source": "Nacional",
-      "title": "Nacional deal: Jabon En Barra Blanco Dove 3 Und/Paq 90 Gr",
-      "topic": "groceries",
-      "ts": "2026-06-23T22:07:10.825544+00:00",
-      "url": "https://supermercadosnacional.com/jabon-en-barra-blanco-dove-3-und-paq-90-gr-2215220"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 116.95 (was DOP 128.95, -9%)",
-      "id": "38e7a0074ec586f8",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Toallas Sanitarias Nosotras Buenas Noches Natural 10 Und",
-      "topic": "groceries",
-      "ts": "2026-06-23T22:07:10.825916+00:00",
-      "url": "https://supermercadosnacional.com/toallas-sanitarias-nosotras-buenas-noches-natural-10-und-2005081"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "b16e007696d820ea",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Morphine Sulfate",
-      "title": "FDA updates approval for Morphine Sulfate (NDA022195)",
-      "topic": "fda",
-      "ts": "2026-06-23T22:07:11.102677+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022195"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6304,6 +6239,90 @@
       "topic": "life_dashboard",
       "ts": "2026-06-28T13:04:15.172892+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "ada228769ee9fa7e",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Zendaya Stuns in Vintage $35 Spider-Man T-Shirt for \u2018Brand New Day\u2019 Event in Paris - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-06-28T16:21:13.268054+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM2VoSGFyUUh1ZDIxRUtYeWFEQWNnOERXR1p1dU05MWNDb0J1SnRkLXVMdnpLRnJOTjBlVHpROU85b2x0WXlTa1JScldsSTRyYV95dlhWMnZhdW1pbDB0dkF0Z2UtU3pLVXJLa21xOTdyS2RJTEFnbEdUQS01M0p4anc1SERnRkdOVlBOdnB4Qld6LVhhdHV1Zg?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Gurenge - LiSA\n(because you like RADWIMPS)",
+      "id": "f04c7bf1673c1f08",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-28T16:21:22.165294+00:00",
+      "url": "https://www.deezer.com/track/1093334492"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "8b17cce58d5ad272",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.8 - 20 km SSE of Punta Cana, Dominican Republic (~156 km away)",
+      "topic": "quakes",
+      "ts": "2026-06-28T16:22:19.045673+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr2026179002"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 10:55 PM - max 53deg, SW to NE. Look up!",
+      "id": "c27341c291c3fa44",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-06-28T16:22:22.173073+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Pause for a moment and have a drink of water.",
+      "id": "4f0c1c23c1219e99",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-28T16:22:24.317438+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "In the annals of Greek myth, few tales resonate with such enduring poignancy and cautionary wisdom as that of Daedalus and his ill-fated son, Icarus. This is a story woven with threads of ingenious craft, paternal love, hubris, and the inescapable gravity of human limitations, a timeless drama that unfolds against the sun-drenched, wave-lapped backdrop of the ancient Aegean. At its heart stands Daedalus, a master artisan of Athens, whose hands, it was said, could imbue inert matter with life itself. His renown, however, was shadowed by a dark secret: driven by envy, he had cast his gifted nephew and apprentice, Talus, from the Acropolis. Exiled for this crime, Daedalus found himself a prisoner, albeit a highly valued one, in the opulent yet oppressive court of King Minos of Crete. It was there he designed the labyrinth, an architectural marvel and monstrous trap, to contain the Minotaur, the bull-headed son of Minos's wife, Pasipha\u00eb, a beast born from a divine curse Daedalus had also, unwittingly, helped to facilitate.\n\nThe labyrinth, a symbol of Daedalus's unparalleled genius, became his gilded cage. Minos, fearing the architect might reveal its secrets or design an escape route for others, refused to release him or his young son, Icarus. The vast sea and the watchful ships of Minos\u2019s fleet seemed to close off all avenues of escape. But Daedalus was not one to be deterred by conventional obstacles. His mind, ever restless and inventive, turned to the one domain Minos did not control: the air. Day after day, he observed the birds, meticulously studying the mechanics of their flight. He gathered feathers, from the smallest downy plumes to the stiff, broad quills of gulls and eagles, binding them together with linen thread and shaping them with melted beeswax. With infinite care, he fashioned two pairs of magnificent wings, light yet strong, structures of breathtaking ingenuity designed to defy gravity itself.\n\nThe moment of their attempted escape was charged with a profound and heartbreaking human drama. As Daedalus fitted the wings to Icarus\u2019s shoulders, a father\u2019s love and a profound sense of foreboding mingled in his heart. His hands trembled, not from the effort of the task, but from the weight of the immense risk they were about to undertake. He offered his son a tender, solemn warning, a lesson echoing through generations: \"My son, remember to take a middle course. Do not fly too low, lest the sea's dampness clogs your wings, nor too high, lest the sun's heat melts the wax.\" He demonstrated the art of flight, his own movements graceful yet hesitant, his eyes never leaving his son. Then, with a final, tearful kiss, a moment heavy with the unspoken fear of what was to come, they launched themselves into the vast, azure sky, two figures against the immensity of the heavens, symbols of human aspiration and vulnerability.\n\nFor a time, the escape was glorious. The wind sang in Icarus's ears, the world below a distant, unfolding tapestry. The exhilaration of flight, the sheer joy of freedom, proved too potent for the young boy. Forgetting his father\u2019s counsel, intoxicated by the unbound liberty of the sky, Icarus soared higher and higher, drawn like a moth to a flame by the magnificent, all-consuming sun. The relentless heat, however, was unforgiving. The wax softened, then melted. The feathers, no longer bound, detached and drifted away like scattered autumn leaves.",
+      "id": "7bc5869af3953d03",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Daedalus and the fall of Icarus",
+      "topic": "learn",
+      "ts": "2026-06-28T16:22:30.377744+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cMu\u00df es sein? Es mu\u00df sein.\u201d\n\u2014 Ludwig van Beethoven\n\nLudwig van Beethoven, a titan among composers, was a man often at odds with the world, a fiery spirit whose music soared even as his own ears betrayed him. Born in Bonn in 1770, he came of age during a period of immense upheaval, a time when the Enlightenment's ideals were clashing with the old monarchical order, culminating in the French Revolution. This was a world ripe for change, and Beethoven, with his fierce independence and revolutionary musical voice, was a perfect product of it. He defied the conventions of his patrons, famously refusing to compose merely as a servant, demanding to be recognized as an artist in his own right. His early career in Vienna was marked by dazzling virtuosity at the piano, but even then, the insidious whisper of deafness began to creep into his life, a cruel irony for a musician whose entire being was dedicated to sound.\n\nThe poignant question, \"Mu\u00df es sein? Es mu\u00df sein.\" \u2013 \"Must it be? It must be.\" \u2013 emerged from a late period in Beethoven\u2019s life, a time when his deafness was absolute and his physical ailments were mounting. He was in his mid-fifties, composing some of his most profound and challenging works, the late string quartets and the monumental Ninth Symphony. This particular phrase is famously associated with the String Quartet No. 16 in F major, Op. 135, specifically the fourth movement. It was not a spontaneous outburst but a deliberate inscription within his musical score, a philosophical struggle given voice through notes. The \"must it be?\" embodies the human reluctance, the weariness in the face of inevitability, perhaps even a lament about the burdens of his own existence and the persistent demands of artistic creation. Yet, the resolute \"it must be\" speaks to an unwavering acceptance, a stoic resolve to confront fate head-on, to fulfill his artistic destiny despite every conceivable obstacle. It was a testament to his indomitable spirit, his refusal to yield to despair even as the silence around him deepened.\n\nToday, Beethoven's simple yet profound utterance resonates because it taps into a universal human experience. We all face moments of \"must it be?\" \u2013 the unwelcome responsibilities, the difficult decisions, the unavoidable challenges that life inevitably throws our way. Whether it's the grind of daily existence, a personal tragedy, or a global crisis, we are continually confronted with situations where we question the necessity of our struggle. And just as often, we arrive at the same conclusion: \"it must be.\" It is a recognition of duty, resilience, and the sheer force of will required to persevere. Beethoven, through his music and his words, articulated a timeless truth about the human condition: that even in the face of profound suffering and relentless adversity, there is a powerful, almost primal drive to continue, to create, and to accept the hand we are dealt, transforming burden into enduring purpose. His life and his art stand as a testament to that unyielding spirit.",
+      "id": "6f0d512ae464578d",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Ludwig van Beethoven",
+      "topic": "wikiquote",
+      "ts": "2026-06-28T16:22:34.645148+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6403,7 +6422,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-27-JUN-03-JUL-DE-2026.pdf",
   "fuel_last_pdf_hash": "f8498e031891b450b3caa406b4e9889ad0596d4b83780850ebf173674f103f51",
-  "fuel_last_prices_seen_at": "2026-06-28T13:03:58.153220+00:00",
+  "fuel_last_prices_seen_at": "2026-06-28T16:22:20.789087+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7163,6 +7182,7 @@
     "iPadOS 12.5.8 (16H88)"
   ],
   "iss_seen_passes": [
+    "04336b62276cb45b",
     "37ff6e7fa8704ed4",
     "29b2aad8e127c954",
     "b4a7115eba83378c",
@@ -7203,8 +7223,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "medicine",
-  "knowledge_last_sent": "2026-06-28T4",
+  "knowledge_last_category": "mythology",
+  "knowledge_last_sent": "2026-06-28T5",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7255,6 +7275,7 @@
     "medicine:The global eradication of smallpox": "2026-06-16",
     "medicine:Walter Reed and the conquest of yellow fever": "2026-06-14",
     "mythology:Amaterasu, the Japanese sun goddess": "2026-06-20",
+    "mythology:Daedalus and the fall of Icarus": "2026-06-28",
     "mythology:Inanna's descent to the underworld": "2026-06-25",
     "mythology:Marduk and the creation in the Enuma Elish": "2026-06-16",
     "mythology:Pandora and the jar of evils": "2026-06-14",
@@ -7304,8 +7325,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-06-28T14:53:08.596062+00:00"
+    "ok": 46,
+    "ts": "2026-06-28T16:21:09.827534+00:00"
   },
   "launch_seen_ids": [
     "a64771bf6b805933",
@@ -7331,6 +7352,14 @@
   "life_dashboard_last_week": "2026-W26",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "7f7a8c77039bbf40",
+      "91066afbba568e85",
+      "585c9ae876c16668",
+      "4189a52b0c988554",
+      "2387c7bcc583051f",
+      "3980e4793fd2212c",
+      "c982d7c4555afc4f",
+      "effb4f95e0113f90",
       "843436d92452019f",
       "9a34f52feac1e671",
       "135258dcc1fff748",
@@ -7422,15 +7451,7 @@
       "fc9c89e515179583",
       "d59ad9eeb422c562",
       "75e7ef0941ef9130",
-      "ee2406cec16e0531",
-      "563d64bfa177bf4d",
-      "5fa4069c06726015",
-      "60c6b6e7a7fc3b0f",
-      "b13b8b694e22dc44",
-      "12749b11dc37f1db",
-      "4bef590070c8d306",
-      "a57367515cb87f7a",
-      "5abe8f5af695e43a"
+      "ee2406cec16e0531"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -7634,6 +7655,29 @@
       "ba01dfcd01feccde"
     ],
     "Spider-Man: Brand New Day": [
+      "5c8413ce97230200",
+      "e8dbc03adca1721d",
+      "2c63b5ef30b73d9e",
+      "679951badc4bcf00",
+      "2578460e4187aff0",
+      "d6f4bb2f9b8de3e9",
+      "ad6e3769456f834c",
+      "bee6c47c6e524bf9",
+      "8d46ff507eb93d47",
+      "c3b07bdac9d25281",
+      "18e464cd360d0864",
+      "3f6e258cffeb26d4",
+      "adfdfb8b8ae179e1",
+      "ef53cb6c5b24b512",
+      "05e1dd5b6e6dc556",
+      "fec70d74b1f9a85f",
+      "3b45eb451b4d32cf",
+      "ffd2c7055c45780b",
+      "19068fa78d83e47f",
+      "c79ff05e0fca113e",
+      "2a0154515ffd9388",
+      "8226c721333a6260",
+      "80362cd8376d0db1",
       "42165a14b407c88c",
       "13ecf5974c0e98a7",
       "094305e84a2842c7",
@@ -7710,30 +7754,7 @@
       "b9190efbd425702a",
       "6c29d2f3bd273136",
       "a8812c21735f2db8",
-      "cfe4e073b2ba6aba",
-      "13c570a56fa6a668",
-      "fcfd697eaddbd19e",
-      "1c54f05964e075c4",
-      "d98c798924f52562",
-      "063c108f0b7643c6",
-      "37553b6cefb71f17",
-      "48ec2020c5937434",
-      "afde1c0cfa6c7882",
-      "93fa0fc0f646f995",
-      "3c037dce74464a56",
-      "bb6c80813e1a2a56",
-      "30a24274abc9b73f",
-      "52a1aa11e81de426",
-      "bb067200ec8d925f",
-      "02d88de9c9aeba5c",
-      "5a6b2fd0b6a8589e",
-      "a5dfe173c856263e",
-      "42fa6ab3f0ecfeb0",
-      "0b654cf13afa268b",
-      "ddbdec823ddbf14a",
-      "353841c246b98c8f",
-      "8ac661eddea95707",
-      "e90f3284f5972419"
+      "cfe4e073b2ba6aba"
     ],
     "The Batman Part II": [
       "0bc371f3ab80e4b1",
@@ -7838,6 +7859,22 @@
       "ee0fc7f0fcff7efe"
     ],
     "The Odyssey": [
+      "c51c7caac1c33491",
+      "3b59dde7bd23f2fb",
+      "02e9fc20468ab2d4",
+      "acb1af88f1c06e1d",
+      "c8dae5f5b3d2dd42",
+      "277dd35a183cc7da",
+      "c81e02eb43ee4179",
+      "8429b311324c5ed1",
+      "c100de066b852643",
+      "570204a857dcedbf",
+      "51a3cee1c96724ee",
+      "5dd76c04b42b21c9",
+      "f354c741f53a2e9c",
+      "f71d409a270d0526",
+      "49b72fea0b259983",
+      "98bbf3db56ede50d",
       "e54bb27a74659774",
       "e79b5cc53eaed125",
       "93f96e2b04f03bbc",
@@ -7921,23 +7958,7 @@
       "3a5f066c1b93dcbc",
       "c0a3e916324c27c7",
       "e77aff3019e7ca28",
-      "c761f483efd42a1b",
-      "09d6c86bf8668503",
-      "a1c3b33de2962ed6",
-      "bedba7634f6eb10e",
-      "c7dbe5840b944083",
-      "4b2cef2a6f55193b",
-      "504c88cf88833451",
-      "629f624cfbf79cd0",
-      "4794690511fed652",
-      "2d9c1b94ca43f3c4",
-      "fcaa943e84f7ec4e",
-      "59b005693b724808",
-      "a33501d0210bf94e",
-      "2dfe25a70f367d69",
-      "49c6f4177e0f9822",
-      "7643132e9341090a",
-      "0403fa4dcbc9961d"
+      "c761f483efd42a1b"
     ]
   },
   "movie_release_dates": {
@@ -8041,7 +8062,8 @@
     4762,
     176,
     860,
-    8623006
+    8623006,
+    11446160
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8317,6 +8339,15 @@
         "name": "Taylor Swift"
       }
     },
+    "8d092f6f765e908c": {
+      "applied": null,
+      "created": "2026-06-28T16:21:22.165267+00:00",
+      "kind": "artist",
+      "label": "LiSA",
+      "payload": {
+        "name": "LiSA"
+      }
+    },
     "8ef4afc23cc75b82": {
       "applied": null,
       "created": "2026-06-21T18:55:19.792084+00:00",
@@ -8524,15 +8555,6 @@
         "name": "Silverstein"
       }
     },
-    "ee91c9cbc50cdfd7": {
-      "applied": null,
-      "created": "2026-06-14T16:12:38.440698+00:00",
-      "kind": "artist",
-      "label": "Mois\u00e9s Nieto",
-      "payload": {
-        "name": "Mois\u00e9s Nieto"
-      }
-    },
     "f2593e4e27d4d5cc": {
       "applied": null,
       "created": "2026-06-24T13:32:04.923408+00:00",
@@ -8675,6 +8697,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "9981a7033370c682",
     "376c1d6153be3af3",
     "ca42476570ae698a",
     "d1be939be3615e02",
@@ -8789,177 +8812,177 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "deals": {
-      "last_data": "2026-06-28T13:03:25.742814+00:00",
+      "last_data": "2026-06-28T16:21:48.977213+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "energy": {
-      "last_data": "2026-06-28T13:03:44.385074+00:00",
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_data": "2026-06-28T16:22:06.501986+00:00",
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "fda": {
-      "last_data": "2026-06-28T13:03:33.512082+00:00",
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_data": "2026-06-28T16:21:57.282532+00:00",
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-28T13:03:58.153241+00:00",
+      "last_data": "2026-06-28T16:22:20.789110+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "fx": {
-      "last_data": "2026-06-28T13:03:57.121296+00:00",
+      "last_data": "2026-06-28T16:22:19.573234+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "games": {
       "last_data": "2026-06-22T13:21:53.280804+00:00",
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-28T13:02:47.651269+00:00",
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_data": "2026-06-28T16:21:24.168781+00:00",
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-28T13:03:32.867064+00:00",
+      "last_data": "2026-06-28T16:21:56.747561+00:00",
       "last_data_count": 242,
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "movies": {
-      "last_data": "2026-06-28T13:02:42.047346+00:00",
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_data": "2026-06-28T16:21:16.542647+00:00",
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "music": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-28T13:03:44.868968+00:00",
+      "last_data": "2026-06-28T16:22:07.059910+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-28T13:03:56.679953+00:00",
-      "last_data_count": 35,
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_data": "2026-06-28T16:22:19.045347+00:00",
+      "last_data_count": 34,
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-28T14:53:09.730690+00:00",
+      "last_data": "2026-06-28T16:21:18.404163+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-28T14:53:08.596062+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "weather": {
-      "last_data": "2026-06-28T13:03:44.587998+00:00",
+      "last_data": "2026-06-28T16:22:06.734819+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-28T13:04:00.811186+00:00",
+      "last_data": "2026-06-28T16:22:24.316788+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-28T13:02:34.909735+00:00"
+      "last_ok": "2026-06-28T16:21:09.827534+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165060"
+    "last_full_window": "165061"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -8972,6 +8995,7 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
+    "2026-06-28|15",
     "2026-06-28|12"
   ],
   "weather_seen_ids": [
@@ -9056,8 +9080,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "leaders",
-  "wikiquote_last_sent": "2026-06-28T4",
+  "wikiquote_last_category": "innovators_artists",
+  "wikiquote_last_sent": "2026-06-28T5",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -9073,7 +9097,7 @@
     "innovators_artists:Frida Kahlo": "2026-06-18",
     "innovators_artists:Henry Ford": "2026-06-27",
     "innovators_artists:Leonardo da Vinci": "2026-06-23",
-    "innovators_artists:Ludwig van Beethoven": "2026-06-17",
+    "innovators_artists:Ludwig van Beethoven": "2026-06-28",
     "innovators_artists:Pablo Picasso": "2026-06-26",
     "innovators_artists:Steve Jobs": "2026-06-21",
     "innovators_artists:Thomas Edison": "2026-06-27",
