@@ -381,18 +381,6 @@
     {
       "action": "digest",
       "detail": "",
-      "id": "9384759b99f7bfeb",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman 2 writer says Disney turned down real-time Rocketeer legacy sequel about how \"viscerally insane it is to strap yourself to a rocket\" - GamesRadar+",
-      "topic": "movies",
-      "ts": "2026-06-24T04:41:00.508388+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxOQlNhNC1md2Rwblp1U0FoZi04Z0tGdU1VbVNiY29WTzdyWmNzZDEyVm9YX2hkZkcwRy1DUUU2WEFPYXJ4eWlHcDVBcl9PYUx2MWZlSlNIeWt5a0hoN01vTFlFWVQteGVabWFYcTdmVEc3U3VHMFpnSS1GTnNoeW1iTHl1aDJCR3dLcl93Y3JUVmFZOHQ1Q3NMOGM1WURNNXNNbkVUZ1R5T0FTRGExYzZqMzJMMy1haDRMZTQzRHF3aDBETG1vbTFhd0NRR190aC1QNm82TnhNYlkyZXhtZm8zZEZiMWpHa1BDUGY1djR4cC01cktDM3E2a1pPN1ZBR3NmTlhmM2ViR29oYlp2Vi1HSmE3YVZCOXVtRUVYaW1n?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
       "id": "21a6beee2c7f44dd",
       "score": 28,
       "severity": "moderate",
@@ -6377,6 +6365,18 @@
       "topic": "wikiquote",
       "ts": "2026-06-28T21:34:26.762544+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - The Big Show #4 : VS el rey infinito FT MkLeo, MKBigBoss, DieGOD, R3iseN, Yukitrampuwu y mas",
+      "id": "b5a222b2a61d3c4c",
+      "score": 68,
+      "severity": "high",
+      "source": "mkleossb",
+      "title": "mkleossb is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-28T23:51:41.428679+00:00",
+      "url": "https://twitch.tv/mkleossb"
     }
   ],
   "f4_history": [
@@ -7385,7 +7385,7 @@
   "last_run": {
     "failed": 0,
     "ok": 1,
-    "ts": "2026-06-28T22:38:13.634610+00:00"
+    "ts": "2026-06-28T23:51:40.805149+00:00"
   },
   "launch_seen_ids": [
     "a64771bf6b805933",
@@ -9009,9 +9009,9 @@
       "last_ok": "2026-06-28T21:32:43.034656+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-28T22:38:15.897818+00:00",
+      "last_data": "2026-06-28T23:51:42.657570+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-28T22:38:13.634610+00:00"
+      "last_ok": "2026-06-28T23:51:40.805149+00:00"
     },
     "uv": {
       "last_ok": "2026-06-28T21:32:43.034656+00:00"
@@ -9039,7 +9039,9 @@
       "last_ok": "2026-06-28T21:32:43.034656+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "mkleossb"
+  ],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
