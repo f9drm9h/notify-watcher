@@ -123,7 +123,44 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [],
+  "digest_buffer": [
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Odyssey",
+      "title": "Christopher Nolan\u2019s \u2018The Odyssey\u2019 to Skip Social Media Influencer Screenings - The Hollywood Reporter",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWkVWQlZsUFhDWlVHbEd2aW9xMkdvYkNuTmJBd3hjLUg5ZTFTYUpnNTRfamxLaXhXd2RoXzloUXlwOEhNU2NabWEyNUx6TG8wM1R0LTBPem9XTmxpeWdHRDNKZnppX01xUUtEU3lHa3g4ODF5UkxMQ3dxZU1vbEt1ZjdMb3FPNkxLUnZ5VXFNYnVyeFVkZHpHa3pMSFRERVh6RjJsVkFBaGZ3N3N2WkFFNTVFNW1ndw?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 35,
+      "source": "World Nuclear News",
+      "title": "Blykalla teams up with Hitachi for SMR deployment",
+      "topic": "energy",
+      "url": "https://www.world-nuclear-news.org//articles/blykalla-teams-up-with-hitachi-for-smr-deployment"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 35,
+      "source": "World Nuclear News",
+      "title": "India inaugurates nuclear-powered hydrogen production facility",
+      "topic": "energy",
+      "url": "https://www.world-nuclear-news.org//articles/india-inaugurates-nuclear-powered-hydrogen-production-facility"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 35,
+      "source": "World Nuclear News",
+      "title": "Former managers call for restart of German nuclear power plants",
+      "topic": "energy",
+      "url": "https://www.world-nuclear-news.org//articles/former-managers-call-for-restart-of-german-nuclear-power-plants"
+    }
+  ],
   "digest_last_sent": "2026-06-29",
   "discord_control": {
     "last_id": "1519883605067698186"
@@ -158,6 +195,10 @@
     ]
   },
   "energy_seen_ids": [
+    "2b40953e30c99a2b",
+    "125460c34bb781ab",
+    "9be2abc9194b8cfd",
+    "e29e3384eb1c4a84",
     "6e1af38a2d2f445d",
     "2734fd6af1f0d869",
     "3c4dc7d648ca7089",
@@ -310,126 +351,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "d1fd838d932f87bb",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Official Synopsis Finally Confirms What We All Expected About X-Men, Fantastic Four, and Avengers - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-24T21:39:49.287940+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTUFnaTBGRFYxQnB0TjN2bXJjWGd1Y1FYS2RacU43Z1Z2SHoxbW5FSnh6MFhSYU9Qem9sejVETGJaTnB0VGNFU3pDYy1PRDk3TjVtenZFcjFaOVN2YU5qOS02b0Y5NkM0bjA4UUNxQm9xNUtJVmpmYUdxLUo5NW5YaGN3NEpuTDFWbzV6dmtNVQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "4d0319dd6ccd26ce",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "New Avengers: Doomsday leaks unveil first look at Doctor Doom - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-24T21:39:49.288294+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaTJaaXFZQURBU2p6RzFFR0ZENXRQcWh4ZlMxQktkT0l4aVpJQ2pESGtfSjFfVF9TU21oUzRtY2JNLVdROXBfQ1FpeWVzZXEzQlJzQzFHbTRUcktTSDRrcG5fUnJ5emozUWx3WExmNERlVFdNZ3ZaWnVBdVd4bUFsbjEwem4wSVUyaDA5ZjQ1QjNKZzlHN2c?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "521d861d0f4dc492",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' starring Tom Holland has posted the best U.S. first-day presales for any film in years. - Deadline",
-      "topic": "movies",
-      "ts": "2026-06-24T21:39:49.844653+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbUp1RzA3dl9wMTRjWHIzbW9kd3ljRXZBc0dvemNodm8xNkpueDRudVVUeEpKcmN2U0R2eVBxeUhobE9NRzRVSlo3VzhpTWV3eEZHZ2N3UWNxTXZoQkRuM19VRV9ObnZLanhTQmRld0kwcjM0Y19PNDRtQ0tyZC16cXBHak1zNFU2?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "bdb5a08ee9be30a7",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer Gives First Look At Mark Ruffalo\u2019s Hulk - Deadline",
-      "topic": "movies",
-      "ts": "2026-06-24T21:39:50.149349+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQm55VU92U3hTREt5NkpuaFZ6SkdhV3ZUeXVBSTdlUlN1cU81Zk1JRVhSSmlDUEJVMmhEYnNiUWFLYjVBN0pZaXlkOHZ4QXRka0prX0lVM1hXRTBuM1c1RXRNUnVHemgwWWlBVWVwUlJ6UEUwaTdkRmo5SFE4azNZQXNJWTltY2kxYUJhNlVSNUxzSXhJbUk5alVrVTkwYV9zXzlxag?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Street Fighter 6 - The Last Quick Evo 2026 Grind",
-      "id": "26f0ae19b64b9288",
-      "score": 68,
-      "severity": "high",
-      "source": "RiddlesMK",
-      "title": "RiddlesMK is live on Twitch",
-      "topic": "twitch",
-      "ts": "2026-06-24T21:39:54.205546+00:00",
-      "url": "https://twitch.tv/RiddlesMK"
-    },
-    {
-      "action": "push",
-      "detail": "ROXANNE - Arizona Zervas\n(because you like Post Malone)",
-      "id": "4d776c20c0af5cde",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-06-24T21:39:58.616879+00:00",
-      "url": "https://www.deezer.com/track/806698322"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 26,995.00",
-      "id": "b618fc6c74f3fea6",
-      "score": 28,
-      "severity": "low",
-      "source": "La Sirena",
-      "title": "La Sirena deal: Estufa Nedoca 30 Pulgadas Plateada EN-305HFS",
-      "topic": "groceries",
-      "ts": "2026-06-24T21:40:32.490975+00:00",
-      "url": "https://www.sirena.do/nedoca-estufa-30p-silver-en-305hfs-1994959/p"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "a5a8398eb0ddcba4",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Codeine Sulfate",
-      "title": "FDA updates approval for Codeine Sulfate (NDA202245)",
-      "topic": "fda",
-      "ts": "2026-06-24T21:40:33.169002+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202245"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "3fd27b10c434eddf",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Twirla",
-      "title": "FDA updates approval for Twirla (Ethinyl Estradiol, Levonorgestrel) (NDA204017)",
-      "topic": "fda",
-      "ts": "2026-06-24T21:40:33.169340+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204017"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "c18ac5053c47f329",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Belbuca",
-      "title": "FDA updates approval for Belbuca (Buprenorphine Hydrochloride) (NDA207932)",
-      "topic": "fda",
-      "ts": "2026-06-24T21:40:33.169664+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207932"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6309,6 +6230,126 @@
       "topic": "apod",
       "ts": "2026-06-29T12:07:48.092172+00:00",
       "url": "https://apod.nasa.gov/apod/image/2606/M82_HubbleWebb_5000.jpg"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "6c00b055e1c9e83b",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Cyclops, Wolverine, Jean & Storm Return in New Teasers Before Avengers: Doomsday - Yahoo",
+      "topic": "movies",
+      "ts": "2026-06-29T16:09:57.021864+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNbC1CcXM5R1hJMVRpMlFMZVFOX0JmcUJtY2NIeUhQRnk0M3RYM2M4c2RTcUpHYk9BUUZuZlVISVVjUmVyNUR2UnVFVjVZMlFDNkJGMExUMHg1S3JrZXpNazVxa2FPWDgtcFM2aXNZYngwQ2Jndm9KcFowQmQxRGJwaGhkQ3lKR2xlWElJY0xzd2Izc1FSWThGRTVyeU5HaHM?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "f6df99dff0352db0",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Christopher Nolan\u2019s \u2018The Odyssey\u2019 to Skip Social Media Influencer Screenings - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-06-29T16:09:58.600024+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWkVWQlZsUFhDWlVHbEd2aW9xMkdvYkNuTmJBd3hjLUg5ZTFTYUpnNTRfamxLaXhXd2RoXzloUXlwOEhNU2NabWEyNUx6TG8wM1R0LTBPem9XTmxpeWdHRDNKZnppX01xUUtEU3lHa3g4ODF5UkxMQ3dxZU1vbEt1ZjdMb3FPNkxLUnZ5VXFNYnVyeFVkZHpHa3pMSFRERVh6RjJsVkFBaGZ3N3N2WkFFNTVFNW1ndw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "a26d6a1625543704",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "Matt Reeves' 'The Batman Part II' Delayed a Year, Now Releasing in 2027 - IMDb",
+      "topic": "movies",
+      "ts": "2026-06-29T16:09:59.649865+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE44WmJBdmxvVkZHVWRLZmdVbEFmalRmTHBTVThuZjl4WGhCLUdkYm9pajg2aTBjQ2VsblRRMmlxbWdWWkFiY1JtWXNoRmNwN1dHMzl4ZU9vVHBkOWhsZEhZSEFrZ0ZEV0k?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "DROGA - C. Tangana\n(because you like ROSAL\u00cdA)",
+      "id": "3fea6364230d726d",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-29T16:10:05.168828+00:00",
+      "url": "https://www.deezer.com/track/3345133651"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "1c6d97c0fcf72928",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Blykalla teams up with Hitachi for SMR deployment",
+      "topic": "energy",
+      "ts": "2026-06-29T16:11:07.877576+00:00",
+      "url": "https://www.world-nuclear-news.org//articles/blykalla-teams-up-with-hitachi-for-smr-deployment"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "ff9cba6a049c5c63",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "India inaugurates nuclear-powered hydrogen production facility",
+      "topic": "energy",
+      "ts": "2026-06-29T16:11:07.878054+00:00",
+      "url": "https://www.world-nuclear-news.org//articles/india-inaugurates-nuclear-powered-hydrogen-production-facility"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "6bbdba70a33dc391",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Former managers call for restart of German nuclear power plants",
+      "topic": "energy",
+      "ts": "2026-06-29T16:11:07.878395+00:00",
+      "url": "https://www.world-nuclear-news.org//articles/former-managers-call-for-restart-of-german-nuclear-power-plants"
+    },
+    {
+      "action": "push",
+      "detail": "Water break! A few sips now keeps you sharp.",
+      "id": "a57a05fd3023056a",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-29T16:11:24.737505+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Deep in the heart of the Indus Valley, veiled for millennia beneath the shifting sands and alluvial plains of what is now Pakistan, lay the silent ruins of a civilization that once flourished with a complexity astounding in its antiquity. For centuries, local legends whispered of ancient cities, of strange mounds that seemed to hold untold secrets. Then, in the early 20th century, the spades of archaeologists, most notably John Marshall, R.D. Banerji, and later Mortimer Wheeler, began to unearth what would redefine our understanding of early human urbanism. They weren't just discovering settlements; they were uncovering vast, meticulously planned cities: Mohenjo-daro and Harappa, the twin jewels of an entire civilization that stood as a contemporary to the pharaohs of Egypt and the kings of Mesopotamia. Their inhabitants, a mysterious people whose language remains undeciphered, built on a scale that suggests a powerful, perhaps centralized, authority, capable of mobilizing vast amounts of labor and resources.\n\nWhat emerged from the earth was a testament to extraordinary human ingenuity and civic planning. Imagine broad, grid-patterned streets, some wide enough for multiple oxcarts to pass, running perfectly north-south and east-west, intersecting at right angles. Along these avenues stood multi-storied houses, crafted from uniformly sized baked bricks \u2013 a building material far superior to the sun-dried mud bricks common elsewhere, offering resilience against floods and time. Each house, it seems, boasted its own private well and a sophisticated bathroom, complete with a toilet and a drainage system that flowed into elaborate public sewers running beneath the streets. This level of sanitation and urban infrastructure was unparalleled in the ancient world, and would not be seen again in many parts of the globe for thousands of years. Above the lower city, a raised citadel dominated the landscape at both Mohenjo-daro and Harappa, suggesting a place of religious authority, public administration, or perhaps even defense. Within these citadels, massive granaries hinted at a centrally managed agricultural surplus, while the Great Bath at Mohenjo-daro, a marvel of watertight construction, perhaps served as a place for ritual purification.\n\nThe drama of the Indus Valley Civilization lies not only in its rise but also in its enigmatic decline. For over a thousand years, from roughly 2500 to 1900 BCE, Mohenjo-daro and Harappa, along with hundreds of smaller settlements, thrived. Their people, though we know little of their names or specific beliefs, produced exquisite pottery, intricate bronze tools, and seals carved with unique script and images of animals, including the enigmatic \"unicorn.\" They engaged in extensive trade networks, with Indus Valley seals found as far away as Mesopotamia, indicating a vibrant maritime and overland commerce. Yet, by the middle of the second millennium BCE, these grand cities began to fade. The reasons are still debated, a tantalizing mystery that continues to captivate scholars. Theories range from environmental catastrophe, such as shifts in the course of the Indus River or prolonged drought, to tectonic uplifts, or even possible invasion, though direct evidence for the latter remains scarce.",
+      "id": "28191ab4d4168ecf",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Mohenjo-daro and Harappa",
+      "topic": "learn",
+      "ts": "2026-06-29T16:11:30.849206+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cThe faith that stands on authority is not faith.\u201d\n\u2014 Ralph Waldo Emerson\n\nRalph Waldo Emerson, a figure whose very name conjures images of New England\u2019s intellectual ferment, was not merely a philosopher; he was a prophet of self-reliance, a literary giant who helped shape the American psyche in the 19th century. Born in Boston in 1803, Emerson came from a long line of Unitarian ministers, a heritage that instilled in him a profound reverence for moral inquiry and spiritual contemplation, even as he would ultimately rebel against the rigidities of organized religion. His early life was marked by intellectual brilliance but also personal tragedy, losing his father at a young age and later his beloved first wife, Ellen, to tuberculosis. These experiences, coupled with his keen observation of the social and spiritual currents around him, fueled a growing dissatisfaction with the received wisdom of his time. He yearned for a faith that was not inherited but earned, not dictated but discovered. This quest for an authentic, personal truth would become the bedrock of his philosophical movement, Transcendentalism.\n\nThe pronouncement, \"The faith that stands on authority is not faith,\" emerges from this crucible of personal experience and intellectual rebellion. It was uttered during a period of profound intellectual and social upheaval in America. The early 19th century was a time of burgeoning individualism, a nascent sense of national identity, and a questioning of established institutions, both political and religious. The Industrial Revolution was beginning to transform society, and scientific advancements were challenging long-held dogmas. For Emerson, the established church, with its emphasis on scripture and traditional authority, felt increasingly stifling and intellectually dishonest. He believed that true spiritual understanding came not from external pronouncements, but from an internal intuition, an individual\u2019s direct connection to the divine, often referred to as the \"Oversoul.\" This quote, therefore, was a direct challenge to the theological orthodoxy of his day, a clarion call for individuals to trust their own moral compass and spiritual insight rather than blindly adhering to doctrines handed down by institutions. It was a radical assertion of individual spiritual autonomy, a declaration that genuine belief must be a lived, experienced truth, not merely an accepted dogma.\n\nEven today, Emerson\u2019s declaration resonates with an almost startling contemporaneity. In a world awash with information, misinformation, and competing narratives, the temptation to defer to authority, whether political, religious, or even algorithmic, remains potent. We are constantly confronted with voices claiming definitive answers, often demanding uncritical acceptance. Emerson\u2019s words serve as a vital reminder to cultivate a healthy skepticism, to engage in critical inquiry, and to seek out personal conviction rather than passively accepting pre-packaged beliefs. The quote challenges us to examine the foundations of our own convictions, to ask ourselves if our beliefs are truly our own, born of internal reflection and genuine understanding, or merely reflections of external pressures.",
+      "id": "4f8817b1d7a05ace",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Ralph Waldo Emerson",
+      "topic": "wikiquote",
+      "ts": "2026-06-29T16:11:35.642607+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6408,7 +6449,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-27-JUN-03-JUL-DE-2026.pdf",
   "fuel_last_pdf_hash": "f8498e031891b450b3caa406b4e9889ad0596d4b83780850ebf173674f103f51",
-  "fuel_last_prices_seen_at": "2026-06-29T12:07:21.378066+00:00",
+  "fuel_last_prices_seen_at": "2026-06-29T16:11:21.755548+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7231,11 +7272,12 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "world_history",
-  "knowledge_last_sent": "2026-06-29T4",
+  "knowledge_last_category": "ancient_civilizations",
+  "knowledge_last_sent": "2026-06-29T5",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
+    "ancient_civilizations:Mohenjo-daro and Harappa": "2026-06-29",
     "ancient_civilizations:Qin Shi Huang and the Terracotta Army": "2026-06-15",
     "ancient_civilizations:The Aztec Empire and Tenochtitlan": "2026-06-24",
     "ancient_civilizations:The Roman Empire at its height": "2026-06-23",
@@ -7338,7 +7380,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-06-29T12:05:36.327750+00:00"
+    "ts": "2026-06-29T16:09:54.554910+00:00"
   },
   "launch_seen_ids": [
     "a64771bf6b805933",
@@ -7364,6 +7406,7 @@
   "life_dashboard_last_week": "2026-W26",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "bfbb2b45e1eed4f4",
       "2c42e4a8c650f6d3",
       "c68c4763370a982e",
       "bea6f188cda403c5",
@@ -7462,8 +7505,7 @@
       "8602e13c2ddeb3b6",
       "c4b4d157ff5bdb41",
       "0e0480281e5419ae",
-      "6de217b87013328c",
-      "278fe21404614ec6"
+      "6de217b87013328c"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -7667,6 +7709,14 @@
       "ba01dfcd01feccde"
     ],
     "Spider-Man: Brand New Day": [
+      "1fb50cf44fb0ab18",
+      "542e3aa98fa8570f",
+      "aa512db8d09ba17c",
+      "13ecf5974c0e98a7",
+      "48c862bab41ed109",
+      "4dd2aac478292d7f",
+      "6153b4b48a06c3ae",
+      "7f394639e2cbd933",
       "56473fa26e7524fc",
       "04dd822b34e40f9d",
       "2faae5dff6fe07fc",
@@ -7758,17 +7808,10 @@
       "adfdfb8b8ae179e1",
       "ef53cb6c5b24b512",
       "05e1dd5b6e6dc556",
-      "fec70d74b1f9a85f",
-      "3b45eb451b4d32cf",
-      "ffd2c7055c45780b",
-      "19068fa78d83e47f",
-      "c79ff05e0fca113e",
-      "2a0154515ffd9388",
-      "8226c721333a6260",
-      "80362cd8376d0db1",
-      "42165a14b407c88c"
+      "fec70d74b1f9a85f"
     ],
     "The Batman Part II": [
+      "2239a4a89d1e87ee",
       "e2eb8f5e85d74054",
       "0bc371f3ab80e4b1",
       "4df2b39dc3673612",
@@ -7867,10 +7910,25 @@
       "3e4bdc7dfa6edfa4",
       "5dfef437e8b3f9e3",
       "cb96bb52ad67f9ab",
-      "3cde539ee9e1c253",
-      "0bb348d180fc415b"
+      "3cde539ee9e1c253"
     ],
     "The Odyssey": [
+      "3d2d4836d56e26a9",
+      "f3a1fcc8a3d7c00a",
+      "c5c2bc4825500084",
+      "747b240ed28a9d1e",
+      "e3eaf21f57609563",
+      "df44fe4cf76e8546",
+      "b0794f6d2925ef7c",
+      "6546818b8b7896f8",
+      "c6c776718942d628",
+      "e97135e1b6850aea",
+      "03c05c2249aae6fa",
+      "d8a97d7f9a98f9a1",
+      "ba13201e2aba537b",
+      "7fe849900ab28b5e",
+      "f006e50307a6af32",
+      "5ec72566a8ccd4a5",
       "c6d0b07aef719a0a",
       "5c848c812c4606c2",
       "b2bde459982fa21e",
@@ -7954,23 +8012,7 @@
       "51a3cee1c96724ee",
       "5dd76c04b42b21c9",
       "f354c741f53a2e9c",
-      "f71d409a270d0526",
-      "49b72fea0b259983",
-      "98bbf3db56ede50d",
-      "e54bb27a74659774",
-      "e79b5cc53eaed125",
-      "93f96e2b04f03bbc",
-      "70f34b0bdf8866ca",
-      "c5f94aeb0727fe54",
-      "6b432cedf12b1eeb",
-      "a1933ed101a3f6b3",
-      "db9ba439569432f1",
-      "d9cced9485b2b602",
-      "29d025ff0bcd4e4b",
-      "3cbe994788e80d93",
-      "ee72bc6c99125b96",
-      "02d7745781077759",
-      "a1f54471fbc198f7"
+      "f71d409a270d0526"
     ]
   },
   "movie_release_dates": {
@@ -8078,7 +8120,8 @@
     11446160,
     4726033,
     11386020,
-    12346612
+    12346612,
+    5620251
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8408,6 +8451,15 @@
         "name": "Wiz Khalifa"
       }
     },
+    "978a8fb0d8b2d778": {
+      "applied": null,
+      "created": "2026-06-29T16:10:05.168799+00:00",
+      "kind": "artist",
+      "label": "C. Tangana",
+      "payload": {
+        "name": "C. Tangana"
+      }
+    },
     "982bae44df8c1b92": {
       "applied": null,
       "created": "2026-06-21T22:04:39.904022+00:00",
@@ -8442,15 +8494,6 @@
       "label": "Rich The Kid",
       "payload": {
         "name": "Rich The Kid"
-      }
-    },
-    "a817a2f46a0b85c2": {
-      "applied": null,
-      "created": "2026-06-15T13:41:11.384839+00:00",
-      "kind": "artist",
-      "label": "D12",
-      "payload": {
-        "name": "D12"
       }
     },
     "aae093d421e4b5e7": {
@@ -8836,177 +8879,177 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "deals": {
-      "last_data": "2026-06-29T12:06:49.180970+00:00",
+      "last_data": "2026-06-29T16:10:33.007080+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "energy": {
-      "last_data": "2026-06-29T12:07:05.840615+00:00",
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_data": "2026-06-29T16:11:07.877249+00:00",
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "fda": {
-      "last_data": "2026-06-29T12:06:55.466793+00:00",
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_data": "2026-06-29T16:10:57.842871+00:00",
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-29T12:07:21.378087+00:00",
+      "last_data": "2026-06-29T16:11:21.755570+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "fx": {
-      "last_data": "2026-06-29T12:07:20.046725+00:00",
+      "last_data": "2026-06-29T16:11:20.757786+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-29T12:06:01.949334+00:00",
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_data": "2026-06-29T16:10:07.332656+00:00",
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-29T12:06:54.651647+00:00",
+      "last_data": "2026-06-29T16:10:57.245499+00:00",
       "last_data_count": 237,
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "movies": {
-      "last_data": "2026-06-29T12:05:43.575327+00:00",
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_data": "2026-06-29T16:10:01.521081+00:00",
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "music": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-29T12:07:06.487448+00:00",
+      "last_data": "2026-06-29T16:11:08.493842+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-29T12:07:19.388824+00:00",
-      "last_data_count": 46,
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_data": "2026-06-29T16:11:20.276920+00:00",
+      "last_data_count": 53,
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-29T12:05:56.534267+00:00",
+      "last_data": "2026-06-29T16:10:02.751201+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "weather": {
-      "last_data": "2026-06-29T12:07:06.064543+00:00",
+      "last_data": "2026-06-29T16:11:08.052352+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-29T12:07:23.737053+00:00",
+      "last_data": "2026-06-29T16:11:24.736899+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-29T12:05:36.327750+00:00"
+      "last_ok": "2026-06-29T16:09:54.554910+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165068"
+    "last_full_window": "165069"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9019,7 +9062,8 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
-    "2026-06-29|12"
+    "2026-06-29|12",
+    "2026-06-29|15"
   ],
   "weather_seen_ids": [
     "f89707d5a514090c",
@@ -9107,8 +9151,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "innovators_artists",
-  "wikiquote_last_sent": "2026-06-29T4",
+  "wikiquote_last_category": "activists_thinkers",
+  "wikiquote_last_sent": "2026-06-29T5",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -9117,7 +9161,7 @@
     "activists_thinkers:Malala Yousafzai": "2026-06-24",
     "activists_thinkers:Martin Luther King, Jr.": "2026-06-19",
     "activists_thinkers:Mother Teresa": "2026-06-27",
-    "activists_thinkers:Ralph Waldo Emerson": "2026-06-18",
+    "activists_thinkers:Ralph Waldo Emerson": "2026-06-29",
     "activists_thinkers:Rosa Parks": "2026-06-20",
     "activists_thinkers:Susan B. Anthony": "2026-06-26",
     "innovators_artists:Buckminster Fuller": "2026-06-24",
