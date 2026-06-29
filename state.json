@@ -379,66 +379,6 @@
   ],
   "event_log": [
     {
-      "action": "digest",
-      "detail": "",
-      "id": "59d4fb65f1d42067",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel Studios officially responds to those Avengers: Doomsday leaks - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-25T00:19:37.652227+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOS0YxTkVmTk1FN3ZXZ0tBVkJWTGRVdndPaUowbEVRV2JjVDQ2UkJPdWsxU05sdjFqc2JLMGVKSUx5REtWb2l5WkpDVk9JLXduTVgtdUcwSGZMcFRqbEVqOV94Z0Rldmx1aGdWSzVaRGVsZkpvU21EVS1Lck9PTm4xYjd6X05VZw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "75973401630c6976",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland Is Back Swinging in \u2018Spider-Man: Brand New Day\u2019 Trailer - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-06-25T00:19:38.198539+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONDJfR3ZyX01URVhVMTRTdUMwRWxFR0x0eDhJV2ZYSHR4VjRTbklrWWxwWVFEZkdfMXRuRnk1Ym5uMVpQa0FCcmpIU2tEMWZaZWt4TjNyNlhCZzdMcGQ3V290QXhJSGhTMDQ3eFJiVW1tdUhoRG1BQVhVc3RpZkcxSGJYSl9qUkgwelhsZWI0ZnpES2N4d0FzNHlETHhnMWJtX0R6ZnBIYzhwWWhw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "2c52f12d3a018e48",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Has Spider-Man Fought Ninjas Before? Major MCU Villains Confirmed for \u2018Spider-Man: Brand New Day\u2019 - Collider",
-      "topic": "movies",
-      "ts": "2026-06-25T00:19:38.199126+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQ3I0aDhmYUM0Q2t5a0VfVEJ1dGl6Y1N5NFBMWmpTUUJidjZjcUlwQ1NKOWNuam14MS1wbDJhTFlRU0NSam1JcFNKNVVOUm5scDlWMFJKVGZKQ2xvLWhQcllpY3NBNzhtalhUSmNxWFFpUFRkZlBoaUFjY09TMmFQbXRfME0?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "a654642e3e7ccb24",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Unveils First Official Look At The Batman Part 2 - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-25T00:19:39.757931+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1iNzB0aUFVcFZ1dmtDU2VIQTctZGN5blhZOExfTlRaaEM4SEJVUFlTWF9mS1R2eS01YktaVHpRbURmQ01vc2FtMjQ4eXBmSDNESEY1Zy14MHJIU2lwbU44SlVtQ3E1OGtlZmpkVERqSWRNV01MQmR6QjJn?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "95218fe98c6a2e49",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-25T00:20:45.609549+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
       "action": "push",
       "detail": "M7.5 - 23 km SE of Yumare, Venezuela (~908 km away). Large shallow quake - check official advisories at tsunami.gov and move to high ground if instructed.",
       "id": "2e483a8b48368cbd",
@@ -6377,6 +6317,66 @@
       "topic": "wikiquote",
       "ts": "2026-06-29T18:27:30.169058+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Chulo pt.2 - Bad Gyal\n(because you like ROSAL\u00cdA)",
+      "id": "5e7692774d6cb3b6",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-29T21:55:39.913279+00:00",
+      "url": "https://www.deezer.com/track/2328294525"
+    },
+    {
+      "action": "push",
+      "detail": "TQM Casa Mutante",
+      "id": "90fb8e629da83ee6",
+      "score": 62,
+      "severity": "moderate",
+      "source": "MIGALA666",
+      "title": "MIGALA666 uploaded a new video",
+      "topic": "youtube",
+      "ts": "2026-06-29T21:56:59.962560+00:00",
+      "url": "https://www.youtube.com/watch?v=Of4A7mzCoyQ"
+    },
+    {
+      "action": "push",
+      "detail": "Pause for a moment and have a drink of water.",
+      "id": "67b58c431f37b307",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-29T21:57:01.866683+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "For nearly two and a half million years, humanity lived as hunter-gatherers, a lifestyle dictated by the whims of nature. Bands of our ancestors roamed across continents, following animal migrations, harvesting wild fruits, nuts, and grains as they ripened, and living in temporary shelters. Their existence was a constant negotiation with the environment, a precarious balance between feast and famine. Then, around 12,000 years ago, a profound shift began, not with a sudden revolution, but with a slow, almost imperceptible whisper across the landscape of the Near East. This fertile arc, cradled between the Mediterranean Sea and the Persian Gulf, and encompassing modern-day Iraq, Syria, Lebanon, Israel, Palestine, Jordan, and parts of Turkey and Iran, was home to a crucial confluence of factors: abundant wild grains like wheat and barley, a favorable climate, and a unique geological setting that encouraged sedentary living even before true agriculture took root. This was the stage for a drama that would fundamentally reshape human civilization.\n\nThe protagonists of this drama were not kings or generals, but anonymous groups of people, often referred to as the Natufians, who lived in the Levant around 12,000 to 10,000 BC. They were still hunter-gatherers, but unlike their distant ancestors, they began to settle down in semi-permanent villages. This was no small feat; it required an incredible understanding of their environment. Evidence from sites like Eynan (Ain Mallaha) in present-day Israel shows communities building sturdy stone houses, grinding wild grains with heavy stones, and even burying their dead with ceremonial objects. What allowed this shift to sedentarism before farming? The answer lies in the incredible abundance of wild cereals in the Fertile Crescent, particularly during the warm, wet B\u00f8lling-Aller\u00f8d interstadial period. These wild grains were so plentiful that they could support large populations without the need for constant migration. This allowed for the accumulation of knowledge, the development of more complex social structures, and most critically, the close observation of the very plants that would soon become their sustenance.\n\nThe true leap from harvesting wild grains to deliberate cultivation, however, was not a planned invention but likely a gradual process of co-evolution and adaptation, driven by both environmental pressure and human ingenuity. The Younger Dryas, a sudden return to colder, drier conditions around 10,800 to 9,500 BC, played a crucial role. As wild stands of wheat and barley diminished in certain areas, the incentive to actively manage and cultivate them grew. It was then that people began to notice subtle genetic mutations in wild plants \u2013 mutations that made the grain heads less likely to shatter and scatter their seeds, or made the seeds larger and easier to harvest. Instead of simply gathering, they began to sow. They selected for these desirable traits, inadvertently embarking on a genetic engineering project that would last millennia. This careful observation, this sustained effort, this transformation of the natural world, marked the true birth of agriculture, a shift in humanity's relationship with the earth from passive taker to active steward.\n\nThe consequences of this agricultural revolution, often termed the Neolithic Revolution, were nothing short of monumental. It was not merely about food; it was about permanence.",
+      "id": "9f12e7f16825954e",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The origins of agriculture in the Fertile Crescent",
+      "topic": "learn",
+      "ts": "2026-06-29T21:57:07.453142+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cThe artist \u2014 as the one who compels motion through art media toward art \u2014 cannot be simultaneously the absorptive instrument of art's own activity.\u201d\n\u2014 Friedrich Nietzsche\n\nFriedrich Nietzsche, a figure of intellectual intensity who peered into the abyss of human values, was a man both revered and reviled in his own time and long after. Born in 1844 in R\u00f6cken, Prussia, a childhood steeped in Lutheran theology and a precocious academic brilliance marked his early years. He was a philologist by trade, a scholar of ancient languages and texts, a discipline that gave him a profound appreciation for the nuances of human expression and the historical currents that shape our beliefs. Yet, his true calling lay beyond the meticulous dissection of ancient syntax; he was driven by a burning desire to understand the fundamental forces that animate human existence, to challenge the moral scaffolding of his era, and to prophesy a future where humanity might transcend its own self-imposed limitations. This quote, \"The artist \u2014 as the one who compels motion through art media toward art \u2014 cannot be simultaneously the absorptive instrument of art's own activity,\" emerges from a period of profound disillusionment for Nietzsche, a time when he was grappling with the very nature of creation and the role of the artist in society.\n\nThe mid-1880s, when this idea likely solidified in Nietzsche's thought, was a tumultuous period both personally and globally. Bismarck's Germany, a rapidly industrializing and militaristic state, was asserting itself on the world stage, driven by a powerful sense of national destiny. This grand narrative of progress, however, was accompanied by a creeping sense of nihilism, a questioning of traditional religious and philosophical certainties in the face of scientific advancement and societal upheaval. For Nietzsche, whose early intellectual hero was Richard Wagner, the composer, the artistic realm offered a potential antidote to this spiritual malaise. Yet, his relationship with Wagner had soured dramatically. He had come to see Wagner's later works, particularly Parsifal, as a capitulation to Christian morality, a retreat from the heroic embrace of life's complexities that Nietzsche championed. This betrayal, as he perceived it, underscored his growing conviction that true artistic creation demanded an uncompromising distance from the very forces it sought to shape. The artist, in Nietzsche\u2019s view, must be the sculptor, not the clay; the conductor, not merely an instrument absorbing the orchestra's sound. To be truly creative, one must stand outside, observing, shaping, imposing a vision, rather than passively reflecting or being absorbed by the prevailing currents of thought or emotion.\n\nThis distinction between the artist as active force and passive instrument resonates with remarkable power today, in an age saturated with digital media and the blurring lines between creator and consumer. In a world where algorithms often dictate what we see and hear, and where the constant feedback loop of social media can shape artistic output, Nietzsche's warning feels prescient. Are artists truly compelling motion toward a unique artistic vision, or are they, at times, becoming absorptive instruments of prevailing trends, market demands, or the echoes of popular sentiment?",
+      "id": "4b9ac9c8b612e012",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Friedrich Nietzsche",
+      "topic": "wikiquote",
+      "ts": "2026-06-29T21:57:12.583187+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6476,7 +6476,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-27-JUN-03-JUL-DE-2026.pdf",
   "fuel_last_pdf_hash": "f8498e031891b450b3caa406b4e9889ad0596d4b83780850ebf173674f103f51",
-  "fuel_last_prices_seen_at": "2026-06-29T18:27:17.659361+00:00",
+  "fuel_last_prices_seen_at": "2026-06-29T21:56:58.323210+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7301,8 +7301,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "astronomy",
-  "knowledge_last_sent": "2026-06-29T6",
+  "knowledge_last_category": "early_humans",
+  "knowledge_last_sent": "2026-06-29T7",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7333,6 +7333,7 @@
     "early_humans:The Venus of Willendorf": "2026-06-15",
     "early_humans:The earliest evidence of human cannibalism": "2026-06-19",
     "early_humans:The first jewelry and shell beads": "2026-06-26",
+    "early_humans:The origins of agriculture in the Fertile Crescent": "2026-06-29",
     "early_humans:Tracing human migration through genetics": "2026-06-21",
     "first_artists": "2026-06-12",
     "hearing_spacetime_ring": "2026-06-12",
@@ -7409,8 +7410,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-06-29T20:28:23.792271+00:00"
+    "ok": 46,
+    "ts": "2026-06-29T21:55:26.622411+00:00"
   },
   "launch_seen_ids": [
     "a64771bf6b805933",
@@ -7436,6 +7437,8 @@
   "life_dashboard_last_week": "2026-W26",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "0e0480281e5419ae",
+      "7b9047c820450e23",
       "6b0630a96ec614ae",
       "2051d0a6d302221f",
       "bfbb2b45e1eed4f4",
@@ -7533,9 +7536,7 @@
       "13af8daf9b0f056d",
       "2adeb3e29fd1d80c",
       "05ecd37855cf4550",
-      "f9b4494d21ac8953",
-      "8602e13c2ddeb3b6",
-      "c4b4d157ff5bdb41"
+      "f9b4494d21ac8953"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -7739,6 +7740,11 @@
       "ba01dfcd01feccde"
     ],
     "Spider-Man: Brand New Day": [
+      "5af9faf9d8ba4f17",
+      "28b8cd6dbe540a0f",
+      "4ba35cd2eb473934",
+      "fec70d74b1f9a85f",
+      "a4047e0d14c2d2fc",
       "afc5b20c58614c0b",
       "13c570a56fa6a668",
       "3b45eb451b4d32cf",
@@ -7833,14 +7839,10 @@
       "5c8413ce97230200",
       "e8dbc03adca1721d",
       "2c63b5ef30b73d9e",
-      "679951badc4bcf00",
-      "2578460e4187aff0",
-      "d6f4bb2f9b8de3e9",
-      "ad6e3769456f834c",
-      "bee6c47c6e524bf9",
-      "8d46ff507eb93d47"
+      "679951badc4bcf00"
     ],
     "The Batman Part II": [
+      "1aee27a5806e90a1",
       "2239a4a89d1e87ee",
       "e2eb8f5e85d74054",
       "0bc371f3ab80e4b1",
@@ -7939,10 +7941,16 @@
       "8dd3ec73ae867b6d",
       "3e4bdc7dfa6edfa4",
       "5dfef437e8b3f9e3",
-      "cb96bb52ad67f9ab",
-      "3cde539ee9e1c253"
+      "cb96bb52ad67f9ab"
     ],
     "The Odyssey": [
+      "c30c41fc5f0e56b5",
+      "c3ff62b30db59cd4",
+      "29d025ff0bcd4e4b",
+      "c100de066b852643",
+      "570204a857dcedbf",
+      "5dd76c04b42b21c9",
+      "f71d409a270d0526",
       "313a6b3e9be81d4e",
       "dc9b1e3871af3cc0",
       "dee84c3e835e8908",
@@ -8035,14 +8043,7 @@
       "7643132e9341090a",
       "504c88cf88833451",
       "4794690511fed652",
-      "2d9c1b94ca43f3c4",
-      "fcaa943e84f7ec4e",
-      "c51c7caac1c33491",
-      "3b59dde7bd23f2fb",
-      "02e9fc20468ab2d4",
-      "acb1af88f1c06e1d",
-      "c8dae5f5b3d2dd42",
-      "277dd35a183cc7da"
+      "2d9c1b94ca43f3c4"
     ]
   },
   "movie_release_dates": {
@@ -8152,7 +8153,8 @@
     11386020,
     12346612,
     5620251,
-    81719632
+    81719632,
+    11359554
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8239,6 +8241,15 @@
         "name": "Santaflow"
       }
     },
+    "258f5afd117577f4": {
+      "applied": null,
+      "created": "2026-06-29T21:55:39.913252+00:00",
+      "kind": "artist",
+      "label": "Bad Gyal",
+      "payload": {
+        "name": "Bad Gyal"
+      }
+    },
     "26712b9ff77c3c87": {
       "applied": "2026-06-12T20:50:05.106787+00:00",
       "created": "2026-06-12T20:25:20.761217+00:00",
@@ -8300,15 +8311,6 @@
       "label": "Circa Survive",
       "payload": {
         "name": "Circa Survive"
-      }
-    },
-    "43bbb1ce338bbc17": {
-      "applied": null,
-      "created": "2026-06-15T21:32:01.926423+00:00",
-      "kind": "artist",
-      "label": "The Game",
-      "payload": {
-        "name": "The Game"
       }
     },
     "4cf321255d23bf79": {
@@ -8910,177 +8912,177 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "deals": {
-      "last_data": "2026-06-29T18:26:44.054315+00:00",
+      "last_data": "2026-06-29T21:56:27.719616+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "energy": {
-      "last_data": "2026-06-29T18:27:03.231133+00:00",
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_data": "2026-06-29T21:56:43.097396+00:00",
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "fda": {
-      "last_data": "2026-06-29T18:26:52.162947+00:00",
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_data": "2026-06-29T21:56:32.681461+00:00",
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-29T18:27:17.659378+00:00",
+      "last_data": "2026-06-29T21:56:58.323234+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "fx": {
-      "last_data": "2026-06-29T18:27:16.655303+00:00",
+      "last_data": "2026-06-29T21:56:56.937951+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-29T18:25:54.687794+00:00",
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_data": "2026-06-29T21:55:41.709149+00:00",
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-29T18:26:51.529554+00:00",
+      "last_data": "2026-06-29T21:56:32.191263+00:00",
       "last_data_count": 237,
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "movies": {
-      "last_data": "2026-06-29T18:25:48.660864+00:00",
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_data": "2026-06-29T21:55:34.031468+00:00",
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "music": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-29T18:27:03.758186+00:00",
+      "last_data": "2026-06-29T21:56:43.826933+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-29T18:27:16.195613+00:00",
-      "last_data_count": 48,
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_data": "2026-06-29T21:56:56.195936+00:00",
+      "last_data_count": 39,
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-29T20:28:25.432568+00:00",
+      "last_data": "2026-06-29T21:55:36.042333+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-29T20:28:23.792271+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "weather": {
-      "last_data": "2026-06-29T18:27:03.360073+00:00",
+      "last_data": "2026-06-29T21:56:43.362809+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-29T18:27:19.741437+00:00",
+      "last_data": "2026-06-29T21:57:01.866356+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-29T18:25:41.585229+00:00"
+      "last_ok": "2026-06-29T21:55:26.622411+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165070"
+    "last_full_window": "165071"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9094,8 +9096,9 @@
   "watchdog_failing_since": {},
   "water_slots_sent": [
     "2026-06-29|18",
-    "2026-06-29|15",
-    "2026-06-29|12"
+    "2026-06-29|12",
+    "2026-06-29|21",
+    "2026-06-29|15"
   ],
   "weather_seen_ids": [
     "d4bce0c66fa44432",
@@ -9184,8 +9187,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "science_pioneers",
-  "wikiquote_last_sent": "2026-06-29T6",
+  "wikiquote_last_category": "philosophers",
+  "wikiquote_last_sent": "2026-06-29T7",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -9220,7 +9223,7 @@
     "philosophers:Aristotle": "2026-06-27",
     "philosophers:Arthur Schopenhauer": "2026-06-28",
     "philosophers:Confucius": "2026-06-21",
-    "philosophers:Friedrich Nietzsche": "2026-06-19",
+    "philosophers:Friedrich Nietzsche": "2026-06-29",
     "philosophers:Immanuel Kant": "2026-06-23",
     "philosophers:Marcus Aurelius": "2026-06-22",
     "philosophers:Plato": "2026-06-26",
@@ -9335,7 +9338,8 @@
       "W9zSa7gALCw",
       "FwXQZaRMSl0",
       "roLdDcGml5k",
-      "0QPbkx01quQ"
+      "0QPbkx01quQ",
+      "Of4A7mzCoyQ"
     ],
     "UCeqwEzPy8tgfk11OXaUCOpw": [
       "si782Iy6s80",
