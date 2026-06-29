@@ -159,6 +159,33 @@
       "title": "Former managers call for restart of German nuclear power plants",
       "topic": "energy",
       "url": "https://www.world-nuclear-news.org//articles/former-managers-call-for-restart-of-german-nuclear-power-plants"
+    },
+    {
+      "detail": "iOS 26.5.2 looks like a minor or security point release, so you should install it soon to keep your device secure and up-to-date.",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Apple",
+      "title": "Apple release: iOS 26.5.2 (23F84)",
+      "topic": "ios_release",
+      "url": "https://developer.apple.com/news/releases/?id=06292026a"
+    },
+    {
+      "detail": "iPadOS 26.5.2 is out now; this looks like a minor point release, so install it soon for bug fixes and security updates.",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Apple",
+      "title": "Apple release: iPadOS 26.5.2 (23F84)",
+      "topic": "ios_release",
+      "url": "https://developer.apple.com/news/releases/?id=06292026b"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-06-29",
@@ -351,90 +378,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "00231dd544fe3387",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Fioricet W/ Codeine",
-      "title": "FDA updates approval for Fioricet W/ Codeine (Acetaminophen, Butalbital, Caffeine, Codeine Phosphate) (NDA020232)",
-      "topic": "fda",
-      "ts": "2026-06-24T21:40:33.169974+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020232"
-    },
-    {
-      "action": "push",
-      "detail": "Time for a glass of water. Stay hydrated!",
-      "id": "d77295a45292b26f",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-06-24T21:41:01.683260+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "In the heart of what is now Mexico, a civilization flowered, not from ancient lineage but from a vibrant, almost audacious, act of will.  The Mexica, a relatively late arrival to the Valley of Mexico, were initially seen as uncouth outsiders, nomadic barbarians by the established city-states of the region. They were, in essence, the new kids on the block, often hired as mercenaries, their fierce martial prowess a valuable, if sometimes unsettling, asset.  Their origin story, however, was woven with divine promise: a prophecy foretold they would build their great city where an eagle perched on a nopal cactus, devouring a snake. This seemingly specific, and certainly challenging, sign led them to a most improbable location for a major metropolis: a marshy island in Lake Texcoco. Undeterred, these determined people, through sheer ingenuity and tireless labor, began to dredge, pile, and create. They engineered a sophisticated system of *chinampas*, or \"floating gardens,\" effectively transforming watery expanse into fertile farmland, a testament to their remarkable resourcefulness and engineering acumen.\n\nThis improbable island sanctuary, Tenochtitlan, grew with astonishing speed and sophistication. It became not just a city, but the very heart of the Aztec Empire, a tripartite alliance forged between Tenochtitlan, Texcoco, and Tlacopan. Yet, it was the Mexica of Tenochtitlan who would come to dominate this alliance, their military strength and political acumen expanding their reach across a vast network of tributary states. The city itself was a marvel, a Venice of the New World, crisscrossed by canals and causeways, adorned with towering temples, bustling marketplaces, and ornate palaces. At its spiritual and architectural zenith stood the Templo Mayor, a massive twin pyramid dedicated to Huitzilopochtli, the god of war and the sun, and Tlaloc, the god of rain and fertility. It was a place of immense spiritual significance, where priests conducted elaborate rituals, including the controversial practice of human sacrifice, believed essential to appease the gods and ensure the cosmos remained in balance. This deeply held belief system, while alien and horrific to European sensibilities, was an integral part of their worldview, a solemn duty to sustain the very fabric of existence.\n\nThe empire\u2019s rise, however, contained the seeds of its own vulnerability. While powerful and extensive, it was not a unified entity of contented subjects. The Aztec system relied heavily on tribute\u2014foodstuffs, goods, and labor\u2014extracted from conquered peoples. This often generated resentment, a simmering discontent among those forced to pay homage to Tenochtitlan. This simmering unease would prove crucial when a new and utterly alien force arrived on their shores in 1519. Led by Hern\u00e1n Cort\u00e9s, a Spanish conquistador driven by a thirst for gold, glory, and religious zeal, a small contingent of Europeans, accompanied by Tlaxcalan and other indigenous allies who chafed under Aztec rule, marched towards the gleaming city.",
-      "id": "96c0994f982b74da",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The Aztec Empire and Tenochtitlan",
-      "topic": "learn",
-      "ts": "2026-06-24T21:41:07.995686+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cEven in ordinary times there are very few of us who do not see the problems of life as through a glass, darkly; and when the glass is clouded by the murk of furious popular passion, the vision of the best and the bravest is dimmed.\u201d\n\u2014 Theodore Roosevelt\n\nTheodore Roosevelt, a man of boundless energy and unyielding conviction, was more than a mere president; he was a force of nature, a living embodiment of the \"strenuous life\" he so passionately championed. Born to wealth but driven by a relentless self-improvement, he overcame childhood asthma to become a frontiersman, a Rough Rider, a New York police commissioner, and eventually, the youngest president in American history. His time in the White House, from 1901 to 1909, was a whirlwind of progressive reform, trust-busting, conservation efforts, and big-stick diplomacy that reshaped the nation's domestic and international landscape. He was a paradox: an aristocrat who championed the common man, a pragmatist who spoke in soaring ideals, and a man of action whose words often carried the weight of a philosopher.\n\nThe quote, \"Even in ordinary times there are very few of us who do not see the problems of life as through a glass, darkly; and when the glass is clouded by the murk of furious popular passion, the vision of the best and the bravest is dimmed,\" was uttered in 1912, a pivotal year in Roosevelt's life and American history. He had, by then, left the presidency, handpicking his successor, William Howard Taft. However, he had grown increasingly disillusioned with Taft's conservative turn, believing that his prot\u00e9g\u00e9 was abandoning the progressive principles they had once shared. This profound disappointment, coupled with a deep sense of national drift, propelled Roosevelt back into the political arena, challenging Taft for the Republican nomination. When he lost, he broke away to form the Progressive \"Bull Moose\" Party, embarking on a dramatic third-party run for the presidency. The country was in a ferment of social and economic change, with industrialization creating immense wealth alongside stark poverty, and a rising tide of populist discontent. The \"furious popular passion\" he spoke of was palpable, as deeply held convictions clashed, and the very future of the republic felt uncertain. It was a time when the nation grappled with its identity, much as Roosevelt himself grappled with his political legacy and a perceived betrayal.\n\nThe enduring resonance of Roosevelt's words, over a century later, lies in their timeless articulation of human fallibility and the perils of collective fervor. In any era, individuals struggle to perceive the complexities of life with perfect clarity, their perspectives colored by personal biases and limited understanding. But when this inherent haziness is compounded by the \"murk of furious popular passion\"\u2014whether it be the ideological zeal of political movements, the emotional sway of social media, or the jingoistic fervor of wartime\u2014even the most clear-headed and courageous among us can lose their way. Roosevelt, a man who often embodied popular passion himself, understood its intoxicating power and its potential for blinding judgment.",
-      "id": "bdd8c8e380379ae0",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Theodore Roosevelt",
-      "topic": "wikiquote",
-      "ts": "2026-06-24T21:41:12.873587+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Jun 22-Jun 28: RD$3,358.94 across 3 transactions\nTop: ALTICE -APP ECOMM RD$2,515.94; APREZIO INVIVIENDA RD$593.00; HELADOS BON INVIVIENDA RD$250.00\nBiggest: RD$2,515.94 at ALTICE -APP ECOMM\nvs prior week: Weekly spending moved from RD$290.00 to RD$3,358.94 (+RD$3,068.94, +1058.26%)",
-      "id": "5bf158d3656c68df",
-      "score": 60,
-      "severity": "moderate",
-      "source": "BHD",
-      "title": "Weekly spending summary",
-      "topic": "spending",
-      "ts": "2026-06-24T21:41:14.345107+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Super Smash Bros. Ultimate - Cashbox wednesday!",
-      "id": "06bb107c0cedb5f6",
-      "score": 68,
-      "severity": "high",
-      "source": "mkleossb",
-      "title": "mkleossb is live on Twitch",
-      "topic": "twitch",
-      "ts": "2026-06-24T22:55:18.557438+00:00",
-      "url": "https://twitch.tv/mkleossb"
-    },
-    {
-      "action": "push",
-      "detail": "Super Smash Bros. Ultimate - I WILL DEFEAT MKLEO TODAY; CASHBOX RUN",
-      "id": "03955b0e3b8cb3ba",
-      "score": 68,
-      "severity": "high",
-      "source": "Sparg0",
-      "title": "Sparg0 is live on Twitch",
-      "topic": "twitch",
-      "ts": "2026-06-24T22:55:19.845928+00:00",
-      "url": "https://twitch.tv/Sparg0"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6350,6 +6293,90 @@
       "topic": "wikiquote",
       "ts": "2026-06-29T16:11:35.642607+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "iOS 26.5.2 looks like a minor or security point release, so you should install it soon to keep your device secure and up-to-date.",
+      "id": "840eab08c6a375c5",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Apple",
+      "title": "Apple release: iOS 26.5.2 (23F84)",
+      "topic": "ios_release",
+      "ts": "2026-06-29T18:25:43.228266+00:00",
+      "url": "https://developer.apple.com/news/releases/?id=06292026a"
+    },
+    {
+      "action": "digest",
+      "detail": "iPadOS 26.5.2 is out now; this looks like a minor point release, so install it soon for bug fixes and security updates.",
+      "id": "30c63d43878a13c5",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Apple",
+      "title": "Apple release: iPadOS 26.5.2 (23F84)",
+      "topic": "ios_release",
+      "ts": "2026-06-29T18:25:43.840383+00:00",
+      "url": "https://developer.apple.com/news/releases/?id=06292026b"
+    },
+    {
+      "action": "push",
+      "detail": "Trakat\u00e1 - Ptazeta\n(because you like ROSAL\u00cdA)",
+      "id": "51452a83c7190859",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-29T18:25:52.298313+00:00",
+      "url": "https://www.deezer.com/track/1260416052"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "96acff2c43efaa28",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-06-29T18:27:03.360318+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Quick reminder to drink some water.",
+      "id": "fd767c327c5564c6",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-29T18:27:19.742061+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "For centuries, the night sky had yielded its secrets, one by one, to the persistent gaze of astronomers. From the wandering stars of ancient Greece, to the moons of Jupiter dancing for Galileo, the universe was a grand mechanism, waiting to be understood. Isaac Newton\u2019s law of universal gravitation, published in 1687, provided the ultimate key, explaining not just how apples fell, but how planets orbited. It was a triumph of human intellect, a universal law that seemed to hold true for every celestial body. Yet, as the 19th century dawned, a tiny anomaly, a mere wobble in the orbital ballet, began to cast a long shadow over this perfect picture. Uranus, discovered in 1781 by William Herschel, wasn't quite where it was supposed to be. Its observed position deviated slightly from Newton\u2019s predictions. This was not a flaw in Newton\u2019s law, most astronomers reasoned, but rather a sign that an unseen gravitational influence, another planet, was subtly tugging at Uranus.\n\nThe solution came in 1846 with the discovery of Neptune, predicted by Urbain Le Verrier and John Couch Adams, and observed by Johann Galle. It was a testament to the power of mathematics, a planet found not by telescope, but by pencil and paper. The triumph was immense, cementing Le Verrier\u2019s reputation as a celestial detective of the highest order. But almost immediately, a new, even subtler deviation began to trouble astronomers, this time concerning Mercury, the innermost planet. Its perihelion, the point in its orbit closest to the Sun, precessed, or shifted, by a tiny amount more than could be accounted for by the gravitational pull of all known planets. Le Verrier, emboldened by his success with Neptune, took up the challenge again. He posited that another, even closer-in planet, orbiting within Mercury\u2019s path, was responsible for this minuscule discrepancy. He even gave this hypothetical world a name: Vulcan.\n\nThe search for Vulcan became an astronomical obsession. For decades, both professional and amateur astronomers scanned the skies, particularly during solar eclipses, hoping to catch a glimpse of the elusive world. Reports, sometimes fervent, sometimes fleeting, trickled in. A dark spot observed against the solar disk, a faint pinprick of light near the Sun\u2019s limb. Many were eager to be the first to claim this new discovery, a second Neptune. Among the most ardent was Lescarbault, a French country doctor and amateur astronomer, who in 1859 claimed to have observed a small, dark object transiting the Sun. Le Verrier, ever the meticulous scientist, traveled to examine Lescarbault's instruments and methods. Convinced, he announced the discovery to the world. For a brief, shining moment, Vulcan was real. But subsequent observations failed to confirm Lescarbault\u2019s sighting, and other reports, equally tantalizing, also proved to be mirages or misinterpretations. The elusive planet remained just that\u2014elusive. The human drama lay in the desperate hope, the fierce competition, and the eventual quiet disillusionment that settled over the astronomical community.\n\nThe story of Vulcan\u2019s fruitless search is more than just a tale of mistaken identity or observational error. It stands as a profound testament to the limits of even the most powerful scientific paradigm. For nearly 60 years, astronomers clung to the Newtonian framework, confident that an unseen planet, however small or elusive, would eventually resolve Mercury\u2019s precession.",
+      "id": "3bc19ae1af6ad294",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The fruitless search for the planet Vulcan",
+      "topic": "learn",
+      "ts": "2026-06-29T18:27:25.617406+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cIf an apple is magnified to the size of the earth, then the atoms in the apple are approximately the size of the original apple.\u201d\n\u2014 Richard Feynman\n\nRichard Feynman, the mischievous genius and bongo-playing physicist, was a man who saw the world not as a series of facts to be memorized, but as an endlessly fascinating puzzle to be solved. His mind, brimming with an insatiable curiosity, danced between the abstract realms of quantum electrodynamics and the tangible realities of everyday life, always seeking to illuminate the complex with the wonderfully simple. This particular analogy, of an apple expanded to Earth's immense scale revealing atoms the size of the original fruit, wasn't just a clever turn of phrase; it was a testament to his unique pedagogical style. He wasn't content merely to state a scientific principle; he aimed to make it *felt*, to give his audience an intuitive grasp of scales so vast and small they often defied imagination. This was the Feynman who, in the post-war era, after contributing to the Manhattan Project's immense scientific undertaking, dedicated himself to demystifying physics for a wider audience, both in his legendary lectures at Caltech and through his widely acclaimed books.\n\n  The context for such a statement often arose from his renowned \"Feynman Lectures on Physics,\" delivered in the early 1960s. These were not dry academic exercises, but vibrant performances, packed with his signature wit, lucid explanations, and an almost childlike wonder at the universe. The world at this time was hurtling into the space age, fueled by Cold War competition and a burgeoning fascination with scientific discovery. The atom, once a theoretical concept, had become both a symbol of immense power and a frontier of new understanding. Feynman, with his inimitable ability to translate the abstruse into the accessible, was precisely the guide that an intelligent, curious public needed. He was not just teaching physics; he was teaching a way of seeing, a method of inquiry that encouraged skepticism, critical thinking, and a deep appreciation for the elegant mechanisms of nature. He was challenging the notion that science was only for an elite few, proving it could be understood and enjoyed by anyone willing to engage their imagination.\n\n  Feynman's apple analogy resonates today not just for its elegance, but because it perfectly encapsulates a fundamental challenge in understanding the universe: the vastness of scale. In an era saturated with information, where we constantly grapple with concepts from the subatomic to the cosmological, the ability to conceptualize these extreme dimensions remains crucial. His gift was to shrink the incomprehensibly large and magnify the invisibly small into relatable terms, grounding abstract science in everyday experience. This approach fostered not just knowledge, but wonder. In a world increasingly fragmented and specialized, Feynman's holistic and humanistic approach to science \u2013 one that emphasized intuition and a playful spirit of discovery \u2013 continues to inspire. His quote isn't just a fact about atoms; it's an invitation to marvel at the universe's intricate design and to embrace the joy of truly understanding how it works, on scales both grand and infinitesimally small.",
+      "id": "bd3cfd54b1f42fed",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Richard Feynman",
+      "topic": "wikiquote",
+      "ts": "2026-06-29T18:27:30.169058+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6449,7 +6476,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-27-JUN-03-JUL-DE-2026.pdf",
   "fuel_last_pdf_hash": "f8498e031891b450b3caa406b4e9889ad0596d4b83780850ebf173674f103f51",
-  "fuel_last_prices_seen_at": "2026-06-29T16:11:21.755548+00:00",
+  "fuel_last_prices_seen_at": "2026-06-29T18:27:17.659361+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7224,7 +7251,9 @@
     "iOS 15.8.7 (19H411)",
     "iPadOS 15.8.7 (19H411)",
     "iOS 12.5.8 (16H88)",
-    "iPadOS 12.5.8 (16H88)"
+    "iPadOS 12.5.8 (16H88)",
+    "iOS 26.5.2 (23F84)",
+    "iPadOS 26.5.2 (23F84)"
   ],
   "iss_seen_passes": [
     "db52add602e4725f",
@@ -7272,8 +7301,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "ancient_civilizations",
-  "knowledge_last_sent": "2026-06-29T5",
+  "knowledge_last_category": "astronomy",
+  "knowledge_last_sent": "2026-06-29T6",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7290,6 +7319,7 @@
     "astronomy:The James Webb Space Telescope": "2026-06-15",
     "astronomy:The discovery of Uranus by William Herschel": "2026-06-19",
     "astronomy:The first image of a black hole": "2026-06-23",
+    "astronomy:The fruitless search for the planet Vulcan": "2026-06-29",
     "astronomy:The hidden oceans of Europa and Enceladus": "2026-06-13",
     "astronomy:The multimessenger detection of a neutron star merger": "2026-06-21",
     "astronomy:The supernova of 1054 and the Crab Nebula": "2026-06-26",
@@ -7380,7 +7410,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-06-29T16:09:54.554910+00:00"
+    "ts": "2026-06-29T18:25:41.585229+00:00"
   },
   "launch_seen_ids": [
     "a64771bf6b805933",
@@ -7406,6 +7436,8 @@
   "life_dashboard_last_week": "2026-W26",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "6b0630a96ec614ae",
+      "2051d0a6d302221f",
       "bfbb2b45e1eed4f4",
       "2c42e4a8c650f6d3",
       "c68c4763370a982e",
@@ -7503,9 +7535,7 @@
       "05ecd37855cf4550",
       "f9b4494d21ac8953",
       "8602e13c2ddeb3b6",
-      "c4b4d157ff5bdb41",
-      "0e0480281e5419ae",
-      "6de217b87013328c"
+      "c4b4d157ff5bdb41"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -7709,6 +7739,13 @@
       "ba01dfcd01feccde"
     ],
     "Spider-Man: Brand New Day": [
+      "afc5b20c58614c0b",
+      "13c570a56fa6a668",
+      "3b45eb451b4d32cf",
+      "ffd2c7055c45780b",
+      "19068fa78d83e47f",
+      "2a0154515ffd9388",
+      "8226c721333a6260",
       "1fb50cf44fb0ab18",
       "542e3aa98fa8570f",
       "aa512db8d09ba17c",
@@ -7801,14 +7838,7 @@
       "d6f4bb2f9b8de3e9",
       "ad6e3769456f834c",
       "bee6c47c6e524bf9",
-      "8d46ff507eb93d47",
-      "c3b07bdac9d25281",
-      "18e464cd360d0864",
-      "3f6e258cffeb26d4",
-      "adfdfb8b8ae179e1",
-      "ef53cb6c5b24b512",
-      "05e1dd5b6e6dc556",
-      "fec70d74b1f9a85f"
+      "8d46ff507eb93d47"
     ],
     "The Batman Part II": [
       "2239a4a89d1e87ee",
@@ -7913,6 +7943,14 @@
       "3cde539ee9e1c253"
     ],
     "The Odyssey": [
+      "313a6b3e9be81d4e",
+      "dc9b1e3871af3cc0",
+      "dee84c3e835e8908",
+      "70f34b0bdf8866ca",
+      "db9ba439569432f1",
+      "a1933ed101a3f6b3",
+      "ee72bc6c99125b96",
+      "49b72fea0b259983",
       "3d2d4836d56e26a9",
       "f3a1fcc8a3d7c00a",
       "c5c2bc4825500084",
@@ -8004,15 +8042,7 @@
       "02e9fc20468ab2d4",
       "acb1af88f1c06e1d",
       "c8dae5f5b3d2dd42",
-      "277dd35a183cc7da",
-      "c81e02eb43ee4179",
-      "8429b311324c5ed1",
-      "c100de066b852643",
-      "570204a857dcedbf",
-      "51a3cee1c96724ee",
-      "5dd76c04b42b21c9",
-      "f354c741f53a2e9c",
-      "f71d409a270d0526"
+      "277dd35a183cc7da"
     ]
   },
   "movie_release_dates": {
@@ -8121,7 +8151,8 @@
     4726033,
     11386020,
     12346612,
-    5620251
+    5620251,
+    81719632
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8172,15 +8203,6 @@
     "music": "2026-06-27T06:18:27.434173+00:00"
   },
   "offers": {
-    "023c6f5a16652d60": {
-      "applied": null,
-      "created": "2026-06-15T18:17:10.624081+00:00",
-      "kind": "artist",
-      "label": "Lloyd Banks",
-      "payload": {
-        "name": "Lloyd Banks"
-      }
-    },
     "0264919a72499bab": {
       "applied": null,
       "created": "2026-06-28T13:02:45.967900+00:00",
@@ -8604,6 +8626,15 @@
         "name": "Roy Orbison"
       }
     },
+    "de0177d9bddf3329": {
+      "applied": null,
+      "created": "2026-06-29T18:25:52.298287+00:00",
+      "kind": "artist",
+      "label": "Ptazeta",
+      "payload": {
+        "name": "Ptazeta"
+      }
+    },
     "de70ab0a385118d7": {
       "applied": null,
       "created": "2026-06-16T12:33:20.224456+00:00",
@@ -8879,177 +8910,177 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "deals": {
-      "last_data": "2026-06-29T16:10:33.007080+00:00",
+      "last_data": "2026-06-29T18:26:44.054315+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "energy": {
-      "last_data": "2026-06-29T16:11:07.877249+00:00",
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_data": "2026-06-29T18:27:03.231133+00:00",
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "fda": {
-      "last_data": "2026-06-29T16:10:57.842871+00:00",
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_data": "2026-06-29T18:26:52.162947+00:00",
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-29T16:11:21.755570+00:00",
+      "last_data": "2026-06-29T18:27:17.659378+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "fx": {
-      "last_data": "2026-06-29T16:11:20.757786+00:00",
+      "last_data": "2026-06-29T18:27:16.655303+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-29T16:10:07.332656+00:00",
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_data": "2026-06-29T18:25:54.687794+00:00",
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-29T16:10:57.245499+00:00",
+      "last_data": "2026-06-29T18:26:51.529554+00:00",
       "last_data_count": 237,
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "movies": {
-      "last_data": "2026-06-29T16:10:01.521081+00:00",
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_data": "2026-06-29T18:25:48.660864+00:00",
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "music": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-29T16:11:08.493842+00:00",
+      "last_data": "2026-06-29T18:27:03.758186+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-29T16:11:20.276920+00:00",
-      "last_data_count": 53,
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_data": "2026-06-29T18:27:16.195613+00:00",
+      "last_data_count": 48,
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-29T16:10:02.751201+00:00",
+      "last_data": "2026-06-29T18:25:49.638564+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "weather": {
-      "last_data": "2026-06-29T16:11:08.052352+00:00",
+      "last_data": "2026-06-29T18:27:03.360073+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-29T16:11:24.736899+00:00",
+      "last_data": "2026-06-29T18:27:19.741437+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-29T16:09:54.554910+00:00"
+      "last_ok": "2026-06-29T18:25:41.585229+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165069"
+    "last_full_window": "165070"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9062,10 +9093,12 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
-    "2026-06-29|12",
-    "2026-06-29|15"
+    "2026-06-29|18",
+    "2026-06-29|15",
+    "2026-06-29|12"
   ],
   "weather_seen_ids": [
+    "d4bce0c66fa44432",
     "f89707d5a514090c",
     "7a32ab4b74e416e1",
     "2160e604cf0d1ba2",
@@ -9151,8 +9184,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "activists_thinkers",
-  "wikiquote_last_sent": "2026-06-29T5",
+  "wikiquote_last_category": "science_pioneers",
+  "wikiquote_last_sent": "2026-06-29T6",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -9202,7 +9235,7 @@
     "science_pioneers:Isaac Newton": "2026-06-25",
     "science_pioneers:Marie Curie": "2026-06-28",
     "science_pioneers:Nikola Tesla": "2026-06-22",
-    "science_pioneers:Richard Feynman": "2026-06-19",
+    "science_pioneers:Richard Feynman": "2026-06-29",
     "science_pioneers:Stephen Hawking": "2026-06-20",
     "writers:Ernest Hemingway": "2026-06-26",
     "writers:Fyodor Dostoevsky": "2026-06-28",
