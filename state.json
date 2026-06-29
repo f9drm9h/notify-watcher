@@ -1,5 +1,6 @@
 {
   "anthropic_seen": [
+    "c1378104882c5d93",
     "5405f54f883d8a72",
     "57fb544d55fe540d",
     "9c7ad5665087f6e8",
@@ -193,6 +194,33 @@
       "title": "Michael Caine Lends His AI Clone to Voice \u2018The Odyssey\u2019 Audiobook - The Hollywood Reporter",
       "topic": "movies",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORHZ6Y0xnM0pQRDM0dHdjR1d6RkVtMlB1bTREYTBMT2g5U2J1NFhmbFhtdGswVHk2UlBOekgzMC1oTFVUbjl0amNiYzhiejAxR2x1UEV4aDR1cm5xMS1VQWZHbmZsSktFTHlUSkw5dGk0UXJ2b0JkSzQwd0xIZmlEaE1CYm9fOHpEaDBlcnZXLUhHNllGeDFHcG5GUG1XTXp3V2RVNkYtck0?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Avengers: Doomsday",
+      "title": "A Big \u2018Avengers: Doomsday\u2019 Leak Reportedly Arrives, But Its Validity Is Debatable - Forbes",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWWxfeWxRTE1FeXZHUjlGXzZkbkh5ME02YjROVHlEbk9pbXpua0Z5cHVMN1FHYmtGRHktdW9id3ZTN0QwZENDY2ZMUm13WklaYTdKM29jNEk4QVVkMnNlaFJBNF9CYzZ4R3BIQURmRE1ZRUcwbVItcF9aNFh5SE9OaXMxUUZTUlA5U3BMTi1XT3U2UnFUNS1zYVhXd2FzVlU4dWtoRjgyR0hBWnMtc09KaFhOeWtrZkJOeEJQSGt5OW5SY0d5T1Nz?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer and Movie Tickets Go Live - Marvel.com",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeXFwTXhVZEhCQVNTaHJESC1GbDZfcXZ1RjVGZ21fNWxJMVdDMVIzeVBKdjFlelVyLUJ5dmRJcFZvMWUwNU5ZelZIQ29vZ1JHVVhNMElXNHVCakZlYWljazNOUTBFQUVZSVJxVXl2NExFS1g0dWZueXpGOHpBeXdVM2xTYmt4eEFKdXdtSFNNYlZCTXJlX24zMkowYS14UQ?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-06-28",
@@ -378,102 +406,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "21a6beee2c7f44dd",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman 2 Writer Details \u2018Viscerally Insane\u2019 Superhero Sequel That\u2019ll Never Happen - Yahoo",
-      "topic": "movies",
-      "ts": "2026-06-24T04:41:00.508859+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVVhScVQxbUVncndTbWVjVXRaNEtIZF9mR2xpNWdZWDd5NXZ4M3J4bVJFZVhlS0dWTkhvak9KRldMUTZmMnhSb1AzeHl6VTdmMEJILXlGd3NpV2F6c2ZwMmpBNVVHeWg0QnFPS1lESE51UWpCcUlyMlVWZzBTVldBWkFtUE04VFctN3VVOHVYUFh6WGpXa0hLV3JYbzJNWlZMZ0RN?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "2071cca2e6d72730",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman: Part 2: Matt Reeves shares first set photo as film officially begins shooting - Cinema Express",
-      "topic": "movies",
-      "ts": "2026-06-24T04:41:00.509306+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPS0NNbXBla05wZmVaaW1JcnktWjdQYmp2cGpJQmwwUUl6cmtBOTVCNnR4LS1oMjZQZzAzTWlicVpjRVJRSkFpdE9rSGpWWnhzcjVsWWZ6dnRUaFQ5V1NiUmhQM0NQTFpHVUh0S2hUY01rSVZvbWg5OW1CWURCRDItTTZUYkpFV1lUeEpFaUFZVU44R2dEWTFjalRpbDZoVmo5Y3R6VndhUXVERDkwNGJrM3lKRDEtbE5sckxXb2FIOXBXbnZfamNYbFI1WWxhZEM4ZDBYRjlGWll6Z9IB5wFBVV95cUxNWjZMQnJFdGViZUFDZVhJOW9sUEE3T3NXOG1PRWpXY3ZGRWsxTWpMa1Ezc0JUYlJkZlN5SzIxQkIwN0VxcUQybWRSVDlmUUZMdmRXSjZnLUlWMWw4eWRERDR6QTNFQWh2Z1lFbUl4QnpXSHRaeEVPdHdXT2E0aGloR1hDb3JXeXJoQ1E0VHVZdnZZVmoxaGRQY1Nxa2dDd2pkVmN4ZkxLbUhPM1F2M053TDFGRUFBMGZyYjZFR3BZazJsbXNmS1pZNE1ldnh0U24wSS1EWFh4endyUmJ3YURqQVBZeHF5dnM?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "6b789442d95cd4bd",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman Part II\u2019 Begins Filming, Writer & Director Matt Reeves Confirms - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-24T04:41:00.764125+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9PaUtQM1BtM2hzRGlleHY2ODZIMmdvd25QOG84Sy1GbXkxYUE5cEYyTkhvZXVKZUhpRTVrcUhrMDBhSEhQaFY4cEdTdjJiSXV0aUk4OTlhMlBSckpDQ1NDNm5td1h4aEt2bXc?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "070c5b486728603c",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Jeffrey Wright Says Matt Reeves Has Written An \u201cInsanely Brilliant\u201d Script For \u2018The Batman: Part II\u2019 & Production Starts Next Week [Exclusive] - The Playlist",
-      "topic": "movies",
-      "ts": "2026-06-24T04:41:00.995091+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWGp1VFR4UGZNdGxTUlhoNm0xM05wM0xHZmY5Tkk1aHNPY0ctU29UMUNENVA4MHRzM1Jxdy13Ujd6RDJMVXNRSHlUeTB4dzdBOGg5c3luVHYteldMdDBVSXBMeUhPTHhiQU54RFN3cVJFdV8tNS1NYV9Ec0twX0Q1RDdzclhhLS01Qm56UkphMlVjT25qZlZ0blNR?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Super Smash Bros. Ultimate - Anything but the 3 but with items on!",
-      "id": "1cc32c0e8d30ee9a",
-      "score": 68,
-      "severity": "high",
-      "source": "mkleossb",
-      "title": "mkleossb is live on Twitch",
-      "topic": "twitch",
-      "ts": "2026-06-24T04:41:04.092753+00:00",
-      "url": "https://twitch.tv/mkleossb"
-    },
-    {
-      "action": "push",
-      "detail": "\ud83c\udde9\ud83c\uddf4 Fernando Tatis Jr. \u2014 1 HR vs Atlanta Braves",
-      "id": "ccbe93a36663f1bf",
-      "score": 64,
-      "severity": "high",
-      "source": "Baseball",
-      "title": "Baseball: Fernando Tatis Jr.",
-      "topic": "baseball",
-      "ts": "2026-06-24T04:41:09.555302+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Before the turn of the 20th century, the universe, as understood by science, was a clockwork marvel. Newton's laws of motion and gravitation had, for over two centuries, accurately described everything from falling apples to orbiting planets. Light, too, had been deciphered, Maxwell's equations elegantly unifying electricity and magnetism into a single electromagnetic force, predicting light as a wave propagating through a mysterious, invisible medium called the luminiferous aether. This aether was thought to be omnipresent, providing a universal frame of reference against which all motion could be measured. It was a comfortable, seemingly complete picture, yet a few stubborn anomalies, particularly concerning the speed of light, refused to fit neatly into this grand, mechanistic vision. Experiments, most famously by Michelson and Morley, repeatedly failed to detect Earth's motion through this ubiquitous aether, leaving physicists scratching their heads at this perplexing void where the aether should have been.\n\nInto this intellectual ferment stepped a young, largely unknown patent clerk in Bern, Switzerland. Albert Einstein, a man whose prodigious intellect often chafed against conventional academic structures, found himself wrestling with these very paradoxes. He was not a lone wolf; luminaries like Hendrik Lorentz and Henri Poincar\u00e9 were also grappling with similar issues, proposing transformations that allowed Maxwell's equations to hold true in different inertial frames. But Einstein's approach, published in his \"Annus Mirabilis\" paper of 1905, titled \"On the Electrodynamics of Moving Bodies,\" was revolutionary in its simplicity and audacity. He didn't try to find the aether; he simply did away with it. His special theory of relativity rested on two deceptively simple postulates: first, that the laws of physics are the same for all observers in uniform motion relative to one another (the principle of relativity); and second, that the speed of light in a vacuum is the same for all inertial observers, regardless of the motion of the light source. These weren't derived from complex mathematics; they were fundamental assumptions, a profound reimagining of reality itself.\n\nThe implications of these postulates were nothing short of shattering to the Newtonian worldview. If the speed of light is constant for everyone, then something else must give way. And what gave way were the bedrock concepts of absolute space and absolute time. Einstein showed that time itself is relative, ticking at different rates for observers in relative motion, leading to the phenomenon of time dilation. Lengths, too, contract in the direction of motion, a phenomenon known as length contraction. Perhaps most dramatically, the theory revealed the profound equivalence of mass and energy through the iconic equation E=mc\u00b2. This wasn't merely a theoretical curiosity; it was a revelation that matter and energy are two sides of the same coin, capable of being converted into one another, with mind-boggling implications for everything from stellar fusion to nuclear weapons.",
-      "id": "b1885b1a8c4b2690",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Einstein's special theory of relativity",
-      "topic": "learn",
-      "ts": "2026-06-24T04:42:25.195115+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cIn a situation where a lifelong school break was being imposed upon us by the terrorists, rising up against that became very important, essential.\u201d\n\u2014 Malala Yousafzai\n\nThe year was 2007, and in the Swat Valley of Pakistan, the idyllic mountain region once known as \"Little Switzerland\" was undergoing a chilling transformation. The Taliban, a radical Islamist movement, had steadily tightened its grip, replacing the vibrant local culture with an austere interpretation of Sharia law. Among their most devastating edicts was the ban on girls' education. For a young girl named Malala Yousafzai, born into a family that championed learning and intellectual curiosity, this was not merely a political decree; it was a personal affront, an assault on her very being. Her father, Ziauddin, a teacher and school owner, had instilled in her a profound love for knowledge and the belief in every child's right to pursue it. As the sound of military operations and the propaganda of local mullahs filled the air, Malala, then just 10 years old, began to grasp the monumental injustice unfolding around her. The world she knew, filled with the promise of education and the joy of school, was crumbling under the weight of an extremist ideology.\n\nIt was against this backdrop of escalating fear and the systematic dismantling of education that Malala, in 2008, began to speak out. Under the pseudonym Gul Makai, she penned a diary for the BBC Urdu service, offering a rare and courageous glimpse into the daily life of a girl living under Taliban rule. Her entries chronicled the fear, the uncertainty, and the profound longing for the normalcy of school. She wrote about her dreams of becoming a doctor, her love for learning, and the simple act of putting on her uniform. These seemingly ordinary details, shared with the world, became extraordinary acts of defiance. The quote, \"In a situation where a lifelong school break was being imposed upon us by the terrorists, rising up against that became very important, essential,\" encapsulates the moral imperative that drove her. It wasn't about seeking fame or challenging a government; it was about reclaiming a fundamental human right, a right that was being stolen from an entire generation of girls. Her words, though uttered by a child, carried the weight of a profound understanding of freedom and the importance of an informed citizenry.\n\nToday, Malala\u2019s words resonate with an enduring power, transcending the specific circumstances of the Swat Valley. Her story, culminating in a Nobel Peace Prize and a global platform, has become a potent symbol of resilience in the face of oppression. In countless regions across the globe, girls continue to be denied access to education due to poverty, conflict, cultural norms, or extremist ideologies. From war-torn countries where schools are bombed to communities where girls are married off as children, the \"lifelong school break\" Malala spoke of remains a stark reality for millions. Her unwavering belief in the transformative power of education, and her courage in speaking truth to power, serves as an inspiration for advocates worldwide. The \"essential\" act of rising up against such injustice, whether through advocacy, grassroots movements, or individual acts of defiance, remains as critical now as it was then.",
-      "id": "d0d23832e193c726",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Malala Yousafzai",
-      "topic": "wikiquote",
-      "ts": "2026-06-24T04:42:29.952016+00:00",
-      "url": ""
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6377,6 +6309,102 @@
       "topic": "twitch",
       "ts": "2026-06-28T23:51:41.428679+00:00",
       "url": "https://twitch.tv/mkleossb"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "81e8687bcfd71ace",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "A Big \u2018Avengers: Doomsday\u2019 Leak Reportedly Arrives, But Its Validity Is Debatable - Forbes",
+      "topic": "movies",
+      "ts": "2026-06-29T02:00:01.475169+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWWxfeWxRTE1FeXZHUjlGXzZkbkh5ME02YjROVHlEbk9pbXpua0Z5cHVMN1FHYmtGRHktdW9id3ZTN0QwZENDY2ZMUm13WklaYTdKM29jNEk4QVVkMnNlaFJBNF9CYzZ4R3BIQURmRE1ZRUcwbVItcF9aNFh5SE9OaXMxUUZTUlA5U3BMTi1XT3U2UnFUNS1zYVhXd2FzVlU4dWtoRjgyR0hBWnMtc09KaFhOeWtrZkJOeEJQSGt5OW5SY0d5T1Nz?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "91bbb8af78f957ae",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer and Movie Tickets Go Live - Marvel.com",
+      "topic": "movies",
+      "ts": "2026-06-29T02:00:02.021317+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeXFwTXhVZEhCQVNTaHJESC1GbDZfcXZ1RjVGZ21fNWxJMVdDMVIzeVBKdjFlelVyLUJ5dmRJcFZvMWUwNU5ZelZIQ29vZ1JHVVhNMElXNHVCakZlYWljazNOUTBFQUVZSVJxVXl2NExFS1g0dWZueXpGOHpBeXdVM2xTYmt4eEFKdXdtSFNNYlZCTXJlX24zMkowYS14UQ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "bb440696e0e75501",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-06-29T02:00:48.468253+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 10:55 PM - max 52deg, SW to NE. Look up!",
+      "id": "2dcf07fc35d44836",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-06-29T02:01:31.226873+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Anthropic Economic Index report: Cadences - Anthropic",
+      "id": "24770d29951ebaa3",
+      "score": 64,
+      "severity": "moderate",
+      "source": "Anthropic",
+      "title": "Anthropic",
+      "topic": "anthropic_news",
+      "ts": "2026-06-29T02:01:31.991671+00:00",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE5fNVR0S19Od3hZaWJSaTdlRkpZOVZJa0M4TzhldFg0WElpY3duXzlHT3AtZXNoazJSbXlUSTE5dEpiUmVWc0FRaTJOc2tValRaOFJmRnlHS3IwYk5DNnp6OGtCY3p0cWFRR0dNQjVfcVhXbk5X?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "The Big Show #4 : VS el rey infinito FT MkLeo, MKBigBoss, DieGOD, R3iseN, Yukitrampuwu y mas",
+      "id": "3bad1e0ab2709f27",
+      "score": 62,
+      "severity": "moderate",
+      "source": "MKLeo17",
+      "title": "MKLeo17 uploaded a new video",
+      "topic": "youtube",
+      "ts": "2026-06-29T02:01:32.503839+00:00",
+      "url": "https://www.youtube.com/watch?v=afnDmVfLwkk"
+    },
+    {
+      "action": "push",
+      "detail": "The story of the telephone, much like the human voice it sought to transmit, is one of interconnectedness, ingenuity, and a dash of dramatic tension. At its heart stands Alexander Graham Bell, a man whose lineage was deeply intertwined with the science of sound. His grandfather, Alexander Bell, was a celebrated elocution instructor, and his father, Melville Bell, invented \"Visible Speech,\" a system of phonetic symbols that could represent any sound a human mouth could make. This familial legacy instilled in young Graham a profound understanding of acoustics and the mechanics of speech. But it was the profoundly personal experience of deafness within his own family \u2013 his mother became deaf as a child, and his wife, Mabel Hubbard, lost her hearing after a childhood illness \u2013 that truly fueled his drive to conquer the barriers of communication. This wasn't merely a scientific pursuit; it was a deeply empathetic quest to bridge the silence that separated loved ones.\n\nBell\u2019s early work was not, in fact, focused on transmitting speech but rather on the telegraph, a technology that had revolutionized long-distance communication in the mid-19th century. The telegraph, however, could only send one message at a time over a single wire. Bell, working on what he called the \"harmonic telegraph,\" aimed to send multiple messages simultaneously, each at a different pitch, much like a musical chord. This ambitious endeavor brought him into the orbit of two crucial figures: Thomas A. Watson, a skilled machinist, and Gardiner Greene Hubbard, a prominent Boston lawyer and businessman who would become Bell's father-in-law and a key financial backer. It was in the intense, often frustrating, collaboration between Bell, the visionary theorist, and Watson, the pragmatic builder, that the true breakthrough occurred. On June 2, 1875, while working on the harmonic telegraph, Watson plucked a vibrating reed, and Bell, in another room, heard the distinct twang over the wire. This accidental discovery, the transmission of an unarticulated sound, ignited a realization: if a reed could transmit its vibration, why not a human voice?\n\nThe path from a vibrating reed to intelligible speech was still fraught with challenges, a testament to the perseverance and late-night toil of Bell and Watson. Their first breakthrough in transmitting speech, though crude, arrived on March 10, 1876, with Bell uttering the now-famous words, \"Mr. Watson, come here, I want to see you.\" The motivation for this urgent summons was not a grand pronouncement of discovery, but rather a spilled battery acid, a testament to the messy, unpredictable reality of invention. This moment, however undramatic in its immediate cause, marked a profound turning point in human history. Bell quickly filed a patent for his \"apparatus for transmitting vocal or other sounds telegraphically,\" just hours before his rival, Elisha Gray, filed a caveat for a similar device. This fateful race to the patent office would spark years of legal battles, a testament to the immense commercial potential recognized by these early pioneers.\n\nThe telephone's impact was immediate and transformative, far exceeding the limited, point-to-point communication of the telegraph. It fostered new forms of social interaction, enabled businesses to operate with unprecedented efficiency, and fundamentally reshaped urban landscapes as telephone poles and wires proliferated.",
+      "id": "febacc797614a01d",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Alexander Graham Bell and the telephone",
+      "topic": "learn",
+      "ts": "2026-06-29T02:01:38.970402+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cHe walked like a man who does not take the earth for granted. He took one step after another with obvious care and delight. Right next to him, Winnie Mandela stayed close, attuned and alert, and radiant.\u201d\n\u2014 Nelson Mandela\n\nThe voice that spoke these words, imbued with a quiet awe and deep affection, belonged to Nelson Rolihlahla Mandela, a name synonymous with resilience, resistance, and ultimately, reconciliation. He was speaking of Walter Sisulu, a towering figure in the anti-apartheid movement, a man who had been a mentor, a comrade, and a brother to Mandela through the crucible of struggle. Sisulu, like Mandela, was a leader of the African National Congress (ANC), and together they had navigated the increasingly perilous landscape of apartheid South Africa, moving from peaceful protest to armed struggle as the state\u2019s repression intensified. Their bond was forged in shared ideology, in whispered plans in clandestine meetings, and in the profound understanding of a common destiny. Mandela's description of Sisulu's walk is not merely an observation; it is a profound reflection of the man's character \u2013 his meticulousness, his presence, and the inherent dignity with which he carried himself even under the weight of immense injustice.\n\nThe context of this quote is steeped in the bittersweet reality of liberation, yet also the enduring pain of separation. Mandela likely uttered these words long after their initial experiences together, perhaps in a reflection or an interview, looking back on a time when they were both active and relatively free, before the relentless hammer of apartheid brought them down. Sisulu, along with Mandela and other leaders, was arrested in 1963 at Liliesleaf Farm, a secret ANC hideout, leading to the infamous Rivonia Trial. All were sentenced to life imprisonment on Robben Island. For nearly three decades, Mandela and Sisulu were held captive, yet their spirit remained unbroken. Even behind bars, Sisulu continued to lead, teach, and inspire, his quiet strength a constant anchor for Mandela. The image of Winnie Mandela, \"attuned and alert, and radiant,\" by Sisulu's side further underscores the collective nature of their fight, the unwavering support of their partners, and the enduring human connections that sustained them through unimaginable hardship. This wasn't just a political struggle; it was deeply personal, interwoven with families, friendships, and shared sacrifices.\n\nThis quote resonates powerfully today because it transcends the specifics of the anti-apartheid struggle to touch upon universal truths about leadership, dignity, and the human spirit. In a world often characterized by haste, superficiality, and a disconnect from our surroundings, Sisulu\u2019s \"obvious care and delight\" in each step serves as a profound reminder to live intentionally, to appreciate the simple act of being, even amidst profound challenges. It speaks to a mindful presence, a recognition of the preciousness of existence that those who have endured extreme oppression often come to embody. Furthermore, the image of Winnie Mandela, a force in her own right, remaining \"close, attuned and alert\" symbolizes the vital role of support systems, the strength found in solidarity, and the often-unseen sacrifices made by those standing alongside great leaders.",
+      "id": "d5dd031d91f1b1b2",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Nelson Mandela",
+      "topic": "wikiquote",
+      "ts": "2026-06-29T02:01:44.239049+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6485,7 +6513,7 @@
     "Gasolina Regular": 315.8,
     "Kerosene": 269.6
   },
-  "fx_last_rate": 58.756793,
+  "fx_last_rate": 59.107125,
   "fx_last_zone": "within",
   "fx_week_baseline": {
     "rate": 59.238335,
@@ -7237,6 +7265,7 @@
     "iPadOS 12.5.8 (16H88)"
   ],
   "iss_seen_passes": [
+    "db52add602e4725f",
     "2ae1d0f81d234226",
     "88c327c42ef0b7a3",
     "04336b62276cb45b",
@@ -7280,8 +7309,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "science",
-  "knowledge_last_sent": "2026-06-28T7",
+  "knowledge_last_category": "technology",
+  "knowledge_last_sent": "2026-06-29T0",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7361,6 +7390,7 @@
     "science:The discovery of superconductivity": "2026-06-14",
     "science:The discovery of the neutrino": "2026-06-16",
     "science:The double helix and the race to find it": "2026-06-25",
+    "technology:Alexander Graham Bell and the telephone": "2026-06-29",
     "technology:Edison and the phonograph": "2026-06-20",
     "technology:Marconi and the invention of radio": "2026-06-24",
     "technology:Ni\u00e9pce and the first photograph": "2026-06-26",
@@ -7384,8 +7414,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-06-28T23:51:40.805149+00:00"
+    "ok": 46,
+    "ts": "2026-06-29T01:59:59.477818+00:00"
   },
   "launch_seen_ids": [
     "a64771bf6b805933",
@@ -7411,6 +7441,10 @@
   "life_dashboard_last_week": "2026-W26",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "f70c79c65ebc5118",
+      "508d74ac09b2fb84",
+      "5ea55c51dbedcc30",
+      "48fadc8835fc75b0",
       "a06a2aaccb2a15d1",
       "fc9c89e515179583",
       "71f9ccceb2f6c20d",
@@ -7506,11 +7540,7 @@
       "4ca72dccb1a6256f",
       "05fa0868f5879b5e",
       "c96b9db0b65425fb",
-      "333dae298ea67ed4",
-      "1f53a58d24d57d21",
-      "55006c364c1c9a6e",
-      "d1c46c8b99314e26",
-      "08da9fdbf50224ca"
+      "333dae298ea67ed4"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -7714,6 +7744,17 @@
       "ba01dfcd01feccde"
     ],
     "Spider-Man: Brand New Day": [
+      "c8262528c8140a46",
+      "6884f3baf21d4577",
+      "5f43c5bed328ce7a",
+      "de186fbca1927864",
+      "2a15b2a388d394cd",
+      "bab959711e2836c9",
+      "ffb13d32df655d4e",
+      "26be8b56f41fcefa",
+      "6eb8c528ba8c1016",
+      "018be3ea7a31d2ea",
+      "9a86da3d2343a93e",
       "70493f080c9abab5",
       "63809af29595ee55",
       "ee7db107169c0ded",
@@ -7802,18 +7843,7 @@
       "6d6eb06332503542",
       "6e1c43603e633b5a",
       "8fed34dbfb6cbf19",
-      "13a89265c833b756",
-      "3014977fd16315c8",
-      "9b4c6ce2ce5de9b5",
-      "35500d374885f641",
-      "f566547c036a1aac",
-      "15caa1703c40218c",
-      "f5562075e601fc9d",
-      "10c96673974eae12",
-      "25a103d36522662d",
-      "cfa80dee0bcc871d",
-      "45123e106dc86653",
-      "f5c076c0a835376b"
+      "13a89265c833b756"
     ],
     "The Batman Part II": [
       "0bc371f3ab80e4b1",
@@ -7918,6 +7948,19 @@
       "ee0fc7f0fcff7efe"
     ],
     "The Odyssey": [
+      "eec4fcd74cb91ccc",
+      "c9e85eb41a809f53",
+      "db24d101fd7dd795",
+      "605626af7964316c",
+      "8e4ac25090b3b7c9",
+      "5b443750af9f8b6a",
+      "35bffff7aa6f5034",
+      "93bf07da56d57840",
+      "0bb3717f0a13b014",
+      "4dc90d20f739286d",
+      "4c681a500e13b793",
+      "d9058042ff96c96a",
+      "9e0e204adc5acd45",
       "c8e5e79e515ab764",
       "d1e3a81e39ada98e",
       "a6f7b9a9de2cc7ba",
@@ -8004,20 +8047,7 @@
       "92a8ae55869871ec",
       "dd341cbe3654febe",
       "45341bc55a3f1be3",
-      "6b8c20b0e50eb7d2",
-      "43c14c7dee3b4fa8",
-      "236bf47ae0658cb9",
-      "21f13b03f94903d3",
-      "8397413827fa28cb",
-      "d2ece82f04874a60",
-      "21b6984e40c2f9a5",
-      "bcd0076ace64f0b4",
-      "d6a7275ecfec9a9a",
-      "59b68375d5b4e3ea",
-      "4f89e0487f4e67d8",
-      "679bf85b70c4b5ef",
-      "734b12d98fcca4c9",
-      "ba13201e2aba537b"
+      "6b8c20b0e50eb7d2"
     ]
   },
   "movie_release_dates": {
@@ -8873,47 +8903,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "deals": {
-      "last_data": "2026-06-28T21:33:41.846802+00:00",
+      "last_data": "2026-06-29T02:00:38.739177+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "energy": {
-      "last_data": "2026-06-28T21:34:01.293350+00:00",
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_data": "2026-06-29T02:00:48.314996+00:00",
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "fda": {
-      "last_data": "2026-06-28T21:33:51.032899+00:00",
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_data": "2026-06-29T02:00:39.280714+00:00",
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "fuel": {
       "last_data": "2026-06-28T21:34:14.159992+00:00",
@@ -8921,17 +8951,17 @@
       "last_ok": "2026-06-28T21:32:43.034656+00:00"
     },
     "fx": {
-      "last_data": "2026-06-28T21:34:13.091372+00:00",
+      "last_data": "2026-06-29T02:01:00.530372+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "games": {
       "last_data": "2026-06-22T13:21:53.280804+00:00",
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-28T21:32:55.586716+00:00",
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_data": "2026-06-29T02:00:13.169787+00:00",
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "groceries": {
       "last_data": "2026-06-28T21:33:50.318260+00:00",
@@ -8939,104 +8969,104 @@
       "last_ok": "2026-06-28T21:32:43.034656+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "movies": {
-      "last_data": "2026-06-28T21:32:49.134909+00:00",
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_data": "2026-06-29T02:00:04.984653+00:00",
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "music": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-28T21:34:01.833232+00:00",
+      "last_data": "2026-06-29T02:00:48.779959+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-28T21:34:12.538410+00:00",
-      "last_data_count": 40,
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_data": "2026-06-29T02:01:00.058995+00:00",
+      "last_data_count": 43,
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-28T23:51:42.657570+00:00",
+      "last_data": "2026-06-29T02:00:10.077166+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-28T23:51:40.805149+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "weather": {
-      "last_data": "2026-06-28T21:34:01.489013+00:00",
+      "last_data": "2026-06-29T02:00:48.467976+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-28T21:34:16.757951+00:00",
+      "last_data": "2026-06-29T02:01:33.327110+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-28T21:32:43.034656+00:00"
+      "last_ok": "2026-06-29T01:59:59.477818+00:00"
     }
   },
   "twitch_live": [
@@ -9045,7 +9075,7 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165063"
+    "last_full_window": "165064"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9057,13 +9087,9 @@
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
   "watchdog_failing_since": {},
-  "water_slots_sent": [
-    "2026-06-28|15",
-    "2026-06-28|18",
-    "2026-06-28|12",
-    "2026-06-28|21"
-  ],
+  "water_slots_sent": [],
   "weather_seen_ids": [
+    "2160e604cf0d1ba2",
     "57870d951707d453",
     "03aa07a7ae6ef6c2",
     "490eba2ac9f604ff",
@@ -9146,8 +9172,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "writers",
-  "wikiquote_last_sent": "2026-06-28T7",
+  "wikiquote_last_category": "leaders",
+  "wikiquote_last_sent": "2026-06-29T0",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -9175,7 +9201,7 @@
     "leaders:Frederick Douglass": "2026-06-20",
     "leaders:Mahatma Gandhi": "2026-06-22",
     "leaders:Mikhail Gorbachev": "2026-06-26",
-    "leaders:Nelson Mandela": "2026-06-18",
+    "leaders:Nelson Mandela": "2026-06-29",
     "leaders:Theodore Roosevelt": "2026-06-24",
     "leaders:Thomas Jefferson": "2026-06-28",
     "leaders:Winston Churchill": "2026-06-19",
@@ -9351,7 +9377,8 @@
       "j0GLqGXpEZw",
       "xmaXAaHKuck",
       "8pQDE2UK5Vo",
-      "Xghm61y9I1U"
+      "Xghm61y9I1U",
+      "afnDmVfLwkk"
     ]
   }
 }
