@@ -241,6 +241,24 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Tom Holland Is Back Swinging in \u2018Spider-Man: Brand New Day\u2019 Trailer - The Hollywood Reporter",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONDJfR3ZyX01URVhVMTRTdUMwRWxFR0x0eDhJV2ZYSHR4VjRTbklrWWxwWVFEZkdfMXRuRnk1Ym5uMVpQa0FCcmpIU2tEMWZaZWt4TjNyNlhCZzdMcGQ3V290QXhJSGhTMDQ3eFJiVW1tdUhoRG1BQVhVc3RpZkcxSGJYSl9qUkgwelhsZWI0ZnpES2N4d0FzNHlETHhnMWJtX0R6ZnBIYzhwWWhw?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Odyssey",
+      "title": "Michael Caine Lends His AI Clone to Voice \u2018The Odyssey\u2019 Audiobook - The Hollywood Reporter",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORHZ6Y0xnM0pQRDM0dHdjR1d6RkVtMlB1bTREYTBMT2g5U2J1NFhmbFhtdGswVHk2UlBOekgzMC1oTFVUbjl0amNiYzhiejAxR2x1UEV4aDR1cm5xMS1VQWZHbmZsSktFTHlUSkw5dGk0UXJ2b0JkSzQwd0xIZmlEaE1CYm9fOHpEaDBlcnZXLUhHNllGeDFHcG5GUG1XTXp3V2RVNkYtck0?oc=5"
     }
   ],
   "digest_last_sent": "2026-06-29",
@@ -433,66 +451,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "id": "ec74fc8c36f3a7cb",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' trailer #2 breakdown live \u2014 everything we spotted in the new Marvel movie's latest teaser starring Tom Holland - TechRadar",
-      "topic": "movies",
-      "ts": "2026-06-25T04:37:49.059893+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQMFNXMjBZajhDeG5vZXo4VFdYVzBMUkNNaTRVNFI1U2JhMjZPenZaTzNjY3ItUjNVVlpma0t3d1hHRVdub0dpMFVJbzVGYWg0TFg4WDVQNnU2VjItQzlkczhrOHVHN3FxNjF4V3BDSUlVYmY0eG9hOUdKY0htWERqQVo0a1Z1NmxRVE5fTQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "d31e7ad6209e108c",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Slideshow: The Batman: Part II - Who's Who in Matt Reeves' DC Sequel - IGN",
-      "topic": "movies",
-      "ts": "2026-06-25T04:37:50.864504+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE16Rzk3NC05MGptOEZnU19BMmdGWjFDaE5WRHV0NzdVNl8wdkNJZ3RycFUzVmpnZHRxUEpJSTJTZHgzV1B5cmJZNnBWY0hpS1BQemp0NTdyVGxIVEMwMWpOY3dR?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "93d36f8c021545cb",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman 2\u2019s HD Logo Revealed as Matt Reeves Begins Filming - AOL.com",
-      "topic": "movies",
-      "ts": "2026-06-25T04:37:50.865067+00:00",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE52ci1WYmVBVmdKWlF3Tlc2VWltREotUGhIb2ZUQWtIaFpjS2hCOThrR1VNdHAtVmhZb2NNaTJIT29LTHFUUzRBZDNMa2J4cDhfTXQ4RmhVUTYyMEc3cDhMTUxEUkJUSE5Bb0pDVzFqRWE1bkZuTDd4Ng?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "\ud83c\udde9\ud83c\uddf4 Rafael Devers \u2014 1 HR vs Athletics",
-      "id": "d28cde8f3aeee122",
-      "score": 64,
-      "severity": "high",
-      "source": "Baseball",
-      "title": "Baseball: Rafael Devers",
-      "topic": "baseball",
-      "ts": "2026-06-25T04:37:59.489495+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "In the annals of human origins, few discoveries resonate with the dramatic weight and intellectual upheaval of the Taung Child.  It begins in the blistering heart of South Africa, in the limeworks of Buxton, near the town of Taung, a place where the earth was systematically quarried for its ancient calcium carbonate. Here, in 1924, a blast exposed a treasure far more profound than mere industrial material. M.G. de Bruyn, the director of the Northern Lime Company, a man with an eye for the unusual, noticed a fossilized baboon skull and, intrigued, sent it to Professor Raymond Dart at the University of the Witwatersrand in Johannesburg. This seemingly minor act of curiosity, a fleeting moment in the relentless march of industry, set in motion a chain of events that would forever alter our understanding of our own genesis.\n\nRaymond Dart, a young anatomist trained in London and an enthusiastic proponent of the then-nascent field of paleoanthropology, received the crate of fossils with a mixture of excitement and expectation. Among the bones, half-buried in a matrix of breccia, he found something truly extraordinary: the natural endocast of a brain, and, startlingly, part of a skull and a jawbone with teeth still intact. It was the face of a child, perhaps three to four years old, with remarkably human-like features. The foramen magnum, the opening at the base of the skull where the spinal cord connects, was positioned more centrally than in apes, strongly suggesting an upright posture. This was not a monkey, nor was it a fully modern human. This was something in between, a bridge across the chasm of time, presenting a mosaic of both ape and human characteristics. Dart, with a flash of insight, immediately recognized its immense significance. He named it *Australopithecus africanus*, the \"southern ape of Africa,\" and with that, he hurled a gauntlet at the established scientific dogma of his time.\n\nThe drama, however, was only just beginning. When Dart announced his discovery in the prestigious journal Nature in 1925, the reception was largely dismissive, even hostile. The prevailing scientific consensus, heavily influenced by the scandalous Piltdown Man hoax, held that humanity's origins lay in Asia, and that the large brain had evolved *before* bipedalism. Dart\u2019s small-brained, upright African child simply didn't fit the accepted narrative. Critics scoffed at his claims, arguing that the Taung child was merely an ape, perhaps a young gorilla or chimpanzee, and that Dart, a provincial anatomist far from the intellectual centers of Europe, was either deluded or sensationalist. The scientific establishment, anchored by revered figures like Sir Arthur Keith, refused to acknowledge the compelling evidence right before their eyes. This was a classic clash of paradigms, a moment where new data directly challenged deeply entrenched beliefs, and the human element of ego, reputation, and nationalistic pride played a considerable role in the resistance. Dart, with his revolutionary claim, found himself isolated, a prophet in the scientific wilderness.\n\nIt would take decades, and the tireless work of a new generation of researchers, notably Robert Broom, who unearthed more *Australopithecus* fossils in the caves of Sterkfontein and Kromdraai, to finally vindicate Dart\u2019s audacious claims. These subsequent discoveries, consistent with the morphology of the Taung Child, provided irrefutable proof that Dart had been right all along.",
-      "id": "01813144b8bddac6",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The Taung Child and Raymond Dart",
-      "topic": "learn",
-      "ts": "2026-06-25T04:39:17.690344+00:00",
-      "url": ""
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6432,6 +6390,66 @@
       "topic": "wikiquote",
       "ts": "2026-06-30T05:51:39.016092+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "4b1587ca4842763e",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "'Spider-Man: Brand New Day' starring Tom Holland has posted the best U.S. first-day presales for any film in years. - Deadline",
+      "topic": "movies",
+      "ts": "2026-06-30T08:48:47.418487+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbUp1RzA3dl9wMTRjWHIzbW9kd3ljRXZBc0dvemNodm8xNkpueDRudVVUeEpKcmN2U0R2eVBxeUhobE9NRzRVSlo3VzhpTWV3eEZHZ2N3UWNxTXZoQkRuM19VRV9ObnZLanhTQmRld0kwcjM0Y19PNDRtQ0tyZC16cXBHak1zNFU2?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "10482c808d4b4028",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Tom Holland Is Back Swinging in \u2018Spider-Man: Brand New Day\u2019 Trailer - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-06-30T08:48:47.978708+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONDJfR3ZyX01URVhVMTRTdUMwRWxFR0x0eDhJV2ZYSHR4VjRTbklrWWxwWVFEZkdfMXRuRnk1Ym5uMVpQa0FCcmpIU2tEMWZaZWt4TjNyNlhCZzdMcGQ3V290QXhJSGhTMDQ3eFJiVW1tdUhoRG1BQVhVc3RpZkcxSGJYSl9qUkgwelhsZWI0ZnpES2N4d0FzNHlETHhnMWJtX0R6ZnBIYzhwWWhw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "5ffc53b89d06e712",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Michael Caine Lends His AI Clone to Voice \u2018The Odyssey\u2019 Audiobook - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-06-30T08:48:48.533852+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORHZ6Y0xnM0pQRDM0dHdjR1d6RkVtMlB1bTREYTBMT2g5U2J1NFhmbFhtdGswVHk2UlBOekgzMC1oTFVUbjl0amNiYzhiejAxR2x1UEV4aDR1cm5xMS1VQWZHbmZsSktFTHlUSkw5dGk0UXJ2b0JkSzQwd0xIZmlEaE1CYm9fOHpEaDBlcnZXLUhHNllGeDFHcG5GUG1XTXp3V2RVNkYtck0?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "In the misty dawn of creation, when the world was young and gods walked among men, there existed a story that echoed through the sands of time, a tale of love, betrayal, death, and resurrection that would forever shape the destiny of Egypt. At its heart were Osiris, the benevolent king, and Isis, his devoted queen, a divine couple whose reign brought an age of prosperity and enlightenment to the nascent civilization. Osiris, with his green skin symbolizing fertility and rebirth, taught humanity the arts of agriculture, law, and piety, lifting them from a primitive existence. Isis, wise and powerful, nurtured the land and its people, her magic safeguarding their well-being. Their rule was a golden age, a testament to harmony and the potential of divine leadership, and their love was a beacon for all who lived under their benevolent gaze.\n\nBut even in paradise, shadows of discord began to stir, sown by the envy of Seth, Osiris's younger brother. Seth, a god of chaos, deserts, and storms, seethed with resentment at his brother's popularity and the adoration he received. His heart, consumed by jealousy, conceived a plot of unimaginable treachery. At a grand banquet, Seth unveiled a magnificent, exquisitely crafted chest, proclaiming that it would belong to anyone who fit perfectly inside. One by one, the guests tried, but none were the right size. Finally, Osiris, unsuspecting, stepped into the chest. As soon as he lay down, Seth and his conspirators slammed the lid shut, sealed it with molten lead, and cast the coffin into the Nile. The benevolent king, the bringer of civilization, was drowned, his life extinguished by the very waters he had blessed, and with him, a profound darkness fell upon Egypt.\n\nThe news of Osiris's death shattered Isis, plunging her into a profound grief that mirrored the despair now gripping the land. But Isis was not one to succumb to sorrow. Driven by an unwavering love and an indomitable will, she embarked on a tireless quest to find her husband's body. Her search led her across lands and seas, her cries echoing with a poignant desperation. She eventually discovered the coffin, embedded within a tamarisk tree that had grown around it in Byblos, transformed into a pillar for the king's palace. With immense effort and a touch of divine persuasion, Isis retrieved the coffin and brought it back to Egypt, hoping to restore her beloved. However, Seth, discovering her efforts, unleashed his fury once more. He dismembered Osiris's body into fourteen pieces, scattering them across the length and breadth of Egypt, an act of desecration intended to prevent any hope of resurrection.\n\nYet, even in the face of such horrific violence, Isis's resolve only hardened. With her sister Nephthys and the assistance of Anubis, the jackal-headed god of embalming, she meticulously searched for and gathered every fragment of Osiris's body. It was a painstaking and harrowing task, a testament to her enduring devotion. Once assembled, Isis, using her potent magic and divine breath, momentarily reanimated Osiris, conceiving their son, Horus, a god destined to avenge his father and restore order. This act, the first mummification, became a cornerstone of Egyptian funerary practices, offering hope of an afterlife. Though Osiris could not return to the land of the living, he became the ruler of the Duat, the underworld, presiding over the judgment of souls.",
+      "id": "ceb62b432bc16f05",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The Egyptian myth of Osiris and Isis",
+      "topic": "learn",
+      "ts": "2026-06-30T08:50:21.147796+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cWe're not trying to entertain the critics \u2026 I'll take my chances with the public.\u201d\n\u2014 Walt Disney\n\nWalt Disney, a name synonymous with childhood dreams and technological innovation, was more than just a purveyor of animated fantasies; he was a titan of industry, a relentless visionary who, for much of his career, navigated a precarious tightrope between artistic ambition and commercial viability. Born in 1901, Disney came of age in an America brimming with possibility and the burgeoning power of mass media. His early years were a testament to grit and a deeply ingrained work ethic, from delivering newspapers in the bitter predawn cold to experimenting with animation in a dilapidated garage. He wasn't a silver-spoon prodigy; he was a self-made man, a relentless tinkerer who saw the nascent art form of animation not just as novelty, but as a powerful storytelling medium with the potential to move millions. This entrepreneurial spirit, coupled with an almost obsessive dedication to quality, would define his journey, yet it also frequently put him at odds with the very gatekeepers of taste and judgment.\n\nThe quote, \"We're not trying to entertain the critics \u2026 I'll take my chances with the public,\" wasn't just a flippant remark; it was a distillation of Disney's philosophy, born from years of battling skepticism and artistic pigeonholing. By the time he uttered these words, likely in the mid-20th century as his studio's ambitions stretched beyond traditional animation into live-action films and the monumental undertaking of Disneyland, he had already faced significant pushback. Critics, often steeped in the European art house tradition, sometimes dismissed his animated features as simplistic, sentimental, or overly commercialized. They questioned the artistic merit of a talking mouse or a princess who sang to woodland creatures. Yet, the public, the very audience Disney so passionately sought to connect with, flocked to his creations. They saw wonder, escapism, and a mastery of storytelling that transcended the often-academic judgments of the elite. This was an era of profound social change \u2013 post-war optimism, the rise of the middle class, and a growing desire for family entertainment that offered a reprieve from the complexities of the Cold War. Disney understood this hunger for enchantment in a way many critics did not, recognizing that universal emotions and relatable narratives, presented with unparalleled craftsmanship, would always find an audience.\n\nToday, this sentiment resonates with remarkable power, speaking to the enduring tension between artistic integrity, commercial success, and the often-disparate opinions of critics and the broader populace. In an age of instant feedback and fragmented media landscapes, where every artistic endeavor is subject to immediate critical dissection, Disney's words serve as a powerful reminder of the ultimate arbiter of art: the audience. It\u2019s a rallying cry for creators who prioritize connection over intellectual acclaim, who believe that true success lies in touching the hearts and minds of the many, rather than solely impressing the discerning few.",
+      "id": "99c2a0ee32afa725",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Walt Disney",
+      "topic": "wikiquote",
+      "ts": "2026-06-30T08:50:26.626201+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -7360,8 +7378,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "medicine",
-  "knowledge_last_sent": "2026-06-30T1",
+  "knowledge_last_category": "mythology",
+  "knowledge_last_sent": "2026-06-30T2",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7424,6 +7442,7 @@
     "mythology:Perseus and the slaying of Medusa": "2026-06-23",
     "mythology:Ra's nightly journey through the underworld": "2026-06-21",
     "mythology:The Dreamtime of Aboriginal Australia": "2026-06-27",
+    "mythology:The Egyptian myth of Osiris and Isis": "2026-06-30",
     "mythology:The Sirens and their deadly song": "2026-06-18",
     "philosophy:Aristotle and the foundations of logic": "2026-06-22",
     "philosophy:Augustine and the Confessions": "2026-06-13",
@@ -7470,9 +7489,9 @@
     "world_history:The rise of Adolf Hitler": "2026-06-22"
   },
   "last_run": {
-    "failed": 1,
-    "ok": 45,
-    "ts": "2026-06-30T05:50:22.311578+00:00"
+    "failed": 0,
+    "ok": 46,
+    "ts": "2026-06-30T08:48:42.848190+00:00"
   },
   "launch_seen_ids": [
     "a64771bf6b805933",
@@ -7498,6 +7517,9 @@
   "life_dashboard_last_week": "2026-W26",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "c3ff73bfc75f076b",
+      "3369ec00e8b83c25",
+      "d391e125e7ae8ba8",
       "93d332c24f2dd751",
       "0e0480281e5419ae",
       "7b9047c820450e23",
@@ -7594,10 +7616,7 @@
       "0b389fe2b1797a2f",
       "109fadda33d8f14f",
       "edc4bbec64d25ef8",
-      "8b4d5fdeeb164f3a",
-      "13af8daf9b0f056d",
-      "2adeb3e29fd1d80c",
-      "05ecd37855cf4550"
+      "8b4d5fdeeb164f3a"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -7801,6 +7820,17 @@
       "ba01dfcd01feccde"
     ],
     "Spider-Man: Brand New Day": [
+      "7571d2664723fd69",
+      "8ac661eddea95707",
+      "e90f3284f5972419",
+      "3c037dce74464a56",
+      "bb6c80813e1a2a56",
+      "e735f0b9ed3fd88d",
+      "30a24274abc9b73f",
+      "52a1aa11e81de426",
+      "bb067200ec8d925f",
+      "e7175f95341d2e4d",
+      "a090145ba4c8e237",
       "5c8413ce97230200",
       "e8dbc03adca1721d",
       "2c63b5ef30b73d9e",
@@ -7889,18 +7919,7 @@
       "1c54f05964e075c4",
       "d98c798924f52562",
       "a5dfe173c856263e",
-      "42fa6ab3f0ecfeb0",
-      "b3042f8f7927419c",
-      "0b654cf13afa268b",
-      "063c108f0b7643c6",
-      "ddbdec823ddbf14a",
-      "37553b6cefb71f17",
-      "353841c246b98c8f",
-      "2c7cb5deb1798779",
-      "48ec2020c5937434",
-      "fa607576cde70e4c",
-      "afde1c0cfa6c7882",
-      "93fa0fc0f646f995"
+      "42fa6ab3f0ecfeb0"
     ],
     "The Batman Part II": [
       "45a168fc1979ae42",
@@ -8005,6 +8024,17 @@
       "3e4bdc7dfa6edfa4"
     ],
     "The Odyssey": [
+      "4470d43d16d79c7f",
+      "d4c57ad021041f2a",
+      "c8e5e79e515ab764",
+      "a6f7b9a9de2cc7ba",
+      "1e26ca1f20105ffb",
+      "3825e3f0530645ef",
+      "1dacda63765b6d4e",
+      "3a5f066c1b93dcbc",
+      "c0a3e916324c27c7",
+      "98bbf3db56ede50d",
+      "e77aff3019e7ca28",
       "6af8908673bb3806",
       "8048f94edac9884e",
       "59b005693b724808",
@@ -8093,18 +8123,7 @@
       "236bf47ae0658cb9",
       "df69a7ad7a9b3d3c",
       "eec4fcd74cb91ccc",
-      "c9e85eb41a809f53",
-      "db24d101fd7dd795",
-      "605626af7964316c",
-      "8e4ac25090b3b7c9",
-      "5b443750af9f8b6a",
-      "35bffff7aa6f5034",
-      "93bf07da56d57840",
-      "0bb3717f0a13b014",
-      "4dc90d20f739286d",
-      "4c681a500e13b793",
-      "d9058042ff96c96a",
-      "9e0e204adc5acd45"
+      "c9e85eb41a809f53"
     ]
   },
   "movie_release_dates": {
@@ -8973,47 +8992,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "deals": {
-      "last_data": "2026-06-30T05:51:01.434501+00:00",
+      "last_data": "2026-06-30T08:49:46.899263+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "energy": {
-      "last_data": "2026-06-30T05:51:13.588662+00:00",
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_data": "2026-06-30T08:49:59.069898+00:00",
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "fda": {
-      "last_data": "2026-06-30T05:51:01.856711+00:00",
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_data": "2026-06-30T08:49:47.340732+00:00",
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "fuel": {
       "last_data": "2026-06-29T21:56:58.323234+00:00",
@@ -9021,17 +9040,17 @@
       "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "fx": {
-      "last_data": "2026-06-30T05:51:26.247183+00:00",
+      "last_data": "2026-06-30T08:50:12.653191+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-30T05:50:36.063546+00:00",
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_data": "2026-06-30T08:48:56.780091+00:00",
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "groceries": {
       "last_data": "2026-06-29T21:56:32.191263+00:00",
@@ -9039,114 +9058,111 @@
       "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "movies": {
-      "last_data": "2026-06-30T05:50:29.671443+00:00",
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_data": "2026-06-30T08:48:51.200388+00:00",
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "music": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-30T05:51:14.263783+00:00",
+      "last_data": "2026-06-30T08:49:59.840543+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-30T05:51:25.494460+00:00",
-      "last_data_count": 34,
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_data": "2026-06-30T08:50:11.947072+00:00",
+      "last_data_count": 31,
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-30T05:50:32.000016+00:00",
+      "last_data": "2026-06-30T08:48:53.167796+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "weather": {
-      "last_data": "2026-06-30T05:51:13.785180+00:00",
+      "last_data": "2026-06-30T08:49:59.372659+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-30T05:50:22.311578+00:00"
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-30T01:29:23.150244+00:00",
+      "last_data": "2026-06-30T08:50:15.806544+00:00",
       "last_data_count": 90,
-      "last_error": "all 7 channel feed(s) failed; last: PabloELECTRUM: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UC9DS-MY8CZzLh7vQG000uug",
-      "last_error_ts": "2026-06-30T05:50:22.311578+00:00",
-      "last_ok": "2026-06-30T01:27:43.680383+00:00",
-      "source_failed": true
+      "last_ok": "2026-06-30T08:48:42.848190+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165073"
+    "last_full_window": "165074"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9157,9 +9173,7 @@
     "games": "2026-06-12T12:15:55.633492+00:00",
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
-  "watchdog_failing_since": {
-    "youtube": "2026-06-30T05:50:22.311578+00:00"
-  },
+  "watchdog_failing_since": {},
   "water_slots_sent": [],
   "weather_seen_ids": [
     "5484d1e90a7cf835",
@@ -9250,8 +9264,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "leaders",
-  "wikiquote_last_sent": "2026-06-30T1",
+  "wikiquote_last_category": "innovators_artists",
+  "wikiquote_last_sent": "2026-06-30T2",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -9272,7 +9286,7 @@
     "innovators_artists:Steve Jobs": "2026-06-21",
     "innovators_artists:Thomas Edison": "2026-06-27",
     "innovators_artists:Vincent van Gogh": "2026-06-20",
-    "innovators_artists:Walt Disney": "2026-06-19",
+    "innovators_artists:Walt Disney": "2026-06-30",
     "leaders:Abraham Lincoln": "2026-06-26",
     "leaders:Benjamin Franklin": "2026-06-27",
     "leaders:Eleanor Roosevelt": "2026-06-23",
