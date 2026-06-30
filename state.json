@@ -78,7 +78,8 @@
     823853,
     823286,
     823208,
-    823207
+    823207,
+    823771
   ],
   "baseball_results_seen": [
     824748,
@@ -177,6 +178,51 @@
       "title": "Apple release: iPadOS 26.5.2 (23F84)",
       "topic": "ios_release",
       "url": "https://developer.apple.com/news/releases/?id=06292026b"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day Is Officially Adding A Genre From Andrew Garfield\u2019s Spidey Era - The Direct",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVmt5S1J2cFF3QmgzRy1rbmVZN29VelRIdUIwTVFxYl9TUEc2UkNxTm85Z3FSR3ZnUE04NmFSYU42Ukx6NzlMeWhsai1fcDhrR0tONGtYMEUyblpCc3ZXbzZ0QXMzMTNHOXpTV3RBV0N4OHFRdXl4WklqWUVFWFNLS0NtTlRNMEhiWTd0dUhER3U?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Eliquis",
+      "title": "FDA updates approval for Eliquis (Apixaban) (NDA220073)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220073"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Orserdu",
+      "title": "FDA updates approval for Orserdu (Elacestrant Hydrochloride) (NDA217639)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=217639"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Eliquis",
+      "title": "FDA updates approval for Eliquis (Apixaban) (NDA202155)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202155"
     },
     {
       "detail": "",
@@ -378,138 +424,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "M7.5 - 23 km SE of Yumare, Venezuela (~908 km away). Large shallow quake - check official advisories at tsunami.gov and move to high ground if instructed.",
-      "id": "2e483a8b48368cbd",
-      "score": 110,
-      "severity": "critical",
-      "source": "Earthquakes",
-      "title": "Possible tsunami risk",
-      "topic": "quakes",
-      "ts": "2026-06-25T00:20:57.247876+00:00",
-      "url": "https://www.tsunami.gov/"
-    },
-    {
-      "action": "push",
-      "detail": "M7.2 - 24 km ENE of San Felipe, Venezuela (~915 km away). Large shallow quake - check official advisories at tsunami.gov and move to high ground if instructed.",
-      "id": "bc7c1b5faa708655",
-      "score": 110,
-      "severity": "critical",
-      "source": "Earthquakes",
-      "title": "Possible tsunami risk",
-      "topic": "quakes",
-      "ts": "2026-06-25T00:20:57.639720+00:00",
-      "url": "https://www.tsunami.gov/"
-    },
-    {
-      "action": "push",
-      "detail": "Cashbox wednesday!",
-      "id": "a94d13f729dc1139",
-      "score": 62,
-      "severity": "moderate",
-      "source": "MKLeo17",
-      "title": "MKLeo17 uploaded a new video",
-      "topic": "youtube",
-      "ts": "2026-06-25T00:21:00.987559+00:00",
-      "url": "https://www.youtube.com/watch?v=xmaXAaHKuck"
-    },
-    {
-      "action": "push",
-      "detail": "I WILL DEFEAT MKLEO TODAY; CASHBOX RUN",
-      "id": "40814b3eef5e967a",
-      "score": 62,
-      "severity": "moderate",
-      "source": "sparg0147",
-      "title": "sparg0147 uploaded a new video",
-      "topic": "youtube",
-      "ts": "2026-06-25T00:21:01.306680+00:00",
-      "url": "https://www.youtube.com/watch?v=YUr6YowALuM"
-    },
-    {
-      "action": "push",
-      "detail": "The dawn of the space age was not merely a scientific endeavor; it was a Cold War spectacle, a high-stakes chess match played out against the backdrop of the heavens. In the United States, the Project Mercury astronauts were household names, their faces gracing magazine covers, their families celebrated as exemplars of American virtue. Yet, behind the Iron Curtain, the Soviet space program was shrouded in secrecy, its heroes unnamed, its triumphs revealed only after they had irrevocably shifted the global balance of power. This clandestine rivalry reached its zenith on April 12, 1961, when a young Soviet airman, Yuri Gagarin, became the first human to orbit the Earth. His journey, a mere 108 minutes long, would forever alter humanity's perception of itself and its place in the cosmos, yet the man behind the legend remained, for a time, a mystery.\n\nGagarin was no accidental hero. He was one of twenty elite cosmonauts, hand-picked from the ranks of the Soviet Air Force, subjected to a brutal regimen of physical and psychological tests designed to push the human body and mind to their breaking point. These were men forged in the fires of competition, each harboring the dream of being the first to break the surly bonds of Earth. The selection process was a crucible, weeding out the weak, the fearful, the less-than-perfect. Gagarin, with his infectious smile, calm demeanor, and unwavering determination, stood out. He possessed a rare blend of courage, intelligence, and humility that made him the ideal candidate to represent the Soviet Union on the global stage. The craft that would carry him, Vostok 1, was a marvel of Soviet engineering, yet it was a crude machine by today's standards, lacking many of the redundancies and safety features that would later become standard. Gagarin knew the risks were immense, the chances of failure real, but his resolve never wavered.\n\nThe moment of launch was fraught with a tension that permeated beyond the confines of Baikonur Cosmodrome, echoing across the globe. As the colossal R-7 rocket thundered to life, Gagarin, strapped into his cramped capsule, uttered a word that would become iconic: \"Poyekhali!\"\u2014\"Let's go!\" He was a human being propelled into the terrifying unknown, a pioneer venturing beyond the comfortable confines of his home planet. His perspective from orbit was transformative; he described the Earth as a \"blue planet\" with an ethereal \"halo of light,\" a poignant observation that highlighted the fragility and beauty of our world. His mission was brief, a single orbit, but its impact was immeasurable. Upon his return, Gagarin was not just a Soviet hero; he was a global icon, a symbol of humanity's boundless potential. The world marveled at his achievement, and his face, once a closely guarded secret, became instantly recognizable, a testament to the power of a single human being to inspire millions.\n\nGagarin's flight transcended the political machinations of the Cold War. It ignited a global fascination with space, accelerating the space race and pushing both superpowers to greater heights of technological innovation. It proved that humanity could indeed journey beyond Earth, paving the way for lunar landings, space stations, and eventually, the exploration of other planets. Gagarin\u2019s life after his historic flight was a whirlwind of global tours and public appearances, a relentless schedule that pulled him away from the active flight he loved.",
-      "id": "574346e53fb4e5a6",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Yuri Gagarin, the first human in space",
-      "topic": "learn",
-      "ts": "2026-06-25T00:21:07.469271+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cIf you would not have a man flinch when the crisis comes, train him before it comes.\u201d\n\u2014 Seneca the Younger\n\nLucius Annaeus Seneca, known to history as Seneca the Younger, was a man whose life was a masterclass in navigating the treacherous currents of power, philosophy, and personal tribulation in the tumultuous heart of the Roman Empire. Born into an affluent family in Corduba, Hispania, around 4 BCE, Seneca was destined for a world far more complex than his provincial beginnings suggested. His father, Seneca the Elder, was a renowned orator and writer, instilling in young Lucius a profound appreciation for rhetoric and the arts. Yet, it was philosophy, particularly Stoicism, that truly captured his intellect. He was drawn to its emphasis on virtue, reason, and an acceptance of fate, principles that would be tested relentlessly throughout his dramatic career. Seneca's early life saw him rise through the ranks of Roman society, his eloquent speeches and sharp intellect earning him a formidable reputation. However, this very brilliance was a double-edged sword in an autocratic regime, making him both indispensable and a potential threat. He experienced exile, narrowly escaped execution under Emperor Claudius, and was eventually recalled to Rome to serve as tutor and advisor to a young, enigmatic prince named Nero. It was during this period, in the suffocatingly opulent yet terrifyingly unpredictable court of the early Imperial era, that Seneca's quote, \"If you would not have a man flinch when the crisis comes, train him before it comes,\" found its most potent and personal context.\n\nThe world Seneca inhabited was one of breathtaking ambition and brutal realpolitik. Rome was the undisputed master of a vast empire, but beneath the veneer of stability, paranoia and Machiavellian machinations festered in the imperial palace. Emperors rose and fell, often through violence and betrayal, and loyalty was a fluid concept. Seneca, as Nero's mentor, was tasked with shaping the future emperor, guiding him not just in rhetoric and philosophy but in the very art of governance. This was an immense responsibility, for Nero, initially hailed as a promising ruler, would descend into infamy. Seneca's quote, therefore, can be seen as both a personal philosophy and a desperate plea to an empire\u2019s future leader. He understood deeply that crises were not anomalies but inevitable occurrences, whether they manifested as political intrigue, military campaigns, or personal tragedy. His Stoic training had taught him the importance of mental fortitude, of preparing the mind for adversity through reasoned thought, self-discipline, and the cultivation of inner strength. He sought to instill this foresight in Nero, perhaps hoping to temper the young man's impulsive nature and equip him with the resilience necessary to steer the ship of state through turbulent waters. Seneca\u2019s life itself was a living testament to this principle, as he repeatedly faced professional setbacks, personal attacks, and ultimately, the tragic command to take his own life at Nero's whim, enduring each with remarkable composure.\n\nThe enduring resonance of Seneca's words transcends the specific historical context of ancient Rome.",
-      "id": "491d338dcc3e122d",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Seneca the Younger",
-      "topic": "wikiquote",
-      "ts": "2026-06-25T00:21:12.904373+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "597a7b7876a3e710",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel's aggressive response to new Avengers: Doomsday leaks confirm what fans suspected - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-25T04:37:47.574617+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZnBMeVlLNEtqbnBmcTVaQ3Qwa0hSNzFFcjVNcnQzQS1SNWtnTC1zX2VXek42WWpySFB6NVNjU0dOb0RJRF9Kay1HQzA3MWpRTkJaalZPUzRBdU9fVXNSWjJxbERpaDl3UjVJSERSMzRxYVhxUzlPYVN2UkJyeHVnenBEd013cGNva2lYZzhFdTRxUQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "314d9dbc916bfbb9",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel\u2019s DMCA War Over \u2018Avengers: Doomsday\u2019 Leaks Is Now Confirming What Everyone Suspected - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-25T04:37:47.575471+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE84SWk4NFNyZmVNY0RsNENYOTZ5SHlFOGx0NDlZb1ctUVFucDNtdWhIaEdzNklZVFhvVndhNk9IQjJkUS15UWNpQjNJOHFhNGdoWGNpeWRNWm1oQ1NUZ0w3VTZiRHV1VFU?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "0c157d7376db3a82",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers Doomsday\u2019s First Trailer Now Closer Than Ever After Marvel Displays New Promo - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-25T04:37:47.575847+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMEpSN3ZGZThVdTZSNlAyLW0ycFZXN002dVhSd0xtdzdNX29PaTdVNjBCRHZTZy0tcWRtc2l4Q3k1Q3VhdHBJY1UwMWdkZXdPYkRBeEJnSGZqUmE0LVRCME9KVEdZLXlrTG1oLVNxbWh5LVRvb2xsekhOT2ktX1BZNjNfUXUtTVQ3cDIw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "5e78ed65dd04cbd6",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' Clip Confirms Popular Aunt May Theory - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-25T04:37:48.419563+00:00",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5kd0d0bTFZM0RpSVZLaGtHWlllVVA5ZmtuTFJhWEJrcjg1YUlzNnA4TVp3Tng2OXFXMEh2UE5xNEJ2TkR3STdpdWNFZFB4RTVoNEh3bnpsUXRQNVZmMFNNNzBBOUJTVXNtUWpCQUlVZFpJaThnVWdV?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "d1d8a3b9c09ad9a6",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Zendaya Stuns in Vintage $35 Spider-Man T-Shirt for \u2018Brand New Day\u2019 Event in Paris - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-06-25T04:37:48.420105+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM2VoSGFyUUh1ZDIxRUtYeWFEQWNnOERXR1p1dU05MWNDb0J1SnRkLXVMdnpLRnJOTjBlVHpROU85b2x0WXlTa1JScldsSTRyYV95dlhWMnZhdW1pbDB0dkF0Z2UtU3pLVXJLa21xOTdyS2RJTEFnbEdUQS01M0p4anc1SERnRkdOVlBOdnB4Qld6LVhhdHV1Zg?oc=5"
-    },
     {
       "action": "push",
       "detail": "",
@@ -6377,6 +6291,138 @@
       "topic": "wikiquote",
       "ts": "2026-06-29T21:57:12.583187+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "c47c8e03e515dafc",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day Is Officially Adding A Genre From Andrew Garfield\u2019s Spidey Era - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-30T01:27:46.387767+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVmt5S1J2cFF3QmgzRy1rbmVZN29VelRIdUIwTVFxYl9TUEc2UkNxTm85Z3FSR3ZnUE04NmFSYU42Ukx6NzlMeWhsai1fcDhrR0tONGtYMEUyblpCc3ZXbzZ0QXMzMTNHOXpTV3RBV0N4OHFRdXl4WklqWUVFWFNLS0NtTlRNMEhiWTd0dUhER3U?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "73282255c724a5cb",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "The Odyssey | 2026, Movie, Film, Length, Cast, Release Date, Christopher Nolan, & Locations - Britannica",
+      "topic": "movies",
+      "ts": "2026-06-30T01:27:46.914026+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE12OTJHTFZmQ0FldS1MOHU3bHZyWVA1NlU0dkM1Q2dSd0ljSFRLR3FxeWR3OW94VVEwWFhobDBkVzRaUzlvV3lhR00tWmFHYzFmX3BCODJrdzFvbXR0V2QzWEdNOWIwbW00WUE?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "\ud83c\udde9\ud83c\uddf4 Elly De La Cruz \u2014 1 HR vs Milwaukee Brewers",
+      "id": "c12253de0714ea2a",
+      "score": 64,
+      "severity": "high",
+      "source": "Baseball",
+      "title": "Baseball: Elly De La Cruz",
+      "topic": "baseball",
+      "ts": "2026-06-30T01:27:57.305102+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "58d8496e1cf7845e",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Eliquis",
+      "title": "FDA updates approval for Eliquis (Apixaban) (NDA220073)",
+      "topic": "fda",
+      "ts": "2026-06-30T01:28:53.333562+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220073"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "4cce601fc8d0f1cb",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Orserdu",
+      "title": "FDA updates approval for Orserdu (Elacestrant Hydrochloride) (NDA217639)",
+      "topic": "fda",
+      "ts": "2026-06-30T01:28:53.333894+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=217639"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "653255b5b4a308e5",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Eliquis",
+      "title": "FDA updates approval for Eliquis (Apixaban) (NDA202155)",
+      "topic": "fda",
+      "ts": "2026-06-30T01:28:53.334189+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202155"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "ba4f042a654a2961",
+      "score": 70,
+      "severity": "high",
+      "source": "Navitrux",
+      "title": "FDA approves Navitrux (Fosaprepitant) (NDA220436)",
+      "topic": "fda",
+      "ts": "2026-06-30T01:28:53.334468+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220436"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "b946467c5062d0a0",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-06-30T01:29:03.268208+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "El Tao Explicado,Cap\u00edtulo 12: Espacio Positivo",
+      "id": "c1a1a5fb3d29dd4f",
+      "score": 62,
+      "severity": "moderate",
+      "source": "MIGALA666",
+      "title": "MIGALA666 uploaded a new video",
+      "topic": "youtube",
+      "ts": "2026-06-30T01:29:22.053875+00:00",
+      "url": "https://www.youtube.com/watch?v=vaFUompkvvI"
+    },
+    {
+      "action": "push",
+      "detail": "In the mid-19th century, in a world grappling with the complexities of industrialization and the burgeoning fields of science, a quiet, self-taught mathematician named George Boole embarked on an intellectual journey that would profoundly reshape our understanding of logic itself. Born into humble circumstances in Lincoln, England, his father a shoemaker with a passion for mathematics and an amateur scientist, Boole\u2019s formal education was fleeting. Yet, his innate curiosity and a prodigious gift for languages and numbers propelled him to master classical literature, teach himself advanced mathematics, and eventually open his own school to support his family. This background, far removed from the hallowed halls of Cambridge or Oxford, was perhaps his greatest asset, granting him a freedom of thought unencumbered by prevailing academic orthodoxies. He saw logic not as a philosophical discourse, but as a system of reasoning that could be expressed and manipulated with the precision of algebra, a radical departure from the Aristotelian tradition that had dominated Western thought for over two millennia.\n\nBoole\u2019s magnum opus, \"An Investigation of the Laws of Thought, on Which are Founded the Mathematical Theories of Logic and Probabilities,\" published in 1854, was not merely a dry academic treatise. It was a revolutionary manifesto. Within its pages, Boole introduced a symbolic logic that allowed propositions \u2013 statements that can be either true or false \u2013 to be treated as mathematical variables. He assigned numerical values, typically 1 for true and 0 for false, and developed operators for \"and,\" \"or,\" and \"not,\" much like addition and multiplication in conventional algebra. The beauty of Boole's system lay in its elegance and its power. It stripped away the ambiguities of natural language, revealing the underlying structure of logical arguments. This \"algebra of logic,\" as it came to be known, provided a formal, systematic method for analyzing and combining logical statements, a method that could definitively determine the validity of an argument without relying on intuition or rhetoric. It was, in essence, a language for pure thought.\n\nThe immediate impact of Boole's work was largely confined to the realm of pure mathematics and philosophy. Many found his system abstract, fascinating but without obvious practical application. However, as the decades turned into a new century, and as electrical engineering began its ascent, a young graduate student named Claude Shannon, working at MIT in 1937, stumbled upon Boole\u2019s ideas. Shannon, contemplating the design of complex electrical circuits, recognized a profound isomorphism between the two-state nature of Boole\u2019s logic (true/false) and the two-state nature of electrical switches (on/off). This was the lightbulb moment that bridged the gap between abstract mathematics and tangible technology. Shannon\u2019s master\u2019s thesis, \"A Symbolic Analysis of Relay and Switching Circuits,\" famously demonstrated how Boolean algebra could be used to design and simplify complex electrical circuits, essentially creating the theoretical foundation for all digital computers.\n\nThe legacy of George Boole is thus one of astounding foresight and profound impact. From a humble beginning, through independent study and audacious intellectual leaps, he forged a new language for logic.",
+      "id": "fc734dd68a79e526",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "George Boole and the algebra of logic",
+      "topic": "learn",
+      "ts": "2026-06-30T01:29:27.944909+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cI have now been in the BBC about 6 months. Shall remain in it if the political changes I foresee come off, otherwise probably not. Its atmosphere is something halfway between a girls' school and a lunatic asylum, and all we are doing at present is useless, or slightly worse than useless.\u201d\n\u2014 George Orwell\n\nGeorge Orwell, born Eric Blair, was a man whose life was a ceaseless quest for truth and a relentless battle against deception, particularly the insidious forms peddled by power. He was an outsider by nature, a man who saw through the veneers of society, whether it was the brutal realities of imperialism during his time as a police officer in Burma, the grinding poverty of the working class he documented in \"The Road to Wigan Pier,\" or the hypocrisy of political ideologies he dissected in \"Animal Farm\" and \"Nineteen Eighty-Four.\" This quote, uttered in 1942, captures a man deeply embroiled in the bewildering and often frustrating world of wartime propaganda, a world utterly antithetical to his core values. He had joined the BBC's Eastern Service, tasked with broadcasting news and cultural programs to India and Southeast Asia, a role he hoped would contribute to the Allied war effort. Yet, the reality of bureaucratic inertia, the careful calibration of information, and the inherent censorship of wartime communication quickly became a source of profound disillusionment.\n\nThe world in 1942 was a crucible of conflict. World War II raged across continents, and the British Empire, though facing an existential threat, was still a formidable global power. Orwell, a socialist who nonetheless despised totalitarianism, found himself in a paradoxical position. He was working for an institution of the British establishment, engaged in the very act of shaping public opinion, a practice he would later meticulously deconstruct in his dystopian novels. His keen intellect, accustomed to the raw honesty of direct observation and journalistic integrity, was stifled by the BBC's internal politics, its labyrinthine hierarchy, and the constant pressure to toe the official line. The \"girls' school\" aspect of the BBC likely refers to the petty rivalries, gossip, and the general air of polite but often ineffective administration, while the \"lunatic asylum\" speaks to the sheer irrationality and absurdity he perceived in the daily operations of an organization wrestling with the immense pressures of wartime information control. He foresaw political shifts, a post-war landscape that would redefine Britain's role in the world, and he understood that if those changes didn't align with his ideals of social justice and intellectual honesty, his place within such an institution would be untenable.\n\nOrwell's enduring resonance lies precisely in his unwavering commitment to identifying and exposing the mechanisms of control and manipulation, whether by the state, corporations, or even well-meaning institutions. This quote, revealing his deep discomfort with an environment where \"all we are doing at present is useless, or slightly worse than useless,\" speaks to the perennial struggle against inefficiency, bureaucratic bloat, and the moral compromises inherent in any large organization. His insights into the nature of propaganda, the dangers of doublespeak, and the erosion of truth are more relevant than ever in our own age of information overload, fake news, and algorithmic manipulation.",
+      "id": "8375d016753bf62b",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "George Orwell",
+      "topic": "wikiquote",
+      "ts": "2026-06-30T01:29:32.756588+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6386,6 +6432,10 @@
     }
   ],
   "fda_seen_ids": [
+    "8b99eec1ceaae641",
+    "1158bb409f1c6f39",
+    "88ace867a063a11c",
+    "b0379812ac990d69",
     "999bfe0149f2d7f2",
     "19147af640ec620c",
     "05a98c0c2f91f258",
@@ -6485,7 +6535,7 @@
     "Gasolina Regular": 315.8,
     "Kerosene": 269.6
   },
-  "fx_last_rate": 59.107125,
+  "fx_last_rate": 59.091269,
   "fx_last_zone": "within",
   "fx_week_baseline": {
     "rate": 59.107125,
@@ -7301,8 +7351,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "early_humans",
-  "knowledge_last_sent": "2026-06-29T7",
+  "knowledge_last_category": "math_history",
+  "knowledge_last_sent": "2026-06-30T0",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7341,6 +7391,7 @@
     "math_history:Andrew Wiles and the final proof": "2026-06-14",
     "math_history:Cantor and the infinity of infinities": "2026-06-26",
     "math_history:Euclid's Elements": "2026-06-15",
+    "math_history:George Boole and the algebra of logic": "2026-06-30",
     "math_history:Riemann and the geometry of curved space": "2026-06-18",
     "math_history:The Mandelbrot set and the geometry of fractals": "2026-06-25",
     "math_history:The P versus NP problem": "2026-06-23",
@@ -7410,8 +7461,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-06-29T23:09:43.922000+00:00"
+    "ok": 46,
+    "ts": "2026-06-30T01:27:43.680383+00:00"
   },
   "launch_seen_ids": [
     "a64771bf6b805933",
@@ -7740,6 +7791,10 @@
       "ba01dfcd01feccde"
     ],
     "Spider-Man: Brand New Day": [
+      "07b1058e9b1fd0aa",
+      "ad6e3769456f834c",
+      "bee6c47c6e524bf9",
+      "5f56143f90c5a121",
       "5af9faf9d8ba4f17",
       "28b8cd6dbe540a0f",
       "4ba35cd2eb473934",
@@ -7835,11 +7890,7 @@
       "bb6c80813e1a2a56",
       "e735f0b9ed3fd88d",
       "52a1aa11e81de426",
-      "bb067200ec8d925f",
-      "5c8413ce97230200",
-      "e8dbc03adca1721d",
-      "2c63b5ef30b73d9e",
-      "679951badc4bcf00"
+      "bb067200ec8d925f"
     ],
     "The Batman Part II": [
       "1aee27a5806e90a1",
@@ -7944,6 +7995,16 @@
       "cb96bb52ad67f9ab"
     ],
     "The Odyssey": [
+      "46db4325bcef674a",
+      "05ba48aa82ba0165",
+      "375daf2be27a8c7a",
+      "982d0e28d12660b3",
+      "92598dc139fd576b",
+      "3b59dde7bd23f2fb",
+      "c8dae5f5b3d2dd42",
+      "4532dc1707037475",
+      "f7bcc50aa650e13b",
+      "ae0c107c87c12e7a",
       "c30c41fc5f0e56b5",
       "c3ff62b30db59cd4",
       "29d025ff0bcd4e4b",
@@ -8033,17 +8094,7 @@
       "3a5f066c1b93dcbc",
       "c0a3e916324c27c7",
       "e77aff3019e7ca28",
-      "a18c5eea79b998a1",
-      "67f0bbb00cf7a423",
-      "8048f94edac9884e",
-      "75ae8fa98c01d7c5",
-      "59b005693b724808",
-      "c7dbe5840b944083",
-      "4b2cef2a6f55193b",
-      "7643132e9341090a",
-      "504c88cf88833451",
-      "4794690511fed652",
-      "2d9c1b94ca43f3c4"
+      "a18c5eea79b998a1"
     ]
   },
   "movie_release_dates": {
@@ -8912,47 +8963,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "deals": {
-      "last_data": "2026-06-29T21:56:27.719616+00:00",
+      "last_data": "2026-06-30T01:28:52.741729+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "energy": {
-      "last_data": "2026-06-29T21:56:43.097396+00:00",
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_data": "2026-06-30T01:29:03.004726+00:00",
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "fda": {
-      "last_data": "2026-06-29T21:56:32.681461+00:00",
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_data": "2026-06-30T01:28:53.333437+00:00",
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "fuel": {
       "last_data": "2026-06-29T21:56:58.323234+00:00",
@@ -8960,17 +9011,17 @@
       "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "fx": {
-      "last_data": "2026-06-29T21:56:56.937951+00:00",
+      "last_data": "2026-06-30T01:29:20.607636+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-29T21:55:41.709149+00:00",
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_data": "2026-06-30T01:27:56.930962+00:00",
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "groceries": {
       "last_data": "2026-06-29T21:56:32.191263+00:00",
@@ -8978,111 +9029,111 @@
       "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "movies": {
-      "last_data": "2026-06-29T21:55:34.031468+00:00",
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_data": "2026-06-30T01:27:49.919672+00:00",
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "music": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-29T21:56:43.826933+00:00",
+      "last_data": "2026-06-30T01:29:03.655159+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-29T21:56:56.195936+00:00",
-      "last_data_count": 39,
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_data": "2026-06-30T01:29:19.994259+00:00",
+      "last_data_count": 41,
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-29T23:09:45.758073+00:00",
+      "last_data": "2026-06-30T01:27:51.712891+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-29T23:09:43.922000+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "weather": {
-      "last_data": "2026-06-29T21:56:43.362809+00:00",
+      "last_data": "2026-06-30T01:29:03.267937+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-29T21:57:01.866356+00:00",
+      "last_data": "2026-06-30T01:29:23.150244+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-29T21:55:26.622411+00:00"
+      "last_ok": "2026-06-30T01:27:43.680383+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165071"
+    "last_full_window": "165072"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9094,13 +9145,9 @@
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
   "watchdog_failing_since": {},
-  "water_slots_sent": [
-    "2026-06-29|18",
-    "2026-06-29|12",
-    "2026-06-29|21",
-    "2026-06-29|15"
-  ],
+  "water_slots_sent": [],
   "weather_seen_ids": [
+    "7e677aee160daca8",
     "d4bce0c66fa44432",
     "f89707d5a514090c",
     "7a32ab4b74e416e1",
@@ -9187,8 +9234,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "philosophers",
-  "wikiquote_last_sent": "2026-06-29T7",
+  "wikiquote_last_category": "writers",
+  "wikiquote_last_sent": "2026-06-30T0",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -9242,7 +9289,7 @@
     "science_pioneers:Stephen Hawking": "2026-06-20",
     "writers:Ernest Hemingway": "2026-06-26",
     "writers:Fyodor Dostoevsky": "2026-06-28",
-    "writers:George Orwell": "2026-06-19",
+    "writers:George Orwell": "2026-06-30",
     "writers:Jane Austen": "2026-06-25",
     "writers:Leo Tolstoy": "2026-06-20",
     "writers:Mark Twain": "2026-06-22",
@@ -9339,7 +9386,8 @@
       "FwXQZaRMSl0",
       "roLdDcGml5k",
       "0QPbkx01quQ",
-      "Of4A7mzCoyQ"
+      "Of4A7mzCoyQ",
+      "vaFUompkvvI"
     ],
     "UCeqwEzPy8tgfk11OXaUCOpw": [
       "si782Iy6s80",
