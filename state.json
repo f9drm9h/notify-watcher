@@ -452,30 +452,6 @@
   ],
   "event_log": [
     {
-      "action": "digest",
-      "detail": "",
-      "id": "2c0db823d8a33660",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "\u2018Avengers: Doomsday\u2019 the \u201cMost Mature, Emotionally Complex\u201d in Franchise, Joe Russo Says - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-06-25T08:15:06.601421+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQaHRCRlJtaXQ1ZVJLc2dRaUFuTkktcjRCN0F3Q0hlOWZOQXdXX18yZ3dvbTFCZTlFUDV2aXNkNDhxMVpVVFRGelItaW9JVmVPYjd5RVpBMS15ci1xakw1RWxrc3Rsb3I0aW1QT01xN29kUzdveDRyX3JuUjdYMF9hUnBwWklBZWZKUENPRkR3V1NMaFlLU29acEh6ZElteVhYSGRWNFk5UnBKOE1E?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "4d52fc4f6093052f",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer and Movie Tickets Go Live - Marvel.com",
-      "topic": "movies",
-      "ts": "2026-06-25T08:15:07.088594+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeXFwTXhVZEhCQVNTaHJESC1GbDZfcXZ1RjVGZ21fNWxJMVdDMVIzeVBKdjFlelVyLUJ5dmRJcFZvMWUwNU5ZelZIQ29vZ1JHVVhNMElXNHVCakZlYWljazNOUTBFQUVZSVJxVXl2NExFS1g0dWZueXpGOHpBeXdVM2xTYmt4eEFKdXdtSFNNYlZCTXJlX24zMkowYS14UQ?oc=5"
-    },
-    {
       "action": "push",
       "detail": "",
       "id": "11ad2d8169234e3f",
@@ -6450,6 +6426,30 @@
       "topic": "wikiquote",
       "ts": "2026-06-30T08:50:26.626201+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Our journey begins in the hallowed halls of Cambridge, where a young Austrian aristocrat, Ludwig Wittgenstein, arrived in 1911. He was a man of intense intellect and a burning desire to understand the very foundations of thought and language. His early work, under the tutelage of Bertrand Russell, quickly established him as a prodigious talent, but it was a talent laced with a profound anxiety. Wittgenstein was not merely solving philosophical puzzles; he was grappling with the fundamental limits of human understanding, a struggle that would consume his life and reshape the intellectual landscape of the 20th century. His initial obsession was with logic, a pure, crystalline system that he believed could reveal the underlying structure of reality and, in doing so, expose the very boundaries of what could be meaningfully said.\n\nThis early quest culminated in the \"Tractatus Logico-Philosophicus,\" a slim, dense volume published in 1921. Written in the trenches of World War I, often in notebooks tucked into his uniform, the Tractatus was a radical departure from traditional philosophy. Wittgenstein argued that language functions as a picture of reality, and that only statements that can be empirically verified or are tautologies (like those of logic and mathematics) are truly meaningful. The book's most famous, and perhaps most enigmatic, assertion is its final proposition: \"Whereof one cannot speak, thereof one must be silent.\" This wasn't a call for quietude in the face of the ineffable, but a rigorous, almost ruthless, demarcation. Matters of ethics, aesthetics, and religion, those deepest human concerns, fell outside the realm of meaningful language according to the Tractatus. This wasn't to diminish their importance, but to acknowledge their fundamental difference from the world of facts. Wittgenstein believed he had, in essence, solved philosophy's problems, revealing that many enduring questions were, in fact, pseudoproblems arising from a misunderstanding of language's logical structure.\n\nBut the story doesn't end there, for Wittgenstein himself was a restless spirit, haunted by his own pronouncements. After the Tractatus, he retreated from academia, pursuing various humble professions, including a village schoolteacher and a hospital porter. He eventually returned to Cambridge in the late 1920s, a changed man with a changed mind. He began to see the limitations of his earlier, rigid conception of language. He realized that language wasn't a monolithic system, but a diverse collection of \"language games,\" each with its own rules and purposes, much like the different tools in a toolbox. This shift marked a profound re-evaluation, moving away from a search for universal logical structures to an investigation of how language is actually used in its myriad, messy contexts. This intellectual pivot, captured in his posthumously published \"Philosophical Investigations,\" represents a crucial turning point, a self-criticism of the highest order.\n\nThe enduring legacy of Wittgenstein, particularly his later work, lies in its profound impact on how we understand language, philosophy, and indeed, ourselves. He showed us that many philosophical problems arise not from deep metaphysical truths, but from a misapprehension of how language works. He encouraged us to look at the actual use of words, to understand their function within specific contexts, rather than seeking some ultimate, underlying meaning.",
+      "id": "e6cfe147d5886564",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Wittgenstein and the limits of language",
+      "topic": "learn",
+      "ts": "2026-06-30T11:36:20.309025+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cAnd any religion that professes to be concerned about the souls of men and is not concerned about the slums that cripple the souls \u2014 the economic conditions that stagnate the soul and the city governments that may damn the soul \u2014 is a dry, dead, do-nothing religion in need of new blood.\u201d\n\u2014 Martin Luther King, Jr.\n\nDr. Martin Luther King, Jr. was far more than a civil rights leader; he was a prophet of justice, a moral compass for a nation struggling to reconcile its ideals with its realities. Born into a segregated South, his early life was shaped by the paradox of American democracy, where the creed of equality rang hollow for Black Americans. The son and grandson of Baptist ministers, King inherited a rich theological tradition that emphasized not only personal salvation but social redemption. His journey, however, diverged from a purely spiritual path into the turbulent waters of political activism. After earning his doctorate in systematic theology, he returned to the South, just as the Montgomery bus boycott erupted, thrusting him into the leadership of a movement that would transform America. He became the eloquent voice of nonviolent resistance, drawing inspiration from Mahatma Gandhi and Henry David Thoreau, believing that moral force could dismantle systemic injustice.\n\nThe words, \"And any religion that professes to be concerned about the souls of men and is not concerned about the slums that cripple the souls \u2014 the economic conditions that stagnate the soul and the city governments that may damn the soul \u2014 is a dry, dead, do-nothing religion in need of new blood,\" were spoken from the depths of King's expanding consciousness, likely in the mid-to-late 1960s, as his focus broadened beyond purely racial segregation to encompass the interconnected evils of poverty and war. By this point, landmark legislation like the Civil Rights Act of 1964 and the Voting Rights Act of 1965 had been passed, yet the conditions in urban ghettos across America remained dire. He was increasingly grappling with the structural inequalities that trapped millions in cycles of poverty, realizing that freedom without economic opportunity was a hollow victory. He saw firsthand how dilapidated housing, exploitative labor practices, and corrupt municipal governments conspired to perpetuate human suffering, and he challenged the church, often a cornerstone of the Black community, to live up to its prophetic calling. This was the era of the Poor People's Campaign, a testament to his burgeoning commitment to economic justice, and his increasing vocal opposition to the Vietnam War, which he viewed as diverting vital resources from domestic poverty programs.\n\nThis profound statement resonates with an enduring power because it transcends specific historical grievances to address a fundamental truth about human dignity and the role of faith. Today, while overt segregation may be largely dismantled, the echoes of systemic inequality persist in new forms. We see it in the disproportionate impact of climate change on marginalized communities, in the persistent wage gap, in the racial disparities of the justice system, and in the struggles of those grappling with housing insecurity and inadequate healthcare. King\u2019s words serve as a timeless challenge to any institution, whether religious or secular, that claims to uphold human values yet remains indifferent to the material conditions that shape and often diminish human lives.",
+      "id": "3e145f69ef392623",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Martin Luther King, Jr.",
+      "topic": "wikiquote",
+      "ts": "2026-06-30T11:36:25.185032+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -7378,8 +7378,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "mythology",
-  "knowledge_last_sent": "2026-06-30T2",
+  "knowledge_last_category": "philosophy",
+  "knowledge_last_sent": "2026-06-30T3",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7454,6 +7454,7 @@
     "philosophy:The Vienna Circle and logical positivism": "2026-06-28",
     "philosophy:The paradox of the Ship of Theseus": "2026-06-14",
     "philosophy:The trial and death of Socrates": "2026-06-24",
+    "philosophy:Wittgenstein and the limits of language": "2026-06-30",
     "pyramid_skyscraper": "2026-06-12",
     "science:Brownian motion and the reality of atoms": "2026-06-22",
     "science:Einstein's special theory of relativity": "2026-06-24",
@@ -7491,7 +7492,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-06-30T08:48:42.848190+00:00"
+    "ts": "2026-06-30T11:35:11.065579+00:00"
   },
   "launch_seen_ids": [
     "a64771bf6b805933",
@@ -7517,6 +7518,12 @@
   "life_dashboard_last_week": "2026-W26",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "95de4c61cf6e51c8",
+      "696e26339f72f9e4",
+      "4662edc99a6113a5",
+      "13af8daf9b0f056d",
+      "389363134e243147",
+      "2adeb3e29fd1d80c",
       "c3ff73bfc75f076b",
       "3369ec00e8b83c25",
       "d391e125e7ae8ba8",
@@ -7610,13 +7617,7 @@
       "acc11ae7e4c9428d",
       "ee05419047ac729f",
       "ed40fb8d5a7ec653",
-      "82f59156ca72814f",
-      "96b07993d593fbb4",
-      "3c9609b4cb9f69cd",
-      "0b389fe2b1797a2f",
-      "109fadda33d8f14f",
-      "edc4bbec64d25ef8",
-      "8b4d5fdeeb164f3a"
+      "82f59156ca72814f"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -7820,6 +7821,9 @@
       "ba01dfcd01feccde"
     ],
     "Spider-Man: Brand New Day": [
+      "b3042f8f7927419c",
+      "0b654cf13afa268b",
+      "afde1c0cfa6c7882",
       "7571d2664723fd69",
       "8ac661eddea95707",
       "e90f3284f5972419",
@@ -7916,10 +7920,7 @@
       "0b3aeb05daa4b90b",
       "37b6f7a8a36eaf95",
       "df68317b9eae8edf",
-      "1c54f05964e075c4",
-      "d98c798924f52562",
-      "a5dfe173c856263e",
-      "42fa6ab3f0ecfeb0"
+      "1c54f05964e075c4"
     ],
     "The Batman Part II": [
       "45a168fc1979ae42",
@@ -8024,6 +8025,20 @@
       "3e4bdc7dfa6edfa4"
     ],
     "The Odyssey": [
+      "c45effc8b8c5862b",
+      "a6253800f12baafc",
+      "75e51028c65c681a",
+      "0e00d99e1350bf35",
+      "a8b487a6502ba1e4",
+      "2f4654710ea3fada",
+      "f2e11e82ac5f80bf",
+      "811bbfb43ad13e9d",
+      "dbbf74f770747a58",
+      "db24d101fd7dd795",
+      "35bffff7aa6f5034",
+      "93bf07da56d57840",
+      "4c681a500e13b793",
+      "d9058042ff96c96a",
       "4470d43d16d79c7f",
       "d4c57ad021041f2a",
       "c8e5e79e515ab764",
@@ -8109,21 +8124,7 @@
       "b35ba58a80e78e8e",
       "a717d5ef3ff456fa",
       "36df1433a31598c0",
-      "243e0abdaccba159",
-      "734b12d98fcca4c9",
-      "8397413827fa28cb",
-      "d2ece82f04874a60",
-      "f44ec42f0c719f6a",
-      "bcd0076ace64f0b4",
-      "d6a7275ecfec9a9a",
-      "59b68375d5b4e3ea",
-      "4f89e0487f4e67d8",
-      "c92f42a4073ffccf",
-      "43c14c7dee3b4fa8",
-      "236bf47ae0658cb9",
-      "df69a7ad7a9b3d3c",
-      "eec4fcd74cb91ccc",
-      "c9e85eb41a809f53"
+      "243e0abdaccba159"
     ]
   },
   "movie_release_dates": {
@@ -8992,47 +8993,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "deals": {
-      "last_data": "2026-06-30T08:49:46.899263+00:00",
-      "last_data_count": 11,
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_data": "2026-06-30T11:35:47.557591+00:00",
+      "last_data_count": 9,
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "energy": {
-      "last_data": "2026-06-30T08:49:59.069898+00:00",
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_data": "2026-06-30T11:35:59.206308+00:00",
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "fda": {
-      "last_data": "2026-06-30T08:49:47.340732+00:00",
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_data": "2026-06-30T11:35:48.140898+00:00",
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "fuel": {
       "last_data": "2026-06-29T21:56:58.323234+00:00",
@@ -9040,17 +9041,17 @@
       "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "fx": {
-      "last_data": "2026-06-30T08:50:12.653191+00:00",
+      "last_data": "2026-06-30T11:36:12.999239+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-30T08:48:56.780091+00:00",
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_data": "2026-06-30T11:35:22.055396+00:00",
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "groceries": {
       "last_data": "2026-06-29T21:56:32.191263+00:00",
@@ -9058,111 +9059,111 @@
       "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "movies": {
-      "last_data": "2026-06-30T08:48:51.200388+00:00",
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_data": "2026-06-30T11:35:17.528308+00:00",
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "music": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-30T08:49:59.840543+00:00",
+      "last_data": "2026-06-30T11:35:59.762631+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-30T08:50:11.947072+00:00",
-      "last_data_count": 31,
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_data": "2026-06-30T11:36:12.381977+00:00",
+      "last_data_count": 26,
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-30T08:48:53.167796+00:00",
+      "last_data": "2026-06-30T11:35:18.737348+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "weather": {
-      "last_data": "2026-06-30T08:49:59.372659+00:00",
+      "last_data": "2026-06-30T11:35:59.446271+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-30T08:50:15.806544+00:00",
+      "last_data": "2026-06-30T11:36:15.177647+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-30T08:48:42.848190+00:00"
+      "last_ok": "2026-06-30T11:35:11.065579+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165074"
+    "last_full_window": "165075"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9264,15 +9265,15 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "innovators_artists",
-  "wikiquote_last_sent": "2026-06-30T2",
+  "wikiquote_last_category": "activists_thinkers",
+  "wikiquote_last_sent": "2026-06-30T3",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
     "activists_thinkers:Helen Keller": "2026-06-28",
     "activists_thinkers:Henry David Thoreau": "2026-06-21",
     "activists_thinkers:Malala Yousafzai": "2026-06-24",
-    "activists_thinkers:Martin Luther King, Jr.": "2026-06-19",
+    "activists_thinkers:Martin Luther King, Jr.": "2026-06-30",
     "activists_thinkers:Mother Teresa": "2026-06-27",
     "activists_thinkers:Ralph Waldo Emerson": "2026-06-29",
     "activists_thinkers:Rosa Parks": "2026-06-20",
