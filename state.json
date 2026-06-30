@@ -124,7 +124,44 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [],
+  "digest_buffer": [
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Avengers: Doomsday",
+      "title": "Marvel Studios Officially Responds To Avengers: Doomsday Leaks - The Direct",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSEVXb01pQ3lpZkNBdlBMQVlMSkEtc09HZmxpdnR2bDBKOWhyN2JxVHp4ZHlrejNpOThmSkg0ZUd2aFBMVXRoMmxxZ0MwM3J2TzQyZldOMG8tdnJYYVMzRXFORHF2LWVMY2dzc1dvSUpGRkRuZjFsb1lkYy1SVkpKU0QwTQ?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day Official Synopsis Describes Mysterious Final Villain - The Direct",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQUxSUjhNVTdUaWtKN1hsVVFKbHBnWTMtNE1wMTdqZzhGZWtUaEpJYjlCakxQLTNxOUFEa0RsaUJQYjcyenhWUnVFWEl6UjFEalFaSmd6Mk9ZWFp1U0FncXZ3aU9ZdnBEZUpROHNsb0wwWFFxR2ZNcUFNNGpzM2RfNll0QlNYYXdCd1NZUmRrOTNXaXNMUDN6WDhWZEV3QQ?oc=5"
+    },
+    {
+      "detail": "DOP 302.95 (was DOP 334.95, -10%)",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Nacional",
+      "title": "Nacional deal: Pasta Spaguetti Sin Gluten Barilla 14.5Oz",
+      "topic": "groceries",
+      "url": "https://supermercadosnacional.com/pasta-spaguetti-sin-gluten-barilla-14-5oz-2195920"
+    },
+    {
+      "detail": "DOP 169.95 (was DOP 184.95, -8%)",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Nacional",
+      "title": "Nacional deal: Pechuga de Pavo Embutidos El Pozo BienStar Rebanada 0.35 lb.",
+      "topic": "groceries",
+      "url": "https://supermercadosnacional.com/ofertas/pechuga-de-pavo-embutidos-el-pozo-bienstar-rebanada-0-35-lb-2236751"
+    }
+  ],
   "digest_last_sent": "2026-06-30",
   "discord_control": {
     "last_id": "1519883605067698186"
@@ -159,6 +196,8 @@
     ]
   },
   "energy_seen_ids": [
+    "99b2e332d09ea630",
+    "c262402cccc587fd",
     "307d5b7e8a671533",
     "9b5b30a1546e249b",
     "aff2953ddaacae5d",
@@ -318,186 +357,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "id": "337c5a8562ae77fc",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday\u2019s First Trailer Gets Impressive Fan Recreation (Watch) - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-25T13:29:33.317374+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQVU9aM2F3NE1WbXQwZXZuVkp0dGlMUk1uekllUERKTk4zN09IVFUtRFlYekMzajZacVlBa2tka1AzWFpxWGI2NXNUMGR2OExRMzlqby1XbzMxTTNVWjRGa1ZKWTlHLXZZWElXLXVxQldHcUNLYW1hYzRzR292RkktRE8zSUdTNnpxVXc?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "b04ed955caeef1c1",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Shop Marvel Must Haves: Celebrate 'Spider-Man: Brand New Day\u2019 with Official Spidey Merch - Marvel.com",
-      "topic": "movies",
-      "ts": "2026-06-25T13:29:34.187017+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcGdrOUU1R0trV2NDQnhZdC1vNUZTT1RYV0dndVNjbGNmLUx4RkVpQlJXS2pxSHRURGZGVFRtRHg4NExhRXhhX2ZGVGJyRkVwdi1fMXVuTnV5Q2N4S3dNdVFQTDBPVDYtRDZWQVZ2WUtFYURSLWJqMjlCcGJ2OUs2NzNvcklLTDgwa1g3Sg?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "eff751aaa6fe8660",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland confirms the Spider-Man: Brand New Day villain is still a secret and is \"unlike anything we've seen\" before in the MCU - GamesRadar+",
-      "topic": "movies",
-      "ts": "2026-06-25T13:29:34.381779+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOaGx4cHBpbnA3OFdQbDhSdV9RMlhyd0ZLUzJnTjhUUU9ubTR5STVnVHlPZEtfTzA2MEJzOXZFT3FmNHJuRzFsLUtidXotblJ1YndNYURvMnpMWU5IRFIwVUQzNkFKQ3JfT0lURjhhWmRFWmpSNWZWbjRBZm5XbkJVanFOZTg2TnB1M0hKRXcwQnRNN0JZZksydVRDYnpIU0NYMlY2UzJfdW44TWNWd2VuM3N4WGtkaGlUekpDS3hBQnpfNEF6VGE2RV91Z0JlVmxnQ0NzSzFfZzVoZnRtTWlvTUdkZEl6SU9laVNZR1drZDZLMkFuVW5fSXhMUzVzUVRFODBEdG54ajNZR20wNnRn?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "1ca4c05caf371158",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves shares first look at The Batman Part II as the sequel begins shooting - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-25T13:29:35.964673+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE56aS1PREQzeENUUGxQRlhtM0ZQeGxTRng2ckw1ZUpZZEs5WWJyU09FRVFQYU9EaDIxY0hXamx4Z2RZc1BXSTF0T0JSbjZvaXdIMmsxRlJZNVIwUDBWQ1BTbl9IX2c?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "1d9fb297bc5b48c3",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman Part II\u2019 Begins Filming, Writer & Director Matt Reeves Confirms - Just Jared",
-      "topic": "movies",
-      "ts": "2026-06-25T13:29:36.143054+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPY1dicDZZUnlqM2dCTmZhdFpuVzllZHAxa2xvQ3NDd0w2OTFVUF9zQXFtdnNORnBIS2t5S1Z3N085Q2l1VFQzRmx4YXlocG9sbnJ0eTdSYy1ELWtDNG01UHFpRVJSX08yVloyTGdzcXlQeDBPZEduOTFUaTVXSjA5a25yeVdFeFV2MVF2RVNEYktiT2ZXS1NTZ1BPWk9wTDZ1VDN5ajdkTkZQZEp0?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "59d965d4caac0503",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Colin Farrell Confirms He'll Reprise Penguin Role in The Batman 2 , Teases a 'Terrifying' Script - People.com",
-      "topic": "movies",
-      "ts": "2026-06-25T13:29:36.310129+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPRFlVcUtldjJzVjBWLWl3Rzl6SFI4d0FmUnFab0Q0N1o0NXpqR0w0c3doTWwtS1pLeWpUYktiVFVEeUdiUThHcWRpSThNeVBra2U1djZHQ1JBSUt2UFcyVU1OMGp6OXJHTmtCb2xJdlhCMFAyMWIxMFROdFVDV0Z3UEhmQk1obmNTQ1VDbnVjZXpSaU9HZkR4UG11Zw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "036ff90c8c9b2af2",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Beloved DC star announces reduced role in The Batman - Part II - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-25T13:29:36.310598+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9DaXNUTXU4OWFaQUxpZktFUlplWU9vSFRsdVVKYXhiRjl5a3JPeE1GNjc5R0o4QUxTbXVsQzN2dkdpWXAzWk0ySGxYWThMdi1VTmI1NFNDWnFlREpTOE12ZHlMUnVvN0k?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Ric Flair Drip (with Metro Boomin) - Offset\n(because you like Quavo)",
-      "id": "1dd2d84b19e0172e",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-06-25T13:29:42.142258+00:00",
-      "url": "https://www.deezer.com/track/423097622"
-    },
-    {
-      "action": "digest",
-      "detail": "Final, 2026-06-24",
-      "id": "dd453effdbc2afd4",
-      "score": 40,
-      "severity": "low",
-      "source": "Baseball",
-      "title": "Blue Jays 1 \u2013 Astros 3 (L)",
-      "topic": "baseball",
-      "ts": "2026-06-25T13:29:44.463466+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "Final, 2026-06-24",
-      "id": "0cd9d7b8aac43d0b",
-      "score": 40,
-      "severity": "low",
-      "source": "Baseball",
-      "title": "Yankees 4 \u2013 Tigers 2 (W)",
-      "topic": "baseball",
-      "ts": "2026-06-25T13:29:44.542806+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "Final, 2026-06-24",
-      "id": "946d58b169fe1392",
-      "score": 40,
-      "severity": "low",
-      "source": "Baseball",
-      "title": "Dodgers 4 \u2013 Twins 3 (W)",
-      "topic": "baseball",
-      "ts": "2026-06-25T13:29:44.620121+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "cff686204eb8890f",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-25T13:30:56.269645+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "Water break! A few sips now keeps you sharp.",
-      "id": "f461125888433ef0",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-06-25T13:31:13.799319+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Boost protein and fiber affordably by adding beans, lentils, or other legumes to your meals. (Source: MedlinePlus)",
-      "id": "fd4821ee868a38d9",
-      "score": 60,
-      "severity": "low",
-      "source": "Health",
-      "title": "Health tip",
-      "topic": "health_tip",
-      "ts": "2026-06-25T13:31:14.538741+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "On this day\n1944: World War II: U.S. Navy and Royal Navy ships bombarded Cherbourg, France, to support U.S. Army units engaged in the Battle of Cherbourg.\n\nFeatured: Augustus\nAugustus, also known as Octavian, was the founder of the Roman Empire and the first Roman emperor from 27 BC until his death in AD 14. The reign of Augustus initiated an imperial cult and an era of imperial peace when the Roman world was largely free of armed conflict. The...\n\nTechnology\nFor strong security, choose a 16-character passphrase over a complex short one like 'P@ss1!'. (Source: NIST)",
-      "id": "727ff6a959323ff6",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Daily learning",
-      "topic": "learn",
-      "ts": "2026-06-25T13:31:23.948663+00:00",
-      "url": "https://en.wikipedia.org/wiki/Augustus"
-    },
     {
       "action": "push",
       "detail": "Headline: \"Holtec and EDF submit UK SMR project proposal\"\nWhy it matters: This proposal could lead to new small nuclear power plants in the UK, affecting future energy supply and costs.\n(World Nuclear News \u00b7 tap to read)",
@@ -6317,6 +6176,186 @@
       "topic": "spending",
       "ts": "2026-06-30T13:29:58.773488+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "13a6adcd666ef3ab",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Marvel Studios Officially Responds To Avengers: Doomsday Leaks - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-30T16:12:49.246524+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSEVXb01pQ3lpZkNBdlBMQVlMSkEtc09HZmxpdnR2bDBKOWhyN2JxVHp4ZHlrejNpOThmSkg0ZUd2aFBMVXRoMmxxZ0MwM3J2TzQyZldOMG8tdnJYYVMzRXFORHF2LWVMY2dzc1dvSUpGRkRuZjFsb1lkYy1SVkpKU0QwTQ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "3e7c202dfc68f16d",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day Official Synopsis Describes Mysterious Final Villain - The Direct",
+      "topic": "movies",
+      "ts": "2026-06-30T16:12:49.791916+00:00",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQUxSUjhNVTdUaWtKN1hsVVFKbHBnWTMtNE1wMTdqZzhGZWtUaEpJYjlCakxQLTNxOUFEa0RsaUJQYjcyenhWUnVFWEl6UjFEalFaSmd6Mk9ZWFp1U0FncXZ3aU9ZdnBEZUpROHNsb0wwWFFxR2ZNcUFNNGpzM2RfNll0QlNYYXdCd1NZUmRrOTNXaXNMUDN6WDhWZEV3QQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "b9e2b8e610f9216e",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 New Trailer Breakdown - Nexus Point News",
+      "topic": "movies",
+      "ts": "2026-06-30T16:12:49.792725+00:00",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UOUdLdl93RjJvdVpNSEdVcEZxMElfeUdaclhwaFZHRy13LXBLY3BzajZYcHZHMlFSbEtlVExxVGFkTEZ6WUJ4QUVOWkp6OFZ5UVh1QjhuVVliWTloNHZNNFdSNFZoNmYxOFREcjQxdVdGYkNzbFpjS3lWMVNFYjQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "f70c5aa8bc8b0e34",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "What Is the Release Date for Christopher Nolan\u2019s The Odyssey? - NBC TV Network",
+      "topic": "movies",
+      "ts": "2026-06-30T16:12:50.874795+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPOTh1RFRCNTJ4Y1FFSFZ2b0dtYkJIT3E2MkxreTJVaTRaVVNxREN4dGdPVlhZc05BQ1I0dWhPZU56YnBxbE1XcmFPRWZjR2FUMVg4dFFIeFNCeTlxV05OU2VrRkNqbkxUSE5xLXlrSkQtTDV2VWk2YmhYbE96b1duZFd3YkZaVnlncXRLWlBVTWlnRnBHaXc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Pok\u00e9mon Champions - 2000\u76ee\u6307\u3057\u307e\u3059 1900\uff5e\u3010\u30dd\u30b1\u30e2\u30f3\u30c1\u30e3\u30f3\u30d4\u30aa\u30f3\u30ba\u3011",
+      "id": "ecfe930e8951ec31",
+      "score": 68,
+      "severity": "high",
+      "source": "Acola_lui",
+      "title": "Acola_lui is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-30T16:12:56.534451+00:00",
+      "url": "https://twitch.tv/Acola_lui"
+    },
+    {
+      "action": "push",
+      "detail": "Blue Ain't Your Color - Keith Urban\n(because you like Rascal Flatts)",
+      "id": "4215ba3da55dfc88",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-06-30T16:13:00.540786+00:00",
+      "url": "https://www.deezer.com/track/124197898"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 302.95 (was DOP 334.95, -10%)",
+      "id": "5581af4e81f7056d",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Pasta Spaguetti Sin Gluten Barilla 14.5Oz",
+      "topic": "groceries",
+      "ts": "2026-06-30T16:14:01.827299+00:00",
+      "url": "https://supermercadosnacional.com/pasta-spaguetti-sin-gluten-barilla-14-5oz-2195920"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 169.95 (was DOP 184.95, -8%)",
+      "id": "358836e18a63ae57",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Pechuga de Pavo Embutidos El Pozo BienStar Rebanada 0.35 lb.",
+      "topic": "groceries",
+      "ts": "2026-06-30T16:14:01.828057+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/pechuga-de-pavo-embutidos-el-pozo-bienstar-rebanada-0-35-lb-2236751"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "0ab925133bd9e425",
+      "score": 60,
+      "severity": "high",
+      "source": "World Nuclear News",
+      "title": "First Nations group takes stake in Ontario nuclear plant",
+      "topic": "energy",
+      "ts": "2026-06-30T16:14:12.812281+00:00",
+      "url": "https://www.world-nuclear-news.org//articles/first-nations-group-takes-stake-in-ontario-nuclear-plant"
+    },
+    {
+      "action": "push",
+      "detail": "Time for a glass of water. Stay hydrated!",
+      "id": "44be247ef8d9b82d",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-06-30T16:14:31.287824+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "The year is 1971. In the pre-dawn glow of the digital age, a lone programmer, a man named Ray Tomlinson, toiled away in the shadowy depths of a small office at Bolt Beranek and Newman (BBN) in Cambridge, Massachusetts. He was not a celebrated visionary, nor was he attempting to solve a grand societal problem. Instead, he was grappling with a rather mundane, yet ultimately revolutionary, technical challenge. Tomlinson was tasked with integrating two distinct programs: SNDMSG, a local messaging application that allowed users on the same mainframe computer to leave messages for one another, and CPYNET, an experimental file transfer protocol that could move data across the nascent ARPANET. The existing system was clunky, a digital Post-it note tacked to a shared bulletin board. There was no easy way to address a message to a specific person on a different machine, let alone one connected through the labyrinthine tendrils of the ARPANET.\n\nTomlinson\u2019s ingenious solution, born of a programmer\u2019s pragmatic need, was deceptively simple: he needed a separator. A symbol that would delineate the user from their host machine. He scanned the keyboard, a familiar landscape of alphanumeric characters and special symbols, searching for something that wouldn't be confused with a name or a machine. His gaze settled on the \"@\" symbol, often called the \"at sign\" \u2013 a character already understood to mean \"at\" in the context of location. It was unused in other commands and thus perfectly suited for the task. With this elegant stroke of practicality, he cobbled together the first \"user@host\" addressing scheme. He then sent a test message to himself, from one BBN computer to another, both of which were physically side-by-side in the same room. The content of that inaugural email? Legend has it, and Tomlinson himself can no longer recall with certainty, that it was a string of random characters, something like \"QWERTYUIOP\" or \"TESTING 1 2 3.\" It was not a poetic pronouncement, nor a declaration of intent, but merely a verification that the system worked.\n\nThe immediate impact of Tomlinson's invention was largely unheralded. There was no press conference, no fanfare, no grand announcement of a new era. It was merely a practical improvement for a handful of researchers connected to the ARPANET, a network primarily used for academic and military communication. Yet, this humble act of linking a user to a machine, of creating a unique digital address, laid the groundwork for a profound shift in human communication. Before email, long-distance communication was dominated by physical mail, telex, and the telephone \u2013 each with its own limitations of speed, cost, and synchronous interaction. Email, by contrast, offered asynchronous, near-instantaneous, and relatively inexpensive communication to anyone with an internet connection, regardless of their physical location. It democratized information exchange and laid the foundation for the global interconnectedness we now take for granted.\n\nIn the years that followed, email evolved from a niche tool for academics and engineers into a ubiquitous communication medium. It powered the rise of countless businesses, facilitated social movements, and even became a central feature of popular culture. The humble \"@\" symbol, once an obscure printer's ligature, became a universally recognized icon of the digital age, a testament to the quiet ingenuity of a programmer solving a problem.",
+      "id": "de14d74cbc7dd403",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The sending of the first email",
+      "topic": "learn",
+      "ts": "2026-06-30T16:14:36.793424+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cLes hommes vertueux ont seuls des amis.\u201d\n\u2014 Voltaire\n\nIn the mid-18th century, a time of profound intellectual ferment and shifting societal plates, a man named Fran\u00e7ois-Marie Arouet, better known as Voltaire, stood as a towering, often controversial, figure. He was a playwright whose tragedies captivated Parisian audiences, a poet whose verses sparkled with wit, and a historian whose narratives challenged conventional wisdom. Yet, above all, Voltaire was a philosopher, a champion of reason, and a tireless critic of the abuses of power, both secular and religious. His life was a whirlwind of exile and triumph, of passionate arguments and prolific writing, all fueled by an unwavering belief in human progress and the power of enlightened thought. It was within this tumultuous personal and global landscape, as Europe grappled with the Enlightenment's radical ideas and the shadows of the Ancien R\u00e9gime still loomed large, that Voltaire, reflecting on the complexities of human connection and integrity, penned the profound observation: \"Les hommes vertueux ont seuls des amis.\" \u2013 \"Only virtuous men have friends.\"\n\nThis declaration was not merely a casual musing but a distillation of Voltaire's lived experience and his philosophical conviction. He had seen firsthand the shifting loyalties of courtiers, the betrayal of opportunists, and the fair-weather friendships that withered under political pressure or personal misfortune. His own relationships, often forged in intellectual camaraderie, were frequently tested by his outspoken criticisms, which earned him powerful enemies and periods of imprisonment and exile. Yet, he also cultivated enduring friendships with fellow philosophers, artists, and patrons who shared his ideals of justice, tolerance, and intellectual freedom. For Voltaire, true friendship was not a superficial alliance based on shared status or convenience; it was a bond rooted in shared principles, in honesty, and in the moral courage to stand by one another, even when it was difficult. In a world where power often dictated allegiances and where hypocrisy was a common currency, Voltaire's statement was a radical affirmation of the enduring value of integrity as the bedrock of genuine human connection.\n\nToday, centuries removed from Voltaire's quill and the powdered wigs of his era, his insight into the nature of friendship continues to resonate with remarkable force. In our own complex world, filled with fleeting digital connections and the often-illusory promises of social media, Voltaire's emphasis on virtue as the prerequisite for true friendship offers a powerful counterpoint. We too navigate landscapes of shifting loyalties, of public personas versus private realities, and of the temptation to prioritize superficial gain over genuine connection. The question of who truly stands by us, who offers unwavering support not for what we can provide but for who we are at our core, remains as pertinent as ever. Voltaire reminds us that authentic friendship is a precious commodity, not easily acquired, and that its enduring strength is ultimately measured by the shared commitment to honesty, kindness, and moral character.",
+      "id": "dfd4b1b568db011e",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Voltaire",
+      "topic": "wikiquote",
+      "ts": "2026-06-30T16:14:41.555857+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Jun 29-Jul 05: RD$1,030.00 across 2 transactions\nTop: TOTAL V CENTENARIO RD$1,000.00; AROMA COFFEE SERVICE RD$30.00\nBiggest: RD$1,000.00 at TOTAL V CENTENARIO\nvs prior week: Weekly spending moved from RD$9,944.73 to RD$1,030.00 (-RD$8,914.73, -89.64%)",
+      "id": "58cc169889aa5dd1",
+      "score": 60,
+      "severity": "moderate",
+      "source": "BHD",
+      "title": "Weekly spending summary",
+      "topic": "spending",
+      "ts": "2026-06-30T16:14:46.235946+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Starts Tuesday 07 July (in 7 days). Tap for the academic calendar (PDF).",
+      "id": "b6c4707cb6cb236e",
+      "score": 62,
+      "severity": "moderate",
+      "source": "ITSC",
+      "title": "ITSC: Reporte de Pruebas POMA (Admisiones)",
+      "topic": "itsc",
+      "ts": "2026-06-30T16:14:48.309229+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/05/Calendario-academico-2026-2-MAYO-AGOSTO-_-Actualizado_.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Starts Tuesday 07 July (in 7 days). Tap for the academic calendar (PDF).",
+      "id": "65280006a87f70be",
+      "score": 62,
+      "severity": "moderate",
+      "source": "ITSC",
+      "title": "ITSC: Publicaci\u00f3n Notas 2do Parcial",
+      "topic": "itsc",
+      "ts": "2026-06-30T16:14:48.507944+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/05/Calendario-academico-2026-2-MAYO-AGOSTO-_-Actualizado_.pdf"
     }
   ],
   "f4_history": [
@@ -6420,7 +6459,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-27-JUN-03-JUL-DE-2026.pdf",
   "fuel_last_pdf_hash": "f8498e031891b450b3caa406b4e9889ad0596d4b83780850ebf173674f103f51",
-  "fuel_last_prices_seen_at": "2026-06-30T13:29:35.228862+00:00",
+  "fuel_last_prices_seen_at": "2026-06-30T16:14:28.683604+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7015,6 +7054,8 @@
       "997e525f302628c6"
     ],
     "Nacional": [
+      "c17c10900b90f754",
+      "9efcfd0d7354e1f2",
       "7858fa99a3f48e96",
       "4dfcd00520594081",
       "ab7694d1a9c2986b",
@@ -7239,6 +7280,8 @@
     "d1291b97df844b44"
   ],
   "itsc_sent_ids": [
+    "a8d2029350a6c302",
+    "c5fac89ef9c0634e",
     "053adbf1284f17cc",
     "946187150e6f3993",
     "93aff39308dd5eb2",
@@ -7249,8 +7292,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "science",
-  "knowledge_last_sent": "2026-06-30T4",
+  "knowledge_last_category": "technology",
+  "knowledge_last_sent": "2026-06-30T5",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7347,6 +7390,7 @@
     "technology:The dynamo and the generation of electricity": "2026-06-13",
     "technology:The invention of the integrated circuit": "2026-06-16",
     "technology:The mechanical clock and the measurement of time": "2026-06-22",
+    "technology:The sending of the first email": "2026-06-30",
     "technology:The shipping container and global trade": "2026-06-27",
     "theorem_older_than_pythagoras": "2026-06-12",
     "wings_of_wax": "2026-06-13",
@@ -7364,7 +7408,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-06-30T13:27:36.171831+00:00"
+    "ts": "2026-06-30T16:12:46.005857+00:00"
   },
   "launch_seen_ids": [
     "b2a67ba9209e1fe3",
@@ -7391,6 +7435,9 @@
   "life_dashboard_last_week": "2026-W26",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "82f59156ca72814f",
+      "6bdd3ab5c1ad83c6",
+      "9db31d3b4293da1c",
       "0b389fe2b1797a2f",
       "109fadda33d8f14f",
       "95de4c61cf6e51c8",
@@ -7487,10 +7534,7 @@
       "4c5fb90503cdde35",
       "7d78898fe155b149",
       "3a55d45c059d7f0e",
-      "915d3331803cece2",
-      "ffaa542dea4c2bf3",
-      "acc11ae7e4c9428d",
-      "ee05419047ac729f"
+      "915d3331803cece2"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -7694,6 +7738,19 @@
       "ba01dfcd01feccde"
     ],
     "Spider-Man: Brand New Day": [
+      "39e797eb097e962d",
+      "1d4e79e43ec5a80e",
+      "54da2c70f48ba332",
+      "9facf9a78476cde9",
+      "b47108659a453d2b",
+      "5ce058c117b83347",
+      "495087fefb2d6dae",
+      "125dbfc82589c72c",
+      "1c54f05964e075c4",
+      "0219a21539531e1e",
+      "0b3aeb05daa4b90b",
+      "1a37628250091ff1",
+      "37b6f7a8a36eaf95",
       "5915b8f8782c681d",
       "797183a0bfd98816",
       "e9f8539939be51d4",
@@ -7780,20 +7837,7 @@
       "ee7db107169c0ded",
       "1f533793ed6c2695",
       "15b4ecfef99ead43",
-      "182664c778eacc20",
-      "a8812c21735f2db8",
-      "cfe4e073b2ba6aba",
-      "049ff0ff09b7204e",
-      "30e78735c1395d3c",
-      "634c9d875d448cb4",
-      "69e445281c46d6c0",
-      "c05d39d775b20717",
-      "30c61052e0f44eb4",
-      "b78c67ad84c54cd4",
-      "806ac19ac9324adb",
-      "f5273b73998224e8",
-      "2769c33aff32988d",
-      "f5178c7df72b5796"
+      "182664c778eacc20"
     ],
     "The Batman Part II": [
       "45a168fc1979ae42",
@@ -7898,6 +7942,16 @@
       "3e4bdc7dfa6edfa4"
     ],
     "The Odyssey": [
+      "1057e23982c2dbfb",
+      "d4eaa71eb7eaa2cb",
+      "dac05888b5b3e159",
+      "ca154dfe0585249f",
+      "33d6c958e8d67577",
+      "ca6ba10a02ad10a4",
+      "a717d5ef3ff456fa",
+      "5c1cbdf843160436",
+      "1bbef56d60f14ff0",
+      "1a7b13c6539a972f",
       "a7408b01aceca889",
       "2f603000194772bf",
       "300aa3e16f22a819",
@@ -7987,17 +8041,7 @@
       "5ec72566a8ccd4a5",
       "c6d0b07aef719a0a",
       "5c848c812c4606c2",
-      "b2bde459982fa21e",
-      "b3d773705bc4cb7f",
-      "880277083ca2550d",
-      "7daa34be35bca409",
-      "37a588233556b1a9",
-      "56d8e708bdbb686c",
-      "8f70aaa902fbb703",
-      "66af66e4b310a4c9",
-      "a2b16a9433a07123",
-      "0b0a612cfede8053",
-      "3dcc92dc7b6903d6"
+      "b2bde459982fa21e"
     ]
   },
   "movie_release_dates": {
@@ -8109,7 +8153,8 @@
     5620251,
     81719632,
     11359554,
-    4388
+    4388,
+    3249
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8601,6 +8646,15 @@
         "name": "Ptazeta"
       }
     },
+    "ead83c33b2c2f786": {
+      "applied": null,
+      "created": "2026-06-30T16:13:00.540760+00:00",
+      "kind": "artist",
+      "label": "Keith Urban",
+      "payload": {
+        "name": "Keith Urban"
+      }
+    },
     "ec3cb1c19ea28daa": {
       "applied": null,
       "created": "2026-06-20T21:25:40.568803+00:00",
@@ -8856,7 +8910,7 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spending_week_summarized": "2026-W27:1000.00",
+  "spending_week_summarized": "2026-W27:1030.00",
   "streaming_seen": {
     "1003596": [],
     "1288438": [],
@@ -8867,177 +8921,179 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "deals": {
-      "last_data": "2026-06-30T13:28:42.271358+00:00",
+      "last_data": "2026-06-30T16:13:50.821788+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "energy": {
-      "last_data": "2026-06-30T13:29:18.025142+00:00",
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_data": "2026-06-30T16:14:12.811886+00:00",
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "fda": {
-      "last_data": "2026-06-30T13:29:07.347286+00:00",
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_data": "2026-06-30T16:14:02.118491+00:00",
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-30T13:29:35.228890+00:00",
+      "last_data": "2026-06-30T16:14:28.683627+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "fx": {
-      "last_data": "2026-06-30T13:29:33.328564+00:00",
+      "last_data": "2026-06-30T16:14:26.737283+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-30T13:27:51.017290+00:00",
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_data": "2026-06-30T16:13:02.046467+00:00",
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-30T13:29:06.926130+00:00",
-      "last_data_count": 200,
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_data": "2026-06-30T16:14:01.826661+00:00",
+      "last_data_count": 236,
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "movies": {
-      "last_data": "2026-06-30T13:27:43.882077+00:00",
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_data": "2026-06-30T16:12:53.917429+00:00",
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "music": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-30T13:29:18.624868+00:00",
+      "last_data": "2026-06-30T16:14:13.644322+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-30T13:29:32.550523+00:00",
-      "last_data_count": 24,
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_data": "2026-06-30T16:14:26.044839+00:00",
+      "last_data_count": 23,
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-30T13:27:45.996153+00:00",
+      "last_data": "2026-06-30T16:12:57.556698+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "weather": {
-      "last_data": "2026-06-30T13:29:18.178724+00:00",
+      "last_data": "2026-06-30T16:14:13.175041+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-30T13:29:38.889670+00:00",
+      "last_data": "2026-06-30T16:14:31.287192+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-30T13:27:36.171831+00:00"
+      "last_ok": "2026-06-30T16:12:46.005857+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "Acola_lui"
+  ],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165076"
+    "last_full_window": "165077"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9050,6 +9106,7 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
+    "2026-06-30|15",
     "2026-06-30|12"
   ],
   "weather_seen_ids": [
@@ -9142,8 +9199,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "science_pioneers",
-  "wikiquote_last_sent": "2026-06-30T4",
+  "wikiquote_last_category": "philosophers",
+  "wikiquote_last_sent": "2026-06-30T5",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -9184,7 +9241,7 @@
     "philosophers:Plato": "2026-06-26",
     "philosophers:Seneca the Younger": "2026-06-25",
     "philosophers:Socrates": "2026-06-25",
-    "philosophers:Voltaire": "2026-06-20",
+    "philosophers:Voltaire": "2026-06-30",
     "science_pioneers:Ada Lovelace": "2026-06-26",
     "science_pioneers:Albert Einstein": "2026-06-23",
     "science_pioneers:Carl Sagan": "2026-06-21",
