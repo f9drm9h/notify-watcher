@@ -232,6 +232,15 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-06-29",
@@ -424,42 +433,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "id": "07274700c5639845",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019: All the Easter Eggs in the New Trailer - AOL.com",
-      "topic": "movies",
-      "ts": "2026-06-25T04:37:48.420499+00:00",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1FYVB0dG5vVjBrQ3dhUExhOHUzYUpBaGM3N2FsbTNLeWUwMEtZMXhrMFY4WjQtbXN0S1NHZUFRNUFRR3RaOUQ3cEVPalpPam1FZWNUM21hZG05T3FvbUhxMENkOGRFUDg1cmdzY280OTQ2eGgzQ2x5UzF4Yw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "2c5f4e4571e83bcc",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Little Caesars, in collaboration with Sony Pictures' \"Spider-Man: Brand New Day,\" is releasing a cheese-filled web-themed pizza ahead of the movie's release date in July. Read the story: https://bit.ly/3SY9Zde - instagram.com",
-      "topic": "movies",
-      "ts": "2026-06-25T04:37:48.602995+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9tUW0zaXM3amw3SlJxLW9pVVZPN3JlN2pBMG5JVEowVTMyZWZ0cmxMX2IwTF9yWEJMRjdhdERxRU5vcmRRbHhxdGJxczFWaEJCVkcyR1d3?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "c3057c3b5b224d6a",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Detroit Free Press. . Little Caesars, in collaboration with Sony Pictures' \"Spider-Man: Brand New Day,\" is releasing a cheese-filled web-themed pizza ahead of the movie's release date in July. - facebook.com",
-      "topic": "movies",
-      "ts": "2026-06-25T04:37:48.872234+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNY0pqSFdBbkZXeEhzeVNUTWtwMno4S1E0TmNuRVcwTElpX0t0OVMwdGRPR0tXYXNHOWJoMGIxaU9WN183VXlOejViOEZsVFVOVk5hZ3NSUDNKZzVtVmcxTlM1UkR3Vk95UXRsS1VndFdJcVNhQlZDVkVXZG9Rc1FDbGh4alpSYnpkQ2ZKWUd1bTM3NWlVQm90eWtkYTNzdlkzUnVtanFRQjBHeWNuZ19XMlNOUlBLQmNNNHh5SHBCemxQQVMtX0VJTHREUDVuLVk1Y0tiWXVuLXRHVFM4M3M4?oc=5"
-    },
     {
       "action": "push",
       "detail": "",
@@ -6423,6 +6396,42 @@
       "topic": "wikiquote",
       "ts": "2026-06-30T01:29:32.756588+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "02d3f7a525f8bd7f",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-06-30T05:51:13.785428+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "The story of Ronald Ross and the malaria mosquito is not merely a tale of scientific discovery; it is a gripping human drama played out against the backdrop of colonial India, a narrative of immense personal sacrifice, professional rivalry, and the relentless pursuit of truth in the face of widespread suffering. Before Ross, malaria was a spectral killer, its origins shrouded in mystery. For centuries, its cyclical fevers, debilitating chills, and often fatal consequences plagued humanity, particularly in tropical regions. It was attributed to \"bad air\" \u2013 mal'aria \u2013 emanating from swamps and putrid environments. While some astute observers had, over time, noted a correlation between stagnant water and the disease, the precise mechanism of its transmission remained tantalizingly out of reach, a medical enigma that claimed millions of lives year after year, crippling economies and halting progress wherever it took root.\n\nRoss, an Indian Medical Service officer with a poetic bent and an insatiable curiosity, arrived in India in the late 19th century. He was initially drawn to literature, but a chance encounter with the work of Alphonse Laveran, who had identified parasitic bodies in the blood of malaria patients, ignited a new passion. Ross became convinced that the key lay not in the air, but in a living vector. His mentor, Patrick Manson, a pioneer in tropical medicine, further fueled this conviction, theorizing that mosquitoes, already known to transmit filariasis, might also be the culprits in malaria. Thus began Ross's arduous, often solitary quest. He spent years in increasingly desperate and frustrating experiments, dissecting hundreds of mosquitoes, their tiny bodies meticulously examined under a microscope, his eyes strained, his patience tested, his colleagues often dismissive of what seemed like a quixotic obsession. The sheer monotony of the work, the endless failures, and the oppressive heat of India took a heavy toll on his physical and mental health.\n\nThe turning point came in August 1897 in Secunderabad. After countless dissections yielding no answers, Ross focused his attention on a particular genus of mosquito, the dapple-winged variety now known as Anopheles. He fed these mosquitoes on a malaria-infected patient, then patiently waited. On August 20th, a day he would later declare \"Mosquito Day,\" he peered through his microscope at the stomach of a dissected mosquito. There, nestled amongst its tissues, he saw them: pigmented bodies, cysts containing the malarial parasite in various stages of development. It was a moment of profound revelation, the culmination of years of relentless effort. He had found the missing link, the undeniable proof. The Anopheles mosquito was not merely a nuisance; it was the biological bridge that carried the deadly parasite from one human host to another. This discovery was monumental, providing the scientific basis for understanding malaria's life cycle and, crucially, offering a tangible target for intervention.\n\nThe immediate aftermath of Ross's discovery was a mix of triumph and continuing struggle. While the scientific community largely accepted his findings, the practical application of this knowledge was a gargantuan task. His work paved the way for effective public health measures: draining stagnant water, using insecticides, and introducing mosquito nets.",
+      "id": "5f838f687629cdf3",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Ronald Ross and the malaria mosquito",
+      "topic": "learn",
+      "ts": "2026-06-30T05:51:33.880652+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cThe inherent vice of capitalism is the unequal sharing of blessings. The inherent virtue of Socialism is the equal sharing of miseries.\u201d\n\u2014 Winston Churchill\n\nWinston Churchill, a titan of 20th-century politics, was a man born into the aristocracy yet forever engaged in the rough-and-tumble of public life. From his daring exploits as a young cavalry officer and war correspondent in India and South Africa, to his early political career as a Liberal and then a Conservative, Churchill possessed an insatiable appetite for action and a profound belief in the power of the individual. He was an orator whose words could stir a nation to defiance, a strategist whose insights often proved prescient, and a leader whose stubborn resilience defined an era. Yet, for all his grand pronouncements and unwavering resolve, Churchill was also a pragmatist, capable of nuanced observation about the competing ideologies that shaped his world. His intellectual curiosity, coupled with a deep historical perspective, allowed him to dissect the fundamental strengths and weaknesses of economic and social systems with a clarity that few could match.\n\nThe quote, \"The inherent vice of capitalism is the unequal sharing of blessings. The inherent virtue of Socialism is the equal sharing of miseries,\" likely emerged from a period of intense ideological ferment, perhaps during the interwar years when the shadows of the Great Depression lengthened across Europe, or even after World War II, as the global order began to realign between the capitalist West and the socialist East. Churchill, having witnessed firsthand the devastating social inequalities exacerbated by unfettered capitalism in Britain and beyond, understood its human cost. He was acutely aware that the very engine of prosperity could also create deep chasms of poverty and resentment. Simultaneously, his lifelong opposition to totalitarianism, whether fascist or communist, made him profoundly suspicious of systems that promised utopian equality but often delivered only a leveling down, sacrificing individual liberty and economic dynamism on the altar of collective control. He saw the allure of socialism's promise of fairness, yet recognized the dangerous path it could take towards enforced uniformity and collective hardship, where the \"misery\" was not just material deprivation but also the stifling of individual initiative and freedom.\n\nToday, Churchill's pithy observation continues to resonate with remarkable power because it speaks to the enduring tension at the heart of modern societies. We grapple with the ever-widening wealth gap, the perceived injustices of a globalized capitalist system, and the recurring debates about the role of government in redistributing resources and ensuring social welfare. Simultaneously, the historical record of socialist experiments, from the Soviet Union to contemporary authoritarian states, stands as a stark reminder of the potential for even well-intentioned efforts to achieve equality to devolve into economic stagnation, suppression of dissent, and a general dimming of human potential. Churchill's quote doesn't offer a simple solution, but rather highlights a fundamental dilemma, forcing us to confront the trade-offs inherent in different economic and political philosophies.",
+      "id": "49a27e84654404c1",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Winston Churchill",
+      "topic": "wikiquote",
+      "ts": "2026-06-30T05:51:39.016092+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -7351,8 +7360,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "math_history",
-  "knowledge_last_sent": "2026-06-30T0",
+  "knowledge_last_category": "medicine",
+  "knowledge_last_sent": "2026-06-30T1",
   "knowledge_seen": {
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Hieroglyphs and the Rosetta Stone": "2026-06-13",
@@ -7399,6 +7408,7 @@
     "math_history:The normal distribution and the bell curve": "2026-06-28",
     "medicine:Barry Marshall and the cause of stomach ulcers": "2026-06-18",
     "medicine:Christiaan Barnard and the first heart transplant": "2026-06-28",
+    "medicine:Ronald Ross and the malaria mosquito": "2026-06-30",
     "medicine:The discovery of anesthesia's risks and refinements": "2026-06-20",
     "medicine:The discovery of insulin by Banting and Best": "2026-06-23",
     "medicine:The discovery of the cause of beriberi": "2026-06-21",
@@ -7460,9 +7470,9 @@
     "world_history:The rise of Adolf Hitler": "2026-06-22"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 46,
-    "ts": "2026-06-30T01:27:43.680383+00:00"
+    "failed": 1,
+    "ok": 45,
+    "ts": "2026-06-30T05:50:22.311578+00:00"
   },
   "launch_seen_ids": [
     "a64771bf6b805933",
@@ -7488,6 +7498,7 @@
   "life_dashboard_last_week": "2026-W26",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "93d332c24f2dd751",
       "0e0480281e5419ae",
       "7b9047c820450e23",
       "6b0630a96ec614ae",
@@ -7586,8 +7597,7 @@
       "8b4d5fdeeb164f3a",
       "13af8daf9b0f056d",
       "2adeb3e29fd1d80c",
-      "05ecd37855cf4550",
-      "f9b4494d21ac8953"
+      "05ecd37855cf4550"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -7791,6 +7801,14 @@
       "ba01dfcd01feccde"
     ],
     "Spider-Man: Brand New Day": [
+      "5c8413ce97230200",
+      "e8dbc03adca1721d",
+      "2c63b5ef30b73d9e",
+      "679951badc4bcf00",
+      "0acbd0557567742d",
+      "977d5b70b1cbf82a",
+      "68db9ef7fe2efef1",
+      "c0f4a76a8e025a6e",
       "07b1058e9b1fd0aa",
       "ad6e3769456f834c",
       "bee6c47c6e524bf9",
@@ -7882,17 +7900,11 @@
       "48ec2020c5937434",
       "fa607576cde70e4c",
       "afde1c0cfa6c7882",
-      "93fa0fc0f646f995",
-      "8ac661eddea95707",
-      "e90f3284f5972419",
-      "3c037dce74464a56",
-      "30a24274abc9b73f",
-      "bb6c80813e1a2a56",
-      "e735f0b9ed3fd88d",
-      "52a1aa11e81de426",
-      "bb067200ec8d925f"
+      "93fa0fc0f646f995"
     ],
     "The Batman Part II": [
+      "45a168fc1979ae42",
+      "4a86d06b2173e0b9",
       "1aee27a5806e90a1",
       "2239a4a89d1e87ee",
       "e2eb8f5e85d74054",
@@ -7990,11 +8002,19 @@
       "35163cf639d8932d",
       "013aedc634716325",
       "8dd3ec73ae867b6d",
-      "3e4bdc7dfa6edfa4",
-      "5dfef437e8b3f9e3",
-      "cb96bb52ad67f9ab"
+      "3e4bdc7dfa6edfa4"
     ],
     "The Odyssey": [
+      "6af8908673bb3806",
+      "8048f94edac9884e",
+      "59b005693b724808",
+      "7643132e9341090a",
+      "504c88cf88833451",
+      "4794690511fed652",
+      "2d9c1b94ca43f3c4",
+      "fcaa943e84f7ec4e",
+      "80da1b2aa602c89c",
+      "0b7ca8387facfb7b",
       "46db4325bcef674a",
       "05ba48aa82ba0165",
       "375daf2be27a8c7a",
@@ -8084,17 +8104,7 @@
       "4dc90d20f739286d",
       "4c681a500e13b793",
       "d9058042ff96c96a",
-      "9e0e204adc5acd45",
-      "c8e5e79e515ab764",
-      "d1e3a81e39ada98e",
-      "a6f7b9a9de2cc7ba",
-      "1e26ca1f20105ffb",
-      "3825e3f0530645ef",
-      "1dacda63765b6d4e",
-      "3a5f066c1b93dcbc",
-      "c0a3e916324c27c7",
-      "e77aff3019e7ca28",
-      "a18c5eea79b998a1"
+      "9e0e204adc5acd45"
     ]
   },
   "movie_release_dates": {
@@ -8963,47 +8973,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "deals": {
-      "last_data": "2026-06-30T01:28:52.741729+00:00",
+      "last_data": "2026-06-30T05:51:01.434501+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "energy": {
-      "last_data": "2026-06-30T01:29:03.004726+00:00",
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_data": "2026-06-30T05:51:13.588662+00:00",
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "fda": {
-      "last_data": "2026-06-30T01:28:53.333437+00:00",
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_data": "2026-06-30T05:51:01.856711+00:00",
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "fuel": {
       "last_data": "2026-06-29T21:56:58.323234+00:00",
@@ -9011,17 +9021,17 @@
       "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "fx": {
-      "last_data": "2026-06-30T01:29:20.607636+00:00",
+      "last_data": "2026-06-30T05:51:26.247183+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-30T01:27:56.930962+00:00",
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_data": "2026-06-30T05:50:36.063546+00:00",
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "groceries": {
       "last_data": "2026-06-29T21:56:32.191263+00:00",
@@ -9029,96 +9039,96 @@
       "last_ok": "2026-06-29T21:55:26.622411+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "movies": {
-      "last_data": "2026-06-30T01:27:49.919672+00:00",
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_data": "2026-06-30T05:50:29.671443+00:00",
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "music": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-30T01:29:03.655159+00:00",
+      "last_data": "2026-06-30T05:51:14.263783+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "outages": {
       "last_data": "2026-06-15T02:06:58.076689+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-30T01:29:19.994259+00:00",
-      "last_data_count": 41,
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_data": "2026-06-30T05:51:25.494460+00:00",
+      "last_data_count": 34,
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-30T01:27:51.712891+00:00",
+      "last_data": "2026-06-30T05:50:32.000016+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "weather": {
-      "last_data": "2026-06-30T01:29:03.267937+00:00",
+      "last_data": "2026-06-30T05:51:13.785180+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_ok": "2026-06-30T05:50:22.311578+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
@@ -9126,14 +9136,17 @@
     "youtube": {
       "last_data": "2026-06-30T01:29:23.150244+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-30T01:27:43.680383+00:00"
+      "last_error": "all 7 channel feed(s) failed; last: PabloELECTRUM: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UC9DS-MY8CZzLh7vQG000uug",
+      "last_error_ts": "2026-06-30T05:50:22.311578+00:00",
+      "last_ok": "2026-06-30T01:27:43.680383+00:00",
+      "source_failed": true
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165072"
+    "last_full_window": "165073"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9144,9 +9157,12 @@
     "games": "2026-06-12T12:15:55.633492+00:00",
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
-  "watchdog_failing_since": {},
+  "watchdog_failing_since": {
+    "youtube": "2026-06-30T05:50:22.311578+00:00"
+  },
   "water_slots_sent": [],
   "weather_seen_ids": [
+    "5484d1e90a7cf835",
     "7e677aee160daca8",
     "d4bce0c66fa44432",
     "f89707d5a514090c",
@@ -9234,8 +9250,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "writers",
-  "wikiquote_last_sent": "2026-06-30T0",
+  "wikiquote_last_category": "leaders",
+  "wikiquote_last_sent": "2026-06-30T1",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -9266,7 +9282,7 @@
     "leaders:Nelson Mandela": "2026-06-29",
     "leaders:Theodore Roosevelt": "2026-06-24",
     "leaders:Thomas Jefferson": "2026-06-28",
-    "leaders:Winston Churchill": "2026-06-19",
+    "leaders:Winston Churchill": "2026-06-30",
     "philosophers:Aristotle": "2026-06-27",
     "philosophers:Arthur Schopenhauer": "2026-06-28",
     "philosophers:Confucius": "2026-06-21",
