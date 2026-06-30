@@ -576,18 +576,6 @@
   ],
   "event_log": [
     {
-      "action": "push",
-      "detail": "\u201cIt is a disgrace to grow old through sheer carelessness before seeing what manner of man you may become by developing your bodily strength and beauty to their highest limit. But you cannot see that, if you are careless; for it will not come of its own accord.\u201d\n\u2014 Socrates\n\nSocrates, the barefoot philosopher of ancient Athens, was hardly a man defined by physical prowess in the way an Olympian might be. Yet, this pronouncement from him, admonishing the negligence of one's physical form, reveals a deeper thread in his philosophy. He was a man obsessed with self-knowledge, with the pursuit of virtue, and with the rigorous examination of every facet of human existence. For Socrates, the body was not merely a vessel; it was an integral part of the self, a tool that, when honed, allowed the mind to function with greater clarity and resilience. His Athens, in the late 5th century BCE, was a city of unparalleled intellectual ferment, a crucible of democracy, philosophy, and art. But it was also a city steeped in a culture that valued the physical ideal. The gymnasia were not just places for exercise but centers of learning and social interaction, where the mind and body were understood to be interconnected. To neglect one's physical potential in such a society was not just a personal failing; it was, in Socrates' view, a refusal to engage with a fundamental aspect of one's own being, a deliberate blindness to a potential form of self-realization.\n\nThe context of this quote, likely uttered during one of his many public conversations, reflects Socrates' relentless drive to provoke self-reflection. He wasn't advocating for vanity or an obsessive focus on outward appearance, but rather for a holistic approach to self-improvement. For Socrates, a strong and well-maintained body was a manifestation of an ordered mind, a discipline that mirrored the intellectual rigor he demanded of his students and himself. He saw the potential within each individual, not as a static given, but as something to be actively cultivated and brought to fruition. This was an era teetering on the edge of the Peloponnesian War, a protracted and devastating conflict that would ultimately weaken Athens. In such turbulent times, the pursuit of inner strength, both mental and physical, could be seen as a bulwark against the external chaos. Socrates, a veteran soldier himself, understood the practical value of physical conditioning, not just for battle, but for the daily demands of life and the arduous pursuit of wisdom.\n\nToday, this seemingly simple quote from Socrates resonates with surprising force in our hyper-connected, often sedentary world. We are constantly bombarded with images of ideal bodies, yet simultaneously, many struggle with the very carelessness Socrates decried. His words cut through the superficiality of modern body image culture, refocusing our attention not on fleeting trends, but on the enduring principle of self-actualization. It\u2019s a call to agency, a reminder that our physical selves are not passive recipients of the aging process, but active participants in shaping our own experience.",
-      "id": "ac4f11e9e78647b3",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Socrates",
-      "topic": "wikiquote",
-      "ts": "2026-06-25T18:24:31.641194+00:00",
-      "url": ""
-    },
-    {
       "action": "digest",
       "detail": "",
       "id": "7b3892a79cc2d965",
@@ -6574,6 +6562,18 @@
       "topic": "spending",
       "ts": "2026-06-30T22:02:30.743163+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - Back From EVO | SF6 and Chill",
+      "id": "6c7f4481fa65e03d",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-06-30T23:22:22.014789+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "f4_history": [
@@ -7643,8 +7643,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 46,
-    "ts": "2026-06-30T22:00:30.227829+00:00"
+    "ok": 1,
+    "ts": "2026-06-30T23:22:21.506753+00:00"
   },
   "launch_seen_ids": [
     "b2a67ba9209e1fe3",
@@ -8848,15 +8848,6 @@
         "name": "Arizona Zervas"
       }
     },
-    "ccd85f80bae45239": {
-      "applied": null,
-      "created": "2026-06-16T22:32:54.568171+00:00",
-      "kind": "artist",
-      "label": "Lost Frequencies",
-      "payload": {
-        "name": "Lost Frequencies"
-      }
-    },
     "d00b099b50c8270c": {
       "applied": null,
       "created": "2026-06-18T18:38:28.541881+00:00",
@@ -9304,9 +9295,9 @@
       "last_ok": "2026-06-30T22:00:30.227829+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-30T22:00:38.621642+00:00",
+      "last_data": "2026-06-30T23:22:23.109820+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-06-30T23:22:21.506753+00:00"
     },
     "uv": {
       "last_ok": "2026-06-30T22:00:30.227829+00:00"
@@ -9334,7 +9325,9 @@
       "last_ok": "2026-06-30T22:00:30.227829+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
