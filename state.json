@@ -55,7 +55,7 @@
     "29db49f64ce68661",
     "a8b1aff056453d2f"
   ],
-  "apod_last_sent": "2026-06-29",
+  "apod_last_sent": "2026-07-01",
   "astronomy_sent": [
     "2026-06-14|New moon tonight - d",
     "2026-06-21|June solstice today",
@@ -86,9 +86,6 @@
     825066
   ],
   "baseball_results_seen": [
-    823534,
-    823936,
-    824665,
     823532,
     823937,
     823531,
@@ -115,7 +112,10 @@
     823281,
     822792,
     823529,
-    824986
+    824986,
+    822793,
+    823528,
+    824984
   ],
   "beach_day_last_sent": "2026-06-27",
   "bills_sent": [
@@ -128,320 +128,13 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [
-    {
-      "detail": "DOP 302.95 (was DOP 334.95, -10%)",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Nacional",
-      "title": "Nacional deal: Pasta Spaguetti Sin Gluten Barilla 14.5Oz",
-      "topic": "groceries",
-      "url": "https://supermercadosnacional.com/pasta-spaguetti-sin-gluten-barilla-14-5oz-2195920"
-    },
-    {
-      "detail": "DOP 169.95 (was DOP 184.95, -8%)",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Nacional",
-      "title": "Nacional deal: Pechuga de Pavo Embutidos El Pozo BienStar Rebanada 0.35 lb.",
-      "topic": "groceries",
-      "url": "https://supermercadosnacional.com/ofertas/pechuga-de-pavo-embutidos-el-pozo-bienstar-rebanada-0-35-lb-2236751"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Will Include 7 God-Tier Characters (Confirmed) - The Direct",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1Hc3FpSzBBLTFFOGJaN29UNVR2c1NJNWxteXhIdUgyTWN5U0MwcVY3bGlyYW45elFzOUUtOW1jb3dWSjUxTG52TlZWLVdfOWVkZTZ1U2tFY09WWEpOTlNUMDYtcjZVS2tDVDBNdnFsZ3RyelFSSnc?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "The Odyssey Cult Announces \u2018Volume 3\u2019 Due Aug. 21 - Grateful Web",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMzFrNDgzYl85dUJCbDdlUkxFelllM2hxQW5RMlFKRnd2TndFaGgzNlZVWFU1OUU3WjJuUzRQakhlY1UwQ0dvUGV4alRLb1BkUklKRVRPSHZCdXpqSV91Ull3ZllMV1NuZEctNW9ueVg1c2UtT2ZsWWtKMHBZQXM1U3BUYXZ3cmdSYmNCcA?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Marvel Studios officially responds to those Avengers: Doomsday leaks - Bam Smack Pow",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOS0YxTkVmTk1FN3ZXZ0tBVkJWTGRVdndPaUowbEVRV2JjVDQ2UkJPdWsxU05sdjFqc2JLMGVKSUx5REtWb2l5WkpDVk9JLXduTVgtdUcwSGZMcFRqbEVqOV94Z0Rldmx1aGdWSzVaRGVsZkpvU21EVS1Lck9PTm4xYjd6X05VZw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer and Movie Tickets Go Live - Marvel.com",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeXFwTXhVZEhCQVNTaHJESC1GbDZfcXZ1RjVGZ21fNWxJMVdDMVIzeVBKdjFlelVyLUJ5dmRJcFZvMWUwNU5ZelZIQ29vZ1JHVVhNMElXNHVCakZlYWljazNOUTBFQUVZSVJxVXl2NExFS1g0dWZueXpGOHpBeXdVM2xTYmt4eEFKdXdtSFNNYlZCTXJlX24zMkowYS14UQ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Christopher Nolan's The Odyssey Gets Official Roblox Tie-In Game - IGN Nordic",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPeWo1bWhJTG0tLURmWU40VnVMNlhEWkNjLUlFeTBQeWk1Y19nN3d2RUJwMkhab3Z0RVN0NXViVVBFeHlYWVFCNnFkMU5PTi1BXzV2TXBSWERaRmpGOEM5MWNQWlAzSGdFZlIzMjRNdU0tMEo5ODc5bFpIaFQxZmFmOTlxR1RoTHREWGZTZFpqS1EyQWZhOEdVaGk0dVU0NEZ1Q1E?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Christopher Nolan\u2019s \u2018The Odyssey\u2019 to Skip Social Media Influencer Screenings - The Hollywood Reporter",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWkVWQlZsUFhDWlVHbEd2aW9xMkdvYkNuTmJBd3hjLUg5ZTFTYUpnNTRfamxLaXhXd2RoXzloUXlwOEhNU2NabWEyNUx6TG8wM1R0LTBPem9XTmxpeWdHRDNKZnppX01xUUtEU3lHa3g4ODF5UkxMQ3dxZU1vbEt1ZjdMb3FPNkxLUnZ5VXFNYnVyeFVkZHpHa3pMSFRERVh6RjJsVkFBaGZ3N3N2WkFFNTVFNW1ndw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Besremi",
-      "title": "FDA updates approval for Besremi (Ropeginterferon Alfa-2B-Njft) (BLA761166)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761166"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Skyrizi",
-      "title": "FDA updates approval for Skyrizi (Risankizumab-Rzaa) (BLA761262)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761262"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Trelstar",
-      "title": "FDA updates approval for Trelstar (Triptorelin Pamoate) (NDA020715)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020715"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Children'S Advil-Flavored",
-      "title": "FDA updates approval for Children'S Advil-Flavored (Ibuprofen) (NDA020589)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020589"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Trelstar",
-      "title": "FDA updates approval for Trelstar (Triptorelin Pamoate) (NDA021288)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021288"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Argatroban In 0.9% Sodium Chloride",
-      "title": "FDA updates approval for Argatroban In 0.9% Sodium Chloride (Argatroban) (NDA206769)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206769"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Skyrizi",
-      "title": "FDA updates approval for Skyrizi (Risankizumab-Rzaa) (BLA761105)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761105"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Trelstar",
-      "title": "FDA updates approval for Trelstar (Triptorelin Pamoate) (NDA022437)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=022437"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Sarclisa",
-      "title": "FDA updates approval for Sarclisa (Isatuximab-Irfc) (BLA761113)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761113"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Zevtera",
-      "title": "FDA updates approval for Zevtera (Ceftobiprole Medocaril Sodium) (NDA218275)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=218275"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Romvimza",
-      "title": "FDA updates approval for Romvimza (Vimseltinib) (NDA219304)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219304"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Arikayce Kit",
-      "title": "FDA updates approval for Arikayce Kit (Amikacin Sulfate) (NDA207356)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207356"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Bicillin L-A",
-      "title": "FDA updates approval for Bicillin L-A (Penicillin G Benzathine) (NDA050141)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050141"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Bicillin C-R",
-      "title": "FDA updates approval for Bicillin C-R (Penicillin G Benzathine, Penicillin G Procaine) (NDA050138)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050138"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Xeomin",
-      "title": "FDA updates approval for Xeomin (Incobotulinumtoxina) (BLA125360)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125360"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Cefepime In Plastic Container",
-      "title": "FDA updates approval for Cefepime In Plastic Container (Cefepime Hydrochloride) (NDA050817)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050817"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Merch Confirms What We All Suspected About Sam & Steve\u2019s Captain America - The Direct",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNMU1kZFdmV0h5QXUwMVV0UzkyTWl1MDNOVldKZXNnYXNzeUhYV0xLTlBCSVNhUFFxclRON1Rnd1R0U3l2ek15MkV2WnFYUEtoMnV4dGVwXy0ySnNRSGVoR3UzNkM5UW52M1hXSHZQSUpRNGQzeXRMQzdvWVN0Vzh1Tk1DVm1idw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer Gives First Look At Mark Ruffalo\u2019s Hulk - Deadline",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQm55VU92U3hTREt5NkpuaFZ6SkdhV3ZUeXVBSTdlUlN1cU81Zk1JRVhSSmlDUEJVMmhEYnNiUWFLYjVBN0pZaXlkOHZ4QXRka0prX0lVM1hXRTBuM1c1RXRNUnVHemgwWWlBVWVwUlJ6UEUwaTdkRmo5SFE4azNZQXNJWTltY2kxYUJhNlVSNUxzSXhJbUk5alVrVTkwYV9zXzlxag?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' Trailer Officially Confirms Major Change to the Hulk - Collider",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZkNCQ2QwRWcyRGpDX0xDV1hOZ1JDTk9lMjFScWtuQmJ2VVdjV05NUUVPa05sdW1fUmJ4eDFIVXNtanpMRTFYZWZrdHdxUkZURDIzdjdlblphN2lNeURrV1NWZzZGbE9PN1ZPX0JOcTV1Zi1iTGloNmZFYkh5eGhhZzk2UThhZFk4bmc?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.4 - 53 km S of Boca de Yuma, Dominican Republic (~151 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71522138"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Marvel's aggressive response to new Avengers: Doomsday leaks confirm what fans suspected - Bam Smack Pow",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZnBMeVlLNEtqbnBmcTVaQ3Qwa0hSNzFFcjVNcnQzQS1SNWtnTC1zX2VXek42WWpySFB6NVNjU0dOb0RJRF9Kay1HQzA3MWpRTkJaalZPUzRBdU9fVXNSWjJxbERpaDl3UjVJSERSMzRxYVhxUzlPYVN2UkJyeHVnenBEd013cGNva2lYZzhFdTRxUQ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day's latest trailer officially confirms X-Men character - Digital Spy",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTEoxWkxFWDFxVnVkUUFwanNmTUV6aVZpYk1RTENQSDRqUUhEUUhHWW9FeXdYRDVWZWI0LUhSUXE1bHNaZ05IUVF5dFY3Q0V6N2dWSG1iRG1kZWZMTlFVZmpHTU5wb2JDbUp3TVEwTlZBTkZ6ajBoSGZZa0ItRVM4Zk5UXy1rOWc1aGdWY18tVEZLeGRTMGc?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Christopher Nolan's 'The Odyssey' Gets Official 'Roblox 'Game Ahead of Movie Release - player.one",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMmpMa282ekdTbjF0VTV3WGwxQWNTbGhHUnFyR0ZrN18tYWlpZFpSMzF2MU5fZU5uYTdQQzA5Q2oyR3RNd28wMjBGZ2c1WWFiRXFfVnJad2NnNGFhMktXLVlBTDc3RnNEbGw5T1hOQjhGRHR6OUlBNHN5UVVPYkZpUFJWclRXc2dxNk03R3lYdmdvMWZFb0hLZ21iQ0ZDcHlNbjV5cQ?oc=5"
-    }
-  ],
-  "digest_last_sent": "2026-06-30",
+  "digest_buffer": [],
+  "digest_last_sent": "2026-07-01",
   "discord_control": {
     "last_id": "1519883605067698186"
   },
   "energy_learn_last_news": "2026-06-30",
-  "energy_learn_last_sent": "2026-06-30",
+  "energy_learn_last_sent": "2026-07-01",
   "energy_learn_seen": {
     "facts": [
       "baseload-vs-peaking",
@@ -466,10 +159,12 @@
       "perovskite-solar",
       "data-center-demand",
       "green-hydrogen",
-      "grid-forming-inverters"
+      "grid-forming-inverters",
+      "hornsdale-big-battery"
     ]
   },
   "energy_seen_ids": [
+    "3273438a9bc23281",
     "99b2e332d09ea630",
     "c262402cccc587fd",
     "307d5b7e8a671533",
@@ -631,558 +326,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "3b2ffd5f71c0ed78",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Zendaya Stuns in Vintage $35 Spider-Man T-Shirt for \u2018Brand New Day\u2019 Event in Paris - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-06-26T06:18:30.448308+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPM2VoSGFyUUh1ZDIxRUtYeWFEQWNnOERXR1p1dU05MWNDb0J1SnRkLXVMdnpLRnJOTjBlVHpROU85b2x0WXlTa1JScldsSTRyYV95dlhWMnZhdW1pbDB0dkF0Z2UtU3pLVXJLa21xOTdyS2RJTEFnbEdUQS01M0p4anc1SERnRkdOVlBOdnB4Qld6LVhhdHV1Zg?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "6c050c513bf01431",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer and Movie Tickets Go Live - Marvel.com",
-      "topic": "movies",
-      "ts": "2026-06-26T06:18:30.448777+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeXFwTXhVZEhCQVNTaHJESC1GbDZfcXZ1RjVGZ21fNWxJMVdDMVIzeVBKdjFlelVyLUJ5dmRJcFZvMWUwNU5ZelZIQ29vZ1JHVVhNMElXNHVCakZlYWljazNOUTBFQUVZSVJxVXl2NExFS1g0dWZueXpGOHpBeXdVM2xTYmt4eEFKdXdtSFNNYlZCTXJlX24zMkowYS14UQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "60862d2d6f2f549a",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Has a Brand New Trailer, and Spidey Is Freaking Out - Rolling Stone",
-      "topic": "movies",
-      "ts": "2026-06-26T06:18:30.449211+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaExDemM2TW9qaHdoaUlOV3hhT0pnbDJWUW1FYUczN1F2WXdLZHRkVC0zNnY1Wk55Z19lQ3d6ZGFNY1B0UldtcDgtazJDWGpGeGpRenJOUTBFenIzRlFKUS03WW5XeUJ4WEc5UUVuZWl1V2dVSzMzc3pDdXhmLWN3emlONGdCUXFLam1FMTlfSUVCQTlCUlpXd3hVWHlheDFxWlI0?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "8ca2925bc3ce4a0c",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 New Trailer Breakdown - Nexus Point News",
-      "topic": "movies",
-      "ts": "2026-06-26T06:18:30.684057+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UOUdLdl93RjJvdVpNSEdVcEZxMElfeUdaclhwaFZHRy13LXBLY3BzajZYcHZHMlFSbEtlVExxVGFkTEZ6WUJ4QUVOWkp6OFZ5UVh1QjhuVVliWTloNHZNNFdSNFZoNmYxOFREcjQxdVdGYkNzbFpjS3lWMVNFYjQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "24ea78f0f0007394",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Does The Batman 2 Director Matt Reeves' Cryptic BTS Photo Hint At The Sequel's Villains? - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-26T06:18:32.202576+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBQVVN1enpWS0ZzblM3MkJ4UFYya00xZnpNSFMxenkyMTVQRU5qbnlRZnRhSjR4WW9KVldqd1VJLTlwcVh0cW9LR09sS0Vvdw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "5ed19836127d82da",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Production begins on \u2018The Batman: Part II\u2019 in London, Matt Reeves shares photo from set - Telegraph India",
-      "topic": "movies",
-      "ts": "2026-06-26T06:18:32.203105+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQLXAxNXBHWFlnWUxsOG1PNmJMbFdxUEt3djZJY2VBeEZST280TTFNTEtOUGIxTnZ6aE9VZDZRR2VjV3pWRTBRTFVNbmhfTS1aclhpYTUybWZIN0tGQnlGTG5PQ09CRWIzd0JRc2plN1Z2S0Q4aUY2UjBQakRFenIwUFh3eWx1b1IwV0pDWURGRE1xVzIzMWN1RXUwRzYzOGRlOE1hZ2d3emU5MkxzN2F1M3R4blFvQU5OTHRFS2U1UmxOVkp2WFd6TWtvRHE4M2xuczVVS1JYRdIB3AFBVV95cUxNZGtqU2JhNTJkSXUtblVTLS1CczFHUzV4RFNLeE9lYUt0WmVaVGZUWV9mTU5Ma21TckpUNnN4cHlJTVE1blJWc2ZTYkUyazRpSlF5bFZvMUxxX1JTSTNtaWUxTEV6TUtxVEJqcy15V1k2TzdGX3hrcTRzcGttdmVxdlNTWjZ6N2VmX3BqcnBsU3Vrbm1rLVNXU2dTakVGVGczSGFfWlpCNG8wbWlrWEVjVDd3WGtPeVg0RHB5QmdyVkgxOVFhYzhFUzh3T0xDWVZVOE5TT2pRQXpqc2RY?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "9548c30f843aaedd",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-26T06:19:38.717608+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "In the spring of 1989, a tremor ran through the heart of China, a groundswell of hope and defiance that would culminate in one of the 20th century's most poignant and brutal confrontations. It began with the death of Hu Yaobang, a former Communist Party General Secretary whose reformist leanings and willingness to engage with student grievances had made him a revered figure. His passing on April 15th sparked initial mourning, but quickly escalated into demands for greater democracy, freedom of speech, and an end to corruption, resonating deeply with a generation of students and intellectuals who felt increasingly stifled by the Party\u2019s rigid control. What began with small gatherings soon bloomed into a massive occupation of Tiananmen Square, the very symbolic center of Chinese power, drawing in not only students but also workers, ordinary citizens, and even some members of the Party establishment, all united by a desire for a more open and just society. The scale of the movement, its peaceful intent, and the sheer audacity of its presence captivated the world, offering a tantalizing glimpse of a potentially different future for China.\n\nFor weeks, Tiananmen Square became a city within a city, a vibrant and improvisational testament to democratic ideals. Students organized themselves with remarkable discipline, setting up their own media, sanitation, and security, engaging in spirited debates, and demonstrating a profound commitment to non-violence. Iconic moments emerged: the Goddess of Democracy, a towering statue crafted from foam and plaster, mirroring the Statue of Liberty, stood defiantly facing the portrait of Mao Zedong. Hunger strikes intensified the drama, drawing tears and support from onlookers and creating a powerful moral pressure on the government. Even as the authorities dithered and debated, the international media broadcast images of the protests to a captivated global audience, showcasing the human face of a movement yearning for change. The sheer number of participants, at its peak estimated to be over a million people, underscored the depth of popular discontent, and for a fleeting period, it seemed as though the will of the people might genuinely sway the iron fist of the Party.\n\nHowever, the hopes for a peaceful resolution were ultimately shattered. Within the halls of power, a bitter struggle unfolded between reform-minded leaders and hardliners determined to crush what they perceived as a direct challenge to Party rule and national stability. Deng Xiaoping, the paramount leader, eventually sided with the hardliners, convinced that the protests represented a grave threat to the Party\u2019s monopoly on power. On the night of June 3rd and into the morning of June 4th, the People\u2019s Liberation Army was ordered to clear the Square and surrounding areas. What followed was a brutal crackdown: tanks rolled through the streets, soldiers opened fire on unarmed civilians, and a terrifying wave of violence engulfed Beijing. The precise number of casualties remains a closely guarded secret, but estimates range from hundreds to thousands. The world watched in horror as the images of tanks crushing buses and bloodied bodies filled news screens, permanently staining the Party\u2019s reputation and leaving an indelible scar on the conscience of a generation.\n\nThe Tiananmen Square crackdown profoundly reshaped China\u2019s trajectory and reverberated across the globe.",
-      "id": "e21f4cd00c953fda",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The Tiananmen Square protests",
-      "topic": "learn",
-      "ts": "2026-06-26T06:19:58.925683+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cOn met tr\u00e8s longtemps \u00e0 devenir jeune.\u201d\n\u2014 Pablo Picasso\n\nThe year is 1966. Pablo Picasso, a name synonymous with 20th-century art, is eighty-five years old, still painting with a furious, almost defiant energy in his adopted home of Mougins, France. He has long since shed the public persona of the wild, bohemian youth, though the rebellious spirit that defined his early years continues to simmer beneath the surface. He is a titan, an elder statesman of modernism, yet the constant drive for innovation, for seeing the world anew, remains. It is in this twilight of a life lived relentlessly in pursuit of creative expression that he utters the seemingly paradoxical phrase: \"On met tr\u00e8s longtemps \u00e0 devenir jeune.\" We take a very long time to become young. The world outside his studio, too, is a crucible of change. The Sixties are in full swing, youth culture is ascendant, challenging old norms and established orders. There is a palpable generational divide, a sense that the past is being discarded for a vibrant, if sometimes chaotic, future. Picasso, who had himself revolutionized art multiple times over, must have watched this unfolding drama with a keen, perhaps even knowing, eye.\n\nTo understand the profound irony and wisdom in Picasso's statement, one must trace the arc of his extraordinary life. From his \"blue period\" of melancholic introspection, to the revolutionary geometric fracturing of Cubism, to his neoclassical interlude, and later, the raw emotional power of Guernica, Picasso was a man in constant metamorphosis. Each stylistic shift, each artistic rebirth, was not a regression to earlier forms, but a sophisticated re-evaluation, a deliberate shedding of accumulated knowledge and learned conventions. He wasn't merely aging; he was actively, consciously, and often painfully unlearning, stripping away layers of experience to access a more primal, unfettered vision. This process is not the ease of childhood; it is the deliberate, often arduous, work of the mature artist to recapture that initial, uninhibited gaze. It is the wisdom gained through decades of struggle and triumph that allows for a deeper, more profound simplification, a return to the essential. It\u2019s a form of intellectual and creative asceticism, where mastery isn't about complexity, but about the elegant economy of expression that only comes from profound understanding.\n\nAnd this is why Picasso\u2019s profound utterance resonates so deeply with us today, even decades after his death. In an age saturated with information, where expertise is often valued over raw intuition, and where the constant pressure to \"grow up\" and conform can stifle our inner impulses, the idea of striving to \"become young\" offers a radical counter-narrative. It's a call to shed the cynicism and weariness that often accompany adulthood, to reclaim a sense of wonder, curiosity, and playfulness. It\u2019s about cultivating beginner\u2019s mind, the openness and eagerness to learn without preconceptions, regardless of one's chronological age.",
-      "id": "02a92e6e5b98bbd3",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Pablo Picasso",
-      "topic": "wikiquote",
-      "ts": "2026-06-26T06:20:04.242998+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "039ef86aca71e9c6",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Will Include 7 God-Tier Characters (Confirmed) - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-26T09:54:29.620607+00:00",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1Hc3FpSzBBLTFFOGJaN29UNVR2c1NJNWxteXhIdUgyTWN5U0MwcVY3bGlyYW45elFzOUUtOW1jb3dWSjUxTG52TlZWLVdfOWVkZTZ1U2tFY09WWEpOTlNUMDYtcjZVS2tDVDBNdnFsZ3RyelFSSnc?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "84101a146427715e",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Chris Evans Officially Reveals Captain America's Fate in 'Avengers: Doomsday' - Collider",
-      "topic": "movies",
-      "ts": "2026-06-26T09:54:29.621382+00:00",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBLcEtTT2xGT3I1UEdoU25vOHc1UnJXQmZIY3Y1S2FqdnFPM01CS2pDQTlmb2k2WDZjUGotUEtidFlZckZXZWltb3o0M0xNcU40VFlWY0tyRFZRUnl3dEFsRng3YVpaUzVRVllJRGJqemE3cm5CSzlYTXh4QQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "db3d366c81539f97",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman 2: Sebastian Stan Confirms Harvey Dent Will Become Two-Face in Sequel - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-26T09:54:31.802580+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1DbTVxcUpBNThsZnlOQXZMVDZaM0gyWllVRWdVQnltZmZ2eUNPUzRaeDRBY2kyUkhTS3d5aW9yMFlxekl4Q2hISWxHak5KUlVEenc?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "1c3ec6c844fccf2c",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "THE BATMAN 2 Casting Shake-Up: Two-Face Reportedly Recast, 'Winter Soldier' Sebastian Stan Eyed for Different Villain & Court of Owls to Appear - \u73a9\u5177\u4eba TOY PEOPLE",
-      "topic": "movies",
-      "ts": "2026-06-26T09:54:32.335255+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE92YkNJc2owNGE2SEFyY1U4Q05iMnJpYTRXTXp5YXY4bFhhbHFEMU5Va2x2NXg2MHlPOHZyUUVrWEJvY3YzajBqWjNEY2pzX2V5?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "f6925315fcacbf1a",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Butrans",
-      "title": "FDA updates approval for Butrans (Buprenorphine) (NDA021306)",
-      "topic": "fda",
-      "ts": "2026-06-26T09:55:01.335025+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021306"
-    },
-    {
-      "action": "push",
-      "detail": "Pegasus XL | Swift Boost Mission launches in ~23h.",
-      "id": "b9f2ccc2e53f30df",
-      "score": 62,
-      "severity": "moderate",
-      "source": "Launches",
-      "title": "Rocket launch",
-      "topic": "launches",
-      "ts": "2026-06-26T09:55:25.350984+00:00",
-      "url": "https://ll.thespacedevs.com/2.2.0/launch/f596ad48-881e-47d6-806d-113c6dd97427/"
-    },
-    {
-      "action": "push",
-      "detail": "Across the verdant lowlands of Mesoamerica, a civilization of astonishing intellectual and architectural prowess flourished for centuries. The Classic Maya, a constellation of independent city-states, each ruled by a sacred king, or *k'uhul ajaw*, developed a sophisticated writing system, an intricate calendar, and monumental cities like Tikal, Palenque, and Cop\u00e1n, adorned with towering temples and intricately carved stelae. Their world was one of meticulous observation of the cosmos, of elaborate rituals, and of a complex social hierarchy that underpinned their impressive achievements. They built reservoirs and irrigation systems to tame the unpredictable tropical climate, supporting a population that numbered in the millions. Yet, this magnificent civilization, at the zenith of its power and influence, experienced a series of cascading collapses that saw many of its great cities abandoned, its monumental construction cease, and its elaborate political and social structures unravel, leaving behind an enduring mystery that has captivated scholars and the public for generations.\n\nThe term \"Maya collapse\" often conjures a singular, cataclysmic event, but the reality was far more nuanced and protracted. Beginning in the late 8th century and accelerating through the 9th and 10th centuries, a pattern of depopulation, political fragmentation, and the cessation of the royal calendar system swept across the southern lowlands. City after city, once vibrant centers of power and pilgrimage, fell silent. The intricate network of alliances and rivalries that characterized the Classic period fractured. The divine kings, whose legitimacy was tied to their ability to mediate with the gods and ensure prosperity, seemingly lost their grip on power. While some populations undoubtedly migrated north to regions that continued to thrive for centuries more, such as Chichen Itza, the once-thriving heartland of the Classic Maya underwent a dramatic and irreversible transformation, leaving behind silent monuments swallowed by the encroaching jungle, a stark testament to a lost golden age.\n\nFor decades, scholars have grappled with the question of *why* this profound unraveling occurred. Early theories often focused on singular catastrophic events: devastating earthquakes, widespread plagues, or even mythical alien interventions. However, modern archaeological and paleoclimatological research has painted a far more complex, multi-faceted picture, suggesting a confluence of interconnected factors rather than a single cause. Evidence points strongly to prolonged periods of severe drought, particularly in the later part of the Classic period, which would have put immense strain on the Maya's agricultural systems and their ability to feed a burgeoning population. Simultaneously, intense inter-city warfare, fueled by competition for diminishing resources and an increasingly fragile political landscape, seems to have escalated. Deforestation, a consequence of growing populations and the Maya's extensive use of wood for construction and fuel, may have exacerbated both drought conditions and soil erosion, creating a feedback loop of environmental degradation.",
-      "id": "87d540e80dd85ad5",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The mysterious Maya collapse",
-      "topic": "learn",
-      "ts": "2026-06-26T09:55:34.158044+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cThe only chance women have for justice in this country is to violate the law, as I have done, and as I shall continue to do.\u201d\n\u2014 Susan B. Anthony\n\nThe year is 1872, and the air in Rochester, New York, crackles with the aftermath of a daring act. Susan B. Anthony, a woman whose very name would become synonymous with the fight for suffrage, has just committed what she and fourteen other women considered their right, but what the law of the land deemed a crime: she voted.  Four years earlier, the 14th Amendment had been ratified, declaring all persons born or naturalized in the United States to be citizens, but crucially, it did not explicitly grant women the right to vote. Anthony, ever the astute legal mind, believed that as citizens, women inherently possessed this right, a right denied by custom and statute. Her act of defiance was a meticulously planned civil disobedience, an intentional challenge to a system she viewed as inherently unjust. She and her sisters in arms registered, they cast their ballots, and then, as she fully anticipated, they were arrested. It was in the face of this impending legal battle, of being branded a criminal for exercising what she believed was a fundamental human right, that Anthony, with characteristic defiance and unwavering resolve, declared, \"The only chance women have for justice in this country is to violate the law, as I have done, and as I shall continue to do.\"\n\nThis statement was not a cry of desperation, but a deliberate articulation of a philosophy forged in decades of activism. Anthony's life, from her Quaker upbringing steeped in principles of equality to her early work in the temperance and abolitionist movements, had prepared her for this moment. She had witnessed firsthand the double standards and legal subjugation of women \u2013 their inability to own property, control their wages, or even claim custody of their children. The irony was not lost on her that the very government that had just emancipated enslaved people, granting them citizenship and the vote, still denied these fundamental rights to half of its free-born population. Her trial, a spectacle designed to quell the rising tide of women's rights, instead became a powerful platform. Denied the right to testify in her own defense, she transformed the courtroom into a stage for her arguments, turning the judge's verdict into a further indictment of a legal system that silenced women. Her words, spoken with the weight of her entire life's struggle behind them, were a rallying cry for direct action, a refusal to be passively oppressed.\n\nToday, Susan B. Anthony's pronouncement resonates with a startling clarity, echoing far beyond the specific battle for suffrage. It speaks to the ongoing struggle for justice by marginalized groups, a stark reminder that legal frameworks, while crucial, can be insufficient or even complicit in perpetuating inequality. When established systems fail to provide equitable pathways, when the scales of justice are perpetually tipped against certain populations, the call to \"violate the law\" \u2013 in the spirit of principled civil disobedience \u2013 remains a powerful and sometimes necessary tool for change.",
-      "id": "580f7a7fec8f94ed",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Susan B. Anthony",
-      "topic": "wikiquote",
-      "ts": "2026-06-26T09:55:39.671139+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "b11bd236b1f5fbeb",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Official Synopsis Finally Confirms What We All Expected About X-Men, Fantastic Four, and Avengers - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-26T12:21:04.517982+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTUFnaTBGRFYxQnB0TjN2bXJjWGd1Y1FYS2RacU43Z1Z2SHoxbW5FSnh6MFhSYU9Qem9sejVETGJaTnB0VGNFU3pDYy1PRDk3TjVtenZFcjFaOVN2YU5qOS02b0Y5NkM0bjA4UUNxQm9xNUtJVmpmYUdxLUo5NW5YaGN3NEpuTDFWbzV6dmtNVQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "bd980fa377305fee",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "New Avengers: Doomsday leaks unveil first look at Doctor Doom - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-26T12:21:04.518478+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaTJaaXFZQURBU2p6RzFFR0ZENXRQcWh4ZlMxQktkT0l4aVpJQ2pESGtfSjFfVF9TU21oUzRtY2JNLVdROXBfQ1FpeWVzZXEzQlJzQzFHbTRUcktTSDRrcG5fUnJ5emozUWx3WExmNERlVFdNZ3ZaWnVBdVd4bUFsbjEwem4wSVUyaDA5ZjQ1QjNKZzlHN2c?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "98269c4eeb5e2ef8",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Shop Marvel Must Haves: Celebrate 'Spider-Man: Brand New Day\u2019 with Official Spidey Merch - Marvel.com",
-      "topic": "movies",
-      "ts": "2026-06-26T12:21:05.064421+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcGdrOUU1R0trV2NDQnhZdC1vNUZTT1RYV0dndVNjbGNmLUx4RkVpQlJXS2pxSHRURGZGVFRtRHg4NExhRXhhX2ZGVGJyRkVwdi1fMXVuTnV5Q2N4S3dNdVFQTDBPVDYtRDZWQVZ2WUtFYURSLWJqMjlCcGJ2OUs2NzNvcklLTDgwa1g3Sg?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "e06156da982e2446",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland confirms the Spider-Man: Brand New Day villain is still a secret and is \"unlike anything we've seen\" before in the MCU - GamesRadar+",
-      "topic": "movies",
-      "ts": "2026-06-26T12:21:05.538354+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxOaGx4cHBpbnA3OFdQbDhSdV9RMlhyd0ZLUzJnTjhUUU9ubTR5STVnVHlPZEtfTzA2MEJzOXZFT3FmNHJuRzFsLUtidXotblJ1YndNYURvMnpMWU5IRFIwVUQzNkFKQ3JfT0lURjhhWmRFWmpSNWZWbjRBZm5XbkJVanFOZTg2TnB1M0hKRXcwQnRNN0JZZksydVRDYnpIU0NYMlY2UzJfdW44TWNWd2VuM3N4WGtkaGlUekpDS3hBQnpfNEF6VGE2RV91Z0JlVmxnQ0NzSzFfZzVoZnRtTWlvTUdkZEl6SU9laVNZR1drZDZLMkFuVW5fSXhMUzVzUVRFODBEdG54ajNZR20wNnRn?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "c192e9f7b48612e5",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Confirms 'The Batman: Part II' Script Complete; Robert Pattinson's Reaction Revealed - \u73a9\u5177\u4eba TOY PEOPLE",
-      "topic": "movies",
-      "ts": "2026-06-26T12:21:07.145265+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1td3R6Sk0wUGpvbm1ZRllKRlJRZGhPUEJNaklYZkl4QXA0M0MzRkluOWhWTGZ6NVY5SVBjMTBYOVVQaFVXOHpuWEo5bC1QN003?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "2c3d5cb837426e73",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Production underway on Warner Bros\u2019 \u2018The Batman Part II\u2019 in UK - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-26T12:21:07.145763+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBYRkJzaC1vVTI2eEtGT2hpZFNKVjlxVThUc1otaG0ybkpkbFp6eldoZE9VQldVUlRvSl9XMTNVRVNPMkdNMzE3TXUyZ3V4UQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "edf73ac9fc5c24bd",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "DC Studios Reveals Official The Batman 2 Logo As Matt Reeves Shares New Look At Filming - ScreenRant",
-      "topic": "movies",
-      "ts": "2026-06-26T12:21:07.146167+00:00",
-      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBEUDRfRHJ5VGhJT2FxN05jMHRZRmhFNnI2N0NYZkVVOWNLWm1pZnhPcmtaamZyWVZSQUhlaUI2Z2tBd3ltcEJ4RktlZ3dGU2IxeWhlTUU3SUlIaW5lNUxUZ2Nsb1RpbmFTeHJyZ2w2RQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "Baby - Quality Control\n(because you like Quavo)",
-      "id": "8a604f8b08f2c89f",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-06-26T12:21:12.127936+00:00",
-      "url": "https://www.deezer.com/track/713653452"
-    },
-    {
-      "action": "digest",
-      "detail": "Final, 2026-06-25",
-      "id": "e5eccd7ed30140c2",
-      "score": 40,
-      "severity": "low",
-      "source": "Baseball",
-      "title": "Blue Jays 5 \u2013 Rangers 6 (L)",
-      "topic": "baseball",
-      "ts": "2026-06-26T12:21:13.943151+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "Final, 2026-06-25",
-      "id": "378e1587bbee7bf1",
-      "score": 40,
-      "severity": "low",
-      "source": "Baseball",
-      "title": "Yankees 3 \u2013 Red Sox 6 (L)",
-      "topic": "baseball",
-      "ts": "2026-06-26T12:21:14.017235+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 1,295.00 (was DOP 1,595.00, -19%)",
-      "id": "01257ecf01dc16d3",
-      "score": 45,
-      "severity": "moderate",
-      "source": "La Sirena",
-      "title": "La Sirena deal: Plancha Black & Decker IRBD300",
-      "topic": "groceries",
-      "ts": "2026-06-26T12:22:09.526368+00:00",
-      "url": "https://www.sirena.do/b-d-plancha-irbd300-1990551/p"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 1,214.00 (was DOP 1,349.00, -10%)",
-      "id": "15cb5b6e3f0eb407",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Ribeye Certified Angus Beef, Lb (Peso Aprox. 1.5 Libra)",
-      "topic": "groceries",
-      "ts": "2026-06-26T12:22:09.527251+00:00",
-      "url": "https://supermercadosnacional.com/ribeye-certified-angus-beef-lb-peso-aprox-1-5-libra-2089962"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 799.95 (was DOP 999.95, -20%)",
-      "id": "56f56e9e5a864e2d",
-      "score": 45,
-      "severity": "moderate",
-      "source": "Nacional",
-      "title": "Nacional deal: Costillas De Cerdo En Salsa Bbq Food Club 32 Onz",
-      "topic": "groceries",
-      "ts": "2026-06-26T12:22:09.527828+00:00",
-      "url": "https://supermercadosnacional.com/costillas-de-cerdo-en-salsa-bbq-food-club-32-onz-2116851"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 549.95 (was DOP 649.95, -15%)",
-      "id": "21d6409b08a90eda",
-      "score": 45,
-      "severity": "moderate",
-      "source": "Nacional",
-      "title": "Nacional deal: Jam\u00f3n De Cerdo Boar's Head Maple Glazed Honey Coat, Lb",
-      "topic": "groceries",
-      "ts": "2026-06-26T12:22:09.528366+00:00",
-      "url": "https://supermercadosnacional.com/jamon-de-cerdo-boar-s-head-maple-glazed-honey-coat-lb-2195188"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 244.95 (was DOP 278.95, -12%)",
-      "id": "fd11816ae08411fb",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Tostitos Restaurant Style Familiar 283.5 Gr",
-      "topic": "groceries",
-      "ts": "2026-06-26T12:22:09.528869+00:00",
-      "url": "https://supermercadosnacional.com/tostitos-restaurant-style-familiar-283-5-gr-2009494"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 1,484.95 (was DOP 1,749.95, -15%)",
-      "id": "0580593093517e82",
-      "score": 45,
-      "severity": "moderate",
-      "source": "Nacional",
-      "title": "Nacional deal: Vodka Tito's Handmade 75 Cl",
-      "topic": "groceries",
-      "ts": "2026-06-26T12:22:09.529403+00:00",
-      "url": "https://supermercadosnacional.com/vodka-tito-s-handmade-75-cl-2156261"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 79.95 (was DOP 91.95, -13%)",
-      "id": "8fb0eb34a9b19094",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Refresco Coca Cola Sin Azucar 2 Lt",
-      "topic": "groceries",
-      "ts": "2026-06-26T12:22:09.529897+00:00",
-      "url": "https://supermercadosnacional.com/ofertas/refresco-coca-cola-sin-azucar-2-lt-2096182"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 289.95 (was DOP 339.95, -15%)",
-      "id": "cb386083cf8433f5",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Salami Genoa L\u00edder 200 Gr.",
-      "topic": "groceries",
-      "ts": "2026-06-26T12:22:09.530431+00:00",
-      "url": "https://supermercadosnacional.com/ofertas/salami-genoa-lider-200-gr-2236222"
-    },
-    {
-      "action": "push",
-      "detail": "DOP 264.95 (was DOP 379.95, -30%)",
-      "id": "bd08980071c6c26d",
-      "score": 64,
-      "severity": "high",
-      "source": "Nacional",
-      "title": "Nacional deal: Prosciutto L\u00edder 160 Gr.",
-      "topic": "groceries",
-      "ts": "2026-06-26T12:22:09.530924+00:00",
-      "url": "https://supermercadosnacional.com/ofertas/prosciutto-lider-160-gr-2236221"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 219.95 (was DOP 259.95, -15%)",
-      "id": "ff703d22b8076d8e",
-      "score": 45,
-      "severity": "moderate",
-      "source": "Nacional",
-      "title": "Nacional deal: Bebida Energizante Para Revitalizar Bloom Straw Watermelon 12oz.",
-      "topic": "groceries",
-      "ts": "2026-06-26T12:22:09.712791+00:00",
-      "url": "https://supermercadosnacional.com/ofertas/bebida-energizante-para-revitalizar-bloom-straw-watermelon-12oz-2237750"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 219.95 (was DOP 259.95, -15%)",
-      "id": "625848c7347bc73b",
-      "score": 45,
-      "severity": "moderate",
-      "source": "Nacional",
-      "title": "Nacional deal: Bebida Energizante Para Revitalizar Bloom Raspberry Lemon 12oz.",
-      "topic": "groceries",
-      "ts": "2026-06-26T12:22:09.713508+00:00",
-      "url": "https://supermercadosnacional.com/ofertas/bebida-energizante-para-revitalizar-bloom-raspberry-lemon-12oz-2237749"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 69.95 (was DOP 79.95, -13%)",
-      "id": "647ea283a32909a8",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Bebida Para Hidrataci\u00f3n Gatorlit Fresa Kiwi 591 ml.",
-      "topic": "groceries",
-      "ts": "2026-06-26T12:22:09.714050+00:00",
-      "url": "https://supermercadosnacional.com/ofertas/bebida-para-hidratacion-gatorlit-fresa-kiwi-591-ml-2239189"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 69.95 (was DOP 79.95, -13%)",
-      "id": "c711a667f6deb01a",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Bebida Para Hidrataci\u00f3n Gatorlit Sabor Uva 591 ml.",
-      "topic": "groceries",
-      "ts": "2026-06-26T12:22:09.714590+00:00",
-      "url": "https://supermercadosnacional.com/ofertas/bebida-para-hidratacion-gatorlit-sabor-uva-591-ml-2239188"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 69.95 (was DOP 79.95, -13%)",
-      "id": "1b730500f1015666",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Bebida Para Hidrataci\u00f3n Gatorlit Naranja 591 ml.",
-      "topic": "groceries",
-      "ts": "2026-06-26T12:22:09.715116+00:00",
-      "url": "https://supermercadosnacional.com/ofertas/bebida-para-hidratacion-gatorlit-naranja-591-ml-2239187"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 69.95 (was DOP 79.95, -13%)",
-      "id": "faf4cf7ecee0d360",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Bebida Para Hidrataci\u00f3n Gatorlit Sabor Mora 591 ml.",
-      "topic": "groceries",
-      "ts": "2026-06-26T12:22:09.715615+00:00",
-      "url": "https://supermercadosnacional.com/ofertas/bebida-para-hidratacion-gatorlit-sabor-mora-591-ml-2239186"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 69.95 (was DOP 79.95, -13%)",
-      "id": "b9447c1165a6a568",
-      "score": 28,
-      "severity": "low",
-      "source": "Nacional",
-      "title": "Nacional deal: Bebida Para Hidrataci\u00f3n Gatorlit Sabor Coco 591 ml.",
-      "topic": "groceries",
-      "ts": "2026-06-26T12:22:09.716134+00:00",
-      "url": "https://supermercadosnacional.com/ofertas/bebida-para-hidratacion-gatorlit-sabor-coco-591-ml-2239185"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "4e7f7bd29d2994fd",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-26T12:22:21.740341+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "Time for a glass of water. Stay hydrated!",
-      "id": "539d65cab5414f40",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-06-26T12:22:38.695231+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Choosing stairs over elevators whenever possible helps accumulate short bursts of activity throughout your day. (Source: CDC)",
-      "id": "04194f5d8eae801a",
-      "score": 60,
-      "severity": "low",
-      "source": "Health",
-      "title": "Health tip",
-      "topic": "health_tip",
-      "ts": "2026-06-26T12:22:39.494712+00:00",
-      "url": ""
-    },
     {
       "action": "push",
       "detail": "On the morning of July 4th, 1054, a new star appeared in the eastern sky, burning with a brilliance that outshone Venus and was visible even in broad daylight for weeks. To the astronomers and astrologers of the Song Dynasty in China, this was an event of immense significance, meticulously recorded in official histories. They noted its precise position in the constellation Taurus, its dazzling intensity, and its gradual fading over the course of nearly two years. Their observations, detailed and consistent, speak not only to their sophisticated understanding of celestial mechanics but also to a culture that placed profound importance on cosmic events as reflections of earthly power and future destiny. Yet, the story of this celestial firestorm is far broader than just the imperial courts of ancient China.\n\nAcross the globe, in the canyons and mesas of the American Southwest, the Ancestral Puebloans also witnessed this cosmic spectacle. While their records took the form of petroglyphs and pictographs etched into rock faces, rather than written treatises, modern astronomers have compellingly linked certain rock art to the supernova. Images depicting a crescent moon, a handprint, and a bright star, sometimes positioned near the horizon, strongly suggest a contemporary observation of the same event. These visual records, often found at astronomical observation sites, reveal a shared human impulse to document and understand the heavens, even across vastly different cultures and belief systems. For these early sky-watchers, the sudden appearance of such a luminous object in the familiar night sky must have been a profoundly awe-inspiring, perhaps even terrifying, experience.\n\nWhat these ancient observers saw was not a new star, but the cataclysmic death of a massive one: a supernova. The progenitor star, perhaps eight to ten times the mass of our Sun, had exhausted its nuclear fuel, collapsing under its own immense gravity before rebounding in an explosion of unimaginable power. For a brief period, the dying star shone brighter than an entire galaxy, radiating energy equivalent to billions of suns. The light that reached Earth in 1054 had traveled for thousands of years across the vast emptiness of space, a cosmic echo of an event that occurred long before human civilization began to record history. The supernova of 1054 wasn't just a fleeting bright spot; it was the birth of one of the most studied and iconic objects in modern astronomy: the Crab Nebula.\n\nToday, nearly a millennium later, the ghostly remnants of that ancient explosion still glow across the electromagnetic spectrum. The Crab Nebula, a sprawling, intricate cloud of gas and dust, is an expanding testament to the star's demise. At its heart lies a rapidly spinning neutron star, the super-dense core of the former giant, rotating thirty times a second and emitting powerful beams of radiation across space \u2013 a cosmic lighthouse born from a star's death throes. The nebula itself is a dynamic laboratory for astrophysics, allowing scientists to study the processes of stellar evolution, the formation of heavy elements, and the fundamental forces that shape our universe. From the meticulous records of imperial astronomers to the enigmatic etchings on ancient cliffs, the supernova of 1054 reminds us of humanity's enduring fascination with the cosmos and our ever-deepening understanding of the violent, beautiful dance of creation and destruction in the universe.",
@@ -6630,6 +5773,558 @@
       "topic": "wikiquote",
       "ts": "2026-07-01T10:36:52.475783+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "9e75b44f7a259b29",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "2 New 'Avengers: Doomsday' Books Officially Announced Ahead of Trailer Debut - The Direct",
+      "topic": "movies",
+      "ts": "2026-07-01T13:20:06.224849+00:00",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5Lb3o2eHlsRk1FeW5fOVhqNzVMbE9mQUMtbEpLOE5UZnBkVkhfMVd0bHJjdFd4b25INTVrdmFWeDBDeUNtcUVFYlBOSzc0SFFhZHpBaHRFQ3VoSlp0ZHFXS3FzNGptMzlKejBDZjhR?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "c0ac9f881c33021b",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday\u2019s First Trailer Gets Impressive Fan Recreation (Watch) - The Direct",
+      "topic": "movies",
+      "ts": "2026-07-01T13:20:06.883639+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQVU9aM2F3NE1WbXQwZXZuVkp0dGlMUk1uekllUERKTk4zN09IVFUtRFlYekMzajZacVlBa2tka1AzWFpxWGI2NXNUMGR2OExRMzlqby1XbzMxTTNVWjRGa1ZKWTlHLXZZWElXLXVxQldHcUNLYW1hYzRzR292RkktRE8zSUdTNnpxVXc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "b7da4ab6cf1d561b",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "'Spider-Man: Brand New Day' starring Tom Holland has posted the best U.S. first-day presales for any film in years. - Deadline",
+      "topic": "movies",
+      "ts": "2026-07-01T13:20:07.642408+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbUp1RzA3dl9wMTRjWHIzbW9kd3ljRXZBc0dvemNodm8xNkpueDRudVVUeEpKcmN2U0R2eVBxeUhobE9NRzRVSlo3VzhpTWV3eEZHZ2N3UWNxTXZoQkRuM19VRV9ObnZLanhTQmRld0kwcjM0Y19PNDRtQ0tyZC16cXBHak1zNFU2?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "bc7a2248afaae72f",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "'Spider-Man: Brand New Day' starring Tom Holland has posted the best U.S. first-day presales for any film in years. Read more below. - facebook.com",
+      "topic": "movies",
+      "ts": "2026-07-01T13:20:07.791814+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPMFB3Y2pjXzBLcXNZcUM1bldqWkhoMDhENlM0NDBqWG4yekZWc0J6a0FzcnNDa2ZoMHloR3pLZDRUbmtlNXlhOUUyNHpBV1hzTWpMYzBzbzBjMDRTMnJzV3FiRVZZc1lyR1Z5TG1yNFc5b2JnQkJndzVjOVhpdFl3SmlMdk9qc3UtUTROaFlHT0E0LV9US0RkVlFyMmNXc2tSOWQ4Szg1VlZBSV9EaFJqRWpQNFRpM192ZzFtUXYwWV9yLVJQdmJjdHEtUU5NUFdtdHZtNA?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "7e61a7db599a9deb",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "'The Odyssey' Final Trailer Unleashes Christopher Nolan's Action Fantasy Epic - MovieWeb",
+      "topic": "movies",
+      "ts": "2026-07-01T13:20:08.633232+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9kLThCc2R0blQ1SzhpYTBzaGFBc0hwZlJFYnozUmhlMHpoRFlHODlXR3RKb0R5eE9xejF5OFV6TmZBSGExNjQyNjhPcWJfMGIwZ1UyYW1hRQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "3723b00060c0c02c",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "See the Final Trailer for Christopher Nolan\u2019s \u2018The Odyssey\u2019 - TODAY.com",
+      "topic": "movies",
+      "ts": "2026-07-01T13:20:08.792754+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQY0VqaE9jblRfVlFjc0pUQ2YxLUxkSTVPYjZ5ek9FSnRZNVJPSkFfUzhpMDl4Q3JBTktuZlRmcGFnNzVDR24wZHk3bHVoYllyQ0doSERnRTAzeWVkNzFVcm5OX1JkNk5LUGtnX1VrSDlKTzM2T08xanY2WUdJUG4ybzR3SnZrNXRGZjByMHJHaWh0V0xwdUNwSHBVdDVSSVU?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "19fd5dcd006142d5",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Anne Hathaway Showcases Her Baby Bump in Two Red Looks While Promoting The Odyssey and Confirms the Season\u2019s Standout Colour - IMDb",
+      "topic": "movies",
+      "ts": "2026-07-01T13:20:09.074275+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE03c25MS3hJUnEyOHZmNEVfVFQtWnN1NTRXUExWZEFNX2NOZ2ZaX0ZDVHZOM3JmdFA1TXhVMFFxck1QdUhHV0FZY1JBWGF0WlV2UjZfcHFTeFQ0alpFakJqOVN5Wm1EbkE?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Se\u00f1or Juez - Anthony Santos\n(because you like Raul\u00edn Rodr\u00edguez)",
+      "id": "e196851cb373f63f",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-07-01T13:20:15.466159+00:00",
+      "url": "https://www.deezer.com/track/1530139472"
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-06-30",
+      "id": "a92aa10f67113397",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Blue Jays 0 \u2013 Mets 3 (L)",
+      "topic": "baseball",
+      "ts": "2026-07-01T13:20:17.898671+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-06-30",
+      "id": "24b96f23d8722b4c",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Yankees 3 \u2013 Tigers 9 (L)",
+      "topic": "baseball",
+      "ts": "2026-07-01T13:20:17.993392+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-06-30",
+      "id": "5833673963edaa91",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Dodgers 9 \u2013 Athletics 3 (W)",
+      "topic": "baseball",
+      "ts": "2026-07-01T13:20:18.100178+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 17,995.00 (was DOP 22,995.00, -22%)",
+      "id": "9b582826ee15a7d1",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Televisor Nikkei 43P Led Google Tv 4K 43D3200",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.695372+00:00",
+      "url": "https://www.sirena.do/nikkei-gtv-43p-43d3200-2132049/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 11,995.00 (was DOP 13,995.00, -14%)",
+      "id": "1ad559512097d89d",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Televisor Nikkei 32p Led 2k Google Tv 32D3200",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.696089+00:00",
+      "url": "https://www.sirena.do/nikkei-gtv-32p-32d3200-2132043/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 11,995.00 (was DOP 15,995.00, -25%)",
+      "id": "21b2dc088277f895",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Barra de Sonido Samsung 2.1 HW-B450F/ZP",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.696667+00:00",
+      "url": "https://www.sirena.do/samsung-barra-de-sonido-2-1-hw-b450f-zp-2007850/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 6,795.00 (was DOP 7,995.00, -15%)",
+      "id": "20a6329c0329ce8c",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Tostadora Cuisinart Soho 2 Rebanadas CPT-7TR",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.697194+00:00",
+      "url": "https://www.sirena.do/cuisinart-soho-tostadora-2-reban-cpt-7tr-2158522/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 42,795.00 (was DOP 50,295.00, -15%)",
+      "id": "baaba5183ebc34de",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Secadora Samsung 20 Kg DV20T6000PW/AP",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.697726+00:00",
+      "url": "https://www.sirena.do/samsung-secadora-20kg-dv20t6000pw-ap-1959826/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 199.95 (was DOP 281.95, -29%)",
+      "id": "871d7ce844e0272c",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Shampoo Original Johnson's Baby 200 Ml",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.698496+00:00",
+      "url": "https://supermercadosnacional.com/shampoo-original-johnson-s-baby-200-ml-2202857"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 75.95 (was DOP 88.95, -15%)",
+      "id": "bdfcdf201e7e636a",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Toallas Sanitarias Nosotras Ultrainvisibles Tela 8 Und",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.699073+00:00",
+      "url": "https://supermercadosnacional.com/toallas-sanitarias-nosotras-ultrainvisibles-tela-8-und-2082735"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 69.95 (was DOP 88.95, -21%)",
+      "id": "938cafb2602b7f62",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Avena Instantanea Avena Americana 590G",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.699613+00:00",
+      "url": "https://supermercadosnacional.com/avena-instantanea-avena-americana-590g-2208256"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 2,189.95 (was DOP 3,039.95, -28%)",
+      "id": "74e7cbb8611f8ff0",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Pa\u00f1ales Swaddlers S4 Super Pack Pampers 66 Und/Paq",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.700124+00:00",
+      "url": "https://supermercadosnacional.com/panales-swaddlers-s4-super-pack-pampers-66-und-paq-2165915"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 214.95 (was DOP 248.95, -14%)",
+      "id": "06c33ed4e5537320",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Suavizante Aroma Primaveral De Suavitel 1.9 Lt",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.700650+00:00",
+      "url": "https://supermercadosnacional.com/suavizante-aroma-primaveral-de-suavitel-1-9-lt-2024248"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 529.95 (was DOP 599.95, -12%)",
+      "id": "4242e7277105838b",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Queso Gouda Holand\u00e9s Boar\u00b4s Head Sin Lactosa Libra",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.701174+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/queso-gouda-holandes-boar-s-head-sin-lactosa-libra-2236212"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 1,429.95 (was DOP 1,599.95, -11%)",
+      "id": "7c34c67bc44f0036",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: PONDS BRIGHT MIRACLE CREMA DIA 50 GR",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.701723+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/ponds-bright-miracle-crema-dia-50-gr"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 1,429.95 (was DOP 1,599.95, -11%)",
+      "id": "acb487eec01911a5",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: PONDS BRIGHT MIRACLE CREMA NOCHE 50 GR",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.702232+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/ponds-bright-miracle-crema-noche-50-gr"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 173.95 (was DOP 199.95, -13%)",
+      "id": "9103caa20aa78465",
+      "score": 28,
+      "severity": "low",
+      "source": "Nacional",
+      "title": "Nacional deal: Crema Dental Colgate Luminous White Color Correct 66 ml",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.702753+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/crema-dental-colgate-luminous-white-color-correct-66-ml-2235695"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 395.95 (was DOP 495.00, -20%)",
+      "id": "9d95e3f96a6244a4",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Exfoliante Corporal Jeannette Almendra y Karit\u00e9 17.7 oz.",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.703256+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/exfoliante-corporal-jeannette-almendra-y-karite-17-7-oz-2240893"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 395.95 (was DOP 495.00, -20%)",
+      "id": "e8f7cacab1c4d075",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Jab\u00f3n L\u00edquido Jeannette Rosas Sedosas 950 ml.",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.703771+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/jabon-liquido-jeannette-rosas-sedosas-950-ml-2240892"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 395.95 (was DOP 495.00, -20%)",
+      "id": "a52151bb8dbae652",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Jab\u00f3n L\u00edquido Jeannette Eucalipto y Menta 950 ml.",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.704265+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/jabon-liquido-jeannette-eucalipto-y-menta-950-ml-2240891"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 395.95 (was DOP 495.00, -20%)",
+      "id": "1c827f3829f48ac0",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Jab\u00f3n L\u00edquido Jeannette Almendra y Karit\u00e9 950 ml.",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.704778+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/jabon-liquido-jeannette-almendra-y-karite-950-ml-2240877"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 395.95 (was DOP 495.00, -20%)",
+      "id": "ba5216cdcaa38952",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Jab\u00f3n L\u00edquido Jeannette Naranja Energizante 950 ml.",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.705272+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/jabon-liquido-jeannette-naranja-energizante-950-ml-2240870"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 395.95 (was DOP 495.00, -20%)",
+      "id": "7f45eaa3a65a45c6",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Jab\u00f3n L\u00edquido Jeannette Lavanda y Manzanilla 950 ml.",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.705783+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/jabon-liquido-jeannette-lavanda-y-manzanilla-950-ml-2240866"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 395.95 (was DOP 495.00, -20%)",
+      "id": "7eecb21613a6facf",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Spray Relajante Jeannette Eucalipto y Menta 8 oz.",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.706275+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/spray-relajante-jeannette-eucalipto-y-menta-8-oz-2240900"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 395.95 (was DOP 495.00, -20%)",
+      "id": "95eb1a371be96e26",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Spray Relajante Jeannette Melatonina y Manzanilla 8 oz.",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.706787+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/spray-relajante-jeannette-melatonina-y-manzanilla-8-oz-2240899"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 395.95 (was DOP 495.00, -20%)",
+      "id": "66a5ea7e647995a1",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Exfoliante Corporal Jeannette Rosas Sedosas 17.7 oz.",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.707277+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/exfoliante-corporal-jeannette-rosas-sedosas-17-7-oz-2240898"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 395.95 (was DOP 495.00, -20%)",
+      "id": "252e2c56b5e0ee54",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Nacional",
+      "title": "Nacional deal: Exfoliante Corporal Jeannette Eucalipto y Menta 17.7 oz.",
+      "topic": "groceries",
+      "ts": "2026-07-01T13:20:44.707791+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/exfoliante-corporal-jeannette-eucalipto-y-menta-17-7-oz-2240897"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "254fc02238ec4cc0",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "State support needed to make new Swiss reactors viable, report says",
+      "topic": "energy",
+      "ts": "2026-07-01T13:20:56.502230+00:00",
+      "url": "https://www.world-nuclear-news.org//articles/state-support-needed-to-make-new-swiss-reactors-viable-report-says"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "6884bf5e6e0d159c",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-07-01T13:20:56.610054+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "508536ef44032548",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.7 - 65 km NNE of Punta Cana, Dominican Republic (~188 km away)",
+      "topic": "quakes",
+      "ts": "2026-07-01T13:21:15.909447+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr2026182000"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 10:08 PM - max 64deg, SW to NE. Look up!",
+      "id": "5e4a38ae26ec9212",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-01T13:21:18.933262+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Pause for a moment and have a drink of water.",
+      "id": "3a99b11696544d22",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-07-01T13:21:20.982871+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Swap chips for a handful of unsalted nuts to get heart-healthy fats and fiber. (Source: MedlinePlus)",
+      "id": "b5f955529466e1af",
+      "score": 60,
+      "severity": "low",
+      "source": "Health",
+      "title": "Health tip",
+      "topic": "health_tip",
+      "ts": "2026-07-01T13:21:21.758792+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "The year is 1796, and the invisible terror of smallpox stalks humanity, an indiscriminate predator that claims upwards of 400,000 lives annually in Europe alone. Its distinctive, pockmarked survivors often bear the scars of their ordeal, a grim reminder of their brush with death or, worse, their escape with blindness or debilitating disfigurement. For centuries, the only defense against this scourge was a perilous practice known as variolation, a crude form of immunization that involved exposing healthy individuals to small amounts of smallpox matter, typically scraped from a pustule. While it offered some protection, variolation was a dangerous gamble, often inducing a mild form of the disease that could still prove fatal or, more insidiously, inadvertently spread the very contagion it aimed to prevent. It was a testament to the sheer desperation of the age that such a risky procedure was widely embraced, a chilling reflection of the profound fear that gripped communities in the face of this relentless killer.\n\nInto this world of widespread suffering and limited solutions stepped Edward Jenner, a country doctor of keen observation and an insatiable curiosity, practicing in the quiet, rural heart of Gloucestershire. For years, he had heard the anecdotal wisdom of the dairymaids, a folk belief that those who contracted cowpox, a mild bovine disease, seemed immune to the dreaded smallpox. This wasn't merely local gossip; it was a recurring theme, a whispered promise of protection that Jenner, unlike so many others, refused to dismiss as mere superstition. He observed the distinctive, often painless lesions of cowpox on the hands of milkmaids, noting their subsequent resilience in the face of smallpox epidemics. This persistent pattern, coupled with his scientific training and a healthy skepticism towards the established, yet dangerous, practice of variolation, began to coalesce into a revolutionary idea.\n\nOn May 14, 1796, Jenner embarked on his audacious experiment, a moment that would forever alter the course of human history. His subject was eight-year-old James Phipps, the son of his gardener, a poignant choice that highlights both the intimacy of the medical practice of the era and the profound trust placed in Jenner. He carefully inoculated Phipps with material taken from a cowpox lesion on the hand of Sarah Nelmes, a milkmaid who had contracted the bovine disease. Young James experienced only mild symptoms, a fleeting fever and some localized discomfort, before fully recovering. A few weeks later, Jenner administered a much more perilous test: he inoculated Phipps with variolous material, the very essence of smallpox. The boy, to Jenner's immense relief and the world's eventual salvation, remained completely unharmed. The theory was proven, the anecdotal wisdom transformed into empirical evidence.\n\nJenner's discovery, initially met with a mixture of skepticism and outright hostility from some within the medical establishment, soon gained traction, propelled by its undeniable efficacy and its stark contrast to the dangers of variolation. He published his findings in \"An Inquiry into the Causes and Effects of the Variolae Vaccinae,\" a work that not only introduced the term \"vaccine\" (from the Latin *vacca* for cow) but also laid the foundational stone for modern immunology. The dramatic impact of his work cannot be overstated.",
+      "id": "182584fedf7c79ca",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Edward Jenner and the first smallpox vaccine",
+      "topic": "learn",
+      "ts": "2026-07-01T13:21:26.563947+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "On this day\n1916: First World War: The first day of the Battle of Albert, the opening phase of the Battle of the Somme, became the bloodiest day in the British Army's history, with 57,470 casualties, including 19,240 deaths.\n\nFeatured: Eve Cone\nEve Cone, also known as Eve's Cone, is a cinder cone in Cassiar Land District of northwestern British Columbia, Canada. It has an elevation of 1,740 metres and is one of several volcanic cones in the Desolation Lava Field at the northern end of the Big Raven Plateau. Situated...\n\nScience\nWater is densest at about 4 degrees C, explaining why ice floats and lakes freeze from the top down. (Source: USGS)",
+      "id": "ff2a8ea676538d7a",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Daily learning",
+      "topic": "learn",
+      "ts": "2026-07-01T13:21:27.427255+00:00",
+      "url": "https://en.wikipedia.org/wiki/Eve_Cone"
+    },
+    {
+      "action": "push",
+      "detail": "\u201cMatter is composed chiefly of nothing.\u201d\n\u2014 Carl Sagan\n\nCarl Sagan, a name synonymous with the cosmos for generations, was more than just an astronomer. He was a poet of the universe, a passionate evangelist for scientific curiosity, and a master storyteller who could make the most profound cosmic truths accessible to millions. He emerged in a post-Apollo America, a time when humanity had literally touched another world, yet paradoxically, many still felt disconnected from the grand narrative of existence. Sagan, with his gentle gaze and distinctive voice, became the bridge between the ivory tower of academia and the living rooms of ordinary people. He championed the scientific method not as a cold, austere discipline, but as the most reliable torch we possess to illuminate the darkness of the unknown. His television series \"Cosmos: A Personal Voyage\" wasn't merely a show; it was an invitation, a journey through space and time that ignited a sense of wonder and intellectual adventure in an entire generation, cementing his place as one of the most beloved scientific communicators in history.\n\nThe quote, \"Matter is composed chiefly of nothing,\" resonates with a profound simplicity that belied a revolutionary scientific understanding. Sagan uttered this truth within the larger tapestry of his educational efforts, likely in \"Cosmos\" or one of his numerous books, as he sought to demystify the very fabric of reality. The late 20th century was a period of accelerated scientific discovery, particularly in particle physics. Scientists were delving deeper into the atomic nucleus, uncovering a subatomic world far more intricate and paradoxical than once imagined. The conventional understanding of solid matter \u2013 that it was, well, solid \u2013 was being dismantled. Experiments revealed that atoms, the building blocks of everything we perceive, are predominantly empty space, with a tiny, dense nucleus orbited by even tinier electrons. This wasn't just a scientific detail; it was a philosophical revelation, challenging our fundamental perception of reality and forcing us to reconsider the very nature of existence.\n\nToday, Sagan's pithy observation continues to hold immense power because it speaks to a deeper truth about perception versus reality, and the constant revelation that scientific inquiry brings. In an age saturated with information, much of it superficial or misleading, Sagan's emphasis on empirical evidence and critical thinking remains ever relevant. The idea that the chair you're sitting on, the screen you're reading, and even your own body are mostly void space is a humbling and mind-expanding concept. It pushes us to question assumptions, to look beyond the surface, and to appreciate the profound elegance and strangeness of the universe that science continues to uncover. His enduring legacy isn't just about sharing facts; it's about cultivating a spirit of inquiry, a deep sense of cosmic perspective, and the humility to accept that our understanding of reality is an ongoing, ever-evolving journey.",
+      "id": "6a37271eb76fbcf4",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Carl Sagan",
+      "topic": "wikiquote",
+      "ts": "2026-07-01T13:21:31.518944+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "What: South Australia installed the Hornsdale Power Reserve, then the world's largest lithium-ion battery, beside a wind farm.\nWhy it matters: It responds in a fraction of a second to grid disturbances, a job that once needed spinning fossil plants on standby.\nWhy you should care: It proved grid-scale batteries can pay for themselves and sparked a global wave of similar projects.\n(Source: Neoen / AEMO)",
+      "id": "4c428333fb0d7ba6",
+      "score": 60,
+      "severity": "low",
+      "source": "Energy learning",
+      "title": "\u26a1 Today's spark \u2014 The battery that steadied a grid (2017)",
+      "topic": "energy_learn",
+      "ts": "2026-07-01T13:21:32.078429+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Although they look like cotton candy, you cannot eat these clouds! Taken in C\u00e1diz, Spain, today's image features the Rho Ophiuchi complex, a rich tapestry of young and old astronomical phenomena. This colorful cloud complex is a nearby star-forming region containing hundreds of...\n(c) \u00c1ngel Molina Text: Keighley Rockcliffe (NASA GSFC, UMBC CSST, CRESST II)",
+      "id": "3c302948fc0eaa1b",
+      "score": 60,
+      "severity": "low",
+      "source": "NASA APOD",
+      "title": "APOD: The Cotton Candy Clouds of Rho Ophiuchi",
+      "topic": "apod",
+      "ts": "2026-07-01T13:21:36.627945+00:00",
+      "url": "https://apod.nasa.gov/apod/image/2607/rho_ophiuchi_1024.png"
     }
   ],
   "f4_history": [
@@ -6749,7 +6444,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-27-JUN-03-JUL-DE-2026.pdf",
   "fuel_last_pdf_hash": "f8498e031891b450b3caa406b4e9889ad0596d4b83780850ebf173674f103f51",
-  "fuel_last_prices_seen_at": "2026-06-30T22:02:12.397737+00:00",
+  "fuel_last_prices_seen_at": "2026-07-01T13:21:17.371510+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7105,6 +6800,11 @@
       "1b7d9e5ab11b51a5"
     ],
     "La Sirena": [
+      "61e61c84875c5500",
+      "d5f48b08a996e351",
+      "7956e9a699f6cecd",
+      "328dbda6253423f0",
+      "eaf0c3413023738c",
       "0c1e1e02bb1c6615",
       "61b395c91e2d517f",
       "3b8ce662e928948c",
@@ -7344,6 +7044,25 @@
       "997e525f302628c6"
     ],
     "Nacional": [
+      "0abad519ee289b1a",
+      "15a006373245f32a",
+      "6ac5f1c19fb628ca",
+      "62987eacbbaee811",
+      "f19e429daa14b4fb",
+      "1c4ddc3bad066299",
+      "fe52259b0d24838e",
+      "975bd6526d052f93",
+      "28bd932b258ea540",
+      "6ceadf78cc187f93",
+      "f7e1ee8fdc7913f9",
+      "3f6f7cf25938680c",
+      "3c6e241d25a8dcf3",
+      "0dc54087d9538beb",
+      "db64519b2be41dfc",
+      "18fe988019391106",
+      "19c604aed24363ce",
+      "46bb58dffdf11019",
+      "d065bc808726a7af",
       "c17c10900b90f754",
       "9efcfd0d7354e1f2",
       "7858fa99a3f48e96",
@@ -7499,7 +7218,7 @@
     "gothic_and_mystery:1064": "2026-06-13",
     "novels:1400": "2026-06-13"
   },
-  "health_tip_last_sent": "2026-06-30",
+  "health_tip_last_sent": "2026-07-01",
   "holidays_sent": [],
   "ignored": {
     "4071c13d0b9dc18b": {
@@ -7535,6 +7254,7 @@
     "iPadOS 26.5.2 (23F84)"
   ],
   "iss_seen_passes": [
+    "52a7dc02c2790a21",
     "ed2068fba035be16",
     "b872b4edbbce15bc",
     "db52add602e4725f",
@@ -7584,8 +7304,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "math_history",
-  "knowledge_last_sent": "2026-07-01T3",
+  "knowledge_last_category": "medicine",
+  "knowledge_last_sent": "2026-07-01T4",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -7636,6 +7356,7 @@
     "math_history:The normal distribution and the bell curve": "2026-06-28",
     "medicine:Barry Marshall and the cause of stomach ulcers": "2026-06-18",
     "medicine:Christiaan Barnard and the first heart transplant": "2026-06-28",
+    "medicine:Edward Jenner and the first smallpox vaccine": "2026-07-01",
     "medicine:Ronald Ross and the malaria mosquito": "2026-06-30",
     "medicine:The discovery of anesthesia's risks and refinements": "2026-06-20",
     "medicine:The discovery of insulin by Banting and Best": "2026-06-23",
@@ -7705,7 +7426,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-07-01T10:35:06.224078+00:00"
+    "ts": "2026-07-01T13:20:04.050684+00:00"
   },
   "launch_seen_ids": [
     "3ef8e7f31ca1eabd",
@@ -7730,10 +7451,19 @@
     "9cf78ee44cb96c21",
     "7621aad01d0821be"
   ],
-  "learn_last_sent": "2026-06-30",
+  "learn_last_sent": "2026-07-01",
   "life_dashboard_last_week": "2026-W26",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "597f480534286b33",
+      "73910fb860dddfe0",
+      "30f4f891f209a87b",
+      "135258dcc1fff748",
+      "b169236590ee30e4",
+      "c781bdf373067c77",
+      "9128141949c596ef",
+      "ec906ef731c75b06",
+      "8f4de9bbcd00777a",
       "022d4958b0b955dc",
       "168877d0cac633f8",
       "0a2dbeff8ff67375",
@@ -7824,16 +7554,7 @@
       "a57367515cb87f7a",
       "563d64bfa177bf4d",
       "b879085482525613",
-      "7f7a8c77039bbf40",
-      "91066afbba568e85",
-      "585c9ae876c16668",
-      "4189a52b0c988554",
-      "2387c7bcc583051f",
-      "3980e4793fd2212c",
-      "c982d7c4555afc4f",
-      "effb4f95e0113f90",
-      "843436d92452019f",
-      "9a34f52feac1e671"
+      "7f7a8c77039bbf40"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -8037,6 +7758,18 @@
       "ba01dfcd01feccde"
     ],
     "Spider-Man: Brand New Day": [
+      "ce73ef61e614c609",
+      "855c11f4363e5332",
+      "5d304d4a491400de",
+      "36a0f77d4bc6d569",
+      "7571d2664723fd69",
+      "b15c6ee309ef496e",
+      "2a15b2a388d394cd",
+      "679951badc4bcf00",
+      "afde1c0cfa6c7882",
+      "e90f3284f5972419",
+      "8ac661eddea95707",
+      "81c27ad5f24af3c1",
       "5a7a19f80077a054",
       "92b7ae66951dc936",
       "4303270081dc8eea",
@@ -8124,19 +7857,7 @@
       "5ce058c117b83347",
       "495087fefb2d6dae",
       "125dbfc82589c72c",
-      "1c54f05964e075c4",
-      "0219a21539531e1e",
-      "0b3aeb05daa4b90b",
-      "1a37628250091ff1",
-      "37b6f7a8a36eaf95",
-      "5915b8f8782c681d",
-      "797183a0bfd98816",
-      "e9f8539939be51d4",
-      "d464d4852a11fcd4",
-      "d98c798924f52562",
-      "42fa6ab3f0ecfeb0",
-      "b3042f8f7927419c",
-      "0b654cf13afa268b"
+      "1c54f05964e075c4"
     ],
     "The Batman Part II": [
       "c8cfe2c2b3633a73",
@@ -8241,6 +7962,32 @@
       "17ae93afe19a2a24"
     ],
     "The Odyssey": [
+      "1b38721ef0bd5b17",
+      "8ddff09691c71409",
+      "ca5d04795d78ade1",
+      "b75719a6c66251e4",
+      "ea482d46d880023c",
+      "dca9c627fdd525c6",
+      "1c015ffda992899a",
+      "ab3d6fde87f07085",
+      "df1c4fab0867369c",
+      "0159c610a5782b1e",
+      "7e699d6dbc40472e",
+      "d6f78b60051016dd",
+      "30438349033d164f",
+      "aea8fb7d486b54d2",
+      "5a5d5b413baccffb",
+      "ecd7d2012a2f6292",
+      "698e6ca201720ad3",
+      "5cf43eddac632169",
+      "a6253800f12baafc",
+      "75e51028c65c681a",
+      "a8b487a6502ba1e4",
+      "db24d101fd7dd795",
+      "4f89e0487f4e67d8",
+      "4c681a500e13b793",
+      "d9058042ff96c96a",
+      "43c14c7dee3b4fa8",
       "e8d18963266fec86",
       "e547178fe3a8fbd6",
       "d68adbf6e0654080",
@@ -8314,33 +8061,7 @@
       "197a95c30d7fc267",
       "e6b521f25bf3e197",
       "174535958831fba2",
-      "68664573c26b09a2",
-      "774299d9437d8570",
-      "f15147c56df1ceda",
-      "880277083ca2550d",
-      "8f70aaa902fbb703",
-      "66af66e4b310a4c9",
-      "acb1af88f1c06e1d",
-      "0b0a612cfede8053",
-      "3dcc92dc7b6903d6",
-      "1057e23982c2dbfb",
-      "d4eaa71eb7eaa2cb",
-      "dac05888b5b3e159",
-      "ca154dfe0585249f",
-      "33d6c958e8d67577",
-      "ca6ba10a02ad10a4",
-      "a717d5ef3ff456fa",
-      "5c1cbdf843160436",
-      "1bbef56d60f14ff0",
-      "1a7b13c6539a972f",
-      "a7408b01aceca889",
-      "2f603000194772bf",
-      "300aa3e16f22a819",
-      "68d5c91ccb12d758",
-      "cd84fff3d6989246",
-      "8397413827fa28cb",
-      "d2ece82f04874a60",
-      "f44ec42f0c719f6a"
+      "68664573c26b09a2"
     ]
   },
   "movie_release_dates": {
@@ -8455,7 +8176,8 @@
     4388,
     3249,
     7796,
-    166984
+    166984,
+    1311276
   ],
   "music_release_seen": [
     "43ab3ea1a97a9f72",
@@ -8938,6 +8660,15 @@
         "name": "Ptazeta"
       }
     },
+    "de9d428b0de1ccc9": {
+      "applied": null,
+      "created": "2026-07-01T13:20:15.466135+00:00",
+      "kind": "artist",
+      "label": "Anthony Santos",
+      "payload": {
+        "name": "Anthony Santos"
+      }
+    },
     "e8f22de69e3be9e6": {
       "applied": null,
       "created": "2026-06-30T22:00:42.296062+00:00",
@@ -9107,6 +8838,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "782ac68e4a8be881",
     "e52b8fd4fce0e302",
     "9981a7033370c682",
     "376c1d6153be3af3",
@@ -9223,177 +8955,177 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "apod": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "baseball": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "deals": {
-      "last_data": "2026-07-01T10:36:10.210705+00:00",
+      "last_data": "2026-07-01T13:20:32.311243+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "energy": {
-      "last_data": "2026-07-01T10:36:20.196257+00:00",
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_data": "2026-07-01T13:20:56.501881+00:00",
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "fda": {
-      "last_data": "2026-07-01T10:36:10.616373+00:00",
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_data": "2026-07-01T13:20:45.330598+00:00",
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "fuel": {
-      "last_data": "2026-06-30T22:02:12.397751+00:00",
+      "last_data": "2026-07-01T13:21:17.371526+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "fx": {
-      "last_data": "2026-07-01T10:36:39.686049+00:00",
+      "last_data": "2026-07-01T13:21:16.441092+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-01T10:35:19.977180+00:00",
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_data": "2026-07-01T13:20:17.299264+00:00",
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "groceries": {
-      "last_data": "2026-06-30T22:01:42.078312+00:00",
-      "last_data_count": 238,
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_data": "2026-07-01T13:20:44.694764+00:00",
+      "last_data_count": 234,
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "learn": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "movies": {
-      "last_data": "2026-07-01T10:35:13.917031+00:00",
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_data": "2026-07-01T13:20:12.014530+00:00",
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "music": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-01T10:36:20.853554+00:00",
+      "last_data": "2026-07-01T13:20:56.945441+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "outages": {
-      "last_data": "2026-07-01T10:36:38.867518+00:00",
+      "last_data": "2026-07-01T13:21:15.856748+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-01T10:36:38.946198+00:00",
-      "last_data_count": 41,
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_data": "2026-07-01T13:21:15.909147+00:00",
+      "last_data_count": 46,
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-01T10:35:16.155703+00:00",
+      "last_data": "2026-07-01T13:20:12.997207+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "weather": {
-      "last_data": "2026-07-01T10:36:20.364838+00:00",
+      "last_data": "2026-07-01T13:20:56.609828+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-01T10:36:42.569956+00:00",
+      "last_data": "2026-07-01T13:21:20.982344+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-01T10:35:06.224078+00:00"
+      "last_ok": "2026-07-01T13:20:04.050684+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165083"
+    "last_full_window": "165084"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9405,8 +9137,11 @@
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
   "watchdog_failing_since": {},
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-07-01|12"
+  ],
   "weather_seen_ids": [
+    "ad3ee4cc18e96d92",
     "ff662cab20c5e92a",
     "3cf41804bf14255b",
     "4e8a8e81967cef00",
@@ -9499,8 +9234,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "activists_thinkers",
-  "wikiquote_last_sent": "2026-07-01T3",
+  "wikiquote_last_category": "science_pioneers",
+  "wikiquote_last_sent": "2026-07-01T4",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -9544,7 +9279,7 @@
     "philosophers:Voltaire": "2026-06-30",
     "science_pioneers:Ada Lovelace": "2026-06-26",
     "science_pioneers:Albert Einstein": "2026-06-23",
-    "science_pioneers:Carl Sagan": "2026-06-21",
+    "science_pioneers:Carl Sagan": "2026-07-01",
     "science_pioneers:Charles Darwin": "2026-06-25",
     "science_pioneers:Galileo Galilei": "2026-06-27",
     "science_pioneers:Isaac Newton": "2026-06-25",
