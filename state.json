@@ -82,7 +82,8 @@
     823208,
     823207,
     823771,
-    824661
+    824661,
+    825066
   ],
   "baseball_results_seen": [
     823534,
@@ -154,15 +155,6 @@
       "title": "Nacional deal: Pechuga de Pavo Embutidos El Pozo BienStar Rebanada 0.35 lb.",
       "topic": "groceries",
       "url": "https://supermercadosnacional.com/ofertas/pechuga-de-pavo-embutidos-el-pozo-bienstar-rebanada-0-35-lb-2236751"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "EXCLUSIVE: \u2018Avengers: Doomsday\u2019 and \u2018Shang-Chi and the Legend of the Ten Rings\u2019 star Simu Liu is joining Allison Williams and Michelle Randolph in Xavier Gens\u2019 sci-fi survival thriller, \u2018Homewrecker.\u2019 Filming is confirmed to get underway in Paris, France, - facebook.com",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQSTJBbFRaX21tNjdLRXhTN0MxaWZXUmF2Nm9zanpJaUEtNVNZZXN1SzNsLVY0bXpZVVBYU3VJOFp2ZW1YQlFNWmRHTEhjaEY0OEFDb25sMzNMNy1BMkpVUWFCLVZScVRIdnlaeDJpZFViT3V4NmFwUU5HVkpDUjdPbHZDWDIyZk1HS1FvTjVBbHJ5cWJKWnZyM3NqMnpNQWwyd3l6UkZvb2xoNlQzUXdsZ0laQ0FJQ3BoTGRDaEg2QmF6alg4UnllTVZmallaVmw1UGNJV3VB?oc=5"
     },
     {
       "detail": "",
@@ -415,6 +407,24 @@
       "title": "M3.4 - 53 km S of Boca de Yuma, Dominican Republic (~151 km away)",
       "topic": "quakes",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71522138"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Avengers: Doomsday",
+      "title": "Marvel's aggressive response to new Avengers: Doomsday leaks confirm what fans suspected - Bam Smack Pow",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZnBMeVlLNEtqbnBmcTVaQ3Qwa0hSNzFFcjVNcnQzQS1SNWtnTC1zX2VXek42WWpySFB6NVNjU0dOb0RJRF9Kay1HQzA3MWpRTkJaalZPUzRBdU9fVXNSWjJxbERpaDl3UjVJSERSMzRxYVhxUzlPYVN2UkJyeHVnenBEd013cGNva2lYZzhFdTRxUQ?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-06-30",
@@ -612,126 +622,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "\u201cYou may shoot me with your words, You may cut me with your eyes, You may kill me with your hatefulness, But still, like air, I'll rise.\u201d\n\u2014 Maya Angelou\n\nThe voice of Maya Angelou, a resonant instrument honed by a life of profound challenge and luminous triumph, rings with an almost primal truth in these lines: \"You may shoot me with your words, You may cut me with your eyes, You may kill me with your hatefulness, But still, like air, I'll rise.\" It is a declaration not merely of survival, but of an inherent, unyielding buoyancy of spirit, forged in the crucible of experiences that would have shattered lesser souls. She was born Marguerite Annie Johnson in 1928, into a segregated America where the weight of racial prejudice pressed down with an almost physical force. From the early trauma of childhood sexual abuse that rendered her selectively mute for nearly five years, to the itinerant struggles of a young single mother, a streetcar conductor, a madam, and a dancer, Angelou's path was anything but linear. Each challenge, each indignity, rather than breaking her, seemed to fuel an internal forge, refining her understanding of humanity and her own inexorable strength.\n\nThis defiant assertion, immortalized in her iconic poem \"Still I Rise,\" was published in 1978, a time when the civil rights movement, while having secured landmark legislative victories, still grappled with deep-seated social inequalities and a persistent undercurrent of racial animosity. Angelou herself had by then lived through the tumultuous 1960s, working alongside Malcolm X and Martin Luther King Jr., witnessing both the inspiring potential for change and the brutal resistance to it. The assassinations of these giants of the movement left an indelible mark, reminding her and the world of the deadly stakes involved in demanding equality and dignity. \"Still I Rise\" emerged from this landscape, not as a cry of despair, but as a celebratory anthem of resilience for an entire people, a direct address to the systemic oppression and personal slights that sought to diminish Black individuals, particularly Black women, in America. It was a poetic rebellion against the insidious power of societal scorn and individual malice.\n\nThe enduring resonance of \"Still I Rise\" stems from its remarkable universality, transcending its specific historical and personal origins. While rooted in the Black American experience and Angelou's singular journey, its core message speaks to anyone who has ever faced adversity, prejudice, or the attempts of others to tear them down. In an age where digital words can wound with surgical precision and the gaze of judgment is amplified across global platforms, the poem serves as a powerful reminder of an inner fortress of self-worth. It champions the unwavering human capacity to find dignity in the face of humiliation, strength in the midst of weakness, and hope when surrounded by despair. Maya Angelou's words are not just a historical artifact; they are a living testament to the human spirit's indomitable will, a perennial wellspring of courage for all who dare to rise, no matter the weight of the world pressing down.",
-      "id": "34989cc792df5c48",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Maya Angelou",
-      "topic": "wikiquote",
-      "ts": "2026-06-25T22:10:04.366457+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Jun 22-Jun 28: RD$4,483.93 across 7 transactions\nTop: ALTICE -APP ECOMM RD$2,515.94; SHELL CARR MELLA RD$600.00; APREZIO INVIVIENDA RD$593.00; HELADOS BON INVIVIENDA RD$250.00; CLARO RECAR RD$250.00\nBiggest: RD$2,515.94 at ALTICE -APP ECOMM\nvs prior week: Weekly spending moved from RD$290.00 to RD$4,483.93 (+RD$4,193.93, +1446.18%)",
-      "id": "0bd68abc74458ab4",
-      "score": 60,
-      "severity": "moderate",
-      "source": "BHD",
-      "title": "Weekly spending summary",
-      "topic": "spending",
-      "ts": "2026-06-25T22:10:07.098793+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "f20de643dfb091ab",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel Studios Officially Responds To Avengers: Doomsday Leaks - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-26T01:54:40.033388+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSEVXb01pQ3lpZkNBdlBMQVlMSkEtc09HZmxpdnR2bDBKOWhyN2JxVHp4ZHlrejNpOThmSkg0ZUd2aFBMVXRoMmxxZ0MwM3J2TzQyZldOMG8tdnJYYVMzRXFORHF2LWVMY2dzc1dvSUpGRkRuZjFsb1lkYy1SVkpKU0QwTQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "306bdd01803a9b33",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Disney Officially Confirms A 3-Part X-Men Comeback Ahead Of Avengers: Doomsday - ScreenRant",
-      "topic": "movies",
-      "ts": "2026-06-26T01:54:40.033935+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPNWtsZjZqckdKM3Bsay02dW9xckNmcXBlS3Etd2ltSDNnNVBJWmNPd2ozZnJZX2FfRC1hbXpHRWxTdU1KQ2cxbjNXOGUyRjVVS1NHaXFWNjRvSU5iNkxSd2ROQkxpMnhUZzM1YnJ4djBkYjc5ZEhURGZSNVB3ejQxSkdHRlg0bEtZbzYw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "30b79f12b1481c62",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Little Caesars, in collaboration with Sony Pictures' \"Spider-Man: Brand New Day,\" is releasing a cheese-filled web-themed pizza ahead of the movie's release date in July. Read the story: https://bit.ly/3SY9Zde - instagram.com",
-      "topic": "movies",
-      "ts": "2026-06-26T01:54:40.639333+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9tUW0zaXM3amw3SlJxLW9pVVZPN3JlN2pBMG5JVEowVTMyZWZ0cmxMX2IwTF9yWEJMRjdhdERxRU5vcmRRbHhxdGJxczFWaEJCVkcyR1d3?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "e938686690901b71",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Odyssey",
-      "title": "Michael Caine The Odyssey Adaptation Announced by AI Company That Officially Licensed His Voice - IGN",
-      "topic": "movies",
-      "ts": "2026-06-26T01:54:41.466479+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNMGJjN1FiVEZxZHg1bndHcjdqemNLZEo3MkFPcmYyOVVTd1JvWEZYcVduX3dfMGh5RS0yd2RiRldGcU8wSGpxczNjeENSR3pQaUFXS1VwTk1hWDB4VTA3NWxrdXFuWEk3WWwta1Rtdm9yc0hRbTBPQU5taXNVRkRNUk9RMEVVZDNqMXRUekRzRkJJeXl6dWs4YkhkRkp1T1ZNLW9UbHg1VXFxaFEzd2loYXlsYl9HRGYxeUFCcEQ4RkFGWVRjMTBGOTJpV1F3Vm53QURwVnVpMmhmOVMxeHloWnVn?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "956b2cbd65117d7c",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman 2 writer says Disney turned down real-time Rocketeer legacy sequel about how \"viscerally insane it is to strap yourself to a rocket\" - GamesRadar+",
-      "topic": "movies",
-      "ts": "2026-06-26T01:54:42.537453+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxOQlNhNC1md2Rwblp1U0FoZi04Z0tGdU1VbVNiY29WTzdyWmNzZDEyVm9YX2hkZkcwRy1DUUU2WEFPYXJ4eWlHcDVBcl9PYUx2MWZlSlNIeWt5a0hoN01vTFlFWVQteGVabWFYcTdmVEc3U3VHMFpnSS1GTnNoeW1iTHl1aDJCR3dLcl93Y3JUVmFZOHQ1Q3NMOGM1WURNNXNNbkVUZ1R5T0FTRGExYzZqMzJMMy1haDRMZTQzRHF3aDBETG1vbTFhd0NRR190aC1QNm82TnhNYlkyZXhtZm8zZEZiMWpHa1BDUGY1djR4cC01cktDM3E2a1pPN1ZBR3NmTlhmM2ViR29oYlp2Vi1HSmE3YVZCOXVtRUVYaW1n?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "5818cd0ce1d75f54",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Prolia",
-      "title": "FDA updates approval for Prolia (Denosumab) (BLA125320)",
-      "topic": "fda",
-      "ts": "2026-06-26T01:55:15.028158+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125320"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "ff19ac758bc4e0e4",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Columvi",
-      "title": "FDA updates approval for Columvi (Glofitamab-Gxbm) (BLA761309)",
-      "topic": "fda",
-      "ts": "2026-06-26T01:55:15.028496+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761309"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "92ba2a0537cac86c",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Copaxone",
-      "title": "FDA updates approval for Copaxone (Glatiramer Acetate) (NDA020622)",
-      "topic": "fda",
-      "ts": "2026-06-26T01:55:15.028807+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=020622"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6611,6 +6501,126 @@
       "topic": "wikiquote",
       "ts": "2026-07-01T01:55:13.053815+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "9cf516431ae78ee6",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Marvel's aggressive response to new Avengers: Doomsday leaks confirm what fans suspected - Bam Smack Pow",
+      "topic": "movies",
+      "ts": "2026-07-01T06:42:16.961980+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZnBMeVlLNEtqbnBmcTVaQ3Qwa0hSNzFFcjVNcnQzQS1SNWtnTC1zX2VXek42WWpySFB6NVNjU0dOb0RJRF9Kay1HQzA3MWpRTkJaalZPUzRBdU9fVXNSWjJxbERpaDl3UjVJSERSMzRxYVhxUzlPYVN2UkJyeHVnenBEd013cGNva2lYZzhFdTRxUQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "564e6985996ce732",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers Doomsday\u2019s First Trailer Now Closer Than Ever After Marvel Displays New Promo - The Direct",
+      "topic": "movies",
+      "ts": "2026-07-01T06:42:16.962634+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMEpSN3ZGZThVdTZSNlAyLW0ycFZXN002dVhSd0xtdzdNX29PaTdVNjBCRHZTZy0tcWRtc2l4Q3k1Q3VhdHBJY1UwMWdkZXdPYkRBeEJnSGZqUmE0LVRCME9KVEdZLXlrTG1oLVNxbWh5LVRvb2xsekhOT2ktX1BZNjNfUXUtTVQ3cDIw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "baa1a77c3e3b3ee1",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day - Spidey Takes Lionel Messi Web-Swinging In New Teaser - ComicBookMovie.com",
+      "topic": "movies",
+      "ts": "2026-07-01T06:42:17.966623+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNVTZoT1J2YmpQZEJydGtsRHpIUjZpSjJldDlYdElNUktIbGFzbGlsc1hSOXZycV9KZk5OaHZUb3l1Snl6ckppLVBXb3Iya3ktNGc3QXFGcFoxdzFyd0IxMURaTVlONlV3ZGtxQmEzUmtMbUJSOUpndV9LSnBtblhCOEdwUVhRQzJNanBEbGF5TEY3MzVZZzZNQmJDcXNpRnRidm9DcUpta2NTOC0yV000eTBEUW1tMVRubnJwcGk2amJrWXVRYXhXbkFHdXpabUdTR3lwb2VQbDFmbHlDaURRU0wtRFo?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "7b8c2d26f46b85eb",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "'Spider-Man: Brand New Day' First Footage Has Fans Stunned Over Peter Parker's Heartbreaking New Reality - Yahoo Creators",
+      "topic": "movies",
+      "ts": "2026-07-01T06:42:18.181962+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNaDh1ZEY5aHVFLUwtY3VQUUpLZWYtU25TZ3FVbVczZTQyNGxjdkRCVU1Dc3dVNFhqU1dqblljblZpSllXZEVCTTQtcnZrUm9qbENnVHduNmFmTmcxN3RLOVplbGhIdzdBV2pxejFvTHhWUzk4c19ZcVUyUXNCSmhtNi0zSzZWaThES25ESkJFZ2dCZXkzNy1fOWJ0c3Ffc0xNU1RnNHRPbm1ydWQ5eEZBQW9Temd1M1JLbW1OQnM4VjBHbUZqYi04aEdzMy1jaEJRQk1MWjE2akNZRVR1U1FWZ3VRcm5YSzVVUENCWU5tcw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "cb1b26ae90e62f46",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "What Is the Release Date for Christopher Nolan\u2019s The Odyssey? - AOL.com",
+      "topic": "movies",
+      "ts": "2026-07-01T06:42:19.148438+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYUEyRDMySjYzdmFNclROVGtMYy1qRE5pZzlsbW1kSGxOejFPUWtoelI3UmVTQUVYeE90NWx4VVdWNjVMc2llWmUzNzVHOEpleDllTXNReTFPNHVLblJEY1BxQU9zdjVaNEc0Y1hoVEg3ZTg5RG9BRjFuUHhJOVJXR05yckp6WXhKOEE?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "\ud83c\udde9\ud83c\uddf4 Rafael Devers \u2014 1 HR vs Arizona Diamondbacks",
+      "id": "dee9e0051cb48d30",
+      "score": 64,
+      "severity": "high",
+      "source": "Baseball",
+      "title": "Baseball: Rafael Devers",
+      "topic": "baseball",
+      "ts": "2026-07-01T06:42:28.460630+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "4b057253d8d0a279",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-07-01T06:43:27.983999+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Atlas V 551 | Amazon Leo (LA-08) launches in ~22h.",
+      "id": "7dc76a93874b685a",
+      "score": 62,
+      "severity": "moderate",
+      "source": "Launches",
+      "title": "Rocket launch",
+      "topic": "launches",
+      "ts": "2026-07-01T06:43:47.808771+00:00",
+      "url": "https://www.youtube.com/watch?v=IxEYrkqNH8s"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 10:08 PM - max 64deg, SW to NE. Look up!",
+      "id": "b3ff2dc4a99fe989",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-01T06:43:48.762279+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "The story of the peopling of the Americas is a monumental human saga, an odyssey across continents and through unimaginable conditions that ultimately filled two vast landmasses with a tapestry of cultures. For tens of thousands of years before the arrival of Europeans, the Americas remained isolated, its inhabitants descendants of those intrepid adventurers who made their way from Asia. The prevailing narrative, increasingly supported by a wealth of archaeological, genetic, and linguistic evidence, points to a primary migration across Beringia, a colossal land bridge that emerged during glacial periods, connecting what is now Siberia and Alaska. This wasn't a sudden dash across a narrow strait, but rather a prolonged period of human presence in a dynamic, and often challenging, landscape, a testament to the adaptability and sheer will of our ancestors.\n\nThe emergence of Beringia was a direct consequence of the planet's dramatic climate shifts. During the Last Glacial Maximum, an immense volume of the Earth's water was locked away in vast ice sheets, causing global sea levels to drop significantly, by as much as 120 meters. This exposed a vast plain, hundreds of kilometers wide, where the Bering Strait now lies submerged. This wasn't a barren wasteland, but rather a steppe-tundra ecosystem, teeming with megafauna like woolly mammoths, bison, horses, and reindeer, which in turn supported a population of hunter-gatherers. These were not a singular, monolithic group, but rather diverse populations in Northeast Asia, who, over generations, followed the game and the opportunities presented by this new, expansive territory. The human drama here lies in the daily struggle for survival in an unforgiving landscape, the constant pursuit of food, shelter from the elements, and the perpetuation of their lineage against overwhelming odds.\n\nFor a period, perhaps thousands of years, these intrepid groups effectively became \"Beringians,\" their existence intrinsically linked to this now-vanished land. They developed specialized hunting techniques, crafted tools from stone and bone, and fostered the social structures necessary for survival in such a frontier environment. The precise timing and routes of their eventual entry into the continental Americas remain subjects of intense scientific debate and fascinating discovery. Did they follow an \"ice-free corridor\" that opened up between the Laurentide and Cordilleran ice sheets as the glaciers began to recede? Or did some groups navigate along the Pacific coast, utilizing boats and exploiting the rich marine resources, a \"kelp highway\" that would have provided sustenance even when inland routes were impassable? The unfolding narrative is one of multiple waves and diverse pathways, each contributing to the genetic and cultural mosaic that would eventually define the Indigenous peoples of the Americas.\n\nThe peopling of the Americas is far more than just a dry account of migrations; it is a foundational chapter in the human story, a testament to our species' enduring spirit of exploration and resilience. It reshaped an entire hemisphere, leading to the development of countless distinct cultures, languages, and civilizations, from the sophisticated agricultural societies of Mesoamerica and the Andes to the diverse hunter-gatherer communities across North America.",
+      "id": "2d472980ce2acf0d",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The peopling of the Americas and the Beringia land bridge",
+      "topic": "learn",
+      "ts": "2026-07-01T06:43:56.731641+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -7516,6 +7526,7 @@
     "iPadOS 26.5.2 (23F84)"
   ],
   "iss_seen_passes": [
+    "b872b4edbbce15bc",
     "db52add602e4725f",
     "2ae1d0f81d234226",
     "88c327c42ef0b7a3",
@@ -7563,8 +7574,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "astronomy",
-  "knowledge_last_sent": "2026-07-01T0",
+  "knowledge_last_category": "early_humans",
+  "knowledge_last_sent": "2026-07-01T2",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -7598,6 +7609,7 @@
     "early_humans:The earliest evidence of human cannibalism": "2026-06-19",
     "early_humans:The first jewelry and shell beads": "2026-06-26",
     "early_humans:The origins of agriculture in the Fertile Crescent": "2026-06-29",
+    "early_humans:The peopling of the Americas and the Beringia land bridge": "2026-07-01",
     "early_humans:Tracing human migration through genetics": "2026-06-21",
     "first_artists": "2026-06-12",
     "hearing_spacetime_ring": "2026-06-12",
@@ -7680,11 +7692,12 @@
     "world_history:The rise of Adolf Hitler": "2026-06-22"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 46,
-    "ts": "2026-07-01T01:53:47.801313+00:00"
+    "failed": 1,
+    "ok": 45,
+    "ts": "2026-07-01T06:42:14.154041+00:00"
   },
   "launch_seen_ids": [
+    "3ef8e7f31ca1eabd",
     "02fceca52c3a174a",
     "b2a67ba9209e1fe3",
     "a64771bf6b805933",
@@ -7710,6 +7723,17 @@
   "life_dashboard_last_week": "2026-W26",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "de266bc902af96e4",
+      "d29c04beb7ece153",
+      "3648267d1df0a0b9",
+      "c336397a03a975f8",
+      "5d106d5b4f29cb1a",
+      "4babac89959ead60",
+      "32f599dab7e9538f",
+      "c7ddcbcce9415f24",
+      "e36440f9832898dd",
+      "df3eb20ae636258c",
+      "4c5fb90503cdde35",
       "d64587c8d45ac51e",
       "033f3d39c1b06b30",
       "3b14f7f5ce74eb84",
@@ -7798,18 +7822,7 @@
       "8f4de9bbcd00777a",
       "73910fb860dddfe0",
       "30f4f891f209a87b",
-      "00633910a8faa583",
-      "5af898d91d40ea7e",
-      "70cab0d8b84780ef",
-      "141efa3282ec7b36",
-      "d11bc8dc29fa6df8",
-      "f62e9053f9852bce",
-      "f8b161651701b0cd",
-      "9b57d07fd9e53f88",
-      "7f3ca49c5749381b",
-      "99e80f32f1911bae",
-      "92980ffcc104ad52",
-      "425f4e2852f7e267"
+      "00633910a8faa583"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -8013,6 +8026,22 @@
       "ba01dfcd01feccde"
     ],
     "Spider-Man: Brand New Day": [
+      "52fb75b5d7537025",
+      "b9d6666a0c928cf0",
+      "c2a0ccb78ac66479",
+      "309787d248519a9d",
+      "6d49c8a7ae17c22c",
+      "4f1071d0ffbda899",
+      "77a5eb27c1f64d6f",
+      "0779ba42e91cfa7b",
+      "2c8c14e046f3ecf1",
+      "aa512db8d09ba17c",
+      "56473fa26e7524fc",
+      "13ecf5974c0e98a7",
+      "45123e106dc86653",
+      "2a0154515ffd9388",
+      "ff1433e135932fd2",
+      "8226c721333a6260",
       "033f3d39c1b06b30",
       "0b05d99455b5ec94",
       "204e9fe16589e09e",
@@ -8096,25 +8125,10 @@
       "2c63b5ef30b73d9e",
       "679951badc4bcf00",
       "0acbd0557567742d",
-      "977d5b70b1cbf82a",
-      "68db9ef7fe2efef1",
-      "c0f4a76a8e025a6e",
-      "07b1058e9b1fd0aa",
-      "ad6e3769456f834c",
-      "bee6c47c6e524bf9",
-      "5f56143f90c5a121",
-      "5af9faf9d8ba4f17",
-      "28b8cd6dbe540a0f",
-      "4ba35cd2eb473934",
-      "fec70d74b1f9a85f",
-      "a4047e0d14c2d2fc",
-      "afc5b20c58614c0b",
-      "13c570a56fa6a668",
-      "3b45eb451b4d32cf",
-      "ffd2c7055c45780b",
-      "19068fa78d83e47f"
+      "977d5b70b1cbf82a"
     ],
     "The Batman Part II": [
+      "c8cfe2c2b3633a73",
       "81207e2272b7b32e",
       "c385483c15e2f18c",
       "8b48ee91f6dd3fa6",
@@ -8213,10 +8227,30 @@
       "bfad1d64ba3af242",
       "20054aec063a4665",
       "6a91f27cfc7bf6d5",
-      "17ae93afe19a2a24",
-      "35163cf639d8932d"
+      "17ae93afe19a2a24"
     ],
     "The Odyssey": [
+      "261eb06bdd4982b3",
+      "3052b9540c2b3470",
+      "6b6d01836eec78d3",
+      "2eb9b8de3c24882d",
+      "76d39444be32d3a2",
+      "244d405b3ed51757",
+      "8bce3bdd10fd0e58",
+      "1c454df3a1c68664",
+      "46db4325bcef674a",
+      "05ba48aa82ba0165",
+      "375daf2be27a8c7a",
+      "c30c41fc5f0e56b5",
+      "c3ff62b30db59cd4",
+      "882ae4e55f7c72cd",
+      "92598dc139fd576b",
+      "c8dae5f5b3d2dd42",
+      "c100de066b852643",
+      "f71d409a270d0526",
+      "4b39eaf23c0059fc",
+      "ebe3b6633509ef5a",
+      "ae0c107c87c12e7a",
       "6b0a78234e5bb793",
       "360c3b6e677ac896",
       "f37951fb18f94d27",
@@ -8295,28 +8329,7 @@
       "35bffff7aa6f5034",
       "93bf07da56d57840",
       "4c681a500e13b793",
-      "d9058042ff96c96a",
-      "4470d43d16d79c7f",
-      "d4c57ad021041f2a",
-      "c8e5e79e515ab764",
-      "a6f7b9a9de2cc7ba",
-      "1e26ca1f20105ffb",
-      "3825e3f0530645ef",
-      "1dacda63765b6d4e",
-      "3a5f066c1b93dcbc",
-      "c0a3e916324c27c7",
-      "98bbf3db56ede50d",
-      "e77aff3019e7ca28",
-      "6af8908673bb3806",
-      "8048f94edac9884e",
-      "59b005693b724808",
-      "7643132e9341090a",
-      "504c88cf88833451",
-      "4794690511fed652",
-      "2d9c1b94ca43f3c4",
-      "fcaa943e84f7ec4e",
-      "80da1b2aa602c89c",
-      "0b7ca8387facfb7b"
+      "d9058042ff96c96a"
     ]
   },
   "movie_release_dates": {
@@ -9199,47 +9212,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "apod": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "baseball": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "deals": {
-      "last_data": "2026-07-01T01:54:27.703047+00:00",
+      "last_data": "2026-07-01T06:43:15.750004+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "energy": {
-      "last_data": "2026-07-01T01:54:39.646009+00:00",
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_data": "2026-07-01T06:43:27.761580+00:00",
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "fda": {
-      "last_data": "2026-07-01T01:54:27.949166+00:00",
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_data": "2026-07-01T06:43:16.284324+00:00",
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "fuel": {
       "last_data": "2026-06-30T22:02:12.397751+00:00",
@@ -9247,17 +9260,17 @@
       "last_ok": "2026-06-30T22:00:30.227829+00:00"
     },
     "fx": {
-      "last_data": "2026-07-01T01:54:59.731676+00:00",
+      "last_data": "2026-07-01T06:43:47.600836+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-01T01:54:02.990050+00:00",
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_data": "2026-07-01T06:42:27.759557+00:00",
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "groceries": {
       "last_data": "2026-06-30T22:01:42.078312+00:00",
@@ -9265,96 +9278,96 @@
       "last_ok": "2026-06-30T22:00:30.227829+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "learn": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "movies": {
-      "last_data": "2026-07-01T01:53:55.216991+00:00",
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_data": "2026-07-01T06:42:22.236813+00:00",
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "music": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-01T01:54:40.236148+00:00",
+      "last_data": "2026-07-01T06:43:28.424356+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "outages": {
-      "last_data": "2026-07-01T01:54:58.962018+00:00",
+      "last_data": "2026-07-01T06:43:46.759631+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-01T01:54:59.019261+00:00",
-      "last_data_count": 40,
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_data": "2026-07-01T06:43:46.912726+00:00",
+      "last_data_count": 41,
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-01T01:53:58.888489+00:00",
+      "last_data": "2026-07-01T06:42:23.649441+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "weather": {
-      "last_data": "2026-07-01T01:54:39.774377+00:00",
+      "last_data": "2026-07-01T06:43:27.983704+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_ok": "2026-07-01T06:42:14.154041+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
@@ -9362,16 +9375,17 @@
     "youtube": {
       "last_data": "2026-07-01T01:55:02.706964+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-01T01:53:47.801313+00:00"
+      "last_error": "all 7 channel feed(s) failed; last: PabloELECTRUM: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UC9DS-MY8CZzLh7vQG000uug",
+      "last_error_ts": "2026-07-01T06:42:14.154041+00:00",
+      "last_ok": "2026-07-01T01:53:47.801313+00:00",
+      "source_failed": true
     }
   },
-  "twitch_live": [
-    "Sparg0"
-  ],
+  "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165080"
+    "last_full_window": "165082"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9382,9 +9396,12 @@
     "games": "2026-06-12T12:15:55.633492+00:00",
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
-  "watchdog_failing_since": {},
+  "watchdog_failing_since": {
+    "youtube": "2026-07-01T06:42:14.154041+00:00"
+  },
   "water_slots_sent": [],
   "weather_seen_ids": [
+    "ff662cab20c5e92a",
     "3cf41804bf14255b",
     "4e8a8e81967cef00",
     "3750c8f76bb606a6",
