@@ -81,7 +81,8 @@
     823286,
     823208,
     823207,
-    823771
+    823771,
+    824661
   ],
   "baseball_results_seen": [
     823534,
@@ -153,15 +154,6 @@
       "title": "Nacional deal: Pechuga de Pavo Embutidos El Pozo BienStar Rebanada 0.35 lb.",
       "topic": "groceries",
       "url": "https://supermercadosnacional.com/ofertas/pechuga-de-pavo-embutidos-el-pozo-bienstar-rebanada-0-35-lb-2236751"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "EXCLUSIVE: \u2018Avengers: Doomsday\u2019 and \u2018Shang-Chi and the Legend of the Ten Rings\u2019 star Simu Liu is joining Allison Williams and Michelle Randolph in Xavier Gens\u2019 sci-fi survival thriller, \u2018Homewrecker.\u2019 Filming is confirmed to get underway in Paris, France, - facebook.com",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxOSUhBNndaTWlEUFFRYnhQd21UXzJoSElzVl9IaDJxU1pya0o0NXl4djllUnFYQzZ3djlzY2I2THR4WUwwX3QtMFJIUzZKVUhxdFZYMWl1OVd1WDhUQ05yNUphdV9xbExiNUQ0c2RSWG5LQlFGdDkySHA2UHg5RjJyYmZ1QXMzN294aHhXUXZ4bG9aNHc3c1RrWGpmS1N4WGZnMXNoaDRZc2lkWGs0ZzZueVBweGRSenhyU0c2SF9ReERLb3M3WTdIRExhOHgwajh3a0J3Sg?oc=5"
     },
     {
       "detail": "",
@@ -378,6 +370,51 @@
       "title": "FDA updates approval for Cefepime In Plastic Container (Cefepime Hydrochloride) (NDA050817)",
       "topic": "fda",
       "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050817"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday Merch Confirms What We All Suspected About Sam & Steve\u2019s Captain America - The Direct",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNMU1kZFdmV0h5QXUwMVV0UzkyTWl1MDNOVldKZXNnYXNzeUhYV0xLTlBCSVNhUFFxclRON1Rnd1R0U3l2ek15MkV2WnFYUEtoMnV4dGVwXy0ySnNRSGVoR3UzNkM5UW52M1hXSHZQSUpRNGQzeXRMQzdvWVN0Vzh1Tk1DVm1idw?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer Gives First Look At Mark Ruffalo\u2019s Hulk - Deadline",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQm55VU92U3hTREt5NkpuaFZ6SkdhV3ZUeXVBSTdlUlN1cU81Zk1JRVhSSmlDUEJVMmhEYnNiUWFLYjVBN0pZaXlkOHZ4QXRka0prX0lVM1hXRTBuM1c1RXRNUnVHemgwWWlBVWVwUlJ6UEUwaTdkRmo5SFE4azNZQXNJWTltY2kxYUJhNlVSNUxzSXhJbUk5alVrVTkwYV9zXzlxag?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "'Spider-Man: Brand New Day' Trailer Officially Confirms Major Change to the Hulk - Collider",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZkNCQ2QwRWcyRGpDX0xDV1hOZ1JDTk9lMjFScWtuQmJ2VVdjV05NUUVPa05sdW1fUmJ4eDFIVXNtanpMRTFYZWZrdHdxUkZURDIzdjdlblphN2lNeURrV1NWZzZGbE9PN1ZPX0JOcTV1Zi1iTGloNmZFYkh5eGhhZzk2UThhZFk4bmc?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Earthquakes",
+      "title": "M3.4 - 53 km S of Boca de Yuma, Dominican Republic (~151 km away)",
+      "topic": "quakes",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71522138"
     }
   ],
   "digest_last_sent": "2026-06-30",
@@ -575,162 +612,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "7b3892a79cc2d965",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland Is Back Swinging in \u2018Spider-Man: Brand New Day\u2019 Trailer - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-06-25T22:08:14.443475+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONDJfR3ZyX01URVhVMTRTdUMwRWxFR0x0eDhJV2ZYSHR4VjRTbklrWWxwWVFEZkdfMXRuRnk1Ym5uMVpQa0FCcmpIU2tEMWZaZWt4TjNyNlhCZzdMcGQ3V290QXhJSGhTMDQ3eFJiVW1tdUhoRG1BQVhVc3RpZkcxSGJYSl9qUkgwelhsZWI0ZnpES2N4d0FzNHlETHhnMWJtX0R6ZnBIYzhwWWhw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "41d0b77f3d2b8d66",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Has Spider-Man Fought Ninjas Before? Major MCU Villains Confirmed for \u2018Spider-Man: Brand New Day\u2019 - Collider",
-      "topic": "movies",
-      "ts": "2026-06-25T22:08:14.444129+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQ3I0aDhmYUM0Q2t5a0VfVEJ1dGl6Y1N5NFBMWmpTUUJidjZjcUlwQ1NKOWNuam14MS1wbDJhTFlRU0NSam1JcFNKNVVOUm5scDlWMFJKVGZKQ2xvLWhQcllpY3NBNzhtalhUSmNxWFFpUFRkZlBoaUFjY09TMmFQbXRfME0?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "12e2c5d70077a004",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Odyssey",
-      "title": "Christopher Nolan\u2019s \u2018The Odyssey\u2019 to Skip Social Media Influencer Screenings - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-06-25T22:08:14.938530+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQWkVWQlZsUFhDWlVHbEd2aW9xMkdvYkNuTmJBd3hjLUg5ZTFTYUpnNTRfamxLaXhXd2RoXzloUXlwOEhNU2NabWEyNUx6TG8wM1R0LTBPem9XTmxpeWdHRDNKZnppX01xUUtEU3lHa3g4ODF5UkxMQ3dxZU1vbEt1ZjdMb3FPNkxLUnZ5VXFNYnVyeFVkZHpHa3pMSFRERVh6RjJsVkFBaGZ3N3N2WkFFNTVFNW1ndw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "e6f8b8bd710e43b4",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "The Odyssey\u2019s Helen Casting & Tom Holland\u2019s \u2018Dad\u2019 Line Get Expert Defense - Yahoo",
-      "topic": "movies",
-      "ts": "2026-06-25T22:08:14.939263+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdkpZaGRoU1ZKWlZoa3ZJZncyZl8zdU04ZzJyWUFRREpyeHZJUldETldNM0kwVFNPcDRxb3RaOTQ0bTZnVFZaQmRTWW9uNWJxNEo4RE5QOTJTVUJfbVNZOFFudUtoZHhYN0tjWms0NW9nOW9uQ0VjNElEcE51YWtZRF9MUUJJZDgwejRXdVRGTk9VR3hYb3Q1TjBkYTFaajhYZkE?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "2e77c552a7f01501",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman 2 Writer Details \u2018Viscerally Insane\u2019 Superhero Sequel That\u2019ll Never Happen - Yahoo",
-      "topic": "movies",
-      "ts": "2026-06-25T22:08:16.620024+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOVVhScVQxbUVncndTbWVjVXRaNEtIZF9mR2xpNWdZWDd5NXZ4M3J4bVJFZVhlS0dWTkhvak9KRldMUTZmMnhSb1AzeHl6VTdmMEJILXlGd3NpV2F6c2ZwMmpBNVVHeWg0QnFPS1lESE51UWpCcUlyMlVWZzBTVldBWkFtUE04VFctN3VVOHVYUFh6WGpXa0hLV3JYbzJNWlZMZ0RN?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "fed09593e82367e1",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "Scarlett Johansson, Sebastian Stan and More Confirmed for \u2018The Batman: Part II\u2019 | THR News Video - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-06-25T22:08:16.620636+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNY09hRTdWaE1nbjFNRU5EMWRkNjFHdUFUaUNDOGNSRTB1UUl5TUhZSUtBR01OeUVvN1RVeE9ZUGt3aU81a19nOFFZZk1kT1hIMXIweU9XZEtkbHJSZ3ZzVjNhc2M1V2pzS3FBck9iR0pkb1ZnTGlRWGtFX3VNZnF4X0xuYU45aHhfTzZiZWhRRUh5dGRRVWlGSlVGTkdpYVg4d2x0YTR1Q2lkZlBn?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "86889427ca75ab8b",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman: Part 2: Matt Reeves shares first set photo as film officially begins shooting - Cinema Express",
-      "topic": "movies",
-      "ts": "2026-06-25T22:08:16.863727+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPS0NNbXBla05wZmVaaW1JcnktWjdQYmp2cGpJQmwwUUl6cmtBOTVCNnR4LS1oMjZQZzAzTWlicVpjRVJRSkFpdE9rSGpWWnhzcjVsWWZ6dnRUaFQ5V1NiUmhQM0NQTFpHVUh0S2hUY01rSVZvbWg5OW1CWURCRDItTTZUYkpFV1lUeEpFaUFZVU44R2dEWTFjalRpbDZoVmo5Y3R6VndhUXVERDkwNGJrM3lKRDEtbE5sckxXb2FIOXBXbnZfamNYbFI1WWxhZEM4ZDBYRjlGWll6Z9IB5wFBVV95cUxNWjZMQnJFdGViZUFDZVhJOW9sUEE3T3NXOG1PRWpXY3ZGRWsxTWpMa1Ezc0JUYlJkZlN5SzIxQkIwN0VxcUQybWRSVDlmUUZMdmRXSjZnLUlWMWw4eWRERDR6QTNFQWh2Z1lFbUl4QnpXSHRaeEVPdHdXT2E0aGloR1hDb3JXeXJoQ1E0VHVZdnZZVmoxaGRQY1Nxa2dDd2pkVmN4ZkxLbUhPM1F2M053TDFGRUFBMGZyYjZFR3BZazJsbXNmS1pZNE1ldnh0U24wSS1EWFh4endyUmJ3YURqQVBZeHF5dnM?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Super Smash Bros. Ultimate - SUB GAMES NEW SUBS/GIFTERS GET TO SKIP THE LINE",
-      "id": "a9401c0ce38a890d",
-      "score": 68,
-      "severity": "high",
-      "source": "Sparg0",
-      "title": "Sparg0 is live on Twitch",
-      "topic": "twitch",
-      "ts": "2026-06-25T22:08:20.138306+00:00",
-      "url": "https://twitch.tv/Sparg0"
-    },
-    {
-      "action": "push",
-      "detail": "Walk It Talk It - Migos\n(because you like Quavo)",
-      "id": "8682c7eaf2df19f7",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-06-25T22:08:24.983163+00:00",
-      "url": "https://www.deezer.com/track/453844292"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 1,250.00",
-      "id": "05028cd7dae5a03b",
-      "score": 28,
-      "severity": "low",
-      "source": "La Sirena",
-      "title": "La Sirena deal: Auricular Blanco Coby Tws Cetw542wh",
-      "topic": "groceries",
-      "ts": "2026-06-25T22:09:24.464403+00:00",
-      "url": "https://www.sirena.do/coby-tws-mini-auricular-ngo-cetw542wh-2075003/p"
-    },
-    {
-      "action": "push",
-      "detail": "SUB GAMES (Read description)",
-      "id": "c9d68dc3749ffda9",
-      "score": 62,
-      "severity": "moderate",
-      "source": "sparg0147",
-      "title": "sparg0147 uploaded a new video",
-      "topic": "youtube",
-      "ts": "2026-06-25T22:09:53.620828+00:00",
-      "url": "https://www.youtube.com/watch?v=zRol-J6u004"
-    },
-    {
-      "action": "push",
-      "detail": "Hydration check: grab some water before you carry on.",
-      "id": "4d19c3469e5fcb10",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-06-25T22:09:55.054157+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "For centuries, the fundamental stuff of heredity remained an enigma, a biological black box dictating the traits passed from one generation to the next. Scientists knew that something within the cell\u2019s nucleus carried the blueprints for life, but its precise chemical nature and, more importantly, its architecture, eluded them. The early 20th century, however, witnessed a paradigm shift. Oswald Avery\u2019s experiments in the 1940s, building on Frederick Griffith's earlier work, pointed unequivocally to deoxyribonucleic acid\u2014DNA\u2014as the genetic material. This revelation, though initially met with skepticism by many who still believed protein held the key, ignited a fervent race. The prize was not merely an understanding of a molecule, but the very language of life itself, a Rosetta Stone for biology.\n\nThe pursuit of DNA's structure became a frantic, global endeavor, fueled by ambition, intellect, and no small measure of human drama. In Cambridge, England, a young American biologist named James Watson, with a background in ornithology but a burning desire for a Nobel Prize, teamed up with Francis Crick, a brilliant but sometimes abrasive physicist who had pivoted to biology. Their approach was less about laboratory experimentation and more about theoretical model building, piecing together clues like detectives. Meanwhile, at King's College London, a different, more meticulous approach was underway. Maurice Wilkins, a physicist turned biophysicist, and Rosalind Franklin, a brilliant and notoriously exacting physical chemist, were using X-ray crystallography to analyze DNA fibers. Franklin, in particular, produced stunningly clear X-ray diffraction images, pictures that held the secret of life within their patterns of scattered light.\n\nThe race was punctuated by both serendipitous insight and ethically ambiguous actions. Franklin, a woman working in a predominantly male scientific world, faced subtle and not-so-subtle biases. Her meticulous work, particularly her \"Photograph 51,\" was instrumental. However, it was shown to Watson and Crick by Wilkins, without Franklin\u2019s explicit knowledge or permission, a pivotal moment in the story. This image, combined with Erwin Chargaff\u2019s earlier discovery of base pairing rules (A with T, G with C), and a crucial, almost reckless, leap of faith in the placement of the sugar-phosphate backbone on the outside of the molecule, led Watson and Crick to their brilliant deduction. In April 1953, they published their short, unassuming paper in *Nature*, outlining the elegant, double helical structure of DNA, a twisted ladder with complementary rungs.\n\nThe discovery of the double helix was more than just solving a scientific puzzle; it was a watershed moment in human history. It provided the physical basis for heredity, explaining how genetic information could be stored, replicated, and passed down. It launched the field of molecular biology and genetic engineering, paving the way for everything from gene sequencing and forensic DNA analysis to targeted drug therapies and CRISPR gene editing. While Watson, Crick, and Wilkins were awarded the Nobel Prize in 1962, Rosalind Franklin, whose crucial contributions were often understated or overlooked, had tragically died of ovarian cancer four years prior, forever excluded from the highest recognition.",
-      "id": "eb484eccf5296294",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The double helix and the race to find it",
-      "topic": "learn",
-      "ts": "2026-06-25T22:09:59.886372+00:00",
-      "url": ""
-    },
     {
       "action": "push",
       "detail": "\u201cYou may shoot me with your words, You may cut me with your eyes, You may kill me with your hatefulness, But still, like air, I'll rise.\u201d\n\u2014 Maya Angelou\n\nThe voice of Maya Angelou, a resonant instrument honed by a life of profound challenge and luminous triumph, rings with an almost primal truth in these lines: \"You may shoot me with your words, You may cut me with your eyes, You may kill me with your hatefulness, But still, like air, I'll rise.\" It is a declaration not merely of survival, but of an inherent, unyielding buoyancy of spirit, forged in the crucible of experiences that would have shattered lesser souls. She was born Marguerite Annie Johnson in 1928, into a segregated America where the weight of racial prejudice pressed down with an almost physical force. From the early trauma of childhood sexual abuse that rendered her selectively mute for nearly five years, to the itinerant struggles of a young single mother, a streetcar conductor, a madam, and a dancer, Angelou's path was anything but linear. Each challenge, each indignity, rather than breaking her, seemed to fuel an internal forge, refining her understanding of humanity and her own inexorable strength.\n\nThis defiant assertion, immortalized in her iconic poem \"Still I Rise,\" was published in 1978, a time when the civil rights movement, while having secured landmark legislative victories, still grappled with deep-seated social inequalities and a persistent undercurrent of racial animosity. Angelou herself had by then lived through the tumultuous 1960s, working alongside Malcolm X and Martin Luther King Jr., witnessing both the inspiring potential for change and the brutal resistance to it. The assassinations of these giants of the movement left an indelible mark, reminding her and the world of the deadly stakes involved in demanding equality and dignity. \"Still I Rise\" emerged from this landscape, not as a cry of despair, but as a celebratory anthem of resilience for an entire people, a direct address to the systemic oppression and personal slights that sought to diminish Black individuals, particularly Black women, in America. It was a poetic rebellion against the insidious power of societal scorn and individual malice.\n\nThe enduring resonance of \"Still I Rise\" stems from its remarkable universality, transcending its specific historical and personal origins. While rooted in the Black American experience and Angelou's singular journey, its core message speaks to anyone who has ever faced adversity, prejudice, or the attempts of others to tear them down. In an age where digital words can wound with surgical precision and the gaze of judgment is amplified across global platforms, the poem serves as a powerful reminder of an inner fortress of self-worth. It champions the unwavering human capacity to find dignity in the face of humiliation, strength in the midst of weakness, and hope when surrounded by despair. Maya Angelou's words are not just a historical artifact; they are a living testament to the human spirit's indomitable will, a perennial wellspring of courage for all who dare to rise, no matter the weight of the world pressing down.",
@@ -6574,6 +6455,162 @@
       "topic": "twitch",
       "ts": "2026-06-30T23:22:22.014789+00:00",
       "url": "https://twitch.tv/RiddlesMK"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "1075a1897928e2dc",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday Merch Confirms What We All Suspected About Sam & Steve\u2019s Captain America - The Direct",
+      "topic": "movies",
+      "ts": "2026-07-01T01:53:50.878174+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNMU1kZFdmV0h5QXUwMVV0UzkyTWl1MDNOVldKZXNnYXNzeUhYV0xLTlBCSVNhUFFxclRON1Rnd1R0U3l2ek15MkV2WnFYUEtoMnV4dGVwXy0ySnNRSGVoR3UzNkM5UW52M1hXSHZQSUpRNGQzeXRMQzdvWVN0Vzh1Tk1DVm1idw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "c4207ae0d42e9807",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Shop Marvel Must Haves: Celebrate 'Spider-Man: Brand New Day\u2019 with Official Spidey Merch - Marvel.com",
+      "topic": "movies",
+      "ts": "2026-07-01T01:53:51.494667+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcGdrOUU1R0trV2NDQnhZdC1vNUZTT1RYV0dndVNjbGNmLUx4RkVpQlJXS2pxSHRURGZGVFRtRHg4NExhRXhhX2ZGVGJyRkVwdi1fMXVuTnV5Q2N4S3dNdVFQTDBPVDYtRDZWQVZ2WUtFYURSLWJqMjlCcGJ2OUs2NzNvcklLTDgwa1g3Sg?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "cb8e0c965f3447ac",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer Gives First Look At Mark Ruffalo\u2019s Hulk - Deadline",
+      "topic": "movies",
+      "ts": "2026-07-01T01:53:51.918559+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQm55VU92U3hTREt5NkpuaFZ6SkdhV3ZUeXVBSTdlUlN1cU81Zk1JRVhSSmlDUEJVMmhEYnNiUWFLYjVBN0pZaXlkOHZ4QXRka0prX0lVM1hXRTBuM1c1RXRNUnVHemgwWWlBVWVwUlJ6UEUwaTdkRmo5SFE4azNZQXNJWTltY2kxYUJhNlVSNUxzSXhJbUk5alVrVTkwYV9zXzlxag?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "805d9309980f5c9c",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "'Spider-Man: Brand New Day' Trailer Officially Confirms Major Change to the Hulk - Collider",
+      "topic": "movies",
+      "ts": "2026-07-01T01:53:51.919276+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNZkNCQ2QwRWcyRGpDX0xDV1hOZ1JDTk9lMjFScWtuQmJ2VVdjV05NUUVPa05sdW1fUmJ4eDFIVXNtanpMRTFYZWZrdHdxUkZURDIzdjdlblphN2lNeURrV1NWZzZGbE9PN1ZPX0JOcTV1Zi1iTGloNmZFYkh5eGhhZzk2UThhZFk4bmc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "68cb1a1e4ad45419",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "\u2018The Batman Part II\u2019 Begins Filming, Writer & Director Matt Reeves Confirms - IMDb",
+      "topic": "movies",
+      "ts": "2026-07-01T01:53:53.518225+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9JZnh0Q2g0dTc5MFZTdGVVaWp3OGtNak5PVWRka09vRm5uNmotZ2xoT1h1aHZia0t5UzdrRXBzYnJiZzNFZkN0Q2d3cGRsQU16M1E?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - toon link run to top 8 of ABT3\u2026it was a dare !bracket !nexttourney",
+      "id": "ff04b3de17c64852",
+      "score": 68,
+      "severity": "high",
+      "source": "Sparg0",
+      "title": "Sparg0 is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-01T01:53:57.690919+00:00",
+      "url": "https://twitch.tv/Sparg0"
+    },
+    {
+      "action": "push",
+      "detail": "\ud83c\udde9\ud83c\uddf4 Fernando Tatis Jr. \u2014 1 HR vs Chicago Cubs",
+      "id": "acc37d2bee6dfaa9",
+      "score": 64,
+      "severity": "high",
+      "source": "Baseball",
+      "title": "Baseball: Fernando Tatis Jr.",
+      "topic": "baseball",
+      "ts": "2026-07-01T01:54:03.324702+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "53f0539da97a8c4a",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-07-01T01:54:39.774617+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "92b761987643aea3",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.4 - 53 km S of Boca de Yuma, Dominican Republic (~151 km away)",
+      "topic": "quakes",
+      "ts": "2026-07-01T01:54:59.019547+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71522138"
+    },
+    {
+      "action": "push",
+      "detail": "Long March 4C | Unknown Payload launches in ~22h.",
+      "id": "9efc552f87cb6d4d",
+      "score": 62,
+      "severity": "moderate",
+      "source": "Launches",
+      "title": "Rocket launch",
+      "topic": "launches",
+      "ts": "2026-07-01T01:54:59.953994+00:00",
+      "url": "https://ll.thespacedevs.com/2.2.0/launch/2bedbf8c-8df2-4e24-8397-8c2a08fab581/"
+    },
+    {
+      "action": "push",
+      "detail": "The ylink grind continues; ABT3 run",
+      "id": "aa98e7f5ecde9729",
+      "score": 62,
+      "severity": "moderate",
+      "source": "sparg0147",
+      "title": "sparg0147 uploaded a new video",
+      "topic": "youtube",
+      "ts": "2026-07-01T01:55:01.799596+00:00",
+      "url": "https://www.youtube.com/watch?v=o9X6ntivGxk"
+    },
+    {
+      "action": "push",
+      "detail": "In the early dawn of the twentieth century, two astronomers, working independently on opposite sides of the globe, were poised to unlock a fundamental secret of the cosmos. Their work would not involve the grand, sweeping pronouncements of new planets or the cataclysmic beauty of supernovae, but rather the meticulous, often solitary, task of categorizing stars. Ejnar Hertzsprung, a Danish chemist who had turned his keen eye to astronomy, was grappling with a peculiar observation. He noticed that the color of certain stars, particularly those within star clusters, seemed to correlate with their intrinsic brightness. It was a subtle pattern, easily missed amidst the vast sea of astronomical data, yet Hertzsprung's chemical background had honed his ability to spot meaningful trends in what others might see as mere noise. He began to plot these relationships, a simple act that would prove to be profoundly revolutionary.\n\nMeanwhile, half a world away in Princeton, Henry Norris Russell, a brilliant American astronomer with a passion for stellar spectroscopy, was pursuing a similar line of inquiry. Russell, unlike Hertzsprung, was firmly embedded within the established astronomical community, a vocal advocate for new methods of stellar classification. He had been meticulously measuring the spectra of thousands of stars, using the faint rainbow of their light to deduce their temperature, composition, and even their distance. Like Hertzsprung, Russell began to plot these spectral types, which directly correlated with a star's surface temperature, against their absolute magnitudes \u2013 their true brightness, independent of how far away they were. The results, when plotted on a graph, were astonishing. The stars did not scatter randomly across the diagram; instead, they clustered into distinct groups, tracing out clear pathways.\n\nThe revelation of the Hertzsprung-Russell (H-R) diagram was nothing short of a paradigm shift. Before its advent, stars were largely viewed as individual, static points of light, their inner workings a mystery. The H-R diagram, however, provided a dynamic framework, a stellar family tree that illuminated the life cycle of stars. It showed a prominent \"main sequence\" where stars like our Sun spend the vast majority of their lives, fusing hydrogen into helium. It revealed giants and supergiants, stars that have swelled to immense proportions as they near the end of their hydrogen-burning phase. And it unveiled the enigmatic white dwarfs, the dense, dying embers of once-luminous stars. The diagram was not just a static snapshot; it was a map of stellar evolution, allowing astronomers to infer how stars are born, live, and die, simply by understanding their position on this elegant plot.\n\nThe H-R diagram quickly became an indispensable tool, transforming astrophysics from a descriptive science into a truly predictive one. It allowed astronomers to estimate the age of star clusters, to understand the distribution of stars in our galaxy, and even to unravel the mysteries of stellar interiors, proving a powerful validation for nascent theories of nuclear fusion. The quiet, persistent work of Hertzsprung and Russell, two men driven by an insatiable curiosity and a meticulous approach to data, had laid the foundation for modern stellar astrophysics.",
+      "id": "1b3258b46c1c798b",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The Hertzsprung-Russell diagram",
+      "topic": "learn",
+      "ts": "2026-07-01T01:55:07.607680+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cThere is no blue without yellow and without orange, and if you put in blue, then you must put in yellow, and orange too, mustn't you? Oh well, you will tell me that what I write to you are only banalities.\u201d\n\u2014 Vincent van Gogh\n\nThe voice of Vincent van Gogh, captured in the simple, almost conversational query to his brother Theo, reveals more than a painter's musing on color. It\u2019s a window into the intense, often agonizing process of creation for a man who saw the world not merely as it was, but as a vibrant, interconnected tapestry of emotion and light. He wasn\u2019t just observing a landscape; he was trying to understand the very essence of its being, to translate the raw energy of a sunflower or a starry night onto canvas. This particular quote, plucked from a letter written likely in the late 1880s, during a period of feverish artistic exploration in Arles, France, speaks to his burgeoning understanding of complementary colors, the way one hue amplifies and defines another. It was a time when he was shedding the muted tones of his earlier Dutch period, embracing the dazzling, sun-drenched palette of the south, a place he hoped would be a haven for artists, a studio of the south. Yet, even as he made these profound artistic discoveries, the ever-present shadow of self-doubt, a characteristic thread throughout his life, emerges in the plaintive \"Oh well, you will tell me that what I write to you are only banalities.\"\n\nThe world Van Gogh inhabited was on the cusp of seismic shifts. The Industrial Revolution had transformed landscapes and societies, but art, too, was undergoing its own revolution. Impressionism had challenged traditional academic painting, and Van Gogh, though never truly aligning with any single movement, was pushing beyond even that, forging a path towards what would later be known as Post-Impressionism. He was living hand-to-mouth, often supported by Theo, battling not only poverty but also the encroaching specter of mental illness, which would ultimately claim him. This was a man driven by an almost spiritual need to paint, to express the beauty and suffering he perceived in the world. He yearned for connection, for understanding, and his letters to Theo \u2013 over 600 of them \u2013 became his confessional, his intellectual playground, and his lifeline. In them, he wrestled with his artistic theories, his spiritual beliefs, and the demons that plagued him, all while the world outside continued its relentless march, largely oblivious to the genius unfolding in a small yellow house in Arles.\n\nVan Gogh's seemingly simple observation about blue, yellow, and orange resonates profoundly today because it encapsulates the very essence of his artistic genius and the human condition. It speaks to the idea that nothing truly exists in isolation, that beauty and meaning are often found in the interplay of opposites, in the dynamic tension between elements. In a world increasingly fragmented and specialized, his holistic vision \u2013 where even seemingly disparate colors are intrinsically linked \u2013 offers a powerful counter-narrative. Furthermore, his vulnerability, his fear of his insights being dismissed as \"banalities,\" strikes a chord with anyone who has ever dared to share a deeply held belief or a creative endeavor, only to face the chilling possibility of misunderstanding or dismissal.",
+      "id": "7bd477b2e265f85f",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Vincent van Gogh",
+      "topic": "wikiquote",
+      "ts": "2026-07-01T01:55:13.053815+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6702,7 +6739,7 @@
     "Gasolina Regular": 315.8,
     "Kerosene": 269.6
   },
-  "fx_last_rate": 59.091269,
+  "fx_last_rate": 59.75287,
   "fx_last_zone": "within",
   "fx_week_baseline": {
     "rate": 59.107125,
@@ -7526,8 +7563,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "ancient_civilizations",
-  "knowledge_last_sent": "2026-06-30T7",
+  "knowledge_last_category": "astronomy",
+  "knowledge_last_sent": "2026-07-01T0",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -7542,6 +7579,7 @@
     "ancient_civilizations:The mysterious Maya collapse": "2026-06-26",
     "astronomy:Carl Sagan and the Pale Blue Dot": "2026-06-28",
     "astronomy:The Antikythera mechanism, an ancient computer": "2026-06-17",
+    "astronomy:The Hertzsprung-Russell diagram": "2026-07-01",
     "astronomy:The James Webb Space Telescope": "2026-06-15",
     "astronomy:The discovery of Uranus by William Herschel": "2026-06-19",
     "astronomy:The first image of a black hole": "2026-06-23",
@@ -7643,10 +7681,11 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-06-30T23:22:21.506753+00:00"
+    "ok": 46,
+    "ts": "2026-07-01T01:53:47.801313+00:00"
   },
   "launch_seen_ids": [
+    "02fceca52c3a174a",
     "b2a67ba9209e1fe3",
     "a64771bf6b805933",
     "22600dd1a404a255",
@@ -7671,6 +7710,16 @@
   "life_dashboard_last_week": "2026-W26",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "d64587c8d45ac51e",
+      "033f3d39c1b06b30",
+      "3b14f7f5ce74eb84",
+      "e80837fbb4f68ed7",
+      "3e65af76b86ed175",
+      "300496ed1cfeb59d",
+      "eaa520cead240481",
+      "49df125591fdf2a2",
+      "95edc2af3fc834fb",
+      "c48bcc683f145c06",
       "e89591a0bac66669",
       "b2972625804b2eab",
       "836e9206158e54be",
@@ -7760,17 +7809,7 @@
       "7f3ca49c5749381b",
       "99e80f32f1911bae",
       "92980ffcc104ad52",
-      "425f4e2852f7e267",
-      "860379a5d1c9a79c",
-      "33de7de94bbebe24",
-      "3648267d1df0a0b9",
-      "c336397a03a975f8",
-      "2ff574d51054b5a1",
-      "5d106d5b4f29cb1a",
-      "4babac89959ead60",
-      "8bfacb704f873a7f",
-      "c7ddcbcce9415f24",
-      "3eddab5e75604314"
+      "425f4e2852f7e267"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -7974,6 +8013,18 @@
       "ba01dfcd01feccde"
     ],
     "Spider-Man: Brand New Day": [
+      "033f3d39c1b06b30",
+      "0b05d99455b5ec94",
+      "204e9fe16589e09e",
+      "5f43c5bed328ce7a",
+      "02d88de9c9aeba5c",
+      "6e1c43603e633b5a",
+      "9b4c6ce2ce5de9b5",
+      "3014977fd16315c8",
+      "13a89265c833b756",
+      "1db9e0db5540e38b",
+      "8fed34dbfb6cbf19",
+      "4f2f36945bb02966",
       "d93a44a10975457c",
       "4057efa4bb0796f9",
       "19fd3dc102ea1311",
@@ -8061,21 +8112,11 @@
       "13c570a56fa6a668",
       "3b45eb451b4d32cf",
       "ffd2c7055c45780b",
-      "19068fa78d83e47f",
-      "2a0154515ffd9388",
-      "8226c721333a6260",
-      "1fb50cf44fb0ab18",
-      "542e3aa98fa8570f",
-      "aa512db8d09ba17c",
-      "13ecf5974c0e98a7",
-      "48c862bab41ed109",
-      "4dd2aac478292d7f",
-      "6153b4b48a06c3ae",
-      "7f394639e2cbd933",
-      "56473fa26e7524fc",
-      "04dd822b34e40f9d"
+      "19068fa78d83e47f"
     ],
     "The Batman Part II": [
+      "81207e2272b7b32e",
+      "c385483c15e2f18c",
       "8b48ee91f6dd3fa6",
       "45a168fc1979ae42",
       "4a86d06b2173e0b9",
@@ -8173,11 +8214,26 @@
       "20054aec063a4665",
       "6a91f27cfc7bf6d5",
       "17ae93afe19a2a24",
-      "35163cf639d8932d",
-      "013aedc634716325",
-      "8dd3ec73ae867b6d"
+      "35163cf639d8932d"
     ],
     "The Odyssey": [
+      "6b0a78234e5bb793",
+      "360c3b6e677ac896",
+      "f37951fb18f94d27",
+      "11b4001baf34c3ab",
+      "791cd4b43fd752e0",
+      "e85876b0dafb112f",
+      "4a0b7c81b0bcec8b",
+      "bbb40f59d162bc93",
+      "dee84c3e835e8908",
+      "f3a1fcc8a3d7c00a",
+      "b84e846ac4bcb1ab",
+      "70f34b0bdf8866ca",
+      "b3d558b861cee415",
+      "a1933ed101a3f6b3",
+      "3cbe994788e80d93",
+      "ee72bc6c99125b96",
+      "92a8ae55869871ec",
       "49066a9f81ff207f",
       "bf99bb56b2dacb50",
       "abe22764d945afdc",
@@ -8260,24 +8316,7 @@
       "2d9c1b94ca43f3c4",
       "fcaa943e84f7ec4e",
       "80da1b2aa602c89c",
-      "0b7ca8387facfb7b",
-      "46db4325bcef674a",
-      "05ba48aa82ba0165",
-      "375daf2be27a8c7a",
-      "982d0e28d12660b3",
-      "92598dc139fd576b",
-      "3b59dde7bd23f2fb",
-      "c8dae5f5b3d2dd42",
-      "4532dc1707037475",
-      "f7bcc50aa650e13b",
-      "ae0c107c87c12e7a",
-      "c30c41fc5f0e56b5",
-      "c3ff62b30db59cd4",
-      "29d025ff0bcd4e4b",
-      "c100de066b852643",
-      "570204a857dcedbf",
-      "5dd76c04b42b21c9",
-      "f71d409a270d0526"
+      "0b7ca8387facfb7b"
     ]
   },
   "movie_release_dates": {
@@ -9044,6 +9083,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "e52b8fd4fce0e302",
     "9981a7033370c682",
     "376c1d6153be3af3",
     "ca42476570ae698a",
@@ -9159,47 +9199,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "apod": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "baseball": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "bills": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "deals": {
-      "last_data": "2026-06-30T22:01:36.221403+00:00",
+      "last_data": "2026-07-01T01:54:27.703047+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "digest": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "energy": {
-      "last_data": "2026-06-30T22:01:52.212665+00:00",
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_data": "2026-07-01T01:54:39.646009+00:00",
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "fda": {
-      "last_data": "2026-06-30T22:01:42.663002+00:00",
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_data": "2026-07-01T01:54:27.949166+00:00",
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "fuel": {
       "last_data": "2026-06-30T22:02:12.397751+00:00",
@@ -9207,17 +9247,17 @@
       "last_ok": "2026-06-30T22:00:30.227829+00:00"
     },
     "fx": {
-      "last_data": "2026-06-30T22:02:11.212221+00:00",
+      "last_data": "2026-07-01T01:54:59.731676+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-06-30T22:00:48.775840+00:00",
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_data": "2026-07-01T01:54:02.990050+00:00",
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "groceries": {
       "last_data": "2026-06-30T22:01:42.078312+00:00",
@@ -9225,113 +9265,113 @@
       "last_ok": "2026-06-30T22:00:30.227829+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "habits": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "holidays": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "iss": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "itsc": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "launches": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "learn": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "marine": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "movies": {
-      "last_data": "2026-06-30T22:00:37.102817+00:00",
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_data": "2026-07-01T01:53:55.216991+00:00",
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "music": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "onamet": {
-      "last_data": "2026-06-30T22:01:52.740481+00:00",
+      "last_data": "2026-07-01T01:54:40.236148+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "outages": {
-      "last_data": "2026-06-30T22:02:10.437620+00:00",
+      "last_data": "2026-07-01T01:54:58.962018+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "quakes": {
-      "last_data": "2026-06-30T22:02:10.524068+00:00",
-      "last_data_count": 29,
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_data": "2026-07-01T01:54:59.019261+00:00",
+      "last_data_count": 40,
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "recap": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "reminders": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "spending": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "twitch": {
-      "last_data": "2026-06-30T23:22:23.109820+00:00",
+      "last_data": "2026-07-01T01:53:58.888489+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-06-30T23:22:21.506753+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "uv": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "weather": {
-      "last_data": "2026-06-30T22:01:52.365848+00:00",
+      "last_data": "2026-07-01T01:54:39.774377+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-06-30T22:02:16.344208+00:00",
+      "last_data": "2026-07-01T01:55:02.706964+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-06-30T22:00:30.227829+00:00"
+      "last_ok": "2026-07-01T01:53:47.801313+00:00"
     }
   },
   "twitch_live": [
-    "RiddlesMK"
+    "Sparg0"
   ],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165079"
+    "last_full_window": "165080"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9343,13 +9383,9 @@
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
   "watchdog_failing_since": {},
-  "water_slots_sent": [
-    "2026-06-30|12",
-    "2026-06-30|21",
-    "2026-06-30|18",
-    "2026-06-30|15"
-  ],
+  "water_slots_sent": [],
   "weather_seen_ids": [
+    "3cf41804bf14255b",
     "4e8a8e81967cef00",
     "3750c8f76bb606a6",
     "5484d1e90a7cf835",
@@ -9440,8 +9476,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "leaders",
-  "wikiquote_last_sent": "2026-06-30T7",
+  "wikiquote_last_category": "innovators_artists",
+  "wikiquote_last_sent": "2026-07-01T0",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -9461,7 +9497,7 @@
     "innovators_artists:Pablo Picasso": "2026-06-26",
     "innovators_artists:Steve Jobs": "2026-06-21",
     "innovators_artists:Thomas Edison": "2026-06-27",
-    "innovators_artists:Vincent van Gogh": "2026-06-20",
+    "innovators_artists:Vincent van Gogh": "2026-07-01",
     "innovators_artists:Walt Disney": "2026-06-30",
     "leaders:Abraham Lincoln": "2026-06-26",
     "leaders:Benjamin Franklin": "2026-06-27",
@@ -9616,7 +9652,8 @@
       "JgR9-f6AzZ4",
       "YUr6YowALuM",
       "zRol-J6u004",
-      "sl6a4OAc7aM"
+      "sl6a4OAc7aM",
+      "o9X6ntivGxk"
     ],
     "UCvAR_BDFclXJ1Q9ndUhWLCA": [
       "f6Bgb92t1GQ",
