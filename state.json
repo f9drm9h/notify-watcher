@@ -478,18 +478,6 @@
     {
       "action": "push",
       "detail": "",
-      "id": "4c27ebb2adf4ca79",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday\u2019s First Trailer Gets Impressive Fan Recreation (Watch) - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-27T05:32:43.104158+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQVU9aM2F3NE1WbXQwZXZuVkp0dGlMUk1uekllUERKTk4zN09IVFUtRFlYekMzajZacVlBa2tka1AzWFpxWGI2NXNUMGR2OExRMzlqby1XbzMxTTNVWjRGa1ZKWTlHLXZZWElXLXVxQldHcUNLYW1hYzRzR292RkktRE8zSUdTNnpxVXc?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
       "id": "b51412529c4b7548",
       "score": 62,
       "severity": "high",
@@ -6474,6 +6462,18 @@
       "topic": "spending",
       "ts": "2026-07-01T21:53:04.425925+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - La CODOSALA online! Entra juye",
+      "id": "d2180b4337d18c13",
+      "score": 68,
+      "severity": "high",
+      "source": "elcodo22",
+      "title": "elcodo22 is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-01T22:57:57.598746+00:00",
+      "url": "https://twitch.tv/elcodo22"
     }
   ],
   "f4_history": [
@@ -7580,8 +7580,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 46,
-    "ts": "2026-07-01T21:51:27.562160+00:00"
+    "ok": 1,
+    "ts": "2026-07-01T22:57:55.975952+00:00"
   },
   "launch_seen_ids": [
     "c88f136e6de9f1c0",
@@ -9243,9 +9243,9 @@
       "last_ok": "2026-07-01T21:51:27.562160+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-01T21:51:37.380186+00:00",
+      "last_data": "2026-07-01T22:57:58.946680+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-01T22:57:55.975952+00:00"
     },
     "uv": {
       "last_ok": "2026-07-01T21:51:27.562160+00:00"
@@ -9273,7 +9273,9 @@
       "last_ok": "2026-07-01T21:51:27.562160+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "elcodo22"
+  ],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
