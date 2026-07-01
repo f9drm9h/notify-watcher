@@ -130,15 +130,6 @@
   },
   "digest_buffer": [
     {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Official Synopsis Describes Mysterious Final Villain - The Direct",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQUxSUjhNVTdUaWtKN1hsVVFKbHBnWTMtNE1wMTdqZzhGZWtUaEpJYjlCakxQLTNxOUFEa0RsaUJQYjcyenhWUnVFWEl6UjFEalFaSmd6Mk9ZWFp1U0FncXZ3aU9ZdnBEZUpROHNsb0wwWFFxR2ZNcUFNNGpzM2RfNll0QlNYYXdCd1NZUmRrOTNXaXNMUDN6WDhWZEV3QQ?oc=5"
-    },
-    {
       "detail": "DOP 302.95 (was DOP 334.95, -10%)",
       "preserve_detail": false,
       "score": 28,
@@ -425,6 +416,24 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day's latest trailer officially confirms X-Men character - Digital Spy",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTEoxWkxFWDFxVnVkUUFwanNmTUV6aVZpYk1RTENQSDRqUUhEUUhHWW9FeXdYRDVWZWI0LUhSUXE1bHNaZ05IUVF5dFY3Q0V6N2dWSG1iRG1kZWZMTlFVZmpHTU5wb2JDbUp3TVEwTlZBTkZ6ajBoSGZZa0ItRVM4Zk5UXy1rOWc1aGdWY18tVEZLeGRTMGc?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Odyssey",
+      "title": "Christopher Nolan's 'The Odyssey' Gets Official 'Roblox 'Game Ahead of Movie Release - player.one",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMmpMa282ekdTbjF0VTV3WGwxQWNTbGhHUnFyR0ZrN18tYWlpZFpSMzF2MU5fZU5uYTdQQzA5Q2oyR3RNd28wMjBGZ2c1WWFiRXFfVnJad2NnNGFhMktXLVlBTDc3RnNEbGw5T1hOQjhGRHR6OUlBNHN5UVVPYkZpUFJWclRXc2dxNk03R3lYdmdvMWZFb0hLZ21iQ0ZDcHlNbjV5cQ?oc=5"
     }
   ],
   "digest_last_sent": "2026-06-30",
@@ -622,66 +631,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "74a2b38493574de6",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-26T01:55:26.223643+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "Before the crisp, decisive click of a shutter, before the gentle swish of a developing tray, the world had no memory that it could truly hold. It was a place of fleeting moments, captured only in the imperfect and often flattering hand of a painter, or the hazy, subjective recollections of individuals. For centuries, visionaries dreamed of somehow fixing the image that danced on the back of a camera obscura \u2013 that ethereal, inverted projection of the world outside. Leonardo da Vinci himself mused on its possibilities, but the chemistry to lasso light remained stubbornly elusive, a phantom of scientific curiosity. This was the landscape of human visual experience, one dominated by fleeting impressions and the meticulous, slow work of artistry, until a quiet, persistent gentleman in provincial France decided to wrestle with light itself.\n\nJoseph Nic\u00e9phore Ni\u00e9pce was not a man of grand pronouncements or a bustling urban intellectual. He was a retired French officer, living in the countryside near Chalon-sur-Sa\u00f4ne, dedicated to invention, fueled by a curiosity that spanned from internal combustion engines to improving the then-novel art of lithography. It was this latter pursuit that inadvertently led him down the path to photography. Frustrated by his inability to draw precisely enough for the complex images he wished to print, Ni\u00e9pce began to experiment with light-sensitive materials, seeking a way to etch an image directly onto a plate. He coated pewter plates with a type of bitumen of Judea, a naturally occurring asphalt that hardens when exposed to light. This was his crucial insight: light itself could be a sculptor. After exposure, the unhardened bitumen could be washed away with a solvent, leaving a durable image. His early attempts, like a 1826 or 1827 image of a table set with dishes, proved the concept, but the true breakthrough, the enduring icon of this monumental shift, would come from his window.\n\nFrom his workroom, \"Le Gras,\" in Saint-Loup-de-Varennes, Ni\u00e9pce pointed his camera obscura out onto the courtyard. The sun arced slowly across the sky, relentlessly beating down on the bitumen-coated pewter plate for an astonishing eight hours. Buildings on both sides of the courtyard were illuminated, a testament to the agonizingly long exposure time. The result was not a sharp, high-contrast image by modern standards; it was grainy, somewhat indistinct, yet undeniably a direct impression of reality, fixed by light alone. It was the \"View from the Window at Le Gras,\" the world's first true photograph. This wasn't merely a technological curiosity; it was a profound shift in how humanity could record and remember. For the first time, a machine, rather than a human hand, bore witness, capturing a moment with an objectivity previously impossible. It was a silent witness to a quiet revolution, born not of sudden genius, but of meticulous, patient toil.\n\nNi\u00e9pce\u2019s discovery, however, was not immediately met with widespread acclaim. He struggled to gain recognition for his \"heliography\" (sun drawing) and found himself in financial difficulties. He eventually entered into a partnership with a younger, more commercially astute figure, Louis Daguerre, in 1829. Tragically, Ni\u00e9pce died suddenly in 1833, before his groundbreaking work could be fully appreciated or monetized.",
-      "id": "36a38630b0e79bea",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Ni\u00e9pce and the first photograph",
-      "topic": "learn",
-      "ts": "2026-06-26T01:55:45.752486+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cThe accident at Chernobyl showed again what an abyss will open if nuclear war befalls mankind. For inherent in the nuclear arsenals stockpiled are thousands upon thousands of disasters far more horrible than the Chernobyl one.\u201d\n\u2014 Mikhail Gorbachev\n\nMikhail Gorbachev, a figure etched into the very granite of the 20th century, was a man of paradoxes and profound responsibility. When he uttered those stark words about Chernobyl and the abyss of nuclear war, he was not merely a head of state, but the leader of the Soviet Union, a vast empire that spanned eleven time zones and commanded an arsenal capable of ending human civilization. He had risen through the ranks of the Communist Party, a system built on iron discipline and ideological purity, yet he would become its greatest reformer, ultimately dismantling it from within. His upbringing in a peasant family in Stavropol, a region scarred by the deprivations of collectivization and war, had instilled in him a pragmatic understanding of hardship and the urgent need for change. By the mid-1980s, the Soviet Union was a superpower in name, but its economy was stagnating, its people increasingly disillusioned, and its global rivalry with the United States draining vital resources. Gorbachev, an intellectual with a keen mind and an unusual willingness to question dogma, recognized that the path the USSR was on was unsustainable, a realization that set him on a collision course with history.\n\nThe context in which Gorbachev delivered that chilling assessment was a world teetering on a precipice. The Cold War, that protracted ideological and military standoff, had been a defining feature of global politics for four decades. The specter of nuclear annihilation hung over every international crisis, every diplomatic maneuver. The United States and the Soviet Union possessed enough nuclear weapons to incinerate the planet many times over, locked in a doctrine of Mutual Assured Destruction. Then came Chernobyl. On April 26, 1986, Reactor Number 4 at the Chernobyl Nuclear Power Plant in the Ukrainian SSR exploded, releasing a radioactive plume that spread across Europe. Initially, the Soviet leadership tried to suppress the news, a knee-jerk reaction born of habit and a desire to project an image of infallible strength. But the sheer scale of the catastrophe, the invisible enemy of radiation poisoning, and the international outcry forced Gorbachev\u2019s hand. He was confronted with a disaster that transcended borders and ideologies, a man-made horror that served as a stark, tangible microcosm of the potential consequences of nuclear war. This wasn't merely a technological failure; it was a profound moral and existential challenge that profoundly shaped his commitment to disarmament and his policy of glasnost, or openness, which sought to dismantle the culture of secrecy that had allowed such a tragedy to fester.\n\nGorbachev's words about the Chernobyl abyss still resonate with chilling prescience today, decades after the collapse of the Soviet Union and the apparent end of the Cold War. While the immediate threat of a full-scale superpower nuclear exchange may have receded, the underlying dangers he spoke of remain acutely present. The arsenals, though somewhat reduced, still contain thousands of warheads, many on hair-trigger alert. New nuclear powers have emerged, and the proliferation of these devastating weapons continues to be a global concern.",
-      "id": "23dc83a139ae9545",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Mikhail Gorbachev",
-      "topic": "wikiquote",
-      "ts": "2026-06-26T01:55:51.290170+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "c7bb0a1e9f721bd8",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "A Big \u2018Avengers: Doomsday\u2019 Leak Reportedly Arrives, But Its Validity Is Debatable - Forbes",
-      "topic": "movies",
-      "ts": "2026-06-26T06:18:29.929951+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWWxfeWxRTE1FeXZHUjlGXzZkbkh5ME02YjROVHlEbk9pbXpua0Z5cHVMN1FHYmtGRHktdW9id3ZTN0QwZENDY2ZMUm13WklaYTdKM29jNEk4QVVkMnNlaFJBNF9CYzZ4R3BIQURmRE1ZRUcwbVItcF9aNFh5SE9OaXMxUUZTUlA5U3BMTi1XT3U2UnFUNS1zYVhXd2FzVlU4dWtoRjgyR0hBWnMtc09KaFhOeWtrZkJOeEJQSGt5OW5SY0d5T1Nz?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "897b1312cc5adf95",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' Clip Confirms Popular Aunt May Theory - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-26T06:18:30.447788+00:00",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5kd0d0bTFZM0RpSVZLaGtHWlllVVA5ZmtuTFJhWEJrcjg1YUlzNnA4TVp3Tng2OXFXMEh2UE5xNEJ2TkR3STdpdWNFZFB4RTVoNEh3bnpsUXRQNVZmMFNNNzBBOUJTVXNtUWpCQUlVZFpJaThnVWdV?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6621,6 +6570,66 @@
       "topic": "learn",
       "ts": "2026-07-01T06:43:56.731641+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "b5ae3038fd46f22f",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day's latest trailer officially confirms X-Men character - Digital Spy",
+      "topic": "movies",
+      "ts": "2026-07-01T10:35:10.426953+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNTEoxWkxFWDFxVnVkUUFwanNmTUV6aVZpYk1RTENQSDRqUUhEUUhHWW9FeXdYRDVWZWI0LUhSUXE1bHNaZ05IUVF5dFY3Q0V6N2dWSG1iRG1kZWZMTlFVZmpHTU5wb2JDbUp3TVEwTlZBTkZ6ajBoSGZZa0ItRVM4Zk5UXy1rOWc1aGdWY18tVEZLeGRTMGc?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "d8983bd2b3447967",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Christopher Nolan's 'The Odyssey' Gets Official 'Roblox 'Game Ahead of Movie Release - player.one",
+      "topic": "movies",
+      "ts": "2026-07-01T10:35:10.994092+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMmpMa282ekdTbjF0VTV3WGwxQWNTbGhHUnFyR0ZrN18tYWlpZFpSMzF2MU5fZU5uYTdQQzA5Q2oyR3RNd28wMjBGZ2c1WWFiRXFfVnJad2NnNGFhMktXLVlBTDc3RnNEbGw5T1hOQjhGRHR6OUlBNHN5UVVPYkZpUFJWclRXc2dxNk03R3lYdmdvMWZFb0hLZ21iQ0ZDcHlNbjV5cQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 10:08 PM - max 64deg, SW to NE. Look up!",
+      "id": "f24d31fd8b73ea02",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-01T10:36:40.425135+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "For over a century, the four color problem stood as a tantalizing, infuriating beacon in the landscape of mathematics, a seemingly simple question that defied the greatest minds. Imagine a map, any map, with countries of various shapes and sizes. The problem asks: can you always color such a map using only four colors, ensuring that no two adjacent countries share the same color? It sounds like a child's game, a triviality, yet it was anything but. Generations of mathematicians, from Augustus De Morgan in the mid-19th century who first publicized the conjecture, to a parade of brilliant logicians and topologists, grappled with it. Many thought they had a proof, only to have their arguments unravel under intense scrutiny. The allure was immense; it was a problem that one could grasp instantly, yet its solution remained stubbornly elusive, fueling both fascination and frustration in equal measure.\n\nThe human drama surrounding the four color problem was palpable. Failed proofs became cautionary tales, their authors sometimes humiliated by the errors that lay hidden within their intricate logical structures. Percy Heawood in 1890 didn't prove the four-color theorem, but he did prove the five-color theorem, a less ambitious but valid step forward, showing that at least five colors were always sufficient. This offered a small comfort, but the ultimate prize, proving four, remained just out of reach. Mathematicians would devote years, even decades, to the problem, driven by the intellectual challenge and the potential for immortalizing glory. The very simplicity of the question made it deceptive; it didn't require advanced abstract algebra or complex analysis, only a deep understanding of graph theory and combinatorial logic. This democratic accessibility meant that amateur mathematicians often tried their hand, occasionally offering a fresh perspective, but more often adding to the mountain of incorrect proofs.\n\nThen, in the mid-1970s, a new kind of player entered the arena: the computer. Wolfgang Haken and Kenneth Appel, mathematicians at the University of Illinois, embarked on a monumental task. They didn't aim to find a traditional, elegant, human-understandable proof in the classical sense. Instead, they sought to reduce the infinite possibilities of maps to a finite, albeit enormous, number of \"unavoidable configurations.\" The strategy involved demonstrating that every map must contain one of these configurations, and then proving that each configuration could be 4-colored. This \"reducibility\" argument, however, required the painstaking analysis of 1,936 specific configurations, each of which needed to be checked for 4-colorability. This was a task far beyond human endurance or accuracy. They turned to an IBM 360 computer, which spent thousands of hours, over many weeks, meticulously checking each case.\n\nThe announcement in 1976 that the four color theorem had finally been proven, with the aid of a computer, sent shockwaves through the mathematical community. It was a triumph, a century-long quest concluded, but also a controversial one. Many mathematicians felt uneasy. A computer-generated proof lacked the aesthetic beauty, the intuitive insight, and the human comprehensibility that they cherished in mathematical proofs. It was a black box: the computer had done the work, but no human mind could independently verify every step without replicating the entire computational process.",
+      "id": "99e701ea55a5062f",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The four color theorem and the first computer proof",
+      "topic": "learn",
+      "ts": "2026-07-01T10:36:47.764913+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cGod has always given me the strength to say what is right... I had the strength of God and my ancestors with me.\u201d\n\u2014 Rosa Parks\n\nThe name Rosa Parks evokes a simple image for many: a tired seamstress, refusing to give up her seat on a bus. But to truly understand the woman behind the myth, we must delve deeper into a life forged in the crucible of the Jim Crow South, a life where the fight for dignity was not a sudden act, but a lifelong commitment. Born in Tuskegee, Alabama, in 1913, Parks grew up in a world where racial segregation was not just law, but an ingrained way of life. Her grandparents, former slaves, instilled in her a fierce sense of self-respect and the importance of standing up against injustice. This wasn't a lesson learned in textbooks, but in the daily grind of survival, in the quiet defiance that chipped away at the edifice of white supremacy. Her early activism was subtle but consistent. She attended the Highlander Folk School, a training ground for civil rights activists, where she deepened her understanding of nonviolent resistance and the power of collective action. This was not a passive figure, but an active participant in the burgeoning movement, a woman who had spent years preparing for the very moment that would etch her name into history.\n\nIt was against this backdrop of deeply entrenched racial oppression and her own carefully cultivated resilience that the fateful day of December 1, 1955, unfolded in Montgomery, Alabama. When the bus driver, James F. Blake, demanded she relinquish her seat to a white passenger, Parks' refusal was not a spontaneous outburst of weariness, but a conscious, deliberate act of civil disobedience. This was a woman who had witnessed countless indignities, who had felt the sting of racial discrimination her entire life. Her words, \"God has always given me the strength to say what is right... I had the strength of God and my ancestors with me,\" spoken later, articulate the profound spiritual and ancestral wellspring from which she drew her courage. It was a recognition that her individual act was part of a larger, ongoing struggle, a relay race of justice where she was carrying the torch passed down from generations of those who had resisted. Her strength was not just personal fortitude, but a confluence of faith, historical memory, and a deep understanding of the moral imperative to dismantle a system that denied basic human rights.\n\nThe reverberations of Rosa Parks' single act were seismic, catalyzing the Montgomery Bus Boycott, a 381-day struggle that ultimately led to the desegregation of the city's buses and propelled Martin Luther King Jr. onto the national stage. Her quote, steeped in both personal conviction and collective memory, continues to resonate today because it speaks to a universal human truth: that true strength often lies in the quiet defiance of injustice, in the unwavering commitment to one's moral compass. In an age where societal inequalities persist and the struggle for human rights continues in myriad forms, Parks' words serve as a powerful reminder that the fight for what is right is often a marathon, not a sprint, and that individuals, sustained by their beliefs and the legacy of those who came before them, possess an immense capacity for transformative change.",
+      "id": "865d5c2a5e5d30ee",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Rosa Parks",
+      "topic": "wikiquote",
+      "ts": "2026-07-01T10:36:52.475783+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -7526,6 +7535,7 @@
     "iPadOS 26.5.2 (23F84)"
   ],
   "iss_seen_passes": [
+    "ed2068fba035be16",
     "b872b4edbbce15bc",
     "db52add602e4725f",
     "2ae1d0f81d234226",
@@ -7574,8 +7584,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "early_humans",
-  "knowledge_last_sent": "2026-07-01T2",
+  "knowledge_last_category": "math_history",
+  "knowledge_last_sent": "2026-07-01T3",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -7622,6 +7632,7 @@
     "math_history:The Mandelbrot set and the geometry of fractals": "2026-06-25",
     "math_history:The P versus NP problem": "2026-06-23",
     "math_history:The continuum hypothesis": "2026-06-21",
+    "math_history:The four color theorem and the first computer proof": "2026-07-01",
     "math_history:The normal distribution and the bell curve": "2026-06-28",
     "medicine:Barry Marshall and the cause of stomach ulcers": "2026-06-18",
     "medicine:Christiaan Barnard and the first heart transplant": "2026-06-28",
@@ -7692,9 +7703,9 @@
     "world_history:The rise of Adolf Hitler": "2026-06-22"
   },
   "last_run": {
-    "failed": 1,
-    "ok": 45,
-    "ts": "2026-07-01T06:42:14.154041+00:00"
+    "failed": 0,
+    "ok": 46,
+    "ts": "2026-07-01T10:35:06.224078+00:00"
   },
   "launch_seen_ids": [
     "3ef8e7f31ca1eabd",
@@ -7723,6 +7734,15 @@
   "life_dashboard_last_week": "2026-W26",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "022d4958b0b955dc",
+      "168877d0cac633f8",
+      "0a2dbeff8ff67375",
+      "5bb62ed55df61383",
+      "c593c6ad72d06380",
+      "141efa3282ec7b36",
+      "99e80f32f1911bae",
+      "c023ee1647bb3706",
+      "92980ffcc104ad52",
       "de266bc902af96e4",
       "d29c04beb7ece153",
       "3648267d1df0a0b9",
@@ -7813,16 +7833,7 @@
       "c982d7c4555afc4f",
       "effb4f95e0113f90",
       "843436d92452019f",
-      "9a34f52feac1e671",
-      "135258dcc1fff748",
-      "b169236590ee30e4",
-      "c781bdf373067c77",
-      "9128141949c596ef",
-      "ec906ef731c75b06",
-      "8f4de9bbcd00777a",
-      "73910fb860dddfe0",
-      "30f4f891f209a87b",
-      "00633910a8faa583"
+      "9a34f52feac1e671"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -8026,6 +8037,24 @@
       "ba01dfcd01feccde"
     ],
     "Spider-Man: Brand New Day": [
+      "5a7a19f80077a054",
+      "92b7ae66951dc936",
+      "4303270081dc8eea",
+      "586018f2a5860b91",
+      "f9c9d74ed225a42d",
+      "f7014debf42125ef",
+      "8520ba7a69f6cad4",
+      "5af9faf9d8ba4f17",
+      "28b8cd6dbe540a0f",
+      "4ba35cd2eb473934",
+      "afc5b20c58614c0b",
+      "1fb50cf44fb0ab18",
+      "ad6e3769456f834c",
+      "6153b4b48a06c3ae",
+      "fec70d74b1f9a85f",
+      "3b45eb451b4d32cf",
+      "ffd2c7055c45780b",
+      "b72ff91e487644e5",
       "52fb75b5d7537025",
       "b9d6666a0c928cf0",
       "c2a0ccb78ac66479",
@@ -8107,25 +8136,7 @@
       "d98c798924f52562",
       "42fa6ab3f0ecfeb0",
       "b3042f8f7927419c",
-      "0b654cf13afa268b",
-      "afde1c0cfa6c7882",
-      "7571d2664723fd69",
-      "8ac661eddea95707",
-      "e90f3284f5972419",
-      "3c037dce74464a56",
-      "bb6c80813e1a2a56",
-      "e735f0b9ed3fd88d",
-      "30a24274abc9b73f",
-      "52a1aa11e81de426",
-      "bb067200ec8d925f",
-      "e7175f95341d2e4d",
-      "a090145ba4c8e237",
-      "5c8413ce97230200",
-      "e8dbc03adca1721d",
-      "2c63b5ef30b73d9e",
-      "679951badc4bcf00",
-      "0acbd0557567742d",
-      "977d5b70b1cbf82a"
+      "0b654cf13afa268b"
     ],
     "The Batman Part II": [
       "c8cfe2c2b3633a73",
@@ -8230,6 +8241,23 @@
       "17ae93afe19a2a24"
     ],
     "The Odyssey": [
+      "e8d18963266fec86",
+      "e547178fe3a8fbd6",
+      "d68adbf6e0654080",
+      "0e1fe350852f157c",
+      "4fa28ff508dbdbc7",
+      "e9c3b3b363113543",
+      "4470d43d16d79c7f",
+      "c8e5e79e515ab764",
+      "59b005693b724808",
+      "a6f7b9a9de2cc7ba",
+      "1e26ca1f20105ffb",
+      "7643132e9341090a",
+      "504c88cf88833451",
+      "4794690511fed652",
+      "3a5f066c1b93dcbc",
+      "c0a3e916324c27c7",
+      "fcaa943e84f7ec4e",
       "261eb06bdd4982b3",
       "3052b9540c2b3470",
       "6b6d01836eec78d3",
@@ -8312,24 +8340,7 @@
       "cd84fff3d6989246",
       "8397413827fa28cb",
       "d2ece82f04874a60",
-      "f44ec42f0c719f6a",
-      "4f89e0487f4e67d8",
-      "43c14c7dee3b4fa8",
-      "236bf47ae0658cb9",
-      "c45effc8b8c5862b",
-      "a6253800f12baafc",
-      "75e51028c65c681a",
-      "0e00d99e1350bf35",
-      "a8b487a6502ba1e4",
-      "2f4654710ea3fada",
-      "f2e11e82ac5f80bf",
-      "811bbfb43ad13e9d",
-      "dbbf74f770747a58",
-      "db24d101fd7dd795",
-      "35bffff7aa6f5034",
-      "93bf07da56d57840",
-      "4c681a500e13b793",
-      "d9058042ff96c96a"
+      "f44ec42f0c719f6a"
     ]
   },
   "movie_release_dates": {
@@ -9212,47 +9223,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "apod": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "baseball": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "deals": {
-      "last_data": "2026-07-01T06:43:15.750004+00:00",
+      "last_data": "2026-07-01T10:36:10.210705+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "energy": {
-      "last_data": "2026-07-01T06:43:27.761580+00:00",
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_data": "2026-07-01T10:36:20.196257+00:00",
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "fda": {
-      "last_data": "2026-07-01T06:43:16.284324+00:00",
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_data": "2026-07-01T10:36:10.616373+00:00",
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "fuel": {
       "last_data": "2026-06-30T22:02:12.397751+00:00",
@@ -9260,17 +9271,17 @@
       "last_ok": "2026-06-30T22:00:30.227829+00:00"
     },
     "fx": {
-      "last_data": "2026-07-01T06:43:47.600836+00:00",
+      "last_data": "2026-07-01T10:36:39.686049+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-01T06:42:27.759557+00:00",
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_data": "2026-07-01T10:35:19.977180+00:00",
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "groceries": {
       "last_data": "2026-06-30T22:01:42.078312+00:00",
@@ -9278,114 +9289,111 @@
       "last_ok": "2026-06-30T22:00:30.227829+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "learn": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "movies": {
-      "last_data": "2026-07-01T06:42:22.236813+00:00",
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_data": "2026-07-01T10:35:13.917031+00:00",
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "music": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-01T06:43:28.424356+00:00",
+      "last_data": "2026-07-01T10:36:20.853554+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "outages": {
-      "last_data": "2026-07-01T06:43:46.759631+00:00",
+      "last_data": "2026-07-01T10:36:38.867518+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-01T06:43:46.912726+00:00",
+      "last_data": "2026-07-01T10:36:38.946198+00:00",
       "last_data_count": 41,
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-01T06:42:23.649441+00:00",
+      "last_data": "2026-07-01T10:35:16.155703+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "weather": {
-      "last_data": "2026-07-01T06:43:27.983704+00:00",
+      "last_data": "2026-07-01T10:36:20.364838+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-07-01T06:42:14.154041+00:00"
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-01T01:55:02.706964+00:00",
+      "last_data": "2026-07-01T10:36:42.569956+00:00",
       "last_data_count": 90,
-      "last_error": "all 7 channel feed(s) failed; last: PabloELECTRUM: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UC9DS-MY8CZzLh7vQG000uug",
-      "last_error_ts": "2026-07-01T06:42:14.154041+00:00",
-      "last_ok": "2026-07-01T01:53:47.801313+00:00",
-      "source_failed": true
+      "last_ok": "2026-07-01T10:35:06.224078+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165082"
+    "last_full_window": "165083"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9396,9 +9404,7 @@
     "games": "2026-06-12T12:15:55.633492+00:00",
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
-  "watchdog_failing_since": {
-    "youtube": "2026-07-01T06:42:14.154041+00:00"
-  },
+  "watchdog_failing_since": {},
   "water_slots_sent": [],
   "weather_seen_ids": [
     "ff662cab20c5e92a",
@@ -9493,8 +9499,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "innovators_artists",
-  "wikiquote_last_sent": "2026-07-01T0",
+  "wikiquote_last_category": "activists_thinkers",
+  "wikiquote_last_sent": "2026-07-01T3",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -9504,7 +9510,7 @@
     "activists_thinkers:Martin Luther King, Jr.": "2026-06-30",
     "activists_thinkers:Mother Teresa": "2026-06-27",
     "activists_thinkers:Ralph Waldo Emerson": "2026-06-29",
-    "activists_thinkers:Rosa Parks": "2026-06-20",
+    "activists_thinkers:Rosa Parks": "2026-07-01",
     "activists_thinkers:Susan B. Anthony": "2026-06-26",
     "innovators_artists:Buckminster Fuller": "2026-06-24",
     "innovators_artists:Frida Kahlo": "2026-06-29",
