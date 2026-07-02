@@ -211,6 +211,42 @@
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQOWFWYllTekY5Z09Zckd2Q2dkSkczT2JLWUkyU3lpOC1saUh1ZjRUNEljTnlsd29TQXVvdi0xZ1RuRldDREZsZW16MTJYeFh0bHRzNGJrcy1kNWdzd1ZaU3lmdHNHcVV4blJlLXRIeU5DNHotNkJZYnlrS3JJR2h1ZEZvMlVFQ2hHbkMyQURQZVRSMFBQX0JKSjBEckN4aFJ3aUow?oc=5"
     },
     {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 35,
+      "source": "World Nuclear News",
+      "title": "Action needed to achieve tripling of global nuclear capacity target, says NEA",
+      "topic": "energy",
+      "url": "https://www.world-nuclear-news.org//articles/action-needed-to-achieve-tripling-of-global-nuclear-capacity-target-says-nea"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Odyssey",
+      "title": "Christopher Nolan Officially Reveals the Key Role \u2018The Dark Knight\u2019 Played in \u2018The Odyssey\u2019 - Collider",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMVh1VkRCaDAxVlZuczAxRjUza2RZd3V1TFRLRG42MU4yd2pUczFWRWExbUFmZVVCbHRRSUJ1WF82OV82N3RUS2NOVjRYeHg5VWZkR2duU2JyUk1HZkFHTi1NMlZ5QlZvTjhYUWpmS1dXN1c0Ukl2b3dyNlJQUnVjM0lETDZ2R2FuRVdB?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Odyssey",
+      "title": "Roblox gets official game for Christopher Nolan's The Odyssey: Here's what we know - The Times of India",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNX2FKNHVZOVUtNVpKeTl5Q0ZpTlFmcUpxT0drRUtEeW1HVmUxUlYyWnVyUHZwcGMteFQwUVBPVjY3aDNfZkZWZ0t4MmhyNWZaM2NSUnMzM3dDb0luaEQ0U3ZzQkh0YXJ1SGtEYUIwQV90UnZhUm9jUUh0VnhoX3JDaTR0XzRfVjhzUk0zNmtBNnplVVBEbUVranFCaXRzYXZUNXU4VUhsb2J3c1B4ZldsTW1MN1d1XzRRTEhIVVUyVUs3QlB2cGtVdUJ3Z1JJUERpeDY4UkZtczlaZmtJSEhDRjFEdEduY1ktNnYydFExNELSAfYBQVVfeXFMUHF1Z2hRZGN4cEl6U3d1SEcwenlvc3JwOTlzU1ZXVklNMmtrOXhyM09DVm5od1FXcGRFanpfRXhCR05uVGlMYXlyYWpWbUNpTHdkdGRRNUZJVWRuOWdzUzFjYXd3ME9QdFNBVjZpcklGNkVwN1dnSGtTcW51MVhzNXIzQWZnYnUwZWVZb2RIUXlJRGxqV0p1SjYyT3Jvb1dibVlIVlNGYmdta3pfakpHbDVxLURfRjBSZTZQOTFtMDl5ZmtZWFFxa2FTR2U0bm5DaWFaOUs2MGhuTExyX1NoeWNyWTNMeFlaYXIwWDRDZl9pbXZtYl9R?oc=5"
+    },
+    {
       "detail": "DOP 12,695.00 (was DOP 16,995.00, -25%)",
       "preserve_detail": false,
       "score": 45,
@@ -249,20 +285,11 @@
     {
       "detail": "",
       "preserve_detail": false,
-      "score": 35,
-      "source": "World Nuclear News",
-      "title": "Action needed to achieve tripling of global nuclear capacity target, says NEA",
-      "topic": "energy",
-      "url": "https://www.world-nuclear-news.org//articles/action-needed-to-achieve-tripling-of-global-nuclear-capacity-target-says-nea"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+      "score": 40,
+      "source": "Earthquakes",
+      "title": "M3.1 - 37 km NW of San Antonio, Puerto Rico (~259 km away)",
+      "topic": "quakes",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71522458"
     }
   ],
   "digest_last_sent": "2026-07-02",
@@ -472,438 +499,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "The story of the telephone, much like the human voice it sought to transmit, is one of interconnectedness, ingenuity, and a dash of dramatic tension. At its heart stands Alexander Graham Bell, a man whose lineage was deeply intertwined with the science of sound. His grandfather, Alexander Bell, was a celebrated elocution instructor, and his father, Melville Bell, invented \"Visible Speech,\" a system of phonetic symbols that could represent any sound a human mouth could make. This familial legacy instilled in young Graham a profound understanding of acoustics and the mechanics of speech. But it was the profoundly personal experience of deafness within his own family \u2013 his mother became deaf as a child, and his wife, Mabel Hubbard, lost her hearing after a childhood illness \u2013 that truly fueled his drive to conquer the barriers of communication. This wasn't merely a scientific pursuit; it was a deeply empathetic quest to bridge the silence that separated loved ones.\n\nBell\u2019s early work was not, in fact, focused on transmitting speech but rather on the telegraph, a technology that had revolutionized long-distance communication in the mid-19th century. The telegraph, however, could only send one message at a time over a single wire. Bell, working on what he called the \"harmonic telegraph,\" aimed to send multiple messages simultaneously, each at a different pitch, much like a musical chord. This ambitious endeavor brought him into the orbit of two crucial figures: Thomas A. Watson, a skilled machinist, and Gardiner Greene Hubbard, a prominent Boston lawyer and businessman who would become Bell's father-in-law and a key financial backer. It was in the intense, often frustrating, collaboration between Bell, the visionary theorist, and Watson, the pragmatic builder, that the true breakthrough occurred. On June 2, 1875, while working on the harmonic telegraph, Watson plucked a vibrating reed, and Bell, in another room, heard the distinct twang over the wire. This accidental discovery, the transmission of an unarticulated sound, ignited a realization: if a reed could transmit its vibration, why not a human voice?\n\nThe path from a vibrating reed to intelligible speech was still fraught with challenges, a testament to the perseverance and late-night toil of Bell and Watson. Their first breakthrough in transmitting speech, though crude, arrived on March 10, 1876, with Bell uttering the now-famous words, \"Mr. Watson, come here, I want to see you.\" The motivation for this urgent summons was not a grand pronouncement of discovery, but rather a spilled battery acid, a testament to the messy, unpredictable reality of invention. This moment, however undramatic in its immediate cause, marked a profound turning point in human history. Bell quickly filed a patent for his \"apparatus for transmitting vocal or other sounds telegraphically,\" just hours before his rival, Elisha Gray, filed a caveat for a similar device. This fateful race to the patent office would spark years of legal battles, a testament to the immense commercial potential recognized by these early pioneers.\n\nThe telephone's impact was immediate and transformative, far exceeding the limited, point-to-point communication of the telegraph. It fostered new forms of social interaction, enabled businesses to operate with unprecedented efficiency, and fundamentally reshaped urban landscapes as telephone poles and wires proliferated.",
-      "id": "febacc797614a01d",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Alexander Graham Bell and the telephone",
-      "topic": "learn",
-      "ts": "2026-06-29T02:01:38.970402+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cHe walked like a man who does not take the earth for granted. He took one step after another with obvious care and delight. Right next to him, Winnie Mandela stayed close, attuned and alert, and radiant.\u201d\n\u2014 Nelson Mandela\n\nThe voice that spoke these words, imbued with a quiet awe and deep affection, belonged to Nelson Rolihlahla Mandela, a name synonymous with resilience, resistance, and ultimately, reconciliation. He was speaking of Walter Sisulu, a towering figure in the anti-apartheid movement, a man who had been a mentor, a comrade, and a brother to Mandela through the crucible of struggle. Sisulu, like Mandela, was a leader of the African National Congress (ANC), and together they had navigated the increasingly perilous landscape of apartheid South Africa, moving from peaceful protest to armed struggle as the state\u2019s repression intensified. Their bond was forged in shared ideology, in whispered plans in clandestine meetings, and in the profound understanding of a common destiny. Mandela's description of Sisulu's walk is not merely an observation; it is a profound reflection of the man's character \u2013 his meticulousness, his presence, and the inherent dignity with which he carried himself even under the weight of immense injustice.\n\nThe context of this quote is steeped in the bittersweet reality of liberation, yet also the enduring pain of separation. Mandela likely uttered these words long after their initial experiences together, perhaps in a reflection or an interview, looking back on a time when they were both active and relatively free, before the relentless hammer of apartheid brought them down. Sisulu, along with Mandela and other leaders, was arrested in 1963 at Liliesleaf Farm, a secret ANC hideout, leading to the infamous Rivonia Trial. All were sentenced to life imprisonment on Robben Island. For nearly three decades, Mandela and Sisulu were held captive, yet their spirit remained unbroken. Even behind bars, Sisulu continued to lead, teach, and inspire, his quiet strength a constant anchor for Mandela. The image of Winnie Mandela, \"attuned and alert, and radiant,\" by Sisulu's side further underscores the collective nature of their fight, the unwavering support of their partners, and the enduring human connections that sustained them through unimaginable hardship. This wasn't just a political struggle; it was deeply personal, interwoven with families, friendships, and shared sacrifices.\n\nThis quote resonates powerfully today because it transcends the specifics of the anti-apartheid struggle to touch upon universal truths about leadership, dignity, and the human spirit. In a world often characterized by haste, superficiality, and a disconnect from our surroundings, Sisulu\u2019s \"obvious care and delight\" in each step serves as a profound reminder to live intentionally, to appreciate the simple act of being, even amidst profound challenges. It speaks to a mindful presence, a recognition of the preciousness of existence that those who have endured extreme oppression often come to embody. Furthermore, the image of Winnie Mandela, a force in her own right, remaining \"close, attuned and alert\" symbolizes the vital role of support systems, the strength found in solidarity, and the often-unseen sacrifices made by those standing alongside great leaders.",
-      "id": "d5dd031d91f1b1b2",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Nelson Mandela",
-      "topic": "wikiquote",
-      "ts": "2026-06-29T02:01:44.239049+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "6c24b96b9d0c1659",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer Gives First Look At Mark Ruffalo\u2019s Hulk - Deadline",
-      "topic": "movies",
-      "ts": "2026-06-29T07:01:24.404583+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQm55VU92U3hTREt5NkpuaFZ6SkdhV3ZUeXVBSTdlUlN1cU81Zk1JRVhSSmlDUEJVMmhEYnNiUWFLYjVBN0pZaXlkOHZ4QXRka0prX0lVM1hXRTBuM1c1RXRNUnVHemgwWWlBVWVwUlJ6UEUwaTdkRmo5SFE4azNZQXNJWTltY2kxYUJhNlVSNUxzSXhJbUk5alVrVTkwYV9zXzlxag?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "0ce1996130f89b5e",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Golden Sun",
-      "title": "25 years later and Isaac's battle theme still absolutely slaps. That bassline is unmatched \u2728\ud83d\udde1\u2600\ufe0f",
-      "topic": "golden_sun",
-      "ts": "2026-06-29T07:01:33.041841+00:00",
-      "url": "https://www.reddit.com/r/GoldenSun/comments/1ui4cy6/25_years_later_and_isaacs_battle_theme_still/"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "7b670eae6024f91d",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-29T07:02:05.714389+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "b52ecd37b6ec5203",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Shop Marvel Must Haves: Celebrate 'Spider-Man: Brand New Day\u2019 with Official Spidey Merch - Marvel.com",
-      "topic": "movies",
-      "ts": "2026-06-29T12:05:40.131778+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcGdrOUU1R0trV2NDQnhZdC1vNUZTT1RYV0dndVNjbGNmLUx4RkVpQlJXS2pxSHRURGZGVFRtRHg4NExhRXhhX2ZGVGJyRkVwdi1fMXVuTnV5Q2N4S3dNdVFQTDBPVDYtRDZWQVZ2WUtFYURSLWJqMjlCcGJ2OUs2NzNvcklLTDgwa1g3Sg?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "The Odyssey releases in 16 days\nSpider-Man: Brand New Day releases in 30 days",
-      "id": "50b9f15564e20172",
-      "score": 62,
-      "severity": "high",
-      "source": "Movies",
-      "title": "Movie countdown",
-      "topic": "movies",
-      "ts": "2026-06-29T12:05:43.974815+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "a3fba3dfde6ec171",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "'GTA VI' Online release date: What we know so far - Mashable",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:51.282357+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQZENLaWVBcHotbVhZbjFKQXlpYlNwOHRWbXlOVDZQOFh3SUFxM1NLYll1Q2s2dC01emc1SzQ4dHh0bFJYdmZmajdlejc0Z2ZZZGQtVnN1dURQNnBzRFQyb0VoQ3otRjAza1FPaVNQQWQ4VWZ1eHQzRnZ1bVhlRHdzcVNEWQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "0bd6c3e6f8f7cd16",
-      "score": 64,
-      "severity": "high",
-      "source": "Grand Theft Auto VI",
-      "title": "Xbox Announces 'Record' Pre-Orders For GTA 6 In Response To New Report - Pure Xbox",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:51.282955+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOdjZJYnNqUEhmdDJIa19IbjQtQy1zeVVDMlUzYmRnQmpha0ZvSV9BakRmdkJmLXRHUmtZa0o4dFV6S1U4RjFOYXpyNl92NExvUE03bVdiSG04LTROTmloZTBZN1ptYmwzNmozb1hFT0xzeFl5b1JualN6Q2pmY3Eyc1JZMkN1V2hNVGlqZVBSc2tfbWVHcFUwRUhqWDRjMnFyTEZlNGdUNVFkUQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "f7f7c192b574aca7",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA 6 Confirmed As Cheapest Franchise Entry To Date In Unexpected Turn Of Events - GAMINGbible",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:51.518360+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNY0ZPa2Itc3VDSE1VLWJFZFRjNTExMUI4djhkWVNIUkQ2TVhfU2Y3d29RcDh5MHNPS3NoY1hCNE9Cc3hRNkkzS0pmZTdrNHk5dFgwXzFDLTBZV2tNVnB5M1NhX2I4WlQ0TUlMTURmSkF6WTVFTVpxcWd6RHJaa2xHM3BPZVM0UVo2UTByT1BqSTZvS2NabUYtd2pqOWp0OXZnS3c?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "f7491349adc0eed6",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "Rockstar has added links to the GTA VI trailers to pre-order the PS5 version exclusively - Instant Gaming News",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:51.518997+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQRWQ2OWIzb1AwMzBOLTBaNnVqMnljQk9pWFdFeDJ3SDdURXZQeVNIajB3TGJOTHFtb0lQTFZnZ2ZCQjJCNVBIX0poSGYzM1ViaVJ6b2hRLUNpQXNMZDNZaDh6VTI1ZGtWT3JQM3NFbkRRbk9BczRfUTk1YmVZSUlCY01LeVVBczNzNXkxaThQTDhVVzhzb2VVRjBtVnVhSDZhRFZPejNhOFRYRER6bmJ3UzN1QVlQNmU4NzJHY0dyNlRYLXNvM19KNGR0cE11N0J3QmhnTQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "e4cac9ad6023bbee",
-      "score": 64,
-      "severity": "high",
-      "source": "Grand Theft Auto VI",
-      "title": "Grand Theft Auto VI Disc Release Is Reportedly Not On The Cards Even 'Months After Launch' - PlayStation Universe",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:51.519465+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQWncwNGl1ZUNzX3V4SDZYS1kyRGRHal9qXzliVl83Ump2SDczWmNpMmpWXy1zWU9lVG9CeDAyUTF5SHhMU3A4U1ZMb3hYZmYtLVVmQTlkTzdxTFhnRDlXMFh6WXZpZlJyQTNhbE9mdlF4Y1ZNeHVxOWtQOU5CLW53YlJybk1zQ3hXV1o0SFhjZnRqMm05dno3MVYzY1MzN3Zxam9JWkdBXzI2cVBaV1I4VURQdG4?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "3f896ff982add099",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA VI increasingly linked to PlayStation. Rockstar changed trailer descriptions - ixbt.games",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:51.725243+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPODV4MlNBbEViM2QtX1lTN2pDM0pweFVuQ3o2eGxMLTN2cG5DMy1wTzZVZE9oa1VjUWppZGxhYUJxa0dwNFlzZmxZRGdWckdydTh2dk5rSUltdHVGUHRDMUFGWTNfS29hSGRoMFNEaFZqcGlJWUxPN1NlbGFnVW9NSmlrSXRWWlVWUTNjS0pFNHZudFlLTmx2a0tSMnZ2ZGh5bGNYLXg2UE5mZGpfaEZveUx6ZXBQQkh6aTk1UkhVb3ZtZnd1RkVaa0FfZ3jSAdIBQVVfeXFMTmpFRDJFR3JvazhhcUtva2NIXzFGMWpUNER0STNwbmltVkh6ZUQ2d0c1YXJWRXVLYmxJeWJ2WkVldlZ2OGxhWHpvTUtNYTRqOWM2TzQ3eUVaY3ZiZmJPVTUzbEZCemJRM2p4aVRzeXNWdUpsZHliS2w1QTYyUkZNNDRoUFNfVXJDSlJXSWVOMDRCVUR5WnAyTDZHMnFubWRqT20wdHNsMmNTZW9aa3ByeW5KRTh0dWxKaC1Yc1NVM0dDMEwzUW1vZFJobjVIZDI3eFNR?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "ed3b62310e8a769e",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "\"Worthy Competitor\": Quality of Car Models from GTA 6 Screenshots Compared to Forza Horizon 6 and Gran Turismo 7 - ixbt.games",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:51.725862+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNVDNjYjNjYmszcDZJZEJJU3JqSTFYWVhKS3p2XzJxa214UjVoYWpSZ2JLbUo0TF9OMmFqc2FTX0Nva3NfbjRXek5adWF2T1RsWmdXQS1PTWlDOEdaZ1BmRDJGN0tHNUJSSXBYWXFfUjFTS3BSQUlpMTdpbTBuVWE2UFpOd0lIZVk4RVh1TGU3SVVEWjNKem5Mbm93Mk93VGxqZmdPYlpTQXNobmVZYm12XzdTeXFuME00VTZLRVFwTzhhZ1BWVUJlS0FuSTlYX283MUtudUhBN2VCT0N5dng4YkNfRQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "9683a331d333bab5",
-      "score": 64,
-      "severity": "high",
-      "source": "Grand Theft Auto VI",
-      "title": "Interactive GTA 6 map grows based on pre-order screenshots, leaks, and trailers - Notebookcheck",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:51.726223+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPN3Z0bGRjQjJKcHRnSVNZYXQ5MTZMWVVHV0dqLVNOTDdmLVlRQTU1aURRczZqMWpKaVdjcmZCcDU5QjJlSy1fMGo3Q19hRF9QNXFiQ1EzUmVrUVp2UVVyenFMQXJXc2lXLVl2RW56cnZTbF9ZZHp3Q0lBWEpwUlA3dXdiNEMybXdIZVJWWmpKQmpTZnpvaTAtdVhldHNybUtXTjdRY0x1M1VtenJwcmV6ZlR1Q2FaSU9jTFRtcGMzaw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "317b35918c6681cb",
-      "score": 64,
-      "severity": "high",
-      "source": "Grand Theft Auto VI",
-      "title": "Store Leak Reveals GTA VI Details and Why It Will Be Rockstar Games\u2019 Most Ambitious Title Yet - levelup.com",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:52.313525+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPVFVNcFdpTTF2S2N4VW5ZNzJRdlVWN0xtaGY2VTBtcVZhZFhEU0xKaWRfRmxnYVRRWlFmNTh4TWMyb3pUbGcwVjlDWlJGOU02aWpPUmpuZTI5UEppZk85UThmQUtjcHFORGl6ODRpNUJUTjBJTmdBQ2FuVmlCeEtwcnpoMEJaRGRZb3FzNFFhU2dVcjVCTm5ERmlHSTgxZm9rRGgweEpFQmtob1hlRGwtM0U0TlFETXhZS3hreU5HSThxWXM?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "f3efd1087a4e67f6",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA 6 and RDR2 Screenshot Comparison Shows Rockstar\u2019s Stunning 8\u2011Year Leap in Graphics - VICE",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:52.517797+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPMU1YcGxaU1RpRV9yMWZUVEpzYnRuTVg1NDZLZXlvdC02WXBsdmJuUmRxMGt1YVRZT1BSaTlmWExuS2JydWxGVDBaMzlxWUV5Z3VZd2ZLLUtUZnRGakh2TGZMYXBZaWN4Vmo0Wk1vS0NtQ1NtT3NjMDlsUl9ac2hoR282MGdFc3E0MVpyRXJuVVo2R0RYMGpVSndJYmJTcGpDb2Z6X1VrYTV2Rm5NUFVKTmQ5bkRPSTFhM1E?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "1197329f27d9dd73",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA VI finally has a release date, but fans are worried - checkpointgaming.net",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:52.518400+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPWGRKdmlIdHIzazd1TTBLS1FiN1ZyMFROa3JaWGRUbXlueVZJeEsxSHNzSzBSUm1RRmp2TTBfMk96R01sQ05VZEFudXZ3Z0tWNjZCX2tfUjNmak5ZR0RsNWdnd2dXUnl2X1NXX2swRkR1bi1vMHdsbXRVc2I0N182Y3N6QjlFLWd0QkdhTzlhcGI1bXF3SXlaUk5DTmpCQQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "4abe1e15ac84d697",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA 6 Reportedly Won't Get Disc Copy Even Months After Launch - Kotaku",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:52.518960+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQZUJDVklkRGg4NldaV2VNWEpuR2QtdHl0bTNUaVlmY1YyaHN3X29yN3lOb2pJNDdQdDhERjNHMjh5M3dkMU5VRFI2cUpkMUNfYV9YdkNtbElJdHBNcEhHX2VEMDNFd29ZYU9TUHd0eDBhNG9HSkoyeGw0dUVjNURHVVI3RGJnLVdkQzR4UmI4RnNuZDFpaDIwQnZHR0FWZEdyY0VKcnZCTFhPdjBfcjAyTV9RdVRYX00xOG9MdlE2dDB5dmtQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "97047fb426461425",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA 6 Pre-Ordered 6 Times More Than Call Of Duty, Says Retailer - RockstarINTEL",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:52.519262+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQYUQzRjRWN2syY0FhYzExalF3YllzSTVqeFpKcG9QVkZfeG1ieFZUSm9yZHRpMmN0eF9wc1pVd2o4aHFLVmtMTk1JbU1GcElaUjlfekN4X0puenVrdG1VNHdtbTNWWHN5WDVXMzJWWHk1Z1lmUEJuNHppcWRhWERiNXZEME9KT09pMlB6amV5dGZsSWs?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "09f204067ca79c50",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "No, There Is No GTA 6 Physical Disc Coming Out at Launch or the Months After \u2014 Those Reports and Social Media Posts Are Incorrect - IGN",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:52.519655+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQYWZabWY5MjBYaERyNjJHdFdPam1wYkRTSnZkcHFTcFdNdnFZRkVYdmNjUHdBTWtQVEZqTVp0SUNoQnB6dmV0bk42d0hHZ1ZZX3BkTEg4dHV5c3h4QW9xZDlLTlBGWTZscko5NlNueUhpZTlnLXJDY01CdkdLY2dOQWthVUJQeTdIRHFTcDJscTVUcURKSmZrel9VLXRRc2ZVUDlfdTVLcThQVGhRUVUwUGt3ZzZXb3Z5ZGVXT3J5ODNIOXh0SjlVc2lOTndIa1NxMFRNbDNDWmItYk44NHRGSzZ4aU94LTJXaGxB?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "6074f710aba727d3",
-      "score": 64,
-      "severity": "high",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA 6 Won\u2019t Ever Get A Disc Copy Says Report - RockstarINTEL",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:52.519972+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE4tM1dXTU93MzR3UG54N21xcW9XdjhMb1UxQlNPdVBRdk9WbzR6TFBFWmZIVjgzckRHd0RjTEpQQ25JR2trVERUU2FDc2s4b3JuRHVuaE16aHNCLU0xSWhmMVkzS2tHaXlBeDFMQzh0QzlvR2xaN3diLXZn?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "72b38cc7baef7f5f",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "Grand Theft Auto VI Will Be PS5 Pro Enhanced According To Retailer - PlayStation Universe",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:52.742605+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNd284N0JiTUl6X1dpeGNRNXhzcUpwLTNRWTJHMlE5WElKWWZGNmNrRi1HcHd5VzJNbVVoNm9NV1ctVkpZcG1UM0VQdXFlU21wQ2lTeDhRNTlKb3BKOUdkWVFES2pxX2d5N2FJTjMxbC1Qc05aZHVUU1lPS0xJMkIzUGZnSWp1TFJhWnJkLWRpUGdMN25OOHRV?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "c4d5d6c7ab0a8583",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "Take Two (TTWO) Reveals GTA VI Pricing And Digital Only Launch Details - Yahoo Finance",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:52.743172+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNaF9qOUVjSHJhME9rR0Z5NWx1NHNLSWZ0VUttajBraEFRRld0ZEYxbVd4aVlJZG04Y05ONFM3TWRuOW5jbUJkYXJKaW5FMWNwUkFjVzZLSDI1SklfTzh6LS1OYXBNM0pWbWdUVy1fMmdPSmQ5eWJhZTczR0pHVkR6RnM4eUtHN2xqOFlzTldoWW9sZw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "dcba1393db60ae4c",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA VI Pre-Order Guide: Price, Editions, Release Date and How to Buy Now - Newsweek",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:52.743484+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPOUhmLXRaVGloSTkwd3J2YTJ6bGR6ODBEZmFNUmNNZFpnWDZWZTFQMnBvMUdEVk5oR2Z0MTdqSERoVm1aU1BqUVlBWEktanR5RUhsUWFaanBPeEpkdTFfcnFGLUpQZTlzaEdXVnF3UGc5ejViYTdVMlpkNVBtZVVtQ2tzNW5YUmFmUWRJV21mTWRCYllLMEw0TmV0TUZKZThEbXpsVVh2bUEyTTVEUWo0MURjM3ZHbGFw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "036361e3da3735d1",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA 6 PS5 Pre-Orders Outsell Xbox by 6-to-1 - RockstarINTEL",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:52.743948+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9lZGo4dVgtN2YzYThGSjYxZ1VKUWVyVVpieE1mQ1lYU1M2aVhuTVZpcDBPZF9UVmc5eDJPRnpCNU1NdnBCclR6UlZtcy1Yc2ttNG14cmdla2Nxd3N6OVVQSlJYRHBIakV0S3VWamRuU2FaUkpPcHN2eXBB?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "bb7be110d40bfadf",
-      "score": 64,
-      "severity": "high",
-      "source": "Grand Theft Auto VI",
-      "title": "I've hunted down every confirmed GTA 6 gun in its trailers and screenshots so far - pcgamer.com",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:52.744257+00:00",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE42cE1pbTlDa09kNnFsTmVZTWdTOUV4V2lmMFpHQUVhSXNlQWE3YWo5dUQweTdnclNaQlZxc1VUQlhtRGRIY3JfeGtoQ2hHQVZHR2V0N2doVmxRRDd2ZDl1QldhZVZNcVcxbkFDU2RCeVkxcngz?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "ffb714f194c5a458",
-      "score": 64,
-      "severity": "high",
-      "source": "Marvel's Wolverine",
-      "title": "GTA 6 Cast Revealed: Marvel's Wolverine Star Confirmed - GameLuster",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:53.612180+00:00",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFAxc1lSWDN6QnNkVVVhMlBQQjJfc0NaTTlkc2JDUG1vNlRBSlliQUVpbnB0NURXbHE5cHdRY2lvOFJzcWtFTzZva3QyZXJWbUtvTmNRclhsRWJFMGY4ZVo1SFhrbHd5WG9BS2xCQ1kxN3dVUDJnc0VF?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "3bac0c87fc0e9f22",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "After GTA 6's controversial code-in-a-box decision, Marvel's Wolverine devs confirm the PS5 game comes with a disc - GamesRadar+",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:54.013476+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPTGFDdXNmTTY3TVl3Y1FNbElpcGx0TDluRHUxN1JQcXpDVlMxcUdNQzd2TmVLbzNRaG1HNjJIbUEzZGlCTi00VVh1YzNfTDI0bDZ1YkUxbVNEd1B5WGtFYTR3QnFUb3NONDExaWJXU0NHWDliQmYzUS1PTGt6ckdQYXc0REZuX0JDWWFEQTMzaWItZGJ4SVM3TV9VN2V3X0xRV2FQc0JyUXlGUGhOSGVUTTk2VUN3VWJQV19KRDhuZDhJWHNkdXMxWVlkSnFxN09jeHBJeVRXTjBPdm1NbnBvc3RMazctYm8?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "12473deb30a83220",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine scores points with physical disc - DLCompare.com",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:54.013946+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPM0tYYnA0b0NoSU5IN3dzUnFyUEgxamJTMTVRM05ZSy1PM29xeS1hMDUtN015Ny1HcGVwbm5qOVhtV1M5WUdDbTBJWWszNUQtMTNaVzlQQjRhbjY4dklQRUxFOWl6b2dfZ1ZyWDNIRFVHQWVQT1dXdDMwLVlSZ3R2YU04Z210QnJOMDVLdUdPTG1kTk0?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "0e608e404e9e3eac",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel\u2019s Wolverine Physical Edition Confirmed To Come With Disc - psxextreme.com",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:54.014305+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPMFpUTkRGZ3NHdWJvSGRlQUhyNjFtdVpyV1VRbmF3R2RrUEU5dms4NkhNcjhlUWNrUlFKS0M4X2pPQmVhMDRYMWhSOVB4UGlPcnBnbWxvT1ZlM1FaRzVJZ1FjMXFNTDhYb0ZnalBLY0tBWlRMQWJuc3BSSHc1SE5tcTk3SldsWGh4elhMc3VxMEVzR1V0MlE?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "55f44f44433ab4a0",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine Showcases New Gameplay Details at State of Play, Pre-Orders Now Available - GamerBraves",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:54.014641+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNNHlza0xvR0xCaWl0RUxJR2dNaGJWRW9HUk9sb0E2ekU5M3JiaTMyaUE4MTVDWnVnZTZoQ1lReGI0N2tjdTJlU3VlUzJVS2ZEc3NfMjBvSUJ0LW1PY3dUbEpqMjlkWEF4T3ZKc2cwUUZuSG9mekV0YUlxME9ZXzZqVE82amRjLWpWTkoxb3RJNDFYaHdNeFViUjZsbGNxVWZxN1EtZ3Yyc0NYU21keWozdGFXQlJ4bjlaa05J?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "2d3b3e1c4f20e7c0",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine will not repeat the fate of GTA VI. Insomniac confirmed the disc version - ixbt.games",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:54.014928+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQbExYRTRZOUdwUEJSRnNBVC1SSDFZanJiWWxyMTFLQWwzQ3lHRlV4UGFKMldOM0pxY2VqVjlFNkN5WXF6NmM3Qi0zTVJYcHZBODEyYzdjN1pEd0JIM2pxZDJUNFFTQXQwYk02b2tIYkt2MTlzYTF0dVQ2ZzVjVnRaSjZiQ3g4OHd5WmtJUWJ6TGpqRzNHWXRVdEczZ1UzanozS2VCMHJDeVVhUHBPM1NiWG4yUk1mZmZiRUJwSTI3QXpUWHBSMVY2aTFlZw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "556278582422df4f",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel\u2019s Wolverine Studio Confirms Physical Release Will Include a Disc - GamingBolt",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:54.015321+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOb2hDWi1GMFpZZXp0bk9oa1NGX0NCcE56R1VVX2ZuMXY0U09TeDhwdzdDcFQ4TDFFYndnWHB1T3U2SnJ2b2x6UW5JcG5wTnpXV3dQZ0R1bXAyTmsyMGtYc2x5UlVYa25xWEtHS004cUhkbGFVMUpxaFhMZjFrWXd0aG5mdTRrRXRPU2NEOUFaTjZvRHk3aEZHbNIBngFBVV95cUxPUXZsX2hOUWVnTXdxaWpHaGtZeEp1YW54a1VCbl9IQzZJeVlTRzVDbEdobWpHTy00akh2RHNPSDRjb2Z3cnVUemY2NUlmOGU1N0QzT296RTdVNnFyZ2RfYzFHVVhvRVNnaWFTT3pVNGNuZ1JyUkFDOGtvVlNvbkNpdlF6Z1k2TnBxcFZXRTEwcElrODdkVTRxdElzQ0c3Zw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "f2b94704d8852132",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine Confirmed to Include Disc in the Box - IGN",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:54.015639+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipgJBVV95cUxOOXhMUXB0N1VubTQxTVU5Q3pBeng3cENKVnQxU2FRempndDZkcXRKYmtrUjJQSmsyRHotR0RNVEpDZFpocjJ2LUtOTkpXWUIxSG16MHp1U2c0MExvR2k3Q3ZVODlOYU5DeDg2VG1xQzliZ2x6Q3pYZFE1b0NtbGhzUjhYSWRWcVl3THJIeHBjY1dSaTVRbEM4NFFZZUJkcG9HcHJqSTRfTFNyZmRPdGZHcWVGQUdpYmJhVjIybFM1WDFZTFpxVXNzTUpKWWh0cGtad1ozRXNtYmtHVENiLW85R25LMksxMlJZOGFEeHhRWXJzZGlia2RiTmFNdDFLemFxcnBOWUlfSEUwRDZmbnFBUnFHMDhtZVBXdDdwbFJ0OS1kVkxnVkE?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "5904efe48c79c7e8",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine Actor Confirmed for GTA 6 Role - games.gg",
-      "topic": "games",
-      "ts": "2026-06-29T12:05:54.015941+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFA4aHUtNTB5SHF5MGtmUU1Cd2NsYzkzNzRwUFBMTDdfaDJEelNaS1k1SVJoT2dVYVZ1VkdMcVk1WEpPel96SmJxNUwzSVk0TF9RRHd2VW1ReXdCVWhGUGxGVjdjYVVObzc2THc?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6471,6 +6066,438 @@
       "topic": "wikiquote",
       "ts": "2026-07-02T18:44:01.029341+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "0e2ddc043a2903ec",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "The Odyssey Countdown Trailer Released - IMDb",
+      "topic": "movies",
+      "ts": "2026-07-02T21:36:21.675157+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBjWEVsUUExQ3lyNFhEdFgyYlJiUml2eGRDeWFRbWdIZXNPUXlVRFlnaWl2ckV6WGppQWFhRDhnOVNvTWNnX0J4RGtKaXVXWFd3aDY0bWFmcTlTWDNmbzB0Q19OWG1vNDQ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "7953bb0774bf6266",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Christopher Nolan Officially Reveals the Key Role \u2018The Dark Knight\u2019 Played in \u2018The Odyssey\u2019 - Collider",
+      "topic": "movies",
+      "ts": "2026-07-02T21:36:22.074277+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOMVh1VkRCaDAxVlZuczAxRjUza2RZd3V1TFRLRG42MU4yd2pUczFWRWExbUFmZVVCbHRRSUJ1WF82OV82N3RUS2NOVjRYeHg5VWZkR2duU2JyUk1HZkFHTi1NMlZ5QlZvTjhYUWpmS1dXN1c0Ukl2b3dyNlJQUnVjM0lETDZ2R2FuRVdB?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "d0f210470e74f8f0",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "THE ODYSSEY Countdown Trailer Released - CinemaNerdz",
+      "topic": "movies",
+      "ts": "2026-07-02T21:36:22.075020+00:00",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4ydmVzMGczWWI5Y1FGOWxySXJ1cGtTZ2tQQUtXX1ZtZjRBWjJuMnhUVXdlRTRwM3A2RDZjUUl6RVRRSWZUZG9iaFNmZkRPNEo3VEw3bnBIVUoxeTVQVG9zTmJibTVFNjVEMF9sa1JuTHA?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "5b65cde1d480e105",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "The Odyssey - Official 'Completely in IMAX' Featurette - IGN India",
+      "topic": "movies",
+      "ts": "2026-07-02T21:36:22.307507+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQclRRVTBhdzNtTzVBZjMwbTZoU0RzOGZDTWZkOWt5LWZiZHdNTWx1WDM2RjhYR0V0U2NzZGVvdVVXdVZQOXdPR01DVXhPd3Q3TzhpdkppZEhucVNja2Y0MldpdW5NU3Y0ajR1dXVYUzduaWl1VmJaVU9RYkdTVDBrT3NlSG5YVkdBSEZVQ09TRkNiUDBkTGh1Qg?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "b2ea138e3f584ae9",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "The Odyssey - Official 'Completely in IMAX' Featurette - IGN",
+      "topic": "movies",
+      "ts": "2026-07-02T21:36:22.522898+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPTm5ycDhxR2ZWUkVaSzNXUVNNQUc0WnZ2RTZoNjkwM2pfOXdXRHJkRFI1N3F3ajNtZVRZYjdNd3BWbVBldTZNR1U1QXJma1J0dFZIbzBzWENzTTBIU1c5c2VWUktDaldzSVRxbWxBczhTcXFEbVdCY3VRRHU4SU53NXZSdw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "394fe91d310d53d0",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Roblox gets official game for Christopher Nolan's The Odyssey: Here's what we know - The Times of India",
+      "topic": "movies",
+      "ts": "2026-07-02T21:36:22.880112+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxNX2FKNHVZOVUtNVpKeTl5Q0ZpTlFmcUpxT0drRUtEeW1HVmUxUlYyWnVyUHZwcGMteFQwUVBPVjY3aDNfZkZWZ0t4MmhyNWZaM2NSUnMzM3dDb0luaEQ0U3ZzQkh0YXJ1SGtEYUIwQV90UnZhUm9jUUh0VnhoX3JDaTR0XzRfVjhzUk0zNmtBNnplVVBEbUVranFCaXRzYXZUNXU4VUhsb2J3c1B4ZldsTW1MN1d1XzRRTEhIVVUyVUs3QlB2cGtVdUJ3Z1JJUERpeDY4UkZtczlaZmtJSEhDRjFEdEduY1ktNnYydFExNELSAfYBQVVfeXFMUHF1Z2hRZGN4cEl6U3d1SEcwenlvc3JwOTlzU1ZXVklNMmtrOXhyM09DVm5od1FXcGRFanpfRXhCR05uVGlMYXlyYWpWbUNpTHdkdGRRNUZJVWRuOWdzUzFjYXd3ME9QdFNBVjZpcklGNkVwN1dnSGtTcW51MVhzNXIzQWZnYnUwZWVZb2RIUXlJRGxqV0p1SjYyT3Jvb1dibVlIVlNGYmdta3pfakpHbDVxLURfRjBSZTZQOTFtMDl5ZmtZWFFxa2FTR2U0bm5DaWFaOUs2MGhuTExyX1NoeWNyWTNMeFlaYXIwWDRDZl9pbXZtYl9R?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "91b7fbed53ca6d81",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "The Odyssey Final Trailer Unveiled: Christopher Nolan Directorial To Release In 2 Weeks! - Mashable India",
+      "topic": "movies",
+      "ts": "2026-07-02T21:36:22.881379+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQcTZsVzUtaDQ5UWxoN1JJbmJDZ005cGJzSnZtbDBVSlk4ZlE2Y25UeDY3YW1BU0FCbGhMMXBmc2RkbWdubXlsZkYxaTE5V0NScUluUTNvMEhsSl85Q3Nfb0VnVDJnWTI3S2MwcU1Cb2ZoZjdGaWsyZDZNd0l4NWFjNGZMUkZSNVJXVnVxQkR6MjMtbHRXbldfNGVMS2F2R2Z0a1ZLZFM4dVcxcUI2cXd3Mk1JLV92bUlVdTRfY0p6ekdKZnVRZkp2Uk5SVQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "a80f63cea2aeba9b",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "Matt Damon Leads \"The Odyssey\" in Epic New Trailer Ahead of Summer Premiere - GreekReporter.com",
+      "topic": "movies",
+      "ts": "2026-07-02T21:36:23.067620+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNS2NXOGVHNVVDQXBsNUdUMWV5eUtKbjJmTVR4MEgtcTNqazlQLTRVdUE3RFNlS1JlMGJhZWpqeVkyUzJkaGVkRVJUdlZjY3FHWVFmUFRZSUR2bWg3d3JEOWxENW0tVEd6RTVBeUFrbXotMVJxRUxvRVZOSnBnd3QwTUhwd0NQTno0ckE?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Jamming Sin Fronteras - Rapsusklei\n(because you like Rayden)",
+      "id": "326c03b317460535",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-07-02T21:36:29.447502+00:00",
+      "url": "https://www.deezer.com/track/2711969921"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 55,995.00 (was DOP 69,995.00, -20%)",
+      "id": "85c017406a0f8efc",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Lavadora Secadora Samsung 20 Kg WD20T6300GP/AX",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:29.616651+00:00",
+      "url": "https://www.sirena.do/samsung-lav-sec-20kg-wd20t6300gp-ax-2063385/p"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 20,995.00 (was DOP 35,995.00, -42%)",
+      "id": "eb9ed241a3b013ee",
+      "score": 64,
+      "severity": "high",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Televisor Nikkei Led 50P Android Uhd 4K 50D3100",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:29.617307+00:00",
+      "url": "https://www.sirena.do/nikkei-led-50p-android-uhd-4k-50d3100-2065424/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 30,295.00 (was DOP 33,595.00, -10%)",
+      "id": "b5374abf3baec7fb",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Estufa Frigidaire a Gas 30 Pulgadas FKGN30C3YI/MYI",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:29.830984+00:00",
+      "url": "https://www.sirena.do/2133762/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 69,595.00 (was DOP 86,995.00, -20%)",
+      "id": "9167a970eb6b57a6",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Lavadora Secadora Whirlpool Torre a Gas 44 Lb 7MWGT4027HW",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:29.831823+00:00",
+      "url": "https://www.sirena.do/whirlpool-lav-tor-gas-44lb-7mwgt4027hw-1839893/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 27,595.00 (was DOP 32,495.00, -15%)",
+      "id": "c84ef9a22f009d82",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Aire Acondicionado Midea 12000 BTU Inverter SEER 18 MSAF-12CDN8DB",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:29.832374+00:00",
+      "url": "https://www.sirena.do/midea-aire-12btu-inv-s18-msaf-12cdn8db-2087442/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 30,595.00 (was DOP 35,995.00, -15%)",
+      "id": "6a5bdc00d9ccaaa5",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Aire Acondicionado Midea Inverter 12000 BTU SEER 21 MSAG-12CFN8CE",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:29.832909+00:00",
+      "url": "https://www.sirena.do/midea-aire12btu-inv-s21-msag-12cfn8ce-2087439/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 21,595.00 (was DOP 23,995.00, -10%)",
+      "id": "dd978136a5bc0167",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Lavadora Whirlpool Impeller 14 Kg WWI14AWHLS",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:29.833473+00:00",
+      "url": "https://www.sirena.do/whirlpool-lavadora-imp-14kg-wwi14awhls-2041528/p"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 1,195.00 (was DOP 1,995.00, -40%)",
+      "id": "f2920becc9798496",
+      "score": 64,
+      "severity": "high",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Abanico De Pedestal Nikkei 16 Pulgadas US16058",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:29.834021+00:00",
+      "url": "https://www.sirena.do/nikkei-abanico-pedestal-16-us16058-1377963/p"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 1,995.00 (was DOP 3,195.00, -38%)",
+      "id": "06e3a2d429976dad",
+      "score": 64,
+      "severity": "high",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Estufa De Mesa Nikkei 2 Hornilla Jk-202b",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:29.978032+00:00",
+      "url": "https://www.sirena.do/nikkei-estufa-mesa-2h-jk-202b-1752555/p"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 45,995.00 (was DOP 65,995.00, -30%)",
+      "id": "2e369ce6ab340751",
+      "score": 64,
+      "severity": "high",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Televisor Tcl 65p Uhd Qled Android 65c655a",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:30.331409+00:00",
+      "url": "https://www.sirena.do/tcl-65p-uhd-qled-android-65c655a-2086500/p"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 4,195.00 (was DOP 5,995.00, -30%)",
+      "id": "e0d84dd267e6c163",
+      "score": 64,
+      "severity": "high",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Freidora De Aire Nikkei 3.5L 267069/267029",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:30.569946+00:00",
+      "url": "https://www.sirena.do/nikkei-air-fryer-3-5l-267069-267029-1898836/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 35,995.00 (was DOP 50,995.00, -29%)",
+      "id": "f890b01104859eae",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Secadora Samsung 20 Kg DV20A3200PW/AP",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:30.824246+00:00",
+      "url": "https://www.sirena.do/samsung-secadora-20kg-dv20a3200pw-ap-1959828/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 12,695.00 (was DOP 16,995.00, -25%)",
+      "id": "0e77993504d7ddee",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Lavadora Nikkei Semi-Autom\u00e1tica 12 Kg",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:30.825191+00:00",
+      "url": "https://www.sirena.do/nikkei-lavadora-xp120-7005-nk26-1923810/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 126,995.00 (was DOP 156,995.00, -19%)",
+      "id": "a24bb6437565ca91",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Nevera Samsung 31P RF32CG5410S9AP",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:30.825759+00:00",
+      "url": "https://www.sirena.do/samsung-nevera-31p-rf32cg5410s9ap-2058751/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 32,395.00 (was DOP 39,595.00, -18%)",
+      "id": "a93afce1a8781206",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Secadora Whirlpool a Gas 18 Kg 7MWGD1800EM",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:30.826314+00:00",
+      "url": "https://www.sirena.do/whirlpool-secadora-gas-18kg-7mwgd1800em-1761097/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 16,995.00 (was DOP 19,995.00, -15%)",
+      "id": "f722e5db2fbf94a1",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Lavadora Whirlpool 8 Kg WWI08BWHLS",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:30.826814+00:00",
+      "url": "https://www.sirena.do/whirlpool-lavadora-8kg-wwi08bwhls-1809767/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 30,995.00 (was DOP 35,995.00, -14%)",
+      "id": "aeb8f6e3fa324898",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Lavadora Samsung 17 Kg WA17CG6441BWAP",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:30.827336+00:00",
+      "url": "https://www.sirena.do/samsung-lavadora-17kg-wa17cg6441bwap-2061103/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 38,695.00 (was DOP 42,995.00, -10%)",
+      "id": "a3d651c8223f4017",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Lavadora Samsung Inverter 20 Kg WA20B3553GW/AP",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:30.827830+00:00",
+      "url": "https://www.sirena.do/samsung-lavadora-inv-20kg-wa20b3553gw-ap-2035084/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 1,495.00",
+      "id": "5087f2e94ade1f65",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Plancha Oster de Vapor GCSTBS-5053",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:30.828387+00:00",
+      "url": "https://www.sirena.do/oster-plancha-vapor-gcstbs-5053-2044384/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 1,295.00",
+      "id": "d8c87d00763a6820",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Soporte De Tv Argom Fijo Lcd 32-63 Argbr0461",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:30.828931+00:00",
+      "url": "https://www.sirena.do/argom-soporte-fijo-lcd-32-63-argbr0461-1619274/p"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 32,995.00 (was DOP 55,995.00, -41%)",
+      "id": "6d9c9f3fb9f2ed20",
+      "score": 64,
+      "severity": "high",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Televisor Nikkei LED 65P Android UHD 4K 65UD6100",
+      "topic": "groceries",
+      "ts": "2026-07-02T21:37:30.829434+00:00",
+      "url": "https://www.sirena.do/nikkei-led-65p-android-uhd-4k-65ud6100-2034573/p"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "cb2e4b7028f912e2",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.1 - 37 km NW of San Antonio, Puerto Rico (~259 km away)",
+      "topic": "quakes",
+      "ts": "2026-07-02T21:38:00.294519+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71522458"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 9:20 PM - max 49deg, SW to NE. Look up!",
+      "id": "12d2395937fb87f5",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-02T21:38:03.897721+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Hydration check: grab some water before you carry on.",
+      "id": "c04b13a8189603b1",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-07-02T21:38:05.720746+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "For centuries, the sea was a devourer of men, not through storm or battle, but through a creeping, insidious malady that withered the body and spirit. Scurvy, a word whispered with dread among mariners, was a specter that haunted every long voyage. It began subtly, with lethargy and pale skin, then escalated to bleeding gums, loose teeth, open sores that refused to heal, and a profound, debilitating exhaustion. The skin would blacken, the joints would swell, and the mind, once keen, would descend into melancholic despair or maddening delirium. Entire crews could be decimated, sometimes losing more men to scurvy than to all other dangers combined. Explorers like Vasco da Gama and Magellan saw their ranks decimated, their grand ambitions nearly shipwrecked by this silent killer. The quest for a reliable cure, or even a preventative, was a desperate, ongoing struggle against an invisible enemy.\n\nInto this grim reality stepped James Lind, a Scottish naval surgeon, a man of quiet determination and a nascent scientific curiosity. In 1747, during a ten-week voyage aboard HMS Salisbury, Lind was confronted with the familiar horrors of scurvy. Recognizing the widespread suffering and the desperate need for a solution, he devised what would become one of the earliest recorded clinical trials. From his scurvy-stricken crew, he selected twelve men, all afflicted to a similar degree, and divided them into six pairs. Each pair received a different supplement to their standard naval diet: one received a quart of cider daily, another twenty-five drops of elixir of vitriol, a third two spoonfuls of vinegar, a fourth a concoction of sea water, a fifth two oranges and a lemon, and the final pair a purgative concoction of nutmeg and barley water. The results, though modest in scope, were unequivocally dramatic.\n\nWithin days, the two men receiving oranges and lemons showed remarkable improvement. One was fit for duty after six days, the other nearly recovered. The cider drinkers also showed some positive, albeit less striking, effects. The other treatments, including those long championed by some medical practitioners, proved utterly ineffectual. Lind, with his clear-eyed observation and methodical approach, had stumbled upon the antidote. He published his findings in \"A Treatise of the Scurvy\" in 1753, advocating for the regular inclusion of citrus fruits in the naval diet. This was a pivotal moment, a testament to the power of empirical observation over ingrained dogma. However, the path from discovery to widespread adoption was, as is often the case with human institutions, fraught with frustrating delays.\n\nDespite Lind's compelling evidence, bureaucratic inertia, skepticism, and the sheer logistical challenge of supplying fresh fruit to a global navy meant that it would take another four decades for his recommendations to be fully implemented. It wasn't until the persistent efforts of Sir Gilbert Blane, a fellow naval physician, and the unwavering advocacy of various admirals, that the British Admiralty finally mandated the daily issue of lemon juice to all sailors in 1795. The impact was nothing short of revolutionary. Scurvy, once the bane of the British Navy, virtually disappeared. The \"limeys,\" as British sailors became known, could now undertake long voyages with unprecedented health and effectiveness.",
+      "id": "d740e1f30dddf18d",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "James Lind and the cure for scurvy",
+      "topic": "learn",
+      "ts": "2026-07-02T21:38:10.725049+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cI think of Eleanor Roosevelt as a woman of such human and uncompromising qualities that they make her not just in name but truly the first lady of the land.\u201d\n\u2014 Eleanor Roosevelt\n\nThe air in the White House, even during the darkest days of the Great Depression, often crackled with a distinct kind of energy whenever Eleanor Roosevelt was present. She wasn't merely the wife of a powerful man; she was a force in her own right, her very presence a challenge to the traditional confines of her role. It\u2019s no wonder then that a contemporary, observing her tireless work and unwavering commitment to social justice, would declare her \"not just in name but truly the first lady of the land.\" This wasn't a casual compliment but a profound acknowledgment of a woman who had fundamentally redefined the position. She traveled extensively, often unchaperoned, visiting coal mines, slum tenements, and Native American reservations, bringing back firsthand accounts of the suffering that shaped her husband's policies. While the nation grappled with unprecedented economic hardship, and the shadow of fascism lengthened across Europe, Eleanor embarked on a relentless crusade for human rights, championing the forgotten, the marginalized, and the oppressed. Her daily newspaper column, \"My Day,\" offered millions a glimpse into her active life and unfiltered opinions, creating an unprecedented connection between the First Lady and the American public.\n\nThis quote, uttered at a time when the world teetered on the brink, speaks to Eleanor's unwavering moral compass and her profound humanity. While Franklin Delano Roosevelt navigated the political currents of a nation in crisis, Eleanor plunged headfirst into its social fabric, advocating for civil rights for African Americans, greater opportunities for women, and improved conditions for laborers. She famously arranged Marian Anderson's concert at the Lincoln Memorial after the Daughters of the American Revolution denied the Black contralto a venue, a powerful act of defiance against racial segregation. Her outspokenness and independent spirit were often met with criticism, even ridicule, yet she persevered, driven by a deep conviction that government had a responsibility to uplift all its citizens. This wasn't a woman content to host teas and preside over social functions; she was a social engineer, a moral compass, and an unyielding advocate for justice, using the immense platform of her position to fight for a more equitable society.\n\nToday, as we confront new social injustices and navigate a complex global landscape, Eleanor Roosevelt's legacy and the sentiment of that quote resonate with undiminished power. Her willingness to confront uncomfortable truths, to speak out against discrimination, and to champion the vulnerable serves as a timeless inspiration. In an age of increasing polarization and cynicism, her \"uncompromising qualities\" \u2013 her integrity, her empathy, and her unwavering belief in the inherent dignity of every human being \u2013 remain a powerful blueprint for leadership and citizenship. She taught us that true leadership extends beyond policy and politics; it lies in a profound commitment to humanity, a willingness to listen to the unheard, and the courage to fight for what is right, even when it is unpopular.",
+      "id": "e226fcb8921af7da",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Eleanor Roosevelt",
+      "topic": "wikiquote",
+      "ts": "2026-07-02T21:38:15.029871+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Jun 29-Jul 05: RD$2,045.02 across 8 transactions\nTop: TOTAL V CENTENARIO RD$1,000.00; BANCO POPULAR OFICINA SAM RD$500.00; CLARO RECAR RD$250.00; KRISPY KREME SAMBIL RD$200.02; AROMA COFFEE SERVICE RD$95.00\nBiggest: RD$1,000.00 at TOTAL V CENTENARIO\nvs prior week: Weekly spending moved from RD$9,944.73 to RD$2,045.02 (-RD$7,899.71, -79.44%)",
+      "id": "d417c02ac47db3e3",
+      "score": 60,
+      "severity": "moderate",
+      "source": "BHD",
+      "title": "Weekly spending summary",
+      "topic": "spending",
+      "ts": "2026-07-02T21:38:19.383828+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6591,7 +6618,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-27-JUN-03-JUL-DE-2026.pdf",
   "fuel_last_pdf_hash": "f8498e031891b450b3caa406b4e9889ad0596d4b83780850ebf173674f103f51",
-  "fuel_last_prices_seen_at": "2026-07-02T18:43:45.920933+00:00",
+  "fuel_last_prices_seen_at": "2026-07-02T21:38:01.777435+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7402,6 +7429,7 @@
     "iPadOS 26.5.2 (23F84)"
   ],
   "iss_seen_passes": [
+    "78e6c260b6ec1528",
     "397332ad906895a4",
     "f1ccce54fb63cb41",
     "44c317309f39999a",
@@ -7462,8 +7490,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "math_history",
-  "knowledge_last_sent": "2026-07-02T6",
+  "knowledge_last_category": "medicine",
+  "knowledge_last_sent": "2026-07-02T7",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -7519,6 +7547,7 @@
     "medicine:Barry Marshall and the cause of stomach ulcers": "2026-06-18",
     "medicine:Christiaan Barnard and the first heart transplant": "2026-06-28",
     "medicine:Edward Jenner and the first smallpox vaccine": "2026-07-01",
+    "medicine:James Lind and the cure for scurvy": "2026-07-02",
     "medicine:Ronald Ross and the malaria mosquito": "2026-06-30",
     "medicine:The discovery of anesthesia's risks and refinements": "2026-06-20",
     "medicine:The discovery of insulin by Banting and Best": "2026-06-23",
@@ -7591,9 +7620,9 @@
     "world_history:The rise of Adolf Hitler": "2026-06-22"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 1,
-    "ts": "2026-07-02T20:10:11.459360+00:00"
+    "failed": 1,
+    "ok": 45,
+    "ts": "2026-07-02T21:36:18.099431+00:00"
   },
   "launch_seen_ids": [
     "c88f136e6de9f1c0",
@@ -7623,6 +7652,11 @@
   "life_dashboard_last_week": "2026-W26",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "4a0405e6db60b8ef",
+      "a1eda6d93e27c5ae",
+      "3b0329b05befc279",
+      "ffaa542dea4c2bf3",
+      "c06e9ccc3219e3e4",
       "98be756acacc5cb9",
       "96a2fc8df633569d",
       "a2caf803d5ac6ca0",
@@ -7717,12 +7751,7 @@
       "49df125591fdf2a2",
       "95edc2af3fc834fb",
       "c48bcc683f145c06",
-      "e89591a0bac66669",
-      "b2972625804b2eab",
-      "836e9206158e54be",
-      "915d3331803cece2",
-      "edc4bbec64d25ef8",
-      "6a8dd71af8d1670e"
+      "e89591a0bac66669"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -7926,6 +7955,13 @@
       "5f317afc30595e31"
     ],
     "Spider-Man: Brand New Day": [
+      "a74d4cec8414bf31",
+      "5e4c01c526b4bd67",
+      "0a05c2c43a074cd9",
+      "2fc1c17264d0cd50",
+      "7571d2664723fd69",
+      "28b8cd6dbe540a0f",
+      "679951badc4bcf00",
       "6b5ff167acd4a1b3",
       "b21c8101ec9b2a16",
       "e298ca4128c4ebfb",
@@ -8018,14 +8054,7 @@
       "5ce058c117b83347",
       "1c54f05964e075c4",
       "fd0f4f4afd350c2c",
-      "242bb50f4aa92c9f",
-      "e7176c0e174144f6",
-      "ce70596d032635ec",
-      "3716649c87a1e037",
-      "1f8965c281ced0c8",
-      "5915b8f8782c681d",
-      "b3042f8f7927419c",
-      "0acbd0557567742d"
+      "242bb50f4aa92c9f"
     ],
     "The Batman Part II": [
       "cf795e6f7a3caa19",
@@ -8351,7 +8380,8 @@
     260106,
     11491454,
     12713049,
-    6962549
+    6962549,
+    351553
   ],
   "music_release_seen": [
     "1fb8027c5bbe3041",
@@ -8419,6 +8449,15 @@
       "label": "Pink Floyd",
       "payload": {
         "name": "Pink Floyd"
+      }
+    },
+    "05245b6018b22266": {
+      "applied": null,
+      "created": "2026-07-02T21:36:29.447484+00:00",
+      "kind": "artist",
+      "label": "Rapsusklei",
+      "payload": {
+        "name": "Rapsusklei"
       }
     },
     "06e56220b817d549": {
@@ -8608,15 +8647,6 @@
       "label": "Boygenius",
       "payload": {
         "name": "Boygenius"
-      }
-    },
-    "6818a61aa1cdc2e8": {
-      "applied": null,
-      "created": "2026-06-18T21:15:18.957366+00:00",
-      "kind": "artist",
-      "label": "Julie Zenatti",
-      "payload": {
-        "name": "Julie Zenatti"
       }
     },
     "7831ed3aa27ec966": {
@@ -9004,6 +9034,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "d17ea7f6d714aabb",
     "d65ea03d751d25ce",
     "d019c1da3f693359",
     "782ac68e4a8be881",
@@ -9112,7 +9143,7 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spending_week_summarized": "2026-W27:1845.00",
+  "spending_week_summarized": "2026-W27:2045.02",
   "streaming_seen": {
     "1003596": [],
     "1288438": [],
@@ -9123,179 +9154,179 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "apod": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "baseball": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "deals": {
-      "last_data": "2026-07-02T18:43:00.228352+00:00",
+      "last_data": "2026-07-02T21:37:20.703184+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "energy": {
-      "last_data": "2026-07-02T18:43:25.971875+00:00",
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_data": "2026-07-02T21:37:42.649990+00:00",
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "fda": {
-      "last_data": "2026-07-02T18:43:15.494778+00:00",
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_data": "2026-07-02T21:37:31.799056+00:00",
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "fuel": {
-      "last_data": "2026-07-02T18:43:45.920954+00:00",
+      "last_data": "2026-07-02T21:38:01.777453+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "fx": {
-      "last_data": "2026-07-02T18:43:44.677517+00:00",
+      "last_data": "2026-07-02T21:38:00.786491+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-02T18:42:13.256969+00:00",
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_data": "2026-07-02T21:36:31.031479+00:00",
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "groceries": {
-      "last_data": "2026-07-02T18:43:13.111463+00:00",
+      "last_data": "2026-07-02T21:37:29.616153+00:00",
       "last_data_count": 236,
       "last_error": "429 Client Error: Too Many Requests for url: https://discord.com/api/v10/channels/1515517351406342184/messages",
-      "last_error_ts": "2026-07-02T18:41:55.563919+00:00",
+      "last_error_ts": "2026-07-02T21:36:18.099431+00:00",
       "last_ok": "2026-07-01T21:51:27.562160+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "learn": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "movies": {
-      "last_data": "2026-07-02T18:42:05.872525+00:00",
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_data": "2026-07-02T21:36:25.906272+00:00",
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "music": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-02T18:43:26.654738+00:00",
+      "last_data": "2026-07-02T21:37:43.255781+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "outages": {
-      "last_data": "2026-07-02T18:43:43.806575+00:00",
+      "last_data": "2026-07-02T21:38:00.168148+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-02T18:43:43.970931+00:00",
-      "last_data_count": 41,
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_data": "2026-07-02T21:38:00.294200+00:00",
+      "last_data_count": 40,
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-02T20:10:12.485082+00:00",
+      "last_data": "2026-07-02T21:36:26.877734+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-02T20:10:11.459360+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "weather": {
-      "last_data": "2026-07-02T18:43:26.165497+00:00",
+      "last_data": "2026-07-02T21:37:42.947116+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-02T18:43:50.573595+00:00",
+      "last_data": "2026-07-02T21:38:05.720253+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-02T18:41:55.563919+00:00"
+      "last_ok": "2026-07-02T21:36:18.099431+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165094"
+    "last_full_window": "165095"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9310,8 +9341,9 @@
     "groceries": "2026-07-02T12:51:17.142127+00:00"
   },
   "water_slots_sent": [
-    "2026-07-02|12",
+    "2026-07-02|21",
     "2026-07-02|18",
+    "2026-07-02|12",
     "2026-07-02|15"
   ],
   "weather_seen_ids": [
@@ -9413,8 +9445,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "philosophers",
-  "wikiquote_last_sent": "2026-07-02T6",
+  "wikiquote_last_category": "leaders",
+  "wikiquote_last_sent": "2026-07-02T7",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -9438,7 +9470,7 @@
     "innovators_artists:Walt Disney": "2026-06-30",
     "leaders:Abraham Lincoln": "2026-06-26",
     "leaders:Benjamin Franklin": "2026-06-27",
-    "leaders:Eleanor Roosevelt": "2026-06-23",
+    "leaders:Eleanor Roosevelt": "2026-07-02",
     "leaders:Frederick Douglass": "2026-06-30",
     "leaders:Mahatma Gandhi": "2026-07-02",
     "leaders:Mikhail Gorbachev": "2026-06-26",
