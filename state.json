@@ -317,6 +317,15 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 35,
+      "source": "World Nuclear News",
+      "title": "SGE-led team targets 14 BWRX-300 SMRs in UK",
+      "topic": "energy",
+      "url": "https://www.world-nuclear-news.org//articles/sge-team-targets-14-bwrx300-smrs-uk"
     }
   ],
   "digest_last_sent": "2026-07-01",
@@ -354,6 +363,7 @@
     ]
   },
   "energy_seen_ids": [
+    "05647c0613273a43",
     "d99c74fec9e8716a",
     "aa5a372eebb5530b",
     "33b3c6945276ebeb",
@@ -520,138 +530,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "In this recent HiRISE view from the Mars Reconnaissance Orbiter, the little green dot indicated on the surface of the big Red Planet is the Perseverance Mars rover. Recorded on June 13, the car-sized, six-wheeled robot was imaged a day before completing a Martian marathon...",
-      "id": "3b682139abf9e500",
-      "score": 60,
-      "severity": "low",
-      "source": "NASA APOD",
-      "title": "APOD: Mars Marathon by Perseverance",
-      "topic": "apod",
-      "ts": "2026-06-27T14:03:44.197452+00:00",
-      "url": "https://apod.nasa.gov/apod/image/2606/PIA26726.jpg"
-    },
-    {
-      "action": "push",
-      "detail": "Waves 1.0 m | Rain 100% | UV 8 | 31 C\nHigh rain chance (100%).",
-      "id": "81f2e76f0e3e6753",
-      "score": 60,
-      "severity": "low",
-      "source": "Beach day",
-      "title": "Beach day: 5/10 - iffy - check the notes",
-      "topic": "beach_day",
-      "ts": "2026-06-27T14:03:45.939316+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "a2e0304626143ee3",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Leaks - Resurfaced Set Photo May Confirm Recent Photo & Video Are Genuine - ComicBookMovie.com",
-      "topic": "movies",
-      "ts": "2026-06-27T15:22:01.917453+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQMWhIbTIyNm9fX1hXS0pGWmpXbktObGhQNnRFSy0xQlVoeXVtbWdlbEhiM2Y4T1VQS0Jzc2ZqbkpxSllWemh5RmlFaWItSEMzTF9XLWNUQ2ZnSjBiMi1nNl91N2VFSUh3RG1vUm9CclU2VDR3Si1idEpQVXpIMUZpSU52c0JkVEZlMHVvZlFIZjJrY05oUm54YkZvWmxpVmpGc0NIeXFNdTJJSG11STQ2emtjR1BKb1hPai1sV1FJa2ZCUFJ4MkQ1blZ5dUdvQ0MwM19ibXdzU0VtYnNfQk94LUdST0VkUQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "3e196915b74128e2",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "A Big \u2018Avengers: Doomsday\u2019 Leak Reportedly Arrives, But Its Validity Is Debatable - Forbes",
-      "topic": "movies",
-      "ts": "2026-06-27T15:22:02.543989+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNWWxfeWxRTE1FeXZHUjlGXzZkbkh5ME02YjROVHlEbk9pbXpua0Z5cHVMN1FHYmtGRHktdW9id3ZTN0QwZENDY2ZMUm13WklaYTdKM29jNEk4QVVkMnNlaFJBNF9CYzZ4R3BIQURmRE1ZRUcwbVItcF9aNFh5SE9OaXMxUUZTUlA5U3BMTi1XT3U2UnFUNS1zYVhXd2FzVlU4dWtoRjgyR0hBWnMtc09KaFhOeWtrZkJOeEJQSGt5OW5SY0d5T1Nz?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "d7fbb9f8f528a596",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland confirms a surprising Spider-Man: Brand New Day twist - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-27T15:22:03.170397+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOb0hCYjJGbEdfZk9HMllBMy1SODdydVFKZmN4VTBiLV82V2VwdkhTX0lnT04tS2k1SzhNNHFMaDExS3RycExwaWZUdE1JMGpoaEt4WmJHWENDek5CMHZrUzljQjBjVFEweDhTdXdqQml2RDcxaGZlelptZWlWSHV5YzlkWm92QQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Dancing In the Dark - Bruce Springsteen\n(because you like Queen)",
-      "id": "d32ceb70264b557b",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-06-27T15:22:12.529218+00:00",
-      "url": "https://www.deezer.com/track/15586246"
-    },
-    {
-      "action": "push",
-      "detail": "Visible pass at 11:43 PM - max 61deg, SW to NE. Look up!",
-      "id": "aeda3652dd5c1f11",
-      "score": 62,
-      "severity": "low",
-      "source": "ISS",
-      "title": "ISS pass overhead",
-      "topic": "iss",
-      "ts": "2026-06-27T15:23:37.145271+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Sip some water - your body will thank you.",
-      "id": "3ce59b46a234f2d9",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-06-27T15:23:39.088608+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Before the humble shipping container revolutionized global trade, the world of cargo was a chaotic, labor-intensive affair. Picture the bustling docks of New York or London in the mid-20th century: a cacophony of shouting stevedores, the clatter of winches, and the rhythmic thud of sacks and barrels being hoisted from ships' holds. Each item, whether a crate of machinery parts or a sack of coffee beans, was handled individually, meticulously tallied, and often repackaged multiple times before reaching its final destination. This \"break bulk\" cargo system was slow, expensive, and incredibly vulnerable to damage and pilferage. It created bottlenecks at every port, limiting the volume of goods that could be moved across oceans and significantly inflating the cost of international commerce. The inefficiency was a tangible barrier to prosperity, a physical impediment to a truly interconnected global economy, and a daily source of back-breaking toil for thousands of longshoremen.\n\nThen came the vision of Malcolm McLean, a trucking magnate from North Carolina. Frustrated by the delays and costs of traditional shipping, he conceived of a standardized, reusable metal box that could be moved seamlessly from truck to ship to train without ever being unpacked. His initial experiments in the mid-1950s, using converted tanker ships to carry truck trailers, proved the concept. But the real breakthrough came on April 26, 1956, when the *Ideal X*, a converted World War II tanker, sailed from Newark, New Jersey, to Houston, Texas, carrying 58 custom-built 35-foot containers. This maiden voyage, while modest in scope, marked a quiet but profound turning point in human history. It wasn't just a technological innovation; it was a conceptual leap, a challenge to centuries of established practice, and the beginning of a relentless drive for efficiency that would reshape industries and economies worldwide.\n\nThe adoption of the shipping container was not without its resistance and human drama. Port communities, long dependent on the labor-intensive break-bulk system, faced the stark reality of automation and job displacement. Longshoremen, whose livelihoods were tied to the handling of individual parcels, found their skills becoming obsolete as gantry cranes, operated by a fraction of the workforce, effortlessly moved entire containers. Strikes and bitter negotiations erupted in ports around the world, as unions fought to protect their members' jobs and secure fair compensation in a rapidly changing industry. Yet, the economic advantages of containerization were too immense to ignore. The speed, security, and drastic reduction in handling costs meant goods could be transported across vast distances for pennies on the dollar, making previously unviable trade routes profitable and ushering in an era of unprecedented global interconnectedness. This period was a microcosm of the broader tension between technological progress and its human cost, a recurring theme throughout industrial history.\n\nThe shipping container, in its elegant simplicity, became the silent engine of globalization. It allowed for the decentralization of manufacturing, enabling companies to source components from anywhere in the world and assemble products in distant factories, drastically lowering production costs. It fueled the rise of consumer culture by making an unimaginable variety of goods affordable and accessible to populations across the globe.",
-      "id": "644a673203131a6d",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The shipping container and global trade",
-      "topic": "learn",
-      "ts": "2026-06-27T15:23:44.784953+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cOur new Constitution is now established, and has an appearance that promises permanency; but in this world nothing can be said to be certain, except death and taxes!\u201d\n\u2014 Benjamin Franklin\n\nBenjamin Franklin, the quintessential polymath of the American Enlightenment, uttered those famous words in a letter to Jean-Baptiste Leroy in 1789, just as the fledgling United States was finding its sea legs. By this point, Franklin was a titan, not merely of American affairs but of the global intellectual stage. His life had been a ceaseless, extraordinary ascent from humble beginnings as a printer\u2019s apprentice in Boston to an internationally renowned statesman, scientist, inventor, and philosopher. He had charmed the French court, negotiated critical alliances, designed a more efficient stove, charted the Gulf Stream, and even invented bifocals. Yet, even with such a litany of achievements, Franklin's enduring pragmatism, born from decades of navigating political currents and personal hardships, remained his most defining trait. At 83 years old, infirm but ever sharp, he had just presided over the Constitutional Convention, a crucible of clashing ideologies that ultimately forged the framework for American governance. The document was a monumental achievement, a testament to the power of reasoned debate and compromise, yet Franklin, ever the realist, understood the inherent fragility of human constructs, even those born of lofty ideals.\n\nThe context of his remark speaks volumes about the precarious state of the nascent American republic. The Articles of Confederation, the nation\u2019s first governing document, had proven inadequate, leading to economic instability, interstate disputes, and a general sense of disarray. Shays' Rebellion, an uprising of indebted farmers in Massachusetts, had vividly demonstrated the weaknesses of a decentralized government incapable of effectively maintaining order. Franklin, along with fellow framers like James Madison and George Washington, had labored through sweltering Philadelphia summers, attempting to craft a government strong enough to unite the disparate states but not so powerful as to recreate the tyranny they had just overthrown. The Constitution, a revolutionary experiment in self-governance, was a delicate balance of powers, a carefully constructed edifice designed to withstand the inevitable storms of political disagreement and human ambition. Franklin's pronouncement, therefore, wasn't cynicism but rather a profound wisdom, an acknowledgment of the eternal forces that transcend even the most meticulously crafted political structures. He knew that while a nation could be born, its true permanence would always be an ongoing struggle against human nature and the inexorable march of time.\n\nThat Franklin\u2019s words, \"nothing can be said to be certain, except death and taxes,\" resonate so deeply today is a testament to their timeless truth. In an era marked by rapid technological change, shifting geopolitical landscapes, and a constant barrage of information, the only constants seem to be the human condition itself. We still grapple with mortality, and governments, regardless of their form or philosophy, invariably rely on taxation to fund their operations.",
-      "id": "ad9afcc0cb40b55a",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Benjamin Franklin",
-      "topic": "wikiquote",
-      "ts": "2026-06-27T15:23:49.960101+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "68f960a33e970c49",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "The Avengers: Doomsday trailer gets critical release date update - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-27T18:55:40.337856+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMnZBdTE3NUZvQTFkaVRoM0c4SWoycHl1UnU3clcwYnUyZ0lzZEhRS01kcDJ4VzlsRjYxYW1mY2x1elBReXZCSFVHaHVQRE9feXE5NFowSHJoX3NGSEw3cGU2amdUX3BCYkppM0xYbVRES1Zmb1NEM25Ba0Q4eHExY2NLb2RHcEpwUFpJWm5weXpsazRW?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -6519,6 +6397,138 @@
       "topic": "wikiquote",
       "ts": "2026-07-02T07:53:59.921314+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "ccc1cac1d54c82dd",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 final trailer: Christopher Nolan teases Matt Damon\u2019s epic journey home ahead of India premiere - The Hindu",
+      "topic": "movies",
+      "ts": "2026-07-02T10:49:39.336341+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNZEpzTkZrbHdwZGZJakM5RjNWdllXcWIydXg5a0VhcHZ2U0RoWFRCdml4ZTQ5c1FPOTBOSE1hajVsWFJ0N1kzMzc1Mnh3bjFGX3JaRGx2UWdUeDQ0Qks4V1Jra005RG9TVFRlTFBod1VoSmFJZjJPYWtvR3BfQXV6cTlSZjBfbTcyZlVBMXpqclI4TE9VTGFMUk83bHNORkRmUVk1OXM4andZcDBlRWdfT0FDeHZtMGJLUXFpYndBNElMU0Zpc2VQUDJ3eXhzSHgxSlVubjF2bzdhM2E0YXJfbWdfbTNoNEQyMFF6MWxlTGFZZnNoMEVaNEV6d0gtYWPSAYYCQVVfeXFMTl9lSFVIZHNkaURtdVRKZUZXUF94Qk8xanBXMDNQal9USE9weU9STExmeTA3bEcwOVhhVGxXZ184eDVTVTlpeUdTaXZ6Y1gxRVNyd1psdV90aFFLTE9tSXZJUnlSTGlPd05QRkE2OUFmajNIeDA0WlpzUDk1bEs1b0Z3QXhaQ3E0V3RGa3BvaDNhaU9Jc0k3RVFhQlNfYTF0YW5LT2lCN1BuTElTNTJ3Q3FURC01dDhaZFhFNkFmMVp3WFltZzRUNG5LOTViMjVlVUg5RHdvaEtIM1dVMWY5WEZ4czZEaDhEb19MNFkxa1o0THpoT2dJOFdBYU13Xy01TUJmcWtRZw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "42de2c2077aa7282",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 Drops Epic New Trailer Ahead of July Premiere - GreekReporter.com",
+      "topic": "movies",
+      "ts": "2026-07-02T10:49:39.669136+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNS2NXOGVHNVVDQXBsNUdUMWV5eUtKbjJmTVR4MEgtcTNqazlQLTRVdUE3RFNlS1JlMGJhZWpqeVkyUzJkaGVkRVJUdlZjY3FHWVFmUFRZSUR2bWg3d3JEOWxENW0tVEd6RTVBeUFrbXotMVJxRUxvRVZOSnBnd3QwTUhwd0NQTno0ckE?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "6fe9b7f24ef5ea98",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "Final trailer for \u2018The Odyssey\u2019 gives first look at Elliot Page as Sinon - OUTinPerth",
+      "topic": "movies",
+      "ts": "2026-07-02T10:49:39.802808+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRlVhaEZMNU8xSDdqRW9HUHpNUWVRcWpiMEdPQTNsc2JrbWc0NjBkaVpSQTZKYnA4MzdGOXBIZXFZU2I5Vm0zT2U1MmQ5WDFWbnFEQWE2b0ZXcXFrZi1Odm5URFVGalNwMHhVX1Y1UFI0b1d4Q3lMSWYtaG55MlpMUjFNUVJjMHo5ZFJlTFZTMXBqUUhpYm82OFZLV1hNemc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "fb0e476023f101e6",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "Final trailer for Christopher Nolan's \u00abThe Odyssey\u00bb \u2013 News - OutNow",
+      "topic": "movies",
+      "ts": "2026-07-02T10:49:40.105101+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMDZOT3Qxcm9STlo3bHNIM1RJUE5EX0g4X0ZtUUhpNUMxdjUtcDNuZFFKSmFVUzNPNUxTeDNBR2J3b3VjSnpITXFpUnZFUi0zdUViQWt3RlFycjRfOGVFNk03TlY0d0RXTnd6XzFkYWFMaFhVVk15WDVFRmZpVWF0WEdGUUQ5czNOd3BOQ1N3?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "bdc7c196c66b8a7d",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "The Odyssey Final Trailer: Nolan Unveils The Scale Of His Epic Ft Matt Damon, Tom & More - MensXP",
+      "topic": "movies",
+      "ts": "2026-07-02T10:49:40.302605+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNOWZuanc5dlhCZkp6enJDQ2xHbGdkb2VCeEwyYmtEUjJxTzV3aGREYk1fNFN4YUplaE1FbEw2SG1vRmJpMDFTNnhVUGVmc2hZak1BcEw4ODQtRUZoSEZMNXNFajhHYXhuTWltV3pXMS1BWVAtNThaYlhmWHJtS1c0Q0UwNzZvb0g5eDg4dUhIQXB1VFczU2haQUtWWFpUOWp6TE9JR3lDVFg5Q2luSHpNRnJVRjZVeFhmck1fQkc0am1NSkZENHBQdFdSS042OFBOMmFJSXNROHR2cEJ0SENyZlY5dXNBQdIB6wFBVV95cUxOeFh2Vk02V2ZmYjl6YVhrd1RUQkpoNk1hR193c1Y1R2lkaURYeXE3SUZVaTlUcF9ZT3kwY1BQVmVIX3JzZTQ2YkJINEJXNVh3aWlEaUxueEhHaGw3emlEc0dyM3VVTWw3YVhDMGRZSDRNTjBFeTVaVlVyNUJnUGxZSTFWZ0puTVQ0SmNiazhab0YzRlFLTXI4WW42RFI4blpfdzVkcHk1SENIOEVJRHdYVnZOUkZISjdub0VmR09CZ1ZKbm9IYVhmUUx0R3dZdFRNZ182WXRSaW1EaGNzOFg1a096WVdNNmFBSzh3?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "487fa369ccb01fff",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "The Odyssey Trailer Gets Buried in Dislikes as the Casting Backlash Refuses to Die - Cosmic Book News",
+      "topic": "movies",
+      "ts": "2026-07-02T10:49:40.431520+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNcFkzdzFkQWF0RzcxcDBWalJYckF2MEV1TnN3R25nX1U4ejlrVFlaT18xWGFwSjdxekVGaVI5MURkRExtNHE4blp2QUZTdmx3U24wU3lrU0ZVVzZBbHJ5cFZNTEdqZ2ZZZHoya01EYjBNSF9ScEJJY3JXc2hKMXBETW1xWQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "0e37fbda5fb8eb4d",
+      "score": 70,
+      "severity": "high",
+      "source": "Lumvoa",
+      "title": "FDA approves Lumvoa (Veligrotug-Vvze) (BLA761530)",
+      "topic": "fda",
+      "ts": "2026-07-02T10:50:13.545851+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761530"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "d3ffd0db38e4a3ca",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "SGE-led team targets 14 BWRX-300 SMRs in UK",
+      "topic": "energy",
+      "ts": "2026-07-02T10:50:23.535991+00:00",
+      "url": "https://www.world-nuclear-news.org//articles/sge-team-targets-14-bwrx300-smrs-uk"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 9:20 PM - max 49deg, SW to NE. Look up!",
+      "id": "9cc61f0f5e46a23a",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-02T10:50:43.149231+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Before the dawn of cities, humanity lived scattered across the land, tied to the rhythms of nature, following the migrations of game or the dictates of seasonal harvests. For millennia, the scale of human endeavor remained intimately tied to the immediate needs of survival. But then, in the fertile crescent of Mesopotamia, a profound transformation began to unfold. It was here, amidst the unpredictable yet life-giving waters of the Tigris and Euphrates, that a confluence of environmental conditions, technological innovation, and perhaps, the sheer will of collective human ingenuity, laid the foundation for something entirely new: the city. This wasn't merely a larger village; it was a complex organism, a pulsating heart of commerce, culture, and power, demanding new forms of organization, new methods of communication, and an entirely new way of understanding one's place in the world.\n\nThe people who spearheaded this revolution were the Sumerians, a mysterious people whose origins remain debated, but whose impact on civilization is undeniable. They arrived, or perhaps developed in situ, within southern Mesopotamia, a region offering both challenge and opportunity. While the land was incredibly fertile when irrigated, it was also prone to devastating floods and lacked natural resources like timber or stone. This scarcity, however, became a catalyst for innovation. To tame the rivers and irrigate their fields, the Sumerians developed sophisticated canal systems, a monumental task that required coordinated effort on a scale previously unknown. This collective labor, essential for survival, fostered a sense of communal identity and hierarchy. As food surpluses grew, a portion of the population was freed from direct agricultural labor, allowing for the specialization of crafts, the emergence of administrators, and the genesis of what we would now recognize as a complex society.\n\nThis nascent complexity soon manifested in the earliest true cities: Uruk, Eridu, Ur, and Lagash, among others. These were not simply collections of houses; they were urban centers dominated by monumental architecture, particularly the towering ziggurats \u2013 stepped temple towers dedicated to their patron deities. These temples were not just places of worship; they were economic powerhouses, managing vast tracts of land, collecting taxes, and employing armies of scribes, priests, and artisans. The invention of writing, cuneiform, arose directly from the need to manage these complex economies, to record transactions, inventory goods, and administer justice. This dramatic leap in communication technology not only facilitated the smooth functioning of their intricate societies but also allowed for the codification of laws, the transmission of knowledge, and the earliest forms of literature, forever changing the human experience from one solely reliant on oral tradition.\n\nThe rise of Sumer and its cities was a dramatic, often turbulent, affair. It was a story of intense competition between these burgeoning city-states, each vying for resources, influence, and divine favor, leading to conflicts and shifting alliances that echo through the ages. Yet, amidst the struggles for dominance, the Sumerians laid down the foundational elements of civilization that would resonate for millennia: writing, mathematics, monumental architecture, codified law, and urban living itself.",
+      "id": "6f5c014073c35d9b",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The rise of Sumer and the first cities",
+      "topic": "learn",
+      "ts": "2026-07-02T10:50:50.235728+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cNone but the dead have free speech.\u201d\n\u2014 Mark Twain\n\nSamuel Clemens, better known by his indelible pen name, Mark Twain, was a man woven from the very fabric of America itself \u2013 a riverboat pilot, a prospector, a journalist, and ultimately, one of the nation's most celebrated and incisive authors. His voice, whether expressed through the Huck Finns and Tom Sawyers of his fictional worlds or the biting wit of his essays and speeches, was a mirror reflecting the evolving soul of a young, boisterous nation. Twain, born in 1835, lived through an era of immense transformation: the westward expansion, the brutality of the Civil War, the Gilded Age's glittering promises and stark inequalities, and the dawn of a new century grappling with industrialization and global power. He was an observer of humanity in all its flawed glory, a man who believed in the power of the printed word to both entertain and provoke, and a perpetual interrogator of societal norms and political hypocrisy. His life was a testament to the American spirit of self-invention, but also a stark reminder that even its most cherished ideals, like liberty and free expression, were constantly under siege.\n\nIt was against this backdrop of rapid change and persistent injustice that Twain, in his later years, uttered the chillingly cynical pronouncement: \"None but the dead have free speech.\" This wasn't a casual remark; it was the distilled bitterness of a man who had witnessed the suppression of dissent firsthand. The turn of the 20th century, though often romanticized as an era of progress, was also marked by increasing corporate power, government overreach, and a fervent nationalism that often equated criticism with disloyalty. Twain, ever the iconoclast, had grown increasingly critical of American imperialism, particularly the annexation of the Philippines, and found himself branded as an anti-imperialist, a position that drew significant public ire and condemnation. He saw how those who spoke out against the prevailing narrative, against the powerful and the popular, were marginalized, silenced, or worse, ruined. The \"free speech\" enshrined in the First Amendment, he realized, was often a theoretical construct, easily trampled by public opinion, economic pressure, and the chilling effect of social ostracization. He experienced the weight of that suppression, the subtle and overt ways in which inconvenient truths were dismissed or demonized, leaving him to conclude that true, unfettered expression was only possible when one was beyond the reach of earthly consequences \u2013 in death.\n\nEven today, well over a century after Twain\u2019s passing, his words resonate with an unnerving prescience. In an age of digital echo chambers, social media pile-ons, and cancel culture, the concept of \"free speech\" remains a hotly debated and often embattled ideal. We see how individuals are intimidated into silence, careers are jeopardized for unpopular opinions, and dissenting voices are drowned out by algorithmic amplification and mob mentality. The fear of reprisal, whether from online trolls, employers, or political adversaries, can be a powerful deterrent to authentic expression, leading many to self-censor or conform to prevailing narratives.",
+      "id": "53db15d9b285347b",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Mark Twain",
+      "topic": "wikiquote",
+      "ts": "2026-07-02T10:50:55.197734+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -6528,6 +6538,7 @@
     }
   ],
   "fda_seen_ids": [
+    "d0fd9fe9acac93bf",
     "4cfff5e03743d2d8",
     "9b818dcc86f34158",
     "db01c8d10442d80b",
@@ -7449,6 +7460,7 @@
     "iPadOS 26.5.2 (23F84)"
   ],
   "iss_seen_passes": [
+    "59f60ed27ebefa02",
     "9ec92a8504a5fd79",
     "7f41fabbefe26e36",
     "14d022a97b2522f9",
@@ -7505,8 +7517,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "world_history",
-  "knowledge_last_sent": "2026-07-02T2",
+  "knowledge_last_category": "ancient_civilizations",
+  "knowledge_last_sent": "2026-07-02T3",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -7519,6 +7531,7 @@
     "ancient_civilizations:The Silk Road and the exchange of worlds": "2026-06-19",
     "ancient_civilizations:The eruption of Thera and the fall of the Minoans": "2026-06-27",
     "ancient_civilizations:The mysterious Maya collapse": "2026-06-26",
+    "ancient_civilizations:The rise of Sumer and the first cities": "2026-07-02",
     "astronomy:Carl Sagan and the Pale Blue Dot": "2026-06-28",
     "astronomy:The Antikythera mechanism, an ancient computer": "2026-06-17",
     "astronomy:The Hertzsprung-Russell diagram": "2026-07-01",
@@ -7632,7 +7645,7 @@
   "last_run": {
     "failed": 0,
     "ok": 46,
-    "ts": "2026-07-02T07:52:38.593890+00:00"
+    "ts": "2026-07-02T10:49:35.794566+00:00"
   },
   "launch_seen_ids": [
     "c88f136e6de9f1c0",
@@ -7662,6 +7675,10 @@
   "life_dashboard_last_week": "2026-W26",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "7215933f3f233863",
+      "995df44a656b99c9",
+      "c3ff73bfc75f076b",
+      "6b0630a96ec614ae",
       "a1b158977810b532",
       "be8c881829a3be18",
       "f53300ff3ffc7c87",
@@ -7757,11 +7774,7 @@
       "9db31d3b4293da1c",
       "0b389fe2b1797a2f",
       "109fadda33d8f14f",
-      "95de4c61cf6e51c8",
-      "696e26339f72f9e4",
-      "4662edc99a6113a5",
-      "13af8daf9b0f056d",
-      "389363134e243147"
+      "95de4c61cf6e51c8"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -7965,6 +7978,9 @@
       "5f317afc30595e31"
     ],
     "Spider-Man: Brand New Day": [
+      "b696fae739a4b6e4",
+      "bb160e6e7ba044f0",
+      "5f43c5bed328ce7a",
       "3fc7bb94ebb2dbc3",
       "3dd6139b3ff16b32",
       "2dc9891fb3a672c2",
@@ -8061,10 +8077,7 @@
       "6153b4b48a06c3ae",
       "fec70d74b1f9a85f",
       "3b45eb451b4d32cf",
-      "ffd2c7055c45780b",
-      "b72ff91e487644e5",
-      "52fb75b5d7537025",
-      "b9d6666a0c928cf0"
+      "ffd2c7055c45780b"
     ],
     "The Batman Part II": [
       "152d673df523d483",
@@ -9159,47 +9172,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "apod": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "baseball": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "deals": {
-      "last_data": "2026-07-02T07:53:17.139038+00:00",
+      "last_data": "2026-07-02T10:50:12.838759+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "energy": {
-      "last_data": "2026-07-02T07:53:26.882458+00:00",
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_data": "2026-07-02T10:50:23.535655+00:00",
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "fda": {
-      "last_data": "2026-07-02T07:53:17.701339+00:00",
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_data": "2026-07-02T10:50:13.545681+00:00",
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "fuel": {
       "last_data": "2026-07-01T21:52:49.256470+00:00",
@@ -9207,17 +9220,17 @@
       "last_ok": "2026-07-01T21:51:27.562160+00:00"
     },
     "fx": {
-      "last_data": "2026-07-02T07:53:47.364054+00:00",
+      "last_data": "2026-07-02T10:50:41.852276+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-02T07:52:51.446178+00:00",
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_data": "2026-07-02T10:49:47.302667+00:00",
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "groceries": {
       "last_data": "2026-07-01T21:52:18.507087+00:00",
@@ -9225,111 +9238,111 @@
       "last_ok": "2026-07-01T21:51:27.562160+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "learn": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "movies": {
-      "last_data": "2026-07-02T07:52:46.302289+00:00",
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_data": "2026-07-02T10:49:43.218605+00:00",
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "music": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-02T07:53:27.587431+00:00",
+      "last_data": "2026-07-02T10:50:23.952996+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "outages": {
-      "last_data": "2026-07-02T07:53:46.774284+00:00",
+      "last_data": "2026-07-02T10:50:41.360657+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-02T07:53:46.837225+00:00",
-      "last_data_count": 41,
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_data": "2026-07-02T10:50:41.424679+00:00",
+      "last_data_count": 42,
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-02T07:52:47.641148+00:00",
+      "last_data": "2026-07-02T10:49:44.144043+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "weather": {
-      "last_data": "2026-07-02T07:53:27.220829+00:00",
+      "last_data": "2026-07-02T10:50:23.612209+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-02T07:53:49.975300+00:00",
+      "last_data": "2026-07-02T10:50:44.690213+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-02T07:52:38.593890+00:00"
+      "last_ok": "2026-07-02T10:49:35.794566+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165090"
+    "last_full_window": "165091"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9439,8 +9452,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "philosophers",
-  "wikiquote_last_sent": "2026-07-02T2",
+  "wikiquote_last_category": "writers",
+  "wikiquote_last_sent": "2026-07-02T3",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -9497,7 +9510,7 @@
     "writers:George Orwell": "2026-06-30",
     "writers:Jane Austen": "2026-06-25",
     "writers:Leo Tolstoy": "2026-06-30",
-    "writers:Mark Twain": "2026-06-22",
+    "writers:Mark Twain": "2026-07-02",
     "writers:Maya Angelou": "2026-06-25",
     "writers:Oscar Wilde": "2026-07-01",
     "writers:Virginia Woolf": "2026-06-28",
