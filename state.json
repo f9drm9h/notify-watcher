@@ -55,7 +55,7 @@
     "29db49f64ce68661",
     "a8b1aff056453d2f"
   ],
-  "apod_last_sent": "2026-07-01",
+  "apod_last_sent": "2026-07-02",
   "astronomy_sent": [
     "2026-06-14|New moon tonight - d",
     "2026-06-21|June solstice today",
@@ -86,9 +86,6 @@
     825066
   ],
   "baseball_results_seen": [
-    823532,
-    823937,
-    823531,
     823934,
     822800,
     824261,
@@ -115,7 +112,10 @@
     824986,
     822793,
     823528,
-    824984
+    824984,
+    822791,
+    823530,
+    824985
   ],
   "beach_day_last_sent": "2026-06-27",
   "bills_sent": [
@@ -128,212 +128,13 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Marvel\u2019s DMCA War Over \u2018Avengers: Doomsday\u2019 Leaks Is Now Confirming What Everyone Suspected - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE84SWk4NFNyZmVNY0RsNENYOTZ5SHlFOGx0NDlZb1ctUVFucDNtdWhIaEdzNklZVFhvVndhNk9IQjJkUS15UWNpQjNJOHFhNGdoWGNpeWRNWm1oQ1NUZ0w3VTZiRHV1VFU?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' Officially Namedrops Tobey Maguire's Hero In New Clip - The Direct",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE42Z05LLThaTk1CME1qbzg3YTZHdGFJbF85RGNRTEFfUXZnZ2NVZFgxVGdJU1cxRDhEN1JqZkxGbG1KQWdMOUJJcThtZlBoWHB0b3RHZFdQVVhuM1l0NGJuM25pSlFxUjJIeG9aR1AxQzIzNC1KZTBqM0FDWmpQZw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "Golden Sun",
-      "title": "Beating Golden Sun again 25 years later. Still amazing!",
-      "topic": "golden_sun",
-      "url": "https://www.reddit.com/r/GoldenSun/comments/1ujdkwh/beating_golden_sun_again_25_years_later_still/"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "World Nuclear News",
-      "title": "Commonwealth Fusion Systems joins UKAEA's tritium blanket testing programme",
-      "topic": "energy",
-      "url": "https://www.world-nuclear-news.org//articles/cfs-joins-ukaeas-tritium-blanket-testing-programme"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "World Nuclear News",
-      "title": "Scottish sites suitable for nuclear new build, study says",
-      "topic": "energy",
-      "url": "https://www.world-nuclear-news.org//articles/scottish-sites-suitable-for-nuclear-new-build-study-says"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Debuts Its Official Slogan - And It's Perfect - The Direct",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1IXzNTYUp6RDA2OWQwdHhRT3ZlekY5NEd6cm9wemtIVUZ5YTM5Qy1oMmNzT2E4OFJaZTN1NnhnSDViSmZwTU9tZFBJWHc4bzlFd1FVeXZlb05HOXF0bDA0bVhfVEtwc3ZmUUVQQg?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Official Synopsis Describes Mysterious Final Villain - The Direct",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNQUxSUjhNVTdUaWtKN1hsVVFKbHBnWTMtNE1wMTdqZzhGZWtUaEpJYjlCakxQLTNxOUFEa0RsaUJQYjcyenhWUnVFWEl6UjFEalFaSmd6Mk9ZWFp1U0FncXZ3aU9ZdnBEZUpROHNsb0wwWFFxR2ZNcUFNNGpzM2RfNll0QlNYYXdCd1NZUmRrOTNXaXNMUDN6WDhWZEV3QQ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.8 - 59 km S of Boca de Yuma, Dominican Republic (~155 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr2026182001"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.4 - 3 km N of Otra Banda, Dominican Republic (~124 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71522238"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "Slideshow: The Batman: Part II - Who's Who in Matt Reeves' DC Sequel - IGN Southeast Asia",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9VejBmcksyQU92cXZFVU5EZmNHemdjZFVyTjhvMUVNandlaVNlZkpLdXhMT1RMNDJCNkJiM2k3djRQeFVZLTlMS0VMSXVMak04Sm9kVGFBY3Q?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Christopher Nolan's The Odyssey Gets Official Video Game - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE14VmRMdnNZdkd1ZnJYNU5TSUx6RmNYb1NZaURLOXBxSU5BMjJNZ1dqQ1U5Ql9raExpX3lWSmtfYUtzNmo0c2tTTnBhUEpSLXowX2tTVWtocmhtaFNoZXNrQmxnRC1sQkE?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Christopher Nolan's first The Odyssey video game announced - Polygon.com",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZzk0NEk0a3NDZkFUNFUtRklWS2lDelpvdHB5YmhOdm9rVW9yZFVIZ3FlTTJwU0Z5UWdDYmd0ZGduM3dCbXpMS2g3ZElDYTdTOEt5TjNnalVoeTJmN1ZxcjgzVS1ObFlldXhnS09aREd5ekVXREJiM3BoS1gyWm9iY0dObUVKYlJ3WlRLbg?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "New Leaks Reveals How \u2018Avengers: Doomsday' Reportedly Weaponizes Fox\u2019s Wonky X-Men Continuity to Explain Incursions - Murphy's Multiverse",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQTVVLUl9UOEZRQU1lazNqOTJ6NlhnU1ByendHVEpSZWNkRloxNndDS2tSTmFnaFRsZzFzb3Z3RVJNRHIzeXVuYkFMUGluZjRFdDZUa0k4QVVLWW9CWDZLYjNJSE1kNzhqNGJVVXVVM2NRU3VnOUpYT3JfMEpPNmEzNzZuNGlDR2h0X0Vub3hkZ24tR3NRQjUtU0JhS0JMSGV4VmNxYWhxUjBnX2hSLXJlLV9mS1NzWUlISHl4M1FSV00xN3pxaHR2Wkd5Rml1YjJRR3RYRklXU2NQM3k5U2ZN?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Christopher Nolan's 'The Odyssey' Tie-In Video Game Officially Debuts - MovieWeb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA1SHlTbG0xa2xET3kybFp5SWpqUzBKSkV3SVFyMnN1VmZnQ2lRNDBBYy1VZXNZeGJSbVBkR3hnVkx2cnk0dXJxb092Q19JYXowR0tOOHVHdmxLZER1NkIzOQ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Christopher Nolan's The Odyssey Gets Official Video Game - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE14VmRMdnNZdkd1ZnJYNU5TSUx6RmNYb1NZaURLOXBxSU5BMjJNZ1dqQ1U5Ql9raExpX3lWSmtfYUtzNmo0c2tTTnBhUEpSLXowX2tTVWtocmhtaFNoZXNrQmxnRC1sQkE?oc=5"
-    },
-    {
-      "detail": "Freaky Styley (2013-01-01)",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Red Hot Chili Peppers",
-      "title": "New from Red Hot Chili Peppers",
-      "topic": "music",
-      "url": "https://www.deezer.com/album/1019345641"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Plot Leak Confirmed: \u2018It Is Now Out There\u2019 - Cosmic Book News",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1PRkZjU2oxcVoxRmw2MnFncGhEWU1KUkFxdnF4N3U0SVZkd000TWFlTmoyRFZFUVRBV1pqR2didUJsRzhMeEZpa294Skx3Q2xraXRpZDB6cWNCb1REb0xLWGRQQnNqSllQbVVLWElxcFhxUW41cFRZ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland Confirms New Detail About Spider-Man: Brand New Day's Supervillain - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE15ckxLeDBUZE52VVRpVXgwRkxOUFI4c2I0NFRUWnR5S2pyV2lUbE04bmg1MGo4M1ZmVTVvdjNzOGhzYWpPNWlMcHRIU3Uxdi1pY0pWSFgzTW5EMnZFU3VPMmVyV3BsMUU?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "World Nuclear News",
-      "title": "SGE-led team targets 14 BWRX-300 SMRs in UK",
-      "topic": "energy",
-      "url": "https://www.world-nuclear-news.org//articles/sge-team-targets-14-bwrx300-smrs-uk"
-    }
-  ],
-  "digest_last_sent": "2026-07-01",
+  "digest_buffer": [],
+  "digest_last_sent": "2026-07-02",
   "discord_control": {
     "last_id": "1519883605067698186"
   },
   "energy_learn_last_news": "2026-06-30",
-  "energy_learn_last_sent": "2026-07-01",
+  "energy_learn_last_sent": "2026-07-02",
   "energy_learn_seen": {
     "facts": [
       "baseload-vs-peaking",
@@ -352,7 +153,8 @@
       "itaipu-dam",
       "iceland-grid",
       "champlain-hudson",
-      "grand-inga-proposal"
+      "grand-inga-proposal",
+      "baihetan-dam"
     ],
     "modern": [
       "perovskite-solar",
@@ -530,462 +332,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "437551b975fc853e",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Will Include 7 God-Tier Characters (Confirmed) - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-27T18:55:41.262641+00:00",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1Hc3FpSzBBLTFFOGJaN29UNVR2c1NJNWxteXhIdUgyTWN5U0MwcVY3bGlyYW45elFzOUUtOW1jb3dWSjUxTG52TlZWLVdfOWVkZTZ1U2tFY09WWEpOTlNUMDYtcjZVS2tDVDBNdnFsZ3RyelFSSnc?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "173ba5a553ac2df6",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel Studios Officially Responds To Avengers: Doomsday Leaks - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-27T18:55:41.263173+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSEVXb01pQ3lpZkNBdlBMQVlMSkEtc09HZmxpdnR2bDBKOWhyN2JxVHp4ZHlrejNpOThmSkg0ZUd2aFBMVXRoMmxxZ0MwM3J2TzQyZldOMG8tdnJYYVMzRXFORHF2LWVMY2dzc1dvSUpGRkRuZjFsb1lkYy1SVkpKU0QwTQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "2548a850580d4a09",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Scarlett Johansson's Netflix Movie Officially Competing With Avengers: Doomsday & Dune: Part Three - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-27T18:55:41.263611+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9Ob0pqZFJtaXRyV3RpRTRaXzBCMlpQbXlaaHZVOGdELTZNN2lJanlFcjlCNVVWell1ZmVVUkxtcjh0NDRxUFRXWHlLVVVMZUdxVFZobHVyVjY4Mm44MW05N3VYRnNHNjg?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "4693d5d979ad2874",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Official Synopsis Finally Confirms What We All Expected About X-Men, Fantastic Four, and Avengers - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-27T18:55:41.263956+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTUFnaTBGRFYxQnB0TjN2bXJjWGd1Y1FYS2RacU43Z1Z2SHoxbW5FSnh6MFhSYU9Qem9sejVETGJaTnB0VGNFU3pDYy1PRDk3TjVtenZFcjFaOVN2YU5qOS02b0Y5NkM0bjA4UUNxQm9xNUtJVmpmYUdxLUo5NW5YaGN3NEpuTDFWbzV6dmtNVQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "f7cbd830f0d05d9a",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "New Avengers: Doomsday leaks unveil first look at Doctor Doom - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-27T18:55:41.264318+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaTJaaXFZQURBU2p6RzFFR0ZENXRQcWh4ZlMxQktkT0l4aVpJQ2pESGtfSjFfVF9TU21oUzRtY2JNLVdROXBfQ1FpeWVzZXEzQlJzQzFHbTRUcktTSDRrcG5fUnJ5emozUWx3WExmNERlVFdNZ3ZaWnVBdVd4bUFsbjEwem4wSVUyaDA5ZjQ1QjNKZzlHN2c?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "50cdc2797d23667e",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Chris Evans Officially Reveals Captain America's Fate in 'Avengers: Doomsday' - Collider",
-      "topic": "movies",
-      "ts": "2026-06-27T18:55:41.264871+00:00",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBLcEtTT2xGT3I1UEdoU25vOHc1UnJXQmZIY3Y1S2FqdnFPM01CS2pDQTlmb2k2WDZjUGotUEtidFlZckZXZWltb3o0M0xNcU40VFlWY0tyRFZRUnl3dEFsRng3YVpaUzVRVllJRGJqemE3cm5CSzlYTXh4QQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "fe436b40aed1fd66",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Odyssey",
-      "title": "Michael Caine Lends His AI Clone to Voice \u2018The Odyssey\u2019 Audiobook - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-06-27T18:55:42.405658+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxORHZ6Y0xnM0pQRDM0dHdjR1d6RkVtMlB1bTREYTBMT2g5U2J1NFhmbFhtdGswVHk2UlBOekgzMC1oTFVUbjl0amNiYzhiejAxR2x1UEV4aDR1cm5xMS1VQWZHbmZsSktFTHlUSkw5dGk0UXJ2b0JkSzQwd0xIZmlEaE1CYm9fOHpEaDBlcnZXLUhHNllGeDFHcG5GUG1XTXp3V2RVNkYtck0?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Sultans of Swing - Dire Straits\n(because you like Queen)",
-      "id": "64fc42c5ed121be7",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-06-27T18:55:50.513507+00:00",
-      "url": "https://www.deezer.com/track/85047166"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "de2566cfcae29ec9",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Golden Sun",
-      "title": "Golden sun Font",
-      "topic": "golden_sun",
-      "ts": "2026-06-27T18:55:52.505416+00:00",
-      "url": "https://www.reddit.com/r/GoldenSun/comments/1uh6nka/golden_sun_font/"
-    },
-    {
-      "action": "push",
-      "detail": "DOP 23,995.00 (was DOP 35,995.00, -33%)",
-      "id": "01ad1537d158742b",
-      "score": 64,
-      "severity": "high",
-      "source": "La Sirena",
-      "title": "La Sirena deal: Televisor Nikkei 50p Led 4k Google Tv 50D3200",
-      "topic": "groceries",
-      "ts": "2026-06-27T18:56:26.103543+00:00",
-      "url": "https://www.sirena.do/nikkei-gtv-50p-50d3200-2132052/p"
-    },
-    {
-      "action": "digest",
-      "detail": "DOP 995.00",
-      "id": "02d00dcdf82c4cc9",
-      "score": 28,
-      "severity": "low",
-      "source": "La Sirena",
-      "title": "La Sirena deal: Telefono Bell Tech Bt-238",
-      "topic": "groceries",
-      "ts": "2026-06-27T18:56:26.462732+00:00",
-      "url": "https://www.sirena.do/bell-tech-telefono-bt-238-1517192/p"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "23087cda68ff7e65",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-27T18:56:38.442007+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "Visible pass at 11:43 PM - max 62deg, SW to NE. Look up!",
-      "id": "944ef06fe214a84e",
-      "score": 62,
-      "severity": "low",
-      "source": "ISS",
-      "title": "ISS pass overhead",
-      "topic": "iss",
-      "ts": "2026-06-27T18:56:55.184794+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Time for a glass of water. Stay hydrated!",
-      "id": "82c76af43206587f",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-06-27T18:56:58.240194+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "The year is 1980, and the shipyards of Gdansk, Poland, hum with an uneasy tension. For decades, the Polish people had lived under the heavy hand of Soviet-backed communism, a system that promised equality but delivered shortages, surveillance, and a profound sense of powerlessness. Strikes were not uncommon, born of desperation and the ever-present grumble of empty stomachs and broken promises. But this time, something felt different. It began with the firing of Anna Walentynowicz, a revered crane operator and outspoken critic of the regime, a move that ignited a spark in the dry tinder of worker discontent. Then, a charismatic electrician named Lech Walesa, a man with a booming voice and an almost messianic zeal, scaled the shipyard wall, defying the authorities to join his comrades. What followed was an unprecedented wave of strikes, not just in Gdansk, but across the nation, an act of collective defiance that would ripple through the Iron Curtain and ultimately contribute to its collapse.\n\nThis wasn't simply a wage dispute; it was a deeply human cry for dignity, for the right to speak truth to power, to worship freely, and to form independent unions that truly represented the workers, not the Party. The workers, armed with little more than their resolve and a shared sense of grievance, occupied their factories and shipyards, demanding not just better pay but fundamental political reforms. They forged a 21-point agreement, an audacious document that included demands for the right to strike, freedom of speech, and the release of political prisoners. Against all odds, and to the astonishment of the world, the communist government, reeling from the scale and unity of the strikes, conceded. On August 31, 1980, the Gdansk Agreement was signed, birthing Solidarity, the first independent trade union in a Soviet-bloc country. This was a moment of extraordinary human drama, a David and Goliath story playing out on the international stage, with ordinary men and women daring to challenge the monolithic power of the Soviet empire.\n\nSolidarity, with its millions of members and its unwavering moral authority, quickly transformed from a trade union into a broad social movement, encompassing intellectuals, farmers, and students. It became a beacon of hope for freedom-lovers everywhere, a testament to the power of non-violent resistance. However, this burgeoning freedom was a dangerous affront to Moscow. The Kremlin, fearing the contagion of dissent, pressured the Polish authorities to crush Solidarity. In December 1981, General Wojciech Jaruzelski, under the guise of preventing a Soviet invasion, declared martial law. Tanks rolled into the streets, thousands were arrested, and Solidarity was outlawed. The dream of freedom seemed to crumble under the weight of state repression. Yet, even in its darkest hour, Solidarity's spirit endured, driven underground but never truly extinguished, kept alive by clandestine networks, the powerful voice of the Catholic Church, and the unwavering belief that justice would ultimately prevail.\n\nThe story of Solidarity, however, did not end there. The seeds of change had been sown, and though martial law temporarily stifled the movement, the fundamental problems of the communist system remained. Throughout the 1980s, an underground Solidarity continued its work, publishing samizdat, organizing protests, and keeping the flame of hope alive. The economic crisis deepened, and the regime\u2019s legitimacy continued to erode.",
-      "id": "fc65f8928b99b447",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The Solidarity movement in Poland",
-      "topic": "learn",
-      "ts": "2026-06-27T18:57:03.699592+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cBefore everything else, getting ready is the secret of success.\u201d\n\u2014 Henry Ford\n\nHenry Ford was a man whose hands, even in his later years, seemed to carry the faint scent of oil and gasoline. Born into a Michigan farming family in 1863, his early life was a quiet prelude to the industrial symphony he would orchestrate. He found the rhythmic predictability of farm life stifling, his gaze always drawn to the intricate mechanisms of watches and steam engines. It was this fascination, bordering on obsession, that led him away from the fields and into the burgeoning machine shops of Detroit. He was an autodidact, learning by doing, by dismantling and reassembling, a testament to his belief in practical application over theoretical study. His early ventures, including the Detroit Automobile Company, were met with setbacks and financial strain. Yet, Ford possessed an unshakeable conviction in the power of personal transportation, a vision of every American family owning a motorcar, not as a luxury, but as an everyday utility. It was this relentless pursuit of a singular, revolutionary idea that defined his character and set the stage for his most profound pronouncements.\n\nThe quote, \"Before everything else, getting ready is the secret of success,\" emanated from a man who understood intimately the brutal realities of invention and mass production. By the time this sentiment likely formed, Ford was not just a successful entrepreneur; he was a titan, having already revolutionized manufacturing with the assembly line and put the world on wheels with the Model T. This was a period of immense change, both for Ford personally and for the world at large. The early 20th century was an era of unprecedented industrial growth, of cities expanding at breakneck speed, and of the automobile rapidly transforming landscapes and lifestyles. Ford had experienced the grinding struggle of countless hours spent in workshops, the meticulous planning required to design not just a car, but a *system* to produce it efficiently and affordably. He had witnessed the meticulous calibration of machines, the precise training of workers, and the detailed logistical ballet necessary to bring his vision to fruition. For Ford, \"getting ready\" wasn't just about preparing for a single task; it was about laying the groundwork for an entire industrial revolution, a process that demanded foresight, painstaking detail, and an unwavering commitment to execution.\n\nToday, in a world vastly different yet still driven by innovation and ambition, Ford\u2019s words resonate with a profound simplicity. We navigate an increasingly complex landscape, whether in entrepreneurship, education, or personal development. The allure of instant gratification often overshadows the crucial groundwork required for genuine achievement. Ford\u2019s dictum reminds us that true success is rarely accidental; it is the culmination of diligent preparation, thoughtful planning, and the foresight to anticipate challenges before they arise. In an age where digital tools promise shortcuts and fleeting trends capture attention, the timeless wisdom of \"getting ready\" serves as an anchor.",
-      "id": "04691b1c505aebb5",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Henry Ford",
-      "topic": "wikiquote",
-      "ts": "2026-06-27T18:57:08.549493+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Jun 22-Jun 28: RD$8,974.73 across 9 transactions\nTop: SM NACIONAL CHARLES RD$3,900.80; ALTICE -APP ECOMM RD$2,515.94; SHELL CARR MELLA RD$600.00; APREZIO INVIVIENDA RD$593.00; MC DONALDS CHURCHILL RD$590.00\nBiggest: RD$3,900.80 at SM NACIONAL CHARLES\nvs prior week: Weekly spending moved from RD$290.00 to RD$8,974.73 (+RD$8,684.73, +2994.73%)",
-      "id": "01565d38423d3070",
-      "score": 60,
-      "severity": "moderate",
-      "source": "BHD",
-      "title": "Weekly spending summary",
-      "topic": "spending",
-      "ts": "2026-06-27T18:57:11.274133+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "19835a2dcdee1feb",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Merch Confirms What We All Suspected About Sam & Steve\u2019s Captain America - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-27T21:32:25.013600+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNMU1kZFdmV0h5QXUwMVV0UzkyTWl1MDNOVldKZXNnYXNzeUhYV0xLTlBCSVNhUFFxclRON1Rnd1R0U3l2ek15MkV2WnFYUEtoMnV4dGVwXy0ySnNRSGVoR3UzNkM5UW52M1hXSHZQSUpRNGQzeXRMQzdvWVN0Vzh1Tk1DVm1idw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "e6e78a952cdfbf4b",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel Studios officially responds to those Avengers: Doomsday leaks - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-27T21:32:25.014430+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOS0YxTkVmTk1FN3ZXZ0tBVkJWTGRVdndPaUowbEVRV2JjVDQ2UkJPdWsxU05sdjFqc2JLMGVKSUx5REtWb2l5WkpDVk9JLXduTVgtdUcwSGZMcFRqbEVqOV94Z0Rldmx1aGdWSzVaRGVsZkpvU21EVS1Lck9PTm4xYjd6X05VZw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "1e7727a5aa4e9666",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "A new trailer for Spider-Man: Brand New Day highlights the film\u2019s efforts to recreate the hero\u2019... - JoBlo",
-      "topic": "movies",
-      "ts": "2026-06-27T21:32:25.595296+00:00",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9UcFV0enM4S2d2RHhXZDUwZ251bG1MM0F4NVhuTE8ycllnWTVXZXMwNmdwYUp0aktjRktSSXBqYV91ckQwemQ0WVVXaTU5cF9INnh6WU81TDFER2dUcnlLYlZhLUMzMHJkLUdoenVjcXV0UVk5eFlZS3czRFbSAYIBQVVfeXFMTlpBbHl0OThIV21tQzN0Z3lMYS1xSm9mbkZmdk44dVJlYVVQcERWNzRzSnBsVUNDY0hFbFQya3RqZHBwLXM3bUc5R0p3dEV0OXhxc292N3ZwREg0Z1dyRlR0MURiUjJaUE9RTzhKZFdGZldEN0F5V3dpQzJZZlpXMFZyQQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "95ada2f1f341cdbc",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' starring Tom Holland has posted the best U.S. first-day presales for any film in years. - Deadline",
-      "topic": "movies",
-      "ts": "2026-06-27T21:32:26.006512+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQbUp1RzA3dl9wMTRjWHIzbW9kd3ljRXZBc0dvemNodm8xNkpueDRudVVUeEpKcmN2U0R2eVBxeUhobE9NRzRVSlo3VzhpTWV3eEZHZ2N3UWNxTXZoQkRuM19VRV9ObnZLanhTQmRld0kwcjM0Y19PNDRtQ0tyZC16cXBHak1zNFU2?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Another Brick in the Wall, Pt. 2 - Pink Floyd\n(because you like Queen)",
-      "id": "75d1142eec69bf2c",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-06-27T21:32:35.464591+00:00",
-      "url": "https://www.deezer.com/track/116914094"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "3f9ef3ca3d0f795c",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Earthquakes",
-      "title": "M3.1 - 94 km N of Isabela, Puerto Rico (~300 km away)",
-      "topic": "quakes",
-      "ts": "2026-06-27T21:33:33.718447+00:00",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71521703"
-    },
-    {
-      "action": "push",
-      "detail": "Visible pass at 11:43 PM - max 61deg, SW to NE. Look up!",
-      "id": "3f8226cabe684b1d",
-      "score": 62,
-      "severity": "low",
-      "source": "ISS",
-      "title": "ISS pass overhead",
-      "topic": "iss",
-      "ts": "2026-06-27T21:33:36.967296+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Keep a glass of water within reach.",
-      "id": "2701270f8089731d",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-06-27T21:33:39.080395+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Before the cataclysm, the Minoans thrived, a sophisticated civilization of the Bronze Age, centered on Crete, an island jewel in the azure Aegean.  Their palaces, like Knossos, were marvels of engineering and art, adorned with vibrant frescoes depicting bull-leaping rituals, maritime scenes, and the lush flora of their island home.  They were master sailors and traders, their ships traversing the Mediterranean, exchanging goods and ideas with Egypt, the Levant, and Mycenaean Greece.  For centuries, their thalassocracy, their sea empire, brought them prosperity and influence, their culture a beacon of innovation and artistic expression in a burgeoning world. They were, by all accounts, a people deeply connected to the sea, their very existence intertwined with its bounty and its pathways.  Their world was one of apparent stability and flourishing prosperity, built upon a foundation of maritime prowess and artistic ingenuity.\n\nThen came the fury of the earth and the heavens, originating not on Crete itself, but on the volcanic island of Thera, now known as Santorini, a mere 70 miles to the north. While the exact timeline and sequence of events remain a subject of scholarly debate, geological evidence paints a vivid, terrifying picture. A series of seismic tremors likely served as a grim prelude, perhaps prompting some inhabitants of Akrotiri, Thera's principal city, to flee. But nothing could prepare them, or indeed the broader Aegean world, for the sheer scale of the eruption that followed. It was an explosion of unimaginable power, estimated to be many times more powerful than Krakatoa, ejecting a colossal plume of ash and pumice into the stratosphere. The island itself was torn apart, its center collapsing to form the caldera we see today, a haunting crescent of land encircling a submerged void. This wasn't merely a local event; the atmospheric effects and the subsequent tsunamis would ripple across the entire eastern Mediterranean.\n\nThe immediate devastation on Thera was absolute, burying Akrotiri under meters of ash and pumice, preserving its frescoes and structures in a Pompeii-like time capsule, a testament to a vibrant life abruptly extinguished. But it was the aftermath, particularly the tsunamis, that delivered a crippling blow to the Minoan civilization. Waves of immense height, generated by the collapse of Thera's caldera, crashed down upon Crete's northern coast, obliterating coastal settlements, swamping harbors, and destroying the very ships that formed the backbone of the Minoan economy and military power. Agricultural lands would have been inundated with saltwater, rendering them infertile for years. The sheer psychological impact, the sense of a world turned upside down by an incomprehensible force, would have been profound. While the palaces on Crete were not directly buried by ash, their lifeline, their maritime network, was severed, their ports destroyed, their trade routes disrupted, and their access to essential resources severely curtailed.\n\nThe eruption of Thera didn't cause the *immediate* collapse of the Minoan civilization; archaeological evidence suggests a period of decline and struggle in the decades and centuries that followed. However, it undoubtedly delivered a grievous wound from which they never fully recovered. The Minoans, weakened and disoriented, became vulnerable.",
-      "id": "ac519b061a5cc84c",
-      "score": 75,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The eruption of Thera and the fall of the Minoans",
-      "topic": "learn",
-      "ts": "2026-06-27T21:33:44.263386+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cI do not feel obliged to believe that the same God who has endowed us with senses, reason, and intellect has intended us to forgo their use and by some other means to give us knowledge which we can attain by them.\u201d\n\u2014 Galileo Galilei\n\nGalileo Galilei, a man whose very name has become synonymous with intellectual courage, was not merely a scientist; he was a pivotal figure at the crossroads of human understanding, a bridge between an ancient, Earth-centric worldview and a universe revealed through observation and mathematics. Born in Pisa in 1564, a century after Gutenberg\u2019s printing press began to reshape Europe and just a few decades after Luther\u2019s ninety-five theses fractured the monolithic power of the Church, Galileo inherited a world ripe for revolution, both intellectual and spiritual. He was a polymath of formidable talent: an astronomer, physicist, engineer, philosopher, and mathematician. His early work on pendulums and falling objects laid the groundwork for modern physics, but it was his telescopic observations that truly set him on a collision course with the prevailing dogma of his time. When he turned his self-improved telescope to the heavens, he saw not the perfect, immutable spheres described by Aristotle and enshrined by the Church, but a moon pocked with craters, Jupiter circled by its own moons, and Venus displaying phases like our own Moon \u2013 all phenomena that profoundly challenged the geocentric model of the universe.\n\nIt was against this backdrop of radical discovery and entrenched belief that Galileo penned the words, \"I do not feel obliged to believe that the same God who has endowed us with senses, reason, and intellect has intended us to forgo their use and by other means to give us knowledge which we can attain by them.\" This wasn't a casual remark; it was a defiant declaration, likely written around 1615 within his \"Letter to the Grand Duchess Christina.\" At this time, Galileo was not yet under house arrest, but the storm clouds were gathering. His advocacy for the Copernican heliocentric model, which placed the Sun, not the Earth, at the center of the solar system, was increasingly seen by the powerful Roman Inquisition as heresy. He understood profoundly that the Church's authority rested not just on spiritual guidance but on its interpretation of natural philosophy, and to challenge one was to challenge the other. His quote was a plea for intellectual freedom, a profound argument that God, as the ultimate architect, had gifted humanity with the tools of inquiry \u2013 observation, logic, and critical thought \u2013 precisely so they could unravel the mysteries of His creation, rather than blindly accept pronouncements that flew in the face of demonstrable evidence. He wasn't rejecting faith; he was arguing for a rational faith, one that embraced empirical investigation as a path to deeper understanding, believing that both the \"Book of Scripture\" and the \"Book of Nature\" were written by the same divine hand and could not contradict each other if properly interpreted.\n\nThe resonance of Galileo\u2019s words echoes powerfully even today, centuries after his death. His struggle with the Inquisition, culminating in his forced recantation and lifelong house arrest, became a cautionary tale about the perils of suppressing scientific inquiry and critical thought.",
-      "id": "f0f7c58bc207b198",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Galileo Galilei",
-      "topic": "wikiquote",
-      "ts": "2026-06-27T21:33:50.096775+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "dc8e5f183e80c585",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel's aggressive response to new Avengers: Doomsday leaks confirm what fans suspected - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-06-28T01:55:30.502921+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQZnBMeVlLNEtqbnBmcTVaQ3Qwa0hSNzFFcjVNcnQzQS1SNWtnTC1zX2VXek42WWpySFB6NVNjU0dOb0RJRF9Kay1HQzA3MWpRTkJaalZPUzRBdU9fVXNSWjJxbERpaDl3UjVJSERSMzRxYVhxUzlPYVN2UkJyeHVnenBEd013cGNva2lYZzhFdTRxUQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "304ef5bbe70f5e6f",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers Endgame gets new title | Doomsday post credit scene confirmed - MSN",
-      "topic": "movies",
-      "ts": "2026-06-28T01:55:30.503361+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNV1BITUp5VFU4eDNlaG1fMkVFUFBlYVpQbnJUTFljcVdIVWMxeFQyUGxvbC1hb2s2LVVDTFVqdXNQQ2k4YjU5bnY2NEk3djRHTEdRakgxV0J1TW1wbXVJM0NRSEh0ZURzalRySy1rankzYWt4cVp3RkhhTm1kLURHczhKa1NzVHZGdW1wa09ONDhnUENSYTJaOFVIUnctZUJMTXRETXNlZ0ZYZzFybF9HVEkyaGcxWm16dUE?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "555eb2da92233298",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers Doomsday\u2019s First Trailer Now Closer Than Ever After Marvel Displays New Promo - The Direct",
-      "topic": "movies",
-      "ts": "2026-06-28T01:55:30.503835+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMEpSN3ZGZThVdTZSNlAyLW0ycFZXN002dVhSd0xtdzdNX29PaTdVNjBCRHZTZy0tcWRtc2l4Q3k1Q3VhdHBJY1UwMWdkZXdPYkRBeEJnSGZqUmE0LVRCME9KVEdZLXlrTG1oLVNxbWh5LVRvb2xsekhOT2ktX1BZNjNfUXUtTVQ3cDIw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "a19d4efff7f7bd6b",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "3 Classic Comic Storylines Unleashed by Jean DeWolff\u2019s Official Arrival in \u2018Spider-Man: Brand New Day\u2019 - Murphy's Multiverse",
-      "topic": "movies",
-      "ts": "2026-06-28T01:55:31.319588+00:00",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPS3NBTHN1MHp2al9tQVN3STJiMWhCSDU0Z2xSdFJNWTZMZjQwZXVvQTR2NFBhRVJvM2ZjNGNnel9RQXZJWXQwVVhRa2tQaU1JUWRxYXZZM1JqY0pUUW9lVGlVVGFPWGxVeHctZzNvX2dMRHItT0liNDMzZmEtNDJoZTAwMVBlNFN3RjQ2czBDY2FmaVpFVmVIZE5MOC1PVlMtaVdnVXA0YS13b3pkLUlNaFJSSUJyVnUtZnRKZlJYMG5QV0o5NjdaeHlNRHZ0Zw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "1c861e85959512ed",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland Is Back Swinging in \u2018Spider-Man: Brand New Day\u2019 Trailer - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-06-28T01:55:31.320469+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONDJfR3ZyX01URVhVMTRTdUMwRWxFR0x0eDhJV2ZYSHR4VjRTbklrWWxwWVFEZkdfMXRuRnk1Ym5uMVpQa0FCcmpIU2tEMWZaZWt4TjNyNlhCZzdMcGQ3V290QXhJSGhTMDQ3eFJiVW1tdUhoRG1BQVhVc3RpZkcxSGJYSl9qUkgwelhsZWI0ZnpES2N4d0FzNHlETHhnMWJtX0R6ZnBIYzhwWWhw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "3784452e704256f1",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "The Odyssey\u2019s Helen Casting & Tom Holland\u2019s \u2018Dad\u2019 Line Get Expert Defense - Yahoo",
-      "topic": "movies",
-      "ts": "2026-06-28T01:55:31.841362+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdkpZaGRoU1ZKWlZoa3ZJZncyZl8zdU04ZzJyWUFRREpyeHZJUldETldNM0kwVFNPcDRxb3RaOTQ0bTZnVFZaQmRTWW9uNWJxNEo4RE5QOTJTVUJfbVNZOFFudUtoZHhYN0tjWms0NW9nOW9uQ0VjNElEcE51YWtZRF9MUUJJZDgwejRXdVRGTk9VR3hYb3Q1TjBkYTFaajhYZkE?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "fc3f3806af6591e4",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II Official Logo Revealed; Jeffrey Wright Teases Jim Gordon Return With New BTS Photo - IMDb",
-      "topic": "movies",
-      "ts": "2026-06-28T01:55:33.090337+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBhRlgtRWMyNWlwMVNBekViY3N4ZUFZOHpaLUVWMG02SXlHcWIxR2lRbW1GVEowY3dIV2dSNG1sS3NMYk5wVGl0OFpZSGZ6Zw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "\ud83c\udde9\ud83c\uddf4 Rafael Devers \u2014 2 HR, 4 RBI vs Atlanta Braves",
-      "id": "29107ac6bf1c741a",
-      "score": 64,
-      "severity": "high",
-      "source": "Baseball",
-      "title": "Baseball: Rafael Devers",
-      "topic": "baseball",
-      "ts": "2026-06-28T01:55:40.594295+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "0edde698f8babf02",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-28T01:56:20.184520+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "Visible pass at 11:43 PM - max 61deg, SW to NE. Look up!",
-      "id": "03a7178a691adbbf",
-      "score": 62,
-      "severity": "low",
-      "source": "ISS",
-      "title": "ISS pass overhead",
-      "topic": "iss",
-      "ts": "2026-06-28T01:56:34.636078+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "In the vast, inky canvas of the cosmos, amidst the swirling galaxies and nebulae, there existed a lone, blue marble, a tiny speck of dust suspended in a sunbeam. This was Earth, our home, captured in a photograph that would forever alter humanity's perception of itself. The image, known as the Pale Blue Dot, was conceived and championed by a man whose poetic words and boundless curiosity illuminated the universe for millions: Carl Sagan. A visionary astronomer, a captivating storyteller, and a tireless advocate for science, Sagan possessed a rare ability to bridge the chasm between complex scientific concepts and the everyday human experience. He saw in the cosmos not just numbers and equations, but a profound narrative, a story of origins, evolution, and our place within it all.\n\nThe genesis of the Pale Blue Dot photograph was born from Sagan's unyielding desire to offer a new perspective. After Voyager 1, a robotic emissary of humanity, had completed its grand tour of the outer planets, sailing past Jupiter, Saturn, and Uranus, Sagan saw an opportunity, a final, poignant gesture before the probe plunged into the interstellar void. He urged NASA, with a passionate persistence that defied initial skepticism, to turn Voyager's cameras back towards home. The scientific community's initial reluctance was understandable; the primary mission of Voyager was long over, and turning the cameras back towards the inner solar system, where Earth was a mere pinprick, offered little in terms of new astronomical data. But Sagan's vision transcended mere scientific data; he sought a philosophical statement, a visual poem that would encapsulate our insignificance and our preciousness.\n\nOn February 14, 1990, at Sagan's behest, Voyager 1, nearly four billion miles away, pivoted its cameras. It took a series of 60 images, creating a mosaic of the solar system. Within one of those frames, tucked away in a beam of sunlight scattered by the camera's optics, appeared a tiny, faint point of light. This was Earth, a mere 0.12 pixel in size, a pale blue dot. The photograph, when it arrived back on Earth, was more than just an image; it was a mirror reflecting humanity's collective existence, a profound testament to our shared home. Sagan's subsequent reflections on this image, immortalized in his book \"Pale Blue Dot: A Vision of the Human Future in Space,\" resonated deeply. He spoke of our planet as \"a mote of dust suspended in a sunbeam,\" a place where \"every saint and sinner in the history of our species lived out their lives.\"\n\nThe Pale Blue Dot image and Sagan's accompanying prose served as a powerful call to introspection. It underscored the fragile beauty of Earth, the solitary oasis in an immense cosmic desert. It transcended scientific discovery to become a cultural touchstone, a symbol of our shared humanity and the urgent need for stewardship of our planet. Sagan's life, tragically cut short in 1996, left an indelible mark not only on the scientific community but on the human spirit itself. The Pale Blue Dot remains a potent reminder of our cosmic address, a humble yet profound testament to the extraordinary journey of life on Earth, and a timeless plea for peace and environmental responsibility in the face of an unimaginably vast and indifferent universe.",
-      "id": "b1a403067c9e5f63",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Carl Sagan and the Pale Blue Dot",
-      "topic": "learn",
-      "ts": "2026-06-28T01:56:40.512798+00:00",
-      "url": ""
-    },
     {
       "action": "push",
       "detail": "\u201cHappily, at forty-six I still feel as experimental and on the verge of getting at the truth as ever.\u201d\n\u2014 Virginia Woolf\n\nVirginia Woolf, a name synonymous with the modernist literary movement, was an author who dared to peer into the uncharted territories of human consciousness, crafting narratives that bucked the conventions of Victorian prose. Her work, a swirling tapestry of interior monologues, stream-of-consciousness, and explorations of gender and class, offered a revolutionary lens through which to view the complexities of life. She was a central figure in the Bloomsbury Group, an influential circle of intellectuals, artists, and writers who championed new ways of living and thinking in early 20th-century England. This quote, penned when she was forty-six, speaks to a life lived in constant intellectual motion, a mind never content with settled truths, always pushing at the boundaries of understanding, both within herself and the world around her.\n\nAt forty-six, in the year 1928, Woolf was riding a wave of creative triumph. She had just published \"Orlando,\" a groundbreaking novel that defied linear time and conventional gender roles, tracing the fantastical life of an aristocratic poet over four centuries. It was a commercial success, bringing her not only critical acclaim but also a degree of financial independence she had long sought. The world itself was on the precipice of profound change. The roaring twenties, a period of unprecedented social and cultural upheaval following the devastation of World War I, was winding down. Women had gained the right to vote in Britain a decade prior, and new ideas about psychology, art, and society were flourishing. For Woolf, a woman who had herself grappled with mental health challenges and societal expectations throughout her life, this era of flux and intellectual ferment was fertile ground for her experimental spirit. She was not merely observing the changes; she was actively shaping them through her radical literary endeavors.\n\nThe enduring power of Woolf's sentiment, \"Happily, at forty-six I still feel as experimental and on the verge of getting at the truth as ever,\" lies in its timeless appeal to the human spirit of inquiry. In an age saturated with information and the illusion of definitive answers, her words remind us of the profound value in maintaining a sense of intellectual curiosity and a willingness to challenge established norms. It speaks to the ongoing journey of self-discovery, the understanding that truth is often elusive, multifaceted, and forever just beyond our grasp. For an intelligent and curious adult today, Woolf\u2019s declaration is an invitation to resist complacency, to embrace uncertainty, and to continually seek new perspectives, whether in our personal lives, our work, or our understanding of the wider world. It is a testament to the idea that true wisdom isn't about knowing all the answers, but about never ceasing to ask the questions.",
@@ -6529,6 +5875,462 @@
       "topic": "wikiquote",
       "ts": "2026-07-02T10:50:55.197734+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "57b3ec7bd12ec8ce",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 final trailer: Christopher Nolan teases Matt Damon\u2019s epic journey home ahead of India premiere - The Hindu",
+      "topic": "movies",
+      "ts": "2026-07-02T12:51:20.001634+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxNZEpzTkZrbHdwZGZJakM5RjNWdllXcWIydXg5a0VhcHZ2U0RoWFRCdml4ZTQ5c1FPOTBOSE1hajVsWFJ0N1kzMzc1Mnh3bjFGX3JaRGx2UWdUeDQ0Qks4V1Jra005RG9TVFRlTFBod1VoSmFJZjJPYWtvR3BfQXV6cTlSZjBfbTcyZlVBMXpqclI4TE9VTGFMUk83bHNORkRmUVk1OXM4andZcDBlRWdfT0FDeHZtMGJLUXFpYndBNElMU0Zpc2VQUDJ3eXhzSHgxSlVubjF2bzdhM2E0YXJfbWdfbTNoNEQyMFF6MWxlTGFZZnNoMEVaNEV6d0gtYWPSAYYCQVVfeXFMTl9lSFVIZHNkaURtdVRKZUZXUF94Qk8xanBXMDNQal9USE9weU9STExmeTA3bEcwOVhhVGxXZ184eDVTVTlpeUdTaXZ6Y1gxRVNyd1psdV90aFFLTE9tSXZJUnlSTGlPd05QRkE2OUFmajNIeDA0WlpzUDk1bEs1b0Z3QXhaQ3E0V3RGa3BvaDNhaU9Jc0k3RVFhQlNfYTF0YW5LT2lCN1BuTElTNTJ3Q3FURC01dDhaZFhFNkFmMVp3WFltZzRUNG5LOTViMjVlVUg5RHdvaEtIM1dVMWY5WEZ4czZEaDhEb19MNFkxa1o0THpoT2dJOFdBYU13Xy01TUJmcWtRZw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "e5674dfad0c6f302",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "Matt Damon Leads \u2018The Odyssey\u2019 in Epic New Trailer Ahead of Summer Premiere - GreekReporter.com",
+      "topic": "movies",
+      "ts": "2026-07-02T12:51:20.200577+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNS2NXOGVHNVVDQXBsNUdUMWV5eUtKbjJmTVR4MEgtcTNqazlQLTRVdUE3RFNlS1JlMGJhZWpqeVkyUzJkaGVkRVJUdlZjY3FHWVFmUFRZSUR2bWg3d3JEOWxENW0tVEd6RTVBeUFrbXotMVJxRUxvRVZOSnBnd3QwTUhwd0NQTno0ckE?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "56d344d7bac13956",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "Final trailer for Christopher Nolan's \u00abThe Odyssey\u00bb \u2013 News - OutNow",
+      "topic": "movies",
+      "ts": "2026-07-02T12:51:20.437641+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPMDZOT3Qxcm9STlo3bHNIM1RJUE5EX0g4X0ZtUUhpNUMxdjUtcDNuZFFKSmFVUzNPNUxTeDNBR2J3b3VjSnpITXFpUnZFUi0zdUViQWt3RlFycjRfOGVFNk03TlY0d0RXTnd6XzFkYWFMaFhVVk15WDVFRmZpVWF0WEdGUUQ5czNOd3BOQ1N3?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "bfbc600b11f4fd26",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "Final trailer for \u2018The Odyssey\u2019 gives first look at Elliot Page as Sinon - OUTinPerth",
+      "topic": "movies",
+      "ts": "2026-07-02T12:51:20.629929+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQRlVhaEZMNU8xSDdqRW9HUHpNUWVRcWpiMEdPQTNsc2JrbWc0NjBkaVpSQTZKYnA4MzdGOXBIZXFZU2I5Vm0zT2U1MmQ5WDFWbnFEQWE2b0ZXcXFrZi1Odm5URFVGalNwMHhVX1Y1UFI0b1d4Q3lMSWYtaG55MlpMUjFNUVJjMHo5ZFJlTFZTMXBqUUhpYm82OFZLV1hNemc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "45e00f237f86f612",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "The Odyssey Final Trailer: Nolan Unveils The Scale Of His Epic Ft Matt Damon, Tom & More - MensXP",
+      "topic": "movies",
+      "ts": "2026-07-02T12:51:20.759938+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNOWZuanc5dlhCZkp6enJDQ2xHbGdkb2VCeEwyYmtEUjJxTzV3aGREYk1fNFN4YUplaE1FbEw2SG1vRmJpMDFTNnhVUGVmc2hZak1BcEw4ODQtRUZoSEZMNXNFajhHYXhuTWltV3pXMS1BWVAtNThaYlhmWHJtS1c0Q0UwNzZvb0g5eDg4dUhIQXB1VFczU2haQUtWWFpUOWp6TE9JR3lDVFg5Q2luSHpNRnJVRjZVeFhmck1fQkc0am1NSkZENHBQdFdSS042OFBOMmFJSXNROHR2cEJ0SENyZlY5dXNBQdIB6wFBVV95cUxOeFh2Vk02V2ZmYjl6YVhrd1RUQkpoNk1hR193c1Y1R2lkaURYeXE3SUZVaTlUcF9ZT3kwY1BQVmVIX3JzZTQ2YkJINEJXNVh3aWlEaUxueEhHaGw3emlEc0dyM3VVTWw3YVhDMGRZSDRNTjBFeTVaVlVyNUJnUGxZSTFWZ0puTVQ0SmNiazhab0YzRlFLTXI4WW42RFI4blpfdzVkcHk1SENIOEVJRHdYVnZOUkZISjdub0VmR09CZ1ZKbm9IYVhmUUx0R3dZdFRNZ182WXRSaW1EaGNzOFg1a096WVdNNmFBSzh3?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Resonance (From \"Soul Eater\") - Mattxaj\n(because you like Rayden)",
+      "id": "0cf97fa14a07dc16",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-07-02T12:51:27.142785+00:00",
+      "url": "https://www.deezer.com/track/365646301"
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-07-01",
+      "id": "ad6d95823eb6a228",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Blue Jays 9 \u2013 Mets 3 (W)",
+      "topic": "baseball",
+      "ts": "2026-07-02T12:51:29.267680+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-07-01",
+      "id": "8cbbe28527fb9095",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Yankees 2 \u2013 Tigers 6 (L)",
+      "topic": "baseball",
+      "ts": "2026-07-02T12:51:29.337436+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "Final, 2026-07-01",
+      "id": "c1b50c4bb262cab7",
+      "score": 40,
+      "severity": "low",
+      "source": "Baseball",
+      "title": "Dodgers 1 \u2013 Athletics 7 (L)",
+      "topic": "baseball",
+      "ts": "2026-07-02T12:51:29.412890+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 55,995.00 (was DOP 69,995.00, -20%)",
+      "id": "7b940eeb80574402",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Lavadora Secadora Samsung 20 Kg WD20T6300GP/AX",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:05.104280+00:00",
+      "url": "https://www.sirena.do/samsung-lav-sec-20kg-wd20t6300gp-ax-2063385/p"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 20,995.00 (was DOP 35,995.00, -42%)",
+      "id": "61f881001ea05c32",
+      "score": 64,
+      "severity": "high",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Televisor Nikkei Led 50P Android Uhd 4K 50D3100",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:05.104932+00:00",
+      "url": "https://www.sirena.do/nikkei-led-50p-android-uhd-4k-50d3100-2065424/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 30,295.00 (was DOP 33,595.00, -10%)",
+      "id": "b12a85d90cf71b06",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Estufa Frigidaire a Gas 30 Pulgadas FKGN30C3YI/MYI",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:05.348326+00:00",
+      "url": "https://www.sirena.do/2133762/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 69,595.00 (was DOP 86,995.00, -20%)",
+      "id": "d8314ce0e11665cf",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Lavadora Secadora Whirlpool Torre a Gas 44 Lb 7MWGT4027HW",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:05.349163+00:00",
+      "url": "https://www.sirena.do/whirlpool-lav-tor-gas-44lb-7mwgt4027hw-1839893/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 27,595.00 (was DOP 32,495.00, -15%)",
+      "id": "4ccdb1a437550930",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Aire Acondicionado Midea 12000 BTU Inverter SEER 18 MSAF-12CDN8DB",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:05.349745+00:00",
+      "url": "https://www.sirena.do/midea-aire-12btu-inv-s18-msaf-12cdn8db-2087442/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 30,595.00 (was DOP 35,995.00, -15%)",
+      "id": "e86d85357a3dba6b",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Aire Acondicionado Midea Inverter 12000 BTU SEER 21 MSAG-12CFN8CE",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:05.350365+00:00",
+      "url": "https://www.sirena.do/midea-aire12btu-inv-s21-msag-12cfn8ce-2087439/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 21,595.00 (was DOP 23,995.00, -10%)",
+      "id": "95ba570e09633a78",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Lavadora Whirlpool Impeller 14 Kg WWI14AWHLS",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:05.350914+00:00",
+      "url": "https://www.sirena.do/whirlpool-lavadora-imp-14kg-wwi14awhls-2041528/p"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 1,195.00 (was DOP 1,995.00, -40%)",
+      "id": "3eddbbbba1224507",
+      "score": 64,
+      "severity": "high",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Abanico De Pedestal Nikkei 16 Pulgadas US16058",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:05.351442+00:00",
+      "url": "https://www.sirena.do/nikkei-abanico-pedestal-16-us16058-1377963/p"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 1,995.00 (was DOP 3,195.00, -38%)",
+      "id": "cc21141d8843d919",
+      "score": 64,
+      "severity": "high",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Estufa De Mesa Nikkei 2 Hornilla Jk-202b",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:05.510012+00:00",
+      "url": "https://www.sirena.do/nikkei-estufa-mesa-2h-jk-202b-1752555/p"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 45,995.00 (was DOP 65,995.00, -30%)",
+      "id": "97b9239820e64a2d",
+      "score": 64,
+      "severity": "high",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Televisor Tcl 65p Uhd Qled Android 65c655a",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:05.640754+00:00",
+      "url": "https://www.sirena.do/tcl-65p-uhd-qled-android-65c655a-2086500/p"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 4,195.00 (was DOP 5,995.00, -30%)",
+      "id": "9b572e54922e0820",
+      "score": 64,
+      "severity": "high",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Freidora De Aire Nikkei 3.5L 267069/267029",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:05.825386+00:00",
+      "url": "https://www.sirena.do/nikkei-air-fryer-3-5l-267069-267029-1898836/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 35,995.00 (was DOP 50,995.00, -29%)",
+      "id": "09b69a2929fe4abc",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Secadora Samsung 20 Kg DV20A3200PW/AP",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:06.027518+00:00",
+      "url": "https://www.sirena.do/samsung-secadora-20kg-dv20a3200pw-ap-1959828/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 12,695.00 (was DOP 16,995.00, -25%)",
+      "id": "1dc0b84e3febf142",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Lavadora Nikkei Semi-Autom\u00e1tica 12 Kg",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:06.028294+00:00",
+      "url": "https://www.sirena.do/nikkei-lavadora-xp120-7005-nk26-1923810/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 126,995.00 (was DOP 156,995.00, -19%)",
+      "id": "f2105fd2796f61e7",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Nevera Samsung 31P RF32CG5410S9AP",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:06.028815+00:00",
+      "url": "https://www.sirena.do/samsung-nevera-31p-rf32cg5410s9ap-2058751/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 32,395.00 (was DOP 39,595.00, -18%)",
+      "id": "513e454a7ae1c668",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Secadora Whirlpool a Gas 18 Kg 7MWGD1800EM",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:06.029343+00:00",
+      "url": "https://www.sirena.do/whirlpool-secadora-gas-18kg-7mwgd1800em-1761097/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 16,995.00 (was DOP 19,995.00, -15%)",
+      "id": "12147c1041afaec6",
+      "score": 45,
+      "severity": "moderate",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Lavadora Whirlpool 8 Kg WWI08BWHLS",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:06.029841+00:00",
+      "url": "https://www.sirena.do/whirlpool-lavadora-8kg-wwi08bwhls-1809767/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 30,995.00 (was DOP 35,995.00, -14%)",
+      "id": "4c20c0f7c553b873",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Lavadora Samsung 17 Kg WA17CG6441BWAP",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:06.030357+00:00",
+      "url": "https://www.sirena.do/samsung-lavadora-17kg-wa17cg6441bwap-2061103/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 38,695.00 (was DOP 42,995.00, -10%)",
+      "id": "9763bfac91e4f45d",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Lavadora Samsung Inverter 20 Kg WA20B3553GW/AP",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:06.030881+00:00",
+      "url": "https://www.sirena.do/samsung-lavadora-inv-20kg-wa20b3553gw-ap-2035084/p"
+    },
+    {
+      "action": "digest",
+      "detail": "DOP 1,495.00",
+      "id": "1c702412c46b31cd",
+      "score": 28,
+      "severity": "low",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Plancha Oster de Vapor GCSTBS-5053",
+      "topic": "groceries",
+      "ts": "2026-07-02T12:52:06.031406+00:00",
+      "url": "https://www.sirena.do/oster-plancha-vapor-gcstbs-5053-2044384/p"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "7b08811658fa9c96",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-07-02T12:52:16.977862+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 9:20 PM - max 50deg, SW to NE. Look up!",
+      "id": "e071bba69eca5df0",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-02T12:52:36.571778+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Water break! A few sips now keeps you sharp.",
+      "id": "8351769b6cc01d7e",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-07-02T12:52:38.322184+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Limit screen time before bed, as light exposure can delay sleep onset and reduce sleep quality. (Source: MedlinePlus)",
+      "id": "a429b62ef2a3fcfd",
+      "score": 60,
+      "severity": "low",
+      "source": "Health",
+      "title": "Health tip",
+      "topic": "health_tip",
+      "ts": "2026-07-02T12:52:39.055205+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "For decades, the prevailing cosmic narrative held that the universe, born from the Big Bang, was destined for a slow, graceful deceleration. Gravity, the great cosmic sculptor, was understood to be an ever-present brake, gradually slowing the expansion initiated in that primordial explosion. Observational evidence, gathered over years by astronomers like Allan Sandage and his contemporaries, largely supported this picture, albeit with uncertainties about the universe's ultimate fate \u2013 would it recollapse in a Big Crunch, or expand forever, ever so slowly, into a cold, dark oblivion? This intellectual framework, while providing a satisfying sense of order, also presented a profound challenge: pinning down the exact rate of cosmic expansion, and thus the universe\u2019s age and ultimate destiny, was a monumental task, fraught with the technical difficulties of measuring distances across unimaginable scales.\n\nThen came the late 1990s, a period of breathtaking discovery that utterly shattered this long-held consensus. Two independent teams of astronomers, the Supernova Cosmology Project led by Saul Perlmutter, and the High-Z Supernova Search Team led by Brian Schmidt and Adam Riess, embarked on a quest to measure the universe's deceleration with unprecedented precision. Their method relied on Type Ia supernovae, these cosmic lighthouses of consistent brightness, which serve as \"standard candles\" for measuring vast distances. The expectation was clear: distant supernovae, and thus the galaxies hosting them, should appear brighter than predicted if the universe were expanding more slowly in the past, or dimmer if it were expanding faster. What they found, however, defied all expectations and fundamentally reshaped our understanding of the cosmos.\n\nTo the astonishment of the scientific community, and indeed the world, both teams independently concluded that distant Type Ia supernovae were fainter than anticipated. This wasn't a subtle anomaly; it was a profound discrepancy, indicating that the galaxies hosting these supernovae were much farther away than their redshift implied. The only plausible explanation was that the expansion of the universe wasn't slowing down at all, but was, in fact, accelerating. Imagine the scene: two fierce competitors, working independently, pouring over their data, checking and rechecking their calculations, only to arrive at the same utterly shocking, counterintuitive conclusion. It was a moment of profound intellectual upheaval, a rare instance where the universe itself seemed to whisper a new, utterly unexpected truth. The initial disbelief and skepticism soon gave way to acceptance as further observations corroborated their findings. This discovery earned Perlmutter, Schmidt, and Riess the Nobel Prize in Physics in 2011, a testament to the revolutionary nature of their work.\n\nThis acceleration, so contrary to our intuitive understanding of gravity, demanded a new explanation. Cosmologists posited the existence of a mysterious force, an ethereal entity dubbed \"dark energy,\" which acts as a repulsive pressure, pushing galaxies apart. Unlike gravity, which pulls things together, dark energy appears to be a property of space itself, growing in influence as the universe expands. This conceptual leap not only explained the accelerating expansion but also provided a crucial missing piece in the cosmic puzzle.",
+      "id": "2160819b0ad95fda",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Dark energy and the accelerating universe",
+      "topic": "learn",
+      "ts": "2026-07-02T12:52:43.878738+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "On this day\n1998: Harry Potter and the Chamber of Secrets by J. K. Rowling, the second novel of the Harry Potter series, was published.\n\nFeatured: No. 1 Aircraft Depot RAAF\nNo. 1 Aircraft Depot (No. 1 AD) was a maintenance unit of the Royal Australian Air Force (RAAF). Formed in July 1921 at RAAF Point Cook, Victoria, it relocated to the nearby RAAF Laverton in March 1926. As well as servicing aircraft and other equipment, in its early years, the...\n\nTechnology\nThe padlock icon indicates encrypted traffic (HTTPS), not site trustworthiness; always check the domain name before inputting data. (Source: EFF)",
+      "id": "3863ca6efba1a2be",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Daily learning",
+      "topic": "learn",
+      "ts": "2026-07-02T12:52:44.663480+00:00",
+      "url": "https://en.wikipedia.org/wiki/No._1_Aircraft_Depot_RAAF"
+    },
+    {
+      "action": "push",
+      "detail": "\u201cHis life, as you know, is as a beacon which shines [ever] bright to those that need it most.\u201d\n\u2014 Mahatma Gandhi\n\nThe words echo from a man of peace, yet uttered amidst a storm of unimaginable violence. Mahatma Gandhi, the architect of India\u2019s independence, spoke this profound truth not about himself, but about another titan of nonviolent resistance: Jesus Christ. It was a testament offered in a world teetering on the precipice of its own destruction, a world where the brutal logic of empire and the burgeoning horrors of global warfare had already claimed millions. Gandhi, a devout Hindu who nevertheless found immense inspiration in the teachings of the Sermon on the Mount, saw in Christ a universal beacon, a principle of truth and love that transcended religious dogma. He wasn\u2019t proselytizing; he was, in his characteristic manner, distilling an essential wisdom, a guiding light that he himself had meticulously applied to the seemingly insurmountable task of liberating an entire subcontinent through the sheer force of moral courage.\n\nAt the time of this pronouncement, Gandhi was deep in the throes of India's freedom struggle. The British Raj, though weakened by two World Wars, still clung tenaciously to its jewel in the crown. Gandhi, through his satyagraha, or truth-force, movements, had mobilized millions, yet faced constant imprisonment, the threat of assassination, and the heartbreaking internal strife between Hindus and Muslims that British policy often exacerbated. The world around him was reeling from the aftershocks of the First World War and the looming specter of the Second. Empires were crumbling, ideologies clashing, and the very concept of humanity seemed under assault. In this maelstrom, Gandhi\u2019s unwavering faith in nonviolence, his belief in the power of love over hatred, and his tireless pursuit of justice, often found an analogue in the figure of Christ, a revolutionary whose kingdom was not of this world, yet whose teachings profoundly impacted it.\n\nEven today, in a fragmented and often cynical world, Gandhi's words resonate with a startling clarity. The \"beacon\" of which he spoke continues to shine, not as a static historical artifact, but as a living principle. In an era grappling with unprecedented global challenges \u2013 climate change, economic inequality, and resurgent authoritarianism \u2013 the need for moral leadership, for compassion, and for an unyielding commitment to justice has never been greater. Gandhi\u2019s life, and his reverence for figures like Christ, remind us that true power lies not in coercion or domination, but in the radical vulnerability of love, the persistent pursuit of truth, and the unwavering belief in the inherent dignity of every human being. It is a call to conscience, a quiet but profound challenge to each of us to find and amplify those beacons, however small, that can illuminate the path forward in times of darkness.",
+      "id": "6b79769e65d96daa",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Mahatma Gandhi",
+      "topic": "wikiquote",
+      "ts": "2026-07-02T12:52:49.107289+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "What: China's Baihetan Dam, around 16,000 megawatts, uses the world's first 1,000-megawatt hydro turbines.\nWhy it matters: Each single turbine there can power a small city, pushing hydro engineering to new limits.\nWhy you should care: It shows how clean hydropower keeps scaling up, even as good dam sites grow scarce worldwide.\n(Source: IEEE)",
+      "id": "e69a69713001e0bb",
+      "score": 60,
+      "severity": "low",
+      "source": "Energy learning",
+      "title": "\u26a1 Today's spark \u2014 Baihetan \u2014 a dam with record-breaking turbines",
+      "topic": "energy_learn",
+      "ts": "2026-07-02T12:52:49.420631+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Jun 29-Jul 05: RD$1,845.00 across 7 transactions\nTop: TOTAL V CENTENARIO RD$1,000.00; BANCO POPULAR OFICINA SAM RD$500.00; CLARO RECAR RD$250.00; AROMA COFFEE SERVICE RD$95.00\nBiggest: RD$1,000.00 at TOTAL V CENTENARIO\nvs prior week: Weekly spending moved from RD$9,944.73 to RD$1,845.00 (-RD$8,099.73, -81.45%)",
+      "id": "f587d60a2cdcf27f",
+      "score": 60,
+      "severity": "moderate",
+      "source": "BHD",
+      "title": "Weekly spending summary",
+      "topic": "spending",
+      "ts": "2026-07-02T12:52:52.599911+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "What happens when one of the stars in a binary goes supernova? This image combines visible (yellow), ultraviolet (purple) and infrared light (cyan, red and orange) to show two supernova remnants and their surrounding environment, about 6,000 light-years away. The younger one is...",
+      "id": "524ffe9c6278cc86",
+      "score": 60,
+      "severity": "low",
+      "source": "NASA APOD",
+      "title": "APOD: Sibling Supernova Remnants",
+      "topic": "apod",
+      "ts": "2026-07-02T12:52:57.369990+00:00",
+      "url": "https://apod.nasa.gov/apod/image/2607/sibling_supernovae.jpg"
     }
   ],
   "f4_history": [
@@ -6649,7 +6451,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/06/AVISO-PRE.-SEM.CORTE-27-JUN-03-JUL-DE-2026.pdf",
   "fuel_last_pdf_hash": "f8498e031891b450b3caa406b4e9889ad0596d4b83780850ebf173674f103f51",
-  "fuel_last_prices_seen_at": "2026-07-01T21:52:49.256455+00:00",
+  "fuel_last_prices_seen_at": "2026-07-02T12:52:35.889475+00:00",
   "fuel_prices": {
     "GLP": 137.2,
     "Gasoil Regular": 266.3,
@@ -7424,7 +7226,7 @@
     "gothic_and_mystery:1064": "2026-06-13",
     "novels:1400": "2026-06-13"
   },
-  "health_tip_last_sent": "2026-07-01",
+  "health_tip_last_sent": "2026-07-02",
   "holidays_sent": [],
   "ignored": {
     "4071c13d0b9dc18b": {
@@ -7460,6 +7262,7 @@
     "iPadOS 26.5.2 (23F84)"
   ],
   "iss_seen_passes": [
+    "44c317309f39999a",
     "59f60ed27ebefa02",
     "9ec92a8504a5fd79",
     "7f41fabbefe26e36",
@@ -7517,8 +7320,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "ancient_civilizations",
-  "knowledge_last_sent": "2026-07-02T3",
+  "knowledge_last_category": "astronomy",
+  "knowledge_last_sent": "2026-07-02T4",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -7533,6 +7336,7 @@
     "ancient_civilizations:The mysterious Maya collapse": "2026-06-26",
     "ancient_civilizations:The rise of Sumer and the first cities": "2026-07-02",
     "astronomy:Carl Sagan and the Pale Blue Dot": "2026-06-28",
+    "astronomy:Dark energy and the accelerating universe": "2026-07-02",
     "astronomy:The Antikythera mechanism, an ancient computer": "2026-06-17",
     "astronomy:The Hertzsprung-Russell diagram": "2026-07-01",
     "astronomy:The James Webb Space Telescope": "2026-06-15",
@@ -7643,9 +7447,9 @@
     "world_history:The rise of Adolf Hitler": "2026-06-22"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 46,
-    "ts": "2026-07-02T10:49:35.794566+00:00"
+    "failed": 1,
+    "ok": 45,
+    "ts": "2026-07-02T12:51:17.142127+00:00"
   },
   "launch_seen_ids": [
     "c88f136e6de9f1c0",
@@ -7671,10 +7475,14 @@
     "9cf78ee44cb96c21",
     "7621aad01d0821be"
   ],
-  "learn_last_sent": "2026-07-01",
+  "learn_last_sent": "2026-07-02",
   "life_dashboard_last_week": "2026-W26",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "011facf68cab7c7b",
+      "32b352746521729c",
+      "696e26339f72f9e4",
+      "13af8daf9b0f056d",
       "7215933f3f233863",
       "995df44a656b99c9",
       "c3ff73bfc75f076b",
@@ -7770,11 +7578,7 @@
       "2f57c055943f40d2",
       "8fdd93d084ce8806",
       "82f59156ca72814f",
-      "6bdd3ab5c1ad83c6",
-      "9db31d3b4293da1c",
-      "0b389fe2b1797a2f",
-      "109fadda33d8f14f",
-      "95de4c61cf6e51c8"
+      "6bdd3ab5c1ad83c6"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -7978,6 +7782,11 @@
       "5f317afc30595e31"
     ],
     "Spider-Man: Brand New Day": [
+      "03a5435dc32a957b",
+      "279a1c2a5ee39922",
+      "7630391e6592dc23",
+      "7c6952880f959e58",
+      "d7a020a770490a5a",
       "b696fae739a4b6e4",
       "bb160e6e7ba044f0",
       "5f43c5bed328ce7a",
@@ -8072,12 +7881,7 @@
       "28b8cd6dbe540a0f",
       "4ba35cd2eb473934",
       "afc5b20c58614c0b",
-      "1fb50cf44fb0ab18",
-      "ad6e3769456f834c",
-      "6153b4b48a06c3ae",
-      "fec70d74b1f9a85f",
-      "3b45eb451b4d32cf",
-      "ffd2c7055c45780b"
+      "1fb50cf44fb0ab18"
     ],
     "The Batman Part II": [
       "152d673df523d483",
@@ -8400,7 +8204,8 @@
     1311276,
     496468,
     260101,
-    260106
+    260106,
+    11491454
   ],
   "music_release_seen": [
     "1fb8027c5bbe3041",
@@ -8513,6 +8318,15 @@
       "label": "Little Big Town",
       "payload": {
         "name": "Little Big Town"
+      }
+    },
+    "2502f52f20c7b8b7": {
+      "applied": null,
+      "created": "2026-07-02T12:51:27.142758+00:00",
+      "kind": "artist",
+      "label": "Mattxaj",
+      "payload": {
+        "name": "Mattxaj"
       }
     },
     "258f5afd117577f4": {
@@ -8947,15 +8761,6 @@
         "name": "Joe Veras"
       }
     },
-    "fe4c9d0ac894333a": {
-      "applied": null,
-      "created": "2026-06-18T12:43:32.005134+00:00",
-      "kind": "artist",
-      "label": "Florent Pagny",
-      "payload": {
-        "name": "Florent Pagny"
-      }
-    },
     "ff9653dbff0f2e0a": {
       "applied": null,
       "created": "2026-06-23T22:06:09.954757+00:00",
@@ -9161,7 +8966,7 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spending_week_summarized": "2026-W27:1595.00",
+  "spending_week_summarized": "2026-W27:1845.00",
   "streaming_seen": {
     "1003596": [],
     "1288438": [],
@@ -9172,177 +8977,179 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "apod": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "baseball": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "deals": {
-      "last_data": "2026-07-02T10:50:12.838759+00:00",
+      "last_data": "2026-07-02T12:51:53.642744+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "energy": {
-      "last_data": "2026-07-02T10:50:23.535655+00:00",
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_data": "2026-07-02T12:52:16.742731+00:00",
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "fda": {
-      "last_data": "2026-07-02T10:50:13.545681+00:00",
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_data": "2026-07-02T12:52:06.826735+00:00",
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "fuel": {
-      "last_data": "2026-07-01T21:52:49.256470+00:00",
+      "last_data": "2026-07-02T12:52:35.889493+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "fx": {
-      "last_data": "2026-07-02T10:50:41.852276+00:00",
+      "last_data": "2026-07-02T12:52:34.950968+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-02T10:49:47.302667+00:00",
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_data": "2026-07-02T12:51:28.768200+00:00",
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "groceries": {
-      "last_data": "2026-07-01T21:52:18.507087+00:00",
+      "last_data": "2026-07-02T12:52:05.103934+00:00",
       "last_data_count": 236,
+      "last_error": "429 Client Error: Too Many Requests for url: https://discord.com/api/v10/channels/1515517351406342184/messages",
+      "last_error_ts": "2026-07-02T12:51:17.142127+00:00",
       "last_ok": "2026-07-01T21:51:27.562160+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "learn": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "movies": {
-      "last_data": "2026-07-02T10:49:43.218605+00:00",
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_data": "2026-07-02T12:51:23.557420+00:00",
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "music": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-02T10:50:23.952996+00:00",
+      "last_data": "2026-07-02T12:52:17.288741+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "outages": {
-      "last_data": "2026-07-02T10:50:41.360657+00:00",
+      "last_data": "2026-07-02T12:52:34.263280+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-02T10:50:41.424679+00:00",
-      "last_data_count": 42,
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_data": "2026-07-02T12:52:34.447781+00:00",
+      "last_data_count": 44,
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-02T10:49:44.144043+00:00",
+      "last_data": "2026-07-02T12:51:24.676213+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "weather": {
-      "last_data": "2026-07-02T10:50:23.612209+00:00",
+      "last_data": "2026-07-02T12:52:16.977552+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-02T10:50:44.690213+00:00",
+      "last_data": "2026-07-02T12:52:38.321777+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-02T10:49:35.794566+00:00"
+      "last_ok": "2026-07-02T12:51:17.142127+00:00"
     }
   },
   "twitch_live": [],
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165091"
+    "last_full_window": "165092"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9353,9 +9160,14 @@
     "games": "2026-06-12T12:15:55.633492+00:00",
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
-  "watchdog_failing_since": {},
-  "water_slots_sent": [],
+  "watchdog_failing_since": {
+    "groceries": "2026-07-02T12:51:17.142127+00:00"
+  },
+  "water_slots_sent": [
+    "2026-07-02|12"
+  ],
   "weather_seen_ids": [
+    "44b5d73de94c8b7d",
     "4fd33d05a6b7e06b",
     "d113cadc1e23b7fd",
     "d85836fd2607bda9",
@@ -9452,8 +9264,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "writers",
-  "wikiquote_last_sent": "2026-07-02T3",
+  "wikiquote_last_category": "leaders",
+  "wikiquote_last_sent": "2026-07-02T4",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
@@ -9479,7 +9291,7 @@
     "leaders:Benjamin Franklin": "2026-06-27",
     "leaders:Eleanor Roosevelt": "2026-06-23",
     "leaders:Frederick Douglass": "2026-06-30",
-    "leaders:Mahatma Gandhi": "2026-06-22",
+    "leaders:Mahatma Gandhi": "2026-07-02",
     "leaders:Mikhail Gorbachev": "2026-06-26",
     "leaders:Nelson Mandela": "2026-06-29",
     "leaders:Theodore Roosevelt": "2026-06-24",
