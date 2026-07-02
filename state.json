@@ -204,15 +204,6 @@
     {
       "detail": "",
       "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Christopher Nolan's first The Odyssey video game announced - Polygon.com",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZzk0NEk0a3NDZkFUNFUtRklWS2lDelpvdHB5YmhOdm9rVW9yZFVIZ3FlTTJwU0Z5UWdDYmd0ZGduM3dCbXpMS2g3ZElDYTdTOEt5TjNnalVoeTJmN1ZxcjgzVS1ObFlldXhnS09aREd5ekVXREJiM3BoS1gyWm9iY0dObUVKYlJ3WlRLbg?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
       "score": 50,
       "source": "Weather",
       "title": "Atlantic Tropical Weather Outlook",
@@ -236,6 +227,24 @@
       "title": "M3.4 - 3 km N of Otra Banda, Dominican Republic (~124 km away)",
       "topic": "quakes",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71522238"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Odyssey",
+      "title": "Christopher Nolan's first The Odyssey video game announced - Polygon.com",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZzk0NEk0a3NDZkFUNFUtRklWS2lDelpvdHB5YmhOdm9rVW9yZFVIZ3FlTTJwU0Z5UWdDYmd0ZGduM3dCbXpMS2g3ZElDYTdTOEt5TjNnalVoeTJmN1ZxcjgzVS1ObFlldXhnS09aREd5ekVXREJiM3BoS1gyWm9iY0dObUVKYlJ3WlRLbg?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Batman Part II",
+      "title": "Slideshow: The Batman: Part II - Who's Who in Matt Reeves' DC Sequel - IGN Southeast Asia",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9VejBmcksyQU92cXZFVU5EZmNHemdjZFVyTjhvMUVNandlaVNlZkpLdXhMT1RMNDJCNkJiM2k3djRQeFVZLTlMS0VMSXVMak04Sm9kVGFBY3Q?oc=5"
     },
     {
       "detail": "",
@@ -267,11 +276,11 @@
     {
       "detail": "",
       "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "Slideshow: The Batman: Part II - Who's Who in Matt Reeves' DC Sequel - IGN Southeast Asia",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9VejBmcksyQU92cXZFVU5EZmNHemdjZFVyTjhvMUVNandlaVNlZkpLdXhMT1RMNDJCNkJiM2k3djRQeFVZLTlMS0VMSXVMak04Sm9kVGFBY3Q?oc=5"
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-07-01",
@@ -475,162 +484,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "id": "b51412529c4b7548",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Little Caesars, in collaboration with Sony Pictures' \"Spider-Man: Brand New Day,\" is releasing a cheese-filled web-themed pizza ahead of the movie's release date in July. Read the story: https://bit.ly/3SY9Zde - instagram.com",
-      "topic": "movies",
-      "ts": "2026-06-27T05:32:43.793115+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9tUW0zaXM3amw3SlJxLW9pVVZPN3JlN2pBMG5JVEowVTMyZWZ0cmxMX2IwTF9yWEJMRjdhdERxRU5vcmRRbHhxdGJxczFWaEJCVkcyR1d3?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "bb4fbf986fd4619a",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Diaprojekcija: The Batman: Part II - Who's Who in Matt Reeves' DC Sequel - IGN Adria",
-      "topic": "movies",
-      "ts": "2026-06-27T05:32:45.381396+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQQTNHNGFEWWxLTU01bUctOWUyVFRyNXRzUzhOaEdMWjlIY2pVX19yTjVoRUlGSVEzakVja3FWXy1wNC1Jbmg3T3BQTW5jRHhmUDl6QUFScng2d0E1YVpGb09iOUw1MUx4TDVKa3ZMQVR2blVheF9hNkk2NmR5NXNNUWNnWFUzX0NDN1N0YWdFeVVQeVpVRVQzT1NRd0R5Y3QxTEVxODZOVTg?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "5d5b29697f7852fb",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-06-27T05:33:50.678457+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "Visible pass at 11:43 PM - max 61deg, SW to NE. Look up!",
-      "id": "af6095ef6616dc47",
-      "score": 62,
-      "severity": "low",
-      "source": "ISS",
-      "title": "ISS pass overhead",
-      "topic": "iss",
-      "ts": "2026-06-27T05:34:03.866771+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Podcast 3: ULTRADERECHA",
-      "id": "96c01b2f2ceebd63",
-      "score": 62,
-      "severity": "moderate",
-      "source": "MIGALA666",
-      "title": "MIGALA666 uploaded a new video",
-      "topic": "youtube",
-      "ts": "2026-06-27T05:34:04.763269+00:00",
-      "url": "https://www.youtube.com/watch?v=0QPbkx01quQ"
-    },
-    {
-      "action": "push",
-      "detail": "The year was 1954, and the world of medicine, particularly transplantation, was a desolate landscape of unfulfilled promise and heartbreaking failure. For decades, surgeons had attempted to replace diseased organs, but the body's immune system, a formidable and enigmatic guardian, mercilessly rejected anything it perceived as foreign. Kidney failure, a slow and agonizing decline into uremic poisoning, was a death sentence. There were no dialysis machines, no immunosuppressant drugs; just a grim march toward an inevitable end. But in the quiet corridors of Peter Bent Brigham Hospital in Boston, a young doctor named Joseph Murray, guided by the vision of his mentor, Dr. David Hume, was about to challenge this seemingly insurmountable barrier, driven by a desperate hope and an unprecedented opportunity.\n\nThe opportunity arrived in the form of two identical twins, Richard and Ronald Herrick. Richard, at 23, was dying from chronic glomerulonephritis, a severe kidney disease that had ravaged his body. His twin brother, Ronald, in a profound act of selfless love, offered one of his healthy kidneys. This genetic identicalness was the critical, serendipitous factor. Previous attempts at transplantation between non-identical individuals had universally failed due to immune rejection, a mechanism poorly understood at the time. The twins presented a unique biological loophole, a chance to circumvent the body\u2019s natural defenses. The stakes were impossibly high. Not only was Richard\u2019s life hanging in the balance, but the reputation of the surgeons and the very concept of organ transplantation rested on the outcome. The operation itself was a meticulously planned, delicate dance of anatomical precision. Dr. Murray, with Hume assisting, carefully removed a kidney from Ronald and implanted it into Richard\u2019s pelvis, connecting the renal artery and vein to the iliac vessels and the ureter to the bladder.\n\nThe drama, however, truly began in the days and weeks that followed. Would the transplanted kidney function? Would Richard\u2019s body, despite the genetic match, still find a reason to reject this vital new organ? Every flicker of improved health, every drop of urine produced by the new kidney, was met with a mixture of cautious optimism and intense scrutiny. Slowly, painstakingly, Richard began to recover. The kidney functioned. He began to excrete urine, his blood chemistry improved, and the color returned to his face. The transformation was miraculous, a testament to the power of surgical skill, scientific understanding, and the profound bond between brothers. The medical community watched in awe and disbelief. This wasn't just another failed experiment; this was success, a beacon of hope in the darkness.\n\nThe successful Herrick twin transplant was more than a medical triumph; it was a paradigm shift. It proved that organ transplantation was not merely a fantastical dream, but a tangible reality, at least under specific, fortunate circumstances. While the immediate breakthrough was limited to identical twins, it ignited a furious pace of research into understanding and overcoming immune rejection. This single operation catalyzed the development of immunosuppressant drugs, the refinement of surgical techniques, and ultimately, the establishment of organ transplant programs around the world. Joseph Murray, for his pioneering work, would later receive the Nobel Prize in Medicine.",
-      "id": "ee37f1295d6ef21f",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The first successful kidney transplant",
-      "topic": "learn",
-      "ts": "2026-06-27T05:34:10.316022+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cOpportunity is missed by most people because it is dressed in overalls and looks like work.\u201d\n\u2014 Thomas Edison\n\nThe voice that uttered those words, \"Opportunity is missed by most people because it is dressed in overalls and looks like work,\" belonged to Thomas Alva Edison, a man whose very name became synonymous with invention and the relentless pursuit of progress. Born in Ohio in 1847, Edison\u2019s early life was far from the gilded halls of academia. He was a curious, restless child, often deemed difficult by his teachers, and his formal schooling lasted only a few months. His mother, a former teacher, became his primary educator, fostering his innate inquisitiveness. By his teens, he was a telegrapher, a profession that not only taught him the intricacies of electrical circuits but also exposed him to a world humming with nascent technological potential. He was a tireless worker, often sleeping only a few hours a night, driven by an almost pathological desire to solve problems and improve upon existing technologies. This was a man who understood the grind, the long nights, and the countless failed experiments that underpinned every breakthrough.\n\nEdison spoke these words from a life steeped in experience, a life that had, by the time he articulated this sentiment, seen him establish a sprawling industrial research laboratory in Menlo Park, New Jersey, a veritable \"invention factory.\" This was the late 19th and early 20th centuries, an era of unprecedented industrial expansion and technological awakening. The world was rapidly transitioning from an agrarian society to one powered by steam and, increasingly, by electricity. It was a time of immense optimism, where the promise of progress seemed limitless, yet also a period of immense challenge. The practical applications of many scientific discoveries were still theoretical, awaiting the hands of pragmatic visionaries like Edison to forge them into tangible realities. He was a central figure in this transformation, a man who not only invented but also commercialized his inventions, from the phonograph and the incandescent light bulb to motion picture cameras, fundamentally altering daily life for millions. He wasn't just dreaming of a better future; he was actively building it, one laborious, often frustrating, experiment at a time.\n\nThe enduring resonance of Edison's quote, even a century later, speaks to a fundamental truth about human nature and achievement. In an age of instant gratification and the pervasive allure of \"shortcuts,\" his words serve as a stark reminder that true innovation and lasting success are rarely, if ever, stumbled upon. They are forged in the crucible of sustained effort, meticulous attention to detail, and a willingness to embrace the arduous, often unglamorous, process of problem-solving. Opportunity, as Edison keenly observed, rarely announces itself with fanfare and a red carpet. Instead, it often appears disguised as a daunting task, a complex challenge, or a problem that requires sweat, sacrifice, and the dogged determination to see it through. It\u2019s a call to look beyond the superficial and to recognize that the most significant rewards often lie hidden within the demanding work itself, waiting to be unearthed by those willing to roll up their sleeves.",
-      "id": "0360e447175eb3d5",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Thomas Edison",
-      "topic": "wikiquote",
-      "ts": "2026-06-27T05:34:14.392326+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "bcd98376718a3db1",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Trailer and Movie Tickets Go Live - Marvel.com",
-      "topic": "movies",
-      "ts": "2026-06-27T08:11:59.352847+00:00",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOeXFwTXhVZEhCQVNTaHJESC1GbDZfcXZ1RjVGZ21fNWxJMVdDMVIzeVBKdjFlelVyLUJ5dmRJcFZvMWUwNU5ZelZIQ29vZ1JHVVhNMElXNHVCakZlYWljazNOUTBFQUVZSVJxVXl2NExFS1g0dWZueXpGOHpBeXdVM2xTYmt4eEFKdXdtSFNNYlZCTXJlX24zMkowYS14UQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "c392dea516b24a5f",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Has a Brand New Trailer, and Spidey Is Freaking Out - Rolling Stone",
-      "topic": "movies",
-      "ts": "2026-06-27T08:11:59.353417+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaExDemM2TW9qaHdoaUlOV3hhT0pnbDJWUW1FYUczN1F2WXdLZHRkVC0zNnY1Wk55Z19lQ3d6ZGFNY1B0UldtcDgtazJDWGpGeGpRenJOUTBFenIzRlFKUS03WW5XeUJ4WEc5UUVuZWl1V2dVSzMzc3pDdXhmLWN3emlONGdCUXFLam1FMTlfSUVCQTlCUlpXd3hVWHlheDFxWlI0?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "53bb205be6af810d",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 New Trailer Breakdown - Nexus Point News",
-      "topic": "movies",
-      "ts": "2026-06-27T08:11:59.798416+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5UOUdLdl93RjJvdVpNSEdVcEZxMElfeUdaclhwaFZHRy13LXBLY3BzajZYcHZHMlFSbEtlVExxVGFkTEZ6WUJ4QUVOWkp6OFZ5UVh1QjhuVVliWTloNHZNNFdSNFZoNmYxOFREcjQxdVdGYkNzbFpjS3lWMVNFYjQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "13cf2f89960e9491",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "The Odyssey\u2019s Helen Casting & Tom Holland\u2019s \u2018Dad\u2019 Line Get Expert Defense - Yahoo",
-      "topic": "movies",
-      "ts": "2026-06-27T08:12:00.798932+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVm9FQUQ0X3p2TVBvVnBzUDQzdHlxSTBDRE1YSzNHWjBwdmhTVkxfbDJuQWNQOUNSaVNEanlDVnpmQlNVZlNfMFE1dEQ4akFBc3ZBU2VQY3AyZ1JmRWc3bDJJaF9fOXZsMWtrbGRmWUp6eThTdGdtZzUxYUQwaDlfN1JhZFdTd01MX2duZFRGdlIxNHIxWVFfanZKeVgydUNBYkE?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Visible pass at 11:43 PM - max 62deg, SW to NE. Look up!",
-      "id": "3ff898a7650ee8e6",
-      "score": 62,
-      "severity": "low",
-      "source": "ISS",
-      "title": "ISS pass overhead",
-      "topic": "iss",
-      "ts": "2026-06-27T08:13:14.686919+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "To truly understand the Dreamtime, one must first shed the confines of Western linear thought, for it is not a historical period in the conventional sense, nor a myth in the simplistic understanding of fiction. Instead, it is a timeless dimension, a continuous present where past, present, and future coalesce. For Aboriginal Australians, the Dreamtime, or 'The Dreaming,' represents the epoch when the ancestral creator beings emerged from the earth, the sky, and the waters, shaping the land, its features, and all living things. These beings, often in the forms of animals \u2013 a great Rainbow Serpent, a giant Kangaroo, an Emu \u2013 journeyed across the pristine, formless landscape, singing the world into existence. With each step, each song, each act, they etched the rivers, raised the mountains, dug the waterholes, and scattered the stars. They created the first humans, teaching them the laws, the ceremonies, the languages, and the intricate web of kinship that governs all life.\n\nThe Dreamtime is, therefore, not merely a creation story but a living blueprint for existence. The actions of these ancestral beings established the moral, social, and environmental framework that continues to guide Aboriginal societies to this day. Every rock formation, every tree, every animal carries the imprint of these creators and their epic journeys. The paths they took became the Songlines, invisible tracks across the continent that are simultaneously geographic maps, spiritual narratives, and cultural encyclopedias, passed down through generations in song, dance, and oral tradition. These Songlines connect disparate communities, forming a vast, intricate network of shared knowledge and responsibility, ensuring the spiritual and physical health of the land and its people. To \"walk on country\" is to walk in the footsteps of the ancestors, to engage directly with the Dreamtime's enduring presence.\n\nThe enduring power of the Dreamtime lies in its profound connection to identity and belonging. For Aboriginal people, their very essence is interwoven with the land, the ancestral beings, and the stories. To know one's Dreamtime is to know one's place in the universe, one's responsibilities to family, community, and country. This deep spiritual connection, however, was tragically misunderstood and brutally assaulted with the arrival of European colonizers. The colonizers, viewing the land as terra nullius \u2013 empty land \u2013 failed to grasp the millennia-old intricate relationship between Aboriginal people and their environment, dismissing their spirituality as primitive folklore. This profound cultural clash led to dispossession, massacres, and the systematic dismantling of Aboriginal societies, a trauma from which many communities are still recovering.\n\nDespite the immense pressures and injustices, the Dreamtime has endured, a testament to the resilience and spiritual depth of Aboriginal cultures. Today, there is a renewed effort to reclaim and revitalize these ancient traditions. Younger generations are learning the languages, the songs, and the ceremonies, reconnecting with their ancestral heritage. The Dreamtime, once dismissed, is now increasingly recognized as one of the world's oldest continuous living cultures, offering invaluable insights into sustainable living, ecological balance, and a holistic worldview that many in the modern world are desperately seeking.",
-      "id": "d93bc5dfa7990329",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The Dreamtime of Aboriginal Australia",
-      "topic": "learn",
-      "ts": "2026-06-27T08:13:22.822397+00:00",
-      "url": ""
-    },
     {
       "action": "push",
       "detail": "\u201cIf I ever become a Saint \u2014 I surely be one of \"darkness\". I will continually be absent from Heaven \u2014 to light the light of those in darkness on earth.\u201d\n\u2014 Mother Teresa\n\nThe frail woman in the simple white and blue sari, her face etched with a lifetime of profound compassion and unimaginable toil, was already a living legend when she uttered these extraordinary words. Mother Teresa, born Agnes Gonxha Bojaxhiu in Skopje, had by the mid-20th century become an almost universally recognized symbol of selflessness, a diminutive figure who had waded into the squalor and despair of Calcutta's streets to minister to the \"poorest of the poor.\" Her order, the Missionaries of Charity, had spread across the globe, a testament to her unwavering conviction that every human life, no matter how broken or marginalized, possessed inherent dignity and deserved boundless love. This was a woman who had seen, touched, and comforted the dying in gutters, who had built homes for orphans and hospices for the terminally ill, and who had done so with a relentless, almost fierce dedication that seemed to flow from an inexhaustible spiritual wellspring. Yet, beneath the public persona of the saintly nun lay a profound, decades-long spiritual crisis, a \"dark night of the soul\" that she rarely, if ever, revealed to the world during her lifetime.\n\nIt is against this backdrop of immense public reverence and deeply personal spiritual struggle that her quote truly resonates. At the time she spoke of being a \"saint of darkness\" absent from Heaven, the world was wrestling with its own shadows. The Cold War, with its existential threat of nuclear annihilation, loomed large. Poverty, disease, and political unrest plagued countless nations, particularly in the developing world. Mother Teresa's work, therefore, was not merely an act of individual charity but a potent symbol of hope and human connection in a fractured, often brutal world. Her words, though seemingly paradoxical, revealed a profound understanding of the human condition and the very nature of divine love. She wasn't simply expressing humility, but a radical empathy so deep it transcended even the traditional understanding of sainthood. To be a saint of darkness, to voluntarily forego the perceived bliss of heaven, was to express an unwavering commitment to those who felt furthest from God's light, to stand with them in their pain and uncertainty.\n\nToday, in an era marked by increasing global anxieties, social inequalities, and a pervasive sense of spiritual disconnect for many, Mother Teresa's words hold an enduring power. The notion of a \"saint of darkness\" challenges conventional piety, suggesting that true spiritual fulfillment might lie not in ascent to an ethereal realm, but in profound descent into the suffering of others. It speaks to the contemporary yearning for authentic connection, for presence in a world often dominated by performative gestures. Her vision of a saint continually \"absent from Heaven\" to light the darkness on Earth is a call to action, an affirmation that the most profound acts of faith are often found not in grand pronouncements, but in humble, persistent acts of service, reminding us that even in our own periods of doubt or spiritual barrenness, we can still be agents of light for those around us.",
@@ -6474,6 +6327,162 @@
       "topic": "twitch",
       "ts": "2026-07-01T22:57:57.598746+00:00",
       "url": "https://twitch.tv/elcodo22"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "6764044d9a8af87d",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "The New Trailer For \u2018The Odyssey\u2019 Proves Robert Pattinson Wasn\u2019t Kidding About The Daddy Thing - The Mary Sue",
+      "topic": "movies",
+      "ts": "2026-07-02T00:17:33.938293+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbnktenVoWWlpNmxfcm15Y2hRY3BMQWZvazJlTXdfdFZNNEVXTVhzTld6a3BlRXduTS1TeEFzcnRQTWdjV3c2Q2t0eFZXZjVlMnBVYW5KY3BKaFF1VGRINTZ5bElfNUJSMkdGRjdaOTNFVkF2SkpFNDBsOG00VExILUQyWDF2R1FrN3c?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "e4d18b0e8a88950f",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Christopher Nolan's 'The Odyssey' Tie-In Video Game Officially Debuts - MovieWeb",
+      "topic": "movies",
+      "ts": "2026-07-02T00:17:34.340872+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFA1SHlTbG0xa2xET3kybFp5SWpqUzBKSkV3SVFyMnN1VmZnQ2lRNDBBYy1VZXNZeGJSbVBkR3hnVkx2cnk0dXJxb092Q19JYXowR0tOOHVHdmxLZER1NkIzOQ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "c7eb8e450e79fb79",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Christopher Nolan's The Odyssey Gets Official Video Game - IMDb",
+      "topic": "movies",
+      "ts": "2026-07-02T00:17:34.341729+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE14VmRMdnNZdkd1ZnJYNU5TSUx6RmNYb1NZaURLOXBxSU5BMjJNZ1dqQ1U5Ql9raExpX3lWSmtfYUtzNmo0c2tTTnBhUEpSLXowX2tTVWtocmhtaFNoZXNrQmxnRC1sQkE?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "f1c7ac273fd88418",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 Final Trailer: Watch the Latest Look at Christopher Nolan\u2019s Star-Studded Movie Adaptation of Homer\u2019s Epic - IMDb",
+      "topic": "movies",
+      "ts": "2026-07-02T00:17:34.342331+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBSa3NYYU9iVFF5T2x5NVRYNXdFR19zWEpxNmNPQUJmTmt2LXNJcjlwdWlYMDJCanNvakJrVjdwdXZjZy1JMkFobHc4RDQzN3dJQlYyejI2MjFVcGZCTmE2REtfY3JMUW5wUkE?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "168e0f254f838788",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "'The Odyssey's Final Trailer Confirms A Major Story Change - Inverse",
+      "topic": "movies",
+      "ts": "2026-07-02T00:17:34.481215+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNaFBXLUNWSm5CVHhzb3o2dk41UTUzXzg1R3kzQURyNElyVkdpanBtZVZWd2JkMnpobG5SMC1pRnMyMS1uWGM1SVF5RnR5S2ZfemRmMndrTU1OSS1NZm5VXy1FUm1paUsweEMtampkbUJDbGItR090RU1LMHVqbkdqdDZ0dHFaVkZOc3Zr?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "4ae3112532ad8b57",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 Final Trailer: Matt Damon Makes The Long Journey Home In Christopher Nolan\u2019s Anticipated Epic - Punch Drunk Critics",
+      "topic": "movies",
+      "ts": "2026-07-02T00:17:34.614878+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQSlp0aVhSSkplZ2lzYVB2WWhmZ0ZSR3FvTEV3aWhTNXhObWZULUNiZTE1UWlJRTNTNzRuZ2ZKa2NDNU1hZ1g5VXNoQkhFbnFkZDYyd0NvRi13cXl2ODBYUlk3NVY5d2NkMDFIQmx0MnFUTjFNYm9Wc2s0ci1YTE9qVjFLZGhGQlBrMDZISFZsTVVVUmdLVjEyTnNETHNGOWlZZTFuSmstY0pPNHIzbFVaSWF5T2N1OHNaT0I2SkhHSl9OZWd0WnpubHdfUE5BT3NUNVdqcFA3VWE1UdIB2gFBVV95cUxQSlp0aVhSSkplZ2lzYVB2WWhmZ0ZSR3FvTEV3aWhTNXhObWZULUNiZTE1UWlJRTNTNzRuZ2ZKa2NDNU1hZ1g5VXNoQkhFbnFkZDYyd0NvRi13cXl2ODBYUlk3NVY5d2NkMDFIQmx0MnFUTjFNYm9Wc2s0ci1YTE9qVjFLZGhGQlBrMDZISFZsTVVVUmdLVjEyTnNETHNGOWlZZTFuSmstY0pPNHIzbFVaSWF5T2N1OHNaT0I2SkhHSl9OZWd0WnpubHdfUE5BT3NUNVdqcFA3VWE1UQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "50357235151e6edd",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "The Odyssey new trailer offers detailed look at Zendaya\u2019s Athena. Watch - The Indian Express",
+      "topic": "movies",
+      "ts": "2026-07-02T00:17:34.767015+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOdkVWMWtwRnZqSGpjY0NLVUIteGVYUUtRTWFFbWRHVE9GeDhUSk9NYUxNS0hRMTlFVncwR0Z1eHp1bHQ3bTg4N3VRWi1HejFIMXpyZHU1LXlMTk5abzE1SkpvZ2dHVXVCbmFRNkpSQm03RlBqYlM0ZjVfZGwxcl9TeDR6cG1XRU9jb090OGFza1c4UkwwX2V2bk1RcGdKdDJ0S0NwZnpnQ0VYSWJsRGFpeDJaTW5XSEtwQmpWTDAzTi13QdIByAFBVV95cUxQQlFaeVJFZGVpWUZ1SFFKOGx0c2VMNmROSXhQMGprT29qbW5TRjkxWHB5R3VELW54cDFVT2ltSWxEY3ZoaDFnaFc3enpGeUhLVnRHYW9nblF5OXpxV3I4MU9Sb3NMY3hjSS1vd3QzUC1xNEtpTmgzRG9QMFByZGFxdmhsT0dzM1NMcFlZdWFReS1NaHUyQU5UV1N4a1JSVW00bnhmNG5NbkdwbTlPaEt6WW8wQXpPdHFRRTRRSG5HS2JwbUdFSzhKTA?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "98783760017a05a0",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Christopher Nolan's first The Odyssey video game announced - Polygon.com",
+      "topic": "movies",
+      "ts": "2026-07-02T00:17:34.923074+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZzk0NEk0a3NDZkFUNFUtRklWS2lDelpvdHB5YmhOdm9rVW9yZFVIZ3FlTTJwU0Z5UWdDYmd0ZGduM3dCbXpMS2g3ZElDYTdTOEt5TjNnalVoeTJmN1ZxcjgzVS1ObFlldXhnS09aREd5ekVXREJiM3BoS1gyWm9iY0dObUVKYlJ3WlRLbg?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "a388e11d6d7d0d60",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "The Odyssey Final Trailer Just Spells Out the Plot For Non-Classics Majors to Enjoy Too - Den of Geek",
+      "topic": "movies",
+      "ts": "2026-07-02T00:17:34.923709+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSGdva0Exa2hieV9BRHdtZFk0NXhrWFJmMzVYNjZXZm03TllDTWh5VGEwNFZGOTNfOGRBclFCRzl3aXBWdE1ZaWpQQTVhY2U1MDVGOTdoTHBRWHpKZWd1UmJSQjRYd0pMRmhtdHVuR0NSLVpkMXhrcFZzeURjUS04aw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "5bac654bf615c8e9",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-07-02T00:18:41.195345+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 10:08 PM - max 65deg, SW to NE. Look up!",
+      "id": "26eac674ce9f9c2c",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-02T00:19:10.837545+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "It is a scene as indelible as it is apocryphal, etched into the collective imagination: a young Isaac Newton, lost in thought beneath an apple tree, when a sudden thud, the simple fall of a piece of fruit, sparks a revolution in human understanding. While the precise details of this legendary moment may be more myth than memoir, the essence of the story, of a keen mind grappling with fundamental questions of the natural world, remains profoundly true. What is beyond doubt is that sometime in the mid-1660s, during the tumultuous years of the Great Plague that forced him to retreat from Cambridge to his family home in Woolsthorpe Manor, Newton's intellect, freed from academic routine, began to wander into uncharted territories.\n\nThis period of \"annus mirabilis,\" a year of wonders, was a fertile ground for Newton's genius. He had already begun to lay the groundwork for calculus, explored the nature of light and color, and was now turning his attention to the perplexing problem of motion. Before Newton, the prevailing view of the cosmos, largely influenced by Aristotle, posited distinct laws for earthly and celestial bodies. Objects on Earth fell because they sought their natural place, while heavenly bodies moved in perfect circles, guided by divine will. There was no unifying principle, no single force that could explain both the falling apple and the orbiting moon. This intellectual chasm, this fundamental division of the universe, was the conceptual landscape Newton inherited, and it was precisely this chasm that his extraordinary mind sought to bridge.\n\nThe apple, whether it literally struck his head or simply served as a potent visual metaphor, became the catalyst for a monumental leap in human thought. Newton's genius lay not merely in observing that the apple fell, a phenomenon understood since the dawn of humanity, but in asking *why* it fell, and critically, if the same force that pulled the apple to the ground also kept the Moon in its orbit around the Earth, and the planets around the Sun. He began to envision a universal force, an invisible thread connecting every speck of matter in the cosmos. This was a radical departure, a bold assertion that the same physical laws governed the terrestrial and the celestial, collapsing the old Aristotelian dichotomy and establishing a single, coherent framework for understanding the universe.\n\nThe ultimate fruition of this period of intense contemplation would be the publication, some two decades later, of his *Philosophi\u00e6 Naturalis Principia Mathematica*, or *Principia*. This monumental work, often hailed as the greatest scientific book ever written, laid out his three laws of motion and the law of universal gravitation, providing a mathematical framework that explained everything from the trajectories of cannonballs to the ebb and flow of tides, from the elliptical orbits of planets to the precession of the equinoxes. The impact was immediate and profound, transforming not only physics and astronomy but also philosophy and theology. Newton's work provided a mechanistic, predictable universe, governed by rational laws, a cosmos that could be understood and even predicted. It was a testament to the power of human reason, forever altering our perception of our place in the universe and paving the way for the scientific revolution that continues to unfold to this day. The falling apple, real or imagined, had indeed ushered in a new era of understanding, a golden age of scientific inquiry.",
+      "id": "ae493fa43fa49fe0",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Isaac Newton and the falling apple",
+      "topic": "learn",
+      "ts": "2026-07-02T00:19:16.882585+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cWhile there are manners and compliments we do not meet, we do not teach one another the lessons of honesty and sincerity that the brutes do, or of steadiness and solidity that the rocks do. The fault is commonly mutual, however; for we do not habitually demand any more of each other.\u201d\n\u2014 Henry David Thoreau\n\nHenry David Thoreau, that enigmatic figure of American letters, penned these words with the sharpness of a honed axe, a characteristic that defined much of his life and work. Born in Concord, Massachusetts, in 1817, Thoreau was a man who seemed to view the burgeoning industrial age with a profound skepticism, preferring the untamed honesty of the natural world to the artifice of human society. He was, by all accounts, a contrarian, a nonconformist who valued authenticity above all else. This wasn't merely a philosophical stance for Thoreau; it was a way of life. He worked as a pencil maker, a surveyor, a lecturer, and a handyman, always preferring the independence of his own labor to the constraints of a traditional career. His most famous experiment, of course, was his two-year sojourn at Walden Pond, a period of deliberate solitude and self-reliance that would form the basis of his masterpiece, \"Walden; or, Life in the Woods.\" It was during this time, grappling with the fundamental questions of existence and society, that the sentiments expressed in the quote would have been deeply felt and rigorously tested.\n\nThe mid-19th century in America was a time of immense change and burgeoning societal complexity. The nation was grappling with the moral stain of slavery, the westward expansion was in full swing, and industrialization was rapidly transforming communities and social structures. For Thoreau, who saw the natural world as a direct conduit to truth and a mirror for human behavior, the increasing formality and superficiality of human interactions must have felt profoundly disheartening. The \"manners and compliments\" he speaks of were not merely polite pleasantries but, in his eyes, barriers to genuine connection and understanding. He saw society becoming increasingly stratified, its members more concerned with outward appearances and social graces than with the deeper currents of character and integrity. He longed for the unvarnished truth of the wild, the straightforward lessons of \"brutes\" and \"rocks,\" which offered no pretense, no artifice, only their essential nature. And in his assertion that \"the fault is commonly mutual, however; for we do not habitually demand any more of each other,\" he cast a critical eye not just on the prevailing social norms, but on the complicity of individuals who, by accepting these superficialities, perpetuate them.\n\nEven today, in our hyper-connected, often performative world, Thoreau's words resonate with startling clarity. We live in an age where curated online personas often overshadow authentic interactions, where the constant stream of information can lead to a superficial engagement with ideas and people. The \"manners and compliments\" of Thoreau's time have simply been transmuted into the carefully crafted images and transactional exchanges of our own. We still, perhaps, do not habitually demand enough of each other \u2013 or, indeed, of ourselves. We crave authenticity, yet often shy away from the discomfort that true honesty and sincerity can bring.",
+      "id": "6f718fc3dbc66dcc",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Henry David Thoreau",
+      "topic": "wikiquote",
+      "ts": "2026-07-02T00:19:22.074560+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -7404,6 +7413,7 @@
     "iPadOS 26.5.2 (23F84)"
   ],
   "iss_seen_passes": [
+    "14d022a97b2522f9",
     "3b18897061d0ad8f",
     "03f061ffe325df7f",
     "f0ca010bc47d72da",
@@ -7457,8 +7467,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "philosophy",
-  "knowledge_last_sent": "2026-07-01T7",
+  "knowledge_last_category": "science",
+  "knowledge_last_sent": "2026-07-02T0",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -7545,6 +7555,7 @@
     "science:Brownian motion and the reality of atoms": "2026-06-22",
     "science:Einstein's special theory of relativity": "2026-06-24",
     "science:Feynman and quantum electrodynamics": "2026-06-30",
+    "science:Isaac Newton and the falling apple": "2026-07-02",
     "science:Marie Curie and the discovery of radioactivity": "2026-06-13",
     "science:Schr\u00f6dinger's cat thought experiment": "2026-06-20",
     "science:The discovery of X-rays by Wilhelm R\u00f6ntgen": "2026-06-27",
@@ -7580,8 +7591,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-07-01T22:57:55.975952+00:00"
+    "ok": 46,
+    "ts": "2026-07-02T00:17:30.766396+00:00"
   },
   "launch_seen_ids": [
     "c88f136e6de9f1c0",
@@ -7611,6 +7622,8 @@
   "life_dashboard_last_week": "2026-W26",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "55006c364c1c9a6e",
+      "508d74ac09b2fb84",
       "abf1e144e6bae872",
       "36b38ef7b8ee7c94",
       "045c5817c187d814",
@@ -7708,9 +7721,7 @@
       "2c42e4a8c650f6d3",
       "c68c4763370a982e",
       "bea6f188cda403c5",
-      "2951167e6225c875",
-      "ad236ed1fc88ca5d",
-      "b305b2741cb274ce"
+      "2951167e6225c875"
     ],
     "Godzilla x Kong: Supernova": [
       "9619f2a3163a9fce",
@@ -7914,6 +7925,15 @@
       "5f317afc30595e31"
     ],
     "Spider-Man: Brand New Day": [
+      "b71c9ff54d16e42d",
+      "7ebbbb089a77f074",
+      "cb4e32dc6f68ca1d",
+      "46324a93c1558317",
+      "e8882f2e988e189c",
+      "3728d9bd42b00544",
+      "63809af29595ee55",
+      "ffb13d32df655d4e",
+      "ee402ad8673fc7e9",
       "5e7bafaf269e18c8",
       "a61fd751239cd072",
       "a19f4a7167732008",
@@ -8004,16 +8024,7 @@
       "5f43c5bed328ce7a",
       "02d88de9c9aeba5c",
       "6e1c43603e633b5a",
-      "9b4c6ce2ce5de9b5",
-      "3014977fd16315c8",
-      "13a89265c833b756",
-      "1db9e0db5540e38b",
-      "8fed34dbfb6cbf19",
-      "4f2f36945bb02966",
-      "d93a44a10975457c",
-      "4057efa4bb0796f9",
-      "19fd3dc102ea1311",
-      "0055245888e0c344"
+      "9b4c6ce2ce5de9b5"
     ],
     "The Batman Part II": [
       "69647b3378b8c61d",
@@ -9107,47 +9118,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "apod": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "baseball": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "deals": {
-      "last_data": "2026-07-01T21:52:06.969544+00:00",
+      "last_data": "2026-07-02T00:18:29.286146+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "energy": {
-      "last_data": "2026-07-01T21:52:30.241859+00:00",
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_data": "2026-07-02T00:18:40.967437+00:00",
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "fda": {
-      "last_data": "2026-07-01T21:52:19.143848+00:00",
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_data": "2026-07-02T00:18:29.975986+00:00",
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "fuel": {
       "last_data": "2026-07-01T21:52:49.256470+00:00",
@@ -9155,17 +9166,17 @@
       "last_ok": "2026-07-01T21:51:27.562160+00:00"
     },
     "fx": {
-      "last_data": "2026-07-01T21:52:48.238207+00:00",
+      "last_data": "2026-07-02T00:19:10.004653+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-01T21:51:41.484725+00:00",
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_data": "2026-07-02T00:17:42.208372+00:00",
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "groceries": {
       "last_data": "2026-07-01T21:52:18.507087+00:00",
@@ -9173,104 +9184,104 @@
       "last_ok": "2026-07-01T21:51:27.562160+00:00"
     },
     "gutenberg": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "ios_release": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "learn": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "library_of_congress": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "movies": {
-      "last_data": "2026-07-01T21:51:35.880628+00:00",
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_data": "2026-07-02T00:17:37.794632+00:00",
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "music": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-01T21:52:30.854556+00:00",
+      "last_data": "2026-07-02T00:18:41.563108+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "outages": {
-      "last_data": "2026-07-01T21:52:47.760044+00:00",
+      "last_data": "2026-07-02T00:19:09.415188+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-01T21:52:47.824823+00:00",
-      "last_data_count": 36,
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_data": "2026-07-02T00:19:09.485362+00:00",
+      "last_data_count": 35,
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-01T22:57:58.946680+00:00",
+      "last_data": "2026-07-02T00:17:38.801808+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-01T22:57:55.975952+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "weather": {
-      "last_data": "2026-07-01T21:52:30.469156+00:00",
+      "last_data": "2026-07-02T00:18:41.195098+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "wikiquote": {
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     },
     "wwdc": {
       "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-01T21:52:52.473150+00:00",
+      "last_data": "2026-07-02T00:19:12.591276+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-01T21:51:27.562160+00:00"
+      "last_ok": "2026-07-02T00:17:30.766396+00:00"
     }
   },
   "twitch_live": [
@@ -9279,7 +9290,7 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165087"
+    "last_full_window": "165088"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -9291,13 +9302,9 @@
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
   "watchdog_failing_since": {},
-  "water_slots_sent": [
-    "2026-07-01|18",
-    "2026-07-01|21",
-    "2026-07-01|15",
-    "2026-07-01|12"
-  ],
+  "water_slots_sent": [],
   "weather_seen_ids": [
+    "d113cadc1e23b7fd",
     "d85836fd2607bda9",
     "ad3ee4cc18e96d92",
     "ff662cab20c5e92a",
@@ -9392,13 +9399,13 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "innovators_artists",
-  "wikiquote_last_sent": "2026-07-01T7",
+  "wikiquote_last_category": "activists_thinkers",
+  "wikiquote_last_sent": "2026-07-02T0",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-06-23",
     "activists_thinkers:Helen Keller": "2026-06-28",
-    "activists_thinkers:Henry David Thoreau": "2026-06-21",
+    "activists_thinkers:Henry David Thoreau": "2026-07-02",
     "activists_thinkers:Malala Yousafzai": "2026-06-24",
     "activists_thinkers:Martin Luther King, Jr.": "2026-06-30",
     "activists_thinkers:Mother Teresa": "2026-06-27",
