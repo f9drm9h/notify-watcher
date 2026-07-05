@@ -92,7 +92,7 @@ class ResearchRunTest(unittest.TestCase):
         self.assertEqual(push["message"], "A tidy summary.")
         self.assertEqual(push["title"], "Research: Chip Fab Expansion")
         self.assertEqual(push["click_url"], URL)
-        self.assertEqual(push["topic"], "learn")        # learn's channel + rule
+        self.assertEqual(push["topic"], "research")     # own rule (62); default channel
 
     def test_fetch_failure_posts_failure_message_without_raising(self):
         with _env(URL), \

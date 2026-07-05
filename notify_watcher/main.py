@@ -63,6 +63,7 @@ from .topics import (
     quakes,
     recap,
     reminders,
+    research,
     soundcore_pro,
     spending,
     twitch,
@@ -101,6 +102,9 @@ def _is_daily_run() -> bool:
 
 TOPICS: list[tuple[str, Topic]] = [
     ("visa_bulletin", visa_bulletin.run),
+    # research is the on-demand /research article summary: a no-op unless the
+    # dispatch carried NOTIFY_RESEARCH_URL, so it costs nothing on schedule.
+    ("research", research.run),
     ("movies", movies.run),
     # games is weekly: it self-gates to the first daily run of each ISO week
     # (see games.run), batching release-date + news updates into one catch-up.

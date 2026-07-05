@@ -270,7 +270,9 @@ async function cmdResearch(url, env) {
         "User-Agent": "notify-watcher-worker",
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ ref: "main", inputs: { research_url: link } }),
+      // only:"research" keeps the dispatch to the one on-demand topic instead
+      // of dragging a full sweep along with every /research.
+      body: JSON.stringify({ ref: "main", inputs: { research_url: link, only: "research" } }),
     });
   } catch {
     return reply("Could not reach GitHub to start the run.");

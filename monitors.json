@@ -65,6 +65,7 @@
       { "topic": "iss", "score": 62 },
       { "topic": "launches", "score": 62 },
       { "topic": "youtube", "score": 62 },
+      { "topic": "research", "score": 62 },
       { "topic": "energy", "severity": "high", "score": 60 },
       { "topic": "air_quality", "severity": "moderate", "score": 60 },
       { "topic": "health_tip", "score": 60 },

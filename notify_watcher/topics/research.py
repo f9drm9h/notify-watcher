@@ -5,10 +5,9 @@ which happens when the Discord /research command dispatches the watch workflow
 with its research_url input. The article is fetched and stripped to readable
 text, summarized in a fixed personal style by summarize.brief (same Gemini ->
 Claude chain the learn/knowledge pushes use), and posted through the same emit
-path as the learn topic — topic="learn" reuses its priority rule (score 60,
-clears the push threshold) and its Discord channel, so no new channel, secret,
-or monitors.json entry is needed; source="Research" keeps it distinguishable
-in the event log.
+path as the learn topic. Its own priority rule (monitors.json, score 62)
+clears the push threshold, and like learn it has no discord_delivery mapping,
+so it lands in the same default CHANNEL_GENERAL — no new channel or secret.
 
 Failure policy: run() never raises. A fetch/parse error or an unavailable
 summarizer still posts a short "couldn't summarize that link" reply (the
@@ -78,12 +77,12 @@ def _extract(url: str) -> tuple[str, str]:
 
 
 def _post(state: dict, title: str, body: str, url: str) -> dict:
-    """Send one reply through the learn topic's emit path (see module doc)."""
+    """Send one reply through the engine's emit path (see module doc)."""
     return events.emit(
         state,
         title=f"Research: {title}" if title else "Research",
         body=body,
-        topic="learn",
+        topic="research",
         severity="low",
         source="Research",
         click_url=url,
