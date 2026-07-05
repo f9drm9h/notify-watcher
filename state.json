@@ -348,18 +348,6 @@
   ],
   "event_log": [
     {
-      "action": "push",
-      "detail": "",
-      "id": "2b0b388ad8fc6ecc",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "The Odyssey Trailer Gets Buried in Dislikes as the Casting Backlash Refuses to Die - Cosmic Book News",
-      "topic": "movies",
-      "ts": "2026-07-03T11:02:57.453332+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNcFkzdzFkQWF0RzcxcDBWalJYckF2MEV1TnN3R25nX1U4ejlrVFlaT18xWGFwSjdxekVGaVI5MURkRExtNHE4blp2QUZTdmx3U24wU3lrU0ZVVzZBbHJ5cFZNTEdqZ2ZZZHoya01EYjBNSF9ScEJJY3JXc2hKMXBETW1xWQ?oc=5"
-    },
-    {
       "action": "digest",
       "detail": "",
       "id": "973a0c01d1122034",
@@ -6346,6 +6334,18 @@
       "topic": "apod",
       "ts": "2026-07-05T12:58:24.026288+00:00",
       "url": "https://apod.nasa.gov/apod/image/2607/iapetus4_cassini_4100.jpg"
+    },
+    {
+      "action": "push",
+      "detail": "The Visa Bulletin is a monthly publication from the U.S. Department of State that provides an updated waiting list for immigrants seeking visas that are subject to annual quotas. It lists \"priority dates\" which estimate when an applicant can expect to receive a visa based on their place in the queue.\n\nThe bulletin categorizes visas into family-sponsored, employment-based, and diversity immigrant groups. It uses tables to show visa availability, indicating \"current\" (C) when visas are available for all qualified applicants or \"unavailable\" (U) when there are no visas. Visa numbers are only granted to applicants whose priority date is earlier than the cutoff date listed. Historical data shows significant backlogs, particularly for applicants from India and China in certain employment categories.\n\nThis publication is crucial for immigrants to understand the wait times for various U.S. visa categories.",
+      "id": "613f4a312917cd5b",
+      "score": 62,
+      "severity": "low",
+      "source": "Research",
+      "title": "Research: Visa Bulletin - Wikipedia",
+      "topic": "research",
+      "ts": "2026-07-05T14:33:51.668959+00:00",
+      "url": "https://en.wikipedia.org/wiki/Visa_Bulletin"
     }
   ],
   "f4_history": [
@@ -7568,8 +7568,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 46,
-    "ts": "2026-07-05T12:56:18.760142+00:00"
+    "ok": 1,
+    "ts": "2026-07-05T14:33:49.922867+00:00"
   },
   "launch_seen_ids": [
     "84eeb156648689c9",
@@ -9256,6 +9256,9 @@
     },
     "reminders": {
       "last_ok": "2026-07-05T12:56:18.760142+00:00"
+    },
+    "research": {
+      "last_ok": "2026-07-05T14:33:49.922867+00:00"
     },
     "soundcore_pro": {
       "last_ok": "2026-07-05T12:56:18.760142+00:00"
