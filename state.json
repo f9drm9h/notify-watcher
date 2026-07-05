@@ -68,58 +68,6 @@
       "url": "https://www.soundcore.com/products/soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
     }
   ],
-  "baseball_milestones_seen": [
-    823287,
-    823215,
-    823619,
-    823617,
-    824503,
-    824912,
-    823044,
-    824748,
-    823448,
-    823853,
-    823286,
-    823208,
-    823207,
-    823771,
-    824661,
-    825066,
-    824904,
-    824336
-  ],
-  "baseball_results_seen": [
-    822798,
-    824259,
-    823691,
-    822797,
-    824747,
-    822796,
-    824743,
-    823285,
-    822794,
-    824745,
-    823283,
-    822795,
-    824744,
-    823281,
-    822792,
-    823529,
-    824986,
-    822793,
-    823528,
-    824984,
-    822791,
-    823530,
-    824985,
-    823935,
-    823120,
-    823527,
-    823933,
-    823118,
-    823526,
-    823932
-  ],
   "beach_day_last_sent": "2026-07-04",
   "bills_sent": [
     "internet|2026-06-22|5",
@@ -4503,27 +4451,6 @@
       "was_applied": false
     }
   },
-  "ios_seen_builds": [
-    "iOS 26.5.1 (23F81)",
-    "iPadOS 26.5 (23F77)",
-    "iOS 18.7.9 (22H355)",
-    "iPadOS 18.7.9 (22H355)",
-    "iPadOS 17.7.11 (21H461)",
-    "iOS 16.7.16 (20H392)",
-    "iPadOS 16.7.16 (20H392)",
-    "iOS 15.8.8 (19H422)",
-    "iPadOS 15.8.8 (19H422)",
-    "iOS 26.4.2 (23E261)",
-    "iPadOS 26.4.2 (23E261)",
-    "iOS 16.7.15 (20H380)",
-    "iPadOS 16.7.15 (20H380)",
-    "iOS 15.8.7 (19H411)",
-    "iPadOS 15.8.7 (19H411)",
-    "iOS 12.5.8 (16H88)",
-    "iPadOS 12.5.8 (16H88)",
-    "iOS 26.5.2 (23F84)",
-    "iPadOS 26.5.2 (23F84)"
-  ],
   "iss_seen_passes": [
     "701fc37852950706",
     "00b1c446e37d1bf2",
@@ -6319,9 +6246,6 @@
     "astronomy": {
       "last_ok": "2026-07-05T18:40:58.822695+00:00"
     },
-    "baseball": {
-      "last_ok": "2026-07-05T12:56:18.760142+00:00"
-    },
     "beach_day": {
       "last_ok": "2026-07-05T18:40:58.822695+00:00"
     },
@@ -6381,9 +6305,6 @@
     },
     "holidays": {
       "last_ok": "2026-07-05T18:40:58.822695+00:00"
-    },
-    "ios_release": {
-      "last_ok": "2026-07-05T12:56:18.760142+00:00"
     },
     "iss": {
       "last_ok": "2026-07-05T18:40:58.822695+00:00"
@@ -6461,9 +6382,6 @@
     },
     "wikiquote": {
       "last_ok": "2026-07-05T18:40:58.822695+00:00"
-    },
-    "wwdc": {
-      "last_ok": "2026-06-13T19:05:31.142331+00:00"
     },
     "youtube": {
       "last_data": "2026-07-05T18:42:45.924550+00:00",
@@ -6668,18 +6586,6 @@
     "writers:Virginia Woolf": "2026-06-28",
     "writers:William Shakespeare": "2026-07-03"
   },
-  "wwdc_seen_urls": [
-    "https://www.apple.com/newsroom/2026/05/apple-kicks-off-worldwide-developers-conference-on-june-8/",
-    "https://www.apple.com/newsroom/2026/06/apple-reveals-winners-of-the-2026-apple-design-awards/",
-    "https://www.apple.com/newsroom/2026/05/apple-unveils-new-accessibility-features-and-updates-with-apple-intelligence/",
-    "https://www.apple.com/newsroom/2026/05/apple-introduces-a-new-pride-collection/",
-    "https://www.apple.com/newsroom/2026/06/apple-unveils-next-generation-of-apple-intelligence-siri-ai-and-more/",
-    "https://www.apple.com/newsroom/2026/06/apple-intelligence-brings-powerful-ai-capabilities-into-everyday-experiences/",
-    "https://www.apple.com/newsroom/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant/",
-    "https://www.apple.com/newsroom/2026/06/apple-previews-new-child-safety-features/",
-    "https://www.apple.com/newsroom/2026/06/due-to-dma-siri-ai-delayed-in-eu-for-ios-27-and-ipados-27/",
-    "https://www.apple.com/newsroom/2026/06/apple-unveils-innovative-features-and-intelligence-experiences-across-services/"
-  ],
   "youtube_seen": {
     "UC2C_jShtL725hvbm1arSV9w": [
       "HSRmfNDk87s",
