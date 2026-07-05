@@ -143,6 +143,46 @@ class SendTest(unittest.TestCase):
             dd.send("fx", "USD up", "rate moved")
         self.assertNotIn("components", post.call_args.kwargs["json"])
 
+    def _rate_limited_response(self, retry_after=0.7):
+        resp = mock.Mock()
+        resp.status_code = 429
+        resp.json.return_value = {"retry_after": retry_after}
+        resp.raise_for_status.side_effect = requests.HTTPError("429")
+        return resp
+
+    def test_429_waits_and_retries_then_delivers(self):
+        ok = self._ok_response()
+        ok.status_code = 200
+        with mock.patch.dict("os.environ", ENV, clear=True), \
+             mock.patch.object(dd.requests, "post",
+                               side_effect=[self._rate_limited_response(), ok]) as post, \
+             mock.patch.object(dd.time, "sleep") as sleep:
+            dd.send("groceries", "deal", "big TV sale")
+        self.assertEqual(post.call_count, 2)
+        sleep.assert_called_once()
+        self.assertAlmostEqual(sleep.call_args.args[0], 0.7, places=3)
+
+    def test_429_gives_up_after_retries_and_raises(self):
+        limited = [self._rate_limited_response()
+                   for _ in range(dd._RATE_LIMIT_RETRIES + 1)]
+        with mock.patch.dict("os.environ", ENV, clear=True), \
+             mock.patch.object(dd.requests, "post", side_effect=limited) as post, \
+             mock.patch.object(dd.time, "sleep"):
+            with self.assertRaises(requests.HTTPError):
+                dd.send("groceries", "deal", "big TV sale")
+        self.assertEqual(post.call_count, dd._RATE_LIMIT_RETRIES + 1)
+
+    def test_429_with_malformed_body_falls_back_to_one_second(self):
+        limited = self._rate_limited_response()
+        limited.json.side_effect = ValueError("no body")
+        ok = self._ok_response()
+        ok.status_code = 200
+        with mock.patch.dict("os.environ", ENV, clear=True), \
+             mock.patch.object(dd.requests, "post", side_effect=[limited, ok]), \
+             mock.patch.object(dd.time, "sleep") as sleep:
+            dd.send("groceries", "deal", "big TV sale")
+        self.assertAlmostEqual(sleep.call_args.args[0], 1.0, places=3)
+
     def test_send_propagates_http_error(self):
         resp = mock.Mock()
         resp.raise_for_status.side_effect = requests.HTTPError("429")

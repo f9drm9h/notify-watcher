@@ -236,8 +236,23 @@ def _collect_bravo(cfg: dict) -> list[dict] | None:
 # Shared pipeline
 # --------------------------------------------------------------------------
 
-def _emit_deal(state: dict, deal: dict, big: float, mid: float) -> dict:
+# A big sale morning can produce dozens of 30%+ deals at once; each is severity
+# "high" and pushes live, which both floods the channel and trips Discord's
+# per-channel rate limit (observed 2026-07-04: 236 deals, 429s, failed run).
+# Cap the live pushes per run; the deepest cuts get the live slots (the deal
+# lists are sorted by discount before emitting) and the overflow lands in the
+# daily digest with everything else.
+LIVE_CAP_PER_RUN = 5
+
+
+def _emit_deal(state: dict, deal: dict, big: float, mid: float,
+               live_budget: dict | None = None) -> dict:
     severity = _severity(deal["pct"], big, mid)
+    if severity == "high" and live_budget is not None:
+        if live_budget.get("left", 0) > 0:
+            live_budget["left"] -= 1
+        else:
+            severity = "moderate"  # cap hit: digest, don't drop
     return events.emit(
         state,
         title=f"{deal['store']} deal: {deal['name']}",
@@ -307,20 +322,25 @@ def run(state: dict) -> dict:
     mid = float(cfg.get("mid_discount_pct", DEFAULT_MID_PCT))
 
     collected: list[tuple[str, list[tuple[str, dict]], object]] = []
+    # One live-push budget shared across both stores per run; deepest cuts
+    # first so the cap keeps the best deals live.
+    live_budget = {"left": LIVE_CAP_PER_RUN}
 
     deals = _collect_sirena(cfg.get("sirena") or {})
     if deals is not None:
+        deals = sorted(deals, key=lambda d: d.get("pct", 0), reverse=True)
         collected.append((
             "La Sirena",
             [(_deal_key(d["store"], d["url"], d["price"]), d) for d in deals],
-            lambda s, d: _emit_deal(s, d, big, mid)))
+            lambda s, d: _emit_deal(s, d, big, mid, live_budget)))
 
     deals = _collect_nacional(cfg.get("nacional") or {})
     if deals is not None:
+        deals = sorted(deals, key=lambda d: d.get("pct", 0), reverse=True)
         collected.append((
             "Nacional",
             [(_deal_key(d["store"], d["url"], d["price"]), d) for d in deals],
-            lambda s, d: _emit_deal(s, d, big, mid)))
+            lambda s, d: _emit_deal(s, d, big, mid, live_budget)))
 
     campaigns = _collect_bravo(cfg.get("bravo") or {})
     if campaigns is not None:

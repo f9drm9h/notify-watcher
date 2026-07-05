@@ -87,6 +87,7 @@
 
       { "topic": "weather", "severity": "moderate", "score": 50 },
       { "topic": "reminders", "severity": "moderate", "score": 45 },
+      { "topic": "fx", "severity": "high", "score": 62 },
       { "topic": "fx", "score": 45 },
       { "topic": "fuel", "score": 45 },
       { "topic": "holidays", "score": 45 },

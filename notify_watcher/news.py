@@ -66,6 +66,22 @@ def is_recent(entry, max_age_days: float, now: float | None = None) -> bool:
     return (now_ts - published) <= float(max_age_days) * 86400
 
 
+def _norm_headline(headline: str) -> str:
+    """Normalize a headline for syndication dedup.
+
+    Google News appends the publisher as " - <Publisher>" and syndication
+    networks re-run one story verbatim across regional sites ("... - IGN",
+    "... - IGN Africa", "... - IGN Benelux"). Each copy has a distinct URL and
+    id, so id-based dedup sees five fresh articles for one event. Stripping the
+    trailing publisher segment and case-folding makes the copies identical, so
+    the router can treat them as one story.
+    """
+    text = (headline or "").strip()
+    if " - " in text:
+        text = text.rsplit(" - ", 1)[0]
+    return " ".join(text.lower().split())
+
+
 def _source_weight_key(source: str, tiers: dict) -> str:
     """Map a publisher label to a source-weight key via config substring lists.
 
@@ -121,6 +137,11 @@ def route(
     seen_set = set(seen)
     fresh: list[str] = []
     pushed = digested = dropped = 0
+    # Syndication dedup: one story re-published verbatim across regional sites
+    # (distinct URLs/ids, identical headline minus the publisher suffix) is one
+    # event. The first copy routes normally; the rest are recorded as seen and
+    # dropped, so a single trailer drop can never fan out into five pushes.
+    handled_headlines: set[str] = set()
 
     for aid, headline, link, source in articles:
         if not aid:
@@ -131,9 +152,21 @@ def route(
         seen_set.add(h)
         fresh.append(h)  # recorded regardless of tier so it's never re-scored
 
+        norm = _norm_headline(headline)
+        if norm and norm in handled_headlines:
+            dropped += 1
+            continue
+        if norm:
+            handled_headlines.add(norm)
+
         score, tier = scoring.score(
             headline, _source_weight_key(source, tiers), [], scoring_cfg
         )
+        # Per-title live cap: even distinct high-tier stories about one film in
+        # one run are a coverage wave, not five separate emergencies. The first
+        # pushes live; the rest land in the daily digest with everything else.
+        if tier in ("breakthrough", "high") and pushed >= 1:
+            tier = "moderate"
         # The Event's source is the game/film TITLE (the 4th-tuple publisher is
         # only a scoring weight). That title drives both the legacy push label
         # "<prefix>: <title>" (via the title_prefix hint) and the digest grouping,

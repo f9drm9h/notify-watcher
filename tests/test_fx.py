@@ -105,6 +105,56 @@ class WeeklyTrendTest(unittest.TestCase):
         self.assertNotIn(fx.WEEK_KEY, state)
 
 
+class DailyRateTest(unittest.TestCase):
+    """One live push per day with the current rate, movement or not.
+
+    The fx/high priority rule (62) clears the push threshold (60), so with the
+    real monitors.json config these land as live pushes, not digest entries.
+    """
+
+    DAY = dt.date(2026, 7, 5)
+    NEXT = dt.date(2026, 7, 6)
+
+    def setUp(self):
+        self._env = mock.patch.dict("os.environ", {"NOTIFY_DAILY": "1"})
+        self._env.start()
+        self.addCleanup(self._env.stop)
+
+    def test_first_day_seeds_and_still_pushes(self):
+        with capture_pushes() as sent:
+            state = fx._daily_rate({}, 59.46, "USD", "DOP", today=self.DAY)
+        self.assertEqual(len(sent), 1)
+        self.assertIn("59.46", sent[0]["title"])
+        self.assertEqual(state[fx.DAILY_KEY], {"date": "2026-07-05", "rate": 59.46})
+
+    def test_second_call_same_day_is_silent(self):
+        state = {fx.DAILY_KEY: {"date": "2026-07-05", "rate": 59.46}}
+        with capture_pushes() as sent:
+            fx._daily_rate(state, 59.50, "USD", "DOP", today=self.DAY)
+        self.assertEqual(sent, [])
+
+    def test_next_day_reports_the_move(self):
+        state = {fx.DAILY_KEY: {"date": "2026-07-05", "rate": 59.46}}
+        with capture_pushes() as sent:
+            state = fx._daily_rate(state, 59.81, "USD", "DOP", today=self.NEXT)
+        self.assertEqual(len(sent), 1)
+        self.assertIn("vs yesterday", sent[0]["message"])
+        self.assertIn("59.46", sent[0]["message"])
+        self.assertEqual(state[fx.DAILY_KEY]["date"], "2026-07-06")
+
+    def test_flat_day_still_reports(self):
+        state = {fx.DAILY_KEY: {"date": "2026-07-05", "rate": 59.46}}
+        with capture_pushes() as sent:
+            fx._daily_rate(state, 59.46, "USD", "DOP", today=self.NEXT)
+        self.assertEqual(len(sent), 1)
+        self.assertIn("held steady", sent[0]["message"])
+
+    def test_not_daily_run_is_a_noop(self):
+        with mock.patch.dict("os.environ", {"NOTIFY_DAILY": ""}):
+            state = fx._daily_rate({}, 59.46, "USD", "DOP", today=self.DAY)
+        self.assertNotIn(fx.DAILY_KEY, state)
+
+
 class HealthContractTest(unittest.TestCase):
     """run() reports its source outcome (notify_watcher.health)."""
 

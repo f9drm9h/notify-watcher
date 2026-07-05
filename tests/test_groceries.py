@@ -3,6 +3,7 @@ La Sirena (VTEX JSON), Nacional (Magento HTML), Bravo (promo-campaign nav)."""
 from __future__ import annotations
 
 import unittest
+from unittest import mock
 
 from notify_watcher.topics import groceries
 
@@ -210,6 +211,51 @@ class StoreRunTest(unittest.TestCase):
         self.assertEqual(emitted, [])  # La Sirena's first time: silent seed
         self.assertEqual(state[groceries.STATE_KEY]["Nacional"], [self.K1])
         self.assertEqual(state[groceries.STATE_KEY]["La Sirena"], [self.S1])
+
+
+class LiveCapTest(unittest.TestCase):
+    """A sale morning with dozens of 30%+ deals must not flood the channel:
+    the shared live budget caps live pushes per run and the overflow is
+    downgraded to the digest (moderate), never dropped."""
+
+    def _deal(self, i, pct=40.0):
+        return {"store": "La Sirena", "name": f"Item {i}",
+                "url": f"https://x/p{i}", "price": 100.0,
+                "list_price": 200.0, "pct": pct}
+
+    def test_budget_downgrades_after_cap(self):
+        severities: list = []
+        with mock.patch.object(groceries.events, "emit",
+                               side_effect=lambda state, **kw:
+                               severities.append(kw["severity"]) or state):
+            budget = {"left": groceries.LIVE_CAP_PER_RUN}
+            state: dict = {}
+            for i in range(groceries.LIVE_CAP_PER_RUN + 3):
+                state = groceries._emit_deal(state, self._deal(i), 30.0, 15.0, budget)
+        self.assertEqual(severities.count("high"), groceries.LIVE_CAP_PER_RUN)
+        self.assertEqual(severities.count("moderate"), 3)
+
+    def test_no_budget_keeps_legacy_behavior(self):
+        severities: list = []
+        with mock.patch.object(groceries.events, "emit",
+                               side_effect=lambda state, **kw:
+                               severities.append(kw["severity"]) or state):
+            state: dict = {}
+            for i in range(8):
+                state = groceries._emit_deal(state, self._deal(i), 30.0, 15.0)
+        self.assertEqual(severities.count("high"), 8)
+
+    def test_small_discounts_never_touch_the_budget(self):
+        severities: list = []
+        with mock.patch.object(groceries.events, "emit",
+                               side_effect=lambda state, **kw:
+                               severities.append(kw["severity"]) or state):
+            budget = {"left": 1}
+            state: dict = {}
+            state = groceries._emit_deal(state, self._deal(1, pct=10.0), 30.0, 15.0, budget)
+            state = groceries._emit_deal(state, self._deal(2, pct=45.0), 30.0, 15.0, budget)
+        self.assertEqual(budget["left"], 0)
+        self.assertEqual(severities, ["low", "high"])
 
 
 class HealthContractTest(unittest.TestCase):

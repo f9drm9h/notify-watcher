@@ -39,6 +39,7 @@ from __future__ import annotations
 import datetime as _dt
 import logging
 import os
+import time
 from typing import Optional
 
 import requests
@@ -215,22 +216,40 @@ def build_embed(
     return embed
 
 
+# A 429 from Discord names how long to wait in `retry_after`. Bursty topics
+# (a big grocery sale morning) can trip the per-channel limit; waiting it out
+# and retrying keeps the message instead of failing the whole topic run.
+_RATE_LIMIT_RETRIES = 3
+_RATE_LIMIT_MAX_WAIT = 15.0  # never sleep longer than this per retry
+
+
 def _post(channel_id: str, embed: "discord.Embed", token: str, timeout: float,
           components: Optional[list] = None) -> None:
     payload: dict = {"embeds": [embed.to_dict()]}
     if components:
         payload["components"] = components
-    resp = requests.post(
-        f"{API_BASE}/channels/{channel_id}/messages",
-        headers={
-            "Authorization": f"Bot {token}",
-            "Content-Type": "application/json",
-            "User-Agent": "notify-watcher (https://github.com, 1.0)",
-        },
-        json=payload,
-        timeout=timeout,
-    )
-    resp.raise_for_status()
+    for attempt in range(_RATE_LIMIT_RETRIES + 1):
+        resp = requests.post(
+            f"{API_BASE}/channels/{channel_id}/messages",
+            headers={
+                "Authorization": f"Bot {token}",
+                "Content-Type": "application/json",
+                "User-Agent": "notify-watcher (https://github.com, 1.0)",
+            },
+            json=payload,
+            timeout=timeout,
+        )
+        if resp.status_code != 429 or attempt == _RATE_LIMIT_RETRIES:
+            resp.raise_for_status()
+            return
+        try:
+            wait = float((resp.json() or {}).get("retry_after", 1.0))
+        except Exception:  # noqa: BLE001 - malformed body: fall back to 1s
+            wait = 1.0
+        wait = min(max(wait, 0.5), _RATE_LIMIT_MAX_WAIT)
+        log.warning("discord: rate limited (429); retrying in %.1fs (attempt %d/%d)",
+                    wait, attempt + 1, _RATE_LIMIT_RETRIES)
+        time.sleep(wait)
 
 
 def send(

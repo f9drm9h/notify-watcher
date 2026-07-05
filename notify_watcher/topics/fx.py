@@ -23,6 +23,7 @@ TOPIC = "fx"
 STATE_KEY = "fx_last_zone"
 RATE_KEY = "fx_last_rate"
 WEEK_KEY = "fx_week_baseline"
+DAILY_KEY = "fx_daily_baseline"  # {"date": "YYYY-MM-DD", "rate": float}
 API_URL = "https://open.er-api.com/v6/latest/{base}"
 HEADERS = {"User-Agent": "notify-watcher/1.0 (+https://github.com/) personal-use"}
 
@@ -57,6 +58,54 @@ def _evaluate(rate, cfg: dict, prev_zone: str | None) -> tuple[bool, str, str]:
 def _iso_week(day: _dt.date) -> str:
     y, w, _ = day.isocalendar()
     return f"{y}-W{w:02d}"
+
+
+def _daily_rate(state: dict, rate: float, base: str, quote: str,
+                today: _dt.date | None = None) -> dict:
+    """One live push per day with the current rate, movement or not.
+
+    The band-crossing alert only speaks on threshold transitions and the fx
+    priority rule (45) buries everything else in the digest, so weeks could
+    pass without a single USD number arriving. This sends exactly one push on
+    the first daily run of each date — "USD/DOP today: 59.46 (+0.35 vs
+    yesterday, +0.59%)" — comparing against the rate recorded at the previous
+    daily push. Severity "high" matches the fx/high priority rule (62), which
+    clears the push threshold (60). First run seeds the baseline and still
+    pushes (the current rate alone is the useful part); a flat day reports
+    "held steady", so silence always means something is broken, never "no news".
+    """
+    if not os.environ.get("NOTIFY_DAILY"):
+        return state
+    day = (today or _dt.date.today()).isoformat()
+    baseline = state.get(DAILY_KEY) or {}
+    if baseline.get("date") == day:
+        return state  # already sent today
+    prev = baseline.get("rate")
+    ch = None
+    if prev is not None:
+        ch = changes.diff(float(prev), float(rate), label=f"{base}/{quote}",
+                          fmt=lambda r: f"{r:.2f}")
+    if ch:
+        body = f"{ch.summary} vs yesterday"
+    else:
+        body = f"{base}/{quote} at {rate:.2f}" + (
+            " (held steady vs yesterday)" if prev is not None else "")
+    state = events.emit(
+        state,
+        title=f"{base}/{quote} today: {rate:.2f}",
+        body=body,
+        change=ch,
+        topic="fx",
+        severity="high",
+        source="FX",
+        tags="moneybag",
+        legacy_priority="default",
+        legacy_action="push",
+        score=62,
+    )
+    state[DAILY_KEY] = {"date": day, "rate": float(rate)}
+    log.info("FX: daily rate push sent (%s)", body)
+    return state
 
 
 def _weekly_trend(state: dict, rate: float, base: str, quote: str,
@@ -149,4 +198,5 @@ def run(state: dict) -> dict:
     # report its magnitude (and the first run seeds both without alerting).
     state[STATE_KEY] = zone
     state[RATE_KEY] = rate
+    state = _daily_rate(state, float(rate), base, quote)
     return _weekly_trend(state, float(rate), base, quote)

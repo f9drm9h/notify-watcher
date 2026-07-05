@@ -155,5 +155,61 @@ class RouteTest(unittest.TestCase):
         self.assertEqual(len(state2.get(digest.BUFFER_KEY, [])), 1)
 
 
+class SyndicationDedupTest(unittest.TestCase):
+    """One story republished across regional sites must route exactly once."""
+
+    def setUp(self):
+        p = mock.patch("notify_watcher.config.section", return_value={})
+        p.start()
+        self.addCleanup(p.stop)
+
+    def _route(self, state, bucket, arts):
+        news.route(
+            state, bucket=bucket, title="FilmX", articles=arts,
+            scoring_cfg=SCORING, digest_cfg=DIGEST, cap=100,
+            live_tag="clapper", live_title_prefix="Movie news",
+        )
+
+    def test_norm_headline_strips_publisher_suffix(self):
+        self.assertEqual(
+            news._norm_headline("The Film - Official Trailer - IGN Africa"),
+            news._norm_headline("The Film - Official Trailer - IGN Benelux"))
+        self.assertEqual(news._norm_headline("Plain headline"), "plain headline")
+        self.assertEqual(news._norm_headline(""), "")
+
+    def test_syndicated_copies_route_once(self):
+        state, bucket = {}, {"FilmX": []}
+        arts = [
+            _art("a1", "FilmX release date set - IGN"),
+            _art("a2", "FilmX release date set - IGN Africa"),
+            _art("a3", "FilmX release date set - IGN Benelux"),
+        ]
+        with capture_pushes() as sent:
+            self._route(state, bucket, arts)
+        self.assertEqual(len(sent), 1)
+        # All three ids are still recorded as seen so none re-fires next run.
+        self.assertEqual(len(bucket["FilmX"]), 3)
+
+    def test_live_cap_one_push_per_title_per_run(self):
+        # Two DISTINCT high-tier stories in one run: first pushes live, the
+        # second lands in the digest instead of a second live push.
+        state, bucket = {}, {"FilmX": []}
+        arts = [
+            _art("s1", "FilmX release date set for June"),
+            _art("s2", "sequel release date announced too"),
+        ]
+        with capture_pushes() as sent:
+            self._route(state, bucket, arts)
+        self.assertEqual(len(sent), 1)
+        self.assertEqual(len(state.get(digest.BUFFER_KEY, [])), 1)
+
+    def test_cap_does_not_suppress_across_runs(self):
+        state, bucket = {}, {"FilmX": []}
+        with capture_pushes() as sent:
+            self._route(state, bucket, [_art("r1", "FilmX release date set")])
+            self._route(state, bucket, [_art("r2", "new release date announced")])
+        self.assertEqual(len(sent), 2)  # budget resets per run
+
+
 if __name__ == "__main__":
     unittest.main()
