@@ -96,7 +96,6 @@ CATEGORY_BY_TOPIC = {
     "groceries": "discovery",
     "golden_sun": "discovery",
     "anthropic_news": "discovery",
-    "ios_release": "discovery",
     "launches": "discovery",
     # --- Gemini daily / weekly summaries -> CHANNEL_BRIEFING (purple) ------
     "digest": "briefing",

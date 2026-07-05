@@ -32,7 +32,6 @@ from .topics import (
     anthropic_news,
     apod,
     astronomy,
-    baseball,
     beach_day,
     bills,
     blood_donation,
@@ -50,7 +49,6 @@ from .topics import (
     habits,
     health_tip,
     holidays,
-    ios_release,
     iss,
     itsc,
     launches,
@@ -103,7 +101,6 @@ def _is_daily_run() -> bool:
 
 TOPICS: list[tuple[str, Topic]] = [
     ("visa_bulletin", visa_bulletin.run),
-    ("ios_release", ios_release.run),
     ("movies", movies.run),
     # games is weekly: it self-gates to the first daily run of each ISO week
     # (see games.run), batching release-date + news updates into one catch-up.
@@ -116,10 +113,6 @@ TOPICS: list[tuple[str, Topic]] = [
     # news engine: remaster/official items push live, community posts buffer
     # to the digest, so it must run before digest_topic.
     ("golden_sun", golden_sun.run),
-    # baseball checks Dominican player milestones (live push) every run and
-    # adds the followed team's previous-day result to the digest on the daily
-    # run, so it must run before digest_topic.
-    ("baseball", baseball.run),
     # soundcore_pro discovers new Liberty Pro products and appends them to
     # state["auto_products"]; deals runs next so a same-run discovery is
     # price-tracked immediately.
