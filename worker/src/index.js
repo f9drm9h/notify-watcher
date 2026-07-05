@@ -258,6 +258,15 @@ async function cmdResearch(url, env) {
   }
   const link = String(url || "").trim();
   if (!link) return reply("Give me a link to summarize, e.g. /research url:https://example.com/story.");
+  // Reject non-URL input HERE, before dispatching: the workflow never runs for
+  // junk, and the Python side never has to build a Discord embed around an
+  // invalid click_url (Discord rejects those embeds with a 400).
+  if (!isHttpUrl(link)) {
+    return reply(
+      "That doesn't look like a URL. Give me a full http(s) link, " +
+      "e.g. /research url:https://example.com/story."
+    );
+  }
 
   let res;
   try {
@@ -323,6 +332,19 @@ function ackFor(command) {
 }
 
 // ----- small helpers ----------------------------------------------------
+// True only for a well-formed absolute http(s) URL. new URL() alone is not
+// enough: it happily parses javascript:, ftp:, mailto: — none of which the
+// research topic can fetch or Discord can embed as a click link.
+function isHttpUrl(raw) {
+  let parsed;
+  try {
+    parsed = new URL(raw);
+  } catch {
+    return false;
+  }
+  return parsed.protocol === "http:" || parsed.protocol === "https:";
+}
+
 function human(slug) {
   if (!slug) return "that topic";
   return slug.replace(/-/g, "_").split("_").filter(Boolean)

@@ -14,11 +14,18 @@ summarizer still posts a short "couldn't summarize that link" reply (the
 command was user-initiated, so silence would read as a hang), and an article
 too thin to summarize — a paywall shell or a JS-only page — posts an explicit
 "couldn't get the full article" message instead of a garbage summary.
+
+Input that is not a valid http(s) URL is rejected before any fetch, with a
+reply that carries NO click_url: Discord rejects an embed whose url field is
+not a well-formed http(s) URL with a 400, so junk input must never reach the
+embed. The Worker already refuses to dispatch non-URL input; this is the
+backstop for manual workflow_dispatch runs with a bad research_url.
 """
 from __future__ import annotations
 
 import logging
 import os
+from urllib.parse import urlparse
 
 import requests
 from bs4 import BeautifulSoup
@@ -55,6 +62,17 @@ STYLE = (
 
 PAYWALL_MSG = "couldn't get the full article from that link (paywall or JS-only page)"
 FAILURE_MSG = "couldn't summarize that link"
+INVALID_URL_MSG = ("that doesn't look like a URL — give me a full http(s) link, "
+                   "e.g. https://example.com/story")
+
+
+def _valid_url(url: str) -> bool:
+    """True only for an absolute http(s) URL with a host."""
+    try:
+        parsed = urlparse(url)
+    except ValueError:
+        return False
+    return parsed.scheme in ("http", "https") and bool(parsed.netloc)
 
 
 def _extract(url: str) -> tuple[str, str]:
@@ -76,8 +94,12 @@ def _extract(url: str) -> tuple[str, str]:
     return title, text[:MAX_CHARS]
 
 
-def _post(state: dict, title: str, body: str, url: str) -> dict:
-    """Send one reply through the engine's emit path (see module doc)."""
+def _post(state: dict, title: str, body: str, url: str | None) -> dict:
+    """Send one reply through the engine's emit path (see module doc).
+
+    ``url`` becomes the Discord embed's click link, so callers must only pass
+    a validated http(s) URL — or None for the invalid-input rejection reply.
+    """
     return events.emit(
         state,
         title=f"Research: {title}" if title else "Research",
@@ -98,6 +120,10 @@ def run(state: dict) -> dict:
         return state
 
     try:
+        if not _valid_url(url):
+            log.warning("research: rejecting non-URL input %r", url)
+            return _post(state, "", INVALID_URL_MSG, None)
+
         try:
             title, text = _extract(url)
         except Exception as exc:  # noqa: BLE001 - a bad link still gets a reply

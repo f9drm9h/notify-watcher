@@ -50,6 +50,63 @@ def _env(url: str):
 
 
 class ResearchRunTest(unittest.TestCase):
+    def test_non_url_input_is_rejected_without_fetch_or_click_url(self):
+        # Discord returns 400 for an embed whose url field is not a valid
+        # http(s) URL, so junk input must be rejected before any fetch and the
+        # rejection reply must not carry a click_url at all.
+        for bad in ("not a url", "example.com/story", "ftp://example.com/x",
+                    "javascript:alert(1)", "http://"):
+            with self.subTest(bad=bad), _env(bad), \
+                    mock.patch.object(research.requests, "get") as get, \
+                    mock.patch.object(research.summarize, "brief") as brief, \
+                    capture_pushes() as sent:
+                research.run({})  # must not raise
+            get.assert_not_called()
+            brief.assert_not_called()
+            self.assertEqual(len(sent), 1)
+            self.assertIn("doesn't look like a URL", sent[0]["message"])
+            self.assertIsNone(sent[0].get("click_url"))
+
+    def test_valid_url_passes_validation_and_fetches(self):
+        # The normal path (test_normal_path_summarizes_and_posts) plus the
+        # explicit contract: a well-formed https URL is NOT rejected and the
+        # posted click_url is exactly the validated input.
+        with _env(URL), \
+                mock.patch.object(research.requests, "get",
+                                  return_value=_Resp(ARTICLE_HTML)) as get, \
+                mock.patch.object(research.summarize, "brief",
+                                  return_value="A tidy summary."), \
+                capture_pushes() as sent:
+            research.run({})
+        get.assert_called_once()
+        self.assertEqual(len(sent), 1)
+        self.assertEqual(sent[0]["click_url"], URL)
+        self.assertNotIn("doesn't look like a URL", sent[0]["message"])
+
+    def test_every_push_click_url_is_http_or_absent(self):
+        # No research path may hand Discord an embed with an invalid click_url:
+        # exercise the rejection, paywall, fetch-failure and summarizer-down
+        # paths and check each posted reply's click_url is http(s) or absent.
+        scenarios = [
+            ("no scheme at all", None),
+            (URL, _Resp(SHORT_HTML)),
+            (URL, requests.RequestException("boom")),
+        ]
+        for env_url, response in scenarios:
+            kwargs = ({"side_effect": response}
+                      if isinstance(response, Exception) else
+                      {"return_value": response})
+            with self.subTest(env_url=env_url, response=response), _env(env_url), \
+                    mock.patch.object(research.requests, "get", **kwargs), \
+                    mock.patch.object(research.summarize, "brief", return_value=None), \
+                    capture_pushes() as sent:
+                research.run({})
+            self.assertEqual(len(sent), 1)
+            click = sent[0].get("click_url")
+            if click is not None:
+                self.assertTrue(click.startswith(("http://", "https://")),
+                                f"invalid click_url would 400 on Discord: {click!r}")
+
     def test_empty_url_is_a_noop(self):
         with _env(""), \
                 mock.patch.object(research.requests, "get") as get, \
