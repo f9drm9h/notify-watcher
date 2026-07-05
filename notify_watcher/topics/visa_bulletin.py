@@ -19,6 +19,18 @@ date" (visa_math.py does the math; monitors.json -> visa_bulletin.
 f4_priority_date, optional, enables the ETA clause). On the first daily run of
 each quarter a low-priority check-in compares the recent pace against the full
 history, so the estimate stays visible even while the cutoff crawls.
+
+Edition tracking: the newest bulletin's URL month ("…-for-august-2026.html" ->
+"2026-08") is stored in state["visa_bulletin_current"], independent of the F4
+values. A new edition always notifies — one combined push carrying the date
+moves (with pace line) when they happened, or "held steady" when they didn't —
+so a bulletin that leaves F4 parked is no longer silent. The per-cell alerts
+below still fire standalone for the rare mid-month correction (a date that
+moves within the same edition). The State Dept publishes each month's bulletin
+around the second week of the PRIOR month, so if no new edition has shown up
+after the 15th, one "bulletin is late" alert fires (deduped per expected
+edition in state["visa_bulletin_late_alerted"]; it re-arms when the bulletin
+finally lands or the expectation rolls to the next month).
 """
 from __future__ import annotations
 
@@ -61,6 +73,16 @@ CHECKS = [
 # date that actually controls visa issuance, so a Dates-for-Filing move says
 # nothing about how fast the F4 queue itself is draining.
 HISTORY_SOURCE_KEY = "visa_f4_final_action"
+
+# Edition tracking: which bulletin month is currently live ("2026-08", from
+# the bulletin URL), and the late-alert dedup — the *expected* edition the
+# "bulletin is late" push already fired for, so it fires at most once and
+# naturally re-arms when the bulletin lands or the month rolls over.
+EDITION_KEY = "visa_bulletin_current"
+LATE_KEY = "visa_bulletin_late_alerted"
+# Next month's bulletin normally publishes around the 2nd week of this month;
+# past this day of month with no new edition, it counts as late.
+LATE_AFTER_DAY = 15
 
 # Quarterly check-in: dedup key, the months it fires in, and how far back the
 # "recent" pace window reaches (7 cutoff entries span >= 6 bulletin months).
@@ -113,6 +135,58 @@ def _bulletin_month(url: str) -> Optional[str]:
     return f"{int(m.group(2))}-{_MONTHS.index(m.group(1).lower()) + 1:02d}"
 
 
+def _edition_label(edition: str) -> str:
+    """``"2026-08"`` -> ``"August 2026"`` (for titles and bodies)."""
+    year, month = edition.split("-")
+    return f"{_MONTHS[int(month) - 1].capitalize()} {year}"
+
+
+def _expected_edition(today: _dt.date) -> str:
+    """The edition that should be live by mid-``today.month``: next month's.
+
+    The State Dept publishes each monthly bulletin around the second week of
+    the PRIOR month (August's appears mid-July), so past LATE_AFTER_DAY the
+    newest index link should already point at the following month.
+    """
+    year, month = ((today.year + 1, 1) if today.month == 12
+                   else (today.year, today.month + 1))
+    return f"{year}-{month:02d}"
+
+
+def _late_bulletin_check(state: dict, edition: Optional[str],
+                         today: Optional[_dt.date] = None) -> dict:
+    """One alert when no new bulletin has appeared by end of day on the 15th.
+
+    ``edition`` is the newest bulletin month currently live. Deduped on the
+    *expected* edition (LATE_KEY), so subsequent runs stay silent; the alert
+    re-arms only when the bulletin actually lands (edition >= expected makes
+    the condition false and a fresh expectation starts next month).
+    """
+    if not edition:
+        return state
+    today = today or _dt.date.today()
+    if today.day <= LATE_AFTER_DAY:
+        return state
+    expected = _expected_edition(today)
+    if edition >= expected or state.get(LATE_KEY) == expected:
+        return state
+    state = events.emit(
+        state,
+        title="Visa bulletin is late",
+        body=(f"No new visa bulletin as of {today:%b %d} — newest published "
+              f"edition is still {_edition_label(edition)} (expected "
+              f"{_edition_label(expected)} by mid-month)."),
+        topic="visa_bulletin",
+        severity="moderate",
+        source="Visa Bulletin",
+        click_url=INDEX_URL,
+        tags="passport_control",
+        legacy_action="push",
+    )
+    state[LATE_KEY] = expected
+    return state
+
+
 def _priority_date() -> str:
     """The user's I-130 priority date from monitors.json, "" when unset."""
     return str(config.section("visa_bulletin").get("f4_priority_date") or "").strip()
@@ -151,7 +225,7 @@ def _f4_all_other(table) -> str:
     raise RuntimeError("F4 row not found in table")
 
 
-def run(state: dict) -> dict:
+def run(state: dict, today: Optional[_dt.date] = None) -> dict:
     index_html = _fetch(INDEX_URL)
     bulletin_url = _find_current_bulletin_url(index_html)
     log.info("current bulletin: %s", bulletin_url)
@@ -159,6 +233,18 @@ def run(state: dict) -> dict:
     bulletin_html = _fetch(bulletin_url)
     soup = BeautifulSoup(bulletin_html, "html.parser")
 
+    # Edition identity comes from the bulletin URL ("…-for-august-2026.html"
+    # -> "2026-08"). A brand-new edition folds both cells' outcomes into ONE
+    # combined push below instead of per-cell alerts; the per-cell alerts keep
+    # firing standalone for a date that moves *within* the same edition (rare
+    # mid-month correction). An unparseable URL (edition None) falls back to
+    # the per-cell behavior unchanged.
+    edition = _bulletin_month(bulletin_url)
+    prev_edition = state.get(EDITION_KEY)
+    new_edition = bool(edition and prev_edition and edition != prev_edition)
+
+    summaries: list[str] = []  # per-cell lines for the combined push
+    dates_moved = False
     for state_key, label, phrases in CHECKS:
         try:
             table = _table_after_heading(soup, phrases)
@@ -170,6 +256,8 @@ def run(state: dict) -> dict:
             previous = state.get(state_key)
             if previous == current:
                 log.info("%s unchanged, no push", label)
+                if new_edition:
+                    summaries.append(f"F4 (All Other) {label} held steady at {current}")
                 continue
 
             # Record the Final Action move in the wait-estimator history. The
@@ -177,10 +265,9 @@ def run(state: dict) -> dict:
             # no estimator line is added to the first-seen push below).
             pace_line = ""
             if state_key == HISTORY_SOURCE_KEY:
-                month = _bulletin_month(bulletin_url)
-                if month:
+                if edition:
                     state[visa_math.HISTORY_KEY] = visa_math.record_cutoff(
-                        state.get(visa_math.HISTORY_KEY) or [], current, month)
+                        state.get(visa_math.HISTORY_KEY) or [], current, edition)
                 if previous is not None:
                     pace_line = visa_math.pace_sentence(visa_math.estimate_wait(
                         state.get(visa_math.HISTORY_KEY) or [], _priority_date()))
@@ -195,21 +282,52 @@ def run(state: dict) -> dict:
                 ch = changes.diff(previous, current, kind="date",
                                   label=f"F4 (All Other) {label}")
                 body = f"{ch.summary}\n{pace_line}" if pace_line else ch.summary
+
+            if new_edition and previous is not None:
+                # Fold this move into the combined new-bulletin push below.
+                summaries.append(body)
+                dates_moved = True
+            else:
+                state = events.emit(
+                    state,
+                    title=f"F4 {label} changed",
+                    body=body,
+                    change=ch,
+                    topic="visa_bulletin",
+                    severity="critical",
+                    source="Visa Bulletin",
+                    click_url=bulletin_url,
+                    tags="passport_control",
+                    legacy_action="push",
+                )
+            state[state_key] = current
+        except Exception as exc:  # noqa: BLE001 - isolate each cell's check
+            log.error("F4 %s check failed: %s", label, exc)
+
+    if edition and edition != prev_edition:
+        if prev_edition is None:
+            # First sighting seeds silently: the two first-seen cell pushes
+            # above already announce the tracker starting up.
+            log.info("seeding bulletin edition %s", edition)
+        else:
             state = events.emit(
                 state,
-                title=f"F4 {label} changed",
-                body=body,
-                change=ch,
+                title=f"New visa bulletin: {_edition_label(edition)}",
+                body="\n".join(summaries)
+                     or "F4 cells could not be read from this bulletin (see log).",
                 topic="visa_bulletin",
-                severity="critical",
+                severity="critical" if dates_moved else "moderate",
                 source="Visa Bulletin",
                 click_url=bulletin_url,
                 tags="passport_control",
                 legacy_action="push",
             )
-            state[state_key] = current
-        except Exception as exc:  # noqa: BLE001 - isolate each cell's check
-            log.error("F4 %s check failed: %s", label, exc)
+        state[EDITION_KEY] = edition
+
+    try:
+        state = _late_bulletin_check(state, state.get(EDITION_KEY), today)
+    except Exception as exc:  # noqa: BLE001 - the late check never blocks the alerts
+        log.error("late-bulletin check failed: %s", exc)
 
     try:
         state = _quarterly_summary(state)
