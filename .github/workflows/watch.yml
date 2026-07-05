@@ -30,6 +30,10 @@ on:
         description: "On an on-demand 'only' run, also flush due remind-later / show-more pushes (normally skipped)"
         type: boolean
         default: false
+      research_url:
+        description: "Summarize this article link and post it to Discord (used by /research; empty skips)"
+        type: string
+        default: ""
 
 # Prevent two scheduled runs from racing each other on the state file. Because
 # pending runs can be replaced in this group, do not encode important behavior
@@ -126,6 +130,9 @@ jobs:
           # MORE pushes) on an on-demand single-topic dispatch, which otherwise
           # skips it. Empty/unset on schedule and full runs (they already flush).
           NOTIFY_PROCESS_PENDING: ${{ inputs.process_pending && '1' || '' }}
+          # /research: summarize this article URL and post it (topics/research).
+          # Empty on schedule; set only by a dispatch carrying research_url.
+          NOTIFY_RESEARCH_URL: ${{ inputs.research_url }}
         run: python -m notify_watcher.main
 
       - name: Stamp full sweep window
