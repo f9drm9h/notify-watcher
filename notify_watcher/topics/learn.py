@@ -25,6 +25,12 @@ Design choices that match the rest of the project:
   * Graceful degradation. Each section is independent: if Wikimedia is
     unreachable we still send the curated fact, and vice versa. Only when there
     is nothing at all to say do we skip.
+  * Health contract. In health.ADOPTED: a daily run that contacts the Wikimedia
+    feed reports source_ok / source_failed, so a feed that silently starts
+    failing (how the retired gutenberg topic died) surfaces in topic_health and
+    the watchdog even though the push itself degrades gracefully. The claim is
+    about the feed only — the knowledge story and curated facts are local KB +
+    LLM, so non-daily runs make no claim and leave topic_health untouched.
   * LLM optional. The curated fact may be reworded for variety via
     notify_watcher.summarize, falling back to the verbatim vetted text.
 
@@ -41,7 +47,7 @@ import random
 
 import requests
 
-from .. import events, kb, summarize
+from .. import events, health, kb, summarize
 
 log = logging.getLogger(__name__)
 
@@ -407,10 +413,13 @@ def run(state: dict) -> dict:
         return state
 
     today = _dt.date.today()
+    feed_ok = True
     try:
         feed = _fetch_feed(today)
     except Exception as exc:  # noqa: BLE001 - feed failure is non-fatal
         log.warning("Wikimedia feed fetch failed: %s", exc)
+        health.source_failed(state, "learn", f"Wikimedia feed fetch failed: {exc}")
+        feed_ok = False
         feed = {}
 
     sections: list[tuple[str, str]] = []
@@ -424,6 +433,18 @@ def run(state: dict) -> dict:
     if title:
         sections.append((f"Featured: {title}", extract))
         click_url = url
+
+    # Health claim for the Wikimedia feed (the topic's only external source).
+    # A fetch that "succeeded" but yielded neither section is a degraded feed
+    # (it editorially always has both), so it counts as a source failure even
+    # though the push itself degrades gracefully to the curated fact below.
+    if feed_ok:
+        feed_sections = int(bool(otd)) + int(bool(title))
+        if feed_sections:
+            health.source_ok(state, "learn", data_count=feed_sections)
+        else:
+            health.source_failed(state, "learn",
+                                 "Wikimedia feed answered but had no usable sections")
 
     label, fact = _curated_fact(today)
     if fact:

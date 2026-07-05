@@ -30,6 +30,13 @@ behave identically and share the same operational guarantees:
   * LLM optional. summarize.brief tries Gemini first, then Anthropic, and returns
     None when no provider key is set — so an absent/flaky LLM skips the push
     rather than sending a bare quote.
+  * Health contract. The topic is in health.ADOPTED: every run that contacts
+    Wikiquote reports source_ok / source_failed, so a source that silently
+    starts failing for weeks (how the retired gutenberg topic died) surfaces
+    in topic_health and the watchdog instead of hiding behind the graceful
+    skip. Runs that never reach the source (window already sent) make no
+    claim. An LLM failure after a successful fetch still reports source_ok —
+    the contract is about the source, and the unstamped window retries anyway.
 """
 from __future__ import annotations
 
@@ -40,9 +47,11 @@ import re
 
 import requests
 
-from .. import events, summarize
+from .. import events, health, summarize
 
 log = logging.getLogger(__name__)
+
+TOPIC = "wikiquote"
 
 # --- Wikiquote source -------------------------------------------------------
 API_URL = "https://en.wikiquote.org/w/api.php"
@@ -349,8 +358,11 @@ def _run(state: dict, now: _dt.datetime | None = None) -> dict:
     quotes = _fetch_quotes(chosen["name"])
     quote = _pick_quote(quotes, str(chosen["id"]), now)
     if not quote:
+        health.source_failed(state, TOPIC,
+                             f"no usable Wikiquote quote for {chosen['name']}")
         log.warning("no Wikiquote quote for %r; retrying next run", chosen["name"])
         return state
+    health.source_ok(state, TOPIC, data_count=len(quotes))
 
     story = _generate_story(chosen["name"], quote)
     if not story:
@@ -363,7 +375,7 @@ def _run(state: dict, now: _dt.datetime | None = None) -> dict:
         state,
         title=chosen["name"],
         body=_compose(chosen["name"], quote, story),
-        topic="wikiquote",
+        topic=TOPIC,
         severity="low",
         source="Wikiquote",
         tags="speech_balloon",

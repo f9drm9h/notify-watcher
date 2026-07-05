@@ -15,6 +15,7 @@ import datetime as _dt
 import unittest
 from unittest import mock
 
+from notify_watcher import health
 from notify_watcher.topics import wikiquote
 from tests._util import capture_pushes
 
@@ -362,6 +363,61 @@ class RunTest(unittest.TestCase):
             state = wikiquote.run({})  # the real entry point, real clock
         self.assertEqual(len(sent), 1)
         self.assertIn(wikiquote.WIKIQUOTE_SENT_KEY, state)
+
+
+class HealthContractTest(unittest.TestCase):
+    """wikiquote is in health.ADOPTED: every run that contacts Wikiquote must
+    report its source outcome, so a silent multi-week fetch failure (how the
+    retired gutenberg topic died) reaches topic_health and the watchdog
+    instead of hiding behind the graceful skip."""
+
+    def setUp(self):
+        for patcher in (
+            mock.patch.object(wikiquote, "FIGURES",
+                              _fake_figures(["a", "b", "c"], per_category=4)),
+            mock.patch.object(wikiquote, "_fetch_quotes", return_value=list(QUOTES)),
+            mock.patch.object(wikiquote.summarize, "brief", return_value=STORY),
+        ):
+            patcher.start()
+            self.addCleanup(patcher.stop)
+
+    def test_topic_is_adopted(self):
+        self.assertIn(wikiquote.TOPIC, health.ADOPTED)
+
+    def test_successful_fetch_reports_source_ok(self):
+        with capture_pushes():
+            state = wikiquote._run({}, _dt.datetime(2026, 6, 16, 12, 1))
+        status = health.consume(state, wikiquote.TOPIC)
+        self.assertTrue(status["ok"])
+        self.assertEqual(status["data_count"], len(QUOTES))
+
+    def test_failed_fetch_reports_source_failed(self):
+        # _fetch_quotes returns [] both for a network failure and a page that
+        # parses to zero usable quotes; either way the source made no data.
+        with mock.patch.object(wikiquote, "_fetch_quotes", return_value=[]), \
+                capture_pushes():
+            state = wikiquote._run({}, _dt.datetime(2026, 6, 16, 12, 1))
+        status = health.consume(state, wikiquote.TOPIC)
+        self.assertTrue(status["source_failed"])
+
+    def test_llm_failure_after_fetch_still_reports_source_ok(self):
+        # The claim is about the source: Wikiquote answered, so the report is
+        # ok even though the push is skipped and the window left unstamped.
+        with mock.patch.object(wikiquote.summarize, "brief", return_value=None), \
+                capture_pushes():
+            state = wikiquote._run({}, _dt.datetime(2026, 6, 16, 12, 1))
+        status = health.consume(state, wikiquote.TOPIC)
+        self.assertTrue(status["ok"])
+        self.assertNotIn(wikiquote.WIKIQUOTE_SENT_KEY, state)
+
+    def test_window_already_sent_makes_no_claim(self):
+        # No source contact -> no report, so a prior soft failure stays sticky
+        # in topic_health instead of being wiped by a no-op run.
+        now = _dt.datetime(2026, 6, 16, 12, 1)
+        state = {wikiquote.WIKIQUOTE_SENT_KEY: wikiquote._window(now)}
+        with capture_pushes():
+            state = wikiquote._run(state, now)
+        self.assertIsNone(health.consume(state, wikiquote.TOPIC))
 
 
 class FiguresDataTest(unittest.TestCase):

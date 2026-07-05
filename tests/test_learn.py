@@ -5,6 +5,7 @@ import datetime as _dt
 import unittest
 from unittest import mock
 
+from notify_watcher import health
 from notify_watcher.topics import learn
 from tests._util import capture_pushes
 
@@ -124,6 +125,70 @@ class RunTest(unittest.TestCase):
             state = learn.run({})
         self.assertEqual(sent, [])
         self.assertNotIn(learn.STATE_KEY, state)
+
+
+class HealthContractTest(unittest.TestCase):
+    """learn is in health.ADOPTED for its one external source, the Wikimedia
+    featured feed: a daily run that contacts it must report the outcome, so a
+    feed that silently starts failing (how the retired gutenberg topic died)
+    reaches topic_health even though the push degrades gracefully. The
+    knowledge/curated sections are local KB + LLM and make no claim."""
+
+    def setUp(self):
+        self._env = mock.patch.dict("os.environ", {"NOTIFY_DAILY": "1"})
+        self._env.start()
+        self.addCleanup(self._env.stop)
+        self._knowledge = mock.patch.object(
+            learn, "_run_knowledge", side_effect=lambda state, now=None: state)
+        self._knowledge.start()
+        self.addCleanup(self._knowledge.stop)
+
+    def test_topic_is_adopted(self):
+        self.assertIn("learn", health.ADOPTED)
+
+    def test_feed_success_reports_source_ok(self):
+        with mock.patch.object(learn, "_fetch_feed", return_value=SAMPLE_FEED), \
+             mock.patch.object(learn.summarize, "one_line", return_value=None), \
+             capture_pushes():
+            state = learn.run({})
+        status = health.consume(state, "learn")
+        self.assertTrue(status["ok"])
+        self.assertEqual(status["data_count"], 2)  # on-this-day + featured
+
+    def test_feed_failure_reports_source_failed_despite_degraded_push(self):
+        # The consolidated push still goes out (curated fact), but the health
+        # claim must record that the feed itself failed.
+        with mock.patch.object(learn, "_fetch_feed", side_effect=RuntimeError("boom")), \
+             mock.patch.object(learn.summarize, "one_line", return_value=None), \
+             capture_pushes() as sent:
+            state = learn.run({})
+        self.assertEqual(len(sent), 1)
+        status = health.consume(state, "learn")
+        self.assertTrue(status["source_failed"])
+        self.assertIn("boom", status["message"])
+
+    def test_empty_feed_payload_reports_source_failed(self):
+        # A 200 that parses to no usable sections is a degraded feed, not ok.
+        with mock.patch.object(learn, "_fetch_feed", return_value={}), \
+             mock.patch.object(learn.summarize, "one_line", return_value=None), \
+             capture_pushes():
+            state = learn.run({})
+        status = health.consume(state, "learn")
+        self.assertTrue(status["source_failed"])
+
+    def test_non_daily_run_makes_no_claim(self):
+        with mock.patch.dict("os.environ", {"NOTIFY_DAILY": ""}, clear=False), \
+             capture_pushes():
+            state = learn.run({})
+        self.assertIsNone(health.consume(state, "learn"))
+
+    def test_already_sent_today_makes_no_claim(self):
+        state = {learn.STATE_KEY: _dt.date.today().isoformat()}
+        with mock.patch.object(learn, "_fetch_feed") as fetch, \
+             capture_pushes():
+            state = learn.run(state)
+        fetch.assert_not_called()
+        self.assertIsNone(health.consume(state, "learn"))
 
 
 if __name__ == "__main__":

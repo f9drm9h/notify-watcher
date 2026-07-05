@@ -43,16 +43,26 @@ STATUS_KEY = "_topic_status"
 # from explicit reports; "didn't raise" alone proves nothing about the source.
 # Keep in sync with the topics module: each name here must call source_ok /
 # source_failed on every path that actually contacted its source.
+#
+# The story-engine topics (apod, learn's Wikimedia feed, wikiquote) are here
+# because their failure mode is the nastiest: they fetch external content on a
+# timer and swallow fetch errors as a clean "retry next run" skip, so a source
+# that starts blocking the runner (as gutendex.com and loc.gov did for the
+# retired gutenberg / library_of_congress topics) otherwise fails silently for
+# weeks behind "ok" logs.
 ADOPTED = frozenset({
+    "apod",
     "deals",
     "fuel",
     "fx",
     "groceries",
+    "learn",
     "onamet",
     "outages",
     "quakes",
     "twitch",
     "weather",
+    "wikiquote",
     "youtube",
 })
 

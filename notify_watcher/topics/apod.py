@@ -11,6 +11,11 @@ Video days (APOD is occasionally a video) attach the video's thumbnail when
 NASA provides one and link to the video itself. Daily-only (NOTIFY_DAILY) and
 deduped per APOD date, so a duplicate or drifted run never double-sends and a
 failed fetch retries on the next 3-hourly run of the same day.
+
+In health.ADOPTED: every run that contacts the APOD API reports source_ok /
+source_failed, so a silently blocked source (how the retired gutenberg topic
+died) surfaces in topic_health and the watchdog instead of hiding behind the
+graceful retry. Non-daily runs never reach the source and make no claim.
 """
 from __future__ import annotations
 
@@ -20,10 +25,11 @@ import os
 
 import requests
 
-from .. import events
+from .. import events, health
 
 log = logging.getLogger(__name__)
 
+TOPIC = "apod"
 STATE_KEY = "apod_last_sent"
 API_URL = "https://api.nasa.gov/planetary/apod"
 HEADERS = {"User-Agent": "notify-watcher/1.0 (+https://github.com/) personal-use"}
@@ -86,19 +92,23 @@ def run(state: dict) -> dict:
         data = _fetch()
     except Exception as exc:  # noqa: BLE001 - fetch failure is non-fatal
         log.warning("APOD fetch failed: %s", exc)
+        health.source_failed(state, TOPIC, f"APOD fetch failed: {exc}")
         return state
 
     # Dedup on NASA's own date when present (a payload without one falls back
     # to today's date, so a degraded API still can't double-send within a day).
     apod_date = str(data.get("date") or "").strip() or _dt.date.today().isoformat()
     if state.get(STATE_KEY) == apod_date:
+        health.source_ok(state, TOPIC, data_count=1)  # fetched fine; just a dup
         log.info("APOD for %s already sent; skipping", apod_date)
         return state
 
     composed = _compose(data)
     if composed is None:
         log.warning("APOD payload had nothing sendable; skipping")
+        health.source_failed(state, TOPIC, "APOD payload had nothing sendable")
         return state
+    health.source_ok(state, TOPIC, data_count=1)
     title, body, attach, click = composed
 
     state = events.emit(

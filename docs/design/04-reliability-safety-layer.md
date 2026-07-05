@@ -70,6 +70,13 @@ threshold already reads), keeps them sticky across gated no-claim runs, and an
 ok report with items also stamps `last_data` — extending the Layer-3 data
 heartbeat to the direct scrapers.
 
+The story-engine topics — wikiquote, apod, and learn's Wikimedia featured feed
+— joined `health.ADOPTED` after the gutenberg / library_of_congress retirement:
+both of those topics had been silently dead for weeks (gutendex.com and loc.gov
+403 GitHub's runner IPs) while their graceful per-run skip kept logging "ok".
+Any topic that fetches external content on a timer now reports its source
+outcome so that failure mode reaches the watchdog.
+
 ## 3. Architecture: three layers, crisp boundaries
 
 ```

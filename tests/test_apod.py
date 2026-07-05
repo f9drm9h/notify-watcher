@@ -4,6 +4,7 @@ from __future__ import annotations
 import unittest
 from unittest import mock
 
+from notify_watcher import health
 from notify_watcher.topics import apod
 from tests._util import capture_pushes
 
@@ -99,6 +100,60 @@ class RunTest(unittest.TestCase):
             apod.run({})
         fetch.assert_not_called()
         self.assertEqual(sent, [])
+
+
+class HealthContractTest(unittest.TestCase):
+    """apod is in health.ADOPTED: every run that contacts the APOD API must
+    report its source outcome, so a silently blocked source (how the retired
+    gutenberg topic died) reaches topic_health and the watchdog."""
+
+    def setUp(self):
+        self._env = mock.patch.dict("os.environ", {"NOTIFY_DAILY": "1"})
+        self._env.start()
+        self.addCleanup(self._env.stop)
+
+    def test_topic_is_adopted(self):
+        self.assertIn(apod.TOPIC, health.ADOPTED)
+
+    def test_successful_fetch_reports_source_ok(self):
+        with mock.patch.object(apod, "_fetch", return_value=IMAGE_DAY), \
+             capture_pushes():
+            state = apod.run({})
+        status = health.consume(state, apod.TOPIC)
+        self.assertTrue(status["ok"])
+        self.assertEqual(status["data_count"], 1)
+
+    def test_fetch_failure_reports_source_failed(self):
+        with mock.patch.object(apod, "_fetch", side_effect=RuntimeError("boom")), \
+             capture_pushes():
+            state = apod.run({})
+        status = health.consume(state, apod.TOPIC)
+        self.assertTrue(status["source_failed"])
+        self.assertIn("boom", status["message"])
+
+    def test_dedup_rerun_still_reports_source_ok(self):
+        # The second same-date run sends nothing, but the fetch did succeed,
+        # so the health claim is still an honest ok.
+        with mock.patch.object(apod, "_fetch", return_value=IMAGE_DAY), \
+             capture_pushes():
+            state = apod.run({})
+            health.consume(state, apod.TOPIC)
+            state = apod.run(state)
+        status = health.consume(state, apod.TOPIC)
+        self.assertTrue(status["ok"])
+
+    def test_unsendable_payload_reports_source_failed(self):
+        with mock.patch.object(apod, "_fetch", return_value={}), \
+             capture_pushes():
+            state = apod.run({})
+        status = health.consume(state, apod.TOPIC)
+        self.assertTrue(status["source_failed"])
+
+    def test_non_daily_run_makes_no_claim(self):
+        with mock.patch.dict("os.environ", {"NOTIFY_DAILY": ""}), \
+             capture_pushes():
+            state = apod.run({})
+        self.assertIsNone(health.consume(state, apod.TOPIC))
 
 
 if __name__ == "__main__":
