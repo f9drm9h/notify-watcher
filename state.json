@@ -348,18 +348,6 @@
   ],
   "event_log": [
     {
-      "action": "digest",
-      "detail": "",
-      "id": "973a0c01d1122034",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "TRISO fuel delivered for Kaleidos reactor experiment",
-      "topic": "energy",
-      "ts": "2026-07-03T11:04:04.536328+00:00",
-      "url": "https://www.world-nuclear-news.org//articles/triso-fuel-delivered-for-kaleidos-reactor-experiment"
-    },
-    {
       "action": "push",
       "detail": "Long March 6A | Unknown Payload launches in ~22h.",
       "id": "54fbb931ec39b80f",
@@ -6346,6 +6334,18 @@
       "topic": "research",
       "ts": "2026-07-05T14:33:51.668959+00:00",
       "url": "https://en.wikipedia.org/wiki/Visa_Bulletin"
+    },
+    {
+      "action": "push",
+      "detail": "couldn't get the full article from that link (paywall or JS-only page)",
+      "id": "f56b1bc0faaabd7b",
+      "score": 62,
+      "severity": "low",
+      "source": "Research",
+      "title": "Research",
+      "topic": "research",
+      "ts": "2026-07-05T14:43:36.357617+00:00",
+      "url": "https://www.seattletimes.com/sports/world-cup/seattle-world-cup-updates-egypt-iran-meet-amid-pride-match-celebrations/"
     }
   ],
   "f4_history": [
@@ -7569,7 +7569,7 @@
   "last_run": {
     "failed": 0,
     "ok": 1,
-    "ts": "2026-07-05T14:40:40.594888+00:00"
+    "ts": "2026-07-05T14:43:36.201171+00:00"
   },
   "launch_seen_ids": [
     "84eeb156648689c9",
@@ -9258,7 +9258,7 @@
       "last_ok": "2026-07-05T12:56:18.760142+00:00"
     },
     "research": {
-      "last_ok": "2026-07-05T14:40:40.594888+00:00"
+      "last_ok": "2026-07-05T14:43:36.201171+00:00"
     },
     "soundcore_pro": {
       "last_ok": "2026-07-05T12:56:18.760142+00:00"
