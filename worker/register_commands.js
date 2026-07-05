@@ -183,6 +183,18 @@ const commands = [
       { type: STRING, name: "topic", description: "Topic to look up.", required: true },
     ],
   },
+  {
+    name: "research",
+    description: "Summarize an article from a link and post it to Discord.",
+    options: [
+      {
+        type: STRING,
+        name: "url",
+        description: "Link to the article to summarize.",
+        required: true,
+      },
+    ],
+  },
 ];
 
 // ----- register (bulk overwrite) ---------------------------------------

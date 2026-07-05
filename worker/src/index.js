@@ -94,6 +94,8 @@ async function handleSlashCommand(interaction, env) {
     // --- ON-DEMAND run (Phase 3): trigger a GitHub Actions sweep --------
     case "run":
       return await cmdRun(opts.topic, env);
+    case "research": // /research url:<link> -> summarize + post the article
+      return await cmdResearch(opts.url, env);
 
     default:
       return reply(`Unknown command: ${name}`);
@@ -243,6 +245,39 @@ async function cmdRun(topic, env) {
 
   if (res.status === 204) {
     return reply(`Started an on-demand check for ${human(only)}. A fresh result will post shortly if anything changed.`);
+  }
+  return reply(`Could not start the run (GitHub returned ${res.status}).`);
+}
+
+// /research url:<link> — same dispatch pattern as cmdRun, but the input is
+// research_url: the workflow's research topic summarizes the article and
+// posts it. The Worker stays a courier: it never fetches the article itself.
+async function cmdResearch(url, env) {
+  if (!env.GITHUB_TOKEN || !env.GITHUB_DISPATCH_URL) {
+    return reply("On-demand research is not configured yet.");
+  }
+  const link = String(url || "").trim();
+  if (!link) return reply("Give me a link to summarize, e.g. /research url:https://example.com/story.");
+
+  let res;
+  try {
+    res = await fetch(env.GITHUB_DISPATCH_URL, {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${env.GITHUB_TOKEN}`,
+        Accept: "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "notify-watcher-worker",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ ref: "main", inputs: { research_url: link } }),
+    });
+  } catch {
+    return reply("Could not reach GitHub to start the run.");
+  }
+
+  if (res.status === 204) {
+    return reply("On it. The summary will post to Discord in a few minutes.");
   }
   return reply(`Could not start the run (GitHub returned ${res.status}).`);
 }
