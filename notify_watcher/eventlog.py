@@ -15,6 +15,14 @@ Event fields plus the engine's routing decision (action + global score), so the
 Capped (oldest dropped first) so it can never grow without bound; the cap is read from
 the ``priority`` config's ``event_log_max`` (falls back to a sane default), keeping all
 engine tunables in one config section.
+
+High-churn digest noise can be configured OUT of the ring: topics listed in the
+``priority`` config's ``event_log_digest_exclude`` do not record their "digest"-action
+entries (their pushes — the real notification history — are always recorded). Without
+this, a couple of bulk-digest producers (groceries' weekly deal pool, movies) filled
+the whole ring in ~2 days and the weekly recap never saw its full 7-day window. The
+exclusion only affects the LOG: the item still lands in digest_buffer and flushes into
+the daily digest as before.
 """
 from __future__ import annotations
 
@@ -51,6 +59,18 @@ def _cap(cfg: dict | None) -> int:
     return _DEFAULT_MAX
 
 
+def _digest_excluded(cfg: dict | None, topic: str, action: str) -> bool:
+    """True when this entry is a digest-action record for an excluded topic.
+
+    Only "digest" entries are ever excluded: pushes are the notification
+    history the recap/dashboard/reply-buttons depend on, and drops are rare.
+    """
+    if action != "digest" or not cfg:
+        return False
+    excluded = cfg.get("event_log_digest_exclude") or []
+    return isinstance(excluded, (list, tuple)) and topic in excluded
+
+
 def record(state: dict, event, action: str, score: int, cfg: dict | None = None) -> dict:
     """Append one routed-Event record and trim the ring to the cap. Returns state.
 
@@ -59,6 +79,8 @@ def record(state: dict, event, action: str, score: int, cfg: dict | None = None)
     Event body — the change-summary line (docs/design/01) when a topic provides one — so
     the dashboard shows HOW a value moved with no extra plumbing.
     """
+    if _digest_excluded(cfg, event.topic, action):
+        return state
     entry = {
         "id": entry_id(event),
         "ts": event.timestamp,

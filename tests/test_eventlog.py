@@ -96,6 +96,45 @@ class CapTest(unittest.TestCase):
         self.assertEqual(eventlog._cap(None), eventlog._DEFAULT_MAX)
 
 
+class DigestExclusionTest(unittest.TestCase):
+    """priority.event_log_digest_exclude keeps bulk-digest producers from
+    flooding the ring (groceries/movies filled the 500-entry default in ~2
+    days, starving the weekly recap's 7-day window). Only their digest-action
+    entries are excluded — pushes are always recorded."""
+
+    CFG = {"event_log_digest_exclude": ["groceries", "movies"]}
+
+    def test_excluded_topic_digest_entry_is_not_recorded(self):
+        state: dict = {}
+        eventlog.record(state, _event(topic="groceries"), "digest", 40, self.CFG)
+        self.assertNotIn(eventlog.EVENT_LOG_KEY, state)
+
+    def test_excluded_topic_push_is_still_recorded(self):
+        state: dict = {}
+        eventlog.record(state, _event(topic="groceries"), "push", 64, self.CFG)
+        self.assertEqual(state[eventlog.EVENT_LOG_KEY][0]["action"], "push")
+
+    def test_other_topic_digest_is_still_recorded(self):
+        state: dict = {}
+        eventlog.record(state, _event(topic="weather"), "digest", 40, self.CFG)
+        self.assertEqual(state[eventlog.EVENT_LOG_KEY][0]["topic"], "weather")
+
+    def test_no_config_records_every_digest(self):
+        state: dict = {}
+        eventlog.record(state, _event(topic="groceries"), "digest", 40)
+        eventlog.record(state, _event(topic="groceries"), "digest", 40, {})
+        self.assertEqual(len(state[eventlog.EVENT_LOG_KEY]), 2)
+
+    def test_exclusion_does_not_touch_the_digest_buffer(self):
+        # The item must still flush into the daily digest; only the LOG skips it.
+        cfg = dict(ENGINE, event_log_digest_exclude=["mid"])
+        with capture_pushes():
+            state = events.emit({}, title="x", topic="mid", source="S",
+                                priority_cfg=cfg)
+        self.assertNotIn(eventlog.EVENT_LOG_KEY, state)
+        self.assertEqual(len(state["digest_buffer"]), 1)
+
+
 class EmitIntegrationTest(unittest.TestCase):
     """emit must record on every route, engine ON and OFF."""
 

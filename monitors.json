@@ -33,6 +33,9 @@
     "digest_floor": 25,
     "default": 30,
     "urgency_bands": { "90": "urgent", "70": "high", "0": "default" },
+    "_event_log_comment": "The weekly recap reads a 7-day window of the event log, so the ring must hold at least a week. Bulk-digest producers (groceries' ~70/day weekly-deal pool, movies) used to fill the default 500-entry ring in ~2 days; their digest-action entries are excluded from the LOG (pushes still recorded; the items still reach the daily digest), and the cap gives ~11 days of the remaining ~90/day churn.",
+    "event_log_max": 1000,
+    "event_log_digest_exclude": ["groceries", "movies"],
     "rules": [
       { "topic": "visa_bulletin", "severity": "low", "score": 45 },
       { "topic": "visa_bulletin", "score": 100 },
