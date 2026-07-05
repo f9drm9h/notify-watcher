@@ -312,15 +312,6 @@ item list.
   `GEMINI_API_KEY` secret (Anthropic is a fallback via `summarize.py`); grow the
   KB by appending topics to any category. The story is clipped to fit Discord's
   embed description limit. The topic is the embed header.
-- **Library of Congress stories** — every 3-hour run rotates through historical
-  focus areas (American milestones, world-war photographs, civil rights,
-  presidential documents, early-20th-century life, maps/exploration, and
-  invention records), fetches a public item from the Library of Congress JSON
-  API, and asks Gemini for a four-paragraph documentary-style account. Items
-  with usable images are preferred and attached inline; no-image items still
-  send as text. The selected item id/link is held out for 30 days, and state is
-  stamped only after the story push succeeds, so LOC or Gemini outages skip
-  cleanly and retry next run.
 - **Quotation stories** — a **real quote** plus a fresh **Gemini-narrated story**
   on **every 3-hour run**, independent of the daily gate. Each run picks one
   figure from a curated list (`FIGURES` in `notify_watcher/topics/wikiquote.py` —
@@ -340,27 +331,6 @@ item list.
   surrounding narrative is generated. Uses the `GEMINI_API_KEY` secret (Anthropic
   fallback). The figure's name is the embed title; grow the channel by adding
   names to any `FIGURES` category.
-- **Literary passages** — a **real public-domain passage** plus a fresh
-  **Gemini-narrated literary guide** on **every 3-hour run**, independent of the
-  daily gate. Each run picks one work from a curated reading list (`WORKS` in
-  `notify_watcher/topics/gutenberg.py` — novels, philosophy/essays, poetry,
-  drama, adventure/science fiction, and gothic/mystery, 56 classics in all),
-  resolves its plain text through the free, no-key **Gutendex** API
-  (`gutendex.com`) and **Project Gutenberg**, strips the license boilerplate, and
-  samples a passage from the body. Gemini then narrates who the author was, when
-  and why they wrote it, what was happening in the world, where the passage sits
-  in the larger work, what it means, and why it still resonates, in at least
-  three paragraphs. The pick has the same memory as the knowledge and quotation
-  engines: shown work ids (`genre:gutenberg_id`) are stamped into `state.json` so
-  none repeats within 30 days, genres rotate cyclically, and both the work and
-  passage picks are seeded by the current 3-hour window so a re-run inside a
-  window is identical. The work is consumed and the window stamped only **after**
-  a passage is fetched *and* Gemini returns a story, so a failed fetch, a book
-  with no plain-text format, or an LLM outage skips cleanly and retries next run.
-  The passage is genuine public-domain text; only the surrounding narrative is
-  generated. Uses the `GEMINI_API_KEY` secret (Anthropic fallback). The work and
-  author are the embed title; grow the channel by adding `book_id`/title/author
-  entries to any `WORKS` genre.
 - **Rocket launches** — imminent orbital launches via Launch Library 2 (no key);
   alerts once per launch within `launches.imminent_hours`, skipping routine ones
   (Starlink by default).
@@ -759,7 +729,6 @@ notify-watcher/
 │       ├── itsc.py                  ITSC academic-calendar deadline heads-ups
 │       ├── launches.py              imminent rocket launches (Launch Library)
 │       ├── learn.py                 consolidated daily learning push
-│       ├── library_of_congress.py   LOC historical item stories
 │       ├── marine.py                rough-seas heads-up (Open-Meteo Marine)
 │       ├── movies.py                TMDb release dates + DO streaming (watchlist)
 │       ├── music.py                 followed-artist releases + discovery pick

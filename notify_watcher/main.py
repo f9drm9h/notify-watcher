@@ -45,7 +45,6 @@ from .topics import (
     games,
     golden_sun,
     groceries,
-    gutenberg,
     habits,
     health_tip,
     holidays,
@@ -54,7 +53,6 @@ from .topics import (
     launches,
     learn,
     life_dashboard,
-    library_of_congress,
     marine,
     movies,
     music,
@@ -171,14 +169,6 @@ TOPICS: list[tuple[str, Topic]] = [
     # learn's knowledge push): a real Wikiquote quote from a curated figure,
     # wrapped in a fresh Gemini-narrated story. Standalone, not daily-gated.
     ("wikiquote", wikiquote.run),
-    # gutenberg fires every cycle too (guarded per 3-hour window in state): a
-    # real public-domain passage from a curated classic (Gutendex, no key),
-    # narrated by Gemini into a literary/historical context guide. Standalone,
-    # not daily-gated.
-    ("gutenberg", gutenberg.run),
-    # library_of_congress fires every cycle too: a public LOC historical item,
-    # with an attached image when available, narrated fresh by Gemini.
-    ("library_of_congress", library_of_congress.run),
     # energy_learn is daily-only too: one calm educational "Today's spark" push.
     # Order doesn't matter among the daily-only topics; it reads the event_log
     # (populated by the collectors earlier this run) for its occasional news slot.
