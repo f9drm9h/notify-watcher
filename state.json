@@ -169,6 +169,15 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-07-05",
@@ -3649,6 +3658,54 @@
       "topic": "wikiquote",
       "ts": "2026-07-06T01:19:21.080233+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "307b2cac40a5b724",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-07-06T05:39:47.348446+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 7:49 PM - max 53deg, SW to NE. Look up!",
+      "id": "b0344df27ffe4380",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-06T05:40:02.497528+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "The mid-20th century pulsed with a profound scientific mystery. For decades, biologists had been grappling with the fundamental question of heredity. How did traits pass from one generation to the next? What was the mechanism, the physical blueprint, that orchestrated life itself? Proteins were the early, favored candidates, complex and varied enough to seemingly carry such intricate information. But then, a quiet revolution began to stir, propelled by the pioneering work of Oswald Avery and Erwin Chargaff, which pointed an insistent finger at deoxyribonucleic acid \u2013 DNA. This unassuming molecule, present in the nucleus of every cell, was now widely suspected to be the true carrier of genetic information, but its structure remained a tantalizing enigma, a locked safe holding the secrets of life.\n\nInto this intellectual crucible stepped a vibrant cast of characters, each driven by a mixture of ambition, curiosity, and the fierce competitive spirit inherent in groundbreaking science. At King\u2019s College London, Rosalind Franklin, a brilliant and meticulous X-ray crystallographer, labored tirelessly, producing extraordinarily sharp diffraction images of DNA \u2013 images that were, in retrospect, the most crucial pieces of the puzzle. Working alongside her, Maurice Wilkins, a physicist turned biophysicist, shared a complicated and often strained professional relationship with Franklin, a dynamic that would play a significant role in the unfolding drama. Meanwhile, across the channel at Cambridge University, two younger, equally ambitious scientists, James Watson, an American geneticist with a restless intellect, and Francis Crick, a British physicist with a talent for theoretical leaps, were pursuing their own fervent quest, building models, sketching ideas, and voraciously consuming any available data.\n\nThe human drama of this discovery is as compelling as the science itself. Watson and Crick, working with a combination of intuition, intellectual audacity, and a healthy dose of rivalry, were trying to deduce DNA's structure through a process of educated guesswork and model building. Crucially, they did so with a limited understanding of Franklin's unpublished data, which they saw through Wilkins, sometimes without Franklin's explicit permission or full knowledge. It was a race against time, with Linus Pauling, a titan of chemistry, also circling the problem. Watson\u2019s famous \"aha!\" moment, spurred by seeing Franklin\u2019s now-iconic \"Photo 51\" \u2013 a clear, unmistakable \"X\" pattern indicative of a helical structure \u2013 provided the critical insight they needed. Combining this visual evidence with Chargaff's rules of base pairing (adenine with thymine, guanine with cytosine), and their own deductions about the sugar-phosphate backbone, they quickly assembled their double helix model. The elegance and simplicity of their solution were breathtaking.\n\nThe impact of Watson and Crick's 1953 publication, a mere one-page letter in *Nature*, was nothing short of revolutionary. The double helix was not just a beautiful structure; it immediately suggested the mechanism of replication, how DNA could unwind and create two identical copies, thereby explaining heredity itself. It paved the way for the entire field of molecular biology, unlocking an era of unprecedented understanding of genetic diseases, evolution, and the fundamental processes of life.",
+      "id": "bb774b52b6ca3209",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The discovery of the structure of DNA",
+      "topic": "learn",
+      "ts": "2026-07-06T05:40:09.251082+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cSurely it is a great thing to increase the numerous host of fixed stars previously visible to the unaided vision, adding countless more which have never before been seen, exposing these plainly to the eye in numbers ten times exceeding the old and familiar stars.\u201d\n\u2014 Galileo Galilei\n\nGalileo Galilei, a man whose name echoes through the centuries as a titan of scientific revolution, lived in a world poised on the precipice of profound change. Born in Pisa in 1564, just as the Renaissance was nearing its zenith, he inherited an intellectual landscape still largely dominated by Aristotelian cosmology, where the Earth stood immovably at the center of a crystalline celestial sphere. Yet, Galileo was not content with inherited wisdom. His insatiable curiosity, combined with a meticulous mind for observation and mathematical analysis, set him on a collision course with the prevailing dogma. His early career saw him engaged in practical applications of physics, inventing improved compasses and thermometers, but it was his fascination with the heavens that would cement his legacy and, ironically, bring him into direct conflict with the powerful institutions of his time. The world of the late 16th and early 17th centuries was one of both burgeoning scientific inquiry and entrenched religious authority, a volatile mix that would define much of Galileo's personal and professional life.\n\nIt was into this world, specifically in 1610, that Galileo turned his newly refined telescope towards the night sky, forever altering humanity's perception of its place in the cosmos. His instrument, a marvel of contemporary engineering, magnified distant objects far beyond the capabilities of previous optical devices. What he saw through its lenses was nothing short of a revelation, a cosmic upheaval. The quote, \"Surely it is a great thing to increase the numerous host of fixed stars previously visible to the unaided vision, adding countless more which have never before been seen, exposing these plainly to the eye in numbers ten times exceeding the old and familiar stars,\" comes from his groundbreaking treatise, *Sidereus Nuncius* (Starry Messenger). In this short, powerful work, Galileo did not merely report observations; he articulated a profound shift in understanding. He described mountains on the Moon, the phases of Venus (proving it orbited the Sun), and, most famously, the four largest moons orbiting Jupiter. These discoveries shattered the long-held geocentric model, which posited a perfect, unchanging, Earth-centered universe, and provided compelling empirical evidence for the heliocentric theory proposed by Copernicus. This wasn't merely an academic debate; it was a challenge to a worldview that had underpinned religious and philosophical thought for millennia, placing Galileo directly in the crosshairs of the powerful Roman Inquisition.\n\nThe resonance of Galileo's words and his pioneering spirit endures to this day because they embody the very essence of scientific discovery and the courage to challenge established norms. His quote is more than a simple observation; it is an exultant declaration of the power of human ingenuity and the boundless potential for uncovering new truths. It speaks to the thrill of expanding our horizons, of pushing the boundaries of what is known, and of revealing the previously unseen.",
+      "id": "8ecc108ca4eaf39e",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Galileo Galilei",
+      "topic": "wikiquote",
+      "ts": "2026-07-06T05:40:14.272348+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -4631,6 +4688,7 @@
     }
   },
   "iss_seen_passes": [
+    "368cf15a03bd815b",
     "aba184aa7a89772c",
     "0617aa1ba668e172",
     "701fc37852950706",
@@ -4702,8 +4760,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "philosophy",
-  "knowledge_last_sent": "2026-07-06T0",
+  "knowledge_last_category": "science",
+  "knowledge_last_sent": "2026-07-06T1",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -4821,6 +4879,7 @@
     "science:The discovery of oxygen": "2026-06-28",
     "science:The discovery of superconductivity": "2026-06-14",
     "science:The discovery of the neutrino": "2026-06-16",
+    "science:The discovery of the structure of DNA": "2026-07-06",
     "science:The double helix and the race to find it": "2026-06-25",
     "technology:Alexander Graham Bell and the telephone": "2026-06-29",
     "technology:Edison and the phonograph": "2026-06-20",
@@ -4856,7 +4915,7 @@
   "last_run": {
     "failed": 0,
     "ok": 43,
-    "ts": "2026-07-06T01:18:06.206365+00:00"
+    "ts": "2026-07-06T05:38:42.455825+00:00"
   },
   "launch_seen_ids": [
     "84eeb156648689c9",
@@ -4887,6 +4946,11 @@
   "life_dashboard_last_week": "2026-W27",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "93015bf4d491bca3",
+      "f6c83c70e5e97618",
+      "08fd145e5c535a22",
+      "7f198355f64ef935",
+      "2f57c055943f40d2",
       "51d956a782ce4cf0",
       "f7c4859598b2d74f",
       "8f82042425f77669",
@@ -4981,12 +5045,7 @@
       "ffaa542dea4c2bf3",
       "c06e9ccc3219e3e4",
       "98be756acacc5cb9",
-      "96a2fc8df633569d",
-      "a2caf803d5ac6ca0",
-      "4d184b5a660c99e2",
-      "3272741ee1f07665",
-      "f7b85df8a10ca087",
-      "82f59156ca72814f"
+      "96a2fc8df633569d"
     ],
     "Godzilla x Kong: Supernova": [
       "e971e535097c217e",
@@ -5191,6 +5250,10 @@
       "deefdc93f875adbb"
     ],
     "Spider-Man: Brand New Day": [
+      "e24125e866e16c37",
+      "a9eb37432a257f78",
+      "ecda2f851207e5d6",
+      "43dbd0689dd1ac62",
       "ff18fdd7890c3149",
       "5d6c449c38931b7a",
       "775853805e05b81b",
@@ -5286,11 +5349,7 @@
       "3be18a519474cc61",
       "165ad8bdbcb373bb",
       "d385c6cc916da53a",
-      "6cbbcdedc2540edf",
-      "ce70596d032635ec",
-      "1d4e79e43ec5a80e",
-      "afde1c0cfa6c7882",
-      "3c3bb957bf99b350"
+      "6cbbcdedc2540edf"
     ],
     "The Batman Part II": [
       "216d2864baaf9efb",
@@ -5395,6 +5454,29 @@
       "38c992fda615d9bf"
     ],
     "The Odyssey": [
+      "ccae6749cefea67f",
+      "ba6761b4b52d0749",
+      "7ea300162b4944dc",
+      "72a531e281411f1c",
+      "ad4e8f716dde9141",
+      "a7e6852da02b147d",
+      "e998f06d8e9b4225",
+      "d17a349a113c539a",
+      "b307f9304a8e3945",
+      "9dfddf35f11083dd",
+      "dfece593ec083a62",
+      "7cce91c70621dd0f",
+      "68cfeabb9a2cd904",
+      "1e04bd49d2c9e9ca",
+      "8d05ee950e922b94",
+      "5460b2c9dab1f0b5",
+      "f405d7e6b09916ad",
+      "1ff037717bf0e3b5",
+      "4cfcafac46e15d73",
+      "3ff7358da6f90626",
+      "077ff32eaa464f90",
+      "3052b9540c2b3470",
+      "f37951fb18f94d27",
       "02843cc9ba0e71dc",
       "df90a8e9ae1c3c93",
       "cf2cc8aae05fdb2f",
@@ -5471,30 +5553,7 @@
       "27efbe33cc8de93c",
       "184c0fc2c43fce6c",
       "dd7c1caf57a70341",
-      "ad7f07dcf06936af",
-      "a781d9842fc51cfb",
-      "eb9df0304ae3306b",
-      "2a9396a19005e211",
-      "29f519e3cfc25e52",
-      "4bed591e8ead6a1a",
-      "76d39444be32d3a2",
-      "3fbc214f7b3fe564",
-      "44165e2673951bf5",
-      "7cebc574c274b4b3",
-      "c52256a1bbed3133",
-      "bba40549e9bac119",
-      "4718913e7369b059",
-      "128bae9691664379",
-      "9ff6e84dba23e0ce",
-      "0617cbb634563ca4",
-      "e1336a9024f6d665",
-      "a84a78312205dddb",
-      "defdb9736e290a85",
-      "d81abae6a6bc7fbd",
-      "785bbe2888295336",
-      "ea482d46d880023c",
-      "1057e23982c2dbfb",
-      "3dcc92dc7b6903d6"
+      "ad7f07dcf06936af"
     ]
   },
   "movie_release_dates": {
@@ -6411,10 +6470,10 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "apod": {
       "last_data": "2026-07-05T21:14:36.245341+00:00",
@@ -6422,35 +6481,35 @@
       "last_ok": "2026-07-05T21:12:58.016304+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "deals": {
-      "last_data": "2026-07-06T01:18:41.555016+00:00",
+      "last_data": "2026-07-06T05:39:37.104290+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "energy": {
-      "last_data": "2026-07-06T01:18:51.195943+00:00",
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_data": "2026-07-06T05:39:46.968212+00:00",
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "fda": {
-      "last_data": "2026-07-06T01:18:42.197832+00:00",
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_data": "2026-07-06T05:39:37.332329+00:00",
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "fuel": {
       "last_data": "2026-07-05T21:14:15.922476+00:00",
@@ -6458,17 +6517,17 @@
       "last_ok": "2026-07-05T21:12:58.016304+00:00"
     },
     "fx": {
-      "last_data": "2026-07-06T01:19:08.761465+00:00",
+      "last_data": "2026-07-06T05:39:59.622446+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-06T01:18:17.474072+00:00",
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_data": "2026-07-06T05:38:54.229686+00:00",
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "groceries": {
       "last_data": "2026-07-05T21:13:45.176012+00:00",
@@ -6476,97 +6535,97 @@
       "last_ok": "2026-07-05T21:12:58.016304+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "learn": {
       "last_ok": "2026-07-05T18:40:58.822695+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "movies": {
-      "last_data": "2026-07-06T01:18:12.732483+00:00",
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_data": "2026-07-06T05:38:48.932777+00:00",
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "music": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-06T01:18:51.757883+00:00",
+      "last_data": "2026-07-06T05:39:47.811458+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "outages": {
       "last_data": "2026-07-06T01:19:08.095691+00:00",
-      "last_data_count": 1,
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_data_count": 0,
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-06T01:19:08.227501+00:00",
-      "last_data_count": 31,
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_data": "2026-07-06T05:39:58.968293+00:00",
+      "last_data_count": 32,
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "research": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-06T01:18:13.855330+00:00",
+      "last_data": "2026-07-06T05:38:50.999384+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "weather": {
-      "last_data": "2026-07-06T01:18:51.420904+00:00",
+      "last_data": "2026-07-06T05:39:47.348122+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "wikiquote": {
-      "last_data": "2026-07-06T01:19:17.315410+00:00",
-      "last_data_count": 22,
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_data": "2026-07-06T05:40:09.827776+00:00",
+      "last_data_count": 20,
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-06T01:19:11.528550+00:00",
+      "last_data": "2026-07-06T05:40:04.726624+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-06T01:18:06.206365+00:00"
+      "last_ok": "2026-07-06T05:38:42.455825+00:00"
     }
   },
   "twitch_live": [],
@@ -6574,7 +6633,7 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165120"
+    "last_full_window": "165121"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -6588,6 +6647,7 @@
   "watchdog_failing_since": {},
   "water_slots_sent": [],
   "weather_seen_ids": [
+    "0422576a1ad9ec4d",
     "cf5766defc35c98e",
     "a2b7e01f9c1bea5f",
     "89a648215888a29c",
@@ -6699,8 +6759,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "activists_thinkers",
-  "wikiquote_last_sent": "2026-07-06T0",
+  "wikiquote_last_category": "science_pioneers",
+  "wikiquote_last_sent": "2026-07-06T1",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-07-03",
@@ -6746,7 +6806,7 @@
     "science_pioneers:Albert Einstein": "2026-07-02",
     "science_pioneers:Carl Sagan": "2026-07-01",
     "science_pioneers:Charles Darwin": "2026-07-04",
-    "science_pioneers:Galileo Galilei": "2026-06-27",
+    "science_pioneers:Galileo Galilei": "2026-07-06",
     "science_pioneers:Isaac Newton": "2026-07-03",
     "science_pioneers:Marie Curie": "2026-06-28",
     "science_pioneers:Nikola Tesla": "2026-07-02",
