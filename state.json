@@ -160,6 +160,15 @@
       "title": "M3.2 - 94 km SSW of Pole Ojea, Puerto Rico (~296 km away)",
       "topic": "quakes",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71522773"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-07-05",
@@ -3580,6 +3589,66 @@
       "topic": "wikiquote",
       "ts": "2026-07-05T21:14:27.709691+00:00",
       "url": ""
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "1745a7a89de1ffb0",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "New Avengers: Doomsday leaks unveil first look at Doctor Doom - Bam Smack Pow",
+      "topic": "movies",
+      "ts": "2026-07-06T01:18:08.766964+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQaTJaaXFZQURBU2p6RzFFR0ZENXRQcWh4ZlMxQktkT0l4aVpJQ2pESGtfSjFfVF9TU21oUzRtY2JNLVdROXBfQ1FpeWVzZXEzQlJzQzFHbTRUcktTSDRrcG5fUnJ5emozUWx3WExmNERlVFdNZ3ZaWnVBdVd4bUFsbjEwem4wSVUyaDA5ZjQ1QjNKZzlHN2c?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "dc608e040161440d",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-07-06T01:18:51.421225+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 7:48 PM - max 53deg, SW to NE. Look up!",
+      "id": "f654b66a48198608",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-06T01:19:09.642917+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "In the dim cloisters of the 14th century, a Franciscan friar named William of Ockham, born in the sleepy village of Ockham in Surrey, England, became an intellectual revolutionary. He was a thinker who dared to question the complex theological and philosophical constructs of his age, an era dominated by the scholastic tradition. These scholars, often influenced by the rediscovery of Aristotle and the towering intellect of Aquinas, sought to build elaborate systems of thought, often multiplying entities and explanations to account for every nuance of reality and faith. They grappled with universals, with the nature of God, and with the relationship between faith and reason, frequently creating intricate, multi-layered theories that, to Ockham, seemed unnecessarily cumbersome. His life was not one of quiet contemplation alone; he found himself entangled in the tumultuous politics of the papacy and the Holy Roman Empire, even facing accusations of heresy for his views on evangelical poverty and papal authority, ultimately leading to his excommunication. Yet, it was amidst this intellectual and political maelstrom that he honed a principle that would echo through centuries, a quiet rebellion against complexity.\n\nThe principle, though not precisely formulated as \"Ockham's razor\" by William himself, emerged from his writings, particularly his nominalist stance. Nominalism, a philosophical position that denies the existence of universal essences or ideas, asserting that only individual things exist and that universals are mere names or mental concepts, was a radical departure. For Ockham, if something could be explained without positing additional, unobservable entities \u2013 be they universals, divine interventions, or abstract forms \u2013 then those simpler explanations were to be preferred. His famous dictum, often paraphrased as \"plurality is not to be posited without necessity\" or \"what can be done with fewer [assumptions] is done in vain with more,\" wasn't about denying truth or reality, but about intellectual economy and clarity. It was a tool for stripping away the superfluous, a razor to shave off unnecessary assumptions, guiding thinkers toward the most parsimonious explanation. It was a call to intellectual humility, acknowledging the limits of human knowledge and the dangers of over-explanation.\n\nThe immediate impact of Ockham's razor was profound within late medieval scholasticism, shifting philosophical discourse towards empiricism and paving the way for the scientific revolution. Before Ockham, many explanations for natural phenomena invoked myriad unseen forces, divine whims, or complex causal chains. His principle encouraged a more direct, observable approach. Why explain the motion of a planet with crystalline spheres driven by angels when a simpler, mathematical description of its orbit might suffice? While he wasn't a scientist in the modern sense, his emphasis on parsimony laid a crucial groundwork for future scientific inquiry, where hypotheses are tested and the simplest adequate explanation is often deemed the most robust. After his time, the Enlightenment thinkers, seeking to liberate reason from dogma, found a powerful ally in Ockham's razor, using it to dismantle elaborate theological arguments and usher in an age of empirical observation and testable theories.\n\nToday, Ockham's razor transcends its medieval origins, remaining a cornerstone of scientific methodology, critical thinking, and even everyday problem-solving.",
+      "id": "bd955f26c841438c",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Ockham's razor",
+      "topic": "learn",
+      "ts": "2026-07-06T01:19:16.922896+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cJoin the union, girls, and together say Equal Pay for Equal Work.\u201d\n\u2014 Susan B. Anthony\n\nSusan B. Anthony, a towering figure in American history, was much more than a suffragist; she was an architect of social change, a relentless advocate whose life became synonymous with the fight for equality. Born into a Quaker family in 1820, she inherited a deep-seated belief in social justice and the inherent worth of every individual. Her early career as a teacher, however, exposed her to the stark realities of gender inequality, particularly in pay. While men earned significantly more for the same work, Anthony was paid a mere fraction. This personal experience, coupled with her family's abolitionist leanings and her burgeoning involvement in the temperance movement, crystallized her understanding that true progress was impossible without women's full participation in public life and their economic independence. She understood that the right to vote was not just a political ideal, but the bedrock upon which all other rights, including the right to fair compensation, could be built.\n\nThe call to \"Join the union, girls, and together say Equal Pay for Equal Work\" was not merely a slogan, but a strategic imperative uttered amidst a swirling vortex of industrialization and social upheaval in late 19th-century America. As factories blossomed and women increasingly entered the workforce, they found themselves at the mercy of employers who exploited their lack of power, paying them meager wages simply because they were women. Anthony, alongside her unwavering ally Elizabeth Cady Stanton, recognized the profound interconnectedness of suffrage and economic justice. They saw that individual appeals for higher wages were often futile, but a collective voice, a union, possessed the power to demand change. This was a radical proposition at a time when women were largely confined to the domestic sphere and any organized action by them, particularly on economic matters, was met with skepticism, if not outright hostility. Anthony's advocacy for labor unions for women demonstrated her prescience, understanding that collective bargaining was a vital tool for empowering marginalized groups to challenge systemic injustice.\n\nEven a century and a half later, Susan B. Anthony's impassioned plea for equal pay reverberates with chilling relevance. Despite significant progress, the gender pay gap persists across industries and nations. Women continue to earn less than men for comparable work, a disparity that reflects not just individual choices, but deeply entrenched societal biases and structural inequalities. The quote serves as a stark reminder that the fight for economic justice is an ongoing one, demanding continued vigilance and collective action. It underscores the enduring power of solidarity, the idea that when women unite, when they raise their voices in unison, they can challenge the status quo and demand the recognition of their inherent value. Anthony\u2019s words are not a relic of the past, but a timeless rallying cry, urging generations of women to continue the struggle for a world where their labor is valued equally, their contributions fully recognized, and their economic independence secured.",
+      "id": "002a9968ca8f2b30",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Susan B. Anthony",
+      "topic": "wikiquote",
+      "ts": "2026-07-06T01:19:21.080233+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -3713,7 +3782,7 @@
     "date": "2026-07-05",
     "rate": 59.457251
   },
-  "fx_last_rate": 59.457251,
+  "fx_last_rate": 59.104456,
   "fx_last_zone": "within",
   "fx_week_baseline": {
     "rate": 59.107125,
@@ -4562,6 +4631,7 @@
     }
   },
   "iss_seen_passes": [
+    "aba184aa7a89772c",
     "0617aa1ba668e172",
     "701fc37852950706",
     "00b1c446e37d1bf2",
@@ -4632,8 +4702,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "mythology",
-  "knowledge_last_sent": "2026-07-05T7",
+  "knowledge_last_category": "philosophy",
+  "knowledge_last_sent": "2026-07-06T0",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -4729,6 +4799,7 @@
     "philosophy:John Rawls and the veil of ignorance": "2026-06-16",
     "philosophy:Kierkegaard and the birth of existentialism": "2026-06-27",
     "philosophy:Leibniz and the best of all possible worlds": "2026-06-25",
+    "philosophy:Ockham's razor": "2026-07-06",
     "philosophy:Plato's Allegory of the Cave": "2026-07-01",
     "philosophy:Sartre and existentialist freedom": "2026-06-18",
     "philosophy:The Vienna Circle and logical positivism": "2026-06-28",
@@ -4784,8 +4855,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-07-05T23:30:32.682141+00:00"
+    "ok": 43,
+    "ts": "2026-07-06T01:18:06.206365+00:00"
   },
   "launch_seen_ids": [
     "84eeb156648689c9",
@@ -4816,6 +4887,11 @@
   "life_dashboard_last_week": "2026-W27",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "51d956a782ce4cf0",
+      "f7c4859598b2d74f",
+      "8f82042425f77669",
+      "5be81090fb5c51ea",
+      "109fadda33d8f14f",
       "c81cf6ada3cf3bc2",
       "7f43e32f69b4a31e",
       "1ff3d21988ad9d27",
@@ -4910,12 +4986,7 @@
       "4d184b5a660c99e2",
       "3272741ee1f07665",
       "f7b85df8a10ca087",
-      "82f59156ca72814f",
-      "2f57c055943f40d2",
-      "623bec3037a8b837",
-      "5e1ae6c5e53fb670",
-      "bdf21ea07033bd64",
-      "0b389fe2b1797a2f"
+      "82f59156ca72814f"
     ],
     "Godzilla x Kong: Supernova": [
       "e971e535097c217e",
@@ -5120,6 +5191,8 @@
       "deefdc93f875adbb"
     ],
     "Spider-Man: Brand New Day": [
+      "ff18fdd7890c3149",
+      "5d6c449c38931b7a",
       "775853805e05b81b",
       "6642331dace00daa",
       "5fe359a124117660",
@@ -5217,9 +5290,7 @@
       "ce70596d032635ec",
       "1d4e79e43ec5a80e",
       "afde1c0cfa6c7882",
-      "3c3bb957bf99b350",
-      "43dbd0689dd1ac62",
-      "eee0446f65c2a21f"
+      "3c3bb957bf99b350"
     ],
     "The Batman Part II": [
       "216d2864baaf9efb",
@@ -5324,6 +5395,33 @@
       "38c992fda615d9bf"
     ],
     "The Odyssey": [
+      "02843cc9ba0e71dc",
+      "df90a8e9ae1c3c93",
+      "cf2cc8aae05fdb2f",
+      "0d3e214021a2e804",
+      "c36a77fa1b6c0af6",
+      "2c1dc4d17e83abd3",
+      "53f6d13c42d25bdd",
+      "0578a0081698ff3f",
+      "5fa954fc48ac26be",
+      "717b9b98a711bcd8",
+      "eae46c5a5fb77293",
+      "b9f02d1ffe089aad",
+      "d51340562b131bb4",
+      "35e5472ac82cb12c",
+      "6276a487ebe8789d",
+      "01cca0afaf3b29f8",
+      "415db5b7761ad609",
+      "27917b17ff64fd33",
+      "f04dd533690ee1db",
+      "43dbd0689dd1ac62",
+      "c30c41fc5f0e56b5",
+      "c8dae5f5b3d2dd42",
+      "1e26ca1f20105ffb",
+      "ee72bc6c99125b96",
+      "e97135e1b6850aea",
+      "4794690511fed652",
+      "43c14c7dee3b4fa8",
       "bfed717473ffbb3a",
       "98ccb60b1fa70229",
       "31186d38df1167b3",
@@ -5396,34 +5494,7 @@
       "785bbe2888295336",
       "ea482d46d880023c",
       "1057e23982c2dbfb",
-      "3dcc92dc7b6903d6",
-      "2d9c1b94ca43f3c4",
-      "98bbf3db56ede50d",
-      "438220df7fb2dab7",
-      "5460b2c9dab1f0b5",
-      "f405d7e6b09916ad",
-      "643659317259648a",
-      "68cfeabb9a2cd904",
-      "c9a20a64cf87e331",
-      "1ff037717bf0e3b5",
-      "db48909aeec94c1b",
-      "315752cc6926df6a",
-      "bcb81e7958b0d6f7",
-      "077ff32eaa464f90",
-      "65581a6bc1351142",
-      "a8b487a6502ba1e4",
-      "f71d409a270d0526",
-      "c0a3e916324c27c7",
-      "d147f974f8b24982",
-      "158c257281a66ed9",
-      "52136e42adfab1cd",
-      "4cfcafac46e15d73",
-      "be6e825f2a08f420",
-      "3f84302233a3a022",
-      "72696c426fbb7fd3",
-      "a6f7b9a9de2cc7ba",
-      "3052b9540c2b3470",
-      "f37951fb18f94d27"
+      "3dcc92dc7b6903d6"
     ]
   },
   "movie_release_dates": {
@@ -6340,10 +6411,10 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "apod": {
       "last_data": "2026-07-05T21:14:36.245341+00:00",
@@ -6351,35 +6422,35 @@
       "last_ok": "2026-07-05T21:12:58.016304+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "deals": {
-      "last_data": "2026-07-05T21:13:35.348858+00:00",
+      "last_data": "2026-07-06T01:18:41.555016+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "energy": {
-      "last_data": "2026-07-05T21:13:55.061624+00:00",
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_data": "2026-07-06T01:18:51.195943+00:00",
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "fda": {
-      "last_data": "2026-07-05T21:13:45.455727+00:00",
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_data": "2026-07-06T01:18:42.197832+00:00",
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "fuel": {
       "last_data": "2026-07-05T21:14:15.922476+00:00",
@@ -6387,17 +6458,17 @@
       "last_ok": "2026-07-05T21:12:58.016304+00:00"
     },
     "fx": {
-      "last_data": "2026-07-05T23:00:17.477693+00:00",
+      "last_data": "2026-07-06T01:19:08.761465+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-05T23:00:17.313705+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-05T21:13:11.766010+00:00",
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_data": "2026-07-06T01:18:17.474072+00:00",
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "groceries": {
       "last_data": "2026-07-05T21:13:45.176012+00:00",
@@ -6405,97 +6476,97 @@
       "last_ok": "2026-07-05T21:12:58.016304+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "learn": {
       "last_ok": "2026-07-05T18:40:58.822695+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "movies": {
-      "last_data": "2026-07-05T21:13:05.121450+00:00",
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_data": "2026-07-06T01:18:12.732483+00:00",
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "music": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-05T21:13:55.663865+00:00",
+      "last_data": "2026-07-06T01:18:51.757883+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "outages": {
-      "last_data": "2026-07-05T21:14:13.782019+00:00",
+      "last_data": "2026-07-06T01:19:08.095691+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-05T21:14:13.850386+00:00",
+      "last_data": "2026-07-06T01:19:08.227501+00:00",
       "last_data_count": 31,
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "research": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-05T23:30:33.897518+00:00",
+      "last_data": "2026-07-06T01:18:13.855330+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-05T23:30:32.682141+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "weather": {
-      "last_data": "2026-07-05T21:13:55.171895+00:00",
+      "last_data": "2026-07-06T01:18:51.420904+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "wikiquote": {
-      "last_data": "2026-07-05T21:14:23.948339+00:00",
-      "last_data_count": 46,
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_data": "2026-07-06T01:19:17.315410+00:00",
+      "last_data_count": 22,
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-05T21:14:18.514737+00:00",
+      "last_data": "2026-07-06T01:19:11.528550+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-05T21:12:58.016304+00:00"
+      "last_ok": "2026-07-06T01:18:06.206365+00:00"
     }
   },
   "twitch_live": [],
@@ -6503,7 +6574,7 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165119"
+    "last_full_window": "165120"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -6515,13 +6586,9 @@
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
   "watchdog_failing_since": {},
-  "water_slots_sent": [
-    "2026-07-05|21",
-    "2026-07-05|18",
-    "2026-07-05|12",
-    "2026-07-05|15"
-  ],
+  "water_slots_sent": [],
   "weather_seen_ids": [
+    "cf5766defc35c98e",
     "a2b7e01f9c1bea5f",
     "89a648215888a29c",
     "c9ca0ccaa248820c",
@@ -6632,8 +6699,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "innovators_artists",
-  "wikiquote_last_sent": "2026-07-05T7",
+  "wikiquote_last_category": "activists_thinkers",
+  "wikiquote_last_sent": "2026-07-06T0",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-07-03",
@@ -6644,7 +6711,7 @@
     "activists_thinkers:Mother Teresa": "2026-06-27",
     "activists_thinkers:Ralph Waldo Emerson": "2026-06-29",
     "activists_thinkers:Rosa Parks": "2026-07-01",
-    "activists_thinkers:Susan B. Anthony": "2026-06-26",
+    "activists_thinkers:Susan B. Anthony": "2026-07-06",
     "innovators_artists:Buckminster Fuller": "2026-07-03",
     "innovators_artists:Frida Kahlo": "2026-06-29",
     "innovators_artists:Henry Ford": "2026-06-27",
