@@ -1,5 +1,6 @@
 {
   "anthropic_seen": [
+    "06e4825659fcfbc8",
     "9c4654458178d605",
     "cf5089dafb46dfc1",
     "36643fcc6beb7104",
@@ -115,6 +116,24 @@
       "title": "Fresh look needed at licensing approach for small reactors - Likhachev",
       "topic": "energy",
       "url": "https://www.world-nuclear-news.org//articles/fresh-look-needed-at-licensing-approach-for-small-reactors---likhachev"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "The Odyssey",
+      "title": "What Is the Release Date for Christopher Nolan\u2019s The Odyssey? - NBC TV Network",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPOTh1RFRCNTJ4Y1FFSFZ2b0dtYkJIT3E2MkxreTJVaTRaVVNxREN4dGdPVlhZc05BQ1I0dWhPZU56YnBxbE1XcmFPRWZjR2FUMVg4dFFIeFNCeTlxV05OU2VrRkNqbkxUSE5xLXlrSkQtTDV2VWk2YmhYbE96b1duZFd3YkZaVnlncXRLWlBVTWlnRnBHaXc?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-07-06",
@@ -4464,6 +4483,114 @@
       "topic": "habits",
       "ts": "2026-07-06T16:43:08.575233+00:00",
       "url": ""
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "131a4d4a701f0860",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Batman Part II",
+      "title": "Wait, Did A Major Batman Villain Just Get Confirmed For Robert Pattinson\u2019s Part II? - Cinemablend",
+      "topic": "movies",
+      "ts": "2026-07-06T18:33:32.492888+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQaTNTMlBSWWxWaXpKdVJEYURyMzVHcVdYNHZkdWRkNllSNXdQLTJZUEgzTHdjZEJvM0ppUnY1OVZmcUtDNUpJY1BBYlB6MG9CcUF6SDJXc2FVeWlqcUw5NC1IaU5nV2RlbWJ1bm8zZXloWnRxYzBtT2hJd19GU2dUbVZXa0NQeU9taE5WckdjdjVvdFBVNTJCdVU5XzZrUHZERmQ0RWJ3YVQyYUU?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "575bea31447f21b2",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Beyond the Spider-Verse",
+      "title": "'Beyond The Spider-Verse' Just Got A New Production Update, And Miles Morales Fans Can Finally Relax A Little - Comic Basics",
+      "topic": "movies",
+      "ts": "2026-07-06T18:33:33.514323+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPWTJhUVdaalVZZnA4MndSalpmc3RxRlF3Sk14MjJ4ZE5YOTVfOWl6czlTMGxGcTZiREt4YTZuaTRRbHlROWJCejdEQTNlUU44M3NiNXBBdURkVzBEaEd4VFU3ZkRXdDNpdmZlMVlQY2dFUmVqcWY5bHNaMDE3NmMwU3hTNnNTOWlzZkxVYlhWcXo2ZjZyV0J0R29Fa1NyeUxVQk03Ul9LUjVWeEh6ejlUdlpNOGYwWnVnaVV1a1JMZEFWWXE5c3NwZUt4MmhjZ0ZB?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Animal - PLVTINUM\n(because you like SIYDICK)",
+      "id": "9bc2c83e5630c88b",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-07-06T18:33:39.628108+00:00",
+      "url": "https://www.deezer.com/track/2416743185"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "7b278739e704f0eb",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-07-06T18:34:50.672195+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 7:49 PM - max 53deg, SW to NE. Look up!",
+      "id": "ea2b4d4fdeb454e1",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-06T18:35:11.458179+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 5:40 AM - max 62deg, NW to SE. Look up!",
+      "id": "c719f4a7726f9e09",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-06T18:35:11.751083+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "A global workspace in language models - Anthropic",
+      "id": "9d8bb1144f4bc065",
+      "score": 64,
+      "severity": "moderate",
+      "source": "Anthropic",
+      "title": "Anthropic",
+      "topic": "anthropic_news",
+      "ts": "2026-07-06T18:35:12.590098+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBNZzhNYnVQekYwQzlfQmt2Q2JWbXNXUmNqVk1JaWU4SkM2d1dORGE1eHdQdFdVQ1l1VDNUaExHMTZVRW5jS3pfanFHYWh5dzFmTmg2U0pMd2JfX2otLThTWA?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Quick reminder to drink some water.",
+      "id": "c2cbc0a88adee667",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-07-06T18:35:14.039959+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Centuries before the grandeur of classical Greece, an enigmatic civilization flourished on the sun-drenched island of Crete, a maritime empire whose reach extended across the Aegean. These were the Minoans, a people named after the legendary King Minos, though whether he was a single monarch or a dynastic title remains one of their many tantalizing mysteries. From approximately 2700 to 1450 BCE, they built an advanced society, devoid of the formidable fortifications that characterized many of their mainland contemporaries. Instead, their sprawling, multi-storied palaces at Knossos, Phaistos, Mallia, and Zakros stood as testaments to their wealth, architectural ingenuity, and perhaps, a sense of security fostered by their island isolation and naval prowess. These were not merely royal residences but vibrant administrative, religious, and economic hubs, adorned with stunning frescoes depicting acrobatic bull-leapers, graceful dolphins, and serene priestesses, hinting at a sophisticated culture that reveled in beauty and spectacle.\n\nWhat truly set the Minoans apart was their profound connection to the sea. Lacking abundant fertile land and mineral resources, they became master mariners, their sleek, bronze-age ships crisscrossing the Mediterranean. They established extensive trade networks, exchanging Cretan olive oil, wine, and elaborate pottery for tin from distant lands, copper from Cyprus, and precious goods from Egypt and the Levant. This economic dynamism fueled their cultural flourishing, allowing for the development of two distinct writing systems, Cretan Hieroglyphic and later Linear A, both of which remain largely undeciphered, guarding the intimate details of their daily lives and beliefs. Their religion, from what little can be gleaned from archaeological evidence, appears to have centered around a powerful mother goddess, worshiped in caves and peak sanctuaries, often accompanied by animal sacrifices and ritualistic ceremonies. The bull, so prominently featured in their art, held a significant, if still debated, symbolic role, possibly representing power, fertility, or even a divine essence.\n\nThe dramatic end of the Minoan civilization is a subject of much scholarly debate, interwoven with human tragedy and the unforgiving forces of nature. Around 1600 BCE, the colossal eruption of the Thera volcano (modern-day Santorini), a mere 70 miles north of Crete, unleashed a cataclysm of unparalleled scale. The eruption generated massive tsunamis that would have devastated coastal settlements and fleets, while a subsequent ash cloud would have blanketed parts of Crete, disrupting agriculture for years. While the initial eruption likely didn't instantly wipe out the Minoans, it severely weakened their infrastructure, trade routes, and perhaps, their morale. This period of vulnerability coincided with the rising power of the Mycenaeans on mainland Greece, a more militaristic people who, around 1450 BCE, appear to have moved into Crete, taking over the palaces and adapting Minoan Linear A into their own Linear B script. The grand Minoan era, characterized by its unique artistic expression and seemingly peaceful existence, slowly faded, absorbed and transformed by a new dominant culture.\n\nYet, the legacy of the Minoans endures, a testament to their enduring influence on subsequent Mediterranean civilizations.",
+      "id": "ac444521b614d593",
+      "score": 75,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The Minoans of Crete",
+      "topic": "learn",
+      "ts": "2026-07-06T18:35:19.932482+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -4584,7 +4711,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/aviso-semanal-precio-del-04-de-10-julio-2026.pdf",
   "fuel_last_pdf_hash": "b684e645aadcc6c0e3706c11fae5f61a68f8c4070c8c05b6d19b379fd5b64983",
-  "fuel_last_prices_seen_at": "2026-07-06T16:43:03.403268+00:00",
+  "fuel_last_prices_seen_at": "2026-07-06T18:35:10.705608+00:00",
   "fuel_prices": {
     "GLP": 3429.95,
     "Gasoil Regular": 3429.95,
@@ -5471,6 +5598,8 @@
     }
   },
   "iss_seen_passes": [
+    "bca029c81404fba2",
+    "ff8c145fac7306f4",
     "04805dcef8eb468b",
     "0f46d184304b7383",
     "cfbcd32193b51486",
@@ -5553,8 +5682,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "world_history",
-  "knowledge_last_sent": "2026-07-06T4",
+  "knowledge_last_category": "ancient_civilizations",
+  "knowledge_last_sent": "2026-07-06T6",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -5562,6 +5691,7 @@
     "ancient_civilizations:Mohenjo-daro and Harappa": "2026-06-29",
     "ancient_civilizations:Qin Shi Huang and the Terracotta Army": "2026-06-15",
     "ancient_civilizations:The Aztec Empire and Tenochtitlan": "2026-06-24",
+    "ancient_civilizations:The Minoans of Crete": "2026-07-06",
     "ancient_civilizations:The Mycenaeans and the Linear B script": "2026-07-05",
     "ancient_civilizations:The Roman Empire at its height": "2026-06-23",
     "ancient_civilizations:The Shang dynasty and ancient China": "2026-06-21",
@@ -5710,7 +5840,7 @@
   "last_run": {
     "failed": 0,
     "ok": 43,
-    "ts": "2026-07-06T16:41:19.342337+00:00"
+    "ts": "2026-07-06T18:33:27.236010+00:00"
   },
   "launch_seen_ids": [
     "f817e9bc16401db4",
@@ -5742,6 +5872,10 @@
   "life_dashboard_last_week": "2026-W27",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "3dcf08d8b093d43a",
+      "6b6581b430eb456e",
+      "a3b50b7572d0b543",
+      "300496ed1cfeb59d",
       "be570359f14fd8a5",
       "b244dd1235afeb7d",
       "286a999b41974a50",
@@ -5837,11 +5971,7 @@
       "c7ddcbcce9415f24",
       "3fef98c39abd544e",
       "d64587c8d45ac51e",
-      "e36440f9832898dd",
-      "6411410243382797",
-      "634009aa8f23f9a6",
-      "033f3d39c1b06b30",
-      "3b14f7f5ce74eb84"
+      "e36440f9832898dd"
     ],
     "Godzilla x Kong: Supernova": [
       "e971e535097c217e",
@@ -5944,6 +6074,7 @@
       "f64039d17f3a85ea"
     ],
     "Spider-Man: Beyond the Spider-Verse": [
+      "231d33e0790b07e5",
       "41c6f08225d347e5",
       "b7d707dad79bdea7",
       "293a023941b10262",
@@ -6042,10 +6173,11 @@
       "a54496a563066b0d",
       "bdca84f31574cdc5",
       "bc349bc79f238785",
-      "4a8df168969f8dcd",
-      "a1b188898747846c"
+      "4a8df168969f8dcd"
     ],
     "Spider-Man: Brand New Day": [
+      "a03e7f2c19e6a269",
+      "c05d39d775b20717",
       "b57397b305f57602",
       "63571a749d142ff9",
       "d5cdee3ea9ada063",
@@ -6143,11 +6275,11 @@
       "b56e83ff87120c1a",
       "a19f4a7167732008",
       "60830ae5dedc835d",
-      "5ce058c117b83347",
-      "cf3ea33e11663cf5",
-      "ecdad5ea0a4b806e"
+      "5ce058c117b83347"
     ],
     "The Batman Part II": [
+      "4ac8aa892a7bde78",
+      "4b729fdf3fa3f458",
       "232011d0caacddc4",
       "e39694820e7a57e8",
       "794ebf14b580a624",
@@ -6245,11 +6377,41 @@
       "51760f19b1f5142c",
       "c7de8c55c70c4557",
       "7b80592f11c870ef",
-      "2897059f7dae4858",
-      "db121353780ed139",
-      "16f05f28c0f09136"
+      "2897059f7dae4858"
     ],
     "The Odyssey": [
+      "c92e7032df55fe36",
+      "c42010da128b5cc9",
+      "39e080a9adca108f",
+      "45c7166906ef4f34",
+      "0c38c3832eb0b698",
+      "70a68c9561c5f695",
+      "545aae645abad165",
+      "8b23875f86eb8e9d",
+      "ad5ee3a4365285b7",
+      "4a5bdb3fd2793de3",
+      "b5f1e100d2653d3a",
+      "0c71081ac8c3aa16",
+      "23f5f1507c33b4fa",
+      "ef64d76eb617a5e6",
+      "9cc07f8d40b65a97",
+      "72fc9baeb94c9723",
+      "446631966e5f7a71",
+      "e46214a5a80b0ebd",
+      "72b644e571b1788e",
+      "ca210110e7ea411f",
+      "7a5f0f9e4e94a8d6",
+      "053c0a938f82b151",
+      "847abb29798839fe",
+      "72a531e281411f1c",
+      "02843cc9ba0e71dc",
+      "cf2cc8aae05fdb2f",
+      "7cce91c70621dd0f",
+      "f405d7e6b09916ad",
+      "077ff32eaa464f90",
+      "a84a78312205dddb",
+      "d81abae6a6bc7fbd",
+      "1057e23982c2dbfb",
       "aaf82fc9216cda10",
       "18c1c1c6e688807a",
       "48923d5dda84a996",
@@ -6317,39 +6479,7 @@
       "d801cc1fe3808c4b",
       "9a3453a7bd61f82d",
       "0a69a4d24aad3f03",
-      "20b606783fea81d2",
-      "7fbb23cb8b2ff527",
-      "b47c93b9e73be443",
-      "b54c3db20e540eff",
-      "691d1eaf16f7d59a",
-      "b35f7a9f02068174",
-      "27efbe33cc8de93c",
-      "184c0fc2c43fce6c",
-      "173c997565db5dde",
-      "6e7140aac1f26b40",
-      "0bcb849acd7b762c",
-      "19a4f66024a546b7",
-      "805aca9810ec2596",
-      "ac509f939be4f2f7",
-      "b5218c121eea4a0a",
-      "17080b74e5f9f5a0",
-      "3dea3e1a123fb4fc",
-      "2bd7a805a53efc9a",
-      "4ddcdbe2c85d5cef",
-      "ba967c9e38148733",
-      "41951591ac5a6ab0",
-      "743ba1c4ac9ba334",
-      "0c677472636acb10",
-      "8aaed405f5ec6261",
-      "940475968a781b6b",
-      "8916bc6a4d3d08df",
-      "903c588040177838",
-      "e28a435dbe90c7e9",
-      "b005fb059a7c945d",
-      "e3b1131ea336ba2c",
-      "44165e2673951bf5",
-      "7cebc574c274b4b3",
-      "c52256a1bbed3133"
+      "20b606783fea81d2"
     ]
   },
   "movie_release_dates": {
@@ -6486,7 +6616,8 @@
     15872,
     6861841,
     11075898,
-    124712752
+    124712752,
+    10430910
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -6864,15 +6995,6 @@
         "name": "C. Tangana"
       }
     },
-    "987f3669ed04b453": {
-      "applied": null,
-      "created": "2026-06-22T17:58:42.832957+00:00",
-      "kind": "artist",
-      "label": "Chiodos",
-      "payload": {
-        "name": "Chiodos"
-      }
-    },
     "9c61a55d2b323783": {
       "applied": null,
       "created": "2026-07-04T18:44:09.899939+00:00",
@@ -6907,6 +7029,15 @@
       "label": "Jun Senoue",
       "payload": {
         "name": "Jun Senoue"
+      }
+    },
+    "b4943bc3a318b828": {
+      "applied": null,
+      "created": "2026-07-06T18:33:39.628084+00:00",
+      "kind": "artist",
+      "label": "PLVTINUM",
+      "payload": {
+        "name": "PLVTINUM"
       }
     },
     "b6f18d8c34106e34": {
@@ -7279,87 +7410,87 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "apod": {
-      "last_data": "2026-07-06T16:43:23.240388+00:00",
+      "last_data": "2026-07-06T18:35:28.464187+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "deals": {
-      "last_data": "2026-07-06T16:42:22.561388+00:00",
+      "last_data": "2026-07-06T18:34:26.317173+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "energy": {
-      "last_data": "2026-07-06T16:42:41.546915+00:00",
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_data": "2026-07-06T18:34:46.383920+00:00",
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "fda": {
-      "last_data": "2026-07-06T16:42:31.912481+00:00",
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_data": "2026-07-06T18:34:34.843403+00:00",
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "fuel": {
-      "last_data": "2026-07-06T16:43:03.403296+00:00",
+      "last_data": "2026-07-06T18:35:10.705633+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "fx": {
-      "last_data": "2026-07-06T16:43:01.852888+00:00",
+      "last_data": "2026-07-06T18:35:09.259976+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "games": {
       "last_data": "2026-07-06T13:33:40.805493+00:00",
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-06T16:41:33.064352+00:00",
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_data": "2026-07-06T18:33:42.419237+00:00",
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "groceries": {
-      "last_data": "2026-07-06T16:42:31.658313+00:00",
+      "last_data": "2026-07-06T18:34:34.479469+00:00",
       "last_data_count": 249,
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "learn": {
       "last_data": "2026-07-06T13:35:21.575096+00:00",
@@ -7367,76 +7498,76 @@
       "last_ok": "2026-07-06T13:33:28.747702+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "movies": {
-      "last_data": "2026-07-06T16:41:26.096370+00:00",
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_data": "2026-07-06T18:33:34.041035+00:00",
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "music": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-06T16:42:42.437098+00:00",
+      "last_data": "2026-07-06T18:34:51.302194+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "outages": {
-      "last_data": "2026-07-06T16:43:01.126100+00:00",
+      "last_data": "2026-07-06T18:35:08.504234+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-06T16:43:01.171069+00:00",
-      "last_data_count": 26,
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_data": "2026-07-06T18:35:08.566432+00:00",
+      "last_data_count": 29,
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "research": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-06T16:41:28.326947+00:00",
+      "last_data": "2026-07-06T18:33:36.016594+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "weather": {
-      "last_data": "2026-07-06T16:42:41.926879+00:00",
+      "last_data": "2026-07-06T18:34:50.671753+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "wikiquote": {
-      "last_data": "2026-07-06T16:43:14.716182+00:00",
+      "last_data": "2026-07-06T18:35:20.495531+00:00",
       "last_data_count": 25,
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-06T16:43:08.574808+00:00",
+      "last_data": "2026-07-06T18:35:14.039335+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-06T16:41:19.342337+00:00"
+      "last_ok": "2026-07-06T18:33:27.236010+00:00"
     }
   },
   "twitch_live": [],
@@ -7444,7 +7575,7 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165125"
+    "last_full_window": "165126"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -7457,10 +7588,12 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
+    "2026-07-06|15",
     "2026-07-06|12",
-    "2026-07-06|15"
+    "2026-07-06|18"
   ],
   "weather_seen_ids": [
+    "dd39f40e09d355c7",
     "54841c824db0a611",
     "0422576a1ad9ec4d",
     "cf5766defc35c98e",
