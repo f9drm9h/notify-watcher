@@ -84,15 +84,6 @@
       "detail": "",
       "preserve_detail": false,
       "score": 28,
-      "source": "The Odyssey",
-      "title": "What Is the Release Date for Christopher Nolan\u2019s The Odyssey? - NBC TV Network",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPOTh1RFRCNTJ4Y1FFSFZ2b0dtYkJIT3E2MkxreTJVaTRaVVNxREN4dGdPVlhZc05BQ1I0dWhPZU56YnBxbE1XcmFPRWZjR2FUMVg4dFFIeFNCeTlxV05OU2VrRkNqbkxUSE5xLXlrSkQtTDV2VWk2YmhYbE96b1duZFd3YkZaVnlncXRLWlBVTWlnRnBHaXc?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
       "source": "Avengers: Doomsday",
       "title": "Marvel Officially Brings Kang the Conqueror Back Before \u2018Avengers: Doomsday\u2019 - IMDb",
       "topic": "movies",
@@ -178,6 +169,24 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "The Odyssey moved from Jul 6 2026 to Jul 15 2026 (+9 days)",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "Movies",
+      "title": "Movie: The Odyssey",
+      "topic": "movies",
+      "url": "https://www.themoviedb.org/movie/1368337"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "The Odyssey",
+      "title": "What Is the Release Date for Christopher Nolan\u2019s The Odyssey? - NBC TV Network",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPOTh1RFRCNTJ4Y1FFSFZ2b0dtYkJIT3E2MkxreTJVaTRaVVNxREN4dGdPVlhZc05BQ1I0dWhPZU56YnBxbE1XcmFPRWZjR2FUMVg4dFFIeFNCeTlxV05OU2VrRkNqbkxUSE5xLXlrSkQtTDV2VWk2YmhYbE96b1duZFd3YkZaVnlncXRLWlBVTWlnRnBHaXc?oc=5"
     }
   ],
   "digest_last_sent": "2026-07-05",
@@ -3706,6 +3715,114 @@
       "topic": "wikiquote",
       "ts": "2026-07-06T05:40:14.272348+00:00",
       "url": ""
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "4a46d79d7c0493d7",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday Will Officially Include 4 of the Smartest MCU Heroes Ever - The Direct",
+      "topic": "movies",
+      "ts": "2026-07-06T09:46:05.586883+00:00",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1SRzE4aGVFQVFNb0NGb1dPMkhmcDNObkxabVJ3cEdENHlaQXlDNmNMX1NKQXlhS0lSaVI1My1nalZYSm5VbnZwNl9wbUpZajE2Q2djYWlXME9ob3Q4dzZwNjU4YTJ5SXNZaVVXMEV4MXFMOXVkREE?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "c969d7b206341982",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Marvel Studios Officially Responds To Avengers: Doomsday Leaks - The Direct",
+      "topic": "movies",
+      "ts": "2026-07-06T09:46:05.587861+00:00",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOSEVXb01pQ3lpZkNBdlBMQVlMSkEtc09HZmxpdnR2bDBKOWhyN2JxVHp4ZHlrejNpOThmSkg0ZUd2aFBMVXRoMmxxZ0MwM3J2TzQyZldOMG8tdnJYYVMzRXFORHF2LWVMY2dzc1dvSUpGRkRuZjFsb1lkYy1SVkpKU0QwTQ?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "639391e93bc7603d",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Anne Hathaway Just Turned \u2018The Odyssey\u2019 London Photocall Into a Glowing Pregnancy Announcement Encore - IMDb",
+      "topic": "movies",
+      "ts": "2026-07-06T09:46:06.913832+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBoQTRYMF9IcTdvX0U1LTk2NmdkSE1NYXpJa2VGVFZwbWZmTndHZlpISHZwdzZyQzViMlV6MTIzTUNyOXJUbjZ0ZVB4Y1ZHSVNaX1VlMTF4OWRhZ0p2STBxcXlkU1dyYXM?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "9558827352a9025d",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Christopher Nolan's first The Odyssey video game announced - Polygon.com",
+      "topic": "movies",
+      "ts": "2026-07-06T09:46:06.915450+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQZzk0NEk0a3NDZkFUNFUtRklWS2lDelpvdHB5YmhOdm9rVW9yZFVIZ3FlTTJwU0Z5UWdDYmd0ZGduM3dCbXpMS2g3ZElDYTdTOEt5TjNnalVoeTJmN1ZxcjgzVS1ObFlldXhnS09aREd5ekVXREJiM3BoS1gyWm9iY0dObUVKYlJ3WlRLbg?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Falcon 9 Block 5 | Transporter 17 (Dedicated SSO Rideshare) launches in ~21h.",
+      "id": "76e780a562886bc5",
+      "score": 62,
+      "severity": "moderate",
+      "source": "Launches",
+      "title": "Rocket launch",
+      "topic": "launches",
+      "ts": "2026-07-06T09:47:25.886897+00:00",
+      "url": "https://x.com/i/broadcasts/1YxNrryLloQxw"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 7:49 PM - max 53deg, SW to NE. Look up!",
+      "id": "7746764566cbf275",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-06T09:47:26.784503+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 5:40 AM - max 62deg, NW to SE. Look up!",
+      "id": "60dc1412637ef89f",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-06T09:47:27.040570+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Before the Model T, the automobile was a plaything of the wealthy, a bespoke creation often hand-built by skilled craftsmen. Each car was a unique artifact, its production slow, expensive, and limited. Henry Ford, a man driven by an almost messianic belief in the power of the machine to democratize progress, saw this inefficiency not as an unavoidable reality, but as a challenge to be overcome. He envisioned a car for the common man, a reliable, affordable machine that would liberate families from the confines of their immediate communities and open up a world of possibilities. To achieve this, he knew he couldn't simply make existing production methods faster; he needed a radical transformation, a new way of thinking about industrial production itself. His initial attempts, while more efficient than his competitors, still fell short of his grand ambition. The true revolution would come not just from the car itself, but from the method of its creation.\n\nThe genesis of the moving assembly line wasn't a sudden flash of genius, but a gradual, iterative process born from observation and relentless experimentation. Ford and his team, including figures like William C. Klann and Clarence Avery, drew inspiration from diverse sources: the continuous flow of grain in mills, the disassembly lines of Chicago's meatpacking plants where carcasses moved past stationary butchers, and even the simple principles of gravity. They began with smaller components, like magnetos and transmissions, experimenting with chutes and conveyor belts to bring the work to the worker, rather than the worker to the work. The crucial insight was to break down the complex task of building a car into its simplest, most repetitive steps. Each worker would perform one, perhaps two, highly specialized operations, as the chassis slowly but steadily advanced past their station. This meant sacrificing the individual craftsman's pride in building a whole object, for the collective efficiency of a meticulously choreographed industrial ballet.\n\nThe impact was immediate and staggering. In 1913, when the full moving assembly line for the Model T chassis was implemented at Ford's Highland Park plant, the time it took to assemble a single car plummeted from over 12 hours to a mere 93 minutes. This unprecedented efficiency led directly to a dramatic reduction in price, making the Model T accessible to millions. Ford famously declared that customers could have \"any color so long as it is black,\" a testament to the standardization that fueled this efficiency. But the human drama behind this triumph was profound. The work was mind-numbingly repetitive, demanding little skill but immense endurance. To combat the high turnover rate and motivate workers, Ford made the revolutionary decision in 1914 to pay his employees five dollars a day \u2013 double the going rate for factory work \u2013 along with an eight-hour workday. This \"Five Dollar Day\" was not purely altruistic; it was a shrewd business decision that ensured a stable, motivated workforce, and perhaps even more significantly, created a new class of consumers who could afford to buy the very cars they were building.\n\nThe legacy of the Model T and the moving assembly line stretches far beyond the automotive industry. It birthed modern mass production, a system that would transform countless other sectors, from home appliances to electronics.",
+      "id": "972db1621eb2617d",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The Model T and the moving assembly line",
+      "topic": "learn",
+      "ts": "2026-07-06T09:47:35.491194+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cNow the mass of mankind are plainly... choosing a life like that of brute animals... (Bk. 1, Chapter III)\u201d\n\u2014 Aristotle\n\nImagine a world where the very foundations of thought, reason, and ethics were being laid brick by painstaking brick. This was the world of Aristotle, a towering figure whose shadow stretched across millennia. Born in Stagira, a small city-state in northern Greece, in 384 BCE, he was not just a philosopher, but a polymath in the truest sense, delving into everything from biology and physics to poetry and politics. His early life was shaped by his father, Nichomachus, a physician to King Amyntas III of Macedon, which undoubtedly instilled in him a keen observation of the natural world and a respect for empirical evidence. This background set him apart from many of his philosophical predecessors, grounding his abstract thought in the concrete realities of existence. At seventeen, he journeyed to Athens, the intellectual heart of the ancient world, and there he entered Plato's Academy, where he would remain for twenty years, first as a student and then as a teacher. The intellectual ferment of Athens, a city still reeling from the Peloponnesian War but brimming with democratic ideals and philosophical inquiry, provided the perfect crucible for his burgeoning genius.\n\n  It was within this vibrant intellectual context, likely while reflecting on the human condition and the pursuit of eudaimonia\u2014often translated as \"flourishing\" or \"the good life\"\u2014that Aristotle articulated his observations on human behavior, captured in the quote from his Nicomachean Ethics. By this point, he had established his own school, the Lyceum, after a period serving as tutor to Alexander the Great, a role that further broadened his perspective on governance and human nature. He was an observer of society, analyzing the various modes of living and their ultimate ends. When he speaks of \"the mass of mankind\u2026 choosing a life like that of brute animals,\" he wasn't simply being dismissive or elitist, but rather making a fundamental point about the hierarchy of human aims. For Aristotle, the highest human good wasn't mere pleasure or wealth, which he saw as transient and base, akin to the unthinking pursuit of gratification by animals. Instead, true human flourishing lay in the exercise of reason, in intellectual virtue, and in living a life guided by moral excellence. This perspective emerged from a deep contemplation of what makes humans distinct, what gives life meaning beyond mere biological existence. The world around him was one of both profound intellectual advancement and stark social realities, where a significant portion of the population lived in conditions that offered little scope for intellectual pursuit, focusing instead on survival and immediate gratification.\n\n  Today, centuries removed from the Athenian agora, Aristotle's observation continues to resonate with startling clarity. In an age of unprecedented technological advancement and material abundance, the question of what constitutes a \"good life\" remains as pertinent as ever. We are constantly bombarded with messages that equate happiness with consumerism, instant gratification, and the relentless pursuit of pleasure.",
+      "id": "9302fe0307093bf4",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Aristotle",
+      "topic": "wikiquote",
+      "ts": "2026-07-06T09:47:40.492606+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -4688,6 +4805,8 @@
     }
   },
   "iss_seen_passes": [
+    "d24790f2d29fdce2",
+    "7643a7cd6a1ecdc6",
     "368cf15a03bd815b",
     "aba184aa7a89772c",
     "0617aa1ba668e172",
@@ -4760,8 +4879,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "science",
-  "knowledge_last_sent": "2026-07-06T1",
+  "knowledge_last_category": "technology",
+  "knowledge_last_sent": "2026-07-06T3",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -4887,6 +5006,7 @@
     "technology:Nikola Tesla and alternating current": "2026-07-02",
     "technology:Ni\u00e9pce and the first photograph": "2026-06-26",
     "technology:The Haber-Bosch process and synthetic fertilizer": "2026-06-14",
+    "technology:The Model T and the moving assembly line": "2026-07-06",
     "technology:The War of the Currents: Edison versus Westinghouse": "2026-06-19",
     "technology:The Wright brothers and the first powered flight": "2026-07-04",
     "technology:The dynamo and the generation of electricity": "2026-06-13",
@@ -4915,9 +5035,10 @@
   "last_run": {
     "failed": 0,
     "ok": 43,
-    "ts": "2026-07-06T05:38:42.455825+00:00"
+    "ts": "2026-07-06T09:46:02.332461+00:00"
   },
   "launch_seen_ids": [
+    "f817e9bc16401db4",
     "84eeb156648689c9",
     "c88f136e6de9f1c0",
     "3ef8e7f31ca1eabd",
@@ -4946,6 +5067,12 @@
   "life_dashboard_last_week": "2026-W27",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "8545a7b7ecb3e6d7",
+      "51cc60af2d23b52f",
+      "fbbec80be4eb97f5",
+      "f07b9bca7cc768f0",
+      "a2caf803d5ac6ca0",
+      "82f59156ca72814f",
       "93015bf4d491bca3",
       "f6c83c70e5e97618",
       "08fd145e5c535a22",
@@ -5039,13 +5166,7 @@
       "915d3331803cece2",
       "edc4bbec64d25ef8",
       "6a8dd71af8d1670e",
-      "4a0405e6db60b8ef",
-      "a1eda6d93e27c5ae",
-      "3b0329b05befc279",
-      "ffaa542dea4c2bf3",
-      "c06e9ccc3219e3e4",
-      "98be756acacc5cb9",
-      "96a2fc8df633569d"
+      "4a0405e6db60b8ef"
     ],
     "Godzilla x Kong: Supernova": [
       "e971e535097c217e",
@@ -5250,6 +5371,10 @@
       "deefdc93f875adbb"
     ],
     "Spider-Man: Brand New Day": [
+      "3396c5bba8bf04a2",
+      "a46830c50ef8757d",
+      "6dd9246cccd65c4d",
+      "7571d2664723fd69",
       "e24125e866e16c37",
       "a9eb37432a257f78",
       "ecda2f851207e5d6",
@@ -5345,13 +5470,10 @@
       "a9d2ed0417a397ad",
       "ffca4dedb65e2643",
       "5f23a7a1dc782fb9",
-      "9a79f235119bd733",
-      "3be18a519474cc61",
-      "165ad8bdbcb373bb",
-      "d385c6cc916da53a",
-      "6cbbcdedc2540edf"
+      "9a79f235119bd733"
     ],
     "The Batman Part II": [
+      "b4e7bdbe2ab32732",
       "216d2864baaf9efb",
       "e617ae2507ab7492",
       "92fc2461651b661a",
@@ -5450,10 +5572,44 @@
       "9271ad7cf1c6b2b6",
       "5e5ae4a229893fde",
       "9b2867155bfca02e",
-      "673041460bf12460",
-      "38c992fda615d9bf"
+      "673041460bf12460"
     ],
     "The Odyssey": [
+      "173c997565db5dde",
+      "6e7140aac1f26b40",
+      "0bcb849acd7b762c",
+      "19a4f66024a546b7",
+      "805aca9810ec2596",
+      "ac509f939be4f2f7",
+      "b5218c121eea4a0a",
+      "17080b74e5f9f5a0",
+      "3dea3e1a123fb4fc",
+      "2bd7a805a53efc9a",
+      "4ddcdbe2c85d5cef",
+      "ba967c9e38148733",
+      "41951591ac5a6ab0",
+      "743ba1c4ac9ba334",
+      "0c677472636acb10",
+      "8aaed405f5ec6261",
+      "940475968a781b6b",
+      "8916bc6a4d3d08df",
+      "903c588040177838",
+      "e28a435dbe90c7e9",
+      "b005fb059a7c945d",
+      "e3b1131ea336ba2c",
+      "44165e2673951bf5",
+      "7cebc574c274b4b3",
+      "c52256a1bbed3133",
+      "7043ddb6ba4fe212",
+      "bb6c8d6c6fd8b8f7",
+      "2a9396a19005e211",
+      "29f519e3cfc25e52",
+      "9ff6e84dba23e0ce",
+      "e1336a9024f6d665",
+      "a84a78312205dddb",
+      "d81abae6a6bc7fbd",
+      "ea482d46d880023c",
+      "1057e23982c2dbfb",
       "ccae6749cefea67f",
       "ba6761b4b52d0749",
       "7ea300162b4944dc",
@@ -5518,48 +5674,13 @@
       "8b5620023d1994e6",
       "e47c3da94c1d5a50",
       "61a3ef3efe0a330d",
-      "c00a4e532822b226",
-      "b8056266ce5e6bb6",
-      "9a3453a7bd61f82d",
-      "bdbcf44aebbb6b42",
-      "98128953d4a313d8",
-      "0a69a4d24aad3f03",
-      "feabfd57a9f1cbe1",
-      "20b606783fea81d2",
-      "7fbb23cb8b2ff527",
-      "b47c93b9e73be443",
-      "b54c3db20e540eff",
-      "691d1eaf16f7d59a",
-      "cfe865cca0139d02",
-      "45f2234f76764668",
-      "324bf97543cbf967",
-      "0692fb90e4976ef2",
-      "e70895e5c9066f01",
-      "60719a5515b4474d",
-      "c5e44a0b7c92e68c",
-      "ef8059225d2eb135",
-      "7b7d40a0f6e5c6c8",
-      "34e2386ca85b339b",
-      "ec12564b41c5462e",
-      "034d936bed3891ea",
-      "045389d81503d907",
-      "d4eb01a1f1d12735",
-      "221c9fb410cfbab3",
-      "d801cc1fe3808c4b",
-      "257da6b0e65cc6c3",
-      "dfe4358c582c2a19",
-      "ee4566470623f2e2",
-      "b35f7a9f02068174",
-      "27efbe33cc8de93c",
-      "184c0fc2c43fce6c",
-      "dd7c1caf57a70341",
-      "ad7f07dcf06936af"
+      "c00a4e532822b226"
     ]
   },
   "movie_release_dates": {
     "1003596": "2026-12-16",
     "1288438": "2027-03-25",
-    "1368337": "2026-07-06",
+    "1368337": "2026-07-15",
     "806704": "2027-09-30",
     "911916": "2027-06-17",
     "969681": "2026-07-29"
@@ -6470,10 +6591,10 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "apod": {
       "last_data": "2026-07-05T21:14:36.245341+00:00",
@@ -6481,35 +6602,35 @@
       "last_ok": "2026-07-05T21:12:58.016304+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "deals": {
-      "last_data": "2026-07-06T05:39:37.104290+00:00",
+      "last_data": "2026-07-06T09:47:02.027101+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "energy": {
-      "last_data": "2026-07-06T05:39:46.968212+00:00",
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_data": "2026-07-06T09:47:11.764580+00:00",
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "fda": {
-      "last_data": "2026-07-06T05:39:37.332329+00:00",
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_data": "2026-07-06T09:47:02.423675+00:00",
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "fuel": {
       "last_data": "2026-07-05T21:14:15.922476+00:00",
@@ -6517,17 +6638,17 @@
       "last_ok": "2026-07-05T21:12:58.016304+00:00"
     },
     "fx": {
-      "last_data": "2026-07-06T05:39:59.622446+00:00",
+      "last_data": "2026-07-06T09:47:24.881875+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "games": {
       "last_data": "2026-06-29T12:05:54.542184+00:00",
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-06T05:38:54.229686+00:00",
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_data": "2026-07-06T09:46:15.601217+00:00",
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "groceries": {
       "last_data": "2026-07-05T21:13:45.176012+00:00",
@@ -6535,97 +6656,97 @@
       "last_ok": "2026-07-05T21:12:58.016304+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "learn": {
       "last_ok": "2026-07-05T18:40:58.822695+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "movies": {
-      "last_data": "2026-07-06T05:38:48.932777+00:00",
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_data": "2026-07-06T09:46:09.663104+00:00",
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "music": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-06T05:39:47.811458+00:00",
+      "last_data": "2026-07-06T09:47:12.370975+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "outages": {
       "last_data": "2026-07-06T01:19:08.095691+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-06T05:39:58.968293+00:00",
+      "last_data": "2026-07-06T09:47:24.095458+00:00",
       "last_data_count": 32,
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "research": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-06T05:38:50.999384+00:00",
+      "last_data": "2026-07-06T09:46:11.540763+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "weather": {
-      "last_data": "2026-07-06T05:39:47.348122+00:00",
+      "last_data": "2026-07-06T09:47:11.944887+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "wikiquote": {
-      "last_data": "2026-07-06T05:40:09.827776+00:00",
-      "last_data_count": 20,
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_data": "2026-07-06T09:47:36.170673+00:00",
+      "last_data_count": 91,
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-06T05:40:04.726624+00:00",
+      "last_data": "2026-07-06T09:47:30.275085+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-06T05:38:42.455825+00:00"
+      "last_ok": "2026-07-06T09:46:02.332461+00:00"
     }
   },
   "twitch_live": [],
@@ -6633,7 +6754,7 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165121"
+    "last_full_window": "165123"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -6759,8 +6880,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "science_pioneers",
-  "wikiquote_last_sent": "2026-07-06T1",
+  "wikiquote_last_category": "philosophers",
+  "wikiquote_last_sent": "2026-07-06T3",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-07-03",
@@ -6792,7 +6913,7 @@
     "leaders:Theodore Roosevelt": "2026-07-03",
     "leaders:Thomas Jefferson": "2026-06-28",
     "leaders:Winston Churchill": "2026-06-30",
-    "philosophers:Aristotle": "2026-06-27",
+    "philosophers:Aristotle": "2026-07-06",
     "philosophers:Arthur Schopenhauer": "2026-06-28",
     "philosophers:Confucius": "2026-07-01",
     "philosophers:Friedrich Nietzsche": "2026-06-29",
