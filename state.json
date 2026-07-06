@@ -1,5 +1,6 @@
 {
   "anthropic_seen": [
+    "52aeb58ab019ce20",
     "06e4825659fcfbc8",
     "9c4654458178d605",
     "cf5089dafb46dfc1",
@@ -134,6 +135,51 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "A Must-Watch Superhero Film Before \u2018Spider-Man: Brand New Day\u2019 Is Officially on Netflix - Collider",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE11Yk8tVDVmRHVlS2pRWnptM2IxcTdsSkJZT0dhdTNNdW5UeVIwNTc0U0U0Q3psa1VpUDJfWkswUVRxZ1FVT05fYUdLNWNYY1Nuc0J3SUdKb003WmtzVUF5aEJ6SHZoQ2hRS3BZ?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 First Reactions Are Raves for Christopher Nolan\u2019s \u2018Astonishing\u2019 Epic and \u2018Flawless Filmmaking\u2019: \u2018Breathtaking, Bold and Perfection\u2019 - Variety",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPV1dpRHBxSWRuMEg5MVF2cmtGZlRDeGh0eFRMM2xoM3ZHTk1qc254Vi1sRE8xVmdBR1Y2N3lhUFY3QmxVU3NzT1JhWDRMeVNqdU9nN2xtYjhLVXowTXJjMDVNcVpjMllZMktoNHdKNm4wVzhTTkZ1WV9nMW5rUkRLSjVza2xmenQ2azdObldhOTdBNnZpWERr?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Odyssey",
+      "title": "The Odyssey - Official 'Completely in IMAX' Featurette - IGN Benelux",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNaXB2aVcxVWh6ZmJIdHJuckxnbUJMYWUwbU5PaDJTSmhQTTBBNFlFSENWb3VrMWVxcFUzcGhnU3FEUUJ1Q3FuSzF0aWZ0TGg0aFUzMUdYeWx3cktpZ2xqLUVmdFY3d2pCa25rRFVyTlBGVHNfY1VzNmpHcklOLUJkMXVoOEVvdDJGaTVROXdWZXRQOUJjY1hvQzh3YjVZQkl6LVBSTzVDVFBfakRpbGw5bDZ3dmJWd0VUX2V1bzl0SQ?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Batman Part II",
+      "title": "Robert Pattinson Shows Off New Bruce Wayne-esque Look As The Batman Part 2 Begins Filming - The Direct",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPYkd0cy01a0lvTTVKMnNHYnhtdkttc1RyamFUWk9MX3I0QWNnaHpGVGJIZThpNUtDYnAtOXBvTUJxUnluQjlHWDVpYWRqa0lHUnlobEZfUUo4c3VYNHNTWVZSSnFPYWh4VHNMaWJSQ0lMNTNEakMxalh1TlpxTzdYVlMxWmdueG1I?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Beyond the Spider-Verse",
+      "title": "\u2018Beyond The Spider-Verse\u2019 Just Got A New Production Update, And Miles Morales Fans Can Finally Relax A Little - IMDb",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBUQU1vQndNOU1OR0ZKYlctNi1QM09IazdUZTZzcG5HbVZ0d0RPb2ZXeGMwek9yc19VMWhCRDRiYVN0Z2w2UDN2RlpvQzFZRUREVUdCOXlyV2lHdU9HSWVOblRaeWRMUQ?oc=5"
     }
   ],
   "digest_last_sent": "2026-07-06",
@@ -4603,6 +4649,114 @@
       "topic": "twitch",
       "ts": "2026-07-06T20:29:02.804108+00:00",
       "url": "https://twitch.tv/RiddlesMK"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "d7dde13dc6694939",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "The Odyssey - Official \u2018In Rehearsal Tom Holland\u2019 Featurette - IGN India",
+      "topic": "movies",
+      "ts": "2026-07-06T21:57:53.024091+00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQY29Ba2pzRm9jWDdMZG5LRGJYSi1XNUxpQWZqNFVGOTVEWHRXUDdTSkVaSjNPX3JUM2NUcXdJM21TcXJ5cmFCNnpwLWZwdUgyMmE5dW9RM0ZIUnlBZEtyLVpHSzg4RlNraEhGRGJNb2VsNXRrS0NnZHJ0SFRWdDc3ZlkzWjk1NkpfTlNhOXFhVTVDN1N4TXMwZ0h2NXlraG1i?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "5b2d0fbfc5168498",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Beyond the Spider-Verse",
+      "title": "Spider-Man: Beyond The Spider-Verse Gets Best Production Update Yet 1 Year Ahead Of 2027 Release Date - IMDb",
+      "topic": "movies",
+      "ts": "2026-07-06T21:57:55.468274+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9ibXBwak4tT1ozaWtUanp3WGNCSXJaZVVxQjRwTGJXdENjNFBua1RLZVdjZm5aZ1ZLSl9FQlM0bnFCU044ZGZVNGpjSll4M25MMW9VaXBkTG5yNXJOMXZ3Uk0xNU1Ncnc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Red Eye - Darci\n(because you like SIYDICK)",
+      "id": "341e9e305cca1b09",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-07-06T21:58:01.238565+00:00",
+      "url": "https://www.deezer.com/track/3336967111"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 7:49 PM - max 52deg, SW to NE. Look up!",
+      "id": "e30f7a2a261fa1ce",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-06T21:59:08.973504+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 5:40 AM - max 61deg, NW to SE. Look up!",
+      "id": "47d3b1305edd0289",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-06T21:59:09.305273+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Government of Alberta uses Claude to find and fix cybersecurity vulnerabilities - Anthropic",
+      "id": "62557d93fa17a960",
+      "score": 64,
+      "severity": "moderate",
+      "source": "Anthropic",
+      "title": "Anthropic",
+      "topic": "anthropic_news",
+      "ts": "2026-07-06T21:59:10.125252+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE10OWxIVTI4ckF3STdtUTIzSW9CdFRYZFRPUElzYW10ckxOZ3VPMWNGWjM4Vk9PMHllYjc1dkNuY1Y2OW5jSHI1eENJek9tcGk4UFhkR1NCSjU3X0lROXREZzhCVUVrTExkTmdCYnBRZHBpS044UXF5RUpn?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Pause for a moment and have a drink of water.",
+      "id": "d914c384ed85d43a",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-07-06T21:59:11.601074+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "The world at the turn of the 20th century was buzzing with the new revelations of radioactivity. Roentgen had uncovered X-rays, Becquerel stumbled upon uranium's mysterious emanations, and the Curies meticulously extracted radium. Physicists, enthralled by these invisible rays, began to probe the very air around them, expecting to find it electrically conductive due to background radiation. Indeed, they did, but the more they tried to shield their electroscopes from known sources of radiation \u2013 the earth, radioactive rocks, even the walls of their laboratories \u2013 the more perplexing the situation became. The residual ionization stubbornly persisted, and even increased, when they ascended to higher altitudes. This was a direct contradiction to the prevailing assumption that all such radiation originated from the ground.\n\nDominating this intellectual landscape was Theodor Wulf, a German Jesuit priest and physicist with an inventive mind and a knack for precision instrumentation. Wulf, determined to settle the question of atmospheric radiation's origin, embarked on a daring experiment in 1910. He constructed a remarkably sensitive and robust electroscope, capable of measuring ionization with unprecedented accuracy. His chosen location for observation was the Eiffel Tower, a monumental structure that offered a unique vertical laboratory. He meticulously measured the ionization at the tower's base and then painstakingly carried his delicate apparatus to its summit, nearly 1,000 feet above the Parisian streets. His results were astonishing: the radiation at the top of the tower was *greater* than at its base, not less as predicted if the source was terrestrial. This was a profound, almost heretical finding, yet Wulf, with a scientist's caution, simply reported his observations, leaving the radical implications for others to fully grasp.\n\nIt was Victor Hess, an Austrian physicist, who possessed the vision and courage to push Wulf's observation to its logical, breathtaking conclusion. While others dabbled with balloons, Hess committed himself to a series of perilous ascents, personally accompanying his sophisticated instruments high into the sky. Between 1911 and 1912, he undertook ten daring balloon flights, often to altitudes exceeding 5,000 meters, enduring freezing temperatures and the psychological strain of solitary flight in primitive gondolas. Each ascent was a gamble, a test of both his scientific acumen and his physical endurance. During these high-altitude voyages, he consistently observed a dramatic increase in radiation, reaching a peak at the highest points of his flights. The conclusion was inescapable: the radiation was coming from *above*, from space itself, bombarding Earth from the cosmos. He initially called them \"H\u00f6henstrahlung\" or \"high-altitude radiation,\" but it was Robert Millikan who later coined the more evocative term \"cosmic rays.\"\n\nThe discovery of cosmic rays was not merely a scientific curiosity; it was a paradigm shift. It opened a new window onto the universe, revealing a constant, unseen torrent of high-energy particles raining down on our planet. This revelation laid the foundation for entirely new fields of physics, from particle physics to astrophysics. Cosmic rays, primarily protons and atomic nuclei, proved to be nature's own particle accelerators, smashing into Earth's atmosphere and creating showers of exotic subatomic particles long before humanity could build its own cyclotrons and colliders.",
+      "id": "1b08b8c1690529b4",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The discovery of cosmic rays",
+      "topic": "learn",
+      "ts": "2026-07-06T21:59:16.823509+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cTo invent, you need a good imagination and a pile of junk.\u201d\n\u2014 Thomas Edison\n\nThomas Edison, the Wizard of Menlo Park, was a man whose very existence was intertwined with the burgeoning industrial age, a period of unprecedented technological ferment and boundless optimism. He was a force of nature, a relentless tinkerer who, despite profound deafness that isolated him somewhat from the social world, possessed an extraordinary mental agility and an almost pathological drive to solve problems. His laboratories, first in Menlo Park and later in West Orange, New Jersey, were not merely workshops but veritable cathedrals of innovation, sprawling complexes teeming with skilled mechanics, chemists, and draftsmen, all orchestrated by Edison's singular vision. He didn't just invent; he industrialized invention, creating a system that churned out patents with astonishing regularity. It was within this environment, surrounded by the physical detritus of countless experiments \u2013 discarded prototypes, coils of wire, half-finished mechanisms, and the very raw materials he would transform \u2013 that he likely uttered the now famous words, \u201cTo invent, you need a good imagination and a pile of junk.\u201d\n\nThe world in which Edison lived and worked was one of dramatic upheaval and boundless potential. The latter half of the 19th century was a crucible of scientific discovery and engineering marvels. Electricity, once a mere curiosity, was rapidly becoming a harnessed power, promising to illuminate cities and drive factories. Communication was being revolutionized by the telegraph, and the very concept of recording and reproducing sound was still a distant dream for most. Edison wasn't just observing these transformations; he was actively shaping them, his inventions profoundly impacting daily life. His phonograph brought music and spoken word into homes, his incandescent light bulb banished the darkness of night, and his contributions to motion pictures laid the groundwork for an entirely new art form. His \"pile of junk\" was both literal \u2013 the raw materials and discarded failures that littered his lab floors \u2013 and metaphorical, representing the vast array of knowledge, half-baked ideas, and unsolved problems that fueled his insatiable curiosity. It was a testament to his belief that solutions often lay hidden within what others deemed worthless or beyond redemption.\n\nEven today, in an age dominated by digital innovation and virtual realities, Edison's simple maxim continues to resonate deeply. The concept of \"junk\" has evolved, perhaps now encompassing discarded code, failed algorithms, or overlooked data sets, but the core truth remains: innovation often springs from an unconventional perspective on what is available. The \"imagination\" component is equally vital, the ability to see not just what *is*, but what *could be*, to connect disparate ideas and envision novel applications. Startups in garages, hackers experimenting with open-source software, and even large research institutions still operate on this fundamental principle.",
+      "id": "52e3ea278ed7bdd3",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Thomas Edison",
+      "topic": "wikiquote",
+      "ts": "2026-07-06T21:59:21.197971+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -4723,7 +4877,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/aviso-semanal-precio-del-04-de-10-julio-2026.pdf",
   "fuel_last_pdf_hash": "b684e645aadcc6c0e3706c11fae5f61a68f8c4070c8c05b6d19b379fd5b64983",
-  "fuel_last_prices_seen_at": "2026-07-06T18:35:10.705608+00:00",
+  "fuel_last_prices_seen_at": "2026-07-06T21:59:07.871370+00:00",
   "fuel_prices": {
     "GLP": 3429.95,
     "Gasoil Regular": 3429.95,
@@ -5610,6 +5764,8 @@
     }
   },
   "iss_seen_passes": [
+    "17f4db90ed5769b2",
+    "47ccac1295860afb",
     "bca029c81404fba2",
     "ff8c145fac7306f4",
     "04805dcef8eb468b",
@@ -5694,8 +5850,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "ancient_civilizations",
-  "knowledge_last_sent": "2026-07-06T6",
+  "knowledge_last_category": "astronomy",
+  "knowledge_last_sent": "2026-07-06T7",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -5720,6 +5876,7 @@
     "astronomy:The Hertzsprung-Russell diagram": "2026-07-01",
     "astronomy:The James Webb Space Telescope": "2026-06-15",
     "astronomy:The discovery of Uranus by William Herschel": "2026-06-19",
+    "astronomy:The discovery of cosmic rays": "2026-07-06",
     "astronomy:The first image of a black hole": "2026-06-23",
     "astronomy:The fruitless search for the planet Vulcan": "2026-06-29",
     "astronomy:The hidden oceans of Europa and Enceladus": "2026-06-13",
@@ -5851,8 +6008,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-07-06T20:29:02.122185+00:00"
+    "ok": 43,
+    "ts": "2026-07-06T21:57:49.184386+00:00"
   },
   "launch_seen_ids": [
     "f817e9bc16401db4",
@@ -5884,6 +6041,8 @@
   "life_dashboard_last_week": "2026-W27",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "634009aa8f23f9a6",
+      "3b14f7f5ce74eb84",
       "3dcf08d8b093d43a",
       "6b6581b430eb456e",
       "a3b50b7572d0b543",
@@ -5981,9 +6140,7 @@
       "5d106d5b4f29cb1a",
       "4babac89959ead60",
       "c7ddcbcce9415f24",
-      "3fef98c39abd544e",
-      "d64587c8d45ac51e",
-      "e36440f9832898dd"
+      "3fef98c39abd544e"
     ],
     "Godzilla x Kong: Supernova": [
       "e971e535097c217e",
@@ -6086,6 +6243,10 @@
       "f64039d17f3a85ea"
     ],
     "Spider-Man: Beyond the Spider-Verse": [
+      "a4a9b73f5ea55680",
+      "8f108842c85dcefc",
+      "fccca8c3af75b1ee",
+      "13cfd133a9fcf30e",
       "231d33e0790b07e5",
       "41c6f08225d347e5",
       "b7d707dad79bdea7",
@@ -6181,13 +6342,13 @@
       "37b0503e6c4a4a4f",
       "964d891441bec293",
       "7ab97c6967b4daa0",
-      "8ec14680b0f5f08f",
-      "a54496a563066b0d",
-      "bdca84f31574cdc5",
-      "bc349bc79f238785",
-      "4a8df168969f8dcd"
+      "8ec14680b0f5f08f"
     ],
     "Spider-Man: Brand New Day": [
+      "e02b56c3534c436b",
+      "19b3255d963f2384",
+      "3ab909170bb2fb7b",
+      "cf3ea33e11663cf5",
       "a03e7f2c19e6a269",
       "c05d39d775b20717",
       "b57397b305f57602",
@@ -6283,13 +6444,10 @@
       "3728d9bd42b00544",
       "ffb13d32df655d4e",
       "1f03f7408a28a58c",
-      "577bc5b56199ddb4",
-      "b56e83ff87120c1a",
-      "a19f4a7167732008",
-      "60830ae5dedc835d",
-      "5ce058c117b83347"
+      "577bc5b56199ddb4"
     ],
     "The Batman Part II": [
+      "861714cb4334edab",
       "4ac8aa892a7bde78",
       "4b729fdf3fa3f458",
       "232011d0caacddc4",
@@ -6388,10 +6546,67 @@
       "9756ffb5439448e8",
       "51760f19b1f5142c",
       "c7de8c55c70c4557",
-      "7b80592f11c870ef",
-      "2897059f7dae4858"
+      "7b80592f11c870ef"
     ],
     "The Odyssey": [
+      "d91c9def0909f737",
+      "cbe620d3c4e4bac1",
+      "865b026d96846c29",
+      "2bafa8a74f58ddc4",
+      "3d06627e2ac06868",
+      "9ade4a0724b085c3",
+      "c15187172f634b5e",
+      "7eaf6b0cdd2a6968",
+      "e51073b1b68cd4c6",
+      "61cfa84f257ab84f",
+      "2d227ad1444f35c7",
+      "b78f1ec0b49e321e",
+      "e745a535e35681e5",
+      "122b6df712f884fd",
+      "cd0712f78bf5db70",
+      "5f00d448486684fb",
+      "ead10c19d4d83717",
+      "e75b6ebb2a3b0084",
+      "6b3b15858b753bd1",
+      "39afabe069d76625",
+      "f6fb87cb12492cdd",
+      "2ee3c1bb7cd9dd91",
+      "4db8dc39d8516102",
+      "af240850bf728f77",
+      "3dc6a59e5d84e1a4",
+      "7cb709f5f8761870",
+      "11fa07893bd8f7b9",
+      "9a9b9ba8a62a4a7f",
+      "d8e42e4b2ee657ed",
+      "081885d84983b774",
+      "d1000edd3fe0d54d",
+      "fa9a11b604542363",
+      "4ffde3b6273e0a2c",
+      "8c57031b3120fe32",
+      "f836226c97980b9b",
+      "52cd08a32cea6f08",
+      "6b6444049c2f1b21",
+      "576d0fdd64e1efa1",
+      "8497ce8b38c031fa",
+      "eedb37469d1962bb",
+      "ce1416e22fef5f79",
+      "f524906d889b212d",
+      "9527aea3b1cd3542",
+      "9a0e9895395b69a8",
+      "d523692a1c9d37e8",
+      "299be0613fa43824",
+      "bcf668b2ec1400f6",
+      "7931932b22078dec",
+      "4b53783077cd1139",
+      "89a3c676e18e61eb",
+      "101ffefd958c2185",
+      "ade224ad8eeb6887",
+      "19fbe4e33887fbef",
+      "b35f7a9f02068174",
+      "0bcb849acd7b762c",
+      "b47c93b9e73be443",
+      "691d1eaf16f7d59a",
+      "184c0fc2c43fce6c",
       "c92e7032df55fe36",
       "c42010da128b5cc9",
       "39e080a9adca108f",
@@ -6433,65 +6648,7 @@
       "3a749d7598b533f2",
       "6f4855dec4ce0a31",
       "def0205a4ad4cc7a",
-      "2c40f04651379d56",
-      "5aadcf70ca85d290",
-      "fa45a34330a662e1",
-      "d0d85b0cf352e182",
-      "b8940e5649fdeac5",
-      "37e56e8606f43006",
-      "67a80d01149acf0c",
-      "c110ee1143e501e7",
-      "7c8e1435002e51e5",
-      "23f49c4802ea0baa",
-      "b3a14c4445b92e0f",
-      "ea69f3287952e160",
-      "9f487b57a04292c7",
-      "0d3e214021a2e804",
-      "c36a77fa1b6c0af6",
-      "2c1dc4d17e83abd3",
-      "53f6d13c42d25bdd",
-      "31186d38df1167b3",
-      "a1c98612c943644a",
-      "2a45fd02127daae3",
-      "5f8dcb545d0ba388",
-      "3aeef7010baadfe3",
-      "6276a487ebe8789d",
-      "61a3ef3efe0a330d",
-      "f04dd533690ee1db",
-      "c00a4e532822b226",
-      "0578a0081698ff3f",
-      "5b0c80bae28078f1",
-      "994adabbe977aaa4",
-      "4d1d95da2c5a717c",
-      "459e2a245d406b82",
-      "1e059f4dc9272d6f",
-      "98ee204936d26452",
-      "b04a7b687f4c3777",
-      "acf4f9ba08a4193f",
-      "6f1165d0c78e12a3",
-      "4ab3d991b1371962",
-      "c7dc0a2e1bf04f95",
-      "fb856a20d88f2fd0",
-      "37d6b023654bdd63",
-      "adab43aac91d260a",
-      "2030689e24f18180",
-      "90e2ec59a62a2e6a",
-      "b079e390eb8d796c",
-      "d5ad4dda7a805a7f",
-      "44d0842031cf9ceb",
-      "a2288f1decae3f61",
-      "324bf97543cbf967",
-      "0692fb90e4976ef2",
-      "e70895e5c9066f01",
-      "c5e44a0b7c92e68c",
-      "ef8059225d2eb135",
-      "34e2386ca85b339b",
-      "128bae9691664379",
-      "e470f0b82fa6d289",
-      "d801cc1fe3808c4b",
-      "9a3453a7bd61f82d",
-      "0a69a4d24aad3f03",
-      "20b606783fea81d2"
+      "2c40f04651379d56"
     ]
   },
   "movie_release_dates": {
@@ -6629,7 +6786,8 @@
     6861841,
     11075898,
     124712752,
-    10430910
+    10430910,
+    1438970
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -7151,6 +7309,15 @@
         "name": "Chris Grey"
       }
     },
+    "e33c3ba93a90e2ec": {
+      "applied": null,
+      "created": "2026-07-06T21:58:01.238541+00:00",
+      "kind": "artist",
+      "label": "Darci",
+      "payload": {
+        "name": "Darci"
+      }
+    },
     "e8f22de69e3be9e6": {
       "applied": null,
       "created": "2026-06-30T22:00:42.296062+00:00",
@@ -7167,15 +7334,6 @@
       "label": "Keith Urban",
       "payload": {
         "name": "Keith Urban"
-      }
-    },
-    "edf1d479d6b2496f": {
-      "applied": null,
-      "created": "2026-06-22T21:10:44.189420+00:00",
-      "kind": "artist",
-      "label": "Silverstein",
-      "payload": {
-        "name": "Silverstein"
       }
     },
     "f2593e4e27d4d5cc": {
@@ -7422,87 +7580,87 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "apod": {
-      "last_data": "2026-07-06T18:35:28.464187+00:00",
+      "last_data": "2026-07-06T21:59:29.197183+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "deals": {
-      "last_data": "2026-07-06T18:34:26.317173+00:00",
+      "last_data": "2026-07-06T21:58:30.402085+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "energy": {
-      "last_data": "2026-07-06T18:34:46.383920+00:00",
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_data": "2026-07-06T21:58:46.718274+00:00",
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "fda": {
-      "last_data": "2026-07-06T18:34:34.843403+00:00",
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_data": "2026-07-06T21:58:35.199242+00:00",
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "fuel": {
-      "last_data": "2026-07-06T18:35:10.705633+00:00",
+      "last_data": "2026-07-06T21:59:07.871394+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "fx": {
-      "last_data": "2026-07-06T18:35:09.259976+00:00",
+      "last_data": "2026-07-06T21:59:06.262483+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "games": {
       "last_data": "2026-07-06T13:33:40.805493+00:00",
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-06T18:33:42.419237+00:00",
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_data": "2026-07-06T21:58:05.442606+00:00",
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "groceries": {
-      "last_data": "2026-07-06T18:34:34.479469+00:00",
-      "last_data_count": 249,
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_data": "2026-07-06T21:58:34.919620+00:00",
+      "last_data_count": 149,
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "learn": {
       "last_data": "2026-07-06T13:35:21.575096+00:00",
@@ -7510,76 +7668,76 @@
       "last_ok": "2026-07-06T13:33:28.747702+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "movies": {
-      "last_data": "2026-07-06T18:33:34.041035+00:00",
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_data": "2026-07-06T21:57:56.250209+00:00",
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "music": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-06T18:34:51.302194+00:00",
+      "last_data": "2026-07-06T21:58:47.331917+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "outages": {
-      "last_data": "2026-07-06T18:35:08.504234+00:00",
+      "last_data": "2026-07-06T21:59:05.515400+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-06T18:35:08.566432+00:00",
+      "last_data": "2026-07-06T21:59:05.567540+00:00",
       "last_data_count": 29,
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "research": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-06T20:29:04.129447+00:00",
+      "last_data": "2026-07-06T21:57:58.381457+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-06T20:29:02.122185+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "weather": {
-      "last_data": "2026-07-06T18:34:50.671753+00:00",
+      "last_data": "2026-07-06T21:58:46.845247+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "wikiquote": {
-      "last_data": "2026-07-06T18:35:20.495531+00:00",
+      "last_data": "2026-07-06T21:59:17.229349+00:00",
       "last_data_count": 25,
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-06T18:35:14.039335+00:00",
+      "last_data": "2026-07-06T21:59:11.600579+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-06T18:33:27.236010+00:00"
+      "last_ok": "2026-07-06T21:57:49.184386+00:00"
     }
   },
   "twitch_live": [
@@ -7589,7 +7747,7 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165126"
+    "last_full_window": "165127"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -7602,9 +7760,10 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
+    "2026-07-06|21",
+    "2026-07-06|18",
     "2026-07-06|15",
-    "2026-07-06|12",
-    "2026-07-06|18"
+    "2026-07-06|12"
   ],
   "weather_seen_ids": [
     "dd39f40e09d355c7",
@@ -7721,8 +7880,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "leaders",
-  "wikiquote_last_sent": "2026-07-06T4",
+  "wikiquote_last_category": "innovators_artists",
+  "wikiquote_last_sent": "2026-07-06T7",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-06-27",
     "activists_thinkers:Booker T. Washington": "2026-07-03",
@@ -7741,7 +7900,7 @@
     "innovators_artists:Ludwig van Beethoven": "2026-06-28",
     "innovators_artists:Pablo Picasso": "2026-07-05",
     "innovators_artists:Steve Jobs": "2026-07-01",
-    "innovators_artists:Thomas Edison": "2026-06-27",
+    "innovators_artists:Thomas Edison": "2026-07-06",
     "innovators_artists:Vincent van Gogh": "2026-07-01",
     "innovators_artists:Walt Disney": "2026-06-30",
     "leaders:Abraham Lincoln": "2026-07-05",
