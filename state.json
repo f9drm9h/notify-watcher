@@ -6660,9 +6660,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 1,
-    "ok": 42,
-    "ts": "2026-07-07T18:22:37.219408+00:00"
+    "failed": 0,
+    "ok": 1,
+    "ts": "2026-07-07T20:28:14.561608+00:00"
   },
   "launch_seen_ids": [
     "f817e9bc16401db4",
@@ -7767,15 +7767,6 @@
         "name": "Lewis Capaldi"
       }
     },
-    "835432ee26d3015e": {
-      "applied": null,
-      "created": "2026-06-23T18:25:02.590623+00:00",
-      "kind": "artist",
-      "label": "santa rm",
-      "payload": {
-        "name": "santa rm"
-      }
-    },
     "89f47bd5c82ff681": {
       "applied": null,
       "created": "2026-06-25T22:08:24.983135+00:00",
@@ -8380,9 +8371,9 @@
       "last_ok": "2026-07-07T18:22:37.219408+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-07T18:22:46.663153+00:00",
+      "last_data": "2026-07-07T20:28:15.974418+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-07T18:22:37.219408+00:00"
+      "last_ok": "2026-07-07T20:28:14.561608+00:00"
     },
     "uv": {
       "last_ok": "2026-07-07T18:22:37.219408+00:00"
