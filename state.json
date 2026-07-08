@@ -6022,6 +6022,18 @@
       "topic": "apod",
       "ts": "2026-07-08T12:11:29.902096+00:00",
       "url": "https://apod.nasa.gov/apod/image/2607/Swift_Boost.mp4"
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - \u30c1\u30e3\u30f3\u30d4\u30aa\u30f3\u30ba\u304a\u3064\u3067\u3057\u305f \u30e1\u30a4\u30c8\u3068\u304b\u30b9\u30de\u30d1\u306e\u8a66\u5408\u632f\u308a\u8fd4\u308b\u3068\u304b",
+      "id": "8116bf58aaab1223",
+      "score": 68,
+      "severity": "high",
+      "source": "Acola_lui",
+      "title": "Acola_lui is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-08T14:42:58.081092+00:00",
+      "url": "https://twitch.tv/Acola_lui"
     }
   ],
   "f4_history": [
@@ -7319,8 +7331,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 43,
-    "ts": "2026-07-08T12:09:20.941443+00:00"
+    "ok": 1,
+    "ts": "2026-07-08T14:42:55.204721+00:00"
   },
   "launch_seen_ids": [
     "f817e9bc16401db4",
@@ -8670,15 +8682,6 @@
         "name": "Keith Urban"
       }
     },
-    "f2593e4e27d4d5cc": {
-      "applied": null,
-      "created": "2026-06-24T13:32:04.923408+00:00",
-      "kind": "artist",
-      "label": "Russ",
-      "payload": {
-        "name": "Russ"
-      }
-    },
     "fdfdaceccbf02983": {
       "applied": null,
       "created": "2026-07-01T21:51:39.797560+00:00",
@@ -9049,9 +9052,9 @@
       "last_ok": "2026-07-08T12:09:20.941443+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-08T12:09:31.299214+00:00",
+      "last_data": "2026-07-08T14:42:58.977519+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-08T12:09:20.941443+00:00"
+      "last_ok": "2026-07-08T14:42:55.204721+00:00"
     },
     "uv": {
       "last_ok": "2026-07-08T12:09:20.941443+00:00"
@@ -9078,7 +9081,9 @@
       "last_ok": "2026-07-08T12:09:20.941443+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "Acola_lui"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
