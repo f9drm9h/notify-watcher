@@ -6570,6 +6570,18 @@
       "topic": "wikiquote",
       "ts": "2026-07-08T21:52:54.895388+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - La CODOSALA online! Calentando pa PdP 2",
+      "id": "227c81092ec57ac1",
+      "score": 68,
+      "severity": "high",
+      "source": "elcodo22",
+      "title": "elcodo22 is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-08T22:48:17.379650+00:00",
+      "url": "https://twitch.tv/elcodo22"
     }
   ],
   "f4_history": [
@@ -7878,8 +7890,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 43,
-    "ts": "2026-07-08T21:51:19.891288+00:00"
+    "ok": 1,
+    "ts": "2026-07-08T22:48:16.556053+00:00"
   },
   "launch_seen_ids": [
     "f817e9bc16401db4",
@@ -9608,9 +9620,9 @@
       "last_ok": "2026-07-08T21:51:19.891288+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-08T21:51:28.070091+00:00",
+      "last_data": "2026-07-08T22:48:18.086670+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-08T21:51:19.891288+00:00"
+      "last_ok": "2026-07-08T22:48:16.556053+00:00"
     },
     "uv": {
       "last_ok": "2026-07-08T21:51:19.891288+00:00"
@@ -9637,7 +9649,9 @@
       "last_ok": "2026-07-08T21:51:19.891288+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "elcodo22"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
