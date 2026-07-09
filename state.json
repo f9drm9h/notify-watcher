@@ -82,7 +82,44 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [],
+  "digest_buffer": [
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "Avengers: Doomsday",
+      "title": "Robert Downey Jr. unleashes first trailer for 'Avengers: Doomsday' - aol.com",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWW54dE5RLXdRb016SDF5SHE5QXBOX3VVQUhHMzNxYXVaR2NIZ19VWVBSa0d5aHc3U2NDbkxLT2k0bjc1aFA0N1Jkb2VoVmhaZHdTc1BNQU5lMno1cGRseElqOUpGNk5lS093TVFkR1p2VXczbUdFWjVaM1lyR3EwM1hn?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Scrubbed From the Web \u2014 Taken-Down \u2018Spider-Man: Brand New Day\u2019 Art Book Spoils Scrapped Gray Hulk and Rocket Raccoon's Surprising Role - Murphy's Multiverse",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxONWUwUFpKRFozck1GVV9teTdSLVlaSGZubTV0NVhQY2paejVfXzNYTEFLMVV4LVpuUDExSmhiWFpEeEZSRm9ZajBYODY4LW9sVmtDLVVZX1plNkpZdEZST2RxZFd5Ym05WDRSUVlQaFdiQ2JFQlBKNmtJSmd5Z2ZUcmk0WGZDMGxXR3l5eGs4Z2xGWUptV2JsT1laUkt0N3J6a2dvSklTV2U0Q3lMMm9jX2pZVHQteTc0R3ZVQWFENkg4VWZSYWRJb3lCQ01qUlNSRU9zeHFIRUhJV3pNRkhlVm5BaE1XeTZoVW55ZG1Kd0czUWxjMkE?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "The Odyssey",
+      "title": "Christopher Nolan\u2019s \u2018The Odyssey\u2019 Is in Theaters This Summer. Columbia University \u2018Lit Hum\u2019 Professors Have Thoughts. - Columbia University",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPN0NLZlRuWjRhVlM5ZkgzTVMtd05QLXMwNDZ6a3RDdEswWkU2cmZiWDltMkMyckpIUTFndmpwU3NucUQ5WXZjQWRZakdVRThXSXF2UkxZSHd5RFpZLXRWdjN0RkxVQ2k2WmVCNUFOTWQ5STJqRlNhOENoNkx4OUVONGVuQ2xUdnFMblY3M3RuRlFmU0ZFRENUZW1tQTMyaHltYWxzdnZnT2xTVW9fRmtTQ2NkNTItZ3dE?oc=5"
+    },
+    {
+      "detail": "DOP 3,995.00 (was DOP 4,695.00, -15%)",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "La Sirena",
+      "title": "La Sirena deal: Cafetera Black & Decker 12 Tazas CM0915BK-LA",
+      "topic": "groceries",
+      "url": "https://www.sirena.do/b-d-cafetera-12-tz-cm0915bk-la-2163812/p"
+    }
+  ],
   "digest_last_sent": "2026-07-09",
   "discord_control": {
     "last_id": "1524736926001659905"
@@ -125,6 +162,7 @@
     ]
   },
   "energy_seen_ids": [
+    "cdf38dcffb25ebb8",
     "007ea8abf8ee7b32",
     "1c69097011d79518",
     "6a217a87a121bbc6",
@@ -7040,6 +7078,126 @@
       "topic": "apod",
       "ts": "2026-07-09T14:20:05.487674+00:00",
       "url": "https://apod.nasa.gov/apod/image/2607/cosmic_bat_1024.jpg"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "2548f2ee999694d4",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Disney Reveals First Look At Doctor Doom's Throne In Avengers: Doomsday - SlashFilm",
+      "topic": "movies",
+      "ts": "2026-07-09T16:44:46.296459+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQSy11UnRTczlKc3hVenJvSGo2NV84aVQ4NXBibXpQZ0VFMTVJemIwNERRVnNZX3l5NlNBY3R2XzlrTDI1c3ZDaGNDZmVKVlg4YjRXb0x2bG1uNGhqSDlBbkJycWE3Y0xXUWswck9nVjFZdE1EVzJUVkdJRlpLeE9sSndRRndGR014T2RvRW4xaFFSNnM?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "e49cdb2dc4f3ac89",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Christopher Nolan faces growing backlash over 'Odyssey' casting, historical accuracy as screenings canceled - Fox News",
+      "topic": "movies",
+      "ts": "2026-07-09T16:44:47.483241+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMldwakVVNWF0TmtQTmlKa29ZbTB6Z1FoVDBVam54emRoeVF1dkEzSC1VUngwUFdjMHJETUJwMU5Vc29YSWc1Z0NzQVJBOVJsdS1qRHBVVnItd1V0MmRRR0xIQTdDUFU5LWFGejdkTDZnSDR3UWJZVzBJQjNTQ3pwd1YtOVpuYUtQdGJwSGRkT2Q3di1sZDM2R3VpTUdYZmpVVWljVFBfZ1ZHWlJnQ1cycGlTbERReFVUNzNCY1I2d2tRblNuR0NQQVlBUFFWMDdicXJwdmFn0gHbAUFVX3lxTFBqTnZjOFU3aUNEbDBVc1NHRG9uX3lWVlpiWklUTDJZa1BkQUVQdmFHajNXbVdndXh3YmdhT0xiWnBpTnFlMXJyck5XZS02YVlmbXZrbUNJOHhnaUtaOG5QLWFHUEhNMzZ0Y0s2VWNkVEVKNjlzdFEtTTIxNS1kNFJjOGxaeGdTQlV6Si1BbVFybFE4VkhLTlpCek5BUVNyNWJoalhtX0xBenNLS2Q1Nk1UWXFjVlZEd1hHZzhHSlhrTjRuQ1E4VDh3UGZVdTlXdks0N2JpWG52T0lFMA?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "433da43da44033ee",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Why Zendaya Botched Her Lines on First Day of \u2018The Odyssey\u2019 Filming: \u201cMy Mouth Was Just Frozen\u201d - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-07-09T16:44:47.484937+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNV0p6eHQwMkVyenJiUDZCQ2FodE5abnYwOFJHQVE3NEZZSlMydkVMMG1ObF9ZdnhsZV9lOGtDMTZTTzBRa2NEVE9QdEJUQ2VSSFBXNUxKTjVONFZadTZyQ0ZwZ2NYbmF6V2VQemZ2alVuTmVRSHBZU25zcDFqWk0tdzJLcE5xeXEyZC1FVVQ0RGhoNnNfMXlmT181dEhieGVWWVh3ZmYtelpRNFV6dDVqSTNKbDZlUEw2WmtNNktMazQtQQ?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "6a0feddac66ded67",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 Comes Ashore: London Goes Wild for Christopher Nolan Epic at Star-Studded World Premiere - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-07-09T16:44:47.486103+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQlRhYVNXb2NMQ2hDQ0paOXVGTDBDbmRHTEp1WUhTa2VZUnoxNjQyMzFzUHdMZlNMZXM3VWp0djNqM3NOaXp4QVdEQ1FwS1ZKSVQxYUl1a1czU3NkM1IzOFlTWlhVZXZhcE0wLTlGcG5ZSzNEZ0x6c2hVX0hDc3gydXQ4UjFpalFuTmprUFhxR0JGa1F1MWtFS1pJeHBmSWJZNkN6QjFpSTNrb25UdVp1UERHRmtURWxiQnc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "A Drop of Nelson`s Blood - Storm Weather Shanty Choir\n(because you like Sean Dagher)",
+      "id": "0a173a58fa1d4a8b",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-07-09T16:44:54.242161+00:00",
+      "url": "https://www.deezer.com/track/589103372"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 7:03 PM - max 61deg, SW to NE. Look up!",
+      "id": "b79e7a0e069dc039",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-09T16:46:09.037459+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 4:55 AM - max 53deg, NW to SE. Look up!",
+      "id": "464a91cad857f7d6",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-09T16:46:09.259676+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Quick reminder to drink some water.",
+      "id": "4ae05bad400091a4",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-07-09T16:46:11.862312+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "The scene is set in the bustling, sun-drenched city of Syracuse, a jewel of Magna Graecia, sometime in the 3rd century BCE. At the heart of this tale lies Hiero II, the city's king, a pragmatic ruler with a penchant for the lavish. He had commissioned a magnificent golden crown, a symbol of his power and divine right, and entrusted a skilled goldsmith with its creation. However, a whisper, a serpent in the ear of the king, began to spread: the goldsmith, it was rumored, had cheated Hiero, substituting a portion of the pure gold with cheaper, less valuable silver, while still presenting a crown of the correct weight. This was not merely a matter of financial loss; it was a profound insult to the king's authority, a challenge to his trust, and a betrayal of the highest order. The stakes were high, for a king's wrath could be a terrible thing, and the goldsmith's very life hung in the balance. Hiero needed proof, irrefutable evidence, and for this, he turned to the city's greatest mind: Archimedes.\n\nArchimedes, a polymath of unparalleled genius, was more than just a mathematician; he was an engineer, an inventor, and a philosopher, a man whose intellect soared far beyond the practical concerns of daily life. He was immersed in his studies, in the intricate dance of numbers and the elegant mechanics of the universe, when the king's decree reached him. The challenge was formidable: how to determine the composition of the crown without destroying its intricate artistry. To melt it down would be to ruin the very object of suspicion. For days, Archimedes grappled with the problem, his brilliant mind working tirelessly, testing theories, running calculations, yet the solution remained elusive. The pressure mounted; the king's impatience was a tangible presence, and the fate of the goldsmith, and perhaps even Archimedes' own standing, rested on his shoulders. The narrative of his struggle, the intellectual agony of a mind striving for an elegant truth, speaks to the enduring human quest for understanding.\n\nThen came the moment, immortalized in the annals of science and popular culture, a sudden flash of insight born not from a scroll or a calculation, but from the simple act of a bath. As Archimedes lowered himself into the water, he observed the water level rise, a phenomenon so common as to be almost invisible. But in that instant, for Archimedes, it was a revelation. He realized that a body immersed in fluid displaces an amount of fluid equal to its own volume. This was the key! If the crown was pure gold, it would displace a specific volume of water. If it contained silver, a less dense metal, then for the same weight, it would have to occupy a larger volume and thus displace more water. The difference in the displaced water would betray the goldsmith's deception. Overcome with the profound simplicity and elegance of his discovery, the story goes, Archimedes leapt from the bath and, naked, ran through the streets of Syracuse, shouting \"Eureka! Eureka!\" \u2013 \"I have found it! I have found it!\"\n\nThe 'Eureka' moment, far from being a mere anecdote, marks a pivotal point in the history of science. It laid the foundation for the principle of buoyancy, now known as Archimedes' Principle, a cornerstone of fluid mechanics that continues to be taught and applied in engineering and physics to this day.",
+      "id": "8b6d48adafe3d85c",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Archimedes and the 'Eureka' moment",
+      "topic": "learn",
+      "ts": "2026-07-09T16:46:17.522890+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cActually, if you could see close in my eyes, the American flag is waving in both of them and up my spine is growing this red, white and blue stripe.\u201d\n\u2014 Walt Disney\n\nThe year is 1963, and the world is a kaleidoscope of shifting loyalties and burgeoning anxieties. The Cold War is a persistent, chilling hum in the background, the Cuban Missile Crisis a recent, terrifying memory, and the civil rights movement is gathering an unstoppable momentum across the American South. It's a time when national identity, patriotism, and the very definition of America are being scrutinized, debated, and passionately defended. Into this maelstrom steps Walt Disney, a figure who had, by this point, become a titan of American culture, a purveyor of dreams, and, to some, a symbol of an idealized, almost anachronistic vision of America. He wasn't just building theme parks and animating fairy tales; he was building a narrative, a vision of what America could be, or perhaps, what it *should* be. And it was in this climate, facing accusations of being a conservative, perhaps even an old-fashioned patriot, that Disney delivered that remarkable line, a declaration of his inherent, visceral Americanism: \"Actually, if you could see close in my eyes, the American flag is waving in both of them and up my spine is growing this red, white and blue stripe.\" It wasn't merely a statement of allegiance; it was a deeply personal, almost biological claim to the national identity, a theatrical flourish that perfectly encapsulated the man who believed in the power of spectacle and the emotional resonance of symbols.\n\n  Disney\u2019s patriotic fervor wasn\u2019t a sudden development, nor was it a performative act for the cameras, though he was undoubtedly a master showman. His upbringing in turn-of-the-century rural America, his service in the Red Cross Ambulance Corps during World War I, and his relentless pursuit of the American dream through animation and entertainment, all contributed to a deeply ingrained sense of national pride. He saw himself as an embodiment of American ingenuity, entrepreneurship, and optimism. Disneyland, which had opened its gates just eight years prior, was not merely an amusement park; it was a carefully curated tableau of American ideals \u2013 Frontierland celebrating exploration, Tomorrowland envisioning progress, and Main Street U.S.A. evoking a nostalgic, idealized past. Even his animated features, while often drawing from European folklore, frequently imbued their narratives with themes of perseverance, individuality, and the triumph of good over evil, themes readily interpreted through an American lens. So when he spoke of the flag waving in his eyes and the stripe growing up his spine, he was articulating a belief system that underpinned his entire creative empire, a world where the spirit of America wasn't just celebrated, but actively constructed and disseminated to millions of eager consumers.\n\n  Today, Disney\u2019s declaration resonates with an enduring power, not just as a historical artifact, but as a window into the complexities of American identity. In an era where national narratives are constantly challenged and reimagined, where patriotism itself can be a fraught and contentious concept, Disney\u2019s unwavering, almost childlike certainty in his Americanism stands out.",
+      "id": "1a3390b0a387e3e3",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Walt Disney",
+      "topic": "wikiquote",
+      "ts": "2026-07-09T16:46:23.182382+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -7184,7 +7342,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/aviso-semanal-precio-del-04-de-10-julio-2026.pdf",
   "fuel_last_pdf_hash": "b684e645aadcc6c0e3706c11fae5f61a68f8c4070c8c05b6d19b379fd5b64983",
-  "fuel_last_prices_seen_at": "2026-07-09T14:19:39.027628+00:00",
+  "fuel_last_prices_seen_at": "2026-07-09T16:46:08.336585+00:00",
   "fuel_prices": {
     "GLP": 3429.95,
     "Gasoil Regular": 3429.95,
@@ -7549,6 +7707,7 @@
       "1b7d9e5ab11b51a5"
     ],
     "La Sirena": [
+      "d22460efcf763227",
       "0c3e4af07b5a0e19",
       "32a06966a0fa2b9f",
       "2ba1fdd702344684",
@@ -8091,6 +8250,8 @@
     }
   },
   "iss_seen_passes": [
+    "85146b292b7050d3",
+    "3b7b7eda90275355",
     "222ef098741a4010",
     "8d0ae9b6c541191b",
     "d868d870aebf8a39",
@@ -8191,8 +8352,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "early_humans",
-  "knowledge_last_sent": "2026-07-09T4",
+  "knowledge_last_category": "math_history",
+  "knowledge_last_sent": "2026-07-09T5",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -8250,6 +8411,7 @@
     "hearing_spacetime_ring": "2026-06-12",
     "math_history:Al-Khwarizmi and the birth of algebra": "2026-06-19",
     "math_history:Andrew Wiles and the final proof": "2026-06-14",
+    "math_history:Archimedes and the 'Eureka' moment": "2026-07-09",
     "math_history:Cantor and the infinity of infinities": "2026-06-26",
     "math_history:Euclid's Elements": "2026-06-15",
     "math_history:George Boole and the algebra of logic": "2026-06-30",
@@ -8371,7 +8533,7 @@
   "last_run": {
     "failed": 0,
     "ok": 43,
-    "ts": "2026-07-09T14:18:04.369599+00:00"
+    "ts": "2026-07-09T16:44:43.697259+00:00"
   },
   "launch_seen_ids": [
     "f005b9fb66bd62ce",
@@ -8404,6 +8566,12 @@
   "life_dashboard_last_week": "2026-W27",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "577cdfce70c03b67",
+      "72208a6f230f92fe",
+      "deedb2753d47737e",
+      "3c71dc804b9bb166",
+      "93be8f1cf6ab9fdb",
+      "3dcf08d8b093d43a",
       "c23b003667b0eced",
       "9711888c59cde6da",
       "367c3c2c4b12c1d9",
@@ -8497,13 +8665,7 @@
       "135258dcc1fff748",
       "8cb10f5e071aceb3",
       "2c3de7afbd341d97",
-      "c7fe91a1b712226f",
-      "bd908055dd94ac31",
-      "98be756acacc5cb9",
-      "27868c1d409c62e3",
-      "995df44a656b99c9",
-      "439de706a6a3fe26",
-      "0a49e78b44d06836"
+      "c7fe91a1b712226f"
     ],
     "Godzilla x Kong: Supernova": [
       "e971e535097c217e",
@@ -8708,6 +8870,11 @@
       "8749efcfc98e341b"
     ],
     "Spider-Man: Brand New Day": [
+      "8a1cb203385f418d",
+      "152e453081edbc94",
+      "6a3a62c218454e9e",
+      "8f2cd3caa9d666bc",
+      "5e16c2642dac0f7f",
       "63571a749d142ff9",
       "eefb934728c2b12b",
       "400702e2ba927614",
@@ -8802,12 +8969,7 @@
       "ffb13d32df655d4e",
       "e07d32e723ef0295",
       "4d4467e021389ab9",
-      "0a05c2c43a074cd9",
-      "30e78735c1395d3c",
-      "e02b56c3534c436b",
-      "19b3255d963f2384",
-      "3ab909170bb2fb7b",
-      "cf3ea33e11663cf5"
+      "0a05c2c43a074cd9"
     ],
     "The Batman Part II": [
       "949806edea3ed3a7",
@@ -8912,6 +9074,45 @@
       "3021ae3437c51443"
     ],
     "The Odyssey": [
+      "6ede8af0b8581d56",
+      "15a30498720759c7",
+      "7842d575b535e568",
+      "2de887ce35d4cc44",
+      "72c70a74120f3e27",
+      "686a07e9d06c5593",
+      "71cd31c939a59b89",
+      "ee9bd7ee5a5219e9",
+      "b3fe1994879dda71",
+      "ec929b5029aa63ee",
+      "281aeb9f0c67a689",
+      "a181c8a523e32459",
+      "db53a46e1a6c5559",
+      "ad31d0e2e471c6aa",
+      "6a3a62c218454e9e",
+      "60464afe96306f6a",
+      "44fb571212a65f01",
+      "64bef8ed0ac63d09",
+      "f9832d40bc76e6bd",
+      "ad2d055b43653499",
+      "f22cb1b419f3d3c5",
+      "45330e8147e7cf87",
+      "1eb3826f89f5a771",
+      "e943628e52a6149a",
+      "bd80ea6d60dec20c",
+      "5e98cdc281db93d5",
+      "507940fe885ce07c",
+      "55daaac9dd10e821",
+      "c765b8b5fa12dfb5",
+      "1a5ac688f255a043",
+      "ae0f611597f7ed3d",
+      "b7a3766f06653dcf",
+      "bc73df04c8e3a9e4",
+      "24dbaaf0cc44ab93",
+      "2d227ad1444f35c7",
+      "9527aea3b1cd3542",
+      "6c8126973545c8a8",
+      "70a68c9561c5f695",
+      "459e2a245d406b82",
       "af7a1d4e2a297a93",
       "a15f4cb8f49513e8",
       "a014a47cacbe742b",
@@ -8972,46 +9173,7 @@
       "337278d4a4f2b922",
       "33f81a9b655cc0e6",
       "641e21ae2178980f",
-      "95cb922da2abcda2",
-      "524c0119ea82834d",
-      "8dc4cc0e6dbbef49",
-      "854abd22f3f5115d",
-      "6259c6a4d27f8f13",
-      "775242c46ccc8d8e",
-      "28a3111f7ee1c19c",
-      "d09c48004f443fdf",
-      "39e080a9adca108f",
-      "b96be70e3313373e",
-      "6f4855dec4ce0a31",
-      "83443647f942ed4b",
-      "2c40f04651379d56",
-      "d5ad4dda7a805a7f",
-      "44d0842031cf9ceb",
-      "986ddc7fb0ee0165",
-      "16efbae7d043a8bd",
-      "ba6e959c5bbbb50e",
-      "9f90e4f33cb0ba66",
-      "59a959545787df55",
-      "2f68c21abef8428d",
-      "10ed8150755c3ba2",
-      "6e79772b8de7e87d",
-      "a555898dd7518909",
-      "cbf6655b248e8ab9",
-      "abf2829d31b6adea",
-      "e959ad21f1482068",
-      "1eeee7f3faaf085e",
-      "bd8fa056668f93a0",
-      "b92587290e9db381",
-      "3caa38748c40e9f5",
-      "9b2a0ef915de9f8f",
-      "efb10b187b9c694c",
-      "b7266f171355eeb5",
-      "6236c83e53dc512e",
-      "0e44f7195dc8c0b2",
-      "931941686e47673b",
-      "b83b1b256792b7d8",
-      "025617c93c257230",
-      "4d1d95da2c5a717c"
+      "95cb922da2abcda2"
     ]
   },
   "movie_release_dates": {
@@ -9159,7 +9321,8 @@
     9987408,
     14615843,
     12991885,
-    430136
+    430136,
+    1048667
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -9393,6 +9556,15 @@
         "name": "Dire Straits"
       }
     },
+    "4c7dbac0759cba41": {
+      "applied": null,
+      "created": "2026-07-09T16:44:54.242126+00:00",
+      "kind": "artist",
+      "label": "Storm Weather Shanty Choir",
+      "payload": {
+        "name": "Storm Weather Shanty Choir"
+      }
+    },
     "4cf321255d23bf79": {
       "applied": null,
       "created": "2026-06-29T12:05:59.833716+00:00",
@@ -9571,15 +9743,6 @@
       "label": "Lhasa De Sela",
       "payload": {
         "name": "Lhasa De Sela"
-      }
-    },
-    "a6923caf70eba0d1": {
-      "applied": null,
-      "created": "2026-06-25T16:05:15.753546+00:00",
-      "kind": "artist",
-      "label": "Rich The Kid",
-      "payload": {
-        "name": "Rich The Kid"
       }
     },
     "ad6fe56e30b1ac38": {
@@ -9977,87 +10140,87 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "apod": {
-      "last_data": "2026-07-09T14:20:05.487660+00:00",
+      "last_data": "2026-07-09T16:46:28.567708+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "deals": {
-      "last_data": "2026-07-09T14:18:42.649674+00:00",
+      "last_data": "2026-07-09T16:45:20.353592+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "energy": {
-      "last_data": "2026-07-09T14:19:14.175738+00:00",
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_data": "2026-07-09T16:45:45.109502+00:00",
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "fda": {
-      "last_data": "2026-07-09T14:19:04.500326+00:00",
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_data": "2026-07-09T16:45:34.858277+00:00",
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "fuel": {
-      "last_data": "2026-07-09T14:19:39.027644+00:00",
+      "last_data": "2026-07-09T16:46:08.336611+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "fx": {
-      "last_data": "2026-07-09T14:19:37.034138+00:00",
+      "last_data": "2026-07-09T16:46:07.272600+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "games": {
       "last_data": "2026-07-06T13:33:40.805493+00:00",
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-09T14:18:18.936767+00:00",
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_data": "2026-07-09T16:44:55.894106+00:00",
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "groceries": {
-      "last_data": "2026-07-09T14:19:04.200713+00:00",
+      "last_data": "2026-07-09T16:45:34.297181+00:00",
       "last_data_count": 238,
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "learn": {
       "last_data": "2026-07-09T14:19:48.659787+00:00",
@@ -10065,76 +10228,76 @@
       "last_ok": "2026-07-09T14:18:04.369599+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "movies": {
-      "last_data": "2026-07-09T14:18:11.136349+00:00",
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_data": "2026-07-09T16:44:49.981611+00:00",
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "music": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-09T14:19:14.786195+00:00",
+      "last_data": "2026-07-09T16:45:45.708836+00:00",
       "last_data_count": 14,
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "outages": {
-      "last_data": "2026-07-09T14:19:36.279560+00:00",
+      "last_data": "2026-07-09T16:46:06.654035+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-09T14:19:36.343060+00:00",
-      "last_data_count": 30,
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_data": "2026-07-09T16:46:06.760078+00:00",
+      "last_data_count": 32,
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "research": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-09T14:18:13.373419+00:00",
+      "last_data": "2026-07-09T16:44:51.395120+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "weather": {
-      "last_data": "2026-07-09T14:19:14.302440+00:00",
+      "last_data": "2026-07-09T16:45:45.363371+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "wikiquote": {
-      "last_data": "2026-07-09T14:19:50.047304+00:00",
-      "last_data_count": 75,
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_data": "2026-07-09T16:46:18.068796+00:00",
+      "last_data_count": 54,
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-09T14:19:42.362830+00:00",
+      "last_data": "2026-07-09T16:46:11.861675+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-09T14:18:04.369599+00:00"
+      "last_ok": "2026-07-09T16:44:43.697259+00:00"
     }
   },
   "twitch_live": [],
@@ -10142,7 +10305,7 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165148"
+    "last_full_window": "165149"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -10155,6 +10318,7 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
+    "2026-07-09|15",
     "2026-07-09|12"
   ],
   "weather_seen_ids": [
@@ -10283,8 +10447,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "leaders",
-  "wikiquote_last_sent": "2026-07-09T4",
+  "wikiquote_last_category": "innovators_artists",
+  "wikiquote_last_sent": "2026-07-09T5",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-07-07",
     "activists_thinkers:Booker T. Washington": "2026-07-03",
@@ -10305,7 +10469,7 @@
     "innovators_artists:Steve Jobs": "2026-07-01",
     "innovators_artists:Thomas Edison": "2026-07-06",
     "innovators_artists:Vincent van Gogh": "2026-07-01",
-    "innovators_artists:Walt Disney": "2026-06-30",
+    "innovators_artists:Walt Disney": "2026-07-09",
     "leaders:Abraham Lincoln": "2026-07-05",
     "leaders:Benjamin Franklin": "2026-07-06",
     "leaders:Eleanor Roosevelt": "2026-07-02",
