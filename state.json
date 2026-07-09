@@ -7385,6 +7385,18 @@
       "topic": "wikiquote",
       "ts": "2026-07-09T18:31:45.153616+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - BO5 WITH SUBSCRIBERS COME JOIN",
+      "id": "2a9ac791b5e23e01",
+      "score": 68,
+      "severity": "high",
+      "source": "Sparg0",
+      "title": "Sparg0 is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-09T20:24:13.709877+00:00",
+      "url": "https://twitch.tv/Sparg0"
     }
   ],
   "f4_history": [
@@ -8722,8 +8734,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 43,
-    "ts": "2026-07-09T18:30:10.383393+00:00"
+    "ok": 1,
+    "ts": "2026-07-09T20:24:12.308577+00:00"
   },
   "launch_seen_ids": [
     "f005b9fb66bd62ce",
@@ -10462,9 +10474,9 @@
       "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-09T18:30:17.580557+00:00",
+      "last_data": "2026-07-09T20:24:14.625587+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-09T18:30:10.383393+00:00"
+      "last_ok": "2026-07-09T20:24:12.308577+00:00"
     },
     "uv": {
       "last_ok": "2026-07-09T18:30:10.383393+00:00"
@@ -10491,7 +10503,9 @@
       "last_ok": "2026-07-09T18:30:10.383393+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "Sparg0"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
