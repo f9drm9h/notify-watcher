@@ -258,15 +258,6 @@
       "preserve_detail": false,
       "score": 28,
       "source": "The Odyssey",
-      "title": "\u2018The Odyssey\u2019 Movie Restricts Comments Amid Heated Casting Backlash - Newsweek",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQ1BORi13T2N1SWJfc0xpdlRpRjZOREk4VFlsWlh4MkRaRGdEMngyNnhYVWVSbGFIekRsaGNMakdoOEpBeGFGOF94Y3V6bmhUaEF3ZktERktZcF9Tc3RRTTE5M2hsVFhDTlZ5LTJmc1BMZjlBSllnUFBHay1MTWNlSkFyekR3bmlOM1U3UklIeHE5RmYxTlA1X3d3UGVXS3BU?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
       "title": "Christopher Nolan Says One \u2018Odyssey\u2019 Star Stunned Crew Like Heath Ledger on \u2018The Dark Knight\u2019 - The Hollywood Reporter",
       "topic": "movies",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMlB1cE5ndGI3NGZTMUVXWm9oVURmeWJ2ZXYwckhPRldWeEpZcTJ6Znd2amoyTmU3YlFNUTVYY2FDcjhTVDI1TC1sUjVPWFI1SVZwN3lmN2RfakJtNlk3MFJkZ1FhRV9FMlF6ZV9FcUpnMHAtN2JYS3ZKeVZyMFQzT1p2TUd6cTdNcXdaMGVCUW1DRHRCeWNDQkxHSTVpRDRzbHFtM3dvQm0zakFxN3l1dFRuaHlCeDFDNHc?oc=5"
@@ -288,11 +279,47 @@
       "title": "\u2018The Odyssey\u2019 Comes Ashore: London Goes Wild for Christopher Nolan Epic at Star-Studded World Premiere - The Hollywood Reporter",
       "topic": "movies",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQlRhYVNXb2NMQ2hDQ0paOXVGTDBDbmRHTEp1WUhTa2VZUnoxNjQyMzFzUHdMZlNMZXM3VWp0djNqM3NOaXp4QVdEQ1FwS1ZKSVQxYUl1a1czU3NkM1IzOFlTWlhVZXZhcE0wLTlGcG5ZSzNEZ0x6c2hVX0hDc3gydXQ4UjFpalFuTmprUFhxR0JGa1F1MWtFS1pJeHBmSWJZNkN6QjFpSTNrb25UdVp1UERHRmtURWxiQnc?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "The Odyssey",
+      "title": "The Odyssey's Most Unexpected Casting Choice Has A Much Bigger Purpose Than You Realize - IMDb",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBxc3NESmRuVlZubXF1a1hfWmVlRDdzc1lrZDY1TnZ5MXcxSlhKZzZfVFpnRVVoSlBER21oMDE3TlFrTjNlZWVHR2tRLUtiT3A3MUxtcE16ckFSNkV4a0dBYVJETndPcnc?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "Spider-Man: Beyond the Spider-Verse",
+      "title": "Spider-Man: Beyond The Spider-Verse Producers Share Huge Update On Delayed Threequel - IMDb",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE0ySVRuWlJYT0NYS0V0OURyS0trTDF4M1VJb1ZJQWtkbDFoX044QkY0alpQbzdZMUR0ZUVYVmNIREhhaXJpQWpYWnViZkk0ZHZqOVAtem1BWXdOQVZYTGw4MmU5YlpYbjA?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Earthquakes",
+      "title": "M3.1 - 60 km SE of Punta Cana, Dominican Republic (~191 km away)",
+      "topic": "quakes",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71523148"
     }
   ],
   "digest_last_sent": "2026-07-08",
   "discord_control": {
-    "last_id": "1523463788265734284"
+    "last_id": "1524736926001659905"
   },
   "energy_learn_last_news": "2026-07-06",
   "energy_learn_last_sent": "2026-07-08",
@@ -331,6 +358,7 @@
     ]
   },
   "energy_seen_ids": [
+    "5997104c88ba71d1",
     "5f75a89bcc266e46",
     "ec4904b9245045d0",
     "62a341b566ce8c3e",
@@ -6906,6 +6934,126 @@
       "topic": "wikiquote",
       "ts": "2026-07-09T08:59:27.778647+00:00",
       "url": ""
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "716ca30eacbd0ffe",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "The Odyssey Is The Only Reboot That Matters - Haute Living",
+      "topic": "movies",
+      "ts": "2026-07-09T11:53:43.754047+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVFU4OUZ4LVN3TFRrRDM4V0s1QWFLWVRfTjh4ekNyWUJNcGdxYTVQZkJZZ2FMZnlqUUIxRnFfUkMtQVRRSTM5eVBnVThnTXhMSEY3Vkd3TnRTUjF3amFpLXdWZ2pvTkpDM1hRVnVRUk5PcEctQnVxVENycGtDREZUd0hsYTktRHd6SEoxVXRvbklmOXhWbWlUWHJ6Q3AweVk5MXIxY2MzWElLVUpPYVdwbmUwcVBvV0E?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "560385a5b675c81b",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "'The Odyssey': First Reactions From The Critics And Fanboys Who've Seen It - Deadline",
+      "topic": "movies",
+      "ts": "2026-07-09T11:53:43.755763+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRzBpMm5OMl9TSTZQZEp3Y0NpVUNWTTB4M1YzZ0trVEZpa25DMFFISW9XQWFIazFaU0Y4aTI5bGlmSnAyVk9LMzJCaEZSb2lRcFBZT05Vc2FkOTFJUWYwYkotdnJrdy1UT0RhVnlFSlU4M0dEVXFRQ05kMGxzTzVaTEtFVERYWlpGOHNROXNVTFNvdFBW?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "b3c2d6786dfd4e0d",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 First Reactions: \u201cStaggering \u2026 Nolan\u2019s Biggest Film to Date\u201d - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-07-09T11:53:43.756686+00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeGhWeG54OVVSTXlpT1dqOTVSOTdlTjRLUjZwTWVDLXJZX29melNBdnduRy1GNnNjMzZpa3dua3gtQlBzck1WbklpdnFmQ2pwWkgzY0wxdmFvSUI0ZVhOd1hYd3JpeUJwLW81eVBVY0NGVUgtUVVKY0x3VW54LWFqTHZaSVRCWm4tcjRwN1ZONVZSUGZmVnZKaUJQckZidHpw?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "765dc2fc05f9c61a",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Christopher Nolan's 'The Odyssey' gets overwhelmingly negative reactions after controversial casting choices | OutKick - Fox News",
+      "topic": "movies",
+      "ts": "2026-07-09T11:53:43.757696+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNb0NPLWlicnMxWDZrb0JWYUtRTDU5cE52czI1cFFtNzc2MXdGdkJ4dUlFUDlpeFpXTThCNXJlaURFWXhaN1NqNUJkNF8zNXQ1elMxUWFEemdIdnBNQ24zdWtYbFFGRF9rSnlvWExLcnc5VTV1RXBwalFRRjVIdThfRzRNMGlXQ3FNVGxBUHZQMG9SbUxkVU1sWmhjZndiQ1d4NGtudWIyQ2hidEh4YzN1ZjBVS0Y2Y3hrWUlrX2hRQU92WmlnSHB3azZn?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "092010597848349f",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-07-09T11:54:27.446906+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "fe136bc00334e8ac",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.1 - 60 km SE of Punta Cana, Dominican Republic (~191 km away)",
+      "topic": "quakes",
+      "ts": "2026-07-09T11:54:46.211327+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71523148"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 7:03 PM - max 60deg, SW to NE. Look up!",
+      "id": "eee862271198a3ea",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-09T11:54:47.660103+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 4:55 AM - max 53deg, NW to SE. Look up!",
+      "id": "750126946d35fe65",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-09T11:54:47.853269+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "The year is 1609, and a new instrument has swept across Europe, whispered about in every intellectual salon and royal court: the \"Dutch perspective glass.\" Galileo Galilei, a professor of mathematics at the University of Padua, a man known for his sharp intellect and even sharper ambition, heard the rumors. He grasped the profound implications of such a device for military strategy, for navigation, and, most importantly to him, for unraveling the mysteries of the heavens. Without ever seeing a working model, and relying only on descriptions of its principles, Galileo set about constructing his own. He ground his own lenses, an arduous, precise task that demanded an almost obsessive attention to detail. His early telescopes were imperfect, distorting the view, but he persevered, refining his technique until he produced an instrument that magnified objects twenty times. It was a technological marvel, far superior to anything else available at the time.\n\nWith this powerful new eye, Galileo turned his gaze skyward, not just out of scientific curiosity, but with a deep-seated desire to observe what no human had ever seen. He had previously dismissed Copernicus's heliocentric model, but his observations through the telescope began to chip away at his geocentric assumptions. The Moon, long considered a perfect, unblemished sphere, revealed a rugged, mountainous terrain, strikingly similar to Earth. Then came January 1610. Focusing his telescope on Jupiter, a bright, unchanging star in the night sky, Galileo observed not a solitary point of light, but a large central disk flanked by three tiny, luminous pinpricks. Night after night, he watched them, meticulously charting their positions. To his astonishment, these small lights were not fixed stars, but appeared to be orbiting Jupiter, sometimes three, sometimes two, as one would disappear behind or in front of the giant planet. Within weeks, he identified a fourth moon.\n\nThis discovery was nothing short of revolutionary, a direct challenge to the prevailing Aristotelian and Ptolemaic understanding of the cosmos. For centuries, the geocentric model had held sway, asserting that Earth was the unmoving center of the universe, with all celestial bodies orbiting it. The existence of celestial bodies orbiting *another* celestial body, not Earth, directly contradicted this dogma. It provided compelling, albeit not conclusive, evidence that the Earth was not the unique center of all motion, and by extension, lent powerful support to Copernicus's heliocentric theory, where the Earth itself was just another planet orbiting the Sun. The implications were profound, not only for astronomy but for philosophy, theology, and humanity's understanding of its place in the universe. Galileo, acutely aware of the magnitude of his findings, published them with remarkable speed in March 1610 in his groundbreaking treatise, \"Sidereus Nuncius\" (Starry Messenger).\n\nThe impact of \"Sidereus Nuncius\" was immediate and electrifying. It catapulted Galileo to international fame, earning him a prestigious appointment as chief mathematician and philosopher to the Grand Duke of Tuscany. However, his discoveries also ignited a fierce controversy, especially with the Catholic Church, which saw the heliocentric model as a direct assault on scriptural interpretation and its theological authority.",
+      "id": "c5f755639f52e6f4",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Galileo's telescope and the moons of Jupiter",
+      "topic": "learn",
+      "ts": "2026-07-09T11:54:54.494034+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cChurchill had the mind of an historian and the courage of a solider. First, Churchill could see the patterns of the past being repeated in the present, and second, he had no fear of risking political death by going against the polls or conventional wisdom.\u201d\n\u2014 Winston Churchill\n\nThe year is 1940. A storm, unlike any humanity had ever witnessed, was brewing across Europe. France, the venerable ally, had fallen with a speed that defied comprehension. The British Expeditionary Force, after a miraculous escape from Dunkirk, was back on home soil, battered but not broken. Across the Channel, the Nazi war machine, fresh from its triumphs, was preparing its next move. The air raids had begun, a nightly symphony of terror that tested the resolve of every man, woman, and child in Britain. It was in this crucible of chaos and fear that Winston Churchill, a figure who had spent decades in the political wilderness, rose to become Prime Minister. He inherited a nation teetering on the precipice, facing an enemy whose ideology and military might seemed unstoppable. The conventional wisdom, the polite whispers of appeasement and negotiation, were thick in the air. Yet, Churchill, with the weight of history on his shoulders, saw a different path.\n\nHe saw the echoes of past tyrants, the dangers of yielding to a force that understood only conquest. His mind, steeped in the annals of empires and conflicts, recognized the patterns. The insidious progression from demands to annexation, from promises of peace to declarations of war, was not new to him. He understood that some battles, no matter how daunting, could not be evaded. This historical perspective, combined with an almost reckless courage, allowed him to defy the prevailing sentiment. To stand against the tide of public opinion, which at times swayed towards compromise, and to challenge the cautious pronouncements of his own advisors, required an extraordinary kind of fortitude. He risked not just his political career, which had seen its fair share of spectacular downfalls, but the very fate of his nation on a conviction that seemed, to many, like sheer madness: that Britain, alone if necessary, would fight.\n\nThis particular insight into Churchill's character, that he possessed both the keen eye of an historian and the unwavering resolve of a soldier, continues to resonate with us today because it speaks to the enduring human struggle against overwhelming odds. In a world often characterized by rapid change and complex challenges, the ability to draw lessons from the past, to discern patterns in the present, and to act with conviction in the face of uncertainty remains profoundly relevant. Whether it's navigating political upheavals, economic crises, or global pandemics, the echoes of Churchill's leadership remind us that true leadership often demands a willingness to stand firm, to challenge conventional wisdom, and to accept the risk of failure in pursuit of a greater good. His story, then, is not just a chapter in the history of the Second World War, but a timeless testament to the power of courage informed by historical understanding.",
+      "id": "fbde642051027007",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Winston Churchill",
+      "topic": "wikiquote",
+      "ts": "2026-07-09T11:54:58.955866+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -7949,6 +8097,8 @@
     }
   },
   "iss_seen_passes": [
+    "d868d870aebf8a39",
+    "10c4ee021125cad2",
     "e4e2030da24f5025",
     "95e2cffbc2a4b019",
     "1b9ce9975ba4a23c",
@@ -8044,8 +8194,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "ancient_civilizations",
-  "knowledge_last_sent": "2026-07-09T2",
+  "knowledge_last_category": "astronomy",
+  "knowledge_last_sent": "2026-07-09T3",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -8066,6 +8216,7 @@
     "ancient_civilizations:The rise of Sumer and the first cities": "2026-07-02",
     "astronomy:Carl Sagan and the Pale Blue Dot": "2026-06-28",
     "astronomy:Dark energy and the accelerating universe": "2026-07-02",
+    "astronomy:Galileo's telescope and the moons of Jupiter": "2026-07-09",
     "astronomy:Jocelyn Bell Burnell and the discovery of pulsars": "2026-07-05",
     "astronomy:SETI and the Wow! signal": "2026-07-04",
     "astronomy:The Antikythera mechanism, an ancient computer": "2026-06-17",
@@ -8222,7 +8373,7 @@
   "last_run": {
     "failed": 0,
     "ok": 43,
-    "ts": "2026-07-09T08:57:51.758218+00:00"
+    "ts": "2026-07-09T11:53:40.350126+00:00"
   },
   "launch_seen_ids": [
     "f005b9fb66bd62ce",
@@ -8255,6 +8406,13 @@
   "life_dashboard_last_week": "2026-W27",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "96af08169dfddcc2",
+      "b4d167ab6ccddebd",
+      "e29bdeaa7bfc7f6b",
+      "fa38aada6e57e348",
+      "3a661382b940f453",
+      "1da489b7bf0d835a",
+      "fd3ae8807daf47c8",
       "163632cb88930f66",
       "a4f517f9e24d8056",
       "0c5887194caff3cd",
@@ -8347,14 +8505,7 @@
       "1e10abcbbb434293",
       "b2ae2b2a47dc5999",
       "2b6e42ecb20eb22b",
-      "1b8d408cba6c0e64",
-      "d29c04beb7ece153",
-      "9248b206c2b958c8",
-      "d7ca2390aa380ca5",
-      "178f4bc0b08f59e1",
-      "998b0e213205e1e2",
-      "1b3aca4965323691",
-      "5d106d5b4f29cb1a"
+      "1b8d408cba6c0e64"
     ],
     "Godzilla x Kong: Supernova": [
       "e971e535097c217e",
@@ -8457,6 +8608,7 @@
       "f64039d17f3a85ea"
     ],
     "Spider-Man: Beyond the Spider-Verse": [
+      "8709acd94eabc622",
       "569db9110f4772a6",
       "cf801cae98e488e2",
       "0944c25549874210",
@@ -8555,10 +8707,12 @@
       "be7a8c68cbca3206",
       "b0688a6a89b0b95f",
       "ea108e9acbb26704",
-      "8749efcfc98e341b",
-      "0d3e06f3496f136e"
+      "8749efcfc98e341b"
     ],
     "Spider-Man: Brand New Day": [
+      "eefb934728c2b12b",
+      "400702e2ba927614",
+      "fa38aada6e57e348",
       "8f833ed25274c728",
       "ee0a2bd1e9c83452",
       "9a79f235119bd733",
@@ -8655,12 +8809,11 @@
       "19b3255d963f2384",
       "3ab909170bb2fb7b",
       "cf3ea33e11663cf5",
-      "a03e7f2c19e6a269",
-      "c05d39d775b20717",
-      "b57397b305f57602",
-      "63571a749d142ff9"
+      "a03e7f2c19e6a269"
     ],
     "The Batman Part II": [
+      "949806edea3ed3a7",
+      "a4f6312362037590",
       "2b3209da67471927",
       "e91b851438915b86",
       "a726ebe59eba2d1b",
@@ -8758,11 +8911,47 @@
       "e58005028f807336",
       "803ab03a43d55376",
       "aa7e4ffcec590fe3",
-      "3021ae3437c51443",
-      "994244d6fe5e5ecd",
-      "a9ede372b5a384d3"
+      "3021ae3437c51443"
     ],
     "The Odyssey": [
+      "aa48f48a023db0f8",
+      "670b62bc2a85083e",
+      "999361b76b15fdd4",
+      "6644aee8df8e69bc",
+      "ef780f0186266f84",
+      "095228f4ac91c31d",
+      "c5aef8941e769f8d",
+      "d6bd25894d089104",
+      "d6a7db32b6c9ca58",
+      "85b1aad3b933e7ea",
+      "ac8d009936add448",
+      "221d1925cc43fae6",
+      "3ac11c32caf4a0d7",
+      "86cd30b91ffdebd9",
+      "2811d9780f078192",
+      "32700ad9c6368219",
+      "b3aa4da9d03d949d",
+      "c8d812eb465b8973",
+      "b4c5537542f7a6fb",
+      "337278d4a4f2b922",
+      "33f81a9b655cc0e6",
+      "641e21ae2178980f",
+      "95cb922da2abcda2",
+      "524c0119ea82834d",
+      "8dc4cc0e6dbbef49",
+      "854abd22f3f5115d",
+      "6259c6a4d27f8f13",
+      "775242c46ccc8d8e",
+      "28a3111f7ee1c19c",
+      "d09c48004f443fdf",
+      "39e080a9adca108f",
+      "b96be70e3313373e",
+      "6f4855dec4ce0a31",
+      "83443647f942ed4b",
+      "2c40f04651379d56",
+      "d5ad4dda7a805a7f",
+      "44d0842031cf9ceb",
+      "986ddc7fb0ee0165",
       "16efbae7d043a8bd",
       "ba6e959c5bbbb50e",
       "9f90e4f33cb0ba66",
@@ -8824,45 +9013,7 @@
       "92e9a4f2995bb4c6",
       "c765b8b5fa12dfb5",
       "6dcd3651a2662ecb",
-      "ae0f611597f7ed3d",
-      "f30d31cdc39f66e0",
-      "67b58c1727815e59",
-      "296e72c5bfa370f2",
-      "6ec2f505983fce81",
-      "5aadcf70ca85d290",
-      "e51073b1b68cd4c6",
-      "d30580c1329042db",
-      "d80026d7d917d62f",
-      "3769445d0fe35d04",
-      "8535834fd032b81a",
-      "94c52b36d9f9d713",
-      "e86e7930c19b4df8",
-      "09f1d14f9a63b5d1",
-      "1a08f910896588c0",
-      "e552cbe346e88650",
-      "eb368cf5a16d1a2e",
-      "225f59f61a0666d4",
-      "073e003d1eb569ae",
-      "3d664546377daaf7",
-      "bf03b916ddcc8b12",
-      "4bf1ab17700e9418",
-      "9987b10f84496fa8",
-      "b2dcec54b5d8218b",
-      "d93f614e48488afa",
-      "7db39e36f5210e7e",
-      "9483c8a52dc386a1",
-      "f9030b5dee3c3d4a",
-      "2678fc9105e8855b",
-      "f8049dc8f78b1719",
-      "c2399b325e806a62",
-      "c3e43471f3b97955",
-      "4b66da197a2b05a2",
-      "1eb3826f89f5a771",
-      "e943628e52a6149a",
-      "f3a946e0f242c377",
-      "8aaaf9291a17fa15",
-      "0ebf0c85155c8fef",
-      "d5d2d2b0a3159369"
+      "ae0f611597f7ed3d"
     ]
   },
   "movie_release_dates": {
@@ -9059,7 +9210,7 @@
   ],
   "muted": {
     "games": "2026-06-14T04:04:41.990631+00:00",
-    "movies": "2026-07-06T20:01:21.217040+00:00",
+    "movies": "2026-07-10T11:53:40.349957+00:00",
     "music": "2026-06-27T06:18:27.434173+00:00"
   },
   "offers": {
@@ -9702,6 +9853,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "f570e21b0241ab39",
     "610a8bc435539596",
     "89e9a5b5e9e1513d",
     "b8a1bf71ffcaac6c",
@@ -9831,10 +9983,10 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "apod": {
       "last_data": "2026-07-08T21:53:00.842552+00:00",
@@ -9842,35 +9994,35 @@
       "last_ok": "2026-07-08T21:51:19.891288+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "deals": {
-      "last_data": "2026-07-09T08:58:46.240403+00:00",
+      "last_data": "2026-07-09T11:54:15.377896+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "energy": {
-      "last_data": "2026-07-09T08:58:56.681973+00:00",
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_data": "2026-07-09T11:54:27.105063+00:00",
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "fda": {
-      "last_data": "2026-07-09T08:58:46.755804+00:00",
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_data": "2026-07-09T11:54:15.877162+00:00",
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "fuel": {
       "last_data": "2026-07-08T21:52:42.571277+00:00",
@@ -9878,17 +10030,17 @@
       "last_ok": "2026-07-08T21:51:19.891288+00:00"
     },
     "fx": {
-      "last_data": "2026-07-09T08:59:13.177285+00:00",
+      "last_data": "2026-07-09T11:54:46.906531+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "games": {
       "last_data": "2026-07-06T13:33:40.805493+00:00",
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-09T08:58:02.421845+00:00",
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_data": "2026-07-09T11:53:51.229556+00:00",
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "groceries": {
       "last_data": "2026-07-08T21:52:11.619612+00:00",
@@ -9896,22 +10048,22 @@
       "last_ok": "2026-07-08T21:51:19.891288+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "learn": {
       "last_data": "2026-07-08T12:11:12.663659+00:00",
@@ -9919,76 +10071,76 @@
       "last_ok": "2026-07-08T12:09:20.941443+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "movies": {
-      "last_data": "2026-07-09T08:57:57.926127+00:00",
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_data": "2026-07-09T11:53:46.321109+00:00",
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "music": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-09T08:58:57.176665+00:00",
+      "last_data": "2026-07-09T11:54:27.862317+00:00",
       "last_data_count": 14,
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "outages": {
-      "last_data": "2026-07-09T08:59:12.676700+00:00",
+      "last_data": "2026-07-09T11:54:46.172155+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-09T08:59:12.748883+00:00",
-      "last_data_count": 33,
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_data": "2026-07-09T11:54:46.210949+00:00",
+      "last_data_count": 30,
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "research": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-09T08:57:58.958185+00:00",
+      "last_data": "2026-07-09T11:53:47.686904+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "weather": {
-      "last_data": "2026-07-09T08:58:56.879323+00:00",
+      "last_data": "2026-07-09T11:54:27.446559+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "wikiquote": {
-      "last_data": "2026-07-09T08:59:23.055497+00:00",
-      "last_data_count": 170,
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_data": "2026-07-09T11:54:55.107134+00:00",
+      "last_data_count": 301,
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-09T08:59:17.395626+00:00",
+      "last_data": "2026-07-09T11:54:49.490024+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-09T08:57:51.758218+00:00"
+      "last_ok": "2026-07-09T11:53:40.350126+00:00"
     }
   },
   "twitch_live": [],
@@ -9996,7 +10148,7 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165146"
+    "last_full_window": "165147"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -10010,6 +10162,7 @@
   "watchdog_failing_since": {},
   "water_slots_sent": [],
   "weather_seen_ids": [
+    "920bc5b5a2d032e4",
     "de68c85650d54ab4",
     "70c68f59e5055bf2",
     "0dc63f762370c26a",
@@ -10134,8 +10287,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "writers",
-  "wikiquote_last_sent": "2026-07-09T2",
+  "wikiquote_last_category": "leaders",
+  "wikiquote_last_sent": "2026-07-09T3",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-07-07",
     "activists_thinkers:Booker T. Washington": "2026-07-03",
@@ -10166,7 +10319,7 @@
     "leaders:Nelson Mandela": "2026-07-08",
     "leaders:Theodore Roosevelt": "2026-07-03",
     "leaders:Thomas Jefferson": "2026-07-07",
-    "leaders:Winston Churchill": "2026-06-30",
+    "leaders:Winston Churchill": "2026-07-09",
     "philosophers:Aristotle": "2026-07-06",
     "philosophers:Arthur Schopenhauer": "2026-07-07",
     "philosophers:Confucius": "2026-07-01",
