@@ -1,5 +1,6 @@
 {
   "anthropic_seen": [
+    "73bfbb095ffbe256",
     "2a21843da4e0500e",
     "52aeb58ab019ce20",
     "06e4825659fcfbc8",
@@ -118,6 +119,24 @@
       "title": "La Sirena deal: Cafetera Black & Decker 12 Tazas CM0915BK-LA",
       "topic": "groceries",
       "url": "https://www.sirena.do/b-d-cafetera-12-tz-cm0915bk-la-2163812/p"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "The Odyssey",
+      "title": "The Odyssey - Official \u2018A Look Inside\u2019 Featurette - IGN",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5rNkh6dHBGRXJmUVdNY19zOHRiY3Rfa0wyN3VxQmNTMEZpTVNBZzc3YTVFNVE4WU1tX2pHUkVzTndjczlySjRUMXc1MVNPbHc4R2Z3RGp0c1B1VGw1UW5PMW5JYVNaM3JkN0J2a1ptMGh6d3NSalBPRWRHZjA?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-07-09",
@@ -7198,6 +7217,174 @@
       "topic": "wikiquote",
       "ts": "2026-07-09T16:46:23.182382+00:00",
       "url": ""
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "dd4b479f63deb9ac",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "\u2018Avengers: Doomsday\u2019s\u2019 New Official Synopsis Confirms the Wildest Roster the Franchise Has Ever Assembled - IMDb",
+      "topic": "movies",
+      "ts": "2026-07-09T18:30:12.519819+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FREpfVUd5QUt3bUp5YkJ2alo1MEkwOUhUYmgyMDQ1bkNhWFNGYmV1TEtwbXNMbk1XSnVGdnNtWkZDTXMwTExacGFSRVZKQ1VhLUVvaWVIUVBQT0trcExsY2VxQ3A4bDA?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "6c82876823012057",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "A Must-Watch Superhero Film Before \u2018Spider-Man: Brand New Day\u2019 Is Officially on Netflix - Collider",
+      "topic": "movies",
+      "ts": "2026-07-09T18:30:13.103780+00:00",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE11Yk8tVDVmRHVlS2pRWnptM2IxcTdsSkJZT0dhdTNNdW5UeVIwNTc0U0U0Q3psa1VpUDJfWkswUVRxZ1FVT05fYUdLNWNYY1Nuc0J3SUdKb003WmtzVUF5aEJ6SHZoQ2hRS3BZ?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "1535bdb7834f1d9c",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Christopher Nolan Says One \u2018Odyssey\u2019 Star Stunned Crew Like Heath Ledger on \u2018The Dark Knight\u2019 - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-07-09T18:30:13.902110+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMlB1cE5ndGI3NGZTMUVXWm9oVURmeWJ2ZXYwckhPRldWeEpZcTJ6Znd2amoyTmU3YlFNUTVYY2FDcjhTVDI1TC1sUjVPWFI1SVZwN3lmN2RfakJtNlk3MFJkZ1FhRV9FMlF6ZV9FcUpnMHAtN2JYS3ZKeVZyMFQzT1p2TUd6cTdNcXdaMGVCUW1DRHRCeWNDQkxHSTVpRDRzbHFtM3dvQm0zakFxN3l1dFRuaHlCeDFDNHc?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "8ee9151b047bdc7a",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "'The Odyssey': First Reactions From The Critics And Fanboys Who've Seen It - Deadline",
+      "topic": "movies",
+      "ts": "2026-07-09T18:30:13.903620+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRzBpMm5OMl9TSTZQZEp3Y0NpVUNWTTB4M1YzZ0trVEZpa25DMFFISW9XQWFIazFaU0Y4aTI5bGlmSnAyVk9LMzJCaEZSb2lRcFBZT05Vc2FkOTFJUWYwYkotdnJrdy1UT0RhVnlFSlU4M0dEVXFRQ05kMGxzTzVaTEtFVERYWlpGOHNROXNVTFNvdFBW?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "094ea93a83a7eea2",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 First Reactions: \u201cStaggering \u2026 Nolan\u2019s Biggest Film to Date\u201d - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-07-09T18:30:13.904498+00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeGhWeG54OVVSTXlpT1dqOTVSOTdlTjRLUjZwTWVDLXJZX29melNBdnduRy1GNnNjMzZpa3dua3gtQlBzck1WbklpdnFmQ2pwWkgzY0wxdmFvSUI0ZVhOd1hYd3JpeUJwLW81eVBVY0NGVUgtUVVKY0x3VW54LWFqTHZaSVRCWm4tcjRwN1ZONVZSUGZmVnZKaUJQckZidHpw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Pique La Baleine\u00a0\u00a0 \u00a0 - The Dreadnoughts\n(because you like Sean Dagher)",
+      "id": "2d89ba678aac1032",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-07-09T18:30:20.460741+00:00",
+      "url": "https://www.deezer.com/track/3452230561"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "da8b13f5a9bccef5",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-07-09T18:31:13.096086+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 7:03 PM - max 60deg, SW to NE. Look up!",
+      "id": "b8ee100056b7223e",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-09T18:31:32.685381+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 4:55 AM - max 53deg, NW to SE. Look up!",
+      "id": "06022958edd1c6eb",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-09T18:31:32.895364+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "A new way to reflect on how you use Claude - Anthropic",
+      "id": "987dcfc95eb5bde6",
+      "score": 70,
+      "severity": "moderate",
+      "source": "Anthropic",
+      "title": "Anthropic",
+      "topic": "anthropic_news",
+      "ts": "2026-07-09T18:31:33.723065+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9uQmgzMW5SUGNxN3VQLUJmU3YtcEhCVXpyUl9aOVRMVEFDZU94NGJyVS1yV1NUMGoyY2Fycm1iamhuNVBNUlFEQjd2djFiRGRXSmRiZW14akhXdS1XZlNB?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "The ylink grind continues; ABT3 run",
+      "id": "3f63c5facdc76b2f",
+      "score": 62,
+      "severity": "moderate",
+      "source": "sparg0147",
+      "title": "sparg0147 uploaded a new video",
+      "topic": "youtube",
+      "ts": "2026-07-09T18:31:34.352733+00:00",
+      "url": "https://www.youtube.com/watch?v=Ypad3wCWlyE"
+    },
+    {
+      "action": "push",
+      "detail": "Pause for a moment and have a drink of water.",
+      "id": "3a711df0f293c7ba",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-07-09T18:31:35.052456+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "In the mid-19th century, the operating theater was less a place of healing and more a chamber of horrors. Surgeons, often lauded for their speed and dexterity, worked in coats stiff with dried blood, their instruments laid out on unsterile surfaces, often wiped on their own clothes. The air hung thick with the stench of gangrene and putrefaction. Amputations were commonplace, not just for shattered limbs, but for any injury that broke the skin, a desperate measure against the near-inevitable consequence: a wound that would swell, ooze pus, and often, ultimately kill the patient. This was the era before understanding germ theory, a time when doctors believed that \"miasmas\" or \"bad air\" caused disease, and that the pus filling a wound was a sign of \"laudable pus,\" a necessary part of healing. The human drama here was immense: families watching loved ones succumb to a simple cut, surgeons haunted by their high mortality rates, yet utterly blind to the invisible enemies at work.\n\nInto this grim tableau stepped Joseph Lister, a Quaker surgeon working in Glasgow. Lister was not an anomaly in his ambition to improve patient outcomes, but he was unique in his intellectual curiosity and openness to new ideas. He was deeply troubled by the rampant sepsis in his wards, and in 1864, his colleague Thomas Anderson introduced him to the work of Louis Pasteur. Pasteur had demonstrated that fermentation and putrefaction were caused by airborne microorganisms. Lister, with a flash of profound insight, connected Pasteur's findings to the rotting flesh in his surgical wards. He reasoned that if invisible \"germs\" in the air caused decay in organic matter, they must also be responsible for the infections in open wounds. This was the pivotal moment, a eureka moment born from cross-disciplinary thought, that would forever change medicine.\n\nLister\u2019s solution, inspired by the use of carbolic acid (phenol) to treat sewage and reduce its odor in Carlisle, was revolutionary yet simple: kill the germs. He began experimenting in 1865, first by applying carbolic acid directly to wounds, and later by spraying a dilute solution into the air during surgery, cleaning instruments, and even having his assistants wash their hands in it. His first major success was with an 11-year-old boy, James Greenlees, who had suffered a compound fracture of the leg. Instead of the usual amputation, Lister meticulously cleaned the wound with carbolic acid and dressed it with a carbolic-soaked lint. The boy recovered without infection, a feat almost unheard of at the time. This was not a quick fix; it required meticulous attention to detail, a stark contrast to the rough-and-ready practices of the day.\n\nThe impact of Lister's work, though initially met with skepticism and even ridicule, was profound and transformative. His mortality rates plummeted, and he began performing surgeries previously deemed impossible due to the high risk of infection. He published his findings in The Lancet in 1867, laying the groundwork for what we now call antiseptic surgery, and eventually, aseptic surgery \u2013 the prevention of germs from entering the surgical field in the first place. The human drama continued, but now with a different script: patients who would have died now lived, surgeons gained a new and powerful tool, and the operating theater began its slow evolution from a place of dread to a sanctuary of healing.",
+      "id": "4fb2a55a57c6fd3f",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Joseph Lister and antiseptic surgery",
+      "topic": "learn",
+      "ts": "2026-07-09T18:31:40.204273+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cThis is where we are. Where do we go from here? First, we must massively assert our dignity and worth. We must stand up amidst a system that still oppresses us and develop an unassailable and majestic sense of values.\u201d\n\u2014 Martin Luther King, Jr.\n\nThe resonant voice of Martin Luther King, Jr. speaks across the decades, carrying an almost sacred weight of hope and struggle. He was, to put it simply, an American prophet, a Baptist minister from Atlanta who, through a potent blend of theological conviction, strategic genius, and immense personal courage, became the undisputed leader of the Civil Rights Movement. Born into a relatively comfortable middle-class family, he was nonetheless immersed in the everyday realities of Jim Crow segregation, the insidious legal and social system that denied Black Americans their fundamental rights. His intellectual journey, steeped in the writings of Thoreau and Gandhi, led him to embrace nonviolent direct action as the most powerful weapon against injustice, a philosophy he would wield with extraordinary effectiveness from the Montgomery Bus Boycott of 1955 to the march on Washington in 1963 and beyond. He was a man deeply committed to a \"beloved community,\" a vision of America where justice rolled down like waters and righteousness like a mighty stream, a society free from racial prejudice and economic exploitation.\n\nBy the time King uttered these words, \"This is where we are. Where do we go from here? First, we must massively assert our dignity and worth. We must stand up amidst a system that still oppresses us and develop an unassailable and majestic sense of values,\" it was 1967, and the landscape of the Civil Rights Movement had shifted dramatically. The landmark legislative victories of the Civil Rights Act of 1964 and the Voting Rights Act of 1965 had dismantled legal segregation, but they had not eradicated systemic racism or economic inequality. The urban ghettos were simmering, erupting in riots across the country, fueled by despair and frustration. The Vietnam War was escalating, diverting resources and attention from domestic issues, and King himself was facing increasing criticism from younger, more radical Black leaders who questioned the efficacy of nonviolence. He was, at this moment, pivoting his focus from civil rights to human rights, from racial equality to economic justice, launching the Poor People's Campaign. He was also confronting a deep sense of national disillusionment, grappling with the limits of legislative change and the entrenched nature of prejudice. He understood that while the chains of legal segregation had been broken, the chains of psychological and economic oppression remained.\n\nThese words resonate with enduring power today because they speak to an ongoing struggle for self-affirmation and collective liberation that transcends specific historical moments. The call to \"massively assert our dignity and worth\" remains a fundamental human need, particularly for those marginalized or oppressed by society's structures. In a world still grappling with racial injustice, economic disparity, and systemic inequalities, King's message serves as a potent reminder that true freedom is not merely the absence of oppression, but the active cultivation of an \"unassailable and majestic sense of values\" \u2013 a moral compass that guides individuals and communities toward justice, empathy, and mutual respect.",
+      "id": "5f2b7493029ab3f0",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Martin Luther King, Jr.",
+      "topic": "wikiquote",
+      "ts": "2026-07-09T18:31:45.153616+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -7342,7 +7529,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/aviso-semanal-precio-del-04-de-10-julio-2026.pdf",
   "fuel_last_pdf_hash": "b684e645aadcc6c0e3706c11fae5f61a68f8c4070c8c05b6d19b379fd5b64983",
-  "fuel_last_prices_seen_at": "2026-07-09T16:46:08.336585+00:00",
+  "fuel_last_prices_seen_at": "2026-07-09T18:31:31.899366+00:00",
   "fuel_prices": {
     "GLP": 3429.95,
     "Gasoil Regular": 3429.95,
@@ -8250,6 +8437,8 @@
     }
   },
   "iss_seen_passes": [
+    "5678397d1025d05e",
+    "49bf3de0352623f9",
     "85146b292b7050d3",
     "3b7b7eda90275355",
     "222ef098741a4010",
@@ -8352,8 +8541,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "math_history",
-  "knowledge_last_sent": "2026-07-09T5",
+  "knowledge_last_category": "medicine",
+  "knowledge_last_sent": "2026-07-09T6",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -8430,6 +8619,7 @@
     "medicine:Christiaan Barnard and the first heart transplant": "2026-06-28",
     "medicine:Edward Jenner and the first smallpox vaccine": "2026-07-01",
     "medicine:James Lind and the cure for scurvy": "2026-07-02",
+    "medicine:Joseph Lister and antiseptic surgery": "2026-07-09",
     "medicine:Louis Pasteur and the rabies vaccine": "2026-07-05",
     "medicine:Paul Ehrlich and the first chemotherapy": "2026-07-04",
     "medicine:Ronald Ross and the malaria mosquito": "2026-06-30",
@@ -8533,7 +8723,7 @@
   "last_run": {
     "failed": 0,
     "ok": 43,
-    "ts": "2026-07-09T16:44:43.697259+00:00"
+    "ts": "2026-07-09T18:30:10.383393+00:00"
   },
   "launch_seen_ids": [
     "f005b9fb66bd62ce",
@@ -8566,6 +8756,9 @@
   "life_dashboard_last_week": "2026-W27",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "dec2699a6b27f1b5",
+      "a1ca5ea093f2869f",
+      "1b8d408cba6c0e64",
       "577cdfce70c03b67",
       "72208a6f230f92fe",
       "deedb2753d47737e",
@@ -8662,10 +8855,7 @@
       "0ef0109fc135b6cc",
       "259fcc4e5028247c",
       "3648267d1df0a0b9",
-      "135258dcc1fff748",
-      "8cb10f5e071aceb3",
-      "2c3de7afbd341d97",
-      "c7fe91a1b712226f"
+      "135258dcc1fff748"
     ],
     "Godzilla x Kong: Supernova": [
       "e971e535097c217e",
@@ -8870,6 +9060,15 @@
       "8749efcfc98e341b"
     ],
     "Spider-Man: Brand New Day": [
+      "335c2ad508c9274a",
+      "d2e25f601e2adf6d",
+      "ef8df24d4fe57d87",
+      "12f03c10c7721c45",
+      "2972a699ff915afc",
+      "6c08ef0e80e91255",
+      "e02b56c3534c436b",
+      "3ab909170bb2fb7b",
+      "6c40292261f45b9c",
       "8a1cb203385f418d",
       "152e453081edbc94",
       "6a3a62c218454e9e",
@@ -8960,18 +9159,10 @@
       "3262278d3c92fb12",
       "7bb1035ad191a351",
       "42110c372919d1d9",
-      "ed88c37a23353d35",
-      "7598a25142c187b5",
-      "1f03f7408a28a58c",
-      "c311098eca6204e2",
-      "2faae5dff6fe07fc",
-      "0eff78594a49d1c6",
-      "ffb13d32df655d4e",
-      "e07d32e723ef0295",
-      "4d4467e021389ab9",
-      "0a05c2c43a074cd9"
+      "ed88c37a23353d35"
     ],
     "The Batman Part II": [
+      "6c4509328f0eb610",
       "949806edea3ed3a7",
       "a4f6312362037590",
       "2b3209da67471927",
@@ -9070,10 +9261,41 @@
       "c8114564f394fa3e",
       "e58005028f807336",
       "803ab03a43d55376",
-      "aa7e4ffcec590fe3",
-      "3021ae3437c51443"
+      "aa7e4ffcec590fe3"
     ],
     "The Odyssey": [
+      "61e1527dcef28518",
+      "def221fce7c802db",
+      "4f76a6dcde799cf5",
+      "30847250f073c8dc",
+      "4b7b2f88e4e5282c",
+      "31eb8e5dc188d5d9",
+      "3725f1556f39bbdb",
+      "dc6c7295011b6ab4",
+      "11c093a890ab0490",
+      "1f9612a321832ec4",
+      "68b5a0079974b58f",
+      "1a271a8127c7fcc7",
+      "0ae7849b4abc6ff4",
+      "22b9f228a1cb8234",
+      "1704f2948d5779b4",
+      "148f0bd5da06c1a6",
+      "eb6e8cbcefa72c49",
+      "abf2829d31b6adea",
+      "2f68c21abef8428d",
+      "a555898dd7518909",
+      "b92587290e9db381",
+      "8dc4cc0e6dbbef49",
+      "b7266f171355eeb5",
+      "6236c83e53dc512e",
+      "0e44f7195dc8c0b2",
+      "931941686e47673b",
+      "025617c93c257230",
+      "4d1d95da2c5a717c",
+      "775242c46ccc8d8e",
+      "28a3111f7ee1c19c",
+      "d09c48004f443fdf",
+      "d5ad4dda7a805a7f",
       "6ede8af0b8581d56",
       "15a30498720759c7",
       "7842d575b535e568",
@@ -9141,39 +9363,7 @@
       "d5d2d2b0a3159369",
       "f30d31cdc39f66e0",
       "065ec3a0f5c46725",
-      "67b58c1727815e59",
-      "296e72c5bfa370f2",
-      "b35f7a9f02068174",
-      "6ec2f505983fce81",
-      "5aadcf70ca85d290",
-      "d1732270418012fd",
-      "f3117f884558f449",
-      "7eaf6b0cdd2a6968",
-      "e51073b1b68cd4c6",
-      "5f8dcb545d0ba388",
-      "aa48f48a023db0f8",
-      "670b62bc2a85083e",
-      "999361b76b15fdd4",
-      "6644aee8df8e69bc",
-      "ef780f0186266f84",
-      "095228f4ac91c31d",
-      "c5aef8941e769f8d",
-      "d6bd25894d089104",
-      "d6a7db32b6c9ca58",
-      "85b1aad3b933e7ea",
-      "ac8d009936add448",
-      "221d1925cc43fae6",
-      "3ac11c32caf4a0d7",
-      "86cd30b91ffdebd9",
-      "2811d9780f078192",
-      "32700ad9c6368219",
-      "b3aa4da9d03d949d",
-      "c8d812eb465b8973",
-      "b4c5537542f7a6fb",
-      "337278d4a4f2b922",
-      "33f81a9b655cc0e6",
-      "641e21ae2178980f",
-      "95cb922da2abcda2"
+      "67b58c1727815e59"
     ]
   },
   "movie_release_dates": {
@@ -9322,7 +9512,8 @@
     14615843,
     12991885,
     430136,
-    1048667
+    1048667,
+    278684
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -9592,15 +9783,6 @@
         "name": "KANA-BOON"
       }
     },
-    "51a37ee373ca0701": {
-      "applied": null,
-      "created": "2026-06-25T18:22:57.503885+00:00",
-      "kind": "artist",
-      "label": "Takeoff",
-      "payload": {
-        "name": "Takeoff"
-      }
-    },
     "5b7a49d3712b1bc0": {
       "applied": null,
       "created": "2026-07-04T15:35:20.382934+00:00",
@@ -9815,6 +9997,15 @@
       "label": "NateWantsToBattle",
       "payload": {
         "name": "NateWantsToBattle"
+      }
+    },
+    "d7a37cb10b65fef9": {
+      "applied": null,
+      "created": "2026-07-09T18:30:20.460712+00:00",
+      "kind": "artist",
+      "label": "The Dreadnoughts",
+      "payload": {
+        "name": "The Dreadnoughts"
       }
     },
     "d8f7a368caaa8915": {
@@ -10140,87 +10331,87 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "apod": {
-      "last_data": "2026-07-09T16:46:28.567708+00:00",
+      "last_data": "2026-07-09T18:31:50.120840+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "deals": {
-      "last_data": "2026-07-09T16:45:20.353592+00:00",
+      "last_data": "2026-07-09T18:30:47.510810+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "energy": {
-      "last_data": "2026-07-09T16:45:45.109502+00:00",
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_data": "2026-07-09T18:31:12.876861+00:00",
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "fda": {
-      "last_data": "2026-07-09T16:45:34.858277+00:00",
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_data": "2026-07-09T18:31:03.829837+00:00",
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "fuel": {
-      "last_data": "2026-07-09T16:46:08.336611+00:00",
+      "last_data": "2026-07-09T18:31:31.899392+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "fx": {
-      "last_data": "2026-07-09T16:46:07.272600+00:00",
+      "last_data": "2026-07-09T18:31:30.886057+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "games": {
       "last_data": "2026-07-06T13:33:40.805493+00:00",
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-09T16:44:55.894106+00:00",
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_data": "2026-07-09T18:30:23.058839+00:00",
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "groceries": {
-      "last_data": "2026-07-09T16:45:34.297181+00:00",
+      "last_data": "2026-07-09T18:31:03.338821+00:00",
       "last_data_count": 238,
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "learn": {
       "last_data": "2026-07-09T14:19:48.659787+00:00",
@@ -10228,76 +10419,76 @@
       "last_ok": "2026-07-09T14:18:04.369599+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "movies": {
-      "last_data": "2026-07-09T16:44:49.981611+00:00",
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_data": "2026-07-09T18:30:16.548050+00:00",
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "music": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-09T16:45:45.708836+00:00",
+      "last_data": "2026-07-09T18:31:13.438166+00:00",
       "last_data_count": 14,
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "outages": {
-      "last_data": "2026-07-09T16:46:06.654035+00:00",
+      "last_data": "2026-07-09T18:31:30.231356+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-09T16:46:06.760078+00:00",
-      "last_data_count": 32,
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_data": "2026-07-09T18:31:30.348189+00:00",
+      "last_data_count": 37,
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "research": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-09T16:44:51.395120+00:00",
+      "last_data": "2026-07-09T18:30:17.580557+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "weather": {
-      "last_data": "2026-07-09T16:45:45.363371+00:00",
+      "last_data": "2026-07-09T18:31:13.095744+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "wikiquote": {
-      "last_data": "2026-07-09T16:46:18.068796+00:00",
-      "last_data_count": 54,
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_data": "2026-07-09T18:31:40.654865+00:00",
+      "last_data_count": 106,
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-09T16:46:11.861675+00:00",
+      "last_data": "2026-07-09T18:31:35.052135+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-09T16:44:43.697259+00:00"
+      "last_ok": "2026-07-09T18:30:10.383393+00:00"
     }
   },
   "twitch_live": [],
@@ -10305,7 +10496,7 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165149"
+    "last_full_window": "165150"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -10318,10 +10509,12 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
+    "2026-07-09|12",
     "2026-07-09|15",
-    "2026-07-09|12"
+    "2026-07-09|18"
   ],
   "weather_seen_ids": [
+    "82d7dbd842229d1a",
     "920bc5b5a2d032e4",
     "de68c85650d54ab4",
     "70c68f59e5055bf2",
@@ -10447,15 +10640,15 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "innovators_artists",
-  "wikiquote_last_sent": "2026-07-09T5",
+  "wikiquote_last_category": "activists_thinkers",
+  "wikiquote_last_sent": "2026-07-09T6",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-07-07",
     "activists_thinkers:Booker T. Washington": "2026-07-03",
     "activists_thinkers:Helen Keller": "2026-07-08",
     "activists_thinkers:Henry David Thoreau": "2026-07-02",
     "activists_thinkers:Malala Yousafzai": "2026-07-03",
-    "activists_thinkers:Martin Luther King, Jr.": "2026-06-30",
+    "activists_thinkers:Martin Luther King, Jr.": "2026-07-09",
     "activists_thinkers:Mother Teresa": "2026-07-07",
     "activists_thinkers:Ralph Waldo Emerson": "2026-07-08",
     "activists_thinkers:Rosa Parks": "2026-07-01",
@@ -10620,7 +10813,8 @@
       "YUr6YowALuM",
       "zRol-J6u004",
       "sl6a4OAc7aM",
-      "o9X6ntivGxk"
+      "o9X6ntivGxk",
+      "Ypad3wCWlyE"
     ],
     "UCvAR_BDFclXJ1Q9ndUhWLCA": [
       "f6Bgb92t1GQ",
