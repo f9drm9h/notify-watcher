@@ -8920,8 +8920,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 43,
-    "ts": "2026-07-09T22:05:02.224800+00:00"
+    "ok": 1,
+    "ts": "2026-07-09T23:22:42.120476+00:00"
   },
   "launch_seen_ids": [
     "f005b9fb66bd62ce",
@@ -10063,15 +10063,6 @@
         "name": "Lewis Capaldi"
       }
     },
-    "89f47bd5c82ff681": {
-      "applied": null,
-      "created": "2026-06-25T22:08:24.983135+00:00",
-      "kind": "artist",
-      "label": "Migos",
-      "payload": {
-        "name": "Migos"
-      }
-    },
     "8c6a026d7b221138": {
       "applied": null,
       "created": "2026-06-26T21:57:36.766155+00:00",
@@ -10671,9 +10662,9 @@
       "last_ok": "2026-07-09T22:05:02.224800+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-09T22:05:09.499367+00:00",
+      "last_data": "2026-07-09T23:22:43.544517+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-09T22:05:02.224800+00:00"
+      "last_ok": "2026-07-09T23:22:42.120476+00:00"
     },
     "uv": {
       "last_ok": "2026-07-09T22:05:02.224800+00:00"
@@ -10700,9 +10691,7 @@
       "last_ok": "2026-07-09T22:05:02.224800+00:00"
     }
   },
-  "twitch_live": [
-    "Sparg0"
-  ],
+  "twitch_live": [],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
