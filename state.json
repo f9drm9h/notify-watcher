@@ -182,6 +182,24 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "The Odyssey",
+      "title": "Christopher Nolan\u2019s \u2018The Odyssey\u2019 Is in Theaters This Summer. Columbia University \u2018Lit Hum\u2019 Professors Have Thoughts. - Columbia University",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPN0NLZlRuWjRhVlM5ZkgzTVMtd05QLXMwNDZ6a3RDdEswWkU2cmZiWDltMkMyckpIUTFndmpwU3NucUQ5WXZjQWRZakdVRThXSXF2UkxZSHd5RFpZLXRWdjN0RkxVQ2k2WmVCNUFOTWQ5STJqRlNhOENoNkx4OUVONGVuQ2xUdnFMblY3M3RuRlFmU0ZFRENUZW1tQTMyaHltYWxzdnZnT2xTVW9fRmtTQ2NkNTItZ3dE?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-07-09",
@@ -7730,6 +7748,126 @@
       "topic": "wikiquote",
       "ts": "2026-07-10T01:13:55.275375+00:00",
       "url": ""
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "5c4dab6f511d3775",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Listen to \u2018The Odyssey\u2019 Audiobook Narrated By Claire Danes, Dan Stevens, Ian McKellen, Before Watching New Film - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-07-10T05:10:11.619606+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOWjlnb1F1RDlUVTZLbDJ0RTFDT2tIX1ZWOWtTRjdmMXFWRWV5RWdaWjV6UVBsM29wYWhLQWpxa1BHVFd2dFhuT3FyMDJKOHpFTVNrWndhdlkzQjhNYmdTeTRVZFBzR2FkUmstZkxvcUtQUnU1a0JKblNXT3VhQmV1REUyd2g2LW1hMEZKNVFCM3ZqVG1CN3lpMlJrbi1kOVBNQjNYMllRUVNTWnlsVjFhQnc4Y1EtSHZVVjM0UGx6Yy14Zw?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "9795ebd9d912fa73",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "'The Odyssey': First Reactions From The Critics And Fanboys Who've Seen It - Deadline",
+      "topic": "movies",
+      "ts": "2026-07-10T05:10:11.620962+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRzBpMm5OMl9TSTZQZEp3Y0NpVUNWTTB4M1YzZ0trVEZpa25DMFFISW9XQWFIazFaU0Y4aTI5bGlmSnAyVk9LMzJCaEZSb2lRcFBZT05Vc2FkOTFJUWYwYkotdnJrdy1UT0RhVnlFSlU4M0dEVXFRQ05kMGxzTzVaTEtFVERYWlpGOHNROXNVTFNvdFBW?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "e4d4604fac0da054",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 First Reactions: \u201cStaggering \u2026 Nolan\u2019s Biggest Film to Date\u201d - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-07-10T05:10:11.621760+00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeGhWeG54OVVSTXlpT1dqOTVSOTdlTjRLUjZwTWVDLXJZX29melNBdnduRy1GNnNjMzZpa3dua3gtQlBzck1WbklpdnFmQ2pwWkgzY0wxdmFvSUI0ZVhOd1hYd3JpeUJwLW81eVBVY0NGVUgtUVVKY0x3VW54LWFqTHZaSVRCWm4tcjRwN1ZONVZSUGZmVnZKaUJQckZidHpw?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "413cefa0a86eef2d",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Beyond the Spider-Verse",
+      "title": "\u2018Beyond The Spider-Verse\u2019 Just Got A New Production Update, And Miles Morales Fans Can Finally Relax A Little - IMDb",
+      "topic": "movies",
+      "ts": "2026-07-10T05:10:13.702492+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9Ca3JRZmhsRUJ3SzdDUnRiOGRkWnluQlRnMHRPRE9USGJINWRXa1VFR1JYaXNiN2d3QjdBbGhJTGZyV1Z3NHFmelZjck9xN0N0Zy1pVXJ4NzJaaEREMUhkYWlqX2x6QQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - !ingo Late night stream! Look at pink aegis",
+      "id": "e3a356721fe16a4b",
+      "score": 68,
+      "severity": "high",
+      "source": "mkleossb",
+      "title": "mkleossb is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-10T05:10:15.722929+00:00",
+      "url": "https://twitch.tv/mkleossb"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "f2eb4c1eae6037d5",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-07-10T05:10:55.018422+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 4:55 AM - max 53deg, NW to SE. Look up!",
+      "id": "6de1a017890bcc38",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-10T05:11:14.374960+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 6:16 PM - max 54deg, SW to NE. Look up!",
+      "id": "8d7d873e06956f02",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-10T05:11:14.571547+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "In the mid-19th century, the understanding of electricity and magnetism was a patchwork of empirical laws and disparate observations. Coulomb had quantified the force between charges, Amp\u00e8re had elucidated the magnetic effects of currents, and Faraday, with his profound intuition and experimental genius, had revealed the inductive dance between changing magnetic fields and electric currents. Yet, these brilliant pieces of the puzzle remained largely unconnected, a collection of insights rather than a cohesive theory. The air was thick with questions: Was light, that most enigmatic of phenomena, somehow related to these invisible forces? Could the seemingly distinct realms of electricity, magnetism, and optics ever be woven into a single, elegant tapestry of understanding? It was into this fertile intellectual landscape that James Clerk Maxwell, a Scottish polymath of remarkable breadth and insight, stepped forward, armed with a powerful grasp of mathematics and an almost poetic vision of the physical world.\n\nMaxwell\u2019s genius lay not just in his mathematical prowess, but in his ability to synthesize and extrapolate. He meticulously reviewed the work of his predecessors, translating Faraday's often qualitative descriptions into precise mathematical language. But he didn't stop there. Maxwell realized that for Amp\u00e8re's law to hold true in all circumstances, particularly in situations involving changing electric fields, an additional term was required \u2013 a term representing what he called \"displacement current.\" This was a bold and audacious leap of faith, proposing that even in the absence of moving charges, a changing electric field could induce a magnetic field. This seemingly minor mathematical correction, born from a profound sense of aesthetic completeness, would prove to be the linchpin that unlocked a universe of understanding. It was a theoretical prediction, without direct experimental verification at the time, but Maxwell's conviction was unwavering.\n\nThe profound consequence of this addition was nothing short of revolutionary. When Maxwell combined his modified Amp\u00e8re's law with Faraday's law of induction and the other fundamental equations of electromagnetism, he found that they naturally led to wave equations. These equations described disturbances in the electromagnetic field that propagated through space at a specific, calculable speed. And what was that speed? To Maxwell's astonishment and profound delight, it was precisely the known speed of light. The implication was electrifying: light itself was an electromagnetic wave, a ripple in the fabric of the electric and magnetic fields, oscillating perpendicularly to each other and to the direction of propagation. The disparate realms had converged; electricity, magnetism, and light were all manifestations of the same underlying electromagnetic force. This was not merely an equation; it was a revelation, a cosmic whisper confirming the deep interconnectedness of reality.\n\nThe drama of this intellectual journey continued beyond Maxwell's initial theoretical triumph. While his equations predicted the existence of electromagnetic waves beyond the visible spectrum, their experimental verification took time. It was Heinrich Hertz, years after Maxwell's untimely death, who, in a series of brilliant experiments, generated and detected these invisible radio waves, confirming Maxwell's audacious predictions.",
+      "id": "29e0094b815d7042",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Maxwell's equations and the unification of light",
+      "topic": "learn",
+      "ts": "2026-07-10T05:11:21.877584+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cThere is always more brass than brains in an aristocracy.\u201d\n\u2014 Oscar Wilde\n\nTo understand the biting wit of Oscar Wilde\u2019s pronouncement, \u201cThere is always more brass than brains in an aristocracy,\u201d we must first step into the gilded, gas-lit world of late Victorian London, a society both fascinated by and deeply suspicious of its own hierarchies. Wilde, a figure of audacious brilliance and meticulously cultivated persona, was at the zenith of his literary and social power when he likely uttered such a barb. He was not merely a playwright and poet but a performance artist of life itself, known for his flamboyant attire, his exquisitely crafted aphorisms, and his ability to command any room with his intellect and charm. Born in Dublin in 1854 to prominent intellectual parents \u2013 his father a renowned surgeon and his mother a poet and Irish nationalist \u2013 Wilde was a product of the very education system that often upheld aristocratic ideals, having excelled at Trinity College Dublin and Magdalen College, Oxford. Yet, he saw through the pomp and circumstance, observing the inherent absurdities and moral hypocrisies of a class system that often valued inherited titles over genuine talent or intelligence. His plays, like *The Importance of Being Earnest* and *Lady Windermere's Fan*, gleefully satirized the foibles of the upper echelons, revealing the shallowness and often outright stupidity lurking beneath the veneer of good breeding.\n\nThe world at the time was one of immense social flux, despite the seemingly entrenched nature of the aristocracy. The Industrial Revolution had created vast new wealth, giving rise to a powerful middle class that often chafed against the established order. Darwin's theories had shaken traditional religious beliefs, and new ideas about psychology and social justice were bubbling to the surface. Wilde, a keen observer of human nature and a master of social critique, recognized that while the aristocracy still held significant power, their intellectual and moral authority was increasingly tenuous. The \u201cbrass\u201d he referred to was not just the metaphorical trumpet blast of their self-importance, but the literal brass of their military commissions, their inherited wealth, and the often unearned privilege that allowed them to dictate societal norms. The \u201cbrains\u201d were, in his view, often conspicuously absent, replaced by a complacent mediocrity born of never having to truly strive or think for oneself. Wilde himself, a man who built his career entirely on his intellect and artistry, was a living counter-argument to the idea that birthright alone conferred merit. His life was a testament to the power of individual genius, a stark contrast to the often vapid lives of those born into power.\n\nWilde's cutting observation resonates profoundly even today, long after the overt power of many traditional aristocracies has waned. The quote speaks to a timeless human truth: that power and privilege, when unearned and unquestioned, can often lead to intellectual stagnation and moral bankruptcy.",
+      "id": "76874ef585949af4",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Oscar Wilde",
+      "topic": "wikiquote",
+      "ts": "2026-07-10T05:11:27.518072+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -8782,6 +8920,8 @@
     }
   },
   "iss_seen_passes": [
+    "7581e74aafca160b",
+    "639dfbb7916f6205",
     "1157d8d74b4e3e98",
     "a9926138f4378bdb",
     "999eaae571308f55",
@@ -8890,8 +9030,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "philosophy",
-  "knowledge_last_sent": "2026-07-10T0",
+  "knowledge_last_category": "science",
+  "knowledge_last_sent": "2026-07-10T1",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -9024,6 +9164,7 @@
     "science:Heisenberg's uncertainty principle": "2026-07-04",
     "science:Isaac Newton and the falling apple": "2026-07-02",
     "science:Marie Curie and the discovery of radioactivity": "2026-06-13",
+    "science:Maxwell's equations and the unification of light": "2026-07-10",
     "science:Mendeleev and the periodic table": "2026-07-03",
     "science:Schr\u00f6dinger's cat thought experiment": "2026-06-20",
     "science:The discovery of X-rays by Wilhelm R\u00f6ntgen": "2026-06-27",
@@ -9072,9 +9213,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 43,
-    "ts": "2026-07-10T01:12:06.612102+00:00"
+    "failed": 1,
+    "ok": 42,
+    "ts": "2026-07-10T05:10:07.860093+00:00"
   },
   "launch_seen_ids": [
     "f005b9fb66bd62ce",
@@ -9107,6 +9248,17 @@
   "life_dashboard_last_week": "2026-W27",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "5163d48b8dd1c10f",
+      "dcaa2167bc3f1313",
+      "d090342292e1be3c",
+      "087be911b1db322e",
+      "6a04a74da097c10c",
+      "54e941c0302aa01d",
+      "541e18a17f5bfcbd",
+      "35e1c7ef98686bbd",
+      "a1eda6d93e27c5ae",
+      "95edc2af3fc834fb",
+      "9a34f52feac1e671",
       "b463e434b3369227",
       "ea0e38cf230fd7cf",
       "32908a3155d863be",
@@ -9195,18 +9347,7 @@
       "1c66de58e1afc115",
       "157984f7e55af3a7",
       "3075c7e679eb9733",
-      "be8c881829a3be18",
-      "2c42e4a8c650f6d3",
-      "065c51ac2f343b87",
-      "cc7b26e8ce40e1b3",
-      "0e2fd68d579262e3",
-      "4ce982f86ba70aad",
-      "dfeb493f4211e047",
-      "e13f2b0c163d8808",
-      "3dca4e8688f36966",
-      "4556c6454518148b",
-      "a2b1055b994ae926",
-      "b1772d235e325af8"
+      "be8c881829a3be18"
     ],
     "Godzilla x Kong: Supernova": [
       "e971e535097c217e",
@@ -9309,6 +9450,12 @@
       "f64039d17f3a85ea"
     ],
     "Spider-Man: Beyond the Spider-Verse": [
+      "36feaa704ba4d81d",
+      "dd078e275ebb3944",
+      "cf4ef8174d15ca6a",
+      "00c1a79b96dbeb02",
+      "7bfbe5580aeda0a6",
+      "7ef2785546948a5f",
       "7e586ea23b3d06a9",
       "642e65d3883f016d",
       "8709acd94eabc622",
@@ -9402,15 +9549,16 @@
       "93c1f93de412a3d7",
       "5e246d5e99c37e74",
       "23dbb45438277a76",
-      "c64a7b6732d6a7e1",
-      "3912b685b29a0b00",
-      "1e7080aaa5bf21a4",
-      "2bd3ce340f930b89",
-      "b86dd295d7bab687",
-      "be7a8c68cbca3206",
-      "b0688a6a89b0b95f"
+      "c64a7b6732d6a7e1"
     ],
     "Spider-Man: Brand New Day": [
+      "22298bf6d7a5c4d4",
+      "2a566354b14d9f00",
+      "a664a9cb79e8b13c",
+      "32841700a51dc4e8",
+      "2629e801a99976e8",
+      "10120bf4921fe490",
+      "6efec3a117d96b24",
       "81664828a0546eb1",
       "b31c62243d4a277e",
       "3aadfdadccc7f8e9",
@@ -9503,14 +9651,7 @@
       "674f47d2ffe398dc",
       "769660e2a22f3258",
       "812c6aa431106718",
-      "f5f7ed9ac5ac272d",
-      "6e1c43603e633b5a",
-      "19fd3dc102ea1311",
-      "5f43c5bed328ce7a",
-      "8bff2ec942a58baa",
-      "22f24d87d05df6fb",
-      "8746425213ed03b1",
-      "14685831b9d8a032"
+      "f5f7ed9ac5ac272d"
     ],
     "The Batman Part II": [
       "6c4509328f0eb610",
@@ -9615,6 +9756,32 @@
       "aa7e4ffcec590fe3"
     ],
     "The Odyssey": [
+      "911ab18eb972d2f3",
+      "c4dc5ec179c89d00",
+      "db53a46e1a6c5559",
+      "15a30498720759c7",
+      "686a07e9d06c5593",
+      "71cd31c939a59b89",
+      "ad31d0e2e471c6aa",
+      "ee9bd7ee5a5219e9",
+      "ec929b5029aa63ee",
+      "095228f4ac91c31d",
+      "5e98cdc281db93d5",
+      "f9832d40bc76e6bd",
+      "f22cb1b419f3d3c5",
+      "45330e8147e7cf87",
+      "ab575a137c9f2de3",
+      "1eb3826f89f5a771",
+      "bd80ea6d60dec20c",
+      "2a30ba1f9c307fae",
+      "841c927b4e71b4d0",
+      "55daaac9dd10e821",
+      "1a5ac688f255a043",
+      "28a3111f7ee1c19c",
+      "d09c48004f443fdf",
+      "6c8126973545c8a8",
+      "459e2a245d406b82",
+      "d5ad4dda7a805a7f",
       "60187f312aa0b959",
       "3cdb370e500657ef",
       "d6a7db32b6c9ca58",
@@ -9688,33 +9855,7 @@
       "5f8dcb545d0ba388",
       "61e1527dcef28518",
       "def221fce7c802db",
-      "4f76a6dcde799cf5",
-      "30847250f073c8dc",
-      "4b7b2f88e4e5282c",
-      "31eb8e5dc188d5d9",
-      "3725f1556f39bbdb",
-      "dc6c7295011b6ab4",
-      "11c093a890ab0490",
-      "1f9612a321832ec4",
-      "68b5a0079974b58f",
-      "1a271a8127c7fcc7",
-      "0ae7849b4abc6ff4",
-      "22b9f228a1cb8234",
-      "1704f2948d5779b4",
-      "148f0bd5da06c1a6",
-      "eb6e8cbcefa72c49",
-      "abf2829d31b6adea",
-      "2f68c21abef8428d",
-      "a555898dd7518909",
-      "b92587290e9db381",
-      "8dc4cc0e6dbbef49",
-      "b7266f171355eeb5",
-      "6236c83e53dc512e",
-      "0e44f7195dc8c0b2",
-      "931941686e47673b",
-      "025617c93c257230",
-      "4d1d95da2c5a717c",
-      "775242c46ccc8d8e"
+      "4f76a6dcde799cf5"
     ]
   },
   "movie_release_dates": {
@@ -10684,10 +10825,10 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "apod": {
       "last_data": "2026-07-09T22:07:08.076878+00:00",
@@ -10695,35 +10836,35 @@
       "last_ok": "2026-07-09T22:05:02.224800+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "deals": {
-      "last_data": "2026-07-10T01:13:09.533762+00:00",
+      "last_data": "2026-07-10T05:10:44.973236+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "energy": {
-      "last_data": "2026-07-10T01:13:20.511929+00:00",
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_data": "2026-07-10T05:10:54.912459+00:00",
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "fda": {
-      "last_data": "2026-07-10T01:13:09.964964+00:00",
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_data": "2026-07-10T05:10:45.239607+00:00",
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "fuel": {
       "last_data": "2026-07-09T22:06:46.189783+00:00",
@@ -10731,17 +10872,17 @@
       "last_ok": "2026-07-09T22:05:02.224800+00:00"
     },
     "fx": {
-      "last_data": "2026-07-10T01:13:40.773146+00:00",
+      "last_data": "2026-07-10T05:11:13.527522+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "games": {
       "last_data": "2026-07-06T13:33:40.805493+00:00",
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-10T01:12:21.030321+00:00",
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_data": "2026-07-10T05:10:21.446632+00:00",
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "groceries": {
       "last_data": "2026-07-09T22:06:16.278515+00:00",
@@ -10749,22 +10890,22 @@
       "last_ok": "2026-07-09T22:05:02.224800+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "learn": {
       "last_data": "2026-07-09T14:19:48.659787+00:00",
@@ -10772,84 +10913,89 @@
       "last_ok": "2026-07-09T14:18:04.369599+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "movies": {
-      "last_data": "2026-07-10T01:12:14.441518+00:00",
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_data": "2026-07-10T05:10:14.197882+00:00",
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "music": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-10T01:13:21.366069+00:00",
+      "last_data": "2026-07-10T05:10:55.497538+00:00",
       "last_data_count": 14,
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "outages": {
-      "last_data": "2026-07-10T01:13:39.795308+00:00",
+      "last_data": "2026-07-10T05:11:12.761629+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-10T01:13:39.997010+00:00",
-      "last_data_count": 31,
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_data": "2026-07-10T05:11:12.814734+00:00",
+      "last_data_count": 35,
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "research": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-10T01:12:16.458918+00:00",
+      "last_data": "2026-07-10T05:10:17.474199+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "weather": {
-      "last_data": "2026-07-10T01:13:20.872138+00:00",
+      "last_data": "2026-07-10T05:10:55.018088+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "wikiquote": {
-      "last_data": "2026-07-10T01:13:51.445452+00:00",
-      "last_data_count": 79,
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_data": "2026-07-10T05:11:22.397820+00:00",
+      "last_data_count": 253,
+      "last_ok": "2026-07-10T05:10:07.860093+00:00"
     },
     "youtube": {
       "last_data": "2026-07-10T01:13:45.139722+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-10T01:12:06.612102+00:00"
+      "last_error": "all 7 channel feed(s) failed; last: PabloELECTRUM: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UC9DS-MY8CZzLh7vQG000uug",
+      "last_error_ts": "2026-07-10T05:10:07.860093+00:00",
+      "last_ok": "2026-07-10T01:12:06.612102+00:00",
+      "source_failed": true
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "mkleossb"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165152"
+    "last_full_window": "165153"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -10860,9 +11006,12 @@
     "games": "2026-06-12T12:15:55.633492+00:00",
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
-  "watchdog_failing_since": {},
+  "watchdog_failing_since": {
+    "youtube": "2026-07-10T05:10:07.860093+00:00"
+  },
   "water_slots_sent": [],
   "weather_seen_ids": [
+    "e4f76856eaf962fd",
     "313b94a9d80a94f7",
     "82d7dbd842229d1a",
     "920bc5b5a2d032e4",
@@ -10990,8 +11139,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "philosophers",
-  "wikiquote_last_sent": "2026-07-10T0",
+  "wikiquote_last_category": "writers",
+  "wikiquote_last_sent": "2026-07-10T1",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-07-07",
     "activists_thinkers:Booker T. Washington": "2026-07-03",
@@ -11050,7 +11199,7 @@
     "writers:Leo Tolstoy": "2026-07-09",
     "writers:Mark Twain": "2026-07-02",
     "writers:Maya Angelou": "2026-07-04",
-    "writers:Oscar Wilde": "2026-07-01",
+    "writers:Oscar Wilde": "2026-07-10",
     "writers:Virginia Woolf": "2026-07-07",
     "writers:William Shakespeare": "2026-07-03"
   },
