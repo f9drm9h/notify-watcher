@@ -8585,6 +8585,30 @@
       "topic": "spending",
       "ts": "2026-07-10T19:47:12.873291+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - First Multistream W/ Chat",
+      "id": "82e9f5859e305add",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-10T20:54:49.289439+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - BO5 WITH SUBSCRIBERS COME JOIN",
+      "id": "decdd92efae56e91",
+      "score": 68,
+      "severity": "high",
+      "source": "Sparg0",
+      "title": "Sparg0 is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-10T20:54:51.365813+00:00",
+      "url": "https://twitch.tv/Sparg0"
     }
   ],
   "f4_history": [
@@ -9956,8 +9980,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 43,
-    "ts": "2026-07-10T19:45:29.957731+00:00"
+    "ok": 1,
+    "ts": "2026-07-10T20:54:48.200315+00:00"
   },
   "launch_seen_ids": [
     "f005b9fb66bd62ce",
@@ -11700,9 +11724,9 @@
       "last_ok": "2026-07-10T19:45:29.957731+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-10T19:45:39.518888+00:00",
+      "last_data": "2026-07-10T20:54:52.710133+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-10T19:45:29.957731+00:00"
+      "last_ok": "2026-07-10T20:54:48.200315+00:00"
     },
     "uv": {
       "last_ok": "2026-07-10T19:45:29.957731+00:00"
@@ -11729,7 +11753,10 @@
       "last_ok": "2026-07-10T19:45:29.957731+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK",
+    "Sparg0"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
