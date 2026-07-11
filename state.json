@@ -9392,6 +9392,18 @@
       "topic": "wikiquote",
       "ts": "2026-07-11T18:12:09.321436+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - Ingobernable #1 FT MkLeo, MKBigBoss, Sisqui, Maister, Chag, Wise, Bonilla, DieGOD & more!",
+      "id": "6938473bba2914a2",
+      "score": 68,
+      "severity": "high",
+      "source": "mkleossb",
+      "title": "mkleossb is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-11T20:25:35.103609+00:00",
+      "url": "https://twitch.tv/mkleossb"
     }
   ],
   "f4_history": [
@@ -10781,7 +10793,7 @@
   "last_run": {
     "failed": 0,
     "ok": 1,
-    "ts": "2026-07-11T19:34:14.877049+00:00"
+    "ts": "2026-07-11T20:25:33.799634+00:00"
   },
   "launch_seen_ids": [
     "f005b9fb66bd62ce",
@@ -12529,9 +12541,9 @@
       "last_ok": "2026-07-11T18:10:04.255578+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-11T19:34:15.862826+00:00",
+      "last_data": "2026-07-11T20:25:36.750968+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-11T19:34:14.877049+00:00"
+      "last_ok": "2026-07-11T20:25:33.799634+00:00"
     },
     "uv": {
       "last_ok": "2026-07-11T18:10:04.255578+00:00"
@@ -12558,7 +12570,9 @@
       "last_ok": "2026-07-11T18:10:04.255578+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "mkleossb"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
