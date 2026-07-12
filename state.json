@@ -1,5 +1,6 @@
 {
   "anthropic_seen": [
+    "7373834175b552bd",
     "73bfbb095ffbe256",
     "2a21843da4e0500e",
     "52aeb58ab019ce20",
@@ -101,6 +102,33 @@
       "title": "Christopher Nolan pointedly responds to criticism of star-studded The Odyssey casting - HELLO! Magazine",
       "topic": "movies",
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPY0xiRXRhV0dmWDdBRmxneFZwa3NxWlRBRExheHlZUGZMQzhXVHFkckRLbDdZM09ydk13Y2t1NE1fYTZkX2l0RGtEbkVKemVRdnJweWswcXlMT0lJRklzVUpNaHdvRjJVQUFjSDdBOGVGcUtrWVVLOGpKYll2a0Vaa1d5YkM3QzVIZ01fMjFHTjUxbU9GN01pSlBB?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "The Odyssey",
+      "title": "Christopher Nolan Dismisses \u2018The Odyssey\u2019 Casting Backlash As \u201cIrrelevant\u201d: \u201cThat\u2019s What Adaptation Is\u201d - Deadline",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQb3lTMU9ON1ZUZGRScU9qS04yb2llSGxxZHNVYXRCZW5tWXZ4UmFrejJMQk9RWHRNT1JvMWhUOUNYVWJ0bmpvLThVN0ZuZE1rQllTaS1tZUZ4WjFfcHpYbkZwdXo5SS14QjhmbGpSeHRtZzZITER6Wkxoc091clNybEJ4VVF1eEVUUWRwOTVZV1VUVFlHLUdZRGtDU2FHQQ?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 35,
+      "source": "Golden Sun",
+      "title": "Sigh",
+      "topic": "golden_sun",
+      "url": "https://www.reddit.com/r/GoldenSun/comments/1uoq4r1/sigh/"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-07-12",
@@ -10044,6 +10072,174 @@
       "topic": "wikiquote",
       "ts": "2026-07-12T15:20:02.981770+00:00",
       "url": ""
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "6c18be18b7d06172",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday Concept Art Reveals First Look at More Than 20 Returning Heroes - IGN Southeast Asia",
+      "topic": "movies",
+      "ts": "2026-07-12T18:08:13.390155+00:00",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOUnZfX091MU5Rb25ycmxaSjc5NTFYWTd1N1phaE9ubGYxeFhBcDJXbjVLcDFNalpwN0VNcDNrempoOVE2Vk1SY2tNYjd1VWFwdjdHdzJrUjJ2dDlKMllsSWJoc2NySWN2ZXZpT3ZZWTVQRWlQVzZRQkNZVUpzZWJhc09YeUVqUmoxMmVwSnpoTFhxMld2aFhBZEtsWTVObkpRZkFCdXJzQjhiaWYtNDdwR0d6RmJmU1B3dElOSExGXzhVWGF6M2szdjVSTlBkalk?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "19e55300f9fbd137",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "'Avengers: Doomsday' Art: First Look at Doctor Doom Mask, X-Men - Variety",
+      "topic": "movies",
+      "ts": "2026-07-12T18:08:13.391286+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPU1NvNGJfVkJxOG5Cb0lWSS1GNHRBWk0xVkYybFFMYUtVZ25ZY01UUGc1R2FFa3RYN3VPbXg3VHZqdi1EMlllSDVmSy0wMVBKWGtOa2NXb3hweGQwbUFER3UxS1Z6Mmc4eFpqQ2VSb3d4WFExeXk0MFkyNUZlWjhKTWNNT2diVHJBS1AxcUxMcVFNVkJuYXc?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "2119765d6bb030ee",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Marvel Studios Debuts Spider-Man Brand New Day\u2019s Official Theme In New Video - The Direct",
+      "topic": "movies",
+      "ts": "2026-07-12T18:08:14.081419+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPLUpFTVBUQUhZTUEtN1FKOUZWRHpibnEwUTJ2VENma2ZlT1ZpYjNaSkVLQXgzRVA2Ym8wRlRnR0V1LWJaeW5kblBBZ1VHanN6dWdTSlhCTlJWVWxUQTVQVGFWMUNwbS1tWjZrbG9tU1NLSEFWNGFBeEc1MGZUbVVNaS1HQUxNVTZWZWROVQ?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "d5ffad7c28914a07",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Christopher Nolan on adapting \u2018The Odyssey,\u2019 casting Matt Damon and what he learned about movies in Chicago - Chicago Sun-Times",
+      "topic": "movies",
+      "ts": "2026-07-12T18:08:14.809990+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQU25WU2ZXT2E1Q2I1VjlQMDlBdml1MFlJa2FIZExTUC1kVmZVYzNIdjNSMUZCekZUTlpuVC1WLXNmWlpTS1ZMa1IyVEwtSjF3Qk9zSTBfYTcyNk1WTVFHbFozM3Y3TGc3ME9QTmthNFNfS1pETzlMOVJVN043MjJnYlI5a28yYWtNSVl6SFpyZnVjX1ZYQVpLdFgtdTBMbHRGTWZ5b01wb3YyX0xOQ3FEXzFaZkV1TjJHZVV6QUNSc2ZnUHlnODR0WlRkLS12dnc0T0RINnlScGFYS2pSZXFjZzA2X19ObHpTYzBqRE5UVQ?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "1cc315b056a80226",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Christopher Nolan\u2019s \u2018The Odyssey\u2019 Is in Theaters This Summer. Columbia University \u2018Lit Hum\u2019 Professors Have Thoughts. - Columbia University",
+      "topic": "movies",
+      "ts": "2026-07-12T18:08:14.811752+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPN0NLZlRuWjRhVlM5ZkgzTVMtd05QLXMwNDZ6a3RDdEswWkU2cmZiWDltMkMyckpIUTFndmpwU3NucUQ5WXZjQWRZakdVRThXSXF2UkxZSHd5RFpZLXRWdjN0RkxVQ2k2WmVCNUFOTWQ5STJqRlNhOENoNkx4OUVONGVuQ2xUdnFMblY3M3RuRlFmU0ZFRENUZW1tQTMyaHltYWxzdnZnT2xTVW9fRmtTQ2NkNTItZ3dE?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "5dbc5068414842dd",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Tom Holland\u2019s Non-Alcoholic Beer Brand BERO Debuts Collab With Christopher Nolan\u2019s \u2018The Odyssey\u2019 - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-07-12T18:08:14.812646+00:00",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQbXJQMElzbmg0cmItZ002dUpCNzhfZkxyaEFCSkdnbEF6ZE4zYlp5ZkFYTXFhaUNVczFHNVdjZ0wyMGNKbGhNaFNlektLTFhjQzM0QTRzNEV1V0VfN0M5TEwtMU5oc3pKdDkyNTVnbU9HWGs1WkZTX1Jhb2RLdjExb3JPLVByWWd5MGg5VUVoYkRNekJTSm9pbE9iY0xtdjRlRXhyYk1INkU0SzBPdEJYUnlRR3ZnbGp0UzZBMnFpcw?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "0e3abf1932f224b0",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Listen to \u2018The Odyssey\u2019 Audiobook Narrated By Claire Danes, Dan Stevens, Ian McKellen, Before Watching New Film - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-07-12T18:08:14.813602+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOWjlnb1F1RDlUVTZLbDJ0RTFDT2tIX1ZWOWtTRjdmMXFWRWV5RWdaWjV6UVBsM29wYWhLQWpxa1BHVFd2dFhuT3FyMDJKOHpFTVNrWndhdlkzQjhNYmdTeTRVZFBzR2FkUmstZkxvcUtQUnU1a0JKblNXT3VhQmV1REUyd2g2LW1hMEZKNVFCM3ZqVG1CN3lpMlJrbi1kOVBNQjNYMllRUVNTWnlsVjFhQnc4Y1EtSHZVVjM0UGx6Yy14Zw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Pretty Little Poison - Warren Zeiders\n(because you like Shaboozey)",
+      "id": "4bb0bd707daf2724",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-07-12T18:08:22.716662+00:00",
+      "url": "https://www.deezer.com/track/2305066675"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "faad96a83334a7f1",
+      "score": 35,
+      "severity": "moderate",
+      "source": "Golden Sun",
+      "title": "Sigh",
+      "topic": "golden_sun",
+      "ts": "2026-07-12T18:08:24.973867+00:00",
+      "url": "https://www.reddit.com/r/GoldenSun/comments/1uoq4r1/sigh/"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "831e7ea4cd32d935",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-07-12T18:09:07.752193+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Claude in Microsoft Foundry: Building agents for production - Anthropic",
+      "id": "bc453ec61f724798",
+      "score": 64,
+      "severity": "moderate",
+      "source": "Anthropic",
+      "title": "Anthropic",
+      "topic": "anthropic_news",
+      "ts": "2026-07-12T18:09:28.956113+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPUmJUT2lMcmE4UjlnNHlpUkhJTUYtT1BBSXZEQVFGSXBVZnl3bTduYjU5Z3pSaFdfbHZlY002X1BFNTNnUkt6QVhodmh0YVpoLVVDWi1Rd2txRVF6clZockJldWIyWjhNeWdyZjZhbGVqNHZjMDh0ZnoySzhWVm1uNFdwWkZVd3NtNjYweWlvMEo1LWMzaUViTg?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Hydration check: grab some water before you carry on.",
+      "id": "8c98b2c2b35f384b",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-07-12T18:09:31.633522+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Before GPS, the world was a very different place for navigators, particularly those at sea or in the air. For millennia, sailors relied on the stars, the sun, and the horizon, then later on increasingly sophisticated celestial navigation tools and chronometers. During World War II, radio navigation systems like LORAN (Long Range Navigation) and Gee emerged, providing greater accuracy, especially in adverse weather. These systems, however, were still limited by range, terrestrial infrastructure, and atmospheric conditions. The turning point, a spark that ignited the idea of something truly global and ubiquitous, came not from a calculated engineering effort, but from a serendipitous observation in the nascent days of the Space Race.\n\nIn 1957, as the Soviet Union launched Sputnik 1, the world\u2019s first artificial satellite, a team of scientists at Johns Hopkins University's Applied Physics Laboratory (APL) \u2013 Dr. Richard Kirschner, Frank McClure, William Guier, and George Weiffenbach \u2013 were tasked with monitoring its radio signals. They noticed a curious phenomenon: the frequency of Sputnik's signal varied as it passed overhead, a manifestation of the Doppler effect. This wasn't merely a scientific curiosity; it sparked a profound realization. If they knew the satellite's position, they could determine the observer's position by analyzing the Doppler shift. Conversely, if they knew the observer's position, they could track the satellite. Within months, this insight led to the development of TRANSIT, the U.S. Navy's first satellite navigation system. TRANSIT, operational by 1964, provided positional fixes with impressive accuracy for submarines and surface vessels, allowing them to recalibrate their inertial navigation systems. However, it only provided fixes periodically, when a satellite passed overhead, and required the user to know their speed and direction.\n\nThe limitations of TRANSIT, particularly its intermittent availability and susceptibility to user motion, highlighted the need for something more continuous and precise. As the Cold War intensified and the demand for accurate, real-time navigation grew across all branches of the military, a new initiative began to take shape. This was not a singular eureka moment, but a confluence of efforts and rivalries. The Navy, Air Force, and Army each pursued their own satellite navigation concepts, leading to a potential proliferation of incompatible systems. Recognizing the inefficiency and strategic risks of this fragmentation, the Department of Defense, in a crucial decision, mandated a unified approach. In 1973, a meeting at the Pentagon, orchestrated largely by Bradford Parkinson, a U.S. Air Force Colonel and architect of the GPS program, brought together the competing proposals. This gathering, sometimes referred to as the \"secret meeting,\" laid the groundwork for what would become the Global Positioning System, or GPS. Key figures like Roger Easton, from the Naval Research Laboratory, had already developed critical timing technologies and a \"passive ranging\" concept, contributing foundational elements.\n\nThe development of GPS was a monumental undertaking, a testament to human ingenuity and perseverance. It involved a constellation of 24 satellites, each broadcasting precise timing signals, and a complex ground control segment to monitor and maintain them.",
+      "id": "b3a18b7534e2db9a",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "GPS and its military origins",
+      "topic": "learn",
+      "ts": "2026-07-12T18:09:37.417426+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cEo animo quidque debetur quo datur, nec quantum sit sed a quali profectum voluntate perpenditur.\u201d\n\u2014 Seneca the Younger\n\nLucius Annaeus Seneca, born in Cordoba, Hispania, around 4 BCE, arrived in Rome as a young man with a mind ablaze with the philosophies of Stoicism. He rose to become one of the most prominent intellectuals and political figures of his age, a playwright whose tragedies explored the darkest corners of human nature, and an orator whose words could sway senators and emperors alike. Yet, his life was a relentless dance with the capriciousness of power. Exiled by Claudius, only to be recalled to tutor the young Nero, Seneca found himself in the ultimately treacherous position of advisor to a burgeoning tyrant. He tried, for a time, to guide Nero towards wisdom and moderation, to instill in him the Stoic virtues of reason and self-control. His philosophical essays, many written during this tumultuous period, reveal a man grappling with the moral compromises inherent in wielding influence in a morally bankrupt court. The quote, \"Eo animo quidque debetur quo datur, nec quantum sit sed a quali profectum voluntate perpenditur,\" which translates to, \"Every gift owes its value to the spirit in which it is given; it is not the size of the gift but the goodwill from which it comes that is weighed,\" speaks volumes about Seneca's understanding of true generosity and the insidious nature of obligation, a theme surely amplified by his experiences in the Roman elite.\n\nThe Rome of Seneca\u2019s time was a city of breathtaking opulence and crushing poverty, a crucible of grand ambitions and savage betrayals. The Julio-Claudian dynasty, with all its brilliance and brutality, was nearing its end, and the air was thick with political intrigue, paranoia, and the looming threat of Nero\u2019s increasingly erratic behavior. Seneca, as Nero\u2019s most trusted advisor, was intricately woven into this web. He witnessed firsthand the transactional nature of power, where favors were exchanged for loyalty, and generosity often masked a calculated desire for control. Nero's early reign, influenced by Seneca, was marked by relative stability, but as the young emperor matured, his true, darker nature emerged. Seneca\u2019s attempts to temper Nero\u2019s excesses became increasingly futile, and his own wealth and influence, while initially a source of power, eventually became a liability. He saw how easily material gifts could be misinterpreted or, worse, used as instruments of manipulation. His words, then, are not merely an abstract philosophical musing but a deeply personal reflection on the moral calculus of human relationships within a corrupt system, a plea to look beyond the superficial offering to the genuine intent behind it.\n\nEven two millennia later, Seneca\u2019s observation resonates with profound clarity. In a world often driven by consumerism and the outward display of wealth, where status is frequently measured by possessions and acts of charity can be performative, his wisdom reminds us to look deeper. We still encounter situations where the grand gesture masks an ulterior motive, or where a small act of genuine kindness far outweighs a lavish, insincere offering.",
+      "id": "e0a5af977efad25b",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Seneca the Younger",
+      "topic": "wikiquote",
+      "ts": "2026-07-12T18:09:43.017359+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -10193,7 +10389,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-11-17-JUL-DE-2026.pdf",
   "fuel_last_pdf_hash": "6d63b58c67090d09b4be63aaff4d094286998b6036bf2d9cf3b47a8eab585639",
-  "fuel_last_prices_seen_at": "2026-07-12T15:19:48.599159+00:00",
+  "fuel_last_prices_seen_at": "2026-07-12T18:09:27.667689+00:00",
   "fuel_prices": {
     "GLP": 3380.03,
     "Gasoil Regular": 3380.03,
@@ -10529,6 +10725,7 @@
   "games_week_last": "2026-W28",
   "golden_sun_seen": {
     "Golden Sun": [
+      "24c28530aebbfd70",
       "ab83f844cde08dac",
       "18d4f996051dfeb8",
       "b5b002729b489337",
@@ -11244,8 +11441,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "science",
-  "knowledge_last_sent": "2026-07-12T5",
+  "knowledge_last_category": "technology",
+  "knowledge_last_sent": "2026-07-12T6",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -11404,6 +11601,7 @@
     "technology:Alexander Graham Bell and the telephone": "2026-06-29",
     "technology:Edison and the phonograph": "2026-06-20",
     "technology:Edison's lab and the practical light bulb": "2026-07-11",
+    "technology:GPS and its military origins": "2026-07-12",
     "technology:Marconi and the invention of radio": "2026-06-24",
     "technology:Nikola Tesla and alternating current": "2026-07-02",
     "technology:Ni\u00e9pce and the first photograph": "2026-06-26",
@@ -11443,8 +11641,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-07-12T17:53:05.779569+00:00"
+    "ok": 43,
+    "ts": "2026-07-12T18:08:10.007908+00:00"
   },
   "launch_seen_ids": [
     "f005b9fb66bd62ce",
@@ -11477,6 +11675,15 @@
   "life_dashboard_last_week": "2026-W28",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "2d8a3e728ebc0979",
+      "c05afe2f66345b86",
+      "d9813a60be5b577f",
+      "6bfe3334b619dd51",
+      "3c67c52dc3f074d2",
+      "84311e13565e590e",
+      "18f1b95eca9bffb5",
+      "508777581055be9a",
+      "c8e58b843277d832",
       "ae45d8424f069129",
       "e005bbaaf5401e8c",
       "83a67d248c9b9b5d",
@@ -11567,16 +11774,7 @@
       "aefa3d40ca29f006",
       "15d4ab5ef0821d22",
       "65baeb325db2efd4",
-      "cc7b26e8ce40e1b3",
-      "1da489b7bf0d835a",
-      "df516b6c8540abb6",
-      "4ff88d16646a3cc1",
-      "955b4fe0a84ddf23",
-      "ffd016c725d13f91",
-      "b463e434b3369227",
-      "35e1c7ef98686bbd",
-      "9150b9b328684973",
-      "09b6f7c4cb919245"
+      "cc7b26e8ce40e1b3"
     ],
     "Godzilla x Kong: Supernova": [
       "81a0b91fb8fb5cf5",
@@ -11782,6 +11980,13 @@
       "69ab74f4c3f3d685"
     ],
     "Spider-Man: Brand New Day": [
+      "914b934e34b62ac4",
+      "2b8680cb61283311",
+      "f908eccc390b32ff",
+      "351cb5e1ddad1b65",
+      "6acddcfdac0b17a6",
+      "47bffde8386c50ad",
+      "22f24d87d05df6fb",
       "802a84b716479c02",
       "fdade3e32171528a",
       "4e00ad85621c1292",
@@ -11874,14 +12079,7 @@
       "fa38aada6e57e348",
       "049e25e81be740b7",
       "872cccb32574ad4c",
-      "8b0917d82d3abe3d",
-      "e13ca9a99fe74b25",
-      "bbc401f4c86c2717",
-      "9a79f235119bd733",
-      "1f61e403c63cf4fb",
-      "fb7f100921441763",
-      "d170e435ae64e7bf",
-      "b6db737bb9d209e1"
+      "8b0917d82d3abe3d"
     ],
     "The Batman Part II": [
       "85e7547c052ed73d",
@@ -11986,6 +12184,45 @@
       "f683bb216c14e113"
     ],
     "The Odyssey": [
+      "782f51c8e69fd3ca",
+      "af6adbbe75a2493e",
+      "dba675e994a64ee3",
+      "3ff0f5e1eac69abc",
+      "5db196eee3e463c7",
+      "ba03ede8cddf7aeb",
+      "b3f8015b00c612e0",
+      "e09d79563082cdfb",
+      "289e156b4f6d03cb",
+      "91042c3a0f4027ef",
+      "97ef53f75275b9ab",
+      "44ecd436301ce348",
+      "572cd7b26eeb31b4",
+      "3f96db60dc5224e9",
+      "b64cb72da84ce593",
+      "999242bf43d72825",
+      "d1d05c5611f25fa4",
+      "af36fd26ed07c95c",
+      "ea57c784af3d27f7",
+      "5e98cdc281db93d5",
+      "db53a46e1a6c5559",
+      "56ffc994e073273d",
+      "1b8b192ec4609bb3",
+      "15a30498720759c7",
+      "ee9bd7ee5a5219e9",
+      "68b5a0079974b58f",
+      "b931658a42d9b6c3",
+      "c5aef8941e769f8d",
+      "85b1aad3b933e7ea",
+      "c8d812eb465b8973",
+      "cbf6655b248e8ab9",
+      "f22cb1b419f3d3c5",
+      "45330e8147e7cf87",
+      "4b66da197a2b05a2",
+      "2a30ba1f9c307fae",
+      "8aaaf9291a17fa15",
+      "da36a8d461805643",
+      "bc73df04c8e3a9e4",
+      "6c8126973545c8a8",
       "dd1ef88496743449",
       "3e90587d015b5ed3",
       "f1542d8e197d3519",
@@ -12046,46 +12283,7 @@
       "b2dcec54b5d8218b",
       "507940fe885ce07c",
       "c765b8b5fa12dfb5",
-      "efb10b187b9c694c",
-      "f30d31cdc39f66e0",
-      "67b58c1727815e59",
-      "bc53fc2245e0d918",
-      "7b5e86ad81a7326a",
-      "c55186450d4e4e81",
-      "d62b97bd3b6cf9a0",
-      "89ea6bd8323605d3",
-      "de121867ab19dc61",
-      "b98dbc494d4d9379",
-      "a2736df2564c5c30",
-      "5ca0373ede249d10",
-      "9c1133af6582e69e",
-      "9f79f1f9bf19775f",
-      "f86d3e58051a9aee",
-      "39599692894ef055",
-      "1f67d771afe3c96e",
-      "9bb764ab800e1295",
-      "35282b60773b336a",
-      "86cd30b91ffdebd9",
-      "d93f614e48488afa",
-      "32700ad9c6368219",
-      "33f81a9b655cc0e6",
-      "b92587290e9db381",
-      "f3a946e0f242c377",
-      "95cb922da2abcda2",
-      "8dc4cc0e6dbbef49",
-      "6236c83e53dc512e",
-      "0e44f7195dc8c0b2",
-      "296e72c5bfa370f2",
-      "b35f7a9f02068174",
-      "6ec2f505983fce81",
-      "e51073b1b68cd4c6",
-      "0578a0081698ff3f",
-      "e284764d45e3f949",
-      "f1aad148bc601aca",
-      "14aa067aac4df0bd",
-      "163919afba067aea",
-      "7f25d3c92dc16ed0",
-      "5a97d4b81a8de844"
+      "efb10b187b9c694c"
     ]
   },
   "movie_release_dates": {
@@ -12246,7 +12444,8 @@
     105,
     2619,
     298267421,
-    613934
+    613934,
+    117467152
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -12705,6 +12904,15 @@
         "name": "NateWantsToBattle"
       }
     },
+    "d2fbf048aeb69e97": {
+      "applied": null,
+      "created": "2026-07-12T18:08:22.716637+00:00",
+      "kind": "artist",
+      "label": "Warren Zeiders",
+      "payload": {
+        "name": "Warren Zeiders"
+      }
+    },
     "d7a37cb10b65fef9": {
       "applied": null,
       "created": "2026-07-09T18:30:20.460712+00:00",
@@ -13064,87 +13272,87 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "apod": {
-      "last_data": "2026-07-12T15:20:12.339637+00:00",
+      "last_data": "2026-07-12T18:10:01.017824+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "deals": {
-      "last_data": "2026-07-12T15:19:04.072179+00:00",
+      "last_data": "2026-07-12T18:08:49.271479+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "energy": {
-      "last_data": "2026-07-12T15:19:27.616115+00:00",
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_data": "2026-07-12T18:09:07.537984+00:00",
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "fda": {
-      "last_data": "2026-07-12T15:19:17.332352+00:00",
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_data": "2026-07-12T18:08:56.016759+00:00",
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "fuel": {
-      "last_data": "2026-07-12T15:19:48.599186+00:00",
+      "last_data": "2026-07-12T18:09:27.667718+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "fx": {
-      "last_data": "2026-07-12T15:19:47.233873+00:00",
+      "last_data": "2026-07-12T18:09:26.220148+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "games": {
       "last_data": "2026-07-06T13:33:40.805493+00:00",
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-12T15:18:38.985332+00:00",
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_data": "2026-07-12T18:08:24.973785+00:00",
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "groceries": {
-      "last_data": "2026-07-12T15:19:16.903435+00:00",
+      "last_data": "2026-07-12T18:08:55.554959+00:00",
       "last_data_count": 238,
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "learn": {
       "last_data": "2026-07-12T12:42:03.546925+00:00",
@@ -13152,76 +13360,76 @@
       "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "movies": {
-      "last_data": "2026-07-12T15:18:31.520279+00:00",
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_data": "2026-07-12T18:08:17.797756+00:00",
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "music": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-12T15:19:28.261345+00:00",
+      "last_data": "2026-07-12T18:09:08.220744+00:00",
       "last_data_count": 19,
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "outages": {
-      "last_data": "2026-07-12T15:19:46.439373+00:00",
+      "last_data": "2026-07-12T18:09:25.318613+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-12T15:19:46.551729+00:00",
-      "last_data_count": 40,
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_data": "2026-07-12T18:09:25.490322+00:00",
+      "last_data_count": 42,
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "research": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-12T17:53:07.824399+00:00",
+      "last_data": "2026-07-12T18:08:19.499608+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-12T17:53:05.779569+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "weather": {
-      "last_data": "2026-07-12T15:19:27.815391+00:00",
+      "last_data": "2026-07-12T18:09:07.751828+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "wikiquote": {
-      "last_data": "2026-07-12T15:19:58.308990+00:00",
-      "last_data_count": 51,
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_data": "2026-07-12T18:09:38.091545+00:00",
+      "last_data_count": 215,
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-12T15:19:53.084668+00:00",
+      "last_data": "2026-07-12T18:09:31.632896+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-12T15:18:24.935915+00:00"
+      "last_ok": "2026-07-12T18:08:10.007908+00:00"
     }
   },
   "twitch_live": [],
@@ -13229,7 +13437,7 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165173"
+    "last_full_window": "165174"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -13243,9 +13451,11 @@
   "watchdog_failing_since": {},
   "water_slots_sent": [
     "2026-07-12|15",
-    "2026-07-12|12"
+    "2026-07-12|12",
+    "2026-07-12|18"
   ],
   "weather_seen_ids": [
+    "7da53eba0e708e24",
     "9439e1e0da0c88d0",
     "e56b18dfc48ed6ea",
     "977fd141e172e1f0",
@@ -13384,7 +13594,7 @@
     "4b102d30a5cb98d5"
   ],
   "wikiquote_last_category": "philosophers",
-  "wikiquote_last_sent": "2026-07-12T5",
+  "wikiquote_last_sent": "2026-07-12T6",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-07-07",
     "activists_thinkers:Booker T. Washington": "2026-07-12",
@@ -13423,7 +13633,7 @@
     "philosophers:Immanuel Kant": "2026-07-10",
     "philosophers:Marcus Aurelius": "2026-07-11",
     "philosophers:Plato": "2026-07-05",
-    "philosophers:Seneca the Younger": "2026-07-04",
+    "philosophers:Seneca the Younger": "2026-07-12",
     "philosophers:Socrates": "2026-07-12",
     "philosophers:Voltaire": "2026-07-09",
     "science_pioneers:Ada Lovelace": "2026-07-05",
