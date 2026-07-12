@@ -193,7 +193,7 @@ class MainLoopControlPhaseTest(unittest.TestCase):
     """Control/pending work runs on scheduled sweeps, not /run topic dispatches."""
 
     def _run_main(self, *, event_name: str, notify_only: str,
-                  process_pending: str = ""):
+                  process_pending: str = "", scheduled: str = ""):
         calls: list[str] = []
 
         def selected_topic(state):
@@ -218,6 +218,7 @@ class MainLoopControlPhaseTest(unittest.TestCase):
                     "GITHUB_EVENT_NAME": event_name,
                     "NOTIFY_ONLY": notify_only,
                     "NOTIFY_PROCESS_PENDING": process_pending,
+                    "NOTIFY_SCHEDULED": scheduled,
                     "NOTIFY_TEST_PUSH": "",
                     "NTFY_CONTROL_TOPIC": "",
                 }, clear=False):
@@ -238,6 +239,23 @@ class MainLoopControlPhaseTest(unittest.TestCase):
     def test_scheduled_notify_only_keeps_control_and_pending_work(self):
         calls, ntfy_poll, discord_poll, pending, _ = self._run_main(
             event_name="schedule", notify_only="twitch")
+
+        self.assertEqual(calls, ["dispatch:status fx",
+                                 "dispatch:explain movies",
+                                 "pending",
+                                 "topic"])
+        ntfy_poll.assert_called_once()
+        discord_poll.assert_called_once()
+        pending.assert_called_once()
+
+    def test_worker_cadence_dispatch_keeps_control_and_pending_work(self):
+        # With GitHub's schedule trigger gone, cadence runs arrive as
+        # workflow_dispatch from the Cloudflare Worker cron, marked with
+        # NOTIFY_SCHEDULED=1. The twitch fast lane must keep draining control
+        # + pending work every 15 minutes — treating it as a /run topic
+        # dispatch would delay reply buttons to the 3-hourly full sweep.
+        calls, ntfy_poll, discord_poll, pending, _ = self._run_main(
+            event_name="workflow_dispatch", notify_only="twitch", scheduled="1")
 
         self.assertEqual(calls, ["dispatch:status fx",
                                  "dispatch:explain movies",
@@ -296,7 +314,7 @@ class TopicDispatchFeedbackTest(unittest.TestCase):
     """Single-topic /run dispatches report completion when nothing was pushed."""
 
     def _run_main(self, *, event_name: str, notify_only: str, topic_pushes: bool = False,
-                  raises: bool = False, ran: list | None = None):
+                  raises: bool = False, ran: list | None = None, scheduled: str = ""):
         def selected_topic(state):
             if ran is not None:
                 ran.append("movies")
@@ -315,6 +333,7 @@ class TopicDispatchFeedbackTest(unittest.TestCase):
                 mock.patch.dict(os.environ, {
                     "GITHUB_EVENT_NAME": event_name,
                     "NOTIFY_ONLY": notify_only,
+                    "NOTIFY_SCHEDULED": scheduled,
                     "NOTIFY_TEST_PUSH": "",
                     "NTFY_CONTROL_TOPIC": "",
                 }, clear=False):
@@ -340,6 +359,15 @@ class TopicDispatchFeedbackTest(unittest.TestCase):
 
     def test_scheduled_notify_only_sends_no_feedback(self):
         push = self._run_main(event_name="schedule", notify_only="movies")
+
+        push.assert_not_called()
+
+    def test_worker_cadence_dispatch_sends_no_feedback(self):
+        # A Worker-cron cadence run (workflow_dispatch + NOTIFY_SCHEDULED=1 +
+        # NOTIFY_ONLY) is not a /run: it must stay silent, or the control
+        # channel gets a "Run complete" push every 15 minutes.
+        push = self._run_main(event_name="workflow_dispatch", notify_only="movies",
+                              scheduled="1")
 
         push.assert_not_called()
 

@@ -21,6 +21,8 @@
  *   STATE_BASE_URL         - e.g. https://raw.githubusercontent.com/<user>/<repo>/<branch>
  *   GITHUB_TOKEN           - (Phase 3 only) fine-grained token, Actions read+write
  *   GITHUB_DISPATCH_URL    - (Phase 3 only) the workflow_dispatch API url
+ *   GITHUB_DISPATCH_TOKEN  - token for the CADENCE cron below (scheduled()).
+ *                            Set with: wrangler secret put GITHUB_DISPATCH_TOKEN
  *
  * Discord interaction types:   1 = PING, 2 = SLASH COMMAND, 3 = BUTTON/COMPONENT
  * Discord response types:      1 = PONG, 4 = REPLY (with flags 64 = only-you-see-it)
@@ -59,6 +61,53 @@ export default {
       return reply("Something went wrong handling that. Try again shortly.");
     }
     return reply("Unsupported interaction.");
+  },
+
+  // ----- the watch.yml cadence (replaces GitHub's schedule trigger) -------
+  // GitHub's shared-queue cron delayed or dropped most 15-minute ticks
+  // (116-min average gap vs the configured 15, measured Jul 6-12 2026), so
+  // the Cron Trigger in wrangler.toml fires here instead and dispatches the
+  // workflow directly. scheduled:"true" tells watch.yml to keep the old
+  // schedule behavior (twitch fast lane + windowed full sweep) instead of
+  // treating the dispatch as a full manual run.
+  //
+  // This handler must NEVER throw: a failed dispatch is logged (visible in
+  // `wrangler tail` and the dashboard's Worker logs) and the next tick, 15
+  // minutes later, simply tries again.
+  async scheduled(event, env, ctx) {
+    try {
+      if (!env.GITHUB_DISPATCH_TOKEN) {
+        console.error(
+          "cadence dispatch skipped: GITHUB_DISPATCH_TOKEN secret is not set " +
+          "(run: wrangler secret put GITHUB_DISPATCH_TOKEN)"
+        );
+        return;
+      }
+      const res = await fetch(env.GITHUB_DISPATCH_URL, {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${env.GITHUB_DISPATCH_TOKEN}`,
+          Accept: "application/vnd.github+json",
+          "X-GitHub-Api-Version": "2022-11-28",
+          "User-Agent": "notify-watcher-worker",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ ref: "main", inputs: { scheduled: "true" } }),
+      });
+      if (res.status !== 204) {
+        // GitHub answers 204 No Content on success; anything else is a real
+        // failure (401 bad/expired token, 404 wrong repo/workflow or a token
+        // without Actions write, 422 bad ref/inputs). Log status AND body —
+        // the body carries GitHub's human-readable reason.
+        const body = await res.text();
+        console.error(
+          `cadence dispatch failed: HTTP ${res.status} ${res.statusText} — ` +
+          body.slice(0, 500)
+        );
+      }
+    } catch (err) {
+      console.error(`cadence dispatch error: ${err}`);
+    }
   },
 };
 

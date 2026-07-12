@@ -1,19 +1,22 @@
 name: watch
 
 on:
-  schedule:
-    # Every 15 minutes, offset to :07/:22/:37/:52 to dodge the contention at round
-    # minutes (GitHub drops scheduled runs at :00/:15/:30/:45 most). Each run still
-    # checks Twitch latency-sensitive alerts;
-    # the first surviving run in each 3-hour UTC window performs the full sweep.
-    # This avoids a separate twitch.yml workflow sharing the same concurrency
-    # group: GitHub concurrency allows one running + one pending run, and a newer
-    # queued run replaces the older pending one even with cancel-in-progress:
-    # false. Deciding "is a full sweep due?" at runtime makes that replacement
-    # harmless — the latest pending run simply does the overdue full sweep.
-    - cron: "7,22,37,52 * * * *"
+  # The GitHub schedule trigger is gone ON PURPOSE: under shared-queue load
+  # GitHub delays or silently drops schedule events (measured Jul 6-12, 2026:
+  # 116-minute average gap against the configured 15, worst 260). The 15-minute
+  # cadence now lives in the Cloudflare Worker (worker/wrangler.toml [triggers],
+  # same :07/:22/:37/:52 offsets), whose scheduled() handler fires this workflow
+  # through the workflow_dispatch API with scheduled=true. That input preserves
+  # the old schedule behavior: Twitch fast lane every run, full sweep once per
+  # 3-hour UTC window, reply-button control drained every run. Do NOT re-add a
+  # schedule trigger alongside workflow_dispatch — when both fire close together
+  # the sweep runs twice.
   workflow_dispatch:
     inputs:
+      scheduled:
+        description: "Set true by the Cloudflare Worker cadence dispatch: behave like a scheduled run (twitch fast lane + windowed full sweep) instead of forcing a full manual sweep"
+        type: boolean
+        default: false
       test_push:
         description: "Send a one-off test notification and exit (skips the watchers)"
         type: boolean
@@ -76,7 +79,10 @@ jobs:
           last="$(python -c "import json, pathlib; p=pathlib.Path('state.json'); s=json.loads(p.read_text()) if p.exists() else {}; print((s.get('watch_schedule') or {}).get('last_full_window', ''))")"
           mode="twitch"
           reason="full sweep already ran for 3-hour window ${window}"
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+          # Every run arrives as workflow_dispatch now; inputs.scheduled is what
+          # separates the Worker cadence (windowed full sweep) from a human
+          # manual run (always full).
+          if [ "${{ inputs.scheduled }}" != "true" ]; then
             mode="full"
             reason="manual dispatch"
           elif [ "${last}" != "${window}" ]; then
@@ -123,6 +129,12 @@ jobs:
           # daily=true. On schedule it's left empty: main._is_daily_run() decides
           # by UTC hour instead, so a dropped cron can't skip the daily push.
           NOTIFY_DAILY: ${{ inputs.daily && '1' || '' }}
+          # '1' on Worker cadence dispatches. Every run is a workflow_dispatch
+          # now, so main.py can no longer use the event name to tell a cadence
+          # run from a /run-style topic dispatch; this flag is what keeps the
+          # twitch fast lane draining control/pending work and staying silent
+          # on completion feedback.
+          NOTIFY_SCHEDULED: ${{ inputs.scheduled && '1' || '' }}
           # Twitch-only mode keeps the 15-minute live alerts lightweight. Full
           # mode leaves NOTIFY_ONLY empty so main.py runs every topic in order.
           NOTIFY_ONLY: ${{ inputs.only != '' && inputs.only || (steps.mode.outputs.run_mode == 'twitch' && 'twitch' || '') }}
@@ -136,14 +148,14 @@ jobs:
         run: python -m notify_watcher.main
 
       - name: Stamp full sweep window
-        if: ${{ steps.mode.outputs.run_mode == 'full' && inputs.only == '' && (github.event_name != 'workflow_dispatch' || inputs.test_push != true) }}
+        if: ${{ steps.mode.outputs.run_mode == 'full' && inputs.only == '' && inputs.test_push != true }}
         env:
           FULL_WINDOW: ${{ steps.mode.outputs.full_window }}
         run: |
           python -c "import json, os, pathlib; p=pathlib.Path('state.json'); s=json.loads(p.read_text()) if p.exists() else {}; s.setdefault('watch_schedule', {})['last_full_window']=os.environ['FULL_WINDOW']; p.write_text(json.dumps(s, indent=2, sort_keys=True) + '\n')"
 
       - name: Build dashboard
-        if: ${{ steps.mode.outputs.run_mode == 'full' && inputs.only == '' && (github.event_name != 'workflow_dispatch' || inputs.test_push != true) }}
+        if: ${{ steps.mode.outputs.run_mode == 'full' && inputs.only == '' && inputs.test_push != true }}
         # Pure reader of the committed state -> docs/dashboard/index.html, which
         # GitHub Pages serves (Settings -> Pages -> Deploy from branch, /docs). A
         # build failure must never fail the run or block the state commit.

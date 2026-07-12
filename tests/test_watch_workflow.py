@@ -22,6 +22,31 @@ class WatchWorkflowTest(unittest.TestCase):
             text,
         )
 
+    def test_github_schedule_trigger_stays_removed(self):
+        # GitHub's schedule trigger delayed or dropped most 15-minute ticks
+        # (116-min average gap vs the configured 15, Jul 6-12 2026), so the
+        # cadence moved to the Cloudflare Worker cron, which dispatches this
+        # workflow instead. Re-adding schedule: alongside workflow_dispatch
+        # would double-fire the sweep whenever both land close together.
+        text = WATCH_YML.read_text(encoding="utf-8")
+
+        self.assertNotIn("\n  schedule:", text)
+        self.assertNotIn("- cron:", text)
+        self.assertIn("workflow_dispatch:", text)
+
+    def test_worker_cadence_dispatch_keeps_scheduled_behavior(self):
+        # The Worker passes scheduled=true. The mode decision must key on that
+        # input (github.event_name is workflow_dispatch for every run now), and
+        # NOTIFY_SCHEDULED must reach main.py so a twitch fast-lane run is not
+        # mistaken for a /run topic dispatch (which would skip control work and
+        # push "Run complete" feedback every 15 minutes).
+        text = WATCH_YML.read_text(encoding="utf-8")
+
+        self.assertIn("scheduled:", text)
+        self.assertIn('if [ "${{ inputs.scheduled }}" != "true" ]', text)
+        self.assertIn("NOTIFY_SCHEDULED: ${{ inputs.scheduled && '1' || '' }}", text)
+        self.assertNotIn("github.event_name", text)
+
 
 if __name__ == "__main__":
     unittest.main()
