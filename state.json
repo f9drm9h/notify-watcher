@@ -60,7 +60,7 @@
     "29db49f64ce68661",
     "a8b1aff056453d2f"
   ],
-  "apod_last_sent": "2026-07-11",
+  "apod_last_sent": "2026-07-12",
   "astronomy_sent": [
     "2026-06-14|New moon tonight - d",
     "2026-06-21|June solstice today",
@@ -83,185 +83,13 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' Officially Namedrops Tobey Maguire's Hero In New Clip - The Direct",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE42Z05LLThaTk1CME1qbzg3YTZHdGFJbF85RGNRTEFfUXZnZ2NVZFgxVGdJU1cxRDhEN1JqZkxGbG1KQWdMOUJJcThtZlBoWHB0b3RHZFdQVVhuM1l0NGJuM25pSlFxUjJIeG9aR1AxQzIzNC1KZTBqM0FDWmpQZw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Kevin Feige confirms 'Avengers: Doomsday' connection in 'Spider-Man: Brand New Day' - The Express Tribune",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNMGh5bGhPSmlmZ19TblBTTk10ODMxb1Z2Yzd6aEVSMHp5UzYya1p0WWlUZ1E2ZVBMRHo3bDdKZ2VsR1NnVjMtSVJSX1ZPcDAwSS1rX0JEb09DcmRXY3pld21xMnFSN2ZlRDRseXUxYTZWcEt3NERHeFF2aVl6WjJqVFRTcmttTnhhS3BRUUx5bEZnVmV5bUdsWVN1RVBnMmxMbGJMUXN5RC1zd1duLVRKREhHMGTSAbwBQVVfeXFMT0RHbjVfT3JrUGxVc0tiVjlIQXpmOXJRa1BoYUJhcmQwRTRUcjFVelBlUWFVb3ZERzUxMVAzNVl5ZXFGTmlHVTJVYm5rWjN0eWt5ckVJZHVKRVJPRncxYjVSelhEMWxTbWx0SkRUbVlsaEQ4MFBYNmFzOFppMGNBUlUyRnhjNmZ5Y3liUHdaekc4Qi1OX09hd3Nrd0hlSnNZakp5a2k3Q2wzSGdKY2ZjeFhiZWpOUDFmd0VPMzY?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "The Batman 2 officially replaces a major character - MSN",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPOVprb2tWcEQ4X0tubW5MMTlZMXRFRGFnTGY3TDBCUWxSM0d2TmREcE4xQVR3aEZBTGlhY05DbjhqZTF5d1NZWk93QjF0M2dhNmFtdjdHUWFEVHdBVjVuN3owekFoVHlHS3lMN1BHSnBwZ3hraGNkVGJwNDZNd0p1cnh6Tko2Z2RRRXlTN2ZzcldqOGZHdnlXZklzWWZHV2RfeVE?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Beyond the Spider-Verse",
-      "title": "\u2018Beyond The Spider-Verse\u2019 Just Got a New Production Update, And Miles Morales Fans Can Finally Relax a Little - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE51WnpCRExrS3E4TGdvcjdNTmNjLU1vOW54TmVKQUZxaXFWZzExdk5RRTBTSDA0SHhzTGJQeXk5TmJHY3ZUYUhVWEVKMTdLUVktRzBLOUtLbzlDYlk5TFJidHJYNkQ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "Golden Sun",
-      "title": "And a touch of trespassing",
-      "topic": "golden_sun",
-      "url": "https://www.reddit.com/r/GoldenSun/comments/1uo5sbb/and_a_touch_of_trespassing/"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day TV Spots Reveal Surprising New Details; Kevin Feige Confirms [Spoiler] Cameo - ComicBookMovie.com",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxQNVhzMlRIbU80SHQxbHV1dW5ac21ldUJJYjY0SFFjSUg5Zjh5SkZieXJJX28yS1Bad2NMY1lWcW5ab0s0M3hDOU1kb1c4eXRNWGF1c3BrdkRtdGdkNHBYWmZZaDUzYjAxbXJUU1Rad21taFhfWHh2Zm9haWpLZVdMRXlkaWhxOEMyb0NUVEdLU3VDUkZIQ2xyWEhCNXN5Z3Z1ZzZXbk5WdmNSU1hKT0ZrS3lCX2ppNG5TaXRBa0k4TVMzUlZiYnFHNERSaTh1M2NXU0lPYmpZVlFhNlV4UkMxckhzMmdQU1AxMmVITlJKNkltMGlKYjFpS09PTWRTdw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Fixes Superhero Sequels\u2019 Biggest Problem - Yahoo",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQRGdUM3kxTXlqckFJckptaGQ1YjZ5UEhaS2JGTFFZODBHNHdqZ0ZjVlBrOWlWY2pReXNkVW0xbFFzR2l4a2xUNERQTVRmMlUxMFVZMk5SckNFbllSd2QtcExYMXBWZE80OXZmTlp2MzhPN3doWGZSNkRwM0MxU1hpLVFtVm8tNG13eVNkbkdjT3hZN0xmbi1kUw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Marvel\u2019s X-Men Officially Return With New \u2018Avengers: Doomsday\u2019 Images - Collider",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE55M3hUdmpKakRLVDdEeXkxREU5dzg3dGk1aEhWTk5qeUVHMHdYODNiNlVXcVc5eDE3a2NYMEgwVkNLTVFKVGpNeTJnM2VyQUlkZkZKLXJsQXhGZnhEUWxSSEFfR1NyQUl4WWZ1RXRjVWEtVkU?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Booth Leak: First Look at Doom\u2019s Throne and the X-Mansion - Cosmic Book News",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPczNCVC04aDR3cTRVNWVxUnhENEt1aVpxQ20xa2dENVdKSDNxSFZaZUVDeXlGMFRFaENZWEpvSjRsVmRfZ2ZmQzVkaXBrVTNJUFpLUTBOZXRSVmhRMHRNOEV6LXIzaTI4ekloXzZUTnBpWjhkX0xLYTdVb1h3bUkzSTNHbzJfYnQ1UktR?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "\u2018The Odyssey\u2019 First Reactions: \u201cStaggering \u2026 Nolan\u2019s Biggest Film to Date\u201d - The Hollywood Reporter",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeGhWeG54OVVSTXlpT1dqOTVSOTdlTjRLUjZwTWVDLXJZX29melNBdnduRy1GNnNjMzZpa3dua3gtQlBzck1WbklpdnFmQ2pwWkgzY0wxdmFvSUI0ZVhOd1hYd3JpeUJwLW81eVBVY0NGVUgtUVVKY0x3VW54LWFqTHZaSVRCWm4tcjRwN1ZONVZSUGZmVnZKaUJQckZidHpw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "\u2018The Odyssey\u2019 Comes Ashore: London Goes Wild for Christopher Nolan Epic at Star-Studded World Premiere - The Hollywood Reporter",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPQlRhYVNXb2NMQ2hDQ0paOXVGTDBDbmRHTEp1WUhTa2VZUnoxNjQyMzFzUHdMZlNMZXM3VWp0djNqM3NOaXp4QVdEQ1FwS1ZKSVQxYUl1a1czU3NkM1IzOFlTWlhVZXZhcE0wLTlGcG5ZSzNEZ0x6c2hVX0hDc3gydXQ4UjFpalFuTmprUFhxR0JGa1F1MWtFS1pJeHBmSWJZNkN6QjFpSTNrb25UdVp1UERHRmtURWxiQnc?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "Golden Sun",
-      "title": "No way",
-      "topic": "golden_sun",
-      "url": "https://www.reddit.com/r/GoldenSun/comments/1usqkum/no_way/"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 62,
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday trailer release date and time reportedly revealed - Bam Smack Pow",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPbHpnejBkMnI5NTJtSXRFUHpGSUlOZTNfOEVCT2FwR1hKZ0QtVVF3aE5OSUR3MGVDZHczeVBkbWZkZTNwNmd1RkM1UnhJRjU2Smp3MWVOUkNXdGhaakUzWkdycURsVHhjRHJaZ3E5T0gwdWcxZzRNUzZscUZWV2hLYkVBZHVnX0tWRG1VZko3dkw2bEV6aXd4QXNB?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 62,
-      "source": "The Odyssey",
-      "title": "Christopher Nolan Dismisses \u2018The Odyssey\u2019 Casting Backlash As \u201cIrrelevant\u201d: \u201cThat\u2019s What Adaptation Is\u201d - Deadline",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQb3lTMU9ON1ZUZGRScU9qS04yb2llSGxxZHNVYXRCZW5tWXZ4UmFrejJMQk9RWHRNT1JvMWhUOUNYVWJ0bmpvLThVN0ZuZE1rQllTaS1tZUZ4WjFfcHpYbkZwdXo5SS14QjhmbGpSeHRtZzZITER6Wkxoc091clNybEJ4VVF1eEVUUWRwOTVZV1VUVFlHLUdZRGtDU2FHQQ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 62,
-      "source": "Avengers: Doomsday",
-      "title": "\u2018Dune Part 3\u2019 Should Move Its Release Date To Avoid \u2018Avengers: Doomsday\u2019 - Forbes",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOSU9XV0diWkFiZm1iNG1zcjk1aVNfalYzSHJqSTFDZi1ja3g4R3BmN3RzazhHeHBINGZxaWR2b1Y0S1ZSR0picExYSHVGaWZEaV9udlNVcDVCTUg4RFM1N1N4aE5Nd1l5WGU1YjFvQUNINU9tV1M2a1doa2ZKcVNZY005azFKSzZES2hVcGZsRzY0a1BXcmpwZkduMnJnTVpKNDJqcTZ5eUo0V0VLS21DdGtMY0VQVUJGLVE?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 62,
-      "source": "The Odyssey",
-      "title": "10 Free Streaming Movies To Watch Before Christopher Nolan\u2019s \u2018The Odyssey\u2019 Hits Theaters - Forbes",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcFdsXzFyeXZReGxEZDBOd3ZHNEdCbnNSOFdLS3NpSkNTak1DOUZsVklhTzN5a2xuYjBGVTlZNjh2a0hrbHNDaGFFOFZNYUVuVjJBcWhmVzR1d2xRVGUzLUhpdHRYaXV4Tm1BcnlqOGplYzJNVVNnVndzTHFkcjViV001R29Fdw?oc=5"
-    }
-  ],
-  "digest_last_sent": "2026-07-11",
+  "digest_buffer": [],
+  "digest_last_sent": "2026-07-12",
   "discord_control": {
     "last_id": "1525731415692542042"
   },
   "energy_learn_last_news": "2026-07-11",
-  "energy_learn_last_sent": "2026-07-11",
+  "energy_learn_last_sent": "2026-07-12",
   "energy_learn_seen": {
     "facts": [
       "baseload-vs-peaking",
@@ -269,7 +97,8 @@
       "most-plants-boil-water",
       "how-wind-turbines-work",
       "grid-frequency",
-      "capacity-factor"
+      "capacity-factor",
+      "why-high-voltage-lines"
     ],
     "history": [
       "calder-hall-1956",
@@ -9872,6 +9701,234 @@
       "topic": "wikiquote",
       "ts": "2026-07-12T09:19:36.445951+00:00",
       "url": ""
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "9c429cf850d4dc4a",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Official Concept Art For Avengers: Doomsday Marks Loki's Return, But Spider-Man Is Missing! - MensXP",
+      "topic": "movies",
+      "ts": "2026-07-12T12:40:47.257142+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNalg5UkJQRmR3SE1ZUXdXRkttN24xa3JZbzhnbFZ6WWJ6NG1KTnFadndIZWZHTVVhbU96SkNNeTJ4aHUtZzI1Qkk1S3pabG9mY1lHdk93cDI3NzZQNGNBYXdyYW1NS2JvazZDMl9UYUladGxVd0FyNmhUWGZCVVJhR0Z0c2xEUE14YnNLSGd4S3JKRVo3U2VnanZ6YWJYM01nbmwwM2g2UDVaM21PbXpEc1IydU9wSnpzeWdtSGo4ZG9rcUwwX1BKZ3NmZjAxVnVHZ3ZmUUtR0gHbAUFVX3lxTE9PMGN0VmdyNG1qWm9CNnlDejVXeTg4Ml8wRm03ZmNsd2FXazNvb3Boc0szeURMb1BkbnVWYmhoek0tTGhzUDhPSC1DdzRnZVRCc0NtMGNrX2NJaGYtQTI4Qk1nSmotVmgxZG9sX3BrVXJENVVLLU1LNWg3cGNqZ0dxUEVENTY2RlctTVJ4VGd4dVk4bU4xWm9tMU1aaUJ0a2N1aXpoNTZIbWROM0tueUVzaWE5MnJkMUplMzZWQkh1ZElNdU45elJmQ3Z2eEtwak9QS3BRS2w4MVphNA?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "ca35c8631f66dd72",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday Highlights 11 Important Heroes In Official Synopsis - The Direct",
+      "topic": "movies",
+      "ts": "2026-07-12T12:40:47.258408+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbkJPZi1zN1F5ZkNGTTBXdmlDYVVqaHR4alNnTS0tNG9teEc1eHNrTXlrdXBQeWZjRHVrYXB2NmJZVGpxT1ZKSmVWWGV2M0VXLXItZWtqQ3FGRWFXb1B4Q0pqajFiU2diNmp3dEk4N1Y4dzZZS3lpeVU1Y0lpUDQzS2kyOHNaR05UZnRJSXJuN0llRDA?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "a822867cf279ae5a",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "\u2018Avengers: Doomsday\u2019s\u2019 New Official Synopsis Confirms the Wildest Roster the Franchise Has Ever Assembled - IMDb",
+      "topic": "movies",
+      "ts": "2026-07-12T12:40:47.259269+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FREpfVUd5QUt3bUp5YkJ2alo1MEkwOUhUYmgyMDQ1bkNhWFNGYmV1TEtwbXNMbk1XSnVGdnNtWkZDTXMwTExacGFSRVZKQ1VhLUVvaWVIUVBQT0trcExsY2VxQ3A4bDA?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "47eb4c214ac77a6e",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Disney Reveals First Look At Doctor Doom's Throne In Avengers: Doomsday - SlashFilm",
+      "topic": "movies",
+      "ts": "2026-07-12T12:40:47.260065+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQSy11UnRTczlKc3hVenJvSGo2NV84aVQ4NXBibXpQZ0VFMTVJemIwNERRVnNZX3l5NlNBY3R2XzlrTDI1c3ZDaGNDZmVKVlg4YjRXb0x2bG1uNGhqSDlBbkJycWE3Y0xXUWswck9nVjFZdE1EVzJUVkdJRlpLeE9sSndRRndGR014T2RvRW4xaFFSNnM?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "32c7f557237c9a62",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Christopher Nolan Says \u2018Odyssey\u2019 Backlash Over Casting and More Is \u2018Irrelevant\u2019 and He\u2019s Learned Not to Worry: \u2018Remember, I Spent 10 Years Dealing With Batman\u2019 - Variety",
+      "topic": "movies",
+      "ts": "2026-07-12T12:40:48.208591+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPS256em1pUkpHNnF0aV81ZlZuczlZcWE4TndRTnNVUGh3ZTlrUWdzcmtvbVpoMzY0amFTMDNWSlUwdE9qb29XaFhGS0puU3hmZW1jVl9mQkZKVm54a1ZWcWRBTkFqUjI1TWUySk1MdmlCMjRNRV8yS3BsVkZXcFRlNjBUOTVpVUMyOWVaOE12bzRwaFpYajR6TjZXZ3RlZUFHdWhHNg?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "215f6357bbe2c327",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 Movie Restricts Comments Amid Heated Casting Backlash - Newsweek",
+      "topic": "movies",
+      "ts": "2026-07-12T12:40:48.210408+00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQ1BORi13T2N1SWJfc0xpdlRpRjZOREk4VFlsWlh4MkRaRGdEMngyNnhYVWVSbGFIekRsaGNMakdoOEpBeGFGOF94Y3V6bmhUaEF3ZktERktZcF9Tc3RRTTE5M2hsVFhDTlZ5LTJmc1BMZjlBSllnUFBHay1MTWNlSkFyekR3bmlOM1U3UklIeHE5RmYxTlA1X3d3UGVXS3BU?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Stick Season - Gareth\n(because you like Shaboozey)",
+      "id": "66e9b47fb31cb55c",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-07-12T12:40:55.123135+00:00",
+      "url": "https://www.deezer.com/track/2843046912"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "47bd257e0d8216fd",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-07-12T12:41:35.533360+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "USD/DOP moved from 58.83 to 58.83 (-0.00, -0.00%) vs yesterday",
+      "id": "33bf58f20312d96b",
+      "score": 62,
+      "severity": "high",
+      "source": "FX",
+      "title": "USD/DOP today: 58.83",
+      "topic": "fx",
+      "ts": "2026-07-12T12:41:53.329202+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Quick reminder to drink some water.",
+      "id": "d409e812df7c333b",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-07-12T12:41:57.128592+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "For diverse vitamins and antioxidants, choose a variety of colored vegetables and fruits. (Source: WHO)",
+      "id": "e990b500b7438dba",
+      "score": 60,
+      "severity": "low",
+      "source": "Health",
+      "title": "Health tip",
+      "topic": "health_tip",
+      "ts": "2026-07-12T12:41:57.891685+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "In the bustling intellectual marketplace of ancient Greece, a giant strode amongst the students and sophists: Aristotle. A former pupil of Plato, who himself had been a student of Socrates, Aristotle inherited a rich philosophical legacy, but he was also a man keenly observant of the world around him. He wasn't content to merely ponder abstract Forms or universal truths in some ethereal realm. Instead, Aristotle, ever the empiricist, turned his gaze to human life as it was lived, in all its messy, glorious particularity. His great question, one that resonates through the millennia, was deceptively simple: How ought we to live? And his answer, meticulously crafted and deeply nuanced, became what we now know as virtue ethics, a system that, unlike the rigid commandments of some faiths or the cold calculations of others, placed the flourishing of the human soul at its very heart.\n\nWhat Aristotle proposed was not a rulebook, but rather a compass for navigating the complexities of existence. He argued that the ultimate goal of human life, our *telos*, was *eudaimonia* \u2013 often translated as happiness, but more accurately understood as human flourishing, a life well-lived, a state of deep contentment and fulfillment. And how does one achieve *eudaimonia*? Through the cultivation of virtues. For Aristotle, virtues were not innate qualities, nor were they merely intellectual concepts. They were character traits, developed through habit and practice, that allowed a person to act excellently in all situations. Imagine a sculptor, diligently chipping away at a block of marble, refining and shaping until a masterpiece emerges. So too, Aristotle believed, must we sculpt our characters, striving for the \"golden mean\" \u2013 the perfect balance between two extremes of deficiency and excess. Courage, for instance, isn't recklessness (too much) or cowardice (too little), but the precise and appropriate response to fear.\n\nThis wasn't a solitary endeavor, however. Aristotle recognized that humans are inherently social creatures, and that our virtues are forged and tested within the crucible of community. A virtuous person, for him, was not an isolated ascetic, but an active participant in civic life, contributing to the well-being of the polis. His ethics were, in essence, a profound call to self-improvement and social responsibility, intertwined and inseparable. This emphasis on character and flourishing stood in stark contrast to later ethical systems that would focus on duty (Kant) or consequences (utilitarianism). Aristotle's insight was that if you cultivate a virtuous character, right actions will naturally flow from it. The drama here is internal, the struggle to overcome our base instincts, to exercise reason, and to consistently choose the path of excellence, not out of obligation, but out of a genuine desire to live a good life.\n\nThe enduring legacy of Aristotle's virtue ethics is immense. After centuries of relative quiet during the medieval period, it experienced a profound revival in the 20th century, offering a compelling alternative to ethical theories that felt detached from human experience. Thinkers like Alasdair MacIntyre and Martha Nussbaum have breathed new life into Aristotelian concepts, highlighting their relevance for contemporary challenges.",
+      "id": "e8e14fdaf7977dfc",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Aristotle's virtue ethics",
+      "topic": "learn",
+      "ts": "2026-07-12T12:42:03.044024+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "On this day\n1998: France defeated the defending champions Brazil 3\u20130 to win their first FIFA World Cup title.\n\nFeatured: History of Liverpool F.C. (1985\u2013present)\nThe history of Liverpool Football Club from 1985 to the present day covers the appointment of Kenny Dalglish as manager, the Hillsborough disaster, and the club's return to European competition in 1991. Throughout this period, the club played in the top tier of English football...\n\nDominican culture\nThe Dominican Republic is among the limited global sources of blue amber, which is mined in mountains near Santiago. (Source: Smithsonian)",
+      "id": "028d4f3c7c3df9aa",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Daily learning",
+      "topic": "learn",
+      "ts": "2026-07-12T12:42:04.079750+00:00",
+      "url": "https://en.wikipedia.org/wiki/History_of_Liverpool_F.C._(1985%E2%80%93present)"
+    },
+    {
+      "action": "push",
+      "detail": "\u201cThrough the principle of associated habit, the same movements of the face and eyes are practised, and can, indeed, hardly be avoided, whenever we know or believe that others are blaming, or too strongly praising, our moral conduct.\u201d\n\u2014 Charles Darwin\n\nCharles Darwin, a name synonymous with a revolution in human thought, was far more than the solemn, bearded figure often depicted in textbooks. He was a man of insatiable curiosity, a meticulous observer of the natural world, and, perhaps surprisingly, a deep thinker about the human condition itself. His grand theory of evolution by natural selection, meticulously laid out in \"On the Origin of Species\" in 1859, irrevocably altered our understanding of life's intricate tapestry. Yet, even as the scientific community grappled with the implications of his biological insights, Darwin was already turning his gaze to a seemingly disparate but ultimately interconnected field: the expression of emotions in humans and animals. This quote, a fascinating glimpse into his work on \"The Expression of the Emotions in Man and Animals,\" published in 1872, reveals a Darwin seeking universal principles not just in finches' beaks, but in the subtle twitch of a human face. He was, by this point, a celebrated but often embattled figure, navigating both the praise and condemnation that followed his earlier work, acutely aware of the social dynamics that shaped human interaction.\n\nThe 1870s were a time of profound change and intellectual ferment in Victorian England. The Industrial Revolution had transformed society, science was rapidly advancing, and traditional religious views were increasingly challenged. Darwin, having weathered decades of ill health and the immense strain of developing and defending his evolutionary theory, was now applying the same rigorous methodology to understanding human behavior. He meticulously collected observations from around the world, corresponding with missionaries, doctors, and travelers, seeking patterns in how different cultures expressed joy, sorrow, fear, and, as in this quote, the complex reactions to moral judgment. He recognized that certain expressions, like the involuntary movements of the face and eyes when confronted with praise or blame, were deeply ingrained, almost an \"associated habit.\" This wasn't merely a polite societal convention; Darwin was positing a biological basis for these reactions, suggesting they were vestiges of ancient, evolved behaviors that served a purpose in social cohesion and communication, even if their original utility was no longer immediately obvious. He was, in essence, trying to bridge the gap between our animal heritage and our uniquely human complexities.\n\nThis quote, then, speaks to a foundational aspect of our social existence, one that continues to resonate profoundly today. In an era saturated with social media and constant digital scrutiny, where \"blaming\" and \"praising\" can be delivered instantaneously and globally, Darwin's observation feels remarkably prescient. We instinctively understand the discomfort of unwanted attention, whether positive or negative, regarding our moral conduct. The involuntary flush, the averted gaze, the subtle tightening of the muscles around the eyes \u2013 these are still practiced, indeed, \"hardly avoided,\" movements that betray our inner state, even in the most curated online persona.",
+      "id": "1443900c76e006af",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Charles Darwin",
+      "topic": "wikiquote",
+      "ts": "2026-07-12T12:42:08.977954+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "What: Transmission lines carry electricity at tens or hundreds of thousands of volts, then transformers step it down near your neighbourhood.\nWhy it matters: For a given amount of power, higher voltage means lower current, and lower current wastes far less energy as heat in the wires.\nWhy you should care: It's why a plant 300 km away can serve your city without melting the cables \u2014 and why those towers are so tall.\n(Source: U.S. Dept. of Energy)",
+      "id": "644f6b7358586435",
+      "score": 60,
+      "severity": "low",
+      "source": "Energy learning",
+      "title": "\u26a1 Today's spark \u2014 Why power lines run at high voltage",
+      "topic": "energy_learn",
+      "ts": "2026-07-12T12:42:09.203318+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\ud83d\udcaa HABITS\n- Habit nudges sent: water (29)\n\n\ud83d\udcb0 FINANCE\n- Spending: Jul 06-Jul 12: RD$2,817.16 across 9 transactions\n- USD/DOP: 59.10 -> 58.83 (-0.28, -0.47%)\n\n\ud83c\udf24 WEATHER & ENVIRONMENT\n- Weather alerts logged: 40 (latest: Atlantic Tropical Weather Outlook)\n\n\ud83c\udfac ENTERTAINMENT & NEWS\n- Top release: [64] PlayStation End Of Physical Disc Production Announcement Has Received More Engagement Than GTA VI Trailer 1 - TwistedVoxel\n- Golden Sun: 6 item(s); latest: \"No way\"\n- AI news: 4 item(s); latest: \"Anthropic\"\n\n\u2699\ufe0f SYSTEM HEALTH\n- 391 notification(s) pushed this week",
+      "id": "c0bd817c2d31fb4a",
+      "score": 60,
+      "severity": "low",
+      "source": "Life Dashboard",
+      "title": "Your week in review",
+      "topic": "life_dashboard",
+      "ts": "2026-07-12T12:42:14.430046+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Starts Monday 13 July (tomorrow). Tap for the academic calendar (PDF).",
+      "id": "513aaef0e1628fff",
+      "score": 62,
+      "severity": "high",
+      "source": "ITSC",
+      "title": "ITSC: Entrega de la programaci\u00f3n para la preselecci\u00f3n",
+      "topic": "itsc",
+      "ts": "2026-07-12T12:42:16.240051+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/05/Calendario-academico-2026-2-MAYO-AGOSTO-_-Actualizado_.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Starts Monday 13 July (tomorrow). Tap for the academic calendar (PDF).",
+      "id": "05cae1ce5e1175c5",
+      "score": 62,
+      "severity": "high",
+      "source": "ITSC",
+      "title": "ITSC: Reportes a Registro (Reingreso/Cambio Carrera)",
+      "topic": "itsc",
+      "ts": "2026-07-12T12:42:16.458158+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/05/Calendario-academico-2026-2-MAYO-AGOSTO-_-Actualizado_.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "What's happening to galaxy NGC 474? The multiple layers of emission appear strangely complex given the relatively featureless appearance of the elliptical galaxy in less deep images. The cause of the shells is a topic of research, but they are possibly tidal tails related to...",
+      "id": "20f7b879845dcf76",
+      "score": 60,
+      "severity": "low",
+      "source": "NASA APOD",
+      "title": "APOD: Galaxy NGC 474: Shells and Star Streams",
+      "topic": "apod",
+      "ts": "2026-07-12T12:42:25.299993+00:00",
+      "url": "https://apod.nasa.gov/apod/image/2607/NGC474_CfhtCoelum_1500.jpg"
     }
   ],
   "f4_history": [
@@ -10021,7 +10078,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-11-17-JUL-DE-2026.pdf",
   "fuel_last_pdf_hash": "6d63b58c67090d09b4be63aaff4d094286998b6036bf2d9cf3b47a8eab585639",
-  "fuel_last_prices_seen_at": "2026-07-11T21:27:20.893154+00:00",
+  "fuel_last_prices_seen_at": "2026-07-12T12:41:54.753949+00:00",
   "fuel_prices": {
     "GLP": 3380.03,
     "Gasoil Regular": 3380.03,
@@ -10031,8 +10088,8 @@
     "Kerosene": 3380.03
   },
   "fx_daily_baseline": {
-    "date": "2026-07-11",
-    "rate": 58.830747
+    "date": "2026-07-12",
+    "rate": 58.828569
   },
   "fx_last_rate": 58.828569,
   "fx_last_zone": "within",
@@ -10389,6 +10446,7 @@
       "1b7d9e5ab11b51a5"
     ],
     "La Sirena": [
+      "3be1fae3a3c368d5",
       "91669ec787670e4d",
       "0f8fcb2b70579635",
       "c9b55f2718c76384",
@@ -10917,7 +10975,7 @@
       "eda75804088818b9"
     ]
   },
-  "health_tip_last_sent": "2026-07-11",
+  "health_tip_last_sent": "2026-07-12",
   "holidays_sent": [],
   "ignored": {
     "4071c13d0b9dc18b": {
@@ -11044,6 +11102,8 @@
     "e4552ca4a442bedc"
   ],
   "itsc_sent_ids": [
+    "22fc0c33a965e6c0",
+    "4431e61aed7fa087",
     "ee25cb685e9c8e1c",
     "eade8cca6539868a",
     "8a646fc56134968a",
@@ -11069,8 +11129,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "mythology",
-  "knowledge_last_sent": "2026-07-12T3",
+  "knowledge_last_category": "philosophy",
+  "knowledge_last_sent": "2026-07-12T4",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -11187,6 +11247,7 @@
     "mythology:Thor and the hammer Mj\u00f6lnir": "2026-07-09",
     "mythology:Zeus and the rise of the Olympian gods": "2026-07-01",
     "philosophy:Aristotle and the foundations of logic": "2026-06-22",
+    "philosophy:Aristotle's virtue ethics": "2026-07-12",
     "philosophy:Augustine and the Confessions": "2026-06-13",
     "philosophy:Diogenes and the Cynics": "2026-07-08",
     "philosophy:Heraclitus and the doctrine of constant change": "2026-07-04",
@@ -11266,8 +11327,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-07-12T11:45:38.503066+00:00"
+    "ok": 43,
+    "ts": "2026-07-12T12:40:39.252758+00:00"
   },
   "launch_seen_ids": [
     "f005b9fb66bd62ce",
@@ -11296,10 +11357,20 @@
     "9cf78ee44cb96c21",
     "7621aad01d0821be"
   ],
-  "learn_last_sent": "2026-07-11",
-  "life_dashboard_last_week": "2026-W27",
+  "learn_last_sent": "2026-07-12",
+  "life_dashboard_last_week": "2026-W28",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "a0ba338f8e8768ba",
+      "62e68d97e45526bc",
+      "8275de948e266654",
+      "ea4b450c64044a65",
+      "dec2699a6b27f1b5",
+      "577cdfce70c03b67",
+      "72208a6f230f92fe",
+      "a1ca5ea093f2869f",
+      "357e5ead375f4b98",
+      "8f82042425f77669",
       "0c26bc94c54b1f3b",
       "f72c5a361729edb5",
       "97df8a82e419c404",
@@ -11389,17 +11460,7 @@
       "f1477c39a5bdd65d",
       "0874fefaff957db7",
       "38ab9149d9046c83",
-      "18f1b95eca9bffb5",
-      "83a67d248c9b9b5d",
-      "ace73e19054d459e",
-      "3e9d1ad107e98a6c",
-      "5de809b7d54e8af2",
-      "d6ea21377159cc77",
-      "be570359f14fd8a5",
-      "0b8c361863aadba0",
-      "ad6ea8273347771e",
-      "3b14f7f5ce74eb84",
-      "b305b2741cb274ce"
+      "18f1b95eca9bffb5"
     ],
     "Godzilla x Kong: Supernova": [
       "81a0b91fb8fb5cf5",
@@ -11605,6 +11666,14 @@
       "69ab74f4c3f3d685"
     ],
     "Spider-Man: Brand New Day": [
+      "a0ba338f8e8768ba",
+      "c35cf33019616d06",
+      "8275de948e266654",
+      "ce1483cdd72d8216",
+      "3023a61dc7f484d3",
+      "ac47fcf467b565a0",
+      "81664828a0546eb1",
+      "c60a9b0d4e1fd76b",
       "681bb90041ac37a0",
       "72067aa84a29de37",
       "709ef253bd759426",
@@ -11696,15 +11765,7 @@
       "8b8021745b899904",
       "e212f022bdcd4f32",
       "8c867f6a16bc957f",
-      "459ca91652f0783a",
-      "b02abeee219d5a10",
-      "b2fab68a9c141226",
-      "a92e7362907c9e33",
-      "4971ab0282f202fd",
-      "96b77f4b70594283",
-      "3874be4644067e36",
-      "be67f4c0e90a9b4f",
-      "b11f10d406bd72d7"
+      "459ca91652f0783a"
     ],
     "The Batman Part II": [
       "85e7547c052ed73d",
@@ -11809,6 +11870,41 @@
       "f683bb216c14e113"
     ],
     "The Odyssey": [
+      "df91b6807cb28ce6",
+      "01c5348438db1094",
+      "f28036a8031cf9c6",
+      "7fdaa6643f273079",
+      "256c67ee3d95890f",
+      "944422d97d2d12c6",
+      "90d7bb820313ed5e",
+      "a5a501390ffd9fc0",
+      "432acbc72ca1a2af",
+      "931129fd0e011ac4",
+      "a98df8acbd7bdee7",
+      "ef8cbac71052d8c9",
+      "ce869de5f98c9ce5",
+      "7835e58050e5e98b",
+      "20d9460e4a9a6e80",
+      "17c7ef185d8fc238",
+      "a220f006bc16274f",
+      "3627fc7b36de5ea2",
+      "1430c48c47c2955d",
+      "eaf30c0dacb5904a",
+      "82e0cb72bc1dfe48",
+      "583e5a4b2dfe9970",
+      "1c0bb17882b8ec16",
+      "f7bcc50aa650e13b",
+      "095228f4ac91c31d",
+      "bfa0dd4e03aac38b",
+      "f9832d40bc76e6bd",
+      "3ac11c32caf4a0d7",
+      "b2dcec54b5d8218b",
+      "507940fe885ce07c",
+      "c765b8b5fa12dfb5",
+      "efb10b187b9c694c",
+      "f30d31cdc39f66e0",
+      "67b58c1727815e59",
+      "bc53fc2245e0d918",
       "7b5e86ad81a7326a",
       "c55186450d4e4e81",
       "d62b97bd3b6cf9a0",
@@ -11873,42 +11969,7 @@
       "544e510dc60178fe",
       "cfb15dc6a4cb7f00",
       "b64cb72da84ce593",
-      "b3f8015b00c612e0",
-      "4c71b578038de5cb",
-      "21c5fb9f7599f63c",
-      "27dc497a825c1757",
-      "1b69c889d18c5d41",
-      "56ffc994e073273d",
-      "11c093a890ab0490",
-      "71cd31c939a59b89",
-      "a15f4cb8f49513e8",
-      "d6bd25894d089104",
-      "9483c8a52dc386a1",
-      "2678fc9105e8855b",
-      "7f6cd0c0d29c5c4b",
-      "cbf6655b248e8ab9",
-      "c2399b325e806a62",
-      "bd80ea6d60dec20c",
-      "0ebf0c85155c8fef",
-      "6dcd3651a2662ecb",
-      "524c0119ea82834d",
-      "da36a8d461805643",
-      "1c0e57b39571d95e",
-      "28a3111f7ee1c19c",
-      "d09c48004f443fdf",
-      "24dbaaf0cc44ab93",
-      "7eaf6b0cdd2a6968",
-      "70a68c9561c5f695",
-      "986ddc7fb0ee0165",
-      "3ec15e8fe20405e1",
-      "b4a09f0e1f4dfdd3",
-      "231de2762e5769e0",
-      "67ae575d19ac8b92",
-      "71ab7972c43b7f71",
-      "efe7472c3325814b",
-      "c4e733ec00f30aab",
-      "0da251ac52e3de7a",
-      "d623b33bddce963f"
+      "b3f8015b00c612e0"
     ]
   },
   "movie_release_dates": {
@@ -12067,7 +12128,8 @@
     38,
     9662,
     105,
-    2619
+    2619,
+    298267421
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -12625,6 +12687,15 @@
         "name": "Keith Urban"
       }
     },
+    "ece41a448b72ee96": {
+      "applied": null,
+      "created": "2026-07-12T12:40:55.123106+00:00",
+      "kind": "artist",
+      "label": "Gareth",
+      "payload": {
+        "name": "Gareth"
+      }
+    },
     "f7c7c508fa9b2962": {
       "applied": null,
       "created": "2026-07-08T16:22:50.805465+00:00",
@@ -12885,164 +12956,164 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "apod": {
-      "last_data": "2026-07-11T21:27:50.133847+00:00",
+      "last_data": "2026-07-12T12:42:25.299969+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-11T21:25:46.080138+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "deals": {
-      "last_data": "2026-07-12T09:18:53.271821+00:00",
+      "last_data": "2026-07-12T12:41:19.719927+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "energy": {
-      "last_data": "2026-07-12T09:19:04.968695+00:00",
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_data": "2026-07-12T12:41:35.279019+00:00",
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "fda": {
-      "last_data": "2026-07-12T09:18:53.759845+00:00",
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_data": "2026-07-12T12:41:25.093043+00:00",
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "fuel": {
-      "last_data": "2026-07-11T21:27:20.893180+00:00",
+      "last_data": "2026-07-12T12:41:54.753976+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-11T21:25:46.080138+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "fx": {
-      "last_data": "2026-07-12T09:19:22.420057+00:00",
+      "last_data": "2026-07-12T12:41:53.329032+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "games": {
       "last_data": "2026-07-06T13:33:40.805493+00:00",
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-12T09:18:30.080820+00:00",
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_data": "2026-07-12T12:40:58.426931+00:00",
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "groceries": {
-      "last_data": "2026-07-11T21:26:50.253312+00:00",
+      "last_data": "2026-07-12T12:41:24.555364+00:00",
       "last_data_count": 238,
-      "last_ok": "2026-07-11T21:25:46.080138+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "learn": {
-      "last_data": "2026-07-11T12:43:24.743424+00:00",
+      "last_data": "2026-07-12T12:42:03.546925+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-11T12:41:53.445946+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "movies": {
-      "last_data": "2026-07-12T09:18:25.675696+00:00",
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_data": "2026-07-12T12:40:50.202936+00:00",
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "music": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-12T09:19:05.624271+00:00",
+      "last_data": "2026-07-12T12:41:35.920563+00:00",
       "last_data_count": 19,
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "outages": {
-      "last_data": "2026-07-12T09:19:21.670704+00:00",
+      "last_data": "2026-07-12T12:41:52.646301+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-12T09:19:21.834515+00:00",
-      "last_data_count": 31,
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_data": "2026-07-12T12:41:52.770834+00:00",
+      "last_data_count": 39,
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "research": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-12T11:45:39.947373+00:00",
+      "last_data": "2026-07-12T12:40:52.044504+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-12T11:45:38.503066+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "weather": {
-      "last_data": "2026-07-12T09:19:05.198771+00:00",
+      "last_data": "2026-07-12T12:41:35.533061+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "wikiquote": {
-      "last_data": "2026-07-12T09:19:32.232687+00:00",
-      "last_data_count": 21,
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_data": "2026-07-12T12:42:04.696820+00:00",
+      "last_data_count": 52,
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-12T09:19:25.829887+00:00",
+      "last_data": "2026-07-12T12:41:57.127958+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-12T09:18:19.527606+00:00"
+      "last_ok": "2026-07-12T12:40:39.252758+00:00"
     }
   },
   "twitch_live": [],
@@ -13050,7 +13121,7 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165171"
+    "last_full_window": "165172"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -13062,8 +13133,11 @@
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
   "watchdog_failing_since": {},
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-07-12|12"
+  ],
   "weather_seen_ids": [
+    "9439e1e0da0c88d0",
     "e56b18dfc48ed6ea",
     "977fd141e172e1f0",
     "b5f8fb12e224eefa",
@@ -13200,8 +13274,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "activists_thinkers",
-  "wikiquote_last_sent": "2026-07-12T3",
+  "wikiquote_last_category": "science_pioneers",
+  "wikiquote_last_sent": "2026-07-12T4",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-07-07",
     "activists_thinkers:Booker T. Washington": "2026-07-12",
@@ -13246,7 +13320,7 @@
     "science_pioneers:Ada Lovelace": "2026-07-05",
     "science_pioneers:Albert Einstein": "2026-07-10",
     "science_pioneers:Carl Sagan": "2026-07-09",
-    "science_pioneers:Charles Darwin": "2026-07-04",
+    "science_pioneers:Charles Darwin": "2026-07-12",
     "science_pioneers:Galileo Galilei": "2026-07-06",
     "science_pioneers:Isaac Newton": "2026-07-11",
     "science_pioneers:Marie Curie": "2026-07-07",
