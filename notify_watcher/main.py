@@ -261,12 +261,16 @@ def _selected_topics(only: str) -> list[tuple[str, Topic]]:
 def _is_topic_dispatch_run() -> bool:
     """True for /run-style manual single-topic dispatches.
 
-    Scheduled Twitch-only runs also set NOTIFY_ONLY, but they are the normal
-    low-latency control lane. Only workflow_dispatch + NOTIFY_ONLY is the
-    on-demand path that should avoid flushing unrelated pending/control work.
+    Twitch-only cadence runs also set NOTIFY_ONLY, but they are the normal
+    low-latency control lane. Since the Cloudflare Worker cron replaced the
+    GitHub schedule trigger, those cadence runs arrive as workflow_dispatch
+    too — the workflow marks them with NOTIFY_SCHEDULED=1. Only an
+    unscheduled workflow_dispatch + NOTIFY_ONLY is the on-demand path that
+    should avoid flushing unrelated pending/control work.
     """
     return (
         os.environ.get("GITHUB_EVENT_NAME") == "workflow_dispatch"
+        and not os.environ.get("NOTIFY_SCHEDULED", "").strip()
         and bool(os.environ.get("NOTIFY_ONLY", "").strip())
     )
 
