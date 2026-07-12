@@ -83,7 +83,26 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [],
+  "digest_buffer": [
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "Spider-Man: Brand New Day",
+      "title": "'Spider-Man: Brand New Day' Will Release 7 Different Versions In Theaters - The Direct",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQmN3bExnNGhiaUFyT3VqQ0gzaEZBaTUzUUtFVzdQemx2M1o2YktrbUYzS2JaMHEtWlVyV2ROZjdLSzhSNjdGbVRoVWtvUGo3aTlRdTZBWGxRY2tOcHg5RklfTTljdFU1Z0doTlFYalQza2RIaGhZSGdWOFVwSFJidjloV0ZQQTQ?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "The Odyssey",
+      "title": "Christopher Nolan pointedly responds to criticism of star-studded The Odyssey casting - HELLO! Magazine",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPY0xiRXRhV0dmWDdBRmxneFZwa3NxWlRBRExheHlZUGZMQzhXVHFkckRLbDdZM09ydk13Y2t1NE1fYTZkX2l0RGtEbkVKemVRdnJweWswcXlMT0lJRklzVUpNaHdvRjJVQUFjSDdBOGVGcUtrWVVLOGpKYll2a0Vaa1d5YkM3QzVIZ01fMjFHTjUxbU9GN01pSlBB?oc=5"
+    }
+  ],
   "digest_last_sent": "2026-07-12",
   "discord_control": {
     "last_id": "1525731415692542042"
@@ -9929,6 +9948,102 @@
       "topic": "apod",
       "ts": "2026-07-12T12:42:25.299993+00:00",
       "url": "https://apod.nasa.gov/apod/image/2607/NGC474_CfhtCoelum_1500.jpg"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "05fb3c86aac25c21",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Marvel's Comic-Con Hall H Comeback Is Official, and an AVENGERS: DOOMSDAY Trailer Is Sure to Be The Main Event - GeekTyrant",
+      "topic": "movies",
+      "ts": "2026-07-12T15:18:27.582401+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOYXp5SUlhRmhPMC1nYnowRXBrM0tyM0tmSmI4ZDk4ZTNMZmNmRnNsMGlqMVp6MjJMUGhZSjlNQjh0Xy1FUkJ0UGlvMVN5bHJzUXo2YkJwSXF2MUtGNk8tYVhOM05QUV8tUExQTmoxNERlcC1yUV8zWDNJVTBmZ1AtbE9mTmw5V1ZhZGpURFlHY0xfWjZNYk5GZC1aQ21uSGZ2MGswdXJTOUdDUWVoczVzblBoUDZVbEF3MTBEekt2OGxfVXA3WHFna0VmNGFvb05o?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "249ab9531b82a080",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day Promo Confirms Spider-Man Fights a Second Hulk Version - The Direct",
+      "topic": "movies",
+      "ts": "2026-07-12T15:18:28.132363+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOUjFyQnJRbGY1NnlyQ3ZOWmFyOXVzdGhEY0o1T3BUQmVEWkRidG50WDlhRkxVY2lwQU5DeTdHV2xsTUtsOUV1dkc1Q3FsMzNXXzdrOU50V2JPYnhJNTZuRHF2QVFaZlJEWHRoMlhwbnNtM05UV2cySjYzOFgxMEFZQVJ5bmlOdw?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "a5c15546cd0f7272",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "'The Odyssey': First Reactions From The Critics And Fanboys Who've Seen It - Deadline",
+      "topic": "movies",
+      "ts": "2026-07-12T15:18:28.710989+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRzBpMm5OMl9TSTZQZEp3Y0NpVUNWTTB4M1YzZ0trVEZpa25DMFFISW9XQWFIazFaU0Y4aTI5bGlmSnAyVk9LMzJCaEZSb2lRcFBZT05Vc2FkOTFJUWYwYkotdnJrdy1UT0RhVnlFSlU4M0dEVXFRQ05kMGxzTzVaTEtFVERYWlpGOHNROXNVTFNvdFBW?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "22b0ed5cd6e53d1f",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 First Reactions: \u201cStaggering \u2026 Nolan\u2019s Biggest Film to Date\u201d - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-07-12T15:18:28.711959+00:00",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQeGhWeG54OVVSTXlpT1dqOTVSOTdlTjRLUjZwTWVDLXJZX29melNBdnduRy1GNnNjMzZpa3dua3gtQlBzck1WbklpdnFmQ2pwWkgzY0wxdmFvSUI0ZVhOd1hYd3JpeUJwLW81eVBVY0NGVUgtUVVKY0x3VW54LWFqTHZaSVRCWm4tcjRwN1ZONVZSUGZmVnZKaUJQckZidHpw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Amen - Jelly Roll\n(because you like Shaboozey)",
+      "id": "423b83e08c18c596",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-07-12T15:18:36.396820+00:00",
+      "url": "https://www.deezer.com/track/3339513921"
+    },
+    {
+      "action": "push",
+      "detail": "Pause for a moment and have a drink of water.",
+      "id": "be11fb95eb21176a",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-07-12T15:19:53.085301+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "For centuries, the very nature of light remained one of humanity's most profound enigmas. Was it a stream of particles, tiny bullets of energy darting through space, or was it a wave, an undulating ripple across an unseen medium? Isaac Newton, in the 17th century, championed the particle view, explaining reflection and refraction with remarkable clarity. Yet, in the early 19th century, Thomas Young, a polymath physician and physicist, challenged this entrenched idea with a deceptively simple experiment. He directed a beam of light through two closely spaced slits onto a screen. If light were purely particles, one would expect two bright lines on the screen, corresponding to the light passing through each slit. Instead, Young observed a complex pattern of alternating bright and dark fringes \u2013 an interference pattern, the unmistakable signature of waves. This dramatic revelation seemed to settle the debate: light was a wave, a continuous vibration.\n\nHowever, the story of light's identity was far from over, and in the early 20th century, a new generation of physicists, grappling with perplexing phenomena like the photoelectric effect, began to question Young's definitive conclusion. Albert Einstein, in 1905, proposed that light also behaved as discrete packets of energy, which he called \"quanta\" (later photons), explaining how light could knock electrons out of a metal surface. This was a direct contradiction to the wave theory; how could something be both a particle and a wave simultaneously? This paradox, dubbed \"wave-particle duality,\" was deeply unsettling, challenging the very foundations of classical physics and our intuitive understanding of reality. It was as if light had a Jekyll and Hyde personality, seemingly choosing its nature based on how we observed it.\n\nThe double-slit experiment, revisited with increasingly sophisticated tools, became the crucible for exploring this duality, particularly as it delved into the realm of single photons. When individual photons were sent through the slits one at a time, the initial expectation was that each photon, being a particle, would pass through either one slit or the other, eventually building up two distinct lines on the screen. Yet, astonishingly, even with single photons, the interference pattern still emerged over time. This implied that each photon, somehow, interfered with itself, as if it had simultaneously passed through both slits and interfered with its own path. The mind boggled. Even more profoundly, when detectors were placed at the slits to determine which path the photon took, the interference pattern vanished, replaced by the two expected lines. The act of observation, it seemed, collapsed the photon's wave-like nature into a particle, forcing it to \"choose\" a path.\n\nThe implications of the double-slit experiment, particularly when applied to the quantum realm, extend far beyond the nature of light. It became a foundational demonstration of quantum mechanics, a theory that radically reshaped our understanding of reality itself. It suggests that at the most fundamental level, particles do not possess definite properties until they are measured, existing instead in a superposition of all possible states. The \"observer effect\" \u2013 the idea that the act of observation influences reality \u2013 became a central, and often debated, tenet.",
+      "id": "443f280ba6b0894d",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The double-slit experiment and the nature of light",
+      "topic": "learn",
+      "ts": "2026-07-12T15:19:57.758664+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201c\u1f10\u03b3\u1f7c \u03b4\u1f72 \u03bf\u1f50\u03b4\u1f72\u03bd \u1f10\u03c0\u03af\u03c3\u03c4\u03b1\u03bc\u03b1\u03b9 \u03c0\u03bb\u03ad\u03bf\u03bd \u03c0\u03bb\u1f74\u03bd \u03b2\u03c1\u03b1\u03c7\u03ad\u03bf\u03c2, \u1f45\u03c3\u03bf\u03bd \u03bb\u03cc\u03b3\u03bf\u03bd \u03c0\u03b1\u03c1\u1fbd \u1f11\u03c4\u03ad\u03c1\u03bf\u03c5 \u03c3\u03bf\u03c6\u03bf\u1fe6 \u03bb\u03b1\u03b2\u03b5\u1fd6\u03bd \u03ba\u03b1\u1f76 \u1f00\u03c0\u03bf\u03b4\u03ad\u03be\u03b1\u03c3\u03b8\u03b1\u03b9 \u03bc\u03b5\u03c4\u03c1\u03af\u03c9\u03c2.\u201d\n\u2014 Socrates\n\nThe dust of ancient Athens, stirred by sandals and the clamor of the Agora, often settled on the figure of Socrates, a man whose physical presence was as unconventional as his intellectual one. With his snub nose, potbelly, and unkempt appearance, he was hardly the picture of a venerable philosopher. Yet, it was this very disarming exterior that masked a mind of extraordinary depth and an unwavering commitment to truth. His life was not one of wealth or political power, but of relentless inquiry, a perpetual challenge to the complacent assumptions of his fellow citizens. He walked among them, not as a lecturer or a sage, but as an irritant, a gadfly, stinging them awake to examine their own beliefs about justice, virtue, and the good life. He owned no property of note, took no payment for his teachings, and his days were spent in conversation, drawing out the hidden contradictions and untested premises that underpinned Athenian society. This wasn't merely an academic exercise; it was a deeply personal mission, born from a prophecy delivered by the Oracle at Delphi, which declared him the wisest man in Athens. Socrates, in his characteristic humility, interpreted this not as a statement of his vast knowledge, but of his awareness of his own profound ignorance.\n\nIt was against this backdrop of intellectual provocation and personal humility that Socrates uttered the profound words, '\u1f10\u03b3\u1f7c \u03b4\u1f72 \u03bf\u1f50\u03b4\u1f72\u03bd \u1f10\u03c0\u03af\u03c3\u03c4\u03b1\u03bc\u03b1\u03b9 \u03c0\u03bb\u03ad\u03bf\u03bd \u03c0\u03bb\u1f74\u03bd \u03b2\u03c1\u03b1\u03c7\u03ad\u03bf\u03c2, \u1f45\u03c3\u03bf\u03bd \u03bb\u03cc\u03b3\u03bf\u03bd \u03c0\u03b1\u03c1\u1fbd \u1f11\u03c4\u03ad\u03c1\u03bf\u03c5 \u03c3\u03bf\u03c6\u03bf\u1fe6 \u03bb\u03b1\u03b2\u03b5\u1fd6\u03bd \u03ba\u03b1\u1f76 \u1f00\u03c0\u03bf\u03b4\u03ad\u03be\u03b1\u03c3\u03b8\u03b1\u03b9 \u03bc\u03b5\u03c4\u03c1\u03af\u03c9\u03c2.' (I know nothing more, except for a little, as much as to take a word from another wise man and to accept it moderately.) This wasn't a casual aside but a central tenet of his philosophical method, often referred to as the Socratic method or elenchus. He would engage with supposedly wise men \u2013 poets, politicians, artisans \u2013 and through a series of probing questions, expose the shakiness of their claims to knowledge. He didn't claim to have all the answers himself; rather, his wisdom lay in his recognition of the limits of human understanding. The Athens of his time was a city grappling with the aftermath of the Peloponnesian War, a protracted and devastating conflict that had shattered its imperial ambitions and societal certainties. New ideas, particularly from the Sophists who taught rhetoric and persuasive argumentation for a fee, challenged traditional values. Socrates stood as a counterpoint to this intellectual relativism, insisting on the possibility of objective truth, even if the path to it was paved with doubt and self-examination. His willingness to question everything, including the very foundations of Athenian democracy and religion, ultimately led to his trial and condemnation for impiety and corrupting the youth.\n\nCenturies later, the echoes of Socrates' self-proclaimed ignorance continue to resonate with astonishing power. In an age saturated with information, where expertise is often flaunted and certainty proclaimed, his humility serves as a timeless reminder of the enduring value of intellectual honesty. It's a call to embrace a posture of genuine inquiry, to question assumptions, and to recognize the vastness of what we don't know.",
+      "id": "78c745fcbeacba04",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Socrates",
+      "topic": "wikiquote",
+      "ts": "2026-07-12T15:20:02.981770+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -10078,7 +10193,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-11-17-JUL-DE-2026.pdf",
   "fuel_last_pdf_hash": "6d63b58c67090d09b4be63aaff4d094286998b6036bf2d9cf3b47a8eab585639",
-  "fuel_last_prices_seen_at": "2026-07-12T12:41:54.753949+00:00",
+  "fuel_last_prices_seen_at": "2026-07-12T15:19:48.599159+00:00",
   "fuel_prices": {
     "GLP": 3380.03,
     "Gasoil Regular": 3380.03,
@@ -11129,8 +11244,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "philosophy",
-  "knowledge_last_sent": "2026-07-12T4",
+  "knowledge_last_category": "science",
+  "knowledge_last_sent": "2026-07-12T5",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -11285,6 +11400,7 @@
     "science:The discovery of the neutrino": "2026-06-16",
     "science:The discovery of the structure of DNA": "2026-07-06",
     "science:The double helix and the race to find it": "2026-06-25",
+    "science:The double-slit experiment and the nature of light": "2026-07-12",
     "technology:Alexander Graham Bell and the telephone": "2026-06-29",
     "technology:Edison and the phonograph": "2026-06-20",
     "technology:Edison's lab and the practical light bulb": "2026-07-11",
@@ -11327,8 +11443,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-07-12T14:17:06.158024+00:00"
+    "ok": 43,
+    "ts": "2026-07-12T15:18:24.935915+00:00"
   },
   "launch_seen_ids": [
     "f005b9fb66bd62ce",
@@ -11361,6 +11477,17 @@
   "life_dashboard_last_week": "2026-W28",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "ae45d8424f069129",
+      "e005bbaaf5401e8c",
+      "83a67d248c9b9b5d",
+      "ace73e19054d459e",
+      "3e9d1ad107e98a6c",
+      "3441b3737983ae37",
+      "d6ea21377159cc77",
+      "7290e2b9a436198a",
+      "0b8c361863aadba0",
+      "3b14f7f5ce74eb84",
+      "2c42e4a8c650f6d3",
       "a0ba338f8e8768ba",
       "62e68d97e45526bc",
       "8275de948e266654",
@@ -11449,18 +11576,7 @@
       "b463e434b3369227",
       "35e1c7ef98686bbd",
       "9150b9b328684973",
-      "09b6f7c4cb919245",
-      "508777581055be9a",
-      "c8e58b843277d832",
-      "a1eda6d93e27c5ae",
-      "e280da6a072370cc",
-      "14e01c2f0af6802b",
-      "16e14600a2d1508d",
-      "8d2d702cb687a55c",
-      "f1477c39a5bdd65d",
-      "0874fefaff957db7",
-      "38ab9149d9046c83",
-      "18f1b95eca9bffb5"
+      "09b6f7c4cb919245"
     ],
     "Godzilla x Kong: Supernova": [
       "81a0b91fb8fb5cf5",
@@ -11666,6 +11782,16 @@
       "69ab74f4c3f3d685"
     ],
     "Spider-Man: Brand New Day": [
+      "802a84b716479c02",
+      "fdade3e32171528a",
+      "4e00ad85621c1292",
+      "c7dd6da931b4b7a3",
+      "8da296cb203b4936",
+      "b02abeee219d5a10",
+      "4971ab0282f202fd",
+      "96b77f4b70594283",
+      "3874be4644067e36",
+      "be67f4c0e90a9b4f",
       "a0ba338f8e8768ba",
       "c35cf33019616d06",
       "8275de948e266654",
@@ -11755,17 +11881,7 @@
       "1f61e403c63cf4fb",
       "fb7f100921441763",
       "d170e435ae64e7bf",
-      "b6db737bb9d209e1",
-      "6acddcfdac0b17a6",
-      "84d65f075d6904f4",
-      "4b644d41b930e7ac",
-      "e658393a1c457aa9",
-      "3f7158ff287c3e15",
-      "b31b1a459aa704ac",
-      "8b8021745b899904",
-      "e212f022bdcd4f32",
-      "8c867f6a16bc957f",
-      "459ca91652f0783a"
+      "b6db737bb9d209e1"
     ],
     "The Batman Part II": [
       "85e7547c052ed73d",
@@ -11870,6 +11986,35 @@
       "f683bb216c14e113"
     ],
     "The Odyssey": [
+      "dd1ef88496743449",
+      "3e90587d015b5ed3",
+      "f1542d8e197d3519",
+      "702c6b5ec81be0f0",
+      "cbef4dfc04f04adc",
+      "1cfa2d1f5da68b9e",
+      "6624fd2bc7b5072b",
+      "edcaf19949014cb3",
+      "d4737962d573ef2f",
+      "295e826c28dcacc8",
+      "2e4692506dc1358f",
+      "3b43760e7756210c",
+      "b4a09f0e1f4dfdd3",
+      "67ae575d19ac8b92",
+      "71ab7972c43b7f71",
+      "d623b33bddce963f",
+      "21c5fb9f7599f63c",
+      "1b69c889d18c5d41",
+      "ce48f407d2976b9c",
+      "11c093a890ab0490",
+      "a15f4cb8f49513e8",
+      "d6bd25894d089104",
+      "c2399b325e806a62",
+      "0ebf0c85155c8fef",
+      "524c0119ea82834d",
+      "28a3111f7ee1c19c",
+      "d09c48004f443fdf",
+      "70a68c9561c5f695",
+      "986ddc7fb0ee0165",
       "df91b6807cb28ce6",
       "01c5348438db1094",
       "f28036a8031cf9c6",
@@ -11940,36 +12085,7 @@
       "14aa067aac4df0bd",
       "163919afba067aea",
       "7f25d3c92dc16ed0",
-      "5a97d4b81a8de844",
-      "572cd7b26eeb31b4",
-      "3f96db60dc5224e9",
-      "e66b6c8190f59f7d",
-      "999242bf43d72825",
-      "d1d05c5611f25fa4",
-      "af36fd26ed07c95c",
-      "ea57c784af3d27f7",
-      "db53a46e1a6c5559",
-      "afe5eccf01bbc60a",
-      "1b8b192ec4609bb3",
-      "15a30498720759c7",
-      "68b5a0079974b58f",
-      "b931658a42d9b6c3",
-      "85b1aad3b933e7ea",
-      "c8d812eb465b8973",
-      "f22cb1b419f3d3c5",
-      "45330e8147e7cf87",
-      "4b66da197a2b05a2",
-      "1eb3826f89f5a771",
-      "2a30ba1f9c307fae",
-      "8aaaf9291a17fa15",
-      "025617c93c257230",
-      "44ecd436301ce348",
-      "13b50e77982b9de4",
-      "fa2396d4d498b0ad",
-      "544e510dc60178fe",
-      "cfb15dc6a4cb7f00",
-      "b64cb72da84ce593",
-      "b3f8015b00c612e0"
+      "5a97d4b81a8de844"
     ]
   },
   "movie_release_dates": {
@@ -12129,7 +12245,8 @@
     9662,
     105,
     2619,
-    298267421
+    298267421,
+    613934
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -12704,6 +12821,15 @@
       "payload": {
         "name": "Joe Veras"
       }
+    },
+    "febd861f5af193e5": {
+      "applied": null,
+      "created": "2026-07-12T15:18:36.396791+00:00",
+      "kind": "artist",
+      "label": "Jelly Roll",
+      "payload": {
+        "name": "Jelly Roll"
+      }
     }
   },
   "onamet_active": {},
@@ -12947,87 +13073,87 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "apod": {
-      "last_data": "2026-07-12T12:42:25.299969+00:00",
+      "last_data": "2026-07-12T15:20:12.339637+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "deals": {
-      "last_data": "2026-07-12T12:41:19.719927+00:00",
+      "last_data": "2026-07-12T15:19:04.072179+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "energy": {
-      "last_data": "2026-07-12T12:41:35.279019+00:00",
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_data": "2026-07-12T15:19:27.616115+00:00",
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "fda": {
-      "last_data": "2026-07-12T12:41:25.093043+00:00",
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_data": "2026-07-12T15:19:17.332352+00:00",
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "fuel": {
-      "last_data": "2026-07-12T12:41:54.753976+00:00",
+      "last_data": "2026-07-12T15:19:48.599186+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "fx": {
-      "last_data": "2026-07-12T12:41:53.329032+00:00",
+      "last_data": "2026-07-12T15:19:47.233873+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "games": {
       "last_data": "2026-07-06T13:33:40.805493+00:00",
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-12T12:40:58.426931+00:00",
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_data": "2026-07-12T15:18:38.985332+00:00",
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "groceries": {
-      "last_data": "2026-07-12T12:41:24.555364+00:00",
+      "last_data": "2026-07-12T15:19:16.903435+00:00",
       "last_data_count": 238,
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "learn": {
       "last_data": "2026-07-12T12:42:03.546925+00:00",
@@ -13035,76 +13161,76 @@
       "last_ok": "2026-07-12T12:40:39.252758+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "movies": {
-      "last_data": "2026-07-12T12:40:50.202936+00:00",
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_data": "2026-07-12T15:18:31.520279+00:00",
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "music": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-12T12:41:35.920563+00:00",
+      "last_data": "2026-07-12T15:19:28.261345+00:00",
       "last_data_count": 19,
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "outages": {
-      "last_data": "2026-07-12T12:41:52.646301+00:00",
+      "last_data": "2026-07-12T15:19:46.439373+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-12T12:41:52.770834+00:00",
-      "last_data_count": 39,
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_data": "2026-07-12T15:19:46.551729+00:00",
+      "last_data_count": 40,
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "research": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-12T14:17:08.198883+00:00",
+      "last_data": "2026-07-12T15:18:33.011516+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-12T14:17:06.158024+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "weather": {
-      "last_data": "2026-07-12T12:41:35.533061+00:00",
+      "last_data": "2026-07-12T15:19:27.815391+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "wikiquote": {
-      "last_data": "2026-07-12T12:42:04.696820+00:00",
-      "last_data_count": 52,
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_data": "2026-07-12T15:19:58.308990+00:00",
+      "last_data_count": 51,
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-12T12:41:57.127958+00:00",
+      "last_data": "2026-07-12T15:19:53.084668+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-12T12:40:39.252758+00:00"
+      "last_ok": "2026-07-12T15:18:24.935915+00:00"
     }
   },
   "twitch_live": [],
@@ -13112,7 +13238,7 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165172"
+    "last_full_window": "165173"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -13125,6 +13251,7 @@
   },
   "watchdog_failing_since": {},
   "water_slots_sent": [
+    "2026-07-12|15",
     "2026-07-12|12"
   ],
   "weather_seen_ids": [
@@ -13265,8 +13392,8 @@
     "cc6752a9edf6d459",
     "4b102d30a5cb98d5"
   ],
-  "wikiquote_last_category": "science_pioneers",
-  "wikiquote_last_sent": "2026-07-12T4",
+  "wikiquote_last_category": "philosophers",
+  "wikiquote_last_sent": "2026-07-12T5",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-07-07",
     "activists_thinkers:Booker T. Washington": "2026-07-12",
@@ -13306,7 +13433,7 @@
     "philosophers:Marcus Aurelius": "2026-07-11",
     "philosophers:Plato": "2026-07-05",
     "philosophers:Seneca the Younger": "2026-07-04",
-    "philosophers:Socrates": "2026-07-04",
+    "philosophers:Socrates": "2026-07-12",
     "philosophers:Voltaire": "2026-07-09",
     "science_pioneers:Ada Lovelace": "2026-07-05",
     "science_pioneers:Albert Einstein": "2026-07-10",
