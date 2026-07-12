@@ -10447,6 +10447,18 @@
       "topic": "twitch",
       "ts": "2026-07-12T23:23:07.527218+00:00",
       "url": "https://twitch.tv/Sparg0"
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - The Bigshow Monthly ft. MkLeo, MkBigboss, Maister, Mauu, Bonilla, Diegod, etc",
+      "id": "90398d888df6cf11",
+      "score": 68,
+      "severity": "high",
+      "source": "mkleossb",
+      "title": "mkleossb is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-12T23:53:10.603829+00:00",
+      "url": "https://twitch.tv/mkleossb"
     }
   ],
   "f4_history": [
@@ -11851,7 +11863,7 @@
   "last_run": {
     "failed": 0,
     "ok": 1,
-    "ts": "2026-07-12T23:38:06.378245+00:00"
+    "ts": "2026-07-12T23:53:09.824280+00:00"
   },
   "launch_seen_ids": [
     "f005b9fb66bd62ce",
@@ -13604,9 +13616,9 @@
       "last_ok": "2026-07-12T21:08:07.046773+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-12T23:38:07.841950+00:00",
+      "last_data": "2026-07-12T23:53:11.628785+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-12T23:38:06.378245+00:00"
+      "last_ok": "2026-07-12T23:53:09.824280+00:00"
     },
     "uv": {
       "last_ok": "2026-07-12T21:08:07.046773+00:00"
@@ -13634,7 +13646,8 @@
     }
   },
   "twitch_live": [
-    "Sparg0"
+    "Sparg0",
+    "mkleossb"
   ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
