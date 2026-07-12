@@ -151,15 +151,6 @@
       "detail": "",
       "preserve_detail": false,
       "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Disney Unveils First Official Look At Doctor Doom\u2019s Throne For Avengers Doomsday - The Direct",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNT2UxOUtTc2xpTjY0aGlNN1N0bWc1SjlLaGF5bWo4LW5GMy0yWWhDNm5LV0Z1X2o4X2dqQ2c0WnMwR21sVjBTdTBCUlFlcDEtZGliQ3J5Vnp6Y01JaWNEbmFRcUprdXJ1Q1ZIMkdudjIwTTFoRURTUUp1bExVNFBvWmZwUEZ2TUNxS2xPVg?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
       "source": "Spider-Man: Brand New Day",
       "title": "Spider-Man: Brand New Day Fixes Superhero Sequels\u2019 Biggest Problem - Yahoo",
       "topic": "movies",
@@ -191,15 +182,6 @@
       "title": "Avengers: Doomsday Booth Leak: First Look at Doom\u2019s Throne and the X-Mansion - Cosmic Book News",
       "topic": "movies",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPczNCVC04aDR3cTRVNWVxUnhENEt1aVpxQ20xa2dENVdKSDNxSFZaZUVDeXlGMFRFaENZWEpvSjRsVmRfZ2ZmQzVkaXBrVTNJUFpLUTBOZXRSVmhRMHRNOEV6LXIzaTI4ekloXzZUTnBpWjhkX0xLYTdVb1h3bUkzSTNHbzJfYnQ1UktR?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "'The Odyssey': First Reactions From The Critics And Fanboys Who've Seen It - Deadline",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRzBpMm5OMl9TSTZQZEp3Y0NpVUNWTTB4M1YzZ0trVEZpa25DMFFISW9XQWFIazFaU0Y4aTI5bGlmSnAyVk9LMzJCaEZSb2lRcFBZT05Vc2FkOTFJUWYwYkotdnJrdy1UT0RhVnlFSlU4M0dEVXFRQ05kMGxzTzVaTEtFVERYWlpGOHNROXNVTFNvdFBW?oc=5"
     },
     {
       "detail": "",
@@ -254,6 +236,24 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "Avengers: Doomsday",
+      "title": "\u2018Dune Part 3\u2019 Should Move Its Release Date To Avoid \u2018Avengers: Doomsday\u2019 - Forbes",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOSU9XV0diWkFiZm1iNG1zcjk1aVNfalYzSHJqSTFDZi1ja3g4R3BmN3RzazhHeHBINGZxaWR2b1Y0S1ZSR0picExYSHVGaWZEaV9udlNVcDVCTUg4RFM1N1N4aE5Nd1l5WGU1YjFvQUNINU9tV1M2a1doa2ZKcVNZY005azFKSzZES2hVcGZsRzY0a1BXcmpwZkduMnJnTVpKNDJqcTZ5eUo0V0VLS21DdGtMY0VQVUJGLVE?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 62,
+      "source": "The Odyssey",
+      "title": "10 Free Streaming Movies To Watch Before Christopher Nolan\u2019s \u2018The Odyssey\u2019 Hits Theaters - Forbes",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOcFdsXzFyeXZReGxEZDBOd3ZHNEdCbnNSOFdLS3NpSkNTak1DOUZsVklhTzN5a2xuYjBGVTlZNjh2a0hrbHNDaGFFOFZNYUVuVjJBcWhmVzR1d2xRVGUzLUhpdHRYaXV4Tm1BcnlqOGplYzJNVVNnVndzTHFkcjViV001R29Fdw?oc=5"
     }
   ],
   "digest_last_sent": "2026-07-11",
@@ -9764,6 +9764,114 @@
       "topic": "wikiquote",
       "ts": "2026-07-12T07:10:39.320378+00:00",
       "url": ""
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "23312bc8911ed3a1",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "Officially Released AVENGERS: DOOMSDAY Concept Art Shows off the X-Men, Fantastic Four and Returning Avengers - Get Your Comic On",
+      "topic": "movies",
+      "ts": "2026-07-12T09:18:21.860567+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQRG5GVkE2X1RmYjB6dWl3dk5KajNRUkJMY1hpWTAzc0dVc1Nmb2tISjZxa0VMd091aDMyRndpT2MwT2YydS1vWkdYT1pRNm1La0daVU0ySWwzSDVVOWt1THR2bzFDRHA3SDFIcHc3UHV4aXVWakVERWdOSVdiU25qYWt5cnh1aG1Yc2ZaNXNnN0Fway1kYXBXZGhCSjQ2WkllTUVudXI2Vk5jR1JwalUya1V3UjB5aGlTbUFvelI4S0gtbi02eFBfb0xNUENuYmhkMWM1MzVxR0dmbjFTb1F2MWVQdHAtOFRI?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "75c84b9d91803d82",
+      "score": 28,
+      "severity": "moderate",
+      "source": "Avengers: Doomsday",
+      "title": "It's Official: Marvel Confirms Captain America's New Avengers Team in 'Avengers: Doomsday' - Vandal",
+      "topic": "movies",
+      "ts": "2026-07-12T09:18:21.861919+00:00",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFA2c0toZ2VkUUc4UWZ1b3M4MGFMWTA1eUtsQmo2X1FVSl9sMndsU1djaFY0cEQ3bklGYlBQTXhNc0hKb25vbi1fZ1VUN0dvaHdqcHRpbGs0Q2NLRk9GSjRyQ2pWaU01TmJpazFJVXlBY0g1QkJH?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "8cdc988f15a5b2c8",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Christopher Nolan Addresses \u2018The Odyssey\u2019 Backlash, Explains Why Film Uses Modern Dialogue - The Hollywood Reporter",
+      "topic": "movies",
+      "ts": "2026-07-12T09:18:23.168113+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPSkp6LUFmelRyd1B6Vk5ROW5lV2pBbkVMVFpXRVdKbi1jbGxIeE1KZ1pGdGZ0aGFDXzNuRDQ1Qmd6QVItLWlhRGxqYy1ZaDVFRFp5aXd0RHJHbHhuNG9nZGc0Qk5jOHhIZmZOUWMwMVh3OVIxcmRuLWlNNHpBYUtITUtjT3QtWWJicFN6VGJqbVhYcHIwSkFnQWxHWkhpbG5kTXVjTlZJUnZURWozSVgzem5XS3F3cGRydXc?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "20f2ec7df2d17004",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "Christopher Nolan calls criticism of 'The Odyssey' casting decisions 'irrelevant' - Fox News",
+      "topic": "movies",
+      "ts": "2026-07-12T09:18:23.171063+00:00",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQT2lHRzMzc1FzdEk2OXBoQ1dVRHdJYy1xX1EzVEhwMy0yVzJ0UmVpQTdlOEFCT1IySnkxekJtU0dwVE1HY0lLYUVMdlk3bm9RYUxpazFFRlRvSGY2SzJnTWc3VDFUWmJabk9iMGxWN3M0dXBoQUxhY2luNU50VlA5b05aSmR2NlJRYWUwci05WFJsRjA2bmppQ0J2bjc1aV9RVEVQZ0hFREFuUGlFaHcxag?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "48b2168dd08b6c62",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "The Odyssey Is The Only Reboot That Matters - Haute Living",
+      "topic": "movies",
+      "ts": "2026-07-12T09:18:23.172355+00:00",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNVFU4OUZ4LVN3TFRrRDM4V0s1QWFLWVRfTjh4ekNyWUJNcGdxYTVQZkJZZ2FMZnlqUUIxRnFfUkMtQVRRSTM5eVBnVThnTXhMSEY3Vkd3TnRTUjF3amFpLXdWZ2pvTkpDM1hRVnVRUk5PcEctQnVxVENycGtDREZUd0hsYTktRHd6SEoxVXRvbklmOXhWbWlUWHJ6Q3AweVk5MXIxY2MzWElLVUpPYVdwbmUwcVBvV0E?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "e0498c9086479ef1",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 first reactions: Raves for Christopher Nolan\u2019s \u2018jaw-dropping,\u2019 \u2018staggering,\u2019 \u2018must-see\u2019 epic - Entertainment Weekly",
+      "topic": "movies",
+      "ts": "2026-07-12T09:18:23.173680+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWmlLOVpFSjFpaEhFWXVCaVVmaUhiZjhINXp6ZFg1alAtV2JYdGJYWmNtck90Zm9NRGNlMkdWYXp5TUlIdmo5UXBySDBXNmZmZzc1MDdaYjJlVnZFMTllYWlGLU9kNjNGX0IzUWI5SmV2YUhLdC1DMERuYlJUS2IzazNfWXVIdTk4TC04Z1d5XzBIVkJCSVZrYQ?oc=5"
+    },
+    {
+      "action": "drop",
+      "detail": "",
+      "id": "0ffb3b169aea2b52",
+      "score": 28,
+      "severity": "moderate",
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 First Reactions Are Raves for Christopher Nolan\u2019s \u2018Astonishing\u2019 Epic and \u2018Flawless Filmmaking\u2019: \u2018Breathtaking, Bold and Perfection\u2019 - Variety",
+      "topic": "movies",
+      "ts": "2026-07-12T09:18:23.174543+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPV1dpRHBxSWRuMEg5MVF2cmtGZlRDeGh0eFRMM2xoM3ZHTk1qc254Vi1sRE8xVmdBR1Y2N3lhUFY3QmxVU3NzT1JhWDRMeVNqdU9nN2xtYjhLVXowTXJjMDVNcVpjMllZMktoNHdKNm4wVzhTTkZ1WV9nMW5rUkRLSjVza2xmenQ2azdObldhOTdBNnZpWERr?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "The grief of Orpheus, the legendary Thracian poet and musician, was a force that shook the very foundations of the world. His beloved, Eurydice, a nymph of exquisite beauty, had been snatched away by the cruel bite of a viper on their wedding day. Her life, vibrant and full of promise, had been extinguished in an instant, leaving Orpheus adrift in a sea of despair. His lyre, once a source of joy and enchantment, now sang only mournful dirges, its melodies echoing the anguish in his soul. The forests wept with him, the rivers paused their flow, and even the gods on Olympus felt the tremor of his sorrow. But Orpheus, unlike any mortal before him, refused to accept this fate. He harbored a desperate, audacious hope: he would descend into the Underworld, the realm of the dead, and plead for his wife's return.\n\nHis journey was a testament to the power of his music and the depth of his love. He navigated the treacherous paths of Hades, his lyre weaving a spell that charmed even the most hardened guardians of the netherworld. Cerberus, the three-headed hound of hell, was lulled to sleep by his melodies. Charon, the grumpy ferryman of the River Styx, willingly transported him across the churning waters without a fare. The Furies, those ancient, terrifying goddesses of vengeance, shed tears at the sound of his lament. Finally, he stood before the throne of Hades, the stern ruler of the Underworld, and his formidable queen, Persephone, herself a denizen of the living world for half the year. Orpheus poured out his heart in a song of such heartbreaking beauty that it moved even the stoic gods of the dead. He spoke not of conquest or defiance, but of love lost and the unbearable agony of separation, promising to return Eurydice if only for a brief span, understanding that eventually, all must return to the eternal sleep.\n\nThe music of Orpheus had achieved the impossible. Hades, known for his unyielding decree, was swayed by the poet's unwavering devotion and the sheer power of his artistry. Persephone, remembering her own time among the living, felt a pang of sympathy. They agreed to release Eurydice, but with one crucial, ominous condition: Orpheus was to lead her out of the Underworld, and under no circumstances was he to look back at her until they had both reached the sunlight of the living world. The weight of this stipulation, so seemingly simple yet laden with peril, hung heavy in the air. Orpheus, overjoyed yet gripped by a gnawing anxiety, agreed. He began his ascent, Eurydice following silently behind him, her presence a faint, ethereal shadow.\n\nThe path out of the Underworld was long and arduous, a winding tunnel shrouded in perpetual twilight. As Orpheus neared the exit, the faint glimmer of the sun beckoning, his resolve began to waver. Doubt, that most insidious of emotions, crept into his heart. Was she truly there? Had Hades truly kept his word? The silence behind him was deafening, and the ethereal nature of the Underworld had left him questioning the reality of his triumph. In a moment of unbearable impatience, of fear mingled with an overwhelming desire to confirm her presence, Orpheus turned. And in that instant, he saw her, just as she was about to step into the light, her form fleeting and translucent. A whisper of her name, a desperate gasp, and then, with a faint sigh, Eurydice was pulled back into the depths, forever lost to him.",
+      "id": "5c38757279d7464f",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Orpheus and Eurydice in the underworld",
+      "topic": "learn",
+      "ts": "2026-07-12T09:19:31.561400+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cYou can't hold a man down without staying down with him.\u201d\n\u2014 Booker T. Washington\n\nThe voice belongs to Booker T. Washington, a man born into the brutal silence of chattel slavery in Virginia, emerging from its ashes to become one of the most prominent African American leaders of his era. He was a figure of profound complexity, a man who walked a tightrope between the aspirations of his people and the grim realities of Jim Crow America. His philosophy, often labeled \"accommodationist,\" advocated for economic self-sufficiency and vocational training as the primary path to Black uplift, believing that once Black Americans proved their value through industry and property ownership, full civil rights would inevitably follow. This wasn't a surrender, but a strategic maneuver in a world where overt demands for equality were often met with lynching and state-sanctioned violence. He built the Tuskegee Institute from a dilapidated shanty into a powerful educational and economic engine, teaching trades and the dignity of labor, shaping a generation of Black artisans, farmers, and educators. His life was a testament to his own words, a relentless climb out of the very bottom, pulling others with him as best he knew how.\n\nThe quote, \"You can't hold a man down without staying down with him,\" encapsulates the shrewd pragmatism that defined Washington's approach. It was a message delivered in a world still reeling from the aftermath of the Civil War, where the promise of Reconstruction had withered under the assault of white supremacy. In the late 19th and early 20th centuries, America was gripped by a racial terror, where segregation was codified by law, and economic opportunities for Black Americans were systematically denied. Washington, keenly aware of the interconnectedness of society, was not merely appealing to morality but to self-interest. He argued that the degradation of one segment of society, the suppression of its potential, ultimately limited the progress and prosperity of the entire nation. By denying Black citizens education, fair wages, and political participation, white America was not only perpetuating injustice but also crippling its own economic growth, its moral standing, and its ability to fully realize its democratic ideals. It was a plea for enlightened self-interest, an appeal to the very logic of progress that was so central to the American dream, even as that dream was selectively applied.\n\nThis quote resonates with enduring power in our contemporary world, long after the specific battles of Washington's time have receded into history. We see its truth reflected in the pervasive challenges of inequality, whether racial, economic, or social. When we fail to invest in quality education for all children, regardless of their zip code, we hold down not just those children but the entire fabric of our society, limiting innovation, productivity, and shared prosperity. When systemic barriers prevent certain groups from accessing healthcare, stable housing, or fair wages, the ripple effects are felt throughout the economy, manifesting in increased social costs, strained public services, and a diminished collective well-being.",
+      "id": "1bdf7acba03c1181",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Booker T. Washington",
+      "topic": "wikiquote",
+      "ts": "2026-07-12T09:19:36.445951+00:00",
+      "url": ""
     }
   ],
   "f4_history": [
@@ -10961,8 +11069,8 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "medicine",
-  "knowledge_last_sent": "2026-07-12T2",
+  "knowledge_last_category": "mythology",
+  "knowledge_last_sent": "2026-07-12T3",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
@@ -11067,6 +11175,7 @@
     "mythology:Marduk and the creation in the Enuma Elish": "2026-06-16",
     "mythology:Maui, the Polynesian demigod": "2026-07-07",
     "mythology:Medusa and the Gorgons": "2026-07-04",
+    "mythology:Orpheus and Eurydice in the underworld": "2026-07-12",
     "mythology:Pandora and the jar of evils": "2026-06-14",
     "mythology:Perseus and the slaying of Medusa": "2026-06-23",
     "mythology:Prometheus and the theft of fire": "2026-07-05",
@@ -11156,9 +11265,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 1,
-    "ok": 42,
-    "ts": "2026-07-12T07:09:17.845412+00:00"
+    "failed": 0,
+    "ok": 43,
+    "ts": "2026-07-12T09:18:19.527606+00:00"
   },
   "launch_seen_ids": [
     "f005b9fb66bd62ce",
@@ -11191,6 +11300,15 @@
   "life_dashboard_last_week": "2026-W27",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "0c26bc94c54b1f3b",
+      "f72c5a361729edb5",
+      "97df8a82e419c404",
+      "71f0b60adb9f80c9",
+      "a63a2e5d3193cbca",
+      "c23b003667b0eced",
+      "2bd529cf7df09a6d",
+      "a4f517f9e24d8056",
+      "1b8d408cba6c0e64",
       "243f00c42d06136d",
       "a1e882af8776e4cf",
       "fc651dc67246a373",
@@ -11281,16 +11399,7 @@
       "0b8c361863aadba0",
       "ad6ea8273347771e",
       "3b14f7f5ce74eb84",
-      "b305b2741cb274ce",
-      "ea4b450c64044a65",
-      "dec2699a6b27f1b5",
-      "577cdfce70c03b67",
-      "72208a6f230f92fe",
-      "a1ca5ea093f2869f",
-      "deedb2753d47737e",
-      "163632cb88930f66",
-      "5b009fdff9685309",
-      "8f82042425f77669"
+      "b305b2741cb274ce"
     ],
     "Godzilla x Kong: Supernova": [
       "81a0b91fb8fb5cf5",
@@ -11394,6 +11503,7 @@
       "f64039d17f3a85ea"
     ],
     "Spider-Man: Beyond the Spider-Verse": [
+      "0d8b35abd2d6a591",
       "c77264a912ee5282",
       "b84d3143ce284e8e",
       "3ac130062ecf33fd",
@@ -11492,10 +11602,14 @@
       "12a32877aaf462f9",
       "bd25a728b1737988",
       "8da4e621ef83bf87",
-      "69ab74f4c3f3d685",
-      "15bb5d26501b0657"
+      "69ab74f4c3f3d685"
     ],
     "Spider-Man: Brand New Day": [
+      "681bb90041ac37a0",
+      "72067aa84a29de37",
+      "709ef253bd759426",
+      "9e715c2b3bc3ac18",
+      "81314bd3accfbc91",
       "4c89dcc621943021",
       "30879c82b07eae59",
       "8958d1679bd9d266",
@@ -11590,12 +11704,7 @@
       "96b77f4b70594283",
       "3874be4644067e36",
       "be67f4c0e90a9b4f",
-      "b11f10d406bd72d7",
-      "d552e0cae4d58675",
-      "83102ddfa986476d",
-      "e499fc422bfba5d2",
-      "3023a61dc7f484d3",
-      "ac47fcf467b565a0"
+      "b11f10d406bd72d7"
     ],
     "The Batman Part II": [
       "85e7547c052ed73d",
@@ -11700,6 +11809,36 @@
       "f683bb216c14e113"
     ],
     "The Odyssey": [
+      "7b5e86ad81a7326a",
+      "c55186450d4e4e81",
+      "d62b97bd3b6cf9a0",
+      "89ea6bd8323605d3",
+      "de121867ab19dc61",
+      "b98dbc494d4d9379",
+      "a2736df2564c5c30",
+      "5ca0373ede249d10",
+      "9c1133af6582e69e",
+      "9f79f1f9bf19775f",
+      "f86d3e58051a9aee",
+      "39599692894ef055",
+      "1f67d771afe3c96e",
+      "9bb764ab800e1295",
+      "35282b60773b336a",
+      "86cd30b91ffdebd9",
+      "d93f614e48488afa",
+      "32700ad9c6368219",
+      "33f81a9b655cc0e6",
+      "b92587290e9db381",
+      "f3a946e0f242c377",
+      "95cb922da2abcda2",
+      "8dc4cc0e6dbbef49",
+      "6236c83e53dc512e",
+      "0e44f7195dc8c0b2",
+      "296e72c5bfa370f2",
+      "b35f7a9f02068174",
+      "6ec2f505983fce81",
+      "e51073b1b68cd4c6",
+      "0578a0081698ff3f",
       "e284764d45e3f949",
       "f1aad148bc601aca",
       "14aa067aac4df0bd",
@@ -11769,37 +11908,7 @@
       "efe7472c3325814b",
       "c4e733ec00f30aab",
       "0da251ac52e3de7a",
-      "d623b33bddce963f",
-      "20d9460e4a9a6e80",
-      "17c7ef185d8fc238",
-      "a220f006bc16274f",
-      "0ed91b97c7cd944a",
-      "b881ac75efa7b068",
-      "c5aef8941e769f8d",
-      "f9832d40bc76e6bd",
-      "3ac11c32caf4a0d7",
-      "b2dcec54b5d8218b",
-      "507940fe885ce07c",
-      "c765b8b5fa12dfb5",
-      "f30d31cdc39f66e0",
-      "67b58c1727815e59",
-      "b7a3766f06653dcf",
-      "10759192a37cb6a3",
-      "bc73df04c8e3a9e4",
-      "6c8126973545c8a8",
-      "1fdb5ea4cb45b96c",
-      "944422d97d2d12c6",
-      "90d7bb820313ed5e",
-      "a5a501390ffd9fc0",
-      "0be37869f9cf6a9f",
-      "432acbc72ca1a2af",
-      "931129fd0e011ac4",
-      "3627fc7b36de5ea2",
-      "1430c48c47c2955d",
-      "82e0cb72bc1dfe48",
-      "583e5a4b2dfe9970",
-      "5e98cdc281db93d5",
-      "095228f4ac91c31d"
+      "d623b33bddce963f"
     ]
   },
   "movie_release_dates": {
@@ -12776,10 +12885,10 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "anthropic_news": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "apod": {
       "last_data": "2026-07-11T21:27:50.133847+00:00",
@@ -12787,35 +12896,35 @@
       "last_ok": "2026-07-11T21:25:46.080138+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "beach_day": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "deals": {
-      "last_data": "2026-07-12T07:09:57.699492+00:00",
+      "last_data": "2026-07-12T09:18:53.271821+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "energy": {
-      "last_data": "2026-07-12T07:10:07.891005+00:00",
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_data": "2026-07-12T09:19:04.968695+00:00",
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "energy_learn": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "fda": {
-      "last_data": "2026-07-12T07:09:58.348007+00:00",
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_data": "2026-07-12T09:18:53.759845+00:00",
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "fuel": {
       "last_data": "2026-07-11T21:27:20.893180+00:00",
@@ -12823,17 +12932,17 @@
       "last_ok": "2026-07-11T21:25:46.080138+00:00"
     },
     "fx": {
-      "last_data": "2026-07-12T07:10:27.500011+00:00",
+      "last_data": "2026-07-12T09:19:22.420057+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "games": {
       "last_data": "2026-07-06T13:33:40.805493+00:00",
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-12T07:09:35.140401+00:00",
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_data": "2026-07-12T09:18:30.080820+00:00",
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "groceries": {
       "last_data": "2026-07-11T21:26:50.253312+00:00",
@@ -12841,22 +12950,22 @@
       "last_ok": "2026-07-11T21:25:46.080138+00:00"
     },
     "habits": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "health_tip": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "holidays": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "iss": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "itsc": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "launches": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "learn": {
       "last_data": "2026-07-11T12:43:24.743424+00:00",
@@ -12864,88 +12973,84 @@
       "last_ok": "2026-07-11T12:41:53.445946+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "marine": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "movies": {
-      "last_data": "2026-07-12T07:09:26.250404+00:00",
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_data": "2026-07-12T09:18:25.675696+00:00",
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "music": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-12T07:10:08.520024+00:00",
+      "last_data": "2026-07-12T09:19:05.624271+00:00",
       "last_data_count": 19,
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "outages": {
-      "last_data": "2026-07-12T07:10:26.598443+00:00",
+      "last_data": "2026-07-12T09:19:21.670704+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-12T07:10:26.695619+00:00",
-      "last_data_count": 30,
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_data": "2026-07-12T09:19:21.834515+00:00",
+      "last_data_count": 31,
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "research": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "soundcore_pro": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "spending": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-12T07:09:29.307898+00:00",
+      "last_data": "2026-07-12T09:18:26.941603+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "uv": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "visa_bulletin": {
-      "last_error": "Exceeded 30 redirects.",
-      "last_error_ts": "2026-07-12T07:09:17.845412+00:00",
-      "last_ok": "2026-07-12T04:33:19.982420+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "weather": {
-      "last_data": "2026-07-12T07:10:08.022443+00:00",
+      "last_data": "2026-07-12T09:19:05.198771+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "wikiquote": {
-      "last_data": "2026-07-12T07:10:35.003681+00:00",
-      "last_data_count": 23,
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_data": "2026-07-12T09:19:32.232687+00:00",
+      "last_data_count": 21,
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-12T07:10:30.165948+00:00",
+      "last_data": "2026-07-12T09:19:25.829887+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-12T07:09:17.845412+00:00"
+      "last_ok": "2026-07-12T09:18:19.527606+00:00"
     }
   },
-  "twitch_live": [
-    "RiddlesMK"
-  ],
+  "twitch_live": [],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165170"
+    "last_full_window": "165171"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -12956,9 +13061,7 @@
     "games": "2026-06-12T12:15:55.633492+00:00",
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
-  "watchdog_failing_since": {
-    "visa_bulletin": "2026-07-12T07:09:17.845412+00:00"
-  },
+  "watchdog_failing_since": {},
   "water_slots_sent": [],
   "weather_seen_ids": [
     "e56b18dfc48ed6ea",
@@ -13098,10 +13201,10 @@
     "4b102d30a5cb98d5"
   ],
   "wikiquote_last_category": "activists_thinkers",
-  "wikiquote_last_sent": "2026-07-12T2",
+  "wikiquote_last_sent": "2026-07-12T3",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-07-07",
-    "activists_thinkers:Booker T. Washington": "2026-07-03",
+    "activists_thinkers:Booker T. Washington": "2026-07-12",
     "activists_thinkers:Helen Keller": "2026-07-08",
     "activists_thinkers:Henry David Thoreau": "2026-07-11",
     "activists_thinkers:Malala Yousafzai": "2026-07-12",
