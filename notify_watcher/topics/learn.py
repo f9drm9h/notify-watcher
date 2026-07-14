@@ -341,12 +341,20 @@ def _run_knowledge(state: dict, now: _dt.datetime | None = None) -> dict:
     chosen = _knowledge_pick(state, now)
     if chosen is None:
         log.warning("knowledge KB has no topics to send; skipping")
+        health.source_failed(state, "learn", "knowledge KB has no topics to send")
         return state
 
     story = _generate_story(chosen["title"])
     if not story:
+        # Health claim so a dead LLM key can't fail silently forever. Note the
+        # daily Wikimedia leg still refreshes last_ok once a day when it runs
+        # after this (and its own ok claim overwrites this one on daily runs),
+        # so this surfaces on the dashboard/recap rather than the 48h watchdog.
         log.warning("knowledge story generation failed for %r; retrying next run",
                     chosen["title"])
+        health.source_failed(
+            state, "learn",
+            "knowledge story generation failed (no LLM provider answered)")
         return state
 
     _knowledge_commit(state, chosen, now.date())

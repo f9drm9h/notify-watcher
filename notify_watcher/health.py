@@ -50,17 +50,42 @@ STATUS_KEY = "_topic_status"
 # that starts blocking the runner (as gutendex.com and loc.gov did for the
 # retired gutenberg / library_of_congress topics) otherwise fails silently for
 # weeks behind "ok" logs.
+#
+# Deliberately NOT adopted: astronomy, blood_donation, health_tip, bills,
+# reminders, recap, and life_dashboard have no external source (pure local
+# data/date math — "didn't raise" really is the whole story for them);
+# movies and games spread their outcome across several independent sub-checks
+# and are already covered by the watchdog's data_stale_days net; visa_bulletin
+# raises out of run() when its index fetch fails, so main.py stamps that
+# failure directly; research is an on-demand no-op outside /research runs.
 ADOPTED = frozenset({
+    "air_quality",
+    "anthropic_news",
     "apod",
+    "beach_day",
     "deals",
+    "energy",
+    "energy_learn",
+    "fda",
     "fuel",
     "fx",
+    "golden_sun",
     "groceries",
+    "habits",
+    "holidays",
+    "iss",
+    "itsc",
+    "launches",
     "learn",
+    "marine",
+    "music",
     "onamet",
     "outages",
     "quakes",
+    "soundcore_pro",
+    "spending",
     "twitch",
+    "uv",
     "weather",
     "wikiquote",
     "youtube",

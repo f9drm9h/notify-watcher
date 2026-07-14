@@ -366,8 +366,15 @@ def _run(state: dict, now: _dt.datetime | None = None) -> dict:
 
     story = _generate_story(chosen["name"], quote)
     if not story:
+        # Overwrites the source_ok claimed for the quote fetch above (the last
+        # report in a run wins): without this, a dead LLM key kept wikiquote
+        # looking healthy every window while the push silently never fired.
         log.warning("wikiquote story generation failed for %r; retrying next run",
                     chosen["name"])
+        health.source_failed(
+            state, TOPIC,
+            f"story generation failed for {chosen['name']} "
+            "(no LLM provider answered)")
         return state
 
     _commit(state, chosen, now.date())

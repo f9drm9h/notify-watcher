@@ -14,10 +14,11 @@ import os
 
 import requests
 
-from .. import config, events
+from .. import config, events, health
 
 log = logging.getLogger(__name__)
 
+TOPIC = "marine"
 STATE_KEY = "marine_last_sent"  # YYYY-MM-DD guard so it fires once per day
 API = "https://marine-api.open-meteo.com/v1/marine"
 HEADERS = {"User-Agent": "notify-watcher/1.0 (+https://github.com/) personal-use"}
@@ -48,10 +49,16 @@ def run(state: dict) -> dict:
         values = (resp.json().get("daily") or {}).get("wave_height_max") or []
     except Exception as exc:  # noqa: BLE001 - non-fatal
         log.error("marine fetch failed: %s", exc)
+        health.source_failed(state, TOPIC, f"fetch failed: {exc}")
         return state
 
     if not values or values[0] is None:
+        # An answer with no wave reading for a fixed coastal point is a
+        # degraded feed, not a quiet day — report it so it can't hide forever.
+        health.source_failed(state, TOPIC,
+                             "API answered but had no wave_height_max value")
         return state
+    health.source_ok(state, TOPIC, data_count=1)
     wave = float(values[0])
     rough = float(cfg.get("rough_wave_m", 2.0))
     log.info("marine: wave_height_max %.2f m (threshold %.2f)", wave, rough)

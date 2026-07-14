@@ -53,7 +53,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 from cryptography.fernet import Fernet, InvalidToken
 
-from .. import changes, config, events
+from .. import changes, config, events, health
 
 log = logging.getLogger(__name__)
 
@@ -445,16 +445,28 @@ def _summarize(transactions: list[dict], today: date) -> tuple[str, object, floa
 
 def run(state: dict) -> dict:
     cfg = config.section("spending")
+    # Health contract: claims only when the Gmail secrets are configured (an
+    # unconfigured run stays silent). Before this, an expired app password or
+    # a locked log failed every ingestion with nothing but a log line while
+    # the topic kept stamping a healthy last_ok.
+    configured = bool(os.environ.get("GMAIL_USER")
+                      and os.environ.get("GMAIL_APP_PASSWORD"))
     try:
         added = _ingest_emails(cfg)
         if added:
             log.info("spending: recorded %d new transaction(s)", added)
         else:
             log.debug("spending: ingestion added no new transactions this run")
+        if configured:
+            health.source_ok(state, "spending", data_count=added)
     except SpendingLocked as exc:
         log.error("spending: log locked, ingestion skipped: %s", exc)
+        health.source_failed(state, "spending", f"spending log locked: {exc}")
     except Exception as exc:  # noqa: BLE001 - mail being down must not kill the run
         log.error("spending: email ingestion failed: %s", exc)
+        if configured:
+            health.source_failed(state, "spending",
+                                 f"email ingestion failed: {exc}")
 
     if not os.environ.get("NOTIFY_DAILY"):
         return state  # the summary rides the daily run, like recap

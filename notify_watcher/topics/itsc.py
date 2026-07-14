@@ -33,10 +33,11 @@ try:
 except ImportError:  # pragma: no cover - requirements.txt installs it
     PdfReader = None
 
-from .. import config, events, ids
+from .. import config, events, health, ids
 
 log = logging.getLogger(__name__)
 
+TOPIC = "itsc"
 STATE_KEY = "itsc_sent_ids"
 CAP = 400
 PAGE_URL = "https://www.itsc.edu.do/calendario-academico/"
@@ -196,14 +197,24 @@ def run(state: dict) -> dict:
         return state
     if PdfReader is None:
         log.error("pypdf is not installed; skipping ITSC calendar")
+        health.source_failed(state, TOPIC, "pypdf is not installed")
         return state
 
     cfg = config.section("itsc")
     lead_days = cfg.get("lead_days") or DEFAULT_LEAD_DAYS
     collected = _collect_rows(cfg)
     if collected is None:
+        health.source_failed(state, TOPIC,
+                             "calendar page unreachable or has no PDF links")
         return state
     rows, click_url = collected
+    # Health contract: the academic calendar always has dated rows, so PDFs
+    # that all failed or parsed to zero rows mean the source silently broke.
+    if rows:
+        health.source_ok(state, TOPIC, data_count=len(rows))
+    else:
+        health.source_failed(state, TOPIC,
+                             "calendar PDFs yielded 0 parseable rows")
     due = _due(rows, _today_local(), lead_days)
 
     sent = state.get(STATE_KEY)

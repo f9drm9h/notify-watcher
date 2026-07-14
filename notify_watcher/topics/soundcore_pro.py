@@ -31,11 +31,12 @@ from urllib.parse import urlparse
 
 import requests
 
-from .. import control, events
+from .. import control, events, health
 from . import deals
 
 log = logging.getLogger(__name__)
 
+TOPIC = "soundcore_pro"
 SITEMAP_URL = "https://www.soundcore.com/server-sitemap-index-products.xml"
 FALLBACK_SITEMAP_URL = "https://www.soundcore.com/server-sitemap-index-pages.xml"
 PRODUCT_BASE = "https://www.soundcore.com/products/"
@@ -180,13 +181,17 @@ def run(state: dict) -> dict:
         current = _current_slugs(_fetch_sitemap())
     except Exception as exc:  # noqa: BLE001 - topic must degrade, not crash run
         log.warning("soundcore_pro skipped: could not fetch/parse sitemap: %s", exc)
+        health.source_failed(state, TOPIC, f"sitemap fetch/parse failed: {exc}")
         return state
     log.info("flagship Liberty Pro products in catalog: %d", len(current))
     # Guard against an empty/garbled sitemap response (e.g. a WAF HTML page that
     # still returned 200) wiping nothing but also seeding nothing useful.
     if not current:
         log.warning("no flagship Pro slugs parsed from sitemap; skipping this run")
+        health.source_failed(state, TOPIC,
+                             "sitemap answered but yielded 0 flagship slugs")
         return state
+    health.source_ok(state, TOPIC, data_count=len(current))
 
     seen_list = state.get(SEEN_KEY)
     # First run: seed the baseline silently so we only alert on future releases.

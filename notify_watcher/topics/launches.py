@@ -12,10 +12,11 @@ import logging
 
 import requests
 
-from .. import config, events, ids
+from .. import config, events, health, ids
 
 log = logging.getLogger(__name__)
 
+TOPIC = "launches"
 STATE_KEY = "launch_seen_ids"
 CAP = 200
 API = "https://ll.thespacedevs.com/2.2.0/launch/upcoming/"
@@ -64,7 +65,14 @@ def run(state: dict) -> dict:
         results = resp.json().get("results") or []
     except Exception as exc:  # noqa: BLE001 - non-fatal (LL2 rate-limits)
         log.error("launches fetch failed: %s", exc)
+        health.source_failed(state, TOPIC, f"fetch failed: {exc}")
         return state
+    # Health contract: LL2 always lists upcoming orbital launches, so an empty
+    # results array means the endpoint/shape changed, not a quiet spell.
+    if results:
+        health.source_ok(state, TOPIC, data_count=len(results))
+    else:
+        health.source_failed(state, TOPIC, "API answered but listed 0 launches")
 
     now = _dt.datetime.now(_dt.timezone.utc)
     selected = _select(results, now, cfg)

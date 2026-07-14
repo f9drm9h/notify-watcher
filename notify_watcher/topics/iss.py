@@ -18,10 +18,11 @@ try:
 except Exception:  # noqa: BLE001 - py<3.9 fallback (not expected on CI)
     ZoneInfo = None  # type: ignore
 
-from .. import config, events, ids
+from .. import config, events, health, ids
 
 log = logging.getLogger(__name__)
 
+TOPIC = "iss"
 STATE_KEY = "iss_seen_passes"
 CAP = 100
 API = "https://api.g7vrd.co.uk/v1/satellite-passes/25544/{lat}/{lon}.json"
@@ -101,7 +102,11 @@ def run(state: dict) -> dict:
         passes = resp.json().get("passes") or []
     except Exception as exc:  # noqa: BLE001 - non-fatal
         log.error("iss fetch failed: %s", exc)
+        health.source_failed(state, TOPIC, f"fetch failed: {exc}")
         return state
+    # Health contract: the API answering is a live source (zero passes over a
+    # few days is a legitimate quiet orbit window, so no parse-to-zero rule).
+    health.source_ok(state, TOPIC, data_count=len(passes))
 
     now = _dt.datetime.now(_dt.timezone.utc)
     selected = _select(passes, now, tz, cfg)

@@ -400,14 +400,17 @@ class HealthContractTest(unittest.TestCase):
         status = health.consume(state, wikiquote.TOPIC)
         self.assertTrue(status["source_failed"])
 
-    def test_llm_failure_after_fetch_still_reports_source_ok(self):
-        # The claim is about the source: Wikiquote answered, so the report is
-        # ok even though the push is skipped and the window left unstamped.
+    def test_llm_failure_after_fetch_reports_source_failed(self):
+        # The narration leg is part of the pipeline: with the quote fetched but
+        # no LLM provider answering, the push silently never fires — so the
+        # failure claim must overwrite the fetch's ok claim (last report wins),
+        # otherwise a dead Gemini key kept wikiquote green every window.
         with mock.patch.object(wikiquote.summarize, "brief", return_value=None), \
                 capture_pushes():
             state = wikiquote._run({}, _dt.datetime(2026, 6, 16, 12, 1))
         status = health.consume(state, wikiquote.TOPIC)
-        self.assertTrue(status["ok"])
+        self.assertTrue(status["source_failed"])
+        self.assertIn("story generation failed", status["message"])
         self.assertNotIn(wikiquote.WIKIQUOTE_SENT_KEY, state)
 
     def test_window_already_sent_makes_no_claim(self):

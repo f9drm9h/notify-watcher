@@ -10,7 +10,7 @@ from __future__ import annotations
 import unittest
 from unittest import mock
 
-from notify_watcher import digest
+from notify_watcher import digest, health
 from notify_watcher.topics import marine
 from tests._util import capture_pushes
 
@@ -56,13 +56,17 @@ class RunTest(unittest.TestCase):
         self.assertEqual(state.get(digest.BUFFER_KEY) or [], [])
         self.assertNotIn(marine.STATE_KEY, state)  # no stamp: nothing was sent
 
-    def test_fetch_failure_is_graceful(self):
+    def test_fetch_failure_is_graceful_and_reports_source_failed(self):
         with mock.patch.object(marine.requests, "get",
                                side_effect=RuntimeError("down")), \
              capture_pushes() as sent:
             state = marine.run({})
         self.assertEqual(sent, [])
-        self.assertEqual(state, {})
+        # Health contract: the swallowed fetch failure is reported instead of
+        # looking identical to a healthy quiet day.
+        status = health.consume(state, marine.TOPIC)
+        self.assertTrue(status["source_failed"])
+        self.assertNotIn(marine.STATE_KEY, state)
 
     def test_skips_outside_the_daily_run(self):
         with mock.patch.dict("os.environ", {"NOTIFY_DAILY": ""}), \

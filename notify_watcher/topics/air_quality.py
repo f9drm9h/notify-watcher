@@ -15,10 +15,11 @@ import logging
 
 import requests
 
-from .. import config, events
+from .. import config, events, health
 
 log = logging.getLogger(__name__)
 
+TOPIC = "air_quality"
 STATE_KEY = "air_quality_alert"  # {"date": "YYYY-MM-DD", "band": int}
 # ntfy priority (already chosen per AQI band) -> normalized Event severity, so
 # the Personal Priority Engine can weigh an air-quality alert across topics.
@@ -83,9 +84,16 @@ def run(state: dict) -> dict:
         current = resp.json().get("current") or {}
     except Exception as exc:  # noqa: BLE001 - a fetch/parse failure is non-fatal
         log.error("air quality fetch failed: %s", exc)
+        health.source_failed(state, TOPIC, f"fetch failed: {exc}")
         return state
 
     aqi = current.get("us_aqi")
+    # Health contract: an answer with a usable AQI reading is a live source; an
+    # answer without one is a degraded feed even though the topic skips cleanly.
+    if aqi is None:
+        health.source_failed(state, TOPIC, "API answered but had no us_aqi value")
+    else:
+        health.source_ok(state, TOPIC, data_count=1)
     today = _dt.date.today().isoformat()
     alert_index = int(cfg.get("alert_band_index", 2))
     alert, idx, label, prio = _should_alert(aqi, state.get(STATE_KEY) or {}, today, alert_index)

@@ -24,10 +24,11 @@ from pathlib import Path
 
 import requests
 
-from .. import config, control, events, ids
+from .. import config, control, events, health, ids
 
 log = logging.getLogger(__name__)
 
+TOPIC = "music"
 RELEASE_SEEN_KEY = "music_release_seen"      # short hashes of album ids
 DISCOVERY_SEEN_KEY = "music_discovery_seen"  # Deezer artist ids recommended before
 CAP = 300
@@ -74,10 +75,13 @@ def _releases(state: dict) -> dict:
     seen_set = set(seen)
     fresh: list[str] = []
     pushed = 0
+    checked_ok = 0
+    last_check_error = ""
 
     for name in artists:
         try:
             aid = _artist_id(name)
+            checked_ok += 1  # the API answered (a no-match IS an answer)
             if aid is None:
                 log.info("music: no Deezer match for %r", name)
                 continue
@@ -105,6 +109,16 @@ def _releases(state: dict) -> dict:
                 pushed += 1
         except Exception as exc:  # noqa: BLE001 - isolate each artist
             log.error("music release check for %r failed: %s", name, exc)
+            last_check_error = f"{name}: {exc}"
+
+    # Health contract: ok while at least one artist lookup answered;
+    # source_failed only when every Deezer call failed (API down/blocked).
+    if checked_ok:
+        health.source_ok(state, TOPIC, data_count=checked_ok)
+    else:
+        health.source_failed(
+            state, TOPIC,
+            f"all {len(artists)} Deezer lookup(s) failed; last: {last_check_error}")
 
     if first_run:
         log.info("seeded %s baseline with %d album id(s) (no alerts on first run)",

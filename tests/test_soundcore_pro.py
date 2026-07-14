@@ -11,7 +11,7 @@ from __future__ import annotations
 import unittest
 from unittest import mock
 
-from notify_watcher import control, events
+from notify_watcher import control, events, health
 from notify_watcher.topics import soundcore_pro as sp
 from tests._util import capture_pushes
 
@@ -130,7 +130,11 @@ class FetchSitemapTest(unittest.TestCase):
         with mock.patch.object(sp, "_fetch_sitemap",
                                side_effect=RuntimeError("blocked")):
             self.assertIs(sp.run(state), state)
-        self.assertEqual(state, {sp.SEEN_KEY: ["liberty-4-pro-earbuds"]})
+        # Health contract: the swallowed sitemap failure is reported instead of
+        # looking identical to a healthy no-new-products run.
+        status = health.consume(state, sp.TOPIC)
+        self.assertTrue(status["source_failed"])
+        self.assertEqual(state[sp.SEEN_KEY], ["liberty-4-pro-earbuds"])
 
 
 class DiscoveryOfferTest(unittest.TestCase):
