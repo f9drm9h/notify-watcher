@@ -66,8 +66,8 @@ def run(state: dict) -> dict:
             checked_ok += 1
             if not live:
                 continue
-            now_live.append(user)
             if user in was_live:
+                now_live.append(user)
                 continue  # already alerted for this session
             # New live session: enrich with title/game, tolerating their failure.
             try:
@@ -91,6 +91,10 @@ def run(state: dict) -> dict:
                 legacy_priority="high",
                 legacy_action="push",
             )
+            # Recorded as live only AFTER emit returned: if the push raised
+            # (Discord outage), the streamer stays absent from twitch_live and
+            # the next run re-alerts instead of silently losing the session.
+            now_live.append(user)
             log.info("twitch: %s went live", user)
         except Exception as exc:  # noqa: BLE001 - isolate each streamer
             log.error("twitch %r check failed: %s", user, exc)

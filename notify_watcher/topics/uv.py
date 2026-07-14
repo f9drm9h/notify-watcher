@@ -14,10 +14,11 @@ import os
 
 import requests
 
-from .. import config, events
+from .. import config, events, health
 
 log = logging.getLogger(__name__)
 
+TOPIC = "uv"
 STATE_KEY = "uv_last_sent"  # YYYY-MM-DD guard so it fires once per day
 API = "https://api.open-meteo.com/v1/forecast"
 HEADERS = {"User-Agent": "notify-watcher/1.0 (+https://github.com/) personal-use"}
@@ -59,10 +60,16 @@ def run(state: dict) -> dict:
         values = (resp.json().get("daily") or {}).get("uv_index_max") or []
     except Exception as exc:  # noqa: BLE001 - non-fatal
         log.error("uv fetch failed: %s", exc)
+        health.source_failed(state, TOPIC, f"fetch failed: {exc}")
         return state
 
     if not values or values[0] is None:
+        # An answer with no UV reading for a fixed location is a degraded
+        # feed, not a quiet day — report it so it can't hide forever.
+        health.source_failed(state, TOPIC,
+                             "API answered but had no uv_index_max value")
         return state
+    health.source_ok(state, TOPIC, data_count=1)
     uv = float(values[0])
     alert_uv = float(cfg.get("alert_uv", 9))
     log.info("uv: max %.1f (threshold %.1f)", uv, alert_uv)

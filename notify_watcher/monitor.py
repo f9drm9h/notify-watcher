@@ -12,8 +12,10 @@ of items; this module does the rest, identically for every domain:
         high         -> live push, priority "high"
         moderate     -> daily digest buffer (digest.add)
         minor        -> dropped
-     Every processed id is recorded as seen (even dropped ones) so it is not
+     Every handled id is recorded as seen (even dropped ones) so it is not
      re-evaluated, then the seen list is capped newest-first to bound state.
+     An item whose emit RAISED (delivery failure) is deliberately NOT marked
+     seen, so it retries next run instead of being lost.
 
 An item is a dict: {"id", "title", "url", "source", "weight"}. `source` is a
 human label shown in alerts/digest; `weight` is the provenance key for scoring
@@ -103,8 +105,6 @@ def run_source(
             h = ids.short(iid)
             if h in seen_set:
                 continue
-            seen_set.add(h)
-            fresh.append(h)
 
             sc, tier = scoring.score(
                 item.get("title", ""),
@@ -113,6 +113,9 @@ def run_source(
                 scoring_cfg,
             )
             if tier == "minor":
+                # Dropped items are recorded as seen so they're never re-scored.
+                seen_set.add(h)
+                fresh.append(h)
                 continue
 
             # The title_prefix metadata hint makes a live push render as the
@@ -148,6 +151,11 @@ def run_source(
                     digest_cfg=digest_cfg,
                 )
                 digested += 1
+            # Marked seen only AFTER emit returned: if the push/digest raised
+            # (Discord outage, rate-limit exhaustion), the item stays unseen and
+            # is retried next run instead of being silently lost forever.
+            seen_set.add(h)
+            fresh.append(h)
         except Exception as exc:  # noqa: BLE001 - isolate each item
             log.error("monitor item failed (%s): %s", state_key, exc)
 

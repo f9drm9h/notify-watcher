@@ -21,7 +21,7 @@ import json
 import logging
 from pathlib import Path
 
-from .. import control, events, kb
+from .. import control, events, health, kb
 
 log = logging.getLogger(__name__)
 
@@ -119,9 +119,25 @@ def _run_one(state: dict, habit: dict, now: _dt.datetime) -> dict:
 
 def run(state: dict) -> dict:
     now = _utcnow()
-    for habit in _load():
+    habits = _load()
+    failures = 0
+    last_error = ""
+    for habit in habits:
         try:
             state = _run_one(state, habit, now)
         except Exception as exc:  # noqa: BLE001 - one bad habit never blocks the rest
             log.error("habit %r failed: %s", habit.get("name"), exc)
+            failures += 1
+            last_error = f"{habit.get('name')}: {exc}"
+    # Health contract (local source: habits.json): ok while at least one habit
+    # processed cleanly; source_failed when every configured habit errored —
+    # before this, a bug breaking all habits still stamped a healthy last_ok
+    # every run. No habits configured = no claim.
+    if habits:
+        if failures < len(habits):
+            health.source_ok(state, "habits", data_count=len(habits) - failures)
+        else:
+            health.source_failed(
+                state, "habits",
+                f"all {len(habits)} habit(s) failed; last: {last_error}")
     return state

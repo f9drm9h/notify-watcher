@@ -27,7 +27,7 @@ import datetime as _dt
 import logging
 import os
 
-from .. import config, events, kb, summarize
+from .. import config, events, health, kb, summarize
 
 log = logging.getLogger(__name__)
 
@@ -189,17 +189,24 @@ def run(state: dict) -> dict:
         state[LAST_NEWS_KEY] = _today()
         log.info("energy learning: sent news slot (score %s)", story.get("score"))
         state[LAST_SENT_KEY] = _today()
+        health.source_ok(state, "energy_learn", data_count=1)
         return state
 
     ckey, label, items = _curated_channel(today)
     if not items:
+        # Health claim so a missing/emptied KB directory can't skip the daily
+        # spark silently forever behind "ok" runs.
         log.warning("energy learning: no curated content available; skipping today")
+        health.source_failed(state, "energy_learn",
+                             "no curated content available in any channel")
         return state  # no stamp -> retry on the next daily run
 
     seen_map: dict = state.setdefault(SEEN_KEY, {})
     entry, updated_seen = _pick_unseen(items, list(seen_map.get(ckey) or []), today)
     if entry is None:
         log.warning("energy learning: channel %r yielded no entry; skipping", ckey)
+        health.source_failed(state, "energy_learn",
+                             f"channel {ckey!r} yielded no entry")
         return state
 
     events.emit(
@@ -216,4 +223,5 @@ def run(state: dict) -> dict:
     seen_map[ckey] = updated_seen
     log.info("energy learning: sent curated %s item %r", ckey, entry.get("id"))
     state[LAST_SENT_KEY] = _today()
+    health.source_ok(state, "energy_learn", data_count=1)
     return state

@@ -15,10 +15,11 @@ from datetime import date
 
 import requests
 
-from .. import config, events
+from .. import config, events, health
 
 log = logging.getLogger(__name__)
 
+TOPIC = "holidays"
 STATE_KEY = "holidays_sent"
 API = "https://date.nager.at/api/v3/PublicHolidays/{year}/{country}"
 HEADERS = {"User-Agent": "notify-watcher/1.0 (+https://github.com/) personal-use"}
@@ -60,7 +61,16 @@ def run(state: dict) -> dict:
         holidays = _fetch(today.year, country) + _fetch(today.year + 1, country)
     except Exception as exc:  # noqa: BLE001 - a fetch failure is non-fatal
         log.error("holidays fetch failed: %s", exc)
+        health.source_failed(state, TOPIC, f"fetch failed: {exc}")
         return state
+
+    # Health contract: two years of a country's calendar can never be empty, so
+    # parse-to-zero means the API shape changed, not a quiet stretch.
+    if holidays:
+        health.source_ok(state, TOPIC, data_count=len(holidays))
+    else:
+        health.source_failed(state, TOPIC,
+                             "API answered but returned 0 holidays for 2 years")
 
     sent_list = list(state.get(STATE_KEY) or [])
     sent_set = set(sent_list)

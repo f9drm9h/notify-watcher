@@ -43,10 +43,11 @@ import urllib.parse
 import feedparser
 import requests
 
-from .. import config, news
+from .. import config, health, news
 
 log = logging.getLogger(__name__)
 
+TOPIC = "golden_sun"
 STATE_KEY = "golden_sun_seen"   # news.route bucket: {"Golden Sun": [id, ...]}
 TITLE = "Golden Sun"
 CAP = 150
@@ -289,15 +290,27 @@ def _collect_google_news(cfg: dict) -> list[news.Article]:
 def run(state: dict) -> dict:
     cfg = config.section("golden_sun")
     articles: list[news.Article] = []
+    fetched_ok = 0
+    last_error = ""
     for label, collect in (("wiki", _collect_wiki),
                            ("reddit", _collect_reddit),
                            ("google news", _collect_google_news)):
         try:
             got = collect(cfg)
             articles.extend(got)
+            fetched_ok += 1
             log.info("golden_sun: %s -> %d item(s)", label, len(got))
         except Exception as exc:  # noqa: BLE001 - one source failing is non-fatal
             log.warning("golden_sun: %s fetch failed: %s", label, exc)
+            last_error = f"{label}: {exc}"
+
+    # Health contract: ok while at least one of the three sources answered;
+    # source_failed only when wiki + Reddit + Google News ALL failed.
+    if fetched_ok:
+        health.source_ok(state, TOPIC, data_count=len(articles))
+    else:
+        health.source_failed(state, TOPIC,
+                             f"all 3 sources failed; last: {last_error}")
 
     bucket = state.setdefault(STATE_KEY, {})
     if not articles and bucket.get(TITLE) is None:

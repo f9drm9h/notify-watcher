@@ -15,10 +15,11 @@ import logging
 import feedparser
 import requests
 
-from .. import config, monitor
+from .. import config, health, monitor
 
 log = logging.getLogger(__name__)
 
+TOPIC = "energy"
 STATE_KEY = "energy_seen_ids"
 CAP = 300
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; notify-watcher/1.0)"}
@@ -65,18 +66,34 @@ def run(state: dict) -> dict:
     digest_cfg = config.section("digest")
 
     items: list[dict] = []
+    attempted = fetched_ok = 0
+    last_error = ""
     for src in sources:
         if not isinstance(src, dict) or not src.get("url"):
             continue
         name = src.get("name", "Energy")
         weight = src.get("weight", "trade")
+        attempted += 1
         try:
             entries = _fetch(src["url"])
         except Exception as exc:  # noqa: BLE001 - one source failing is non-fatal
             log.warning("energy source %r failed: %s", name, exc)
+            last_error = f"{name}: {exc}"
             continue
+        fetched_ok += 1
         items.extend(_entries_to_items(entries, name, weight))
         log.info("energy source %r: %d entries", name, len(entries))
+
+    # Health contract: ok while at least one feed answered; source_failed only
+    # when every configured feed failed (before this, a total outage looked
+    # identical to a healthy quiet run).
+    if attempted:
+        if fetched_ok:
+            health.source_ok(state, TOPIC, data_count=len(items))
+        else:
+            health.source_failed(
+                state, TOPIC,
+                f"all {attempted} feed(s) failed; last: {last_error}")
 
     # One call across all sources: each item carries its own provenance weight,
     # so the engine seeds the baseline once and scores mixed-authority sources

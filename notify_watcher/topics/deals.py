@@ -45,6 +45,15 @@ log = logging.getLogger(__name__)
 
 TOPIC = "deals"
 STATE_KEY = "product_prices"  # { "<url>": <last_price_float> }
+# Auto-discovered products (state["auto_products"], appended by soundcore_pro)
+# can be mis-parses whose URL never existed — a permanent 404 that would
+# otherwise log an error every sweep forever. Track consecutive 404s per auto
+# URL and evict the entry once the streak hits the threshold; any non-404
+# outcome (a price, a bot wall, a timeout) resets the streak, so a transient
+# 404 during a site deploy never evicts a real product. Watchlist/tracked
+# products are user-managed and are never auto-evicted.
+AUTO_404_KEY = "deals_auto_404s"  # { "<url>": consecutive_404_count }
+AUTO_EVICT_404S = 3
 # Some stores 403 a bare requests User-Agent, so present as a normal browser:
 # beyond the UA, send the header set a real Chrome navigation carries (Accept,
 # client hints, Sec-Fetch-*). This clears *basic* Cloudflare/Akamai bot checks;
@@ -322,6 +331,23 @@ def _merge_products(state: dict) -> list[dict]:
     return list(merged.values())
 
 
+def _is_404(exc: Exception) -> bool:
+    """True when `exc` is an HTTPError for a 404 response."""
+    resp = getattr(exc, "response", None)
+    return (isinstance(exc, requests.HTTPError)
+            and resp is not None and resp.status_code == 404)
+
+
+def _evict_auto_product(state: dict, url: str, name: str) -> None:
+    """Drop one auto-discovered product and its tracking crumbs from state."""
+    kept = [p for p in state.get("auto_products", [])
+            if not (isinstance(p, dict) and str(p.get("url") or "").strip() == url)]
+    state["auto_products"] = kept
+    (state.get(STATE_KEY) or {}).pop(url, None)
+    log.warning("evicting auto-tracked product %r after %d consecutive 404s "
+                "(the page no longer exists): %s", name, AUTO_EVICT_404S, url)
+
+
 def run(state: dict) -> dict:
     products = _merge_products(state)
     if not products:
@@ -331,6 +357,9 @@ def run(state: dict) -> dict:
     bucket: dict = state.setdefault(STATE_KEY, {})
     prices_seen = 0
     last_check_error = ""
+    auto_urls = {str(p.get("url") or "").strip()
+                 for p in state.get("auto_products", []) if isinstance(p, dict)}
+    counters: dict = dict(state.get(AUTO_404_KEY) or {})
 
     for product in products:
         url = str(product.get("url") or "").strip()
@@ -339,6 +368,7 @@ def run(state: dict) -> dict:
             continue
         name = str(product.get("name") or url).strip()
         target = product.get("target_price")
+        hit_404 = False
         try:
             resp = requests.get(url, headers=HEADERS, proxies=_proxies(),
                                 timeout=30)
@@ -413,6 +443,24 @@ def run(state: dict) -> dict:
         except Exception as exc:  # noqa: BLE001 - isolate each product
             log.error("product %r check failed: %s", name, exc)
             last_check_error = f"{name}: {exc}"
+            hit_404 = _is_404(exc)
+        finally:
+            # The finally runs on every outcome, including the `continue`s in
+            # the try body (bot wall, no price parsed), so the streak resets on
+            # any non-404 result.
+            if url in auto_urls:
+                if hit_404:
+                    counters[url] = counters.get(url, 0) + 1
+                    if counters[url] >= AUTO_EVICT_404S:
+                        _evict_auto_product(state, url, name)
+                        counters.pop(url, None)
+                else:
+                    counters.pop(url, None)
+
+    if counters:
+        state[AUTO_404_KEY] = counters
+    else:
+        state.pop(AUTO_404_KEY, None)
 
     # Health contract: ok while at least one product yielded a price;
     # source_failed when every check failed (network down, every page

@@ -27,7 +27,7 @@ import os
 
 import requests
 
-from .. import config, events
+from .. import config, events, health
 
 log = logging.getLogger(__name__)
 
@@ -172,7 +172,11 @@ def run(state: dict) -> dict:
 
     if wave is None and precip is None and uv is None and temp is None:
         log.warning("beach_day: no data at all; will retry on the next run today")
+        health.source_failed(state, "beach_day",
+                             "no data from either weather API (marine + forecast)")
         return state
+    health.source_ok(state, "beach_day",
+                     data_count=sum(v is not None for v in (wave, precip, uv, temp)))
 
     title, body = _compose(wave, precip, uv, temp)
     state = events.emit(

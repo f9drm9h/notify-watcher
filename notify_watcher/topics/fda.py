@@ -33,10 +33,11 @@ import logging
 
 import requests
 
-from .. import config, monitor
+from .. import config, health, monitor
 
 log = logging.getLogger(__name__)
 
+TOPIC = "fda"
 STATE_KEY = "fda_seen_ids"
 CAP = 200
 DEFAULT_URL = (
@@ -137,9 +138,13 @@ def run(state: dict) -> dict:
         items = _items(resp.json(), allowed)
     except Exception as exc:  # noqa: BLE001 - a fetch/parse failure is non-fatal
         log.error("FDA fetch failed: %s", exc)
+        health.source_failed(state, TOPIC, f"fetch failed: {exc}")
         return state
 
     log.info("FDA: %d approved submission(s) in response", len(items))
+    # Health contract: the API answering is a live source; the watchdog's
+    # data_stale_days net separately covers a long parse-to-zero stretch.
+    health.source_ok(state, TOPIC, data_count=len(items))
     return monitor.run_source(
         state,
         state_key=STATE_KEY,

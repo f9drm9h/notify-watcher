@@ -15,10 +15,11 @@ import urllib.parse
 import feedparser
 import requests
 
-from .. import config, events, ids, news
+from .. import config, events, health, ids, news
 
 log = logging.getLogger(__name__)
 
+TOPIC = "anthropic_news"
 STATE_KEY = "anthropic_seen"
 CAP = 200
 QUERY = "Anthropic Claude (Opus OR Sonnet OR Haiku OR model OR release OR update)"
@@ -62,11 +63,19 @@ def run(state: dict) -> dict:
         entries = feedparser.parse(resp.content).entries
     except Exception as exc:  # noqa: BLE001 - non-fatal
         log.error("anthropic news fetch failed: %s", exc)
+        health.source_failed(state, TOPIC, f"feed fetch failed: {exc}")
         return state
 
     max_age = config.section("news").get("max_age_days", news.DEFAULT_MAX_AGE_DAYS)
     official = _official(entries, max_age)
     log.info("anthropic: %d entries, %d official+recent", len(entries), len(official))
+    # Health contract: the feed answering with entries is a live source (zero
+    # OFFICIAL entries is a normal quiet stretch); an empty feed body means the
+    # query/route broke even though the HTTP fetch "succeeded".
+    if entries:
+        health.source_ok(state, TOPIC, data_count=len(entries))
+    else:
+        health.source_failed(state, TOPIC, "feed answered but contained 0 entries")
 
     seen = state.get(STATE_KEY)
     if seen is None:
