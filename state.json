@@ -12131,6 +12131,18 @@
       "topic": "apod",
       "ts": "2026-07-14T12:09:13.562550+00:00",
       "url": "https://apod.nasa.gov/apod/image/2607/Torifune_JAXA_1400.jpg"
+    },
+    {
+      "action": "push",
+      "detail": "The Astronomy Picture of the Day (APOD) is a popular website run by NASA and Michigan Technological University that features a new image of the universe each day. Each picture comes with an explanation written by a professional astronomer, often relating to current events in space.\n\nThe website was launched in 1995 and has since accumulated over a billion image views. APOD images are sometimes copyrighted, unlike other NASA image galleries. It has received several awards for its contributions to public understanding of astronomy. The site is translated into 21 languages daily and has mirror sites to ensure continuous service.\n\nThis initiative makes complex astronomical concepts accessible to a global audience.",
+      "id": "14f46a18fb784c86",
+      "score": 62,
+      "severity": "low",
+      "source": "Research",
+      "title": "Research: Astronomy Picture of the Day - Wikipedia",
+      "topic": "research",
+      "ts": "2026-07-14T12:44:54.319394+00:00",
+      "url": "https://en.wikipedia.org/wiki/Astronomy_Picture_of_the_Day"
     }
   ],
   "f4_history": [
@@ -13568,7 +13580,7 @@
   "last_run": {
     "failed": 0,
     "ok": 1,
-    "ts": "2026-07-14T12:37:46.864576+00:00"
+    "ts": "2026-07-14T12:44:52.919942+00:00"
   },
   "launch_seen_ids": [
     "6de0dc2904048f00",
@@ -15354,7 +15366,7 @@
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
     },
     "research": {
-      "last_ok": "2026-07-14T12:07:34.974787+00:00"
+      "last_ok": "2026-07-14T12:44:52.919942+00:00"
     },
     "soundcore_pro": {
       "last_data": "2026-07-14T12:08:06.335863+00:00",
