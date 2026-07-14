@@ -1,11 +1,13 @@
-"""Topic: a Gemini-narrated quotation story, fresh on every watcher run.
+"""The "quote" content provider for the consolidated spark topic.
 
-A standalone educational push (not gated on NOTIFY_DAILY). Each run picks one
-historical figure from a curated category list, fetches a REAL quote of theirs
-from Wikiquote (the free, no-key MediaWiki ``action=parse`` API), and asks
-Gemini (via summarize.brief) to write a rich, multi-paragraph narrative about
-who they were, the context of the quote, and why it still resonates. The quote
-is genuine; only the surrounding narrative is generated.
+No longer a standalone TOPICS entry: topics/spark.py owns the 6-hour firing
+gate and the quote -> fact -> health-tip rotation, and calls ``send_quote``
+when the rotation lands on a quote. Each send picks one historical figure from
+a curated category list, fetches a REAL quote of theirs from Wikiquote (the
+free, no-key MediaWiki ``action=parse`` API), and asks Gemini (via
+summarize.brief) to write a short 2-3 paragraph narrative about who they were,
+the context of the quote, and why it still resonates. The quote is genuine;
+only the surrounding narrative is generated.
 
 Design choices mirror the "Knowledge" story engine in topics/learn.py so the two
 behave identically and share the same operational guarantees:
@@ -17,26 +19,23 @@ behave identically and share the same operational guarantees:
   * 30-day no-repeat. Each shown figure's id (``category:name``) is stamped into
     state.json so no figure repeats within WIKIQUOTE_REPEAT_DAYS.
   * Window-seeded determinism. The in-category figure pick and the quote pick are
-    seeded by the current 3-hour window (date + hour bucket), so a re-run inside
-    the same window re-picks the same figure and quote — safe against the
-    runner's repeated/rebased runs — while each new window serves something new.
-  * Per-window double-send guard. WIKIQUOTE_SENT_KEY stamps the window only
-    AFTER a story is generated and pushed, so a re-run inside the window is a
-    no-op and a failure leaves the window unstamped to retry next run.
+    seeded by the current 6-hour window (date + hour bucket, matching spark's
+    cadence), so a re-run inside the same window re-picks the same figure and
+    quote — safe against the runner's repeated/rebased runs — while each new
+    window serves something new. (The double-send guard itself lives in spark.)
   * Graceful skip. If the quote fetch fails, parsing yields nothing, or Gemini
-    returns None, the run skips cleanly WITHOUT stamping the window or consuming
-    the figure — the next run simply retries. A per-topic failure never crashes
-    the sweep.
+    returns None, the send returns False cleanly WITHOUT consuming the figure —
+    spark leaves its window unstamped and the next run simply retries. A
+    per-topic failure never crashes the sweep.
   * LLM optional. summarize.brief tries Gemini first, then Anthropic, and returns
     None when no provider key is set — so an absent/flaky LLM skips the push
     rather than sending a bare quote.
-  * Health contract. The topic is in health.ADOPTED: every run that contacts
-    Wikiquote reports source_ok / source_failed, so a source that silently
-    starts failing for weeks (how the retired gutenberg topic died) surfaces
-    in topic_health and the watchdog instead of hiding behind the graceful
-    skip. Runs that never reach the source (window already sent) make no
-    claim. An LLM failure after a successful fetch still reports source_ok —
-    the contract is about the source, and the unstamped window retries anyway.
+  * Health contract. spark is in health.ADOPTED: every send that contacts
+    Wikiquote reports source_ok / source_failed under the spark topic, so a
+    source that silently starts failing for weeks (how the retired gutenberg
+    topic died) surfaces in topic_health and the watchdog instead of hiding
+    behind the graceful skip. An LLM failure after a successful fetch still
+    reports source_failed — a dead LLM key must not look healthy forever.
 """
 from __future__ import annotations
 
@@ -51,7 +50,9 @@ from .. import events, health, summarize
 
 log = logging.getLogger(__name__)
 
-TOPIC = "wikiquote"
+# Everything emits (and reports health) under the consolidated spark topic;
+# spark.py owns the TOPICS entry, this module is just its quote provider.
+TOPIC = "spark"
 
 # --- Wikiquote source -------------------------------------------------------
 API_URL = "https://en.wikiquote.org/w/api.php"
@@ -108,20 +109,19 @@ FIGURES: dict[str, list[str]] = {
 # --- State + windowing ------------------------------------------------------
 WIKIQUOTE_SEEN_KEY = "wikiquote_seen"            # {figure_id: "YYYY-MM-DD" last shown}
 WIKIQUOTE_CATEGORY_KEY = "wikiquote_last_category"
-WIKIQUOTE_SENT_KEY = "wikiquote_last_sent"        # "YYYY-MM-DDTn" 3-hour window
 WIKIQUOTE_REPEAT_DAYS = 30
-WIKIQUOTE_WINDOW_HOURS = 3  # the watcher cron's cadence
+WIKIQUOTE_WINDOW_HOURS = 6  # spark's cadence; seeds the per-window picks
 
-# Story generation budget. ~1024 output tokens comfortably covers three or four
-# substantial paragraphs; the result is clipped to WIKIQUOTE_CLIP_CHARS so a long
-# narrative plus the quote stays under ntfy's ~4 KB message limit.
-WIKIQUOTE_STORY_TOKENS = 1024
-WIKIQUOTE_CLIP_CHARS = 3200
+# Story generation budget. ~512 output tokens comfortably covers 2-3 short
+# paragraphs; the result is clipped to WIKIQUOTE_CLIP_CHARS so the narrative
+# plus the quote stays a short read (and far under Discord's embed limit).
+WIKIQUOTE_STORY_TOKENS = 512
+WIKIQUOTE_CLIP_CHARS = 1600
 
 _STORY_SYSTEM = (
     "You are a documentary narrator writing for an intelligent, curious adult. "
     "Write rich, narrative, storytelling prose — never bullet points and never a "
-    "dry encyclopedia entry. Write at least three substantial paragraphs. Plain "
+    "dry encyclopedia entry. Write 2-3 short paragraphs, no more. Plain "
     "text only: no markdown, no headings, no lists, no surrounding quotation marks."
 )
 
@@ -240,11 +240,10 @@ def _recent(state: dict, day: _dt.date) -> dict[str, _dt.date]:
 
 
 def _window(now: _dt.datetime) -> str:
-    """The 3-hour-window stamp for a datetime, e.g. '2026-06-16T4'.
+    """The 6-hour-window stamp for a datetime, e.g. '2026-06-16T2'.
 
-    Bucketing the hour keeps the stamp stable when a cron run drifts a few
-    minutes inside its window, so the seed and the double-send guard agree about
-    which window a run belongs to.
+    Bucketing the hour keeps the stamp stable when a cron run drifts inside its
+    window, so a retry within one spark window re-picks the same figure/quote.
     """
     return f"{now.date().isoformat()}T{now.hour // WIKIQUOTE_WINDOW_HOURS}"
 
@@ -255,7 +254,7 @@ def _pick_figure(state: dict, now: _dt.datetime) -> dict | None:
     Pure selection — does NOT mutate state. Rotates to the next category (sorted,
     cyclic after the one stamped in state) that still has a figure unseen within
     WIKIQUOTE_REPEAT_DAYS, then picks one of its eligible figures with an RNG
-    seeded by the current 3-hour window. If every figure was shown recently, the
+    seeded by the current 6-hour window. If every figure was shown recently, the
     least recently shown one is reused so the push is never starved.
     """
     entries = _figure_entries()
@@ -278,7 +277,7 @@ def _pick_figure(state: dict, now: _dt.datetime) -> dict | None:
 
 
 def _pick_quote(quotes: list[str], entry_id: str, now: _dt.datetime) -> str | None:
-    """One quote, chosen deterministically per 3-hour window, or None if empty."""
+    """One quote, chosen deterministically per 6-hour window, or None if empty."""
     if not quotes:
         return None
     rng = random.Random(f"{_window(now)}:{entry_id}")
@@ -311,18 +310,17 @@ def _clip_story(text: str, limit: int = WIKIQUOTE_CLIP_CHARS) -> str:
 
 
 def _generate_story(person: str, quote: str) -> str | None:
-    """A rich, multi-paragraph narrative about a quote via Gemini, or None.
+    """A short 2-3 paragraph narrative about a quote via Gemini, or None.
 
     Delegates to summarize.brief (Gemini first, Anthropic fallback, both
     optional), which never raises and returns None when no provider key is set
     or every call fails — so a flaky/absent LLM skips the push cleanly rather
-    than crashing the sweep. The result is clipped to fit ntfy's message limit.
+    than crashing the sweep. The result is clipped so the push stays short.
     """
     prompt = (
-        f"This quote was said by {person}: '{quote}'. Write a rich narrative "
+        f"This quote was said by {person}: '{quote}'. Write a short narrative "
         "account of who this person was, the context in which they said this, "
-        "what was happening in their life and the world at the time, and why "
-        "this quote still resonates today. Write at least 3 substantial "
+        "and why this quote still resonates today. Write exactly 2-3 short "
         "paragraphs as a documentary narrator for an intelligent curious adult. "
         "Do not use bullet points."
     )
@@ -335,25 +333,21 @@ def _compose(person: str, quote: str, story: str) -> str:
     return f"“{quote}”\n— {person}\n\n{story}"
 
 
-def _run(state: dict, now: _dt.datetime | None = None) -> dict:
-    """Send one Gemini-narrated quotation story per 3-hour window; every cycle.
+def send_quote(state: dict, now: _dt.datetime | None = None) -> bool:
+    """Send one Gemini-narrated quotation story under the spark topic.
 
-    Picks a figure, fetches a real Wikiquote quote, then asks Gemini for the
-    narrative. The figure is recorded and the window stamped ONLY after the quote
-    is fetched AND a story comes back, so any failure leaves both untouched and
-    the next run retries (never crashing the sweep). The window stamp makes a
-    re-run inside the same window a no-op.
+    Called by topics/spark.py when its rotation lands on a quote; the 6-hour
+    firing gate lives there. Picks a figure, fetches a real Wikiquote quote,
+    then asks Gemini for the narrative. The figure is recorded ONLY after the
+    quote is fetched AND a story comes back, so any failure leaves the rotation
+    memory untouched (and spark's window unstamped) and the next run retries —
+    never crashing the sweep. Returns True when a story was emitted.
     """
     now = now or _dt.datetime.now()
-    window = _window(now)
-    if state.get(WIKIQUOTE_SENT_KEY) == window:
-        log.info("wikiquote push already sent this window; skipping")
-        return state
-
     chosen = _pick_figure(state, now)
     if chosen is None:
-        log.warning("wikiquote figure list is empty; skipping")
-        return state
+        log.warning("spark quote: figure list is empty; skipping")
+        return False
 
     quotes = _fetch_quotes(chosen["name"])
     quote = _pick_quote(quotes, str(chosen["id"]), now)
@@ -361,21 +355,21 @@ def _run(state: dict, now: _dt.datetime | None = None) -> dict:
         health.source_failed(state, TOPIC,
                              f"no usable Wikiquote quote for {chosen['name']}")
         log.warning("no Wikiquote quote for %r; retrying next run", chosen["name"])
-        return state
+        return False
     health.source_ok(state, TOPIC, data_count=len(quotes))
 
     story = _generate_story(chosen["name"], quote)
     if not story:
         # Overwrites the source_ok claimed for the quote fetch above (the last
-        # report in a run wins): without this, a dead LLM key kept wikiquote
+        # report in a run wins): without this, a dead LLM key kept the quote leg
         # looking healthy every window while the push silently never fired.
-        log.warning("wikiquote story generation failed for %r; retrying next run",
+        log.warning("spark quote story generation failed for %r; retrying next run",
                     chosen["name"])
         health.source_failed(
             state, TOPIC,
             f"story generation failed for {chosen['name']} "
             "(no LLM provider answered)")
-        return state
+        return False
 
     _commit(state, chosen, now.date())
     events.emit(
@@ -389,11 +383,5 @@ def _run(state: dict, now: _dt.datetime | None = None) -> dict:
         legacy_priority="low",
         legacy_action="push",
     )
-    log.info("sent wikiquote story for %r (window %s)", chosen["name"], window)
-    state[WIKIQUOTE_SENT_KEY] = window
-    return state
-
-
-def run(state: dict) -> dict:
-    """Topic entry point: narrate one Wikiquote story for the current window."""
-    return _run(state)
+    log.info("sent spark quote story for %r", chosen["name"])
+    return True

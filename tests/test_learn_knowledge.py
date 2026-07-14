@@ -1,12 +1,14 @@
-"""Tests for the Gemini-powered "Knowledge" story push of notify_watcher.topics.learn.
+"""Tests for the Gemini-powered "Knowledge" story leg of notify_watcher.topics.learn.
 
-On EVERY watcher run (every 3 hours, independent of NOTIFY_DAILY) one topic is
-chosen from data/knowledge_topics.json — category rotation + a 30-day no-repeat
-window, window-seeded for re-run determinism — and narrated fresh by Gemini
-(summarize.brief). The topic is recorded and the window stamped ONLY after a
-story comes back, so a generation failure skips cleanly and retries next run.
-All tests run on synthetic in-memory KBs with the LLM mocked (no network); the
-golden test at the end validates the real data/knowledge_topics.json.
+The knowledge story is spark's "fact" content leg: topics/spark.py owns the
+6-hour firing gate and calls send_knowledge when its rotation lands on a fact
+(independent of NOTIFY_DAILY). One topic is chosen from
+data/knowledge_topics.json — category rotation + a 30-day no-repeat window,
+window-seeded for re-run determinism — and narrated fresh by Gemini
+(summarize.brief). The topic is recorded ONLY after a story comes back, so a
+generation failure returns False cleanly and retries next run. All tests run
+on synthetic in-memory KBs with the LLM mocked (no network); the golden test
+at the end validates the real data/knowledge_topics.json.
 """
 from __future__ import annotations
 
@@ -49,24 +51,24 @@ def _pick_id(state_before: dict, state_after: dict) -> str:
 
 
 def _runs(start: _dt.datetime, count: int) -> list[_dt.datetime]:
-    """`count` consecutive 3-hour cron firings starting at `start`."""
+    """`count` consecutive 6-hour spark firings starting at `start`."""
     step = _dt.timedelta(hours=learn.KNOWLEDGE_WINDOW_HOURS)
     return [start + step * i for i in range(count)]
 
 
 class WindowTest(unittest.TestCase):
-    """The 3-hour-window stamp that seeds the pick and guards re-runs."""
+    """The 6-hour-window stamp that seeds the pick (matching spark's cadence)."""
 
-    def test_hours_bucket_into_3h_windows(self):
+    def test_hours_bucket_into_6h_windows(self):
         day = "2026-06-16"
         self.assertEqual(learn._knowledge_window(_dt.datetime(2026, 6, 16, 0, 0)),
                          f"{day}T0")
-        self.assertEqual(learn._knowledge_window(_dt.datetime(2026, 6, 16, 2, 59)),
+        self.assertEqual(learn._knowledge_window(_dt.datetime(2026, 6, 16, 5, 59)),
                          f"{day}T0")  # drift inside a window keeps the stamp
-        self.assertEqual(learn._knowledge_window(_dt.datetime(2026, 6, 16, 3, 0)),
+        self.assertEqual(learn._knowledge_window(_dt.datetime(2026, 6, 16, 6, 0)),
                          f"{day}T1")
         self.assertEqual(learn._knowledge_window(_dt.datetime(2026, 6, 16, 23, 59)),
-                         f"{day}T7")
+                         f"{day}T3")
 
     def test_windows_differ_across_days(self):
         self.assertNotEqual(learn._knowledge_window(_dt.datetime(2026, 6, 16, 1)),
@@ -185,7 +187,7 @@ class DeduplicationTest(unittest.TestCase):
                                 picked[0]: now.date().isoformat()})
 
     def test_same_window_rerun_picks_same_topic(self):
-        # Re-run safety: the runner re-executing inside one 3-hour window
+        # Re-run safety: the runner re-executing inside one 6-hour window
         # (same window stamp, even a different minute) must not drift.
         entries = _fake_kb(["a", "b", "c"], per_category=6)
         base = {
@@ -202,7 +204,7 @@ class DeduplicationTest(unittest.TestCase):
         state: dict = {}
         with mock.patch.object(learn, "_knowledge_entries", return_value=entries):
             first = _pick_and_commit(state, _dt.datetime(2026, 7, 4, 12, 5))
-            second = _pick_and_commit(state, _dt.datetime(2026, 7, 4, 15, 5))
+            second = _pick_and_commit(state, _dt.datetime(2026, 7, 4, 18, 5))
         self.assertNotEqual(first["id"], second["id"])
 
     def test_empty_kb_returns_none(self):
@@ -221,7 +223,7 @@ class StoryGenerationTest(unittest.TestCase):
         # call signature: brief(system_instruction, user_prompt, max_tokens=...)
         user_prompt = brief.call_args.args[1]
         self.assertIn("The fall of the Berlin Wall", user_prompt)
-        self.assertIn("four substantial paragraphs", user_prompt)
+        self.assertIn("2-3 short paragraphs", user_prompt)
 
     def test_none_when_no_provider(self):
         with mock.patch.object(learn.summarize, "brief", return_value=None):
@@ -250,8 +252,12 @@ class ClipStoryTest(unittest.TestCase):
         self.assertTrue(out.endswith("…"))
 
 
-class RunKnowledgeTest(unittest.TestCase):
-    """The push fires once per 3-hour window, narrated by Gemini."""
+class SendKnowledgeTest(unittest.TestCase):
+    """send_knowledge emits one Gemini-narrated story and reports success.
+
+    The per-window double-send guard now lives in topics/spark.py (covered by
+    tests/test_spark.py); this provider just sends and returns True/False.
+    """
 
     def setUp(self):
         self.entries = _fake_kb(["a", "b", "c"], per_category=4)
@@ -263,22 +269,23 @@ class RunKnowledgeTest(unittest.TestCase):
         p2.start()
         self.addCleanup(p2.stop)
 
-    def test_pushes_once_per_window_with_topic_header_and_story_body(self):
+    def test_pushes_topic_header_and_story_body_under_spark_topic(self):
         now = _dt.datetime(2026, 6, 16, 12, 1)
+        state: dict = {}
         with capture_pushes() as sent:
-            state = learn._run_knowledge({}, now)
-            learn._run_knowledge(state, now + _dt.timedelta(minutes=30))  # re-run
-        self.assertEqual(len(sent), 1, "a re-run inside the window must not resend")
+            self.assertTrue(learn.send_knowledge(state, now))
+        self.assertEqual(len(sent), 1)
         self.assertRegex(sent[0]["title"], r"^Title ")   # topic title is the header
         self.assertEqual(sent[0]["message"], STORY)      # the generated narrative
-        self.assertEqual(state[learn.KNOWLEDGE_SENT_KEY],
-                         learn._knowledge_window(now))
+        self.assertEqual(sent[0]["topic"], learn.SPARK_TOPIC)
+        self.assertIn(learn.KNOWLEDGE_SEEN_KEY, state)   # topic consumed
 
     def test_pushes_again_next_window_with_distinct_topic(self):
         now = _dt.datetime(2026, 6, 16, 9, 0)
+        state: dict = {}
         with capture_pushes() as sent:
-            state = learn._run_knowledge({}, now)
-            learn._run_knowledge(
+            learn.send_knowledge(state, now)
+            learn.send_knowledge(
                 state, now + _dt.timedelta(hours=learn.KNOWLEDGE_WINDOW_HOURS))
         self.assertEqual(len(sent), 2)
         self.assertNotEqual(sent[0]["title"], sent[1]["title"],
@@ -286,33 +293,32 @@ class RunKnowledgeTest(unittest.TestCase):
 
     def test_gemini_failure_skips_cleanly_and_retries(self):
         now = _dt.datetime(2026, 6, 16, 18, 2)
+        state: dict = {}
         with mock.patch.object(learn.summarize, "brief", return_value=None), \
              capture_pushes() as sent:
-            state = learn._run_knowledge({}, now)
+            self.assertFalse(learn.send_knowledge(state, now))
         self.assertEqual(sent, [], "no push when the story can't be generated")
-        # Neither the window nor the topic is consumed, so the next run retries.
-        self.assertNotIn(learn.KNOWLEDGE_SENT_KEY, state)
+        # The topic is not consumed, so the next run retries.
         self.assertNotIn(learn.KNOWLEDGE_SEEN_KEY, state)
 
-    def test_run_fires_knowledge_without_daily_gate(self):
+    def test_run_no_longer_fires_knowledge(self):
+        # The knowledge story moved to spark's rotation: learn.run is only the
+        # daily consolidated push now, so a non-daily run sends nothing.
         with mock.patch.dict("os.environ", {"NOTIFY_DAILY": ""}, clear=False), \
              capture_pushes() as sent:
             state = learn.run({})
-        self.assertEqual(len(sent), 1)  # knowledge only; no daily learning push
-        self.assertRegex(sent[0]["title"], r"^Title ")
-        self.assertIn(learn.KNOWLEDGE_SENT_KEY, state)
+        self.assertEqual(sent, [])
         self.assertNotIn(learn.STATE_KEY, state)
+        self.assertNotIn(learn.KNOWLEDGE_SEEN_KEY, state)
 
-    def test_daily_run_sends_knowledge_and_consolidated_push(self):
+    def test_daily_run_sends_only_the_consolidated_push(self):
         with mock.patch.dict("os.environ", {"NOTIFY_DAILY": "1"}, clear=False), \
              mock.patch.object(learn, "_fetch_feed", return_value={}), \
              mock.patch.object(learn.summarize, "one_line", return_value=None), \
              capture_pushes() as sent:
             state = learn.run({})
-        self.assertEqual(len(sent), 2)
-        self.assertRegex(sent[0]["title"], r"^Title ")        # knowledge first
-        self.assertEqual(sent[1]["title"], "Daily learning")  # then the daily push
-        self.assertIn(learn.KNOWLEDGE_SENT_KEY, state)
+        self.assertEqual(len(sent), 1)
+        self.assertEqual(sent[0]["title"], "Daily learning")
         self.assertEqual(state[learn.STATE_KEY], _dt.date.today().isoformat())
 
     def test_knowledge_is_not_in_the_daily_rotation(self):

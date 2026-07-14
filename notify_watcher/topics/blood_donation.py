@@ -35,7 +35,7 @@ def _should_notify(last_donation: date, interval_days: int, renotify_days: int,
 
 def run(state: dict) -> dict:
     if not os.environ.get("NOTIFY_DAILY"):
-        return state  # daily-only, like reminders / health_tip / learn
+        return state  # daily-only, like reminders / learn
 
     cfg = config.section("blood_donation")
     raw = cfg.get("last_donation")

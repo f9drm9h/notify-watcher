@@ -407,27 +407,30 @@ class FetchFailureClaimsTest(unittest.TestCase):
 # 3. learn's knowledge story leg reports LLM failure
 # ---------------------------------------------------------------------------
 class LearnKnowledgeHealthTest(unittest.TestCase):
+    # The knowledge story is spark's "fact" leg now, so its claims land under
+    # the spark topic (learn.SPARK_TOPIC) rather than "learn".
     def test_generation_failure_reports_source_failed(self):
         chosen = {"id": "t1", "title": "The Aztec calendar", "category": "history"}
-        with mock.patch.dict("os.environ", {"NOTIFY_DAILY": ""}), \
-                mock.patch.object(learn, "_knowledge_pick",
-                                  return_value=chosen), \
+        state: dict = {}
+        with mock.patch.object(learn, "_knowledge_pick",
+                               return_value=chosen), \
                 mock.patch.object(learn.summarize, "brief", return_value=None), \
                 capture_pushes() as sent:
-            state = learn.run({})
+            sent_ok = learn.send_knowledge(state)
         self.assertEqual(sent, [])
-        status = health.consume(state, "learn")
+        status = health.consume(state, learn.SPARK_TOPIC)
         self.assertTrue(status["source_failed"])
         self.assertIn("knowledge story generation failed", status["message"])
-        # The window stays unstamped so the next run retries.
-        self.assertNotIn(learn.KNOWLEDGE_SENT_KEY, state)
+        # send_knowledge reports failure so spark leaves its window unstamped
+        # and the next run retries.
+        self.assertFalse(sent_ok)
 
     def test_empty_kb_reports_source_failed(self):
-        with mock.patch.dict("os.environ", {"NOTIFY_DAILY": ""}), \
-                mock.patch.object(learn, "_knowledge_pick", return_value=None), \
+        state: dict = {}
+        with mock.patch.object(learn, "_knowledge_pick", return_value=None), \
                 capture_pushes():
-            state = learn.run({})
-        self.assertTrue(health.consume(state, "learn")["source_failed"])
+            self.assertFalse(learn.send_knowledge(state))
+        self.assertTrue(health.consume(state, learn.SPARK_TOPIC)["source_failed"])
 
 
 # ---------------------------------------------------------------------------
