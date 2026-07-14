@@ -63,7 +63,6 @@ ADOPTED = frozenset({
     "air_quality",
     "anthropic_news",
     "apod",
-    "beach_day",
     "deals",
     "energy",
     "energy_learn",

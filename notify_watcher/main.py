@@ -32,7 +32,6 @@ from .topics import (
     anthropic_news,
     apod,
     astronomy,
-    beach_day,
     bills,
     blood_donation,
     deals,
@@ -197,9 +196,6 @@ TOPICS: list[tuple[str, Topic]] = [
     ("astronomy", astronomy.run),
     # apod is daily-only: NASA's Astronomy Picture of the Day, attached inline.
     ("apod", apod.run),
-    # beach_day fires only on the configured weekdays (default Saturday): one
-    # 0-10 "is today a beach day?" score from waves + rain + UV + temperature.
-    ("beach_day", beach_day.run),
     # digest flushes after all digest-producing topics so daily-only items
     # created in this same run are not stranded until tomorrow. Watchdog still
     # stays last because it reads the health stamps produced by every topic.
