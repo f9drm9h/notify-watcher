@@ -7,7 +7,7 @@ collectors in main.py so items found on the same daily run are included.
 
 The digest opens with a one-line morning weather summary ("Today: 31 °C,
 rain 20%, UV 9") fetched from Open-Meteo for the configured location (free, no
-key, same API the uv/beach_day topics use). The line is best-effort: any
+key, same API the uv topic uses). The line is best-effort: any
 failure — no location, network error, missing fields — just omits it, so the
 digest is never blocked on weather.
 

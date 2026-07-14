@@ -32,7 +32,6 @@ from .topics import (
     anthropic_news,
     apod,
     astronomy,
-    beach_day,
     bills,
     blood_donation,
     deals,
@@ -46,7 +45,6 @@ from .topics import (
     golden_sun,
     groceries,
     habits,
-    health_tip,
     holidays,
     iss,
     itsc,
@@ -63,26 +61,26 @@ from .topics import (
     reminders,
     research,
     soundcore_pro,
+    spark,
     spending,
     twitch,
     uv,
     visa_bulletin,
     watchdog,
     weather,
-    wikiquote,
     youtube,
 )
 
 Topic = Callable[[dict], dict]
 
-# Daily-only topics (digest flush, health tip, learn, groceries, itsc, …)
-# gate on NOTIFY_DAILY.
+# Daily-only topics (digest flush, learn, groceries, itsc, …) gate on
+# NOTIFY_DAILY.
 # Rather than rely on a dedicated cron firing (GitHub Actions routinely delays
 # and silently DROPS scheduled runs — a schedule sitting minutes off the main
 # grid is especially prone to being skipped, which is why these never ran), we
 # decide "is this the daily run?" here: the first invocation on/after this UTC
 # hour each day does the daily work. Each daily topic still has its own
-# per-day, set-on-success guard (health_tip_last_sent, etc.), so triggering on
+# per-day, set-on-success guard (learn_last_sent, etc.), so triggering on
 # every post-threshold run is idempotent and a same-day failure naturally
 # retries on the next 3-hourly run.
 DAILY_UTC_HOUR = 12
@@ -159,16 +157,14 @@ TOPICS: list[tuple[str, Topic]] = [
     # across the 3-hourly grid, so this runs every cycle (not daily-only) and
     # dedups per slot per habit in state.
     ("habits", habits.run),
-    ("health_tip", health_tip.run),
-    # learn's consolidated push is daily-only; its standalone knowledge push
-    # fires every cycle (guarded per 3-hour window in state). reminders is
-    # daily-only too. Independent of digest, so order among the daily-only
-    # topics doesn't matter.
+    # learn's consolidated push is daily-only. reminders is daily-only too.
+    # Independent of digest, so order among the daily-only topics doesn't
+    # matter. (learn's old 3-hourly knowledge push now rides spark below.)
     ("learn", learn.run),
-    # wikiquote fires every cycle (guarded per 3-hour window in state, like
-    # learn's knowledge push): a real Wikiquote quote from a curated figure,
-    # wrapped in a fresh Gemini-narrated story. Standalone, not daily-gated.
-    ("wikiquote", wikiquote.run),
+    # spark consolidates the old wikiquote, knowledge-story and health-tip
+    # channels: one push per 6-hour window (epoch-window guard in state),
+    # rotating quote -> fact -> health tip. Standalone, not daily-gated.
+    ("spark", spark.run),
     # energy_learn is daily-only too: one calm educational "Today's spark" push.
     # Order doesn't matter among the daily-only topics; it reads the event_log
     # (populated by the collectors earlier this run) for its occasional news slot.
@@ -200,9 +196,6 @@ TOPICS: list[tuple[str, Topic]] = [
     ("astronomy", astronomy.run),
     # apod is daily-only: NASA's Astronomy Picture of the Day, attached inline.
     ("apod", apod.run),
-    # beach_day fires only on the configured weekdays (default Saturday): one
-    # 0-10 "is today a beach day?" score from waves + rain + UV + temperature.
-    ("beach_day", beach_day.run),
     # digest flushes after all digest-producing topics so daily-only items
     # created in this same run are not stranded until tomorrow. Watchdog still
     # stays last because it reads the health stamps produced by every topic.
@@ -394,7 +387,7 @@ def main() -> int:
     # the env var keeps each daily topic's existing NOTIFY_DAILY check unchanged.
     if _is_daily_run():
         os.environ["NOTIFY_DAILY"] = "1"
-        log.info("daily run active: digest flush, health tip, and learn enabled")
+        log.info("daily run active: digest flush and learn enabled")
 
     # Per-topic run telemetry for the dashboard. priority.decide/emit never see a
     # topic that THREW (it never emits), so the only place that knows a topic failed

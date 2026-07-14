@@ -15,7 +15,7 @@ be done; prune as you confirm.
 - Wikipedia picture of the day: the Wikimedia featured feed the learn topic already
   fetches includes the day's featured image; attach it to the learning push.
 - Morning weather line on the digest: open the daily digest with "Today: 31C, rain 20%,
-  UV 9" from Open-Meteo (already used by uv/marine/beach_day).
+  UV 9" from Open-Meteo (already used by uv/marine).
 - Hurricane cone image on weather alerts: attach NHC's forecast-cone PNG to a
   watch/warning push. Confirm first that the per-storm graphic URL can be derived from
   the NHC ATOM feed entry.

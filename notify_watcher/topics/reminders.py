@@ -155,7 +155,7 @@ def run(state: dict) -> dict:
     _refire_snoozed(state, reminders, _dt.date.today())
 
     if not os.environ.get("NOTIFY_DAILY"):
-        return state  # daily-only, like health_tip / digest / learn
+        return state  # daily-only, like digest / learn
 
     if not reminders:
         return state

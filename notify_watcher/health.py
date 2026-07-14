@@ -44,14 +44,15 @@ STATUS_KEY = "_topic_status"
 # Keep in sync with the topics module: each name here must call source_ok /
 # source_failed on every path that actually contacted its source.
 #
-# The story-engine topics (apod, learn's Wikimedia feed, wikiquote) are here
-# because their failure mode is the nastiest: they fetch external content on a
-# timer and swallow fetch errors as a clean "retry next run" skip, so a source
-# that starts blocking the runner (as gutendex.com and loc.gov did for the
-# retired gutenberg / library_of_congress topics) otherwise fails silently for
-# weeks behind "ok" logs.
+# The story-engine topics (apod, learn's Wikimedia feed, spark's quote and
+# knowledge-story legs) are here because their failure mode is the nastiest:
+# they fetch external content on a timer and swallow fetch errors as a clean
+# "retry next run" skip, so a source that starts blocking the runner (as
+# gutendex.com and loc.gov did for the retired gutenberg / library_of_congress
+# topics) otherwise fails silently for weeks behind "ok" logs. spark's
+# health-tip leg is local vetted KB only and makes no claim.
 #
-# Deliberately NOT adopted: astronomy, blood_donation, health_tip, bills,
+# Deliberately NOT adopted: astronomy, blood_donation, bills,
 # reminders, recap, and life_dashboard have no external source (pure local
 # data/date math — "didn't raise" really is the whole story for them);
 # movies and games spread their outcome across several independent sub-checks
@@ -62,7 +63,6 @@ ADOPTED = frozenset({
     "air_quality",
     "anthropic_news",
     "apod",
-    "beach_day",
     "deals",
     "energy",
     "energy_learn",
@@ -83,11 +83,11 @@ ADOPTED = frozenset({
     "outages",
     "quakes",
     "soundcore_pro",
+    "spark",
     "spending",
     "twitch",
     "uv",
     "weather",
-    "wikiquote",
     "youtube",
 })
 

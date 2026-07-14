@@ -6,14 +6,14 @@ Bundles up to three short sections into a SINGLE daily notification:
   - A curated fact - one vetted entry from a rotating knowledge-base channel
                      (science / technology / life skills / general knowledge)
 
-Also owns the standalone "Knowledge" push: a rich, multi-paragraph story
-generated on demand by Gemini on EVERY watcher run (every 3 hours), independent
-of the daily gate. The topic is chosen from data/knowledge_topics.json (500+
-topics across ten categories) using category rotation + a 30-day no-repeat
-window; the narrative itself is written fresh each time by summarize.brief, so
-no bodies are stored. If Gemini is unavailable the push is skipped cleanly and
-retried next run. Guarded by a per-3-hour-window stamp so a re-run inside the
-same window never double-sends; see _run_knowledge.
+Also owns the "Knowledge" story generator, now the "fact" content provider for
+the consolidated spark topic (topics/spark.py): spark's 6-hour rotation calls
+``send_knowledge`` when it lands on a fact, independent of the daily gate. The
+topic is chosen from data/knowledge_topics.json (500+ topics across ten
+categories) using category rotation + a 30-day no-repeat window; the short 2-3
+paragraph narrative itself is written fresh each time by summarize.brief, so
+no bodies are stored. If Gemini is unavailable the send returns False cleanly
+(spark leaves its window unstamped) and is retried next run; see send_knowledge.
 
 Design choices that match the rest of the project:
   * Free / no key. The Wikimedia REST feed needs no auth; the KB channels are
@@ -29,8 +29,9 @@ Design choices that match the rest of the project:
     feed reports source_ok / source_failed, so a feed that silently starts
     failing (how the retired gutenberg topic died) surfaces in topic_health and
     the watchdog even though the push itself degrades gracefully. The claim is
-    about the feed only — the knowledge story and curated facts are local KB +
-    LLM, so non-daily runs make no claim and leave topic_health untouched.
+    about the feed only — the curated facts are local KB + LLM, so non-daily
+    runs make no claim and leave topic_health untouched. The knowledge story
+    leg reports under the spark topic (its TOPICS entry) instead.
   * LLM optional. The curated fact may be reworded for variety via
     notify_watcher.summarize, falling back to the verbatim vetted text.
 
@@ -71,40 +72,41 @@ CHANNELS: list[tuple[str, str]] = [
     ("Word of the Day", "vocabulary.json"),  # structured entries; never LLM-reworded
 ]
 
-# --- "Knowledge" push (every run, not part of the daily rotation) -----------
+# --- "Knowledge" story: spark's "fact" provider (not the daily rotation) ----
 # A Gemini-powered story engine. knowledge_topics.json maps each category to a
 # list of topic prompts (no bodies); the pick has memory — the id (category:topic)
 # of each shown topic is stamped into state.json so nothing repeats within
 # KNOWLEDGE_REPEAT_DAYS, and a category pointer advances cyclically so consecutive
-# picks never cluster on one theme. On every watcher run (the every-3-hours cron,
-# independent of NOTIFY_DAILY) one topic is chosen and narrated fresh by Gemini.
-# The in-category pick is seeded with the current 3-hour window (date + hour-of-day
-# bucket): each window picks its own topic, while a re-run inside the same window
-# re-picks the same one. The chosen topic is recorded (and KNOWLEDGE_SENT_KEY
-# stamps the window) ONLY after Gemini returns a story, so a generation failure
-# leaves the window unstamped and the topic unconsumed and simply retries next run.
+# picks never cluster on one theme. topics/spark.py calls send_knowledge when its
+# 6-hour quote/fact/health rotation lands on a fact (independent of NOTIFY_DAILY):
+# one topic is chosen and narrated fresh by Gemini. The in-category pick is seeded
+# with the current 6-hour window (date + hour-of-day bucket, matching spark's
+# cadence): each window picks its own topic, while a re-run inside the same window
+# re-picks the same one. The chosen topic is recorded ONLY after Gemini returns a
+# story, so a generation failure leaves the topic unconsumed (and spark's window
+# unstamped) and simply retries next run.
 KNOWLEDGE_LABEL = "Knowledge"
 KNOWLEDGE_FILE = "knowledge_topics.json"
 KNOWLEDGE_SEEN_KEY = "knowledge_seen"  # {topic_id: "YYYY-MM-DD" last shown}
 KNOWLEDGE_CATEGORY_KEY = "knowledge_last_category"
-KNOWLEDGE_SENT_KEY = "knowledge_last_sent"  # "YYYY-MM-DDTn" 3-hour window
 KNOWLEDGE_REPEAT_DAYS = 30
-KNOWLEDGE_WINDOW_HOURS = 3  # the watcher cron's cadence
+KNOWLEDGE_WINDOW_HOURS = 6  # spark's cadence; seeds the per-window pick
 
-# Story generation budget. ~1024 output tokens comfortably covers four
-# substantial paragraphs; the result is clipped to KNOWLEDGE_CLIP_CHARS so a
-# long narrative stays under ntfy's ~4 KB message limit (clip on a sentence
-# boundary so it never ends mid-word).
-KNOWLEDGE_STORY_TOKENS = 1024
-KNOWLEDGE_CLIP_CHARS = 3500
+# The knowledge story emits (and reports health) under spark, its TOPICS entry.
+SPARK_TOPIC = "spark"
+
+# Story generation budget. ~512 output tokens comfortably covers 2-3 short
+# paragraphs; the result is clipped to KNOWLEDGE_CLIP_CHARS so the push stays
+# a short read (clip on a sentence boundary so it never ends mid-word).
+KNOWLEDGE_STORY_TOKENS = 512
+KNOWLEDGE_CLIP_CHARS = 1800
 
 _STORY_SYSTEM = (
     "You are a documentary narrator writing for an intelligent, curious adult. "
     "Write rich, narrative, storytelling prose — never bullet points and never a "
-    "dry encyclopedia entry. Cover who was involved, what happened, why it "
-    "matters, what came before and after, and any compelling human drama. Write "
-    "at least four substantial paragraphs. Plain text only: no markdown, no "
-    "headings, no lists."
+    "dry encyclopedia entry. Cover who was involved, what happened, and why it "
+    "matters. Write 2-3 short paragraphs, no more. Plain text only: no markdown, "
+    "no headings, no lists."
 )
 
 _REWORD_SYSTEM = (
@@ -239,11 +241,11 @@ def _knowledge_recent(state: dict, day: _dt.date) -> dict[str, _dt.date]:
 
 
 def _knowledge_window(now: _dt.datetime) -> str:
-    """The 3-hour-window stamp for a datetime, e.g. '2026-06-16T4'.
+    """The 6-hour-window stamp for a datetime, e.g. '2026-06-16T2'.
 
-    Bucketing the hour (instead of using it raw) keeps the stamp stable when
-    a cron run drifts a few minutes inside its window, so the seed and the
-    double-send guard agree about which window a run belongs to.
+    Bucketing the hour (instead of using it raw) keeps the stamp stable when a
+    cron run drifts inside its window, so a retry within one spark window
+    re-picks the same topic.
     """
     return f"{now.date().isoformat()}T{now.hour // KNOWLEDGE_WINDOW_HOURS}"
 
@@ -254,7 +256,7 @@ def _knowledge_pick(state: dict, now: _dt.datetime | None = None) -> dict | None
     Pure selection — does NOT mutate state. Rotates to the next category
     (sorted, cyclic after the one stamped in state) that still has a topic
     unseen within KNOWLEDGE_REPEAT_DAYS, then picks one of its eligible topics
-    with an RNG seeded by the current 3-hour window — each window picks its own
+    with an RNG seeded by the current 6-hour window — each window picks its own
     topic, a re-run inside the window re-picks the same one. If every topic was
     shown recently, the least recently shown one is reused so the push is never
     starved. Recording the pick is the caller's job (_knowledge_commit), done
@@ -305,73 +307,65 @@ def _clip_story(text: str, limit: int = KNOWLEDGE_CLIP_CHARS) -> str:
 
 
 def _generate_story(topic: str) -> str | None:
-    """A rich, multi-paragraph narrative for `topic` via Gemini, or None.
+    """A short 2-3 paragraph narrative for `topic` via Gemini, or None.
 
     Delegates to summarize.brief (Gemini first, Anthropic fallback, both
     optional), which never raises and returns None when no provider key is set
     or every call fails — so a flaky/absent LLM skips the push cleanly rather
-    than crashing the sweep. The result is clipped to fit ntfy's message limit.
+    than crashing the sweep. The result is clipped so the push stays short.
     """
     prompt = (
         f"Write a rich, narrative, storytelling account of {topic}. Cover who "
-        "was involved, what happened, why it matters, what came before and "
-        "after, and any compelling human drama. Write at least four substantial "
-        "paragraphs. Do not use bullet points. Write as a documentary narrator "
-        "for an intelligent, curious adult."
+        "was involved, what happened, and why it matters. Write exactly 2-3 "
+        "short paragraphs. Do not use bullet points. Write as a documentary "
+        "narrator for an intelligent, curious adult."
     )
     story = summarize.brief(_STORY_SYSTEM, prompt, max_tokens=KNOWLEDGE_STORY_TOKENS)
     return _clip_story(story) if story else None
 
 
-def _run_knowledge(state: dict, now: _dt.datetime | None = None) -> dict:
-    """Send one Gemini-narrated knowledge story per 3-hour window; every cycle.
+def send_knowledge(state: dict, now: _dt.datetime | None = None) -> bool:
+    """Send one Gemini-narrated knowledge story under the spark topic.
 
-    Picks the topic, then asks Gemini for the narrative. The topic is recorded
-    and the window stamped ONLY after a story comes back, so a generation
-    failure leaves both untouched and the next run retries (never crashing the
-    sweep). The window stamp in KNOWLEDGE_SENT_KEY makes a re-run inside the
-    same window a no-op.
+    Called by topics/spark.py when its rotation lands on a fact; the 6-hour
+    firing gate lives there. Picks the topic, then asks Gemini for the
+    narrative. The topic is recorded ONLY after a story comes back, so a
+    generation failure leaves the rotation memory untouched (and spark's window
+    unstamped) and the next run retries — never crashing the sweep. Returns
+    True when a story was emitted.
     """
     now = now or _dt.datetime.now()
-    window = _knowledge_window(now)
-    if state.get(KNOWLEDGE_SENT_KEY) == window:
-        log.info("knowledge push already sent this window; skipping")
-        return state
-
     chosen = _knowledge_pick(state, now)
     if chosen is None:
         log.warning("knowledge KB has no topics to send; skipping")
-        health.source_failed(state, "learn", "knowledge KB has no topics to send")
-        return state
+        health.source_failed(state, SPARK_TOPIC,
+                             "knowledge KB has no topics to send")
+        return False
 
     story = _generate_story(chosen["title"])
     if not story:
-        # Health claim so a dead LLM key can't fail silently forever. Note the
-        # daily Wikimedia leg still refreshes last_ok once a day when it runs
-        # after this (and its own ok claim overwrites this one on daily runs),
-        # so this surfaces on the dashboard/recap rather than the 48h watchdog.
+        # Health claim so a dead LLM key can't fail silently forever.
         log.warning("knowledge story generation failed for %r; retrying next run",
                     chosen["title"])
         health.source_failed(
-            state, "learn",
+            state, SPARK_TOPIC,
             "knowledge story generation failed (no LLM provider answered)")
-        return state
+        return False
 
     _knowledge_commit(state, chosen, now.date())
     events.emit(
         state,
         title=chosen["title"],
         body=story,
-        topic="learn",
+        topic=SPARK_TOPIC,
         severity="low",
         source="Learning",
         tags="bulb",
         legacy_priority="low",
         legacy_action="push",
     )
-    log.info("sent knowledge story %r for window %s", chosen["title"], window)
-    state[KNOWLEDGE_SENT_KEY] = window
-    return state
+    log.info("sent knowledge story %r", chosen["title"])
+    return True
 
 
 def _curated_fact(day: _dt.date | None = None) -> tuple[str, str]:
@@ -413,7 +407,9 @@ def _compose(sections: list[tuple[str, str]]) -> str:
 
 
 def run(state: dict) -> dict:
-    state = _run_knowledge(state)  # every run, independent of the daily gate
+    # The knowledge story is no longer fired here: it is spark's "fact" leg
+    # (topics/spark.py calls send_knowledge). This entry point is now only the
+    # daily consolidated learning push.
     if not os.environ.get("NOTIFY_DAILY"):
         return state  # only the daily cron run sends the learning push
     if state.get(STATE_KEY) == _today():

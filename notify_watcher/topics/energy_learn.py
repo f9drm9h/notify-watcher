@@ -19,7 +19,7 @@ How it picks what to teach:
     required).
 
 Daily-only (``NOTIFY_DAILY``) and idempotent (``energy_learn_last_sent == today``), so a
-repeated or rebased runner invocation never double-sends — matching learn/health_tip.
+repeated or rebased runner invocation never double-sends — matching learn.
 """
 from __future__ import annotations
 

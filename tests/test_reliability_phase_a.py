@@ -33,7 +33,6 @@ from notify_watcher import health, ids, monitor
 from notify_watcher.topics import (
     air_quality,
     anthropic_news,
-    beach_day,
     deals,
     energy,
     energy_learn,
@@ -171,7 +170,7 @@ class TwitchEmitFailureTest(unittest.TestCase):
 # 2. Health-contract adoption
 # ---------------------------------------------------------------------------
 NEWLY_ADOPTED = [
-    "air_quality", "anthropic_news", "beach_day", "energy", "energy_learn",
+    "air_quality", "anthropic_news", "energy", "energy_learn",
     "fda", "golden_sun", "habits", "holidays", "iss", "itsc", "launches",
     "marine", "music", "soundcore_pro", "spending", "uv",
 ]
@@ -337,27 +336,6 @@ class FetchFailureClaimsTest(unittest.TestCase):
             state = habits.run({})
         self.assertIsNone(self._status(state, "habits"))
 
-    def test_beach_day_no_data_vs_partial_data(self):
-        saturday = _dt.date(2026, 7, 11)
-        with mock.patch.dict("os.environ", {"NOTIFY_DAILY": "1"}), \
-                mock.patch.object(beach_day, "_today", return_value=saturday):
-            with mock.patch.object(beach_day, "_fetch_marine",
-                                   side_effect=RuntimeError("down")), \
-                    mock.patch.object(beach_day, "_fetch_forecast",
-                                      side_effect=RuntimeError("down")), \
-                    capture_pushes():
-                state = beach_day.run({})
-            self.assertTrue(self._status(state, "beach_day")["source_failed"])
-            with mock.patch.object(beach_day, "_fetch_marine",
-                                   return_value=1.0), \
-                    mock.patch.object(beach_day, "_fetch_forecast",
-                                      side_effect=RuntimeError("down")), \
-                    capture_pushes():
-                state = beach_day.run({})
-            status = self._status(state, "beach_day")
-            self.assertTrue(status["ok"])
-            self.assertEqual(status["data_count"], 1)
-
     def test_spending_failure_vs_unconfigured(self):
         creds = {"GMAIL_USER": "u@x.com", "GMAIL_APP_PASSWORD": "pw",
                  "NOTIFY_DAILY": ""}
@@ -407,27 +385,30 @@ class FetchFailureClaimsTest(unittest.TestCase):
 # 3. learn's knowledge story leg reports LLM failure
 # ---------------------------------------------------------------------------
 class LearnKnowledgeHealthTest(unittest.TestCase):
+    # The knowledge story is spark's "fact" leg now, so its claims land under
+    # the spark topic (learn.SPARK_TOPIC) rather than "learn".
     def test_generation_failure_reports_source_failed(self):
         chosen = {"id": "t1", "title": "The Aztec calendar", "category": "history"}
-        with mock.patch.dict("os.environ", {"NOTIFY_DAILY": ""}), \
-                mock.patch.object(learn, "_knowledge_pick",
-                                  return_value=chosen), \
+        state: dict = {}
+        with mock.patch.object(learn, "_knowledge_pick",
+                               return_value=chosen), \
                 mock.patch.object(learn.summarize, "brief", return_value=None), \
                 capture_pushes() as sent:
-            state = learn.run({})
+            sent_ok = learn.send_knowledge(state)
         self.assertEqual(sent, [])
-        status = health.consume(state, "learn")
+        status = health.consume(state, learn.SPARK_TOPIC)
         self.assertTrue(status["source_failed"])
         self.assertIn("knowledge story generation failed", status["message"])
-        # The window stays unstamped so the next run retries.
-        self.assertNotIn(learn.KNOWLEDGE_SENT_KEY, state)
+        # send_knowledge reports failure so spark leaves its window unstamped
+        # and the next run retries.
+        self.assertFalse(sent_ok)
 
     def test_empty_kb_reports_source_failed(self):
-        with mock.patch.dict("os.environ", {"NOTIFY_DAILY": ""}), \
-                mock.patch.object(learn, "_knowledge_pick", return_value=None), \
+        state: dict = {}
+        with mock.patch.object(learn, "_knowledge_pick", return_value=None), \
                 capture_pushes():
-            state = learn.run({})
-        self.assertTrue(health.consume(state, "learn")["source_failed"])
+            self.assertFalse(learn.send_knowledge(state))
+        self.assertTrue(health.consume(state, learn.SPARK_TOPIC)["source_failed"])
 
 
 # ---------------------------------------------------------------------------

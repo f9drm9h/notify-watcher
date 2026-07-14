@@ -1,13 +1,14 @@
-"""Tests for the Gemini-narrated Wikiquote story push (notify_watcher.topics.wikiquote).
+"""Tests for the Wikiquote story provider (notify_watcher.topics.wikiquote).
 
-On EVERY watcher run (every 3 hours, independent of NOTIFY_DAILY) one figure is
-chosen from the curated FIGURES list — category rotation + a 30-day no-repeat
-window, window-seeded for re-run determinism — a REAL quote is fetched from
-Wikiquote, and Gemini (summarize.brief) narrates a story around it. The figure
-is recorded and the window stamped ONLY after both the quote fetch and the story
-succeed, so any failure skips cleanly and retries next run. The Wikiquote API and
-the LLM are mocked throughout (no network); the golden test validates the real
-FIGURES list.
+wikiquote is spark's "quote" content leg: topics/spark.py owns the 6-hour
+firing gate and calls send_quote when its rotation lands on a quote. One figure
+is chosen from the curated FIGURES list — category rotation + a 30-day
+no-repeat window, window-seeded for re-run determinism — a REAL quote is
+fetched from Wikiquote, and Gemini (summarize.brief) narrates a short story
+around it. The figure is recorded ONLY after both the quote fetch and the
+story succeed, so any failure returns False cleanly and retries next run. The
+Wikiquote API and the LLM are mocked throughout (no network); the golden test
+validates the real FIGURES list.
 """
 from __future__ import annotations
 
@@ -44,7 +45,7 @@ SAMPLE_WIKITEXT = """== Quotes ==
 
 
 def _runs(start: _dt.datetime, count: int) -> list[_dt.datetime]:
-    """`count` consecutive 3-hour cron firings starting at `start`."""
+    """`count` consecutive 6-hour spark firings starting at `start`."""
     step = _dt.timedelta(hours=wikiquote.WIKIQUOTE_WINDOW_HOURS)
     return [start + step * i for i in range(count)]
 
@@ -72,14 +73,14 @@ def _pick_id(state_before: dict, state_after: dict) -> str:
 
 
 class WindowTest(unittest.TestCase):
-    """The 3-hour-window stamp that seeds the pick and guards re-runs."""
+    """The 6-hour-window stamp that seeds the pick (matching spark's cadence)."""
 
-    def test_hours_bucket_into_3h_windows(self):
+    def test_hours_bucket_into_6h_windows(self):
         day = "2026-06-16"
         self.assertEqual(wikiquote._window(_dt.datetime(2026, 6, 16, 0, 0)), f"{day}T0")
-        self.assertEqual(wikiquote._window(_dt.datetime(2026, 6, 16, 2, 59)), f"{day}T0")
-        self.assertEqual(wikiquote._window(_dt.datetime(2026, 6, 16, 3, 0)), f"{day}T1")
-        self.assertEqual(wikiquote._window(_dt.datetime(2026, 6, 16, 23, 59)), f"{day}T7")
+        self.assertEqual(wikiquote._window(_dt.datetime(2026, 6, 16, 5, 59)), f"{day}T0")
+        self.assertEqual(wikiquote._window(_dt.datetime(2026, 6, 16, 6, 0)), f"{day}T1")
+        self.assertEqual(wikiquote._window(_dt.datetime(2026, 6, 16, 23, 59)), f"{day}T3")
 
     def test_windows_differ_across_days(self):
         self.assertNotEqual(wikiquote._window(_dt.datetime(2026, 6, 16, 1)),
@@ -243,7 +244,7 @@ class DeduplicationTest(unittest.TestCase):
         state: dict = {}
         with mock.patch.object(wikiquote, "FIGURES", figures):
             first = _pick_and_commit(state, _dt.datetime(2026, 7, 4, 12, 5))
-            second = _pick_and_commit(state, _dt.datetime(2026, 7, 4, 15, 5))
+            second = _pick_and_commit(state, _dt.datetime(2026, 7, 4, 18, 5))
         self.assertNotEqual(first["id"], second["id"])
 
     def test_empty_figures_returns_none(self):
@@ -275,7 +276,7 @@ class StoryGenerationTest(unittest.TestCase):
         user_prompt = brief.call_args.args[1]
         self.assertIn("This quote was said by Albert Einstein", user_prompt)
         self.assertIn(QUOTES[0], user_prompt)
-        self.assertIn("3 substantial paragraphs", user_prompt)
+        self.assertIn("2-3 short paragraphs", user_prompt)
         self.assertIn("Do not use bullet points", user_prompt)
 
     def test_none_when_no_provider(self):
@@ -305,8 +306,12 @@ class ClipStoryTest(unittest.TestCase):
         self.assertTrue(out.endswith("…"))
 
 
-class RunTest(unittest.TestCase):
-    """The push fires once per 3-hour window with a real quote + Gemini story."""
+class SendQuoteTest(unittest.TestCase):
+    """send_quote emits one real quote + Gemini story and reports success.
+
+    The per-window double-send guard now lives in topics/spark.py (covered by
+    tests/test_spark.py); this provider just sends and returns True/False.
+    """
 
     def setUp(self):
         self.figures = _fake_figures(["a", "b", "c"], per_category=4)
@@ -318,58 +323,55 @@ class RunTest(unittest.TestCase):
             patcher.start()
             self.addCleanup(patcher.stop)
 
-    def test_pushes_once_per_window_with_quote_and_story(self):
+    def test_pushes_quote_and_story_under_spark_topic(self):
         now = _dt.datetime(2026, 6, 16, 12, 1)
+        state: dict = {}
         with capture_pushes() as sent:
-            state = wikiquote._run({}, now)
-            wikiquote._run(state, now + _dt.timedelta(minutes=30))  # re-run in window
-        self.assertEqual(len(sent), 1, "a re-run inside the window must not resend")
+            self.assertTrue(wikiquote.send_quote(state, now))
+        self.assertEqual(len(sent), 1)
         self.assertRegex(sent[0]["title"], r"^[abc] \d$")  # figure name is the header
+        self.assertEqual(sent[0]["topic"], "spark")
         body = sent[0]["message"]
         self.assertTrue(any(q in body for q in QUOTES), "the real quote is in the body")
         self.assertIn(STORY, body)  # the generated narrative follows
-        self.assertEqual(state[wikiquote.WIKIQUOTE_SENT_KEY], wikiquote._window(now))
+        self.assertIn(wikiquote.WIKIQUOTE_SEEN_KEY, state)  # figure consumed
 
     def test_no_quote_skips_cleanly_and_retries(self):
         now = _dt.datetime(2026, 6, 16, 18, 2)
+        state: dict = {}
         with mock.patch.object(wikiquote, "_fetch_quotes", return_value=[]), \
              capture_pushes() as sent:
-            state = wikiquote._run({}, now)
+            self.assertFalse(wikiquote.send_quote(state, now))
         self.assertEqual(sent, [], "no push when no quote could be fetched")
-        self.assertNotIn(wikiquote.WIKIQUOTE_SENT_KEY, state)
         self.assertNotIn(wikiquote.WIKIQUOTE_SEEN_KEY, state)
 
     def test_gemini_failure_skips_cleanly_and_retries(self):
         now = _dt.datetime(2026, 6, 16, 18, 2)
+        state: dict = {}
         with mock.patch.object(wikiquote.summarize, "brief", return_value=None), \
              capture_pushes() as sent:
-            state = wikiquote._run({}, now)
+            self.assertFalse(wikiquote.send_quote(state, now))
         self.assertEqual(sent, [], "no push when the story can't be generated")
-        self.assertNotIn(wikiquote.WIKIQUOTE_SENT_KEY, state)
         self.assertNotIn(wikiquote.WIKIQUOTE_SEEN_KEY, state)
 
-    def test_pushes_again_next_window_with_distinct_figure(self):
+    def test_sends_again_next_window_with_distinct_figure(self):
         now = _dt.datetime(2026, 6, 16, 9, 0)
+        state: dict = {}
         with capture_pushes() as sent:
-            state = wikiquote._run({}, now)
-            wikiquote._run(state, now + _dt.timedelta(hours=wikiquote.WIKIQUOTE_WINDOW_HOURS))
+            wikiquote.send_quote(state, now)
+            wikiquote.send_quote(
+                state, now + _dt.timedelta(hours=wikiquote.WIKIQUOTE_WINDOW_HOURS))
         self.assertEqual(len(sent), 2)
         self.assertNotEqual(sent[0]["title"], sent[1]["title"],
                             "consecutive windows must serve distinct figures")
 
-    def test_run_entry_point_fires_without_daily_gate(self):
-        with mock.patch.dict("os.environ", {"NOTIFY_DAILY": ""}, clear=False), \
-             capture_pushes() as sent:
-            state = wikiquote.run({})  # the real entry point, real clock
-        self.assertEqual(len(sent), 1)
-        self.assertIn(wikiquote.WIKIQUOTE_SENT_KEY, state)
-
 
 class HealthContractTest(unittest.TestCase):
-    """wikiquote is in health.ADOPTED: every run that contacts Wikiquote must
-    report its source outcome, so a silent multi-week fetch failure (how the
-    retired gutenberg topic died) reaches topic_health and the watchdog
-    instead of hiding behind the graceful skip."""
+    """spark (the TOPICS entry this provider emits under) is in health.ADOPTED:
+    every send that contacts Wikiquote must report its source outcome, so a
+    silent multi-week fetch failure (how the retired gutenberg topic died)
+    reaches topic_health and the watchdog instead of hiding behind the
+    graceful skip."""
 
     def setUp(self):
         for patcher in (
@@ -382,11 +384,13 @@ class HealthContractTest(unittest.TestCase):
             self.addCleanup(patcher.stop)
 
     def test_topic_is_adopted(self):
+        self.assertEqual(wikiquote.TOPIC, "spark")
         self.assertIn(wikiquote.TOPIC, health.ADOPTED)
 
     def test_successful_fetch_reports_source_ok(self):
+        state: dict = {}
         with capture_pushes():
-            state = wikiquote._run({}, _dt.datetime(2026, 6, 16, 12, 1))
+            wikiquote.send_quote(state, _dt.datetime(2026, 6, 16, 12, 1))
         status = health.consume(state, wikiquote.TOPIC)
         self.assertTrue(status["ok"])
         self.assertEqual(status["data_count"], len(QUOTES))
@@ -394,9 +398,10 @@ class HealthContractTest(unittest.TestCase):
     def test_failed_fetch_reports_source_failed(self):
         # _fetch_quotes returns [] both for a network failure and a page that
         # parses to zero usable quotes; either way the source made no data.
+        state: dict = {}
         with mock.patch.object(wikiquote, "_fetch_quotes", return_value=[]), \
                 capture_pushes():
-            state = wikiquote._run({}, _dt.datetime(2026, 6, 16, 12, 1))
+            wikiquote.send_quote(state, _dt.datetime(2026, 6, 16, 12, 1))
         status = health.consume(state, wikiquote.TOPIC)
         self.assertTrue(status["source_failed"])
 
@@ -404,23 +409,15 @@ class HealthContractTest(unittest.TestCase):
         # The narration leg is part of the pipeline: with the quote fetched but
         # no LLM provider answering, the push silently never fires — so the
         # failure claim must overwrite the fetch's ok claim (last report wins),
-        # otherwise a dead Gemini key kept wikiquote green every window.
+        # otherwise a dead Gemini key kept the quote leg green every window.
+        state: dict = {}
         with mock.patch.object(wikiquote.summarize, "brief", return_value=None), \
                 capture_pushes():
-            state = wikiquote._run({}, _dt.datetime(2026, 6, 16, 12, 1))
+            self.assertFalse(
+                wikiquote.send_quote(state, _dt.datetime(2026, 6, 16, 12, 1)))
         status = health.consume(state, wikiquote.TOPIC)
         self.assertTrue(status["source_failed"])
         self.assertIn("story generation failed", status["message"])
-        self.assertNotIn(wikiquote.WIKIQUOTE_SENT_KEY, state)
-
-    def test_window_already_sent_makes_no_claim(self):
-        # No source contact -> no report, so a prior soft failure stays sticky
-        # in topic_health instead of being wiped by a no-op run.
-        now = _dt.datetime(2026, 6, 16, 12, 1)
-        state = {wikiquote.WIKIQUOTE_SENT_KEY: wikiquote._window(now)}
-        with capture_pushes():
-            state = wikiquote._run(state, now)
-        self.assertIsNone(health.consume(state, wikiquote.TOPIC))
 
 
 class FiguresDataTest(unittest.TestCase):

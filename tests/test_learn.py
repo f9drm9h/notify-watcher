@@ -78,17 +78,13 @@ class ChannelsTest(unittest.TestCase):
 
 
 class RunTest(unittest.TestCase):
-    """The consolidated daily push. The standalone knowledge push that run()
-    also fires is neutralized here and covered by tests/test_learn_knowledge.py."""
+    """The consolidated daily push — the only thing run() fires now (the
+    knowledge story rides spark's rotation; see tests/test_learn_knowledge.py)."""
 
     def setUp(self):
         self._env = mock.patch.dict("os.environ", {"NOTIFY_DAILY": "1"})
         self._env.start()
         self.addCleanup(self._env.stop)
-        self._knowledge = mock.patch.object(
-            learn, "_run_knowledge", side_effect=lambda state, now=None: state)
-        self._knowledge.start()
-        self.addCleanup(self._knowledge.stop)
 
     def test_run_sends_one_consolidated_push_and_stamps(self):
         with mock.patch.object(learn, "_fetch_feed", return_value=SAMPLE_FEED), \
@@ -131,17 +127,14 @@ class HealthContractTest(unittest.TestCase):
     """learn is in health.ADOPTED for its one external source, the Wikimedia
     featured feed: a daily run that contacts it must report the outcome, so a
     feed that silently starts failing (how the retired gutenberg topic died)
-    reaches topic_health even though the push degrades gracefully. The
-    knowledge/curated sections are local KB + LLM and make no claim."""
+    reaches topic_health even though the push degrades gracefully. The curated
+    sections are local KB + LLM and make no claim; the knowledge story leg
+    reports under spark instead (see tests/test_learn_knowledge.py)."""
 
     def setUp(self):
         self._env = mock.patch.dict("os.environ", {"NOTIFY_DAILY": "1"})
         self._env.start()
         self.addCleanup(self._env.stop)
-        self._knowledge = mock.patch.object(
-            learn, "_run_knowledge", side_effect=lambda state, now=None: state)
-        self._knowledge.start()
-        self.addCleanup(self._knowledge.stop)
 
     def test_topic_is_adopted(self):
         self.assertIn("learn", health.ADOPTED)

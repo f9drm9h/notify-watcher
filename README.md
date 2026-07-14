@@ -345,11 +345,6 @@ item list.
   (Open-Meteo, no key). Daily run only.
 - **Rough-seas alert** — pushes when the coast's max wave height reaches
   `marine.rough_wave_m` (Open-Meteo Marine, no key). Daily run only.
-- **Beach day index** — Saturday mornings (configurable via
-  `beach_day.weekdays`), one 0–10 score answering "is today a beach day?":
-  wave height + rain probability + UV + max temperature at the coast, folded
-  into a verdict with caution notes (rough seas, extreme UV). Open-Meteo, no
-  key.
 - **Astronomy almanac** — full/new moons (computed) plus meteor-shower peaks,
   solstices/equinoxes, and eclipses from a built-in table. No network. Daily run.
 - **NASA picture of the day** — the day's Astronomy Picture of the Day, with
@@ -708,7 +703,6 @@ notify-watcher/
 │       ├── apod.py                  NASA Astronomy Picture of the Day
 │       ├── astronomy.py             moons/meteor showers/eclipses almanac
 │       ├── baseball.py              MLB team results + DR player milestones
-│       ├── beach_day.py             weekend beach-day 0-10 index
 │       ├── bills.py                 monthly utility-bill due-date reminders
 │       ├── blood_donation.py        donation-eligibility reminder
 │       ├── deals.py                 JSON-LD price-drop watcher (watchlist + auto)
