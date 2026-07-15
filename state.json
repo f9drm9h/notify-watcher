@@ -603,18 +603,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "Super Smash Bros. Ultimate - Its Been A Minute",
-      "id": "f663c44fc418f8fc",
-      "score": 68,
-      "severity": "high",
-      "source": "RiddlesMK",
-      "title": "RiddlesMK is live on Twitch",
-      "topic": "twitch",
-      "ts": "2026-07-04T01:19:51.673237+00:00",
-      "url": "https://twitch.tv/RiddlesMK"
-    },
-    {
-      "action": "push",
       "detail": "\ud83c\udde9\ud83c\uddf4 Juan Soto \u2014 1 HR vs Atlanta Braves",
       "id": "d344e037407dbf98",
       "score": 64,
@@ -12600,6 +12588,18 @@
       "topic": "habits",
       "ts": "2026-07-15T21:09:46.361822+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - La CODOSALA online! Entra que hace calor",
+      "id": "068a51ed85b15f14",
+      "score": 68,
+      "severity": "high",
+      "source": "elcodo22",
+      "title": "elcodo22 is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-15T22:22:48.783687+00:00",
+      "url": "https://twitch.tv/elcodo22"
     }
   ],
   "f4_history": [
@@ -14060,7 +14060,7 @@
   "last_run": {
     "failed": 0,
     "ok": 1,
-    "ts": "2026-07-15T22:07:52.149077+00:00"
+    "ts": "2026-07-15T22:22:47.368391+00:00"
   },
   "launch_seen_ids": [
     "cbf7462af54736f0",
@@ -15867,9 +15867,9 @@
       "last_ok": "2026-07-15T21:07:52.745570+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-15T22:07:54.347340+00:00",
+      "last_data": "2026-07-15T22:22:49.538907+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-15T22:07:52.149077+00:00"
+      "last_ok": "2026-07-15T22:22:47.368391+00:00"
     },
     "uv": {
       "last_data": "2026-07-15T21:09:58.809180+00:00",
@@ -15900,7 +15900,9 @@
       "last_ok": "2026-07-15T21:07:52.745570+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "elcodo22"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
