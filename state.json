@@ -64,7 +64,7 @@
     "29db49f64ce68661",
     "a8b1aff056453d2f"
   ],
-  "apod_last_sent": "2026-07-14",
+  "apod_last_sent": "2026-07-15",
   "astronomy_sent": [
     "2026-06-14|New moon tonight - d",
     "2026-06-21|June solstice today",
@@ -83,248 +83,13 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "World Nuclear News",
-      "title": "Hyundai E&C, FANCO to collaborate on SMR project",
-      "topic": "energy",
-      "url": "https://www.world-nuclear-news.org//articles/hyundai-ec-fanco-to-collaborate-on-smr-project"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "World Nuclear News",
-      "title": "Fusion industry raised USD4.5 billion in past year, report says",
-      "topic": "energy",
-      "url": "https://www.world-nuclear-news.org//articles/fusion-industry-raised-usd45-billion-over-past-year-report-says"
-    },
-    {
-      "detail": "DOP 94.95 (was DOP 114.95, -17%)",
-      "preserve_detail": false,
-      "score": 45,
-      "source": "Nacional",
-      "title": "Nacional deal: Yogurt Griego Blueberry Chobani 4 oz",
-      "topic": "groceries",
-      "url": "https://supermercadosnacional.com/ofertas/yogurt-griego-blueberry-chobani-4-oz-2239306"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M4.0 - 41 km NNE of Las Terrenas, Dominican Republic (~134 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us7000t0cl"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Xelstrym",
-      "title": "FDA updates approval for Xelstrym (Dextroamphetamine) (NDA215401)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215401"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Tuxarin Er",
-      "title": "FDA updates approval for Tuxarin Er (Chlorpheniramine Maleate, Codeine Phosphate) (NDA206323)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206323"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Keytruda",
-      "title": "FDA updates approval for Keytruda (Pembrolizumab) (BLA125514)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125514"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Keytruda Qlex",
-      "title": "FDA updates approval for Keytruda Qlex (Pembrolizumab, Berahyaluronidase Alfa-Pmph) (BLA761467)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761467"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Padcev",
-      "title": "FDA updates approval for Padcev (Enfortumab Vedotin-Ejfv) (BLA761137)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761137"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "SPIDER-MAN: BRAND NEW DAY Producer Amy Pascal Says Marvel Spin-Offs Must Stay \"Special\" and Not Be Overdone - GeekTyrant",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQLUtIVW5nbXNWalFZMWpWanp3elVVUkdkUkI2VWNVYnZoT2REOVE1aTUwU1daSVlDVEs4MDVCbThvN2d6aFRzNDBNX2dIb2hzUWt0RS11LTItS1JXd3gxU3dBaWZQUFoxbWJCUWc2d3JqbHJGUExRYmVTeXlDZldhS21HT2JMekg4LWJJejBEY19pWXBES3hPQzVOdV9JdDVwSFkwV3d0My1zUVJjMFF0ZThoYWF6RkZ4OGJrN29tTWpEaXRUdFpxcEZJR20?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.2 - 60 km SE of Boca de Yuma, Dominican Republic (~181 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71524338"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland\u2019s Spider-Man Future Confirmed Beyond \u2018Brand New Day\u2019 - Collider",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9tbXN1MGpGaDJGQmhiZkg5YkJ0QnZ2eDBRQVpkazdYQ00yQWlKTUVzSXVTa2FTRWdIeEZEM0xGVFdEb0JxWmt4QWc1X1BnR3UzOXpMZmR3eHEwWVhHUnRrZmUzMW5iVE05UHc?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.2 - 52 km NW of San Antonio, Puerto Rico (~254 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71524353"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "'Avengers: Doomsday' Director Confirms MCU Is Back To \"Phase Zero\" - MovieWeb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE81X2tTOGZFZnZvZHRHeDljTXMzQkwyZ0t4SFlhdExrSFVtcWxWMmppdkp0bnpjV3p2UjNMa3I1bXFsbXZwN2FYRTN0Q3M5ckppSFd0YXZUNm9UdTRrOTFrOXhjRlR2NzBqTGNRb1FUZkJCZw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "New Leaks Reveals How \u2018Avengers: Doomsday' Reportedly Weaponizes Fox\u2019s Wonky X-Men Continuity to Explain Incursions - Murphy's Multiverse",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQTVVLUl9UOEZRQU1lazNqOTJ6NlhnU1ByendHVEpSZWNkRloxNndDS2tSTmFnaFRsZzFzb3Z3RVJNRHIzeXVuYkFMUGluZjRFdDZUa0k4QVVLWW9CWDZLYjNJSE1kNzhqNGJVVXVVM2NRU3VnOUpYT3JfMEpPNmEzNzZuNGlDR2h0X0Vub3hkZ24tR3NRQjUtU0JhS0JMSGV4VmNxYWhxUjBnX2hSLXJlLV9mS1NzWUlISHl4M1FSV00xN3pxaHR2Wkd5Rml1YjJRR3RYRklXU2NQM3k5U2ZN?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "New 'Avengers: Doomsday' Synopsis Officially Reveals the Team's Lineup - MovieWeb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE92R2VzZ09UY1RPZ0xIcTl4V2cySlFQbDd3TENRZ2Q3eHU2VDdZWl9Rd2lHSVVUUnc1a3FJMXVTWGNkZkJYLWl0QWVNNHNuQmpUQUN0TV9sajZOdGwyVlU2RndnMC1kM2lCajdqa0phOVBsZw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Promo Confirms Spider-Man Fights a Second Hulk Version - The Direct",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOUjFyQnJRbGY1NnlyQ3ZOWmFyOXVzdGhEY0o1T3BUQmVEWkRidG50WDlhRkxVY2lwQU5DeTdHV2xsTUtsOUV1dkc1Q3FsMzNXXzdrOU50V2JPYnhJNTZuRHF2QVFaZlJEWHRoMlhwbnNtM05UV2cySjYzOFgxMEFZQVJ5bmlOdw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Why Christopher Nolan Cut a 3,000-Year-Old Joke From \u2018The Odyssey\u2019 - The Hollywood Reporter",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQYlRYZDd3UFFydHhlWW1TcTJfaGFRLWQ0ZndsM1plTEtnMVBGN1hyNjNMbGNDWlJ3SVhNX0ZCaUZ5a2FvcFdVdGlFUG5WcHVTRk56VFdwYl85bHZvTjEwaTBkampZQ3ppTWdmeUI4eHdIVFpxeld3Ul9GRHRXejJGamRud3Q3VEFfT2pneFYzejNnMTd3SXZDQy1NcDFhU3BhTXZvX2E1Rm9Ydw?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
-      "title": "Official Concept Art for \u2018Avengers: Doomsday\u2019 Is Here, and It Shows a Lot - IMDb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5BQjZiNy1mVUZTc3JFa1FjellwY1ZvQThFRk9lbnlXbzI3Y0paRkFFdXhJM25wOFJYMDd6Y1ZuZ0d1Rk05Zmh1LWNqRm9qQjUzQjZjU29mZWJOekJBODlHTg?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man's MCU Future After 'Brand New Day' Quietly Confirmed - MovieWeb",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE16UlV3SzNVenQ5WmhUQkp1c1VnRV9IR1ZXd25MbUpPMndDUzVUbjVVZlh5OXFMRnR1eTJycWtpQVhPUW1qbDRrTnI1dmV2ZGd5T1F1U1JVM1c2UzlIQ0xoa0hKTQ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "\u2018The Odyssey\u201ds Early Data Confirms Christopher Nolan\u2019s Star Power - observer.com",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1pRkhtNjlmOHdibjF1cHVac3Ywa3VLUGdURDJKM3pGTXM4N1ViRXprR2JUSF9tbnA2bXQyUWZYNHhDakFlZ1R1cl9rZUxMR0lEMXhLSkNNQjF0WUFrUnJCV0pKR0k5RFJjTDJINXIwTndEdFdxS0c1Q0xn?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Christopher Nolan Shrugs Off \u2018Irrelevant\u2019 Backlash to His \u2018Odyssey\u2019 Casting - People.com",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQN2ZZa05ReEVoeHE0NktYUmJqSU9wUWVyLVFiSy1MUDYxWFVFMVMwQUdDMi1CU3RJVWtudmxvSGVleDN2b2txbFZLU0JJdWN1eExJLWktTVZwWVliVEg0NWFhVHhSQ3Q5VGZuUTNScjV4Tk5UY21vNlVMSjdaak9FdzhpazBiamV6TFJuUU1XaFkxRHRQdkE?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Odyssey",
-      "title": "Greece awaits Nolan\u2019s \u2018The Odyssey\u2019 with anticipation despite casting controversy - AP News",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQbFFYOW1wS3FNel9ERTYtVnVlRGE5bGNVY3BZNkZYVnh1ZnNYUnI2OHA1YkxQNlJmODY2QThPYXRtN0k3ZkplalVqMnZrLVNYaHNaUnFrYUROTmtTNlJVdXJmaGdUX0tKZXhTbW1qMEh6dnU1eV8tclVwajFONkxJeENhNHJrX3dqLTBxbWc0ZzlfeVJoYWc?oc=5"
-    }
-  ],
-  "digest_last_sent": "2026-07-14",
+  "digest_buffer": [],
+  "digest_last_sent": "2026-07-15",
   "discord_control": {
     "last_id": "1525731415692542042"
   },
   "energy_learn_last_news": "2026-07-11",
-  "energy_learn_last_sent": "2026-07-14",
+  "energy_learn_last_sent": "2026-07-15",
   "energy_learn_seen": {
     "facts": [
       "baseload-vs-peaking",
@@ -342,7 +107,8 @@
       "bell-solar-cell-1954",
       "grand-coulee-1942",
       "shippingport-1957",
-      "ohms-law-1827"
+      "ohms-law-1827",
+      "chernobyl-1986"
     ],
     "infrastructure": [
       "itaipu-dam",
@@ -365,6 +131,7 @@
     ]
   },
   "energy_seen_ids": [
+    "102919a9e6bb54e4",
     "b67b88c57328b22c",
     "7262d6360bbb0a8e",
     "5eac764d7f42cdb7",
@@ -575,174 +342,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "Keep a glass of water within reach.",
-      "id": "4c84f4d3961c33cb",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-07-03T15:21:06.794213+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "In the nascent days of the World Wide Web, a revolutionary idea took root, not in the bustling halls of Silicon Valley, but in the quiet, academic corridors of CERN, the European Organization for Nuclear Research. It was here, in 1990, that Tim Berners-Lee, the visionary creator of the Web itself, penned the very first web browser, simply named \"WorldWideWeb.\" This wasn't a sleek, graphical interface we recognize today, but a powerful, if austere, tool born of necessity. Berners-Lee, a British computer scientist, envisioned a global information space, and to navigate this space, he needed a portal, a window into the interconnected documents and resources he was bringing into existence. His initial browser was both an editor and a viewer, allowing users not just to consume information but to create and link it themselves, a testament to his belief in a collaborative and participatory web.\n\nThe development of WorldWideWeb was an intensely personal project for Berners-Lee, a direct extension of his groundbreaking work on HTTP, HTML, and URLs. He crafted it on a NeXTSTEP machine, a workstation known for its advanced object-oriented development environment, which allowed him to rapidly prototype and iterate on his vision. The browser's ability to display text, handle images (albeit externally via helper applications), and crucially, to follow hyperlinks with a click, laid the foundational principles for all subsequent web navigation. While it might seem primitive by modern standards, its existence was a profound demonstration of the web's potential. Imagine the sheer exhilaration of clicking a link and instantly being transported to a document housed on a different computer, potentially thousands of miles away \u2013 a paradigm shift in how information could be accessed and shared globally.\n\nHowever, the \"WorldWideWeb\" browser, later renamed \"Nexus\" to avoid confusion with the network itself, remained largely within the confines of the scientific community at CERN. Its true impact, the spark that ignited the public imagination, would come with the arrival of Mosaic. In 1993, a team at the National Center for Supercomputing Applications (NCSA) at the University of Illinois Urbana-Champaign, led by Marc Andreessen and Eric Bina, released Mosaic. This browser was a game-changer, not because it introduced radically new underlying technologies, but because it made the web accessible and visually appealing to a broader audience. Mosaic was graphical, easy to install, and, most importantly, integrated images directly into the text, rather than as separate pop-ups. It was available for multiple operating systems, including Windows and Mac, dramatically lowering the barrier to entry for the average computer user.\n\nThe transition from Berners-Lee's pioneering, text-based tool to the user-friendly, graphical Mosaic marked a pivotal moment in the web's trajectory. Mosaic's intuitive interface and cross-platform availability propelled the internet from an academic curiosity into a public phenomenon, paving the way for the dot-com boom and the digital revolution that followed. Andreessen and many of the NCSA Mosaic team would go on to found Netscape Communications, whose Navigator browser would dominate the early commercial web. This era, often dubbed the \"browser wars,\" saw intense competition and rapid innovation, driven by the foundational principles laid down by Berners-Lee's initial \"WorldWideWeb\" and refined by Mosaic.",
-      "id": "fd7c9368d1c90edb",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The first web browser",
-      "topic": "learn",
-      "ts": "2026-07-03T15:21:12.011037+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cThe young world is giving up any interest in their political system. They have decided that it is absolutely corrupt.\u201d\n\u2014 Buckminster Fuller\n\nBuckminster Fuller, or \"Bucky\" as he was affectionately known, was a figure of boundless intellect and restless curiosity, a self-proclaimed \"comprehensivist\" who refused to be confined by the narrow specializations of his era. Born in 1895, a descendant of a long line of New England nonconformists, Fuller was an architect who never formally graduated, an inventor who held dozens of patents, a philosopher, a poet, and an environmentalist long before the term was fashionable. He envisioned a world where technology and design could serve humanity and the planet, not just profit. His most enduring legacy, the geodesic dome, a lightweight, efficient structure that could enclose vast spaces with minimal material, became a symbol of his ingenuity and his belief in \"doing more with less.\" But beyond the domes and the Dymaxion cars, Fuller was a profound social critic, observing the machinations of human systems with a keen and often disillusioned eye.\n\nIt was against this backdrop of intellectual fervor and social observation that Fuller uttered his poignant assessment of the political landscape. While the exact date of the quote is elusive, it resonates with the spirit of the late 1960s and early 1970s, a period of immense social upheaval and political disillusionment. The Vietnam War raged, exposing deep divisions within American society and a profound distrust in government narratives. The civil rights movement, while achieving significant victories, also highlighted the entrenched injustices that political systems often perpetuated. Watergate loomed on the horizon, ready to shatter any remaining illusions about the incorruptibility of power. Fuller, ever the systems thinker, saw not just individual scandals, but a fundamental flaw in the design of the political system itself. He observed a rising generation, acutely aware of these systemic failings, opting for disengagement rather than engagement with what they perceived as an irredeemably flawed structure. He recognized that this wasn't mere apathy, but a deliberate withdrawal rooted in a profound loss of faith.\n\nAnd why does Fuller's observation still resonate so profoundly today, decades after it was spoken? We live in an age of unprecedented access to information, where the workings of political systems, their compromises, their perceived corruptions, are broadcast instantly and globally. Social media, while offering avenues for connection, also amplifies voices of frustration and distrust. We see a persistent narrative of \"us versus them,\" a gridlock that often prioritizes partisan gain over collective good. Issues like climate change, economic inequality, and global pandemics demand urgent, coordinated action, yet political systems often appear slow, fragmented, or beholden to narrow interests. Fuller's insight into the \"young world\" giving up interest isn't just about youthful idealism being crushed; it\u2019s about a fundamental human response to systems that fail to deliver on their promise of fairness, efficacy, and representation.",
-      "id": "453931aac96ac502",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Buckminster Fuller",
-      "topic": "wikiquote",
-      "ts": "2026-07-03T15:21:16.501583+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "f2d0058a9891eabe",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "The Odyssey - Official 'Completely in IMAX' Featurette - IGN Africa",
-      "topic": "movies",
-      "ts": "2026-07-03T18:04:17.807787+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNeWpwRVRjZkJhZ0hpMER0SHFFaS1sa1ZtY2s4ejNfTklfanF4bm1Dd2lTNzZhNlVoV3VKaHRkWWk1T2JvZ3lmVG1UOXRQX0xFcERfTmcyQVY5S0pUeU11OWlvTHVvdXB5T09WallIRzBfUzExYlFXS0RwSTNLQ2U5VVh2UGRGOVI1ZWxoenlrN3hZbFc3WllVZXRyMXcwSjFrLVJsa3N1STV5dw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "8dec001dd2014ead",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "The Odyssey Countdown Trailer Released - IMDb",
-      "topic": "movies",
-      "ts": "2026-07-03T18:04:18.127273+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBjWEVsUUExQ3lyNFhEdFgyYlJiUml2eGRDeWFRbWdIZXNPUXlVRFlnaWl2ckV6WGppQWFhRDhnOVNvTWNnX0J4RGtKaXVXWFd3aDY0bWFmcTlTWDNmbzB0Q19OWG1vNDQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "1e94ecc6db2bc9ab",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "THE ODYSSEY Countdown Trailer Released - CinemaNerdz",
-      "topic": "movies",
-      "ts": "2026-07-03T18:04:18.308628+00:00",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE4ydmVzMGczWWI5Y1FGOWxySXJ1cGtTZ2tQQUtXX1ZtZjRBWjJuMnhUVXdlRTRwM3A2RDZjUUl6RVRRSWZUZG9iaFNmZkRPNEo3VEw3bnBIVUoxeTVQVG9zTmJibTVFNjVEMF9sa1JuTHA?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "a2cdc911666a3dea",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "Matt Damon Leads \"The Odyssey\" in Epic New Trailer Ahead of Summer Premiere - GreekReporter.com",
-      "topic": "movies",
-      "ts": "2026-07-03T18:04:18.530564+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNS2NXOGVHNVVDQXBsNUdUMWV5eUtKbjJmTVR4MEgtcTNqazlQLTRVdUE3RFNlS1JlMGJhZWpqeVkyUzJkaGVkRVJUdlZjY3FHWVFmUFRZSUR2bWg3d3JEOWxENW0tVEd6RTVBeUFrbXotMVJxRUxvRVZOSnBnd3QwTUhwd0NQTno0ckE?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "3d4d0679a3076b81",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "The Odyssey Trailer Gets Buried in Dislikes as the Casting Backlash Refuses to Die - Cosmic Book News",
-      "topic": "movies",
-      "ts": "2026-07-03T18:04:18.762995+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNcFkzdzFkQWF0RzcxcDBWalJYckF2MEV1TnN3R25nX1U4ejlrVFlaT18xWGFwSjdxekVGaVI5MURkRExtNHE4blp2QUZTdmx3U24wU3lrU0ZVVzZBbHJ5cFZNTEdqZ2ZZZHoya01EYjBNSF9ScEJJY3JXc2hKMXBETW1xWQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "9cd0590f2b96f54b",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "THE ODYSSEY Final Trailer - Spotlight Report",
-      "topic": "movies",
-      "ts": "2026-07-03T18:04:19.008509+00:00",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE84SGtXYnVsaHloNVhDRGx5cnV5ODQ0ODcxQmFPVDQ1WFVVLUVBWlFIS1RCclREcEIxSDlNWEJlNDhQSGFNdnEwTVY2UHMtSUFJYVZMdGVoWkh0M1htc3VhMmVyZHAwUmduUGtLWtIBckFVX3lxTE1yX0JiUjFHZG15a0ZSdFhxUnhDOXBwWnZkM1IwQW5hMEYyUGlLenRHckl2ZjZuaEVtcmd1VGFWclRzYzd4NFcwY2JiVEJsd0FoRjJZUHhfV0dTajNTR0lFeTh1eWd5MWxfYVp3RzllczZfZw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Amorcito Enfermito - Hector Acosta \"El Torito\"\n(because you like Romeo Santos)",
-      "id": "67b4f04acb87f9fe",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-07-03T18:04:26.116756+00:00",
-      "url": "https://www.deezer.com/track/479756172"
-    },
-    {
-      "action": "push",
-      "detail": "DOP 20,995.00 (was DOP 35,995.00, -42%)",
-      "id": "89ad876a5517328d",
-      "score": 64,
-      "severity": "high",
-      "source": "La Sirena",
-      "title": "La Sirena deal: Televisor Nikkei Led 50P Android Uhd 4K 50D3100",
-      "topic": "groceries",
-      "ts": "2026-07-03T18:04:58.840148+00:00",
-      "url": "https://www.sirena.do/nikkei-led-50p-android-uhd-4k-50d3100-2065424/p"
-    },
-    {
-      "action": "push",
-      "detail": "DOP 1,195.00 (was DOP 1,995.00, -40%)",
-      "id": "53b4d02c7184c3a3",
-      "score": 64,
-      "severity": "high",
-      "source": "La Sirena",
-      "title": "La Sirena deal: Abanico De Pedestal Nikkei 16 Pulgadas US16058",
-      "topic": "groceries",
-      "ts": "2026-07-03T18:04:59.093211+00:00",
-      "url": "https://www.sirena.do/nikkei-abanico-pedestal-16-us16058-1377963/p"
-    },
-    {
-      "action": "push",
-      "detail": "DOP 1,995.00 (was DOP 3,195.00, -38%)",
-      "id": "508ab69435ff8770",
-      "score": 64,
-      "severity": "high",
-      "source": "La Sirena",
-      "title": "La Sirena deal: Estufa De Mesa Nikkei 2 Hornilla Jk-202b",
-      "topic": "groceries",
-      "ts": "2026-07-03T18:04:59.293618+00:00",
-      "url": "https://www.sirena.do/nikkei-estufa-mesa-2h-jk-202b-1752555/p"
-    },
-    {
-      "action": "push",
-      "detail": "DOP 45,995.00 (was DOP 65,995.00, -30%)",
-      "id": "3e728b6a19c1c6ce",
-      "score": 64,
-      "severity": "high",
-      "source": "La Sirena",
-      "title": "La Sirena deal: Televisor Tcl 65p Uhd Qled Android 65c655a",
-      "topic": "groceries",
-      "ts": "2026-07-03T18:04:59.664778+00:00",
-      "url": "https://www.sirena.do/tcl-65p-uhd-qled-android-65c655a-2086500/p"
-    },
     {
       "action": "push",
       "detail": "DOP 4,195.00 (was DOP 5,995.00, -30%)",
@@ -12574,6 +12173,174 @@
       "topic": "spark",
       "ts": "2026-07-15T09:09:27.707352+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "edb58eb9788b862b",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "New 'Avengers: Doomsday' Runtime Report Confirms Big 'Endgame' Downgrade - MovieWeb",
+      "topic": "movies",
+      "ts": "2026-07-15T12:07:52.515328+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9STU9MZUJiNXJrcWZhS3dRR3hNbmdvTVZGQjVTVFlqVDZ0NGtGYUtGSmZaMzdVd0pUR3JKTDdlWjNOQk40TjZDVERPOGFPVHVjQ3RFaHJVTWY5ZmRtYk9PbWR0a3k?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Saut p\u00e9rilleux - Lujipeka\n(because you like Spider ZED)",
+      "id": "d70d4f153e426e03",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-07-15T12:08:00.051148+00:00",
+      "url": "https://www.deezer.com/track/3453803401"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 30,595.00 (was DOP 50,995.00, -40%)",
+      "id": "e4c7a052eda3f951",
+      "score": 64,
+      "severity": "high",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Secadora Samsung 20 Kg DV20A3200PW/AP",
+      "topic": "groceries",
+      "ts": "2026-07-15T12:08:38.900803+00:00",
+      "url": "https://www.sirena.do/samsung-secadora-20kg-dv20a3200pw-ap-1959828/p"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "a879c8763b53c2b2",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "New Jersey launches procurement process for new nuclear",
+      "topic": "energy",
+      "ts": "2026-07-15T12:08:48.664298+00:00",
+      "url": "https://www.world-nuclear-news.org//articles/new-jersey-launches-procurement-process-for-new-nuclear"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "5dfd9a339b3ec3c8",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-07-15T12:08:48.776842+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "USD/DOP moved from 58.89 to 58.91 (+0.02, +0.03%) vs yesterday",
+      "id": "4b121846e2564d81",
+      "score": 62,
+      "severity": "high",
+      "source": "FX",
+      "title": "USD/DOP today: 58.91",
+      "topic": "fx",
+      "ts": "2026-07-15T12:09:09.608417+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Pause for a moment and have a drink of water.",
+      "id": "3245b4c0e6253ee9",
+      "score": 64,
+      "severity": "low",
+      "source": "water",
+      "title": "Drink water",
+      "topic": "habits",
+      "ts": "2026-07-15T12:09:12.605227+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "On this day\n1799: French soldiers at Fort Julien, near the Egyptian port city of Rashid, uncovered the Rosetta Stone, which was essential in the decipherment of ancient Egyptian scripts.\n\nFeatured: Cognition\nCognition encompasses mental processes that deal with knowledge. It includes psychological activities that acquire, store, retrieve, transform, or apply information. Cognitive processes are a pervasive part of mental life, helping individuals understand and interact with the...\n\nScience\nLightning superheats the air it travels through to roughly 30,000 K, making it around five times hotter than the surface of the Sun. (Source: NOAA)",
+      "id": "70f90862922540f7",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Daily learning",
+      "topic": "learn",
+      "ts": "2026-07-15T12:09:13.493922+00:00",
+      "url": "https://en.wikipedia.org/wiki/Cognition"
+    },
+    {
+      "action": "push",
+      "detail": "The 16th century was a fertile ground for mathematical rivalries, none perhaps as dramatic as that surrounding the cubic equation. For centuries, quadratic equations had yielded to elegant solutions, but the cubic remained a stubborn enigma. Into this intellectual arena stepped Gerolamo Cardano, a brilliant polymath and something of a rogue, a man whose life was as complex and contradictory as the mathematical problems he tackled. He was not the first to crack the cubic; that honor likely belongs to Scipione del Ferro, who kept his discovery secret. Later, Niccol\u00f2 Fontana, known as Tartaglia for his stutter, independently rediscovered the method and jealously guarded it, only sharing it with Cardano under an oath of secrecy.\n\nCardano, driven by an insatiable curiosity and a desire for mathematical recognition, eventually broke his oath. In his groundbreaking 1545 work, Ars Magna, he published the solution to the cubic equation, giving credit to both del Ferro and Tartaglia, though the latter felt profoundly betrayed. The \"Cardano formula,\" as it came to be known, laid out a general method for solving any cubic, a monumental achievement that opened up new avenues in algebra. It was a complex, multi-step process that often involved dealing with square roots of negative numbers, an early, albeit initially unsettling, encounter with what would later be formalized as imaginary numbers.\n\nThe solution of the cubic equation was more than just a mathematical triumph; it was a pivotal moment in the history of mathematics. It demonstrated that equations of higher degrees could be solved systematically, paving the way for the exploration of quartic equations and beyond.",
+      "id": "1ed82a185b40322e",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Cardano and the solution of the cubic equation",
+      "topic": "spark",
+      "ts": "2026-07-15T12:09:16.669322+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "What: A flawed reactor design and unsafe test caused an explosion and fire at the Chernobyl plant in Soviet Ukraine, spreading radiation across Europe.\nWhy it matters: It was the worst nuclear accident in history and forced a global rethink of reactor safety and openness.\nWhy you should care: Modern reactors are designed specifically to make a Chernobyl-style runaway physically impossible.\n(Source: World Nuclear Association)",
+      "id": "fa7d01834d21b16f",
+      "score": 60,
+      "severity": "low",
+      "source": "Energy learning",
+      "title": "\u26a1 Today's spark \u2014 The Chernobyl disaster (1986)",
+      "topic": "energy_learn",
+      "ts": "2026-07-15T12:09:16.821645+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Starts Thursday 16 July (tomorrow). Tap for the academic calendar (PDF).",
+      "id": "62636d0c5c7170d3",
+      "score": 62,
+      "severity": "high",
+      "source": "ITSC",
+      "title": "ITSC: Comit\u00e9 de Admisi\u00f3n/Convalidaci\u00f3n/Segunda Carrera",
+      "topic": "itsc",
+      "ts": "2026-07-15T12:09:22.978641+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/05/Calendario-academico-2026-2-MAYO-AGOSTO-_-Actualizado_.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Is Wednesday 22 July (in 7 days). Tap for the academic calendar (PDF).",
+      "id": "b05690717e1c037c",
+      "score": 62,
+      "severity": "moderate",
+      "source": "ITSC",
+      "title": "ITSC: Evaluaci\u00f3n Competencias Ingl\u00e9s/Franc\u00e9s (Examen)",
+      "topic": "itsc",
+      "ts": "2026-07-15T12:09:23.131864+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/05/Calendario-academico-2026-2-MAYO-AGOSTO-_-Actualizado_.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Starts Wednesday 22 July (in 7 days). Tap for the academic calendar (PDF).",
+      "id": "0109e51650076cfd",
+      "score": 62,
+      "severity": "moderate",
+      "source": "ITSC",
+      "title": "ITSC: Pre-Selecci\u00f3n (Reingresos/Activos)",
+      "topic": "itsc",
+      "ts": "2026-07-15T12:09:23.316871+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/05/Calendario-academico-2026-2-MAYO-AGOSTO-_-Actualizado_.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Is there an angry Sith using force lightning in the Tatacoa Desert? This is not science fiction, but a red sprite with multiple streamers! Ordinary lightning occurs when thundercloud particles collide, lose their electrons, and build up negative charge at the cloud bottom. The...\n(c) Mario Vargas Text: Keighley Rockcliffe (NASA GSFC, UMBC CSST, CRESST II)",
+      "id": "23780a7e3a97c213",
+      "score": 60,
+      "severity": "low",
+      "source": "NASA APOD",
+      "title": "APOD: Red Sprites in the Tatacoa Desert",
+      "topic": "apod",
+      "ts": "2026-07-15T12:09:24.844556+00:00",
+      "url": "https://apod.nasa.gov/apod/image/2607/red_sprite.jpg"
     }
   ],
   "f4_history": [
@@ -12731,7 +12498,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-11-17-JUL-DE-2026.pdf",
   "fuel_last_pdf_hash": "6d63b58c67090d09b4be63aaff4d094286998b6036bf2d9cf3b47a8eab585639",
-  "fuel_last_prices_seen_at": "2026-07-14T21:10:22.889867+00:00",
+  "fuel_last_prices_seen_at": "2026-07-15T12:09:10.800576+00:00",
   "fuel_prices": {
     "GLP": 3380.03,
     "Gasoil Regular": 3380.03,
@@ -12741,8 +12508,8 @@
     "Kerosene": 3380.03
   },
   "fx_daily_baseline": {
-    "date": "2026-07-14",
-    "rate": 58.890651
+    "date": "2026-07-15",
+    "rate": 58.910242
   },
   "fx_last_rate": 58.910242,
   "fx_last_zone": "within",
@@ -13102,6 +12869,8 @@
       "1b7d9e5ab11b51a5"
     ],
     "La Sirena": [
+      "94641993235a02fb",
+      "5411992869d28264",
       "1a5e5efb166bc33a",
       "54fefd1d1514fdfe",
       "55f3e8683b184f69",
@@ -13791,6 +13560,9 @@
     "e4552ca4a442bedc"
   ],
   "itsc_sent_ids": [
+    "ed8edd49c95d505e",
+    "7d470c5b1c3a6ef4",
+    "af3e9f67f630233a",
     "b8508df1ad9bacfd",
     "700be7da0475caf6",
     "91bcb98ff0fccc06",
@@ -13821,13 +13593,12 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "early_humans",
+  "knowledge_last_category": "math_history",
   "knowledge_last_sent": "2026-07-14T4",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Cyrus the Great and the Persian Empire": "2026-06-17",
     "ancient_civilizations:Mohenjo-daro and Harappa": "2026-06-29",
-    "ancient_civilizations:Qin Shi Huang and the Terracotta Army": "2026-06-15",
     "ancient_civilizations:The Aztec Empire and Tenochtitlan": "2026-06-24",
     "ancient_civilizations:The Babylonian Empire": "2026-07-10",
     "ancient_civilizations:The Epic of Gilgamesh": "2026-07-08",
@@ -13853,7 +13624,6 @@
     "astronomy:The Cassini mission to Saturn": "2026-07-13",
     "astronomy:The Drake equation and the search for life": "2026-07-10",
     "astronomy:The Hertzsprung-Russell diagram": "2026-07-01",
-    "astronomy:The James Webb Space Telescope": "2026-06-15",
     "astronomy:The Tunguska event of 1908": "2026-07-08",
     "astronomy:The discovery of Uranus by William Herschel": "2026-06-19",
     "astronomy:The discovery of cosmic rays": "2026-07-06",
@@ -13870,7 +13640,6 @@
     "early_humans:The Ice Age megafauna extinctions": "2026-07-05",
     "early_humans:The Last Glacial Maximum": "2026-06-17",
     "early_humans:The Taung Child and Raymond Dart": "2026-06-25",
-    "early_humans:The Venus of Willendorf": "2026-06-15",
     "early_humans:The control of fire by early humans": "2026-07-02",
     "early_humans:The dawn of metallurgy in the Bronze Age": "2026-07-08",
     "early_humans:The domestication of the dog": "2026-07-14",
@@ -13887,7 +13656,7 @@
     "math_history:Al-Khwarizmi and the birth of algebra": "2026-06-19",
     "math_history:Archimedes and the 'Eureka' moment": "2026-07-09",
     "math_history:Cantor and the infinity of infinities": "2026-06-26",
-    "math_history:Euclid's Elements": "2026-06-15",
+    "math_history:Cardano and the solution of the cubic equation": "2026-07-15",
     "math_history:George Boole and the algebra of logic": "2026-06-30",
     "math_history:Hilbert's 23 problems": "2026-07-05",
     "math_history:Riemann and the geometry of curved space": "2026-06-18",
@@ -14019,9 +13788,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 1,
-    "ts": "2026-07-15T11:52:45.940955+00:00"
+    "failed": 1,
+    "ok": 40,
+    "ts": "2026-07-15T12:07:51.168834+00:00"
   },
   "launch_seen_ids": [
     "6de0dc2904048f00",
@@ -14051,10 +13820,28 @@
     "9cf78ee44cb96c21",
     "7621aad01d0821be"
   ],
-  "learn_last_sent": "2026-07-14",
+  "learn_last_sent": "2026-07-15",
   "life_dashboard_last_week": "2026-W28",
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "12efa686f9862554",
+      "d7eb1e0c6b1db3f3",
+      "acdf09116c6235ed",
+      "c6ddfd1873b7b03a",
+      "b4b41bcb9e15c3f3",
+      "78ce28dc89c8af33",
+      "c0ac34fe32452679",
+      "ce4f35bc8d12634a",
+      "324eb0134a94ff53",
+      "9b1049d9fe74c17c",
+      "ec434a0b4870584a",
+      "cf295ff9a7b6a81f",
+      "abbf4d52e4122675",
+      "0a864f7389e16b7d",
+      "84311e13565e590e",
+      "35444ede8ec89900",
+      "ea3a3a868196668f",
+      "efc3e3029bd31af7",
       "52b5b13b071d7ba2",
       "4942dfd5f50b324b",
       "1ad9eed6b028f122",
@@ -14136,25 +13923,7 @@
       "2a5d090426df1a8b",
       "d65986219666367a",
       "4acab756d9e53747",
-      "4ccee59f719ce41a",
-      "a6824f3bbfd86657",
-      "8df530e7b6c035ad",
-      "fb796841ee92be48",
-      "d5da0d6df862780f",
-      "94072125cd7ce570",
-      "c81cf6ada3cf3bc2",
-      "e15c5fe5d00f7002",
-      "62b99a6888387fdc",
-      "a0d108c450cb9217",
-      "caeb0de5e5a713cc",
-      "7234e0d0d51deeab",
-      "1bdfcf4f7b83840d",
-      "c456cfd43b62d38b",
-      "e0ce6823e81bf0d5",
-      "b7f2faee02676bf4",
-      "e773ce6efd97b9ed",
-      "34e8c87f7ed46f15",
-      "0e4d7c24aa5edf5e"
+      "4ccee59f719ce41a"
     ],
     "Godzilla x Kong: Supernova": [
       "13a7fcbaf0a418ac",
@@ -14361,6 +14130,12 @@
       "8da4e621ef83bf87"
     ],
     "Spider-Man: Brand New Day": [
+      "d55d4f363115f172",
+      "e7d8fcdd6be40898",
+      "fba15bae9bb95eaf",
+      "c35cf33019616d06",
+      "1f61e403c63cf4fb",
+      "d03daa5e915c719c",
       "bb1af071d94c88f0",
       "dc48929653e14ded",
       "d1f70de9bdfdc36a",
@@ -14454,15 +14229,11 @@
       "2972a699ff915afc",
       "8f2cd3caa9d666bc",
       "be67f4c0e90a9b4f",
-      "502c416168434f82",
-      "2ffda05379279774",
-      "3addc87e957c060a",
-      "0522e6a3e3a36591",
-      "c83f0695f07abc1a",
-      "e4e7dde5f3887f1c",
-      "351cb5e1ddad1b65"
+      "502c416168434f82"
     ],
     "The Batman Part II": [
+      "37fddc5a2c77a9ab",
+      "989720d219c2c403",
       "41fc0eabbc9634ec",
       "362ea35a991a4fba",
       "a31c81a0da29c920",
@@ -14560,11 +14331,54 @@
       "a0b71bb2ae829607",
       "5b6ff01e3a563800",
       "ca0c3e81ef84a4f2",
-      "554a6b956dd5a86c",
-      "7ced8fceec97e3c5",
-      "cf630ffddd894923"
+      "554a6b956dd5a86c"
     ],
     "The Odyssey": [
+      "24fb4c3b0ae3c635",
+      "539238d9794f4e3d",
+      "27cc3bd19ee8605a",
+      "9ec3aacd19539ac3",
+      "f3193380ce89b475",
+      "92a5881ff242bd70",
+      "8784111dad58f3dc",
+      "ba6bb11761f80dfb",
+      "9bcb02fc13097a5b",
+      "ff4650671f3d0591",
+      "d89bc4ebca4330b6",
+      "e33575393cb95b6a",
+      "e7d8fcdd6be40898",
+      "35cb8d78021bc96e",
+      "237b5ca4c6a71545",
+      "8ae6cc38e447005c",
+      "406d1fa4e596f6d6",
+      "73d58c48943be520",
+      "ebdb22366c99abd1",
+      "30b9bd6953e22f0b",
+      "a8a53ae437ec1761",
+      "1facbba121181c1b",
+      "0b24008b5dd22e2c",
+      "d0f6a1ff35f6b7ec",
+      "8d268622e6857b46",
+      "224f63f7591181f4",
+      "bb3aa2bdaeecf446",
+      "9b559d2f8052b03a",
+      "2a92cb049b19a547",
+      "504be17dc073efd0",
+      "258a6e7baa80ec16",
+      "b4319648fd123453",
+      "e72363882872e69e",
+      "5f90704c7313dd27",
+      "029c99c12222526d",
+      "5a264617d0d0526f",
+      "4182562bdb94b617",
+      "66cc2e79c83ecd91",
+      "8ae510ce2affeeb2",
+      "756f88acb2aeb10c",
+      "49d1a32e4204a1b2",
+      "a445136d642e3850",
+      "7b5e86ad81a7326a",
+      "a2736df2564c5c30",
+      "35282b60773b336a",
       "97ca3a66efa6a5b7",
       "0c966339c631f164",
       "92d22ff12e86b8ca",
@@ -14619,52 +14433,7 @@
       "e603208e28b4a5f8",
       "b3f8015b00c612e0",
       "c8aba166768da877",
-      "662c21bd7bb78dab",
-      "23892315705cebf0",
-      "fa2888ee486689c4",
-      "8ed8a8f1520336c2",
-      "66e465d556679ba5",
-      "18594b0a5985e920",
-      "d93fed9e7d220de0",
-      "83f10e6c2403edd1",
-      "a072ae91f9b0ab41",
-      "33d763b50567690e",
-      "b936c15ad3731e37",
-      "56ffc994e073273d",
-      "b931658a42d9b6c3",
-      "5f8c847c6a44b455",
-      "8fe4af60fb6c088a",
-      "bc37b08882f4e946",
-      "4bf7fa3082296c07",
-      "c8417bb10180b52a",
-      "2464c8436333795b",
-      "2e3bab74f18ad562",
-      "4669e661a53792c3",
-      "1ce2dcfe4b8d51a9",
-      "f79db01515c09712",
-      "ffc6e4f07af513b3",
-      "6442fea8092a7c14",
-      "9084c71cd8748930",
-      "e4d173a1c36af4d7",
-      "3eced8517ff41625",
-      "f416d1b7d4cd3afb",
-      "36818b80bc8afc9f",
-      "95804cbf85ade07e",
-      "b449737c5c0707c4",
-      "1b739aaa7b633769",
-      "b3bb7af0ebb013fb",
-      "ef6e9034a5ed62c5",
-      "fb32a19172eadf21",
-      "d303ddfe9317f3d4",
-      "d8792b006ed8524b",
-      "c15e24658c3c4213",
-      "b8c8bf60641c24c5",
-      "1e2c60102d819c08",
-      "c7523da9e22cad5b",
-      "9533e924e06306b2",
-      "b64cb72da84ce593",
-      "794ee09ed1a137c0",
-      "13954c087ef660f4"
+      "662c21bd7bb78dab"
     ]
   },
   "movie_release_dates": {
@@ -14835,7 +14604,8 @@
     183727,
     7961408,
     292,
-    11193368
+    11193368,
+    7172552
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -15139,6 +14909,15 @@
       "label": "Pirates For Sail",
       "payload": {
         "name": "Pirates For Sail"
+      }
+    },
+    "7e5024f7a2d7f278": {
+      "applied": null,
+      "created": "2026-07-15T12:08:00.051124+00:00",
+      "kind": "artist",
+      "label": "Lujipeka",
+      "payload": {
+        "name": "Lujipeka"
       }
     },
     "7eb9476320315407": {
@@ -15648,8 +15427,8 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82597,
-  "spark_next_kind": "fact",
+  "spark_last_sent": 82598,
+  "spark_next_kind": "health",
   "spending_week_summarized": "2026-W28:2817.16",
   "streaming_seen": {
     "1003596": [],
@@ -15661,157 +15440,157 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-07-15T09:09:20.368196+00:00",
+      "last_data": "2026-07-15T12:09:09.560225+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-07-15T09:09:21.805396+00:00",
+      "last_data": "2026-07-15T12:09:11.832570+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "apod": {
-      "last_data": "2026-07-14T21:10:43.217528+00:00",
+      "last_data": "2026-07-15T12:09:24.844539+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-14T21:07:54.987378+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "beach_day": {
       "last_ok": "2026-07-14T00:08:07.374355+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "deals": {
-      "last_data": "2026-07-15T09:08:48.963560+00:00",
+      "last_data": "2026-07-15T12:08:22.900681+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "energy": {
-      "last_data": "2026-07-15T09:09:00.801077+00:00",
-      "last_data_count": 62,
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_data": "2026-07-15T12:08:48.663823+00:00",
+      "last_data_count": 58,
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "energy_learn": {
-      "last_data": "2026-07-14T12:09:06.274160+00:00",
+      "last_data": "2026-07-15T12:09:16.958889+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-14T12:07:34.974787+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "fda": {
-      "last_data": "2026-07-15T09:08:49.285581+00:00",
+      "last_data": "2026-07-15T12:08:39.756784+00:00",
       "last_data_count": 13,
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "fuel": {
-      "last_data": "2026-07-14T21:10:22.889894+00:00",
+      "last_data": "2026-07-15T12:09:10.800600+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-14T21:07:54.987378+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "fx": {
-      "last_data": "2026-07-15T09:09:20.471263+00:00",
+      "last_data": "2026-07-15T12:09:09.608258+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "games": {
       "last_data": "2026-07-13T12:08:19.834195+00:00",
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-15T09:08:04.477040+00:00",
+      "last_data": "2026-07-15T12:08:01.793708+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "groceries": {
-      "last_data": "2026-07-14T21:09:48.792901+00:00",
-      "last_data_count": 200,
-      "last_ok": "2026-07-14T21:07:54.987378+00:00"
+      "last_data": "2026-07-15T12:08:38.900202+00:00",
+      "last_data_count": 254,
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "habits": {
-      "last_data": "2026-07-15T09:09:24.093015+00:00",
+      "last_data": "2026-07-15T12:09:12.759199+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
     },
     "holidays": {
-      "last_data": "2026-07-14T21:10:40.564802+00:00",
+      "last_data": "2026-07-15T12:09:22.134108+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-07-14T21:07:54.987378+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "iss": {
       "last_data": "2026-07-15T06:09:28.518849+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "itsc": {
-      "last_data": "2026-07-14T21:10:41.599712+00:00",
+      "last_data": "2026-07-15T12:09:22.978172+00:00",
       "last_data_count": 47,
-      "last_ok": "2026-07-14T21:07:54.987378+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "launches": {
-      "last_data": "2026-07-15T09:09:20.756206+00:00",
+      "last_data": "2026-07-15T12:09:10.895449+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "learn": {
-      "last_data": "2026-07-14T12:09:00.483506+00:00",
+      "last_data": "2026-07-15T12:09:12.815679+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-14T12:07:34.974787+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "marine": {
-      "last_data": "2026-07-14T21:10:42.766197+00:00",
+      "last_data": "2026-07-15T12:09:24.268441+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-14T21:07:54.987378+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "movies": {
-      "last_data": "2026-07-15T09:07:59.053581+00:00",
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_data": "2026-07-15T12:07:56.581946+00:00",
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "music": {
-      "last_data": "2026-07-15T09:08:02.994864+00:00",
+      "last_data": "2026-07-15T12:07:59.185422+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-15T09:09:01.449082+00:00",
+      "last_data": "2026-07-15T12:08:49.073118+00:00",
       "last_data_count": 19,
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "outages": {
-      "last_data": "2026-07-15T09:09:19.660156+00:00",
+      "last_data": "2026-07-15T12:09:09.033457+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-15T09:09:19.748795+00:00",
+      "last_data": "2026-07-15T12:09:09.102424+00:00",
       "last_data_count": 47,
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "research": {
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-07-15T09:08:44.937342+00:00",
+      "last_data": "2026-07-15T12:08:18.253604+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "spark": {
       "last_data": "2026-07-15T09:09:24.529572+00:00",
@@ -15820,30 +15599,30 @@
     },
     "spending": {
       "last_data_count": 0,
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-15T11:52:46.892072+00:00",
+      "last_data": "2026-07-15T12:07:57.647338+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-15T11:52:45.940955+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "uv": {
-      "last_data": "2026-07-14T21:10:42.186876+00:00",
+      "last_data": "2026-07-15T12:09:23.884621+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-14T21:07:54.987378+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "visa_bulletin": {
       "last_error": "403 Client Error: Forbidden for url: https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html",
-      "last_error_ts": "2026-07-15T09:07:52.750386+00:00",
+      "last_error_ts": "2026-07-15T12:07:51.168834+00:00",
       "last_ok": "2026-07-14T18:07:53.426832+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "weather": {
-      "last_data": "2026-07-15T09:09:00.975539+00:00",
+      "last_data": "2026-07-15T12:08:48.776456+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     },
     "wikiquote": {
       "last_data": "2026-07-14T12:09:00.939275+00:00",
@@ -15851,9 +15630,9 @@
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-15T09:09:24.092515+00:00",
+      "last_data": "2026-07-15T12:09:12.604599+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-15T09:07:52.750386+00:00"
+      "last_ok": "2026-07-15T12:07:51.168834+00:00"
     }
   },
   "twitch_live": [],
@@ -15861,7 +15640,7 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165195"
+    "last_full_window": "165196"
   },
   "watchdog_alerted": {},
   "watchdog_data_alerted": {},
@@ -15875,8 +15654,11 @@
   "watchdog_failing_since": {
     "visa_bulletin": "2026-07-14T21:07:54.987378+00:00"
   },
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-07-15|12"
+  ],
   "weather_seen_ids": [
+    "fc740b0ae02c769f",
     "b60966328890836a",
     "79a51986dfc041d6",
     "32883c0c453d02ca",
