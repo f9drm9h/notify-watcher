@@ -513,18 +513,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "DOP 1,995.00 (was DOP 3,195.00, -38%)",
-      "id": "4018e97b7d49d42a",
-      "score": 64,
-      "severity": "high",
-      "source": "La Sirena",
-      "title": "La Sirena deal: Estufa De Mesa Nikkei 2 Hornilla Jk-202b",
-      "topic": "groceries",
-      "ts": "2026-07-03T21:49:00.941305+00:00",
-      "url": "https://www.sirena.do/nikkei-estufa-mesa-2h-jk-202b-1752555/p"
-    },
-    {
-      "action": "push",
       "detail": "DOP 45,995.00 (was DOP 65,995.00, -30%)",
       "id": "9b438c2cc2399705",
       "score": 64,
@@ -12510,6 +12498,18 @@
       "topic": "habits",
       "ts": "2026-07-15T18:09:28.177950+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - Back To The Grind",
+      "id": "fe535c712ad38ec0",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-15T19:22:55.219402+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "f4_history": [
@@ -13959,7 +13959,7 @@
   "last_run": {
     "failed": 0,
     "ok": 1,
-    "ts": "2026-07-15T19:07:47.973097+00:00"
+    "ts": "2026-07-15T19:22:54.477716+00:00"
   },
   "launch_seen_ids": [
     "6de0dc2904048f00",
@@ -15764,9 +15764,9 @@
       "last_ok": "2026-07-15T18:07:50.543252+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-15T19:07:55.028270+00:00",
+      "last_data": "2026-07-15T19:22:56.777723+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-15T19:07:47.973097+00:00"
+      "last_ok": "2026-07-15T19:22:54.477716+00:00"
     },
     "uv": {
       "last_data": "2026-07-15T18:09:33.422209+00:00",
@@ -15797,7 +15797,9 @@
       "last_ok": "2026-07-15T18:07:50.543252+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
