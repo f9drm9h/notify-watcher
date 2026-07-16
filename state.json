@@ -537,18 +537,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "Waves 1.1 m | Rain 92% | UV 8 | 31 C\nHigh rain chance (92%).",
-      "id": "b5931f17f036243b",
-      "score": 60,
-      "severity": "low",
-      "source": "Beach day",
-      "title": "Beach day: 5/10 - iffy - check the notes",
-      "topic": "beach_day",
-      "ts": "2026-07-04T12:51:50.488107+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
       "detail": "",
       "id": "67bf46a9c66261fa",
       "score": 62,
@@ -12534,6 +12522,18 @@
       "topic": "habits",
       "ts": "2026-07-16T21:10:11.926708+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - Happy Fun Times and Improving Every Day :)",
+      "id": "f604ea4c4a2f8b15",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-16T22:53:22.457417+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "f4_history": [
@@ -14015,7 +14015,7 @@
   "last_run": {
     "failed": 0,
     "ok": 1,
-    "ts": "2026-07-16T22:38:20.921684+00:00"
+    "ts": "2026-07-16T22:53:21.965814+00:00"
   },
   "launch_seen_ids": [
     "c7028f5121622129",
@@ -15828,9 +15828,9 @@
       "last_ok": "2026-07-16T21:08:20.712434+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-16T22:38:22.889990+00:00",
+      "last_data": "2026-07-16T22:53:23.692510+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-16T22:38:20.921684+00:00"
+      "last_ok": "2026-07-16T22:53:21.965814+00:00"
     },
     "uv": {
       "last_data": "2026-07-16T21:10:18.428419+00:00",
@@ -15861,7 +15861,9 @@
       "last_ok": "2026-07-16T21:08:20.712434+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
