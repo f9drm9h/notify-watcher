@@ -13940,9 +13940,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 1,
-    "ok": 40,
-    "ts": "2026-07-17T15:08:20.720528+00:00"
+    "failed": 0,
+    "ok": 1,
+    "ts": "2026-07-17T15:23:21.340031+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15049,15 +15049,6 @@
         "name": "Cavetown"
       }
     },
-    "6fb64653d17775b4": {
-      "applied": null,
-      "created": "2026-07-03T15:19:29.898583+00:00",
-      "kind": "artist",
-      "label": "Grupo Extra",
-      "payload": {
-        "name": "Grupo Extra"
-      }
-    },
     "7c81628afd3fb964": {
       "applied": null,
       "created": "2026-07-10T13:31:02.600524+00:00",
@@ -15767,9 +15758,9 @@
       "last_ok": "2026-07-17T15:08:20.720528+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-17T15:08:29.398184+00:00",
+      "last_data": "2026-07-17T15:23:22.821413+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-17T15:08:20.720528+00:00"
+      "last_ok": "2026-07-17T15:23:21.340031+00:00"
     },
     "uv": {
       "last_data": "2026-07-17T15:09:50.422639+00:00",
