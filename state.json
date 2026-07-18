@@ -13991,9 +13991,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 1,
-    "ok": 40,
-    "ts": "2026-07-18T21:07:27.493055+00:00"
+    "failed": 0,
+    "ok": 1,
+    "ts": "2026-07-18T21:22:31.383048+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15178,15 +15178,6 @@
         "name": "Ciara"
       }
     },
-    "9ff6839529273ae2": {
-      "applied": null,
-      "created": "2026-07-04T21:10:06.690352+00:00",
-      "kind": "artist",
-      "label": "Lhasa De Sela",
-      "payload": {
-        "name": "Lhasa De Sela"
-      }
-    },
     "a17d66f3c94db9b7": {
       "applied": null,
       "created": "2026-07-11T15:18:46.781384+00:00",
@@ -15824,9 +15815,9 @@
       "last_ok": "2026-07-18T21:07:27.493055+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-18T21:07:36.001620+00:00",
+      "last_data": "2026-07-18T21:22:33.671144+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-18T21:07:27.493055+00:00"
+      "last_ok": "2026-07-18T21:22:31.383048+00:00"
     },
     "uv": {
       "last_data": "2026-07-18T21:09:04.234823+00:00",
