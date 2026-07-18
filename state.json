@@ -446,18 +446,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "\u201cI have always thought that all men should be free; but if any should be slaves, it should be first those who desire it for themselves, and secondly, those who desire it for others. When I hear anyone arguing for slavery, I feel a strong impulse to see it tried on him personally.\u201d\n\u2014 Abraham Lincoln\n\nThe year is 1864, and the American Civil War rages, a bloody crucible forged in the fires of human bondage. Abraham Lincoln, a man whose gaunt face and weary eyes bore the immense burden of a divided nation, was deep in the throes of a desperate fight not just for the Union, but for the very soul of the republic. He had, by this point, already issued the Emancipation Proclamation, a pivotal decree that transformed the character of the war from a struggle to preserve the Union into a moral crusade against slavery. Yet, even with the tide slowly turning, the arguments for human enslavement persisted, deeply entrenched in the economic, social, and political fabric of the South, and echoing even in pockets of the North. It was in this charged atmosphere, where the sanctity of individual liberty clashed violently with the brutal reality of chattel slavery, that Lincoln delivered his searing indictment. He was a man who, despite a humble upbringing, possessed a profound moral compass and an unparalleled ability to articulate the fundamental principles of human dignity and freedom. This was not a theoretical debate for Lincoln; it was the existential crisis of his lifetime, demanding not just political maneuvering, but a forceful, unambiguous declaration of humanity's inherent right to liberty.\n\nLincoln's words, delivered with characteristic clarity and moral force, cut directly to the core of the hypocrisy inherent in advocating for slavery. His logic was devastatingly simple, yet profoundly revolutionary: if one truly believed in the institution, then they should be the first to experience its chains. This wasn't merely a rhetorical flourish; it was a psychological weapon, designed to strip away the intellectual detachment and self-serving justifications of those who championed the subjugation of others. He understood that the power of empathy, or the lack thereof, lay at the heart of the argument. To demand freedom for oneself while denying it to others was, in Lincoln's view, an act of supreme moral cowardice and intellectual dishonesty. He was, in essence, demanding that his opponents confront the brutal reality of their own arguments, to walk in the shoes of those they sought to enslave. This stark challenge was a reflection of Lincoln's own journey \u2013 a self-made man who deeply valued individual agency and the right to self-determination, principles that stood in stark contrast to the dehumanizing tenets of slavery.\n\nEven today, well over a century and a half after the last shots of the Civil War were fired, Lincoln's words resonate with an unnerving power. In a world still grappling with various forms of oppression, exploitation, and the denial of fundamental human rights, his quote serves as a timeless moral compass. Whether it's the arguments for authoritarianism, economic exploitation, or the suppression of dissenting voices, the core principle remains: those who advocate for restricting the freedoms of others often conveniently exempt themselves from such limitations.",
-      "id": "dcd6f6f96d770773",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Abraham Lincoln",
-      "topic": "wikiquote",
-      "ts": "2026-07-05T12:58:16.902106+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
       "detail": "What: China has built ultra-high-voltage links operating above a million volts to carry power thousands of kilometres across the country.\nWhy it matters: They move electricity from remote dams, solar, and wind in the west to the crowded, power-hungry east.\nWhy you should care: They show how a continent-sized clean grid might move renewable power from where it's made to where it's needed.\n(Source: IEEE)",
       "id": "17c8fafaab1a5a11",
       "score": 60,
@@ -12443,6 +12431,18 @@
       "topic": "habits",
       "ts": "2026-07-18T15:09:11.059185+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - World Warrior #3 | !bracket",
+      "id": "51634a74466638f3",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-18T17:37:26.387700+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "f4_history": [
@@ -13939,7 +13939,7 @@
   "last_run": {
     "failed": 0,
     "ok": 1,
-    "ts": "2026-07-18T17:22:27.635735+00:00"
+    "ts": "2026-07-18T17:37:25.694485+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15759,9 +15759,9 @@
       "last_ok": "2026-07-18T15:07:34.089998+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-18T17:22:29.649138+00:00",
+      "last_data": "2026-07-18T17:37:27.648832+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-18T17:22:27.635735+00:00"
+      "last_ok": "2026-07-18T17:37:25.694485+00:00"
     },
     "uv": {
       "last_data": "2026-07-18T15:09:16.391983+00:00",
@@ -15792,7 +15792,9 @@
       "last_ok": "2026-07-18T15:07:34.089998+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
