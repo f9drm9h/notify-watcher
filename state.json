@@ -483,18 +483,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "Falcon 9 Block 5 | Transporter 17 (Dedicated SSO Rideshare) launches in ~21h.",
-      "id": "76e780a562886bc5",
-      "score": 62,
-      "severity": "moderate",
-      "source": "Launches",
-      "title": "Rocket launch",
-      "topic": "launches",
-      "ts": "2026-07-06T09:47:25.886897+00:00",
-      "url": "https://x.com/i/broadcasts/1YxNrryLloQxw"
-    },
-    {
-      "action": "push",
       "detail": "Visible pass at 7:49 PM - max 53deg, SW to NE. Look up!",
       "id": "7746764566cbf275",
       "score": 62,
@@ -12480,6 +12468,18 @@
       "topic": "habits",
       "ts": "2026-07-19T15:10:22.950658+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - 1v1Me and Ranked Grind !wait",
+      "id": "be6644a38db81b01",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-19T16:08:18.846997+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "f4_history": [
@@ -13973,7 +13973,7 @@
   "last_run": {
     "failed": 0,
     "ok": 1,
-    "ts": "2026-07-19T15:53:16.988683+00:00"
+    "ts": "2026-07-19T16:08:18.003818+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15799,9 +15799,9 @@
       "last_ok": "2026-07-19T15:08:26.544526+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-19T15:53:18.033423+00:00",
+      "last_data": "2026-07-19T16:08:20.259143+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-19T15:53:16.988683+00:00"
+      "last_ok": "2026-07-19T16:08:18.003818+00:00"
     },
     "uv": {
       "last_data": "2026-07-19T15:10:27.377498+00:00",
@@ -15832,7 +15832,9 @@
       "last_ok": "2026-07-19T15:08:26.544526+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
