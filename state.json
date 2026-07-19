@@ -13989,9 +13989,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 1,
-    "ok": 40,
-    "ts": "2026-07-19T21:08:22.174441+00:00"
+    "failed": 0,
+    "ok": 1,
+    "ts": "2026-07-19T21:23:18.960086+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15261,15 +15261,6 @@
         "name": "SIMONY"
       }
     },
-    "c8db20e202144233": {
-      "applied": null,
-      "created": "2026-07-05T21:13:10.233367+00:00",
-      "kind": "artist",
-      "label": "NateWantsToBattle",
-      "payload": {
-        "name": "NateWantsToBattle"
-      }
-    },
     "cac31b5a14d335b9": {
       "applied": null,
       "created": "2026-07-14T15:08:01.678803+00:00",
@@ -15828,9 +15819,9 @@
       "last_ok": "2026-07-19T21:08:22.174441+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-19T21:08:31.012272+00:00",
+      "last_data": "2026-07-19T21:23:20.009691+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-19T21:08:22.174441+00:00"
+      "last_ok": "2026-07-19T21:23:18.960086+00:00"
     },
     "uv": {
       "last_data": "2026-07-19T21:10:28.300728+00:00",
