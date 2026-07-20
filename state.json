@@ -81,6 +81,9 @@
     "internet|2026-07-22|5"
   ],
   "blood_donation_last_notified": "2026-07-08",
+  "cleaning_slots_sent": [
+    "2026-07-19|18:00"
+  ],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -508,66 +511,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "7df9b3736f946559",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA 6's crowd density will match the first trailer upon release. - GameGPU",
-      "topic": "games",
-      "ts": "2026-07-06T13:33:39.684515+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQUW5kanJCZGl1alVfV1lNVzFwRHRYTzhHM3M5RHc0d0RnRlBJU1MwRDU5THp1OVFpdEo1NUdodWkxXzJfZTc4UTRvcV9qZDNIOTFWbVRYNDBreFVMeXhjSUlGMWptUjJkVHJCWS10ajJIVDFEb0FpUXpnVGlteUgwbVB3STdVU0c0V1U1LXBQTHRyNzJYVHAwQXVtdnhjZ3dOVkpMZ0Nn?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "4e609a91aa3f86c8",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA 6 Trailer 3 LEAK (reupload.. be fast) - YouTube",
-      "topic": "games",
-      "ts": "2026-07-06T13:33:39.684849+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5VS0EyWjN1Y0UwYU9IdjNVbWpaZlhfaUYtOVN1dEtZbmpqdVI3cE9NSEpOZ3lHTGlPRXZOVnhsRWxLRkt3QUtRdzhHYWlhajVSTjIzZFNOczRFaWh5?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "77045a8ec1174886",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "Rockstar revealed GTA VI arsenal - 16 weapon types confirmed - ixbt.games",
-      "topic": "games",
-      "ts": "2026-07-06T13:33:39.685193+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQYXk1MjhWM0l0cVJOTEMtbDRJd3Zab3Ytai1ablFldFktZ2tmU296eGVCb1dKZmtJdmN5clFNTk1KNUQ2U1lueHNSZ0RlOUxsME8yOTNRMjhyZV9JNEItRy1wRndxMktwN2xsc2x2SWdxMEc0dlNBUThmZmY1bDByT2tnemhkM1RjR0JNX09pZm5hVE9JcV81d1pTNWQtcktMVmxScWc1YWIwLWlOQ0lXdUc3Z2LSAboBQVVfeXFMT3VaNW9qc1g5eTFPdkUwUi13WDBQeEFDWHc5UVFOWFRrTDZycmxmMk40dl84ZEtxNEFZTDc3aUdRQVZZbnd6NjVHSVRTLUctTHRoWmw0ZFBuWWFRclZkcGpXSDRTSm0tQVgyZGZvLUZac1BfVWtzaG5SWEFZeGd3VmFnSFFtVWpEX01MTEd6b25sbzZDS2pBdzdydTBIVzhVUDhOeDI2OHk1ZUdMdWNBakw5NThZdW9sQTZB?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "55f15dc25cedd6ec",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "We think we know when GTA 6 Trailer 3 is dropping - here's when - Daily Express",
-      "topic": "games",
-      "ts": "2026-07-06T13:33:39.685563+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPU3BHTkF0NEZLY2pLVlc5YkRTREVQNWU5WUp5NnpCZzhKNkZIcmNmeVc1dC1OY1ZrR1ZvaGtldXhON3N5U2syMDNpREhjMlRHVHRjcjgyd1JmME1aOUduWnFodkEtZ3V6TmdITVE3dnFQbTR4a3ZlalAyYldQcFR3aUFCWFd6TUZNVmxTdHRZNnNRSTgydlMwVGhuQUM5ZndWcldfQUxMUdIBrAFBVV95cUxNLTVoQ1RGa2NuS2ZhNV9VSHBtMFIzTU5qRG5MNXJRMUxZZFBmWEgzTGJrNWMxcFBsVEt5NXh2dlNUU2NsWmducklTWTlXY2w0enIwdUhXWEp3T3N1bjc2aUV2TW54WXFYcEs1Xzd4MkU1N3FnM2JiZWZHUTdiUGJaNndtYjAySFFCcTBIVmRiWWxXY2NjU2JHX1ZtcGQwRVZWMFlGUDJfOHZod1li?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "dd779e33b11c5264",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "Lack Of GTA 6 Discs Alert Politicians, Calls For Change - RockstarINTEL",
-      "topic": "games",
-      "ts": "2026-07-06T13:33:39.686155+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMk5pbkZjblpObk10dUxRMUQ5OENMRF9HWXB2M2d0Wm0wd1NUNURYRDdYOEhkdi05bjk2XzVNbkttQ2dCSHEzR2dieWZaRlJRR0Z6U2RyanF3R0F2SmpYRjRoQnhzSUo5a2UwTUhpOGIyUlowTS1La19ySjl1RTBlWnVSdHA4SUNR?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -12507,7 +12450,70 @@
       "topic": "spark",
       "ts": "2026-07-20T00:39:43.437433+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Good morning! First glass of water before anything else.",
+      "id": "bf1569e5dbc44c89",
+      "score": 0,
+      "severity": "low",
+      "source": "water",
+      "title": "Water - start the day hydrated",
+      "topic": "habits",
+      "ts": "2026-07-20T01:38:29.628098+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "6 PM: time to move. Even 20 minutes counts.",
+      "id": "3caa76e6fb7a4f4b",
+      "score": 0,
+      "severity": "low",
+      "source": "exercise",
+      "title": "Exercise - 6 PM session",
+      "topic": "habits",
+      "ts": "2026-07-20T01:38:29.628098+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Take 10 quiet minutes to meditate and reset.",
+      "id": "875ec7092df18679",
+      "score": 0,
+      "severity": "low",
+      "source": "meditate",
+      "title": "Meditate - evening reset",
+      "topic": "habits",
+      "ts": "2026-07-20T01:38:29.628098+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Quick tidy-up time: 15 minutes on the messiest spot.",
+      "id": "e2bfeac8d3f9018c",
+      "score": 0,
+      "severity": "low",
+      "source": "cleaning",
+      "title": "Cleaning - quick tidy-up",
+      "topic": "habits",
+      "ts": "2026-07-20T01:38:29.628098+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Sleep prep: last call for screens - your bedtime is coming up.",
+      "id": "bed71f18a1c766dd",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-07-20T01:38:29.628098+00:00",
+      "url": ""
     }
+  ],
+  "exercise_slots_sent": [
+    "2026-07-19|18:00"
   ],
   "f4_history": [
     {
@@ -13654,6 +13660,33 @@
       "eda75804088818b9"
     ]
   },
+  "habit_pending_acks": {
+    "1528576804628074580": {
+      "channel": "1515504253345726558",
+      "habit": "water",
+      "sent": "2026-07-20T01:38:29.628098+00:00"
+    },
+    "1528576807505494093": {
+      "channel": "1515504253345726558",
+      "habit": "exercise",
+      "sent": "2026-07-20T01:38:29.628098+00:00"
+    },
+    "1528576810034401291": {
+      "channel": "1515504253345726558",
+      "habit": "meditate",
+      "sent": "2026-07-20T01:38:29.628098+00:00"
+    },
+    "1528576811850530827": {
+      "channel": "1515504253345726558",
+      "habit": "cleaning",
+      "sent": "2026-07-20T01:38:29.628098+00:00"
+    },
+    "1528576813725388971": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-07-20T01:38:29.628098+00:00"
+    }
+  },
   "health_tip_last_sent": "2026-07-20",
   "holidays_sent": [],
   "ignored": {
@@ -13999,8 +14032,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 1,
-    "ts": "2026-07-20T01:23:24.316477+00:00"
+    "ok": 2,
+    "ts": "2026-07-20T01:38:27.409973+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -14036,6 +14069,9 @@
   ],
   "learn_last_sent": "2026-07-19",
   "life_dashboard_last_week": "2026-W29",
+  "meditate_slots_sent": [
+    "2026-07-19|18:00"
+  ],
   "movie_news_seen": {
     "Avengers: Doomsday": [
       "1fd4be4f910047cd",
@@ -15647,6 +15683,9 @@
   ],
   "recap_last_week": "2026-W29",
   "reminders_sent": [],
+  "sleep_slots_sent": [
+    "2026-07-19|21:00"
+  ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
     "d1203-liberty-5-pro-anc-earbuds-clear-calls",
@@ -15740,9 +15779,9 @@
       "last_ok": "2026-07-19T21:08:22.174441+00:00"
     },
     "habits": {
-      "last_data": "2026-07-20T00:39:42.917005+00:00",
-      "last_data_count": 3,
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_data": "2026-07-20T01:38:32.292226+00:00",
+      "last_data_count": 5,
+      "last_ok": "2026-07-20T01:38:27.409973+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15828,9 +15867,9 @@
       "last_ok": "2026-07-20T00:38:26.048357+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-20T01:23:25.510893+00:00",
+      "last_data": "2026-07-20T01:38:29.627668+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-20T01:23:24.316477+00:00"
+      "last_ok": "2026-07-20T01:38:27.409973+00:00"
     },
     "uv": {
       "last_data": "2026-07-19T21:10:28.300728+00:00",
@@ -15882,7 +15921,9 @@
   "watchdog_failing_since": {
     "visa_bulletin": "2026-07-14T21:07:54.987378+00:00"
   },
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-07-19|05:30"
+  ],
   "weather_seen_ids": [
     "7f3fe4896cd9e037",
     "59819de2fdc70df6",
