@@ -153,9 +153,11 @@ TOPICS: list[tuple[str, Topic]] = [
     # youtube pushes once per new upload from each followed channel (free
     # per-channel Atom feed, no key); seeds silently and dedups by video id.
     ("youtube", youtube.run),
-    # habit nudges (water, etc. from habits.json) fire on several daytime slots
-    # across the 3-hourly grid, so this runs every cycle (not daily-only) and
-    # dedups per slot per habit in state.
+    # habit tracker (habits.json): local-time reminder slots pushed to the
+    # habits channel with a ✅ reaction ack that logs completions in state.
+    # Rides the 15-minute fast lane (watch.yml runs NOTIFY_ONLY=twitch,habits
+    # between full sweeps) so minute-level slots fire on time; dedups per slot
+    # per habit in state.
     ("habits", habits.run),
     # learn's consolidated push is daily-only. reminders is daily-only too.
     # Independent of digest, so order among the daily-only topics doesn't

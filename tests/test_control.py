@@ -21,7 +21,7 @@ WATER = {
     "name": "water",
     "title": "Drink water",
     "enabled": True,
-    "hours": [12, 15, 18, 21],
+    "times": ["08:00", "11:00", "14:00", "17:00"],  # local (UTC-4)
     "messages": ["m"],
 }
 
@@ -75,41 +75,48 @@ class PollTest(unittest.TestCase):
 
 
 class DoneTest(unittest.TestCase):
-    def test_inserts_next_unsent_slot_key(self):
-        # 14:30 UTC: the 12 slot fired (and was marked); next nudge is 15:00.
-        state = {"water_slots_sent": [habits._slot_key(NOW.date(), 12)]}
+    # NOW is 14:30 UTC = 10:30 local (UTC-4); the local habit day is 2026-06-10.
+
+    def test_logs_completion_and_suppresses_all_slots_today(self):
+        state: dict = {}
         with mock.patch.object(habits, "_load", return_value=[WATER]):
             control.cmd_done("water", state, now=NOW)
-        self.assertIn("2026-06-10|15", state["water_slots_sent"])
-        # Only the NEXT nudge is suppressed; later slots still fire.
-        self.assertNotIn("2026-06-10|18", state["water_slots_sent"])
-        self.assertNotIn("2026-06-10|21", state["water_slots_sent"])
+        self.assertEqual(len(state["habit_log"]), 1)
+        entry = state["habit_log"][0]
+        self.assertEqual(entry["habit"], "water")
+        self.assertEqual(entry["date"], "2026-06-10")
+        self.assertEqual(entry["completed_at"], NOW.isoformat())
+        # Done for the day: every slot today is marked handled, past and future.
+        self.assertEqual(state["water_slots_sent"],
+                         ["2026-06-10|08:00", "2026-06-10|11:00",
+                          "2026-06-10|14:00", "2026-06-10|17:00"])
 
-    def test_idempotent_repeat(self):
+    def test_idempotent_repeat_logs_once(self):
         state: dict = {}
         with mock.patch.object(habits, "_load", return_value=[WATER]):
             control.cmd_done("water", state, now=NOW)
             before = list(state["water_slots_sent"])
             control.cmd_done("water", state, now=NOW)
             control.cmd_done("water", state, now=NOW)
-        # Repeats re-suppress the same next slot, never march further ahead.
+        self.assertEqual(len(state["habit_log"]), 1)  # one completion per day
         self.assertEqual(state["water_slots_sent"], before)
-        self.assertEqual(before, ["2026-06-10|15"])
 
-    def test_already_due_slot_is_not_the_next_nudge(self):
-        # 14:30 with the 12 slot unsent (delayed run): it fires this same run
-        # anyway, so DONE still targets the next FUTURE slot, 15:00.
-        state: dict = {}
-        with mock.patch.object(habits, "_load", return_value=[WATER]):
-            control.cmd_done("water", state, now=NOW)
-        self.assertEqual(state["water_slots_sent"], ["2026-06-10|15"])
-
-    def test_no_slots_left_today_is_a_noop(self):
-        late = NOW.replace(hour=22)  # past the last (21:00) slot
+    def test_done_after_last_slot_still_logs_completion(self):
+        late = NOW.replace(hour=23)  # 19:00 local, past the 17:00 slot
         state: dict = {}
         with mock.patch.object(habits, "_load", return_value=[WATER]):
             control.cmd_done("water", state, now=late)
-        self.assertEqual(state, {})
+        self.assertEqual(len(state["habit_log"]), 1)
+
+    def test_clears_pending_reaction_acks_for_the_habit(self):
+        state = {habits.PENDING_KEY: {
+            "111": {"habit": "water", "channel": "c", "sent": NOW.isoformat()},
+            "222": {"habit": "sleep", "channel": "c", "sent": NOW.isoformat()},
+        }}
+        with mock.patch.object(habits, "_load", return_value=[WATER]):
+            control.cmd_done("water", state, now=NOW)
+        # Water's pending poll is cleared; other habits' entries are untouched.
+        self.assertEqual(list(state[habits.PENDING_KEY]), ["222"])
 
     def test_unknown_habit_fails_closed(self):
         state: dict = {}

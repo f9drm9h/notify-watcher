@@ -20,6 +20,7 @@ ENV = {
     "CHANNEL_DISCOVERY": "222",
     "CHANNEL_LOGS": "333",
     "CHANNEL_BRIEFING": "444",
+    "CHANNEL_HABITS": "555",
     "CHANNEL_GENERAL": "999",
 }
 
@@ -53,11 +54,20 @@ class RoutingTest(unittest.TestCase):
             self.assertEqual(dd.channel_for("fx"), "999")
             self.assertEqual(dd.channel_for("weather"), "999")
 
+    def test_habits_topic_has_its_own_category_and_channel(self):
+        self.assertEqual(dd.category_for("habits"), "habits")
+        with mock.patch.dict("os.environ", ENV, clear=True):
+            self.assertEqual(dd.channel_for("habits"), "555")
+        # Until the CHANNEL_HABITS secret is set, reminders land in general.
+        with mock.patch.dict("os.environ", {"CHANNEL_GENERAL": "999"}, clear=True):
+            self.assertEqual(dd.channel_for("habits"), "999")
+
 
 class ColorTest(unittest.TestCase):
     def test_color_follows_category(self):
         self.assertEqual(dd.color_for("fx"), dd.CATEGORY_COLOR["finance"])
         self.assertEqual(dd.color_for("twitch"), dd.CATEGORY_COLOR["discovery"])
+        self.assertEqual(dd.color_for("habits"), dd.CATEGORY_COLOR["habits"])
         self.assertEqual(dd.color_for("nope"), dd.CATEGORY_COLOR["general"])
 
     def test_critical_severity_overrides_to_red(self):
@@ -190,6 +200,72 @@ class SendTest(unittest.TestCase):
              mock.patch.object(dd.requests, "post", return_value=resp):
             with self.assertRaises(requests.HTTPError):
                 dd.send("fx", "t", "m")
+
+    def test_send_returns_the_created_message_id(self):
+        resp = mock.Mock()
+        resp.status_code = 200
+        resp.raise_for_status = mock.Mock()
+        resp.json.return_value = {"id": "424242", "channel_id": "111"}
+        with mock.patch.dict("os.environ", ENV, clear=True), \
+             mock.patch.object(dd.requests, "post", return_value=resp):
+            self.assertEqual(dd.send("habits", "Water", "drink up"), "424242")
+
+    def test_send_returns_none_on_an_unparseable_body(self):
+        resp = mock.Mock()
+        resp.status_code = 200
+        resp.raise_for_status = mock.Mock()
+        resp.json.side_effect = ValueError("no body")
+        with mock.patch.dict("os.environ", ENV, clear=True), \
+             mock.patch.object(dd.requests, "post", return_value=resp):
+            self.assertIsNone(dd.send("habits", "Water", "drink up"))
+
+
+class ReactionHelpersTest(unittest.TestCase):
+    """add_reaction / get_message — the habits tracker's ✅ ack surface."""
+
+    def test_add_reaction_puts_the_urlencoded_emoji(self):
+        resp = mock.Mock()
+        resp.raise_for_status = mock.Mock()
+        with mock.patch.dict("os.environ", ENV, clear=True), \
+             mock.patch.object(dd.requests, "put", return_value=resp) as put:
+            dd.add_reaction("555", "9001", "✅")
+        url = put.call_args.args[0]
+        self.assertIn("/channels/555/messages/9001/reactions/", url)
+        self.assertIn("%E2%9C%85", url)  # ✅ must be URL-encoded
+        self.assertTrue(url.endswith("/@me"))
+        self.assertEqual(put.call_args.kwargs["headers"]["Authorization"],
+                         "Bot tok")
+
+    def test_add_reaction_raises_without_token(self):
+        with mock.patch.dict("os.environ", {}, clear=True):
+            with self.assertRaises(dd.DiscordConfigError):
+                dd.add_reaction("555", "9001", "✅")
+
+    def test_get_message_returns_the_parsed_json(self):
+        resp = mock.Mock()
+        resp.raise_for_status = mock.Mock()
+        resp.json.return_value = {"id": "9001", "reactions": []}
+        with mock.patch.dict("os.environ", ENV, clear=True), \
+             mock.patch.object(dd.requests, "get", return_value=resp) as get:
+            msg = dd.get_message("555", "9001")
+        self.assertEqual(msg["id"], "9001")
+        self.assertIn("/channels/555/messages/9001", get.call_args.args[0])
+
+    def test_get_message_propagates_http_error(self):
+        resp = mock.Mock()
+        resp.raise_for_status.side_effect = requests.HTTPError("404")
+        with mock.patch.dict("os.environ", ENV, clear=True), \
+             mock.patch.object(dd.requests, "get", return_value=resp):
+            with self.assertRaises(requests.HTTPError):
+                dd.get_message("555", "9001")
+
+    def test_get_message_returns_none_on_a_non_dict_body(self):
+        resp = mock.Mock()
+        resp.raise_for_status = mock.Mock()
+        resp.json.return_value = ["junk"]
+        with mock.patch.dict("os.environ", ENV, clear=True), \
+             mock.patch.object(dd.requests, "get", return_value=resp):
+            self.assertIsNone(dd.get_message("555", "9001"))
 
 
 if __name__ == "__main__":

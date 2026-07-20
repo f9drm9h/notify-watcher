@@ -1,23 +1,25 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "habits.json",
-  "description": "Recurring daytime habit nudges (see notify_watcher/topics/habits.py). A habit without name, hours, or messages is silently skipped at runtime; title and tag have code fallbacks but title is required here because a push without one is never intended.",
+  "description": "Daily habit tracker (see notify_watcher/topics/habits.py). times are LOCAL Dominican Republic 'HH:MM' strings (UTC + utc_offset_hours). A habit without name, times, or messages is silently skipped at runtime; title and tag have code fallbacks but title is required here because a push without one is never intended.",
   "type": "object",
   "properties": {
+    "utc_offset_hours": { "type": "integer", "minimum": -12, "maximum": 14 },
     "habits": {
       "type": "array",
       "items": {
         "type": "object",
-        "required": ["name", "title", "hours", "messages"],
+        "required": ["name", "title", "times", "messages"],
         "properties": {
           "name": { "type": "string", "pattern": "^[a-z0-9][a-z0-9_-]*$" },
           "title": { "type": "string", "minLength": 1 },
           "tag": { "type": "string", "minLength": 1 },
           "enabled": { "type": "boolean" },
-          "hours": {
+          "priority": { "enum": ["low", "default", "high", "urgent"] },
+          "times": {
             "type": "array",
             "minItems": 1,
-            "items": { "type": "integer", "minimum": 0, "maximum": 23 }
+            "items": { "type": "string", "pattern": "^([01][0-9]|2[0-3]):[0-5][0-9]$" }
           },
           "messages": {
             "type": "array",
