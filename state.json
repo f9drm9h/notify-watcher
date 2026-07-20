@@ -89,15 +89,6 @@
   },
   "digest_buffer": [
     {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Spider-Man: Brand New Day",
-      "title": "Tom Holland\u2019s Spider-Man Future Confirmed Beyond \u2018Brand New Day\u2019 - Collider",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9tbXN1MGpGaDJGQmhiZkg5YkJ0QnZ2eDBRQVpkazdYQ00yQWlKTUVzSXVTa2FTRWdIeEZEM0xGVFdEb0JxWmt4QWc1X1BnR3UzOXpMZmR3eHEwWVhHUnRrZmUzMW5iVE05UHc?oc=5"
-    },
-    {
       "detail": "DOP 7,295.00 (was DOP 7,595.00, -4%)",
       "preserve_detail": false,
       "score": 28,
@@ -190,47 +181,65 @@
     {
       "detail": "",
       "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "The Batman Part II Delayed To February 2028: Even Further From Gunn\u2019s Man of Tomorrow - Cosmic Book News",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE44eXJydFBVcU5NckdWMGpIQlN4aUtuMjNGR09oRWIyWENYNFRFS2dJZHJWcEZRcmI3NEtEbFEwcUc0UlR0bUlZd2cwVVBYcFg5N2NaZUZpdW5hVlJ2VUM4bmlWYkZJQ3dXSUdnWQ?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "Robert Pattinson's Return in The Batman: Part 2 Delayed Again, Now Arriving 2028 - IGN Africa",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQQzBqVWpCbm9pVjZMMGo5cng1T215NTNlUWNDZDBPSGZvbVVscnRsN1YtWXJmdTdjM3huN1ZLWDZHbWY3STVPZ0hhNWU4VXlGbmhnUGFQQXdvTHFzM0ZRdjR3RmZCdUZRYS15aDNjRGtoZWFOdUM4VUZGUTJocGFTclZEVkJMTU11bHB4ZDU3bEhfN0lFWDE4YnVNdC1SOE9fa1pGSTMxS1o1dm1xaGkxUnBXZnFvVmhWTkE?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "The Batman Part II has been delayed once again - Yahoo",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOYU5uWGRYUUhSLVlmbXJjYmhpdzNLXzZhT1A4YlQ2cGJucmNkUUNtZFlEWFN2WXM0d3M4dU45UE5TdFR0YjRtSEduZXRpcUQxZWxiUEdUZ3BySXVxb2FQNjFfMndvb3BYcjJUM05FU2dwUTVVVGdRcDNsUF90b3REaFNtRWdXbTlMZ0JZVGhlV0lBSU1XNTZ0LV9R?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman 2\u2019 Delayed To Early 2028; Scarlett Johansson & Sebastian Stan Roles Revealed? - Knight Edge Media",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFB5ckRnYmNRNWhaNUxhWk9fUEVQNTBKMnJIenpJbGJfVi1CaFhxdEkyUHBUZF9XN2x3ZnRxOUdrcnRJQl83ZG5zbXRzLWFNRGJsbmRRa0drWUtLRXI5SDFTRlI3U1o2YVluUEZiNUJUN1RaRkpCellielJENNIBgAFBVV95cUxNcDBUM1hWSVc5TXZKa2NwY2JxVGRRUng4c01ZWFQ0TUM4eW5fWVIxcFVDdERudGZvTFp0TWtDUS10SDAxeU9ZMWlVcWp3RFhLU0VMSlBFOGNSOGFpRlQ3bklkR0JIUjh3RnFKZGxuU0MwaHRNdlZhd0l5UmJoVzJIbA?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
       "score": 50,
       "source": "Weather",
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Spider-Man: Brand New Day Officially Replaces Tony Stark With Peter Parker's 9th MCU Mentor - The Direct",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQN2xIaVluLS1weW02U0pKdjN4N0NfWWxQYThWR21URkN5MHNXRHAxN1lNZFNfYzE0TG1IQkMteGd3eVRYRlFLc0xwS25HNDJraVgtV1lka0VlWlktcWtZQWpmZnpEYjVDUlNXTElIMVcyd19WVXhTcmprQXZQMVZaT2NWR0lQLVloeHZMX1dEcDNhMGtfSzZHbS1FNlZodw?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Batman Part II",
+      "title": "\u2018The Batman Part II\u2019 Delay Comes with a Silver Lining for J.J. Abrams\u2019 \u2018The Great Beyond\u2019 - Yahoo",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQTlBDeFRWaWkyenpPanRpYnJJanBGSm9XQlg1dDVrbmowUDVKN0ViR3luUTBUR1RFVGZTbmZXY2JXSzdJNHZSYXhjQjhmVmhiMVRIZjBQLTBWUlFXRHIwZVdzU3k0SlQ0RUJPR1hBaDg3M3huT0ZFVkpsN0NBLVRVcHMySS1uQzRUVm93QWk2Qndpc1gtOWp5Qw?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Batman Part II",
+      "title": "\u2018The Batman Part II\u2019 Announces Yet Another Delay in the Best Possible Way - Gizmodo",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNQlJDcDJHbHh1WVZBLWkxcUlqWGxOOURhMHRtRHVGS3pCdVFjYnZDU3BjN3M1MG5HQVc4OVE0N2QycHUxLWg5RzZXb0t3enFVdnNSMEh1UV9tUWxPZlNnWXJDZUg0ZmJUY2JJYVI0ZHhtZHQzNGstZGUtRXR0b3ZEQTlLUjBlUHROeTdOTU1La0FGejFweGxLdFFHM3hvVEtVMnlFSg?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Batman Part II",
+      "title": "The Batman 2 Delayed to 2028 With First Look at Pattinson - games.gg",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFA0OVVYZURtZFdGbG1EQzJaMnY1cFFDaDhYN2hmVUtoaFQxTXNFU19LUFpmbHpXbGh1aGJOeEYwUzk5aWNzTmR5cGxWRUF2TGRfYTNLNEE3M1RMZXJnQlg3ZUFibjB3SjlCd1RRNA?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Batman Part II",
+      "title": "The Batman Part II Will Skulk Into Theaters in 2028 After Release Date Delay - reactormag.com",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFAwOW1nRWZIYXZzNXhkeE9ZMTl3bXVvVVQ5bzU1SlBUT290MWxoVXZoUWxGa0RJZEFRUWp0RldBcFRyTV8waEhPdW0yeXJTT3FDTGs3S3hjM3hQU040LWt1ZnBFdDB1c0ljcGpPMVFB?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Earthquakes",
+      "title": "M3.3 - 53 km NNE of Punta Cana, Dominican Republic (~177 km away)",
+      "topic": "quakes",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71525063"
     }
   ],
   "digest_last_sent": "2026-07-19",
@@ -511,42 +520,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "b09b95d7cdad444a",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA 6 Developers Issue Major Request To Rockstar Games Before Release Date - RockstarINTEL",
-      "topic": "games",
-      "ts": "2026-07-06T13:33:39.687932+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPcEs3cFBBQlM2enZpUXpYTFg3aE1rQXlhU3pWQnE5amlOOExMVnFrazZFS3pRTkpVUVRqVkd3VE9saXU4d1FrMlB3eEdoZmtCLU9iTWJVNjZsSmExYnFDV3pUZWMxMW9ZZk9qd3h2TEF5RWNlN1R0NmZlNFE3M1UzWmZ5MGdpN3RZRzVjU2ZWRXprN1ptaXl6NEJJa3lyMmxwUEtz?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "43e9d9eacdc9ddf8",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "Grand Theft Auto VI \u2018Plays Best On PS5\u2019 Message Now Appears On The Game\u2019s Official Site - PlayStation Universe",
-      "topic": "games",
-      "ts": "2026-07-06T13:33:39.688270+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNMXFScUVnaGlPY1ZqMFpNX3lZNm9ObE9zLXpwRzRfUHIzS1pnOGdKVmNLNUl2RmFSV1RXN3Y4Q1VOSHRsMjJLTEFyVWFpLUx0LUpmeXNyUGlFUXNhS19FUGIxenJyblo2TzFUTkhRbmc1ekVqOHk3aWc5d1VDNkZlQUw4d0ZpU1RabUJmLWZjNUszdjVwMk9WSjlMc1ZGbW5lWjZCLVlhOUNCbmRkTVlN?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "ffd72969ca4779fd",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "Disastrous GTA 6 Pre-Order Numbers Revealed By Store Staff - RockstarINTEL",
-      "topic": "games",
-      "ts": "2026-07-06T13:33:39.688550+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQcXJKaENVLVpqNGt2NnEtY0NzLUhfYUdrbDQ2djBYcnA3YWtCeHpJTzMzakMtTjh5S3BseDFUaFpLSW9kLXZSbWd0Vlh0UFVaTGRaZ1Z3SVFwUUVSanA5NjJqaDJ5OHgyb29ZdVJLcWZEbWNma3drZVByOFFrNXhTSmczS01PcVc0allHN1R3?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -12510,6 +12483,42 @@
       "topic": "twitch",
       "ts": "2026-07-20T02:53:20.220192+00:00",
       "url": "https://twitch.tv/RiddlesMK"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "5997229e0fd05f35",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Unannounced Thunderbolts* Hero Surprisingly Returns in Avengers: Doomsday \u2013 Report - Yahoo",
+      "topic": "movies",
+      "ts": "2026-07-20T03:08:30.049681+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWEFacnVxSGxWVDR0MHdRMGE0TDRwSTdybVZoWWFDcndLc18tUmhwdkVmbUpZMVF2RXpuN2xUbVppV2FfTmpCNnJQclA1RU5BZVNRMm9xUWZLRXlIVGdXNThGUy13dnRwOFZtSlZnV0JrNjNVS2d0eGtaVkJ4czJsbS1mR2tUUTNVNXplenhFYm9UdHVYNFhyUjhPamJEbHFkN3Y5c2EtYUVYMHZ2UF85RnR2TGR5UEFC?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "ad5452c4d7a6cb56",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "THE BATMAN PART II\u2019s Release Date Move Isn\u2019t a Big Deal - batman on film",
+      "topic": "movies",
+      "ts": "2026-07-20T03:08:32.297686+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQYURXam52RTNWc0RUN29fQVZOcXZaVTE1Ni1ydWtFUEI2cHEtOUNvV050MVhhMzM2b3hDQkNIMHItcFpJODVSeS1seVpZQU5GOEJZVF9WeTJFdTZJbW41TEozU29rQVhxbUxCYTljVWZRNGhWck1jTndmTGUzMjJQTTRZM0J5UTd3SHhyVjJ4eDfSAeoCQVVfeXFMTlJlLW5rN29tR0ZTbFFGcHF6YmxTX3R1eXJxam9MSDdKOU5WYWVUX0tKNzJ6YTdBYXZ4eDh1V05iOGhZNFNyMXhjYjFBZ3FnZndYYnFRaU1fMHRBcDZ5LXJiTldFWllDRTZ0Ynl0b1hyOHA0VFl1dU5Bb2tqSU5RTzA4aDFDcVBrWlVFeG9QcmVjaFpKbXFlVzJzdDF5RWpLZzdoU09VeVByUklEU25rSVZpVzRCSkU3SWNNMGVleDM1ZS0yRFZ0aHFDcjM2Q3ZFRnNzX2xFcThWQ0NfTzdrT1d6djRqdXdBREtxVS1IbUhKSWVqYk8yWUZsMGxLX0FSVldpYTliNEU1cDJlRHd5N2YwYWhpTkxPcGxHeW5HZDRrakpKb2p1Z1diQ3BtajZiandjVmktdm44SHZNbHRhZVBvNDd4cUJhMlBkNVJTME4ycUVYbjFPaXBmdjZMNkRQYzBiLUlNMFJ1c2c?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "2732197b4458ba8b",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.3 - 53 km NNE of Punta Cana, Dominican Republic (~177 km away)",
+      "topic": "quakes",
+      "ts": "2026-07-20T03:09:38.584796+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71525063"
     }
   ],
   "exercise_slots_sent": [
@@ -12707,7 +12716,7 @@
     "date": "2026-07-19",
     "rate": 58.368151
   },
-  "fx_last_rate": 58.368151,
+  "fx_last_rate": 58.547537,
   "fx_last_zone": "within",
   "fx_week_baseline": {
     "rate": 58.689505,
@@ -14036,9 +14045,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-07-20T02:53:18.977752+00:00"
+    "failed": 1,
+    "ok": 40,
+    "ts": "2026-07-20T03:08:27.531912+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -14079,6 +14088,13 @@
   ],
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "1873799b906fd911",
+      "cf28e4e46a4ed970",
+      "6e24fa880264eb89",
+      "29ae5c6ebebe8083",
+      "0431a85399e13925",
+      "fddafc68629a285c",
+      "3163341e806fd54a",
       "1fd4be4f910047cd",
       "e8ce94797f1ea68e",
       "e7b066909813855c",
@@ -14171,14 +14187,7 @@
       "62af7413b72ade8d",
       "c9197f276baa2bd2",
       "c9f92b5c3272b5d1",
-      "8f82042425f77669",
-      "640dddd0f73295c3",
-      "1f8c56945e2df534",
-      "48a884cb9ec82962",
-      "6a41e2db3c88f742",
-      "1a49252f34d68ff0",
-      "48f50ad8349be3eb",
-      "2d8a3e728ebc0979"
+      "8f82042425f77669"
     ],
     "Godzilla x Kong: Supernova": [
       "51638fe17e6060fa",
@@ -14385,6 +14394,16 @@
       "a60256f56fba29e7"
     ],
     "Spider-Man: Brand New Day": [
+      "32156c0eab2c5fdd",
+      "013d8aaf129b5ace",
+      "3822ea3450c47ebc",
+      "06c7c34896f0acd4",
+      "bb8ad6b546265b2c",
+      "3bbb867cf6a03402",
+      "352141baa44a4427",
+      "a7906c67db8272e3",
+      "38edbdb2bfb81a46",
+      "91facc3eaf6b34c3",
       "fc77f057ed2d1626",
       "198e617147546383",
       "5f069e0137afa427",
@@ -14474,19 +14493,25 @@
       "3abab92bbd549d0a",
       "1b2c25aab107fa4f",
       "d5de0c5a1e315d92",
-      "bed549e981f81a6a",
-      "53285fbd6bb4ed1d",
-      "2fb2c681296a6a04",
-      "211391d71df9bf23",
-      "356dee13f1a331d0",
-      "a1fed1dc6c95986b",
-      "d2abf503616c0ad5",
-      "86342cae90243af6",
-      "fa26cc9d21f79aed",
-      "03a76f679ae0f844",
-      "1f210cfe534e841f"
+      "bed549e981f81a6a"
     ],
     "The Batman Part II": [
+      "b1dde3e541dbb878",
+      "6803c4dfe0ae7bad",
+      "70e5093a27ef63c2",
+      "8f581cb3e7f35970",
+      "ca5a961743349b4d",
+      "f3da04253c41117c",
+      "a83e4d6610832e73",
+      "1438b8f82c3b1e11",
+      "0d68331fb2373954",
+      "41e7d536ea1122af",
+      "58f0b5566d983789",
+      "c1819065674f4112",
+      "b60f512a120a37db",
+      "9bbbe65e40fa9f74",
+      "f26b41eeb2be8663",
+      "c9d9ebe544203843",
       "aab963499e23dd11",
       "f81e99a6def1b4c5",
       "64e6ec646c7b5831",
@@ -14570,25 +14595,37 @@
       "cfd15da019bcc1ca",
       "9c9d9d037a571dbd",
       "5ee629d78925a86c",
-      "83ade57d9e8ea17b",
-      "327f31cfe4cd1f85",
-      "7d7290552b82abc8",
-      "b0bdbd150a5134df",
-      "bff315c6c25460c8",
-      "5f9b16861477ba14",
-      "484b25810ab8e843",
-      "9a8ed8018ffe55fe",
-      "faeaf518972a679d",
-      "1f9e0dae3a1c1bc1",
-      "2bf7fc554b70d9c4",
-      "570955ca7a6d6e72",
-      "1f8cf16ff1930370",
-      "851a090fa595eac6",
-      "dd7cab6d92b35e3b",
-      "8360f08435f9f0f4",
-      "d42089f8f10a3609"
+      "83ade57d9e8ea17b"
     ],
     "The Odyssey": [
+      "c31e4970c3a2b2cc",
+      "6d3249280be37e3e",
+      "938b52dde2311b8d",
+      "1d18e067de045a52",
+      "89cdff803214acef",
+      "2b248f044d296a85",
+      "b96a6d8102401dd8",
+      "6377e66f391689d2",
+      "0a1baff0de59623b",
+      "e5a635c64ef0ef72",
+      "c29e22b1e46f17fa",
+      "2ace39992f9817e4",
+      "ba5b3146a6d5446f",
+      "1a32136da5f4c324",
+      "5dea269093877a64",
+      "bbcb54d4bb0fd274",
+      "cc111561733cf6eb",
+      "dbec20dbc8ca32ca",
+      "a52f407b9b7e384e",
+      "cbc9a99c128190cf",
+      "f609af053755d953",
+      "6302db21987d8ab5",
+      "0238b2d066a71b24",
+      "d97c08b8e9075186",
+      "58c36bb9462aa72b",
+      "838deafe6901a5a9",
+      "4c825542361ffdb5",
+      "78f5daa57506ae40",
       "6d7ea890f82443f8",
       "71f1252276c5a5b9",
       "b4306d839bd0210f",
@@ -14660,35 +14697,7 @@
       "6f39df6960be579a",
       "f9e2e68e1e1704e3",
       "a463a7ef69b573f0",
-      "9f7b81c93a0537cb",
-      "0d4a1b3fbb42a92f",
-      "9dea7cfb13520ec3",
-      "ddabe62cb3c194ea",
-      "d960907ad16cdc9a",
-      "2d102b11191da995",
-      "482a9ec545ff0c4c",
-      "3004fb0e27cf7533",
-      "e1239e3011269235",
-      "56928ac06575f5b5",
-      "5aea2a7ed6be9a2b",
-      "ea8ec3b7dddf0041",
-      "534a0a40c390270c",
-      "43fc67161db371ad",
-      "14c0f8910ea8f9ca",
-      "00ef973b08c1351f",
-      "51dcb1c3b20fcd01",
-      "29f25b7aa07c8eae",
-      "219795a8a9d578aa",
-      "7e68d468dbf61da5",
-      "f49fd0d407b78cbf",
-      "46b404b6c60447e7",
-      "28b95c0717c5279f",
-      "cf29ca48163793ef",
-      "a05c42a05cefe5cd",
-      "cd071410fe37e872",
-      "c1e6075a1909c20d",
-      "4e3b8b299f200f88",
-      "983b903c89ba0234"
+      "9f7b81c93a0537cb"
     ]
   },
   "movie_release_dates": {
@@ -15569,6 +15578,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "44d0381dc0d85a28",
     "9f1619521605ef78",
     "143a8ca160a3f8d8",
     "5121ae935ab36822",
@@ -15711,14 +15721,14 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-07-20T00:39:39.361181+00:00",
+      "last_data": "2026-07-20T03:09:39.209553+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-07-20T00:39:40.876906+00:00",
+      "last_data": "2026-07-20T03:09:40.752563+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "apod": {
       "last_data": "2026-07-19T21:10:29.359659+00:00",
@@ -15726,29 +15736,29 @@
       "last_ok": "2026-07-19T21:08:22.174441+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "beach_day": {
       "last_ok": "2026-07-14T00:08:07.374355+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "deals": {
-      "last_data": "2026-07-20T00:39:03.837569+00:00",
+      "last_data": "2026-07-20T03:09:02.500315+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "energy": {
-      "last_data": "2026-07-20T00:39:13.788799+00:00",
+      "last_data": "2026-07-20T03:09:12.104669+00:00",
       "last_data_count": 64,
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "energy_learn": {
       "last_data": "2026-07-19T12:10:42.154959+00:00",
@@ -15756,9 +15766,9 @@
       "last_ok": "2026-07-19T12:08:22.348243+00:00"
     },
     "fda": {
-      "last_data": "2026-07-20T00:39:04.235370+00:00",
+      "last_data": "2026-07-20T03:09:02.761934+00:00",
       "last_data_count": 18,
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "fuel": {
       "last_data": "2026-07-19T21:10:21.383321+00:00",
@@ -15766,18 +15776,18 @@
       "last_ok": "2026-07-19T21:08:22.174441+00:00"
     },
     "fx": {
-      "last_data": "2026-07-20T00:39:39.501646+00:00",
+      "last_data": "2026-07-20T03:09:39.273127+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "games": {
       "last_data": "2026-07-13T12:08:19.834195+00:00",
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-20T00:38:38.823088+00:00",
+      "last_data": "2026-07-20T03:08:39.553200+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "groceries": {
       "last_data": "2026-07-19T21:09:41.304039+00:00",
@@ -15785,9 +15795,9 @@
       "last_ok": "2026-07-19T21:08:22.174441+00:00"
     },
     "habits": {
-      "last_data": "2026-07-20T02:53:23.793466+00:00",
+      "last_data": "2026-07-20T03:09:43.534948+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-20T02:53:18.977752+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15798,9 +15808,9 @@
       "last_ok": "2026-07-19T21:08:22.174441+00:00"
     },
     "iss": {
-      "last_data": "2026-07-20T00:39:40.319099+00:00",
-      "last_data_count": 1,
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_data": "2026-07-20T03:09:40.233515+00:00",
+      "last_data_count": 2,
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "itsc": {
       "last_data": "2026-07-19T21:10:27.774696+00:00",
@@ -15808,9 +15818,9 @@
       "last_ok": "2026-07-19T21:08:22.174441+00:00"
     },
     "launches": {
-      "last_data": "2026-07-20T00:39:39.762102+00:00",
+      "last_data": "2026-07-20T03:09:39.693005+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "learn": {
       "last_data": "2026-07-19T12:10:37.305822+00:00",
@@ -15818,7 +15828,7 @@
       "last_ok": "2026-07-19T12:08:22.348243+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "marine": {
       "last_data": "2026-07-19T21:10:28.774602+00:00",
@@ -15826,42 +15836,42 @@
       "last_ok": "2026-07-19T21:08:22.174441+00:00"
     },
     "movies": {
-      "last_data": "2026-07-20T00:38:33.026205+00:00",
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_data": "2026-07-20T03:08:34.185282+00:00",
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "music": {
-      "last_data": "2026-07-20T00:38:37.129586+00:00",
+      "last_data": "2026-07-20T03:08:38.213335+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-20T00:39:14.469505+00:00",
+      "last_data": "2026-07-20T03:09:12.691096+00:00",
       "last_data_count": 19,
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "outages": {
-      "last_data": "2026-07-20T00:39:38.630409+00:00",
+      "last_data": "2026-07-20T03:09:38.535585+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-20T00:39:38.700969+00:00",
-      "last_data_count": 56,
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_data": "2026-07-20T03:09:38.584394+00:00",
+      "last_data_count": 50,
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "research": {
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-07-20T00:38:58.788541+00:00",
+      "last_data": "2026-07-20T03:08:58.082061+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "spark": {
       "last_data": "2026-07-19T06:09:51.824842+00:00",
@@ -15870,12 +15880,12 @@
     },
     "spending": {
       "last_data_count": 0,
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-20T02:53:22.031619+00:00",
+      "last_data": "2026-07-20T03:08:36.284871+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-20T02:53:18.977752+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "uv": {
       "last_data": "2026-07-19T21:10:28.300728+00:00",
@@ -15884,16 +15894,16 @@
     },
     "visa_bulletin": {
       "last_error": "403 Client Error: Forbidden for url: https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html",
-      "last_error_ts": "2026-07-20T00:38:26.048357+00:00",
+      "last_error_ts": "2026-07-20T03:08:27.531912+00:00",
       "last_ok": "2026-07-14T18:07:53.426832+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "weather": {
-      "last_data": "2026-07-20T00:39:13.987484+00:00",
+      "last_data": "2026-07-20T03:09:12.236872+00:00",
       "last_data_count": 9,
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     },
     "wikiquote": {
       "last_data": "2026-07-14T12:09:00.939275+00:00",
@@ -15901,9 +15911,9 @@
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-20T00:39:42.916421+00:00",
+      "last_data": "2026-07-20T03:09:41.884941+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-20T00:38:26.048357+00:00"
+      "last_ok": "2026-07-20T03:08:27.531912+00:00"
     }
   },
   "twitch_live": [
@@ -15913,7 +15923,7 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165232"
+    "last_full_window": "165233"
   },
   "watchdog_alerted": {
     "visa_bulletin": "2026-07-16T18:10:36.993914+00:00"
