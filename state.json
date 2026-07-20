@@ -514,18 +514,6 @@
     {
       "action": "digest",
       "detail": "",
-      "id": "6b54a8cd5815f113",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA 6 Launch Delay Possible As Devs Prepare To Strike Amid Final Crunch - GAMINGbible",
-      "topic": "games",
-      "ts": "2026-07-06T13:33:39.687100+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOR2ZmaDViWXJMRkdFR3V3eDJxTTJqM1Q4SkxFdmVjN1dLeFN1bmdPOGNZal9Gc2xWVE5lOTAxSkM0dVJTQXFaMHhVc1U5V0xJLTRjX3JSX1ZkdWc4TTllUTZVNTlTSjhxLWF4VUZmcDY5ZVVydm0yZmJVRkxuYVQ0RlJZek5yWWV6MWs2Vkxqcm9VdDdzUldNQjcybw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
       "id": "b09b95d7cdad444a",
       "score": 35,
       "severity": "moderate",
@@ -12510,6 +12498,18 @@
       "topic": "habits",
       "ts": "2026-07-20T02:08:31.428732+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - S Factor X3 Top 8 Watchparty!",
+      "id": "7033327e0da4eb85",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-20T02:53:20.220192+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "exercise_slots_sent": [
@@ -14038,7 +14038,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-20T02:38:21.156900+00:00"
+    "ts": "2026-07-20T02:53:18.977752+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15785,9 +15785,9 @@
       "last_ok": "2026-07-19T21:08:22.174441+00:00"
     },
     "habits": {
-      "last_data": "2026-07-20T02:38:24.063480+00:00",
+      "last_data": "2026-07-20T02:53:23.793466+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-20T02:38:21.156900+00:00"
+      "last_ok": "2026-07-20T02:53:18.977752+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15873,9 +15873,9 @@
       "last_ok": "2026-07-20T00:38:26.048357+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-20T02:38:22.693446+00:00",
+      "last_data": "2026-07-20T02:53:22.031619+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-20T02:38:21.156900+00:00"
+      "last_ok": "2026-07-20T02:53:18.977752+00:00"
     },
     "uv": {
       "last_data": "2026-07-19T21:10:28.300728+00:00",
@@ -15906,7 +15906,9 @@
       "last_ok": "2026-07-20T00:38:26.048357+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
