@@ -175,7 +175,7 @@ outside its named state keys.
 
 | Command | Example | Effect |
 |---|---|---|
-| `DONE:{habit_id}` | `DONE:water` | habit done now: update streak, suppress the next nudge today |
+| `DONE:{habit_id}` | `DONE:water` | habit done today: log a `habit_log` completion, silence the habit's remaining reminders today |
 | `SNOOZE:{reminder_id}:{minutes}` | `SNOOZE:passport:1440` | re-deliver that reminder after N minutes |
 | `MUTE:{topic}:{hours}` | `MUTE:movies:168` | drop that topic's digest-bound items for N hours |
 
@@ -192,6 +192,13 @@ outside its named state keys.
 ## Per-command behavior and state changes
 
 ### `DONE:{habit_id}` — habits
+
+> **Superseded (2026-07):** the habit tracker rework moved completion handling
+> into `habits.mark_complete` — one `habit_log` entry per habit per local day,
+> every remaining slot today suppressed, pending ✅ reaction polls cleared.
+> `control.cmd_done` now just validates the id and delegates, and the same
+> handler serves the ✅ reaction ack. The original design below (next-slot
+> suppression + streaks) is kept for history; streaks were never built.
 
 Two mutations, both performed by `control.py` (habits.py needs **zero new read
 logic** for suppression):

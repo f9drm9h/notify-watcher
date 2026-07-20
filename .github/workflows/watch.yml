@@ -97,12 +97,15 @@ jobs:
         env:
           # Outbound delivery is now Discord rich embeds (notify_watcher.discord_delivery).
           # DISCORD_TOKEN is the bot token; the CHANNEL_* ids route each topic
-          # category to its channel (finance/discovery/logs/briefing/general).
+          # category to its channel (finance/discovery/logs/briefing/habits/
+          # general). CHANNEL_HABITS is the habit tracker's channel; until the
+          # secret is set its reminders fall back to CHANNEL_GENERAL.
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
           CHANNEL_FINANCE: ${{ secrets.CHANNEL_FINANCE }}
           CHANNEL_DISCOVERY: ${{ secrets.CHANNEL_DISCOVERY }}
           CHANNEL_LOGS: ${{ secrets.CHANNEL_LOGS }}
           CHANNEL_BRIEFING: ${{ secrets.CHANNEL_BRIEFING }}
+          CHANNEL_HABITS: ${{ secrets.CHANNEL_HABITS }}
           CHANNEL_GENERAL: ${{ secrets.CHANNEL_GENERAL }}
           # Inbound reply-button control loop is now Discord-native: the sweep
           # drains a private control channel (discord_control.poll) for the
@@ -135,9 +138,12 @@ jobs:
           # twitch fast lane draining control/pending work and staying silent
           # on completion feedback.
           NOTIFY_SCHEDULED: ${{ inputs.scheduled && '1' || '' }}
-          # Twitch-only mode keeps the 15-minute live alerts lightweight. Full
-          # mode leaves NOTIFY_ONLY empty so main.py runs every topic in order.
-          NOTIFY_ONLY: ${{ inputs.only != '' && inputs.only || (steps.mode.outputs.run_mode == 'twitch' && 'twitch' || '') }}
+          # The fast lane keeps the 15-minute runs lightweight: twitch live
+          # alerts plus the habit tracker, whose minute-level reminder slots
+          # (05:30, 21:00, 22:00 local) and reaction-ack polling both need the
+          # 15-minute cadence. Full mode leaves NOTIFY_ONLY empty so main.py
+          # runs every topic in order.
+          NOTIFY_ONLY: ${{ inputs.only != '' && inputs.only || (steps.mode.outputs.run_mode == 'twitch' && 'twitch,habits' || '') }}
           # Opt-in: re-enable control/pending work (due LATER re-fires, queued
           # MORE pushes) on an on-demand single-topic dispatch, which otherwise
           # skips it. Empty/unset on schedule and full runs (they already flush).

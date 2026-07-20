@@ -18,9 +18,22 @@ class WatchWorkflowTest(unittest.TestCase):
 
         self.assertIn(
             "NOTIFY_ONLY: ${{ inputs.only != '' && inputs.only || "
-            "(steps.mode.outputs.run_mode == 'twitch' && 'twitch' || '') }}",
+            "(steps.mode.outputs.run_mode == 'twitch' && 'twitch,habits' || '') }}",
             text,
         )
+
+    def test_fast_lane_runs_habits_every_cycle(self):
+        # The habit tracker's minute-level reminder slots (05:30, 21:00, 22:00
+        # local) and its reaction-ack polling both need the 15-minute cadence;
+        # a 3-hourly sweep would deliver them hours late.
+        text = WATCH_YML.read_text(encoding="utf-8")
+
+        self.assertIn("'twitch,habits'", text)
+
+    def test_habits_channel_secret_is_passed_through(self):
+        text = WATCH_YML.read_text(encoding="utf-8")
+
+        self.assertIn("CHANNEL_HABITS: ${{ secrets.CHANNEL_HABITS }}", text)
 
     def test_github_schedule_trigger_stays_removed(self):
         # GitHub's schedule trigger delayed or dropped most 15-minute ticks

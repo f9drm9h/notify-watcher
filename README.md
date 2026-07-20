@@ -270,14 +270,17 @@ item list.
   month; day 31 clamps to a short month's last day) and pushes **5 days and
   1 day before** it is due (`lead_days` configurable per bill). Edit the due
   days on github.com to match your actual bills; no code change needed.
-- **Habit nudges** — gentle recurring reminders from `habits.json` (no network,
-  no secrets). Each habit fires at several daytime slots on the every-3-hours
-  grid (e.g. 12/15/18/21 UTC ≈ 08:00/11:00/14:00/17:00 DR), at most one push per
-  slot per day, phrasing rotating per slot. Robust against dropped runs: a late
-  or skipped run sends only the latest due slot, never a catch-up burst. A
-  **drink-water** nudge ships enabled; **stand-up** and **eye-rest** ship as
-  ready-to-enable examples. Adding or tuning a nudge is a `habits.json` edit
-  (`name`/`title`/`tag`/`hours`/`messages`/`enabled`), not a code change.
+- **Habit tracker** — scheduled daily reminders from `habits.json`, posted to
+  the habits Discord channel with a bot-added ✅ reaction. Times are LOCAL DR
+  ("HH:MM"): water 05:30, exercise/meditate/cleaning 18:00, and sleep wind-down
+  at 21:00 + 22:00. The topic rides the 15-minute fast lane, so a slot fires
+  within ~15 min of schedule; at most one push per slot per day, phrasing
+  rotating per slot, and a late run sends only the latest due slot — never a
+  catch-up burst. Tap the ✅ (or the [Done] button) and the next sweep logs the
+  completion with a timestamp in `state.json` (`habit_log`) and silences that
+  habit's remaining reminders for the day — acking the 9 PM sleep reminder also
+  cancels the 10 PM one. Adding or re-timing a habit is a `habits.json` edit
+  (`name`/`title`/`tag`/`times`/`messages`/`enabled`/`priority`), no code change.
 - **Daily health tip** — one evidence-based tip each morning from a curated,
   vetted knowledge base (`data/health_tips.json`, sourced from CDC/WHO/
   MedlinePlus). With an AI key set the vetted tip is optionally *reworded* for
@@ -715,7 +718,7 @@ notify-watcher/
 │       ├── games.py                 RAWG release dates + scored game news
 │       ├── golden_sun.py            Golden Sun wiki/reddit/news tracker
 │       ├── groceries.py             La Sirena/Nacional/Bravo weekly deals
-│       ├── habits.py                config-driven daytime habit nudges
+│       ├── habits.py                daily habit tracker (reminders + ✅ ack log)
 │       ├── health_tip.py            one evidence-based health tip per day
 │       ├── holidays.py              DR public-holiday heads-up (Nager.Date)
 │       ├── ios_release.py           Apple Developer Releases RSS, iOS/iPadOS

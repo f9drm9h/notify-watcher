@@ -115,8 +115,13 @@ def push(
     timeout: float = 15.0,
     topic: Optional[str] = None,
     severity: Optional[str] = None,
-) -> None:
+) -> Optional[str]:
     """Deliver a notification as a Discord rich embed to the topic's channel.
+
+    Returns the delivered Discord message's id when the transport reports one
+    (None when quiet hours suppressed the push or the id was unavailable) —
+    the habits tracker uses it to watch the message for a ✅ reaction ack.
+    Every pre-existing caller ignores the return value.
 
     `topic` drives routing (see discord_delivery.category_for): finance topics
     land in CHANNEL_FINANCE, discovery in CHANNEL_DISCOVERY, system/errors in
@@ -144,11 +149,11 @@ def push(
     """
     if _is_quiet_now(priority):
         log.info("quiet hours active; suppressing %r push", title)
-        return
+        return None
 
     components = discord_control.actions_to_components(actions) if actions else None
 
-    discord_delivery.send(
+    return discord_delivery.send(
         topic,
         title,
         message,

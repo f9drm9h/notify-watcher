@@ -27,6 +27,7 @@ Configuration (all from the environment / the gitignored ``.env``):
     CHANNEL_DISCOVERY  channel id for tech/gaming/media discovery
     CHANNEL_LOGS       channel id for system/errors/watchdog
     CHANNEL_BRIEFING   channel id for the Gemini daily/weekly summaries
+    CHANNEL_HABITS     channel id for the daily habit tracker reminders
     CHANNEL_GENERAL    catch-all channel id (default for unmapped topics)
 
 Failure policy mirrors the rest of the codebase: ``send`` *raises* when it is
@@ -63,6 +64,7 @@ CATEGORY_ENV = {
     "discovery": "CHANNEL_DISCOVERY",
     "logs": "CHANNEL_LOGS",
     "briefing": "CHANNEL_BRIEFING",
+    "habits": "CHANNEL_HABITS",
     "general": "CHANNEL_GENERAL",
 }
 
@@ -74,6 +76,7 @@ CATEGORY_COLOR = {
     "discovery": 0x3498DB,  # blue   — tech/gaming/media finds
     "logs": 0xE74C3C,       # red    — system/errors/watchdog
     "briefing": 0x9B59B6,   # purple — the daily/weekly Gemini summary
+    "habits": 0x1ABC9C,     # teal   — daily habit reminders/tracker
     "general": 0x95A5A6,    # grey   — everything else
 }
 
@@ -101,6 +104,8 @@ CATEGORY_BY_TOPIC = {
     "digest": "briefing",
     "recap": "briefing",
     "life_dashboard": "briefing",
+    # --- daily habit tracker -> CHANNEL_HABITS (teal) ----------------------
+    "habits": "habits",
     # --- system / errors / watchdog -> CHANNEL_LOGS (red) -----------------
     "control": "logs",
     "system": "logs",
@@ -133,6 +138,11 @@ _TAG_EMOJI = {
     "video_game": "🎮",
     "shopping_cart": "🛒",
     "fuelpump": "⛽",
+    "droplet": "💧",
+    "muscle": "💪",
+    "lotus": "🧘",
+    "broom": "🧹",
+    "zzz": "💤",
 }
 
 # Discord hard limits.
@@ -223,7 +233,14 @@ _RATE_LIMIT_MAX_WAIT = 15.0  # never sleep longer than this per retry
 
 
 def _post(channel_id: str, embed: "discord.Embed", token: str, timeout: float,
-          components: Optional[list] = None) -> None:
+          components: Optional[list] = None) -> Optional[dict]:
+    """POST one message; returns Discord's created-message JSON (or None).
+
+    The parsed response is how a caller learns the new message's id — the
+    habits tracker stores it so a later run can poll the message's reactions.
+    A body that fails to parse yields None rather than an error: delivery
+    already succeeded, the id is only an enhancement.
+    """
     payload: dict = {"embeds": [embed.to_dict()]}
     if components:
         payload["components"] = components
@@ -240,7 +257,11 @@ def _post(channel_id: str, embed: "discord.Embed", token: str, timeout: float,
         )
         if resp.status_code != 429 or attempt == _RATE_LIMIT_RETRIES:
             resp.raise_for_status()
-            return
+            try:
+                data = resp.json()
+            except Exception:  # noqa: BLE001 - body parse is best-effort
+                return None
+            return data if isinstance(data, dict) else None
         try:
             wait = float((resp.json() or {}).get("retry_after", 1.0))
         except Exception:  # noqa: BLE001 - malformed body: fall back to 1s
@@ -263,8 +284,12 @@ def send(
     attach_url: Optional[str] = None,
     components: Optional[list] = None,
     timeout: float = 15.0,
-) -> None:
+) -> Optional[str]:
     """Route `topic` to a channel, render an embed, and POST it to Discord.
+
+    Returns the created message's id (a snowflake string) when Discord's
+    response carried one, else None. Callers that don't need it — every
+    pre-existing topic — simply ignore the return value.
 
     ``components`` is an optional list of Discord message-component action rows
     (the native reply buttons built by ``discord_control.actions_to_components``);
@@ -294,5 +319,57 @@ def send(
         click_url=click_url, tags=tags, severity=severity,
         source=source, attach_url=attach_url,
     )
-    _post(channel_id, embed, token, timeout, components=components)
+    created = _post(channel_id, embed, token, timeout, components=components)
     log.info("discord: delivered %r to #%s (%s)", title, channel_id, category_for(topic))
+    message_id = created.get("id") if isinstance(created, dict) else None
+    return str(message_id) if message_id else None
+
+
+def _headers() -> dict:
+    token = (os.getenv("DISCORD_TOKEN") or "").strip()
+    if not token:
+        raise DiscordConfigError("DISCORD_TOKEN is not set; cannot reach Discord.")
+    return {
+        "Authorization": f"Bot {token}",
+        "User-Agent": "notify-watcher (https://github.com, 1.0)",
+    }
+
+
+def add_reaction(channel_id: str, message_id: str, emoji: str,
+                 timeout: float = 15.0) -> None:
+    """Add the bot's own reaction to a message (PUT …/reactions/<emoji>/@me).
+
+    The habits tracker uses this to pre-seed the ✅ on each reminder so
+    acknowledging is a single tap on an existing reaction. Raises on a missing
+    token or a non-2xx response; callers treat failure as cosmetic (the user
+    can still add their own reaction).
+    """
+    from urllib.parse import quote
+
+    resp = requests.put(
+        f"{API_BASE}/channels/{channel_id}/messages/{message_id}"
+        f"/reactions/{quote(emoji)}/@me",
+        headers=_headers(),
+        timeout=timeout,
+    )
+    resp.raise_for_status()
+
+
+def get_message(channel_id: str, message_id: str,
+                timeout: float = 15.0) -> Optional[dict]:
+    """Fetch one message's JSON (reactions included), or None on a non-dict body.
+
+    Raises requests.HTTPError on a non-2xx response — a 404 tells the habits
+    ack poller the message was deleted and its pending entry should be dropped.
+    """
+    resp = requests.get(
+        f"{API_BASE}/channels/{channel_id}/messages/{message_id}",
+        headers=_headers(),
+        timeout=timeout,
+    )
+    resp.raise_for_status()
+    try:
+        data = resp.json()
+    except Exception:  # noqa: BLE001 - malformed body reads as "no data"
+        return None
+    return data if isinstance(data, dict) else None

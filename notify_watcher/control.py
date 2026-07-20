@@ -303,39 +303,26 @@ def dispatch(commands: list[str], state: dict) -> dict:
 
 def cmd_done(habit_id: str, state: dict,
              now: Optional[_dt.datetime] = None) -> None:
-    """Habit done: suppress its next scheduled nudge today (and only that one).
+    """Habit done: log today's completion and silence its remaining reminders.
 
-    Inserts the next slot key into the habit's existing dedup set, so
-    habits._due_slots naturally skips it — habits.py needs no new read logic.
-    "Next" is anchored on the clock (the first unsent slot strictly after
-    now), not on the sent set, so a replayed/duplicated DONE re-targets the
-    SAME slot (a set insert) instead of marching through the day. Unknown
-    habit ids fail closed; no slots left after now is a no-op.
+    Delegates to :func:`notify_watcher.topics.habits.mark_complete` — the very
+    handler the ✅ reaction ack uses — so a [Done] button tap and a reaction
+    are interchangeable: one ``habit_log`` completion entry per habit per local
+    day, remaining slots today suppressed, pending reaction polls cleared.
+    Replays and duplicates are no-ops; unknown habit ids fail closed.
     """
     # Function-level import: habits imports control for its Done button, so a
     # module-level import here would be a cycle.
     from .topics import habits
 
-    habit = next((h for h in habits._load() if h.get("name") == habit_id), None)
-    if habit is None:
+    if not any(h.get("name") == habit_id for h in habits._load()):
         log.warning("control: DONE for unknown habit %r dropped", habit_id)
         return
-    now = now or _utcnow()
-    # The next nudge is the first slot strictly after now (a slot already due
-    # fires this same run anyway and is not what the user is dismissing). The
-    # insert is an unconditional set add, so a duplicate DONE re-inserts the
-    # same key instead of marching on to suppress further slots.
-    upcoming = [h for h in habits._hours(habit) if h > now.hour]
-    if not upcoming:
-        log.info("control: DONE:%s - no slots left today; nothing to suppress",
+    if habits.mark_complete(state, habit_id, now=now):
+        log.info("control: DONE:%s completion logged", habit_id)
+    else:
+        log.info("control: DONE:%s already completed today; nothing new to log",
                  habit_id)
-        return
-    skey = habits._state_key(habit_id)
-    sent = set(state.get(skey) or [])
-    sent.add(habits._slot_key(now.date(), upcoming[0]))
-    state[skey] = sorted(sent)
-    log.info("control: DONE:%s suppressed the %02d:00 UTC slot",
-             habit_id, upcoming[0])
 
 
 def cmd_snooze(reminder_id: str, minutes: int, state: dict,

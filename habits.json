@@ -1,45 +1,77 @@
 {
-  "_comment": "Recurring daytime habit nudges. Each habit: name (unique id, also used for its state key), title (push title), tag (ntfy emoji tag), hours (UTC hours to fire; a slot fires on the first run AT or AFTER its hour, so hours on the every-3-hours cron grid 0/3/6/9/12/15/18/21 fire on time and off-grid hours fire up to ~3h late on the next run; 12/15/18/21 == 08:00/11:00/14:00/17:00 in the Dominican Republic, UTC-4), messages (rotated per slot for variety), and optional enabled (default true). At most one push per slot per day, deduped in state. Adding a nudge is just a new entry here - no code change. Edit this file directly on github.com.",
+  "_comment": "Daily habit tracker (see notify_watcher/topics/habits.py). Each habit: name (unique id, also its state key and the DONE:<name> command target), title (push title - keep the habit name in it), tag (emoji tag), times (LOCAL Dominican Republic times, 'HH:MM' 24h; DR is UTC+utc_offset_hours year-round, no DST). A slot fires on the first watch run AT or AFTER its time - the habits topic rides the 15-minute fast lane, so reminders land within ~15 min of schedule. At most one push per slot per day, deduped in state. Every reminder posts to the habits Discord channel with a bot-added checkmark reaction: tap the reaction (or the Done button) and the next sweep logs the completion with a timestamp in state.json (habit_log) and silences that habit's remaining reminders for the day. messages rotate per slot for variety; optional enabled (default true) and priority ('high' rings through quiet hours). Adding or re-timing a habit is just an edit here - no code change. Edit this file directly on github.com.",
+  "utc_offset_hours": -4,
   "habits": [
     {
       "name": "water",
-      "title": "Drink water",
+      "title": "Water - start the day hydrated",
       "tag": "droplet",
       "enabled": true,
-      "hours": [12, 15, 18, 21],
+      "times": ["05:30"],
       "messages": [
-        "Time for a glass of water. Stay hydrated!",
-        "Hydration check: grab some water before you carry on.",
-        "Quick reminder to drink some water.",
-        "Keep a glass of water within reach.",
-        "Sip some water - your body will thank you.",
-        "Pause for a moment and have a drink of water.",
-        "Water break! A few sips now keeps you sharp."
+        "Good morning! First glass of water before anything else.",
+        "Start the day right: drink a full glass of water now.",
+        "Water first, everything else after. Your body spent all night without it.",
+        "Morning hydration check: one big glass of water to wake up your system.",
+        "Before coffee, before your phone: a glass of water."
       ]
     },
     {
-      "name": "stand",
-      "title": "Stand up & move",
-      "tag": "walking",
-      "enabled": false,
-      "hours": [13, 16, 19],
+      "name": "exercise",
+      "title": "Exercise - 6 PM session",
+      "tag": "muscle",
+      "enabled": true,
+      "times": ["18:00"],
       "messages": [
-        "Stand up and stretch for a minute.",
-        "Time to move - a short walk resets your focus.",
-        "Get up, roll your shoulders, take a few steps.",
-        "Been sitting a while? Stand and reset your posture."
+        "6 PM: time to move. Even 20 minutes counts.",
+        "Exercise time. Get the body working before the evening slips away.",
+        "Workout window is open: stretch, lift, walk - whatever gets you moving.",
+        "Your 6 PM exercise slot is here. Future you says thanks.",
+        "Time to train. Start small if you have to - just start."
       ]
     },
     {
-      "name": "eyes",
-      "title": "Rest your eyes",
-      "tag": "eyes",
-      "enabled": false,
-      "hours": [14, 17, 20],
+      "name": "meditate",
+      "title": "Meditate - evening reset",
+      "tag": "lotus",
+      "enabled": true,
+      "times": ["18:00"],
       "messages": [
-        "20-20-20: look ~20 feet away for 20 seconds.",
-        "Give your eyes a short break from the screen.",
-        "Blink, look into the distance, relax your eyes."
+        "Take 10 quiet minutes to meditate and reset.",
+        "Meditation time: sit, breathe, let the day settle.",
+        "Pause for meditation - a few minutes of stillness changes the whole evening.",
+        "Evening reset: close your eyes and focus on your breath for a while.",
+        "Time to meditate. No pressure, just presence."
+      ]
+    },
+    {
+      "name": "cleaning",
+      "title": "Cleaning - quick tidy-up",
+      "tag": "broom",
+      "enabled": true,
+      "times": ["18:00"],
+      "messages": [
+        "Quick tidy-up time: 15 minutes on the messiest spot.",
+        "Cleaning slot: reset one area before the night starts.",
+        "A little cleaning now beats a big cleaning later. Pick one thing.",
+        "Tidy-up reminder: dishes, desk, or floor - choose one and clear it.",
+        "15-minute cleaning sprint. Timer on, go."
+      ]
+    },
+    {
+      "name": "sleep",
+      "title": "Sleep - wind down",
+      "tag": "zzz",
+      "enabled": true,
+      "priority": "high",
+      "times": ["21:00", "22:00"],
+      "messages": [
+        "9 PM: start winding down. Screens dimmer, lights lower.",
+        "Wind-down time: wrap up what you're doing and ease toward bed.",
+        "Sleep prep: last call for screens - your bedtime is coming up.",
+        "Second call: time to actually head to bed. Tomorrow starts tonight.",
+        "Lights out soon. Put the day down - it will be there tomorrow.",
+        "Bedtime. Phone away, eyes closed. Good night!"
       ]
     }
   ]
