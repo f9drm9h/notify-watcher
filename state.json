@@ -514,18 +514,6 @@
     {
       "action": "digest",
       "detail": "",
-      "id": "e401ab259fbfca22",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Grand Theft Auto VI",
-      "title": "GTA 6 gameplay reveal should be coming very soon, if history is anything to go by - Polygon.com",
-      "topic": "games",
-      "ts": "2026-07-06T13:33:39.686739+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOZDd6c004TTZXUHQxOW9rb1l1OE9YNThKMGppd2hIS2JQeWdOZm50b3ZEYlNVLXo2SEVPdlhRWlR6S3kxMDJrd1NzNzNlck80bm05T0VvemUxX2F2NlhYSjItenhjTzdpdkhlakMwRWZjVldvUWptRjBDdnBKUGFlUXBsTm96TC15SXhVZ0VpdUU?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
       "id": "6b54a8cd5815f113",
       "score": 35,
       "severity": "moderate",
@@ -12510,6 +12498,18 @@
       "topic": "habits",
       "ts": "2026-07-20T01:38:29.628098+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Sleep prep: last call for screens - your bedtime is coming up.",
+      "id": "a0c5d44599dd0030",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-07-20T02:08:31.428732+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -13685,6 +13685,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-07-20T01:38:29.628098+00:00"
+    },
+    "1528584367771750401": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-07-20T02:08:31.428732+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-20",
@@ -14033,7 +14038,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-20T01:53:17.968395+00:00"
+    "ts": "2026-07-20T02:08:29.662006+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15684,7 +15689,8 @@
   "recap_last_week": "2026-W29",
   "reminders_sent": [],
   "sleep_slots_sent": [
-    "2026-07-19|21:00"
+    "2026-07-19|21:00",
+    "2026-07-19|22:00"
   ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
@@ -15779,9 +15785,9 @@
       "last_ok": "2026-07-19T21:08:22.174441+00:00"
     },
     "habits": {
-      "last_data": "2026-07-20T01:53:19.971552+00:00",
+      "last_data": "2026-07-20T02:08:33.345997+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-20T01:53:17.968395+00:00"
+      "last_ok": "2026-07-20T02:08:29.662006+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15867,9 +15873,9 @@
       "last_ok": "2026-07-20T00:38:26.048357+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-20T01:53:19.128815+00:00",
+      "last_data": "2026-07-20T02:08:31.428541+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-20T01:53:17.968395+00:00"
+      "last_ok": "2026-07-20T02:08:29.662006+00:00"
     },
     "uv": {
       "last_data": "2026-07-19T21:10:28.300728+00:00",
