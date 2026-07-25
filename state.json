@@ -197,6 +197,33 @@
       "title": "FDA updates approval for Augmentin Xr (Amoxicillin, Clavulanate Potassium) (NDA050785)",
       "topic": "fda",
       "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050785"
+    },
+    {
+      "detail": "DOP 44,595.00 (was DOP 57,995.00, -23%)",
+      "preserve_detail": false,
+      "score": 45,
+      "source": "La Sirena",
+      "title": "La Sirena deal: Secadora Whirlpool 23 Pies 7MWGD6605MC",
+      "topic": "groceries",
+      "url": "https://www.sirena.do/whirlpool-secadora-23p-7mwgd6605mc-2059959/p"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Earthquakes",
+      "title": "M3.7 - 45 km SSE of Boca de Yuma, Dominican Republic (~158 km away)",
+      "topic": "quakes",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr2026206000"
     }
   ],
   "digest_last_sent": "2026-07-25",
@@ -526,66 +553,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "Time for a glass of water. Stay hydrated!",
-      "id": "b750db507991e07d",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-07-08T21:52:44.551265+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Before Gregor Mendel, the secrets of heredity were veiled in an intricate mystery, a puzzle that natural philosophers and farmers alike had pondered for centuries. The prevailing wisdom, often dubbed \"blending inheritance,\" suggested that offspring simply represented an averaged mix of their parents' traits, much like mixing paints. A tall parent and a short parent, for instance, were expected to produce a medium-sized child. This intuitive idea, however, struggled to explain why certain traits seemed to skip generations, or why siblings from the same parents could exhibit such striking differences. Charles Darwin, wrestling with the implications of natural selection, recognized this profound gap in understanding; without a clear mechanism for the transmission of traits, his theory lacked a crucial underpinning. The scientific community, though brilliant and industrious, was without a clear path forward, unable to unravel the very mechanism that drove evolution and the diversity of life.\n\nInto this intellectual void stepped a quiet Augustinian friar named Gregor Mendel. Born to a farming family in a small village in what is now the Czech Republic, Mendel possessed a mind attuned to observation and an unwavering patience for methodical experimentation. His abbey in Brno, a center of intellectual activity, offered him the unique opportunity to pursue his scientific curiosities, specifically regarding the inheritance of traits in pea plants. For eight years, from 1856 to 1863, Mendel painstakingly cultivated and cross-pollinated nearly 28,000 pea plants, a monumental undertaking requiring meticulous record-keeping and a profound dedication. He focused on seven distinct traits, such as flower color (purple or white), seed shape (round or wrinkled), and pod color (green or yellow), each presenting two clear, contrasting forms. His genius lay not just in the scale of his experiments, but in his revolutionary approach: he counted and analyzed the offspring statistically, a novel concept in biology at the time.\n\nMendel's experiments yielded astonishingly consistent ratios, patterns that defied the blending inheritance hypothesis. He observed that when he crossed purebred purple-flowered peas with purebred white-flowered peas, all the first-generation offspring were purple. The white trait seemed to vanish entirely. Yet, when he allowed these first-generation purple flowers to self-pollinate, the white trait reappeared in the second generation, always in a precise 3:1 ratio with purple flowers. This repeatable phenomenon led him to postulate the existence of \"factors\" (what we now call genes) that carried hereditary information. He proposed that these factors came in pairs, one from each parent, and that one factor could be dominant over another, masking its expression. He further deduced that these factors segregated independently during gamete formation, meaning that different traits were inherited independently of one another. These were the fundamental principles that would later become known as Mendel's Laws of Inheritance: the Law of Segregation and the Law of Independent Assortment.\n\nThe human drama of Mendel's story is one of initial obscurity and posthumous recognition. In 1865, he presented his groundbreaking findings to the Natural History Society of Brno, and the following year, his paper, \"Experiments on Plant Hybridization,\" was published.",
-      "id": "9f1ef2114e60fb7b",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Gregor Mendel and the laws of heredity",
-      "topic": "learn",
-      "ts": "2026-07-08T21:52:49.778954+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201c[on the possibility of contact with an alien civilization]: I think it would be a disaster. The extraterrestrials would probably be far in advance of us. The history of advanced races meeting more primitive people on this planet is not very happy, and they were the same species. I think we should keep our heads low.\u201d\n\u2014 Stephen Hawking\n\nStephen Hawking, the brilliant mind behind some of the most profound theories in modern physics, a man whose very existence defied the conventional limits of human endurance, cast a long and influential shadow over the scientific landscape. By the time he uttered those chilling words about alien contact, he was already an icon, his name synonymous with the quest to understand the universe. Diagnosed with an early-onset, slow-progressing form of amyotrophic lateral sclerosis (ALS) in his early twenties, a condition that progressively robbed him of his physical capabilities, Hawking\u2019s intellectual spirit remained unyielding. He communicated through a speech generating device, first controlled by his hand, then by a single cheek muscle, a testament to his indomitable will. His voice, synthesized and robotic, became instantly recognizable, carrying the weight of his profound intellect and often, a surprising, mischievous humor. He wasn\u2019t merely a theoretical physicist; he was a public intellectual, a bridge between the abstruse world of black holes and the layperson\u2019s natural curiosity. He made the universe accessible, not just through his groundbreaking work on cosmology and quantum gravity, but through his popular books, lectures, and media appearances, always with that distinctive, synthesized voice.\n\nThe quote itself emerged within a broader conversation about humanity\u2019s place in the cosmos, a debate that gained increasing traction in the late 20th and early 21st centuries. The search for extraterrestrial intelligence (SETI) had been ongoing for decades, driven by both scientific curiosity and a deep-seated human desire to know if we are truly alone. Telescopes were scanning the skies, and probes were venturing into the far reaches of our solar system, fueling an ever-growing sense of possibility. But Hawking, ever the pragmatist grounded in historical precedent, offered a stark counterpoint to the prevailing optimism. He spoke not from a place of fear of the unknown, but from a profound understanding of human nature and the darker chapters of our own history. He saw the potential encounter with a highly advanced alien civilization through the lens of colonialism, drawing a direct parallel to the catastrophic consequences that befell indigenous populations when confronted by technologically superior European powers. This wasn\u2019t science fiction speculation; it was a deeply informed historical analogy, delivered by a man who had dedicated his life to discerning the fundamental laws governing existence.\n\nHawking\u2019s cautionary words resonate with particular potency today, even years after his passing. As our technological capabilities advance, so too does our reach into the cosmos. The Kepler Space Telescope, and more recently, the James Webb Space Telescope, have revealed an astonishing abundance of exoplanets, many of which reside in habitable zones, sparking renewed enthusiasm for the prospect of extraterrestrial life. Simultaneously, humanity grapples with its own existential challenges: climate change, pandemics, and persistent conflicts fueled by power imbalances.",
-      "id": "cb930c59cb511667",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Stephen Hawking",
-      "topic": "wikiquote",
-      "ts": "2026-07-08T21:52:54.895388+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Super Smash Bros. Ultimate - La CODOSALA online! Calentando pa PdP 2",
-      "id": "227c81092ec57ac1",
-      "score": 68,
-      "severity": "high",
-      "source": "elcodo22",
-      "title": "elcodo22 is live on Twitch",
-      "topic": "twitch",
-      "ts": "2026-07-08T22:48:17.379650+00:00",
-      "url": "https://twitch.tv/elcodo22"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "c6f991f72016dab5",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "The Avengers: Doomsday trailer gets critical release date update - Bam Smack Pow",
-      "topic": "movies",
-      "ts": "2026-07-09T01:21:42.215660+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNMnZBdTE3NUZvQTFkaVRoM0c4SWoycHl1UnU3clcwYnUyZ0lzZEhRS01kcDJ4VzlsRjYxYW1mY2x1elBReXZCSFVHaHVQRE9feXE5NFowSHJoX3NGSEw3cGU2amdUX3BCYkppM0xYbVRES1Zmb1NEM25Ba0Q4eHExY2NLb2RHcEpwUFpJWm5weXpsazRW?oc=5"
-    },
     {
       "action": "push",
       "detail": "",
@@ -12525,6 +12492,66 @@
       "topic": "habits",
       "ts": "2026-07-25T09:38:22.092324+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Champagne Coast - Blood Orange\n(because you like Tame Impala)",
+      "id": "ee26651d0cc0661a",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-07-25T12:09:23.887423+00:00",
+      "url": "https://www.deezer.com/track/74525041"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "1f63024b03ad17ac",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-07-25T12:10:53.826550+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "c79d3b4ecc5ba470",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.7 - 45 km SSE of Boca de Yuma, Dominican Republic (~158 km away)",
+      "topic": "quakes",
+      "ts": "2026-07-25T12:11:14.749876+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr2026206000"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 10:42 PM - max 51deg, NW to SE. Look up!",
+      "id": "df8a876b03a03b52",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-25T12:11:18.964813+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cEthics, too, are nothing but reverence for life. That is what gives me the fundamental principle of morality, namely, that good consists in maintaining, promoting, and enhancing life, and that destroying, injuring, and limiting life are evil.\u201d\n\u2014 Albert Schweitzer\n\nThe year was 1952, and a formidable figure, whose very name had become synonymous with humanitarianism, stood before an expectant audience in Oslo. Albert Schweitzer, a man of staggering intellect\u2014theologian, musician, philosopher, and physician\u2014was accepting the Nobel Peace Prize. He had by then spent decades of his life in the remote reaches of Lambar\u00e9n\u00e9, Gabon, dedicating himself to medicine and the service of others, a journey that began with a profound spiritual crisis over the suffering he witnessed in the world. It was in this crucible of thought and action that his concept of \"Reverence for Life\" was forged.\n\nThis wasn't merely a philosophical ideal for Schweitzer; it was the practical bedrock of his existence. He saw in every living thing, from the grandest human endeavor to the smallest insect, an intrinsic will to live, and thus, a right to exist. His ethics demanded a boundless sense of responsibility, urging us not just to avoid harm, but actively to foster, promote, and enhance life in all its myriad forms. To him, the ethical dilemma wasn't an abstract puzzle but a constant call to action, demanding compassion and engagement with the world's pain.\n\nIn our own complex age, Schweitzer's words resonate with a startling clarity. As we grapple with ecological crises, social injustices, and the ever-present shadow of conflict, his call to reverence life offers a universal antidote. It transcends cultural and religious divides, providing a fundamental principle for a shared morality.",
+      "id": "562c196b12915bb2",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Albert Schweitzer",
+      "topic": "spark",
+      "ts": "2026-07-25T12:11:31.966720+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -12720,7 +12747,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-25-31-JUL-DE-2026.pdf",
   "fuel_last_pdf_hash": "3eb0d16150db5bf4901177980d5d28a5ea5b8f4efcc3746cf5b9b0b955d308a9",
-  "fuel_last_prices_seen_at": "2026-07-25T05:16:36.400789+00:00",
+  "fuel_last_prices_seen_at": "2026-07-25T12:11:16.684291+00:00",
   "fuel_prices": {
     "GLP": 3380.07,
     "Gasoil Regular": 3380.07,
@@ -13098,6 +13125,7 @@
       "1b7d9e5ab11b51a5"
     ],
     "La Sirena": [
+      "340951c6987563e7",
       "912cbf7e9fe45b53",
       "6f0cd38c6205591c",
       "d47d326e5b9eb25b",
@@ -13775,6 +13803,7 @@
     }
   },
   "iss_seen_passes": [
+    "5bd7cf835ea0e5cc",
     "dcd1b55a0689ec21",
     "cb897743a2bcbdbe",
     "4e35f872491005f3",
@@ -13873,8 +13902,7 @@
     "abc1247ce14fea03",
     "5835522bc9b14a40",
     "d3f31b192116e45f",
-    "7c332a2e20b077c1",
-    "8dc9a7ff1f3b00f7"
+    "7c332a2e20b077c1"
   ],
   "itsc_sent_ids": [
     "0193484e2153b1fd",
@@ -14065,9 +14093,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-07-25T11:53:23.234381+00:00"
+    "failed": 2,
+    "ok": 39,
+    "ts": "2026-07-25T12:08:19.088873+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -14908,7 +14936,8 @@
     121587772,
     14002467,
     6292042,
-    1619572
+    1619572,
+    524820
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -15122,6 +15151,15 @@
       "label": "Lujipeka",
       "payload": {
         "name": "Lujipeka"
+      }
+    },
+    "8cde7c3a7e21b979": {
+      "applied": null,
+      "created": "2026-07-25T12:09:23.887374+00:00",
+      "kind": "artist",
+      "label": "Blood Orange",
+      "payload": {
+        "name": "Blood Orange"
       }
     },
     "8d996f059c97f6c5": {
@@ -15436,6 +15474,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "21b120fe82d3fa62",
     "44d0381dc0d85a28",
     "9f1619521605ef78",
     "143a8ca160a3f8d8",
@@ -15563,8 +15602,8 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82637,
-  "spark_next_kind": "quote",
+  "spark_last_sent": 82638,
+  "spark_next_kind": "fact",
   "spending_week_summarized": "2026-W28:2817.16",
   "streaming_seen": {
     "1003596": [],
@@ -15576,44 +15615,47 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-07-25T09:09:57.113942+00:00",
+      "last_data": "2026-07-25T12:11:15.302479+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "anthropic_news": {
       "last_data": "2026-07-25T09:09:58.789157+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_error": "feed fetch failed: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=Anthropic+Claude+%28Opus+OR+Sonnet+OR+Haiku+OR+model+OR+release+OR+update%29&hl=en-US&gl=US&ceid=US:en",
+      "last_error_ts": "2026-07-25T12:08:19.088873+00:00",
+      "last_ok": "2026-07-25T09:08:25.030865+00:00",
+      "source_failed": true
     },
     "apod": {
-      "last_data": "2026-07-25T05:16:46.960220+00:00",
+      "last_data": "2026-07-25T12:11:55.561111+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-25T05:14:41.739205+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "beach_day": {
       "last_ok": "2026-07-14T00:08:07.374355+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "deals": {
-      "last_data": "2026-07-25T09:09:25.075414+00:00",
-      "last_data_count": 10,
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_data": "2026-07-25T12:10:33.121205+00:00",
+      "last_data_count": 11,
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "energy": {
-      "last_data": "2026-07-25T09:09:37.197100+00:00",
+      "last_data": "2026-07-25T12:10:53.434479+00:00",
       "last_data_count": 66,
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "energy_learn": {
       "last_data": "2026-07-25T05:16:43.187049+00:00",
@@ -15621,61 +15663,61 @@
       "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "fda": {
-      "last_data": "2026-07-25T09:09:25.959763+00:00",
+      "last_data": "2026-07-25T12:10:42.101059+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "fuel": {
-      "last_data": "2026-07-25T05:16:36.400772+00:00",
+      "last_data": "2026-07-25T12:11:16.684311+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-25T05:14:41.739205+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "fx": {
-      "last_data": "2026-07-25T09:09:57.206912+00:00",
+      "last_data": "2026-07-25T12:11:15.427698+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "games": {
       "last_data": "2026-07-20T12:08:40.503536+00:00",
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-25T09:08:35.213271+00:00",
+      "last_data": "2026-07-25T12:09:44.854326+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "groceries": {
-      "last_data": "2026-07-25T05:16:01.526383+00:00",
+      "last_data": "2026-07-25T12:10:41.457733+00:00",
       "last_data_count": 246,
-      "last_ok": "2026-07-25T05:14:41.739205+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "habits": {
-      "last_data": "2026-07-25T11:53:25.591413+00:00",
+      "last_data": "2026-07-25T12:11:29.156827+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-25T11:53:23.234381+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
     },
     "holidays": {
-      "last_data": "2026-07-25T05:16:44.789274+00:00",
+      "last_data": "2026-07-25T12:11:34.333023+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-07-25T05:14:41.739205+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "iss": {
-      "last_data": "2026-07-25T09:09:57.808826+00:00",
+      "last_data": "2026-07-25T12:11:18.964634+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "itsc": {
-      "last_data": "2026-07-25T05:16:45.627795+00:00",
+      "last_data": "2026-07-25T12:11:35.296179+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-07-25T05:14:41.739205+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "launches": {
-      "last_data": "2026-07-25T09:09:57.318847+00:00",
+      "last_data": "2026-07-25T12:11:18.414240+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "learn": {
       "last_data": "2026-07-25T05:16:39.086255+00:00",
@@ -15683,85 +15725,82 @@
       "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "marine": {
-      "last_data": "2026-07-25T05:16:46.544545+00:00",
+      "last_data": "2026-07-25T12:11:36.713135+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-25T05:14:41.739205+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "movies": {
       "last_data": "2026-07-25T09:08:30.261007+00:00",
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "music": {
-      "last_data": "2026-07-25T09:08:33.702854+00:00",
+      "last_data": "2026-07-25T12:09:22.997630+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-25T09:09:37.847735+00:00",
+      "last_data": "2026-07-25T12:10:54.376631+00:00",
       "last_data_count": 14,
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "outages": {
-      "last_data": "2026-07-25T09:09:56.578862+00:00",
+      "last_data": "2026-07-25T12:11:14.609245+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-25T09:09:56.643656+00:00",
+      "last_data": "2026-07-25T12:11:14.749608+00:00",
       "last_data_count": 38,
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "research": {
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-07-25T09:09:19.210145+00:00",
+      "last_data": "2026-07-25T12:10:26.609788+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "spark": {
-      "last_data": "2026-07-20T06:09:31.333682+00:00",
-      "last_data_count": 25,
-      "last_error": "knowledge story generation failed (no LLM provider answered)",
-      "last_error_ts": "2026-07-20T12:08:27.853048+00:00",
-      "last_ok": "2026-07-20T06:08:18.527040+00:00",
-      "source_failed": true
+      "last_data": "2026-07-25T12:11:29.513481+00:00",
+      "last_data_count": 34,
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "spending": {
       "last_data_count": 0,
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-25T11:53:25.370233+00:00",
+      "last_data": "2026-07-25T12:09:20.317607+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-25T11:53:23.234381+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "uv": {
-      "last_data": "2026-07-25T05:16:46.092037+00:00",
+      "last_data": "2026-07-25T12:11:36.096805+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-25T05:14:41.739205+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "visa_bulletin": {
       "last_error": "403 Client Error: Forbidden for url: https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html",
-      "last_error_ts": "2026-07-25T09:08:25.030865+00:00",
+      "last_error_ts": "2026-07-25T12:08:19.088873+00:00",
       "last_ok": "2026-07-14T18:07:53.426832+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "weather": {
-      "last_data": "2026-07-25T09:09:37.422178+00:00",
+      "last_data": "2026-07-25T12:10:53.826186+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     },
     "wikiquote": {
       "last_data": "2026-07-14T12:09:00.939275+00:00",
@@ -15769,9 +15808,9 @@
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
     },
     "youtube": {
-      "last_data": "2026-07-25T09:10:00.638566+00:00",
+      "last_data": "2026-07-25T12:11:28.898913+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-25T09:08:25.030865+00:00"
+      "last_ok": "2026-07-25T12:08:19.088873+00:00"
     }
   },
   "twitch_live": [],
@@ -15779,10 +15818,9 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165275"
+    "last_full_window": "165276"
   },
   "watchdog_alerted": {
-    "spark": "2026-07-25T05:16:49.360901+00:00",
     "visa_bulletin": "2026-07-16T18:10:36.993914+00:00"
   },
   "watchdog_data_alerted": {},
@@ -15794,13 +15832,14 @@
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
   "watchdog_failing_since": {
-    "spark": "2026-07-20T12:08:27.853048+00:00",
+    "anthropic_news": "2026-07-25T12:08:19.088873+00:00",
     "visa_bulletin": "2026-07-14T21:07:54.987378+00:00"
   },
   "water_slots_sent": [
     "2026-07-25|05:30"
   ],
   "weather_seen_ids": [
+    "cab930d484fccf7c",
     "8cc856507ee26056",
     "8ffecf27adc86966",
     "f787582ff98d7e1f",
@@ -15975,7 +16014,7 @@
   "wikiquote_last_category": "activists_thinkers",
   "wikiquote_last_sent": "2026-07-14T4",
   "wikiquote_seen": {
-    "activists_thinkers:Albert Schweitzer": "2026-07-07",
+    "activists_thinkers:Albert Schweitzer": "2026-07-25",
     "activists_thinkers:Booker T. Washington": "2026-07-12",
     "activists_thinkers:Helen Keller": "2026-07-08",
     "activists_thinkers:Henry David Thoreau": "2026-07-11",
