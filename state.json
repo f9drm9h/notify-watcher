@@ -85,7 +85,9 @@
     "rent|2026-07-30|5"
   ],
   "blood_donation_last_notified": "2026-07-08",
-  "cleaning_slots_sent": [],
+  "cleaning_slots_sent": [
+    "2026-07-25|18:00"
+  ],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -598,42 +600,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "6c82876823012057",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "A Must-Watch Superhero Film Before \u2018Spider-Man: Brand New Day\u2019 Is Officially on Netflix - Collider",
-      "topic": "movies",
-      "ts": "2026-07-09T18:30:13.103780+00:00",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE11Yk8tVDVmRHVlS2pRWnptM2IxcTdsSkJZT0dhdTNNdW5UeVIwNTc0U0U0Q3psa1VpUDJfWkswUVRxZ1FVT05fYUdLNWNYY1Nuc0J3SUdKb003WmtzVUF5aEJ6SHZoQ2hRS3BZ?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "1535bdb7834f1d9c",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Odyssey",
-      "title": "Christopher Nolan Says One \u2018Odyssey\u2019 Star Stunned Crew Like Heath Ledger on \u2018The Dark Knight\u2019 - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-07-09T18:30:13.902110+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQMlB1cE5ndGI3NGZTMUVXWm9oVURmeWJ2ZXYwckhPRldWeEpZcTJ6Znd2amoyTmU3YlFNUTVYY2FDcjhTVDI1TC1sUjVPWFI1SVZwN3lmN2RfakJtNlk3MFJkZ1FhRV9FMlF6ZV9FcUpnMHAtN2JYS3ZKeVZyMFQzT1p2TUd6cTdNcXdaMGVCUW1DRHRCeWNDQkxHSTVpRDRzbHFtM3dvQm0zakFxN3l1dFRuaHlCeDFDNHc?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "8ee9151b047bdc7a",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Odyssey",
-      "title": "'The Odyssey': First Reactions From The Critics And Fanboys Who've Seen It - Deadline",
-      "topic": "movies",
-      "ts": "2026-07-09T18:30:13.903620+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRzBpMm5OMl9TSTZQZEp3Y0NpVUNWTTB4M1YzZ0trVEZpa25DMFFISW9XQWFIazFaU0Y4aTI5bGlmSnAyVk9LMzJCaEZSb2lRcFBZT05Vc2FkOTFJUWYwYkotdnJrdy1UT0RhVnlFSlU4M0dEVXFRQ05kMGxzTzVaTEtFVERYWlpGOHNROXNVTFNvdFBW?oc=5"
-    },
     {
       "action": "drop",
       "detail": "",
@@ -12597,9 +12563,47 @@
       "topic": "youtube",
       "ts": "2026-07-25T21:10:21.988167+00:00",
       "url": "https://www.youtube.com/watch?v=zaL-h1XOwZ4"
+    },
+    {
+      "action": "push",
+      "detail": "Exercise time. Get the body working before the evening slips away.",
+      "id": "207ced4dc19a5d4e",
+      "score": 0,
+      "severity": "low",
+      "source": "exercise",
+      "title": "Exercise - 6 PM session",
+      "topic": "habits",
+      "ts": "2026-07-25T22:08:29.260909+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Meditation time: sit, breathe, let the day settle.",
+      "id": "5d98d6b1c08946bf",
+      "score": 0,
+      "severity": "low",
+      "source": "meditate",
+      "title": "Meditate - evening reset",
+      "topic": "habits",
+      "ts": "2026-07-25T22:08:29.260909+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Cleaning slot: reset one area before the night starts.",
+      "id": "329d62f90d9de777",
+      "score": 0,
+      "severity": "low",
+      "source": "cleaning",
+      "title": "Cleaning - quick tidy-up",
+      "topic": "habits",
+      "ts": "2026-07-25T22:08:29.260909+00:00",
+      "url": ""
     }
   ],
-  "exercise_slots_sent": [],
+  "exercise_slots_sent": [
+    "2026-07-25|18:00"
+  ],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -13821,6 +13825,21 @@
       "channel": "1515504253345726558",
       "habit": "water",
       "sent": "2026-07-25T09:38:22.092324+00:00"
+    },
+    "1530698283121381577": {
+      "channel": "1515504253345726558",
+      "habit": "exercise",
+      "sent": "2026-07-25T22:08:29.260909+00:00"
+    },
+    "1530698285759598645": {
+      "channel": "1515504253345726558",
+      "habit": "meditate",
+      "sent": "2026-07-25T22:08:29.260909+00:00"
+    },
+    "1530698287932243979": {
+      "channel": "1515504253345726558",
+      "habit": "cleaning",
+      "sent": "2026-07-25T22:08:29.260909+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-25",
@@ -14141,7 +14160,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-25T21:53:19.573523+00:00"
+    "ts": "2026-07-25T22:08:27.126725+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -14177,7 +14196,9 @@
   ],
   "learn_last_sent": "2026-07-25",
   "life_dashboard_last_week": "2026-W29",
-  "meditate_slots_sent": [],
+  "meditate_slots_sent": [
+    "2026-07-25|18:00"
+  ],
   "movie_news_seen": {
     "Avengers: Doomsday": [
       "db6cf6f82633faac",
@@ -15729,9 +15750,9 @@
       "last_ok": "2026-07-25T21:08:23.413761+00:00"
     },
     "habits": {
-      "last_data": "2026-07-25T21:53:21.975244+00:00",
+      "last_data": "2026-07-25T22:08:31.188892+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-25T21:53:19.573523+00:00"
+      "last_ok": "2026-07-25T22:08:27.126725+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15820,9 +15841,9 @@
       "last_ok": "2026-07-25T21:08:23.413761+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-25T21:53:21.730181+00:00",
+      "last_data": "2026-07-25T22:08:29.260442+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-25T21:53:19.573523+00:00"
+      "last_ok": "2026-07-25T22:08:27.126725+00:00"
     },
     "uv": {
       "last_data": "2026-07-25T21:10:47.205495+00:00",
