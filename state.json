@@ -1,5 +1,8 @@
 {
   "anthropic_seen": [
+    "f1ed3916d09b894a",
+    "18c64bebc5f060cf",
+    "3fad01c91a18241e",
     "9ec04793578e241c",
     "bfbc56182d2614f1",
     "9e827409d5529e1b",
@@ -64,7 +67,7 @@
     "29db49f64ce68661",
     "a8b1aff056453d2f"
   ],
-  "apod_last_sent": "2026-07-20",
+  "apod_last_sent": "2026-07-25",
   "astronomy_sent": [
     "2026-06-14|New moon tonight - d",
     "2026-06-21|June solstice today",
@@ -78,7 +81,8 @@
     "internet|2026-06-22|1",
     "rent|2026-06-30|5",
     "rent|2026-06-30|1",
-    "internet|2026-07-22|5"
+    "internet|2026-07-22|5",
+    "rent|2026-07-30|5"
   ],
   "blood_donation_last_notified": "2026-07-08",
   "cleaning_slots_sent": [],
@@ -86,12 +90,12 @@
     "last_id": "y6zvz7vDoH1s"
   },
   "digest_buffer": [],
-  "digest_last_sent": "2026-07-20",
+  "digest_last_sent": "2026-07-25",
   "discord_control": {
     "last_id": "1528610263908221090"
   },
-  "energy_learn_last_news": "2026-07-16",
-  "energy_learn_last_sent": "2026-07-20",
+  "energy_learn_last_news": "2026-07-25",
+  "energy_learn_last_sent": "2026-07-25",
   "energy_learn_seen": {
     "facts": [
       "baseload-vs-peaking",
@@ -137,6 +141,54 @@
     ]
   },
   "energy_seen_ids": [
+    "07f2ebe080a1defd",
+    "b32dc11055fe83ab",
+    "d18d573bae85f1f2",
+    "331be448487f30ec",
+    "36fde6673208d9ee",
+    "f39eaa05cfb4689f",
+    "ad70f95c727fac74",
+    "401cee71df90f454",
+    "826e8e6f3a7ecd8f",
+    "5f74a4156319b44f",
+    "b626e080bf0cb5e9",
+    "3bf3d511d30398ac",
+    "b72f7bee9b123e02",
+    "bff0e0787ff488ee",
+    "66c9cf214c961719",
+    "a3b7336cc6d8d84e",
+    "43bb4912dc49d90b",
+    "5b423f582d250563",
+    "f804696b3cbb0e8d",
+    "2b6275f02c030d81",
+    "5db84593af64dbe5",
+    "7da40d777fdaf531",
+    "451081ff663cd387",
+    "eb50110b8aed8604",
+    "c2fc72a70756d4d8",
+    "89365bf7b5166d18",
+    "365c07dddc50a4e8",
+    "025eef5d562956c4",
+    "313002e185d41150",
+    "bf4a2e0405a5d492",
+    "eb1739de9a937e0f",
+    "9b3983801e6815d1",
+    "1a2b7bf1534e0beb",
+    "8fdee4ccff344f7b",
+    "472de1d8a0543224",
+    "8f6f9138b0cd0a68",
+    "78a0fdbf274e1678",
+    "0ac254d170951f98",
+    "8ddcfb2176ef3ca0",
+    "cb0fb4cd0510c19f",
+    "70aa2b0b28e790a8",
+    "4f6e8f83301f346d",
+    "9f3590cf13574566",
+    "77b1801cbab722a0",
+    "128d205ba2525f8c",
+    "1d67c9aaec24f20a",
+    "4ddaca58b1610688",
+    "c4de8619b99a0339",
     "49daa0dbaa148625",
     "828ff2a5f6645363",
     "5d9dbbc71f70d289",
@@ -365,690 +417,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "392ae5d93884e4e3",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Fetroja",
-      "title": "FDA updates approval for Fetroja (Cefiderocol Sulfate Tosylate) (NDA209445)",
-      "topic": "fda",
-      "ts": "2026-07-07T21:56:53.076489+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=209445"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "b38223c6819b743c",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Kisqali",
-      "title": "FDA updates approval for Kisqali (Ribociclib Succinate) (NDA209092)",
-      "topic": "fda",
-      "ts": "2026-07-07T21:56:53.076760+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=209092"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "1af72dd712baa417",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Mayzent",
-      "title": "FDA updates approval for Mayzent (Siponimod) (NDA209884)",
-      "topic": "fda",
-      "ts": "2026-07-07T21:56:53.077031+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=209884"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "943b709417bd3fcc",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Xeljanz",
-      "title": "FDA updates approval for Xeljanz (Tofacitinib Citrate) (NDA213082)",
-      "topic": "fda",
-      "ts": "2026-07-07T21:56:53.077319+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213082"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "dbf6796d36c2167f",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Cibinqo",
-      "title": "FDA updates approval for Cibinqo (Abrocitinib) (NDA213871)",
-      "topic": "fda",
-      "ts": "2026-07-07T21:56:53.077639+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213871"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "e94a698c8b4dcb5d",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Rinvoq",
-      "title": "FDA updates approval for Rinvoq (Upadacitinib) (NDA211675)",
-      "topic": "fda",
-      "ts": "2026-07-07T21:56:53.077942+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211675"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "b95be3bac357a6ed",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Soliris",
-      "title": "FDA updates approval for Soliris (Eculizumab) (BLA125166)",
-      "topic": "fda",
-      "ts": "2026-07-07T21:56:53.078204+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125166"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "d708ac33e5f8ca10",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Xeljanz",
-      "title": "FDA updates approval for Xeljanz (Tofacitinib Citrate) (NDA203214)",
-      "topic": "fda",
-      "ts": "2026-07-07T21:56:53.078455+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203214"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "f01809575abd2f67",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Xeljanz Xr",
-      "title": "FDA updates approval for Xeljanz Xr (Tofacitinib Citrate) (NDA208246)",
-      "topic": "fda",
-      "ts": "2026-07-07T21:56:53.078704+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208246"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "a2d4c2bd7b1006b2",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Anzupgo",
-      "title": "FDA updates approval for Anzupgo (Delgocitinib) (NDA219155)",
-      "topic": "fda",
-      "ts": "2026-07-07T21:56:53.078991+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219155"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "c3b62a279099bbc8",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Olumiant",
-      "title": "FDA updates approval for Olumiant (Baricitinib) (NDA207924)",
-      "topic": "fda",
-      "ts": "2026-07-07T21:56:53.079243+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=207924"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "4a0f2d0d5696a5e7",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Parlodel",
-      "title": "FDA updates approval for Parlodel (Bromocriptine Mesylate) (NDA017962)",
-      "topic": "fda",
-      "ts": "2026-07-07T21:56:53.079489+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=017962"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "c105e1cc86d27cc2",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Opzelura",
-      "title": "FDA updates approval for Opzelura (Ruxolitinib Phosphate) (NDA215309)",
-      "topic": "fda",
-      "ts": "2026-07-07T21:56:53.079735+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215309"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "9c4e47265dbc2a7c",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Onapgo",
-      "title": "FDA updates approval for Onapgo (Apomorphine Hydrochloride) (NDA214056)",
-      "topic": "fda",
-      "ts": "2026-07-07T21:56:53.080011+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=214056"
-    },
-    {
-      "action": "push",
-      "detail": "Inundaci\u00f3n tormentas el\u00e9ctricas. Acumulados de precipitaciones esperados entre 50 y 75 mil\u00edmetros, pudiendo ser superiores en lugares aislados.\n\nProvincias: Monse\u00f1or Nouel",
-      "id": "3b8c2e6ac5298518",
-      "score": 80,
-      "severity": "high",
-      "source": "ONAMET",
-      "title": "INDOMET: ALERTA POR INUNDACIONES REPENTINAS (Monse\u00f1or Nouel)",
-      "topic": "onamet",
-      "ts": "2026-07-07T21:57:03.890141+00:00",
-      "url": "https://cap-sources.s3.amazonaws.com/do-indomet-es/2026-07-07-21-18-43.xml"
-    },
-    {
-      "action": "push",
-      "detail": "Inundaci\u00f3n tormentas el\u00e9ctricas. Acumulados de precipitaciones esperados entre 50 y 75 mil\u00edmetros, pudiendo ser superiores en lugares aislados.\n\nProvincias: Monte Plata",
-      "id": "59d83ec4be3a1c90",
-      "score": 80,
-      "severity": "high",
-      "source": "ONAMET",
-      "title": "INDOMET: ALERTA POR INUNDACIONES REPENTINAS (Monte Plata)",
-      "topic": "onamet",
-      "ts": "2026-07-07T21:57:04.328205+00:00",
-      "url": "https://cap-sources.s3.amazonaws.com/do-indomet-es/2026-07-07-21-17-11.xml"
-    },
-    {
-      "action": "push",
-      "detail": "Inundaci\u00f3n tormentas el\u00e9ctricas. Acumulados de precipitaciones esperados entre 50 y 75 mil\u00edmetros, pudiendo ser superiores en lugares aislados.\n\nProvincias: San Pedro De Macor\u00ecs",
-      "id": "11f5605b2e330d36",
-      "score": 80,
-      "severity": "high",
-      "source": "ONAMET",
-      "title": "INDOMET: ALERTA POR INUNDACIONES REPENTINAS (San Pedro De Macor\u00ecs)",
-      "topic": "onamet",
-      "ts": "2026-07-07T21:57:04.858266+00:00",
-      "url": "https://cap-sources.s3.amazonaws.com/do-indomet-es/2026-07-07-21-15-15.xml"
-    },
-    {
-      "action": "push",
-      "detail": "Inundaci\u00f3n tormentas el\u00e9ctricas. Acumulados de precipitaciones esperados entre 50 y 75 mil\u00edmetros, pudiendo ser superiores en lugares aislados.\n\nProvincias: San Crist\u00f2bal",
-      "id": "0f17a38fdb27c53d",
-      "score": 80,
-      "severity": "high",
-      "source": "ONAMET",
-      "title": "INDOMET: ALERTA POR INUNDACIONES REPENTINAS (San Crist\u00f2bal)",
-      "topic": "onamet",
-      "ts": "2026-07-07T21:57:05.346923+00:00",
-      "url": "https://cap-sources.s3.amazonaws.com/do-indomet-es/2026-07-07-21-13-06.xml"
-    },
-    {
-      "action": "push",
-      "detail": "Inundaci\u00f3n tormentas el\u00e9ctricas. Acumulados de precipitaciones esperados entre 50 y 75 mil\u00edmetros, pudiendo ser superiores en lugares aislados.\n\nProvincias: El Gran Santo Domingo",
-      "id": "2e1364c7bb93c4ee",
-      "score": 80,
-      "severity": "high",
-      "source": "ONAMET",
-      "title": "INDOMET: ALERTA POR INUNDACIONES REPENTINAS (El Gran Santo Domingo)",
-      "topic": "onamet",
-      "ts": "2026-07-07T21:57:06.015901+00:00",
-      "url": "https://cap-sources.s3.amazonaws.com/do-indomet-es/2026-07-07-21-04-01.xml"
-    },
-    {
-      "action": "push",
-      "detail": "Water break! A few sips now keeps you sharp.",
-      "id": "8d7ee46619ab7ee4",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-07-07T21:57:27.978854+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "The summer of 1942 saw the German war machine, still largely unbroken, sweep across the vast plains of southern Russia. Hitler, consumed by a blend of ideological fury and a desperate need for the Caucasus oilfields, diverted his Sixth Army, under the command of General Paulus, towards Stalingrad. This city, named for the Soviet dictator, was not just a strategic prize on the Volga, controlling vital river and rail routes; it was a symbol, a psychological battleground. For the Soviets, led by Vasily Chuikov's 62nd Army, losing Stalingrad would be an unbearable blow to morale and a potential opening to the oil that fueled their war effort. The stage was set for a confrontation of unparalleled brutality, a grinder of human flesh and spirit where neither side could afford to yield an inch.\n\nThe battle for Stalingrad was not fought in grand maneuvers across open fields, but in the ruins of a city pulverized by relentless bombing and artillery. It was a close-quarters, savage affair, a \"rat war\" as the Germans called it, waged in cellars, sewers, factory floors, and shattered apartment blocks. Snipers became legends, like Vasily Zaytsev, whose exploits were immortalized in propaganda, while German Stormtroopers meticulously cleared building after building, only for the Soviets to counter-attack and reclaim the ground, often just hours later. Food and water were scarce, medical supplies nonexistent, and the bitter Russian winter began to descend, adding frostbite and disease to the already colossal casualty lists. The human drama unfolded in countless individual struggles for survival, in the desperate attempts to hold a single room, a single staircase, a single sliver of concrete, knowing that retreat meant not just defeat, but almost certain death from either enemy fire or Soviet commissars.\n\nAs the fighting inside the city reached a fever pitch, a far greater strategic maneuver was unfolding. While Paulus's Sixth Army became bogged down in the urban labyrinth, Stalin and his generals, Zhukov and Vasilevsky, meticulously planned Operation Uranus. This audacious counter-offensive aimed to encircle the entire German force by striking at the weakly defended Romanian and Hungarian flanks, which protected the main German thrust. On November 19, 1942, the Soviet pincer movements, employing fresh armies and vast quantities of tanks, smashed through the Axis allies, meeting days later near Kalach-on-Don, effectively trapping the Sixth Army within the ruins of Stalingrad. The German high command, paralyzed by Hitler's refusal to allow a breakout, ordered Paulus to hold, promising a relief force that never materialized, condemning his men to a slow, agonizing demise.\n\nThe encirclement marked the turning point of the Battle of Stalingrad, and arguably, the entire Eastern Front. For over two months, the trapped German soldiers, cut off from supplies and facing starvation and the relentless Soviet advance, endured unimaginable suffering. Operation Winter Storm, a desperate German attempt to relieve Paulus, failed, leaving the Sixth Army utterly isolated. On February 2, 1943, after over five months of unrelenting combat, Paulus, promoted to Field Marshal by Hitler in a last-ditch effort to inspire him to fight to the death, surrendered. Over 90,000 German soldiers, emaciated and frostbitten, marched into Soviet captivity, a fate from which most would never return.",
-      "id": "272eed6b863b67a1",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The Battle of Stalingrad",
-      "topic": "learn",
-      "ts": "2026-07-07T21:57:33.565970+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cBotany is the school for patience, and it\u2019s amateurs learn resignation from daily disappointments.\u201d\n\u2014 Thomas Jefferson\n\nThomas Jefferson, a man whose name is synonymous with the very bedrock of American democracy, was a figure of profound contradictions and insatiable curiosity. Beyond the grand pronouncements of liberty and the intricate dance of nation-building, he was a polymath, his mind a restless engine churning through philosophy, architecture, agriculture, and, crucially, the natural sciences. His estate at Monticello, far from being merely a plantation, was a living laboratory, a testament to his belief in reason and experimentation. It was in this spirit of relentless inquiry, of hands-on engagement with the world, that he uttered the deeply insightful observation about botany. He wasn't merely a casual observer; he was a dedicated gardener, a planter of new crops, an experimenter with different breeds and strains, intimately familiar with the cycles of growth, decay, and the often-unpredictable whims of nature. His commitment to botany wasn't a recreational dalliance; it was a serious pursuit, intertwined with his vision for an agrarian republic, a nation whose prosperity and independence he believed would be rooted in the land.\n\nThe late 18th and early 19th centuries, the era in which Jefferson lived, was a crucible of intellectual ferment. The Enlightenment, with its emphasis on reason, empirical observation, and human progress, had irrevocably reshaped how thinkers viewed the world. Science was no longer confined to cloistered academics but was becoming a driving force in practical applications, from improving agricultural yields to understanding disease. Jefferson, a quintessential Enlightenment man, saw no division between intellectual pursuit and practical utility. For him, the study of botany was not an esoteric hobby but a vital tool for national development. His correspondence is filled with requests for seeds from distant lands, detailed notes on planting techniques, and observations on the performance of various species. He was constantly striving to find better crops, more resilient varieties, and innovative farming methods to sustain a growing nation. This was a time when the vast wilderness of the North American continent was still largely uncharted, its biodiversity an open book waiting to be read. The Lewis and Clark expedition, famously commissioned by Jefferson, was as much a scientific undertaking to document flora and fauna as it was a geographical exploration.\n\nAnd so, when Jefferson spoke of botany as \"the school for patience\" and its amateurs learning \"resignation from daily disappointments,\" he wasn't speaking abstractly. He was articulating a profound truth born of countless hours spent observing, planting, tending, and, inevitably, facing setbacks. He knew the frustration of a frost-damaged crop, the disappointment of a seed that failed to germinate, the constant battle against pests and disease. Yet, he persevered, understanding that progress, whether in the garden or in the grand experiment of nation-building, required an unwavering commitment to the long game, a willingness to accept temporary failures as stepping stones to eventual success.",
-      "id": "f2602a9df637b09d",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Thomas Jefferson",
-      "topic": "wikiquote",
-      "ts": "2026-07-07T21:57:38.374668+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "d5e73185ff4a743d",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Fans Are Convinced Final Trailer Is Releasing Very, Very Soon - Yahoo",
-      "topic": "movies",
-      "ts": "2026-07-08T00:13:56.570355+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNUDNaMVB0MVNFZDJxb0pnTzBTcnc0YTBCUktaMzc2LXdtOG5Hc3NSZUZLaGg3MVhJQmtHUUo4VXcwekNqSzNxVnBsTDBXUUVaX2dUaHRzMlU3MUpnTDZ1VW5nZFVBMTFyUkszeWZJQlE5SWxzWjd0aDdFNnlTZnZCVjItdEl3d0p2dzFLTHFmb1FlSk95dzJR?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "67e89f240b9828a4",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "How Tom Holland Surprised Zendaya with Her Casting in \u2018The Odyssey\u2019 - People.com",
-      "topic": "movies",
-      "ts": "2026-07-08T00:13:57.265562+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPYmVWdEhwT3ZrTUVrUDM4ZnlXamU5VXZ1ekxIVkxBdF9Jdk9JRUpLRVFoeWZBeFR3OVV4OVBaUXdtcFh6SDR3OHMzeHc2WWRZcXBKM09aRFZhZUZjcnRuRDRUclVIcHIzMERraGQyWUNNUzhJMzU0QVo0RWlmT2UwRzdnWWRncGRlRm00TjNQZU9LOVRqSjVRZw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "4c5650cad581644b",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-07-08T00:14:41.825270+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "Our journey begins not with a hero in shining armor, but with a tyrant. Gilgamesh, king of Uruk, was a figure of immense power and equally immense arrogance. Two-thirds god and one-third human, he was a being of unparalleled strength, but also of unchecked will. He built magnificent walls around Uruk, a testament to his ambition, but he also oppressed his people, taking their sons for labor, their daughters for his pleasure. The citizens, weary of his rule, cried out to the gods for respite. In response, the gods crafted Enkidu, a wild man raised among animals, a primordial force of nature designed to be Gilgamesh\u2019s equal, his foil, his challenge. The stage was set for a clash of titans, a confrontation that would not only define these two individuals but would echo through the very foundations of human storytelling.\n\nThe first encounter between Gilgamesh and Enkidu was indeed a spectacle, a monumental wrestling match that shook the city. But instead of enmity, a profound and unexpected bond formed. They recognized in each other a kindred spirit, a reflection of their own immense power and burgeoning humanity. Their shared strength, once a tool of oppression and untamed wildness, now found a new purpose: adventure. Together, they journeyed to the Cedar Forest to confront Humbaba, the monstrous guardian appointed by the god Enlil. This was a pivotal moment, not just for the heroes, but for the narrative itself. Their victory over Humbaba, while celebrated, also drew the ire of the gods, particularly Ishtar, the goddess of love and war, whom Gilgamesh spurned with a torrent of insults. Her vengeance was swift and terrible, sending the Bull of Heaven to ravage Uruk, a beast the two heroes bravely defeated. But defying the gods, especially a goddess as formidable as Ishtar, always carried a steep price.\n\nThe cost of their hubris was exacted in the most painful way imaginable: the death of Enkidu. The gods decreed that one of them must die for their transgressions, and Enkidu, being less divine, was chosen. Gilgamesh, who had never truly confronted mortality, was shattered. He witnessed the slow, agonizing decline of his friend, and for the first time, the chill of his own inevitable end truly pierced him. This personal tragedy transformed the epic from a tale of heroic exploits into a profound meditation on life and death. Driven by an all-consuming fear of oblivion, Gilgamesh embarked on a desperate quest for immortality, a journey that took him to the ends of the earth, to the very gates of the underworld, to seek out Utnapishtim, the only human granted eternal life after the great flood.\n\nGilgamesh's journey to Utnapishtim was a crucible, stripping away his arrogance and forcing him to confront the raw, unforgiving nature of existence. He faced terrifying scorpions, navigated the Waters of Death, and endured tests of endurance and faith. Utnapishtim, the wise ancient, revealed to Gilgamesh that immortality was a unique gift, not a prize to be won. Yet, in a gesture of compassion, he offered a chance at rejuvenation: a magical plant at the bottom of the sea. Gilgamesh retrieved the plant, but in a cruel twist of fate, a serpent stole it while he rested, devouring its essence and shedding its skin, a powerful symbol of cyclical renewal and the elusiveness of eternal life for humanity. Defeated, but profoundly changed, Gilgamesh returned to Uruk.",
-      "id": "81276112551b7c5c",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The Epic of Gilgamesh",
-      "topic": "learn",
-      "ts": "2026-07-08T00:15:07.923209+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cPlaudite, amici, comedia finita est. (Applaud, my friends, the comedy is over.)\u201d\n\u2014 Ludwig van Beethoven\n\nThe final scene was often shrouded in legend, a whisper passed through the generations. For Ludwig van Beethoven, a man whose life was a symphony of both triumph and torment, even his exit from the stage carried a theatrical grandeur. \u201cPlaudite, amici, comedia finita est,\u201d he is said to have uttered, or perhaps scribbled, in the waning moments of his existence: \u201cApplaud, my friends, the comedy is over.\u201d To understand the poignant irony, the defiant bravado of those words, one must first grasp the colossal figure he was. Born in Bonn in 1770, Beethoven inherited the classical traditions of Haydn and Mozart, but he was destined to shatter their elegant forms, to push music into realms of emotional depth and dramatic power previously unexplored. He was a revolutionary not of the guillotine, but of the orchestra pit, reshaping the very language of sound as Napoleon reshaped the map of Europe. His early years in Vienna were marked by dazzling virtuosity at the keyboard, a charming if somewhat volatile personality, and a burgeoning reputation that promised a glittering future. Yet, a shadow was already beginning to fall, a cruel twist of fate that would define the second half of his life: the creeping, inexorable onset of deafness.\n\nThe \"comedy\" he spoke of, then, was no lighthearted farce. It was a life lived in a world of increasingly muffled sound, a composer of soaring symphonies condemned to a profound silence. By the time he uttered those famous words on March 26, 1827, Beethoven was a titan, a living legend whose fame stretched across continents, yet a man deeply isolated by his affliction and his often-difficult temperament. He had long since ceased to perform publicly, communicating through \"conversation books\" where visitors would write their questions for him to answer. The Vienna of his final years was a city still reeling from the Napoleonic Wars, a city under the watchful eye of Metternich's conservative regime, where the revolutionary fervor that had once fueled Europe was being gradually suppressed. Beethoven, in his relentless pursuit of artistic freedom and expression, stood as a monument to an earlier, bolder era. His final years were plagued by illness \u2013 liver disease, dropsy, and a host of other ailments \u2013 a slow, agonizing decline. The world had heard his Ninth Symphony, a work of unparalleled scope and humanistic vision, just a few years prior, a testament to his enduring genius even in the face of such suffering. The irony of a deaf composer creating such a masterpiece of sound was not lost on his contemporaries; it was an act of pure, unadulterated will.\n\nAnd this is why Beethoven's valedictory pronouncement continues to resonate with such power today. It is not merely the final words of a great artist; it is a defiant, almost sardonic commentary on the human condition itself. The \"comedy\" was the struggle, the pain, the profound irony of his deafness, the battles he fought with illness, with patrons, with his own turbulent spirit. Yet, through it all, he created music that transcended his personal suffering, music that spoke to the universal human experience of joy, sorrow, struggle, and triumph.",
-      "id": "8a6e3f8fb0fb18d7",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Ludwig van Beethoven",
-      "topic": "wikiquote",
-      "ts": "2026-07-08T00:15:12.952094+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "7c96f4a49d3cfdb7",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Fans Are Convinced Final Trailer Is Releasing Very, Very Soon - Yahoo",
-      "topic": "movies",
-      "ts": "2026-07-08T03:48:18.807846+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUHVMNGNRTzVoNHNfUlR4M2tZSXE1dWE5bURxVTBHNnJsOFpocHEyRE40M25VS2x1WEw5bzJoNkZRd0xaUmJsS2JnOGx3TmZwbFAtbGFHWDg1U3czb3MzN2I3emJxRDA5Z0pDN3lpSUgxVWxRdGh1ZWFJUW56SVZBU1ROazhiTWp2R2R4RnU1eVYxZWh4TjNV?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "3559c314a7a9563f",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "Christopher Nolan's 'The Odyssey' gets overwhelmingly negative reactions after controversial casting choices - Fox News",
-      "topic": "movies",
-      "ts": "2026-07-08T03:48:19.832338+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNb0NPLWlicnMxWDZrb0JWYUtRTDU5cE52czI1cFFtNzc2MXdGdkJ4dUlFUDlpeFpXTThCNXJlaURFWXhaN1NqNUJkNF8zNXQ1elMxUWFEemdIdnBNQ24zdWtYbFFGRF9rSnlvWExLcnc5VTV1RXBwalFRRjVIdThfRzRNMGlXQ3FNVGxBUHZQMG9SbUxkVU1sWmhjZndiQ1d4NGtudWIyQ2hidEh4YzN1ZjBVS0Y2Y3hrWUlrX2hRQU92WmlnSHB3azZn?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "In the quiet dawn of June 30th, 1908, a sleepy corner of Siberia was about to witness an event so profoundly energetic, so utterly mystifying, that its echoes would ripple through science and imagination for over a century.  There were no grand armies involved, no political machinations, but rather a terrifyingly impersonal force from beyond our world, impacting a vast, largely uninhabited stretch of taiga.  The human element, initially, was one of bewildered terror and then, decades later, of dogged scientific pursuit. Indigenous Evenki people, reindeer herders living their ancient nomadic lives, were the first and most immediate witnesses to the celestial cataclysm, their traditional ways of life suddenly and violently interrupted by a phenomenon utterly beyond their comprehension, forever altering their relationship with the seemingly unchanging sky above.\n\nAt approximately 7:17 AM local time, an object, believed to be a meteoroid or comet, descended through Earth's atmosphere. It did not strike the ground, as might be expected of a falling body, but instead detonated in an airburst, estimated to be 5-10 kilometers above the surface. The sheer power released was staggering, equivalent to approximately 10-15 megatons of TNT \u2013 a thousand times more powerful than the atomic bomb dropped on Hiroshima. The immediate effects were apocalyptic: a searing flash of light visible for hundreds of kilometers, followed by a shockwave that flattened an estimated 80 million trees across 2,150 square kilometers, scorching and stripping bark from those that remained standing at the epicenter. Residents of Kirensk, 400 kilometers away, reported a blinding light and a deafening roar, feeling the ground shake violently and seeing doors flung open. One Evenki man, close to the blast, was reportedly thrown several meters into the air, waking to find his yurt destroyed and his herd scattered, the very ground seeming to burn beneath him.\n\nFor decades, the Tunguska event remained shrouded in mystery, a testament to the remoteness of the site and the political turmoil of early 20th-century Russia. The first scientific expedition, led by Russian mineralogist Leonid Kulik, finally reached the site in 1927, nearly two decades after the blast. What he found was not the expected impact crater, but rather a vast expanse of felled trees, all radiating outwards from a central point, like spokes on a colossal wheel. This absence of a crater, coupled with the extraordinary scale of destruction, only deepened the enigma. Kulik's tireless efforts, often conducted under arduous conditions and with limited resources, laid the groundwork for future research, sparking a century-long quest to understand what truly happened that fateful morning. His unwavering dedication, driven by a profound scientific curiosity, exemplifies the enduring human desire to unravel the universe's secrets, even in the face of daunting challenges.\n\nThe Tunguska event profoundly matters not just as a historical curiosity, but as a stark reminder of our planet's vulnerability to cosmic impacts. It demonstrated that even an airburst, without direct ground impact, can unleash devastating power over a vast area. This understanding has been crucial in the development of planetary defense strategies, prompting scientists to actively track near-Earth objects and consider potential mitigation techniques should a similar threat emerge.",
-      "id": "03c260bc44167ff2",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The Tunguska event of 1908",
-      "topic": "learn",
-      "ts": "2026-07-08T03:49:30.328935+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cHappiness is the final and perfect fruit of obedience to the laws of life.\u201d\n\u2014 Helen Keller\n\nThe voice, if it could be called that, was not hers. It was a mediated sound, translated by the nimble fingers of Annie Sullivan, into a world Helen Keller experienced not through the shimmering veil of light or the vibrant tapestry of sound, but through the profound and intimate language of touch. Born in 1880, Helen's life took a catastrophic turn at just 19 months old, a mysterious illness stealing her sight and hearing, plunging her into a silence and darkness that, for years, seemed impenetrable. She was a wild child, untamed by the conventional channels of communication, a prisoner within her own mind, until that fateful day in 1887 when Annie arrived. What followed was not merely education, but a liberation, a forging of a human spirit against overwhelming odds. When she spoke of \"obedience to the laws of life,\" it was not a passive surrender, but an active, disciplined engagement with the very fabric of existence, a testament to the meticulous, sometimes agonizing, process of understanding and adapting to a world that had initially offered her no entrance.\n\nThe early 20th century, the crucible in which Helen Keller\u2019s philosophy matured, was a time of immense social and scientific upheaval. The roar of industrialization, the burgeoning women\u2019s suffrage movement, the echoes of Darwinian thought challenging established beliefs \u2013 all this was happening around a woman who, in her own unique way, was pushing the boundaries of human potential. She was not just a symbol of overcoming disability; she became a global advocate for the marginalized, a socialist, a pacifist, and a suffragist. Her experiences, meticulously detailed in books like \u201cThe Story of My Life,\u201d provided a window into a mind that, despite its sensory limitations, possessed an extraordinary capacity for empathy and intellectual inquiry. When she uttered the words, \"Happiness is the final and perfect fruit of obedience to the laws of life,\" it was not the naive pronouncement of someone untouched by suffering. Rather, it was the hard-won wisdom of a woman who had, through rigorous self-discipline and an unwavering commitment to understanding, found a profound sense of purpose and joy in a life that many would have deemed utterly desolate. For her, the \"laws of life\" were not external commandments, but the inherent principles of growth, adaptation, and interconnectedness that she, more than most, had to painstakingly discern and embrace.\n\nToday, in a world often characterized by its relentless pursuit of instant gratification and external validation, Helen Keller\u2019s words resonate with a quiet power. We are bombarded with messages that equate happiness with material possessions, fleeting pleasures, or the absence of struggle. Yet, Keller\u2019s dictum reminds us that true, enduring happiness is a harvest, not a discovery, the culmination of a deliberate cultivation of character and understanding.",
-      "id": "3536b1646837cc52",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Helen Keller",
-      "topic": "wikiquote",
-      "ts": "2026-07-08T03:49:35.392769+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "9243d63e14f72ccd",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "\u2018The Odyssey\u2019 Movie Restricts Comments Amid Heated Casting Backlash - Newsweek",
-      "topic": "movies",
-      "ts": "2026-07-08T06:17:46.410670+00:00",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQ1BORi13T2N1SWJfc0xpdlRpRjZOREk4VFlsWlh4MkRaRGdEMngyNnhYVWVSbGFIekRsaGNMakdoOEpBeGFGOF94Y3V6bmhUaEF3ZktERktZcF9Tc3RRTTE5M2hsVFhDTlZ5LTJmc1BMZjlBSllnUFBHay1MTWNlSkFyekR3bmlOM1U3UklIeHE5RmYxTlA1X3d3UGVXS3BU?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "6859337fbcf53440",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-07-08T06:18:52.131079+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "For millennia, humanity\u2019s relationship with the earth had been one of observation and collection. Stone, bone, wood \u2013 these were the materials of our earliest tools, shaped by patient hands and keen eyes. But in the crucible of the late Neolithic, a profound shift began, born not of mere gathering, but of deliberate transformation. It started with a glint in the fire, perhaps an accidental melting of copper ore amidst the ashes of a hearth, or the curious observation of a particularly heavy, reddish stone. These early prospectors, likely indistinguishable from their farming brethren, were nevertheless marked by a different kind of curiosity, a willingness to experiment with the very fabric of the earth itself. They were the first metallurgists, individuals who saw not just a rock, but a potential, a hidden power that could be coaxed out with heat and ingenuity. Their identities are lost to us, but their legacy, shimmering with the promise of a new age, is undeniable.\n\nThe discovery was not a singular event, but a series of interconnected revelations that rippled across continents. Early experimentation focused on native copper, found in its pure metallic state, which could be hammered into shape. This was a direct extension of stone working, albeit with a more malleable material. The true revolution, however, arrived with the understanding of smelting \u2013 the process of extracting metal from ore by heating it to high temperatures, often in a specialized furnace with charcoal as a reducing agent. This wasn't merely shaping; it was alchemy, a magical act that transformed dull rock into gleaming metal. The human drama here is palpable: imagine the sheer awe of the first person to witness molten copper pour from a crucible, a liquid fire that solidified into a form far stronger and more versatile than anything previously known. The tools of these early metallurgists were rudimentary \u2013 bellows made of animal hides, ceramic crucibles, stone hammers \u2013 but the principles they established laid the groundwork for all subsequent metallurgy.\n\nThe widespread adoption of bronze, an alloy of copper and tin, marked the true beginning of the Bronze Age, an era that redefined human capabilities. Tin, a much rarer metal, became a precious commodity, sparking vast trade networks that stretched across continents, from the tin mines of Cornwall to the metallurgical centers of the Near East. This demand for tin fundamentally reshaped societies. It created specialists: miners, smelters, smiths, and merchants, whose skills and knowledge became invaluable. The tools and weapons fashioned from bronze were superior to their stone predecessors, allowing for more efficient agriculture, more effective warfare, and the creation of more intricate artistry. This new material not only enabled the construction of stronger implements but also fostered a mindset of innovation, a belief in the power of human ingenuity to bend nature to its will. The very concept of wealth began to shift, moving beyond mere foodstuffs to include the enduring value of metal.\n\nThe Bronze Age, ushered in by these metallurgical breakthroughs, was a period of immense social and technological change. It saw the rise of complex urban centers, the development of early writing systems, and the formation of powerful kingdoms, all underpinned by the superior tools and weapons that bronze provided.",
-      "id": "d7fb4589472ccf20",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The dawn of metallurgy in the Bronze Age",
-      "topic": "learn",
-      "ts": "2026-07-08T06:19:17.109804+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cI had too much stuff. My machines came from too far away.\u201d\n\u2014 Richard Feynman\n\nRichard Feynman, a name synonymous with a mischievous intellect and a profoundly unorthodox approach to the universe, was much more than a physicist. He was a performance artist of science, a bongo-playing showman who could unlock the secrets of quantum electrodynamics with a few scribbled diagrams and a disarming wink. Born in Queens, New York, in 1918, Feynman\u2019s early life was marked by an insatiable curiosity and a brilliant, if sometimes rebellious, mind. He devoured knowledge, not out of academic obligation, but out of a deep-seated desire to understand how the world, in all its perplexing glory, truly worked. This spirit of playful exploration, even amidst the most serious of scientific endeavors, would define his career. By the time he uttered the words \"I had too much stuff. My machines came from too far away,\" Feynman was a Nobel laureate, a towering figure in physics, and deeply involved in the investigation of the Challenger space shuttle disaster.\n\nThe context of his reflection was the aftermath of the Challenger tragedy in 1986. Feynman, brought onto the Rogers Commission, wasn't there to rubber-stamp an official narrative. His role, as he saw it, was to unearth the truth, no matter how uncomfortable. He famously demonstrated the flaw in the O-rings using a simple glass of ice water, cutting through layers of bureaucracy and technical jargon with a directness that was both refreshing and devastating. His quote, then, speaks to a broader critique of the system that allowed the disaster to happen \u2013 a system where complexity had bred opacity, where components were outsourced and disconnected, leading to a loss of accountability and a failure of understanding. The \"too much stuff\" wasn't just physical clutter; it was a metaphor for an overly complex organizational structure, a disconnect between the engineers on the ground and the decision-makers far removed from the actual mechanics of the spacecraft. The \"machines came from too far away\" highlighted a fragmentation of responsibility, where no single entity truly understood the entire system, creating dangerous blind spots.\n\nFeynman's words resonate powerfully today, long after the Challenger disaster. In an increasingly globalized and complex world, where supply chains stretch across continents and technological systems become ever more intricate, the perils he identified are magnified. We grapple with the fragility of interconnected systems, whether it's the global economy, the internet, or our own digital lives. The temptation to accumulate \"too much stuff\" \u2013 be it data, disparate technologies, or unwieldy organizational structures \u2013 remains ever-present. And the danger of \"machines coming from too far away\" \u2013 a lack of transparency, understanding, or control over the origins and inner workings of our critical components and systems \u2013 is a constant threat. Feynman's wisdom serves as a timeless cautionary tale, reminding us that true understanding and accountability are paramount, especially when the stakes are as high as human lives or the very fabric of our modern existence. It\u2019s a call to simplify, to connect, and above all, to understand.",
-      "id": "0642f3463a4ad34b",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Richard Feynman",
-      "topic": "wikiquote",
-      "ts": "2026-07-08T06:19:21.190926+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "31a85e74ddd578a8",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "\u2018Avengers: Doomsday\u2019 Trailer Reportedly Gets Release Date and Exact Time Revealed - IMDb",
-      "topic": "movies",
-      "ts": "2026-07-08T10:50:40.729933+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4zTWVnZndkZG9jR2tGbjZ3ZHVHNXJ6R2FCWmdXV2NnQWNPS1RjM1NYZlN3QVJhTEdIbVlpQ3htRy1FSEtaZC1fLXVoUlgzdHNQU2RKclVNeGR2QUU1LW5rMmU1WjJha3c?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "8f83767961dc002e",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Leqselvi",
-      "title": "FDA updates approval for Leqselvi (Deuruxolitinib Phosphate) (NDA217900)",
-      "topic": "fda",
-      "ts": "2026-07-08T10:51:11.103096+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=217900"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "349b82d5b8bd5a03",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Sotyktu",
-      "title": "FDA updates approval for Sotyktu (Deucravacitinib) (NDA214958)",
-      "topic": "fda",
-      "ts": "2026-07-08T10:51:11.103414+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=214958"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "fe9e2244f78aaf74",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Litfulo",
-      "title": "FDA updates approval for Litfulo (Ritlecitinib Tosylate) (NDA215830)",
-      "topic": "fda",
-      "ts": "2026-07-08T10:51:11.103681+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215830"
-    },
-    {
-      "action": "push",
-      "detail": "Imagine a time before the digital age, a world grappling with the very foundations of computation, long before the internet, personal computers, or even the concept of a \"program\" as we understand it today. In the fertile intellectual landscape of the 1930s, brilliant minds were laying the groundwork for what would become information theory and computer science. Among them was Alan Turing, a young British mathematician of exceptional insight, whose work would prove foundational yet also contain a profoundly unsettling revelation. He was not alone in this pursuit; others like Alonzo Church and Emil Post were also exploring the limits of what could be mechanically calculated, developing their own formal systems to capture the essence of computation.\n\nTuring, in his seminal 1936 paper \"On Computable Numbers, with an Application to the Entscheidungsproblem,\" introduced the concept of the Turing machine \u2013 a theoretical device that, despite its simplicity, could perform any computation that a human mathematician could. It was a revolutionary abstraction, providing a precise definition of what it meant for something to be \"computable.\" But within this groundbreaking work lay a deep, almost philosophical problem that would echo through the decades: the Halting Problem. Turing posed a seemingly straightforward question: could we design a universal algorithm, a master program, that could take any other program and its input, and unfailingly determine whether that program would eventually stop (halt) or run forever in an infinite loop?\n\nThe drama unfolded not in a grand public debate, but in the quiet, rigorous world of mathematical proof. Turing\u2019s genius lay in his elegant and utterly devastating demonstration that no such universal algorithm could exist. He used a technique known as proof by contradiction, a brilliant intellectual maneuver akin to a logical judo throw. Imagine such a universal \"halting detector\" program exists. Turing then constructs a new, devilish program that uses this detector as a subroutine. This new program, let's call it \"Turing's Bane,\" when given a program P as input, asks the detector if P would halt. If the detector says P *would* halt, Turing's Bane enters an infinite loop. But if the detector says P *would not* halt, Turing's Bane then halts. Now, the crucial step: what happens if we feed Turing's Bane *itself* as input to Turing's Bane? If Turing's Bane halts, then by its own logic, it should enter an infinite loop. If Turing's Bane enters an infinite loop, then by its own logic, it should halt. This inescapable paradox proves that the initial assumption \u2013 that a universal halting detector exists \u2013 must be false.\n\nThe implications of the Halting Problem are profound and far-reaching, extending far beyond the abstract world of mathematical logic. It establishes an inherent limit to what computers, no matter how powerful, can ever achieve. It means that certain fundamental questions about programs are undecidable; there will always be programs for which we cannot mechanically determine if they will ever finish. This has practical consequences in software engineering, where the dream of a fully automated debugger that can detect all infinite loops is forever out of reach. More broadly, it underscores the inherent unpredictability and complexity that can arise even from simple computational rules, a theme that resonates in fields from chaos theory to the very limits of scientific knowledge.",
-      "id": "f9f6540ed24ca543",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The halting problem",
-      "topic": "learn",
-      "ts": "2026-07-08T10:51:44.574972+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cAll that had thus far counted as limit, as measuring determination, proved itself here but artificial\u201d\n\u2014 Friedrich Nietzsche\n\nFriedrich Nietzsche, the philosopher who dared to declare God dead, was a figure of profound contradictions and incandescent intellect, a man whose life, tragically cut short by mental collapse, mirrored the turbulent currents of his thought. Born in 1844 in R\u00f6cken, Prussia, a pastor\u2019s son steeped in Lutheran piety, he was destined for a life of quiet academic contemplation, becoming a professor of classical philology at the tender age of 24. Yet, even as he dissected ancient Greek texts, a restless, subversive spirit was stirring within him. The meticulously ordered world of academia, the comforting certainties of Victorian morality, the very foundations of Western civilization as he knew it, began to crack under the relentless pressure of his inquiry. His early works, particularly *The Birth of Tragedy*, showcased a mind grappling with the Apollonian and Dionysian forces shaping art and life, already challenging the staid rationalism of his era. But it was in his later, more radical phase, often marked by bouts of debilitating illness and profound loneliness, that Nietzsche truly began to forge the hammer of his philosophy, striking at the very roots of conventional wisdom.\n\nThe quote, \"All that had thus far counted as limit, as measuring determination, proved itself here but artificial,\" finds its genesis in this period of radical questioning, particularly within the pages of his masterpiece, *Thus Spoke Zarathustra*. Published in four parts between 1883 and 1885, this work, a philosophical novel told through the pronouncements of a prophetic figure, was a direct assault on the prevailing values of 19th-century Europe. Nietzsche was witnessing a world grappling with the aftershocks of the Enlightenment, the rise of industrialization, the decline of religious faith, and the nascent stirrings of modern existential angst. He saw a society bound by what he perceived as a decadent Christian morality, a slave morality that glorified weakness, pity, and conformity, stifling the inherent potential for greatness in humanity. The \"limits\" and \"measuring determinations\" he speaks of were not merely societal norms or ethical codes, but the very epistemological frameworks that dictated what was true, good, and beautiful. These were the artificial constructs, the human-made fictions, that prevented individuals from embracing their full power and creating new values. For Nietzsche, these limits were not inherent to existence but imposed, a cage built by centuries of metaphysical assumptions and herd mentality.\n\nEven today, in our own era of rapid technological advancement, shifting global paradigms, and a pervasive sense of disenchantment with established institutions, Nietzsche\u2019s words resonate with an unsettling prescience. We, too, find ourselves questioning the \"limits\" and \"measuring determinations\" that once seemed immutable. The boundaries between nations, genders, and even reality itself, appear increasingly fluid and constructed.",
-      "id": "159119b42cfc56bd",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Friedrich Nietzsche",
-      "topic": "wikiquote",
-      "ts": "2026-07-08T10:51:49.437293+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "5a1c85ba8d3b478d",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "Christopher Nolan faces growing backlash over 'Odyssey' casting, historical accuracy as screenings canceled - Fox News",
-      "topic": "movies",
-      "ts": "2026-07-08T12:09:25.741293+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNMldwakVVNWF0TmtQTmlKa29ZbTB6Z1FoVDBVam54emRoeVF1dkEzSC1VUngwUFdjMHJETUJwMU5Vc29YSWc1Z0NzQVJBOVJsdS1qRHBVVnItd1V0MmRRR0xIQTdDUFU5LWFGejdkTDZnSDR3UWJZVzBJQjNTQ3pwd1YtOVpuYUtQdGJwSGRkT2Q3di1sZDM2R3VpTUdYZmpVVWljVFBfZ1ZHWlJnQ1cycGlTbERReFVUNzNCY1I2d2tRblNuR0NQQVlBUFFWMDdicXJwdmFn0gHbAUFVX3lxTFBqTnZjOFU3aUNEbDBVc1NHRG9uX3lWVlpiWklUTDJZa1BkQUVQdmFHajNXbVdndXh3YmdhT0xiWnBpTnFlMXJyck5XZS02YVlmbXZrbUNJOHhnaUtaOG5QLWFHUEhNMzZ0Y0s2VWNkVEVKNjlzdFEtTTIxNS1kNFJjOGxaeGdTQlV6Si1BbVFybFE4VkhLTlpCek5BUVNyNWJoalhtX0xBenNLS2Q1Nk1UWXFjVlZEd1hHZzhHSlhrTjRuQ1E4VDh3UGZVdTlXdks0N2JpWG52T0lFMA?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Devil Town - Cavetown\n(because you like Sammy Copley)",
-      "id": "8276ed5df30a50c8",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-07-08T12:09:34.036413+00:00",
-      "url": "https://www.deezer.com/track/1008422362"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "42a9c648b90a8e05",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Trilateral cooperation agreement on SMR deployment",
-      "topic": "energy",
-      "ts": "2026-07-08T12:10:40.726975+00:00",
-      "url": "https://www.world-nuclear-news.org//articles/trilateral-cooperation-agreement-on-smr-deployment"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "ac6198459aa2f937",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-07-08T12:10:40.865151+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "ec45d909b6b1dfba",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Earthquakes",
-      "title": "M3.1 - 56 km NW of San Antonio, Puerto Rico (~250 km away)",
-      "topic": "quakes",
-      "ts": "2026-07-08T12:10:59.773108+00:00",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71522998"
-    },
-    {
-      "action": "push",
-      "detail": "USD/DOP moved from 59.21 to 59.02 (-0.19, -0.33%) vs yesterday",
-      "id": "3aece65553b7c7cb",
-      "score": 62,
-      "severity": "high",
-      "source": "FX",
-      "title": "USD/DOP today: 59.02",
-      "topic": "fx",
-      "ts": "2026-07-08T12:11:00.491368+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Pause for a moment and have a drink of water.",
-      "id": "0f588e2462c24194",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-07-08T12:11:06.414565+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Get screened for health conditions based on your age and risk factors; early detection can save your life. (Source: CDC)",
-      "id": "1f2938741a9aca9d",
-      "score": 60,
-      "severity": "low",
-      "source": "Health",
-      "title": "Health tip",
-      "topic": "health_tip",
-      "ts": "2026-07-08T12:11:07.403820+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "The thalidomide tragedy, a dark chapter in medical history, stands as a stark reminder of the devastating consequences of unchecked scientific progress and inadequate regulatory oversight. It was a story born in the mid-1950s, amidst a burgeoning pharmaceutical industry eager to provide relief for a growing population. Chemie Gr\u00fcnenthal, a German pharmaceutical company, developed thalidomide, initially marketed in West Germany as Contergan, and later under various names across nearly 50 countries. It was hailed as a wonder drug, a safe and effective sedative that also showed promise in alleviating morning sickness in pregnant women. Doctors, trusting in the industry's assurances and lacking any established system for rigorous drug testing before market release, readily prescribed it. The ease with which it crossed borders and entered medicine cabinets worldwide underscores a prevailing scientific optimism, coupled with a startling naivet\u00e9 regarding the potential for harm from newly developed compounds.\n\nThe insidious nature of thalidomide lay in its timing. It was prescribed during the critical first trimester of pregnancy, a period when the fetus undergoes rapid and complex development. By the early 1960s, a disturbing pattern began to emerge. Physicians, notably Dr. William McBride in Australia and Dr. Widukind Lenz in Germany, independently started to connect a sudden and dramatic increase in severe birth defects to the drug. Infants were born with phocomelia, a rare malformation characterized by severely shortened or absent limbs, often with hands or feet attached directly to the torso. Other defects included facial paralysis, eye and ear damage, and internal organ abnormalities. The initial reports were met with skepticism, a testament to the powerful marketing and widespread acceptance of thalidomide. But as the anecdotal evidence mounted and careful epidemiological studies were conducted, the terrifying link became undeniable. The sheer scale of the tragedy was immense, with an estimated 10,000 to 20,000 children worldwide affected, many of whom did not survive.\n\nThe thalidomide tragedy became a global outcry, triggering a profound shift in how drugs are developed, tested, and approved. Before thalidomide, drug regulation was largely toothless, relying heavily on the good faith of pharmaceutical companies. In the United States, Dr. Frances Oldham Kelsey, a pharmacologist at the Food and Drug Administration (FDA), played a pivotal role in preventing the widespread distribution of thalidomide. Despite intense pressure from the drug's manufacturer, she steadfastly refused to approve its sale due to insufficient safety data, exhibiting a courage and foresight that saved countless American lives. Her actions, alongside the global realization of thalidomide's devastating effects, spurred legislative reforms. The Kefauver-Harris Amendments in the US, passed in 1962, mandated rigorous testing for efficacy and safety, requiring drugs to undergo extensive clinical trials and prove their benefits outweigh their risks before market approval. Other countries followed suit, establishing similar robust regulatory bodies and processes.\n\nBeyond the immediate legislative changes, the thalidomide tragedy etched itself into the collective consciousness, forever altering the public\u2019s perception of pharmaceutical companies and the medical establishment. It fostered a healthy skepticism and a demand for greater transparency and accountability.",
-      "id": "4aaafaf95265cd60",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The thalidomide tragedy and drug regulation",
-      "topic": "learn",
-      "ts": "2026-07-08T12:11:12.427275+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "On this day\n2014: German citizen Lars Mittank disappeared from Varna Airport, Bulgaria; his last known movements were widely watched on YouTube.\n\nFeatured: Al-Altan\nAl-Altan, also known as Altalun and Altaluqan, was the youngest child and favourite daughter of Genghis Khan, the founder of the Mongol Empire, and B\u00f6rte, his primary wife. As part of Genghis's policy of marrying his daughters to powerful rulers in exchange for their submission...\n\nScience\nHelium, named after the Greek sun god Helios, was discovered in the Sun's spectrum in 1868, prior to its discovery on Earth. (Source: Britannica)",
-      "id": "98a52877ccd4e5a5",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Daily learning",
-      "topic": "learn",
-      "ts": "2026-07-08T12:11:14.148220+00:00",
-      "url": "https://en.wikipedia.org/wiki/Al-Altan"
-    },
-    {
-      "action": "push",
-      "detail": "\u201cNever, never and never again shall it be that this beautiful land will again experience the oppression of one by another and suffer the indignity of being the skunk of the world. Let freedom reign! The sun shall never set on so glorious a human achievement! God bless Africa!\u201d\n\u2014 Nelson Mandela\n\nThe words hang in the air, a declaration not just of intent, but of a seismic shift in the human story. They were spoken by Nelson Rolihlahla Mandela, a man whose very name became synonymous with the struggle against injustice, a figure who emerged from the crucible of apartheid not embittered, but emboldened by a vision of a truly democratic and non-racial South Africa. To understand the weight of that utterance, one must journey back to a land scarred by institutionalized racism, a nation where the color of one's skin dictated every facet of existence, from the neighborhood they could inhabit to the education they could receive, even to the dignity they were afforded. Mandela, a lawyer by training and a chieftain by birth, had chosen the path of defiance early, initially advocating for non-violent resistance before acknowledging, with a heavy heart, that the state's brutality left no other option but armed struggle. This decision, though controversial, stemmed from a deep-seated belief that freedom, if not granted, must be seized. His life, at that point, had been a tapestry woven with threads of activism, legal battles, underground organizing, and ultimately, betrayal and arrest.\n\nThe scene of that powerful pronouncement was his inauguration as the first democratically elected President of South Africa, on May 10, 1994. The Union Buildings in Pretoria, once the very symbol of white minority rule, now thrummed with a different kind of energy. Dignitaries from across the globe, former adversaries, and countless ordinary South Africans, both Black and white, gathered under a sky that seemed to shimmer with hope. The world, which had for decades largely ignored or even tacitly supported the apartheid regime, was now watching, mesmerized by the unfolding miracle. Mandela himself, just four years prior, had been a prisoner, held captive for 27 long years in various maximum-security facilities, including the infamous Robben Island. His release in 1990, after decades of relentless international pressure and internal resistance, had set in motion a delicate and often perilous transition process. He had spent those years in negotiations, not with bitterness, but with a statesman's pragmatism, seeking to build bridges rather than burn them, to foster reconciliation where many might have demanded retribution. The world at large was grappling with the aftermath of the Cold War, a new global order emerging, and South Africa's journey resonated as a powerful testament to the triumph of human spirit over systemic oppression.\n\nWhy do those words, echoing from a specific moment in time and place, continue to resonate so profoundly today? Because Mandela's declaration was not merely a statement about South Africa; it was a universal testament to the enduring human desire for liberty, equality, and dignity. \"Never, never and never again shall it be...\" speaks to the lessons learned from history, a solemn vow that the atrocities of the past will not be repeated, a promise of a future built on justice.",
-      "id": "352ff860d633a78f",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Nelson Mandela",
-      "topic": "wikiquote",
-      "ts": "2026-07-08T12:11:21.156283+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "What: Capacity factor is how much a plant actually produces over a year compared with running flat-out the whole time.\nWhy it matters: A solar farm rated at 100 megawatts may average 25%, because it makes nothing at night; a nuclear plant often exceeds 90%.\nWhy you should care: It's why you can't compare power sources by their headline rating alone \u2014 uptime matters as much as size.\n(Source: U.S. Energy Information Administration)",
-      "id": "77ebce922fb3ef70",
-      "score": 60,
-      "severity": "low",
-      "source": "Energy learning",
-      "title": "\u26a1 Today's spark \u2014 What 'capacity factor' really means",
-      "topic": "energy_learn",
-      "ts": "2026-07-08T12:11:21.443353+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "You're eligible to donate blood again (last donation 2024-12-15, eligible since 2025-02-09).",
-      "id": "89118220044b67e1",
-      "score": 45,
-      "severity": "moderate",
-      "source": "Blood donation",
-      "title": "Blood donation",
-      "topic": "blood_donation",
-      "ts": "2026-07-08T12:11:26.585068+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Starts Wednesday 15 July (in 7 days). Tap for the academic calendar (PDF).",
-      "id": "b89217b0d5ff0509",
-      "score": 62,
-      "severity": "moderate",
-      "source": "ITSC",
-      "title": "ITSC: Solicitud Retiro de Asignatura 2026-2(Ordinario)",
-      "topic": "itsc",
-      "ts": "2026-07-08T12:11:27.987983+00:00",
-      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/05/Calendario-academico-2026-2-MAYO-AGOSTO-_-Actualizado_.pdf"
-    },
-    {
-      "action": "push",
-      "detail": "Sometimes we can all use a little help from a friend. NASA's Neil Gehrels Swift Observatory needs a boost to stay in orbit after almost 22 years of service. This video shows an artist's visualization of the Swift Boost Mission: The Katalyst's LINK spacecraft was launched aboard...",
-      "id": "03cff13293cb61e6",
-      "score": 60,
-      "severity": "low",
-      "source": "NASA APOD",
-      "title": "APOD: Swift Boost Mission",
-      "topic": "apod",
-      "ts": "2026-07-08T12:11:29.902096+00:00",
-      "url": "https://apod.nasa.gov/apod/image/2607/Swift_Boost.mp4"
-    },
-    {
-      "action": "push",
-      "detail": "Super Smash Bros. Ultimate - \u30c1\u30e3\u30f3\u30d4\u30aa\u30f3\u30ba\u304a\u3064\u3067\u3057\u305f \u30e1\u30a4\u30c8\u3068\u304b\u30b9\u30de\u30d1\u306e\u8a66\u5408\u632f\u308a\u8fd4\u308b\u3068\u304b",
-      "id": "8116bf58aaab1223",
-      "score": 68,
-      "severity": "high",
-      "source": "Acola_lui",
-      "title": "Acola_lui is live on Twitch",
-      "topic": "twitch",
-      "ts": "2026-07-08T14:42:58.081092+00:00",
-      "url": "https://twitch.tv/Acola_lui"
-    },
     {
       "action": "push",
       "detail": "",
@@ -12364,6 +11732,690 @@
       "topic": "apod",
       "ts": "2026-07-20T12:10:18.687927+00:00",
       "url": "https://apod.nasa.gov/apod/image/2607/LibertyNeb_Carpenter_1830.jpg"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "464cd7f8f00ae097",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "'Avengers: Doomsday' official trailer offers sneak peek at Robert Downey Jr.'s take on Doctor Doom - ABC7 Chicago",
+      "topic": "movies",
+      "ts": "2026-07-25T05:14:43.331410+00:00",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZGE0Q0ZJMnI5SVFtRDJFUFpjQVZiZmNVUEJZRFNMcXhUSlNIUmYwQTQ2d0pQaWxDY2lINTRNUDFWLXFkOVNkTU5ZUHN4UnlMMzNzdnBPOVF0VmV4anYzejNMN2IwMWJvMFk3SWl4VWxvYnZBZVdFUmp1TDZqNlhaN3gwRDdmNmt3cVZDSWRCMGhzSlk4dDZlbjNuTEh0N2lQMG94Z1laUlBSN3VWVzJHZFJGVHhpV29JZHB4LWp3MmxHSGo10gHKAUFVX3lxTFBlTjB6WDNPNTYza09FcEJ3YllUcHRKaVZCQVd6YUdISVkzQjg0SV9ySmZIcFhfTHpQSHROOVk5UFdZQUhYZVdlRTNUOHRhSi1VRmF4QkYxQ3AwV0dIOE8zLWtTWWNZQmd1OWRRRW9FODFFdGJTNkRZcFJuRlh4dmE3c0E3TFhydE5XUGIwZWFmWUtkRG9Ya1VzYkdNRHVuVnh6clptN2FfZEIwWVNfR3kzMVRsRm5lVnQwNXFXc09vOWxBS1B2aFZWV1E?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "aaa31e46c2ca1b24",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "\u2018Spider-Man: Brand New Day\u2019 Director Finally Speaks Out About Film Cancellation - Inside the Magic",
+      "topic": "movies",
+      "ts": "2026-07-25T05:14:44.308968+00:00",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWURDUXlmNmlVZ1plRnpIam12UzdPeG1ZV0Y2dFpyVlNWMThKakd5OUhKOEFVY0VQVUJEZnE1RVVISTdTMVYzZk1xRkxJVEp2cTRfOHp4aHdzV1I2Z3ItSzljcnFKUnVtbVZvZURLNjJ4RWtjUElhc1JKY3VDaTFlLVRDZ3FTdWNxVzRHbjBHRldfc3NYajBqNk43aw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "f702de807f359330",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "Sacramento IMAX theater says technical issues caused viewing delays for The Odyssey - KCRA",
+      "topic": "movies",
+      "ts": "2026-07-25T05:14:45.212438+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNem50bzN3S0lhdm94OGNUMUk2SzItNWhENXhNNk5RQkdEcVVJRDIwZF9nVGhCM0tPVTdxTDlTVXlOQ05KbTRMZXFqQVR3RmtXVHlfbXptNkEySWRiczFjS1lwOUtqQXVqS0JNb05wUVNGckFwRmVjVmFONEdxNnFOVzV2YVExTFpCRHp5RFdIRHhUYXlR?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "7bdf9325d9e34dfb",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "The Batman 2 BATSUIT CAMERA TEST + Delayed AGAIN To 2028?! Tommy Robinson (AT24LmYTjs) - Mshale",
+      "topic": "movies",
+      "ts": "2026-07-25T05:14:46.418060+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5kOXl0c3FVWUJwRU9MTlpQYTZRRjh2dXJuWklRb0d2M05MdkN6OXE5dnV5RURZX3hNLWpXMzF2a1hLV1h5YWVkRWZIM3ItRWNjUndTeEVqVkpTQQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "2f76d2b40c9e0067",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Beyond the Spider-Verse",
+      "title": "\"It's Worth the Wait\": \"Spider-Man: Beyond the Spider-Verse\" Actor Assures Threequel Will Justify All Delays - ixbt.games",
+      "topic": "movies",
+      "ts": "2026-07-25T05:14:47.738675+00:00",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNN2JzQ0FqVHE3NlZFS0VvRnpGVEVtZnBxR2syMS1tM2RmWGlxaGxhUmlZX1lacTlpY18tWGpmYjFJWUhpYlljTVEyT3pwLWhPV0FsVndRQnVfRzN6X2xTdE5pdVJxd1liZmNHN3RrRmlTamhnVy1ERERFQ1F3X0xWYS1KX2czMTVLSXlvdVg2MGlQWHBFamx0QW5CMDRkNnAybzYtYzQ1RjNZVHpERlVrZnFLRERBNmRHM3I5RXVoNl94c0c2TmRtenpfeHVZbklER1F4SHFBd09KS2NvR2FZR0tuV2V4NVEtelhIMVlpdmZCd9IB8gFBVV95cUxNN2JzQ0FqVHE3NlZFS0VvRnpGVEVtZnBxR2syMS1tM2RmWGlxaGxhUmlZX1lacTlpY18tWGpmYjFJWUhpYlljTVEyT3pwLWhPV0FsVndRQnVfRzN6X2xTdE5pdVJxd1liZmNHN3RrRmlTamhnVy1ERERFQ1F3X0xWYS1KX2czMTVLSXlvdVg2MGlQWHBFamx0QW5CMDRkNnAybzYtYzQ1RjNZVHpERlVrZnFLRERBNmRHM3I5RXVoNl94c0c2TmRtenpfeHVZbklER1F4SHFBd09KS2NvR2FZR0tuV2V4NVEtelhIMVlpdmZCdw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Chamber Of Reflection - Mac Demarco\n(because you like Tame Impala)",
+      "id": "903951b2dd809ef3",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-07-25T05:14:52.227914+00:00",
+      "url": "https://www.deezer.com/track/76008448"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "a69428f793460ff3",
+      "score": 35,
+      "severity": "moderate",
+      "source": "Golden Sun",
+      "title": "All of us right now.",
+      "topic": "golden_sun",
+      "ts": "2026-07-25T05:15:23.815523+00:00",
+      "url": "https://www.reddit.com/r/GoldenSun/comments/1v3wtu0/all_of_us_right_now/"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "886517d83bf902fe",
+      "score": 35,
+      "severity": "moderate",
+      "source": "Golden Sun",
+      "title": ":/",
+      "topic": "golden_sun",
+      "ts": "2026-07-25T05:15:23.815852+00:00",
+      "url": "https://www.reddit.com/r/GoldenSun/comments/1v5muvr/_/"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "93b026f2de74ff68",
+      "score": 35,
+      "severity": "moderate",
+      "source": "Golden Sun",
+      "title": "The fate of the world rests in your teenage hands",
+      "topic": "golden_sun",
+      "ts": "2026-07-25T05:15:23.816136+00:00",
+      "url": "https://www.reddit.com/r/GoldenSun/comments/1v3kwyg/the_fate_of_the_world_rests_in_your_teenage_hands/"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 3,995.00 (was DOP 5,995.00, -33%)",
+      "id": "97fa210783b7faf0",
+      "score": 64,
+      "severity": "high",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Barra De Sonido Klipx 100W Ksb-001",
+      "topic": "groceries",
+      "ts": "2026-07-25T05:16:01.526808+00:00",
+      "url": "https://www.sirena.do/klix-barra-de-sonido-100w-ksb-001-2070002/p"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "875ac2687f1befad",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Revlimid",
+      "title": "FDA updates approval for Revlimid (Lenalidomide) (NDA021880)",
+      "topic": "fda",
+      "ts": "2026-07-25T05:16:02.407891+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021880"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "39ae5010ecb84781",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Camcevi Etm",
+      "title": "FDA updates approval for Camcevi Etm (Leuprolide Mesylate) (NDA219745)",
+      "topic": "fda",
+      "ts": "2026-07-25T05:16:02.408184+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219745"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "da08b608fcd42a95",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Inrebic",
+      "title": "FDA updates approval for Inrebic (Fedratinib Hydrochloride) (NDA212327)",
+      "topic": "fda",
+      "ts": "2026-07-25T05:16:02.408444+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=212327"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "ec88a1c03011343d",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Jakafi Xr",
+      "title": "FDA updates approval for Jakafi Xr (Ruxolitinib Phosphate) (NDA217180)",
+      "topic": "fda",
+      "ts": "2026-07-25T05:16:02.408726+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=217180"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "3c58689403d965c9",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Ojjaara",
+      "title": "FDA updates approval for Ojjaara (Momelotinib Dihydrochloride) (NDA216873)",
+      "topic": "fda",
+      "ts": "2026-07-25T05:16:02.408995+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=216873"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "0c045f32ade0f28d",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Jakafi",
+      "title": "FDA updates approval for Jakafi (Ruxolitinib Phosphate) (NDA202192)",
+      "topic": "fda",
+      "ts": "2026-07-25T05:16:02.409247+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=202192"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "c7f3625b1f0b3a2c",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Vonjo",
+      "title": "FDA updates approval for Vonjo (Pacritinib Citrate) (NDA208712)",
+      "topic": "fda",
+      "ts": "2026-07-25T05:16:02.409498+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208712"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "620672920cac581d",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Ogsiveo",
+      "title": "FDA updates approval for Ogsiveo (Nirogacestat Hydrobromide) (NDA217677)",
+      "topic": "fda",
+      "ts": "2026-07-25T05:16:02.409770+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=217677"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "129dd9398db9557b",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Augmentin '875'",
+      "title": "FDA updates approval for Augmentin '875' (Amoxicillin, Clavulanate Potassium) (NDA050720)",
+      "topic": "fda",
+      "ts": "2026-07-25T05:16:02.410020+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050720"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "99bbc8743d3e0eef",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Augmentin '400'",
+      "title": "FDA updates approval for Augmentin '400' (Amoxicillin, Clavulanate Potassium) (NDA050725)",
+      "topic": "fda",
+      "ts": "2026-07-25T05:16:02.410276+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050725"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "0bc6ac5e05cf9016",
+      "score": 35,
+      "severity": "moderate",
+      "source": "EIA Today in Energy",
+      "title": "Energia Costa Azul, Mexico's second LNG terminal, shipped first cargo",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.668399+00:00",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67884"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "6a2bc6420dadf300",
+      "score": 35,
+      "severity": "moderate",
+      "source": "EIA Today in Energy",
+      "title": "New York imports more electricity from Canada after high-voltage transmission line opens",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.668841+00:00",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67867"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "353b2972ecc30e43",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Third reactor at Changjiang plant starts up",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.669150+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/third-reactor-at-changjiang-plant-starts-up"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "acd6e7a26d459a63",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Building new Swiss nuclear power plant economically viable, report says",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.669416+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/building-new-swiss-nuclear-power-plant-economically-viable-report-says"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "f08f738fb2d911c0",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Reactor vessel installed at Lufeng unit 1",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.669703+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/reactor-vessel-installed-at-lufeng-unit-1"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "9329af8a0f38c181",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Siting licence granted for new Kola nuclear power plant units",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.669981+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/site-licence-granted-for-new-kola-nuclear-power-plant-units"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "b00d6b7525d1f717",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "South Korean SMR-powered container ship design certified",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.670240+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/korean-smr-powered-container-ship-design-certified"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "a9125087ae4d6fd6",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Two more Czech sites lined up for Rolls-Royce SMRs",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.670524+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/two-more-czech-sites-lined-up-for-rolls-royce-smrs"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "32ad494be2c1686a",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Korean-US partnership for floating SMR platform",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.670830+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/korean-us-partnership-for-floating-smr-platform"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "dba5681d56c7a43d",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Nuclearelectrica's proposal to review SMR options rejected by ministry",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.671093+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/nuclearelectricas-proposal-to-review-smr-options-rejected-by-ministry"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "8f2ffa474cdc6bc4",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Newcleo sets out plan for US licensing of reactor",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.671360+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/newcleo-sets-out-plan-for-us-licensing-of-reactor"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "24985726fb3b395f",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Molten salt reactor gets US safety design approval",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.671676+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/molten-salt-reactor-gets-us-safety-design-approval"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "1dd68ad0010deda2",
+      "score": 60,
+      "severity": "high",
+      "source": "World Nuclear News",
+      "title": "Oklo cleared to start up test reactor",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.671938+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/oklo-cleared-to-start-up-test-reactor"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "ffcd3b60860301b4",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Serbia preparing for next steps towards new nuclear",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.847758+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/serbia-preparing-for-next-steps-in-new-nuclear-programme"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "5ed079108a601187",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "New Jersey launches procurement process for new nuclear",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.848316+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/new-jersey-launches-procurement-process-for-new-nuclear"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "b33f4ba33a3fe182",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Saudi Arabia, USA sign nuclear agreements",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.848664+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/saudi-arabia-usa-sign-nuclear-agreements"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "325bbf048d0640f8",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Hyundai E&C, FANCO to collaborate on SMR project",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.848960+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/hyundai-ec-fanco-to-collaborate-on-smr-project"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "60190a9e2428f72f",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Rosatom says projects for 18 nuclear units being implemented",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.849274+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/rosatom-says-projects-for-18-nuclear-units-being-implemented"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "d1ec5bbcd6263aad",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Global nuclear M&A deals 'double to USD7 billion'",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.849585+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/global-nuclear-ma-deals-double-to-usd7-billion"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "387ed3da8eedf047",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Jacobs to assist in planning of UK SMR projects",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.849866+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/jacobs-to-assist-in-planning-of-uk-smr-projects"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "32437792b351dfab",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Grant to support expansion of TRISO-X nuclear fuel campus",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.850152+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/grant-to-support-expansion-of-triso-x-nuclear-fuel-campus"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "cd8675c1659cf2c6",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Russia stresses long-term nature of nuclear cooperation with China",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.850448+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/russia-stresses-longterm-nature-nuclear-cooperation-with-china"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "f10ee9027e147b25",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "In pictures: Demolition of Stade reactor building progresses",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.850776+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/in-pictures-demolition-of-stade-reactor-building-progresses"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "32e8f475643a8b14",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Fusion industry raised USD4.5 billion in past year, report says",
+      "topic": "energy",
+      "ts": "2026-07-25T05:16:13.851069+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/fusion-industry-raised-usd45-billion-over-past-year-report-says"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "264f78ad42aaebfd",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-07-25T05:16:14.027147+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "USD/DOP moved from 58.55 to 58.19 (-0.36, -0.61%) vs yesterday",
+      "id": "99b4cc3e1d63e552",
+      "score": 62,
+      "severity": "high",
+      "source": "FX",
+      "title": "USD/DOP today: 58.19",
+      "topic": "fx",
+      "ts": "2026-07-25T05:16:34.873193+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "Gasolina Premium: RD$3380.07 (sin cambio)\nGasolina Regular: RD$3380.07 (sin cambio)\nGasoil Regular: RD$3380.07 (sin cambio)\nGasoil \u00d3ptimo: RD$3380.07 (sin cambio)\nKerosene: RD$3380.07 (sin cambio)\nGLP: RD$3380.07 (sin cambio)",
+      "id": "51663b4ad8765de0",
+      "score": 45,
+      "severity": "low",
+      "source": "MICM",
+      "title": "Combustibles: precios de la semana",
+      "topic": "fuel",
+      "ts": "2026-07-25T05:16:36.400816+00:00",
+      "url": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-25-31-JUL-DE-2026.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 10:42 PM - max 51deg, NW to SE. Look up!",
+      "id": "68f1d8463a8e10be",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-07-25T05:16:37.086140+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Introducing Claude Opus 5 - Anthropic",
+      "id": "5bfe5cf714b996e5",
+      "score": 70,
+      "severity": "moderate",
+      "source": "Anthropic",
+      "title": "Anthropic",
+      "topic": "anthropic_news",
+      "ts": "2026-07-25T05:16:37.788543+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9iczRhdUZaZWkyQ2RXakhsM1ViSF8wclZFX25KdEF6WU1UTEtMQXJhYnpiZnJRUWd2LXNoSkF0TnFQWEpBZzN2b0Z5TmhNZExyTVJUZDR3cw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "The Anthropic Economic Index connector - Anthropic",
+      "id": "a99d0777ffbb8458",
+      "score": 64,
+      "severity": "moderate",
+      "source": "Anthropic",
+      "title": "Anthropic",
+      "topic": "anthropic_news",
+      "ts": "2026-07-25T05:16:37.956261+00:00",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1SYk1FQ3paMmNwYURwWWFZQ3VDblA3Yy05c3F4MXJxTnVHLVlHMDQyM2pDQ3A0VjNhNl90Q2xzNFpyYVlhUkdXb2ZTVUR5MFZnVWpkaFRmdkxPUGZoTGYyakJnTzhBOGJOaDF1Q1ZDa3haVkU?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Apply for Anthropic\u2019s AI for Science rare disease research grants - Anthropic",
+      "id": "f5f314bb3cdc2e72",
+      "score": 64,
+      "severity": "moderate",
+      "source": "Anthropic",
+      "title": "Anthropic",
+      "topic": "anthropic_news",
+      "ts": "2026-07-25T05:16:38.219236+00:00",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1STEpkV0VLajlBMFFERkROS2RUVTBjUXJseDctQWhpdFZ2dXRyd0paRTRneTRKMU5XdzBaSjVZeUpiOGQxM3liVzVDNGNUT1NRc1ViMjJqX3ZWYTJBejNPUUZNZXhZa0dkaGk0?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "On this day\n1591: Eighty Years' War: Dutch and English forces relieved the siege of Knodsenburg in the Spanish Netherlands, having defeated the Duke of Parma's army in the field.\n\nFeatured: Las Meninas\nLas Meninas is a 1656 oil painting in the Museo del Prado in Madrid, by Diego Vel\u00e1zquez, the leading artist in the court of King Philip IV of Spain and Portugal, and of the Spanish Golden Age. It has become one of the most widely analyzed works in Western painting for the way...\n\nDid you know\nA 52-card deck has more possible shuffle combinations than the number of atoms on Earth. (Source: Britannica)",
+      "id": "b13b0dc6611b24fa",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Daily learning",
+      "topic": "learn",
+      "ts": "2026-07-25T05:16:39.608814+00:00",
+      "url": "https://en.wikipedia.org/wiki/Las_Meninas"
+    },
+    {
+      "action": "push",
+      "detail": "Before the turn of the 20th century, the bounty of the earth was limited by its own slow rhythms. Crops needed nitrogen, but the vast reservoir in our atmosphere, nearly 80% of the air we breathe, was stubbornly inert, locked away from the very plants that craved it. The only significant source of usable nitrogen came from guano and nitrate deposits, finite reserves whose depletion loomed large as the global population steadily climbed. Famines were not just a threat, but a cyclical reality, and the spectre of a Malthusian catastrophe \u2014 humanity outstripping its food supply \u2014 loomed large in the minds of scientists and economists alike.\n\nIt was in this desperate landscape that a German chemist, Fritz Haber, wrestled with the atmospheric giant. In 1909, he achieved a breakthrough: reacting nitrogen and hydrogen under immense pressure and high temperatures, using a catalyst, to create ammonia. His discovery, however, was a small-scale laboratory triumph. It took another German, Carl Bosch, an engineer at BASF, to scale Haber's delicate process into an industrial titan. Bosch\u2019s ingenuity brought the Haber-Bosch process to life, transforming a scientific marvel into a practical, continuous method for producing synthetic ammonia, the foundational ingredient for nitrogen fertilizers.\n\nThe impact of this chemical alchemy on human civilization is almost immeasurable. The Haber-Bosch process, by unlocking the atmospheric nitrogen, effectively put an end to the natural limitations on food production. Synthetic fertilizers derived from this process supercharged agricultural yields, enabling a dramatic increase in crop output across the globe.",
+      "id": "fe08f98a2d29e3ca",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The Haber-Bosch process and synthetic fertilizer",
+      "topic": "spark",
+      "ts": "2026-07-25T05:16:42.321671+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Headline: \"Oklo cleared to start up test reactor\"\nWhy it matters: The Oklo test reactor could advance safe, clean nuclear energy through novel fission technology.\n(World Nuclear News \u00b7 tap to read)",
+      "id": "a4195b667e4d9f07",
+      "score": 60,
+      "severity": "low",
+      "source": "Energy learning",
+      "title": "\u26a1 Energy now",
+      "topic": "energy_learn",
+      "ts": "2026-07-25T05:16:43.006150+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/oklo-cleared-to-start-up-test-reactor"
+    },
+    {
+      "action": "push",
+      "detail": "Rent - due 2026-07-30 (in 5 days)",
+      "id": "72c2ca911a57df54",
+      "score": 62,
+      "severity": "moderate",
+      "source": "Bills",
+      "title": "Bill due soon",
+      "topic": "bills",
+      "ts": "2026-07-25T05:16:43.187533+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "The Seas of Tranquility and Serenity are calm today. They're calm most every day though, since they are actually lunar maria, ancient lava flows filling in large impact basins on the Moon. Also known by Latin names Mare Tranquillitatis (right) and Mare Serenitatis, the smooth...\n(c) Tranquility",
+      "id": "5f4f5a37fd5d333e",
+      "score": 60,
+      "severity": "low",
+      "source": "NASA APOD",
+      "title": "APOD: Tranquility and Serenity",
+      "topic": "apod",
+      "ts": "2026-07-25T05:16:46.960240+00:00",
+      "url": "https://apod.nasa.gov/apod/image/2607/TranquilitySerenity2048.jpg"
+    },
+    {
+      "action": "push",
+      "detail": "spark \u2014 down since 2026-07-20 06:08 UTC; last error: knowledge story generation failed (no LLM provider answered)\nyoutube \u2014 down since 2026-07-20 12:08 UTC; last error: all 7 channel feed(s) failed; last: PabloELECTRUM: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/v\u2026",
+      "id": "fc5bef602de09895",
+      "score": 72,
+      "severity": "high",
+      "source": "Watchdog",
+      "title": "Watchdog: 2 topics have had no successful run in 48h",
+      "topic": "watchdog",
+      "ts": "2026-07-25T05:16:49.361027+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -12374,6 +12426,16 @@
     }
   ],
   "fda_seen_ids": [
+    "7e3b442babde49e5",
+    "9ce2d7b72bdffe73",
+    "71e7b17f7b428b63",
+    "1b5b967f5ccd6e4c",
+    "c3b3a59fec9ccdeb",
+    "fa8dbb6e48422fc2",
+    "20b9eb7e28d6c311",
+    "e7c1feff0b42996b",
+    "ed5892ea2814c041",
+    "9e44478c84629191",
     "96d7948b5548ee50",
     "42b7a0dd05082c84",
     "be5827bfd1dd07ac",
@@ -12544,9 +12606,9 @@
       }
     ]
   },
-  "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-18-24-JUL-DE-2026-1.pdf",
-  "fuel_last_pdf_hash": "2269bb52af69e456d26a69c98fd2d3aded0dd30bd265581a677e87ea7e82bc2b",
-  "fuel_last_prices_seen_at": "2026-07-20T12:10:01.116182+00:00",
+  "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-25-31-JUL-DE-2026.pdf",
+  "fuel_last_pdf_hash": "3eb0d16150db5bf4901177980d5d28a5ea5b8f4efcc3746cf5b9b0b955d308a9",
+  "fuel_last_prices_seen_at": "2026-07-25T05:16:36.400789+00:00",
   "fuel_prices": {
     "GLP": 3380.07,
     "Gasoil Regular": 3380.07,
@@ -12556,10 +12618,10 @@
     "Kerosene": 3380.07
   },
   "fx_daily_baseline": {
-    "date": "2026-07-20",
-    "rate": 58.547537
+    "date": "2026-07-25",
+    "rate": 58.191542
   },
-  "fx_last_rate": 58.547537,
+  "fx_last_rate": 58.191542,
   "fx_last_zone": "within",
   "fx_week_baseline": {
     "rate": 58.547537,
@@ -12882,6 +12944,9 @@
   "games_week_last": "2026-W30",
   "golden_sun_seen": {
     "Golden Sun": [
+      "ffb881a9c5931463",
+      "6903b13425975634",
+      "a3d7d5702e4a68c1",
       "8e6447d109cb9ebf",
       "ba8f1ec4a9f184f3",
       "12a0d31056e28c3b",
@@ -12921,6 +12986,28 @@
       "1b7d9e5ab11b51a5"
     ],
     "La Sirena": [
+      "912cbf7e9fe45b53",
+      "6f0cd38c6205591c",
+      "d47d326e5b9eb25b",
+      "a06c198d79a842ca",
+      "68c64d8c3ac7bdaf",
+      "890d347f563c8b84",
+      "3f3a3fce6057cb47",
+      "7b08935d41fd2cf5",
+      "463e0967d25f59be",
+      "06c0344bb1a96c19",
+      "2be0f3f199d982ad",
+      "8274e28dcc0fc37b",
+      "0142910077e59455",
+      "179e2e6c73979c17",
+      "b5f380f8ce9fc2bf",
+      "3be14ca6bcda5e1d",
+      "2043e5bc0fb11ff6",
+      "e0a99219e6adbbfa",
+      "3a14027a1cf19ce6",
+      "a6911d96e07be033",
+      "22ff60d3501bdcfb",
+      "79c61be110c9d53d",
       "b214d405aab38c6f",
       "23864122c4b1b24b",
       "397191a794c72bce",
@@ -13544,23 +13631,7 @@
       "habit": "sleep"
     }
   ],
-  "habit_pending_acks": {
-    "1528576807505494093": {
-      "channel": "1515504253345726558",
-      "habit": "exercise",
-      "sent": "2026-07-20T01:38:29.628098+00:00"
-    },
-    "1528576810034401291": {
-      "channel": "1515504253345726558",
-      "habit": "meditate",
-      "sent": "2026-07-20T01:38:29.628098+00:00"
-    },
-    "1528697587782385675": {
-      "channel": "1515504253345726558",
-      "habit": "water",
-      "sent": "2026-07-20T09:38:25.889833+00:00"
-    }
-  },
+  "habit_pending_acks": {},
   "health_tip_last_sent": "2026-07-20",
   "holidays_sent": [],
   "ignored": {
@@ -13586,6 +13657,7 @@
     }
   },
   "iss_seen_passes": [
+    "4e35f872491005f3",
     "bc11930b32399e70",
     "a8a5b72c7c53ebf6",
     "653288c7c657825f",
@@ -13684,8 +13756,7 @@
     "7c332a2e20b077c1",
     "8dc9a7ff1f3b00f7",
     "5f7d60e936e078af",
-    "feb51a899cf47d12",
-    "e4552ca4a442bedc"
+    "feb51a899cf47d12"
   ],
   "itsc_sent_ids": [
     "0193484e2153b1fd",
@@ -13730,19 +13801,16 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "science",
+  "knowledge_last_category": "technology",
   "knowledge_last_sent": "2026-07-14T4",
   "knowledge_seen": {
     "ancient_civilizations:Cleopatra and the end of Ptolemaic Egypt": "2026-06-30",
     "ancient_civilizations:Mohenjo-daro and Harappa": "2026-06-29",
-    "ancient_civilizations:The Aztec Empire and Tenochtitlan": "2026-06-24",
     "ancient_civilizations:The Babylonian Empire": "2026-07-10",
     "ancient_civilizations:The Epic of Gilgamesh": "2026-07-08",
     "ancient_civilizations:The Indus Valley Civilization": "2026-07-14",
     "ancient_civilizations:The Minoans of Crete": "2026-07-06",
     "ancient_civilizations:The Mycenaeans and the Linear B script": "2026-07-05",
-    "ancient_civilizations:The Roman Empire at its height": "2026-06-23",
-    "ancient_civilizations:The Shang dynasty and ancient China": "2026-06-21",
     "ancient_civilizations:The Trojan War and Schliemann's excavations": "2026-07-11",
     "ancient_civilizations:The building of the Great Wall of China": "2026-07-09",
     "ancient_civilizations:The conquests of Alexander the Great": "2026-07-13",
@@ -13760,18 +13828,13 @@
     "astronomy:The Hertzsprung-Russell diagram": "2026-07-01",
     "astronomy:The Tunguska event of 1908": "2026-07-08",
     "astronomy:The discovery of cosmic rays": "2026-07-06",
-    "astronomy:The first image of a black hole": "2026-06-23",
     "astronomy:The fruitless search for the planet Vulcan": "2026-06-29",
-    "astronomy:The multimessenger detection of a neutron star merger": "2026-06-21",
     "astronomy:The supernova of 1054 and the Crab Nebula": "2026-06-26",
     "astronomy:Tycho's supernova of 1572": "2026-07-14",
     "astronomy:Vera Rubin and the evidence for dark matter": "2026-07-11",
-    "astronomy:Yuri Gagarin, the first human in space": "2026-06-25",
-    "early_humans:G\u00f6bekli Tepe and the first temple": "2026-06-23",
     "early_humans:Homo floresiensis, the Hobbit of Flores": "2026-06-28",
     "early_humans:Homo habilis and the first stone tools": "2026-07-09",
     "early_humans:The Ice Age megafauna extinctions": "2026-07-05",
-    "early_humans:The Taung Child and Raymond Dart": "2026-06-25",
     "early_humans:The control of fire by early humans": "2026-07-02",
     "early_humans:The dawn of metallurgy in the Bronze Age": "2026-07-08",
     "early_humans:The domestication of the dog": "2026-07-14",
@@ -13782,20 +13845,16 @@
     "early_humans:The origins of agriculture in the Fertile Crescent": "2026-06-29",
     "early_humans:The origins of human language": "2026-07-12",
     "early_humans:The peopling of the Americas and the Beringia land bridge": "2026-07-01",
-    "early_humans:Tracing human migration through genetics": "2026-06-21",
     "early_humans:\u00d6tzi the Iceman": "2026-07-07",
     "math_history:Archimedes and the 'Eureka' moment": "2026-07-09",
     "math_history:Cantor and the infinity of infinities": "2026-06-26",
     "math_history:Cardano and the solution of the cubic equation": "2026-07-15",
     "math_history:George Boole and the algebra of logic": "2026-06-30",
     "math_history:Hilbert's 23 problems": "2026-07-05",
-    "math_history:The Mandelbrot set and the geometry of fractals": "2026-06-25",
-    "math_history:The P versus NP problem": "2026-06-23",
     "math_history:The Pythagorean theorem": "2026-07-07",
     "math_history:The RSA algorithm and public-key cryptography": "2026-07-04",
     "math_history:The Seven Bridges of K\u00f6nigsberg": "2026-07-13",
     "math_history:The bitter calculus priority dispute": "2026-07-10",
-    "math_history:The continuum hypothesis": "2026-06-21",
     "math_history:The four color theorem and the first computer proof": "2026-07-01",
     "math_history:The halting problem": "2026-07-08",
     "math_history:The invention of the number zero": "2026-07-02",
@@ -13812,24 +13871,16 @@
     "medicine:Ronald Ross and the malaria mosquito": "2026-06-30",
     "medicine:The Tuskegee syphilis study and research ethics": "2026-07-12",
     "medicine:The decades-long development of mRNA vaccines": "2026-07-07",
-    "medicine:The discovery of anesthesia's risks and refinements": "2026-06-20",
-    "medicine:The discovery of insulin by Banting and Best": "2026-06-23",
-    "medicine:The discovery of the cause of beriberi": "2026-06-21",
     "medicine:The first successful kidney transplant": "2026-06-27",
-    "medicine:The first use of ether anesthesia": "2026-06-25",
     "medicine:The global eradication of smallpox": "2026-07-16",
     "medicine:The thalidomide tragedy and drug regulation": "2026-07-08",
-    "mythology:Amaterasu, the Japanese sun goddess": "2026-06-20",
     "mythology:Daedalus and the fall of Icarus": "2026-06-28",
     "mythology:Dragons across the world's mythologies": "2026-07-11",
-    "mythology:Inanna's descent to the underworld": "2026-06-25",
     "mythology:King Midas and the golden touch": "2026-07-08",
     "mythology:Maui, the Polynesian demigod": "2026-07-07",
     "mythology:Medusa and the Gorgons": "2026-07-04",
     "mythology:Orpheus and Eurydice in the underworld": "2026-07-12",
-    "mythology:Perseus and the slaying of Medusa": "2026-06-23",
     "mythology:Prometheus and the theft of fire": "2026-07-05",
-    "mythology:Ra's nightly journey through the underworld": "2026-06-21",
     "mythology:The Dreamtime of Aboriginal Australia": "2026-06-27",
     "mythology:The Egyptian myth of Osiris and Isis": "2026-06-30",
     "mythology:The Maya Popol Vuh": "2026-07-13",
@@ -13837,26 +13888,20 @@
     "mythology:The churning of the ocean of milk": "2026-07-03",
     "mythology:Thor and the hammer Mj\u00f6lnir": "2026-07-09",
     "mythology:Zeus and the rise of the Olympian gods": "2026-07-01",
-    "philosophy:Aristotle and the foundations of logic": "2026-06-22",
     "philosophy:Aristotle's virtue ethics": "2026-07-12",
     "philosophy:Descartes and 'I think, therefore I am'": "2026-07-13",
     "philosophy:Diogenes and the Cynics": "2026-07-08",
     "philosophy:Heraclitus and the doctrine of constant change": "2026-07-04",
-    "philosophy:Hobbes and the Leviathan": "2026-06-20",
     "philosophy:John Stuart Mill and utilitarianism": "2026-07-18",
     "philosophy:Kierkegaard and the birth of existentialism": "2026-06-27",
-    "philosophy:Leibniz and the best of all possible worlds": "2026-06-25",
     "philosophy:Ockham's razor": "2026-07-06",
     "philosophy:Plato's Allegory of the Cave": "2026-07-01",
     "philosophy:Schopenhauer and the world as will": "2026-07-11",
     "philosophy:The Vienna Circle and logical positivism": "2026-06-28",
-    "philosophy:The trial and death of Socrates": "2026-06-24",
     "philosophy:The trolley problem": "2026-07-03",
     "philosophy:Thomas Aquinas and the marriage of faith and reason": "2026-07-07",
     "philosophy:Wittgenstein and the limits of language": "2026-06-30",
     "philosophy:Zeno of Citium and the founding of Stoicism": "2026-07-10",
-    "science:Brownian motion and the reality of atoms": "2026-06-22",
-    "science:Einstein's special theory of relativity": "2026-06-24",
     "science:Feynman and quantum electrodynamics": "2026-06-30",
     "science:Gregor Mendel and the laws of heredity": "2026-07-08",
     "science:Heisenberg's uncertainty principle": "2026-07-04",
@@ -13865,28 +13910,24 @@
     "science:Louis Pasteur and germ theory": "2026-07-11",
     "science:Maxwell's equations and the unification of light": "2026-07-10",
     "science:Mendeleev and the periodic table": "2026-07-03",
-    "science:Schr\u00f6dinger's cat thought experiment": "2026-06-20",
     "science:The discovery of X-rays by Wilhelm R\u00f6ntgen": "2026-06-27",
     "science:The discovery of oxygen": "2026-06-28",
     "science:The discovery of the cell": "2026-07-07",
     "science:The discovery of the structure of DNA": "2026-07-06",
-    "science:The double helix and the race to find it": "2026-06-25",
     "science:The double-slit experiment and the nature of light": "2026-07-12",
     "science:The theory of plate tectonics": "2026-07-14",
     "technology:Alexander Graham Bell and the telephone": "2026-06-29",
-    "technology:Edison and the phonograph": "2026-06-20",
     "technology:Edison's lab and the practical light bulb": "2026-07-11",
     "technology:GPS and its military origins": "2026-07-12",
-    "technology:Marconi and the invention of radio": "2026-06-24",
     "technology:Nikola Tesla and alternating current": "2026-07-02",
     "technology:Ni\u00e9pce and the first photograph": "2026-06-26",
     "technology:Samuel Morse and the telegraph": "2026-07-10",
+    "technology:The Haber-Bosch process and synthetic fertilizer": "2026-07-25",
     "technology:The Model T and the moving assembly line": "2026-07-06",
     "technology:The Mother of All Demos": "2026-07-09",
     "technology:The Wright brothers and the first powered flight": "2026-07-04",
     "technology:The development of the first nuclear reactors": "2026-07-07",
     "technology:The first web browser": "2026-07-03",
-    "technology:The mechanical clock and the measurement of time": "2026-06-22",
     "technology:The sending of the first email": "2026-06-30",
     "technology:The shipping container and global trade": "2026-06-27",
     "technology:The transistor at Bell Labs": "2026-07-14",
@@ -13900,18 +13941,15 @@
     "world_history:The Vietnam War": "2026-06-29",
     "world_history:The assassination of Archduke Franz Ferdinand": "2026-07-03",
     "world_history:The assassination of John F. Kennedy": "2026-07-14",
-    "world_history:The fall of Saigon": "2026-06-20",
     "world_history:The fall of the Berlin Wall": "2026-07-12",
     "world_history:The fall of the Romanovs": "2026-07-11",
-    "world_history:The founding of the United Nations": "2026-06-24",
     "world_history:The partition of India": "2026-07-05",
-    "world_history:The rise of Adolf Hitler": "2026-06-22",
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
     "failed": 2,
     "ok": 39,
-    "ts": "2026-07-20T12:08:27.853048+00:00"
+    "ts": "2026-07-25T05:14:41.739205+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -13945,111 +13983,111 @@
     "9cf78ee44cb96c21",
     "7621aad01d0821be"
   ],
-  "learn_last_sent": "2026-07-20",
+  "learn_last_sent": "2026-07-25",
   "life_dashboard_last_week": "2026-W29",
   "meditate_slots_sent": [],
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "3c5cf5d499012a17",
+      "e1204104c7911ef5",
+      "7c6b3754580ff535",
+      "f077a91e1ebef0f0",
+      "e7123c0a92faa316",
+      "6cffb64140511d62",
+      "f0276cfa4680ef9b",
+      "922aec8d2df2f309",
+      "fac292fb1ed063cb",
+      "e3b35366aa0a2f14",
+      "23ef9a63fa88db11",
+      "e8c79f9501f54304",
+      "e44d100afa1c80e7",
+      "ad316371c69126a8",
+      "a375b7989e4f3d6c",
+      "1de57858c8d1749f",
+      "f08d2f621502fd0b",
+      "48966a2df9cccdc0",
+      "4e65b593382a19ac",
+      "2bdc4f6ca1364a4b",
+      "6e932e20d7598afb",
+      "57d3f0b3ac775da9",
+      "433162a01257c7c9",
+      "67c07a1184ba048f",
+      "fdf504ff4fa84d81",
+      "e666011fce51c0e8",
+      "45526a482e56ef5e",
+      "846a2ad653382e5a",
+      "3982036ed115f577",
+      "3155b058aeeff4ef",
+      "66a738e4be93bf2f",
+      "decf60c8bbe1ca65",
+      "ebfe11c10caff44f",
+      "3a4f53a9caf8d605",
+      "d0f543c78b8c6896",
+      "5c3fb7449ad67e6c",
+      "15715ff4e2f7dead",
+      "d6b4f57d9f3966bd",
+      "ea2c08e6359dda3e",
+      "61e3e88c6c82c760",
+      "8038d7720fbcb448",
+      "c8c19f3f8c62bdda",
+      "17b431ab9ca86617",
+      "d72e6113fcabb203",
+      "200423c0840e9422",
+      "31790d85a17a4ef1",
+      "e386ad119bc978df",
+      "26096c040848f098",
+      "977c2ccb9c697385",
+      "865b616fa5879734",
+      "683e6ee75b1b39a5",
+      "ec4d2a3f0e7bada6",
+      "c103868dc0c3912f",
+      "525a4830f84380b6",
+      "fab315634c050634",
+      "b317f29d578ad579",
+      "e760f38e435263d4",
+      "43bcc83c5be14cce",
+      "b0dd203e10872e12",
+      "b7800ee4eb4b936f",
+      "629d64f0aab4ac55",
+      "58b4a90ae0e9255a",
+      "35b169c1b471f68c",
+      "d1ffd636366fd2a5",
+      "5577faeee906d17a",
+      "ac96b197664808ce",
+      "693d03011be960de",
+      "b47f43c08c9c9153",
+      "3df78323043628f9",
+      "af09ce586bb6e972",
+      "c5c57dce811700ad",
+      "eff834f09e337f73",
+      "ff5b90e154f8b6d8",
+      "16ae2c5936e58fb4",
+      "823789afffed4775",
+      "6ea59194436c561b",
+      "ea6d6fa36f4436e8",
+      "24f064b1022bc3d4",
+      "d1a0542eeb8b7ba3",
+      "2dee3a75c71d6571",
+      "ef521ad0b0d23e4d",
+      "b50c355324772b31",
+      "3dd8294ca0e897e1",
+      "ce5d38b6aa22f852",
+      "5c7e0cd8182259e9",
+      "30f2022928072ae4",
+      "37928992619ed8bf",
+      "6bebcc28722cb6b6",
+      "9abde79b431a2155",
+      "0120fc1d8db40f09",
+      "d473b8f128d0c460",
+      "bf9ecdf5de5599ed",
+      "6ccd1b957d3950b1",
+      "4d249bb8f41ca34d",
       "8f7377ba1c31181e",
       "c2dbaba6af8bd2f4",
       "680e5a1e01d88eb6",
       "a20f30910c921bb3",
       "594b166958b9a84d",
-      "a871415032c33016",
-      "a8d5edbe983bb8b9",
-      "ab7254bd299e73a8",
-      "cedcaabacbd897b6",
-      "5c6f9ec728a5cf97",
-      "74598648b930e2be",
-      "046a2c8eb2ca1b68",
-      "a860834e5e9d3168",
-      "a25f686b136be614",
-      "68299a696457f520",
-      "35444ede8ec89900",
-      "f69911c1d047c2fc",
-      "039448c77d367067",
-      "d2b569dd7f1be0bf",
-      "9b25fa97bcfd1b3b",
-      "6ca38a1bfb45f6d2",
-      "f345625f4aba3549",
-      "5bb36521953ccd9d",
-      "2ba124daf66b3aea",
-      "1a49252f34d68ff0",
-      "c9197f276baa2bd2",
-      "def564a2c3dd6d69",
-      "c9f92b5c3272b5d1",
-      "b308d4b4c7cfbfe4",
-      "25f52c0d8cb626f4",
-      "1f8c56945e2df534",
-      "94ab69b13bfcb116",
-      "48a884cb9ec82962",
-      "48f50ad8349be3eb",
-      "2d8a3e728ebc0979",
-      "e005bbaaf5401e8c",
-      "1873799b906fd911",
-      "cf28e4e46a4ed970",
-      "6e24fa880264eb89",
-      "29ae5c6ebebe8083",
-      "0431a85399e13925",
-      "fddafc68629a285c",
-      "3163341e806fd54a",
-      "1fd4be4f910047cd",
-      "e8ce94797f1ea68e",
-      "e7b066909813855c",
-      "e18bb9aaa1214aeb",
-      "c2959068f0f856ba",
-      "35e1c7ef98686bbd",
-      "43f5aff4ebb4e29d",
-      "92876b2aec900ee2",
-      "747f23dd32a92fd7",
-      "11aad8a4cc2b28a7",
-      "c3a0a2ea3952634a",
-      "338d072ec7f538b3",
-      "f3496b0ae5e4d8fa",
-      "f769d458c10d30d4",
-      "3bbb867cf6a03402",
-      "1c55aef45e8dc705",
-      "07c7f94bcc47e05c",
-      "6b5d9b04c7774404",
-      "3c18393b7f27a57c",
-      "079266db6853a1e4",
-      "5b02c45498be0685",
-      "47ea0f38e45d501c",
-      "2714f6dfa811b28e",
-      "dac7b88fc062ad3f",
-      "d197507948a5f2fd",
-      "e2ad2c00cf169e06",
-      "2d605d31e7e99f04",
-      "693e26064b2191f5",
-      "b2e4c0a4a98ffc4f",
-      "a0d108c450cb9217",
-      "c23b003667b0eced",
-      "cc7b26e8ce40e1b3",
-      "bf9f9840cda46905",
-      "c7b38a6b34d77b99",
-      "caeb0de5e5a713cc",
-      "c456cfd43b62d38b",
-      "e0ce6823e81bf0d5",
-      "ad40c0eeac729984",
-      "164731d733ba3e8b",
-      "4acab756d9e53747",
-      "a6824f3bbfd86657",
-      "1ab7d6d1bfc35ab8",
-      "6666a469e4321bc2",
-      "f02e08745e7457b1",
-      "4523cbe9aaed3bda",
-      "4942dfd5f50b324b",
-      "12efa686f9862554",
-      "d7eb1e0c6b1db3f3",
-      "c6ddfd1873b7b03a",
-      "b4b41bcb9e15c3f3",
-      "78ce28dc89c8af33",
-      "9b1049d9fe74c17c",
-      "626d208a29238e91",
-      "b823c1a26e1cf213",
-      "c9db4572aabab0a0",
-      "cb62618c0f95d694",
-      "831e65c0d4636a92"
+      "a871415032c33016"
     ],
     "Godzilla x Kong: Supernova": [
       "51638fe17e6060fa",
@@ -14154,6 +14192,10 @@
       "69529c8b58210e7d"
     ],
     "Spider-Man: Beyond the Spider-Verse": [
+      "deed767569daad32",
+      "4bbdc59fd07450de",
+      "24f4b71ce49f57fe",
+      "ddb03f7fdec07037",
       "83c483fd99cdb1e5",
       "f97ec829d8bd78b2",
       "cb1b16f4c6d7d61b",
@@ -14249,13 +14291,90 @@
       "16304a7ec1af990f",
       "318a1d366f63560f",
       "8bc3881066f345c1",
-      "a96990f3b8a2ab5e",
-      "d81c8fe360fed0ea",
-      "1b0828a593e79d11",
-      "abb3e9f8649e3f7d",
-      "8beebd591b687e63"
+      "a96990f3b8a2ab5e"
     ],
     "Spider-Man: Brand New Day": [
+      "d1634726dc631913",
+      "73d3690eaf0af95a",
+      "f077a91e1ebef0f0",
+      "3ea228a97c45461d",
+      "5744b9913e902acc",
+      "7c9835663eca9d56",
+      "5341b27ff565af32",
+      "53156a5406a32e62",
+      "10f9338809a18eec",
+      "b67803c3d40ba8c9",
+      "e6644ff6e3f26f3b",
+      "b2cc3bc6416d80e4",
+      "c5ae85dcbf3bb63d",
+      "a9a593a9542b3b26",
+      "f90d1e50a12dc818",
+      "5b019b4f21501f87",
+      "68d08cda3bc48320",
+      "33307fe3ff869390",
+      "8c9b37997103180c",
+      "427098a91e2675fb",
+      "a313a69ab7de462b",
+      "9e49f94a92d88016",
+      "7d8a305a46ec2610",
+      "5fd8c8e698260c60",
+      "9138ac8d9424cc5b",
+      "f8abff83e78b5cd4",
+      "6a9fdd043505f1da",
+      "8da9ec6cefa253a0",
+      "4c32e175fef6385a",
+      "b731cc6e3b8f4e34",
+      "729670a7808963d1",
+      "0a8b426ebd58d53e",
+      "c4ce14b8d2e668d1",
+      "f1d76e2a853cd4ab",
+      "beafc3d975a4857a",
+      "929b3def2a0026ff",
+      "dc430b278c8e407c",
+      "ef0920b3260b8388",
+      "3551ad9de7f69b59",
+      "a265c18e1d014e45",
+      "4a2287fad85f6082",
+      "bde5514ce767a016",
+      "b5be79fd4a1eceb4",
+      "67af3743ae640d46",
+      "4ec0de76296f0734",
+      "34741d978ee38d58",
+      "649cb7c87e12c58a",
+      "53326f9e1371f162",
+      "7923c15e03ce2f71",
+      "dd1ed01484048316",
+      "401cfe725ef152b3",
+      "c25e7d364c27bc90",
+      "b40810549e70dbb6",
+      "d9b6e890b6a22216",
+      "7ffea65ebaa0cff2",
+      "6dee71f4a5556e88",
+      "2a57525bdc6690ab",
+      "05ab362a80c18618",
+      "53d4fed4f825496c",
+      "047b8ef42681baa5",
+      "c5300c45e4008e9e",
+      "6c9af9dc34e8015d",
+      "ca488ec7f9837c7c",
+      "bc156cbab4330f87",
+      "cf1707f1f4fb95be",
+      "59cd36100efc4b34",
+      "6b4657ca2a2d028b",
+      "c05d39d775b20717",
+      "99fc6814366d682a",
+      "ba2f5c253653c3e4",
+      "fa2dc762fdd87926",
+      "6e0afd8d15fb1beb",
+      "7183721eb8b5a5db",
+      "10895456b11fd04a",
+      "50909efda81cd9d6",
+      "30cc459b8500fa31",
+      "40ce099925773285",
+      "211391d71df9bf23",
+      "e7d8fcdd6be40898",
+      "0b781e93ed5969cd",
+      "17a4040cc644f965",
       "3df41f357bda775d",
       "6e88ad8d4035158d",
       "6597b171f32ea396",
@@ -14274,90 +14393,63 @@
       "8f14ac1865b3c5b8",
       "40a98465d404075e",
       "1706ea0d7a84bd2e",
-      "e2e46d7a61f57687",
-      "32156c0eab2c5fdd",
-      "013d8aaf129b5ace",
-      "3822ea3450c47ebc",
-      "06c7c34896f0acd4",
-      "bb8ad6b546265b2c",
-      "3bbb867cf6a03402",
-      "352141baa44a4427",
-      "a7906c67db8272e3",
-      "38edbdb2bfb81a46",
-      "91facc3eaf6b34c3",
-      "fc77f057ed2d1626",
-      "198e617147546383",
-      "5f069e0137afa427",
-      "c9a38cd5198ee802",
-      "3633fddee084bd99",
-      "71cb62dfe41c4db3",
-      "3771111b13e1165e",
-      "919388b3028671cd",
-      "0c6b999ce2d2932a",
-      "d720fc9178a9a251",
-      "dbdeee2004d29d1f",
-      "123c9ae913253939",
-      "6c396ee7dad03121",
-      "0cae91384d43bbdb",
-      "0202ecc6cbebdd0e",
-      "42123892a2636b47",
-      "5ecf15b71f3558b4",
-      "2629e801a99976e8",
-      "80471c660829f209",
-      "ff21ce77b85ab835",
-      "3be33b519089b5fa",
-      "34baff273d83151d",
-      "7a56733e25a76a6b",
-      "eb1a48680ca2eb6b",
-      "a903d127954aa7c7",
-      "bdbdd11805c8f931",
-      "e77da6ba106d91f2",
-      "08562be3c7e484ce",
-      "a17da3d73ce5081a",
-      "2931b34c17135a59",
-      "7388e14ec3d4415a",
-      "031c0a64b23199dc",
-      "7e589fcf2c0cb761",
-      "f5f75515944e3858",
-      "1618b0198be3b568",
-      "65bb05e8bf37b9a9",
-      "2972a699ff915afc",
-      "f5f7ed9ac5ac272d",
-      "9119084e5f0c133c",
-      "2af448a8a4a996ba",
-      "57b3b0141c64eee9",
-      "173d694230ad3241",
-      "263b5faeb6b6ae3e",
-      "aaad1c420ae39293",
-      "c72697ff857381de",
-      "dfcb562d41af6424",
-      "9a2bb0a6dbd6e44a",
-      "583416de145c4822",
-      "f053e51d54b7cf67",
-      "203286132feb4819",
-      "6e1c43603e633b5a",
-      "edea7f22899f2816",
-      "1f61e403c63cf4fb",
-      "bfcb9fc8d6342bdd",
-      "5ac7e15cf974a603",
-      "7f0065f6bfdca96b",
-      "140626652b013d34",
-      "3af67db4a094c2b5",
-      "759881c236a1e426",
-      "50fc7bb30ef849d4",
-      "6302f1b0e2b91017",
-      "36b1c4aac4de3d74",
-      "b5c43f6e72f3f6ec",
-      "3367f1ec01382604",
-      "065b3a5b0ad98c65",
-      "a4dddd24e9daca3c",
-      "7d2c153e6b4af4a2",
-      "3156cfb3dc1dc145",
-      "ef997903eac8fb37",
-      "ee754c03f168884c",
-      "abbb88e2d81deb78"
+      "e2e46d7a61f57687"
     ],
     "The Batman Part II": [
+      "401972fbc65d0103",
+      "b928a6164c2acefc",
+      "2cd87165d7bdcf0d",
+      "37b997b3710884d5",
+      "01617819c12f44f5",
+      "d1b6cf965cf8698c",
+      "cf795e6f7a3caa19",
+      "c86dcd75b62f81ba",
+      "37ced2743a0e00ab",
+      "ab0fce2a349cb986",
+      "02fdb1299e7eb94a",
+      "ae5ce677b23f2a9e",
+      "05c8cecd7122596d",
+      "da51fa1d03f4987e",
+      "b742466ec743c7ff",
+      "0f17605fcdaa0c05",
+      "11857d5e679bb818",
+      "047a0024384add30",
+      "2a5e6232e986cd45",
+      "2e18ca70187a7b0d",
+      "4c38b96532b70cf4",
+      "9d3b23f55ea73a31",
+      "04c1136d9540d5d2",
+      "36f5077dbd6e3c13",
+      "70c9ea0b157ee293",
+      "547a437517467376",
+      "1d4692a62286195b",
+      "23a92ca71c8f464c",
+      "34a019437c54d04a",
+      "b8c3831a801ab8a0",
+      "9f5873ac38e92912",
+      "2b23a3e84dd28247",
+      "e2fd1795a9d93746",
+      "b5f42680db2a5bfa",
+      "923987294c0cd20d",
+      "4e45185eb9f441a7",
+      "297378dd2fe86740",
+      "2df900db591b8776",
+      "e0362f55afb16e3b",
+      "d3ae4e887a29d91a",
+      "6e70a3d586823233",
+      "5731cfea4a8850ef",
+      "6e93270954740392",
+      "a70d4e231d38f3fd",
+      "50f816ff9c64815a",
+      "dbf5d0b8d3d43679",
+      "7a1926ff15d18553",
+      "bbbbe144da01296c",
+      "24abd3b05b686364",
+      "7ff71d913a1c6c8e",
+      "cf3b8f94fe563f60",
+      "3e15d7cd3e589317",
+      "df6046b6ce1ce05f",
+      "570955ca7a6d6e72",
       "7143493c381f22f8",
       "fa4010045e3fdeb8",
       "3cbc75aca57b8754",
@@ -14403,163 +14495,109 @@
       "b1dde3e541dbb878",
       "6803c4dfe0ae7bad",
       "70e5093a27ef63c2",
-      "8f581cb3e7f35970",
-      "ca5a961743349b4d",
-      "f3da04253c41117c",
-      "a83e4d6610832e73",
-      "1438b8f82c3b1e11",
-      "0d68331fb2373954",
-      "41e7d536ea1122af",
-      "58f0b5566d983789",
-      "c1819065674f4112",
-      "b60f512a120a37db",
-      "9bbbe65e40fa9f74",
-      "f26b41eeb2be8663",
-      "c9d9ebe544203843",
-      "aab963499e23dd11",
-      "f81e99a6def1b4c5",
-      "64e6ec646c7b5831",
-      "2623289f25d8415f",
-      "3c9f12a0f6df7e24",
-      "4448f51b2f4b64b8",
-      "aee327ae6f6a5993",
-      "7b9e2d3a046fdd30",
-      "651ac58071d4a484",
-      "549566341dd9d71d",
-      "287299f5f5f9fd8d",
-      "cffba37cde478097",
-      "406df222aa6b30c8",
-      "a788d89bca887902",
-      "b6dd59481411e265",
-      "a35411d584c6d77c",
-      "4bda64cf9b86a348",
-      "3a85da12e284fc74",
-      "42a66e38c810375a",
-      "5f2530444a68eb5f",
-      "75d10ac44f16340a",
-      "be64fd985f8a85d2",
-      "dec5d7b9403c8fdd",
-      "6d62751110b05d11",
-      "5ba22ef2c2b8c52e",
-      "988372df24808474",
-      "eeccab229258e0fb",
-      "ccfb32046e46eacd",
-      "939e332afe57eb07",
-      "f987ff4367f1e67a",
-      "9b19518d800f4640",
-      "254d4c298af9c23a",
-      "e0a09394f256224d",
-      "15cf824680f62745",
-      "b5bde9772e0cf2d9",
-      "9a600e4f3c413ddb",
-      "a9128d5fc32fbf73",
-      "5041daf880ec804b",
-      "451049b860c3cd32",
-      "ce0907378887b2e7",
-      "8de31e1469a4fb6a",
-      "d132635bfee6ea0e"
+      "8f581cb3e7f35970"
     ],
     "The Odyssey": [
-      "622beecc866c3941",
-      "3f5f9f74b160861f",
-      "e7f9e7f713312a59",
-      "35a344566e07dfb6",
-      "290ce49374da298e",
-      "1a38898fa7ec4cd3",
-      "4d7297033d99a254",
-      "7e568f4355b0ed0c",
-      "f232fd2f2c6a60db",
-      "39b8262e8948f11a",
-      "b831c4d0d60dcc47",
-      "b33663c91252becc",
-      "1fd9084e3623119c",
-      "14fe428d06fcd151",
-      "94666a2fafa1c5c4",
-      "efd383548c2650e7",
-      "a3c5f2bae18803e0",
-      "03cd8d836650d273",
-      "807856076d443ca0",
-      "a1f42b415bc5ae91",
-      "af375695703faf50",
-      "a3758e3ef9d354d5",
-      "4213cb360d762a05",
-      "53f49456c2da5fbb",
-      "2a02344cf3863ca2",
-      "9e3e306bd816d449",
-      "1fd25b989608f462",
-      "24781abb05e1954e",
-      "d3a06d4db2bc4d81",
-      "bf59b01ded665642",
-      "b3f8015b00c612e0",
-      "c188d8135c8e0c77",
-      "52e4cf447d649a99",
-      "56928ac06575f5b5",
-      "61fcf3407d3e8a0b",
-      "6a7d5b32cbb7d42f",
-      "acb55b427d31373f",
-      "1db05860df35a2fa",
-      "dfb884b6c459f9ae",
-      "32352d31137feaf7",
-      "fc777477948fc850",
-      "deadcb62a7dc46f7",
-      "8cded55f01968e31",
-      "13a2cc466c1183c0",
-      "1d6b3f938758c060",
-      "4315f6a227f96e25",
-      "e1f34828286f0ed9",
-      "eecc6016feb5ebd1",
-      "d3afe7c882847d29",
-      "23bd60d6987ecd47",
-      "e1fa1293ee1c9fdb",
-      "530c8d52b461f035",
-      "67a3dfb31aa96201",
-      "db2fbe6abd5e0711",
-      "237b83a815a5595a",
-      "4d99b9ed8078e67a",
-      "23a2a36dfcf33917",
-      "ddabe62cb3c194ea",
-      "a05c42a05cefe5cd",
-      "16c806975e0e1e40",
-      "a2eb5679b08b0707",
-      "be55414ab435d787",
-      "976320860aa1918d",
-      "a871dd5c2d837528",
-      "7674b8ad76b91bf4",
-      "68f3bc0b2bf03cb7",
-      "7d1b5582f66984d3",
-      "c07d90650b38536f",
-      "678e4b32edf623ba",
-      "de463a907eeaed77",
-      "613dc7e0b13ac426",
-      "6f39df6960be579a",
-      "1c21782556d8863c",
-      "114bd6f714322e1f",
-      "a50a67d026e613ec",
-      "2b8255a947554e20",
-      "f405f7b01548211a",
-      "583d8094c2ebda51",
-      "9dea7cfb13520ec3",
-      "d960907ad16cdc9a",
-      "29f25b7aa07c8eae",
-      "482a9ec545ff0c4c",
-      "3004fb0e27cf7533",
-      "e1239e3011269235",
-      "4e3b8b299f200f88",
-      "43fc67161db371ad",
-      "f49fd0d407b78cbf",
-      "46b404b6c60447e7",
-      "f60187bd626ed45b",
-      "534a0a40c390270c",
-      "b1ec66a31fea8678",
-      "91eb312e41e1f4e1",
-      "c31e4970c3a2b2cc",
-      "6d3249280be37e3e",
-      "938b52dde2311b8d",
-      "1d18e067de045a52",
-      "89cdff803214acef",
-      "2b248f044d296a85",
-      "b96a6d8102401dd8",
-      "6377e66f391689d2"
+      "1ec99d657cdf3bef",
+      "c404a575a2fee87a",
+      "38a211bc2713e8bf",
+      "dfa505a87964322f",
+      "5226ca03a7ff3f6d",
+      "07e5a6456aa71b78",
+      "2122bd44ce4de307",
+      "bd761d9e80ff41b2",
+      "19e024ceee993c25",
+      "d8b2af5aee278752",
+      "c0b7a40dddcba9ed",
+      "60574248facc7f61",
+      "e875e60a9a27cecd",
+      "31a0f814d4bf8f22",
+      "3bdd6a2978bfa0d9",
+      "3efb6273c7bb34ad",
+      "1401a60a142703ab",
+      "f548d2ac50647d8f",
+      "e064aa3de5170b27",
+      "c9ac7610cac8db6f",
+      "23040dccaf2202b2",
+      "74e36b31ece7a32d",
+      "9e2c73858c285f60",
+      "c04dddd119eaf39d",
+      "b98a8acc29bc99fe",
+      "5d72d047aa81fab6",
+      "060ec303718398ad",
+      "73acc550c766860b",
+      "2cb7ba35c18a05cc",
+      "de6ff5df19c759f6",
+      "6ab48f84fd0cde81",
+      "8f6f1fcce52c3398",
+      "36cf28d13dfc9756",
+      "572c8685b511ed65",
+      "2ea007ccb138cd03",
+      "d0e0151e5e63f02f",
+      "70ade98fd5c3df7b",
+      "10160896be873924",
+      "6096bfa2754ad2c6",
+      "295f0ae9acc58141",
+      "449071a2c5204d1b",
+      "fbf0453104ad6ec4",
+      "fe23abcd160fca50",
+      "8f054b1b89017019",
+      "dcc5cce95540697e",
+      "0b918a2e9d2f89ab",
+      "bb6fe7dd166b9140",
+      "17cf3922bb79983c",
+      "1c30b9bf23fac501",
+      "812d2d8336470bb8",
+      "14c986961e7e4bb2",
+      "60517e644957ef55",
+      "bf2077dd33770a03",
+      "3f2b627ac30d4a21",
+      "fd01f151c596c0ce",
+      "1bed97532ce650da",
+      "7134e98ff1a73fa8",
+      "6255ec3fbd301da8",
+      "522f378ea0af0e47",
+      "20f7b617b4c61d68",
+      "4cd4296b8670aff1",
+      "0a7965a037b5dbb6",
+      "4a61c6cde29169b8",
+      "422b06d68ce6bcc5",
+      "3226061f1dfe2ca5",
+      "6f9f36473f422c22",
+      "e033079289d4e274",
+      "3c264fda42f317a8",
+      "11d95a300465139b",
+      "6bf09c8c4a08aaa8",
+      "e34e88ca025b48f1",
+      "199b300a8e1d71ea",
+      "2fdf30d2da65af2a",
+      "70ba6f0cf3bfe306",
+      "525e6cc679148398",
+      "19dcb4366690546e",
+      "9269355737d32616",
+      "d1911607bb8b13a1",
+      "733204d8addcf905",
+      "f6750cd959ff5f02",
+      "9ec3e85720666810",
+      "54518e1b4533be29",
+      "53b39ad27848ffb7",
+      "ad0cd876c8e2b76e",
+      "dc7b981e6bd88861",
+      "caab8917e2824f06",
+      "b088af3549d59ccf",
+      "061a4116cadffc47",
+      "4cbc7bacfa9707e6",
+      "ac9aa5010e72e6d8",
+      "b8130f7289379f32",
+      "b69e69f2bf58eb98",
+      "eb687821fe5f20b0",
+      "6f490b59d24e7654",
+      "7fefb2bf41722a33",
+      "859768e5dff7fbd5",
+      "120c2bd20593160b",
+      "4e54dad5c32552cc",
+      "34487bfc42a2b3e3",
+      "f0778dacd5e8bb4b"
     ]
   },
   "movie_release_dates": {
@@ -14751,7 +14789,8 @@
     12556256,
     121587772,
     14002467,
-    6292042
+    6292042,
+    1619572
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14841,15 +14880,6 @@
         "name": "Akon"
       }
     },
-    "1ef14636cb3e3e8e": {
-      "applied": null,
-      "created": "2026-07-10T22:12:31.915332+00:00",
-      "kind": "artist",
-      "label": "Stormfrun",
-      "payload": {
-        "name": "Stormfrun"
-      }
-    },
     "26712b9ff77c3c87": {
       "applied": "2026-06-12T20:50:05.106787+00:00",
       "created": "2026-06-12T20:25:20.761217+00:00",
@@ -14877,15 +14907,6 @@
         "name": "Zed Yun Pavarotti"
       }
     },
-    "2946e22718ae544c": {
-      "applied": null,
-      "created": "2026-07-09T14:18:16.650220+00:00",
-      "kind": "artist",
-      "label": "The Jolly Rogers",
-      "payload": {
-        "name": "The Jolly Rogers"
-      }
-    },
     "2c31a2f8271b163a": {
       "applied": null,
       "created": "2026-07-14T21:08:10.123221+00:00",
@@ -14904,31 +14925,13 @@
         "name": "Nusky"
       }
     },
-    "37792c559cd15977": {
+    "3d0ded26ef57d47b": {
       "applied": null,
-      "created": "2026-07-06T16:41:31.293752+00:00",
+      "created": "2026-07-25T05:14:52.227890+00:00",
       "kind": "artist",
-      "label": "Reed Wonder",
+      "label": "Mac Demarco",
       "payload": {
-        "name": "Reed Wonder"
-      }
-    },
-    "431d619ae1cbb9ea": {
-      "applied": null,
-      "created": "2026-07-10T19:45:42.975535+00:00",
-      "kind": "artist",
-      "label": "The Irish Rovers",
-      "payload": {
-        "name": "The Irish Rovers"
-      }
-    },
-    "484fa8eb3db8829b": {
-      "applied": null,
-      "created": "2026-07-09T22:05:12.767878+00:00",
-      "kind": "artist",
-      "label": "Pyrates!",
-      "payload": {
-        "name": "Pyrates!"
+        "name": "Mac Demarco"
       }
     },
     "4b5b5b40b97f91af": {
@@ -14938,15 +14941,6 @@
       "label": "505 Games",
       "payload": {
         "name": "505 Games"
-      }
-    },
-    "4c7dbac0759cba41": {
-      "applied": null,
-      "created": "2026-07-09T16:44:54.242126+00:00",
-      "kind": "artist",
-      "label": "Storm Weather Shanty Choir",
-      "payload": {
-        "name": "Storm Weather Shanty Choir"
       }
     },
     "552dc61ae34b8f04": {
@@ -14976,24 +14970,6 @@
         "name": "KIK"
       }
     },
-    "5cd4f24eb9a25149": {
-      "applied": null,
-      "created": "2026-07-08T21:51:30.263887+00:00",
-      "kind": "artist",
-      "label": "mxmtoon",
-      "payload": {
-        "name": "mxmtoon"
-      }
-    },
-    "5f2fb5008557d4e1": {
-      "applied": null,
-      "created": "2026-07-07T16:13:18.049217+00:00",
-      "kind": "artist",
-      "label": "Ellie Goulding",
-      "payload": {
-        "name": "Ellie Goulding"
-      }
-    },
     "60aff0394ae69e60": {
       "applied": null,
       "created": "2026-07-14T12:07:45.392449+00:00",
@@ -15012,15 +14988,6 @@
         "name": "THE ORAL CIGARETTES"
       }
     },
-    "62767bad54d68018": {
-      "applied": null,
-      "created": "2026-07-07T13:38:15.647329+00:00",
-      "kind": "artist",
-      "label": "Gavin James",
-      "payload": {
-        "name": "Gavin James"
-      }
-    },
     "65873f3f09e771c1": {
       "applied": null,
       "created": "2026-07-18T18:07:43.574541+00:00",
@@ -15030,24 +14997,6 @@
         "name": "ATEEZ"
       }
     },
-    "6626b0de5081190f": {
-      "applied": null,
-      "created": "2026-07-08T12:09:34.036355+00:00",
-      "kind": "artist",
-      "label": "Cavetown",
-      "payload": {
-        "name": "Cavetown"
-      }
-    },
-    "7c81628afd3fb964": {
-      "applied": null,
-      "created": "2026-07-10T13:31:02.600524+00:00",
-      "kind": "artist",
-      "label": "Pirates For Sail",
-      "payload": {
-        "name": "Pirates For Sail"
-      }
-    },
     "7e5024f7a2d7f278": {
       "applied": null,
       "created": "2026-07-15T12:08:00.051124+00:00",
@@ -15055,15 +15004,6 @@
       "label": "Lujipeka",
       "payload": {
         "name": "Lujipeka"
-      }
-    },
-    "7f2ad4eac9a84451": {
-      "applied": null,
-      "created": "2026-07-07T18:22:48.978473+00:00",
-      "kind": "artist",
-      "label": "Lewis Capaldi",
-      "payload": {
-        "name": "Lewis Capaldi"
       }
     },
     "8d996f059c97f6c5": {
@@ -15111,15 +15051,6 @@
         "name": "SEVENTEEN"
       }
     },
-    "ad6fe56e30b1ac38": {
-      "applied": null,
-      "created": "2026-07-08T18:03:52.432291+00:00",
-      "kind": "artist",
-      "label": "awfultune",
-      "payload": {
-        "name": "awfultune"
-      }
-    },
     "ae63c389e23f16a2": {
       "applied": null,
       "created": "2026-07-19T18:08:29.214529+00:00",
@@ -15136,15 +15067,6 @@
       "label": "Fripside",
       "payload": {
         "name": "Fripside"
-      }
-    },
-    "b4943bc3a318b828": {
-      "applied": null,
-      "created": "2026-07-06T18:33:39.628084+00:00",
-      "kind": "artist",
-      "label": "PLVTINUM",
-      "payload": {
-        "name": "PLVTINUM"
       }
     },
     "bb30db2e4c1370a5": {
@@ -15219,24 +15141,6 @@
         "name": "Noisecream"
       }
     },
-    "d7a37cb10b65fef9": {
-      "applied": null,
-      "created": "2026-07-09T18:30:20.460712+00:00",
-      "kind": "artist",
-      "label": "The Dreadnoughts",
-      "payload": {
-        "name": "The Dreadnoughts"
-      }
-    },
-    "d8f7a368caaa8915": {
-      "applied": null,
-      "created": "2026-07-07T21:56:07.779485+00:00",
-      "kind": "artist",
-      "label": "Lukas Graham",
-      "payload": {
-        "name": "Lukas Graham"
-      }
-    },
     "d90ba3ee0a590046": {
       "applied": null,
       "created": "2026-07-16T12:08:41.018403+00:00",
@@ -15244,33 +15148,6 @@
       "label": "Columbine",
       "payload": {
         "name": "Columbine"
-      }
-    },
-    "e0ed6c184d361214": {
-      "applied": null,
-      "created": "2026-07-06T13:33:46.147618+00:00",
-      "kind": "artist",
-      "label": "Chris Grey",
-      "payload": {
-        "name": "Chris Grey"
-      }
-    },
-    "e33c3ba93a90e2ec": {
-      "applied": null,
-      "created": "2026-07-06T21:58:01.238541+00:00",
-      "kind": "artist",
-      "label": "Darci",
-      "payload": {
-        "name": "Darci"
-      }
-    },
-    "e546bc89f85830d7": {
-      "applied": null,
-      "created": "2026-07-10T15:58:07.376934+00:00",
-      "kind": "artist",
-      "label": "The Poxy Boggards",
-      "payload": {
-        "name": "The Poxy Boggards"
       }
     },
     "e6ace2a02a7af918": {
@@ -15298,15 +15175,6 @@
       "label": "MYNGA",
       "payload": {
         "name": "MYNGA"
-      }
-    },
-    "f7c7c508fa9b2962": {
-      "applied": null,
-      "created": "2026-07-08T16:22:50.805465+00:00",
-      "kind": "artist",
-      "label": "Ricky Montgomery",
-      "payload": {
-        "name": "Ricky Montgomery"
       }
     },
     "fbadeccd36358f85": {
@@ -15577,8 +15445,8 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82617,
-  "spark_next_kind": "fact",
+  "spark_last_sent": 82636,
+  "spark_next_kind": "health",
   "spending_week_summarized": "2026-W28:2817.16",
   "streaming_seen": {
     "1003596": [],
@@ -15590,157 +15458,157 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-07-20T12:09:58.789839+00:00",
+      "last_data": "2026-07-25T05:16:34.730134+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-07-20T12:10:02.592628+00:00",
+      "last_data": "2026-07-25T05:16:37.788453+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "apod": {
-      "last_data": "2026-07-20T12:10:18.687895+00:00",
+      "last_data": "2026-07-25T05:16:46.960220+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "beach_day": {
       "last_ok": "2026-07-14T00:08:07.374355+00:00"
     },
     "bills": {
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "deals": {
-      "last_data": "2026-07-20T12:09:14.204130+00:00",
+      "last_data": "2026-07-25T05:15:49.657288+00:00",
       "last_data_count": 12,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "digest": {
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "energy": {
-      "last_data": "2026-07-20T12:09:39.255118+00:00",
-      "last_data_count": 61,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_data": "2026-07-25T05:16:13.667970+00:00",
+      "last_data_count": 66,
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "energy_learn": {
-      "last_data": "2026-07-20T12:10:07.886526+00:00",
+      "last_data": "2026-07-25T05:16:43.187049+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "fda": {
-      "last_data": "2026-07-20T12:09:28.601070+00:00",
-      "last_data_count": 18,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_data": "2026-07-25T05:16:02.407679+00:00",
+      "last_data_count": 10,
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "fuel": {
-      "last_data": "2026-07-20T12:10:01.116212+00:00",
+      "last_data": "2026-07-25T05:16:36.400772+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "fx": {
-      "last_data": "2026-07-20T12:09:59.011107+00:00",
+      "last_data": "2026-07-25T05:16:34.872989+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "games": {
       "last_data": "2026-07-20T12:08:40.503536+00:00",
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-07-20T12:08:48.299497+00:00",
+      "last_data": "2026-07-25T05:15:23.815424+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "groceries": {
-      "last_data": "2026-07-20T12:09:27.948905+00:00",
+      "last_data": "2026-07-25T05:16:01.526383+00:00",
       "last_data_count": 246,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "habits": {
-      "last_data": "2026-07-20T12:10:05.069785+00:00",
+      "last_data": "2026-07-25T05:16:38.964194+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
     },
     "holidays": {
-      "last_data": "2026-07-20T12:10:15.011088+00:00",
+      "last_data": "2026-07-25T05:16:44.789274+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "iss": {
-      "last_data": "2026-07-20T12:10:02.021687+00:00",
-      "last_data_count": 3,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_data": "2026-07-25T05:16:37.085920+00:00",
+      "last_data_count": 4,
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "itsc": {
-      "last_data": "2026-07-20T12:10:16.034486+00:00",
+      "last_data": "2026-07-25T05:16:45.627795+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "launches": {
-      "last_data": "2026-07-20T12:10:01.451280+00:00",
+      "last_data": "2026-07-25T05:16:36.575422+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "learn": {
-      "last_data": "2026-07-20T12:10:05.242127+00:00",
+      "last_data": "2026-07-25T05:16:39.086255+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "marine": {
-      "last_data": "2026-07-20T12:10:18.383105+00:00",
+      "last_data": "2026-07-25T05:16:46.544545+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "movies": {
-      "last_data": "2026-07-20T12:08:34.679312+00:00",
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_data": "2026-07-25T05:14:48.421232+00:00",
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "music": {
-      "last_data": "2026-07-20T12:08:45.332468+00:00",
+      "last_data": "2026-07-25T05:14:51.505304+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "onamet": {
-      "last_data": "2026-07-20T12:09:39.911823+00:00",
-      "last_data_count": 19,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_data": "2026-07-25T05:16:14.494053+00:00",
+      "last_data_count": 14,
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "outages": {
-      "last_data": "2026-07-20T12:09:58.098326+00:00",
+      "last_data": "2026-07-25T05:16:34.174443+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "quakes": {
-      "last_data": "2026-07-20T12:09:58.188537+00:00",
-      "last_data_count": 44,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_data": "2026-07-25T05:16:34.263828+00:00",
+      "last_data_count": 41,
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "recap": {
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "reminders": {
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "research": {
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-07-20T12:09:07.874339+00:00",
+      "last_data": "2026-07-25T05:15:43.131325+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "spark": {
       "last_data": "2026-07-20T06:09:31.333682+00:00",
@@ -15752,30 +15620,30 @@
     },
     "spending": {
       "last_data_count": 0,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-20T12:08:42.831381+00:00",
+      "last_data": "2026-07-25T05:14:49.663880+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "uv": {
-      "last_data": "2026-07-20T12:10:17.791819+00:00",
+      "last_data": "2026-07-25T05:16:46.092037+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "visa_bulletin": {
       "last_error": "403 Client Error: Forbidden for url: https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html",
-      "last_error_ts": "2026-07-20T12:08:27.853048+00:00",
+      "last_error_ts": "2026-07-25T05:14:41.739205+00:00",
       "last_ok": "2026-07-14T18:07:53.426832+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "weather": {
-      "last_data": "2026-07-20T12:09:39.426102+00:00",
-      "last_data_count": 9,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_data": "2026-07-25T05:16:14.026769+00:00",
+      "last_data_count": 2,
+      "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "wikiquote": {
       "last_data": "2026-07-14T12:09:00.939275+00:00",
@@ -15785,7 +15653,10 @@
     "youtube": {
       "last_data": "2026-07-20T12:10:04.329472+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-07-20T12:08:27.853048+00:00"
+      "last_error": "all 7 channel feed(s) failed; last: PabloELECTRUM: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UC9DS-MY8CZzLh7vQG000uug",
+      "last_error_ts": "2026-07-25T05:14:41.739205+00:00",
+      "last_ok": "2026-07-20T12:08:27.853048+00:00",
+      "source_failed": true
     }
   },
   "twitch_live": [],
@@ -15793,10 +15664,12 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165236"
+    "last_full_window": "165273"
   },
   "watchdog_alerted": {
-    "visa_bulletin": "2026-07-16T18:10:36.993914+00:00"
+    "spark": "2026-07-25T05:16:49.360901+00:00",
+    "visa_bulletin": "2026-07-16T18:10:36.993914+00:00",
+    "youtube": "2026-07-25T05:16:49.360901+00:00"
   },
   "watchdog_data_alerted": {},
   "watchdog_data_baseline": {
@@ -15808,12 +15681,12 @@
   },
   "watchdog_failing_since": {
     "spark": "2026-07-20T12:08:27.853048+00:00",
-    "visa_bulletin": "2026-07-14T21:07:54.987378+00:00"
+    "visa_bulletin": "2026-07-14T21:07:54.987378+00:00",
+    "youtube": "2026-07-25T05:14:41.739205+00:00"
   },
-  "water_slots_sent": [
-    "2026-07-20|05:30"
-  ],
+  "water_slots_sent": [],
   "weather_seen_ids": [
+    "8ffecf27adc86966",
     "f787582ff98d7e1f",
     "3c6abf0071372369",
     "7f3fe4896cd9e037",
