@@ -527,18 +527,6 @@
   ],
   "event_log": [
     {
-      "action": "digest",
-      "detail": "",
-      "id": "ac1a74180d887ab0",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Elocon",
-      "title": "FDA updates approval for Elocon (Mometasone Furoate) (NDA019625)",
-      "topic": "fda",
-      "ts": "2026-07-08T21:52:12.094394+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=019625"
-    },
-    {
       "action": "push",
       "detail": "Time for a glass of water. Stay hydrated!",
       "id": "b750db507991e07d",
@@ -12525,6 +12513,18 @@
       "topic": "youtube",
       "ts": "2026-07-25T09:09:59.886295+00:00",
       "url": "https://www.youtube.com/watch?v=BesQMUS0QkM"
+    },
+    {
+      "action": "push",
+      "detail": "Start the day right: drink a full glass of water now.",
+      "id": "3e038ffd404cb212",
+      "score": 0,
+      "severity": "low",
+      "source": "water",
+      "title": "Water - start the day hydrated",
+      "topic": "habits",
+      "ts": "2026-07-25T09:38:22.092324+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -13743,7 +13743,13 @@
       "habit": "sleep"
     }
   ],
-  "habit_pending_acks": {},
+  "habit_pending_acks": {
+    "1530509508189884557": {
+      "channel": "1515504253345726558",
+      "habit": "water",
+      "sent": "2026-07-25T09:38:22.092324+00:00"
+    }
+  },
   "health_tip_last_sent": "2026-07-25",
   "holidays_sent": [],
   "ignored": {
@@ -14061,7 +14067,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-25T09:23:17.008575+00:00"
+    "ts": "2026-07-25T09:38:19.939700+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15644,9 +15650,9 @@
       "last_ok": "2026-07-25T05:14:41.739205+00:00"
     },
     "habits": {
-      "last_data": "2026-07-25T09:23:17.972846+00:00",
+      "last_data": "2026-07-25T09:38:22.904326+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-25T09:23:17.008575+00:00"
+      "last_ok": "2026-07-25T09:38:19.939700+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15735,9 +15741,9 @@
       "last_ok": "2026-07-25T09:08:25.030865+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-25T09:23:17.971789+00:00",
+      "last_data": "2026-07-25T09:38:22.091852+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-25T09:23:17.008575+00:00"
+      "last_ok": "2026-07-25T09:38:19.939700+00:00"
     },
     "uv": {
       "last_data": "2026-07-25T05:16:46.092037+00:00",
@@ -15791,7 +15797,9 @@
     "spark": "2026-07-20T12:08:27.853048+00:00",
     "visa_bulletin": "2026-07-14T21:07:54.987378+00:00"
   },
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-07-25|05:30"
+  ],
   "weather_seen_ids": [
     "8cc856507ee26056",
     "8ffecf27adc86966",
