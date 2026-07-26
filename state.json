@@ -85,7 +85,9 @@
     "rent|2026-07-30|5"
   ],
   "blood_donation_last_notified": "2026-07-08",
-  "cleaning_slots_sent": [],
+  "cleaning_slots_sent": [
+    "2026-07-26|18:00"
+  ],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -518,42 +520,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "Ends Sunday 12 July (tomorrow). Tap for the academic calendar (PDF).",
-      "id": "7d9aaa552506de6d",
-      "score": 62,
-      "severity": "high",
-      "source": "ITSC",
-      "title": "ITSC: SEGUNDO PARCIAL (Pruebas)",
-      "topic": "itsc",
-      "ts": "2026-07-11T12:43:44.030417+00:00",
-      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/05/Calendario-academico-2026-2-MAYO-AGOSTO-_-Actualizado_.pdf"
-    },
-    {
-      "action": "push",
-      "detail": "Unlike most entries in Charles Messier's famous catalog of deep sky objects, M24 is not a bright galaxy, star cluster, or nebula. It's a gap in nearby, obscuring interstellar dust clouds that allows a view of the distant stars in the Sagittarius spiral arm of our Milky Way...\n(c) Chuck Ayoub",
-      "id": "a1770b60e7a95d52",
-      "score": 60,
-      "severity": "low",
-      "source": "NASA APOD",
-      "title": "APOD: Messier 24: Sagittarius Star Cloud",
-      "topic": "apod",
-      "ts": "2026-07-11T12:43:45.883729+00:00",
-      "url": "https://apod.nasa.gov/apod/image/2607/M24.png"
-    },
-    {
-      "action": "push",
-      "detail": "Waves 1.3 m | Rain 10% | UV 9 | 33 C",
-      "id": "77443aa33ae773c7",
-      "score": 60,
-      "severity": "low",
-      "source": "Beach day",
-      "title": "Beach day: 9/10 - great day for the beach",
-      "topic": "beach_day",
-      "ts": "2026-07-11T12:43:47.325076+00:00",
-      "url": ""
-    },
     {
       "action": "push",
       "detail": "",
@@ -12517,9 +12483,47 @@
       "topic": "iss",
       "ts": "2026-07-26T21:10:09.093366+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Workout window is open: stretch, lift, walk - whatever gets you moving.",
+      "id": "fcfd8f068537c5a4",
+      "score": 0,
+      "severity": "low",
+      "source": "exercise",
+      "title": "Exercise - 6 PM session",
+      "topic": "habits",
+      "ts": "2026-07-26T22:08:23.439552+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Pause for meditation - a few minutes of stillness changes the whole evening.",
+      "id": "1b88ecd9c5229e6b",
+      "score": 0,
+      "severity": "low",
+      "source": "meditate",
+      "title": "Meditate - evening reset",
+      "topic": "habits",
+      "ts": "2026-07-26T22:08:23.439552+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "A little cleaning now beats a big cleaning later. Pick one thing.",
+      "id": "81d45ccf0e3f8a5d",
+      "score": 0,
+      "severity": "low",
+      "source": "cleaning",
+      "title": "Cleaning - quick tidy-up",
+      "topic": "habits",
+      "ts": "2026-07-26T22:08:23.439552+00:00",
+      "url": ""
     }
   ],
-  "exercise_slots_sent": [],
+  "exercise_slots_sent": [
+    "2026-07-26|18:00"
+  ],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -13767,6 +13771,21 @@
       "channel": "1515504253345726558",
       "habit": "water",
       "sent": "2026-07-26T09:38:19.098444+00:00"
+    },
+    "1531060657443573982": {
+      "channel": "1515504253345726558",
+      "habit": "exercise",
+      "sent": "2026-07-26T22:08:23.439552+00:00"
+    },
+    "1531060660530577551": {
+      "channel": "1515504253345726558",
+      "habit": "meditate",
+      "sent": "2026-07-26T22:08:23.439552+00:00"
+    },
+    "1531060662984507554": {
+      "channel": "1515504253345726558",
+      "habit": "cleaning",
+      "sent": "2026-07-26T22:08:23.439552+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-26",
@@ -14087,7 +14106,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-26T21:53:16.954817+00:00"
+    "ts": "2026-07-26T22:08:21.505507+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -14123,7 +14142,9 @@
   ],
   "learn_last_sent": "2026-07-26",
   "life_dashboard_last_week": "2026-W30",
-  "meditate_slots_sent": [],
+  "meditate_slots_sent": [
+    "2026-07-26|18:00"
+  ],
   "movie_news_seen": {
     "Avengers: Doomsday": [
       "6fe43a04ecdcba0f",
@@ -15680,9 +15701,9 @@
       "last_ok": "2026-07-26T21:08:20.202731+00:00"
     },
     "habits": {
-      "last_data": "2026-07-26T21:53:20.657273+00:00",
+      "last_data": "2026-07-26T22:08:28.181297+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-26T21:53:16.954817+00:00"
+      "last_ok": "2026-07-26T22:08:21.505507+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15768,9 +15789,9 @@
       "last_ok": "2026-07-26T21:08:20.202731+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-26T21:53:19.137714+00:00",
+      "last_data": "2026-07-26T22:08:23.439104+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-26T21:53:16.954817+00:00"
+      "last_ok": "2026-07-26T22:08:21.505507+00:00"
     },
     "uv": {
       "last_data": "2026-07-26T21:10:14.650897+00:00",
