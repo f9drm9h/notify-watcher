@@ -628,18 +628,6 @@
   ],
   "event_log": [
     {
-      "action": "push",
-      "detail": "\u201cJingoistic rhetoric and puerile self-congratulatory nationalism.\u201d\n\u2014 Carl Sagan\n\nCarl Sagan was more than just a scientist; he was an interpreter of the cosmos, a poet of the observable universe who possessed a rare gift for translating the intricate ballet of astrophysics into language accessible to all. Born in Brooklyn in 1934, his insatiable curiosity was sparked early by trips to the American Museum of Natural History and the local library, where he devoured tales of distant stars and alien worlds. He went on to become a titan in the field of planetary science, a key figure in missions like Mariner and Voyager, and a champion of the search for extraterrestrial intelligence. Yet, his true genius lay in his ability to bridge the chasm between the scientific community and the general public. Through his bestselling books, groundbreaking television series 'Cosmos: A Personal Voyage,' and countless public appearances, he invited millions to share in the wonder of scientific discovery, fostering a sense of cosmic perspective that challenged narrow human concerns. He understood that the universe was not just a collection of facts, but a story \u2013 and he was its most eloquent storyteller.\n\n  The quote, \"Jingoistic rhetoric and puerile self-congratulatory nationalism,\" echoes through a specific and turbulent period, though Sagan\u2019s concerns were perennial. While the precise timing of this utterance isn't documented to a single, isolated event, it encapsulates the anxieties he frequently expressed in the late 1980s and early 1990s, an era defined by the twilight of the Cold War and the subsequent emergence of new global tensions. The Berlin Wall had fallen, but the euphoria of a unified world was often overshadowed by resurgent ethnic conflicts, the rise of extremist ideologies, and a pervasive sense of human exceptionalism that Sagan found deeply troubling. He looked up at the vast, indifferent cosmos, at the \"pale blue dot\" \u2014 Earth \u2014 and saw a planet teeming with life, fragile and interconnected. From that vantage point, the petty squabbles and self-aggrandizing claims of individual nations seemed not just absurd, but dangerously myopic. He was actively engaged in discussions about nuclear disarmament, environmental protection, and the potential for a global civilization that transcended arbitrary borders, often using his platform to caution against the very forces of division he describes.\n\n  Today, Carl Sagan\u2019s words resonate with an almost prophetic power, perhaps more acutely than ever before. The global challenges we face \u2013 climate change, pandemics, widespread disinformation, and the ever-present threat of conflict \u2013 demand a collective, planetary response that transcends the very \"jingoistic rhetoric and puerile self-congratulatory nationalism\" he decried. In an age where digital echo chambers amplify nationalistic fervor and international cooperation often falters in the face of perceived self-interest, Sagan\u2019s cosmic perspective offers a vital antidote. He reminds us that our shared humanity and our shared home in the universe vastly outweigh the transient distinctions we invent.",
-      "id": "f3b3e40463472514",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Carl Sagan",
-      "topic": "wikiquote",
-      "ts": "2026-07-09T22:07:01.036712+00:00",
-      "url": ""
-    },
-    {
       "action": "drop",
       "detail": "",
       "id": "505396f356936ac4",
@@ -12626,6 +12614,18 @@
       "topic": "spark",
       "ts": "2026-07-26T00:09:32.189052+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Sleep prep: last call for screens - your bedtime is coming up.",
+      "id": "8839f885e358fbaa",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-07-26T01:08:18.667930+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -13868,6 +13868,11 @@
       "channel": "1515504253345726558",
       "habit": "cleaning",
       "sent": "2026-07-25T22:08:29.260909+00:00"
+    },
+    "1530743540236157071": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-07-26T01:08:18.667930+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-26",
@@ -14188,7 +14193,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-26T00:53:22.568707+00:00"
+    "ts": "2026-07-26T01:08:17.569486+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15684,7 +15689,9 @@
   ],
   "recap_last_week": "2026-W30",
   "reminders_sent": [],
-  "sleep_slots_sent": [],
+  "sleep_slots_sent": [
+    "2026-07-25|21:00"
+  ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
     "d1203-liberty-5-pro-anc-earbuds-clear-calls",
@@ -15778,9 +15785,9 @@
       "last_ok": "2026-07-25T21:08:23.413761+00:00"
     },
     "habits": {
-      "last_data": "2026-07-26T00:53:25.672892+00:00",
+      "last_data": "2026-07-26T01:08:20.103915+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-26T00:53:22.568707+00:00"
+      "last_ok": "2026-07-26T01:08:17.569486+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15869,9 +15876,9 @@
       "last_ok": "2026-07-26T00:08:20.556862+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-26T00:53:24.785325+00:00",
+      "last_data": "2026-07-26T01:08:18.667446+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-26T00:53:22.568707+00:00"
+      "last_ok": "2026-07-26T01:08:17.569486+00:00"
     },
     "uv": {
       "last_data": "2026-07-25T21:10:47.205495+00:00",
