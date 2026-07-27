@@ -568,18 +568,6 @@
     {
       "action": "push",
       "detail": "",
-      "id": "76b36ae1f706c535",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "New 'Avengers: Doomsday' Sneak Peek Officially Reveals Doctor Doom, Loki, and More - Collider",
-      "topic": "movies",
-      "ts": "2026-07-11T21:25:49.618428+00:00",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1JVmdzS1c4VFZsUlRFLWx3elVUdFl2enBuWEwtc2YtdVg5TThSRW9jNDJJZl8xS0wzR1IzeHE3UmVRRTg5NE1TLWFEbS01Z1ZVUlhFdldGQW5Udy1IdFhTM0phd1piLW9ZajVzR3F6WnBuR3lLb1oxelpISQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
       "id": "77374dad3fb34fc4",
       "score": 62,
       "severity": "high",
@@ -12564,6 +12552,18 @@
       "topic": "habits",
       "ts": "2026-07-27T01:08:16.951675+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Second call: time to actually head to bed. Tomorrow starts tonight.",
+      "id": "5c11a314a5926c1e",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-07-27T02:08:23.793015+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -13787,11 +13787,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1530758633976103063": {
-      "channel": "1515504253345726558",
-      "habit": "sleep",
-      "sent": "2026-07-26T02:08:17.135259+00:00"
-    },
     "1530871887721136189": {
       "channel": "1515504253345726558",
       "habit": "water",
@@ -13816,6 +13811,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-07-27T01:08:16.951675+00:00"
+    },
+    "1531121051642232966": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-07-27T02:08:23.793015+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-27",
@@ -14136,7 +14136,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-27T01:53:17.499250+00:00"
+    "ts": "2026-07-27T02:08:22.012285+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15638,7 +15638,8 @@
   "recap_last_week": "2026-W30",
   "reminders_sent": [],
   "sleep_slots_sent": [
-    "2026-07-26|21:00"
+    "2026-07-26|21:00",
+    "2026-07-26|22:00"
   ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
@@ -15733,9 +15734,9 @@
       "last_ok": "2026-07-26T21:08:20.202731+00:00"
     },
     "habits": {
-      "last_data": "2026-07-27T01:53:19.514803+00:00",
+      "last_data": "2026-07-27T02:08:25.956415+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-27T01:53:17.499250+00:00"
+      "last_ok": "2026-07-27T02:08:22.012285+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15821,9 +15822,9 @@
       "last_ok": "2026-07-27T00:08:15.778898+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-27T01:53:18.561721+00:00",
+      "last_data": "2026-07-27T02:08:23.792634+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-27T01:53:17.499250+00:00"
+      "last_ok": "2026-07-27T02:08:22.012285+00:00"
     },
     "uv": {
       "last_data": "2026-07-26T21:10:14.650897+00:00",
