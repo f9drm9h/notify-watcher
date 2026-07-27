@@ -85,9 +85,7 @@
     "rent|2026-07-30|5"
   ],
   "blood_donation_last_notified": "2026-07-08",
-  "cleaning_slots_sent": [
-    "2026-07-26|18:00"
-  ],
+  "cleaning_slots_sent": [],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -12575,9 +12573,7 @@
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOTFhpcnZjQWVFZHJSZEROblFMcDRSc01tcUc2TDEyUDJMejU4YWliVldIam5tTmtIY0JhV214d19seUJseGZqMUliMHdPbGUxRF9IQ3ZyWDdEOVlrN05QSFVDX205THIxemU3UEF5UkpqcnJ5cExaZWJ1cVRWX2hVcHdQQUloWUN6eE1BemdmZzVPYXd6djk3NVB5RTVHQQ?oc=5"
     }
   ],
-  "exercise_slots_sent": [
-    "2026-07-26|18:00"
-  ],
+  "exercise_slots_sent": [],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -14145,7 +14141,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-27T03:53:21.006708+00:00"
+    "ts": "2026-07-27T04:08:14.404539+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -14181,9 +14177,7 @@
   ],
   "learn_last_sent": "2026-07-26",
   "life_dashboard_last_week": "2026-W30",
-  "meditate_slots_sent": [
-    "2026-07-26|18:00"
-  ],
+  "meditate_slots_sent": [],
   "movie_news_seen": {
     "Avengers: Doomsday": [
       "152b79886cdcc59f",
@@ -15646,10 +15640,7 @@
   ],
   "recap_last_week": "2026-W30",
   "reminders_sent": [],
-  "sleep_slots_sent": [
-    "2026-07-26|21:00",
-    "2026-07-26|22:00"
-  ],
+  "sleep_slots_sent": [],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
     "d1203-liberty-5-pro-anc-earbuds-clear-calls",
@@ -15743,9 +15734,9 @@
       "last_ok": "2026-07-26T21:08:20.202731+00:00"
     },
     "habits": {
-      "last_data": "2026-07-27T03:53:24.548481+00:00",
+      "last_data": "2026-07-27T04:08:16.561096+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-27T03:53:21.006708+00:00"
+      "last_ok": "2026-07-27T04:08:14.404539+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15831,9 +15822,9 @@
       "last_ok": "2026-07-27T03:08:16.179435+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-27T03:53:23.191758+00:00",
+      "last_data": "2026-07-27T04:08:15.570370+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-27T03:53:21.006708+00:00"
+      "last_ok": "2026-07-27T04:08:14.404539+00:00"
     },
     "uv": {
       "last_data": "2026-07-26T21:10:14.650897+00:00",
@@ -15885,9 +15876,7 @@
   "watchdog_failing_since": {
     "visa_bulletin": "2026-07-14T21:07:54.987378+00:00"
   },
-  "water_slots_sent": [
-    "2026-07-26|05:30"
-  ],
+  "water_slots_sent": [],
   "weather_seen_ids": [
     "f9f7946fc7322b32",
     "824acd1b7fb7afb3",
