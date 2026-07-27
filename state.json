@@ -85,7 +85,9 @@
     "rent|2026-07-30|5"
   ],
   "blood_donation_last_notified": "2026-07-08",
-  "cleaning_slots_sent": [],
+  "cleaning_slots_sent": [
+    "2026-07-27|18:00"
+  ],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -623,42 +625,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "The Texas sun, bright and unyielding, beat down on Dealey Plaza that Friday, November 22nd, 1963. President John F. Kennedy, a man whose youthful vigor and eloquent promises had captivated a nation, rode in an open-top limousine, a smile playing on his lips as he waved to the cheering crowds lining Elm Street. Beside him sat his elegant wife, Jacqueline, a vision in pink. In the front, Governor John Connally of Texas and his wife Nellie also waved, bathed in the warmth of public adoration. It was a scene of triumph, a vibrant tableau of American optimism. The motorcade, a symbol of presidential accessibility, was moving slowly, offering the crowds a prolonged glimpse of their charismatic leader. No one could have imagined that in a matter of seconds, this idyllic scene would shatter, forever altering the course of American history and imprinting itself on the collective memory of a generation.\n\nThe sudden, sharp cracks of rifle fire rent the air, ripping through the joyous atmosphere like a physical tear. A moment of bewildered silence was followed by screams, confusion, and then panic. Governor Connally cried out, struck by a bullet. President Kennedy slumped forward, a grievous wound to his head immediately apparent. Mrs. Kennedy, in a desperate, horrifying instinct, crawled onto the back of the limousine, reaching for what many believe was a piece of her husband\u2019s skull. The driver, Secret Service Agent William Greer, initially slowed, then accelerated wildly, racing towards Parkland Memorial Hospital, the once-confident motorcade now a desperate dash against time. The nation, watching on television or listening on radio, would soon be plunged into a profound grief, the likes of which it had rarely experienced. The unthinkable had happened, and the immediate search for answers began, focusing swiftly on a disgruntled former Marine named Lee Harvey Oswald.\n\nOswald, a troubled individual with a history of defection to the Soviet Union and strong anti-American sentiments, was apprehended hours later at a movie theater after murdering Dallas police officer J.D. Tippit. He denied his involvement in the assassination, claiming to be a \"patsy,\" but the evidence quickly mounted: a rifle found on the sixth floor of the Texas School Book Depository, where Oswald had worked, and eyewitness accounts placing him there. Yet, the swiftness of his capture and the suddenness of the event itself fueled immediate suspicion and a lasting sense of unease. Before Oswald could be thoroughly interrogated or brought to trial, he too was assassinated, shot by nightclub owner Jack Ruby on live television just two days later. This second, equally shocking act of violence, seemingly designed to silence Oswald, only deepened the mystery and cemented the conviction in many minds that a larger conspiracy was at play, leaving a void of unanswered questions that continues to echo through the decades.\n\nThe assassination of John F. Kennedy left an indelible scar on the American psyche. It marked the end of an era of youthful idealism, the \"Camelot\" of his presidency cut tragically short. His successor, Lyndon B. Johnson, inherited a nation in mourning and a complex web of domestic and international challenges, including the escalating war in Vietnam. The Warren Commission, established to investigate the assassination, concluded that Oswald acted alone, a finding that has been challenged and debated by countless historians, authors, and citizens ever since.",
-      "id": "52248fe1d10babb3",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The assassination of John F. Kennedy",
-      "topic": "learn",
-      "ts": "2026-07-14T06:09:04.558605+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u201cOur new Constitution is now established, and has an appearance that promises permanency; but in this world nothing can be said to be certain, except death and taxes!\u201d\n\u2014 Benjamin Franklin\n\nThe voice of Benjamin Franklin echoes from a distant past, not merely as a founding father etched onto currency, but as a polymath, an inventor, a diplomat, and a man whose relentless curiosity shaped a nascent nation. Born into a world still largely defined by monarchies and colonial rule, Franklin embodied the burgeoning Enlightenment spirit. He was a runaway apprentice who taught himself five languages, an autodidact who founded the first public library, a printer whose widely read almanacs dispensed practical wisdom and wit. By the time he uttered his famous pronouncement about death and taxes, he was a figure of immense international stature, having spent years as an agent for the colonies in London, battling British indifference and advocating for American rights. He had seen firsthand the machinations of empire and the fragile, often self-serving nature of political power. His life was a testament to the power of intellect and industry, a living embodiment of the American dream even before the dream itself was fully articulated.\n\nThe year 1789, when Franklin is widely believed to have penned these words in a letter to Jean-Baptiste Leroy, found him at the very end of his extraordinary life. The Constitutional Convention, over which he had presided as the elder statesman, had concluded successfully, but the ratification process had been fraught with contentious debates. The new republic, a radical experiment in self-governance, was a fragile entity, facing immense challenges from within and without. The French Revolution, a cataclysmic event that would reshape Europe, was just beginning to stir across the Atlantic, hinting at the profound instability that still plagued the old world. Franklin, a man who had dedicated his life to liberty and reason, understood the monumental task ahead for the fledgling United States. He knew that establishing a government was one thing; ensuring its endurance, another entirely. His observation about death and taxes, then, was not a cynical dismissal of the Constitution's prospects, but rather a wry, realistic acknowledgment of the enduring constants of human experience, even amidst the most revolutionary changes. It was the wisdom of a man who had lived through an age of profound upheaval and understood the fundamental nature of existence.\n\nToday, Franklin's observation resonates with an enduring power precisely because it taps into universal truths that transcend time and cultural divides. In a world characterized by relentless change, technological advancement, and shifting geopolitical landscapes, the inevitability of mortality and the obligation to contribute to the collective good remain constants. While the specifics of taxation have evolved dramatically since the 18th century, the concept of a societal contract, where citizens contribute to the common welfare, remains a cornerstone of any functioning society. And death, of course, remains the ultimate equalizer, a reminder of our shared humanity and the preciousness of the time we have.",
-      "id": "4b68c3e04cfa9b60",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Benjamin Franklin",
-      "topic": "wikiquote",
-      "ts": "2026-07-14T06:09:09.476436+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "95f3d0a3d8a0ee81",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday officially reveals first look at Robert Downey Jr's Doctor Doom - Digital Spy",
-      "topic": "movies",
-      "ts": "2026-07-14T09:07:38.523314+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQeXJJVGZtQjJaRU4ydXRfX0VYMmZzbzEyRGRXVXBqNjF3SC04MlI5YmZuNmQ5U2tBRnVIemRlR2d1VV92UlkyZFpNTXRGSXNBTU5iQUxQOXNYRDhjVExFVksyWG0tT3VTWmxjQjlySHZIaXBEZjdqTno5WDBDemdlaGVlNzVkZGx5YTRRenBR?oc=5"
-    },
     {
       "action": "push",
       "detail": "",
@@ -12622,9 +12588,47 @@
       "topic": "fda",
       "ts": "2026-07-27T21:08:44.533042+00:00",
       "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=218879"
+    },
+    {
+      "action": "push",
+      "detail": "Your 6 PM exercise slot is here. Future you says thanks.",
+      "id": "f7dedaa1dd6b8276",
+      "score": 0,
+      "severity": "low",
+      "source": "exercise",
+      "title": "Exercise - 6 PM session",
+      "topic": "habits",
+      "ts": "2026-07-27T22:07:31.758437+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Evening reset: close your eyes and focus on your breath for a while.",
+      "id": "1bb9d8e498096dee",
+      "score": 0,
+      "severity": "low",
+      "source": "meditate",
+      "title": "Meditate - evening reset",
+      "topic": "habits",
+      "ts": "2026-07-27T22:07:31.758437+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Tidy-up reminder: dishes, desk, or floor - choose one and clear it.",
+      "id": "25aecef833fdb209",
+      "score": 0,
+      "severity": "low",
+      "source": "cleaning",
+      "title": "Cleaning - quick tidy-up",
+      "topic": "habits",
+      "ts": "2026-07-27T22:07:31.758437+00:00",
+      "url": ""
     }
   ],
-  "exercise_slots_sent": [],
+  "exercise_slots_sent": [
+    "2026-07-27|18:00"
+  ],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -13890,6 +13894,21 @@
       "channel": "1515504253345726558",
       "habit": "water",
       "sent": "2026-07-27T09:38:25.118494+00:00"
+    },
+    "1531422820276633611": {
+      "channel": "1515504253345726558",
+      "habit": "exercise",
+      "sent": "2026-07-27T22:07:31.758437+00:00"
+    },
+    "1531422823183024282": {
+      "channel": "1515504253345726558",
+      "habit": "meditate",
+      "sent": "2026-07-27T22:07:31.758437+00:00"
+    },
+    "1531422824852623392": {
+      "channel": "1515504253345726558",
+      "habit": "cleaning",
+      "sent": "2026-07-27T22:07:31.758437+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-27",
@@ -14207,7 +14226,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-27T21:52:32.323654+00:00"
+    "ts": "2026-07-27T22:07:30.487233+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -14243,7 +14262,9 @@
   ],
   "learn_last_sent": "2026-07-27",
   "life_dashboard_last_week": "2026-W30",
-  "meditate_slots_sent": [],
+  "meditate_slots_sent": [
+    "2026-07-27|18:00"
+  ],
   "movie_news_seen": {
     "Avengers: Doomsday": [
       "0a32b810c24582ae",
@@ -15804,9 +15825,9 @@
       "last_ok": "2026-07-27T21:07:31.363025+00:00"
     },
     "habits": {
-      "last_data": "2026-07-27T21:52:35.201198+00:00",
+      "last_data": "2026-07-27T22:07:34.203343+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-27T21:52:32.323654+00:00"
+      "last_ok": "2026-07-27T22:07:30.487233+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15892,9 +15913,9 @@
       "last_ok": "2026-07-27T21:07:31.363025+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-27T21:52:33.986929+00:00",
+      "last_data": "2026-07-27T22:07:31.757974+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-27T21:52:32.323654+00:00"
+      "last_ok": "2026-07-27T22:07:30.487233+00:00"
     },
     "uv": {
       "last_data": "2026-07-27T21:09:14.623968+00:00",
