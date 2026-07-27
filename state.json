@@ -593,18 +593,6 @@
     {
       "action": "drop",
       "detail": "",
-      "id": "ca35c8631f66dd72",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Highlights 11 Important Heroes In Official Synopsis - The Direct",
-      "topic": "movies",
-      "ts": "2026-07-12T12:40:47.258408+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPbkJPZi1zN1F5ZkNGTTBXdmlDYVVqaHR4alNnTS0tNG9teEc1eHNrTXlrdXBQeWZjRHVrYXB2NmJZVGpxT1ZKSmVWWGV2M0VXLXItZWtqQ3FGRWFXb1B4Q0pqajFiU2diNmp3dEk4N1Y4dzZZS3lpeVU1Y0lpUDQzS2kyOHNaR05UZnRJSXJuN0llRDA?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
       "id": "a822867cf279ae5a",
       "score": 28,
       "severity": "moderate",
@@ -12589,6 +12577,18 @@
       "topic": "movies",
       "ts": "2026-07-27T09:08:26.241511+00:00",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPai12M3d6a1pLR3dOQlNYYkU3dGN1Nkp4bVloNGxvSjRaZ0dyZDNubm5qb2dTMl9MOTJncGxMVzhpY2RvX2JEZWdjTF9ORU90QWwtR2NRWkhIRlBEUk1JamY4OWF5a1A1RUZ3NC0zWVFyV21KLXc5Yklzd1N6cDR0S3hDaDg2VFllWUZ6dnhTLTJQTnNPUXRYNm82X3B4NmF6ZnZCUUFuOUUwelpTWmc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Morning hydration check: one big glass of water to wake up your system.",
+      "id": "8a8ab75c98453d6b",
+      "score": 0,
+      "severity": "low",
+      "source": "water",
+      "title": "Water - start the day hydrated",
+      "topic": "habits",
+      "ts": "2026-07-27T09:38:25.118494+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -13810,11 +13810,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1530871887721136189": {
-      "channel": "1515504253345726558",
-      "habit": "water",
-      "sent": "2026-07-26T09:38:19.098444+00:00"
-    },
     "1531060657443573982": {
       "channel": "1515504253345726558",
       "habit": "exercise",
@@ -13839,6 +13834,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-07-27T02:08:23.793015+00:00"
+    },
+    "1531234301339897897": {
+      "channel": "1515504253345726558",
+      "habit": "water",
+      "sent": "2026-07-27T09:38:25.118494+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-27",
@@ -14159,7 +14159,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-27T09:23:15.285701+00:00"
+    "ts": "2026-07-27T09:38:23.263722+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15752,9 +15752,9 @@
       "last_ok": "2026-07-26T21:08:20.202731+00:00"
     },
     "habits": {
-      "last_data": "2026-07-27T09:23:17.241459+00:00",
+      "last_data": "2026-07-27T09:38:31.885409+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-27T09:23:15.285701+00:00"
+      "last_ok": "2026-07-27T09:38:23.263722+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15840,9 +15840,9 @@
       "last_ok": "2026-07-27T09:08:21.517061+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-27T09:23:16.251171+00:00",
+      "last_data": "2026-07-27T09:38:25.118091+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-27T09:23:15.285701+00:00"
+      "last_ok": "2026-07-27T09:38:23.263722+00:00"
     },
     "uv": {
       "last_data": "2026-07-26T21:10:14.650897+00:00",
@@ -15894,7 +15894,9 @@
   "watchdog_failing_since": {
     "visa_bulletin": "2026-07-14T21:07:54.987378+00:00"
   },
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-07-27|05:30"
+  ],
   "weather_seen_ids": [
     "8799b5477ae1486a",
     "f9f7946fc7322b32",
