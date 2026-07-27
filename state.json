@@ -593,18 +593,6 @@
     {
       "action": "drop",
       "detail": "",
-      "id": "a822867cf279ae5a",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "\u2018Avengers: Doomsday\u2019s\u2019 New Official Synopsis Confirms the Wildest Roster the Franchise Has Ever Assembled - IMDb",
-      "topic": "movies",
-      "ts": "2026-07-12T12:40:47.259269+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5FREpfVUd5QUt3bUp5YkJ2alo1MEkwOUhUYmgyMDQ1bkNhWFNGYmV1TEtwbXNMbk1XSnVGdnNtWkZDTXMwTExacGFSRVZKQ1VhLUVvaWVIUVBQT0trcExsY2VxQ3A4bDA?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
       "id": "47eb4c214ac77a6e",
       "score": 28,
       "severity": "moderate",
@@ -12589,6 +12577,18 @@
       "topic": "habits",
       "ts": "2026-07-27T09:38:25.118494+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - DD\u30e1\u30a4\u30c8\u7d42\u308f\u3089\u305b\u307e\u3059 1968~\u3010\u30b9\u30de\u30d6\u30e9SP\u3011",
+      "id": "ef508be5ddcf634f",
+      "score": 68,
+      "severity": "high",
+      "source": "Acola_lui",
+      "title": "Acola_lui is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-27T11:23:22.809726+00:00",
+      "url": "https://twitch.tv/Acola_lui"
     }
   ],
   "exercise_slots_sent": [],
@@ -14159,7 +14159,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-27T11:08:14.348048+00:00"
+    "ts": "2026-07-27T11:23:20.269767+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15752,9 +15752,9 @@
       "last_ok": "2026-07-26T21:08:20.202731+00:00"
     },
     "habits": {
-      "last_data": "2026-07-27T11:08:16.572729+00:00",
+      "last_data": "2026-07-27T11:23:24.973723+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-27T11:08:14.348048+00:00"
+      "last_ok": "2026-07-27T11:23:20.269767+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15840,9 +15840,9 @@
       "last_ok": "2026-07-27T09:08:21.517061+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-27T11:08:15.619040+00:00",
+      "last_data": "2026-07-27T11:23:23.631075+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-27T11:08:14.348048+00:00"
+      "last_ok": "2026-07-27T11:23:20.269767+00:00"
     },
     "uv": {
       "last_data": "2026-07-26T21:10:14.650897+00:00",
@@ -15873,7 +15873,9 @@
       "last_ok": "2026-07-27T09:08:21.517061+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "Acola_lui"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
