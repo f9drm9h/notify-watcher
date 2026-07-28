@@ -724,18 +724,6 @@
   ],
   "event_log": [
     {
-      "action": "digest",
-      "detail": "",
-      "id": "5dfd9a339b3ec3c8",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-07-15T12:08:48.776842+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
       "action": "push",
       "detail": "USD/DOP moved from 58.89 to 58.91 (+0.02, +0.03%) vs yesterday",
       "id": "4b121846e2564d81",
@@ -12722,6 +12710,18 @@
       "topic": "habits",
       "ts": "2026-07-28T22:07:32.095896+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - IF I GET TO 350 SUBS I WILL PLAY YLINK AT GOML (GRINDING TO GET #1 IN SAMMINGTONS SERVER)",
+      "id": "5e9a293a6fdf8a86",
+      "score": 68,
+      "severity": "high",
+      "source": "Sparg0",
+      "title": "Sparg0 is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-28T23:07:32.805227+00:00",
+      "url": "https://twitch.tv/Sparg0"
     }
   ],
   "exercise_slots_sent": [
@@ -14330,7 +14330,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-28T22:52:36.106030+00:00"
+    "ts": "2026-07-28T23:07:30.557474+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15935,9 +15935,9 @@
       "last_ok": "2026-07-28T21:07:28.978700+00:00"
     },
     "habits": {
-      "last_data": "2026-07-28T22:52:39.720952+00:00",
+      "last_data": "2026-07-28T23:07:35.123360+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-28T22:52:36.106030+00:00"
+      "last_ok": "2026-07-28T23:07:30.557474+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -16026,9 +16026,9 @@
       "last_ok": "2026-07-28T21:07:28.978700+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-28T22:52:38.497617+00:00",
+      "last_data": "2026-07-28T23:07:33.821975+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-28T22:52:36.106030+00:00"
+      "last_ok": "2026-07-28T23:07:30.557474+00:00"
     },
     "uv": {
       "last_data": "2026-07-28T21:09:23.136260+00:00",
@@ -16059,7 +16059,9 @@
       "last_ok": "2026-07-28T21:07:28.978700+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "Sparg0"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
