@@ -637,18 +637,6 @@
     {
       "action": "push",
       "detail": "",
-      "id": "04a7a61d1ede39c3",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "How Long is Avengers: Doomsday? Runtime and Trailer Drop Date Revealed - Epicstream",
-      "topic": "movies",
-      "ts": "2026-07-14T12:07:36.442421+00:00",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPQ0VvZVEzZkx3X0lMWDhtZEZNWmpvNnRXTlJqdzRWYjRRcDRRVjk3SUhoNmI0dmtDa2YxeFJ3QWtaUzhISDhya19ycFlPa21SRzZtLVNlMHZ6R0U2YTZKdEI1UEwwdE5DTDBRS094dVZQUEdvaTVoc2M0MlBXOGxFb2JiSmxCZ0VVUEItWnVqYzVXMEpoT0wycU9RMHpGMWlR?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
       "id": "9eb1c28674d7f9d2",
       "score": 62,
       "severity": "high",
@@ -12633,6 +12621,18 @@
       "topic": "spark",
       "ts": "2026-07-28T00:09:06.158629+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Lights out soon. Put the day down - it will be there tomorrow.",
+      "id": "bc7741fa6ff04f8b",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-07-28T01:07:27.212519+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -13903,6 +13903,11 @@
       "channel": "1515504253345726558",
       "habit": "cleaning",
       "sent": "2026-07-27T22:07:31.758437+00:00"
+    },
+    "1531468100023619739": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-07-28T01:07:27.212519+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-28",
@@ -14220,7 +14225,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-28T00:52:31.803337+00:00"
+    "ts": "2026-07-28T01:07:25.743299+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15725,7 +15730,9 @@
   ],
   "recap_last_week": "2026-W31",
   "reminders_sent": [],
-  "sleep_slots_sent": [],
+  "sleep_slots_sent": [
+    "2026-07-27|21:00"
+  ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
     "d1203-liberty-5-pro-anc-earbuds-clear-calls",
@@ -15819,9 +15826,9 @@
       "last_ok": "2026-07-27T21:07:31.363025+00:00"
     },
     "habits": {
-      "last_data": "2026-07-28T00:52:34.271930+00:00",
+      "last_data": "2026-07-28T01:07:28.658869+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-28T00:52:31.803337+00:00"
+      "last_ok": "2026-07-28T01:07:25.743299+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15907,9 +15914,9 @@
       "last_ok": "2026-07-28T00:07:36.977321+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-28T00:52:32.985689+00:00",
+      "last_data": "2026-07-28T01:07:27.212056+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-28T00:52:31.803337+00:00"
+      "last_ok": "2026-07-28T01:07:25.743299+00:00"
     },
     "uv": {
       "last_data": "2026-07-27T21:09:14.623968+00:00",
