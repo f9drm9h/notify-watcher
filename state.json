@@ -636,18 +636,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "",
-      "id": "9eb1c28674d7f9d2",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "Christopher Nolan responds to \u201cirrelevant\u201d backlash over \u2018The Odyssey\u2019 casting - NME",
-      "topic": "movies",
-      "ts": "2026-07-14T12:07:37.664071+00:00",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQ1h2SHdyY3BkTFNld2dNVk4tcld6eXhGZmQyWnFJV3UtWDRZTlpYQlBIMFlMX0R4WjY4VXJLRllIbWJqM29jVkFHbzJsVkk4MlhqaTktZEZxT25XcmFWc0JXZlEzREQ5YnhkVVpveDJVWjVCRkYtbTMwZ09NSjBtaC1Oa1BEVE1UWm9DRlY4dnF3NFpzbjhwRl9lUDRUVThIMlBSeEI3OXplYzI2RjlNZjJB?oc=5"
-    },
-    {
-      "action": "push",
       "detail": "Super Smash Bros. Ultimate - DD\u30e1\u30a4\u30c8\u3084\u308a\u307e\u3059 1892~\u3010\u30b9\u30de\u30d6\u30e9SP\u3011",
       "id": "ea971a3624f1b2b5",
       "score": 68,
@@ -12633,6 +12621,18 @@
       "topic": "habits",
       "ts": "2026-07-28T01:07:27.212519+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Lights out soon. Put the day down - it will be there tomorrow.",
+      "id": "a818ff86eec5223b",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-07-28T02:07:41.008482+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -13903,6 +13903,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-07-28T01:07:27.212519+00:00"
+    },
+    "1531483258293063761": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-07-28T02:07:41.008482+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-28",
@@ -14220,7 +14225,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-28T01:52:31.703286+00:00"
+    "ts": "2026-07-28T02:07:38.707261+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15726,7 +15731,8 @@
   "recap_last_week": "2026-W31",
   "reminders_sent": [],
   "sleep_slots_sent": [
-    "2026-07-27|21:00"
+    "2026-07-27|21:00",
+    "2026-07-27|22:00"
   ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
@@ -15821,9 +15827,9 @@
       "last_ok": "2026-07-27T21:07:31.363025+00:00"
     },
     "habits": {
-      "last_data": "2026-07-28T01:52:33.848557+00:00",
+      "last_data": "2026-07-28T02:07:42.883177+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-28T01:52:31.703286+00:00"
+      "last_ok": "2026-07-28T02:07:38.707261+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15909,9 +15915,9 @@
       "last_ok": "2026-07-28T00:07:36.977321+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-28T01:52:32.940078+00:00",
+      "last_data": "2026-07-28T02:07:41.008015+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-28T01:52:31.703286+00:00"
+      "last_ok": "2026-07-28T02:07:38.707261+00:00"
     },
     "uv": {
       "last_data": "2026-07-27T21:09:14.623968+00:00",
