@@ -661,18 +661,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "Working from home? Remember to periodically stretch your back, neck, and shoulders. (Source: MedlinePlus)",
-      "id": "c551383253d32bfe",
-      "score": 60,
-      "severity": "low",
-      "source": "Health",
-      "title": "Health tip",
-      "topic": "health_tip",
-      "ts": "2026-07-14T12:08:55.745798+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
       "detail": "The night sky, a canvas of immutable perfection, was for millennia the bedrock of human understanding. From ancient Babylonians mapping the heavens to Ptolemy's geocentric model, the cosmos was a realm of eternal, unchanging spheres, a testament to divine order. Then, in November of 1572, this celestial certainty was shattered. High above the sleepy villages and bustling cities of Europe, a new star blazed forth in the constellation Cassiopeia, a beacon of cosmic drama that would forever alter humanity's perception of its place in the universe. This was no fleeting comet, no wispy nebula, but a star born anew, shining brighter than Venus, visible even in broad daylight, a celestial anomaly that defied every tenet of Aristotelian cosmology.\n\nAmong those who gazed upon this astronomical upheaval was a young, impetuous Danish nobleman named Tycho Brahe. At just 26 years old, Tycho was already a figure of considerable eccentricities and prodigious intellect. He had lost part of his nose in a duel and replaced it with a metal prosthetic, a physical testament to his fiery spirit. But beneath the bravado lay a mind utterly devoted to unraveling the secrets of the heavens. He was not the first to spot the new star; peasant farmers, sailors, and other astronomers across Europe had already noted its presence. Yet, it was Tycho, with his meticulous observations and unwavering dedication, who would grasp its profound implications. Night after night, armed with his increasingly sophisticated instruments, he charted its position, carefully noting that it exhibited no parallax, meaning it was not a local atmospheric phenomenon or a planetary body, but truly belonged to the distant, supposedly unchanging sphere of the fixed stars.\n\nTycho's observations, meticulously documented and later published in his groundbreaking work *De nova stella* (Concerning the New Star), were a direct assault on the prevailing Aristotelian worldview. If new stars could appear in the celestial sphere, then the heavens were not immutable, not perfect, and not eternal. This was a radical proposition, challenging not only scientific dogma but also deeply ingrained theological beliefs about the order of creation. The implications were immense, shaking the very foundations of philosophical and religious thought. It opened a crack in the edifice of established knowledge, paving the way for later revolutionary thinkers like Kepler and Galileo, who would further dismantle the geocentric model and usher in a new era of scientific inquiry.\n\nThe supernova of 1572, often simply referred to as Tycho's Supernova, was more than just an astronomical event; it was a catalyst for a paradigm shift. It forced humanity to confront the dynamic, ever-changing nature of the universe and to question long-held assumptions. Tycho Brahe, the flamboyant nobleman with the metal nose, became a pivotal figure in this intellectual revolution, his meticulous observations demonstrating the power of empirical evidence over received wisdom. His work, born from the dramatic appearance of a single, brilliant star, laid crucial groundwork for the scientific revolution, proving that the heavens were not a realm of static perfection, but a vast, evolving cosmos waiting to be explored and understood through careful observation and reasoned inquiry.",
       "id": "cf1f12feda23bbab",
       "score": 60,
@@ -12658,6 +12646,18 @@
       "topic": "spark",
       "ts": "2026-07-28T06:08:36.349530+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - 1v1Me in the AMs and Lab",
+      "id": "1e9245910fcbfe46",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-28T07:22:27.661915+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "exercise_slots_sent": [],
@@ -14243,7 +14243,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-28T07:07:32.970571+00:00"
+    "ts": "2026-07-28T07:22:26.980657+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15840,9 +15840,9 @@
       "last_ok": "2026-07-27T21:07:31.363025+00:00"
     },
     "habits": {
-      "last_data": "2026-07-28T07:07:36.590946+00:00",
+      "last_data": "2026-07-28T07:22:30.026302+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-28T07:07:32.970571+00:00"
+      "last_ok": "2026-07-28T07:22:26.980657+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15928,9 +15928,9 @@
       "last_ok": "2026-07-28T06:07:31.363846+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-28T07:07:35.141343+00:00",
+      "last_data": "2026-07-28T07:22:29.042585+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-28T07:07:32.970571+00:00"
+      "last_ok": "2026-07-28T07:22:26.980657+00:00"
     },
     "uv": {
       "last_data": "2026-07-27T21:09:14.623968+00:00",
@@ -15964,7 +15964,9 @@
       "source_failed": true
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
