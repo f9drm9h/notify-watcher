@@ -87,7 +87,9 @@
     "rent|2026-07-30|5"
   ],
   "blood_donation_last_notified": "2026-07-08",
-  "cleaning_slots_sent": [],
+  "cleaning_slots_sent": [
+    "2026-07-28|18:00"
+  ],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -721,42 +723,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "Saut p\u00e9rilleux - Lujipeka\n(because you like Spider ZED)",
-      "id": "d70d4f153e426e03",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-07-15T12:08:00.051148+00:00",
-      "url": "https://www.deezer.com/track/3453803401"
-    },
-    {
-      "action": "push",
-      "detail": "DOP 30,595.00 (was DOP 50,995.00, -40%)",
-      "id": "e4c7a052eda3f951",
-      "score": 64,
-      "severity": "high",
-      "source": "La Sirena",
-      "title": "La Sirena deal: Secadora Samsung 20 Kg DV20A3200PW/AP",
-      "topic": "groceries",
-      "ts": "2026-07-15T12:08:38.900803+00:00",
-      "url": "https://www.sirena.do/samsung-secadora-20kg-dv20a3200pw-ap-1959828/p"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "a879c8763b53c2b2",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "New Jersey launches procurement process for new nuclear",
-      "topic": "energy",
-      "ts": "2026-07-15T12:08:48.664298+00:00",
-      "url": "https://www.world-nuclear-news.org//articles/new-jersey-launches-procurement-process-for-new-nuclear"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -12720,9 +12686,47 @@
       "topic": "fda",
       "ts": "2026-07-28T21:08:27.084261+00:00",
       "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761322"
+    },
+    {
+      "action": "push",
+      "detail": "Time to train. Start small if you have to - just start.",
+      "id": "73f9cf9d4375fc7c",
+      "score": 0,
+      "severity": "low",
+      "source": "exercise",
+      "title": "Exercise - 6 PM session",
+      "topic": "habits",
+      "ts": "2026-07-28T22:07:32.095896+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Time to meditate. No pressure, just presence.",
+      "id": "e2f19aa7b62c0139",
+      "score": 0,
+      "severity": "low",
+      "source": "meditate",
+      "title": "Meditate - evening reset",
+      "topic": "habits",
+      "ts": "2026-07-28T22:07:32.095896+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "15-minute cleaning sprint. Timer on, go.",
+      "id": "af012ccf1c11e862",
+      "score": 0,
+      "severity": "low",
+      "source": "cleaning",
+      "title": "Cleaning - quick tidy-up",
+      "topic": "habits",
+      "ts": "2026-07-28T22:07:32.095896+00:00",
+      "url": ""
     }
   ],
-  "exercise_slots_sent": [],
+  "exercise_slots_sent": [
+    "2026-07-28|18:00"
+  ],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -13984,21 +13988,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1531422820276633611": {
-      "channel": "1515504253345726558",
-      "habit": "exercise",
-      "sent": "2026-07-27T22:07:31.758437+00:00"
-    },
-    "1531422823183024282": {
-      "channel": "1515504253345726558",
-      "habit": "meditate",
-      "sent": "2026-07-27T22:07:31.758437+00:00"
-    },
-    "1531422824852623392": {
-      "channel": "1515504253345726558",
-      "habit": "cleaning",
-      "sent": "2026-07-27T22:07:31.758437+00:00"
-    },
     "1531468100023619739": {
       "channel": "1515504253345726558",
       "habit": "sleep",
@@ -14013,6 +14002,21 @@
       "channel": "1515504253345726558",
       "habit": "water",
       "sent": "2026-07-28T09:37:33.464636+00:00"
+    },
+    "1531785208272257167": {
+      "channel": "1515504253345726558",
+      "habit": "exercise",
+      "sent": "2026-07-28T22:07:32.095896+00:00"
+    },
+    "1531785210000048181": {
+      "channel": "1515504253345726558",
+      "habit": "meditate",
+      "sent": "2026-07-28T22:07:32.095896+00:00"
+    },
+    "1531785210956484711": {
+      "channel": "1515504253345726558",
+      "habit": "cleaning",
+      "sent": "2026-07-28T22:07:32.095896+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-28",
@@ -14326,7 +14330,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-28T21:52:34.066861+00:00"
+    "ts": "2026-07-28T22:07:30.924883+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -14362,7 +14366,9 @@
   ],
   "learn_last_sent": "2026-07-28",
   "life_dashboard_last_week": "2026-W30",
-  "meditate_slots_sent": [],
+  "meditate_slots_sent": [
+    "2026-07-28|18:00"
+  ],
   "movie_news_seen": {
     "Avengers: Doomsday": [
       "dcb1b2758506322a",
@@ -15929,9 +15935,9 @@
       "last_ok": "2026-07-28T21:07:28.978700+00:00"
     },
     "habits": {
-      "last_data": "2026-07-28T21:52:38.318843+00:00",
+      "last_data": "2026-07-28T22:07:34.177244+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-28T21:52:34.066861+00:00"
+      "last_ok": "2026-07-28T22:07:30.924883+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -16020,9 +16026,9 @@
       "last_ok": "2026-07-28T21:07:28.978700+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-28T21:52:36.613829+00:00",
+      "last_data": "2026-07-28T22:07:32.095439+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-28T21:52:34.066861+00:00"
+      "last_ok": "2026-07-28T22:07:30.924883+00:00"
     },
     "uv": {
       "last_data": "2026-07-28T21:09:23.136260+00:00",
