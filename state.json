@@ -525,18 +525,6 @@
     {
       "action": "push",
       "detail": "",
-      "id": "52b4db40ba5d78c0",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday's Massive Runtime Confirmed In New Marvel Report - IMDb",
-      "topic": "movies",
-      "ts": "2026-07-14T21:07:57.601541+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBRbVc1Wnk2ZGJvQURFODd2aV9wSFdncE5JSlpSTzJQVWEzMFlWcGhESVA0S2NER1ZZbTZpQU0wazRPaUR5d0JNV3M5eVI4d1RIUUVVWXBfU3RuazhjOGY2NkxEbkR4WHhFdmc?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
       "id": "cd6f46872d90bdd1",
       "score": 62,
       "severity": "high",
@@ -12521,6 +12509,18 @@
       "topic": "energy",
       "ts": "2026-07-28T15:08:43.473125+00:00",
       "url": "https://www.world-nuclear-news.org/articles/peer-review-of-floating-nuclear-plant-ranks-it-on-par-with-russias-top-units"
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - 1v1Me and Ranked | !wait",
+      "id": "1b57216aaeeb144a",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-28T17:07:39.385677+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "exercise_slots_sent": [],
@@ -14109,7 +14109,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-28T16:52:36.131721+00:00"
+    "ts": "2026-07-28T17:07:38.322807+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15710,9 +15710,9 @@
       "last_ok": "2026-07-28T15:07:39.319940+00:00"
     },
     "habits": {
-      "last_data": "2026-07-28T16:52:38.361550+00:00",
+      "last_data": "2026-07-28T17:07:43.840698+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-28T16:52:36.131721+00:00"
+      "last_ok": "2026-07-28T17:07:38.322807+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15798,9 +15798,9 @@
       "last_ok": "2026-07-28T15:07:39.319940+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-28T16:52:37.280950+00:00",
+      "last_data": "2026-07-28T17:07:42.108653+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-28T16:52:36.131721+00:00"
+      "last_ok": "2026-07-28T17:07:38.322807+00:00"
     },
     "uv": {
       "last_data": "2026-07-28T15:09:08.576940+00:00",
@@ -15831,7 +15831,9 @@
       "last_ok": "2026-07-28T15:07:39.319940+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
