@@ -661,18 +661,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "\u201cEven, under such circumstances, a commoner of England, tried before a jury of Lords, would have far less cause to complain than should I, a woman, tried before a jury of men.\u201d\n\u2014 Susan B. Anthony\n\nSusan B. Anthony, a name synonymous with the American women's suffrage movement, was a titan among activists, a Quaker-raised abolitionist who found her true calling in the fight for women's political equality. Born in 1820, her life spanned a period of immense social upheaval, from the pre-Civil War abolitionist fervor to the industrialization and urbanization that defined late 19th-century America. She was a tireless organizer, orator, and writer, traveling thousands of miles across the country, often in arduous conditions, to deliver speeches, circulate petitions, and establish women's rights organizations. Anthony was not just a speaker; she was a strategist, understanding that the path to the ballot box was paved with legal challenges, public pressure, and a profound shift in societal attitudes. Her conviction was unwavering, fueled by a deeply held belief in the inherent equality of all individuals, regardless of sex.\n\nThe specific context of her powerful statement \u2013 \u201cEven, under such circumstances, a commoner of England, tried before a jury of Lords, would have far less cause to complain than should I, a woman, tried before a jury of men\u201d \u2013 arose from her audacious act of voting in the 1872 presidential election. This was no impulsive decision but a calculated move designed to challenge the Fourteenth Amendment's interpretation, which granted citizenship rights but conspicuously omitted a guarantee of voting rights for women. Along with fourteen other women in Rochester, New York, she registered and cast a ballot, a direct defiance of the law that prohibited women from voting. She was subsequently arrested, indicted, and brought to trial, not before a jury of her peers, as the legal principle dictated, but before a jury composed entirely of men who, by definition, held the very power she sought to dismantle. The judge, Justice Ward Hunt, went even further, instructing the jury to find her guilty without deliberation, an act that stripped her of even the pretense of a fair trial. It was in this moment, witnessing the legal system so blatantly deny her fundamental rights and due process, that she articulated the profound injustice of her situation, highlighting the inherent bias and structural inequality embedded within the legal and political systems of her time.\n\nAnthony's words resonate powerfully even today because they cut to the core of representation, fairness, and the enduring struggle against systemic discrimination. While women in many parts of the world now have the right to vote and serve on juries, the principle she articulated \u2013 the inherent disadvantage of being judged by those who do not share your lived experience or who benefit from your disenfranchisement \u2013 remains profoundly relevant. We still grapple with issues of diverse representation in all branches of government, in corporate boardrooms, and in positions of power. Her statement serves as a stark reminder that true justice requires not just the letter of the law, but the spirit of empathy and the inclusion of diverse perspectives.",
-      "id": "bcd7c390c3939ac0",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Susan B. Anthony",
-      "topic": "wikiquote",
-      "ts": "2026-07-14T12:09:05.828777+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
       "detail": "What: Japan's Kashiwazaki-Kariwa station has the greatest generating capacity of any nuclear plant, with seven reactors totalling around 7,900 megawatts.\nWhy it matters: It shows how much carbon-free power a single nuclear site can hold, though it has spent years offline for safety upgrades.\nWhy you should care: Its on-and-off status captures Japan's whole post-Fukushima struggle over the future of nuclear power.\n(Source: World Nuclear Association)",
       "id": "02a777cec85cd4ca",
       "score": 60,
@@ -12658,6 +12646,18 @@
       "topic": "movies",
       "ts": "2026-07-28T09:07:38.528063+00:00",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbDRQNElJRVItSS1JTkZWX1ZQODdoYXh5NTJBc2t5c0J4Uy1YSTFzQjhhamVickRxdUtJS1RPTjI3c3kwWWpldDJibGpnZjRUOXJBUFc1amoxb0NjZ0x1QWc5UDhyR2d1czhoNVVyWE5fQmN0bl8zNktxTnlVX3VNZHZZa2w?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Before coffee, before your phone: a glass of water.",
+      "id": "a255e15fc97d9dc1",
+      "score": 0,
+      "severity": "low",
+      "source": "water",
+      "title": "Water - start the day hydrated",
+      "topic": "habits",
+      "ts": "2026-07-28T09:37:33.464636+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -13926,6 +13926,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-07-28T02:07:41.008482+00:00"
+    },
+    "1531596471437103127": {
+      "channel": "1515504253345726558",
+      "habit": "water",
+      "sent": "2026-07-28T09:37:33.464636+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-28",
@@ -14243,7 +14248,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-28T09:22:27.852211+00:00"
+    "ts": "2026-07-28T09:37:31.939797+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15840,9 +15845,9 @@
       "last_ok": "2026-07-27T21:07:31.363025+00:00"
     },
     "habits": {
-      "last_data": "2026-07-28T09:22:29.993303+00:00",
+      "last_data": "2026-07-28T09:37:34.879009+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-28T09:22:27.852211+00:00"
+      "last_ok": "2026-07-28T09:37:31.939797+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15928,9 +15933,9 @@
       "last_ok": "2026-07-28T09:07:34.513933+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-28T09:22:29.117385+00:00",
+      "last_data": "2026-07-28T09:37:33.464174+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-28T09:22:27.852211+00:00"
+      "last_ok": "2026-07-28T09:37:31.939797+00:00"
     },
     "uv": {
       "last_data": "2026-07-27T21:09:14.623968+00:00",
@@ -15982,7 +15987,9 @@
   "watchdog_failing_since": {
     "visa_bulletin": "2026-07-14T21:07:54.987378+00:00"
   },
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-07-28|05:30"
+  ],
   "weather_seen_ids": [
     "619dabe04f61c68a",
     "951eeb752590f562",
