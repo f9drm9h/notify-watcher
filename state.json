@@ -743,18 +743,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "Is Wednesday 22 July (in 7 days). Tap for the academic calendar (PDF).",
-      "id": "b05690717e1c037c",
-      "score": 62,
-      "severity": "moderate",
-      "source": "ITSC",
-      "title": "ITSC: Evaluaci\u00f3n Competencias Ingl\u00e9s/Franc\u00e9s (Examen)",
-      "topic": "itsc",
-      "ts": "2026-07-15T12:09:23.131864+00:00",
-      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/05/Calendario-academico-2026-2-MAYO-AGOSTO-_-Actualizado_.pdf"
-    },
-    {
-      "action": "push",
       "detail": "Starts Wednesday 22 July (in 7 days). Tap for the academic calendar (PDF).",
       "id": "0109e51650076cfd",
       "score": 62,
@@ -12740,6 +12728,18 @@
       "topic": "spark",
       "ts": "2026-07-29T00:08:55.479914+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Bedtime. Phone away, eyes closed. Good night!",
+      "id": "5857fcc21d1b6333",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-07-29T01:07:28.979020+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -14006,11 +14006,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1531468100023619739": {
-      "channel": "1515504253345726558",
-      "habit": "sleep",
-      "sent": "2026-07-28T01:07:27.212519+00:00"
-    },
     "1531483258293063761": {
       "channel": "1515504253345726558",
       "habit": "sleep",
@@ -14035,6 +14030,11 @@
       "channel": "1515504253345726558",
       "habit": "cleaning",
       "sent": "2026-07-28T22:07:32.095896+00:00"
+    },
+    "1531830493752856899": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-07-29T01:07:28.979020+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-29",
@@ -14348,7 +14348,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-29T00:52:31.841204+00:00"
+    "ts": "2026-07-29T01:07:27.845021+00:00"
   },
   "launch_seen_ids": [
     "8cd1ba94ebc3e48d",
@@ -15860,7 +15860,9 @@
   ],
   "recap_last_week": "2026-W31",
   "reminders_sent": [],
-  "sleep_slots_sent": [],
+  "sleep_slots_sent": [
+    "2026-07-28|21:00"
+  ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
     "d1203-liberty-5-pro-anc-earbuds-clear-calls",
@@ -15954,9 +15956,9 @@
       "last_ok": "2026-07-28T21:07:28.978700+00:00"
     },
     "habits": {
-      "last_data": "2026-07-29T00:52:35.601258+00:00",
+      "last_data": "2026-07-29T01:07:30.301472+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-29T00:52:31.841204+00:00"
+      "last_ok": "2026-07-29T01:07:27.845021+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -16045,9 +16047,9 @@
       "last_ok": "2026-07-29T00:07:25.526319+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-29T00:52:33.830072+00:00",
+      "last_data": "2026-07-29T01:07:28.978477+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-29T00:52:31.841204+00:00"
+      "last_ok": "2026-07-29T01:07:27.845021+00:00"
     },
     "uv": {
       "last_data": "2026-07-28T21:09:23.136260+00:00",
