@@ -768,18 +768,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "",
-      "id": "dab40b425d62f016",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "Robert Pattinson\u2019s Batman Part II delayed again - Female First",
-      "topic": "movies",
-      "ts": "2026-07-15T18:07:55.328825+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWjJSQUN6bWF2dWdzNEYzdWRmRmxDYi10WDduV0lSajY0TjIxcWExSlpMT0hBVWNlZVZ2dlhwWUpZcjNTck9XUjZUMDJKbVNSWFFWenY1aXFVTnFtRkQxa1h5bEtKTnhxTUg1OWJ2UE5mbU9uNGVyWkRYV1ZiUHp4TVVCT2k2TDFqRVQ0bnZYSGtDN0hIeERqNUVDOV9oWlk?oc=5"
-    },
-    {
-      "action": "push",
       "detail": "Fight Club - SIMONY\n(because you like Spider ZED)",
       "id": "5d10b8e7afca77ee",
       "score": 62,
@@ -12765,6 +12753,18 @@
       "topic": "spark",
       "ts": "2026-07-29T06:08:48.298146+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - Short 1v1Me vs Strider | !wait",
+      "id": "c4ed0ff1986723d3",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-29T07:22:38.966104+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "exercise_slots_sent": [],
@@ -14371,7 +14371,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-29T07:07:25.083255+00:00"
+    "ts": "2026-07-29T07:22:37.887847+00:00"
   },
   "launch_seen_ids": [
     "0881da6545277618",
@@ -15977,9 +15977,9 @@
       "last_ok": "2026-07-28T21:07:28.978700+00:00"
     },
     "habits": {
-      "last_data": "2026-07-29T07:07:27.327713+00:00",
+      "last_data": "2026-07-29T07:22:42.293250+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-29T07:07:25.083255+00:00"
+      "last_ok": "2026-07-29T07:22:37.887847+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -16068,9 +16068,9 @@
       "last_ok": "2026-07-29T06:07:24.034594+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-29T07:07:26.380168+00:00",
+      "last_data": "2026-07-29T07:22:41.117843+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-29T07:07:25.083255+00:00"
+      "last_ok": "2026-07-29T07:22:37.887847+00:00"
     },
     "uv": {
       "last_data": "2026-07-28T21:09:23.136260+00:00",
@@ -16101,7 +16101,9 @@
       "last_ok": "2026-07-29T06:07:24.034594+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
