@@ -487,18 +487,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "La vida ya es dura sin la necesidad de dolores innecesarios, ademas somos profecias autocumplidas",
-      "id": "7b44b249f5a5f4f0",
-      "score": 62,
-      "severity": "moderate",
-      "source": "MIGALA666",
-      "title": "MIGALA666 uploaded a new video",
-      "topic": "youtube",
-      "ts": "2026-07-15T21:09:44.202971+00:00",
-      "url": "https://www.youtube.com/watch?v=xrtGE-9sZ3s"
-    },
-    {
-      "action": "push",
       "detail": "Time for a glass of water. Stay hydrated!",
       "id": "99c895d7adc8edde",
       "score": 64,
@@ -12484,6 +12472,18 @@
       "topic": "iss",
       "ts": "2026-07-29T15:09:13.989902+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - 1v1Me Vs IDom and EWC WatchParty!",
+      "id": "4f080013801a89c8",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-29T16:37:30.305931+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "exercise_slots_sent": [],
@@ -14088,7 +14088,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-29T16:22:40.081924+00:00"
+    "ts": "2026-07-29T16:37:29.705320+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -15698,9 +15698,9 @@
       "last_ok": "2026-07-29T15:07:33.818482+00:00"
     },
     "habits": {
-      "last_data": "2026-07-29T16:22:55.302254+00:00",
+      "last_data": "2026-07-29T16:37:32.662716+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-29T16:22:40.081924+00:00"
+      "last_ok": "2026-07-29T16:37:29.705320+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15786,9 +15786,9 @@
       "last_ok": "2026-07-29T15:07:33.818482+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-29T16:22:42.081303+00:00",
+      "last_data": "2026-07-29T16:37:31.727373+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-29T16:22:40.081924+00:00"
+      "last_ok": "2026-07-29T16:37:29.705320+00:00"
     },
     "uv": {
       "last_data": "2026-07-29T15:09:20.644417+00:00",
@@ -15819,7 +15819,9 @@
       "last_ok": "2026-07-29T15:07:33.818482+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
