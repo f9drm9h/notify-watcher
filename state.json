@@ -786,18 +786,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "The Batman: Part II moved from Sep 30 2027 to Feb 18 2028 (+141 days)",
-      "id": "986c979c23d2f4b9",
-      "score": 62,
-      "severity": "high",
-      "source": "Movies",
-      "title": "Movie: The Batman: Part II",
-      "topic": "movies",
-      "ts": "2026-07-15T21:07:53.565524+00:00",
-      "url": "https://www.themoviedb.org/movie/806704"
-    },
-    {
-      "action": "push",
       "detail": "",
       "id": "673a11ae097fff22",
       "score": 62,
@@ -12783,6 +12771,18 @@
       "topic": "iss",
       "ts": "2026-07-29T09:08:49.221670+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Good morning! First glass of water before anything else.",
+      "id": "2427d9573e32f0d4",
+      "score": 0,
+      "severity": "low",
+      "source": "water",
+      "title": "Water - start the day hydrated",
+      "topic": "habits",
+      "ts": "2026-07-29T09:37:33.968575+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -14049,11 +14049,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1531596471437103127": {
-      "channel": "1515504253345726558",
-      "habit": "water",
-      "sent": "2026-07-28T09:37:33.464636+00:00"
-    },
     "1531785208272257167": {
       "channel": "1515504253345726558",
       "habit": "exercise",
@@ -14078,6 +14073,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-07-29T02:07:38.357239+00:00"
+    },
+    "1531958861366300734": {
+      "channel": "1515504253345726558",
+      "habit": "water",
+      "sent": "2026-07-29T09:37:33.968575+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-29",
@@ -14391,7 +14391,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-29T09:22:40.293786+00:00"
+    "ts": "2026-07-29T09:37:32.698362+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -15998,9 +15998,9 @@
       "last_ok": "2026-07-28T21:07:28.978700+00:00"
     },
     "habits": {
-      "last_data": "2026-07-29T09:22:44.911079+00:00",
+      "last_data": "2026-07-29T09:37:35.329290+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-29T09:22:40.293786+00:00"
+      "last_ok": "2026-07-29T09:37:32.698362+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -16089,9 +16089,9 @@
       "last_ok": "2026-07-29T09:07:36.732221+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-29T09:22:42.462346+00:00",
+      "last_data": "2026-07-29T09:37:33.968068+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-29T09:22:40.293786+00:00"
+      "last_ok": "2026-07-29T09:37:32.698362+00:00"
     },
     "uv": {
       "last_data": "2026-07-28T21:09:23.136260+00:00",
@@ -16144,7 +16144,9 @@
     "itsc": "2026-07-28T18:07:37.719147+00:00",
     "visa_bulletin": "2026-07-14T21:07:54.987378+00:00"
   },
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-07-29|05:30"
+  ],
   "weather_seen_ids": [
     "93a33f99a09b417a",
     "5ec42eaaa6395db4",
