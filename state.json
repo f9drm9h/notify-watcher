@@ -88,7 +88,9 @@
     "rent|2026-07-30|1"
   ],
   "blood_donation_last_notified": "2026-07-08",
-  "cleaning_slots_sent": [],
+  "cleaning_slots_sent": [
+    "2026-07-29|18:00"
+  ],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -593,42 +595,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "id": "167dbffed8b28d76",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "\u201cThe Odyssey\u201d and \u201cSpider-Man: Brand New Day\u201d arrive in theaters this month - Iowa State Daily",
-      "topic": "movies",
-      "ts": "2026-07-16T06:08:23.365295+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYU1PZzg0THpuSTBnOVhqSUhEVFVFVXBHVDJQeHJYTzBoRmwzS29Cek1NMElOY1NwUC1jZXhIQkR6bTJETDQ5Z0UwbTJvRG5iWTBGcUtOZFRUcktLN1FtWW5fN3BOOFAySjJ1TG51SG1lNlVPRENyMTNzQU9DQTBORVVnU1dHSEtiTmdWTFpnMDdNTnFYeGcxYWxreVo4TlRvclhGeTNILVY3VkxRNzJwNUwxeXYtejlpd3c?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "8e97b66d1b963671",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman: Part II\u2019 Has Been Delayed, But We\u2019ve Got Our First Look - Man of Many",
-      "topic": "movies",
-      "ts": "2026-07-16T06:08:24.842360+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPbVVoc2hrd3pOeWJLZ3BEc1VpbE5oT3FnZGlsZXY2Q0dzM0VidHRMTm5DUFhwVjVldVRieW5ZWjMwUDVCTGI4T3NydWJtTTg2SURjUm9fZWtFbUZRWTYwTFFtbnBRa0w3RHhldm1RZG0tT3hmdE1OQ2UzOWRFVjlJWlBn?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "2aa23dbb4c8675f6",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-07-16T06:09:25.885579+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
     {
       "action": "push",
       "detail": "\u201cBut one only woke people if one knew what one wanted to say to them. And she wanted to say not one thing, but everything. Little words that broke up the thought and dismembered it said nothing. 'About life, about death; about Mrs Ramsay' \u2013 no, she thought, one could say nothing to nobody.\u201d\n\u2014 Virginia Woolf\n\nVirginia Woolf, a titan of modernist literature, wrestled with the very act of articulation, the struggle to capture the totality of human experience within the confines of language. This particular rumination arrives in her 1927 masterpiece, *To the Lighthouse*, through the character of Mrs. Ramsay, a matriarch whose inner life is a swirling vortex of observation, empathy, and unspoken wisdom. The scene unfolds as Mrs. Ramsay watches her children and dinner guests, a silent observer grappling with the inadequacy of conventional speech to convey the profound, intricate truths she perceives about life, death, and the minutiae of daily existence. She yearns to communicate not merely facts, but the interconnectedness of all things, the ephemeral beauty and inherent tragedy of being.\n\nHer struggle is the artist's struggle: how to distil the vast, amorphous 'everything' into 'something' without losing its essence, without dismembering the thought itself. Woolf, through Mrs. Ramsay, highlights the inherent limitations of language, the way \"little words\" can indeed break up and fragment an idea, leaving a hollow shell instead of the vibrant truth. The desire to say \"not one thing, but everything\" is a universal human longing, one that resonates deeply in our contemporary world saturated with sound bites and truncated communications.\n\nIn an age where information is often reduced to headlines and character limits, Woolf\u2019s observation remains acutely relevant.",
@@ -12592,9 +12558,47 @@
       "topic": "iss",
       "ts": "2026-07-29T21:09:09.649378+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "6 PM: time to move. Even 20 minutes counts.",
+      "id": "c3161cc841926505",
+      "score": 0,
+      "severity": "low",
+      "source": "exercise",
+      "title": "Exercise - 6 PM session",
+      "topic": "habits",
+      "ts": "2026-07-29T22:07:30.007526+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Take 10 quiet minutes to meditate and reset.",
+      "id": "bee6c13cd77b71fa",
+      "score": 0,
+      "severity": "low",
+      "source": "meditate",
+      "title": "Meditate - evening reset",
+      "topic": "habits",
+      "ts": "2026-07-29T22:07:30.007526+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Quick tidy-up time: 15 minutes on the messiest spot.",
+      "id": "89b1f63a1ad8643d",
+      "score": 0,
+      "severity": "low",
+      "source": "cleaning",
+      "title": "Cleaning - quick tidy-up",
+      "topic": "habits",
+      "ts": "2026-07-29T22:07:30.007526+00:00",
+      "url": ""
     }
   ],
-  "exercise_slots_sent": [],
+  "exercise_slots_sent": [
+    "2026-07-29|18:00"
+  ],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -13889,6 +13893,21 @@
       "channel": "1515504253345726558",
       "habit": "water",
       "sent": "2026-07-29T09:37:33.968575+00:00"
+    },
+    "1532147588541710347": {
+      "channel": "1515504253345726558",
+      "habit": "exercise",
+      "sent": "2026-07-29T22:07:30.007526+00:00"
+    },
+    "1532147591700287661": {
+      "channel": "1515504253345726558",
+      "habit": "meditate",
+      "sent": "2026-07-29T22:07:30.007526+00:00"
+    },
+    "1532147593881321573": {
+      "channel": "1515504253345726558",
+      "habit": "cleaning",
+      "sent": "2026-07-29T22:07:30.007526+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-29",
@@ -14198,7 +14217,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-29T21:52:37.844523+00:00"
+    "ts": "2026-07-29T22:07:28.569639+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -14236,7 +14255,9 @@
   ],
   "learn_last_sent": "2026-07-29",
   "life_dashboard_last_week": "2026-W30",
-  "meditate_slots_sent": [],
+  "meditate_slots_sent": [
+    "2026-07-29|18:00"
+  ],
   "movie_news_seen": {
     "Avengers: Doomsday": [
       "e38c75968db52edd",
@@ -15810,9 +15831,9 @@
       "last_ok": "2026-07-29T21:07:36.862496+00:00"
     },
     "habits": {
-      "last_data": "2026-07-29T21:52:41.392895+00:00",
+      "last_data": "2026-07-29T22:07:32.666508+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-29T21:52:37.844523+00:00"
+      "last_ok": "2026-07-29T22:07:28.569639+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15898,9 +15919,9 @@
       "last_ok": "2026-07-29T21:07:36.862496+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-29T21:52:40.047376+00:00",
+      "last_data": "2026-07-29T22:07:30.007116+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-29T21:52:37.844523+00:00"
+      "last_ok": "2026-07-29T22:07:28.569639+00:00"
     },
     "uv": {
       "last_data": "2026-07-29T21:09:18.511066+00:00",
