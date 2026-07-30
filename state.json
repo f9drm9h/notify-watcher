@@ -88,9 +88,7 @@
     "rent|2026-07-30|1"
   ],
   "blood_donation_last_notified": "2026-07-08",
-  "cleaning_slots_sent": [
-    "2026-07-29|18:00"
-  ],
+  "cleaning_slots_sent": [],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -12614,9 +12612,7 @@
       "url": ""
     }
   ],
-  "exercise_slots_sent": [
-    "2026-07-29|18:00"
-  ],
+  "exercise_slots_sent": [],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -14220,7 +14216,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-30T03:53:10.538977+00:00"
+    "ts": "2026-07-30T04:08:13.953290+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -14258,9 +14254,7 @@
   ],
   "learn_last_sent": "2026-07-29",
   "life_dashboard_last_week": "2026-W30",
-  "meditate_slots_sent": [
-    "2026-07-29|18:00"
-  ],
+  "meditate_slots_sent": [],
   "movie_news_seen": {
     "Avengers: Doomsday": [
       "7598bbaae41e8fe4",
@@ -15740,10 +15734,7 @@
   ],
   "recap_last_week": "2026-W31",
   "reminders_sent": [],
-  "sleep_slots_sent": [
-    "2026-07-29|21:00",
-    "2026-07-29|22:00"
-  ],
+  "sleep_slots_sent": [],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
     "d1203-liberty-5-pro-anc-earbuds-clear-calls",
@@ -15837,9 +15828,9 @@
       "last_ok": "2026-07-29T21:07:36.862496+00:00"
     },
     "habits": {
-      "last_data": "2026-07-30T03:53:12.503680+00:00",
+      "last_data": "2026-07-30T04:08:17.942059+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-30T03:53:10.538977+00:00"
+      "last_ok": "2026-07-30T04:08:13.953290+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15925,9 +15916,9 @@
       "last_ok": "2026-07-30T03:07:38.087496+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-30T03:53:11.502972+00:00",
+      "last_data": "2026-07-30T04:08:16.117599+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-30T03:53:10.538977+00:00"
+      "last_ok": "2026-07-30T04:08:13.953290+00:00"
     },
     "uv": {
       "last_data": "2026-07-29T21:09:18.511066+00:00",
@@ -15979,9 +15970,7 @@
   "watchdog_failing_since": {
     "visa_bulletin": "2026-07-14T21:07:54.987378+00:00"
   },
-  "water_slots_sent": [
-    "2026-07-29|05:30"
-  ],
+  "water_slots_sent": [],
   "weather_seen_ids": [
     "e1c02f9b37fa8210",
     "ae2c986c0b03c18f",
