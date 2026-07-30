@@ -88,7 +88,9 @@
     "rent|2026-07-30|1"
   ],
   "blood_donation_last_notified": "2026-07-08",
-  "cleaning_slots_sent": [],
+  "cleaning_slots_sent": [
+    "2026-07-30|18:00"
+  ],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -608,42 +610,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "id": "166ca4c2666af812",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II Delayed to 2028: Matt Reeves Shares First Look at Robert Pattinson - SYFY",
-      "topic": "movies",
-      "ts": "2026-07-17T00:08:21.616699+00:00",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWU5wMFZjOWFlTW9GZXk1SmdYUmdaWmNiekZETGVNMGtQT2VteUtWWDcydnlUenhDQ0V0b2lqWEJ3ZmhUUDhxRWdhLTlEcFdfZkkyemNVVWp2QnRRNFc4dkhJQXpyNjBFRDFCbmZuY21fV2dOLTZFTnJ5c2VyS2o4cWVtWldCWVV5MUZYR0pOSTdCQzRxekRaLUxLRTRvUnRHSkREOTgyVnRxczNUb3VwbE5n?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "bfc9088b7cf05a8d",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-07-17T00:09:01.864322+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "La informaci\u00f3n es la capa mas fundamental de la realidad",
-      "id": "2b154140f56bb10e",
-      "score": 62,
-      "severity": "moderate",
-      "source": "MIGALA666",
-      "title": "MIGALA666 uploaded a new video",
-      "topic": "youtube",
-      "ts": "2026-07-17T00:09:25.288792+00:00",
-      "url": "https://www.youtube.com/watch?v=pvMuCNxzlPs"
-    },
     {
       "action": "push",
       "detail": "Regular activity, like walking, helps prevent falls by improving strength and and balance as you age. (Source: WHO)",
@@ -12607,9 +12573,47 @@
       "topic": "iss",
       "ts": "2026-07-30T21:09:49.207292+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Exercise time. Get the body working before the evening slips away.",
+      "id": "1c689987d6510221",
+      "score": 0,
+      "severity": "low",
+      "source": "exercise",
+      "title": "Exercise - 6 PM session",
+      "topic": "habits",
+      "ts": "2026-07-30T22:08:17.695031+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Meditation time: sit, breathe, let the day settle.",
+      "id": "19a91209fd122eae",
+      "score": 0,
+      "severity": "low",
+      "source": "meditate",
+      "title": "Meditate - evening reset",
+      "topic": "habits",
+      "ts": "2026-07-30T22:08:17.695031+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Cleaning slot: reset one area before the night starts.",
+      "id": "df9bc0ec070737e6",
+      "score": 0,
+      "severity": "low",
+      "source": "cleaning",
+      "title": "Cleaning - quick tidy-up",
+      "topic": "habits",
+      "ts": "2026-07-30T22:08:17.695031+00:00",
+      "url": ""
     }
   ],
-  "exercise_slots_sent": [],
+  "exercise_slots_sent": [
+    "2026-07-30|18:00"
+  ],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -13887,21 +13891,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1532147588541710347": {
-      "channel": "1515504253345726558",
-      "habit": "exercise",
-      "sent": "2026-07-29T22:07:30.007526+00:00"
-    },
-    "1532147591700287661": {
-      "channel": "1515504253345726558",
-      "habit": "meditate",
-      "sent": "2026-07-29T22:07:30.007526+00:00"
-    },
-    "1532147593881321573": {
-      "channel": "1515504253345726558",
-      "habit": "cleaning",
-      "sent": "2026-07-29T22:07:30.007526+00:00"
-    },
     "1532192910861406230": {
       "channel": "1515504253345726558",
       "habit": "sleep",
@@ -13916,6 +13905,21 @@
       "channel": "1515504253345726558",
       "habit": "water",
       "sent": "2026-07-30T09:38:18.011983+00:00"
+    },
+    "1532510174194045122": {
+      "channel": "1515504253345726558",
+      "habit": "exercise",
+      "sent": "2026-07-30T22:08:17.695031+00:00"
+    },
+    "1532510175938871467": {
+      "channel": "1515504253345726558",
+      "habit": "meditate",
+      "sent": "2026-07-30T22:08:17.695031+00:00"
+    },
+    "1532510177746620417": {
+      "channel": "1515504253345726558",
+      "habit": "cleaning",
+      "sent": "2026-07-30T22:08:17.695031+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-30",
@@ -14218,7 +14222,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-30T21:53:12.338559+00:00"
+    "ts": "2026-07-30T22:08:16.684764+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -14256,7 +14260,9 @@
   ],
   "learn_last_sent": "2026-07-30",
   "life_dashboard_last_week": "2026-W30",
-  "meditate_slots_sent": [],
+  "meditate_slots_sent": [
+    "2026-07-30|18:00"
+  ],
   "movie_news_seen": {
     "Avengers: Doomsday": [
       "b93cf83022d816ee",
@@ -15834,9 +15840,9 @@
       "last_ok": "2026-07-30T21:08:11.852319+00:00"
     },
     "habits": {
-      "last_data": "2026-07-30T21:53:14.525242+00:00",
+      "last_data": "2026-07-30T22:08:19.709048+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-30T21:53:12.338559+00:00"
+      "last_ok": "2026-07-30T22:08:16.684764+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15922,9 +15928,9 @@
       "last_ok": "2026-07-30T21:08:11.852319+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-30T21:53:13.529796+00:00",
+      "last_data": "2026-07-30T22:08:17.694553+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-30T21:53:12.338559+00:00"
+      "last_ok": "2026-07-30T22:08:16.684764+00:00"
     },
     "uv": {
       "last_data": "2026-07-30T21:09:54.845797+00:00",
