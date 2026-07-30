@@ -519,18 +519,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "Pause for a moment and have a drink of water.",
-      "id": "7955aae0d4af9494",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-07-16T18:10:28.254965+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
       "detail": "visa_bulletin \u2014 down since 2026-07-14 18:07 UTC; last error: 403 Client Error: Forbidden for url: https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html",
       "id": "c5f120e68b7490c1",
       "score": 72,
@@ -12516,6 +12504,18 @@
       "topic": "iss",
       "ts": "2026-07-30T15:10:34.385826+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - 1v1Me and EWC WatchParty! !bracket",
+      "id": "e9a7816fac79d913",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-07-30T16:38:13.747921+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "exercise_slots_sent": [],
@@ -14126,7 +14126,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-30T16:23:24.219741+00:00"
+    "ts": "2026-07-30T16:38:13.178635+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -15740,9 +15740,9 @@
       "last_ok": "2026-07-30T15:08:21.799160+00:00"
     },
     "habits": {
-      "last_data": "2026-07-30T16:23:28.197116+00:00",
+      "last_data": "2026-07-30T16:38:16.225801+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-30T16:23:24.219741+00:00"
+      "last_ok": "2026-07-30T16:38:13.178635+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15828,9 +15828,9 @@
       "last_ok": "2026-07-30T15:08:21.799160+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-30T16:23:26.969811+00:00",
+      "last_data": "2026-07-30T16:38:15.305656+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-30T16:23:24.219741+00:00"
+      "last_ok": "2026-07-30T16:38:13.178635+00:00"
     },
     "uv": {
       "last_data": "2026-07-30T15:10:43.934201+00:00",
@@ -15861,7 +15861,9 @@
       "last_ok": "2026-07-30T15:08:21.799160+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_bulletin_current": "2026-07",
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
