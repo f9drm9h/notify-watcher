@@ -622,18 +622,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "On this day\n1232: Muhammad ibn Yusuf, who later established the Emirate of Granada, the last Muslim state in Spain, was elected the ruler of Arjona.\n\nFeatured: Holden Commodore (VE)\nThe Holden Commodore (VE) is a full-size car that was produced from 2006 to 2013 by Holden, the former Australian subsidiary of General Motors. Dubbed Holden's \"billion dollar baby\", the car was available as the Holden Berlina\u2014the mid-range model\u2014and the Holden Calais, the...\n\nTechnology\nApp permissions are opt-in; an offline flashlight app should not need your contacts or location. (Source: FTC)",
-      "id": "76f08c40aa26010b",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Daily learning",
-      "topic": "learn",
-      "ts": "2026-07-16T12:09:57.154371+00:00",
-      "url": "https://en.wikipedia.org/wiki/Holden_Commodore_(VE)"
-    },
-    {
-      "action": "push",
       "detail": "For millennia, smallpox stalked humanity, its invisible tendrils reaching across continents, leaving a trail of disfigurement and death. Empires rose and fell under its shadow, and countless lives were tragically cut short, their faces marred by the distinctive, painful pox. It was a disease that recognized no social boundaries, afflicting rich and poor, powerful and vulnerable alike, its relentless march seemingly unstoppable. Then, in the mid-20th century, a daring vision emerged from the nascent World Health Organization: not just to control, but to utterly obliterate this ancient scourge from the face of the Earth.\n\nThe architects of this audacious plan were a diverse group of scientists, epidemiologists, and public health officials, driven by a profound moral imperative. Figures like Dr. Donald Henderson led the charge, marshaling resources and expertise from nations across the globe, from the Soviet Union to the United States, often overcoming political differences in the face of a common enemy. The strategy was ingenious in its simplicity: a combination of mass vaccination with the highly effective variola vaccine and a meticulous \"surveillance and containment\" approach. Teams of dedicated health workers, often navigating remote and challenging terrain, would fan out, identifying new outbreaks, vaccinating those in proximity, and meticulously tracking the virus's retreat, house by house, village by village. It was a testament to human cooperation and perseverance on an unprecedented scale.\n\nThe last naturally occurring case of smallpox was recorded in Somalia in 1977, a moment of profound triumph that marked the definitive end of an era of human suffering.",
       "id": "a6f4b167fe3a7ce1",
       "score": 60,
@@ -12619,6 +12607,18 @@
       "topic": "youtube",
       "ts": "2026-07-30T09:09:49.678542+00:00",
       "url": "https://www.youtube.com/watch?v=MSnyLp5sftY"
+    },
+    {
+      "action": "push",
+      "detail": "Start the day right: drink a full glass of water now.",
+      "id": "3394b7ab46227739",
+      "score": 0,
+      "severity": "low",
+      "source": "water",
+      "title": "Water - start the day hydrated",
+      "topic": "habits",
+      "ts": "2026-07-30T09:38:18.011983+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -13887,11 +13887,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1531958861366300734": {
-      "channel": "1515504253345726558",
-      "habit": "water",
-      "sent": "2026-07-29T09:37:33.968575+00:00"
-    },
     "1532147588541710347": {
       "channel": "1515504253345726558",
       "habit": "exercise",
@@ -13916,6 +13911,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-07-30T02:07:25.985142+00:00"
+    },
+    "1532321435069054977": {
+      "channel": "1515504253345726558",
+      "habit": "water",
+      "sent": "2026-07-30T09:38:18.011983+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-30",
@@ -14225,7 +14225,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-30T09:23:13.579658+00:00"
+    "ts": "2026-07-30T09:38:16.447870+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -15837,9 +15837,9 @@
       "last_ok": "2026-07-29T21:07:36.862496+00:00"
     },
     "habits": {
-      "last_data": "2026-07-30T09:23:16.877087+00:00",
+      "last_data": "2026-07-30T09:38:19.762677+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-30T09:23:13.579658+00:00"
+      "last_ok": "2026-07-30T09:38:16.447870+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15925,9 +15925,9 @@
       "last_ok": "2026-07-30T09:08:17.579912+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-30T09:23:15.403479+00:00",
+      "last_data": "2026-07-30T09:38:18.011322+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-30T09:23:13.579658+00:00"
+      "last_ok": "2026-07-30T09:38:16.447870+00:00"
     },
     "uv": {
       "last_data": "2026-07-29T21:09:18.511066+00:00",
@@ -15979,7 +15979,9 @@
   "watchdog_failing_since": {
     "visa_bulletin": "2026-07-14T21:07:54.987378+00:00"
   },
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-07-30|05:30"
+  ],
   "weather_seen_ids": [
     "0f30dd9aedf5436a",
     "e1c02f9b37fa8210",
