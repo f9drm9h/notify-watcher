@@ -607,18 +607,6 @@
     {
       "action": "push",
       "detail": "",
-      "id": "23d2d20d3540604b",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u201cThe Odyssey\u201d and \u201cSpider-Man: Brand New Day\u201d arrive in theaters this month - Iowa State Daily",
-      "topic": "movies",
-      "ts": "2026-07-16T12:08:32.056716+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBaYjNvZUN3MFpZbDlJQnA0NEZDRUJQZmE5UmFSZ0tIcEs3cHQ0VGhhdllEUE00NElqNzU3enJMWmlDRUpaWXVnY2Rfck9sMmhkT3B4R1VHdF9RQWZVMENuc3RnTE50dFE?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
       "id": "31e77fafada0e88b",
       "score": 62,
       "severity": "high",
@@ -12603,6 +12591,18 @@
       "topic": "habits",
       "ts": "2026-07-30T01:07:34.826559+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "9 PM: start winding down. Screens dimmer, lights lower.",
+      "id": "86380ef6e5677b18",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-07-30T02:07:25.985142+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -13902,6 +13902,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-07-30T01:07:34.826559+00:00"
+    },
+    "1532207969746292918": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-07-30T02:07:25.985142+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-30",
@@ -14211,7 +14216,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-30T01:52:30.032455+00:00"
+    "ts": "2026-07-30T02:07:24.902742+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -15732,7 +15737,8 @@
   "recap_last_week": "2026-W31",
   "reminders_sent": [],
   "sleep_slots_sent": [
-    "2026-07-29|21:00"
+    "2026-07-29|21:00",
+    "2026-07-29|22:00"
   ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
@@ -15827,9 +15833,9 @@
       "last_ok": "2026-07-29T21:07:36.862496+00:00"
     },
     "habits": {
-      "last_data": "2026-07-30T01:52:33.867293+00:00",
+      "last_data": "2026-07-30T02:07:27.335845+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-30T01:52:30.032455+00:00"
+      "last_ok": "2026-07-30T02:07:24.902742+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15915,9 +15921,9 @@
       "last_ok": "2026-07-30T00:07:31.952421+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-30T01:52:32.366114+00:00",
+      "last_data": "2026-07-30T02:07:25.984514+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-30T01:52:30.032455+00:00"
+      "last_ok": "2026-07-30T02:07:24.902742+00:00"
     },
     "uv": {
       "last_data": "2026-07-29T21:09:18.511066+00:00",
