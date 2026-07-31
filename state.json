@@ -623,18 +623,6 @@
     {
       "action": "push",
       "detail": "",
-      "id": "dc4a598421dbeee3",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Shop Marvel Must Haves: Celebrate 'Spider-Man: Brand New Day\u2019 with Official Spidey Merch - Marvel.com",
-      "topic": "movies",
-      "ts": "2026-07-17T06:08:19.589218+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPcGdrOUU1R0trV2NDQnhZdC1vNUZTT1RYV0dndVNjbGNmLUx4RkVpQlJXS2pxSHRURGZGVFRtRHg4NExhRXhhX2ZGVGJyRkVwdi1fMXVuTnV5Q2N4S3dNdVFQTDBPVDYtRDZWQVZ2WUtFYURSLWJqMjlCcGJ2OUs2NzNvcklLTDgwa1g3Sg?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
       "id": "011f09ff8131e48e",
       "score": 62,
       "severity": "high",
@@ -12619,6 +12607,18 @@
       "topic": "spark",
       "ts": "2026-07-31T00:09:52.078071+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Wind-down time: wrap up what you're doing and ease toward bed.",
+      "id": "3bfc5313c3235b0f",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-07-31T01:08:15.671690+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -13901,11 +13901,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1532192910861406230": {
-      "channel": "1515504253345726558",
-      "habit": "sleep",
-      "sent": "2026-07-30T01:07:34.826559+00:00"
-    },
     "1532207969746292918": {
       "channel": "1515504253345726558",
       "habit": "sleep",
@@ -13930,6 +13925,11 @@
       "channel": "1515504253345726558",
       "habit": "cleaning",
       "sent": "2026-07-30T22:08:17.695031+00:00"
+    },
+    "1532555467824304230": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-07-31T01:08:15.671690+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-31",
@@ -14232,7 +14232,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-31T00:53:15.638003+00:00"
+    "ts": "2026-07-31T01:08:13.551289+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -15756,7 +15756,9 @@
   ],
   "recap_last_week": "2026-W31",
   "reminders_sent": [],
-  "sleep_slots_sent": [],
+  "sleep_slots_sent": [
+    "2026-07-30|21:00"
+  ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
     "d1203-liberty-5-pro-anc-earbuds-clear-calls",
@@ -15850,9 +15852,9 @@
       "last_ok": "2026-07-30T21:08:11.852319+00:00"
     },
     "habits": {
-      "last_data": "2026-07-31T00:53:19.874309+00:00",
+      "last_data": "2026-07-31T01:08:17.691272+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-31T00:53:15.638003+00:00"
+      "last_ok": "2026-07-31T01:08:13.551289+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15938,9 +15940,9 @@
       "last_ok": "2026-07-31T00:08:15.718610+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-31T00:53:17.964981+00:00",
+      "last_data": "2026-07-31T01:08:15.671315+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-31T00:53:15.638003+00:00"
+      "last_ok": "2026-07-31T01:08:13.551289+00:00"
     },
     "uv": {
       "last_data": "2026-07-30T21:09:54.845797+00:00",
