@@ -621,18 +621,6 @@
   ],
   "event_log": [
     {
-      "action": "push",
-      "detail": "",
-      "id": "011f09ff8131e48e",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "'The Batman Part II' Delayed to 2028 as Matt Reeves Drops First Camera Test Footage - Hypebeast",
-      "topic": "movies",
-      "ts": "2026-07-17T06:08:21.238349+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPOWxsRlpPSWpKaDhRNWltZ2FsS3k1b3lMUEprbXVCSmYyNGloSUI0dVM2M0I5ekNLLU1qS1RrbkZVZGNGblNxLUJRN0lON2plZUxFRENNb0tsRDdpT004ZFZwRHF2bl81T0ZBalRPczV1eEEtLXE1WTlZSXVMMjBvVW5GZTVBQnl1WC1vbHFVWTJtbWtyM1JXd1JRdXVfdnFfLW00MkZDOXdmUUR4UDZ0UHZhQkl1X081cHQzbkd4eEUzQ21NOUE?oc=5"
-    },
-    {
       "action": "digest",
       "detail": "",
       "id": "c7551068743a56b8",
@@ -12619,6 +12607,18 @@
       "topic": "habits",
       "ts": "2026-07-31T01:08:15.671690+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Wind-down time: wrap up what you're doing and ease toward bed.",
+      "id": "1544c3f9a242f14e",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-07-31T02:08:14.182023+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -13901,11 +13901,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1532207969746292918": {
-      "channel": "1515504253345726558",
-      "habit": "sleep",
-      "sent": "2026-07-30T02:07:25.985142+00:00"
-    },
     "1532321435069054977": {
       "channel": "1515504253345726558",
       "habit": "water",
@@ -13930,6 +13925,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-07-31T01:08:15.671690+00:00"
+    },
+    "1532570562294186065": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-07-31T02:08:14.182023+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-31",
@@ -14232,7 +14232,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-31T01:53:18.697565+00:00"
+    "ts": "2026-07-31T02:08:12.605817+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -15757,7 +15757,8 @@
   "recap_last_week": "2026-W31",
   "reminders_sent": [],
   "sleep_slots_sent": [
-    "2026-07-30|21:00"
+    "2026-07-30|21:00",
+    "2026-07-30|22:00"
   ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
@@ -15852,9 +15853,9 @@
       "last_ok": "2026-07-30T21:08:11.852319+00:00"
     },
     "habits": {
-      "last_data": "2026-07-31T01:53:24.371775+00:00",
+      "last_data": "2026-07-31T02:08:16.897172+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-31T01:53:18.697565+00:00"
+      "last_ok": "2026-07-31T02:08:12.605817+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15940,9 +15941,9 @@
       "last_ok": "2026-07-31T00:08:15.718610+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-31T01:53:20.637973+00:00",
+      "last_data": "2026-07-31T02:08:14.181402+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-31T01:53:18.697565+00:00"
+      "last_ok": "2026-07-31T02:08:12.605817+00:00"
     },
     "uv": {
       "last_data": "2026-07-30T21:09:54.845797+00:00",
