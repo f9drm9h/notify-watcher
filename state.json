@@ -89,7 +89,9 @@
     "rent|2026-07-30|1"
   ],
   "blood_donation_last_notified": "2026-07-08",
-  "cleaning_slots_sent": [],
+  "cleaning_slots_sent": [
+    "2026-07-31|18:00"
+  ],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -615,42 +617,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "id": "88a82b618e8f6fd2",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel Still Has 2 Yet to Release Post-Credit Scenes That Will Directly Set Up Avengers: Doomsday - The Direct",
-      "topic": "movies",
-      "ts": "2026-07-17T21:07:26.815510+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVmRtdlpVQ3BJQXBKdkFJZ0tseXJnd0RjcEJfY0FBMFdWejV4Uzd0TFAxNlhHN3Z4cFVhYUhlT1hfdl9oTWdDRnRDQ2JxbzdCVjJiTk0tODR1SmZHNjN2Rzd6S3pHTDJYQ3Fscm5EVGE5THJxZTZQcnZzbDNTQkVackZJMkYtTEVLY1g0U0VxRTB4eWxnM1o0?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "8f946360ef9b7dfa",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "New Spider-Man: Brand New Day Trailer Released & There\u2019s Only 1 Way To Watch It - Yahoo",
-      "topic": "movies",
-      "ts": "2026-07-17T21:07:28.001516+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOTURqbFN4UkhxVGNfZjNxU2RUQXM0OF9HZldKY0U3bEpYaGF5ZFU0Q0NJUGV0ZDBHaFRZcUxSMEZPSlNEMTQzRXZfakxzUlZucTRLczd0dldOV1Y5dDFiZXhLLTdZTkh4UEo3RjJBeWx5SFRJZ3pQTGJ6TTlXUHJXR1pkdw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "72ec5bc4b5bdb781",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II Delay Is Another Terrible Sign for DC\u2019s Movie Future - Yahoo",
-      "topic": "movies",
-      "ts": "2026-07-17T21:07:29.850766+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPaWZLUlE5c21JSTZPX2NaT2FxbENEblFEVW82U3RWbGk1Z1B4TC0tcTNraFJQWXNrcnJhS3Y1RWNPckY3SXVVcUZOUUtscGhkcEV3S0swV01VUWgyeDRuSGQxN2F2YWw1MHF1R2RhOW84OHRRRTJRb1NhNVF1dDh0VlFqTQ?oc=5"
-    },
     {
       "action": "push",
       "detail": "CONFIG.SYS - MASTER BOOT RECORD\n(because you like Starbreeze Entertainment)",
@@ -12614,9 +12580,47 @@
       "topic": "fuel",
       "ts": "2026-07-31T21:10:06.985901+00:00",
       "url": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Workout window is open: stretch, lift, walk - whatever gets you moving.",
+      "id": "86a746c7250b3735",
+      "score": 0,
+      "severity": "low",
+      "source": "exercise",
+      "title": "Exercise - 6 PM session",
+      "topic": "habits",
+      "ts": "2026-07-31T22:08:32.420517+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Pause for meditation - a few minutes of stillness changes the whole evening.",
+      "id": "0fa08961fa8fc6de",
+      "score": 0,
+      "severity": "low",
+      "source": "meditate",
+      "title": "Meditate - evening reset",
+      "topic": "habits",
+      "ts": "2026-07-31T22:08:32.420517+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "A little cleaning now beats a big cleaning later. Pick one thing.",
+      "id": "166efbb27f4818c6",
+      "score": 0,
+      "severity": "low",
+      "source": "cleaning",
+      "title": "Cleaning - quick tidy-up",
+      "topic": "habits",
+      "ts": "2026-07-31T22:08:32.420517+00:00",
+      "url": ""
     }
   ],
-  "exercise_slots_sent": [],
+  "exercise_slots_sent": [
+    "2026-07-31|18:00"
+  ],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -13899,21 +13903,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1532510174194045122": {
-      "channel": "1515504253345726558",
-      "habit": "exercise",
-      "sent": "2026-07-30T22:08:17.695031+00:00"
-    },
-    "1532510175938871467": {
-      "channel": "1515504253345726558",
-      "habit": "meditate",
-      "sent": "2026-07-30T22:08:17.695031+00:00"
-    },
-    "1532510177746620417": {
-      "channel": "1515504253345726558",
-      "habit": "cleaning",
-      "sent": "2026-07-30T22:08:17.695031+00:00"
-    },
     "1532555467824304230": {
       "channel": "1515504253345726558",
       "habit": "sleep",
@@ -13928,6 +13917,21 @@
       "channel": "1515504253345726558",
       "habit": "water",
       "sent": "2026-07-31T09:38:13.660974+00:00"
+    },
+    "1532872626089885951": {
+      "channel": "1515504253345726558",
+      "habit": "exercise",
+      "sent": "2026-07-31T22:08:32.420517+00:00"
+    },
+    "1532872628921045093": {
+      "channel": "1515504253345726558",
+      "habit": "meditate",
+      "sent": "2026-07-31T22:08:32.420517+00:00"
+    },
+    "1532872631685087295": {
+      "channel": "1515504253345726558",
+      "habit": "cleaning",
+      "sent": "2026-07-31T22:08:32.420517+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-31",
@@ -14227,7 +14231,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-31T21:53:13.403041+00:00"
+    "ts": "2026-07-31T22:08:30.215270+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -14265,7 +14269,9 @@
   ],
   "learn_last_sent": "2026-07-31",
   "life_dashboard_last_week": "2026-W30",
-  "meditate_slots_sent": [],
+  "meditate_slots_sent": [
+    "2026-07-31|18:00"
+  ],
   "movie_news_seen": {
     "Avengers: Doomsday": [
       "5e53bb21d250301d",
@@ -15852,9 +15858,9 @@
       "last_ok": "2026-07-31T21:08:18.706377+00:00"
     },
     "habits": {
-      "last_data": "2026-07-31T21:53:15.521450+00:00",
+      "last_data": "2026-07-31T22:08:35.180304+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-31T21:53:13.403041+00:00"
+      "last_ok": "2026-07-31T22:08:30.215270+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15940,9 +15946,9 @@
       "last_ok": "2026-07-31T21:08:18.706377+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-31T21:53:14.634745+00:00",
+      "last_data": "2026-07-31T22:08:32.420057+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-31T21:53:13.403041+00:00"
+      "last_ok": "2026-07-31T22:08:30.215270+00:00"
     },
     "uv": {
       "last_data": "2026-07-31T21:10:26.725891+00:00",
