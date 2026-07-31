@@ -630,18 +630,6 @@
     {
       "action": "push",
       "detail": "",
-      "id": "c1fbfe91e5205c56",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u201cThe Odyssey\u201d and \u201cSpider-Man: Brand New Day\u201d arrive in theaters this month - Iowa State Daily",
-      "topic": "movies",
-      "ts": "2026-07-17T09:08:31.101308+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYU1PZzg0THpuSTBnOVhqSUhEVFVFVXBHVDJQeHJYTzBoRmwzS29Cek1NMElOY1NwUC1jZXhIQkR6bTJETDQ5Z0UwbTJvRG5iWTBGcUtOZFRUcktLN1FtWW5fN3BOOFAySjJ1TG51SG1lNlVPRENyMTNzQU9DQTBORVVnU1dHSEtiTmdWTFpnMDdNTnFYeGcxYWxreVo4TlRvclhGeTNILVY3VkxRNzJwNUwxeXYtejlpd3c?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
       "id": "4c7741cf1479583a",
       "score": 62,
       "severity": "high",
@@ -12626,6 +12614,18 @@
       "topic": "spark",
       "ts": "2026-07-31T09:09:25.334010+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Water first, everything else after. Your body spent all night without it.",
+      "id": "7009c62c47f2f59b",
+      "score": 0,
+      "severity": "low",
+      "source": "water",
+      "title": "Water - start the day hydrated",
+      "topic": "habits",
+      "ts": "2026-07-31T09:38:13.660974+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -13935,6 +13935,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-07-31T02:08:14.182023+00:00"
+    },
+    "1532683803582140480": {
+      "channel": "1515504253345726558",
+      "habit": "water",
+      "sent": "2026-07-31T09:38:13.660974+00:00"
     }
   },
   "health_tip_last_sent": "2026-07-31",
@@ -14237,7 +14242,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-07-31T09:23:26.200847+00:00"
+    "ts": "2026-07-31T09:38:12.399651+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -15853,9 +15858,9 @@
       "last_ok": "2026-07-30T21:08:11.852319+00:00"
     },
     "habits": {
-      "last_data": "2026-07-31T09:23:29.545725+00:00",
+      "last_data": "2026-07-31T09:38:15.034745+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-07-31T09:23:26.200847+00:00"
+      "last_ok": "2026-07-31T09:38:12.399651+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15941,9 +15946,9 @@
       "last_ok": "2026-07-31T09:08:17.479981+00:00"
     },
     "twitch": {
-      "last_data": "2026-07-31T09:23:28.341843+00:00",
+      "last_data": "2026-07-31T09:38:13.660493+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-07-31T09:23:26.200847+00:00"
+      "last_ok": "2026-07-31T09:38:12.399651+00:00"
     },
     "uv": {
       "last_data": "2026-07-30T21:09:54.845797+00:00",
@@ -15995,7 +16000,9 @@
   "watchdog_failing_since": {
     "visa_bulletin": "2026-07-14T21:07:54.987378+00:00"
   },
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-07-31|05:30"
+  ],
   "weather_seen_ids": [
     "b13d812c36d8d62b",
     "06f0356ef8a999f5",
