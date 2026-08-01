@@ -147,6 +147,99 @@ class MainLoopHealthTest(unittest.TestCase):
         self.assertEqual(saved["last_run"]["ok"], 1)
 
 
+class WatchdogEscalationTest(unittest.TestCase):
+    """main() exits non-zero when the WATCHDOG itself failed, and only then.
+
+    Every other topic has something that reports its failure — the watchdog. The
+    watchdog has nothing, because it skips its own health entry precisely so it
+    cannot try to alert about being broken while it is broken. Exiting non-zero
+    hands that one case to the layer above, where alert.yml (a separate process
+    with its own Discord path) reports it. Per-topic failures must still exit 0,
+    or every transient network blip would turn the workflow red.
+    """
+
+    def _run_main(self, topics, expected_code):
+        with mock.patch.object(main, "TOPICS", topics), \
+                mock.patch.object(main.state_mod, "load", return_value={}), \
+                mock.patch.object(main.state_mod, "save"), \
+                mock.patch.object(main, "_is_daily_run", return_value=False), \
+                mock.patch.dict(os.environ, {"NOTIFY_ONLY": "",
+                                             "NOTIFY_TEST_PUSH": "",
+                                             "NTFY_CONTROL_TOPIC": ""}):
+            self.assertEqual(main.main(), expected_code)
+
+    def test_a_failing_watchdog_exits_non_zero(self):
+        def broken(state):
+            raise RuntimeError("watchdog state is malformed")
+
+        self._run_main([("watchdog", broken)], 1)
+
+    def test_an_ordinary_topic_failure_still_exits_zero(self):
+        def broken(state):
+            raise RuntimeError("connection refused")
+
+        self._run_main([("fuel", broken), ("watchdog", lambda s: s)], 0)
+
+    def test_a_healthy_watchdog_exits_zero(self):
+        self._run_main([("watchdog", lambda s: s)], 0)
+
+    def test_a_stale_watchdog_error_does_not_keep_the_run_red(self):
+        # Keyed on last_error_ts == this run's stamp, so an error left over from
+        # a previous run cannot pin every future run to a non-zero exit.
+        state = {"topic_health": {"watchdog": {"last_error": "old boom",
+                                               "last_error_ts": OLD_TS}}}
+        with mock.patch.object(main, "TOPICS", [("watchdog", lambda s: s)]), \
+                mock.patch.object(main.state_mod, "load", return_value=state), \
+                mock.patch.object(main.state_mod, "save"), \
+                mock.patch.object(main, "_is_daily_run", return_value=False), \
+                mock.patch.dict(os.environ, {"NOTIFY_ONLY": "",
+                                             "NOTIFY_TEST_PUSH": "",
+                                             "NTFY_CONTROL_TOPIC": ""}):
+            self.assertEqual(main.main(), 0)
+
+    def test_a_run_that_never_selected_the_watchdog_exits_zero(self):
+        # The 15-minute fast lane and /run dispatches skip it; it can hardly be
+        # called broken on a run it never took part in.
+        health_map = {"watchdog": {"last_error": "x", "last_error_ts": RUN_TS}}
+        self.assertFalse(main._watchdog_failed([("twitch", lambda s: s)],
+                                               health_map, RUN_TS))
+
+
+class UnreadableConfigTest(unittest.TestCase):
+    """An unparseable monitors.json is the quietest failure in the system.
+
+    config.load() fails soft to an empty dict so a typo can't crash a scheduled
+    run — but empty config means every topic sees "nothing configured" and
+    no-ops. Runs stay green, no topic records an error, and the watchdog has
+    nothing to find. Since the file is edited straight on github.com, one stray
+    comma can silence everything indefinitely.
+    """
+
+    def test_a_broken_config_pushes_an_alert(self):
+        with mock.patch.object(main.config, "last_error",
+                               return_value="monitors.json is not valid JSON: line 9"), \
+                mock.patch.object(main.ntfy, "push") as push:
+            main._warn_unreadable_config(main.logging.getLogger("test"))
+        push.assert_called_once()
+        kwargs = push.call_args.kwargs
+        self.assertIn("monitors.json", kwargs["title"])
+        self.assertIn("line 9", kwargs["message"])
+        self.assertEqual(kwargs["priority"], "high")
+
+    def test_a_readable_config_says_nothing(self):
+        with mock.patch.object(main.config, "last_error", return_value=None), \
+                mock.patch.object(main.ntfy, "push") as push:
+            main._warn_unreadable_config(main.logging.getLogger("test"))
+        push.assert_not_called()
+
+    def test_a_failed_config_alert_does_not_abort_the_sweep(self):
+        # Best-effort by design: losing the notification must not cost the run.
+        with mock.patch.object(main.config, "last_error", return_value="boom"), \
+                mock.patch.object(main.ntfy, "push",
+                                  side_effect=RuntimeError("discord down")):
+            main._warn_unreadable_config(main.logging.getLogger("test"))
+
+
 class OnDemandSingleTopicTest(unittest.TestCase):
     """The /run <topic> decoupling, proven at the main.main() level.
 

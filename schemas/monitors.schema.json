@@ -31,6 +31,9 @@
     "watchdog": {
       "type": "object",
       "properties": {
+        "alert_delay_hours": { "type": "number", "minimum": 0 },
+        "reminder_hours": { "type": "number", "minimum": 0 },
+        "data_reminder_days": { "type": "number", "minimum": 0 },
         "stale_hours": { "type": "number", "exclusiveMinimum": 0 },
         "data_stale_days": {
           "type": "object",

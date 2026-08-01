@@ -117,8 +117,10 @@
   },
 
   "watchdog": {
-    "_comment": "Self-monitoring. main.py records every topic's last successful run and latest failure in state.topic_health; the watchdog pushes ONE heads-up when a topic has had no successful run for stale_hours (then stays quiet until that topic recovers, re-arming for the next outage). Several topics crossing the threshold on the same run are bundled into a single push. data_stale_days ({topic: days}) is the opt-in second check: alert once when a listed topic has fetched ZERO items for that many days even though its runs 'succeed' - the scraper-broke-silently case. Only list topics whose sources produce items near daily (fda/energy/movies fetch every cycle; games fetches weekly, hence its longer window); a quiet-by-nature source here would false-alarm. fuel stamps last_data via the topic health contract (notify_watcher/health.py) on every successful daily listing check; its weekly notice plus slack fits a 10-day window.",
-    "stale_hours": 48,
+    "_comment": "Self-monitoring. main.py records every topic's last successful run and latest failure in state.topic_health; the watchdog turns that into a three-phase outage lifecycle: alert on the FIRST failing run (alert_delay_hours, 0 = immediately), remind every reminder_hours while it is still down, then exactly ONE recovery push when it works again. Reliability audit, Aug 2026: the old design alerted once after stale_hours=48 and then went quiet until recovery, so a two-day-old outage and a fixed one looked identical and a recovery was never announced at all. Every topic crossing the same transition on one run is bundled into a single push, so a runner-wide blip is one message, not twenty. Set reminder_hours to 0 to turn reminders off. data_stale_days ({topic: days}) is the opt-in second check, running the same lifecycle at day pacing (data_reminder_days): a listed topic that has fetched ZERO items for that many days while its runs still 'succeed' is the scraper-broke-silently case. Only list topics whose sources produce items near daily (fda/energy/movies fetch every cycle; games fetches weekly, hence its longer window); a quiet-by-nature source here would false-alarm. fuel stamps last_data via the topic health contract (notify_watcher/health.py) on every successful daily listing check; its weekly notice plus slack fits a 10-day window.",
+    "alert_delay_hours": 0,
+    "reminder_hours": 12,
+    "data_reminder_days": 7,
     "data_stale_days": {
       "fda": 14,
       "energy": 14,

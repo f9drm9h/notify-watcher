@@ -11,6 +11,14 @@ workers_dev = true
 STATE_BASE_URL = "https://raw.githubusercontent.com/f9drm9h/notify-watcher/main"
 GITHUB_DISPATCH_URL = "https://api.github.com/repos/f9drm9h/notify-watcher/actions/workflows/watch.yml/dispatches"
 
+# The external heartbeat (scheduled() -> externalHeartbeat) posts to the LOGS
+# channel when watch has not SUCCEEDED in 7h. It needs one more secret than the
+# cadence dispatch does:
+#   wrangler secret put CHANNEL_LOGS        # same channel id alert.yml uses
+# DISCORD_BOT_TOKEN and GITHUB_DISPATCH_TOKEN are already set. Without
+# CHANNEL_LOGS the heartbeat logs a line and no-ops, so deploying before setting
+# it is safe — it just leaves the off-GitHub blind spot open.
+
 # The watch.yml cadence. GitHub's own schedule trigger delayed/dropped runs
 # (116-min average gap vs the configured 15, measured Jul 6-12 2026), so the
 # Worker's scheduled() handler now dispatches watch.yml on this cron instead.
