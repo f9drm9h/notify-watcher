@@ -35,38 +35,75 @@ finally lands or the expectation rolls to the next month).
 from __future__ import annotations
 
 import datetime as _dt
+import io
 import logging
 import os
 import re
 from typing import Optional
 
 import requests
-from bs4 import BeautifulSoup
+from pypdf import PdfReader
 
 from .. import changes, config, events, visa_math
 
 log = logging.getLogger(__name__)
 
+# --- SOURCE: the official PDF, not the HTML page -----------------------------
+#
+# August 2026 audit. This topic read the HTML bulletin at
+# travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html until
+# that host moved behind Cloudflare bot management. Every HTTP client now gets
+# HTTP 403 with `cf-mitigated: challenge` and a "Just a moment… Enable
+# JavaScript and cookies to continue" interstitial. Verified it is the
+# challenge and not a User-Agent or IP problem: a real browser UA, no UA, and
+# requests' default UA all 403 identically, while a real Chrome loads the page
+# after ~5s of JS challenge. The topic had been failing since 2026-07-14 and,
+# because of that, silently missed the August bulletin — in which the F4 Final
+# Action date advanced from 01JAN09 to 01SEP09.
+#
+# Getting past that challenge would need a headless browser, a TLS-fingerprint
+# spoofer, or a challenge-solving service. All three are bot-detection evasion,
+# all three break every time Cloudflare updates, and none belong in a workflow
+# that must run unattended 96x/day.
+#
+# The fix needs none of them: the State Department publishes the SAME bulletin
+# as a PDF under /content/dam/ (their asset path), it is the canonical
+# published artifact rather than a mirror, and it is served plainly — HTTP 200,
+# no challenge, verified across the Jan/May/Jun/Jul/Aug 2026 editions. So the
+# topic now reads the PDF and parses it with pypdf, already a dependency here
+# for the fuel and outages notices.
+#
+# Notification links still point at the HTML page: a human tapping the embed
+# opens it in a real browser, which clears the challenge in a few seconds. Only
+# the unattended fetch needed to change.
+#
+# If /content/dam/ is ever put behind the same challenge, do NOT reach for a
+# bot-detection workaround — see the retirement analysis in the module tests
+# and docs/design/06-topic-audit.md.
+PDF_URL = "https://travel.state.gov/content/dam/visas/Bulletins/visabulletin_{month}{year}.pdf"
+# Kept as the human-facing link (and the late-bulletin alert target) only.
 INDEX_URL = (
     "https://travel.state.gov/content/travel/en/legal/visa-law0/"
     "visa-bulletin.html"
 )
+HTML_BULLETIN_URL = (
+    "https://travel.state.gov/content/travel/en/legal/visa-law0/"
+    "visa-bulletin/{year}/visa-bulletin-for-{month_lower}-{year}.html"
+)
 USER_AGENT = "notify-watcher/1.0 (+https://github.com/) personal-use"
+# How many months ahead of today to probe for a newly published edition. The
+# bulletin for month M appears around the second week of M-1, so +2 is already
+# generous; the loop walks DOWN from there and takes the first PDF that exists.
+_LOOKAHEAD_MONTHS = 2
+_LOOKBACK_MONTHS = 3
 
-# Each tracked cell: (state key, human label, heading phrases that must all
-# appear in the <p> above the table we want). "FINAL ACTION DATES" vs
-# "DATES FOR FILING" disambiguate the two family-sponsored tables.
+# Each tracked cell: (state key, human label, section key from _f4_all_other).
+# Unchanged in meaning from the HTML era — only the way a section is located
+# moved, from "the <table> after this heading" to "the F4 row nearest below
+# this heading in the flattened PDF text".
 CHECKS = [
-    (
-        "visa_f4_final_action",
-        "Final Action Dates",
-        ("FINAL ACTION DATES", "FAMILY-SPONSORED"),
-    ),
-    (
-        "visa_f4_dates_for_filing",
-        "Dates for Filing",
-        ("DATES FOR FILING", "FAMILY-SPONSORED"),
-    ),
+    ("visa_f4_final_action", "Final Action Dates", "final_action"),
+    ("visa_f4_dates_for_filing", "Dates for Filing", "dates_for_filing"),
 ]
 
 # Only the Final Action cutoff feeds the wait estimator's history: it is the
@@ -90,49 +127,76 @@ QUARTER_KEY = "f4_quarterly_last"
 _QUARTER_MONTHS = (1, 4, 7, 10)
 _RECENT_ENTRIES = 7
 
-# Matches month names inside a bulletin URL so we can pick the newest one.
+# Drives both URL shapes ("visabulletin_August2026.pdf" and the human page's
+# "visa-bulletin-for-august-2026.html") and the edition label.
 _MONTHS = [
     "january", "february", "march", "april", "may", "june",
     "july", "august", "september", "october", "november", "december",
 ]
-_BULLETIN_HREF = re.compile(
-    r"visa-bulletin-for-(" + "|".join(_MONTHS) + r")-(\d{4})\.html",
-    re.IGNORECASE,
-)
 
 
-def _fetch(url: str) -> str:
-    resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=30)
+def _pdf_url(year: int, month_num: int) -> str:
+    return PDF_URL.format(month=_MONTHS[month_num - 1].capitalize(), year=year)
+
+
+def _html_url(year: int, month_num: int) -> str:
+    """The human-readable page for this edition — used only as a click target."""
+    return HTML_BULLETIN_URL.format(year=year,
+                                    month_lower=_MONTHS[month_num - 1])
+
+
+def _shift_month(year: int, month_num: int, delta: int) -> tuple[int, int]:
+    idx = (year * 12 + (month_num - 1)) + delta
+    return idx // 12, idx % 12 + 1
+
+
+def _pdf_exists(url: str) -> bool:
+    """HEAD probe. Any non-200, or a non-PDF content type, means 'not published'."""
+    try:
+        resp = requests.head(url, headers={"User-Agent": USER_AGENT},
+                             timeout=30, allow_redirects=True)
+    except requests.RequestException as exc:
+        # A transport error is NOT evidence of absence; let the caller keep
+        # walking back rather than treat a blip as "no bulletin".
+        log.warning("visa_bulletin: HEAD %s failed: %s", url, exc)
+        return False
+    if resp.status_code != 200:
+        return False
+    return "pdf" in (resp.headers.get("content-type") or "").lower()
+
+
+def _find_current_bulletin(today: _dt.date) -> tuple[str, str]:
+    """Newest published edition as ``(edition "YYYY-MM", pdf_url)``.
+
+    Replaces the old "scrape every link off the index page" discovery, which is
+    no longer reachable (see the SOURCE note at the top). The PDF filenames are
+    fully derivable from the date — ``visabulletin_August2026.pdf`` — so this
+    walks DOWN from a couple of months ahead and takes the first one that
+    actually exists. Verified stable across every 2026 edition.
+
+    Walking down rather than guessing means a bulletin published early is found
+    immediately, and a bulletin published late simply resolves to the previous
+    edition (which ``_late_bulletin_check`` then reports on, unchanged).
+    """
+    year, month = today.year, today.month
+    for delta in range(_LOOKAHEAD_MONTHS, -_LOOKBACK_MONTHS - 1, -1):
+        y, m = _shift_month(year, month, delta)
+        url = _pdf_url(y, m)
+        if _pdf_exists(url):
+            return f"{y}-{m:02d}", url
+    raise RuntimeError(
+        f"No visa bulletin PDF found for any edition within "
+        f"{_LOOKBACK_MONTHS} months of {today:%Y-%m}; the publisher may have "
+        f"changed the /content/dam/ URL scheme"
+    )
+
+
+def _fetch_pdf_text(url: str) -> str:
+    """Download one bulletin PDF and flatten it to text."""
+    resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=60)
     resp.raise_for_status()
-    return resp.text
-
-
-def _find_current_bulletin_url(index_html: str) -> str:
-    soup = BeautifulSoup(index_html, "html.parser")
-    best: Optional[tuple[int, int, str]] = None
-    for a in soup.find_all("a", href=True):
-        m = _BULLETIN_HREF.search(a["href"])
-        if not m:
-            continue
-        month_num = _MONTHS.index(m.group(1).lower()) + 1
-        year = int(m.group(2))
-        href = a["href"]
-        if href.startswith("/"):
-            href = "https://travel.state.gov" + href
-        key = (year, month_num)
-        if best is None or key > (best[0], best[1]):
-            best = (year, month_num, href)
-    if best is None:
-        raise RuntimeError("Could not find any monthly bulletin link on index page")
-    return best[2]
-
-
-def _bulletin_month(url: str) -> Optional[str]:
-    """``…/visa-bulletin-for-july-2026.html`` -> ``"2026-07"`` (None if unmatched)."""
-    m = _BULLETIN_HREF.search(url)
-    if not m:
-        return None
-    return f"{int(m.group(2))}-{_MONTHS.index(m.group(1).lower()) + 1:02d}"
+    reader = PdfReader(io.BytesIO(resp.content))
+    return "\n".join((page.extract_text() or "") for page in reader.pages)
 
 
 def _edition_label(edition: str) -> str:
@@ -197,60 +261,88 @@ def _norm(s: str) -> str:
     return " ".join(s.replace("\xa0", " ").split())
 
 
-def _table_after_heading(soup: BeautifulSoup, phrases: tuple[str, ...]):
-    """Return the first <table> following a heading whose text contains all
-    `phrases` (case-insensitive), or None if no such heading/table exists."""
-    for text_node in soup.find_all(string=True):
-        compact = _norm(text_node).upper()
-        if all(p in compact for p in phrases):
-            table = text_node.find_next("table")
-            if table is not None:
-                return table
-    return None
+# One F4 table row as pypdf flattens it:
+#   "F4 01SEP09 01SEP09 01NOV06 08APR01 01AUG07"
+# Columns are All-Other, China, India, Mexico, Philippines. Cells are DDMONYY,
+# or the single letters C (current) / U (unavailable), which the change
+# formatter already handles.
+_F4_ROW = re.compile(r"^[ \t]*F4[ \t]+(\S+)", re.MULTILINE)
+_SECTION_ANCHORS = {
+    "final_action": "FINAL ACTION DATES",
+    "dates_for_filing": "DATES FOR FILING",
+}
 
 
-def _f4_all_other(table) -> str:
-    """Read the F4 row, second column ("All Other"), from a bulletin table."""
-    first_cells: list[str] = []
-    for tr in table.find_all("tr"):
-        cells = [_norm(c.get_text(" ", strip=True)) for c in tr.find_all(["td", "th"])]
-        if not cells:
+def _f4_all_other(pdf_text: str) -> dict[str, str]:
+    """Map ``{"final_action": "01SEP09", "dates_for_filing": "22JUN10"}``.
+
+    The employment-based tables use E1–E5, so the only two ``F4`` rows in the
+    document are the two family-sponsored ones this topic tracks. Rather than
+    trust that they always appear in the same order, each row is attributed to
+    whichever section heading most recently precedes it.
+
+    Deliberately strict: if the document does not yield exactly one row per
+    section, this RAISES instead of returning a best guess. These are the dates
+    someone plans an immigration case around — a wrong number reported
+    confidently is far worse than a loud failure, and the watchdog now reports
+    the failure within one run.
+    """
+    upper = pdf_text.upper()
+    found: dict[str, str] = {}
+    rows = list(_F4_ROW.finditer(pdf_text))
+    for match in rows:
+        # Nearest preceding heading wins.
+        best_key, best_pos = None, -1
+        for key, phrase in _SECTION_ANCHORS.items():
+            pos = upper.rfind(phrase, 0, match.start())
+            if pos > best_pos:
+                best_key, best_pos = key, pos
+        if best_key is None or best_pos < 0:
             continue
-        first_cells.append(cells[0])
-        tokens = cells[0].split()
-        if tokens and tokens[0].upper() == "F4" and len(cells) >= 2:
-            return cells[1]
+        if best_key in found:
+            raise RuntimeError(
+                f"two F4 rows both resolved to the {best_key!r} section; "
+                f"the bulletin layout has changed"
+            )
+        found[best_key] = _norm(match.group(1))
 
-    log.error("F4 row not found in matched table; leftmost cells: %r", first_cells)
-    raise RuntimeError("F4 row not found in table")
+    missing = set(_SECTION_ANCHORS) - set(found)
+    if missing:
+        log.error("visa_bulletin: F4 rows found=%d, resolved=%r, missing=%r",
+                  len(rows), found, sorted(missing))
+        raise RuntimeError(
+            f"could not read the F4 'All Other' cell for {sorted(missing)} "
+            f"from the bulletin PDF ({len(rows)} F4 row(s) seen)"
+        )
+    return found
 
 
 def run(state: dict, today: Optional[_dt.date] = None) -> dict:
-    index_html = _fetch(INDEX_URL)
-    bulletin_url = _find_current_bulletin_url(index_html)
-    log.info("current bulletin: %s", bulletin_url)
+    # Edition discovery is now derived from the calendar and confirmed with a
+    # HEAD probe, instead of scraping links off the (Cloudflare-walled) index.
+    edition, pdf_url = _find_current_bulletin(today or _dt.date.today())
+    year, month_num = int(edition[:4]), int(edition[5:])
+    # The click target stays the HTML page: a person tapping the embed opens a
+    # real browser, which clears the challenge on its own in a few seconds.
+    bulletin_url = _html_url(year, month_num)
+    log.info("current bulletin: %s (edition %s, pdf %s)",
+             bulletin_url, edition, pdf_url)
 
-    bulletin_html = _fetch(bulletin_url)
-    soup = BeautifulSoup(bulletin_html, "html.parser")
+    pdf_text = _fetch_pdf_text(pdf_url)
+    cells = _f4_all_other(pdf_text)
 
-    # Edition identity comes from the bulletin URL ("…-for-august-2026.html"
-    # -> "2026-08"). A brand-new edition folds both cells' outcomes into ONE
-    # combined push below instead of per-cell alerts; the per-cell alerts keep
-    # firing standalone for a date that moves *within* the same edition (rare
-    # mid-month correction). An unparseable URL (edition None) falls back to
-    # the per-cell behavior unchanged.
-    edition = _bulletin_month(bulletin_url)
+    # A brand-new edition folds both cells' outcomes into ONE combined push
+    # below instead of per-cell alerts; the per-cell alerts keep firing
+    # standalone for a date that moves *within* the same edition (rare
+    # mid-month correction).
     prev_edition = state.get(EDITION_KEY)
     new_edition = bool(edition and prev_edition and edition != prev_edition)
 
     summaries: list[str] = []  # per-cell lines for the combined push
     dates_moved = False
-    for state_key, label, phrases in CHECKS:
+    for state_key, label, section in CHECKS:
         try:
-            table = _table_after_heading(soup, phrases)
-            if table is None:
-                raise RuntimeError(f"heading {phrases!r} / its table not found on page")
-            current = _f4_all_other(table)
+            current = cells[section]
             log.info("F4 All-Other %s: %s", label, current)
 
             previous = state.get(state_key)
