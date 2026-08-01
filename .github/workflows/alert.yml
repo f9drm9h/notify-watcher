@@ -2,14 +2,16 @@ name: alert
 
 # Reliability layer, Phase 2 (docs/design/04-reliability-safety-layer.md):
 # post a Discord embed when any monitored workflow fails, plus a scheduled
-# heartbeat that notices when `watch` stops running entirely — a
-# dropped/disabled schedule is the one failure the in-run watchdog can never
-# see, because it only executes inside a run.
+# heartbeat that notices when `watch` stops SUCCEEDING — a dropped/disabled
+# schedule is the one failure the in-run watchdog can never see, because it
+# only executes inside a run.
 #
-# Boundary with the in-run watchdog: main.py always exits 0, so a per-topic
-# failure never turns a workflow red (the watchdog owns those), and a
-# workflow-level failure (pip/import/state-decode/state-push) never reaches the topic
-# loop (this file owns those). No overlap by construction.
+# Boundary with the in-run watchdog: main.py exits 0 for per-topic failures, so
+# a dead feed never turns a workflow red (the watchdog owns those), and a
+# workflow-level failure (pip/import/state-decode/state-push) never reaches the
+# topic loop (this file owns those). The one deliberate overlap: main.py exits
+# NON-zero when the watchdog topic itself failed, because a broken watchdog
+# cannot report its own outage — that escalates here.
 #
 # Adding a future workflow = add its `name:` to the list below (one line).
 #
@@ -25,6 +27,42 @@ name: alert
 # itself one of the things this watchdog reports on, so it must stay decoupled.
 # These are always-deliver alerts; quiet hours never applies to "your watcher
 # died" (mirrors ntfy.py _ALWAYS_DELIVER, which always rings high/urgent).
+#
+# ---------------------------------------------------------------------------
+# AUGUST 2026 RELIABILITY AUDIT — what was broken here and what changed
+#
+# 1. THE HEARTBEAT ASKED THE WRONG QUESTION. It queried `status=completed`, and
+#    GitHub counts a FAILED run as completed. A watch that failed every 15
+#    minutes therefore refreshed the heartbeat's "last completed run" stamp on
+#    every failure and looked perfectly healthy — the monitor was watching the
+#    schedule's pulse, not the patient's. `status=success` is the fix (verified
+#    against this repo: 2397 completed runs vs 1948 successful ones).
+#
+# 2. THE FAILURE PATH COULD SWALLOW ITS OWN ALERT. Every `run:` step here uses
+#    bash -e, so when the `gh api` streak lookup failed (rate limit, 5xx, an
+#    expired token) the step died, the job went red, and the Discord push that
+#    was the entire point of the job never executed. Worse, nothing watches
+#    THIS workflow, so that was invisible. Both lookups now fail OPEN: an
+#    unusable API answer alerts instead of suppressing, and the push step runs
+#    regardless.
+#
+# 3. FAILURES THAT AREN'T `failure`. A job killed by the runner cap concludes
+#    `timed_out`, and a workflow with a YAML error concludes `startup_failure`.
+#    Neither matched `conclusion == 'failure'`, so both were silent.
+#    `cancelled` stays excluded on purpose: watch's concurrency group cancels
+#    superseded queued runs as normal operation.
+#
+# 4. NOTHING WATCHED THE WATCHER. alert.yml has failed 468 times in this repo's
+#    history — more often than watch itself (449) — and never once said so. The
+#    heartbeat now audits alert.yml's own recent conclusions too.
+#
+# REMAINING BLIND SPOT, BY CONSTRUCTION: everything here runs on GitHub
+# Actions, so it cannot report an outage that stops GitHub Actions. That is not
+# hypothetical — during the July 2026 billing lockout every one of those 468
+# alert runs was refused before its first step, so 449 watch failures produced
+# ZERO notifications. The only monitor that can see that is one hosted
+# elsewhere: worker/src/index.js runs the same "last successful watch run"
+# check from Cloudflare and pushes straight to Discord.
 
 on:
   workflow_run:
@@ -51,8 +89,13 @@ env:
 
 jobs:
   on-failure:
+    # `failure` is the common case; `timed_out` (runner cap) and
+    # `startup_failure` (workflow YAML that never parsed) are equally broken and
+    # used to slip through. `cancelled` is deliberately absent: watch's
+    # concurrency group cancels superseded runs as routine behavior.
     if: github.event_name == 'workflow_run' &&
-      github.event.workflow_run.conclusion == 'failure'
+      contains(fromJSON('["failure", "timed_out", "startup_failure"]'),
+      github.event.workflow_run.conclusion)
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}
@@ -65,6 +108,7 @@ jobs:
       RUN_BRANCH: ${{ github.event.workflow_run.head_branch }}
       RUN_TS: ${{ github.event.workflow_run.updated_at }}
       RUN_ID: ${{ github.event.workflow_run.id }}
+      RUN_CONCLUSION: ${{ github.event.workflow_run.conclusion }}
       WF_ID: ${{ github.event.workflow_run.workflow_id }}
     steps:
       - name: Alert only on the FIRST failure of a streak
@@ -72,22 +116,37 @@ jobs:
         run: |
           # workflow_run fires once per completed run, so per-run dedup is
           # structural. Streak suppression handles the other spam source: a
-          # workflow that fails every cycle (watch now runs 96x/day) must push
-          # on its first failure only, then stay quiet until it recovers.
+          # workflow that fails every cycle (watch runs 96x/day) must push on
+          # its first failure only, then stay quiet until it recovers.
+          #
+          # FAIL OPEN. This lookup exists only to SUPPRESS a push, so it must
+          # never be able to prevent one: `|| prev=""` keeps bash -e from
+          # killing the job, and an unrecognized answer becomes "unknown", which
+          # matches no failing conclusion and therefore lets the alert through.
+          # A duplicate alert is a nuisance; a swallowed one is the bug this
+          # whole file exists to prevent.
           prev=$(gh api \
             "repos/${{ github.repository }}/actions/workflows/${WF_ID}/runs?branch=$(jq -rn 'env.RUN_BRANCH|@uri')&status=completed&per_page=5" \
-            --jq '[.workflow_runs[] | select(.id != (env.RUN_ID | tonumber))][0].conclusion // "none"')
+            --jq '[.workflow_runs[] | select(.id != (env.RUN_ID | tonumber))][0].conclusion // "none"' 2>/dev/null) || prev=""
+          case "${prev}" in
+            failure|timed_out|startup_failure|success|none) ;;
+            *) echo "streak lookup unusable (${prev:-empty}); alerting anyway"; prev="unknown" ;;
+          esac
           echo "previous run conclusion: ${prev}"
           echo "prev=${prev}" >> "$GITHUB_OUTPUT"
+
       - name: Push failure alert
-        if: steps.streak.outputs.prev != 'failure'
+        # always() so a non-zero streak step — already neutralized above, but
+        # belt and braces — can never skip the actual notification.
+        if: always() && !contains(fromJSON('["failure", "timed_out", "startup_failure"]'),
+          steps.streak.outputs.prev)
         run: |
-          curl -fsS --retry 3 \
+          curl -fsS --retry 3 --retry-all-errors --max-time 30 \
             -H "Authorization: Bot ${DISCORD_TOKEN}" \
             -H "Content-Type: application/json" \
             -d "$(jq -nc \
                   --arg t "Workflow failed: ${RUN_NAME} (${RUN_BRANCH})" \
-                  --arg d "The '${RUN_NAME}' workflow failed at ${RUN_TS}. Tap to open the failed run: ${RUN_URL}" \
+                  --arg d "The '${RUN_NAME}' workflow finished as ${RUN_CONCLUSION} at ${RUN_TS}. Tap to open the failed run: ${RUN_URL}" \
                   --arg u "${RUN_URL}" \
                   '{embeds:[{title:$t,description:$d,url:$u,color:15158332}]}')" \
             "https://discord.com/api/v10/channels/${CHANNEL_LOGS}/messages"
@@ -109,15 +168,25 @@ jobs:
       - name: Check whether the previous run failed
         id: streak
         run: |
+          # Mirror image of the failure streak check, and the one place where
+          # failing OPEN would be wrong: an unusable answer here would invent a
+          # "recovered!" message for a workflow that was never reported broken.
+          # So this one fails CLOSED — no answer, no recovery notice. The cost
+          # is a missing green message, never a missing red one.
           prev=$(gh api \
             "repos/${{ github.repository }}/actions/workflows/${WF_ID}/runs?branch=$(jq -rn 'env.RUN_BRANCH|@uri')&status=completed&per_page=5" \
-            --jq '[.workflow_runs[] | select(.id != (env.RUN_ID | tonumber))][0].conclusion // "none"')
+            --jq '[.workflow_runs[] | select(.id != (env.RUN_ID | tonumber))][0].conclusion // "none"' 2>/dev/null) || prev="none"
           echo "previous run conclusion: ${prev}"
           echo "prev=${prev}" >> "$GITHUB_OUTPUT"
+
       - name: Push recovery notice
-        if: steps.streak.outputs.prev == 'failure'
+        # Recover from every conclusion the failure job alerts on, not just
+        # `failure` — a timed-out run that goes green still deserves the
+        # all-clear that closes out its red embed.
+        if: contains(fromJSON('["failure", "timed_out", "startup_failure"]'),
+          steps.streak.outputs.prev)
         run: |
-          curl -fsS --retry 3 \
+          curl -fsS --retry 3 --retry-all-errors --max-time 30 \
             -H "Authorization: Bot ${DISCORD_TOKEN}" \
             -H "Content-Type: application/json" \
             -d "$(jq -nc \
@@ -128,37 +197,90 @@ jobs:
             "https://discord.com/api/v10/channels/${CHANNEL_LOGS}/messages"
 
   heartbeat:
-    # Catches failure mode 5 (docs/design/04 §2): GitHub drops or disables
-    # the schedule and nothing runs at all. watch now runs every 15 min; 7h of
-    # silence means many consecutive ticks vanished — a dead schedule, not
-    # normal GitHub jitter. A manual dispatch also runs this as a silent-if-
-    # healthy probe.
+    # Catches failure mode 5 (docs/design/04 §2): GitHub drops or disables the
+    # schedule and nothing runs at all — and, since the audit, the strictly
+    # worse case where runs DO happen and fail every single time. watch runs
+    # every 15 min, so 7h without a SUCCESS means ~28 consecutive ticks produced
+    # nothing usable: a dead watcher, however green the run list looks. A manual
+    # dispatch also runs this as a silent-if-healthy probe.
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     env:
       GH_TOKEN: ${{ github.token }}
+      REPO: ${{ github.repository }}
     steps:
-      - name: Check that `watch` has completed within the last 7 hours
+      - name: Check that `watch` has SUCCEEDED within the last 7 hours
         run: |
+          # status=success, not status=completed. GitHub classifies a failed run
+          # as completed, so the old query treated "watch failed 28 times in a
+          # row" as proof of health — it measured that the schedule was firing,
+          # not that the watcher was working.
+          #
+          # This lookup gates the alert, so an unusable answer must ALERT rather
+          # than go quiet. An empty `last` falls back to the epoch and produces a
+          # very large age, which is exactly the fail-open behavior wanted.
           last=$(gh api \
-            "repos/${{ github.repository }}/actions/workflows/watch.yml/runs?status=completed&per_page=1" \
-            --jq '.workflow_runs[0].updated_at // empty')
+            "repos/${REPO}/actions/workflows/watch.yml/runs?status=success&per_page=1" \
+            --jq '.workflow_runs[0].updated_at // empty' 2>/dev/null) || last=""
           now=$(date -u +%s)
-          last_s=$(date -u -d "${last:-1970-01-01T00:00:00Z}" +%s)
+          last_s=$(date -u -d "${last:-1970-01-01T00:00:00Z}" +%s 2>/dev/null || echo 0)
           age_h=$(( (now - last_s) / 3600 ))
-          echo "last completed watch run: ${last:-never} (${age_h}h ago)"
-          if [ "$age_h" -ge 7 ]; then
-            url="https://github.com/${{ github.repository }}/actions/workflows/watch.yml"
-            curl -fsS --retry 3 \
-              -H "Authorization: Bot ${DISCORD_TOKEN}" \
-              -H "Content-Type: application/json" \
-              -d "$(jq -nc \
-                    --arg t "watch has not run in ${age_h}h" \
-                    --arg d "Last completed watch run: ${last:-never}. The schedule may have been dropped or disabled (GitHub disables crons after 60 days without repo activity). Tap to open the Actions tab." \
-                    --arg u "$url" \
-                    '{embeds:[{title:$t,description:$d,url:$u,color:15158332}]}')" \
-              "https://discord.com/api/v10/channels/${CHANNEL_LOGS}/messages"
+          echo "last SUCCESSFUL watch run: ${last:-never} (${age_h}h ago)"
+          if [ "$age_h" -lt 7 ]; then
+            exit 0
           fi
+          # Name the likely reason in the message: "nothing ran at all" and
+          # "every run failed" need different first moves from the reader.
+          recent=$(gh api \
+            "repos/${REPO}/actions/workflows/watch.yml/runs?per_page=1" \
+            --jq '.workflow_runs[0].conclusion // "none"' 2>/dev/null) || recent="unknown"
+          if [ "${recent}" = "none" ] || [ "${recent}" = "unknown" ]; then
+            why="No recent runs at all — the Cloudflare Worker cadence dispatch may be failing, or the workflow was disabled (GitHub disables workflows after 60 days without repo activity)."
+          else
+            why="Runs ARE happening but the latest concluded '${recent}' — the watcher is executing and failing, not idle."
+          fi
+          url="https://github.com/${REPO}/actions/workflows/watch.yml"
+          curl -fsS --retry 3 --retry-all-errors --max-time 30 \
+            -H "Authorization: Bot ${DISCORD_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d "$(jq -nc \
+                  --arg t "watch has not SUCCEEDED in ${age_h}h" \
+                  --arg d "Last successful watch run: ${last:-never}. ${why} Tap to open the Actions tab." \
+                  --arg u "$url" \
+                  '{embeds:[{title:$t,description:$d,url:$u,color:15158332}]}')" \
+            "https://discord.com/api/v10/channels/${CHANNEL_LOGS}/messages"
+
+      - name: Audit this alert workflow's own recent health
+        # Nothing else watches alert.yml — it is not in its own workflow_run
+        # list, and putting it there risks an alert-triggers-alert loop. So the
+        # one job here that runs on a timer rather than on someone else's
+        # failure does the self-check. It catches what the audit found:
+        # `on-failure` jobs dying in the streak step (bad token, API 5xx) while
+        # scheduled heartbeats kept passing, which made the alert pipeline look
+        # fine while it was silently dropping every notification.
+        if: always()
+        run: |
+          fails=$(gh api \
+            "repos/${REPO}/actions/workflows/alert.yml/runs?per_page=20" \
+            --jq '[.workflow_runs[] | select(.conclusion == "failure")] | length' \
+            2>/dev/null) || fails=""
+          echo "alert.yml failures in the last 20 runs: ${fails:-unknown}"
+          case "${fails}" in
+            ''|*[!0-9]*) exit 0 ;;  # unreadable: the heartbeat above already fails loud
+          esac
+          if [ "${fails}" -lt 3 ]; then
+            exit 0
+          fi
+          url="https://github.com/${REPO}/actions/workflows/alert.yml"
+          curl -fsS --retry 3 --retry-all-errors --max-time 30 \
+            -H "Authorization: Bot ${DISCORD_TOKEN}" \
+            -H "Content-Type: application/json" \
+            -d "$(jq -nc \
+                  --arg t "The alert workflow itself is failing (${fails}/20 recent runs)" \
+                  --arg d "alert.yml is what tells you a workflow broke, so while it is red you may be missing failure notifications entirely. Tap to open its run history." \
+                  --arg u "$url" \
+                  '{embeds:[{title:$t,description:$d,url:$u,color:15158332}]}')" \
+            "https://discord.com/api/v10/channels/${CHANNEL_LOGS}/messages"
 
   test-alert:
     # Delivery self-test, mirroring watch.yml's test_push: send one sample
@@ -170,7 +292,7 @@ jobs:
     steps:
       - name: Push sample alert
         run: |
-          curl -fsS --retry 3 \
+          curl -fsS --retry 3 --retry-all-errors --max-time 30 \
             -H "Authorization: Bot ${DISCORD_TOKEN}" \
             -H "Content-Type: application/json" \
             -d "$(jq -nc \

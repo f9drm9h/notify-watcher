@@ -108,8 +108,133 @@ export default {
     } catch (err) {
       console.error(`cadence dispatch error: ${err}`);
     }
+
+    // The external heartbeat runs AFTER the dispatch and independently of
+    // whether it succeeded — a failed dispatch is itself something the
+    // heartbeat should end up reporting.
+    try {
+      await externalHeartbeat(env);
+    } catch (err) {
+      console.error(`external heartbeat error: ${err}`);
+    }
   },
 };
+
+// ----- the external heartbeat (the only monitor GitHub cannot take down) ---
+//
+// Everything in .github/workflows/alert.yml runs ON GitHub Actions, which makes
+// it structurally unable to report an outage that stops GitHub Actions. That is
+// not a theoretical gap. During the July 2026 billing lockout, `watch` failed
+// 449 times and every one of the 468 alert runs meant to report those failures
+// was refused before its first step ran. Total failures, zero notifications.
+//
+// This Worker is the only piece of the system hosted somewhere else, and it
+// already wakes up every 15 minutes, so it is the natural place for a check
+// that survives GitHub being unusable: ask when `watch` last SUCCEEDED, and if
+// that was too long ago, post straight to Discord.
+//
+// Deliberate design limits, so this stays a safety net and not a second system:
+//   - READ-ONLY on GitHub, one extra API call per hour.
+//   - No state. Workers have no durable storage here, so instead of tracking an
+//     outage the check only runs on the first cron tick of each hour (:07),
+//     which caps it at one reminder per hour for as long as the outage lasts.
+//     That is the reminder cadence, achieved by pacing rather than bookkeeping.
+//   - No recovery notice. Announcing recovery needs memory of the outage, and
+//     once GitHub is back alert.yml's own on-recovery job sends one anyway.
+//   - Never throws, exactly like the dispatch above: a broken heartbeat must not
+//     be able to break the cadence that keeps the whole watcher running.
+//
+// Requires DISCORD_BOT_TOKEN (already set) and CHANNEL_LOGS. Without the
+// channel id it logs once and does nothing, so an un-migrated deploy degrades
+// to today's behavior instead of erroring every 15 minutes.
+const HEARTBEAT_STALE_HOURS = 7;   // ~28 missed 15-minute ticks
+const HEARTBEAT_TICK_MINUTE = 7;   // one check per hour = one reminder per hour
+
+async function externalHeartbeat(env) {
+  if (!env.CHANNEL_LOGS || !env.DISCORD_BOT_TOKEN) {
+    console.log("external heartbeat skipped: CHANNEL_LOGS/DISCORD_BOT_TOKEN not set");
+    return;
+  }
+  if (new Date().getUTCMinutes() !== HEARTBEAT_TICK_MINUTE) return;
+
+  // status=success, never status=completed: GitHub counts a FAILED run as
+  // completed, so asking for completed runs would treat "watch has failed every
+  // tick for two days" as a healthy pulse. This is the same bug the alert.yml
+  // heartbeat had, and it must not be reintroduced here.
+  const runsUrl = String(env.GITHUB_DISPATCH_URL || "").replace(
+    /\/dispatches$/, "/runs?status=success&per_page=1");
+  if (!runsUrl.endsWith("/runs?status=success&per_page=1")) {
+    console.error("external heartbeat skipped: GITHUB_DISPATCH_URL is not a dispatches url");
+    return;
+  }
+
+  let last = null;
+  try {
+    const res = await fetch(runsUrl, {
+      headers: {
+        Authorization: `Bearer ${env.GITHUB_DISPATCH_TOKEN}`,
+        Accept: "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "notify-watcher-worker",
+      },
+    });
+    if (res.ok) {
+      const body = await res.json();
+      last = body?.workflow_runs?.[0]?.updated_at || null;
+    } else {
+      // A billing lockout answers 403 here; an outage answers 5xx. Either way
+      // GitHub cannot tell us the watcher is alive, so treat it as stale and
+      // alert — failing open is the entire point of this check.
+      console.error(`external heartbeat: GitHub returned HTTP ${res.status}`);
+    }
+  } catch (err) {
+    console.error(`external heartbeat: could not reach GitHub: ${err}`);
+  }
+
+  const ageMs = last ? Date.now() - new Date(last).getTime() : Infinity;
+  if (Number.isFinite(ageMs) && ageMs < HEARTBEAT_STALE_HOURS * 3600 * 1000) return;
+
+  const ageText = Number.isFinite(ageMs)
+    ? `${Math.floor(ageMs / 3600000)}h ago`
+    : "unknown (GitHub did not answer)";
+  const repoUrl = String(env.STATE_BASE_URL || "https://github.com")
+    .replace("raw.githubusercontent.com", "github.com")
+    .replace(/\/[^/]+$/, "/actions");  // strip the branch segment
+  await postToDiscord(env, {
+    title: `watch has not succeeded in ${HEARTBEAT_STALE_HOURS}h+`,
+    description:
+      `Checked from the Cloudflare Worker, outside GitHub. Last successful watch run: ` +
+      `${last || "unknown"} (${ageText}). Because this check does not run on GitHub Actions, ` +
+      `it still fires when Actions itself is unusable — a billing/spending-limit lockout, a ` +
+      `disabled workflow, or a GitHub outage. In that situation the in-repo alert workflow ` +
+      `cannot report anything, so this is the only notification you will get.`,
+    url: repoUrl,
+    color: 15158332,
+  });
+}
+
+// Same red-embed shape alert.yml posts, so both heartbeats read alike in the
+// LOGS channel. Failures are logged, never thrown (see scheduled()).
+async function postToDiscord(env, embed) {
+  try {
+    const res = await fetch(
+      `https://discord.com/api/v10/channels/${env.CHANNEL_LOGS}/messages`,
+      {
+        method: "POST",
+        headers: {
+          Authorization: `Bot ${env.DISCORD_BOT_TOKEN}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ embeds: [embed] }),
+      }
+    );
+    if (!res.ok) {
+      console.error(`external heartbeat: Discord returned HTTP ${res.status}`);
+    }
+  } catch (err) {
+    console.error(`external heartbeat: Discord post failed: ${err}`);
+  }
+}
 
 // ----- slash commands ---------------------------------------------------
 async function handleSlashCommand(interaction, env) {

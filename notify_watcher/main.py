@@ -25,7 +25,7 @@ import sys
 import traceback
 from typing import Callable
 
-from . import control, discord_control, health, ntfy
+from . import config, control, discord_control, health, ntfy
 from . import state as state_mod
 from .topics import (
     air_quality,
@@ -322,6 +322,55 @@ def _send_topic_dispatch_failure(topic: str) -> None:
     )
 
 
+def _watchdog_failed(topics: list[tuple[str, Topic]], topic_health: dict,
+                     run_ts: str) -> bool:
+    """True when the watchdog ran on THIS invocation and failed on it.
+
+    Keyed on ``last_error_ts == run_ts`` rather than on the mere presence of an
+    error, so a stale failure left over from a previous run cannot keep every
+    subsequent run red. Returns False when the watchdog wasn't selected at all
+    (a ``NOTIFY_ONLY`` fast-lane or /run dispatch), since it can hardly be
+    called broken on a run it never took part in.
+    """
+    if not any(name == watchdog.TOPIC for name, _ in topics):
+        return False
+    entry = topic_health.get(watchdog.TOPIC)
+    if not isinstance(entry, dict):
+        return False
+    return bool(entry.get("last_error")) and entry.get("last_error_ts") == run_ts
+
+
+def _warn_unreadable_config(log: logging.Logger) -> None:
+    """Push a heads-up when monitors.json could not be read.
+
+    config.load() deliberately fails soft (an empty dict, so a typo can't crash
+    a scheduled run), but empty config means every topic sees "nothing
+    configured" and no-ops. Runs stay green, no topic records an error, and the
+    watchdog has nothing to find — the watcher just goes quiet forever. Since
+    monitors.json is edited straight on github.com, one stray comma can do that,
+    so the degraded read gets announced instead of only logged.
+
+    Best-effort by design: if this push itself fails, log it and continue into
+    the sweep rather than aborting the run over a notification.
+    """
+    reason = config.last_error()
+    if not reason:
+        return
+    log.error("configuration unreadable: %s", reason)
+    try:
+        ntfy.push(
+            title="monitors.json could not be read",
+            message=f"{reason}\n\nEvery topic is running with EMPTY configuration, "
+                    "so most checks will silently do nothing until this is fixed. "
+                    "Runs will still look green.",
+            tags="warning",
+            priority="high",
+            topic="system",
+        )
+    except Exception as exc:  # noqa: BLE001 - never abort the sweep over an alert
+        log.error("could not push the config-failure alert: %s", exc)
+
+
 def _send_topic_dispatch_unknown(names: list[str]) -> None:
     joined = ", ".join(names)
     ntfy.push(
@@ -357,6 +406,12 @@ def main() -> int:
         return 0
 
     state = state_mod.load()
+
+    # Before anything reads config: an unreadable monitors.json disables every
+    # topic without failing anything, which is the quietest failure this system
+    # has. Announce it, then carry on with the degraded run.
+    config.load()
+    _warn_unreadable_config(log)
 
     topic_dispatch = _is_topic_dispatch_run()
 
@@ -450,8 +505,22 @@ def main() -> int:
     state.pop(health.STATUS_KEY, None)
     state["last_run"] = {"ts": run_ts, "ok": ok_count, "failed": fail_count}
     state_mod.save(state)
-    # Always exit 0: a per-topic failure (e.g. transient network error) is
-    # already logged above and must not turn the scheduled workflow red.
+
+    # Exit 0 for ordinary per-topic failures: a transient network error is
+    # already logged above, the watchdog will report it, and it must not turn
+    # the scheduled workflow red.
+    #
+    # The ONE exception is the watchdog itself. Every other topic's failure has
+    # a reporter; the watchdog's does not — it skips its own health entry
+    # precisely because it cannot alert about being broken while it is broken.
+    # A watchdog that dies (bad state shape, Discord refusing its push) would
+    # otherwise take the whole monitoring layer down silently, which is the
+    # exact failure class this audit was about. Escalating to a non-zero exit
+    # hands it to the layer above: the run goes red and alert.yml, which runs
+    # outside this process and has its own Discord path, reports it.
+    if _watchdog_failed(topics, topic_health, run_ts):
+        log.error("watchdog itself failed; exiting non-zero so alert.yml reports it")
+        return 1
     return 0
 
 

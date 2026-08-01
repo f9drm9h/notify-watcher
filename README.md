@@ -371,10 +371,20 @@ item list.
   Deduped per ISO week (`life_dashboard_last_week`).
 - **Watchdog (self-monitoring)** — every run, `main.py` records each topic's
   last successful run and latest failure in `state.json` → `topic_health`. The
-  watchdog reads that record and pushes one heads-up when any topic has had no
-  successful run for `watchdog.stale_hours` (default 48) — so a feed that died
-  (moved URL, revoked key) can't fail silently forever. One push per outage; it
-  re-arms when the topic recovers. No network, no key.
+  watchdog reads that record and runs a three-phase outage lifecycle so a feed
+  that died (moved URL, revoked key) can't fail silently: it alerts on the
+  **first** failing run (`watchdog.alert_delay_hours`, default 0 = immediately),
+  **reminds** every `watchdog.reminder_hours` (default 12) while the outage
+  continues, and sends **exactly one** recovery notice when the topic works
+  again. Topics that break on the same run are bundled into one push, so a
+  network blip is one message rather than twenty. A second opt-in check
+  (`watchdog.data_stale_days`) runs the same lifecycle over "the source answers
+  200 but returns zero items". No network, no key.
+
+  Before the August 2026 reliability audit this alerted once after 48 hours and
+  then went quiet until recovery — which meant silence carried no information
+  (a two-day-old outage looked exactly like a fixed one) and recoveries were
+  never announced at all.
 
 The daily digest, health tip, learning push, and reminders fire once a day, on
 the first scheduled run on/after 12:00 UTC (~08:00 in the Dominican Republic,

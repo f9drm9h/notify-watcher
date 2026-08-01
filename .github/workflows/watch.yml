@@ -51,6 +51,15 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
+    # A normal sweep finishes in well under a minute (30-40s is typical). Without
+    # this, GitHub's default cap is SIX HOURS: one wedged HTTP call in a topic
+    # that forgot its timeout would hold the `watch` concurrency group for a
+    # third of a day, silently blocking every queued run behind it while the
+    # Actions list still showed a run "in progress" — no failure, no alert, no
+    # notifications. 20 minutes is ~30x headroom over the worst observed run and
+    # converts that hang into a `timed_out` conclusion, which alert.yml now
+    # treats as a failure and reports.
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4

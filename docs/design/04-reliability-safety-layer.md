@@ -1,6 +1,6 @@
 # 04 — Reliability & Safety Layer
 
-**Status: IMPLEMENTED — all three phases (config validation, alert.yml, watchdog extensions) are live**
+**Status: IMPLEMENTED, then AMENDED by the August 2026 reliability audit — read the Addendum at the end of this file before trusting §1–§7; several claims there (the heartbeat's query, the watchdog's one-alert-per-outage lifecycle, "always exits 0", "stays inside GitHub Actions") are now out of date.**
 
 Goal: no silent failures. Every way this system can break should eventually
 produce exactly one ntfy push saying what broke, or be blocked in CI before it
@@ -548,3 +548,156 @@ harmless extra keys in `topic_health`.
 No phase migrates or rewrites state.json; all new state lives in existing
 `topic_health` entries. Total new runtime dependencies: zero. Total new CI
 dependency: `jsonschema`.
+
+
+---
+
+## Addendum — August 2026 reliability audit
+
+*Status: implemented. This section amends §1–§7 above; where they disagree, this
+section is current.*
+
+The design above assumed the monitoring layer worked and needed extending. An
+audit of the running system found that several of its own components were
+failing silently. Four fixes, one per finding, plus one structural gap that
+could not be closed from inside GitHub.
+
+### A1. The heartbeat measured the wrong thing
+
+`alert.yml`'s heartbeat asked GitHub for `status=completed` runs. GitHub counts
+a **failed** run as completed, so a `watch` that failed on every 15-minute tick
+refreshed the heartbeat's freshness stamp on every failure. The monitor watched
+the schedule's pulse, not the patient's: continuous total failure was
+indistinguishable from perfect health.
+
+Measured on this repo at audit time: 2397 completed `watch` runs, 1948
+successful ones. 449 failures the heartbeat read as evidence of life.
+
+**Is `status=completed` → `status=success` sufficient?** It is necessary and it
+is correct — the API accepts `success` as a filter and returns the newest
+successful run — but on its own it is *not* sufficient, for three reasons:
+
+1. **The heartbeat runs on the thing it monitors.** It is a `schedule:` trigger
+   inside GitHub Actions. The failures it exists to catch — a dropped cron, a
+   workflow disabled after 60 days of inactivity, an account-level lockout —
+   stop the heartbeat by the same mechanism. A monitor that dies of the disease
+   it screens for is not a monitor. Closed by A4.
+2. **The lookup could kill its own alert.** `run:` steps use `bash -e`, so a
+   failed `gh api` call aborted the step before the notification. Every gating
+   lookup now fails *open*: an unusable answer alerts.
+3. **A green run is not a working run.** `main.py` exits 0 by design, so `watch`
+   can succeed while every topic inside it fails. That is the in-run watchdog's
+   job (A2), not the heartbeat's, and the two together are what make "no news is
+   good news" true.
+
+### A2. The watchdog told you once and then went quiet
+
+The original lifecycle was: alert once after `stale_hours` (48), then silence
+until recovery, with no recovery notice. Three consequences, all bad:
+
+- **Silence carried no information.** A two-day-old ongoing outage and a
+  resolved one produced identical output: nothing.
+- **48 hours of guaranteed blindness** before the first word about a dead feed.
+- **No close-out.** A red alert was never answered by a green one.
+
+Found live in `state.json` during the audit: `visa_bulletin` had been failing
+since 2026-07-14, was alerted once on 2026-07-16, and had said nothing in the 17
+days since.
+
+Replaced with a three-phase lifecycle — first alert (`alert_delay_hours`,
+default 0), reminders every `reminder_hours` (default 12), exactly one recovery
+notice — with every topic crossing the same transition on one run bundled into a
+single push. Anti-spam comes from bundling and from the reminder interval, not
+from staying quiet.
+
+The delivery contract from Phase 3 is preserved and strengthened: each bundle's
+state markers are written only after *that bundle's* push returns, so the three
+phases fail independently. Losing the recovery notice cannot roll back the
+outage alert and make it fire twice.
+
+### A3. Alerts that could not be sent, and nothing watching the sender
+
+- `on-failure` only matched `conclusion == 'failure'`, so a run killed by the
+  runner cap (`timed_out`) or a workflow whose YAML never parsed
+  (`startup_failure`) was silent. `cancelled` stays excluded: `watch`'s
+  concurrency group cancels superseded queued runs as normal operation.
+- The streak-suppression lookup could fail the job before the push. It exists
+  only to *suppress* a duplicate, so it must never be able to prevent an alert.
+- **`alert.yml` was unmonitored.** It had failed 468 times — more often than
+  `watch` itself (449) — and never reported it once. It is not in its own
+  `workflow_run` list, and adding it there risks a self-triggering loop, so the
+  scheduled heartbeat job now audits alert.yml's own recent conclusions.
+- `watch` had no `timeout-minutes`, so GitHub's 6-hour default applied. One
+  wedged HTTP call would hold the `watch` concurrency group for a third of a day
+  while the run showed as "in progress" — no failure, no alert, nothing. Capped
+  at 20 minutes (~30× the typical 35s run), which turns a hang into a
+  `timed_out` conclusion that now alerts.
+
+### A4. The blind spot that cannot be closed from inside GitHub
+
+§1 states this design "stays inside GitHub Actions (no external services, no new
+infrastructure)". The audit found the cost of that constraint, and it is not
+acceptable.
+
+In July 2026 the account hit a billing/spending limit. Every job was refused
+before its first step. `watch` failed 449 times; all 468 `alert` runs meant to
+report those failures were themselves refused. **Zero notifications were
+delivered, for days.** No amount of care inside `alert.yml` can fix this: a
+monitor hosted on the failing platform cannot report that the platform failed.
+
+The Cloudflare Worker (`worker/src/index.js`) already fires every 15 minutes to
+dispatch the `watch` cadence, and is the only part of the system hosted
+elsewhere. Its `scheduled()` handler now also runs the same "when did `watch`
+last SUCCEED" check and posts straight to Discord when the answer is stale or
+GitHub will not answer at all. It is read-only on GitHub, costs one extra API
+call per hour, and never throws — a broken heartbeat must not be able to break
+the cadence that keeps the whole watcher running.
+
+Deliberate limits, so this stays a safety net and not a second system:
+
+- **No recovery notice.** Announcing recovery needs memory of the outage, and
+  Workers have no durable storage here. Once GitHub is back, `alert.yml`'s own
+  `on-recovery` sends one.
+- **Reminders by pacing, not bookkeeping.** The check runs only on the first
+  cron tick of each hour (`:07`), which caps it at one message per hour for as
+  long as the outage lasts.
+- **Requires `wrangler secret put CHANNEL_LOGS`.** Without it the check logs a
+  line and no-ops, so deploying before setting the secret degrades to the old
+  behavior rather than erroring every 15 minutes.
+
+### A5. Configuration that silently disabled everything
+
+`config.load()` returns `{}` on unparseable JSON so a typo cannot crash a
+scheduled run. Correct — but every topic then sees "nothing configured" and
+no-ops. Runs stay green, no topic records an error, and the watchdog has nothing
+to find. `monitors.json` is edited directly on github.com by design, so one
+stray comma could silence the entire system indefinitely. `config.last_error()`
+now reports why a load came back empty, and `main.py` pushes that before the
+topic loop. The fail-soft behavior is unchanged; it is just no longer silent.
+
+### A6. The one deliberate break with §1's exit-0 rule
+
+§1 states the process "**always exits 0**". It now has exactly one exception:
+`main.py` exits non-zero when the **watchdog topic itself** failed on that run.
+
+Every other topic has a reporter — the watchdog. The watchdog has none, because
+it skips its own health entry precisely so it cannot try to alert about being
+broken while it is broken. A watchdog that dies takes the whole monitoring layer
+with it, silently. Exiting non-zero escalates that one case to `alert.yml`,
+which runs in a separate process with its own Discord path. Ordinary per-topic
+failures still exit 0, and the escalation is keyed on the current run's
+timestamp so a stale error cannot pin every future run red.
+
+### What is still not covered
+
+- **Discord itself being down.** Every alert path in the system, including both
+  heartbeats, delivers through Discord. If Discord is unreachable nothing gets
+  through; the watchdog's at-least-once contract means the alerts are re-sent
+  once it returns, but the notification is late, not lost.
+- **The Cloudflare Worker being down.** It is now the only off-GitHub monitor,
+  and nothing monitors it. A dead Worker also stops the `watch` cadence, so
+  alert.yml's heartbeat notices within 7 hours — the two cover each other, which
+  is the best that two components can do without a third.
+- **Everything failing at once.** Bundled outage alerts name every affected
+  topic, but a total outage still arrives as one message; it does not escalate
+  differently from a five-topic one.
