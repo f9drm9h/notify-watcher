@@ -205,6 +205,42 @@ class WatchdogEscalationTest(unittest.TestCase):
                                                health_map, RUN_TS))
 
 
+class PruneRetiredHealthTest(unittest.TestCase):
+    """Retired topics must not linger in topic_health forever.
+
+    The August 2026 audit found three (beach_day, plus health_tip and wikiquote
+    from the spark consolidation) still being counted as tracked topics months
+    after the code that could report on them was deleted.
+    """
+
+    def test_entries_for_unregistered_topics_are_dropped(self):
+        th = {"fx": {"last_ok": RUN_TS}, "wikiquote": {"last_ok": OLD_TS},
+              "health_tip": {"last_ok": OLD_TS}, "beach_day": {"last_ok": OLD_TS}}
+        dropped = main._prune_retired_health(th)
+        self.assertEqual(dropped, ["beach_day", "health_tip", "wikiquote"])
+        self.assertEqual(list(th), ["fx"])
+
+    def test_registered_topics_are_never_touched(self):
+        th = {name: {"last_ok": RUN_TS} for name, _ in main.TOPICS}
+        before = dict(th)
+        self.assertEqual(main._prune_retired_health(th), [])
+        self.assertEqual(th, before)
+
+    def test_a_notify_only_run_cannot_wipe_the_other_topics(self):
+        # The comparison is against the FULL registry, not the selected subset —
+        # otherwise the 15-minute twitch fast lane would erase 39 topics of
+        # history on every single run.
+        th = {name: {"last_ok": RUN_TS} for name, _ in main.TOPICS}
+        with mock.patch.dict(os.environ, {"NOTIFY_ONLY": "twitch,habits"}):
+            self.assertEqual(main._prune_retired_health(th), [])
+        self.assertEqual(len(th), len(main.TOPICS))
+
+    def test_empty_health_is_a_noop(self):
+        th = {}
+        self.assertEqual(main._prune_retired_health(th), [])
+        self.assertEqual(th, {})
+
+
 class UnreadableConfigTest(unittest.TestCase):
     """An unparseable monitors.json is the quietest failure in the system.
 

@@ -322,6 +322,27 @@ def _send_topic_dispatch_failure(topic: str) -> None:
     )
 
 
+def _prune_retired_health(topic_health: dict) -> list[str]:
+    """Drop ``topic_health`` entries for topics that no longer exist.
+
+    Retiring or merging a topic leaves its last health stamp behind forever
+    (the August 2026 audit found three: ``beach_day``, and ``health_tip`` /
+    ``wikiquote`` from the spark consolidation). They are not harmless — the
+    dashboard counts them as tracked topics, the weekly recap reads them, and
+    every "N topics tracked" line the watchdog logs is inflated by topics that
+    cannot possibly report again.
+
+    Compares against the FULL registry, never the ``NOTIFY_ONLY`` subset, so a
+    twitch-only fast-lane run can't wipe the other 39 topics' history. Returns
+    the dropped names for logging.
+    """
+    known = {name for name, _ in TOPICS}
+    retired = sorted(set(topic_health) - known)
+    for name in retired:
+        topic_health.pop(name, None)
+    return retired
+
+
 def _watchdog_failed(topics: list[tuple[str, Topic]], topic_health: dict,
                      run_ts: str) -> bool:
     """True when the watchdog ran on THIS invocation and failed on it.
@@ -451,6 +472,10 @@ def main() -> int:
     # is this loop. Stamp last-ok / last-error here; the dashboard turns it into the
     # "topic health / last successful run / failures" panels (docs/design/02-dashboard).
     topic_health: dict = state.setdefault("topic_health", {})
+    retired = _prune_retired_health(topic_health)
+    if retired:
+        log.info("dropped health entries for retired topic(s): %s",
+                 ", ".join(retired))
     run_ts = _dt.datetime.now(_dt.timezone.utc).isoformat()
     ok_count = fail_count = 0
 
