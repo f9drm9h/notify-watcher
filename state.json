@@ -636,18 +636,6 @@
     {
       "action": "push",
       "detail": "",
-      "id": "2c5192b8883ab7a1",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Still no sign of an Avengers: Doomsday trailer, but we did get this very cool first official cast poster - Cineworld",
-      "topic": "movies",
-      "ts": "2026-07-18T03:07:28.824785+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9KRUdxbDAzc1B6ZkVBVDY0RnRYdjNjTUdYeGZDZ0gxWDVTQnBIUjNZZEp5aEhwRlQ2X2NCWmtseGwyZU90VmNOLUdxTWtXQVhhSnNiT19FajZhVzVWQTBKaU1hX3ZjOENRREZWcEhZWlVtLXl6RUZjRHdvdUJ2Y2M?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
       "id": "59f962c1083ee3b8",
       "score": 62,
       "severity": "high",
@@ -12632,6 +12620,18 @@
       "topic": "movies",
       "ts": "2026-08-01T09:07:43.039429+00:00",
       "url": "https://news.google.com/rss/articles/CBMioAJBVV95cUxQQWs3STRLUUxJR2MtenVVaXh1b2haMVdUM19kZnVUNTZSQzNiMFdUcUVyQ2xxOTBQOExIQkVXeU0tTWpfaUtmeHM5WmdNMnVQdVUwRThxZFJsRlVFUmh6bmdrcnhfZmtkSkViUUdPRThEcXpySHRuQndiNVNhVzRMcDRuOTRkSnZGbGJqYXIzZ2pqSjJhWEdmZmxvWmJ6bjVlbFR2NkkzaXRLR0ExX21nbUtRMnV6TzNjOXdpMmFhV3U5VkZXcEE2Z0RteWc0eGV5VVZFYkZBTXk5UkVTTXAxMmJ1WThZTXlOQWZpM0FmTFNiUlp1dDlnTENMWnJ4Sm9zdHNvYTEyOHNEaUltWjVuWlV4SEl2SnJUTVNNX29renA?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Morning hydration check: one big glass of water to wake up your system.",
+      "id": "032af0bc5dca311f",
+      "score": 0,
+      "severity": "low",
+      "source": "water",
+      "title": "Water - start the day hydrated",
+      "topic": "habits",
+      "ts": "2026-08-01T09:37:36.455862+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -13946,6 +13946,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-08-01T02:08:22.501410+00:00"
+    },
+    "1533046036715536415": {
+      "channel": "1515504253345726558",
+      "habit": "water",
+      "sent": "2026-08-01T09:37:36.455862+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-01",
@@ -14245,7 +14250,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-01T09:22:38.472091+00:00"
+    "ts": "2026-08-01T09:37:34.950565+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -15870,9 +15875,9 @@
       "last_ok": "2026-07-31T21:08:18.706377+00:00"
     },
     "habits": {
-      "last_data": "2026-08-01T09:22:42.228306+00:00",
+      "last_data": "2026-08-01T09:37:38.133937+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-01T09:22:38.472091+00:00"
+      "last_ok": "2026-08-01T09:37:34.950565+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
@@ -15958,9 +15963,9 @@
       "last_ok": "2026-08-01T09:07:41.110676+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-01T09:22:40.607515+00:00",
+      "last_data": "2026-08-01T09:37:36.455420+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-01T09:22:38.472091+00:00"
+      "last_ok": "2026-08-01T09:37:34.950565+00:00"
     },
     "uv": {
       "last_data": "2026-07-31T21:10:26.725891+00:00",
@@ -16012,7 +16017,9 @@
   "watchdog_failing_since": {
     "visa_bulletin": "2026-07-14T21:07:54.987378+00:00"
   },
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-08-01|05:30"
+  ],
   "weather_seen_ids": [
     "fc78ba4742600883",
     "9e9ff5cbf90e9f70",
