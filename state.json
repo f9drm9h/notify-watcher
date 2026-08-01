@@ -93,7 +93,35 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [],
+  "digest_buffer": [
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Comic Book References and Villains in \u2018Spider-Man: Brand New Day\u2019 - Marvel.com",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOdk1Nc3VPU3RPNDAzbGFGYTI0RS1ZWGU0ZkRzOGZYUGFEQjJKSE03SEJmZFo1em9DLTVpd1RpMXk1UEZKNXgweURiTUJ2c2hROFhEV2NKaTBxRkVod2UyZF9yUEFSYUNaNmQxTGhWbE0ydE1QdktyUDBWdEg2X3pXMktCcUlzVm0tcS1XR3QtdFRpcmJmb3NHU0htbmNfRFk?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Sadie Sink\u2019s Secret Role in \u2018Spider-Man: Brand New Day\u2019 Finally Revealed - The Hollywood Reporter",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPUkV2WWIyRWczdmh3YmJFQVhsWVY5cThteDRVR0c4bE5UQkpxcXBZT0hoUEVxTG5PWDdxRFYtT2xBM0JreEVlWDlURVBJSFBKTUpQOU91UmJCWWlXTWl5aG5FT3VyeU12UEVFbUFyOHk1eW10X3ZVaExrc1l2SUlFUHYwY181ZDh0LXJXc2Jyb1BkaHZ2X1QwbHJOa0ZPQlpkVS14ZUtXY1lYc0JNT0RvSUN0cHo?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Spider-Man: Brand New Day",
+      "title": "Kevin Feige Confirms \u2018Spider-Man: Brand New Day\u2019s Place in the MCU Timeline [Exclusive] - Collider",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNFhxOW4xYlUwNHp3WFJLTVF2MzNiaEpKNnNXZlFCZGdKbm94eFFHVXZ1UHFLTWdhc2lnUUZmQWJlWm91THNpY05zaTN1eWtsLTZ3LWVLOVhnVlNROUo5X1lkYkFzNFhXVUQwODI2Si1YWV9lbV9CNlFKQWk5QzBncV9qVERaUDNsU1ZuZA?oc=5"
+    }
+  ],
   "digest_last_sent": "2026-08-01",
   "discord_control": {
     "last_id": "1530929203594137641"
@@ -453,30 +481,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "id": "d5f298ae0ef0317b",
-      "score": 70,
-      "severity": "high",
-      "source": "Revtorpyk",
-      "title": "FDA approves Revtorpyk (Gedatolisib) (NDA219908)",
-      "topic": "fda",
-      "ts": "2026-07-18T06:08:02.069150+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219908"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "f0eadf22bbb5746e",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Retevmo",
-      "title": "FDA updates approval for Retevmo (Selpercatinib) (NDA213246)",
-      "topic": "fda",
-      "ts": "2026-07-18T06:08:02.464945+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=213246"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -12452,6 +12456,30 @@
       "topic": "apod",
       "ts": "2026-08-01T12:09:37.416550+00:00",
       "url": "https://apod.nasa.gov/apod/image/2608/FullMoon28-7-2026BrankoNadj.jpg"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "44a05ffa8286f831",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday\u2019s First Look At Sentry Costume Confirms What We All Suspected - The Direct",
+      "topic": "movies",
+      "ts": "2026-08-01T15:07:40.754492+00:00",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSzNoODNZMS1HdXpJRDN4QlZRWEd3NmJnc2RTaHl2VUVtMEdFQk1pcHJnUU1PVnZ1VlNOeVRCdFc5QXU1QVZncFpZbzEweVY1aWs4emJDT2ZFRFZCcUp0Y2c4b2JvR1BRc0FLeTdBMGhCd1hBbFlIVDdmSV9YbFVPcUN0eEZueFotMEpIQw?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Let's Have A Party - Wanda Jackson\n(because you like The Limeliters)",
+      "id": "c5f549f25c2c3833",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-01T15:07:50.031940+00:00",
+      "url": "https://www.deezer.com/track/3360450"
     }
   ],
   "exercise_slots_sent": [],
@@ -12675,7 +12703,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
   "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-01T12:09:21.013844+00:00",
+  "fuel_last_prices_seen_at": "2026-08-01T15:09:02.498156+00:00",
   "fuel_prices": {
     "GLP": 3380.07,
     "Gasoil Regular": 3380.07,
@@ -14072,9 +14100,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-01T14:52:33.859052+00:00"
+    "failed": 1,
+    "ok": 40,
+    "ts": "2026-08-01T15:07:38.442623+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -14115,6 +14143,16 @@
   "meditate_slots_sent": [],
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "69c3962f005f22ce",
+      "be7f3e601500f14e",
+      "787af8851211990d",
+      "8a8918fa766ff3be",
+      "909d7290e5a1ccbe",
+      "424e8895eb038417",
+      "7c524def6fb37640",
+      "b709bc953779c2c0",
+      "8038d7720fbcb448",
+      "d6b4f57d9f3966bd",
       "657e7aed79f259ef",
       "ed4c58b2c71d6888",
       "192845a5c2e4f4b5",
@@ -14204,17 +14242,7 @@
       "4cd10fb730d540e9",
       "2368b4c6a4d0504c",
       "ff173d0ed400426f",
-      "c6ce29b0db28a7aa",
-      "52d7722aeecdb821",
-      "7415fa1291de450c",
-      "15715ff4e2f7dead",
-      "e760f38e435263d4",
-      "b50c355324772b31",
-      "30f2022928072ae4",
-      "732ef272458e52bb",
-      "fc262a64c199c350",
-      "1c17af205e5e23fe",
-      "38c7cc138fb8681b"
+      "c6ce29b0db28a7aa"
     ],
     "Godzilla x Kong: Supernova": [
       "2e9d240bfc35f86f",
@@ -14421,6 +14449,39 @@
       "16304a7ec1af990f"
     ],
     "Spider-Man: Brand New Day": [
+      "5ec2666ab4b29dc5",
+      "1504d0731bcaf5fd",
+      "4ad00794cadd3d58",
+      "ac0c8f701ede684e",
+      "c4b3e1f0a80d9f54",
+      "32e133380dc46566",
+      "8ec39be484d984ee",
+      "9ebf7b556636f0ba",
+      "9d4ae0e30d8cd7c1",
+      "2fd6e1e775d207c4",
+      "75824e832124dac6",
+      "53d24ef7d8f55a0c",
+      "0bdb10ff66062300",
+      "774a093f88cd2e7f",
+      "0091aa0f945e8490",
+      "42c54ddc90c26487",
+      "0a675d534622ea19",
+      "c1dc7aec574542cd",
+      "6f2ff52d102072b0",
+      "b39467eb077cc64a",
+      "87526beafa024119",
+      "87d9c55ec03b2b91",
+      "8b4369ccacb3670e",
+      "a69ee722acc71ab0",
+      "42a5ab7562a2cc7e",
+      "6d539ab4e2930ab6",
+      "c83184be5e050689",
+      "aaa6d48de757e5e8",
+      "ba151bf359b9d1a6",
+      "73c59bdd88f380db",
+      "45aefaabdb5ebe18",
+      "b385fe6f51dd5299",
+      "422ffb1638a633bf",
       "a5cfd3173d552dd9",
       "e4db3847c9b1cf55",
       "0ee3ae14cc2696b1",
@@ -14487,40 +14548,7 @@
       "d60bee19fd4bd5b5",
       "5a26517493ba1975",
       "49273b1bfe0642af",
-      "78f9b701bd5a0e2e",
-      "3a3f1d6d7f8b50a8",
-      "73faf39d76f31138",
-      "c19b64a267e80716",
-      "43671164a8fb8c86",
-      "300e9602d08cdc53",
-      "162e091af24e36af",
-      "6804a29e2d3ae431",
-      "4d60da52431c33f8",
-      "478c4386db13169c",
-      "db2e8717e14e7f6a",
-      "83e403d283d71ab1",
-      "12b57b3927533466",
-      "732441e545a3397a",
-      "84304c716907a1f9",
-      "2f88effe87ca79d5",
-      "092b21179fc76e27",
-      "154cea112b6349e2",
-      "69c5115947fc75e0",
-      "4282c3d7e251b458",
-      "56f1bbd8bb3c334e",
-      "ff493c3c7b2d3a3e",
-      "3484fc82509bc639",
-      "86f878016b543981",
-      "fa51403a2ff13f74",
-      "eddb6fb0d3cc76e3",
-      "4dd3253a8ab31359",
-      "93a8916f5572c8cf",
-      "8913bfa20311939d",
-      "a45e03c3a0bd8bd1",
-      "8278955b299cf897",
-      "e98831f131ba2004",
-      "a351381939b212da",
-      "92ffa7291b92564b"
+      "78f9b701bd5a0e2e"
     ],
     "The Batman Part II": [
       "2cd8d6d8ff266a44",
@@ -14625,6 +14653,29 @@
       "4c8fb16d5a7d49c5"
     ],
     "The Odyssey": [
+      "627c1600733e07cf",
+      "ef3d4c491a8ede38",
+      "cbd290570dda2fea",
+      "7726e91c8bdfa09b",
+      "203b2479143ee9aa",
+      "9bcfae1675593a67",
+      "1b855783c427fc2a",
+      "c18c591ca0a64aea",
+      "327ee4efd2fe49a0",
+      "b81dcad718ec06b5",
+      "c847509cbd3b1d2f",
+      "a98d96ab1f9a2bee",
+      "fd9e67e7cde4684d",
+      "edbed34a9a1b4f92",
+      "3a7e9021b967679e",
+      "089738394114b0ef",
+      "4a63a4d71eaa32f7",
+      "878edb86d4091ba4",
+      "ac4706c3f13ff7f1",
+      "aeb8918bb7eb8c72",
+      "9d42c206b6b52fec",
+      "592556000c42824c",
+      "2d78d1ff0e19d9a4",
       "5773d232dbf224dd",
       "5a4c087b716a6f6d",
       "1457f0597f195b76",
@@ -14701,30 +14752,7 @@
       "f53f96988b20c3f2",
       "f5551aaaa7541ab7",
       "d77e5f9d54638a20",
-      "bf3a8c58ee4b206c",
-      "e03dd34ed126f204",
-      "138e92c6692d8126",
-      "1a1ece15028bfa43",
-      "b007f48f9f429d24",
-      "7680529a2235350a",
-      "a10dd739c85d600e",
-      "4613dfc121c10b8f",
-      "27b54fb09c00be67",
-      "34487bfc42a2b3e3",
-      "f477289729338aee",
-      "8e84ff1e9a25a8a9",
-      "70a1d4cea5a285ee",
-      "864e83d9c50e2b43",
-      "c8e0ef04e5d47583",
-      "ae62cac5e8ac934e",
-      "54580a2e1ddc3646",
-      "7724d0af7c5051a8",
-      "2f51cf2019a22c9c",
-      "38c19da97dc6684c",
-      "dda668e9c96fbd67",
-      "b0b4027473c6027b",
-      "bde74bac74678e91",
-      "907530c6c5a16fdd"
+      "bf3a8c58ee4b206c"
     ]
   },
   "movie_release_dates": {
@@ -14946,7 +14974,8 @@
     13878655,
     14456487,
     15104399,
-    1032
+    1032,
+    6174
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -15196,6 +15225,15 @@
       "label": "George Harrison",
       "payload": {
         "name": "George Harrison"
+      }
+    },
+    "6e2b910a4cb08279": {
+      "applied": null,
+      "created": "2026-08-01T15:07:50.031916+00:00",
+      "kind": "artist",
+      "label": "Wanda Jackson",
+      "payload": {
+        "name": "Wanda Jackson"
       }
     },
     "750c20ff86b03ce8": {
@@ -15626,44 +15664,44 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-01T12:09:19.457448+00:00",
+      "last_data": "2026-08-01T15:09:00.646831+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-01T12:09:23.815167+00:00",
+      "last_data": "2026-08-01T15:09:03.959129+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "apod": {
-      "last_data": "2026-08-01T12:09:37.416534+00:00",
+      "last_data": "2026-08-01T15:09:11.565688+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "beach_day": {
       "last_ok": "2026-07-14T00:08:07.374355+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "deals": {
-      "last_data": "2026-08-01T12:08:39.447942+00:00",
+      "last_data": "2026-08-01T15:08:20.485156+00:00",
       "last_data_count": 12,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "energy": {
-      "last_data": "2026-08-01T12:09:06.918494+00:00",
+      "last_data": "2026-08-01T15:08:47.761269+00:00",
       "last_data_count": 69,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-01T12:09:30.082618+00:00",
@@ -15671,61 +15709,61 @@
       "last_ok": "2026-08-01T12:07:41.714421+00:00"
     },
     "fda": {
-      "last_data": "2026-08-01T12:08:55.411325+00:00",
+      "last_data": "2026-08-01T15:08:37.257677+00:00",
       "last_data_count": 7,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-01T12:09:21.013862+00:00",
+      "last_data": "2026-08-01T15:09:02.498176+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "fx": {
-      "last_data": "2026-08-01T12:09:19.540329+00:00",
+      "last_data": "2026-08-01T15:09:00.756078+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "games": {
       "last_data": "2026-07-27T12:08:27.690467+00:00",
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-01T12:07:54.943000+00:00",
+      "last_data": "2026-08-01T15:07:51.780171+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-01T12:08:54.120753+00:00",
+      "last_data": "2026-08-01T15:08:36.944426+00:00",
       "last_data_count": 230,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "habits": {
-      "last_data": "2026-08-01T14:52:40.439638+00:00",
+      "last_data": "2026-08-01T15:09:06.648174+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-01T14:52:33.859052+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "health_tip": {
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-01T12:09:34.330802+00:00",
+      "last_data": "2026-08-01T15:09:08.555853+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "iss": {
-      "last_data": "2026-08-01T12:09:23.344103+00:00",
+      "last_data": "2026-08-01T15:09:03.492186+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-01T12:09:35.245303+00:00",
+      "last_data": "2026-08-01T15:09:09.617407+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "launches": {
-      "last_data": "2026-08-01T12:09:22.802909+00:00",
+      "last_data": "2026-08-01T15:09:02.924735+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "learn": {
       "last_data": "2026-08-01T12:09:26.119203+00:00",
@@ -15733,50 +15771,50 @@
       "last_ok": "2026-08-01T12:07:41.714421+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "marine": {
-      "last_data": "2026-08-01T12:09:37.160027+00:00",
+      "last_data": "2026-08-01T15:09:11.026833+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "movies": {
-      "last_data": "2026-08-01T12:07:48.283144+00:00",
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_data": "2026-08-01T15:07:44.792548+00:00",
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "music": {
-      "last_data": "2026-08-01T12:07:52.555551+00:00",
+      "last_data": "2026-08-01T15:07:49.152006+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-01T12:09:07.494923+00:00",
+      "last_data": "2026-08-01T15:08:48.489213+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "quakes": {
-      "last_data": "2026-08-01T12:09:18.809872+00:00",
-      "last_data_count": 51,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_data": "2026-08-01T15:08:59.981624+00:00",
+      "last_data_count": 50,
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "research": {
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-01T12:08:34.150204+00:00",
+      "last_data": "2026-08-01T15:08:11.803506+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "spark": {
       "last_data": "2026-08-01T06:09:26.876196+00:00",
@@ -15785,30 +15823,30 @@
     },
     "spending": {
       "last_data_count": 0,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-01T14:52:39.498969+00:00",
+      "last_data": "2026-08-01T15:07:47.043480+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-01T14:52:33.859052+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "uv": {
-      "last_data": "2026-08-01T12:09:36.552990+00:00",
+      "last_data": "2026-08-01T15:09:10.411562+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "visa_bulletin": {
       "last_error": "403 Client Error: Forbidden for url: https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html",
-      "last_error_ts": "2026-08-01T12:07:41.714421+00:00",
+      "last_error_ts": "2026-08-01T15:07:38.442623+00:00",
       "last_ok": "2026-07-14T18:07:53.426832+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "weather": {
-      "last_data": "2026-08-01T12:09:07.040795+00:00",
+      "last_data": "2026-08-01T15:08:47.981518+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     },
     "wikiquote": {
       "last_data": "2026-07-14T12:09:00.939275+00:00",
@@ -15816,9 +15854,9 @@
       "last_ok": "2026-07-14T12:07:34.974787+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-01T12:09:24.919920+00:00",
+      "last_data": "2026-08-01T15:09:05.186430+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-01T15:07:38.442623+00:00"
     }
   },
   "twitch_live": [],
@@ -15826,7 +15864,7 @@
   "visa_f4_dates_for_filing": "01MAR10",
   "visa_f4_final_action": "01JAN09",
   "watch_schedule": {
-    "last_full_window": "165332"
+    "last_full_window": "165333"
   },
   "watchdog_alerted": {
     "visa_bulletin": "2026-07-16T18:10:36.993914+00:00"
