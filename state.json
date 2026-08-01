@@ -147,6 +147,24 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Avengers: Doomsday",
+      "title": "Marvel Studios Stuns San Diego Comic-Con with 'Avengers: Doomsday,' 'Ghost Rider,' and 'Black Panther 3' Reveals - The Walt Disney Company",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE5vREE2VUEwZ0IwRWxmYmV0V3h5RTFLTUc0MHI3b1dWYW1qMW1aVTNlU24yZWFNSkFnLU5DNlJLbGxzTzVIQzVvVEJidUJfWE5heHd3YmE2VHBmRnphWnpIVllhWnQwRkxSeVlta0ptNnlVbTBmY0ww?oc=5"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "The Batman Part II",
+      "title": "The Batman 2 Set Videos Appear To Reveal That [Spoiler] Will Suffer A Serious Injury In Matt Reeves' Sequel - imdb.com",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBEZFpiNWZ4ZVNxQ0swblptQ3hPUWw0dDNrRWo0cjFzMlM5TGxiUGFVX1RycExpNDRTOWhSdV9HcmtuTHluSU8xNEY1MTk5dmU1UEJNTHQ4alVFQ2JBU08zRg?oc=5"
     }
   ],
   "digest_last_sent": "2026-08-01",
@@ -508,54 +526,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "id": "b97b84c973c5e1b8",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday\u2019s First Trailer Just Passed 1 Major Release Milestone - The Direct",
-      "topic": "movies",
-      "ts": "2026-07-18T09:07:28.450132+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQc3N1cFAzMDF4eXMwTFVJSllNLUxJLVhtWGd5djVfczloWDhhTFdNN0xZSWtyMUZUVEhodlFXbnI2TWdKbUV6MlAzQU9DREp0c1JadzRVdGg1ZlVWVTM0SHFqT3EzbHhYVHRRSVZGSWZRWk1IQzhLYUc0TWhxWVQ4cWZSZmR0OFppaExkSl93?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "a21278f2857f3e3e",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "\"The Batman: Part II\" Delayed Until 2028 - Dark Horizons",
-      "topic": "movies",
-      "ts": "2026-07-18T09:07:31.334344+00:00",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1pcG9Zay1sZy1SaUxFdnJjYnZfUmZUbjVSclAxOTJGcmZFODFZQ2FuNnNkODRYRHJPbnlNQ2ZxUC1vY0FJbTRzdUxYYlNVeFdnVEZNcGN2NUFtbjR5RmpZVVJicnVRWG9mZjgyZnN3Z3kteG9BYXc?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "6c6cfb139cbe5649",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Golden Sun",
-      "title": "Blasphemy",
-      "topic": "golden_sun",
-      "ts": "2026-07-18T09:07:37.271961+00:00",
-      "url": "https://www.reddit.com/r/GoldenSun/comments/1uzgfm0/blasphemy/"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "1e06fca847f4964b",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "THE BATMAN PART II\u2019s Release Date Move Isn\u2019t a Big Deal - batman on film",
-      "topic": "movies",
-      "ts": "2026-07-18T12:07:29.214179+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQYURXam52RTNWc0RUN29fQVZOcXZaVTE1Ni1ydWtFUEI2cHEtOUNvV050MVhhMzM2b3hDQkNIMHItcFpJODVSeS1seVpZQU5GOEJZVF9WeTJFdTZJbW41TEozU29rQVhxbUxCYTljVWZRNGhWck1jTndmTGUzMjJQTTRZM0J5UTd3SHhyVjJ4eDfSAeoCQVVfeXFMTlJlLW5rN29tR0ZTbFFGcHF6YmxTX3R1eXJxam9MSDdKOU5WYWVUX0tKNzJ6YTdBYXZ4eDh1V05iOGhZNFNyMXhjYjFBZ3FnZndYYnFRaU1fMHRBcDZ5LXJiTldFWllDRTZ0Ynl0b1hyOHA0VFl1dU5Bb2tqSU5RTzA4aDFDcVBrWlVFeG9QcmVjaFpKbXFlVzJzdDF5RWpLZzdoU09VeVByUklEU25rSVZpVzRCSkU3SWNNMGVleDM1ZS0yRFZ0aHFDcjM2Q3ZFRnNzX2xFcThWQ0NfTzdrT1d6djRqdXdBREtxVS1IbUhKSWVqYk8yWUZsMGxLX0FSVldpYTliNEU1cDJlRHd5N2YwYWhpTkxPcGxHeW5HZDRrakpKb2p1Z1diQ3BtajZiandjVmktdm44SHZNbHRhZVBvNDd4cUJhMlBkNVJTME4ycUVYbjFPaXBmdjZMNkRQYzBiLUlNMFJ1c2c?oc=5"
-    },
     {
       "action": "push",
       "detail": "Bite Me - ENHYPEN\n(because you like Stray Kids)",
@@ -12507,6 +12477,54 @@
       "topic": "watchdog",
       "ts": "2026-08-01T18:09:49.290286+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "F4 (All Other) Final Action Dates moved from Jan 1 2009 to Sep 1 2009 (+243 days)\nAdvanced ~243 d/bulletin over 1 bulletin.\nF4 (All Other) Dates for Filing moved from Mar 1 2010 to Jun 22 2010 (+113 days)",
+      "id": "39a891af7fd26151",
+      "score": 100,
+      "severity": "critical",
+      "source": "Visa Bulletin",
+      "title": "New visa bulletin: August 2026",
+      "topic": "visa_bulletin",
+      "ts": "2026-08-01T21:08:20.825012+00:00",
+      "url": "https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin/2026/visa-bulletin-for-august-2026.html"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "05b986b094f16484",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "See 'Avengers: Doomsday' in Theaters December 18. Watch the Marvel Cinematic Universe Anytime on Disney+. - ABC Network",
+      "topic": "movies",
+      "ts": "2026-08-01T21:08:23.865315+00:00",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1BdlVISVR0ZEZDMEdmUThJSTFNV09Wa3JXbm1oVWxxX0RQMy1YWTdVSEFWSXZzQ253TXRFdTB5cURkdm9FSzYwZnlxY25fVFB3Vi1Gak5DR1ViMnJtcXVNRUVSdl9vV3ZuRzFFWGtTYU5HUmZPa1hCM1FEeU1iUTA?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Please Stay - The Cryin' Shames\n(because you like The Limeliters)",
+      "id": "8dec9bcc8428067e",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-01T21:08:32.874213+00:00",
+      "url": "https://www.deezer.com/track/889834572"
+    },
+    {
+      "action": "push",
+      "detail": "visa_bulletin \u2014 running again after 18d down",
+      "id": "b9a6b748a7485e2b",
+      "score": 72,
+      "severity": "high",
+      "source": "Watchdog",
+      "title": "Watchdog: 'visa_bulletin' recovered",
+      "topic": "watchdog",
+      "ts": "2026-08-01T21:09:37.411999+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -12514,6 +12532,10 @@
     {
       "bulletin": "2026-07",
       "cutoff": "01JAN09"
+    },
+    {
+      "bulletin": "2026-08",
+      "cutoff": "01SEP09"
     }
   ],
   "fda_seen_ids": [
@@ -12730,7 +12752,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
   "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-01T18:09:39.581383+00:00",
+  "fuel_last_prices_seen_at": "2026-08-01T21:09:29.385765+00:00",
   "fuel_prices": {
     "GLP": 3380.07,
     "Gasoil Regular": 3380.07,
@@ -14128,8 +14150,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-01T20:53:30.918320+00:00"
+    "ok": 41,
+    "ts": "2026-08-01T21:08:19.093787+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -14170,6 +14192,20 @@
   "meditate_slots_sent": [],
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "80944e883dabb284",
+      "4c28118aaf69249b",
+      "82d69c97f3ffda57",
+      "8c67b914aee5be3c",
+      "8d831f6e195fcc60",
+      "2368b4c6a4d0504c",
+      "ff173d0ed400426f",
+      "c6ce29b0db28a7aa",
+      "17b431ab9ca86617",
+      "c103868dc0c3912f",
+      "977c2ccb9c697385",
+      "ff5b90e154f8b6d8",
+      "ea6d6fa36f4436e8",
+      "31790d85a17a4ef1",
       "ea2effd8f4c6ba09",
       "52d7722aeecdb821",
       "7415fa1291de450c",
@@ -14255,21 +14291,7 @@
       "bebc1ee20f48644a",
       "e117b4f47c05b457",
       "d7f23f126de2026c",
-      "402b9c4b9e4c919a",
-      "7f99cf3bc991200d",
-      "f1c6efbd1ed62912",
-      "3155b058aeeff4ef",
-      "206687605ffcd4f7",
-      "8083f42d402fce9c",
-      "a1a5f69c4df65dbb",
-      "b93cf83022d816ee",
-      "e38c75968db52edd",
-      "ea939650dbdfa697",
-      "f581c5861b3a2f75",
-      "26f0c2784f673f32",
-      "d556032fd3794fc7",
-      "5c3fb7449ad67e6c",
-      "ea2c08e6359dda3e"
+      "402b9c4b9e4c919a"
     ],
     "Godzilla x Kong: Supernova": [
       "2e9d240bfc35f86f",
@@ -14476,6 +14498,34 @@
       "16304a7ec1af990f"
     ],
     "Spider-Man: Brand New Day": [
+      "4c28118aaf69249b",
+      "b2a4364c4924f761",
+      "f6f859004445d902",
+      "7eea4a51268cd732",
+      "e71353290b9243a3",
+      "61ca771b8ce11e0e",
+      "db9d1bdc32cb2407",
+      "ed775020357cbd89",
+      "5a4ce7b5a191b5f9",
+      "fba3508f48b15f90",
+      "d5565c2c26f1877b",
+      "d60bee19fd4bd5b5",
+      "5a26517493ba1975",
+      "49273b1bfe0642af",
+      "73faf39d76f31138",
+      "1be76146d1278d1b",
+      "98666474b1287eaf",
+      "924dc5256767d778",
+      "0980896c7098aa4e",
+      "39a597698ff78bdc",
+      "917bd72691b72047",
+      "1a9ab9a5a8a37254",
+      "824dc7dfbd29f0ce",
+      "b3a605ce524d9e8b",
+      "ab4e5d867368e0b1",
+      "f5f59cde42865a9f",
+      "9fce7b6e460bffa7",
+      "6e797dd39a9df288",
       "ccd54e3e53dffa1c",
       "e67e80bb0f16fb6c",
       "af9b1d69415164de",
@@ -14547,37 +14597,10 @@
       "2aad217ff2d82785",
       "38e09805f704c6b8",
       "72fdb78275b8006b",
-      "1c985596a7e66957",
-      "11dbfecc3eafc085",
-      "d47be48799917e9c",
-      "9f21a01886708e13",
-      "a8c78ac545ba4bdb",
-      "4f68624488dacb63",
-      "556c78df7a7ac2d3",
-      "9d99d614c23e6701",
-      "2db2a346813a828b",
-      "3607721caa7b0ab2",
-      "8e336240fd036b78",
-      "254ac06c443ff397",
-      "7f5a9a5a25bc90b2",
-      "adf37c472de93858",
-      "f4d63d87d868080d",
-      "a774ad53813e806e",
-      "01c0841d719aaf2f",
-      "7dc7718ae870df4b",
-      "6ca927938209ecc8",
-      "b8c6f96777e73f5a",
-      "49cd5771471dfbc2",
-      "77d41c9194be7fce",
-      "2437369c96230a67",
-      "b5daf4a3e816abe7",
-      "8d465bf0854fed8a",
-      "aab6b458f347b3df",
-      "487e0a5a717bec95",
-      "9519056feb4d9e22",
-      "a3148d0dfff6ba46"
+      "1c985596a7e66957"
     ],
     "The Batman Part II": [
+      "4c997f01ad5ed35a",
       "2cd8d6d8ff266a44",
       "ef32e97614cbafb5",
       "510b886625573127",
@@ -14676,10 +14699,32 @@
       "651ac58071d4a484",
       "2a5e6232e986cd45",
       "36f5077dbd6e3c13",
-      "70c9ea0b157ee293",
-      "4c8fb16d5a7d49c5"
+      "70c9ea0b157ee293"
     ],
     "The Odyssey": [
+      "9384fb7cb7c1ebca",
+      "4cc2cd5f8f3f364f",
+      "4ff12c0f3ebae1fd",
+      "20d0e4c3e4d26bef",
+      "c9ab6918e224f8dc",
+      "77ae2409d807fa1c",
+      "31e186521726a228",
+      "eba24078b9959061",
+      "f53f96988b20c3f2",
+      "d77e5f9d54638a20",
+      "8f23ce732685eb5b",
+      "755ddd3dcceeb378",
+      "ab2e65ff2aa3fc3f",
+      "bf3a8c58ee4b206c",
+      "a71a8ae0bbe8e68a",
+      "27d01ed344a26df0",
+      "2177cbc081e64ff8",
+      "d05e105e85ce1fc3",
+      "769f27d13d71c435",
+      "b5541b48a0e49eee",
+      "27fc4e90ed1e7026",
+      "881d9685a0c79772",
+      "937aff60875640f1",
       "03ade66fd9f63053",
       "8b3cdd58a45ecb8b",
       "9713873b42179e95",
@@ -14756,30 +14801,7 @@
       "aa85c2fa4531018f",
       "439a0f6fc77c0952",
       "ad3c2e60b5ec986b",
-      "9bf9369ba10076f0",
-      "8edec1a89414d55c",
-      "23fdeec378f53f73",
-      "13f7269fc425bf4d",
-      "8b8480b38a837c9a",
-      "3410da61a1b7cb50",
-      "de609576e65a5599",
-      "c1064277eadb42b3",
-      "64bba8a4e56fbd53",
-      "452cd9f1f3ced26f",
-      "dcacb2e9b4c14336",
-      "f84b741c7b091b89",
-      "8c2b951ba75076dc",
-      "3edaa7dcacbd60ae",
-      "477b6992e0d25187",
-      "47103ac35a37fbf2",
-      "2fb96a10dc4df909",
-      "dfa6498955985281",
-      "829bf6ab65667a9a",
-      "37041ebc5957ac42",
-      "dedcd59c395f2c70",
-      "1f15e9b5e4febf74",
-      "d6482a9462c01cbc",
-      "7e129b7096164527"
+      "9bf9369ba10076f0"
     ]
   },
   "movie_release_dates": {
@@ -15003,7 +15025,8 @@
     15104399,
     1032,
     6174,
-    96788
+    96788,
+    4594932
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -15309,15 +15332,6 @@
         "name": "Bob Dylan"
       }
     },
-    "a50c1e010cc1b996": {
-      "applied": null,
-      "created": "2026-07-18T21:07:38.975332+00:00",
-      "kind": "artist",
-      "label": "SEVENTEEN",
-      "payload": {
-        "name": "SEVENTEEN"
-      }
-    },
     "ae63c389e23f16a2": {
       "applied": null,
       "created": "2026-07-19T18:08:29.214529+00:00",
@@ -15406,6 +15420,15 @@
       "label": "UNISON SQUARE GARDEN",
       "payload": {
         "name": "UNISON SQUARE GARDEN"
+      }
+    },
+    "f222c802e8adb459": {
+      "applied": null,
+      "created": "2026-08-01T21:08:32.874185+00:00",
+      "kind": "artist",
+      "label": "The Cryin' Shames",
+      "payload": {
+        "name": "The Cryin' Shames"
       }
     },
     "f698f599cd9b289f": {
@@ -15683,41 +15706,41 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-01T18:09:38.102298+00:00",
+      "last_data": "2026-08-01T21:09:28.004452+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-01T18:09:41.704135+00:00",
+      "last_data": "2026-08-01T21:09:30.553907+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "apod": {
-      "last_data": "2026-08-01T18:09:49.288613+00:00",
+      "last_data": "2026-08-01T21:09:37.410284+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "deals": {
-      "last_data": "2026-08-01T18:08:59.765998+00:00",
-      "last_data_count": 12,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_data": "2026-08-01T21:08:59.388752+00:00",
+      "last_data_count": 11,
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "energy": {
-      "last_data": "2026-08-01T18:09:25.334020+00:00",
+      "last_data": "2026-08-01T21:09:15.299896+00:00",
       "last_data_count": 69,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-01T12:09:30.082618+00:00",
@@ -15725,58 +15748,58 @@
       "last_ok": "2026-08-01T12:07:41.714421+00:00"
     },
     "fda": {
-      "last_data": "2026-08-01T18:09:14.761622+00:00",
+      "last_data": "2026-08-01T21:09:04.943731+00:00",
       "last_data_count": 7,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-01T18:09:39.581400+00:00",
+      "last_data": "2026-08-01T21:09:29.385793+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "fx": {
-      "last_data": "2026-08-01T18:09:38.160480+00:00",
+      "last_data": "2026-08-01T21:09:28.164563+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "games": {
       "last_data": "2026-07-27T12:08:27.690467+00:00",
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-01T18:08:34.494864+00:00",
+      "last_data": "2026-08-01T21:08:34.887992+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-01T18:09:14.521562+00:00",
+      "last_data": "2026-08-01T21:09:04.293841+00:00",
       "last_data_count": 230,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "habits": {
-      "last_data": "2026-08-01T20:53:34.301086+00:00",
+      "last_data": "2026-08-01T21:09:33.247497+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-01T20:53:30.918320+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-01T18:09:46.881093+00:00",
+      "last_data": "2026-08-01T21:09:34.916023+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "iss": {
-      "last_data": "2026-08-01T18:09:41.157030+00:00",
+      "last_data": "2026-08-01T21:09:30.034889+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-01T18:09:47.774361+00:00",
+      "last_data": "2026-08-01T21:09:35.801134+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "launches": {
-      "last_data": "2026-08-01T18:09:40.474906+00:00",
+      "last_data": "2026-08-01T21:09:29.541466+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "learn": {
       "last_data": "2026-08-01T12:09:26.119203+00:00",
@@ -15784,50 +15807,50 @@
       "last_ok": "2026-08-01T12:07:41.714421+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "marine": {
-      "last_data": "2026-08-01T18:09:49.053299+00:00",
+      "last_data": "2026-08-01T21:09:36.946246+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "movies": {
-      "last_data": "2026-08-01T18:08:27.334845+00:00",
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_data": "2026-08-01T21:08:28.235410+00:00",
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "music": {
-      "last_data": "2026-08-01T18:08:31.744993+00:00",
+      "last_data": "2026-08-01T21:08:32.018491+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-01T18:09:25.972440+00:00",
+      "last_data": "2026-08-01T21:09:15.922224+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "quakes": {
-      "last_data": "2026-08-01T18:09:37.490339+00:00",
-      "last_data_count": 53,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_data": "2026-08-01T21:09:27.491717+00:00",
+      "last_data_count": 47,
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "research": {
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-01T18:08:52.947557+00:00",
+      "last_data": "2026-08-01T21:08:53.569571+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "spark": {
       "last_data": "2026-08-01T06:09:26.876196+00:00",
@@ -15836,43 +15859,41 @@
     },
     "spending": {
       "last_data_count": 0,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-01T20:53:33.145214+00:00",
+      "last_data": "2026-08-01T21:08:29.664058+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-01T20:53:30.918320+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "uv": {
-      "last_data": "2026-08-01T18:09:48.397342+00:00",
+      "last_data": "2026-08-01T21:09:36.484243+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "visa_bulletin": {
-      "last_error": "403 Client Error: Forbidden for url: https://travel.state.gov/content/travel/en/legal/visa-law0/visa-bulletin.html",
-      "last_error_ts": "2026-08-01T18:08:21.687504+00:00",
-      "last_ok": "2026-07-14T18:07:53.426832+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "weather": {
-      "last_data": "2026-08-01T18:09:25.457948+00:00",
+      "last_data": "2026-08-01T21:09:15.497953+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-01T18:09:42.827936+00:00",
+      "last_data": "2026-08-01T21:09:31.949483+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-01T18:08:21.687504+00:00"
+      "last_ok": "2026-08-01T21:08:19.093787+00:00"
     }
   },
   "twitch_live": [],
-  "visa_bulletin_current": "2026-07",
-  "visa_f4_dates_for_filing": "01MAR10",
-  "visa_f4_final_action": "01JAN09",
+  "visa_bulletin_current": "2026-08",
+  "visa_f4_dates_for_filing": "22JUN10",
+  "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165334"
+    "last_full_window": "165335"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15882,14 +15903,7 @@
     "movies": "2026-06-12T12:15:55.633492+00:00"
   },
   "watchdog_data_outages": {},
-  "watchdog_outages": {
-    "visa_bulletin": {
-      "alerted": "2026-07-16T18:10:36.993914+00:00",
-      "last_alert": "2026-08-01T18:09:49.290055+00:00",
-      "reminders": 1,
-      "since": "2026-07-14T21:07:54.987378+00:00"
-    }
-  },
+  "watchdog_outages": {},
   "water_slots_sent": [
     "2026-08-01|05:30"
   ],
