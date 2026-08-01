@@ -89,7 +89,9 @@
     "rent|2026-07-30|1"
   ],
   "blood_donation_last_notified": "2026-07-08",
-  "cleaning_slots_sent": [],
+  "cleaning_slots_sent": [
+    "2026-08-01|18:00"
+  ],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -526,42 +528,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "Bite Me - ENHYPEN\n(because you like Stray Kids)",
-      "id": "250102aea560b0b3",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-07-18T12:07:34.261452+00:00",
-      "url": "https://www.deezer.com/track/2289924375"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "4f6d745e413e3463",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-07-18T12:08:26.986443+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "USD/DOP moved from 58.29 to 58.37 (+0.08, +0.13%) vs yesterday",
-      "id": "0540c551da3a16f6",
-      "score": 62,
-      "severity": "high",
-      "source": "FX",
-      "title": "USD/DOP today: 58.37",
-      "topic": "fx",
-      "ts": "2026-07-18T12:08:49.105471+00:00",
-      "url": ""
-    },
     {
       "action": "push",
       "detail": "Hydration check: grab some water before you carry on.",
@@ -12525,9 +12491,47 @@
       "topic": "watchdog",
       "ts": "2026-08-01T21:09:37.411999+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Your 6 PM exercise slot is here. Future you says thanks.",
+      "id": "1f0a2f9719e59fba",
+      "score": 0,
+      "severity": "low",
+      "source": "exercise",
+      "title": "Exercise - 6 PM session",
+      "topic": "habits",
+      "ts": "2026-08-01T22:08:19.066451+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Evening reset: close your eyes and focus on your breath for a while.",
+      "id": "02c6db322b1c1333",
+      "score": 0,
+      "severity": "low",
+      "source": "meditate",
+      "title": "Meditate - evening reset",
+      "topic": "habits",
+      "ts": "2026-08-01T22:08:19.066451+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Tidy-up reminder: dishes, desk, or floor - choose one and clear it.",
+      "id": "f1247c815a35dc3b",
+      "score": 0,
+      "severity": "low",
+      "source": "cleaning",
+      "title": "Cleaning - quick tidy-up",
+      "topic": "habits",
+      "ts": "2026-08-01T22:08:19.066451+00:00",
+      "url": ""
     }
   ],
-  "exercise_slots_sent": [],
+  "exercise_slots_sent": [
+    "2026-08-01|18:00"
+  ],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -13856,6 +13860,21 @@
       "channel": "1515504253345726558",
       "habit": "water",
       "sent": "2026-08-01T09:37:36.455862+00:00"
+    },
+    "1533234958188024060": {
+      "channel": "1515504253345726558",
+      "habit": "exercise",
+      "sent": "2026-08-01T22:08:19.066451+00:00"
+    },
+    "1533234959865614522": {
+      "channel": "1515504253345726558",
+      "habit": "meditate",
+      "sent": "2026-08-01T22:08:19.066451+00:00"
+    },
+    "1533234961111318569": {
+      "channel": "1515504253345726558",
+      "habit": "cleaning",
+      "sent": "2026-08-01T22:08:19.066451+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-01",
@@ -14151,7 +14170,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-01T21:53:19.663938+00:00"
+    "ts": "2026-08-01T22:08:17.956287+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -14189,7 +14208,9 @@
   ],
   "learn_last_sent": "2026-08-01",
   "life_dashboard_last_week": "2026-W30",
-  "meditate_slots_sent": [],
+  "meditate_slots_sent": [
+    "2026-08-01|18:00"
+  ],
   "movie_news_seen": {
     "Avengers: Doomsday": [
       "80944e883dabb284",
@@ -15777,9 +15798,9 @@
       "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "habits": {
-      "last_data": "2026-08-01T21:53:21.654747+00:00",
+      "last_data": "2026-08-01T22:08:21.126815+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-01T21:53:19.663938+00:00"
+      "last_ok": "2026-08-01T22:08:17.956287+00:00"
     },
     "holidays": {
       "last_data": "2026-08-01T21:09:34.916023+00:00",
@@ -15862,9 +15883,9 @@
       "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-01T21:53:20.717599+00:00",
+      "last_data": "2026-08-01T22:08:19.066274+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-01T21:53:19.663938+00:00"
+      "last_ok": "2026-08-01T22:08:17.956287+00:00"
     },
     "uv": {
       "last_data": "2026-08-01T21:09:36.484243+00:00",
