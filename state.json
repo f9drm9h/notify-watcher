@@ -549,18 +549,6 @@
     {
       "action": "push",
       "detail": "",
-      "id": "d2c1b22f953bf9e6",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Another Spider-Man: Brand New Day trailer has been released, but you can only see it in theaters - GamesRadar+",
-      "topic": "movies",
-      "ts": "2026-07-18T15:07:37.992445+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPM2NrMkpKTGt3MzJxaTdBUkJHZ2NEOW1NcTROTVIyMU9DSlVTTzY4UmNIQk1YZXhBRHU1SFN5SUFPcmlucXUyV2lrN2l4b1pGQ0gtMVhYTEh3RnFzcDlJdFFXQVlLeksza0pMWjlhYnBxZ0hzSnlUSFlHbWZ6SEttb1loQTVNOExoVkFURmFGTE9DQm10b0hlazdOY2UwUFplNnpTM1ZSU3hfLXZxbEt6ZjNQOWs4VUZRTkJfcENQY3gtYkpmSDJUWWQ0Y2lsSi0zZnJpOXk3U2NHQ05sVjIzcHhzbmw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
       "id": "11c2c0f815596b6b",
       "score": 62,
       "severity": "high",
@@ -12545,6 +12533,18 @@
       "topic": "habits",
       "ts": "2026-08-02T01:08:23.240162+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Second call: time to actually head to bed. Tomorrow starts tonight.",
+      "id": "c38be1582a453bdc",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-08-02T02:08:21.643507+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -13878,6 +13878,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-08-02T01:08:23.240162+00:00"
+    },
+    "1533295367506886792": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-08-02T02:08:21.643507+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-02",
@@ -14173,7 +14178,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-02T01:53:18.952168+00:00"
+    "ts": "2026-08-02T02:08:20.300565+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -15708,7 +15713,8 @@
   "recap_last_week": "2026-W31",
   "reminders_sent": [],
   "sleep_slots_sent": [
-    "2026-08-01|21:00"
+    "2026-08-01|21:00",
+    "2026-08-01|22:00"
   ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
@@ -15800,9 +15806,9 @@
       "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "habits": {
-      "last_data": "2026-08-02T01:53:20.828272+00:00",
+      "last_data": "2026-08-02T02:08:23.353205+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-02T01:53:18.952168+00:00"
+      "last_ok": "2026-08-02T02:08:20.300565+00:00"
     },
     "holidays": {
       "last_data": "2026-08-01T21:09:34.916023+00:00",
@@ -15885,9 +15891,9 @@
       "last_ok": "2026-08-02T00:08:21.467924+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-02T01:53:19.983107+00:00",
+      "last_data": "2026-08-02T02:08:21.643335+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-02T01:53:18.952168+00:00"
+      "last_ok": "2026-08-02T02:08:20.300565+00:00"
     },
     "uv": {
       "last_data": "2026-08-01T21:09:36.484243+00:00",
