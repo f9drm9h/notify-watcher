@@ -69,7 +69,7 @@
     "29db49f64ce68661",
     "a8b1aff056453d2f"
   ],
-  "apod_last_sent": "2026-08-01",
+  "apod_last_sent": "2026-08-02",
   "astronomy_sent": [
     "2026-06-14|New moon tonight - d",
     "2026-06-21|June solstice today",
@@ -89,38 +89,17 @@
     "rent|2026-07-30|1"
   ],
   "blood_donation_last_notified": "2026-07-08",
-  "cleaning_slots_sent": [
-    "2026-08-01|18:00"
-  ],
+  "cleaning_slots_sent": [],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    }
-  ],
-  "digest_last_sent": "2026-08-01",
+  "digest_buffer": [],
+  "digest_last_sent": "2026-08-02",
   "discord_control": {
     "last_id": "1530929203594137641"
   },
   "energy_learn_last_news": "2026-07-31",
-  "energy_learn_last_sent": "2026-08-01",
+  "energy_learn_last_sent": "2026-08-02",
   "energy_learn_seen": {
     "facts": [
       "baseload-vs-peaking",
@@ -168,7 +147,8 @@
       "grid-scale-battery-boom",
       "private-fusion-startups",
       "nif-fusion-ignition",
-      "vogtle-new-reactors"
+      "vogtle-new-reactors",
+      "heat-pumps"
     ]
   },
   "energy_seen_ids": [
@@ -474,390 +454,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "id": "11c2c0f815596b6b",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "San Antonio IMAX theater cancels 'Odyssey' screenings - San Antonio Express-News",
-      "topic": "movies",
-      "ts": "2026-07-18T15:07:39.298493+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQM0tjdUdaeGpFc0VLTW8xbWFHMkNLT3l1NDQyQkgxcmRYYWJJZHBYZ0lxXzNVWGdsZ21TMnNETmk0dVVJUWxyTXNaY25lOF95SkZVMWdjVzRNTkMybjU1eVlqMHZVQ0NldkVnWVQ2Tk5kNlJtRVZQNzZHMDM1ZWV3VUFWaVdLc2l2WHpvVUZxVWFKQmtUVE1IZWUtNWRtNGVOem5zMm45czlyODdq?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "fcfd6e956ff439ad",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II: A Temporary Fix Follows Big Delay - Stanisland Magazine",
-      "topic": "movies",
-      "ts": "2026-07-18T15:07:40.797274+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9UNzRGYUtQZi1ObHVpVk16dnl5VjJvR0UzXzNHUmkyZFhaOTJZdlJpcGVER19zV3dvN0xEX1M0Q0ppdVNMUGRRY0s0OHpnakZHdkszQ3pvc3Ata1dXZ1E?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Everlasting Shine - TOMORROW X TOGETHER\n(because you like Stray Kids)",
-      "id": "ccf99705fcadc6fc",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-07-18T15:07:47.968113+00:00",
-      "url": "https://www.deezer.com/track/1050333472"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "13f71e9c43253628",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Golden Sun",
-      "title": "Last meme for today, swear to Anemos",
-      "topic": "golden_sun",
-      "ts": "2026-07-18T15:07:49.910160+00:00",
-      "url": "https://www.reddit.com/r/GoldenSun/comments/1uziwk4/last_meme_for_today_swear_to_anemos/"
-    },
-    {
-      "action": "push",
-      "detail": "Sip some water - your body will thank you.",
-      "id": "9498c8af494953b7",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-07-18T15:09:11.059185+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Street Fighter 6 - World Warrior #3 | !bracket",
-      "id": "51634a74466638f3",
-      "score": 68,
-      "severity": "high",
-      "source": "RiddlesMK",
-      "title": "RiddlesMK is live on Twitch",
-      "topic": "twitch",
-      "ts": "2026-07-18T17:37:26.387700+00:00",
-      "url": "https://twitch.tv/RiddlesMK"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "952797efb5a71b4f",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man producer reveals why Brand New Day needed a new director - Yahoo",
-      "topic": "movies",
-      "ts": "2026-07-18T18:07:34.356728+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1VclRQcDJ1VnNpdGtId0tEenVMVWRESDhSaTRub1hfSjEwNGVvTEE0YWcxWl8yMmdQNm5wbWxrdnFpYUdnOVlFTE81bzRmQ09KTjVVeTZ3Z1EzWmxEVllJUWhLRWljTF8xcjVwWlBZMlBJSVNwd1FQMTFJUW41ck0?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "9ae85189a779b539",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II Delay Is Another Terrible Sign for DC\u2019s Movie Future - Yahoo",
-      "topic": "movies",
-      "ts": "2026-07-18T18:07:36.447983+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPaWZLUlE5c21JSTZPX2NaT2FxbENEblFEVW82U3RWbGk1Z1B4TC0tcTNraFJQWXNrcnJhS3Y1RWNPckY3SXVVcUZOUUtscGhkcEV3S0swV01VUWgyeDRuSGQxN2F2YWw1MHF1R2RhOW84OHRRRTJRb1NhNVF1dDh0VlFqTQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "BAD - ATEEZ\n(because you like Stray Kids)",
-      "id": "5814dba0af2ca9f1",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-07-18T18:07:43.574571+00:00",
-      "url": "https://www.deezer.com/track/4027935751"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "b914b711407f92cb",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-07-18T18:08:35.854790+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "Time for a glass of water. Stay hydrated!",
-      "id": "26b027adecf7a0a6",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-07-18T18:09:04.118421+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "105402663840cc7b",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday's Massive Runtime Confirmed In New Marvel Report - SlashFilm",
-      "topic": "movies",
-      "ts": "2026-07-18T21:07:29.489337+00:00",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1yZUxPLTEweUNYT3A5Y1FtamkxYkxQZXJoMHRVbWViVmVFeHd6OC11d1NGTHBsV2k1SUh5TzNLVU5GSzRIUWFkWml6NnBhR0dlV2JwbFoteXNHSUtrcXhTQllFa1YzZzZtNURvakQtWDBubE54LWc?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "c4de8f7db288961f",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Samsung Expands Sony Pictures\u00b4\u00b4Spider- Man\u2122: Brand New Day\u00b4Collaboration with new Cinematic Spot Starring Jacbon Batalon - Roastbrief US",
-      "topic": "movies",
-      "ts": "2026-07-18T21:07:30.258086+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNWWx1R28zc2YtRVBmXzhBTlk0RzJxOUpscmJDSmI4RU9pWXFxa2NNZ196ZUNoSEhhelRfdTdlLVM2NmFxbXRycTBwNHZIejdsSUJqcXZBbTR5eEtUeDVlcHlDU0hmU1A3aEl1LTNSYmVxcll4b2VGb3I2a05hWWI3RFF6bEtDLVA4TVpOMjVvZF9iY1hXQXo1c1kwN0FfUEJGM0hUQUJCYzRaSHFidm14WmV3cnhHaUt0THU3VHhSVXJXNW95NXZDSVV1MmRwZ0I5dEV3?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "c31f469eaea4a7f8",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "'The Batman 2' Officially Sets New Release Date as Robert Pattinson Returns in First Teaser - IMDb",
-      "topic": "movies",
-      "ts": "2026-07-18T21:07:32.169145+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1WVURCWVJxMU5mSUI0MzE2US1LOGIwTnhfOEhBUHltWjBWZ3V2TXMxOFFZYjJLQWxHYWVUZ2FqektFSTBDaGRqaWJ4WThld0NFVDNDM2lPblY0WEFmbHVLZA?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Super - SEVENTEEN\n(because you like Stray Kids)",
-      "id": "151e7f5a3a604ebb",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-07-18T21:07:38.975358+00:00",
-      "url": "https://www.deezer.com/track/2247330887"
-    },
-    {
-      "action": "push",
-      "detail": "Keep a glass of water within reach.",
-      "id": "0bdd6d5ec6b99a39",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-07-18T21:08:59.210997+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "576a04e241cdcd1d",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "New 'Avengers: Doomsday' Sneak Peek Officially Reveals Doctor Doom, Loki, and More - Collider",
-      "topic": "movies",
-      "ts": "2026-07-19T00:07:24.728164+00:00",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1JVmdzS1c4VFZsUlRFLWx3elVUdFl2enBuWEwtc2YtdVg5TThSRW9jNDJJZl8xS0wzR1IzeHE3UmVRRTg5NE1TLWFEbS01Z1ZVUlhFdldGQW5Udy1IdFhTM0phd1piLW9ZajVzR3F6WnBuR3lLb1oxelpISQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "c4a9d87da0a7d903",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day Fans Are Convinced Final Trailer Is Releasing Very, Very Soon - Yahoo",
-      "topic": "movies",
-      "ts": "2026-07-19T00:07:25.851619+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUHVMNGNRTzVoNHNfUlR4M2tZSXE1dWE5bURxVTBHNnJsOFpocHEyRE40M25VS2x1WEw5bzJoNkZRd0xaUmJsS2JnOGx3TmZwbFAtbGFHWDg1U3czb3MzN2I3emJxRDA5Z0pDN3lpSUgxVWxRdGh1ZWFJUW56SVZBU1ROazhiTWp2R2R4RnU1eVYxZWh4TjNV?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "79d87496d4cc9bb7",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "THE BATMAN \u2014 PART II Delayed Again as Reeves Reveals First Footage of Pattinson's Return - Movieguide",
-      "topic": "movies",
-      "ts": "2026-07-19T00:07:27.624311+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbDRQNElJRVItSS1JTkZWX1ZQODdoYXh5NTJBc2t5c0J4Uy1YSTFzQjhhamVickRxdUtJS1RPTjI3c3kwWWpldDJibGpnZjRUOXJBUFc1amoxb0NjZ0x1QWc5UDhyR2d1czhoNVVyWE5fQmN0bl8zNktxTnlVX3VNZHZZa2w?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "0db559e0ce79c50a",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-07-19T00:08:31.696646+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "For better sleep quality, aim for 7-9 hours of sleep nightly and maintain consistent sleep and wake times, even on weekends. (Source: CDC)",
-      "id": "210b37b627dfeaaa",
-      "score": 60,
-      "severity": "low",
-      "source": "Health",
-      "title": "Health tip",
-      "topic": "spark",
-      "ts": "2026-07-19T00:09:00.905854+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "fadd20d7bcd69086",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "New movies to watch this weekend: See 'The Odyssey' in theaters, rent 'Backrooms,' stream 'Obsession' on Peacock - Yahoo",
-      "topic": "movies",
-      "ts": "2026-07-19T03:07:29.366060+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPbVRxOHIxb1pocXVJbGVhRGdmcmFuaDNtMWwxZVJKelUzQ2wxN3Bvekc5NkJRc0ZFS194WFIwUkt3MlFUd0lGcUNRQkQ4YUNzWFJyaG1ZTGZxQWI1QWZvVkY1amFEcG5uY3ZVLTNrazVISk12dXlxUDR3VzZuQUVUaS03VzZzakZEZGZNZHVRZUxjd3VCUEUwZjNLcUZpd2lIMEFKVGFZcndDdHFseEU1T2o5a0lOWmdaWW8wRWhjT3ZsMS1YUjJMd2ZYbWtieWdGeVloUThXcU5yQzB1aDRZVkk2eEhZNGh3bnJ0WHN1T2JpYzRlWkViOS1lQ1Z4dw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "b7de85eeecdccb18",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II delayed to 2028 with first teaser reveal - MSN",
-      "topic": "movies",
-      "ts": "2026-07-19T03:07:30.621154+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQQUtEZEpWekRudTVNXzhYdU9TNVB5UWhqeWtFeVZfQndNeFhzZFZVb0U0UWIxNEhLNUxOUmtmMWR3Yjlpa0hoYUlTTndQNDB0WVFrZ2RrQTFtYUo0VUtKMlBuSGFPVzJsSmxQVFVnUFVGNE5haVJ3LVRqeHgyTmY3bE1PZlJyd01pVlRpTVdLSTNVbVVneUNrQU1jVUFtV2JGQ0JBcE5ILTd3cjNjWjlxbVF1THo5NW9EV3BkSjNBMUFVdzlhcXc5UkZpcUVFVW1rY0VITTNSNHAtcmVhQU9xM3JSazJpMmxGVjc3NkJfMldYMFRr?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "153ecf1e600bd617",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel Still Has 2 Yet to Release Post-Credit Scenes That Will Directly Set Up Avengers: Doomsday - The Direct",
-      "topic": "movies",
-      "ts": "2026-07-19T06:08:20.316215+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQVmRtdlpVQ3BJQXBKdkFJZ0tseXJnd0RjcEJfY0FBMFdWejV4Uzd0TFAxNlhHN3Z4cFVhYUhlT1hfdl9oTWdDRnRDQ2JxbzdCVjJiTk0tODR1SmZHNjN2Rzd6S3pHTDJYQ3Fscm5EVGE5THJxZTZQcnZzbDNTQkVackZJMkYtTEVLY1g0U0VxRTB4eWxnM1o0?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "5943b684d53897ff",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "THE BATMAN \u2013 PART II Delayed Again for Warner Bros. to Clean Up the Script - Movieguide",
-      "topic": "movies",
-      "ts": "2026-07-19T06:08:22.951317+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPMnJIR0hjNElGQ3htWjI1eWtfbmltM0hGcWxNd2NwbUFGcEFxdDdLU1g4SUdiNWZmcDZOZzdvTmVfQ3NPT21wS1h4ZE85RkJ1R2xWal8wdHZHdUdjYnVlRGt5NWxlX1ZrZ0lyVUNZejcxX2oyR1Z2ekEydVV2c2JlcGQzNUVlVmtLWlJsa3ZIWQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "2c2d8aa12dbe2713",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-07-19T06:09:24.679859+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "Monday 20 July\nEDEESTE's weekly maintenance program lists Hainamosa. Tap for the schedule (PDF).",
-      "id": "5bca0a0b665406bf",
-      "score": 62,
-      "severity": "moderate",
-      "source": "EDEESTE",
-      "title": "Power outage tomorrow: Hainamosa",
-      "topic": "outages",
-      "ts": "2026-07-19T06:09:46.422427+00:00",
-      "url": "https://edeeste.com.do/index.php/download/desde-el-lunes-20-de-julio-hasta-el-domingo-26-julio-2026/"
-    },
-    {
-      "action": "push",
-      "detail": "\u201cBankers play far too great a part in the conduct of industry...\u201d\n\u2014 Henry Ford\n\nHenry Ford, a name synonymous with American ingenuity and the relentless pursuit of efficiency, wasn't just an inventor; he was a revolutionary who fundamentally altered the landscape of manufacturing and, by extension, society itself. His Model T, produced on the pioneering assembly line, didn't just put America on wheels; it democratized the automobile, making it accessible to the common person. Yet, beneath the veneer of the benevolent industrialist lay a shrewd businessman with a deep-seated distrust of certain financial powers, a sentiment that fueled his independent spirit and often put him at odds with the established banking world.\n\nIt was against this backdrop of fierce independence and a burgeoning industrial empire that Ford uttered his lament about bankers playing \"far too great a part in the conduct of industry.\" He believed that the control of capital should not dictate the pace or direction of innovation, and that industrialists, those who actually built and created, should retain autonomy over their enterprises. This wasn't merely a philosophical musing; Ford was actively resisting attempts by bankers to gain control over his company, fearing that their profit-driven motives would compromise his vision for affordable, mass-produced vehicles.\n\nFord's words resonate powerfully even today because the tension he identified\u2014between the innovators and the financiers\u2014remains a persistent theme in the global economy.",
-      "id": "d2e959591859f24f",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Henry Ford",
-      "topic": "spark",
-      "ts": "2026-07-19T06:09:54.142056+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "cd78dfe791e39d03",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "New 'Avengers: Doomsday' Runtime Report Confirms Big 'Endgame' Downgrade - MovieWeb",
-      "topic": "movies",
-      "ts": "2026-07-19T09:08:17.804418+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9STU9MZUJiNXJrcWZhS3dRR3hNbmdvTVZGQjVTVFlqVDZ0NGtGYUtGSmZaMzdVd0pUR3JKTDdlWjNOQk40TjZDVERPOGFPVHVjQ3RFaHJVTWY5ZmRtYk9PbWR0a3k?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "6d2e180ae9cc7ff6",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "New Spider-Man: Brand New Day Trailer Released & There\u2019s Only 1 Way To Watch It - Yahoo",
-      "topic": "movies",
-      "ts": "2026-07-19T09:08:18.527993+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOTURqbFN4UkhxVGNfZjNxU2RUQXM0OF9HZldKY0U3bEpYaGF5ZFU0Q0NJUGV0ZDBHaFRZcUxSMEZPSlNEMTQzRXZfakxzUlZucTRLczd0dldOV1Y5dDFiZXhLLTdZTkh4UEo3RjJBeWx5SFRJZ3pQTGJ6TTlXUHJXR1pkdw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "102d91cc981dfca0",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman 2 hit by another delay as Matt Reeves gifts new look at Robert Pattinson for the sequel - MSN",
-      "topic": "movies",
-      "ts": "2026-07-19T09:08:20.350359+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigwNBVV95cUxPemJnUjN3VjdidDdGUm9zekVzd0pwS1pDZ0JuaEhrbDNXQUdRZlBzSXVxSFVPTjMwWUNIN29RV3hLVmVEVjhPMS1DNHU0Y1g4UjZwZzVWbmdfZkw5d05yWGo3OWM4MVo4WncwMUZtZUZsekdGQXlCWW05cktPM0FMSWpnSHFIZ1RmaU9TLTlmZmtoUHAycDA2SThnLVNCNW9zX0d1ZDNFVDZtTG9saDV2aFJqd3FXUlZVOUloS1l4VE5QYVNWb3BPa3pBMktwMmJIR0hnc0JyRUJUU2xnaHJ6VnBxUVo0S0tMZnNUUVNrUmQ4VDJpWlhQM0h1YzM0aWthX2luTDNOc2JuaGhiMkdyMjZQS2JEWGdSR1hkenR1cG9zOGZPV1BZTTRuRWNaMjlZTUl1ZlUtNnBILVhxbU9GQW5KQTJadHpXekM5REZheHZ5dzNfa1REczhrM1hiTTYtUXNmRWNXREpvZGpGbDFlNURsWHlZYTJ1emZvMS11THBQZWs?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "4b4025141674ae71",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Still no sign of an Avengers: Doomsday trailer, but we did get this very cool first official cast poster - Cineworld",
-      "topic": "movies",
-      "ts": "2026-07-19T12:08:24.621334+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9KRUdxbDAzc1B6ZkVBVDY0RnRYdjNjTUdYeGZDZ0gxWDVTQnBIUjNZZEp5aEhwRlQ2X2NCWmtseGwyZU90VmNOLUdxTWtXQVhhSnNiT19FajZhVzVWQTBKaU1hX3ZjOENRREZWcEhZWlVtLXl6RUZjRHdvdUJ2Y2M?oc=5"
-    },
     {
       "action": "push",
       "detail": "",
@@ -12473,11 +12069,393 @@
       "topic": "habits",
       "ts": "2026-08-02T02:08:21.643507+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "c7499abfa4050b84",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "Avengers: Doomsday Comic-Con Footage Confirms History Between Doom And Fantastic Four (SDCC Report) - empireonline.com",
+      "topic": "movies",
+      "ts": "2026-08-02T03:07:27.817563+00:00",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVTNwVXRFa3hURW9RcHlpSHppS0hidUNqTzNlbnhuckNrbEVXenFOMkhNUjhyVWI2bnlrQzV1ZGxSdnVxTFpURG9LQnhLNTRjb081eTM4ZnpGOV8zM1RKQ20wVmtjMmZNT2Foei1xX25zcDJIdVREX1hPRm1zaTVFT2ZWaFU3QVZLWjY3SmtyaDRKdkxtdVRaVkNMUUNwRV9HMjZKNDE2Vm5MbG5jbkNF?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "7935d91c8e035cff",
+      "score": 62,
+      "severity": "high",
+      "source": "Spider-Man: Brand New Day",
+      "title": "BMW\u2019s New iX3 Lands A Starring Role In Spider-Man: Brand New Day - Autoblog",
+      "topic": "movies",
+      "ts": "2026-08-02T03:07:28.676308+00:00",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNanFlSFB6RXlIeFhUR0pDbmpvbGxuekhWUGowSUFLWGlfUWZHN1E1bDU3RUE2SElfb1JvbGtyN3JOc1k4NTRtdHZMa0EyWU1lZkxjZFRqdGZiRkNVaFZ5YjdDTzJubXI1akR2ay03cG12OEE1ZHZlaXNTUmpnV3NURlJCTGZ0N1lIdXk3Y3cxUFhCQVZaRFZv?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "d29dafd90c12fe06",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "\u2018The Odyssey\u2019 Surpasses $700 Million Globally After 12 Days in Theaters - Variety",
+      "topic": "movies",
+      "ts": "2026-08-02T03:07:29.429836+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOTGwwaVFjdHlMSi1mZWJvbm9Ya21NSDN2bmtEUWxuN1JqYUlHMVk5MHlaSGhWQXhGVzBNX3Fjc3RXR1VzQm80djlHdzhuVk1lSnF0NG1uVHQ4UDM1bFVmZ21ENngtelEzUnpoUm13NlFEOHB2M3pzc0tWSHpuWEpWNUo0b3N3cnVHM1FrcTA1VUpsNkdnU1E3UkdGLUVGVnZiMUxJYVFVSGpFZw?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "df74d5a7d33cefe4",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-02T03:08:23.275219+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 7:34 PM - max 53deg, NW to SE. Look up!",
+      "id": "22b2e14291155549",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-08-02T03:08:37.256641+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "51533bd9edb352bd",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "The first trailer for Avengers: Doomsday is finally here - arstechnica.com",
+      "topic": "movies",
+      "ts": "2026-08-02T06:07:36.184276+00:00",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQS05OdURXSGo0anVoa002cGNyaFZSYnFraGZobHlXczJuVWVLOWRDX2ZoMXdQekd6WG5MaEJwNFFNQkdEMnRCeEJXVEJBYXktR3k5N0lVM1pVemhsUVdTNU82YlJWZUxBUkRsYUFWNmlqWGZtYmlFNXBoVUhpSHQxU1pJeWxZaWlYTy1USTJoaThBMUxKaWxKX3dMM2g?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "7d710190df659ba6",
+      "score": 62,
+      "severity": "high",
+      "source": "The Batman Part II",
+      "title": "'The Batman 2' Officially Sets New Release Date as Robert Pattinson Returns in First Teaser - IMDb",
+      "topic": "movies",
+      "ts": "2026-08-02T06:07:38.643902+00:00",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE12OWFnOFMtNGo3RlVqdEFjNWFxY0gxUXRjcGJQcmxrcjRnLVpwemlCcFZ6SURROFJmR3hDcHpLMEtJdUtsT3JFd3NmZ0dzQQ?oc=5"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "50fe27bfe3ac5414",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-02T06:08:48.864968+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 7:34 PM - max 53deg, NW to SE. Look up!",
+      "id": "e05c72c1efdf2bb8",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-08-02T06:09:02.107655+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cThe value of a principle is the number of things it will explain; and there is no good theory of disease which does not at once suggest a cure.\u201d\n\u2014 Ralph Waldo Emerson\n\nRalph Waldo Emerson, with his sweeping beard and piercing gaze, was the quintessential American intellectual of the 19th century, a towering figure who helped define the philosophical and literary landscape of a young nation. He was a pioneer of Transcendentalism, a belief system that emphasized the inherent goodness of people and nature, advocating for self-reliance and the idea that intuition and personal experience offered a surer path to truth than dogma or tradition. This particular quote, likely stemming from his essays or lectures which often probed the nature of truth and understanding, reflects his conviction that genuine insight isn't merely academic; it possesses a practical, transformative power. For Emerson, a true principle wasn't just something to be pondered; it was a lens through which to comprehend the world and, more importantly, to act upon it.\n\nThe context of this quote is rooted in an era of burgeoning scientific inquiry and a yearning for deeper societal understanding. Emerson was observing a world grappling with complex problems, from the human condition to the physical ailments of the age. His statement about a \"good theory of disease\" immediately suggesting a cure speaks to a profound faith in the interconnectedness of diagnosis and remedy, a belief that a true grasp of a problem inherently illuminates its solution. He wasn't necessarily a medical man, but a philosopher who saw the underlying patterns in all fields of knowledge.\n\nToday, this resonates with remarkable force in our increasingly data-driven yet often fragmented world.",
+      "id": "9d2401cfa4e3289f",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Ralph Waldo Emerson",
+      "topic": "spark",
+      "ts": "2026-08-02T06:09:08.963807+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 7:34 PM - max 53deg, NW to SE. Look up!",
+      "id": "6c64c99607209e87",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-08-02T09:08:29.865485+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Before coffee, before your phone: a glass of water.",
+      "id": "85fe7b76358279eb",
+      "score": 0,
+      "severity": "low",
+      "source": "water",
+      "title": "Water - start the day hydrated",
+      "topic": "habits",
+      "ts": "2026-08-02T09:37:31.808520+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "ebc775d9e5a276ae",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "'Avengers: Doomsday': Who's Returning, Premiere Date & More - TV Insider",
+      "topic": "movies",
+      "ts": "2026-08-02T12:07:36.878008+00:00",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQ2hSaGtqRnp6MnV6WjJVQ0RhdmRrVmRKWUxsc2EtRGVYbTFvS1Y1dklLWlRMYTN2U1lXTWFMcEU1Z29sWUgwOXI5M19qRWRiUndsT28tS1JCTHNPTHRMTHhseTFBU1FoX3BtTGVPcFlVZEpESGRFSmhLRHc2d1VjMGVfUXh4NVZlcGJtTldDMEc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "17e276a688fa9e8a",
+      "score": 62,
+      "severity": "high",
+      "source": "The Odyssey",
+      "title": "The Odyssey wins the casting debate - ft.com",
+      "topic": "movies",
+      "ts": "2026-08-02T12:07:38.197950+00:00",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNT2ZCM014WDh3QVFVSzZRa3NFZFFCZi1HT09nOUMxNVJJQmRieHA5MWU0UFJObkx4V3NMNTA1TG1MeDFUWHpoTEVDWk9qallHemFZRUZENEhVQUh5ZTZ5Uk1VaHpKZ2k4akFCRFQ1a1dFVzJHUURvUzdfbzh4aElOYXVkWVc?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Maui - The Skullduggers\n(because you like The Longest Johns)",
+      "id": "d32191f05b3324bb",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-02T12:07:45.939239+00:00",
+      "url": "https://www.deezer.com/track/23151631"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "bbdef40ead87a23e",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-02T12:08:55.878173+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "958b5769a4539b9a",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.2 - 3 km SSW of La Playa, Puerto Rico (~278 km away)",
+      "topic": "quakes",
+      "ts": "2026-08-02T12:09:07.472876+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527088"
+    },
+    {
+      "action": "push",
+      "detail": "USD/DOP moved from 58.08 to 58.08 (-0.00, -0.00%) vs yesterday",
+      "id": "590d86d5edc70117",
+      "score": 62,
+      "severity": "high",
+      "source": "FX",
+      "title": "USD/DOP today: 58.08",
+      "topic": "fx",
+      "ts": "2026-08-02T12:09:08.194119+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 7:34 PM - max 53deg, NW to SE. Look up!",
+      "id": "7acb56905b9f856a",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-08-02T12:09:10.456746+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "On this day\n1916: An explosion, blamed on Austro-Hungarian saboteurs, sank the Italian dreadnought Leonardo da Vinci.\n\nFeatured: Old Frisian\nOld Frisian was a West Germanic language spoken between the late 13th century and the end of the 16th century. It was spoken by Frisians who comprised a loose confederacy along the North Sea coast from around modern-day Bruges in Belgium to the Weser River in modern-day...\n\nDominican culture\nHispaniola is one of only two Caribbean islands, alongside Saint Martin, that is split between two countries. (Source: Britannica)",
+      "id": "0c9dd3c71e22c7f4",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Daily learning",
+      "topic": "learn",
+      "ts": "2026-08-02T12:09:14.606153+00:00",
+      "url": "https://en.wikipedia.org/wiki/Old_Frisian"
+    },
+    {
+      "action": "push",
+      "detail": "Alfred Wegener, a German meteorologist and geophysicist, was the unlikely provocateur of a geological revolution. In the early 20th century, he observed the curious jigsaw fit of continents across oceans, noting how South America and Africa seemed to embrace, as if once conjoined. This wasn't merely a geographic coincidence; he amassed a compelling body of evidence, pointing to identical fossil species found on widely separated landmasses, and geological formations that mirrored each other across the Atlantic. He theorized that Earth\u2019s continents were not static, but had slowly drifted apart over millennia, a concept he christened \u201ccontinental drift.\u201d\n\nHis radical idea, however, met with overwhelming skepticism and outright derision from the scientific establishment. The primary flaw in Wegener's model, as critics rightly pointed out, was a plausible mechanism for this colossal movement. How could entire continents plow through the rigid ocean floor? Without a satisfactory explanation, his insightful observations, no matter how numerous, were deemed mere coincidences, and his theory was largely dismissed as an interesting but unsubstantiated conjecture. Wegener died in 1930 during an expedition to Greenland, his groundbreaking work largely unaccepted during his lifetime.\n\nIt wasn't until decades later, with the advent of seafloor mapping, the discovery of mid-ocean ridges, and the understanding of mantle convection, that the missing piece of Wegener's puzzle emerged. The realization that new oceanic crust was continuously being generated and pushed outwards provided the \"how\" that his theory desperately needed.",
+      "id": "82951a8691ec80da",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Alfred Wegener and continental drift",
+      "topic": "spark",
+      "ts": "2026-08-02T12:09:17.369447+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "What: A heat pump uses electricity to move heat from outside into your home, delivering several units of heat per unit of electricity.\nWhy it matters: Because it moves heat rather than burning fuel, it can be far more efficient than a furnace or electric heater.\nWhy you should care: Switching heating to efficient electric heat pumps is one of the biggest ways homes can cut energy use and emissions.\n(Source: International Energy Agency)",
+      "id": "0c736b04cfb036d8",
+      "score": 60,
+      "severity": "low",
+      "source": "Energy learning",
+      "title": "\u26a1 Today's spark \u2014 Heat pumps move heat instead of making it",
+      "topic": "energy_learn",
+      "ts": "2026-08-02T12:09:17.777323+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\ud83d\udcaa HABITS\n- Habit nudges sent: sleep (14), exercise (7), meditate (7), cleaning (7), water (7)\n\n\ud83d\udcb0 FINANCE\n- USD/DOP: 58.22 -> 58.08 (-0.14, -0.25%)\n\n\ud83c\udf24 WEATHER & ENVIRONMENT\n- Weather alerts logged: 32 (latest: Atlantic Tropical Weather Outlook)\n\n\ud83c\udfac ENTERTAINMENT & NEWS\n- Top release: [64] Game: God of War Laufey\n- Golden Sun: 5 item(s); latest: \"8/1/2026: The 25-year anniversary of the Japanese release of the original Golden Sun is observed.\"\n- AI news: 2 item(s); latest: \"Anthropic\"\n\n\u2699\ufe0f SYSTEM HEALTH\n- 286 notification(s) pushed this week",
+      "id": "85fe988e2437696b",
+      "score": 60,
+      "severity": "low",
+      "source": "Life Dashboard",
+      "title": "Your week in review",
+      "topic": "life_dashboard",
+      "ts": "2026-08-02T12:09:20.394523+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Ends Sunday 09 August (in 7 days). Tap for the academic calendar (PDF).",
+      "id": "cf033fdfa9a28aab",
+      "score": 62,
+      "severity": "moderate",
+      "source": "ITSC",
+      "title": "ITSC: Inicio de docencia Cuatrimestre 2026-2",
+      "topic": "itsc",
+      "ts": "2026-08-02T12:09:21.965702+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/07/Calendario-academico-2026-2-actualizado-julio.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Ends Monday 03 August (tomorrow). Tap for the academic calendar (PDF).",
+      "id": "15f68977c3684361",
+      "score": 62,
+      "severity": "high",
+      "source": "ITSC",
+      "title": "ITSC: Matriculaci\u00f3n y Selecci\u00f3n Nuevo Ingreso",
+      "topic": "itsc",
+      "ts": "2026-08-02T12:09:22.157649+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/07/Calendario-academico-2026-2-actualizado-julio.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Starts Monday 03 August (tomorrow). Tap for the academic calendar (PDF).",
+      "id": "e111d4346930b7bc",
+      "score": 62,
+      "severity": "high",
+      "source": "ITSC",
+      "title": "ITSC: Reporte Programaci\u00f3n (Acad\u00e9mica -> Registro)",
+      "topic": "itsc",
+      "ts": "2026-08-02T12:09:22.347261+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/07/Calendario-academico-2026-2-actualizado-julio.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Starts Monday 03 August (tomorrow). Tap for the academic calendar (PDF).",
+      "id": "43c199beef11695a",
+      "score": 62,
+      "severity": "high",
+      "source": "ITSC",
+      "title": "ITSC: Evaluaci\u00f3n y Publicaci\u00f3n Laboratorios",
+      "topic": "itsc",
+      "ts": "2026-08-02T12:09:22.549614+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/07/Calendario-academico-2026-2-actualizado-julio.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Ends Sunday 09 August (in 7 days). Tap for the academic calendar (PDF).",
+      "id": "c35fc1fa7b755e69",
+      "score": 62,
+      "severity": "moderate",
+      "source": "ITSC",
+      "title": "ITSC: Evaluaci\u00f3n y Publicaci\u00f3n Laboratorios",
+      "topic": "itsc",
+      "ts": "2026-08-02T12:09:22.758032+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/07/Calendario-academico-2026-2-actualizado-julio.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "What's happening to this cloud? Ice crystals in a distant cirrus cloud are acting like little floating prisms. Known informally as a fire rainbow for its flame-like appearance, a circumhorizon arc appears parallel to the horizon. For a circumhorizontal arc to be visible, the Sun...\n(c) Christa Harbig",
+      "id": "a2abee0644d78980",
+      "score": 60,
+      "severity": "low",
+      "source": "NASA APOD",
+      "title": "APOD: A Fire Rainbow over West Virginia",
+      "topic": "apod",
+      "ts": "2026-08-02T12:09:24.504418+00:00",
+      "url": "https://apod.nasa.gov/apod/image/2608/FireRainbow_Harbig_4000.jpg"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "af7794477d225f6f",
+      "score": 62,
+      "severity": "high",
+      "source": "Avengers: Doomsday",
+      "title": "'Avengers: Doomsday': San Diego Comic-Con reveals, trailer, release date and what to know - ABC News - Breaking News, Latest News and Videos",
+      "topic": "movies",
+      "ts": "2026-08-02T15:07:31.767126+00:00",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQeUJPTUJSM1pkb3pQWmNBUURxeGo3Wk5mVS1rNTFWUnRIWXdPZVJ4aUVTNjhZaTFYWDYzYzl6ZGg0SXJXNUJHMlJfSUtFaEMwLXZWbjVidUljTXNmeXZZVndFNVFEbnFkcV9RQ05OZ2JnaE5GekN3QnphbVRpYVExamRqZUhpUHNNNFpNNVJSNVd1UFE3ak1Icy1wLV9FVXo0aFhDQ9IBqgFBVV95cUxPQndXRXlhRzdqb0FFbUxpeHZiSmRIU3g3cGlFdkdwYmFRR1VqV1J0bUlNa2JPaXBoc1dSd1FRSExENU9fdHBmNC1VOWpBY1pKRjNxY3p5aUwyWWV0RDVXS25BeHh4cVdaOGRZQ2xDZVpBZkFSU29PYjVvaWtaVmI1bjlVc2xvTFlSNUdWd281MEZETmNKWkJpOXlBMVQxUTZtcW4xVkxSaEVTUQ?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "Side-Side-Side Quest (Inspired by Dungeons & Dragons) - Colm R. McGuinness\n(because you like The Longest Johns)",
+      "id": "a5cf5d1c16b65956",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-02T15:07:41.286006+00:00",
+      "url": "https://www.deezer.com/track/4022847081"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 7:34 PM - max 53deg, NW to SE. Look up!",
+      "id": "7ebebd52c7b5b517",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-08-02T15:08:54.994108+00:00",
+      "url": ""
     }
   ],
-  "exercise_slots_sent": [
-    "2026-08-01|18:00"
-  ],
+  "exercise_slots_sent": [],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -12702,7 +12680,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
   "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-01T21:09:29.385765+00:00",
+  "fuel_last_prices_seen_at": "2026-08-02T15:08:53.387978+00:00",
   "fuel_prices": {
     "GLP": 3380.07,
     "Gasoil Regular": 3380.07,
@@ -12712,10 +12690,10 @@
     "Kerosene": 3380.07
   },
   "fx_daily_baseline": {
-    "date": "2026-08-01",
-    "rate": 58.076959
+    "date": "2026-08-02",
+    "rate": 58.075336
   },
-  "fx_last_rate": 58.076959,
+  "fx_last_rate": 58.075336,
   "fx_last_zone": "within",
   "fx_week_baseline": {
     "rate": 58.219497,
@@ -13086,6 +13064,7 @@
       "1b7d9e5ab11b51a5"
     ],
     "La Sirena": [
+      "52cc9e48246d82fa",
       "1a89ac60a956d26c",
       "962bcbd27ca0e160",
       "340951c6987563e7",
@@ -13443,6 +13422,7 @@
       "997e525f302628c6"
     ],
     "Nacional": [
+      "656590f0f0e89cf9",
       "4a5626c1fc03b246",
       "bf8169d254212ef6",
       "b3cd3914f4250d12",
@@ -13777,11 +13757,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1533046036715536415": {
-      "channel": "1515504253345726558",
-      "habit": "water",
-      "sent": "2026-08-01T09:37:36.455862+00:00"
-    },
     "1533234958188024060": {
       "channel": "1515504253345726558",
       "habit": "exercise",
@@ -13806,6 +13781,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-08-02T02:08:21.643507+00:00"
+    },
+    "1533408404553466000": {
+      "channel": "1515504253345726558",
+      "habit": "water",
+      "sent": "2026-08-02T09:37:31.808520+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-02",
@@ -13833,6 +13813,11 @@
     }
   },
   "iss_seen_passes": [
+    "63a4dc3068378a19",
+    "2aa17939851ac123",
+    "38880264e067219a",
+    "462bcecac1c2224c",
+    "48287a66b9e3d205",
     "30f1682af814248f",
     "0edfebfb584b5104",
     "0e7f16c25ea164c9",
@@ -13927,14 +13912,14 @@
     "f1ccce54fb63cb41",
     "44c317309f39999a",
     "59f60ed27ebefa02",
-    "9ec92a8504a5fd79",
-    "7f41fabbefe26e36",
-    "14d022a97b2522f9",
-    "3b18897061d0ad8f",
-    "03f061ffe325df7f",
-    "f0ca010bc47d72da"
+    "9ec92a8504a5fd79"
   ],
   "itsc_sent_ids": [
+    "99c76a245efd5275",
+    "e79dfd3e84c49e17",
+    "b5f04145956faf0a",
+    "4436ab185175225e",
+    "d737cc37d1868dbd",
     "c13168fba0c67cc1",
     "97e98360969c49ae",
     "1d8e652740000f62",
@@ -13992,7 +13977,7 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "philosophy",
+  "knowledge_last_category": "science",
   "knowledge_last_sent": "2026-07-14T4",
   "knowledge_seen": {
     "ancient_civilizations:The Aztec Empire and Tenochtitlan": "2026-07-26",
@@ -14004,7 +13989,6 @@
     "ancient_civilizations:The Trojan War and Schliemann's excavations": "2026-07-11",
     "ancient_civilizations:The building of the Great Wall of China": "2026-07-09",
     "ancient_civilizations:The conquests of Alexander the Great": "2026-07-13",
-    "ancient_civilizations:The founding of Rome and the Republic": "2026-07-03",
     "astronomy:Galileo's telescope and the moons of Jupiter": "2026-07-09",
     "astronomy:Jocelyn Bell Burnell and the discovery of pulsars": "2026-07-05",
     "astronomy:SETI and the Wow! signal": "2026-07-04",
@@ -14054,7 +14038,6 @@
     "mythology:The Greek creation myth and the Titans": "2026-07-31",
     "mythology:The Maya Popol Vuh": "2026-07-13",
     "mythology:The Norse creation from Ginnungagap": "2026-07-17",
-    "mythology:The churning of the ocean of milk": "2026-07-03",
     "mythology:Thor and the hammer Mj\u00f6lnir": "2026-07-09",
     "philosophy:Aristotle's virtue ethics": "2026-07-12",
     "philosophy:Descartes and 'I think, therefore I am'": "2026-07-13",
@@ -14064,15 +14047,14 @@
     "philosophy:John Stuart Mill and utilitarianism": "2026-07-18",
     "philosophy:Ockham's razor": "2026-07-06",
     "philosophy:Schopenhauer and the world as will": "2026-07-11",
-    "philosophy:The trolley problem": "2026-07-03",
     "philosophy:Thomas Aquinas and the marriage of faith and reason": "2026-07-07",
     "philosophy:Zeno of Citium and the founding of Stoicism": "2026-07-10",
+    "science:Alfred Wegener and continental drift": "2026-08-02",
     "science:Gregor Mendel and the laws of heredity": "2026-07-08",
     "science:Heisenberg's uncertainty principle": "2026-07-04",
     "science:Lord Kelvin and the age of the Earth debate": "2026-07-19",
     "science:Louis Pasteur and germ theory": "2026-07-11",
     "science:Maxwell's equations and the unification of light": "2026-07-10",
-    "science:Mendeleev and the periodic table": "2026-07-03",
     "science:The discovery of the cell": "2026-07-07",
     "science:The discovery of the structure of DNA": "2026-07-06",
     "science:The double-slit experiment and the nature of light": "2026-07-12",
@@ -14085,13 +14067,11 @@
     "technology:The Mother of All Demos": "2026-07-09",
     "technology:The Wright brothers and the first powered flight": "2026-07-04",
     "technology:The development of the first nuclear reactors": "2026-07-07",
-    "technology:The first web browser": "2026-07-03",
     "technology:The transistor at Bell Labs": "2026-07-14",
     "world_history:The Battle of Stalingrad": "2026-07-07",
     "world_history:The McCarthy era and the Red Scare": "2026-07-10",
     "world_history:The Russian Revolution of 1917": "2026-07-09",
     "world_history:The Watergate scandal": "2026-07-25",
-    "world_history:The assassination of Archduke Franz Ferdinand": "2026-07-03",
     "world_history:The assassination of John F. Kennedy": "2026-07-14",
     "world_history:The fall of the Berlin Wall": "2026-07-12",
     "world_history:The fall of the Romanovs": "2026-07-11",
@@ -14101,7 +14081,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-02T02:38:21.664931+00:00"
+    "ts": "2026-08-02T16:07:21.705940+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -14137,11 +14117,9 @@
     "9cf78ee44cb96c21",
     "7621aad01d0821be"
   ],
-  "learn_last_sent": "2026-08-01",
-  "life_dashboard_last_week": "2026-W30",
-  "meditate_slots_sent": [
-    "2026-08-01|18:00"
-  ],
+  "learn_last_sent": "2026-08-02",
+  "life_dashboard_last_week": "2026-W31",
+  "meditate_slots_sent": [],
   "music_discovery_seen": [
     5425093,
     4685222,
@@ -14355,7 +14333,9 @@
     1032,
     6174,
     96788,
-    4594932
+    4594932,
+    1955461,
+    83001892
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14552,15 +14532,6 @@
         "name": "SYML"
       }
     },
-    "617f8731fa6b0071": {
-      "applied": null,
-      "created": "2026-07-19T15:08:38.056470+00:00",
-      "kind": "artist",
-      "label": "THE ORAL CIGARETTES",
-      "payload": {
-        "name": "THE ORAL CIGARETTES"
-      }
-    },
     "6239a7227975628d": {
       "applied": null,
       "created": "2026-07-25T15:08:36.880599+00:00",
@@ -14678,13 +14649,13 @@
         "name": "Wire"
       }
     },
-    "aed24c64b709a60a": {
+    "b4dcc8d3e8f7f3be": {
       "applied": null,
-      "created": "2026-07-19T12:08:34.535665+00:00",
+      "created": "2026-08-02T12:07:45.939212+00:00",
       "kind": "artist",
-      "label": "Fripside",
+      "label": "The Skullduggers",
       "payload": {
-        "name": "Fripside"
+        "name": "The Skullduggers"
       }
     },
     "c27be1dfb17ba405": {
@@ -14748,6 +14719,15 @@
       "label": "UNISON SQUARE GARDEN",
       "payload": {
         "name": "UNISON SQUARE GARDEN"
+      }
+    },
+    "f0f5a5a97b57a4fe": {
+      "applied": null,
+      "created": "2026-08-02T15:07:41.285981+00:00",
+      "kind": "artist",
+      "label": "Colm R. McGuinness",
+      "payload": {
+        "name": "Colm R. McGuinness"
       }
     },
     "f222c802e8adb459": {
@@ -14884,6 +14864,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "9d4f48cfc2929806",
     "c5c8cb9a5e96397b",
     "30d2e7218169c704",
     "fe7d334a1369cfa2",
@@ -15011,197 +14992,194 @@
   ],
   "recap_last_week": "2026-W31",
   "reminders_sent": [],
-  "sleep_slots_sent": [
-    "2026-08-01|21:00",
-    "2026-08-01|22:00"
-  ],
+  "sleep_slots_sent": [],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
     "d1203-liberty-5-pro-anc-earbuds-clear-calls",
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82668,
-  "spark_next_kind": "quote",
+  "spark_last_sent": 82670,
+  "spark_next_kind": "health",
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-02T00:09:48.104922+00:00",
+      "last_data": "2026-08-02T15:08:51.290090+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-02T00:09:50.697216+00:00",
+      "last_data": "2026-08-02T15:08:56.328696+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "apod": {
-      "last_data": "2026-08-01T21:09:37.410284+00:00",
+      "last_data": "2026-08-02T15:09:05.021749+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-01T21:08:19.093787+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "deals": {
-      "last_data": "2026-08-02T00:09:23.195810+00:00",
-      "last_data_count": 11,
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_data": "2026-08-02T15:08:10.626696+00:00",
+      "last_data_count": 12,
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "energy": {
-      "last_data": "2026-08-02T00:09:33.272856+00:00",
+      "last_data": "2026-08-02T15:08:38.585335+00:00",
       "last_data_count": 69,
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "energy_learn": {
-      "last_data": "2026-08-01T12:09:30.082618+00:00",
+      "last_data": "2026-08-02T12:09:18.012979+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-02T12:07:33.364765+00:00"
     },
     "fda": {
-      "last_data": "2026-08-02T00:09:23.672900+00:00",
+      "last_data": "2026-08-02T15:08:27.010111+00:00",
       "last_data_count": 7,
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-01T21:09:29.385793+00:00",
+      "last_data": "2026-08-02T15:08:53.388004+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-01T21:08:19.093787+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "fx": {
-      "last_data": "2026-08-02T00:09:48.301880+00:00",
+      "last_data": "2026-08-02T15:08:51.444932+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "games": {
       "last_data": "2026-07-27T12:08:27.690467+00:00",
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-02T00:08:36.407575+00:00",
+      "last_data": "2026-08-02T15:07:43.374695+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-01T21:09:04.293841+00:00",
-      "last_data_count": 230,
-      "last_ok": "2026-08-01T21:08:19.093787+00:00"
+      "last_data": "2026-08-02T15:08:26.497885+00:00",
+      "last_data_count": 229,
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "habits": {
-      "last_data": "2026-08-02T02:38:25.347389+00:00",
+      "last_data": "2026-08-02T16:07:23.568952+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-02T02:38:21.664931+00:00"
+      "last_ok": "2026-08-02T16:07:21.705940+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-01T21:09:34.916023+00:00",
+      "last_data": "2026-08-02T15:09:02.606537+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-01T21:08:19.093787+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "iss": {
-      "last_data": "2026-08-02T00:09:49.829144+00:00",
-      "last_data_count": 4,
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_data": "2026-08-02T15:08:54.993944+00:00",
+      "last_data_count": 3,
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-01T21:09:35.801134+00:00",
+      "last_data": "2026-08-02T15:09:03.432271+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-01T21:08:19.093787+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "launches": {
-      "last_data": "2026-08-02T00:09:49.314845+00:00",
+      "last_data": "2026-08-02T15:08:54.340194+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "learn": {
-      "last_data": "2026-08-01T12:09:26.119203+00:00",
+      "last_data": "2026-08-02T12:09:14.139942+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-01T12:07:41.714421+00:00"
+      "last_ok": "2026-08-02T12:07:33.364765+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "marine": {
-      "last_data": "2026-08-01T21:09:36.946246+00:00",
+      "last_data": "2026-08-02T15:09:04.591316+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-01T21:08:19.093787+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "music": {
-      "last_data": "2026-08-02T00:08:34.485202+00:00",
+      "last_data": "2026-08-02T15:07:40.415362+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-02T00:09:33.995716+00:00",
+      "last_data": "2026-08-02T15:08:39.271174+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "quakes": {
-      "last_data": "2026-08-02T00:09:47.553821+00:00",
-      "last_data_count": 46,
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_data": "2026-08-02T15:08:50.737732+00:00",
+      "last_data_count": 51,
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "research": {
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-02T00:09:17.343057+00:00",
+      "last_data": "2026-08-02T15:08:02.919826+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "spark": {
-      "last_data": "2026-08-01T06:09:26.876196+00:00",
-      "last_data_count": 44,
-      "last_ok": "2026-08-01T06:08:19.992853+00:00"
+      "last_data": "2026-08-02T06:09:05.752649+00:00",
+      "last_data_count": 311,
+      "last_ok": "2026-08-02T06:07:33.246807+00:00"
     },
     "spending": {
       "last_data_count": 0,
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-02T02:38:23.901552+00:00",
+      "last_data": "2026-08-02T16:07:22.637859+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-02T02:38:21.664931+00:00"
+      "last_ok": "2026-08-02T16:07:21.705940+00:00"
     },
     "uv": {
-      "last_data": "2026-08-01T21:09:36.484243+00:00",
+      "last_data": "2026-08-02T15:09:04.030521+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-01T21:08:19.093787+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "weather": {
-      "last_data": "2026-08-02T00:09:33.566926+00:00",
+      "last_data": "2026-08-02T15:08:38.793067+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-02T00:09:52.882928+00:00",
+      "last_data": "2026-08-02T15:08:58.694387+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-02T00:08:21.467924+00:00"
+      "last_ok": "2026-08-02T15:07:27.690220+00:00"
     }
   },
   "twitch_live": [],
@@ -15209,7 +15187,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165336"
+    "last_full_window": "165341"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15220,9 +15198,12 @@
   "watchdog_data_outages": {},
   "watchdog_outages": {},
   "water_slots_sent": [
-    "2026-08-01|05:30"
+    "2026-08-02|05:30"
   ],
   "weather_seen_ids": [
+    "de9f2c21860361dc",
+    "321579631cada11b",
+    "09d36294c2c88c6e",
     "2ca8e2156be1240d",
     "6f027caa328642e8",
     "98f2ca8cb2ed7b33",
@@ -15419,10 +15400,7 @@
     "b8925b8d56a29114",
     "26bc9b795e6732d9",
     "79295b15485f6925",
-    "9fd82d1082df7ed4",
-    "e9e3a7ce6bdb8e7a",
-    "85e843cd68b050e8",
-    "cc6752a9edf6d459"
+    "9fd82d1082df7ed4"
   ],
   "wikiquote_last_category": "activists_thinkers",
   "wikiquote_last_sent": "2026-07-14T4",
@@ -15434,7 +15412,7 @@
     "activists_thinkers:Malala Yousafzai": "2026-07-12",
     "activists_thinkers:Martin Luther King, Jr.": "2026-07-09",
     "activists_thinkers:Mother Teresa": "2026-07-20",
-    "activists_thinkers:Ralph Waldo Emerson": "2026-07-08",
+    "activists_thinkers:Ralph Waldo Emerson": "2026-08-02",
     "activists_thinkers:Rosa Parks": "2026-07-10",
     "activists_thinkers:Susan B. Anthony": "2026-07-14",
     "innovators_artists:Buckminster Fuller": "2026-07-12",
