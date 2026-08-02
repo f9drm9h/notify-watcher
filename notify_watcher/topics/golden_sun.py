@@ -27,7 +27,7 @@ Sources (all in ``monitors.json`` -> ``golden_sun``, no keys):
   other news topics and kept only when the headline itself names the game.
 
 Everything downstream — scoring, push/digest/drop, per-id dedup, silent
-seeding — is news.route, exactly as games/movies use it. A fetch failure in
+seeding — is news.route, exactly as games uses it. A fetch failure in
 any source is logged and skipped so the others still report; if every source
 fails before the first seed, seeding is deferred to the next healthy run so a
 dead first run can't make the next one blast a backlog.

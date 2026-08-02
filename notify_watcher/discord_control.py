@@ -7,7 +7,7 @@ queue that both ends can reach. The only thing that changes is the transport —
 ntfy.sh becomes one private Discord channel (``DISCORD_CONTROL_CHANNEL``):
 
   * The always-on gateway bot (``bot.py``) turns a button tap into a command
-    string (``MUTE:movies:24``) and POSTs it to the control channel.
+    string (``MUTE:games:24``) and POSTs it to the control channel.
   * The scheduled sweep (``notify_watcher.main``) drains that channel at the top
     of every run with one REST GET and feeds each command into the EXISTING
     :func:`notify_watcher.control.dispatch`. The command grammar, the handlers,
@@ -15,7 +15,7 @@ ntfy.sh becomes one private Discord channel (``DISCORD_CONTROL_CHANNEL``):
     unchanged — only where the bytes arrive from is different.
 
 Because the runner reads the channel directly, **free-text admin commands typed
-straight into the channel** (``status movies``, ``explain fx``) work with no bot
+straight into the channel** (``status games``, ``explain fx``) work with no bot
 running at all; only *button* taps need ``bot.py`` up to translate the
 interaction into a channel message.
 
@@ -54,7 +54,7 @@ log = logging.getLogger(__name__)
 API_BASE = discord_delivery.API_BASE
 
 # custom_id namespace for our buttons: ``nw|<command>`` where <command> is the
-# very same grammar control.dispatch understands (MUTE:movies:24, READ:<id>...).
+# very same grammar control.dispatch understands (MUTE:games:24, READ:<id>...).
 # Discord caps a custom_id at 100 chars; every command we emit is far shorter.
 CUSTOM_ID_PREFIX = "nw|"
 

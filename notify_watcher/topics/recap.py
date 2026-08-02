@@ -7,7 +7,7 @@ calm push on the first daily run of each ISO week (Monday ~08:00 DR):
 
     Your week in notifications
     14 live pushes, 31 digested, 52 dropped
-    Busiest: movies (61), fda (9), twitch (4)
+    Busiest: games (61), fda (9), twitch (4)
     Top story: [82] Hurricane watch issued for the Dominican Republic
     All 30 topics healthy
 

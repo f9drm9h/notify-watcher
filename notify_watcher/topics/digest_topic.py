@@ -106,14 +106,14 @@ def run(state: dict) -> dict:
     if (state.get(digest.BUFFER_KEY)
             and state.get(digest.LAST_SENT_KEY) != _dt.date.today().isoformat()):
         header = _weather_line(state)
-    # Reply buttons: a fixed pair of 24h mutes (movies/games, the two
-    # chattiest topics). A mute defers the topic's live pushes into the next
-    # digest and drops its digest chatter; critical alerts still ring (see
-    # events._apply_mute). These descriptors always attach; the transport only
-    # renders them when the control loop is on (discord_control.enabled()), so
-    # the flush push stays byte-identical to before when it is off.
+    # Reply buttons: a 24h mute for games, the chattiest remaining topic (the
+    # movies mute retired with the topic). A mute defers the topic's live pushes
+    # into the next digest and drops its digest chatter; critical alerts still
+    # ring (see events._apply_mute). These descriptors always attach; the
+    # transport only renders them when the control loop is on
+    # (discord_control.enabled()), so the flush push stays byte-identical to
+    # before when it is off.
     actions = [a for a in (
-        control.make_action("Mute movies 24h", "MUTE:movies:24"),
         control.make_action("Mute games 24h", "MUTE:games:24"),
         _follow_action(state),
     ) if a]

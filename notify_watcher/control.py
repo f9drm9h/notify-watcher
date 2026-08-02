@@ -4,7 +4,7 @@ This module owns the transport-neutral core of the control loop: the command
 grammar, the per-verb handlers, ``make_action`` (the ``{label, command}`` button
 descriptor every topic builds), ``dispatch`` (routes a command string to its
 handler), and the free-text admin replies (``status``/``explain``). A small
-command string — ``DONE:water``, ``SNOOZE:passport:60``, ``MUTE:movies:24`` —
+command string — ``DONE:water``, ``SNOOZE:passport:60``, ``MUTE:games:24`` —
 flows in from a button tap or a typed message; mutating commands update state
 before topics run, so a command takes effect in the same run that reads it.
 
@@ -145,7 +145,7 @@ def make_action(label: str, command: str) -> dict:
     ``command``; the bot relays a tap's command back to the control channel, where
     the next sweep dispatches it through :func:`dispatch`.
 
-    ``command`` is the same strict grammar dispatch understands (``MUTE:movies:24``,
+    ``command`` is the same strict grammar dispatch understands (``MUTE:games:24``,
     ``READ:<event_id>``). The descriptor is always returned — the kill switch now
     lives in the transport (``discord_control.enabled()``), so a build with no
     control channel configured simply renders no buttons.
@@ -396,7 +396,7 @@ def _topic_label(topic: str) -> str:
 
 
 def _topic_verb(label: str, singular: str, plural: str) -> str:
-    """Use natural wording for plural-looking topic labels such as Movies."""
+    """Use natural wording for plural-looking topic labels such as Games."""
     if label.endswith("News"):
         return singular
     return plural if label.endswith("s") else singular

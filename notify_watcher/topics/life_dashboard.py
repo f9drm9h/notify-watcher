@@ -53,7 +53,7 @@ SUNDAY = 6  # date.weekday(): Monday=0 ... Sunday=6
 # Event-log topic groupings for the themed sections.
 _WEATHER_TOPICS = ("weather", "onamet", "marine")
 _ENV_TOPICS = ("uv", "air_quality")
-_RELEASE_TOPICS = ("movies", "games")
+_RELEASE_TOPICS = ("games",)
 
 
 def _utcnow() -> _dt.datetime:
@@ -215,7 +215,7 @@ def _section_weather(entries: list[dict]) -> str | None:
 
 
 def _section_entertainment(entries: list[dict]) -> str | None:
-    """🎬 Top movie/game release of the week + Golden Sun and AI news that fired."""
+    """🎬 Top game release of the week + Golden Sun and AI news that fired."""
     lines: list[str] = []
 
     releases = _of_topic(entries, *_RELEASE_TOPICS)

@@ -52,7 +52,6 @@ from .topics import (
     learn,
     life_dashboard,
     marine,
-    movies,
     music,
     onamet,
     outages,
@@ -101,7 +100,6 @@ TOPICS: list[tuple[str, Topic]] = [
     # research is the on-demand /research article summary: a no-op unless the
     # dispatch carried NOTIFY_RESEARCH_URL, so it costs nothing on schedule.
     ("research", research.run),
-    ("movies", movies.run),
     # games is weekly: it self-gates to the first daily run of each ISO week
     # (see games.run), batching release-date + news updates into one catch-up.
     ("games", games.run),
@@ -438,7 +436,7 @@ def main() -> int:
 
     # Reply-button/control channel: poll + dispatch BEFORE the topic loop so a
     # mutating command takes effect in the same run that reads it. Free-text
-    # diagnostics ("status movies") reply immediately from the current state.
+    # diagnostics ("status games") reply immediately from the current state.
     # The transport is Discord (a private DISCORD_CONTROL_CHANNEL); the legacy
     # ntfy poll is kept but is a no-op unless NTFY_CONTROL_TOPIC is still set.
     # Both feed the same control.dispatch — the command grammar is shared.
@@ -484,7 +482,7 @@ def main() -> int:
     # _selected_topics silently drops names that aren't real topics, so a
     # misspelled /run topic:x would otherwise check nothing and reply nothing.
     # Call it out on a dispatch run — independently of the success/failure reply,
-    # since a mixed list (movies,bogus) can both run a topic and name an unknown.
+    # since a mixed list (games,bogus) can both run a topic and name an unknown.
     known_names = {name for name, _ in TOPICS}
     requested = [n.strip() for n in os.environ.get("NOTIFY_ONLY", "").split(",") if n.strip()]
     unknown = [n for n in requested if n not in known_names]

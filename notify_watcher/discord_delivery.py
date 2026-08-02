@@ -94,7 +94,6 @@ CATEGORY_BY_TOPIC = {
     "music": "discovery",
     "youtube": "discovery",
     "games": "discovery",
-    "movies": "discovery",
     "deals": "discovery",
     "groceries": "discovery",
     "golden_sun": "discovery",
