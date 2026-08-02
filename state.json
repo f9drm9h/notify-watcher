@@ -548,18 +548,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "At sunset, an alignment of rainbow and mountain shadow was captured in this remarkable snapshot. The stunning view was recorded from a fire lookout on Smith Peak in the Plumas National Forest near Portola, California on July 13. Still, near sunset it's no accident that the...",
-      "id": "a54b96571ee258a2",
-      "score": 60,
-      "severity": "low",
-      "source": "NASA APOD",
-      "title": "APOD: Shadow and Rainbow",
-      "topic": "apod",
-      "ts": "2026-07-18T12:09:04.270361+00:00",
-      "url": "https://apod.nasa.gov/apod/image/2607/ShadowandRainbow_Loschiavo.jpg"
-    },
-    {
-      "action": "push",
       "detail": "",
       "id": "d2c1b22f953bf9e6",
       "score": 62,
@@ -12545,6 +12533,18 @@
       "topic": "spark",
       "ts": "2026-08-02T00:09:55.081644+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Second call: time to actually head to bed. Tomorrow starts tonight.",
+      "id": "53cb07290c390a6e",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-08-02T01:08:23.240162+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -13849,11 +13849,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1532917873910087914": {
-      "channel": "1515504253345726558",
-      "habit": "sleep",
-      "sent": "2026-08-01T01:08:20.318376+00:00"
-    },
     "1532932982426435775": {
       "channel": "1515504253345726558",
       "habit": "sleep",
@@ -13878,6 +13873,11 @@
       "channel": "1515504253345726558",
       "habit": "cleaning",
       "sent": "2026-08-01T22:08:19.066451+00:00"
+    },
+    "1533280276204224734": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-08-02T01:08:23.240162+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-02",
@@ -14173,7 +14173,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-02T00:53:17.864066+00:00"
+    "ts": "2026-08-02T01:08:21.383995+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -15707,7 +15707,9 @@
   ],
   "recap_last_week": "2026-W31",
   "reminders_sent": [],
-  "sleep_slots_sent": [],
+  "sleep_slots_sent": [
+    "2026-08-01|21:00"
+  ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
     "d1203-liberty-5-pro-anc-earbuds-clear-calls",
@@ -15798,9 +15800,9 @@
       "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "habits": {
-      "last_data": "2026-08-02T00:53:19.773232+00:00",
+      "last_data": "2026-08-02T01:08:25.314003+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-02T00:53:17.864066+00:00"
+      "last_ok": "2026-08-02T01:08:21.383995+00:00"
     },
     "holidays": {
       "last_data": "2026-08-01T21:09:34.916023+00:00",
@@ -15883,9 +15885,9 @@
       "last_ok": "2026-08-02T00:08:21.467924+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-02T00:53:18.873023+00:00",
+      "last_data": "2026-08-02T01:08:23.240002+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-02T00:53:17.864066+00:00"
+      "last_ok": "2026-08-02T01:08:21.383995+00:00"
     },
     "uv": {
       "last_data": "2026-08-01T21:09:36.484243+00:00",
