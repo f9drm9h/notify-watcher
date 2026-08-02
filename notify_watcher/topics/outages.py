@@ -243,10 +243,28 @@ def _edeeste_key(date: _dt.date, zone: str) -> str:
     return ids.short(f"edeeste|{date.isoformat()}|{_fold(zone)}")
 
 
-def _edeeste_collect(cfg: dict, today: _dt.date) -> list[dict] | None:
+def _day_section_count(text: str, start: _dt.date, end: _dt.date) -> int:
+    """Pure: how many day sections the layout parse yielded from one PDF.
+
+    Independent of the watched zones, so it measures the PARSE rather than the
+    result: a healthy week produces ~7 regardless of whether Hainamosa appears
+    in any of them.
+    """
+    folded = [_fold(ln) for ln in text.splitlines()]
+    return sum(1 for _ in _day_sections(_panel_lines(folded), start, end))
+
+
+def _edeeste_collect(
+    cfg: dict, today: _dt.date
+) -> tuple[list[dict], int, _dt.date | None] | None:
     """Fetch the newest still-relevant weekly PDFs and scan them for the
     watched zones. None means the archive itself was unreachable (leave the
-    seen baseline alone); a per-package failure just skips that package."""
+    seen baseline alone); a per-package failure just skips that package.
+
+    Returns ``(watched_zone_rows, day_sections_parsed, newest_week_end)`` — see
+    the day-count comment below for why the first two must not be collapsed into
+    one, and ``newest_end`` for why the third is needed.
+    """
     url = cfg.get("archive_url") or EDEESTE_ARCHIVE_URL
     try:
         resp = requests.get(url, headers=HEADERS, timeout=40)
@@ -261,11 +279,19 @@ def _edeeste_collect(cfg: dict, today: _dt.date) -> list[dict] | None:
 
     zones = cfg.get("zones") or []
     rows: list[dict] = []
+    parsed_days = 0
     read = 0
+    # The newest week range on the archive, whether or not it is still current.
+    # Needed to tell "EDEESTE has stopped publishing" from "their PDF layout
+    # changed" — both leave us with zero schedule rows, but only the second is
+    # ours to fix, so the health message must not guess.
+    newest_end: _dt.date | None = None
     for pkg_url, title in packages:
         week = _parse_week_range(title)
         if week is None:
             continue
+        if newest_end is None or week[1] > newest_end:
+            newest_end = week[1]
         if week[1] < today:
             break  # newest-first: everything after this is older still
         if read >= MAX_PACKAGES:
@@ -286,12 +312,22 @@ def _edeeste_collect(cfg: dict, today: _dt.date) -> list[dict] | None:
         except Exception as exc:  # noqa: BLE001 - skip a bad package, keep the rest
             log.error("EDEESTE package %r failed: %s", title, exc)
             continue
+        # Count the day sections this PDF yielded, separately from the zone
+        # hits. This is the "did we actually READ the schedule" signal: zone
+        # hits are zero on any quiet week, but day sections go to zero only when
+        # the layout stops parsing. Reporting the two as one number is what let
+        # a broken parse hide behind a normal quiet week.
+        days = _day_section_count(text, week[0], week[1])
+        parsed_days += days
         hits = _scan_pdf_text(text, week[0], week[1], zones)
-        log.info("EDEESTE %r: %d watched-zone day(s)", title, len(hits))
+        log.info("EDEESTE %r: %d day section(s) parsed, %d watched-zone day(s)",
+                 title, days, len(hits))
+        if not days:
+            log.error("EDEESTE %r: parsed 0 day sections (layout change?)", title)
         for r in hits:
             r["url"] = pkg_url
             rows.append(r)
-    return rows
+    return rows, parsed_days, newest_end
 
 
 def _run_edeeste(state: dict, cfg: dict, lead_days: int,
@@ -301,10 +337,32 @@ def _run_edeeste(state: dict, cfg: dict, lead_days: int,
     if PdfReader is None:
         log.error("pypdf is not installed; skipping EDEESTE outages")
         return state, (False, 0, "EDEESTE: pypdf is not installed")
-    rows = _edeeste_collect(cfg, today)
-    if rows is None:
+    collected = _edeeste_collect(cfg, today)
+    if collected is None:
         return state, (False, 0,
                        "EDEESTE archive unreachable or parsed to 0 packages")
+
+    # data_count is the number of DAY SECTIONS the PDFs yielded, not the number
+    # that matched a watched zone. Reporting hits conflated "the schedule parsed
+    # fine and Hainamosa isn't in it this week" (normal, and the usual case)
+    # with "the PDF layout changed and we now parse nothing" (broken) — both
+    # answered zero, so the health signal could never tell them apart and
+    # `outages` looked healthy either way.
+    rows, parsed_days, newest_end = collected
+    if not parsed_days:
+        # Two very different faults, and the reader needs to know which: an
+        # archive whose newest package already expired means EDEESTE stopped
+        # publishing (nothing to fix here, but outage alerts ARE dead); a
+        # current package that yields no day sections means their PDF layout
+        # moved and the parser needs work.
+        if newest_end is not None and newest_end < today:
+            stale = (today - newest_end).days
+            return state, (False, 0,
+                           f"EDEESTE has published no schedule covering today; "
+                           f"newest package ends {newest_end.isoformat()} "
+                           f"({stale}d ago)")
+        return state, (False, 0,
+                       "EDEESTE PDFs parsed to 0 day sections (layout change?)")
 
     seen = state.get(EDEESTE_STATE_KEY)
     if seen is None:
@@ -312,7 +370,7 @@ def _run_edeeste(state: dict, cfg: dict, lead_days: int,
                                     for r in rows][:CAP]
         log.info("seeded %s baseline with %d id(s) (no alerts on first run)",
                  EDEESTE_STATE_KEY, len(state[EDEESTE_STATE_KEY]))
-        return state, (True, len(rows), "")
+        return state, (True, parsed_days, "")
 
     seen = ids.normalize_seen(seen)
     seen_set = set(seen)
@@ -346,7 +404,7 @@ def _run_edeeste(state: dict, cfg: dict, lead_days: int,
     if pushed:
         log.info("outages (EDEESTE): %d pushed", pushed)
     state[EDEESTE_STATE_KEY] = (fresh + seen)[:CAP]
-    return state, (True, len(rows), "")
+    return state, (True, parsed_days, "")
 
 
 # --------------------------------------------------------------------------

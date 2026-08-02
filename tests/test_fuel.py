@@ -32,6 +32,95 @@ Tasa de Cambio Promedio-Mercado Bancario, aplicada para todos los combustibles R
 """
 
 
+# What pypdf ACTUALLY returns for a live MICM notice (corte 01-07 AGO 2026,
+# trimmed): the whole price table on ONE line, with no separator between a
+# fuel's name and its first figure or between adjacent figures. Parsing this
+# form line-by-line is what produced six identical RD$3,380.07 prices — the
+# "Cilindros de 100 Libras" cylinder price, the largest number on the line — for
+# the entire life of the topic. Keep this fixture byte-real: an idealized
+# one-row-per-line sample is exactly what let the bug ship green.
+COLLAPSED_TEXT = (
+    "TIPO *PRECIO PRECIOAJUSTE VARIACIONDEPARIDADLEY 112-00LEY 495-06"
+    "DISTRIBUIDORDETALLISTACOMISIONOFICIALPORAUM/ (DISM.)COMBUSTIBLE"
+    "IMPORTACIONAD-VALOREMTRANSPORTE(RD$/GL)RESOL NO.(RD$/GL.)"
+    "REFORMA FISCAL201-1416%AVTUR  6.5%"
+    "Gasolina Premium191.0471.8530.5716.5927.076.68343.80(5.70)0.00"
+    "Gasolina Regular167.0163.8326.7216.5927.076.68307.90(5.40)0.00"
+    "Gasoil Regular159.9428.0625.5914.2823.756.68258.30(3.50)0.00"
+    "Gasoil Regular EGP-C ( Inter. y No Interconectado)"
+    "238.7628.0638.205.240.006.68316.940.0012.66"
+    "Gasoil Regular EGP-T ( Inter. y No Interconectado)"
+    "238.7628.0638.205.240.000.00310.260.0012.66"
+    "Gasoil Optimo184.5234.5329.5214.5224.036.68293.80(3.70)0.00"
+    "Avtur 247.666.3016.1015.530.006.68292.270.008.41"
+    "Kerosene245.4617.9939.269.1017.016.68335.50(4.50)8.60"
+    "Fuel Oil123.6117.9919.781.540.006.68169.600.000.06"
+    "Gas Licuado de Petróleo (GLP) **"
+    "84.580.0013.5311.7117.906.68134.400.000.80135.200.00"
+    "Cilindros de 100 Libras (25.00 Gls. Max.)***3,380.07"
+    "Cilindros de 50 Libras (12.50 Gls. Max.)1,690.04"
+)
+
+# The exact poison the broken parser banked in state.json.
+COLLAPSE_VICTIM = {name: 3380.07 for name, _ in fuel.FUELS}
+
+
+class CollapsedTableTest(unittest.TestCase):
+    """The real-world layout: no line breaks anywhere in the table."""
+
+    def test_each_fuel_gets_its_own_price(self):
+        prices = fuel._parse_prices(COLLAPSED_TEXT)
+        self.assertEqual(prices, {
+            "Gasolina Premium": 343.80,
+            "Gasolina Regular": 307.90,
+            "Gasoil Regular": 258.30,
+            "Gasoil Óptimo": 293.80,
+            "Kerosene": 335.50,
+            "GLP": 135.20,
+        })
+
+    def test_cylinder_price_never_leaks_into_a_fuel(self):
+        # The regression itself: 3,380.07 is the Cilindros row, not a fuel.
+        self.assertNotIn(3380.07, fuel._parse_prices(COLLAPSED_TEXT).values())
+
+    def test_egp_rows_do_not_shadow_consumer_gasoil(self):
+        # 316.94 / 310.26 are the power-generation variants on the same line.
+        self.assertEqual(fuel._parse_prices(COLLAPSED_TEXT)["Gasoil Regular"], 258.30)
+
+    def test_kerosene_stops_before_fuel_oil(self):
+        self.assertEqual(fuel._parse_prices(COLLAPSED_TEXT)["Kerosene"], 335.50)
+
+
+class ValidateTest(unittest.TestCase):
+    def test_good_parse_passes_through_unchanged(self):
+        prices = fuel._parse_prices(SAMPLE_TEXT)
+        self.assertEqual(fuel._validate(prices), (prices, ""))
+
+    def test_all_identical_prices_are_rejected(self):
+        clean, reason = fuel._validate({"Gasolina Premium": 300.0,
+                                        "Gasolina Regular": 300.0,
+                                        "Kerosene": 300.0})
+        self.assertEqual(clean, {})
+        self.assertIn("identical", reason)
+
+    def test_two_matching_prices_are_allowed(self):
+        # Premium and Regular CAN coincide; only 3+ is the collapse signature.
+        pair = {"Gasolina Premium": 300.0, "Gasolina Regular": 300.0}
+        self.assertEqual(fuel._validate(pair), (pair, ""))
+
+    def test_out_of_band_price_is_dropped_not_fatal(self):
+        clean, reason = fuel._validate({"Gasolina Premium": 343.80,
+                                        "Gasolina Regular": 307.90,
+                                        "GLP": 3380.07})
+        self.assertEqual(reason, "")
+        self.assertEqual(set(clean), {"Gasolina Premium", "Gasolina Regular"})
+
+    def test_the_original_bugs_output_is_rejected(self):
+        clean, reason = fuel._validate(COLLAPSE_VICTIM)
+        self.assertEqual(clean, {})
+        self.assertTrue(reason)
+
+
 class ParsePricesTest(unittest.TestCase):
     def test_official_prices_extracted(self):
         prices = fuel._parse_prices(SAMPLE_TEXT)
@@ -192,6 +281,77 @@ class RunHealthContractTest(unittest.TestCase):
         self.assertEqual(state[fuel.LAST_PDF_KEY], PDF_URL)
         self.assertEqual(state[fuel.LAST_PDF_HASH_KEY], fuel._hash_pdf(pdf_bytes))
         self.assertIn(fuel.LAST_PRICES_SEEN_AT_KEY, state)
+
+    def test_implausible_parse_reports_source_failed(self):
+        # A notice that parses but yields nonsense must reach the watchdog, not
+        # the digest. This is the case the topic used to swallow every week.
+        collapsed = ("Gasolina Premium 3,380.07 3,380.07 3,380.07\n"
+                     "Gasolina Regular 3,380.07 3,380.07 3,380.07\n"
+                     "Kerosene 3,380.07 3,380.07 3,380.07\n")
+        state: dict = {}
+        page = mock.Mock()
+        page.pages = [mock.Mock(extract_text=mock.Mock(return_value=collapsed))]
+        with mock.patch.object(fuel.requests, "get",
+                               side_effect=[_Resp(text=LISTING_HTML), _Resp()]), \
+                mock.patch("pypdf.PdfReader", return_value=page):
+            state = fuel.run(state)
+        status = self._status(state)
+        self.assertTrue(status["source_failed"])
+        # Dedup keys stay unwritten so the notice is retried, not banked.
+        self.assertNotIn(fuel.LAST_PDF_KEY, state)
+        self.assertNotIn(fuel.STATE_KEY, state)
+
+    def test_poisoned_baseline_reseeds_silently_instead_of_pushing(self):
+        # The upgrade run: real prices arrive while state still holds the old
+        # parser's RD$3,380.07. Diffing would fabricate a -90% crash alert.
+        pdf_bytes = b"new notice"
+        state = {fuel.STATE_KEY: dict(COLLAPSE_VICTIM)}
+        page = mock.Mock()
+        page.pages = [mock.Mock(extract_text=mock.Mock(return_value=COLLAPSED_TEXT))]
+        with mock.patch.object(fuel.requests, "get",
+                               side_effect=[_Resp(text=LISTING_HTML),
+                                            _Resp(content=pdf_bytes)]), \
+                mock.patch("pypdf.PdfReader", return_value=page), \
+                mock.patch.object(fuel.events, "emit") as emit:
+            state = fuel.run(state)
+        emit.assert_not_called()
+        self.assertEqual(state[fuel.STATE_KEY]["Gasolina Premium"], 343.80)
+        self.assertTrue(self._status(state)["ok"])
+
+    def test_poisoned_baseline_bypasses_the_cached_notice_shortcut(self):
+        # Same URL AND same hash: without the bypass the bad prices would sit
+        # in state until MICM happened to publish a new notice.
+        pdf_bytes = b"same notice"
+        state = {
+            fuel.LAST_PDF_KEY: PDF_URL,
+            fuel.LAST_PDF_HASH_KEY: fuel._hash_pdf(pdf_bytes),
+            fuel.STATE_KEY: dict(COLLAPSE_VICTIM),
+        }
+        page = mock.Mock()
+        page.pages = [mock.Mock(extract_text=mock.Mock(return_value=COLLAPSED_TEXT))]
+        with mock.patch.object(fuel.requests, "get",
+                               side_effect=[_Resp(text=LISTING_HTML),
+                                            _Resp(content=pdf_bytes)]), \
+                mock.patch("pypdf.PdfReader", return_value=page):
+            state = fuel.run(state)
+        self.assertEqual(state[fuel.STATE_KEY]["Kerosene"], 335.50)
+
+    def test_healthy_baseline_still_diffs_normally(self):
+        # The self-healing check must not swallow real week-over-week moves.
+        prev = dict(fuel._parse_prices(COLLAPSED_TEXT))
+        prev["Gasolina Premium"] = 300.00  # a real +14.6% move to 343.80
+        state = {fuel.STATE_KEY: prev}
+        page = mock.Mock()
+        page.pages = [mock.Mock(extract_text=mock.Mock(return_value=COLLAPSED_TEXT))]
+        with mock.patch.object(fuel.requests, "get",
+                               side_effect=[_Resp(text=LISTING_HTML),
+                                            _Resp(content=b"new")]), \
+                mock.patch("pypdf.PdfReader", return_value=page), \
+                mock.patch.object(fuel.events, "emit",
+                                  side_effect=lambda s, **k: s) as emit:
+            state = fuel.run(state)
+        emit.assert_called_once()
+        self.assertEqual(emit.call_args.kwargs["legacy_action"], "push")
 
     def test_same_url_changed_prices_are_processed(self):
         old_prices = fuel._parse_prices(SAMPLE_TEXT)

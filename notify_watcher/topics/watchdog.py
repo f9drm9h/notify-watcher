@@ -49,6 +49,15 @@ daily. A configured topic with no stamp yet starts its clock at first
 observation (``state["watchdog_data_baseline"]``), so enabling the check never
 alerts instantly.
 
+A THIRD check (``watchdog.empty_days``, also opt-in) covers what neither of the
+first two can see: a topic that is reachable, parses cleanly, and returns ZERO
+items every run. It has no error, so the outage check is silent; and it never
+stamps ``last_data`` at all — health.topic_status only stamps that when
+data_count > 0 — so the data check's clock never even starts. main.py stamps
+``empty_since`` on every ok-but-empty run instead, and this check ages that.
+The August 2026 audit found ``spending`` three weeks into exactly this state,
+reporting ok on every single run.
+
 DELIVERY CONTRACT: each bundle's state markers are written only AFTER that
 bundle's push returned. If Discord is down the push raises, the marker is not
 written, main.py records the watchdog as failed, and the next run re-sends —
@@ -80,6 +89,10 @@ TOPIC = "watchdog"
 OUTAGES_KEY = "watchdog_outages"
 DATA_OUTAGES_KEY = "watchdog_data_outages"
 DATA_BASELINE_KEY = "watchdog_data_baseline"
+# Ledger for the "reachable but returning nothing" check. Needs no baseline key:
+# its clock is main.py's empty_since stamp, which only exists once a topic has
+# actually reported an empty run, so enabling the check can never alert instantly.
+EMPTY_OUTAGES_KEY = "watchdog_empty_outages"
 # Pre-redesign keys, read once for migration then dropped (see _migrate).
 LEGACY_FAILING_SINCE_KEY = "watchdog_failing_since"
 LEGACY_ALERTED_KEY = "watchdog_alerted"
@@ -359,6 +372,43 @@ def _build_data_recovery(alerts: list[Transition], now: _dt.datetime) -> tuple[s
     return title, "\n".join(f"{a.name} — items are flowing again" for a in alerts)
 
 
+def _build_empty_message(alerts: list[Transition], now: _dt.datetime) -> tuple[str, str]:
+    if len(alerts) == 1:
+        title = f"Watchdog: '{alerts[0].name}' has been answering empty for {alerts[0].detail}"
+    else:
+        title = f"Watchdog: {len(alerts)} topics have been answering empty"
+    lines = [
+        f"{a.name} — reachable but returning zero items since {_fmt_ts(a.anchor)} "
+        f"({_fmt_age(now - a.anchor)}, threshold {a.detail}). The source is UP, so "
+        f"this is not an outage: either it genuinely has nothing, or the parser "
+        f"stopped understanding it."
+        for a in alerts
+    ]
+    return title, "\n".join(lines)
+
+
+def _build_empty_reminder(alerts: list[Transition], now: _dt.datetime) -> tuple[str, str]:
+    if len(alerts) == 1:
+        a = alerts[0]
+        title = f"Watchdog: '{a.name}' is STILL answering empty ({_fmt_age(now - a.anchor)})"
+    else:
+        title = f"Watchdog: {len(alerts)} topics are still answering empty"
+    lines = [
+        f"{a.name} — zero items for {_fmt_age(now - a.anchor)} "
+        f"(since {_fmt_ts(a.anchor)}), reminder #{a.reminders}; threshold {a.detail}"
+        for a in alerts
+    ]
+    return title, "\n".join(lines)
+
+
+def _build_empty_recovery(alerts: list[Transition], now: _dt.datetime) -> tuple[str, str]:
+    if len(alerts) == 1:
+        title = f"Watchdog: '{alerts[0].name}' is returning items again"
+    else:
+        title = f"Watchdog: {len(alerts)} topics are returning items again"
+    return title, "\n".join(f"{a.name} — no longer empty" for a in alerts)
+
+
 # --- emission ---------------------------------------------------------------
 
 def _emit_alert(state: dict, title: str, body: str, *,
@@ -526,6 +576,70 @@ def _check_data(state: dict, health: dict, cfg: dict, now: _dt.datetime) -> dict
     )
 
 
+def _check_empty(state: dict, health: dict, cfg: dict, now: _dt.datetime) -> dict:
+    """Opt-in "reachable but returning nothing for N days" check.
+
+    The third failure class, and the one the other two structurally cannot see.
+    The outage check needs an error; there is none — the fetch succeeded. The
+    data-staleness check needs a ``last_data`` stamp; there is none either,
+    because ``health.topic_status`` only stamps it when ``data_count > 0``, so a
+    topic that has ALWAYS answered empty never starts that clock. main.py stamps
+    ``empty_since`` for every ok-but-zero run instead, and this turns a long
+    enough run of them into the same three-phase lifecycle.
+
+    Opt-in per topic (``watchdog.empty_days``) for the same reason
+    ``data_stale_days`` is: only the config knows whether zero items means "the
+    scraper broke" or "nothing happened this week". ``outages`` legitimately
+    reports no scheduled cuts for weeks; ``spending`` reporting no transactions
+    for three weeks meant the mail ingest had quietly stopped.
+    """
+    empty_days = cfg.get("empty_days")
+    if not isinstance(empty_days, dict) or not empty_days:
+        return state
+    reminder_days = _num(cfg, "empty_reminder_days", DEFAULT_DATA_REMINDER_DAYS)
+
+    failing: dict[str, dict] = {}
+    for name in sorted(empty_days):
+        try:
+            days = float(empty_days[name])
+        except (TypeError, ValueError):
+            continue
+        if days <= 0:
+            continue
+        entry = health.get(name)
+        if not isinstance(entry, dict):
+            continue
+        since = _parse(entry.get("empty_since"))
+        # No stamp = the topic's last ok run carried items (or it never ran).
+        # Either way there is nothing quiet to report.
+        if since is None or now - since < _dt.timedelta(days=days):
+            continue
+        failing[name] = {"detail": f"{days:g}d", "anchor": since}
+
+    ledger_in = {k: v for k, v in (state.get(EMPTY_OUTAGES_KEY) or {}).items()
+                 if k in empty_days}
+    new, due, recovered, ledger = _track(
+        failing,
+        ledger_in if isinstance(ledger_in, dict) else {},
+        now,
+        delay=_dt.timedelta(0),
+        reminder=_dt.timedelta(days=reminder_days) if reminder_days > 0 else None,
+    )
+    # Date the outage from when the topic actually went quiet, not from the run
+    # that noticed — same reasoning as the data check.
+    for name, report in failing.items():
+        if report.get("anchor") is not None:
+            ledger[name]["since"] = report["anchor"].isoformat()
+    return _deliver(
+        state, ledger, now,
+        new=new, due=due, recovered=recovered,
+        key=EMPTY_OUTAGES_KEY,
+        render_new=_build_empty_message,
+        render_reminder=_build_empty_reminder,
+        render_recovery=_build_empty_recovery,
+    )
+
+
 def run(state: dict) -> dict:
     cfg = config.section("watchdog")
     health = state.get("topic_health")
@@ -535,5 +649,6 @@ def run(state: dict) -> dict:
     now = _dt.datetime.now(_dt.timezone.utc)
     state = _check_outages(state, health, cfg, now)
     state = _check_data(state, health, cfg, now)
+    state = _check_empty(state, health, cfg, now)
     _drop_legacy(state)
     return state

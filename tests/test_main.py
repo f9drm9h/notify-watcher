@@ -74,6 +74,37 @@ class RecordOutcomeTest(unittest.TestCase):
         self.assertTrue(ok)
         self.assertEqual(entry, {"last_ok": RUN_TS, "last_data_count": 6})
 
+    def test_empty_ok_report_starts_the_quiet_clock(self):
+        # ok + zero items: the source answered, so this is NOT an outage and
+        # last_ok is correct — but it starts the clock watchdog.empty_days ages.
+        entry: dict = {}
+        status = {"ok": True, "source_failed": False, "data_count": 0,
+                  "message": ""}
+        self.assertTrue(main._record_outcome(entry, status, adopted=True,
+                                             run_ts=RUN_TS))
+        self.assertEqual(entry["last_ok"], RUN_TS)
+        self.assertEqual(entry["empty_since"], RUN_TS)
+        self.assertEqual(entry["empty_runs"], 1)
+
+    def test_quiet_clock_anchors_on_the_first_empty_run(self):
+        # empty_since must NOT advance while the topic stays quiet, or the
+        # outage could never age past the threshold.
+        entry = {"empty_since": OLD_TS, "empty_runs": 4}
+        status = {"ok": True, "source_failed": False, "data_count": 0,
+                  "message": ""}
+        main._record_outcome(entry, status, adopted=True, run_ts=RUN_TS)
+        self.assertEqual(entry["empty_since"], OLD_TS)
+        self.assertEqual(entry["empty_runs"], 5)
+
+    def test_items_returning_clears_the_quiet_clock(self):
+        entry = {"empty_since": OLD_TS, "empty_runs": 9}
+        status = {"ok": True, "source_failed": False, "data_count": 3,
+                  "message": ""}
+        main._record_outcome(entry, status, adopted=True, run_ts=RUN_TS)
+        self.assertNotIn("empty_since", entry)
+        self.assertNotIn("empty_runs", entry)
+        self.assertEqual(entry["last_data_count"], 3)
+
     def test_source_failed_report_records_soft_failure_without_last_ok(self):
         entry = {"last_ok": OLD_TS}
         status = {"ok": False, "source_failed": True, "data_count": 0,

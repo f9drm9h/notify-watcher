@@ -335,3 +335,88 @@ class WeekBoundsTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class IngestEmailsTest(unittest.TestCase):
+    """The Gmail poll's health signal.
+
+    Until the August 2026 audit this function was untested and reported only
+    "new transactions recorded" — which is zero both on a quiet week and when
+    the mailbox has stopped delivering bank alerts entirely. The topic sat in
+    the second state for three weeks reporting ok on every run.
+    """
+
+    def _imap(self, message_ids, message_bytes):
+        """A stand-in imaplib.IMAP4_SSL returning a canned search + fetch."""
+        imap = mock.Mock()
+        imap.search.return_value = ("OK", [b" ".join(message_ids)])
+        imap.fetch.side_effect = [
+            ("OK", [(b"1", message_bytes[i])]) for i in range(len(message_ids))
+        ]
+        return imap
+
+    def _run(self, message_ids, bodies, key):
+        msgs = []
+        for body in bodies:
+            msg = email.message.EmailMessage()
+            msg["Subject"] = sp.DEFAULT_SUBJECT
+            msg["From"] = "alertas@bhd.com.do"
+            msg.set_content(body, subtype="html")
+            msgs.append(msg.as_bytes(policy=email.policy.default))
+        with tempfile.TemporaryDirectory() as tmp, \
+                mock.patch.dict("os.environ",
+                                {"GMAIL_USER": "u@example.com",
+                                 "GMAIL_APP_PASSWORD": "pw",
+                                 "SPENDING_KEY": key}), \
+                mock.patch.object(sp, "SPENDING_PATH",
+                                  Path(tmp) / "spending.json.enc"), \
+                mock.patch.object(sp.imaplib, "IMAP4_SSL",
+                                  return_value=self._imap(message_ids, msgs)):
+            return sp._ingest_emails({})
+
+    def test_reports_both_new_transactions_and_emails_seen(self):
+        added, emails = self._run([b"1"], [SAMPLE_HTML], Fernet.generate_key().decode())
+        self.assertGreater(added, 0)
+        self.assertEqual(emails, 1)
+
+    def test_quiet_week_still_reports_the_emails_it_saw(self):
+        # Same alert ingested twice: nothing NEW, but the mailbox is clearly
+        # alive. Health must see 1, not 0.
+        key = Fernet.generate_key().decode()
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "spending.json.enc"
+            msg = email.message.EmailMessage()
+            msg["Subject"] = sp.DEFAULT_SUBJECT
+            msg.set_content(SAMPLE_HTML, subtype="html")
+            raw = msg.as_bytes(policy=email.policy.default)
+            env = {"GMAIL_USER": "u@example.com",
+                   "GMAIL_APP_PASSWORD": "pw", "SPENDING_KEY": key}
+            with mock.patch.dict("os.environ", env), \
+                    mock.patch.object(sp, "SPENDING_PATH", path):
+                for _ in range(2):
+                    with mock.patch.object(
+                            sp.imaplib, "IMAP4_SSL",
+                            return_value=self._imap([b"1"], [raw])):
+                        added, emails = sp._ingest_emails({})
+        self.assertEqual(added, 0)      # already recorded
+        self.assertEqual(emails, 1)     # but the pipe is alive
+
+    def test_empty_mailbox_reports_zero_emails_and_warns(self):
+        # The three-week failure: no bank alerts at all in the lookback window.
+        with tempfile.TemporaryDirectory() as tmp, \
+                mock.patch.dict("os.environ",
+                                {"GMAIL_USER": "u@example.com",
+                                 "GMAIL_APP_PASSWORD": "pw",
+                                 "SPENDING_KEY": Fernet.generate_key().decode()}), \
+                mock.patch.object(sp, "SPENDING_PATH",
+                                  Path(tmp) / "spending.json.enc"), \
+                mock.patch.object(sp.imaplib, "IMAP4_SSL",
+                                  return_value=self._imap([], [])), \
+                self.assertLogs(sp.log, level="WARNING") as logs:
+            added, emails = sp._ingest_emails({})
+        self.assertEqual((added, emails), (0, 0))
+        self.assertIn("no bank transaction emails", "\n".join(logs.output))
+
+    def test_unconfigured_returns_a_pair(self):
+        with mock.patch.dict("os.environ", {}, clear=True):
+            self.assertEqual(sp._ingest_emails({}), (0, 0))

@@ -21,6 +21,32 @@ its row. The week-over-week "variación" column is small and the parenthesized
 negatives lose their sign under ``float`` coercion anyway, so the heuristic holds
 for every fuel including GLP (whose row appends a post-adjustment final price,
 also the maximum).
+
+ROWS ARE FOUND BY LABEL, NOT BY LINE (August 2026 reliability audit). The
+original parser scanned line by line and took the maximum of any line naming a
+fuel. That silently produced garbage for the whole life of this topic: pypdf
+extracts the real notice as ONE unbroken line per page — the entire price table
+arrives with no separators at all ("…Gasolina Premium191.0471.8530.57…") — so
+every fuel pattern matched that same line and every fuel got the maximum of the
+WHOLE TABLE. That maximum is the "Cilindros de 100 Libras" LPG-cylinder price,
+which is why state.json carried six identical RD$3,380.07 prices instead of six
+different real ones. Nothing caught it: the fetch succeeded, six rows "parsed",
+health said ok, and because the bogus value was identical for every fuel the
+week-over-week diff was always "sin cambio" — a topic incapable of ever
+alerting, reporting itself healthy every single day.
+
+So a row is now the text BETWEEN one row label and the next, wherever the line
+breaks happen to fall. ``_ROW_LABEL`` deliberately includes rows we do not
+track (the EGP variants, Avtur, Fuel Oil, the Cilindros block) precisely
+because their only job is to terminate the row before them.
+
+The parse is then VALIDATED before it is trusted (``_validate``), because the
+failure above was not a crash — it was a confident wrong answer, and no amount
+of fetch-level health checking can see one of those. Prices outside a plausible
+RD$/gal band are dropped, and an all-identical result is rejected outright as
+the signature of a collapsed table. A rejected parse reports
+``health.source_failed``, so a future layout change surfaces through the
+watchdog as an outage instead of quietly digesting nonsense for a month.
 """
 from __future__ import annotations
 
@@ -70,6 +96,32 @@ FUELS: list[tuple[str, re.Pattern]] = [
 _PDF_LINK = re.compile(r'href="([^"]+/wp-content/uploads/[^"]*AVISO[^"]*\.pdf[^"]*)"', re.I)
 _NUMBER = re.compile(r"\d{1,3}(?:,\d{3})*\.\d{2}")
 
+# Every label that starts a row of the price table, tracked or not. This is the
+# row DELIMITER set: a fuel's numbers are the text from the end of its own label
+# to the start of the next label, so untracked rows must appear here or the row
+# before them would swallow their numbers (Kerosene would run on into Fuel Oil,
+# GLP into the Cilindros cylinder prices — the exact value that poisoned this
+# topic). Order is irrelevant; the scan uses positions.
+_ROW_LABEL = re.compile(
+    r"Gasolina\s+Premium"
+    r"|Gasolina\s+Regular"
+    r"|Gasoil\s+Regular"          # also terminates at its own EGP-C/EGP-T rows
+    r"|Gasoil\s+[ÓO]ptimo"
+    r"|Avtur"
+    r"|Kerosene"
+    r"|Fuel\s+Oil"
+    r"|Gas\s+Licuado\s+de\s+Petr.leo"
+    r"|Cilindros\s+de",
+    re.I,
+)
+
+# Plausible consumer price band in RD$/gal. Real notices sit around RD$130-350;
+# this is deliberately wide so ordinary inflation never trips it, and narrow
+# enough to reject the cylinder prices (RD$1,690 / RD$3,380) and the stray
+# totals that a collapsed table hands back.
+_MIN_PRICE = 20.0
+_MAX_PRICE = 1000.0
+
 
 def _find_pdf(html: str) -> str | None:
     """Newest weekly-notice PDF URL on the listing page (the page lists newest
@@ -78,21 +130,83 @@ def _find_pdf(html: str) -> str | None:
     return _html.unescape(m.group(1)) if m else None
 
 
+# How far past a row label to look when deciding WHICH fuel the row is. Long
+# enough to see the " EGP-C"/" EGP-T" qualifier that distinguishes the
+# power-generation rows from the consumer ones, short enough never to reach the
+# next row.
+_QUALIFIER_WINDOW = 20
+
+
+def _rows(text: str) -> list[tuple[str, str]]:
+    """Pure: (label, body) for every price-table row, split by label position.
+
+    A row runs from the end of its own label to the start of the next label
+    anywhere in the document, so this works whether pypdf emits one line per row
+    (older notices, and the test fixture) or collapses the entire table onto a
+    single line (what the live notice actually does).
+
+    ``label`` carries the matched label plus a short lookahead into the row, so
+    a fuel pattern's negative lookahead ("Gasoil Regular" but not "Gasoil
+    Regular EGP-C") can still see the qualifier that follows it. Without that
+    window the EGP rows would be indistinguishable from the consumer row and
+    only their document order would keep them apart.
+    """
+    marks = list(_ROW_LABEL.finditer(text))
+    rows: list[tuple[str, str]] = []
+    for i, m in enumerate(marks):
+        end = marks[i + 1].start() if i + 1 < len(marks) else len(text)
+        rows.append((text[m.start(): m.end() + _QUALIFIER_WINDOW], text[m.end(): end]))
+    return rows
+
+
+def _validate(prices: dict[str, float]) -> tuple[dict[str, float], str]:
+    """Pure: drop implausible prices and reject a collapsed parse.
+
+    Returns ``(clean_prices, reason)``; a non-empty ``reason`` means the parse
+    must be treated as a SOURCE FAILURE rather than trusted, and is the message
+    the watchdog will show. Two rules, both aimed at confident wrong answers
+    rather than crashes:
+
+      * out-of-band values are dropped individually — one weird row should not
+        cost the other five;
+      * three or more fuels sharing one identical price is not a real notice.
+        Premium and Regular can coincide; six fuels never do, and that is the
+        exact signature of a table that collapsed into a single row.
+    """
+    clean = {n: p for n, p in prices.items() if _MIN_PRICE <= p <= _MAX_PRICE}
+    dropped = sorted(set(prices) - set(clean))
+    if not clean:
+        return {}, (f"every parsed price was outside RD${_MIN_PRICE:g}-"
+                    f"{_MAX_PRICE:g}/gal (layout change?)")
+    if len(clean) >= 3 and len(set(clean.values())) == 1:
+        value = next(iter(clean.values()))
+        return {}, (f"all {len(clean)} fuels parsed to the identical price "
+                    f"RD${value:.2f} (collapsed table?)")
+    if dropped:
+        log.warning("fuel: ignoring implausible price(s) for %s", ", ".join(dropped))
+    return clean, ""
+
+
 def _parse_prices(text: str) -> dict[str, float]:
     """Pure: extract {fuel: official RD$/gal} from the notice's text.
 
-    Scans line by line; the first line matching a fuel's pattern that carries at
-    least three numeric cells is its table row (the prose preamble mentions fuel
-    names too, but never with numbers). The official price is the row's maximum
-    (see module docstring). Fuels missing from a notice are simply absent.
+    Walks the table's row spans (see :func:`_rows`); the first row whose label
+    matches a tracked fuel and that carries at least three numeric cells is that
+    fuel's row, and the official price is the row's maximum (see the module
+    docstring). The three-cell floor keeps the prose preamble — which names
+    fuels but never tabulates them — from being read as a row. Fuels missing
+    from a notice are simply absent.
+
+    Returns the RAW parse; callers must run it through :func:`_validate` before
+    trusting it.
     """
     prices: dict[str, float] = {}
-    for line in text.splitlines():
-        nums = [float(n.replace(",", "")) for n in _NUMBER.findall(line)]
+    for label, body in _rows(text):
+        nums = [float(n.replace(",", "")) for n in _NUMBER.findall(body)]
         if len(nums) < 3:
             continue
         for name, pat in FUELS:
-            if name not in prices and pat.search(line):
+            if name not in prices and pat.search(label):
                 prices[name] = max(nums)
     return prices
 
@@ -166,8 +280,24 @@ def run(state: dict) -> dict:
         health.source_failed(state, TOPIC, f"notice PDF fetch failed: {exc}")
         return state
 
+    # Is the price baseline we are about to diff against trustworthy? A baseline
+    # banked by an earlier, broken parser is poison: diffing real prices against
+    # RD$3,380.07 would push a fabricated -90% crash on the very run that fixes
+    # the parser. Re-running the CURRENT validator over stored state is what
+    # makes that self-healing — any baseline this build would refuse to accept
+    # today is one it refuses to diff against today, whoever wrote it.
+    stored = state.get(STATE_KEY) or {}
+    _, stored_reason = _validate(stored) if stored else ({}, "")
+    if stored_reason:
+        log.warning("fuel: discarding unusable stored prices (%s); "
+                    "re-seeding silently from this notice", stored_reason)
+        stored = {}
+
     known_url = pdf_url == state.get(LAST_PDF_KEY)
-    if known_url and pdf_hash == state.get(LAST_PDF_HASH_KEY):
+    # Skip the cached-notice shortcut while the baseline is poisoned: the hash
+    # still matches, so without this the bad prices would sit there until MICM
+    # happens to publish a new notice.
+    if known_url and pdf_hash == state.get(LAST_PDF_HASH_KEY) and not stored_reason:
         log.info("fuel: no new notice (still %s, hash match)",
                  pdf_url.rsplit("/", 1)[-1])
         # The listing and PDF are alive and match the content we already parsed.
@@ -199,10 +329,23 @@ def run(state: dict) -> dict:
         log.error("fuel: no prices parsed from %s (layout change?)", pdf_url)
         health.source_failed(state, TOPIC, "no prices parsed from notice PDF (layout change?)")
         return state
+
+    # A parse that SUCCEEDED but produced nonsense is the failure this topic
+    # actually suffered, and it is invisible to every fetch-level check. Treat a
+    # rejected parse exactly like an unparseable one: report the source as
+    # failed so the watchdog raises it, and leave the dedup keys untouched so
+    # the notice is retried rather than banked.
+    prices, reason = _validate(prices)
+    if reason:
+        log.error("fuel: rejected implausible parse from %s: %s", pdf_url, reason)
+        health.source_failed(state, TOPIC, reason)
+        return state
     health.source_ok(state, TOPIC, data_count=len(prices))
     _stamp_prices_seen(state)
 
-    prev = state.get(STATE_KEY) or {}
+    # `stored`, not state[STATE_KEY]: a baseline the validator rejected was
+    # emptied above, which turns this run into a silent re-seed.
+    prev = stored
     if not prev:
         log.info("fuel: first run, seeded %d prices silently", len(prices))
     elif known_url and prices == prev:
