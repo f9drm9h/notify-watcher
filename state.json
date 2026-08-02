@@ -457,18 +457,6 @@
     {
       "action": "push",
       "detail": "",
-      "id": "171bc65a5566521b",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "New Spider-Man: Brand New Day Trailer Released & There\u2019s Only 1 Way To Watch It - SuperHeroHype",
-      "topic": "movies",
-      "ts": "2026-07-19T12:08:25.647358+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPUjdVUXM4WUJzOXFPTTI0bEVvUDEweGRCVUNFMWdVS284M2ZRNU1tU2lLemR5emtYdzNhcEVfVVVuN0EzNFhQdGtUMHphZ1ZZN1ZwQnJRR0Zmdk14RmNZT2Y2U1RDMG5rNXRVRDEteHhkc0tkZ0ZDUy1hQ2RyRk1OeUpCTHVncnBLWkpIV2ZlVjd3OHNtdUhhcnQyQdIBoAFBVV95cUxQeENMMVFpZmE0QVljVlVXcmpiLWJweVNhMFRNMXBEaVZvcDFVYkJSb0h3SENLa1diOHpaRHh3UkxOU0NBZjh5WVBVV1hWQ0JwWEJUZklWbllGTnFnOEdJd1hHbjg3anlqQzg0VkY3Y1lJOGhpc0s0dGg1NV9KRWVsSTRTMzVzajcxQmp2ZFZLdzVER1pvaE9VTDg2Sk5VamVk?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
       "id": "4ab6390f119a17e6",
       "score": 62,
       "severity": "high",
@@ -12453,6 +12441,18 @@
       "topic": "iss",
       "ts": "2026-08-02T15:08:54.994108+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "outages \u2014 no successful run since 2026-08-02 15:07 UTC (2h); last error: EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (7d ago)",
+      "id": "58126f36c877ff58",
+      "score": 72,
+      "severity": "critical",
+      "source": "Watchdog",
+      "title": "Watchdog: 'outages' is failing",
+      "topic": "watchdog",
+      "ts": "2026-08-02T17:18:45.308859+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -12680,14 +12680,14 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
   "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-02T15:08:53.387978+00:00",
+  "fuel_last_prices_seen_at": "2026-08-02T17:18:45.306221+00:00",
   "fuel_prices": {
-    "GLP": 3380.07,
-    "Gasoil Regular": 3380.07,
-    "Gasoil \u00d3ptimo": 3380.07,
-    "Gasolina Premium": 3380.07,
-    "Gasolina Regular": 3380.07,
-    "Kerosene": 3380.07
+    "GLP": 135.2,
+    "Gasoil Regular": 258.3,
+    "Gasoil \u00d3ptimo": 293.8,
+    "Gasolina Premium": 343.8,
+    "Gasolina Regular": 307.9,
+    "Kerosene": 335.5
   },
   "fx_daily_baseline": {
     "date": "2026-08-02",
@@ -14079,9 +14079,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
+    "failed": 1,
     "ok": 2,
-    "ts": "2026-08-02T17:07:30.056185+00:00"
+    "ts": "2026-08-02T17:18:31.936889+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -15051,9 +15051,9 @@
       "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-02T15:08:53.388004+00:00",
+      "last_data": "2026-08-02T17:18:45.306211+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-02T15:07:27.690220+00:00"
+      "last_ok": "2026-08-02T17:18:31.936889+00:00"
     },
     "fx": {
       "last_data": "2026-08-02T15:08:51.444932+00:00",
@@ -15125,7 +15125,10 @@
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-02T15:07:27.690220+00:00"
+      "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (7d ago)",
+      "last_error_ts": "2026-08-02T17:18:31.936889+00:00",
+      "last_ok": "2026-08-02T15:07:27.690220+00:00",
+      "source_failed": true
     },
     "quakes": {
       "last_data": "2026-08-02T15:08:50.737732+00:00",
@@ -15169,7 +15172,7 @@
       "last_ok": "2026-08-02T15:07:27.690220+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-02T15:07:27.690220+00:00"
+      "last_ok": "2026-08-02T17:18:31.936889+00:00"
     },
     "weather": {
       "last_data": "2026-08-02T15:08:38.793067+00:00",
@@ -15196,7 +15199,15 @@
     "games": "2026-06-12T12:15:55.633492+00:00"
   },
   "watchdog_data_outages": {},
-  "watchdog_outages": {},
+  "watchdog_empty_outages": {},
+  "watchdog_outages": {
+    "outages": {
+      "alerted": "2026-08-02T17:18:45.308745+00:00",
+      "last_alert": "2026-08-02T17:18:45.308745+00:00",
+      "reminders": 0,
+      "since": "2026-08-02T17:18:45.308745+00:00"
+    }
+  },
   "water_slots_sent": [
     "2026-08-02|05:30"
   ],
