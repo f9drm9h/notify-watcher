@@ -89,9 +89,7 @@
     "rent|2026-07-30|1"
   ],
   "blood_donation_last_notified": "2026-07-08",
-  "cleaning_slots_sent": [
-    "2026-08-01|18:00"
-  ],
+  "cleaning_slots_sent": [],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -12574,9 +12572,7 @@
       "url": ""
     }
   ],
-  "exercise_slots_sent": [
-    "2026-08-01|18:00"
-  ],
+  "exercise_slots_sent": [],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -14200,7 +14196,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-02T03:52:28.762615+00:00"
+    "ts": "2026-08-02T04:07:27.800654+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -14238,9 +14234,7 @@
   ],
   "learn_last_sent": "2026-08-01",
   "life_dashboard_last_week": "2026-W30",
-  "meditate_slots_sent": [
-    "2026-08-01|18:00"
-  ],
+  "meditate_slots_sent": [],
   "movie_news_seen": {
     "Avengers: Doomsday": [
       "cc9954f7861b8b12",
@@ -15734,10 +15728,7 @@
   ],
   "recap_last_week": "2026-W31",
   "reminders_sent": [],
-  "sleep_slots_sent": [
-    "2026-08-01|21:00",
-    "2026-08-01|22:00"
-  ],
+  "sleep_slots_sent": [],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
     "d1203-liberty-5-pro-anc-earbuds-clear-calls",
@@ -15828,9 +15819,9 @@
       "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "habits": {
-      "last_data": "2026-08-02T03:52:32.426002+00:00",
+      "last_data": "2026-08-02T04:07:30.691592+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-02T03:52:28.762615+00:00"
+      "last_ok": "2026-08-02T04:07:27.800654+00:00"
     },
     "holidays": {
       "last_data": "2026-08-01T21:09:34.916023+00:00",
@@ -15913,9 +15904,9 @@
       "last_ok": "2026-08-02T03:07:25.755578+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-02T03:52:30.969751+00:00",
+      "last_data": "2026-08-02T04:07:29.350516+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-02T03:52:28.762615+00:00"
+      "last_ok": "2026-08-02T04:07:27.800654+00:00"
     },
     "uv": {
       "last_data": "2026-08-01T21:09:36.484243+00:00",
@@ -15955,9 +15946,7 @@
   },
   "watchdog_data_outages": {},
   "watchdog_outages": {},
-  "water_slots_sent": [
-    "2026-08-01|05:30"
-  ],
+  "water_slots_sent": [],
   "weather_seen_ids": [
     "09d36294c2c88c6e",
     "2ca8e2156be1240d",
