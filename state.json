@@ -135,15 +135,6 @@
       "preserve_detail": false,
       "score": 28,
       "source": "Avengers: Doomsday",
-      "title": "Marvel Studios Boss Confirms MCU Strategy Change Starting With Avengers: Doomsday & Secret Wars - The Direct",
-      "topic": "movies",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPb1NaZE8wUmVsTm41MDFxVXd1ekN0aWJaY1l3azNWdExUNnBmUTdza05WUDRxb1ZrNTNGV094SDRsTm1hYTBTeHhHZ2M4U1lad1FDRmVMbXo5QnFDRXZ0Z1V0LTJVdW5fUzU3V3lfOXQ2WTBfY25EdmxkV1lJS1o3SFJpMTRMQkh6a2FLY0RjTzg2VkpKUnpBckNmUVpWemF3?oc=5"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Avengers: Doomsday",
       "title": "\u2018Avengers: Doomsday\u2019 Trailer Reveals First Look at Robert Downey Jr.\u2019s Doctor Doom - The Hollywood Reporter",
       "topic": "movies",
       "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVkZlVjcxOGY0MU1VTTg3VUY4R2hnZFJwRFlrM1ZfMldqLUpjZ0wydmlPOVZEaUZWYUVVN0NCNGZITkNsaE4zZlhyT29kdUJVa1pacTJPYy1YWlVJRFRxaFpMT3l1TnFiVDI1b3ZMYUo4SlFzWDAzTjdqRGlvbC1UU29Va3dQWUNRV1M3cWNLOHR2dHYzamJEZ1BfWEdBLTRHSDdoOXQ4YUE0aFFRRG5kTGVVRU93NC11SjZidk9vNA?oc=5"
@@ -219,6 +210,15 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Avengers: Doomsday",
+      "title": "The Russo Brothers won't confirm Avengers: Doomsday's runtime, only noting the movie will be \"substantial\" - Gamereactor UK",
+      "topic": "movies",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNT1BjSGNjRnFxZElKMnJqbHdYS3NWLWJJSzZjZlA5OTJJS19lLVJ0UVZTdm02Z1J3ZWJ0anloVkpXOG83MmkyUlZXTmR5Q2h2NE93dEplM2RLYnNsOTNnX2lZWHBNZjRLN2V4aEV2ZEN2YUZGLWlWMFpYV2dVTW9lLUkxNUxackN3QkNuMDVGN2pOcF9uWVJRb2JkUXkwRnJnMjJ0LV96dnpoaXpQSERLQTdLRTNBb0d6NTNMSVJ3Y21CeHBPRFRjZE9GZzhvTkRoalE?oc=5"
     }
   ],
   "digest_last_sent": "2026-08-01",
@@ -580,18 +580,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "Time for a glass of water. Stay hydrated!",
-      "id": "26b027adecf7a0a6",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-07-18T18:09:04.118421+00:00",
-      "url": ""
-    },
     {
       "action": "push",
       "detail": "",
@@ -12579,6 +12567,18 @@
       "topic": "spark",
       "ts": "2026-08-02T06:09:08.963807+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 7:34 PM - max 53deg, NW to SE. Look up!",
+      "id": "6c64c99607209e87",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-08-02T09:08:29.865485+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -13937,6 +13937,7 @@
     }
   },
   "iss_seen_passes": [
+    "38880264e067219a",
     "462bcecac1c2224c",
     "48287a66b9e3d205",
     "30f1682af814248f",
@@ -14035,8 +14036,7 @@
     "59f60ed27ebefa02",
     "9ec92a8504a5fd79",
     "7f41fabbefe26e36",
-    "14d022a97b2522f9",
-    "3b18897061d0ad8f"
+    "14d022a97b2522f9"
   ],
   "itsc_sent_ids": [
     "c13168fba0c67cc1",
@@ -14204,8 +14204,8 @@
   },
   "last_run": {
     "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-02T08:52:29.101532+00:00"
+    "ok": 41,
+    "ts": "2026-08-02T09:07:28.053472+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -14246,6 +14246,17 @@
   "meditate_slots_sent": [],
   "movie_news_seen": {
     "Avengers: Doomsday": [
+      "0c7bfe5fba22dde1",
+      "0587379485a40646",
+      "2db2a346813a828b",
+      "fe7e133400059f3e",
+      "176dd0954525ab1a",
+      "2ff8d44db5b55158",
+      "4e65b593382a19ac",
+      "23ef9a63fa88db11",
+      "e44d100afa1c80e7",
+      "61e3e88c6c82c760",
+      "683e6ee75b1b39a5",
       "b6f355e29d21004a",
       "7ade80a6f102dd1a",
       "732ef272458e52bb",
@@ -14334,18 +14345,7 @@
       "1f973243ac00eaca",
       "d0f543c78b8c6896",
       "7598bbaae41e8fe4",
-      "b08f950bee344ea7",
-      "525cc40ad17ccef2",
-      "573288ff26f22bed",
-      "8b6a95c26d748012",
-      "67b86c6164a0e7c6",
-      "e1dd678b3b94a441",
-      "e09c9e062d770af9",
-      "ef521ad0b0d23e4d",
-      "ec4d2a3f0e7bada6",
-      "d473b8f128d0c460",
-      "865b616fa5879734",
-      "5dee35fd82539f7c"
+      "b08f950bee344ea7"
     ],
     "Godzilla x Kong: Supernova": [
       "2e9d240bfc35f86f",
@@ -14450,6 +14450,7 @@
       "bfd091e52e4412e7"
     ],
     "Spider-Man: Beyond the Spider-Verse": [
+      "1654eaa62d61c70a",
       "6db8723b81239b30",
       "88e4ca408775a15a",
       "c7d66f8e78f2e51b",
@@ -14548,10 +14549,24 @@
       "507593074abc1c26",
       "1f2ac79ee52648da",
       "7554b92dfcd764b1",
-      "de2d46d471752d5a",
-      "16304a7ec1af990f"
+      "de2d46d471752d5a"
     ],
     "Spider-Man: Brand New Day": [
+      "59a71a77cba118b4",
+      "59462492b0766fbd",
+      "4ff59a67c2fa6476",
+      "3857f75a6e785fd4",
+      "88f6a696dc9c1f10",
+      "73bfcf982ff0d6a3",
+      "2fd6e1e775d207c4",
+      "2f88effe87ca79d5",
+      "092b21179fc76e27",
+      "69c5115947fc75e0",
+      "4282c3d7e251b458",
+      "4dd80a0d34ff9cd2",
+      "fa51403a2ff13f74",
+      "93a8916f5572c8cf",
+      "34ed414ed9a28662",
       "318e1dedec52e6fd",
       "baa4fd50047d3b53",
       "5ec2666ab4b29dc5",
@@ -14636,22 +14651,7 @@
       "98666474b1287eaf",
       "924dc5256767d778",
       "0980896c7098aa4e",
-      "39a597698ff78bdc",
-      "917bd72691b72047",
-      "1a9ab9a5a8a37254",
-      "824dc7dfbd29f0ce",
-      "b3a605ce524d9e8b",
-      "ab4e5d867368e0b1",
-      "f5f59cde42865a9f",
-      "9fce7b6e460bffa7",
-      "6e797dd39a9df288",
-      "ccd54e3e53dffa1c",
-      "e67e80bb0f16fb6c",
-      "af9b1d69415164de",
-      "620579a5e710fe55",
-      "b1e4ed21a62ccc93",
-      "d551c0e611c8744e",
-      "1d9a94508cd23eed"
+      "39a597698ff78bdc"
     ],
     "The Batman Part II": [
       "06df45ea90fd19d7",
@@ -14756,6 +14756,28 @@
       "2a5e6232e986cd45"
     ],
     "The Odyssey": [
+      "a2488f3e1ad71fd9",
+      "a90cc8aa1005fb4e",
+      "44ea9892e2e25cad",
+      "fecb8882b80ec964",
+      "007bfece51348e2a",
+      "79cba8bde90ebee7",
+      "38356f3b8079e827",
+      "45a7d2be9aa57e5d",
+      "339159bba4abeada",
+      "5773d232dbf224dd",
+      "fd9e67e7cde4684d",
+      "edbed34a9a1b4f92",
+      "3a7e9021b967679e",
+      "089738394114b0ef",
+      "4a63a4d71eaa32f7",
+      "878edb86d4091ba4",
+      "76397d4d413a5d83",
+      "6cb550bd89e900c2",
+      "ac4706c3f13ff7f1",
+      "aeb8918bb7eb8c72",
+      "9d42c206b6b52fec",
+      "592556000c42824c",
       "3d2727482af0f638",
       "c0e3c2c49e379dc3",
       "56e060bf133acefc",
@@ -14833,29 +14855,7 @@
       "70a1d4cea5a285ee",
       "864e83d9c50e2b43",
       "c8e0ef04e5d47583",
-      "dda668e9c96fbd67",
-      "907530c6c5a16fdd",
-      "0cb7ac9433ed199a",
-      "e03dd34ed126f204",
-      "138e92c6692d8126",
-      "1a1ece15028bfa43",
-      "b007f48f9f429d24",
-      "2939d9a953e974c4",
-      "a6bc7c503e81fd9d",
-      "7680529a2235350a",
-      "a10dd739c85d600e",
-      "4613dfc121c10b8f",
-      "27b54fb09c00be67",
-      "34487bfc42a2b3e3",
-      "627c1600733e07cf",
-      "ef3d4c491a8ede38",
-      "cbd290570dda2fea",
-      "7726e91c8bdfa09b",
-      "203b2479143ee9aa",
-      "9bcfae1675593a67",
-      "1b855783c427fc2a",
-      "c18c591ca0a64aea",
-      "327ee4efd2fe49a0"
+      "dda668e9c96fbd67"
     ]
   },
   "movie_release_dates": {
@@ -15757,14 +15757,14 @@
   },
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-02T06:09:01.283751+00:00",
+      "last_data": "2026-08-02T09:08:29.246785+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-02T06:09:03.039170+00:00",
+      "last_data": "2026-08-02T09:08:30.761342+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "apod": {
       "last_data": "2026-08-01T21:09:37.410284+00:00",
@@ -15772,26 +15772,26 @@
       "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "deals": {
-      "last_data": "2026-08-02T06:08:36.899164+00:00",
+      "last_data": "2026-08-02T09:08:05.712189+00:00",
       "last_data_count": 12,
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "energy": {
-      "last_data": "2026-08-02T06:08:48.735217+00:00",
+      "last_data": "2026-08-02T09:08:15.665918+00:00",
       "last_data_count": 69,
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-01T12:09:30.082618+00:00",
@@ -15799,9 +15799,9 @@
       "last_ok": "2026-08-01T12:07:41.714421+00:00"
     },
     "fda": {
-      "last_data": "2026-08-02T06:08:37.212299+00:00",
+      "last_data": "2026-08-02T09:08:06.425469+00:00",
       "last_data_count": 7,
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "fuel": {
       "last_data": "2026-08-01T21:09:29.385793+00:00",
@@ -15809,18 +15809,18 @@
       "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "fx": {
-      "last_data": "2026-08-02T06:09:01.357895+00:00",
+      "last_data": "2026-08-02T09:08:29.330150+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "games": {
       "last_data": "2026-07-27T12:08:27.690467+00:00",
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-02T06:07:46.126379+00:00",
+      "last_data": "2026-08-02T09:07:38.488111+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "groceries": {
       "last_data": "2026-08-01T21:09:04.293841+00:00",
@@ -15828,9 +15828,9 @@
       "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "habits": {
-      "last_data": "2026-08-02T08:52:30.846666+00:00",
+      "last_data": "2026-08-02T09:08:32.677776+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-02T08:52:29.101532+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "holidays": {
       "last_data": "2026-08-01T21:09:34.916023+00:00",
@@ -15838,9 +15838,9 @@
       "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "iss": {
-      "last_data": "2026-08-02T06:09:02.107390+00:00",
+      "last_data": "2026-08-02T09:08:29.865240+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "itsc": {
       "last_data": "2026-08-01T21:09:35.801134+00:00",
@@ -15848,9 +15848,9 @@
       "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "launches": {
-      "last_data": "2026-08-02T06:09:01.555201+00:00",
+      "last_data": "2026-08-02T09:08:29.465401+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "learn": {
       "last_data": "2026-08-01T12:09:26.119203+00:00",
@@ -15858,7 +15858,7 @@
       "last_ok": "2026-08-01T12:07:41.714421+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "marine": {
       "last_data": "2026-08-01T21:09:36.946246+00:00",
@@ -15866,42 +15866,42 @@
       "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "movies": {
-      "last_data": "2026-08-02T06:07:40.469079+00:00",
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_data": "2026-08-02T09:07:34.019270+00:00",
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "music": {
-      "last_data": "2026-08-02T06:07:44.902511+00:00",
+      "last_data": "2026-08-02T09:07:36.744271+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-02T06:08:49.315767+00:00",
+      "last_data": "2026-08-02T09:08:16.280830+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "quakes": {
-      "last_data": "2026-08-02T06:09:00.677594+00:00",
+      "last_data": "2026-08-02T09:08:28.863712+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "research": {
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-02T06:08:29.896906+00:00",
+      "last_data": "2026-08-02T09:07:57.650155+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "spark": {
       "last_data": "2026-08-02T06:09:05.752649+00:00",
@@ -15910,12 +15910,12 @@
     },
     "spending": {
       "last_data_count": 0,
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-02T08:52:30.006485+00:00",
+      "last_data": "2026-08-02T09:07:35.014514+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-02T08:52:29.101532+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "uv": {
       "last_data": "2026-08-01T21:09:36.484243+00:00",
@@ -15923,20 +15923,20 @@
       "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "weather": {
-      "last_data": "2026-08-02T06:08:48.864481+00:00",
+      "last_data": "2026-08-02T09:08:15.874721+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-02T06:09:04.127566+00:00",
+      "last_data": "2026-08-02T09:08:31.738713+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_ok": "2026-08-02T09:07:28.053472+00:00"
     }
   },
   "twitch_live": [],
@@ -15944,7 +15944,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165338"
+    "last_full_window": "165339"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
