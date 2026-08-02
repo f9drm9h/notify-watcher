@@ -251,7 +251,7 @@ async function handleSlashCommand(interaction, env) {
         ackMute(opts.topic, opts.hours ?? 24));
     case "unmute": // /unmute topic:games  ->  UNMUTE:games
       return await relay(`UNMUTE:${opts.topic}`, env, `Unmuted ${human(opts.topic)}.`);
-    case "follow": // /follow topic:movies hours:48
+    case "follow": // /follow topic:games hours:48
       return await relay(`FOLLOW:${opts.topic}:${opts.hours ?? 24}`, env,
         `Following ${human(opts.topic)} for ${opts.hours ?? 24}h.`);
     case "unfollow":
@@ -374,7 +374,7 @@ async function cmdExplain(topic, env) {
     return reply(
       `No memory yet for ${human(key)}. I haven't recorded any routing ` +
       `decisions for it, or the name doesn't match a tracked topic. ` +
-      `Try one like movies, fx, spending, twitch, or games.`
+      `Try one like games, fx, spending, twitch, or golden_sun.`
     );
   }
 
@@ -398,7 +398,7 @@ async function cmdRun(topic, env) {
     return reply("On-demand run is not configured yet.");
   }
   const only = String(topic || "").trim().toLowerCase();
-  if (!only) return reply("Tell me which topic to run, e.g. /run topic:movies.");
+  if (!only) return reply("Tell me which topic to run, e.g. /run topic:games.");
 
   let res;
   try {

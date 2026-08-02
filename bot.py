@@ -184,7 +184,7 @@ def _explain_embed(topic: str) -> discord.Embed:
                 "I haven't recorded any routing decisions for this topic yet — "
                 "either nothing has been dropped or deferred for it, or the name "
                 "doesn't match a tracked topic.\n\n"
-                "Try one like `fx`, `spending`, `movies`, `twitch`, or `games`."
+                "Try one like `fx`, `spending`, `games`, `twitch`, or `golden_sun`."
             ),
             color=discord_delivery.CATEGORY_COLOR["general"],
             timestamp=datetime.now(timezone.utc),
@@ -226,7 +226,7 @@ async def explain(ctx: commands.Context, topic: str = None) -> None:
     """
     if not topic:
         await ctx.send(
-            "Usage: `!explain <topic>` — e.g. `!explain movies`, `!explain fx`."
+            "Usage: `!explain <topic>` — e.g. `!explain games`, `!explain fx`."
         )
         return
     try:

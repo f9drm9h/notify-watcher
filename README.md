@@ -31,7 +31,7 @@ now goes through Discord:
   the next sweep drains that channel (`notify_watcher/discord_control.py`) and
   applies it through the existing command grammar and `state["muted"]`
   enforcement. You can also type commands straight into the channel
-  (`status movies`, `explain fx`, `MUTE:games:24`) — those work with no bot
+  (`status games`, `explain fx`, `MUTE:games:24`) — those work with no bot
   running, since the runner reads the channel directly. This replaces the old
   ntfy-based control topic; ntfy is no longer in the path.
 - **Compatibility note**: some internal modules still have historical names such
@@ -89,22 +89,6 @@ Topics:
   the same way, one-day items once. A freshly posted term's PDF takes over
   automatically; each (activity, date, lead) alerts exactly once and the
   first run seeds silently.
-- **Movie release dates + streaming + news + countdowns** — for each title in
-  `watchlist.json` → `movies`, tracks its TMDb release date: a date CHANGE
-  (delay, moved up, or a date landing on a TBA film) pushes live, first sight
-  goes to the digest (needs `TMDB_API_KEY`). Also watches TMDb's
-  watch-provider data and pushes once when a film becomes streamable on a
-  subscription service in the DR (e.g. "🎬 The Odyssey is now streaming on
-  Netflix in DO") — rent/buy listings don't count, and the first run seeds
-  silently so an already-streaming title stays quiet. Each title's Google
-  News headlines are scored via `movies_scoring`, tuned so only high-signal
-  events push live: casting announcements, release-date moves, cancellations,
-  and real trailer/teaser drops push from any source; a leak pushes only when
-  confirmation language meets a trusted outlet; generic coverage, rumor
-  pieces, box office, reviews and awards chatter go to the daily digest or
-  are dropped. Every Monday one **countdown push** lists each watchlist film
-  with a confirmed release date in the next 60 days ("Avengers: Doomsday
-  releases in 18 days"); TBA films are skipped.
 - **Game release dates** — for each title in `watchlist.json` → `games`,
   tracks its RAWG release date and alerts the same way (a date change is a
   high-priority push). Needs `RAWG_API_KEY`. _Checked weekly (see below)._
@@ -118,7 +102,7 @@ Topics:
   Tuning the keywords and weights is a `monitors.json` edit, not a code change.
   Both game checks run **weekly** — once per ISO week, on the first daily run of
   the week — so game updates arrive as one batched catch-up rather than a drip.
-  All the Google News-based topics (game news, movie news, Anthropic) ignore
+  All the Google News-based topics (game news, Golden Sun, Anthropic) ignore
   articles older than `monitors.json` → `news.max_age_days` (default 14):
   Google News resurfaces months-old stories under brand-new URLs, which would
   otherwise slip past dedup and alert as "new".
@@ -363,7 +347,7 @@ item list.
   themed, emoji-headed sections: 💪 habit-nudge activity, 💰 finance (the BHD
   spending summary, the week's USD→DOP move, and bills due in the next 7 days),
   🌤 weather & environment (weather alerts plus UV/air-quality warnings logged
-  this week), 🎬 entertainment & news (the top-scored movie/game release, Golden
+  this week), 🎬 entertainment & news (the top-scored game release, Golden
   Sun community items, and AI news that fired), and ⚙️ system health (topics
   that errored this week and the total notifications pushed). Pure state
   inspection over the event log + `topic_health` + the fx/bills state — no
@@ -422,7 +406,7 @@ In the [Discord Developer Portal](https://discord.com/developers/applications):
 - Create an application, then open **Bot** and create/reset the bot token.
 - Copy the token. Treat it like a password; it becomes `DISCORD_TOKEN`.
 - Enable **Message Content Intent** under **Privileged Gateway Intents**. Prefix
-  commands like `!explain movies` need this so the bot can read command text.
+  commands like `!explain games` need this so the bot can read command text.
 - Use **OAuth2 -> URL Generator** to invite the bot to your server with `bot`
   scope and at least these permissions: **Send Messages**, **Embed Links**,
   **Read Message History**, and **Attach Files**.
@@ -439,7 +423,7 @@ and copy each channel ID:
 | Briefing | Daily digest, weekly recap, life dashboard, long AI summaries | `CHANNEL_BRIEFING` |
 | Logs | Watchdog, workflow failures, health alerts, system diagnostics | `CHANNEL_LOGS` |
 | Finance | FX, spending, bills, fuel, money-related alerts | `CHANNEL_FINANCE` |
-| Discovery | Movies, games, Twitch, music, AI/news, products, learning finds | `CHANNEL_DISCOVERY` |
+| Discovery | Games, Twitch, music, AI/news, products, learning finds | `CHANNEL_DISCOVERY` |
 | General | Catch-all fallback for anything unmapped | `CHANNEL_GENERAL` |
 
 The scheduled watcher requires `DISCORD_TOKEN` plus the five routed channel IDs:
@@ -480,7 +464,6 @@ On github.com → your repo → **Settings → Secrets and variables → Actions
 | `CHANNEL_GENERAL` | Required. Discord channel ID for unmapped fallback embeds. |
 | `DISCORD_CONTROL_CHANNEL` | Optional. Private channel ID for the reply-button control loop. Set it to enable Snooze/Mute/etc. buttons and typed commands; unset means notifications ship without buttons. |
 | `CHANNEL_TERMINAL` | Optional/reserved. Recommended command-room channel ID for bot hosts that want to restrict commands. |
-| `TMDB_API_KEY` | Optional. Free TMDb v3 API key, for the movie watcher. |
 | `RAWG_API_KEY` | Optional. Free RAWG API key, for the game watcher. |
 | `GEMINI_API_KEY` | Optional. Google AI Studio key for story topics and digest summaries. |
 | `ANTHROPIC_API_KEY` | Optional. Claude API key used as an AI fallback where supported. |
@@ -489,11 +472,9 @@ On github.com → your repo → **Settings → Secrets and variables → Actions
 | `GMAIL_APP_PASSWORD` | Optional. Gmail **app password** (myaccount.google.com/apppasswords; requires 2-Step Verification) for the spending tracker. |
 | `SPENDING_KEY` | Required with the Gmail secrets. Fernet key that encrypts the committed spending log (`data/spending.json.enc`); generate with `python -c "from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())"` and keep a copy in `.secrets/spending.key` to read the log locally. |
 
-The movie/game watchers only run if their key is set; without it they skip
-quietly. Get the keys here (both free, ~2 min, no cost):
+The game watcher only runs if its key is set; without it it skips quietly.
+Get the key here (free, ~2 min, no cost):
 
-- **TMDb**: themoviedb.org → Settings → API → request a developer key →
-  copy the **"API Key (v3 auth)"** value.
 - **RAWG**: rawg.io/apidocs → "Get API Key" → sign up → copy the key.
 
 Besides the secrets, the workflows steer a run with three plain env toggles
@@ -539,7 +520,7 @@ You should see `Mission Control Online` in the terminal. In Discord, try:
 
 ```text
 !ping
-!explain movies
+!explain games
 ```
 
 `!explain <topic>` reads `audit.json` and replies with the last few routing
@@ -554,17 +535,16 @@ notification and the bot relays the command to the control channel, which the
 next sweep applies. The bot is a pure courier — it never edits state itself, so
 there is no race with the scheduled runner, and the buttons keep working across
 bot restarts. You can also type commands straight into the control channel
-(`status movies`, `MUTE:games:24`); those are applied even when the bot is not
+(`status games`, `MUTE:games:24`); those are applied even when the bot is not
 running, because the runner reads the channel directly.
 
 ### Pick what to watch: `watchlist.json`
 
-The movie/game watchers read titles from `watchlist.json` at the repo root.
+The game watcher reads titles from `watchlist.json` at the repo root.
 Edit it on github.com or locally — it holds no secrets:
 
 ```json
 {
-  "movies":   ["Avatar: Fire and Ash", "Spider-Man: Brand New Day"],
   "games":    ["Grand Theft Auto VI", "The Elder Scrolls VI"],
   "products": [
     {"name": "Soundcore Liberty 4 NC", "url": "https://www.soundcore.com/products/liberty-4-nc-a3947z11", "target_price": 79.99}
@@ -572,7 +552,7 @@ Edit it on github.com or locally — it holds no secrets:
 }
 ```
 
-Each movie/game title is resolved to the best match on TMDb/RAWG (the matched
+Each game title is resolved to the best match on RAWG (the matched
 name is logged so you can sanity-check it). Add or remove titles any time.
 
 For **products**, only `url` is required; `name` and `target_price` are
@@ -646,7 +626,7 @@ python -m notify_watcher.main
 You should see one log line per topic and Discord embeds for anything not
 already recorded in `state.json`. To test the interactive bot locally, put the
 same values in `.env`, run `python bot.py`, then send `!ping` or
-`!explain movies` in Discord.
+`!explain games` in Discord.
 
 ### Test a single topic
 
@@ -737,7 +717,6 @@ notify-watcher/
 │       ├── launches.py              imminent rocket launches (Launch Library)
 │       ├── learn.py                 consolidated daily learning push
 │       ├── marine.py                rough-seas heads-up (Open-Meteo Marine)
-│       ├── movies.py                TMDb release dates + DO streaming (watchlist)
 │       ├── music.py                 followed-artist releases + discovery pick
 │       ├── onamet.py                official DR severe-weather alerts (CAP feed)
 │       ├── outages.py               EDEESTE scheduled power cuts (weekly PDF)
@@ -758,7 +737,7 @@ notify-watcher/
 │   └── design/                      design notes for the bigger frameworks
 ├── tools/scan_music.py              one-off iTunes-library scanner (seeds music)
 ├── monitors.json                    all topic config + priority rules (no secrets)
-├── watchlist.json                   movie/game titles + products you want tracked
+├── watchlist.json                   game titles + products you want tracked
 ├── reminders.json                   personal expiry/deadline reminders
 ├── habits.json                      recurring habit nudges (water, stand, eyes)
 ├── state.json                       dedup memory (committed by workflow)

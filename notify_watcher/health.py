@@ -55,7 +55,7 @@ STATUS_KEY = "_topic_status"
 # Deliberately NOT adopted: astronomy, blood_donation, bills,
 # reminders, recap, and life_dashboard have no external source (pure local
 # data/date math — "didn't raise" really is the whole story for them);
-# movies and games spread their outcome across several independent sub-checks
+# games spreads its outcome across several independent sub-checks
 # and are already covered by the watchdog's data_stale_days net; visa_bulletin
 # raises out of run() when its index fetch fails, so main.py stamps that
 # failure directly; research is an on-demand no-op outside /research runs.

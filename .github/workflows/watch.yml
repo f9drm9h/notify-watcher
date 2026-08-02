@@ -123,7 +123,6 @@ jobs:
           # dormant fallback (a no-op unless still set).
           DISCORD_CONTROL_CHANNEL: ${{ secrets.DISCORD_CONTROL_CHANNEL }}
           NTFY_CONTROL_TOPIC: ${{ secrets.NTFY_CONTROL_TOPIC }}
-          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}  # movie watcher (optional)
           RAWG_API_KEY: ${{ secrets.RAWG_API_KEY }}  # game watcher (optional)
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}        # AI summary (optional)
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}  # AI summary fallback (optional)

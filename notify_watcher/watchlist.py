@@ -4,7 +4,6 @@ watchlist.json lives at the repo root and is plain text (no secrets), so you
 can edit it right on github.com or locally. Shape:
 
     {
-      "movies":   ["Some Movie", "Another Movie"],
       "games":    ["Some Game"],
       "products": [{"name": "Some Product", "url": "https://...", "target_price": 99.99}]
     }

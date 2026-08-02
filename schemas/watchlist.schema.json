@@ -4,10 +4,6 @@
   "description": "Curated entities to track (see notify_watcher/watchlist.py). CI validates the live file against this schema (tests/test_config_files.py); the runtime loader stays fail-soft.",
   "type": "object",
   "properties": {
-    "movies": {
-      "type": "array",
-      "items": { "type": "string", "minLength": 1 }
-    },
     "games": {
       "type": "array",
       "items": { "type": "string", "minLength": 1 }

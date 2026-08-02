@@ -134,7 +134,7 @@ def _build_actions(event: Event) -> Optional[list]:
       2. ``metadata["buttons"]``  — declarative specs from the topic, expanded
          with this event's log id / topic (see _spec_action).
       3. ``control.default_buttons[topic]`` from monitors.json — per-topic
-         default specs, so giving every movies push a [Mute 24h] is a config
+         default specs, so giving every games push a [Mute 24h] is a config
          edit, not a code change across topics.
 
     Returns transport-neutral descriptors (or None when nothing applies); the
@@ -237,7 +237,7 @@ def _apply_mute(state: dict, event: Event, action: str) -> str:
 
     ``critical`` severity is exempt: a mute aimed at chatty news must never
     silence a real alert (storm warning, outage), so those still ring through.
-    This is what makes the "Mute movies 24h" button do what it says — before
+    This is what makes the "Mute games 24h" button do what it says — before
     this, only digest-bound items were muted and the noisy live pushes (e.g. a
     trailer-leak news storm scoring "high") kept firing through the mute.
     """

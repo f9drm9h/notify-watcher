@@ -55,7 +55,7 @@ TBA = "TBA"
 # on the first daily run of each week (Monday, or the next available day if
 # Monday's run was dropped). WEEK_STATE_KEY guards idempotency across the day's
 # repeated post-threshold runs. The week is stamped only when at least one
-# configured check completed (or nothing was configured), mirroring the movie
+# configured check completed (or nothing was configured), mirroring the news
 # countdown, so a RAWG/Google News outage on Monday retries on the next daily
 # run instead of losing the whole week.
 WEEK_STATE_KEY = "games_week_last"
@@ -295,7 +295,7 @@ def _track_news(state: dict) -> tuple[dict, int, int]:
     / ranking lists / speculation / passing mentions -> dropped). This replaces
     the previous behaviour of pushing every relevance-matched article live,
     which was loud for high-coverage titles. The scoring + routing + seen-id
-    bookkeeping lives in notify_watcher.news so movies can reuse it.
+    bookkeeping lives in notify_watcher.news so other title topics can reuse it.
 
     First run per game seeds the current article ids silently (no alerts), so a
     brand-new game on the list doesn't blast its backlog; only articles that
@@ -355,7 +355,7 @@ def run(state: dict) -> dict:
     Weekly: acts only on the daily run and only once per ISO week, so game
     updates arrive as a single batched catch-up rather than a constant drip.
     The week is stamped only when at least one configured check completed (or
-    nothing was configured at all), mirroring the movie countdown: a RAWG or
+    nothing was configured at all): a RAWG or
     Google News outage on Monday retries on the next daily run instead of
     silently losing the whole week.
     """

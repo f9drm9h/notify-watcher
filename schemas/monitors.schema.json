@@ -164,7 +164,7 @@
   "$defs": {
     "scoring_config": {
       "type": "object",
-      "description": "Shared shape for the collector scoring engine (scoring.py): the base `scoring` section and the per-domain `*_scoring` sections (golden_sun_scoring, games_scoring, movies_scoring, ...).",
+      "description": "Shared shape for the collector scoring engine (scoring.py): the base `scoring` section and the per-domain `*_scoring` sections (golden_sun_scoring, games_scoring, ...).",
       "properties": {
         "source_weights": {
           "type": "object",

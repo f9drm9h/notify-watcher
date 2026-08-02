@@ -1,7 +1,7 @@
 """Load the domain-monitor configuration (monitors.json).
 
 monitors.json lives at the repo root next to watchlist.json. Where
-watchlist.json holds the *entities* a user curates (movies, games, products),
+watchlist.json holds the *entities* a user curates (games, products),
 monitors.json holds *domain monitoring policy*: which sources to read and how
 to score what they return. It is plain text (no secrets), so it can be edited
 directly on github.com.

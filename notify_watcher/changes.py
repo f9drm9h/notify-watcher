@@ -1,7 +1,7 @@
 """Reusable before/after diffs — turn "X changed" into "X moved from A to B (+N)".
 
 Every change-detecting topic used to hand-roll the same ``previous -> current``
-sentence (fx, visa_bulletin, games, movies, deals all had their own f-string), and
+sentence (fx, visa_bulletin, games, deals all had their own f-string), and
 none of them computed the *magnitude* of the move — which is exactly the part a human
 wants ("+115 days", "+3.3%", "-$20"). This module centralizes that: a topic hands
 ``diff`` the previous and current value and gets back a :class:`Change` carrying both a

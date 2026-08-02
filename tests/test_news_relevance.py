@@ -1,19 +1,23 @@
-"""Tests for the token-subset relevance filter shared by games.py and movies.py.
+"""Tests for the token-subset relevance filter in games.py.
 
 _news_tokens / _news_relevant decide whether a Google News headline is actually
-about a watched title. The two modules carry identical copies, so each case runs
-against BOTH to guard against the copies drifting apart. Coverage includes the
-stopword drop and the roman-numeral -> digit mapping ("Part II" matches "Part 2").
-A regression here silently mis-routes news (wrong-title alerts, or missed ones).
+about a watched title. Coverage includes the stopword drop and the roman-numeral
+-> digit mapping ("Part II" matches "Part 2"). A regression here silently
+mis-routes news (wrong-title alerts, or missed ones).
+
+This used to run every case against movies.py's identical copy too, to catch the
+two drifting apart; the movies topic was retired (2026-08-01) and games now
+carries the only copy.
 """
 from __future__ import annotations
 
 import unittest
 
-from notify_watcher.topics import games, movies
+from notify_watcher.topics import games
 
-# Both modules expose the same pair; subTest over both so a drift in either fails.
-MODULES = (("games", games), ("movies", movies))
+# Kept as a table so a second copy of the filter can be re-added here if one
+# ever reappears; subTest labels each module in failures.
+MODULES = (("games", games),)
 
 
 class NewsTokensTest(unittest.TestCase):
@@ -23,8 +27,9 @@ class NewsTokensTest(unittest.TestCase):
     def test_lowercases_and_splits_on_punctuation(self):
         for name, mod in MODULES:
             with self.subTest(module=name):
-                self.assertEqual(self._tok(mod, "Spider-Man: Beyond"),
-                                 {"spider", "man", "beyond"})
+                # Hyphen AND colon both split, and the case is folded.
+                self.assertEqual(self._tok(mod, "Half-Life: Alyx"),
+                                 {"half", "life", "alyx"})
 
     def test_drops_stopwords(self):
         for name, mod in MODULES:
@@ -39,8 +44,9 @@ class NewsTokensTest(unittest.TestCase):
                                  {"grand", "theft", "auto", "6"})
                 self.assertEqual(self._tok(mod, "Final Fantasy VII"),
                                  {"final", "fantasy", "7"})
-                self.assertEqual(self._tok(mod, "The Batman Part II"),
-                                 {"batman", "part", "2"})
+                # Stopword drop and roman mapping compose on the same title.
+                self.assertEqual(self._tok(mod, "The Witcher IV"),
+                                 {"witcher", "4"})
 
     def test_all_stopwords_yields_empty(self):
         for name, mod in MODULES:
@@ -50,7 +56,7 @@ class NewsTokensTest(unittest.TestCase):
     def test_numbers_pass_through(self):
         for name, mod in MODULES:
             with self.subTest(module=name):
-                self.assertEqual(self._tok(mod, "Dune 3"), {"dune", "3"})
+                self.assertEqual(self._tok(mod, "Portal 3"), {"portal", "3"})
 
 
 class NewsRelevantTest(unittest.TestCase):
@@ -71,8 +77,8 @@ class NewsRelevantTest(unittest.TestCase):
             with self.subTest(module=name):
                 self.assertTrue(mod._news_relevant("Grand Theft Auto VI",
                                                    "Grand Theft Auto 6 trailer drops"))
-                self.assertTrue(mod._news_relevant("The Batman Part II",
-                                                   "The Batman Part 2 delayed to 2027"))
+                self.assertTrue(mod._news_relevant("The Witcher IV",
+                                                   "The Witcher 4 delayed to 2027"))
 
     def test_missing_distinctive_token_is_not_relevant(self):
         for name, mod in MODULES:

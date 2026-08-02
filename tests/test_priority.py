@@ -179,7 +179,10 @@ class ShippedConfigTest(unittest.TestCase):
         self.assertEqual(self._d(topic="quakes", severity="critical").ntfy_priority, "urgent")
         self.assertEqual(self._d(topic="fda", severity="high").action, "push")
         self.assertEqual(self._d(topic="ios_release").action, "digest")
-        self.assertEqual(self._d(topic="movies", severity="low").action, "drop")
+        # The drop anchor: the lowest-scoring rule the live config still ships
+        # (deals/low = 20, under digest_floor 25). Was movies/low until the
+        # movies topic was retired.
+        self.assertEqual(self._d(topic="deals", severity="low").action, "drop")
 
     def test_heads_up_topics_digest(self):
         for t in ("holidays", "blood_donation", "fx", "uv", "marine"):

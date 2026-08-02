@@ -1,4 +1,4 @@
-"""Shared importance scoring + routing for per-title news topics (games, movies).
+"""Shared importance scoring + routing for per-title news topics (games, golden_sun).
 
 The *collection* side — the Google News query, the token-subset relevance
 filter, per-title dedup, silent first-run seeding — stays in each topic, which
@@ -119,7 +119,7 @@ def route(
     within-domain tier becomes the Event severity and emit decides push vs.
     digest vs. drop. With no `priority` section the engine is OFF and emit
     reproduces the legacy routing exactly. `topic` is the engine's cross-topic
-    rule key (e.g. "games", "movies"); it is ignored while the engine is off.
+    rule key (e.g. "games", "golden_sun"); it is ignored while the engine is off.
     """
     monitor.stamp_last_data(state, topic, len(articles))
     seen = bucket.get(title)

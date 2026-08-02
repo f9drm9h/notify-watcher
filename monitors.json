@@ -10,7 +10,6 @@
   "control": {
     "_comment": "Reply-button channel extras (docs/design/05). default_buttons attaches buttons to a topic's LIVE pushes, rendered as native Discord components. Item-level specs: 'read' saves to the reading list (weekly recap + dashboard), 'more' sends a fuller-story push on the next run, 'later:<minutes>' re-pushes the item after that delay. Topic-level specs: 'mute:<hours>' / 'snooze:<hours>' silence the topic (a snooze is a short mute), 'follow:<hours>' amplifies it, 'unmute'/'unfollow' undo. Max 5 buttons per push (Discord action-row limit); inert when the control loop is off (DISCORD_CONTROL_CHANNEL unset).",
     "default_buttons": {
-      "movies": ["read", "more", "mute:24"],
       "games": ["read", "more", "mute:24"],
       "golden_sun": ["read", "more", "mute:24"],
       "deals": ["mute:24"],
@@ -33,9 +32,9 @@
     "digest_floor": 25,
     "default": 30,
     "urgency_bands": { "90": "urgent", "70": "high", "0": "default" },
-    "_event_log_comment": "The weekly recap reads a 7-day window of the event log, so the ring must hold at least a week. Bulk-digest producers (groceries' ~70/day weekly-deal pool, movies) used to fill the default 500-entry ring in ~2 days; their digest-action entries are excluded from the LOG (pushes still recorded; the items still reach the daily digest), and the cap gives ~11 days of the remaining ~90/day churn.",
+    "_event_log_comment": "The weekly recap reads a 7-day window of the event log, so the ring must hold at least a week. Bulk-digest producers (groceries' ~70/day weekly-deal pool) fill the default 500-entry ring fast; their digest-action entries are excluded from the LOG (pushes still recorded; the items still reach the daily digest), and the cap gives ~11 days of the remaining churn.",
     "event_log_max": 1000,
-    "event_log_digest_exclude": ["groceries", "movies"],
+    "event_log_digest_exclude": ["groceries"],
     "rules": [
       { "topic": "visa_bulletin", "severity": "low", "score": 45 },
       { "topic": "visa_bulletin", "score": 100 },
@@ -58,11 +57,9 @@
       { "topic": "games", "severity": "high", "score": 64 },
       { "topic": "golden_sun", "severity": "critical", "score": 80 },
       { "topic": "golden_sun", "severity": "high", "score": 64 },
-      { "topic": "movies", "severity": "critical", "score": 64 },
       { "topic": "anthropic_news", "score": 64 },
       { "topic": "habits", "score": 64 },
       { "topic": "energy", "severity": "critical", "score": 64 },
-      { "topic": "movies", "severity": "high", "score": 62 },
       { "topic": "onamet", "score": 62 },
       { "topic": "outages", "score": 62 },
       { "topic": "iss", "score": 62 },
@@ -102,12 +99,10 @@
       { "topic": "games", "severity": "moderate", "score": 35 },
       { "topic": "golden_sun", "severity": "moderate", "score": 35 },
       { "topic": "soundcore_pro", "score": 62 },
-      { "topic": "movies", "severity": "moderate", "score": 28 },
 
       { "topic": "music", "severity": "low", "score": 62 },
       { "topic": "groceries", "severity": "low", "score": 28 },
-      { "topic": "deals", "severity": "low", "score": 20 },
-      { "topic": "movies", "severity": "low", "score": 15 }
+      { "topic": "deals", "severity": "low", "score": 20 }
     ],
     "keyword_boosts": [
       { "terms": ["tsunami", "evacuate", "evacuation"], "add": 15 }
@@ -117,14 +112,13 @@
   },
 
   "watchdog": {
-    "_comment": "Self-monitoring. main.py records every topic's last successful run and latest failure in state.topic_health; the watchdog turns that into a three-phase outage lifecycle: alert on the FIRST failing run (alert_delay_hours, 0 = immediately), remind every reminder_hours while it is still down, then exactly ONE recovery push when it works again. Reliability audit, Aug 2026: the old design alerted once after stale_hours=48 and then went quiet until recovery, so a two-day-old outage and a fixed one looked identical and a recovery was never announced at all. Every topic crossing the same transition on one run is bundled into a single push, so a runner-wide blip is one message, not twenty. Set reminder_hours to 0 to turn reminders off. data_stale_days ({topic: days}) is the opt-in second check, running the same lifecycle at day pacing (data_reminder_days): a listed topic that has fetched ZERO items for that many days while its runs still 'succeed' is the scraper-broke-silently case. Only list topics whose sources produce items near daily (fda/energy/movies fetch every cycle; games fetches weekly, hence its longer window); a quiet-by-nature source here would false-alarm. fuel stamps last_data via the topic health contract (notify_watcher/health.py) on every successful daily listing check; its weekly notice plus slack fits a 10-day window.",
+    "_comment": "Self-monitoring. main.py records every topic's last successful run and latest failure in state.topic_health; the watchdog turns that into a three-phase outage lifecycle: alert on the FIRST failing run (alert_delay_hours, 0 = immediately), remind every reminder_hours while it is still down, then exactly ONE recovery push when it works again. Reliability audit, Aug 2026: the old design alerted once after stale_hours=48 and then went quiet until recovery, so a two-day-old outage and a fixed one looked identical and a recovery was never announced at all. Every topic crossing the same transition on one run is bundled into a single push, so a runner-wide blip is one message, not twenty. Set reminder_hours to 0 to turn reminders off. data_stale_days ({topic: days}) is the opt-in second check, running the same lifecycle at day pacing (data_reminder_days): a listed topic that has fetched ZERO items for that many days while its runs still 'succeed' is the scraper-broke-silently case. Only list topics whose sources produce items near daily (fda/energy fetch every cycle; games fetches weekly, hence its longer window); a quiet-by-nature source here would false-alarm. fuel stamps last_data via the topic health contract (notify_watcher/health.py) on every successful daily listing check; its weekly notice plus slack fits a 10-day window.",
     "alert_delay_hours": 0,
     "reminder_hours": 12,
     "data_reminder_days": 7,
     "data_stale_days": {
       "fda": 14,
       "energy": 14,
-      "movies": 14,
       "games": 21,
       "fuel": 10
     }
@@ -348,12 +342,12 @@
     "news_min_gap_days": 5
   },
 
-  "_news_comment": "Shared freshness gate for the Google News-based topics (game news, movie news, anthropic_news). Google News routinely resurfaces months- or years-old articles under brand-new URLs, which defeats URL/id dedup; any entry older than max_age_days is ignored at collection time. Undated entries pass (dedup still applies); 0 disables the gate.",
+  "_news_comment": "Shared freshness gate for the Google News-based topics (game news, golden_sun news, anthropic_news). Google News routinely resurfaces months- or years-old articles under brand-new URLs, which defeats URL/id dedup; any entry older than max_age_days is ignored at collection time. Undated entries pass (dedup still applies); 0 disables the gate.",
   "news": {
     "max_age_days": 14
   },
 
-  "_digest_comment": "max_per_source caps how many items any one source (a film, game, or feed) may hold in the shared buffer, so a high-volume source can't evict the low-volume domain monitors before the daily flush. Evictions and the flush both rank by score, so the most important pending items survive and surface first.",
+  "_digest_comment": "max_per_source caps how many items any one source (a game or feed) may hold in the shared buffer, so a high-volume source can't evict the low-volume domain monitors before the daily flush. Evictions and the flush both rank by score, so the most important pending items survive and surface first.",
   "digest": {
     "max_buffer": 120,
     "max_per_source": 4,
@@ -448,59 +442,6 @@
         "we want", "predict", "speculation", "rumored to"] },
       "clickbait": { "weight": -5, "terms": ["you won't believe", "shocking",
         "this is why", "needs to", "deserves"] }
-    },
-    "thresholds": { "high": 7, "moderate": 4 }
-  },
-
-  "movies_scoring": {
-    "_comment": "Importance scorer for movie news headlines. score = source_weight + one-shot signal bonuses - one-shot noise penalties; tier = highest threshold met. Matching is case-insensitive SUBSTRING, so terms must not be substrings of innocent words (e.g. a bare 'review' signal would match 'preview', 'to star' would match 'to start'). Tuned 2026-06 for high-signal-only live pushes: a casting announcement, release date move (delay OR moved up), cancellation, or a real trailer/teaser drop pushes live ALONE from any source (weight 7 >= high threshold); a leak pushes live only when paired with confirmation language AND a tier1/official source; rumor/box office/awards/review/listicle language is penalized into the digest or dropped. high -> live push, moderate -> daily digest, below moderate -> dropped.",
-    "source_weights": { "official": 4, "tier1": 1, "unknown": 0 },
-    "source_tiers": {
-      "official": ["marvel", "disney", "warner bros", "dc studios", "dc comics",
-                   "sony pictures", "universal pictures", "paramount", "a24",
-                   "netflix", "lucasfilm", "20th century", "pixar"],
-      "tier1": ["variety", "hollywood reporter", "deadline", "collider",
-                "rotten tomatoes", "empire", "screen rant", "ign", "the verge",
-                "entertainment weekly", "indiewire", "slashfilm", "/film"]
-    },
-    "signal_bonuses": {
-      "schedule_signals": { "weight": 7, "terms": ["release date", "premiere date",
-        "in theaters", "hits theaters", "streaming date", "delayed", "delay",
-        "pushed back", "postponed", "moved up", "moved forward", "new date",
-        "out now", "release window"] },
-      "cancel_signals": { "weight": 7, "terms": ["cancel", "shelved", "scrapped"] },
-      "reveal_signals": { "weight": 7, "terms": ["official trailer", "new trailer",
-        "first trailer", "final trailer", "teaser trailer", "new teaser",
-        "trailer debut", "trailer drop", "trailer released", "first footage"] },
-      "cast_signals": { "weight": 7, "terms": ["casting", "joins the cast",
-        "cast as", "starring", "star in", "will star", "set to star",
-        "set to play", "signs on", "lands role", "to direct", "will direct",
-        "new director"] },
-      "official_signals": { "weight": 4, "terms": ["confirm", "announce",
-        "official", "greenlit", "greenlight"] },
-      "leak_signals": { "weight": 2, "terms": ["leak"] },
-      "content_signals": { "weight": 4, "terms": ["sequel", "prequel", "reboot",
-        "spin-off", "spinoff", "sets release", "wraps filming", "begins filming",
-        "production"] },
-      "moderate_signals": { "weight": 3, "terms": ["interview", "set photo",
-        "behind the scenes", "first reactions", "early reactions", "first look",
-        "first images", "poster", "sneak peek", "clip released", "featurette",
-        "report"] }
-    },
-    "noise_penalties": {
-      "listicle": { "weight": -6, "terms": ["best movies", "worst movies",
-        "ranked", "ranking", "tier list", "movies like", "most anticipated",
-        "top 10", "top 20", "top 25"] },
-      "opinion": { "weight": -6, "terms": ["opinion", "editorial", "hot take",
-        "i watched", "why i "] },
-      "speculation": { "weight": -5, "terms": ["could", "might", "maybe",
-        "what if", "here's why", "reasons why", "fan theory", "fans want",
-        "we want", "predict", "speculation", "rumor", "rumour", "seemingly",
-        "allegedly", "everything we know"] },
-      "clickbait": { "weight": -5, "terms": ["you won't believe", "shocking",
-        "this is why", "needs to", "deserves"] },
-      "lowvalue": { "weight": -4, "terms": ["box office", "review", "award",
-        "oscar", "golden globe", "bafta", "nominee", "nomination"] }
     },
     "thresholds": { "high": 7, "moderate": 4 }
   }
