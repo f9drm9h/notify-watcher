@@ -89,7 +89,9 @@
     "rent|2026-07-30|1"
   ],
   "blood_donation_last_notified": "2026-07-08",
-  "cleaning_slots_sent": [],
+  "cleaning_slots_sent": [
+    "2026-08-02|18:00"
+  ],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -464,42 +466,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "Quick reminder to drink some water.",
-      "id": "5ea4c64509ccf084",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-07-19T12:10:36.940118+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "On this day\n2024: Neary's, a New York City Irish pub popular with political elites, closed.\n\nFeatured: The Halo Graphic Novel\nThe Halo Graphic Novel is a graphic novel anthology published by Marvel Comics in partnership with Bungie, set in the universe of the science fiction franchise Halo. The Halo Graphic Novel was the series' first entry into the sequential art medium, and features aspects of the...\n\nDominican culture\nBuilt 1502-1508, the Ozama Fortress in Santo Domingo is the oldest standing European military structure in the Americas. (Source: UNESCO)",
-      "id": "ef028b8976893b22",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Daily learning",
-      "topic": "learn",
-      "ts": "2026-07-19T12:10:37.964670+00:00",
-      "url": "https://en.wikipedia.org/wiki/The_Halo_Graphic_Novel"
-    },
-    {
-      "action": "push",
-      "detail": "In the grand theatre of 19th-century science, few figures cast as long a shadow as William Thomson, later Lord Kelvin. A towering intellect, he approached the cosmos with a physicist's rigorous lens, and when he turned his gaze to the age of the Earth, a seismic clash with the nascent field of geology and biology was inevitable. Kelvin, working with the then-understood laws of thermodynamics, calculated the time it would take for a molten Earth to cool to its present temperature. His numbers, refined over decades, consistently pointed to a relatively young Earth \u2013 tens, perhaps a few hundreds, of millions of years old. This was a direct challenge to Charles Darwin's theory of evolution, which required vast spans of time for natural selection to sculpt life\u2019s intricate forms, and to geologists, who saw evidence of slow, continuous processes that shaped the planet over unimaginable eons.\n\nThe ensuing debate was a fascinating intellectual tug-of-war. Kelvin, with his undeniable mathematical prowess and a track record of scientific triumphs, held enormous sway. He saw his calculations as irrefutable, a testament to the power of physics to constrain the wildest conjectures of other disciplines. Geologists and biologists, while respecting Kelvin, found themselves in a difficult position; their observations simply didn't fit his timeline. They presented evidence of deep canyons carved by slow rivers, mountain ranges uplifted and eroded over countless generations, and the fossil record, which spoke of a gradual unfolding of life.",
-      "id": "9d08009e942f6a90",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Lord Kelvin and the age of the Earth debate",
-      "topic": "spark",
-      "ts": "2026-07-19T12:10:41.548812+00:00",
-      "url": ""
-    },
     {
       "action": "push",
       "detail": "What: Weeks after Pearl Street, the Vulcan Street plant in Appleton, Wisconsin used the Fox River to generate the world's first hydroelectric power.\nWhy it matters: It showed falling water could replace burning coal to make electricity \u2014 the first renewable power station.\nWhy you should care: Hydropower still supplies about a sixth of the world's electricity, all tracing back to this small mill-town experiment.\n(Source: Smithsonian)",
@@ -12463,9 +12429,47 @@
       "topic": "iss",
       "ts": "2026-08-02T21:09:07.373324+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Time to train. Start small if you have to - just start.",
+      "id": "78c2912b3bebad6b",
+      "score": 0,
+      "severity": "low",
+      "source": "exercise",
+      "title": "Exercise - 6 PM session",
+      "topic": "habits",
+      "ts": "2026-08-02T22:07:36.126725+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Time to meditate. No pressure, just presence.",
+      "id": "bc5d8ed19b9eadea",
+      "score": 0,
+      "severity": "low",
+      "source": "meditate",
+      "title": "Meditate - evening reset",
+      "topic": "habits",
+      "ts": "2026-08-02T22:07:36.126725+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "15-minute cleaning sprint. Timer on, go.",
+      "id": "5a4b5abb563f7bf2",
+      "score": 0,
+      "severity": "low",
+      "source": "cleaning",
+      "title": "Cleaning - quick tidy-up",
+      "topic": "habits",
+      "ts": "2026-08-02T22:07:36.126725+00:00",
+      "url": ""
     }
   ],
-  "exercise_slots_sent": [],
+  "exercise_slots_sent": [
+    "2026-08-02|18:00"
+  ],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -13796,6 +13800,21 @@
       "channel": "1515504253345726558",
       "habit": "water",
       "sent": "2026-08-02T09:37:31.808520+00:00"
+    },
+    "1533597167283998901": {
+      "channel": "1515504253345726558",
+      "habit": "exercise",
+      "sent": "2026-08-02T22:07:36.126725+00:00"
+    },
+    "1533597169288745044": {
+      "channel": "1515504253345726558",
+      "habit": "meditate",
+      "sent": "2026-08-02T22:07:36.126725+00:00"
+    },
+    "1533597171151011957": {
+      "channel": "1515504253345726558",
+      "habit": "cleaning",
+      "sent": "2026-08-02T22:07:36.126725+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-02",
@@ -14091,7 +14110,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-02T21:52:30.947029+00:00"
+    "ts": "2026-08-02T22:07:33.945850+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -14129,7 +14148,9 @@
   ],
   "learn_last_sent": "2026-08-02",
   "life_dashboard_last_week": "2026-W31",
-  "meditate_slots_sent": [],
+  "meditate_slots_sent": [
+    "2026-08-02|18:00"
+  ],
   "music_discovery_seen": [
     5425093,
     4685222,
@@ -15087,9 +15108,9 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "habits": {
-      "last_data": "2026-08-02T21:52:33.108948+00:00",
+      "last_data": "2026-08-02T22:07:38.734905+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-02T21:52:30.947029+00:00"
+      "last_ok": "2026-08-02T22:07:33.945850+00:00"
     },
     "holidays": {
       "last_data": "2026-08-02T21:09:15.202376+00:00",
@@ -15172,9 +15193,9 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-02T21:52:32.216318+00:00",
+      "last_data": "2026-08-02T22:07:36.126268+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-02T21:52:30.947029+00:00"
+      "last_ok": "2026-08-02T22:07:33.945850+00:00"
     },
     "uv": {
       "last_data": "2026-08-02T21:09:16.687932+00:00",
