@@ -583,18 +583,6 @@
     {
       "action": "push",
       "detail": "",
-      "id": "105402663840cc7b",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday's Massive Runtime Confirmed In New Marvel Report - SlashFilm",
-      "topic": "movies",
-      "ts": "2026-07-18T21:07:29.489337+00:00",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1yZUxPLTEweUNYT3A5Y1FtamkxYkxQZXJoMHRVbWViVmVFeHd6OC11d1NGTHBsV2k1SUh5TzNLVU5GSzRIUWFkWml6NnBhR0dlV2JwbFoteXNHSUtrcXhTQllFa1YzZzZtNURvakQtWDBubE54LWc?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
       "id": "c4de8f7db288961f",
       "score": 62,
       "severity": "high",
@@ -12579,6 +12567,18 @@
       "topic": "iss",
       "ts": "2026-08-02T09:08:29.865485+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Before coffee, before your phone: a glass of water.",
+      "id": "85fe7b76358279eb",
+      "score": 0,
+      "severity": "low",
+      "source": "water",
+      "title": "Water - start the day hydrated",
+      "topic": "habits",
+      "ts": "2026-08-02T09:37:31.808520+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -13910,6 +13910,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-08-02T02:08:21.643507+00:00"
+    },
+    "1533408404553466000": {
+      "channel": "1515504253345726558",
+      "habit": "water",
+      "sent": "2026-08-02T09:37:31.808520+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-02",
@@ -14205,7 +14210,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-02T09:22:27.437788+00:00"
+    "ts": "2026-08-02T09:37:29.735250+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -15828,9 +15833,9 @@
       "last_ok": "2026-08-01T21:08:19.093787+00:00"
     },
     "habits": {
-      "last_data": "2026-08-02T09:22:30.750158+00:00",
+      "last_data": "2026-08-02T09:37:33.343483+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-02T09:22:27.437788+00:00"
+      "last_ok": "2026-08-02T09:37:29.735250+00:00"
     },
     "holidays": {
       "last_data": "2026-08-01T21:09:34.916023+00:00",
@@ -15913,9 +15918,9 @@
       "last_ok": "2026-08-02T09:07:28.053472+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-02T09:22:29.666735+00:00",
+      "last_data": "2026-08-02T09:37:31.808342+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-02T09:22:27.437788+00:00"
+      "last_ok": "2026-08-02T09:37:29.735250+00:00"
     },
     "uv": {
       "last_data": "2026-08-01T21:09:36.484243+00:00",
@@ -15955,7 +15960,9 @@
   },
   "watchdog_data_outages": {},
   "watchdog_outages": {},
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-08-02|05:30"
+  ],
   "weather_seen_ids": [
     "321579631cada11b",
     "09d36294c2c88c6e",
