@@ -357,12 +357,25 @@ class FetchFailureClaimsTest(unittest.TestCase):
         creds = {"GMAIL_USER": "u@x.com", "GMAIL_APP_PASSWORD": "pw",
                  "NOTIFY_DAILY": ""}
         with mock.patch.dict("os.environ", creds), \
-                mock.patch.object(spending, "_ingest_emails", return_value=2), \
+                mock.patch.object(spending, "_ingest_emails", return_value=(2, 5)), \
                 capture_pushes():
             state = spending.run({})
         status = self._status(state, "spending")
         self.assertTrue(status["ok"])
-        self.assertEqual(status["data_count"], 2)
+        # data_count is bank EMAILS SEEN (5), not new transactions (2): a quiet
+        # week adds nothing but still proves the mailbox pipe is alive.
+        self.assertEqual(status["data_count"], 5)
+
+    def test_spending_alive_mailbox_with_no_new_rows_is_not_empty(self):
+        # The distinction the Aug 2026 audit added: emails arriving but all
+        # already recorded must NOT start the watchdog's quiet clock.
+        creds = {"GMAIL_USER": "u@x.com", "GMAIL_APP_PASSWORD": "pw",
+                 "NOTIFY_DAILY": ""}
+        with mock.patch.dict("os.environ", creds), \
+                mock.patch.object(spending, "_ingest_emails", return_value=(0, 4)), \
+                capture_pushes():
+            state = spending.run({})
+        self.assertEqual(self._status(state, "spending")["data_count"], 4)
 
     def test_energy_learn_no_content_vs_sent(self):
         entry = {"id": "x", "title": "Volt", "what": "w", "why": "y", "care": "c"}

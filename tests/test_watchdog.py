@@ -605,3 +605,92 @@ class SwallowedFuelFailureTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class EmptySourceTest(unittest.TestCase):
+    """The 'reachable but returning nothing' check (watchdog.empty_days).
+
+    The third failure class, and the one the August 2026 audit found live:
+    `spending` had ingested nothing for three weeks while reporting ok on every
+    run. The outage check saw no error because there was none, and the
+    data-staleness check never started its clock because health.topic_status
+    only stamps last_data when data_count > 0.
+    """
+
+    def test_quiet_topic_alerts_then_reminds_then_recovers(self):
+        state = {"topic_health": {"spending": {"last_ok": _now_iso(1),
+                                               "empty_since": _now_iso(24 * 30)}}}
+        with capture_pushes() as sent:
+            state = watchdog.run(state)
+        self.assertEqual(len(sent), 1)
+        self.assertIn("answering empty", sent[0]["title"])
+        self.assertIn("spending", state[watchdog.EMPTY_OUTAGES_KEY])
+
+        with capture_pushes() as sent:  # inside the reminder window
+            state = watchdog.run(state)
+        self.assertEqual(sent, [])
+
+        state[watchdog.EMPTY_OUTAGES_KEY]["spending"]["last_alert"] = _now_iso(24 * 30)
+        with capture_pushes() as sent:
+            state = watchdog.run(state)
+        self.assertEqual(len(sent), 1)
+        self.assertIn("STILL answering empty", sent[0]["title"])
+
+        # Items flow again -> main.py clears empty_since -> one all-clear.
+        del state["topic_health"]["spending"]["empty_since"]
+        with capture_pushes() as sent:
+            state = watchdog.run(state)
+        self.assertEqual(len(sent), 1)
+        self.assertIn("returning items again", sent[0]["title"])
+        with capture_pushes() as sent:
+            state = watchdog.run(state)
+        self.assertEqual(sent, [])
+
+    def test_recently_quiet_topic_is_silent(self):
+        # Two days of no bank emails is a quiet fortnight, not a broken pipe.
+        state = {"topic_health": {"spending": {"last_ok": _now_iso(1),
+                                               "empty_since": _now_iso(48)}}}
+        with capture_pushes() as sent:
+            watchdog.run(state)
+        self.assertEqual(sent, [])
+
+    def test_topic_with_items_is_never_checked(self):
+        # No empty_since stamp at all: main.py clears it whenever data_count>0.
+        state = {"topic_health": {"spending": {"last_ok": _now_iso(1),
+                                               "last_data_count": 3}}}
+        with capture_pushes() as sent:
+            watchdog.run(state)
+        self.assertEqual(sent, [])
+
+    def test_unconfigured_topic_is_never_checked(self):
+        # Only topics listed in watchdog.empty_days are aged; `holidays` is
+        # legitimately empty most of the year.
+        state = {"topic_health": {"holidays": {"last_ok": _now_iso(1),
+                                               "empty_since": _now_iso(24 * 300)}}}
+        with capture_pushes() as sent:
+            watchdog.run(state)
+        self.assertEqual(sent, [])
+
+    def test_outage_takes_precedence_and_both_can_fire(self):
+        # A hard failure and a separate quiet topic are independent bundles.
+        state = {"topic_health": {
+            "fx": {"last_ok": _now_iso(30), "last_error": "boom",
+                   "last_error_ts": _now_iso(1)},
+            "spending": {"last_ok": _now_iso(1), "empty_since": _now_iso(24 * 30)},
+        }}
+        with capture_pushes() as sent:
+            watchdog.run(state)
+        titles = " | ".join(s["title"] for s in sent)
+        self.assertIn("is failing", titles)
+        self.assertIn("answering empty", titles)
+
+    def test_empty_alert_survives_a_failed_push(self):
+        # Delivery contract: no marker unless the push landed, so the next run
+        # re-sends rather than losing the alert.
+        state = {"topic_health": {"spending": {"last_ok": _now_iso(1),
+                                               "empty_since": _now_iso(24 * 30)}}}
+        with mock.patch.object(ntfy, "push", side_effect=RuntimeError("discord down")):
+            with self.assertRaises(RuntimeError):
+                watchdog.run(state)
+        self.assertNotIn("alerted",
+                         state.get(watchdog.EMPTY_OUTAGES_KEY, {}).get("spending", {}))

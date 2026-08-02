@@ -121,6 +121,11 @@
       "energy": 14,
       "games": 21,
       "fuel": 10
+    },
+    "_empty_days_comment": "THIRD check (August 2026 audit): a topic that is reachable and parses cleanly but returns ZERO items for this many days. It catches what the other two structurally cannot — there is no error for the outage check to see, and health.py stamps last_data only when data_count>0, so the data_stale_days clock never even starts. spending sat in exactly this state for three weeks with its Gmail ingest dead, reporting ok on every single run. Its data_count is now bank EMAILS SEEN rather than new transactions, so a run of zeroes means the mailbox pipe is broken, not that the week was quiet. Opt in only topics where zero is genuinely suspicious; empty_reminder_days paces the still-quiet reminders.",
+    "empty_reminder_days": 7,
+    "empty_days": {
+      "spending": 21
     }
   },
 

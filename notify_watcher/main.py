@@ -229,7 +229,28 @@ def _record_outcome(entry: dict, status: dict | None, *, adopted: bool,
         return True
     if status.get("ok"):
         entry["last_ok"] = run_ts
-        entry["last_data_count"] = int(status.get("data_count") or 0)
+        count = int(status.get("data_count") or 0)
+        entry["last_data_count"] = count
+        # An ok report carrying ZERO items is the quietest failure mode left:
+        # the fetch worked, so this is not an outage and last_ok is correct, but
+        # "the source answered with nothing" and "the parser stopped
+        # understanding the source" look identical from here. Neither the outage
+        # check (no error) nor the data-staleness check (health.topic_status
+        # only stamps last_data when count > 0, so the clock never even starts)
+        # can see it. The August 2026 audit found two topics sitting in that
+        # hole: `outages` counting only watched-zone hits, and `spending`, which
+        # had ingested nothing for three weeks while reporting ok every run.
+        #
+        # So a run of empty-but-ok results gets its own clock, stamped for EVERY
+        # topic whether or not anything alerts on it — the dashboard and the
+        # weekly recap can then show "quiet since", and watchdog.empty_days opts
+        # in the topics where quiet is genuinely suspicious.
+        if count > 0:
+            entry.pop("empty_since", None)
+            entry.pop("empty_runs", None)
+        else:
+            entry.setdefault("empty_since", run_ts)
+            entry["empty_runs"] = int(entry.get("empty_runs") or 0) + 1
         entry.pop("last_error", None)
         entry.pop("last_error_ts", None)
         entry.pop("source_failed", None)

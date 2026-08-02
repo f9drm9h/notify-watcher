@@ -61,8 +61,14 @@ jobs:
     # treats as a failure and reports.
     timeout-minutes: 20
     steps:
+      # checkout@v5 / setup-python@v6 are the Node 24 releases. The v4/v5 pair
+      # ran on Node 20, which GitHub deprecated: every run was already printing
+      # "Node.js 20 is deprecated ... forced to run on Node.js 24", and the end
+      # of that grace period is a scheduled, externally-imposed breakage — the
+      # exact shape of failure a watcher meant to run unattended for months
+      # must not be holding.
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Sync latest state before mode decision
         run: |
@@ -73,7 +79,7 @@ jobs:
           git checkout -B "${GITHUB_REF_NAME}" "origin/${GITHUB_REF_NAME}"
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.11"
           cache: pip

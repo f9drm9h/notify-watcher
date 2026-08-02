@@ -288,7 +288,7 @@ def _save_spending(transactions: list[dict]) -> None:
     SPENDING_PATH.write_bytes(_fernet().encrypt(payload))
 
 
-def _ingest_emails(cfg: dict) -> int:
+def _ingest_emails(cfg: dict) -> tuple[int, int]:
     """Poll Gmail over IMAP for recent BHD alerts; parse and merge.
 
     Searches the last ``lookback_days`` (default 7) of mail from the sender
@@ -296,13 +296,20 @@ def _ingest_emails(cfg: dict) -> int:
     so filtering on UNSEEN raced them and silently skipped opened emails.
     Re-parsing an already-recorded alert is harmless — ``_merge`` dedups on
     date + amount + merchant. The mailbox is opened read-only and never
-    modified. Returns the number of new transactions recorded.
+    modified.
+
+    Returns ``(new_transactions, matching_emails_seen)``. Those two numbers
+    answer different questions and the August 2026 audit found that collapsing
+    them hid a three-week outage: "no NEW transactions" is the normal state of a
+    quiet week, while "no matching EMAILS at all in the lookback window" means
+    the pipe itself is dead — a revoked app password, a Gmail filter change, or
+    the bank altering its subject line. Health reports the second number.
     """
     user = os.environ.get("GMAIL_USER")
     password = os.environ.get("GMAIL_APP_PASSWORD")
     if not user or not password:
         log.info("spending: GMAIL_USER/GMAIL_APP_PASSWORD not set; skipping email poll")
-        return 0
+        return 0, 0
     # Fail fast on a missing/bad key BEFORE touching the mailbox: parsed
     # transactions could not be saved (plaintext is never written).
     _fernet()
@@ -313,8 +320,12 @@ def _ingest_emails(cfg: dict) -> int:
     lookback = int(cfg.get("lookback_days", 7))
     since = _dt.date.today() - _dt.timedelta(days=lookback)
     since_str = f"{since.day:02d}-{_IMAP_MONTHS[since.month - 1]}-{since.year}"
-    log.debug("spending: polling IMAP FROM %r SINCE %s (lookback %d days), "
-              "subject %r", sender, since_str, lookback, wanted_subject)
+    # INFO, not DEBUG. The runner logs at INFO, so every diagnostic that could
+    # explain a quiet week used to be invisible in Actions — the one place you
+    # go to find out why. These lines are three per run and they are the
+    # difference between "spending is quiet" and "spending is broken".
+    log.info("spending: polling IMAP FROM %r SINCE %s (lookback %d days), "
+             "subject %r", sender, since_str, lookback, wanted_subject)
 
     parsed: list[dict] = []
     ids: list[bytes] = []
@@ -329,10 +340,10 @@ def _ingest_emails(cfg: dict) -> int:
         status, data = imap.search(None, "SINCE", since_str, "FROM", f'"{sender}"')
         if status != "OK":
             log.warning("spending: IMAP search failed: %s", status)
-            return 0
+            return 0, 0
         ids = (data[0] or b"").split()
-        log.debug("spending: IMAP search matched %d message(s) from %s since %s",
-                  len(ids), sender, since_str)
+        log.info("spending: IMAP search matched %d message(s) from %s since %s",
+                 len(ids), sender, since_str)
         for num in ids:
             status, fetched = imap.fetch(num, "(BODY.PEEK[])")
             if status != "OK" or not fetched or not fetched[0]:
@@ -350,17 +361,22 @@ def _ingest_emails(cfg: dict) -> int:
         except Exception:  # noqa: BLE001 - a logout hiccup is irrelevant
             pass
 
-    log.debug("spending: %d/%d message(s) matched subject; parsed %d transaction(s)",
-              subject_hits, len(ids), len(parsed))
+    log.info("spending: %d/%d message(s) matched subject; parsed %d transaction(s)",
+             subject_hits, len(ids), len(parsed))
+    if not subject_hits:
+        log.warning("spending: no bank transaction emails in the last %d days "
+                    "(%d message(s) from the sender, none matching subject %r) - "
+                    "app password, Gmail filter or bank template may have changed",
+                    lookback, len(ids), wanted_subject)
     if not parsed:
-        return 0
+        return 0, subject_hits
     merged, added = _merge(existing, parsed)
     if added:
         _save_spending(merged)
     else:
-        log.debug("spending: parsed %d transaction(s), all already recorded "
-                  "(deduped on date+amount+merchant)", len(parsed))
-    return added
+        log.info("spending: parsed %d transaction(s), all already recorded "
+                 "(deduped on date+amount+merchant)", len(parsed))
+    return added, subject_hits
 
 
 # --- weekly summary ----------------------------------------------------------
@@ -452,13 +468,18 @@ def run(state: dict) -> dict:
     configured = bool(os.environ.get("GMAIL_USER")
                       and os.environ.get("GMAIL_APP_PASSWORD"))
     try:
-        added = _ingest_emails(cfg)
+        added, emails_seen = _ingest_emails(cfg)
         if added:
             log.info("spending: recorded %d new transaction(s)", added)
         else:
-            log.debug("spending: ingestion added no new transactions this run")
+            log.info("spending: ingestion added no new transactions this run")
         if configured:
-            health.source_ok(state, "spending", data_count=added)
+            # data_count is BANK EMAILS SEEN, not new transactions. A quiet
+            # spending week legitimately adds nothing; a mailbox that stops
+            # producing alerts entirely is the pipe breaking, and only the
+            # second number can tell them apart. watchdog.empty_days ages a run
+            # of zeroes here into an alert.
+            health.source_ok(state, "spending", data_count=emails_seen)
     except SpendingLocked as exc:
         log.error("spending: log locked, ingestion skipped: %s", exc)
         health.source_failed(state, "spending", f"spending log locked: {exc}")

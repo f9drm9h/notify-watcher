@@ -38,6 +38,11 @@
         "data_stale_days": {
           "type": "object",
           "additionalProperties": { "type": "number", "exclusiveMinimum": 0 }
+        },
+        "empty_reminder_days": { "type": "number", "minimum": 0 },
+        "empty_days": {
+          "type": "object",
+          "additionalProperties": { "type": "number", "exclusiveMinimum": 0 }
         }
       },
       "patternProperties": { "^_": {} },

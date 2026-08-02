@@ -282,11 +282,79 @@ class HealthContractTest(unittest.TestCase):
                  "window": "", "url": "https://edeeste.example/x"}]
         with mock.patch.object(outages.config, "section",
                                return_value=self.EDEESTE_CFG), \
-                mock.patch.object(outages, "_edeeste_collect", return_value=rows):
+                mock.patch.object(outages, "_edeeste_collect",
+                                  return_value=(rows, 7, dt.date(2026, 6, 14))):
             state = outages.run({})  # first sight: seeds silently
         status = state[health.STATUS_KEY]["outages"]
         self.assertTrue(status["ok"])
-        self.assertEqual(status["data_count"], 1)
+        # data_count is day sections parsed, not watched-zone hits.
+        self.assertEqual(status["data_count"], 7)
+
+    def test_quiet_week_still_reports_the_parse_size(self):
+        # No Hainamosa outage this week is NORMAL. The health signal must show
+        # the schedule was read (7 days) rather than collapsing to zero, which
+        # is what made a real quiet week indistinguishable from a dead parser.
+        from unittest import mock
+        from notify_watcher import health
+        with mock.patch.object(outages.config, "section",
+                               return_value=self.EDEESTE_CFG), \
+                mock.patch.object(outages, "_edeeste_collect",
+                                  return_value=([], 7, dt.date(2026, 6, 14))):
+            state = outages.run({})
+        status = state[health.STATUS_KEY]["outages"]
+        self.assertTrue(status["ok"])
+        self.assertEqual(status["data_count"], 7)
+
+    def test_zero_day_sections_reports_source_failed(self):
+        # PDFs downloaded fine but parsed to nothing: a layout change, which
+        # used to be reported as a healthy run with zero hits. A CURRENT package
+        # (newest_end in the future) is what makes this the layout case.
+        from unittest import mock
+        from notify_watcher import health
+        future = outages._today_local() + dt.timedelta(days=3)
+        with mock.patch.object(outages.config, "section",
+                               return_value=self.EDEESTE_CFG), \
+                mock.patch.object(outages, "_edeeste_collect",
+                                  return_value=([], 0, future)):
+            state = outages.run({})
+        status = state[health.STATUS_KEY]["outages"]
+        self.assertTrue(status["source_failed"])
+        self.assertIn("0 day sections", status["message"])
+
+    def test_expired_archive_reports_a_stopped_publisher_not_a_layout_change(self):
+        # What EDEESTE actually did in August 2026: stopped posting weekly
+        # packages. The newest one had already expired, so no PDF was ever
+        # opened — calling that a layout change would send the reader hunting
+        # for a parser bug that does not exist.
+        from unittest import mock
+        from notify_watcher import health
+        stale = outages._today_local() - dt.timedelta(days=7)
+        with mock.patch.object(outages.config, "section",
+                               return_value=self.EDEESTE_CFG), \
+                mock.patch.object(outages, "_edeeste_collect",
+                                  return_value=([], 0, stale)):
+            state = outages.run({})
+        status = state[health.STATUS_KEY]["outages"]
+        self.assertTrue(status["source_failed"])
+        self.assertIn("no schedule covering today", status["message"])
+        self.assertIn("7d ago", status["message"])
+
+
+class DaySectionCountTest(unittest.TestCase):
+    """The parse-size signal must count days, not watched-zone matches."""
+
+    WEEK = (dt.date(2026, 6, 8), dt.date(2026, 6, 14))
+
+    def test_counts_day_sections_independently_of_zones(self):
+        text = ("LUNES 08 DE JUNIO\nCircuito A - LOS MINA\n"
+                "MARTES 09 DE JUNIO\nCircuito B - HAINAMOSA, NO 6\n"
+                "MIERCOLES 10 DE JUNIO\nCircuito C - SABANA PERDIDA\n")
+        self.assertEqual(outages._day_section_count(text, *self.WEEK), 3)
+
+    def test_unparseable_text_counts_zero(self):
+        self.assertEqual(
+            outages._day_section_count("nothing resembling a schedule",
+                                       *self.WEEK), 0)
 
 
 if __name__ == "__main__":
