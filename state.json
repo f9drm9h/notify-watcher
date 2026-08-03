@@ -93,7 +93,71 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [],
+  "digest_buffer": [
+    {
+      "detail": "DOP 107,995.00 (was DOP 134,995.00, -20%)",
+      "preserve_detail": false,
+      "score": 45,
+      "source": "La Sirena",
+      "title": "La Sirena deal: Estufa Samsung 30 Pulgadas a Gas NSG6DG8700SRAX",
+      "topic": "groceries",
+      "url": "https://www.sirena.do/samsung-estufa-30p-nsg6dg8700srax-gas-2089400/p"
+    },
+    {
+      "detail": "DOP 86,895.00 (was DOP 108,595.00, -20%)",
+      "preserve_detail": false,
+      "score": 45,
+      "source": "La Sirena",
+      "title": "La Sirena deal: Nevera Samsung 22 Pies RS22T5200S9",
+      "topic": "groceries",
+      "url": "https://www.sirena.do/samsung-nevera-22p-rs22t5200s9-1914619/p"
+    },
+    {
+      "detail": "DOP 7,295.00 (was DOP 8,595.00, -15%)",
+      "preserve_detail": false,
+      "score": 45,
+      "source": "La Sirena",
+      "title": "La Sirena deal: Air Fryer Black & Decker 5.7 Lt Hf5055b",
+      "topic": "groceries",
+      "url": "https://www.sirena.do/b-d-air-fryer-5-7lt-hf5055b-1990576/p"
+    },
+    {
+      "detail": "DOP 67,995.00 (was DOP 79,995.00, -15%)",
+      "preserve_detail": false,
+      "score": 45,
+      "source": "La Sirena",
+      "title": "La Sirena deal: Lavadora Torre Mabe 24 Kg MCL2440PSBB0",
+      "topic": "groceries",
+      "url": "https://www.sirena.do/mabe-lavadora-torre-24kg-mcl2440psbb0-2112419/p"
+    },
+    {
+      "detail": "DOP 214.95 (was DOP 268.95, -20%)",
+      "preserve_detail": false,
+      "score": 45,
+      "source": "Nacional",
+      "title": "Nacional deal: Jabon En Barra Karite Y Vainilla Dove 3 Und/Paq 90 Gr",
+      "topic": "groceries",
+      "url": "https://supermercadosnacional.com/jabon-en-barra-karite-y-vainilla-dove-3-und-paq-90-gr-2215231"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 35,
+      "source": "EIA Today in Energy",
+      "title": "Hourly peak load in ERCOT set a new record, exceeding 91 GW on July 22",
+      "topic": "energy",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67906"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 35,
+      "source": "World Nuclear News",
+      "title": "Commonwealth Fusion Systems raises a further USD1 billion",
+      "topic": "energy",
+      "url": "https://www.world-nuclear-news.org/articles/commonwealth-fusion-systems-raises-a-further-usd1-billion"
+    }
+  ],
   "digest_last_sent": "2026-08-03",
   "discord_control": {
     "last_id": "1530929203594137641"
@@ -153,6 +217,10 @@
     ]
   },
   "energy_seen_ids": [
+    "3df72a47bff9cf7a",
+    "d4c6cddb50e0d255",
+    "83f938041ca38f7e",
+    "b0a628a1835a2983",
     "cf98263538b3e8b4",
     "5f28e4e7de47455e",
     "61755e9103f5cff0",
@@ -448,73 +516,9 @@
     "7a2fcd9cb3ab7e18",
     "9196fb40b7c0edfe",
     "36438bc6f94796d4",
-    "fd4a1990d293e721",
-    "7bddc5dada5cfcdf",
-    "63bf92641d0b1859",
-    "d3698ed6070f205b",
-    "42752e3b95e9351f"
+    "fd4a1990d293e721"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "7a841945d0f5536e",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "New Marvel's Wolverine Trailer Unleashes Lady Deathstrike - Logan's Healing Factor Has Met Its Match - GameFragger.com",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.934987+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNUkFBbjUtMmRLcGp4cHZhcGdlV1dnTlJqbVJYUmhrVmM3YlZxbU5ON2tLajJSbnJxU0RmeE10RmcwYXVGMDFJUmV6MEdaNnpHV2YyX01RQzNuNVhudDNHSW1aeWZ4SjI3dldmOEJDN2xJV3dfVnJEWGFuUmdOUVhZQ1VwVTVja0luZnhpR20wRS1maDdSUzB0UnhtNXlhZ3ZTOHVjaFdIOTBDV1Rid01ER0hOOTkyaVoyZkptclVMa3puUjhiVWZxVk9BODNmbUJQMGNsTS03ODVPU2dCLVhrOVJMU2FVRFlEbEpF?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "0b5b5f81af652e8d",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine: Insomniac's game is shown off in a new trailer - Sortir \u00e0 Paris",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.935578+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNejZneXkxVDdfaWNKNEM0NXMwNHNDa0tfSy1KbzcyRklfNzdHREIwVzBSc2ppYXJQNjgxOWpfakVtZXl4SUoxajUzTmZ1QlFRQXpRc1J5V3N1NE5rMGlzT0hmVnMwMVpnU2JONktUZzR1TEhjQ2hETFJqSHJsMU04c2hxT2lkWlQwdHM5a3NKZkluTDc5MnpYajlrN3g1NkVFQUtqb2hpdjFWTm1kWDdhd3htbWZOZll4bjVJRnJHWmdpZ01kRHhlc0pzRlBvTjdlZFFR?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "15761195dd625ea0",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel\u2019s Wolverine Game From Imsomniac Gets New Trailer - SciFiNow",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.935869+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOdDBRODBVajdvQ08xVVVBMi0xa3Q1WDFJdkxNZ1hXMTFRazJLTi10ZUhOdmFCeGtYeFBfSG90YlVUbUpoaHRfczF6aDZkWDFVeDhBUE9FeDMwa0VqWERPM25zVTg4eWJPZUFNNkxSREVzLU9OVGdDVm8tLXdUMnZtcFNORFlKYmhoT0s2a0ExeHo?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "9f160828b4ee0110",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Logan is hunting for a picture of Jean Gray in the new Marvel's Wolverine trailer - Gamereactor UK",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.936189+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTFQ0UHhyZGpYSzBCakFyUWhKRi1BT25Ib1V2blhwNGowblpnaUlHbTBULXJxZ2YzcEV3VUpTOHk3bFpkNVFlRnRlQk15ZHVzQVNRT1hUT1VsMHZITC0wMnZ4ZElyUThlb1hsQzl0ZUZxQTVoLXotNm0zbW4tWVlDOEVBV2hqbEVWMzRzaVFtUGVKdDc1UnBVOFhqaUFBc0FuWU41OGU1aUc5OVd0VEhpNDJ5ZXZzVlk?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "1affca1b705e8fd5",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine Gets New Trailer That Will Play Ahead of Christopher Nolan's The Odyssey in Select The... - Gadgets 360",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.936450+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUkZmMldtWGhRWHFrTUtLM1dGNXJFMjlFc1JUajVLMTVuVUp3Wk92aDIyWmJqYUpFYXpRbEY2SE04cUpnbXZia0pKWGNxVjMxN3BmdmsweW5hV0VfY1k1MHY0bXhobVJMM2VqSmhiNm81b1BsV0YtdnQ1YUxwc1lhMWtOTTcxS2JjWm9xekZqZERfWDVmZHNHTDcyakZ2NjBCU0JQRDdCWmstaHVJVnRLTUhTRXFjQdIBuwFBVV95cUxOTTd1ZUhfOXkwLWc1LVNKWjIwQjlMNGlPVVljRkpfdUJoOVlvNmVVWDNzOVZBclBTZ1ZtYTdBLVl3c25CUDI1TFJxNnkxZVhzeFRrWm9wTGZvQm4xRjM2ckpuYXE2U01CVFNneXFsRjI5UmMtZVBOU0xoTzZ0ZlFkem8xaU5RNFRGclZoTTBZYTlkUUdVMm9RNnE2UllUUkZMbmNUR2l6T0lTQUhmMnFYeWpJZ0RBZVZTZ2hv?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -12454,6 +12458,66 @@
       "topic": "apod",
       "ts": "2026-08-03T12:10:27.024595+00:00",
       "url": "https://apod.nasa.gov/apod/image/2608/MeteorGecko_Burnett_4944.jpg"
+    },
+    {
+      "action": "push",
+      "detail": "Summer in the City (Remastered) - The Lovin' Spoonful\n(because you like The Mamas & The Papas)",
+      "id": "d7babf8d240ed104",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-03T15:07:37.856145+00:00",
+      "url": "https://www.deezer.com/track/629884"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "5f1d70bbd0aab399",
+      "score": 35,
+      "severity": "moderate",
+      "source": "EIA Today in Energy",
+      "title": "Hourly peak load in ERCOT set a new record, exceeding 91 GW on July 22",
+      "topic": "energy",
+      "ts": "2026-08-03T15:08:47.933842+00:00",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67906"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "235bbcfe4d406f9f",
+      "score": 60,
+      "severity": "high",
+      "source": "World Nuclear News",
+      "title": "China approves construction of eight more reactors",
+      "topic": "energy",
+      "ts": "2026-08-03T15:08:47.934419+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/china-approves-construction-of-eight-more-reactors"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "dfae14c75c934df3",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Commonwealth Fusion Systems raises a further USD1 billion",
+      "topic": "energy",
+      "ts": "2026-08-03T15:08:48.106130+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/commonwealth-fusion-systems-raises-a-further-usd1-billion"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 6:46 PM - max 62deg, NW to SE. Look up!",
+      "id": "4c495ee58a7b62f9",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-08-03T15:09:03.596067+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -12681,7 +12745,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
   "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-03T12:10:12.212422+00:00",
+  "fuel_last_prices_seen_at": "2026-08-03T15:09:01.351895+00:00",
   "fuel_prices": {
     "GLP": 135.2,
     "Gasoil Regular": 258.3,
@@ -13065,6 +13129,24 @@
       "1b7d9e5ab11b51a5"
     ],
     "La Sirena": [
+      "eb831445a6557b92",
+      "658e26efba04d8e0",
+      "c9f0325469cb689a",
+      "d78cc9109a4865eb",
+      "16f3a518e7e6a33d",
+      "2677f8a755a7bd85",
+      "41f3b9f444af092f",
+      "4ce3711c88d1aae2",
+      "510ae56b635883c7",
+      "17c2d5424fb6367b",
+      "0b25578451f7013f",
+      "88fc9e38a2c7dac0",
+      "456f8badc4dc79f2",
+      "569e7a8fe50d3e0b",
+      "043dcd3eae4f7419",
+      "13c303a1e1d3aa53",
+      "0f441b4dfcbaa517",
+      "3477dc358717475c",
       "5d85b3295a18e6b1",
       "397d3ce2a459f696",
       "02590de8d584c9ef",
@@ -13499,6 +13581,7 @@
       "997e525f302628c6"
     ],
     "Nacional": [
+      "766be9b385fea8e5",
       "e7604f65aba73ddc",
       "6884893304f6f3ea",
       "61c9d5cac95a2821",
@@ -13914,6 +13997,7 @@
     }
   },
   "iss_seen_passes": [
+    "4f06f9cf939f06de",
     "23bc7bdc1fd487f0",
     "46313adbae3769a1",
     "689f0752bc8c9c32",
@@ -14012,8 +14096,7 @@
     "701fc37852950706",
     "00b1c446e37d1bf2",
     "3cd650797649c01a",
-    "b7bc03c8b58db633",
-    "8b111505539cf63a"
+    "b7bc03c8b58db633"
   ],
   "itsc_sent_ids": [
     "e225196f247c74b5",
@@ -14177,9 +14260,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-03T14:52:31.851344+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-03T15:07:32.410274+00:00"
   },
   "launch_seen_ids": [
     "d568d3247c4b17ff",
@@ -14437,7 +14520,8 @@
     83001892,
     4018144,
     5561809,
-    2053
+    2053,
+    3348
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14506,6 +14590,15 @@
       "label": "Iann Dior",
       "payload": {
         "name": "Iann Dior"
+      }
+    },
+    "144ec72e4ccb1e7f": {
+      "applied": null,
+      "created": "2026-08-03T15:07:37.856104+00:00",
+      "kind": "artist",
+      "label": "The Lovin' Spoonful",
+      "payload": {
+        "name": "The Lovin' Spoonful"
       }
     },
     "1aa54c74eaa42b92": {
@@ -15108,41 +15201,41 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-03T12:10:10.690272+00:00",
+      "last_data": "2026-08-03T15:09:00.134818+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-03T12:10:13.496475+00:00",
+      "last_data": "2026-08-03T15:09:04.307303+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "apod": {
-      "last_data": "2026-08-03T12:10:27.024578+00:00",
+      "last_data": "2026-08-03T15:09:11.651239+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "deals": {
-      "last_data": "2026-08-03T12:09:23.126028+00:00",
+      "last_data": "2026-08-03T15:08:24.476974+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "energy": {
-      "last_data": "2026-08-03T12:09:57.133012+00:00",
-      "last_data_count": 67,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_data": "2026-08-03T15:08:47.933366+00:00",
+      "last_data_count": 56,
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-03T12:10:20.788103+00:00",
@@ -15150,58 +15243,58 @@
       "last_ok": "2026-08-03T12:07:29.369450+00:00"
     },
     "fda": {
-      "last_data": "2026-08-03T12:09:45.799441+00:00",
+      "last_data": "2026-08-03T15:08:37.894529+00:00",
       "last_data_count": 7,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-03T12:10:12.212441+00:00",
+      "last_data": "2026-08-03T15:09:01.351915+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "fx": {
-      "last_data": "2026-08-03T12:10:10.777601+00:00",
+      "last_data": "2026-08-03T15:09:00.295444+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-03T12:08:39.354239+00:00",
+      "last_data": "2026-08-03T15:07:39.901335+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-03T12:09:41.994980+00:00",
-      "last_data_count": 245,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_data": "2026-08-03T15:08:37.056762+00:00",
+      "last_data_count": 246,
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "habits": {
-      "last_data": "2026-08-03T14:52:33.904174+00:00",
+      "last_data": "2026-08-03T15:09:06.392229+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-03T14:52:31.851344+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-03T12:10:23.593543+00:00",
+      "last_data": "2026-08-03T15:09:08.782980+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "iss": {
-      "last_data": "2026-08-03T12:10:12.784829+00:00",
-      "last_data_count": 2,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_data": "2026-08-03T15:09:03.595873+00:00",
+      "last_data_count": 1,
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-03T12:10:24.380326+00:00",
+      "last_data": "2026-08-03T15:09:10.357280+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "launches": {
-      "last_data": "2026-08-03T12:10:12.333454+00:00",
+      "last_data": "2026-08-03T15:09:03.151029+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "learn": {
       "last_data": "2026-08-03T12:10:16.154863+00:00",
@@ -15209,49 +15302,49 @@
       "last_ok": "2026-08-03T12:07:29.369450+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "marine": {
-      "last_data": "2026-08-03T12:10:26.588355+00:00",
+      "last_data": "2026-08-03T15:09:11.154202+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "music": {
-      "last_data": "2026-08-03T12:08:36.572734+00:00",
+      "last_data": "2026-08-03T15:07:36.870821+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-03T12:09:57.803493+00:00",
+      "last_data": "2026-08-03T15:08:48.692957+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (8d ago)",
-      "last_error_ts": "2026-08-03T12:07:29.369450+00:00",
+      "last_error_ts": "2026-08-03T15:07:32.410274+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-03T12:10:10.235684+00:00",
-      "last_data_count": 44,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_data": "2026-08-03T15:08:59.713943+00:00",
+      "last_data_count": 46,
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "research": {
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-03T12:09:17.932503+00:00",
+      "last_data": "2026-08-03T15:08:19.160636+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "spark": {
       "last_data": "2026-08-03T06:08:54.597907+00:00",
@@ -15259,35 +15352,35 @@
       "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "spending": {
-      "last_data": "2026-08-03T12:10:23.211426+00:00",
+      "last_data": "2026-08-03T15:09:08.565340+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-03T14:52:32.917012+00:00",
+      "last_data": "2026-08-03T15:07:34.615347+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-03T14:52:31.851344+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "uv": {
-      "last_data": "2026-08-03T12:10:26.138280+00:00",
+      "last_data": "2026-08-03T15:09:10.752732+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "weather": {
-      "last_data": "2026-08-03T12:09:57.446519+00:00",
+      "last_data": "2026-08-03T15:08:48.346969+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-03T12:10:14.483139+00:00",
+      "last_data": "2026-08-03T15:09:05.304160+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-03T15:07:32.410274+00:00"
     }
   },
   "twitch_live": [],
@@ -15295,7 +15388,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165348"
+    "last_full_window": "165349"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
