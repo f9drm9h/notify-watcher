@@ -89,7 +89,9 @@
     "rent|2026-07-30|1"
   ],
   "blood_donation_last_notified": "2026-07-08",
-  "cleaning_slots_sent": [],
+  "cleaning_slots_sent": [
+    "2026-08-03|18:00"
+  ],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -564,42 +566,6 @@
     "9196fb40b7c0edfe"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "713595a4586bdd07",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "'Marvel's Wolverine' trailer shows Logan at his most feral, introduces Lady Deathstrike - GMA Network",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.939823+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxNeUQ5eS1EaXVnbnZwZnM0ZXcxNEJ0MkNzelZxbkliTW03T1VXSEJ0UDd2RC0tYUZhbVh6WXNaYW1MeERDSG9JT0pac1ZCU0ZRYmtTNEZxa3BYWk1rM3JYS1p2a1FaSFBUN09xTDB0eGI3UzZ0V29QV2JtN2V6enhwa0JNTlhHY3NMQW40ZDl4VWMyTmNIaWx3b3FjdGVVWk9kQ3c0ZXBiWURaLWdlTlJ6VzE2SXBtYWxYakZPbnVha0pDejJlbl9aUkdsdzU4TDM1UElwNldBWk15SjBraGxhTmprTVFQdm5teGlvSnQ4Y2JDOHPSAfgBQVVfeXFMTXQyM3AtZEVUZnZ1RjdzRFF3eWk4RzRuWVlDM1BnSGhXVW50SlRWNHg5NHJIM2xYTkJqWTJmdWYtMmFqNnlnWC1vZnptYzEzRzRkTGJsdTU5eGoxa3h4V0FRbDJMbmNkSkUxOXN2RzZ6Z0xvZFhCTjB2Y1FaWEtzNXgtRGFfM3F4ZkRkbDExZGNFVndJM1d1OXd1ZEw4VXlxSFo4ZV9vOG5NRDMyN29DRm0zSUFvZzR2cnVuT2tQSkkwYWQwaUYtbjdjZF9VQVNfSGM5UHNOdk5vUEhBS1RzSGFGdDk3OFR3cWYxOUROb3g1MEZJMVZmQU4?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "3a33346c9bf59b6a",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "First Look at Lady Deathstrike in Marvel's Wolverine - IGN",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.940084+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZ2VDZmZtcks1djBLWXNVMXhseUw2UGFQSEQzZEg1Z1MwWXVaY1doWmoxVDlnODd0NnhrTWFCNVlzejZ2RDhpV0g3Uk1LQXFvc0Q0c0RfQW9tbGJWNjZRU2w1T3hEcWZMUVZBWV9uMGZ5V2l3eGhxUEJHM3NuX2VKVV9OMUs?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "457a4d472f1a6eb1",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel\u2019s Wolverine Drops A Thrilling Anti-Hero Trailer - Bleeding Cool News",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.940337+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQaDV1TVRpSGFfVU03aEZ3MjU5bHN3UTBsNFRGVFd0eXVHU0JxRW9IWHBWV3A3WUI2QV9vY0duWTdzcFJ2NWE3b0p3UkRYenNUbmx1ZGRXVTZkR3lhUER3TlZqb19GYlNVV3pCaTAwTllaTHN5eDNZaVk2ZjdCWjBKMFNqSUxPaVFubENDX2dn?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -12563,9 +12529,47 @@
       "topic": "watchdog",
       "ts": "2026-08-03T21:08:51.598548+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "6 PM: time to move. Even 20 minutes counts.",
+      "id": "531da1d4c98eadb2",
+      "score": 0,
+      "severity": "low",
+      "source": "exercise",
+      "title": "Exercise - 6 PM session",
+      "topic": "habits",
+      "ts": "2026-08-03T22:07:29.816611+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Take 10 quiet minutes to meditate and reset.",
+      "id": "b68ab6bea024a555",
+      "score": 0,
+      "severity": "low",
+      "source": "meditate",
+      "title": "Meditate - evening reset",
+      "topic": "habits",
+      "ts": "2026-08-03T22:07:29.816611+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Quick tidy-up time: 15 minutes on the messiest spot.",
+      "id": "2af3fca7f1413e8a",
+      "score": 0,
+      "severity": "low",
+      "source": "cleaning",
+      "title": "Cleaning - quick tidy-up",
+      "topic": "habits",
+      "ts": "2026-08-03T22:07:29.816611+00:00",
+      "url": ""
     }
   ],
-  "exercise_slots_sent": [],
+  "exercise_slots_sent": [
+    "2026-08-03|18:00"
+  ],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -14016,6 +14020,21 @@
       "channel": "1515504253345726558",
       "habit": "water",
       "sent": "2026-08-03T09:37:29.086812+00:00"
+    },
+    "1533959528268431381": {
+      "channel": "1515504253345726558",
+      "habit": "exercise",
+      "sent": "2026-08-03T22:07:29.816611+00:00"
+    },
+    "1533959531875401920": {
+      "channel": "1515504253345726558",
+      "habit": "meditate",
+      "sent": "2026-08-03T22:07:29.816611+00:00"
+    },
+    "1533959534744441015": {
+      "channel": "1515504253345726558",
+      "habit": "cleaning",
+      "sent": "2026-08-03T22:07:29.816611+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-03",
@@ -14308,7 +14327,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-03T21:52:37.729407+00:00"
+    "ts": "2026-08-03T22:07:28.500257+00:00"
   },
   "launch_seen_ids": [
     "d568d3247c4b17ff",
@@ -14347,7 +14366,9 @@
   ],
   "learn_last_sent": "2026-08-03",
   "life_dashboard_last_week": "2026-W31",
-  "meditate_slots_sent": [],
+  "meditate_slots_sent": [
+    "2026-08-03|18:00"
+  ],
   "music_discovery_seen": [
     5425093,
     4685222,
@@ -15338,9 +15359,9 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "habits": {
-      "last_data": "2026-08-03T21:52:41.540796+00:00",
+      "last_data": "2026-08-03T22:07:32.952213+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-03T21:52:37.729407+00:00"
+      "last_ok": "2026-08-03T22:07:28.500257+00:00"
     },
     "holidays": {
       "last_data": "2026-08-03T21:08:49.557270+00:00",
@@ -15423,9 +15444,9 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-03T21:52:39.655494+00:00",
+      "last_data": "2026-08-03T22:07:29.816129+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-03T21:52:37.729407+00:00"
+      "last_ok": "2026-08-03T22:07:28.500257+00:00"
     },
     "uv": {
       "last_data": "2026-08-03T21:08:50.700078+00:00",
