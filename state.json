@@ -104,6 +104,15 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-08-02",
@@ -466,42 +475,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "What: Weeks after Pearl Street, the Vulcan Street plant in Appleton, Wisconsin used the Fox River to generate the world's first hydroelectric power.\nWhy it matters: It showed falling water could replace burning coal to make electricity \u2014 the first renewable power station.\nWhy you should care: Hydropower still supplies about a sixth of the world's electricity, all tracing back to this small mill-town experiment.\n(Source: Smithsonian)",
-      "id": "dfbdfb0cbf673441",
-      "score": 60,
-      "severity": "low",
-      "source": "Energy learning",
-      "title": "\u26a1 Today's spark \u2014 The first hydroelectric plant (1882)",
-      "topic": "energy_learn",
-      "ts": "2026-07-19T12:10:41.828015+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\ud83d\udcaa HABITS\n- Habit nudges sent: water (29)\n\n\ud83d\udcb0 FINANCE\n- USD/DOP: 58.69 -> 58.37 (-0.32, -0.55%)\n- Upcoming bills: Internet bill due 2026-07-22 (in 3 days)\n\n\ud83c\udf24 WEATHER & ENVIRONMENT\n- Weather alerts logged: 29 (latest: Weather alert: Atlantic Tropical Weather Outlook)\n\n\ud83c\udfac ENTERTAINMENT & NEWS\n- Top release: [64] GTA 6 News Watch: Date Confirmed For Take-Two Report Next Month With A Twist - RockstarINTEL\n- Golden Sun: 7 item(s); latest: \"Last meme for today, swear to Anemos\"\n- AI news: 4 item(s); latest: \"Anthropic\"\n\n\u2699\ufe0f SYSTEM HEALTH\n- Topics with errors this week: outages, visa_bulletin\n- 333 notification(s) pushed this week",
-      "id": "9478319844c30fa6",
-      "score": 60,
-      "severity": "low",
-      "source": "Life Dashboard",
-      "title": "Your week in review",
-      "topic": "life_dashboard",
-      "ts": "2026-07-19T12:10:44.810077+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "A flying saucer from outer space crash-landed in the Utah desert after being tracked by radar and chased by helicopters. The year was 2004, and no space aliens were involved. The saucer, pictured here, was the Genesis sample return capsule, part of a human-made robot Genesis...",
-      "id": "9b5cdf08c6c11ff6",
-      "score": 60,
-      "severity": "low",
-      "source": "NASA APOD",
-      "title": "APOD: Flying Saucer Crash Lands in Utah Desert",
-      "topic": "apod",
-      "ts": "2026-07-19T12:10:47.993904+00:00",
-      "url": "https://apod.nasa.gov/apod/image/2607/Genesisimpact_nasa_960.jpg"
-    },
     {
       "action": "push",
       "detail": "",
@@ -12465,6 +12438,42 @@
       "topic": "habits",
       "ts": "2026-08-02T22:07:36.126725+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "efacdc74bfaff475",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-03T00:08:41.446577+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 6:46 PM - max 62deg, NW to SE. Look up!",
+      "id": "b7c76cdce6a553f9",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-08-03T00:08:54.108065+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "To protect your health, drink less alcohol, as no amount is the safest option. (Source: WHO)",
+      "id": "d27baa7b69a85a21",
+      "score": 60,
+      "severity": "low",
+      "source": "Health",
+      "title": "Health tip",
+      "topic": "spark",
+      "ts": "2026-08-03T00:08:59.032479+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -13802,7 +13811,7 @@
       "sent": "2026-08-02T22:07:36.126725+00:00"
     }
   },
-  "health_tip_last_sent": "2026-08-02",
+  "health_tip_last_sent": "2026-08-03",
   "holidays_sent": [],
   "ignored": {
     "4071c13d0b9dc18b": {
@@ -13827,6 +13836,7 @@
     }
   },
   "iss_seen_passes": [
+    "1969e17ac2a24a89",
     "35abe4143fa85dbf",
     "7e1c7b9eae186108",
     "63a4dc3068378a19",
@@ -13925,8 +13935,7 @@
     "cfa2c98f485e5536",
     "78e6c260b6ec1528",
     "397332ad906895a4",
-    "f1ccce54fb63cb41",
-    "44c317309f39999a"
+    "f1ccce54fb63cb41"
   ],
   "itsc_sent_ids": [
     "99c76a245efd5275",
@@ -14093,9 +14102,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-02T23:52:33.587355+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-03T00:07:31.197651+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -15017,19 +15026,19 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82670,
-  "spark_next_kind": "health",
+  "spark_last_sent": 82672,
+  "spark_next_kind": "quote",
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-02T21:09:04.802132+00:00",
+      "last_data": "2026-08-03T00:08:53.204908+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-02T21:09:08.085678+00:00",
+      "last_data": "2026-08-03T00:08:55.117440+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "apod": {
       "last_data": "2026-08-02T21:09:17.563729+00:00",
@@ -15037,26 +15046,26 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "deals": {
-      "last_data": "2026-08-02T21:08:24.518850+00:00",
-      "last_data_count": 11,
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_data": "2026-08-03T00:08:29.385602+00:00",
+      "last_data_count": 12,
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "energy": {
-      "last_data": "2026-08-02T21:08:50.819991+00:00",
+      "last_data": "2026-08-03T00:08:41.150033+00:00",
       "last_data_count": 69,
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-02T12:09:18.012979+00:00",
@@ -15064,9 +15073,9 @@
       "last_ok": "2026-08-02T12:07:33.364765+00:00"
     },
     "fda": {
-      "last_data": "2026-08-02T21:08:40.314603+00:00",
+      "last_data": "2026-08-03T00:08:29.698702+00:00",
       "last_data_count": 7,
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "fuel": {
       "last_data": "2026-08-02T21:09:06.398001+00:00",
@@ -15074,18 +15083,18 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "fx": {
-      "last_data": "2026-08-02T21:09:04.886181+00:00",
+      "last_data": "2026-08-03T00:08:53.270090+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "games": {
       "last_data": "2026-07-27T12:08:27.690467+00:00",
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-02T21:07:40.052526+00:00",
+      "last_data": "2026-08-03T00:07:38.301948+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "groceries": {
       "last_data": "2026-08-02T21:08:40.006654+00:00",
@@ -15093,9 +15102,9 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "habits": {
-      "last_data": "2026-08-02T23:52:35.757867+00:00",
+      "last_data": "2026-08-03T00:08:58.445747+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-02T23:52:33.587355+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "holidays": {
       "last_data": "2026-08-02T21:09:15.202376+00:00",
@@ -15103,9 +15112,9 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "iss": {
-      "last_data": "2026-08-02T21:09:07.373102+00:00",
-      "last_data_count": 3,
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_data": "2026-08-03T00:08:54.107852+00:00",
+      "last_data_count": 2,
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "itsc": {
       "last_data": "2026-08-02T21:09:16.082121+00:00",
@@ -15113,9 +15122,9 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "launches": {
-      "last_data": "2026-08-02T21:09:06.809543+00:00",
+      "last_data": "2026-08-03T00:08:53.534588+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "learn": {
       "last_data": "2026-08-02T12:09:14.139942+00:00",
@@ -15123,7 +15132,7 @@
       "last_ok": "2026-08-02T12:07:33.364765+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "marine": {
       "last_data": "2026-08-02T21:09:17.329515+00:00",
@@ -15131,41 +15140,41 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "music": {
-      "last_data": "2026-08-02T21:07:35.469173+00:00",
+      "last_data": "2026-08-03T00:07:36.743146+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-02T21:08:51.402599+00:00",
+      "last_data": "2026-08-03T00:08:41.966185+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (7d ago)",
-      "last_error_ts": "2026-08-02T21:07:29.646596+00:00",
+      "last_error_ts": "2026-08-03T00:07:31.197651+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-02T21:09:04.126257+00:00",
-      "last_data_count": 50,
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_data": "2026-08-03T00:08:52.540787+00:00",
+      "last_data_count": 46,
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "research": {
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-02T21:08:19.633423+00:00",
+      "last_data": "2026-08-03T00:08:20.099966+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "spark": {
       "last_data": "2026-08-02T06:09:05.752649+00:00",
@@ -15173,14 +15182,14 @@
       "last_ok": "2026-08-02T06:07:33.246807+00:00"
     },
     "spending": {
-      "last_data": "2026-08-02T21:09:14.957707+00:00",
+      "last_data": "2026-08-03T00:09:02.509401+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-02T23:52:34.629426+00:00",
+      "last_data": "2026-08-03T00:07:34.604876+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-02T23:52:33.587355+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "uv": {
       "last_data": "2026-08-02T21:09:16.687932+00:00",
@@ -15188,20 +15197,20 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "weather": {
-      "last_data": "2026-08-02T21:08:50.953363+00:00",
+      "last_data": "2026-08-03T00:08:41.446164+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-02T21:09:09.339142+00:00",
+      "last_data": "2026-08-03T00:08:57.086958+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-02T21:07:29.646596+00:00"
+      "last_ok": "2026-08-03T00:07:31.197651+00:00"
     }
   },
   "twitch_live": [],
@@ -15209,7 +15218,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165343"
+    "last_full_window": "165344"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15231,6 +15240,7 @@
     "2026-08-02|05:30"
   ],
   "weather_seen_ids": [
+    "d07203177e4ed45b",
     "fe767db540e38d90",
     "de9f2c21860361dc",
     "321579631cada11b",
@@ -15429,8 +15439,7 @@
     "0e4d0e3bd87a95c3",
     "48f21b45592c366f",
     "b8925b8d56a29114",
-    "26bc9b795e6732d9",
-    "79295b15485f6925"
+    "26bc9b795e6732d9"
   ],
   "wikiquote_last_category": "activists_thinkers",
   "wikiquote_last_sent": "2026-07-14T4",
