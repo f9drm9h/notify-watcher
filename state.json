@@ -493,18 +493,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "Hydration check: grab some water before you carry on.",
-      "id": "6af51cf35bc6197e",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-07-19T18:09:52.948662+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
       "detail": "",
       "id": "61a54da41a6090f9",
       "score": 62,
@@ -12490,6 +12478,18 @@
       "topic": "iss",
       "ts": "2026-08-03T09:08:40.255596+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Good morning! First glass of water before anything else.",
+      "id": "286a333d220c8051",
+      "score": 0,
+      "severity": "low",
+      "source": "water",
+      "title": "Water - start the day hydrated",
+      "topic": "habits",
+      "ts": "2026-08-03T09:37:29.086812+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -13823,6 +13823,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-08-03T02:07:34.250997+00:00"
+    },
+    "1533770782021517374": {
+      "channel": "1515504253345726558",
+      "habit": "water",
+      "sent": "2026-08-03T09:37:29.086812+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-03",
@@ -14118,7 +14123,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-03T09:23:21.746656+00:00"
+    "ts": "2026-08-03T09:37:27.722063+00:00"
   },
   "launch_seen_ids": [
     "d568d3247c4b17ff",
@@ -15117,9 +15122,9 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "habits": {
-      "last_data": "2026-08-03T09:23:23.955969+00:00",
+      "last_data": "2026-08-03T09:37:31.115025+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-03T09:23:21.746656+00:00"
+      "last_ok": "2026-08-03T09:37:27.722063+00:00"
     },
     "holidays": {
       "last_data": "2026-08-02T21:09:15.202376+00:00",
@@ -15202,9 +15207,9 @@
       "last_ok": "2026-08-03T09:07:42.580695+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-03T09:23:22.922364+00:00",
+      "last_data": "2026-08-03T09:37:29.086365+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-03T09:23:21.746656+00:00"
+      "last_ok": "2026-08-03T09:37:27.722063+00:00"
     },
     "uv": {
       "last_data": "2026-08-02T21:09:16.687932+00:00",
@@ -15251,7 +15256,9 @@
       "since": "2026-08-02T17:18:45.308745+00:00"
     }
   },
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-08-03|05:30"
+  ],
   "weather_seen_ids": [
     "c00299f5250d7a47",
     "d07203177e4ed45b",
