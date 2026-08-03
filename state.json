@@ -478,18 +478,6 @@
     {
       "action": "push",
       "detail": "",
-      "id": "9fe998b4e9539f05",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Consider yourself a Tom Holland Spider-Man expert? Take on my difficult Marvel quiz before 'Spider-Man: Brand New Day' is released in theaters to prove your worth - TechRadar",
-      "topic": "movies",
-      "ts": "2026-07-19T15:08:29.301247+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxOeVpHaVBwYXA0T0pKaTNHeTBmVDhibl83aXFJbUFwLXhHUlpiU0VDRFpZOEwwQ2V4OWxvbENwZUVDVUhvX0liZDN6aTNrU3NpakJTcS12Z3BoakZ1ZnJqNkdkVlFjWTRLTFZ0OTNMeTItd2h3bGdqMFNNQWltajZQUW1mT0lIU2JucERWQm5nU3Z2S1JvR0xnX0ZSZ25BclZ1eTRtMzJtZUh6YmxGREEySnVZLVNucWx1VlZ0NjBfcEFFS3VZU0RfV2hsRG4tNnM1dTZER3dCVHpvaHpiZHJPdjc1MnBIc2M4c19fd1l5NmJyQjVreUoxX3JZLVZ0eG5URy03Q2d5ZVlzS25CSk5vcXJQbW8?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
       "id": "56c6669b116081a0",
       "score": 62,
       "severity": "high",
@@ -12474,6 +12462,18 @@
       "topic": "habits",
       "ts": "2026-08-03T01:07:29.952311+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Lights out soon. Put the day down - it will be there tomorrow.",
+      "id": "0ca23d3ea2c60e13",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-08-03T02:07:34.250997+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -13809,6 +13809,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-08-03T01:07:29.952311+00:00"
+    },
+    "1533657557393080533": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-08-03T02:07:34.250997+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-03",
@@ -14104,7 +14109,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-03T01:52:30.879295+00:00"
+    "ts": "2026-08-03T02:07:32.813456+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -15020,7 +15025,8 @@
   "recap_last_week": "2026-W31",
   "reminders_sent": [],
   "sleep_slots_sent": [
-    "2026-08-02|21:00"
+    "2026-08-02|21:00",
+    "2026-08-02|22:00"
   ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
@@ -15104,9 +15110,9 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "habits": {
-      "last_data": "2026-08-03T01:52:33.116817+00:00",
+      "last_data": "2026-08-03T02:07:36.120380+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-03T01:52:30.879295+00:00"
+      "last_ok": "2026-08-03T02:07:32.813456+00:00"
     },
     "holidays": {
       "last_data": "2026-08-02T21:09:15.202376+00:00",
@@ -15189,9 +15195,9 @@
       "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-03T01:52:31.963501+00:00",
+      "last_data": "2026-08-03T02:07:34.250565+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-03T01:52:30.879295+00:00"
+      "last_ok": "2026-08-03T02:07:32.813456+00:00"
     },
     "uv": {
       "last_data": "2026-08-02T21:09:16.687932+00:00",
