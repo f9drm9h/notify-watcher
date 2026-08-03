@@ -174,6 +174,33 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 35,
+      "source": "Golden Sun",
+      "title": "Happy Golden Sun Day",
+      "topic": "golden_sun",
+      "url": "https://www.reddit.com/r/GoldenSun/comments/1vcztom/happy_golden_sun_day/"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Cellcept",
+      "title": "FDA updates approval for Cellcept (Mycophenolate Mofetil) (NDA050723)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050723"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Cellcept",
+      "title": "FDA updates approval for Cellcept (Mycophenolate Mofetil) (NDA050722)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050722"
     }
   ],
   "digest_last_sent": "2026-08-03",
@@ -537,78 +564,6 @@
     "9196fb40b7c0edfe"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "f655b72d8f94be66",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine is back with a new CGI trailer - Instant Gaming News",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.938285+00:00",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZWpmX0RFMGlYSXUxV3ZZOFRFOHBZQUU3WG9rR0pIeElES2JMTlp0ZzV1TVg0elVUV0FwZENIU2tVZFVuYlZZMlMxSXJmQ1BsLVdTYXNGcmMwR2VKaU1rZHBfZXRac045NXlhdk9YZ1dJNUgwdnZBX2k0bW1yRHR6QlY0b2V5T21mV2hkejBiR3lJbU5QVjBtaTY2TmNnbmlH?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "58572ec5938b37be",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine - Ain't No Hero Trailer - Gamereactor UK",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.938521+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZHhuRWhYdGFvbGluUDJYelNsaGJRbEd2MzJ2Ti1Eb2pMMzVwYmUwekM1U2VmMDNLVGRtMFZfOFg5eENNbmVpc0MwMnN2VHkwUkJrbXA0RThib1hQMlE1N1JINFl4cDN1enpIUERESFRIUzhfek80c2xpU0ZjSWZGZFRmeUxpN3ZP?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "2830d960c0864af5",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel\u2019s Wolverine Latest Trailer Is Filled With Violent Encounters - Console Creatures",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.938815+00:00",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE03NGptajZJaUp0TTVjNzFOLUFyV0dvOElZMUV2VDl6Q3VISzFRVVl1eXBKODFrQS04dzlSMnY5UFFXVHlOZjA2RXpRT1pvbTdCZzh4T011R1FKNExYeE1pdXdhdWxOcmlWR0FTZlNYaE9tZ2EyaGhN?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "03b77e260b31901e",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "'Marvel's Wolverine' Trailer Reveals Lady Deathstrike, Hints at Jean Grey Romance - player.one",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.939083+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOT2psT0VuQ2hGalgydEhNQXFkSUhJTlFOZHhwTWRWT3NUZUw3RE1zZEM0b3ZOU1VsSXphajhlUElSWWtBcC13a3J5LU9QUnZNZVVFbXlLd0ZtLXRwVTI0WHdlZUh0MENnM1hRaEpXRjRWZGhvZEV3TUc5TXZsXzg3ak16d3VnamhkWVQwdXhBbDVlVXM5X281Y0RTS1hRcF96ZkF3dU1TZw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "466547ead33be791",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine Trailer Features First Look at Lady Deathstrike - IGN Southeast Asia",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.939330+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSnJjaHNteU9xWE1MZTU0VF9wdlBUTHEtM2IzUDZDY1N6R0dFWHRpWjlYdGt3SzEtLVBRUk8xUEo4MURjejZpdUdLYXJRNnZWZ2tWc0pMX0tvRHZxMjdILVJJOFNYUFZNNDJlQU12NTFWeEVsbnlCNGw1SXhzTTBOc2tzRjlGeF91d05GcEZSY3dvQlNtOHIyOENzTHloUjNhUE5MNWgteW9kbG9HSnc?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "07e15be66d3fe47b",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine Gets Ain't No Hero Trailer - VGChartz",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.939567+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOSGo3ZldYRDhmblpneXh4VnVyVXlRNDNwZ0pjMERIZ1luVlUzanZTOTk3WXdfTjNXTWt2MzVDNFExMTdHRXhxcHBrS3hFa0RrSkpEbGxTaGhTTTNwTWhDcnY4M3R1aTNLaEEtVGxiVGZvWlFlUFB2TG15MFpRRFQ1WHQwMG1WVXNKa2JDWQ?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -12536,6 +12491,78 @@
       "topic": "iss",
       "ts": "2026-08-03T18:08:38.991861+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Long Cool Woman (In a Black Dress) (1999 Remaster) - The Hollies\n(because you like The Mamas & The Papas)",
+      "id": "2c659fb2300658bc",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-03T21:07:36.822075+00:00",
+      "url": "https://www.deezer.com/track/3358998"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "1b7589276c3ace38",
+      "score": 35,
+      "severity": "moderate",
+      "source": "Golden Sun",
+      "title": "Happy Golden Sun Day",
+      "topic": "golden_sun",
+      "ts": "2026-08-03T21:07:38.813986+00:00",
+      "url": "https://www.reddit.com/r/GoldenSun/comments/1vcztom/happy_golden_sun_day/"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "0f2c1c5f929ea90f",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Cellcept",
+      "title": "FDA updates approval for Cellcept (Mycophenolate Mofetil) (NDA050723)",
+      "topic": "fda",
+      "ts": "2026-08-03T21:08:16.779700+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050723"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "5d56c51f254c7e02",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Cellcept",
+      "title": "FDA updates approval for Cellcept (Mycophenolate Mofetil) (NDA050722)",
+      "topic": "fda",
+      "ts": "2026-08-03T21:08:16.780010+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050722"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 6:46 PM - max 62deg, NW to SE. Look up!",
+      "id": "769ea447d290e372",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-08-03T21:08:44.808218+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "outages \u2014 down 1d 6h (since 2026-08-02 15:07 UTC), reminder #2; last error: EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (8d ago)",
+      "id": "2b6561462681908f",
+      "score": 72,
+      "severity": "critical",
+      "source": "Watchdog",
+      "title": "Watchdog: 'outages' is STILL failing (1d 6h)",
+      "topic": "watchdog",
+      "ts": "2026-08-03T21:08:51.598548+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -12550,6 +12577,8 @@
     }
   ],
   "fda_seen_ids": [
+    "4b8e05a177acf52f",
+    "958c15109d49afcf",
     "12abf35ee3187015",
     "4b2b23e640659dae",
     "76e178f125e7a25c",
@@ -12747,9 +12776,7 @@
     "9ad4ad6b9b420750",
     "64a8abbc085ab4be",
     "27c29f71cb5d4897",
-    "477c9c8b440f2bdf",
-    "59cb95e6c35fb7f7",
-    "620cd5c9e39e46fd"
+    "477c9c8b440f2bdf"
   ],
   "follows": {
     "artists": [
@@ -12763,7 +12790,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
   "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-03T18:08:38.192965+00:00",
+  "fuel_last_prices_seen_at": "2026-08-03T21:08:43.937852+00:00",
   "fuel_prices": {
     "GLP": 135.2,
     "Gasoil Regular": 258.3,
@@ -13099,6 +13126,7 @@
   "games_week_last": "2026-W32",
   "golden_sun_seen": {
     "Golden Sun": [
+      "c27c806db346b974",
       "88119a4877f24078",
       "3f567a206b8da133",
       "43702882447d5603",
@@ -14015,6 +14043,7 @@
     }
   },
   "iss_seen_passes": [
+    "e09ab28cd163a459",
     "3aab0407327d07c8",
     "4f06f9cf939f06de",
     "23bc7bdc1fd487f0",
@@ -14113,8 +14142,7 @@
     "aba184aa7a89772c",
     "0617aa1ba668e172",
     "701fc37852950706",
-    "00b1c446e37d1bf2",
-    "3cd650797649c01a"
+    "00b1c446e37d1bf2"
   ],
   "itsc_sent_ids": [
     "e225196f247c74b5",
@@ -14278,9 +14306,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-03T20:52:26.800086+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-03T21:07:31.591666+00:00"
   },
   "launch_seen_ids": [
     "d568d3247c4b17ff",
@@ -14540,7 +14568,8 @@
     5561809,
     2053,
     3348,
-    4194
+    4194,
+    4189
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14970,6 +14999,15 @@
       "payload": {
         "name": "Pride of Bedlam"
       }
+    },
+    "fa181484c64f0552": {
+      "applied": null,
+      "created": "2026-08-03T21:07:36.821824+00:00",
+      "kind": "artist",
+      "label": "The Hollies",
+      "payload": {
+        "name": "The Hollies"
+      }
     }
   },
   "onamet_active": {},
@@ -15229,41 +15267,41 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-03T18:08:37.167814+00:00",
+      "last_data": "2026-08-03T21:08:42.823278+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-03T18:08:39.675986+00:00",
+      "last_data": "2026-08-03T21:08:45.562128+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "apod": {
-      "last_data": "2026-08-03T18:08:46.142143+00:00",
+      "last_data": "2026-08-03T21:08:51.597010+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "deals": {
-      "last_data": "2026-08-03T18:07:55.940269+00:00",
+      "last_data": "2026-08-03T21:08:00.959098+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "energy": {
-      "last_data": "2026-08-03T18:08:21.132475+00:00",
+      "last_data": "2026-08-03T21:08:26.808210+00:00",
       "last_data_count": 58,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-03T12:10:20.788103+00:00",
@@ -15271,58 +15309,58 @@
       "last_ok": "2026-08-03T12:07:29.369450+00:00"
     },
     "fda": {
-      "last_data": "2026-08-03T18:08:12.022622+00:00",
-      "last_data_count": 7,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_data": "2026-08-03T21:08:16.779454+00:00",
+      "last_data_count": 8,
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-03T18:08:38.192984+00:00",
+      "last_data": "2026-08-03T21:08:43.937906+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "fx": {
-      "last_data": "2026-08-03T18:08:37.213549+00:00",
+      "last_data": "2026-08-03T21:08:42.947437+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-03T18:07:32.269303+00:00",
+      "last_data": "2026-08-03T21:07:38.813871+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-03T18:08:11.182371+00:00",
+      "last_data": "2026-08-03T21:08:15.890492+00:00",
       "last_data_count": 246,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "habits": {
-      "last_data": "2026-08-03T20:52:29.060431+00:00",
+      "last_data": "2026-08-03T21:08:47.145752+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-03T20:52:26.800086+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-03T18:08:43.994196+00:00",
+      "last_data": "2026-08-03T21:08:49.557270+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "iss": {
-      "last_data": "2026-08-03T18:08:38.991676+00:00",
+      "last_data": "2026-08-03T21:08:44.807989+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-03T18:08:44.759432+00:00",
+      "last_data": "2026-08-03T21:08:50.297785+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "launches": {
-      "last_data": "2026-08-03T18:08:38.388373+00:00",
+      "last_data": "2026-08-03T21:08:44.198220+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "learn": {
       "last_data": "2026-08-03T12:10:16.154863+00:00",
@@ -15330,49 +15368,49 @@
       "last_ok": "2026-08-03T12:07:29.369450+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "marine": {
-      "last_data": "2026-08-03T18:08:45.529514+00:00",
+      "last_data": "2026-08-03T21:08:51.083739+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "music": {
-      "last_data": "2026-08-03T18:07:29.845808+00:00",
+      "last_data": "2026-08-03T21:07:35.982213+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-03T18:08:21.984354+00:00",
+      "last_data": "2026-08-03T21:08:31.128610+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (8d ago)",
-      "last_error_ts": "2026-08-03T18:07:25.929957+00:00",
+      "last_error_ts": "2026-08-03T21:07:31.591666+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-03T18:08:36.785757+00:00",
-      "last_data_count": 42,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_data": "2026-08-03T21:08:42.363783+00:00",
+      "last_data_count": 44,
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "research": {
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-03T18:07:50.548511+00:00",
+      "last_data": "2026-08-03T21:07:55.921303+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "spark": {
       "last_data": "2026-08-03T06:08:54.597907+00:00",
@@ -15380,35 +15418,35 @@
       "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "spending": {
-      "last_data": "2026-08-03T18:08:43.791370+00:00",
+      "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-03T20:52:28.066090+00:00",
+      "last_data": "2026-08-03T21:07:33.705357+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-03T20:52:26.800086+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "uv": {
-      "last_data": "2026-08-03T18:08:45.148469+00:00",
+      "last_data": "2026-08-03T21:08:50.700078+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "weather": {
-      "last_data": "2026-08-03T18:08:21.651716+00:00",
+      "last_data": "2026-08-03T21:08:30.798513+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-03T18:08:40.456031+00:00",
+      "last_data": "2026-08-03T21:08:46.312397+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-03T18:07:25.929957+00:00"
+      "last_ok": "2026-08-03T21:07:31.591666+00:00"
     }
   },
   "twitch_live": [
@@ -15418,7 +15456,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165350"
+    "last_full_window": "165351"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15431,8 +15469,8 @@
   "watchdog_outages": {
     "outages": {
       "alerted": "2026-08-02T17:18:45.308745+00:00",
-      "last_alert": "2026-08-03T06:09:01.324469+00:00",
-      "reminders": 1,
+      "last_alert": "2026-08-03T21:08:51.598424+00:00",
+      "reminders": 2,
       "since": "2026-08-02T17:18:45.308745+00:00"
     }
   },
