@@ -477,18 +477,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "",
-      "id": "56c6669b116081a0",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II's Delay Is Bad News for DC's New Robin Movie - Comic Book Resources",
-      "topic": "movies",
-      "ts": "2026-07-19T15:08:31.228424+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQTDBhQmZ3Z09QVHV1S01RWmtMQVNmWjFISUZHRmwxcEVyYk10cEtXLVQ2NllpQXNQVTg1N0VUTk91WFpkV1ZGOHJILVRYdlRPaVFneUIwaGVfVGViNHNCZ0gzRWFqdk9hWEsweGNxNGNkdW93WUh1Nm9HMDBpSkcxWGZmMA?oc=5"
-    },
-    {
-      "action": "push",
       "detail": "Kyouran Hey Kids!! - THE ORAL CIGARETTES\n(because you like Studio Yuraki)",
       "id": "6c0feed1d450f9f9",
       "score": 62,
@@ -12474,6 +12462,18 @@
       "topic": "habits",
       "ts": "2026-08-03T02:07:34.250997+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - PATCH NOTES TIME",
+      "id": "09741e72c1f38028",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-08-03T02:37:32.225020+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "exercise_slots_sent": [
@@ -14104,7 +14104,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-03T02:22:24.561749+00:00"
+    "ts": "2026-08-03T02:37:31.181968+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -15105,9 +15105,9 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "habits": {
-      "last_data": "2026-08-03T02:22:26.461832+00:00",
+      "last_data": "2026-08-03T02:37:35.813548+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-03T02:22:24.561749+00:00"
+      "last_ok": "2026-08-03T02:37:31.181968+00:00"
     },
     "holidays": {
       "last_data": "2026-08-02T21:09:15.202376+00:00",
@@ -15190,9 +15190,9 @@
       "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-03T02:22:25.540980+00:00",
+      "last_data": "2026-08-03T02:37:34.399403+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-03T02:22:24.561749+00:00"
+      "last_ok": "2026-08-03T02:37:31.181968+00:00"
     },
     "uv": {
       "last_data": "2026-08-02T21:09:16.687932+00:00",
@@ -15216,7 +15216,9 @@
       "last_ok": "2026-08-03T00:07:31.197651+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_bulletin_current": "2026-08",
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
