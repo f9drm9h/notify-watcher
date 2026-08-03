@@ -113,6 +113,15 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Earthquakes",
+      "title": "M3.2 - 62 km NW of San Antonio, Puerto Rico (~241 km away)",
+      "topic": "quakes",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527173"
     }
   ],
   "digest_last_sent": "2026-08-02",
@@ -475,30 +484,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "Kyouran Hey Kids!! - THE ORAL CIGARETTES\n(because you like Studio Yuraki)",
-      "id": "6c0feed1d450f9f9",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-07-19T15:08:38.056500+00:00",
-      "url": "https://www.deezer.com/track/3628584642"
-    },
-    {
-      "action": "push",
-      "detail": "DOP 14,995.00 (was DOP 25,995.00, -42%)",
-      "id": "f0901be171c205bd",
-      "score": 64,
-      "severity": "high",
-      "source": "La Sirena",
-      "title": "La Sirena deal: Bocina Portatil Tcl Tp200k",
-      "topic": "groceries",
-      "ts": "2026-07-19T15:09:41.140998+00:00",
-      "url": "https://www.sirena.do/tcl-bocina-portatil-tp200k-2143393/p"
-    },
     {
       "action": "push",
       "detail": "Pause for a moment and have a drink of water.",
@@ -12474,6 +12459,30 @@
       "topic": "twitch",
       "ts": "2026-08-03T02:37:32.225020+00:00",
       "url": "https://twitch.tv/RiddlesMK"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "33dbf60cc2785dd6",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.2 - 62 km NW of San Antonio, Puerto Rico (~241 km away)",
+      "topic": "quakes",
+      "ts": "2026-08-03T03:08:52.867304+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527173"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 6:46 PM - max 62deg, NW to SE. Look up!",
+      "id": "6b2e5555e5673a0d",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-08-03T03:08:54.613616+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -12716,7 +12725,7 @@
     "date": "2026-08-02",
     "rate": 58.075336
   },
-  "fx_last_rate": 58.075336,
+  "fx_last_rate": 58.130879,
   "fx_last_zone": "within",
   "fx_week_baseline": {
     "rate": 58.219497,
@@ -13836,6 +13845,7 @@
     }
   },
   "iss_seen_passes": [
+    "c08a9f6dc91eaabf",
     "1969e17ac2a24a89",
     "35abe4143fa85dbf",
     "7e1c7b9eae186108",
@@ -13934,8 +13944,7 @@
     "8b111505539cf63a",
     "cfa2c98f485e5536",
     "78e6c260b6ec1528",
-    "397332ad906895a4",
-    "f1ccce54fb63cb41"
+    "397332ad906895a4"
   ],
   "itsc_sent_ids": [
     "99c76a245efd5275",
@@ -14102,9 +14111,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-03T02:52:32.614601+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-03T03:07:37.263236+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -14891,6 +14900,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "bcdd48382b1f0bc4",
     "9d4f48cfc2929806",
     "c5c8cb9a5e96397b",
     "30d2e7218169c704",
@@ -15034,14 +15044,14 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-03T00:08:53.204908+00:00",
+      "last_data": "2026-08-03T03:08:53.453866+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-03T00:08:55.117440+00:00",
+      "last_data": "2026-08-03T03:08:55.953098+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "apod": {
       "last_data": "2026-08-02T21:09:17.563729+00:00",
@@ -15049,26 +15059,26 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "deals": {
-      "last_data": "2026-08-03T00:08:29.385602+00:00",
+      "last_data": "2026-08-03T03:08:29.688209+00:00",
       "last_data_count": 12,
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "energy": {
-      "last_data": "2026-08-03T00:08:41.150033+00:00",
+      "last_data": "2026-08-03T03:08:39.795867+00:00",
       "last_data_count": 69,
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-02T12:09:18.012979+00:00",
@@ -15076,9 +15086,9 @@
       "last_ok": "2026-08-02T12:07:33.364765+00:00"
     },
     "fda": {
-      "last_data": "2026-08-03T00:08:29.698702+00:00",
+      "last_data": "2026-08-03T03:08:30.117116+00:00",
       "last_data_count": 7,
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "fuel": {
       "last_data": "2026-08-02T21:09:06.398001+00:00",
@@ -15086,18 +15096,18 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "fx": {
-      "last_data": "2026-08-03T00:08:53.270090+00:00",
+      "last_data": "2026-08-03T03:08:53.573620+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "games": {
       "last_data": "2026-07-27T12:08:27.690467+00:00",
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-03T00:07:38.301948+00:00",
+      "last_data": "2026-08-03T03:07:45.634182+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "groceries": {
       "last_data": "2026-08-02T21:08:40.006654+00:00",
@@ -15105,9 +15115,9 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "habits": {
-      "last_data": "2026-08-03T02:52:34.920639+00:00",
+      "last_data": "2026-08-03T03:08:59.150928+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-03T02:52:32.614601+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "holidays": {
       "last_data": "2026-08-02T21:09:15.202376+00:00",
@@ -15115,9 +15125,9 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "iss": {
-      "last_data": "2026-08-03T00:08:54.107852+00:00",
+      "last_data": "2026-08-03T03:08:54.613370+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "itsc": {
       "last_data": "2026-08-02T21:09:16.082121+00:00",
@@ -15125,9 +15135,9 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "launches": {
-      "last_data": "2026-08-03T00:08:53.534588+00:00",
+      "last_data": "2026-08-03T03:08:53.944491+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "learn": {
       "last_data": "2026-08-02T12:09:14.139942+00:00",
@@ -15135,7 +15145,7 @@
       "last_ok": "2026-08-02T12:07:33.364765+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "marine": {
       "last_data": "2026-08-02T21:09:17.329515+00:00",
@@ -15143,41 +15153,41 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "music": {
-      "last_data": "2026-08-03T00:07:36.743146+00:00",
+      "last_data": "2026-08-03T03:07:43.885785+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-03T00:08:41.966185+00:00",
+      "last_data": "2026-08-03T03:08:40.542333+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (7d ago)",
-      "last_error_ts": "2026-08-03T00:07:31.197651+00:00",
+      "last_error_ts": "2026-08-03T03:07:37.263236+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-03T00:08:52.540787+00:00",
-      "last_data_count": 46,
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_data": "2026-08-03T03:08:52.866998+00:00",
+      "last_data_count": 44,
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "research": {
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-03T00:08:20.099966+00:00",
+      "last_data": "2026-08-03T03:08:21.237586+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "spark": {
       "last_data": "2026-08-02T06:09:05.752649+00:00",
@@ -15185,14 +15195,14 @@
       "last_ok": "2026-08-02T06:07:33.246807+00:00"
     },
     "spending": {
-      "last_data": "2026-08-03T00:09:02.509401+00:00",
+      "last_data": "2026-08-03T03:09:03.042325+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-03T02:52:34.025387+00:00",
+      "last_data": "2026-08-03T03:07:41.421896+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-03T02:52:32.614601+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "uv": {
       "last_data": "2026-08-02T21:09:16.687932+00:00",
@@ -15200,20 +15210,20 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "weather": {
-      "last_data": "2026-08-03T00:08:41.446164+00:00",
+      "last_data": "2026-08-03T03:08:40.064886+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-03T00:08:57.086958+00:00",
+      "last_data": "2026-08-03T03:08:57.622325+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-03T00:07:31.197651+00:00"
+      "last_ok": "2026-08-03T03:07:37.263236+00:00"
     }
   },
   "twitch_live": [
@@ -15223,7 +15233,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165344"
+    "last_full_window": "165345"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
