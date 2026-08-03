@@ -120,6 +120,15 @@
       "title": "M3.2 - 62 km NW of San Antonio, Puerto Rico (~241 km away)",
       "topic": "quakes",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527173"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-08-02",
@@ -482,66 +491,6 @@
     "42752e3b95e9351f"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "Pause for a moment and have a drink of water.",
-      "id": "c4bdb4e23313a5cf",
-      "score": 64,
-      "severity": "low",
-      "source": "water",
-      "title": "Drink water",
-      "topic": "habits",
-      "ts": "2026-07-19T15:10:22.950658+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Street Fighter 6 - 1v1Me and Ranked Grind !wait",
-      "id": "be6644a38db81b01",
-      "score": 68,
-      "severity": "high",
-      "source": "RiddlesMK",
-      "title": "RiddlesMK is live on Twitch",
-      "topic": "twitch",
-      "ts": "2026-07-19T16:08:18.846997+00:00",
-      "url": "https://twitch.tv/RiddlesMK"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "b62f13938b59eb89",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Another Spider-Man: Brand New Day trailer has been released, but you can only see it in theaters - GamesRadar+",
-      "topic": "movies",
-      "ts": "2026-07-19T18:08:21.218371+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPM2NrMkpKTGt3MzJxaTdBUkJHZ2NEOW1NcTROTVIyMU9DSlVTTzY4UmNIQk1YZXhBRHU1SFN5SUFPcmlucXUyV2lrN2l4b1pGQ0gtMVhYTEh3RnFzcDlJdFFXQVlLeksza0pMWjlhYnBxZ0hzSnlUSFlHbWZ6SEttb1loQTVNOExoVkFURmFGTE9DQm10b0hlazdOY2UwUFplNnpTM1ZSU3hfLXZxbEt6ZjNQOWs4VUZRTkJfcENQY3gtYkpmSDJUWWQ0Y2lsSi0zZnJpOXk3U2NHQ05sVjIzcHhzbmw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "a263d4d63bbb8440",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "New movies to watch this weekend: See 'The Odyssey' in theaters, rent 'Backrooms,' stream 'Obsession' on Peacock - Yahoo",
-      "topic": "movies",
-      "ts": "2026-07-19T18:08:22.040069+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPbVRxOHIxb1pocXVJbGVhRGdmcmFuaDNtMWwxZVJKelUzQ2wxN3Bvekc5NkJRc0ZFS194WFIwUkt3MlFUd0lGcUNRQkQ4YUNzWFJyaG1ZTGZxQWI1QWZvVkY1amFEcG5uY3ZVLTNrazVISk12dXlxUDR3VzZuQUVUaS03VzZzakZEZGZNZHVRZUxjd3VCUEUwZjNLcUZpd2lIMEFKVGFZcndDdHFseEU1T2o5a0lOWmdaWW8wRWhjT3ZsMS1YUjJMd2ZYbWtieWdGeVloUThXcU5yQzB1aDRZVkk2eEhZNGh3bnJ0WHN1T2JpYzRlWkViOS1lQ1Z4dw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "cd15ff55cc6d4993",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "Why Did The Batman 2 Get DELAYED Again? 2 Blue Beetles On Man Of Tomorrow? - DCU News Jordyn Woods (dbCR6AaLJg) - Mshale",
-      "topic": "movies",
-      "ts": "2026-07-19T18:08:23.373535+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1QZmpTd3RhRjVwdzhRaUhZV2EzbEhZZ2t6SnNnam81NUZwZGZRLXNSaWU2UUhOZ2tjaFZLMy02Y1g1ckNWMWVWMUE5UjlpRTFKaEVWMnB6eDY4QkQ1YjBsSw?oc=5"
-    },
     {
       "action": "push",
       "detail": "Neppu ha ruten suru - Philosophy no Dance\n(because you like Studio Yuraki)",
@@ -12481,6 +12430,66 @@
       "topic": "iss",
       "ts": "2026-08-03T03:08:54.613616+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "0ef6b25c938bc38c",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-03T06:08:37.516692+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "M4.5 - 5 km NNW of S\u00e1nchez, Dominican Republic (~86 km away)",
+      "id": "3cecbd885bb928e4",
+      "score": 80,
+      "severity": "high",
+      "source": "Earthquakes",
+      "title": "Earthquake nearby",
+      "topic": "quakes",
+      "ts": "2026-08-03T06:08:49.394678+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000thqe"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 6:47 PM - max 62deg, NW to SE. Look up!",
+      "id": "cd653b344d63ddbe",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-08-03T06:08:51.262430+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cIf we seek... nature, then love can be informed by truth instead of being based on ignorance or self-deception.\u201d\n\u2014 Carl Sagan\n\nCarl Sagan, the astrophysicist with the gentle voice and cosmic imagination, dedicated his life to an almost spiritual quest: to see the universe not through the filters of ancient myth or human desire, but through the clear lens of scientific inquiry. He wasn't content for humanity to remain a child, clinging to comforting fictions. His work, whether on *Cosmos* or in his bestselling books, consistently urged us to grow up, to face the vast, often indifferent, beauty of reality. It was within this grand narrative of cosmic awakening that he uttered those words, a plea for a love that was mature, wise, and grounded in the very fabric of existence.\n\nHe spoke them, in essence, as a challenge to every form of unexamined belief, be it in personal relationships, societal ideals, or our understanding of our place in the cosmos. For Sagan, true affection, true admiration for the world and for each other, could only flourish when stripped of illusions. Ignorance, however well-intentioned, could breed a fragile, easily shattered love; self-deception, a hollow one. Only truth, however stark, offered a foundation resilient enough to withstand the tests of time and the vastness of space.\n\nToday, Sagan's words resonate with an almost prophetic urgency. In an era where misinformation spreads with alarming speed, where echo chambers amplify biases, and where tribalism often trumps shared understanding, his call for truth-informed love feels more vital than ever.",
+      "id": "d3a04d767ca122af",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Carl Sagan",
+      "topic": "spark",
+      "ts": "2026-08-03T06:08:57.304549+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "outages \u2014 down 15h (since 2026-08-02 15:07 UTC), reminder #1; last error: EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (8d ago)",
+      "id": "09bdd1ccbd9ff467",
+      "score": 72,
+      "severity": "critical",
+      "source": "Watchdog",
+      "title": "Watchdog: 'outages' is STILL failing (15h)",
+      "topic": "watchdog",
+      "ts": "2026-08-03T06:09:01.324621+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -13841,6 +13850,7 @@
     }
   },
   "iss_seen_passes": [
+    "689f0752bc8c9c32",
     "c08a9f6dc91eaabf",
     "1969e17ac2a24a89",
     "35abe4143fa85dbf",
@@ -13939,8 +13949,7 @@
     "b7bc03c8b58db633",
     "8b111505539cf63a",
     "cfa2c98f485e5536",
-    "78e6c260b6ec1528",
-    "397332ad906895a4"
+    "78e6c260b6ec1528"
   ],
   "itsc_sent_ids": [
     "99c76a245efd5275",
@@ -14107,9 +14116,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-03T05:52:35.596837+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-03T06:07:33.319596+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -14894,6 +14903,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "ec03905908f9f68e",
     "bcdd48382b1f0bc4",
     "9d4f48cfc2929806",
     "c5c8cb9a5e96397b",
@@ -15030,19 +15040,19 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82672,
-  "spark_next_kind": "quote",
+  "spark_last_sent": 82673,
+  "spark_next_kind": "fact",
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-03T03:08:53.453866+00:00",
+      "last_data": "2026-08-03T06:08:50.391562+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-03T03:08:55.953098+00:00",
+      "last_data": "2026-08-03T06:08:52.063702+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "apod": {
       "last_data": "2026-08-02T21:09:17.563729+00:00",
@@ -15050,26 +15060,26 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "deals": {
-      "last_data": "2026-08-03T03:08:29.688209+00:00",
-      "last_data_count": 12,
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_data": "2026-08-03T06:08:27.764439+00:00",
+      "last_data_count": 11,
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "energy": {
-      "last_data": "2026-08-03T03:08:39.795867+00:00",
+      "last_data": "2026-08-03T06:08:37.400640+00:00",
       "last_data_count": 69,
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-02T12:09:18.012979+00:00",
@@ -15077,9 +15087,9 @@
       "last_ok": "2026-08-02T12:07:33.364765+00:00"
     },
     "fda": {
-      "last_data": "2026-08-03T03:08:30.117116+00:00",
+      "last_data": "2026-08-03T06:08:28.018057+00:00",
       "last_data_count": 7,
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "fuel": {
       "last_data": "2026-08-02T21:09:06.398001+00:00",
@@ -15087,18 +15097,18 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "fx": {
-      "last_data": "2026-08-03T03:08:53.573620+00:00",
+      "last_data": "2026-08-03T06:08:50.453483+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "games": {
       "last_data": "2026-07-27T12:08:27.690467+00:00",
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-03T03:07:45.634182+00:00",
+      "last_data": "2026-08-03T06:07:40.326976+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "groceries": {
       "last_data": "2026-08-02T21:08:40.006654+00:00",
@@ -15106,9 +15116,9 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "habits": {
-      "last_data": "2026-08-03T05:52:39.275244+00:00",
+      "last_data": "2026-08-03T06:08:54.221528+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-03T05:52:35.596837+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "holidays": {
       "last_data": "2026-08-02T21:09:15.202376+00:00",
@@ -15116,9 +15126,9 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "iss": {
-      "last_data": "2026-08-03T03:08:54.613370+00:00",
+      "last_data": "2026-08-03T06:08:51.262226+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "itsc": {
       "last_data": "2026-08-02T21:09:16.082121+00:00",
@@ -15126,9 +15136,9 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "launches": {
-      "last_data": "2026-08-03T03:08:53.944491+00:00",
+      "last_data": "2026-08-03T06:08:50.704710+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "learn": {
       "last_data": "2026-08-02T12:09:14.139942+00:00",
@@ -15136,7 +15146,7 @@
       "last_ok": "2026-08-02T12:07:33.364765+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "marine": {
       "last_data": "2026-08-02T21:09:17.329515+00:00",
@@ -15144,56 +15154,56 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "music": {
-      "last_data": "2026-08-03T03:07:43.885785+00:00",
+      "last_data": "2026-08-03T06:07:38.915454+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-03T03:08:40.542333+00:00",
+      "last_data": "2026-08-03T06:08:37.965996+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
-      "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (7d ago)",
-      "last_error_ts": "2026-08-03T03:07:37.263236+00:00",
+      "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (8d ago)",
+      "last_error_ts": "2026-08-03T06:07:33.319596+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-03T03:08:52.866998+00:00",
-      "last_data_count": 44,
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_data": "2026-08-03T06:08:49.394286+00:00",
+      "last_data_count": 45,
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "research": {
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-03T03:08:21.237586+00:00",
+      "last_data": "2026-08-03T06:08:23.977585+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "spark": {
-      "last_data": "2026-08-02T06:09:05.752649+00:00",
-      "last_data_count": 311,
-      "last_ok": "2026-08-02T06:07:33.246807+00:00"
+      "last_data": "2026-08-03T06:08:54.597907+00:00",
+      "last_data_count": 145,
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "spending": {
-      "last_data": "2026-08-03T03:09:03.042325+00:00",
+      "last_data": "2026-08-03T06:09:01.323088+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-03T05:52:37.730681+00:00",
+      "last_data": "2026-08-03T06:07:36.734002+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-03T05:52:35.596837+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "uv": {
       "last_data": "2026-08-02T21:09:16.687932+00:00",
@@ -15201,20 +15211,20 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "weather": {
-      "last_data": "2026-08-03T03:08:40.064886+00:00",
+      "last_data": "2026-08-03T06:08:37.516294+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-03T03:08:57.622325+00:00",
-      "last_data_count": 90,
-      "last_ok": "2026-08-03T03:07:37.263236+00:00"
+      "last_data": "2026-08-03T06:08:52.860170+00:00",
+      "last_data_count": 15,
+      "last_ok": "2026-08-03T06:07:33.319596+00:00"
     }
   },
   "twitch_live": [
@@ -15224,7 +15234,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165345"
+    "last_full_window": "165346"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15237,13 +15247,14 @@
   "watchdog_outages": {
     "outages": {
       "alerted": "2026-08-02T17:18:45.308745+00:00",
-      "last_alert": "2026-08-02T17:18:45.308745+00:00",
-      "reminders": 0,
+      "last_alert": "2026-08-03T06:09:01.324469+00:00",
+      "reminders": 1,
       "since": "2026-08-02T17:18:45.308745+00:00"
     }
   },
   "water_slots_sent": [],
   "weather_seen_ids": [
+    "c00299f5250d7a47",
     "d07203177e4ed45b",
     "fe767db540e38d90",
     "de9f2c21860361dc",
@@ -15442,10 +15453,9 @@
     "4eea8f530229cfae",
     "0e4d0e3bd87a95c3",
     "48f21b45592c366f",
-    "b8925b8d56a29114",
-    "26bc9b795e6732d9"
+    "b8925b8d56a29114"
   ],
-  "wikiquote_last_category": "activists_thinkers",
+  "wikiquote_last_category": "science_pioneers",
   "wikiquote_last_sent": "2026-07-14T4",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-07-25",
@@ -15490,7 +15500,7 @@
     "philosophers:Voltaire": "2026-07-09",
     "science_pioneers:Ada Lovelace": "2026-07-13",
     "science_pioneers:Albert Einstein": "2026-07-10",
-    "science_pioneers:Carl Sagan": "2026-07-09",
+    "science_pioneers:Carl Sagan": "2026-08-03",
     "science_pioneers:Charles Darwin": "2026-07-12",
     "science_pioneers:Galileo Galilei": "2026-07-14",
     "science_pioneers:Isaac Newton": "2026-07-11",
