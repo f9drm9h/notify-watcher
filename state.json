@@ -478,18 +478,6 @@
     {
       "action": "push",
       "detail": "",
-      "id": "817b864897b7f604",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday's Massive Runtime Confirmed In New Marvel Report - IMDb",
-      "topic": "movies",
-      "ts": "2026-07-19T15:08:28.340234+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9ScVBWemVRU0NkZ1RvYWNqSEh5NE95VHZkakZHcm15WXNYUmJjWDJ6SUU0aUFEcmI1T3hZV25QQWNqSXQ5N0I1UFBQMkl2MVVQbUFYQ2FibDg2Z0RtYWNCRktfcjRYZHUxaFE?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
       "id": "9fe998b4e9539f05",
       "score": 62,
       "severity": "high",
@@ -12474,6 +12462,18 @@
       "topic": "spark",
       "ts": "2026-08-03T00:08:59.032479+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Lights out soon. Put the day down - it will be there tomorrow.",
+      "id": "06b736660a098456",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-08-03T01:07:29.952311+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -13809,6 +13809,11 @@
       "channel": "1515504253345726558",
       "habit": "cleaning",
       "sent": "2026-08-02T22:07:36.126725+00:00"
+    },
+    "1533642438663606354": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-08-03T01:07:29.952311+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-03",
@@ -14104,7 +14109,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-03T00:52:30.198697+00:00"
+    "ts": "2026-08-03T01:07:28.677066+00:00"
   },
   "launch_seen_ids": [
     "a2e665606c850957",
@@ -15019,7 +15024,9 @@
   ],
   "recap_last_week": "2026-W31",
   "reminders_sent": [],
-  "sleep_slots_sent": [],
+  "sleep_slots_sent": [
+    "2026-08-02|21:00"
+  ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
     "d1203-liberty-5-pro-anc-earbuds-clear-calls",
@@ -15102,9 +15109,9 @@
       "last_ok": "2026-08-02T21:07:29.646596+00:00"
     },
     "habits": {
-      "last_data": "2026-08-03T00:52:32.167309+00:00",
+      "last_data": "2026-08-03T01:07:31.703946+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-03T00:52:30.198697+00:00"
+      "last_ok": "2026-08-03T01:07:28.677066+00:00"
     },
     "holidays": {
       "last_data": "2026-08-02T21:09:15.202376+00:00",
@@ -15187,9 +15194,9 @@
       "last_ok": "2026-08-03T00:07:31.197651+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-03T00:52:31.249798+00:00",
+      "last_data": "2026-08-03T01:07:29.951847+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-03T00:52:30.198697+00:00"
+      "last_ok": "2026-08-03T01:07:28.677066+00:00"
     },
     "uv": {
       "last_data": "2026-08-02T21:09:16.687932+00:00",
