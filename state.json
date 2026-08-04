@@ -578,18 +578,6 @@
     {
       "action": "digest",
       "detail": "",
-      "id": "632844a4f2dd5150",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Lady Deathstrike Faces Logan In New Marvel\u2019s Wolverine Cinematic Trailer - Game Informer",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.941116+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPN2MtaG9UN3lnWGt5QjNFTTgyQVZ3NnVfOGo4bEoxcHZObndJc0ZnMzVMaWJCWUh0eXdvNVFGaGJMUkticEFrRktCQzMwQXZ2enk5NGI0Y2RsYkt3aHV4RGFqNWp4SkRVVVgwQ0RlbXJKM1ZTLTZiZlZhYy1qZkZJdnUza2xqdFhhQVV6QmxhNWgyVjRWU3d1MXdvYlN5X1Q5aC1CbHlxejc2NlE?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
       "id": "77331e291ade01e8",
       "score": 35,
       "severity": "moderate",
@@ -12574,6 +12562,18 @@
       "topic": "spark",
       "ts": "2026-08-04T00:08:24.737852+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Bedtime. Phone away, eyes closed. Good night!",
+      "id": "97c3c692a9d19946",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-08-04T01:07:33.436665+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -14000,11 +14000,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1533642438663606354": {
-      "channel": "1515504253345726558",
-      "habit": "sleep",
-      "sent": "2026-08-03T01:07:29.952311+00:00"
-    },
     "1533657557393080533": {
       "channel": "1515504253345726558",
       "habit": "sleep",
@@ -14029,6 +14024,11 @@
       "channel": "1515504253345726558",
       "habit": "cleaning",
       "sent": "2026-08-03T22:07:29.816611+00:00"
+    },
+    "1534004840160694352": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-08-04T01:07:33.436665+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-04",
@@ -14321,7 +14321,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-04T00:52:32.700717+00:00"
+    "ts": "2026-08-04T01:07:31.950739+00:00"
   },
   "launch_seen_ids": [
     "d568d3247c4b17ff",
@@ -15270,7 +15270,9 @@
   ],
   "recap_last_week": "2026-W32",
   "reminders_sent": [],
-  "sleep_slots_sent": [],
+  "sleep_slots_sent": [
+    "2026-08-03|21:00"
+  ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
     "d1203-liberty-5-pro-anc-earbuds-clear-calls",
@@ -15353,9 +15355,9 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "habits": {
-      "last_data": "2026-08-04T00:52:36.047421+00:00",
+      "last_data": "2026-08-04T01:07:35.310914+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-04T00:52:32.700717+00:00"
+      "last_ok": "2026-08-04T01:07:31.950739+00:00"
     },
     "holidays": {
       "last_data": "2026-08-03T21:08:49.557270+00:00",
@@ -15442,9 +15444,9 @@
       "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-04T00:52:34.909324+00:00",
+      "last_data": "2026-08-04T01:07:33.436165+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T00:52:32.700717+00:00"
+      "last_ok": "2026-08-04T01:07:31.950739+00:00"
     },
     "uv": {
       "last_data": "2026-08-03T21:08:50.700078+00:00",
