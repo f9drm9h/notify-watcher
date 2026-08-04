@@ -585,30 +585,6 @@
     {
       "action": "digest",
       "detail": "",
-      "id": "06d03a9a19be9f71",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine 'Ain\u2019t No Hero Trailer' - Netto's Game Room",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.942887+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNWDlaSk94R2wxWDJESkRGQWVwV0pEeWJwc1dDODBVcDN6UmZVbmtFR0NHRlVrVFRxM1pQNElOMEpuTFlfTmNKVmV2eVNiNlBjWURjcjVCTWVHVUNKb3ZXRGwxWUZ1NERoYUZ6akFwLU9wX0ZtUU9YMjk5dFg5cGtGZnd4NGh3cHZCcVE?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "10eb464122c16577",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "New Trailer: Insomniac\u2019s \u201cMarvel\u2019s Wolverine\u201d Game - Dark Horizons",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.943170+00:00",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQNHhZUTRHdHhrT2dmWXlPVGREaHJ6R3EzNVEtYjJZZ0E5ZTlsd2lLd3JfVV9DRlVReDk3QkJHQ3JlX0kwYWQ2cFBlNUdKM3NQWHF3bVp4TnpkZnJjSmU4OUZ4dlVmMDhxRkdRTTA0Xzl3S2RmVlZJRTVsLUZHNm55ag?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
       "id": "72f6d6e70b0e8770",
       "score": 35,
       "severity": "moderate",
@@ -12581,6 +12557,30 @@
       "topic": "twitch",
       "ts": "2026-08-04T07:37:33.496877+00:00",
       "url": "https://twitch.tv/RiddlesMK"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "fdbcb458449974f1",
+      "score": 70,
+      "severity": "high",
+      "source": "Fresenius Kabi Usa Llc",
+      "title": "FDA approves Fresenius Kabi Usa Llc (NDA220381)",
+      "topic": "fda",
+      "ts": "2026-08-04T09:08:07.519820+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220381"
+    },
+    {
+      "action": "push",
+      "detail": "Falcon 9 Block 5 | BlueBird 11-13 (Block 2 #6-8) launches in ~23h.",
+      "id": "36f071ef50be2156",
+      "score": 62,
+      "severity": "moderate",
+      "source": "Launches",
+      "title": "Rocket launch",
+      "topic": "launches",
+      "ts": "2026-08-04T09:08:31.199114+00:00",
+      "url": "https://www.youtube.com/watch?v=xlb3ukMQ-Ec"
     }
   ],
   "exercise_slots_sent": [],
@@ -12595,6 +12595,7 @@
     }
   ],
   "fda_seen_ids": [
+    "eb88f60cab6c4e59",
     "4b8e05a177acf52f",
     "958c15109d49afcf",
     "12abf35ee3187015",
@@ -12793,8 +12794,7 @@
     "b00a7aee3320d58e",
     "9ad4ad6b9b420750",
     "64a8abbc085ab4be",
-    "27c29f71cb5d4897",
-    "477c9c8b440f2bdf"
+    "27c29f71cb5d4897"
   ],
   "follows": {
     "artists": [
@@ -14324,11 +14324,12 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-04T08:52:39.319996+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-04T09:07:38.351844+00:00"
   },
   "launch_seen_ids": [
+    "0891cf1d82bf33bf",
     "29d7806386222b4c",
     "d568d3247c4b17ff",
     "a2e665606c850957",
@@ -15286,14 +15287,14 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-04T06:08:38.385912+00:00",
+      "last_data": "2026-08-04T09:08:30.750503+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-04T06:08:39.782433+00:00",
+      "last_data": "2026-08-04T09:08:32.481870+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "apod": {
       "last_data": "2026-08-03T21:08:51.597010+00:00",
@@ -15301,26 +15302,26 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "deals": {
-      "last_data": "2026-08-04T06:08:13.855273+00:00",
+      "last_data": "2026-08-04T09:08:07.052989+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "energy": {
-      "last_data": "2026-08-04T06:08:25.686281+00:00",
+      "last_data": "2026-08-04T09:08:17.370295+00:00",
       "last_data_count": 58,
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-03T12:10:20.788103+00:00",
@@ -15328,9 +15329,9 @@
       "last_ok": "2026-08-03T12:07:29.369450+00:00"
     },
     "fda": {
-      "last_data": "2026-08-04T06:08:14.171300+00:00",
-      "last_data_count": 8,
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_data": "2026-08-04T09:08:07.519653+00:00",
+      "last_data_count": 6,
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "fuel": {
       "last_data": "2026-08-03T21:08:43.937906+00:00",
@@ -15338,18 +15339,18 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "fx": {
-      "last_data": "2026-08-04T06:08:38.498346+00:00",
+      "last_data": "2026-08-04T09:08:30.865809+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-04T06:07:49.856984+00:00",
+      "last_data": "2026-08-04T09:07:45.174445+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "groceries": {
       "last_data": "2026-08-03T21:08:15.890492+00:00",
@@ -15357,9 +15358,9 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "habits": {
-      "last_data": "2026-08-04T08:52:42.779542+00:00",
+      "last_data": "2026-08-04T09:08:34.873471+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-04T08:52:39.319996+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "holidays": {
       "last_data": "2026-08-03T21:08:49.557270+00:00",
@@ -15367,11 +15368,11 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "iss": {
-      "empty_runs": 3,
+      "empty_runs": 4,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:44.807989+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "itsc": {
       "last_data": "2026-08-03T21:08:50.297785+00:00",
@@ -15379,9 +15380,9 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "launches": {
-      "last_data": "2026-08-04T06:08:38.717151+00:00",
+      "last_data": "2026-08-04T09:08:31.198997+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "learn": {
       "last_data": "2026-08-03T12:10:16.154863+00:00",
@@ -15389,7 +15390,7 @@
       "last_ok": "2026-08-03T12:07:29.369450+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "marine": {
       "last_data": "2026-08-03T21:08:51.083739+00:00",
@@ -15397,41 +15398,41 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "music": {
-      "last_data": "2026-08-04T06:07:48.373040+00:00",
+      "last_data": "2026-08-04T09:07:43.325285+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-04T06:08:26.311496+00:00",
+      "last_data": "2026-08-04T09:08:18.012525+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (9d ago)",
-      "last_error_ts": "2026-08-04T06:07:43.134531+00:00",
+      "last_error_ts": "2026-08-04T09:07:38.351844+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-04T06:08:37.779171+00:00",
-      "last_data_count": 50,
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_data": "2026-08-04T09:08:30.266991+00:00",
+      "last_data_count": 49,
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "research": {
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-04T06:08:08.955702+00:00",
+      "last_data": "2026-08-04T09:08:01.402036+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "spark": {
       "last_data": "2026-08-04T06:08:42.651389+00:00",
@@ -15439,16 +15440,16 @@
       "last_ok": "2026-08-04T06:07:43.134531+00:00"
     },
     "spending": {
-      "empty_runs": 3,
+      "empty_runs": 4,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-04T08:52:41.340014+00:00",
+      "last_data": "2026-08-04T09:07:40.752315+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T08:52:39.319996+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "uv": {
       "last_data": "2026-08-03T21:08:50.700078+00:00",
@@ -15456,20 +15457,20 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "weather": {
-      "last_data": "2026-08-04T06:08:25.818080+00:00",
+      "last_data": "2026-08-04T09:08:17.557487+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-04T06:08:40.872817+00:00",
-      "last_data_count": 45,
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_data": "2026-08-04T09:08:33.653288+00:00",
+      "last_data_count": 90,
+      "last_ok": "2026-08-04T09:07:38.351844+00:00"
     }
   },
   "twitch_live": [],
@@ -15477,7 +15478,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165354"
+    "last_full_window": "165355"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
