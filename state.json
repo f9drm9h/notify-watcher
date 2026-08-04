@@ -203,6 +203,15 @@
       "title": "FDA updates approval for Cellcept (Mycophenolate Mofetil) (NDA050722)",
       "topic": "fda",
       "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050722"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-08-03",
@@ -566,30 +575,6 @@
     "9196fb40b7c0edfe"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "4d9b535b377eabdb",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "MARVEL'S WOLVERINE Gets Cinematic \u201cAin\u2019t No Hero\u201d Trailer, and It\u2019s Badass! - GeekTyrant",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.940579+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTktCaUR3QjBUdTNLVG1zaVdWdE1pc09ORUIxMUNVQ3lpWDhRWGt1UlVrQm8zV3hFMUFIdm5ZcG9EeFh2SlhydjB4dlZEX1VlU3diTjhlTEhSOWZWWFRQZlVSWUg4VDA0blhQOU9sRkxNemxweUg5WmtWRFFyV1ZZa0dnYnBRaW9TcERFbTFwSjlxNWhXX1BSQUE4SGE?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "5d36e43c51b0c31a",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "'Marvel's Wolverine' Confirms A Mostly Forgotten Villain - Inverse",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.940813+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE02SzVUVDBxcVFUUmpTc0ZvWDR5Z1lSdHhtWGlWTDlTS3pEclQ0SXEyYkxYM25QSE1Ta3l6bXJTdVo4eEtzUG9GUmRkSFAwR3hMbnpRckNKeGdpT2xzWjZJV2VjaGZwcFJsRFlXbHJTMllac3ZfS3VtcUVR?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -12565,6 +12550,30 @@
       "topic": "habits",
       "ts": "2026-08-03T22:07:29.816611+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "611b3ae8929378d7",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-04T00:08:06.954189+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Eat beans, lentils, and other legumes with meals for affordable protein and fiber. (Source: MedlinePlus)",
+      "id": "27c2c2587ac41e51",
+      "score": 60,
+      "severity": "low",
+      "source": "Health",
+      "title": "Health tip",
+      "topic": "spark",
+      "ts": "2026-08-04T00:08:24.737852+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -14022,7 +14031,7 @@
       "sent": "2026-08-03T22:07:29.816611+00:00"
     }
   },
-  "health_tip_last_sent": "2026-08-03",
+  "health_tip_last_sent": "2026-08-04",
   "holidays_sent": [],
   "ignored": {
     "4071c13d0b9dc18b": {
@@ -14310,9 +14319,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-03T23:52:28.842126+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-04T00:07:26.322417+00:00"
   },
   "launch_seen_ids": [
     "d568d3247c4b17ff",
@@ -15268,19 +15277,19 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82674,
-  "spark_next_kind": "health",
+  "spark_last_sent": 82676,
+  "spark_next_kind": "quote",
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-03T21:08:42.823278+00:00",
+      "last_data": "2026-08-04T00:08:19.448293+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-03T21:08:45.562128+00:00",
+      "last_data": "2026-08-04T00:08:21.555720+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "apod": {
       "last_data": "2026-08-03T21:08:51.597010+00:00",
@@ -15288,26 +15297,26 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "deals": {
-      "last_data": "2026-08-03T21:08:00.959098+00:00",
+      "last_data": "2026-08-04T00:07:55.918509+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "energy": {
-      "last_data": "2026-08-03T21:08:26.808210+00:00",
+      "last_data": "2026-08-04T00:08:06.735140+00:00",
       "last_data_count": 58,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-03T12:10:20.788103+00:00",
@@ -15315,9 +15324,9 @@
       "last_ok": "2026-08-03T12:07:29.369450+00:00"
     },
     "fda": {
-      "last_data": "2026-08-03T21:08:16.779454+00:00",
+      "last_data": "2026-08-04T00:07:56.452283+00:00",
       "last_data_count": 8,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "fuel": {
       "last_data": "2026-08-03T21:08:43.937906+00:00",
@@ -15325,18 +15334,18 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "fx": {
-      "last_data": "2026-08-03T21:08:42.947437+00:00",
+      "last_data": "2026-08-04T00:08:19.593557+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-03T21:07:38.813871+00:00",
+      "last_data": "2026-08-04T00:07:33.334640+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "groceries": {
       "last_data": "2026-08-03T21:08:15.890492+00:00",
@@ -15344,9 +15353,9 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "habits": {
-      "last_data": "2026-08-03T23:52:32.633768+00:00",
+      "last_data": "2026-08-04T00:08:24.143516+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-03T23:52:28.842126+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "holidays": {
       "last_data": "2026-08-03T21:08:49.557270+00:00",
@@ -15354,9 +15363,11 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "iss": {
+      "empty_runs": 1,
+      "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:44.807989+00:00",
-      "last_data_count": 1,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_data_count": 0,
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "itsc": {
       "last_data": "2026-08-03T21:08:50.297785+00:00",
@@ -15364,9 +15375,9 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "launches": {
-      "last_data": "2026-08-03T21:08:44.198220+00:00",
+      "last_data": "2026-08-04T00:08:20.470251+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "learn": {
       "last_data": "2026-08-03T12:10:16.154863+00:00",
@@ -15374,7 +15385,7 @@
       "last_ok": "2026-08-03T12:07:29.369450+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "marine": {
       "last_data": "2026-08-03T21:08:51.083739+00:00",
@@ -15382,41 +15393,41 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "music": {
-      "last_data": "2026-08-03T21:07:35.982213+00:00",
+      "last_data": "2026-08-04T00:07:31.560716+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-03T21:08:31.128610+00:00",
+      "last_data": "2026-08-04T00:08:07.446046+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (8d ago)",
-      "last_error_ts": "2026-08-03T21:07:31.591666+00:00",
+      "last_error_ts": "2026-08-04T00:07:26.322417+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-03T21:08:42.363783+00:00",
+      "last_data": "2026-08-04T00:08:18.969541+00:00",
       "last_data_count": 44,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "research": {
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-03T21:07:55.921303+00:00",
+      "last_data": "2026-08-04T00:07:50.282433+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "spark": {
       "last_data": "2026-08-03T06:08:54.597907+00:00",
@@ -15424,14 +15435,16 @@
       "last_ok": "2026-08-03T06:07:33.319596+00:00"
     },
     "spending": {
+      "empty_runs": 1,
+      "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
-      "last_data_count": 1,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_data_count": 0,
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-03T23:52:31.096953+00:00",
+      "last_data": "2026-08-04T00:07:29.140315+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-03T23:52:28.842126+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "uv": {
       "last_data": "2026-08-03T21:08:50.700078+00:00",
@@ -15439,20 +15452,20 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "weather": {
-      "last_data": "2026-08-03T21:08:30.798513+00:00",
+      "last_data": "2026-08-04T00:08:06.953773+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-03T21:08:46.312397+00:00",
+      "last_data": "2026-08-04T00:08:22.894932+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T00:07:26.322417+00:00"
     }
   },
   "twitch_live": [],
@@ -15460,7 +15473,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165351"
+    "last_full_window": "165352"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15482,6 +15495,7 @@
     "2026-08-03|05:30"
   ],
   "weather_seen_ids": [
+    "5bba7448ef6f6d47",
     "1d4c5b10e63b5889",
     "571f0b2b72c9e54e",
     "c00299f5250d7a47",
@@ -15680,8 +15694,7 @@
     "b83b9e9bba61aab9",
     "f2218c6998264874",
     "3f5fcb750313f196",
-    "4eea8f530229cfae",
-    "0e4d0e3bd87a95c3"
+    "4eea8f530229cfae"
   ],
   "wikiquote_last_category": "science_pioneers",
   "wikiquote_last_sent": "2026-07-14T4",
