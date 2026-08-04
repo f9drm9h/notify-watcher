@@ -585,18 +585,6 @@
     {
       "action": "digest",
       "detail": "",
-      "id": "72f6d6e70b0e8770",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "PlayStation just dropped an epic new \u2018Ain\u2019t No Hero\u2019 trailer for upcoming Marvel\u2019s Wolverine - 9to5Toys",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.943418+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQkhsTVBwaGY4bGhPUTRQQkg0d01BNzg3MjdpZjhYTnU1Yk1UeEF3UHlJNHFsQms4YmhZY25MLUpqM0NfQldkR3RxWVBiZExUcnRyMjVwNkdXY1N5Y252bzdCNjFjTmlFY0dnMUU0cGtNZTI0ZFRZbTdPMnpJbjkyYXlaV0pKZzdJX0tLU2FrMzk?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
       "id": "3c48c8d69e180518",
       "score": 35,
       "severity": "moderate",
@@ -12581,6 +12569,18 @@
       "topic": "launches",
       "ts": "2026-08-04T09:08:31.199114+00:00",
       "url": "https://www.youtube.com/watch?v=xlb3ukMQ-Ec"
+    },
+    {
+      "action": "push",
+      "detail": "Start the day right: drink a full glass of water now.",
+      "id": "ee91bc62d6077394",
+      "score": 0,
+      "severity": "low",
+      "source": "water",
+      "title": "Water - start the day hydrated",
+      "topic": "habits",
+      "ts": "2026-08-04T09:37:31.233697+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -14005,11 +14005,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1533770782021517374": {
-      "channel": "1515504253345726558",
-      "habit": "water",
-      "sent": "2026-08-03T09:37:29.086812+00:00"
-    },
     "1533959528268431381": {
       "channel": "1515504253345726558",
       "habit": "exercise",
@@ -14034,6 +14029,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-08-04T02:07:25.494371+00:00"
+    },
+    "1534133177973608471": {
+      "channel": "1515504253345726558",
+      "habit": "water",
+      "sent": "2026-08-04T09:37:31.233697+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-04",
@@ -14326,7 +14326,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-04T09:22:32.844352+00:00"
+    "ts": "2026-08-04T09:37:29.993398+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15358,9 +15358,9 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "habits": {
-      "last_data": "2026-08-04T09:22:35.220624+00:00",
+      "last_data": "2026-08-04T09:37:33.189633+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-04T09:22:32.844352+00:00"
+      "last_ok": "2026-08-04T09:37:29.993398+00:00"
     },
     "holidays": {
       "last_data": "2026-08-03T21:08:49.557270+00:00",
@@ -15447,9 +15447,9 @@
       "last_ok": "2026-08-04T09:07:38.351844+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-04T09:22:34.254518+00:00",
+      "last_data": "2026-08-04T09:37:31.233236+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T09:22:32.844352+00:00"
+      "last_ok": "2026-08-04T09:37:29.993398+00:00"
     },
     "uv": {
       "last_data": "2026-08-03T21:08:50.700078+00:00",
@@ -15496,7 +15496,9 @@
       "since": "2026-08-02T17:18:45.308745+00:00"
     }
   },
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-08-04|05:30"
+  ],
   "weather_seen_ids": [
     "645c0d6b766d98ee",
     "5bba7448ef6f6d47",
