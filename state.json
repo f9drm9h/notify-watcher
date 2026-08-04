@@ -89,9 +89,7 @@
     "rent|2026-07-30|1"
   ],
   "blood_donation_last_notified": "2026-07-08",
-  "cleaning_slots_sent": [
-    "2026-08-03|18:00"
-  ],
+  "cleaning_slots_sent": [],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -12576,9 +12574,7 @@
       "url": "https://ll.thespacedevs.com/2.2.0/launch/d46cab82-dcf5-4d70-b698-d7bead7f638c/"
     }
   ],
-  "exercise_slots_sent": [
-    "2026-08-03|18:00"
-  ],
+  "exercise_slots_sent": [],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -14321,7 +14317,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-04T03:52:31.287705+00:00"
+    "ts": "2026-08-04T04:07:33.041279+00:00"
   },
   "launch_seen_ids": [
     "29d7806386222b4c",
@@ -14361,9 +14357,7 @@
   ],
   "learn_last_sent": "2026-08-03",
   "life_dashboard_last_week": "2026-W31",
-  "meditate_slots_sent": [
-    "2026-08-03|18:00"
-  ],
+  "meditate_slots_sent": [],
   "music_discovery_seen": [
     5425093,
     4685222,
@@ -15271,10 +15265,7 @@
   ],
   "recap_last_week": "2026-W32",
   "reminders_sent": [],
-  "sleep_slots_sent": [
-    "2026-08-03|21:00",
-    "2026-08-03|22:00"
-  ],
+  "sleep_slots_sent": [],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
     "d1203-liberty-5-pro-anc-earbuds-clear-calls",
@@ -15357,9 +15348,9 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "habits": {
-      "last_data": "2026-08-04T03:52:33.868734+00:00",
+      "last_data": "2026-08-04T04:07:35.278863+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-04T03:52:31.287705+00:00"
+      "last_ok": "2026-08-04T04:07:33.041279+00:00"
     },
     "holidays": {
       "last_data": "2026-08-03T21:08:49.557270+00:00",
@@ -15446,9 +15437,9 @@
       "last_ok": "2026-08-04T03:07:31.971486+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-04T03:52:32.652429+00:00",
+      "last_data": "2026-08-04T04:07:34.003276+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T03:52:31.287705+00:00"
+      "last_ok": "2026-08-04T04:07:33.041279+00:00"
     },
     "uv": {
       "last_data": "2026-08-03T21:08:50.700078+00:00",
@@ -15495,9 +15486,7 @@
       "since": "2026-08-02T17:18:45.308745+00:00"
     }
   },
-  "water_slots_sent": [
-    "2026-08-03|05:30"
-  ],
+  "water_slots_sent": [],
   "weather_seen_ids": [
     "5bba7448ef6f6d47",
     "1d4c5b10e63b5889",
