@@ -469,18 +469,6 @@
     {
       "action": "digest",
       "detail": "",
-      "id": "9d7a6af8046b0d42",
-      "score": 35,
-      "severity": "moderate",
-      "source": "God of War Laufey",
-      "title": "\u2018God Of War: Laufey\u2019 studio confirms 2027 release date - wtyefm.com",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:40.950418+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQRnRpdncycGU0cExoNHVNcEJHMEJva3JELWVuaUtURlRBcFppX0NJdzk5Y0ZKVHJFSV9JaWRQbDZBMml6THU2MGs2dElHSnc5RXpWN0tFRWJ0a0NXTVJTeW1oVHJWdjZMazlBbktCTHVYNzJRTy1CcldIbmFLUFRGRHlBb2RKTFlPaERNcTN4QQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
       "id": "3e857070291da5d1",
       "score": 35,
       "severity": "moderate",
@@ -12465,6 +12453,18 @@
       "topic": "quakes",
       "ts": "2026-08-04T15:09:24.203191+00:00",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr2026216002"
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - 1v1Me",
+      "id": "117468b9129070da",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-08-04T17:37:29.988264+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "exercise_slots_sent": [],
@@ -14212,7 +14212,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-04T17:22:29.068559+00:00"
+    "ts": "2026-08-04T17:37:29.555199+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15266,9 +15266,9 @@
       "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "habits": {
-      "last_data": "2026-08-04T17:22:31.973909+00:00",
+      "last_data": "2026-08-04T17:37:32.115624+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-04T17:22:29.068559+00:00"
+      "last_ok": "2026-08-04T17:37:29.555199+00:00"
     },
     "holidays": {
       "last_data": "2026-08-04T15:09:50.435945+00:00",
@@ -15353,9 +15353,9 @@
       "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-04T17:22:30.518929+00:00",
+      "last_data": "2026-08-04T17:37:31.193510+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T17:22:29.068559+00:00"
+      "last_ok": "2026-08-04T17:37:29.555199+00:00"
     },
     "uv": {
       "last_data": "2026-08-04T15:09:51.594279+00:00",
@@ -15379,7 +15379,9 @@
       "last_ok": "2026-08-04T15:07:24.648676+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_bulletin_current": "2026-08",
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
