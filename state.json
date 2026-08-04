@@ -93,7 +93,17 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [],
+  "digest_buffer": [
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Earthquakes",
+      "title": "M3.5 - 69 km NW of San Antonio, Puerto Rico (~240 km away)",
+      "topic": "quakes",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr2026216002"
+    }
+  ],
   "digest_last_sent": "2026-08-04",
   "discord_control": {
     "last_id": "1530929203594137641"
@@ -456,30 +466,6 @@
     "7a2fcd9cb3ab7e18"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "be87db1859601a76",
-      "score": 35,
-      "severity": "moderate",
-      "source": "God of War Laufey",
-      "title": "Sony Santa Monica Confirms Physical Release for God of War Laufey - Gadget Pilipinas",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:40.949708+00:00",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1XSVZYeVhpMVBKaVdyMWVpSk1IX21ocHByUDZ4ZkdwZVo1OXpKVFdBLWVwT1JndHVMR2NEa1dOQUt0SUQwbzdrcG84ZmFBV25LVDBvMmdZbWh4ZTNxOHJNV2ZWbE5JdVlHQnlPVmR5UHk?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "d4b331d3070d2a44",
-      "score": 35,
-      "severity": "moderate",
-      "source": "God of War Laufey",
-      "title": "Sony Santa Monica confirms God of War Laufey will be available on disc, suggesting the game will launch before 2028 - TechRadar",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:40.950135+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNem5DNml6ZGVBd0R1S3BnWXFaVU1BcXpYMGI4bDFWYXZrQktuUVo2UlFwaU9femtsc3pZYi0tOG5mUDhqVDdhUF9TYU9hWkIyUDFubUFjTzRPT25TRTVKb2hHTTZkeG5lWU1lWGxwSWV2Vkd3NjFPcUcxQkdDZGRKR2RfYVpmNjh0Qnd2SmpBYkJwTzJpM3E3X2RtMi1Uc0xWaTV0cks2ME1RSEJ3Q052T1ZoYjR4S0dzNWlnRjEzZnM2QlktZ1hTV0FOemFxT2dsN01uZ3JhcGkxOG5SQl9pNDRkdDVTMHhuWWdsc1lSWV82eGFHbnNHbA?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -12455,6 +12441,30 @@
       "topic": "watchdog",
       "ts": "2026-08-04T12:09:07.735695+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "American Jesus - Bad Religion\n(because you like The Offspring)",
+      "id": "0a76420d77e64555",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-04T15:07:29.339342+00:00",
+      "url": "https://www.deezer.com/track/378129111"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "499efbdc4fa1c05b",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.5 - 69 km NW of San Antonio, Puerto Rico (~240 km away)",
+      "topic": "quakes",
+      "ts": "2026-08-04T15:09:24.203191+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr2026216002"
     }
   ],
   "exercise_slots_sent": [],
@@ -12682,7 +12692,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
   "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-04T12:08:49.718352+00:00",
+  "fuel_last_prices_seen_at": "2026-08-04T15:09:25.669086+00:00",
   "fuel_prices": {
     "GLP": 135.2,
     "Gasoil Regular": 258.3,
@@ -13018,6 +13028,7 @@
   "games_week_last": "2026-W32",
   "golden_sun_seen": {
     "Golden Sun": [
+      "f21f1c1f57397ccf",
       "c27c806db346b974",
       "88119a4877f24078",
       "3f567a206b8da133",
@@ -14199,9 +14210,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-04T14:52:29.458039+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-04T15:07:24.648676+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14465,7 +14476,8 @@
     3348,
     4194,
     4189,
-    459
+    459,
+    936
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14723,6 +14735,15 @@
       "label": "George Harrison",
       "payload": {
         "name": "George Harrison"
+      }
+    },
+    "6c696cb5b3ffa222": {
+      "applied": null,
+      "created": "2026-08-04T15:07:29.339317+00:00",
+      "kind": "artist",
+      "label": "Bad Religion",
+      "payload": {
+        "name": "Bad Religion"
       }
     },
     "6e2b910a4cb08279": {
@@ -15030,6 +15051,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "9a7a832345a09d11",
     "54563cf073e26687",
     "ec03905908f9f68e",
     "bcdd48382b1f0bc4",
@@ -15173,41 +15195,41 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-04T12:08:47.705577+00:00",
+      "last_data": "2026-08-04T15:09:24.572771+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-04T12:08:51.184160+00:00",
+      "last_data": "2026-08-04T15:09:27.754321+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "apod": {
-      "last_data": "2026-08-04T12:09:04.868913+00:00",
+      "last_data": "2026-08-04T15:09:53.526232+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "deals": {
-      "last_data": "2026-08-04T12:08:07.854600+00:00",
+      "last_data": "2026-08-04T15:08:16.586291+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "energy": {
-      "last_data": "2026-08-04T12:08:33.884541+00:00",
-      "last_data_count": 58,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_data": "2026-08-04T15:09:11.711963+00:00",
+      "last_data_count": 12,
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-04T12:08:56.885026+00:00",
@@ -15215,58 +15237,58 @@
       "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "fda": {
-      "last_data": "2026-08-04T12:08:22.411046+00:00",
+      "last_data": "2026-08-04T15:08:31.317107+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-04T12:08:49.718379+00:00",
+      "last_data": "2026-08-04T15:09:25.669103+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "fx": {
-      "last_data": "2026-08-04T12:08:47.764678+00:00",
+      "last_data": "2026-08-04T15:09:24.648952+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-04T12:07:45.866614+00:00",
-      "last_data_count": 4,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_data": "2026-08-04T15:07:31.310448+00:00",
+      "last_data_count": 5,
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-04T12:08:21.850915+00:00",
-      "last_data_count": 247,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_data": "2026-08-04T15:08:30.608492+00:00",
+      "last_data_count": 248,
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "habits": {
-      "last_data": "2026-08-04T14:52:31.605415+00:00",
+      "last_data": "2026-08-04T15:09:29.773189+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-04T14:52:29.458039+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-04T12:09:01.648035+00:00",
+      "last_data": "2026-08-04T15:09:50.435945+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "iss": {
-      "last_data": "2026-08-04T12:08:50.695936+00:00",
+      "last_data": "2026-08-04T15:09:27.150601+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-04T12:09:02.674564+00:00",
+      "last_data": "2026-08-04T15:09:51.180535+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "launches": {
-      "last_data": "2026-08-04T12:08:50.015229+00:00",
+      "last_data": "2026-08-04T15:09:26.720338+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "learn": {
       "last_data": "2026-08-04T12:08:53.590710+00:00",
@@ -15274,49 +15296,49 @@
       "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "marine": {
-      "last_data": "2026-08-04T12:09:04.599398+00:00",
+      "last_data": "2026-08-04T15:09:51.975491+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "music": {
-      "last_data": "2026-08-04T12:07:43.021216+00:00",
+      "last_data": "2026-08-04T15:07:28.645736+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-04T12:08:34.466967+00:00",
+      "last_data": "2026-08-04T15:09:12.332313+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (9d ago)",
-      "last_error_ts": "2026-08-04T12:07:37.671958+00:00",
+      "last_error_ts": "2026-08-04T15:07:24.648676+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-04T12:08:47.082053+00:00",
-      "last_data_count": 48,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_data": "2026-08-04T15:09:24.202841+00:00",
+      "last_data_count": 46,
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "research": {
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-04T12:08:03.789048+00:00",
+      "last_data": "2026-08-04T15:08:10.180839+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "spark": {
       "last_data": "2026-08-04T06:08:42.651389+00:00",
@@ -15324,37 +15346,37 @@
       "last_ok": "2026-08-04T06:07:43.134531+00:00"
     },
     "spending": {
-      "empty_runs": 5,
+      "empty_runs": 6,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-04T14:52:30.462409+00:00",
+      "last_data": "2026-08-04T15:07:26.837499+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T14:52:29.458039+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "uv": {
-      "last_data": "2026-08-04T12:09:03.974744+00:00",
+      "last_data": "2026-08-04T15:09:51.594279+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "weather": {
-      "last_data": "2026-08-04T12:08:33.989748+00:00",
+      "last_data": "2026-08-04T15:09:12.007209+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-04T12:08:52.311095+00:00",
+      "last_data": "2026-08-04T15:09:28.774795+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-04T12:07:37.671958+00:00"
+      "last_ok": "2026-08-04T15:07:24.648676+00:00"
     }
   },
   "twitch_live": [],
@@ -15362,7 +15384,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165356"
+    "last_full_window": "165357"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
