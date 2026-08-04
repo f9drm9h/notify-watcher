@@ -69,7 +69,7 @@
     "29db49f64ce68661",
     "a8b1aff056453d2f"
   ],
-  "apod_last_sent": "2026-08-03",
+  "apod_last_sent": "2026-08-04",
   "astronomy_sent": [
     "2026-06-14|New moon tonight - d",
     "2026-06-21|June solstice today",
@@ -93,140 +93,13 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [
-    {
-      "detail": "DOP 107,995.00 (was DOP 134,995.00, -20%)",
-      "preserve_detail": false,
-      "score": 45,
-      "source": "La Sirena",
-      "title": "La Sirena deal: Estufa Samsung 30 Pulgadas a Gas NSG6DG8700SRAX",
-      "topic": "groceries",
-      "url": "https://www.sirena.do/samsung-estufa-30p-nsg6dg8700srax-gas-2089400/p"
-    },
-    {
-      "detail": "DOP 86,895.00 (was DOP 108,595.00, -20%)",
-      "preserve_detail": false,
-      "score": 45,
-      "source": "La Sirena",
-      "title": "La Sirena deal: Nevera Samsung 22 Pies RS22T5200S9",
-      "topic": "groceries",
-      "url": "https://www.sirena.do/samsung-nevera-22p-rs22t5200s9-1914619/p"
-    },
-    {
-      "detail": "DOP 7,295.00 (was DOP 8,595.00, -15%)",
-      "preserve_detail": false,
-      "score": 45,
-      "source": "La Sirena",
-      "title": "La Sirena deal: Air Fryer Black & Decker 5.7 Lt Hf5055b",
-      "topic": "groceries",
-      "url": "https://www.sirena.do/b-d-air-fryer-5-7lt-hf5055b-1990576/p"
-    },
-    {
-      "detail": "DOP 67,995.00 (was DOP 79,995.00, -15%)",
-      "preserve_detail": false,
-      "score": 45,
-      "source": "La Sirena",
-      "title": "La Sirena deal: Lavadora Torre Mabe 24 Kg MCL2440PSBB0",
-      "topic": "groceries",
-      "url": "https://www.sirena.do/mabe-lavadora-torre-24kg-mcl2440psbb0-2112419/p"
-    },
-    {
-      "detail": "DOP 214.95 (was DOP 268.95, -20%)",
-      "preserve_detail": false,
-      "score": 45,
-      "source": "Nacional",
-      "title": "Nacional deal: Jabon En Barra Karite Y Vainilla Dove 3 Und/Paq 90 Gr",
-      "topic": "groceries",
-      "url": "https://supermercadosnacional.com/jabon-en-barra-karite-y-vainilla-dove-3-und-paq-90-gr-2215231"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "EIA Today in Energy",
-      "title": "Hourly peak load in ERCOT set a new record, exceeding 91 GW on July 22",
-      "topic": "energy",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67906"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "World Nuclear News",
-      "title": "Commonwealth Fusion Systems raises a further USD1 billion",
-      "topic": "energy",
-      "url": "https://www.world-nuclear-news.org/articles/commonwealth-fusion-systems-raises-a-further-usd1-billion"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "World Nuclear News",
-      "title": "ARC partners with INL for SMR deployment",
-      "topic": "energy",
-      "url": "https://www.world-nuclear-news.org/articles/arc-partners-with-inl-for-smr-deployment"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "Golden Sun",
-      "title": "Happy Golden Sun Day",
-      "topic": "golden_sun",
-      "url": "https://www.reddit.com/r/GoldenSun/comments/1vcztom/happy_golden_sun_day/"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Cellcept",
-      "title": "FDA updates approval for Cellcept (Mycophenolate Mofetil) (NDA050723)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050723"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Cellcept",
-      "title": "FDA updates approval for Cellcept (Mycophenolate Mofetil) (NDA050722)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050722"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    }
-  ],
-  "digest_last_sent": "2026-08-03",
+  "digest_buffer": [],
+  "digest_last_sent": "2026-08-04",
   "discord_control": {
     "last_id": "1530929203594137641"
   },
   "energy_learn_last_news": "2026-07-31",
-  "energy_learn_last_sent": "2026-08-03",
+  "energy_learn_last_sent": "2026-08-04",
   "energy_learn_seen": {
     "facts": [
       "baseload-vs-peaking",
@@ -250,7 +123,8 @@
       "ohms-law-1827",
       "chernobyl-1986",
       "vulcan-street-1882",
-      "godalming-1881"
+      "godalming-1881",
+      "itaipu-1984"
     ],
     "infrastructure": [
       "itaipu-dam",
@@ -280,6 +154,7 @@
     ]
   },
   "energy_seen_ids": [
+    "313fbdf1d29bf4ed",
     "c3886024e1de8530",
     "8ed699f229fc723b",
     "3df72a47bff9cf7a",
@@ -578,166 +453,9 @@
     "2883ef7691a01cd8",
     "54ff0275fabde9aa",
     "abd3538106ae5c52",
-    "7a2fcd9cb3ab7e18",
-    "9196fb40b7c0edfe"
+    "7a2fcd9cb3ab7e18"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "3c48c8d69e180518",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine gets a new trailer ahead of September release - AltChar",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.943655+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOemoxMnE2QkFwdGg3TENyNDVQNWRUQ0o5enpEbzR1c3A1SGFmejVqaEdicEtQMnBFdklkUVM0aFNTUzFHRlltWUU0YkVZN3RsUTA0RHFWeW9XbVFJWXo0ZkNQNDhmSzFjYXRibmxERTYwUm1DX0QzZ1BWbjhoV1M5b0FkUS03S0Z2dlNOejRTMGFzZVdTTzhBcGVIdzcycWRqbFhDX0Yyblp0dkNPMllz?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "de9701b22be98eaf",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel\u2019s Wolverine \u2013 \u201cAin\u2019t No Hero\u201d Cinematic Trailer - GameSpot",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.943899+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZ2JNVW5YOHR3NndRSzhuOXNoUlJoc2RuQ2U1NC1DZUI2Y3NpVmRNSV9KOXBHR25RLVJIZVludWd5ck5fT3pkZDBOdG1aWXBTTlBsNkRfcmNiZ0FjT2otQWJiR0dtOXVtV1BLRDRkSHlfck4taWc0dEZjRlQ3TjZlMHRqc1c2d3pD?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "ade29759fe4abd59",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel\u2019s Wolverine \u2018Ain\u2019t No Hero\u2019 trailer - Gematsu",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.944222+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1RZURoS2w2UUJFOHoxUzlUa0kydk1TbFliNGtaeDQ5bHo2bWx0cmh1WDRyV0lQWDY4OWpQci0xU2tjQjJFcFZvQmVQMWp2VFBMdEZTUWpWZ2tIbzM3bHJjX1ZMRmtyX3FodFBpN0dUa0lkQy0wdWY2NlJB?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "a0d71e025428c5f5",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine - Official Ain't No Hero Trailer - IGN Benelux",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.944468+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRzRZYThpM0xhVnEwbHVqWXZyeVNpSmhsU053R1hnQU9wdERrM0p1enlCVFVfV0lUYXVjWmlNWGdYTzRUOEx4bGF2OHZmeUw4SEtGdDdDZjhfbEtDc09pSmtCcjIwd241X2syeXFTLWNVUm9nWmVnQmU5RFFJOXhZQnV6bGFyZ3BlMkRJSmxzdC1YT1BDLWc?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "a627af353c4154b2",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel\u2019s Wolverine \u2013 Ain\u2019t No Hero Trailer I PS5 Games - YouTube",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.944745+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9UenlxYVpIWWp3aWotajE4a2hFX0lwZ0FUbHhHeHFqd3FhTHVwSkp6dFRuWXdkTERPYm1oNU5KeGRPdXRxZGtBQVpOUDRBX2VyaUZuMkFDTUtFcUhE?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "6f555bc8ee6fd94d",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel\u2019s Wolverine gets new \u201cAin\u2019t No Hero\u201d trailer - Niche Gamer",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.944998+00:00",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5TUG5qdDBqbXVyVUZNOXYzdFd5ZF9KODd6WlJLZkgwUEFhSVpQQm5Kbm9WZHpLZi1kbkJFZV83LXllWW55S2djeDRmUGpESUR0eHEwcmsxNTJIcF9HT0J0Y2l6bmc5c1JZVG1yclQ3a1NXQ1E4TjlVeWtBWQ?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "c2203531a3de4672",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "X-MEN Rumor Reveals Which Mutants Are Set to Lead Marvel's Reboot, Wolverine's Status, and More - GeekTyrant",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.945257+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONnd1T3dOQUxFVC1NRWd1NHJFc3lpbmF5QjYtaGFtQ1FvZ3R4QnRQdlFJaURXZUZPX0ctSDZiUU55S0J2ZkFRS0Rsd2l4eUtyWGhWRXhRcU9JRnlJMzFmSzlxWVJsOTBPM3Jqd0k2M2JJVU9JZzdqc1hTMXBIMy0zVmdqTEtRVXJyalhrTmRrWno5aFRWSnVTYURxOEFoTUJUU1REOVZVUVJGdkFEZm1VcFl0M2V4TzVDQ2Rj?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "14e0a5c74b698984",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel\u2019s Wolverine\u2019s Brutal Gameplay Is Winning Over Fans - Yahoo Tech",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.945510+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcUtLaE1CSFUwS254Q1l6ellzRWhSRVhKTHNidWxpUzllcjBDQXRYc0lfN1RuZXpHV2UtaVpNa2twdHk4aDY5a2NSLVNTWUxrRUtwUjZ1SXBwX3NKV1RBTUNMdFd3N3RPaEt4VUYyZnRoZm1OU2tVTmVGaGZTeFZmR0dYN3dZaHdqUEs1OTRXYlNITTlWVW56SnNn?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "972338dba1b2bec4",
-      "score": 35,
-      "severity": "moderate",
-      "source": "God of War Laufey",
-      "title": "God of War Laufey star Deborah Ann Woll isn't phased by the negative reactions to its announcement: 'I feel totally unbothered' - PC Gamer",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:40.503817+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQNUlXbnRWblN1OEZRbFppVFZiNWZyckhpbVVPS3hDczVWVWhSbzlVekhQR0E3Y3VtX0ZQWFhpalJXWUZOMjFwelp4dDFoQWZXS1JrbXNkTDI4czF5TGhWTkJmN0VvTnlxYS02Q05icjRrUkJLbjV2Rk45Yi1OcXhEeG1uVm5WalhPdGViTzJnS3Z3MjhreGpjaGJvRFRYR2d5Mi1VQUI2VVJwQWxQLVpBeFhzUWFzbUhOajNQZWE1c29ZbThRa2dzTWFrdFpUdmItcXFDVE5FeVE1LWoydlM3OFdSRGJDTXo2dHo1QlFZODg0anM?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "d2a268844c5aac26",
-      "score": 35,
-      "severity": "moderate",
-      "source": "God of War Laufey",
-      "title": "God of War Laufey confirmed to explain series' biggest plot holes - MSN",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:40.504541+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObjg2ekhQUll5RmFFcmt2eGpkU0RaMllyWGpmXzBvczVWSU00dEJ1dTl4SFJFNEtwS3dPMm5hZUxVd25QeTZrVi14TWRYLUxZdnYyRFhkdG5FeG1fQmI1THdtR1YxYmtrWllKV3V4bGZ1Rnk5Rzh2UG96dU5GZGh2c1dNeVUyT3pQVGxyRGc2VmlCekVua3E4MzRhSTRoNE1DN3pYcHV4T0dUa0s3a0RjaENKX1ZhNlVt?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "2903990f2c516316",
-      "score": 64,
-      "severity": "high",
-      "source": "God of War Laufey",
-      "title": "New Kratos game confirmed following 'controversial' God of War Laufey reveal - MSN",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:40.504864+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQc2xhMklGNUVfSGJXVDY4U3pjR3YxLTU0cDlwb0hGb1V0akdIaF8wMUE4WmdKMExfOUtlMGFjdjNac0s3WXBER3AzRVlKZVNFcDV3WDRXY21PaHM1ZEg2S092ZUJabWdpV3pWa21qbWs2QTNtVHUzWnZTdWN1UG1OWHdEbVlRd3pmMWNDbW5VQTV4WWpKbmhUQ1FRS3pOYUlBV3BFa2pMa0hMZ3oySzdISWNUUUw3MS1VS0FHb1Y0NTk1dnN5SzVtWXNvTi1hS0E2S2c?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "d439b071c1598240",
-      "score": 35,
-      "severity": "moderate",
-      "source": "God of War Laufey",
-      "title": "God Of War Laufey Gets Official Release Window Update - IMDb",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:40.948509+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFA2S1ZwTkVxRGNTQ05hN1lTVlpnLXluTDhCZ2dNYjlSYzBsR2dmMGhDSUhoTEVSU1pLQURCQnhEemtBUHNIbHpfaThoM29zM2p3b0RMVUlLTmZYUnJOZEZSaWxtWEk?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "cbe498c9b5da0a18",
-      "score": 35,
-      "severity": "moderate",
-      "source": "God of War Laufey",
-      "title": "Deborah Ann Woll Isn\u2019t Bothered About Negative Reactions To PS5\u2019s God Of War Laufey - PlayStation Universe",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:40.949208+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNZWZpd3VxUmlPRGFnMzJQM2pYUjB0dHRDeUxVX09aR3FVNDB1UEs0V0VKcWVKMUc3U3FPQ3JTVEp3RmEtWHRlME5Obks1aTMzendPb2gxLXo1cWwwMlRzWEJHYjdUTkw2dl9zRVhJMm56QVJ1MzVzbTl3XzZVNFJaVHZicFprd1NIVVlkN1d2aWE0ZVpfYlBEcUJoLVBkQTQ1dzRpZTU5RE1uOWM?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -12581,6 +12299,162 @@
       "topic": "habits",
       "ts": "2026-08-04T09:37:31.233697+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "In Too Deep - Sum 41\n(because you like The Offspring)",
+      "id": "405c6d02c0f08ebb",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-04T12:07:43.761197+00:00",
+      "url": "https://www.deezer.com/track/1125083"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 129.95 (was DOP 219.95, -41%)",
+      "id": "460f3b6f4bc41ee5",
+      "score": 64,
+      "severity": "high",
+      "source": "Nacional",
+      "title": "Nacional deal: Queso Suizo En Barra Food Club 8 Onz",
+      "topic": "groceries",
+      "ts": "2026-08-04T12:08:21.852009+00:00",
+      "url": "https://supermercadosnacional.com/queso-suizo-en-barra-food-club-8-onz-2197517"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "01d6d2f142c90646",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-04T12:08:33.990116+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "44d4e9c052aca624",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.6 - 107 km NNE of Punta Cana, Dominican Republic (~204 km away)",
+      "topic": "quakes",
+      "ts": "2026-08-04T12:08:47.082435+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr2026216000"
+    },
+    {
+      "action": "push",
+      "detail": "USD/DOP moved from 58.13 to 57.94 (-0.19, -0.32%) vs yesterday",
+      "id": "3c20bce8b126bfcf",
+      "score": 62,
+      "severity": "high",
+      "source": "FX",
+      "title": "USD/DOP today: 57.94",
+      "topic": "fx",
+      "ts": "2026-08-04T12:08:47.764887+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "On this day\n1983: Jean-Baptiste Ou\u00e9draogo, the president of Upper Volta, was ousted in a coup d'\u00e9tat led by Thomas Sankara.\n\nFeatured: Black Prince's chevauch\u00e9e of 1356\nThe Black Prince's chevauch\u00e9e of 1356 was a large-scale mounted raid by an Anglo-Gascon force under the command of Edward, the Black Prince, between 4 August and 2 October 1356 as a part of the Hundred Years' War. The war had broken out in 1337, but a truce and the ravages of...\n\nWord of the Day\nloquacious\n/l\u0259\u028a\u02c8kwe\u026a.\u0283\u0259s/ \u00b7 adjective\nTending to talk a great deal; chatty.\n\"His loquacious nature made every five-minute story into a thirty-minute saga.\"\n(Source: Merriam-Webster)",
+      "id": "3e92f0acf937990e",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Daily learning",
+      "topic": "learn",
+      "ts": "2026-08-04T12:08:53.590925+00:00",
+      "url": "https://en.wikipedia.org/wiki/Black_Prince's_chevauch%C3%A9e_of_1356"
+    },
+    {
+      "action": "push",
+      "detail": "As the bitter December of 1914 descended upon the Western Front, the brutal reality of trench warfare had already shattered any illusions of a swift victory. Yet, in the face of such unrelenting horror, something remarkable unfolded. Along various sections of the front, primarily between British and German forces, a spontaneous, unofficial truce began to ripple through the muddy trenches on Christmas Eve. It wasn't orchestrated by generals or diplomats, but by the weary soldiers themselves, men who had been ordered to kill each other just hours before. \n\nThe first signs were tentative: carols sung from opposing trenches, then brave souls venturing into no-man's land to exchange greetings, cigarettes, and even small gifts. These impromptu gatherings often involved shared meals, football matches using makeshift balls, and the poignant exchange of photographs of loved ones. For a few precious hours, and in some places for days, the war machine ground to a halt. The shared humanity, the recognition of the 'enemy' as a fellow soldier, weary and longing for home, transcended the nationalistic fervor that had ignited the conflict.\n\nThe Christmas Truce, though swiftly suppressed by high commands wary of its demoralizing effect, stands as a profound testament to the human spirit's capacity for peace and empathy even amidst the most horrific circumstances. It offers a fleeting glimpse into what might have been, a poignant reminder that the lines drawn on a map, the uniforms worn, and the propaganda believed can be momentarily eclipsed by the simple act of human connection. It matters because it reveals the inherent desire for peace within individuals, a desire often overshadowed but never entirely extinguished by the machinery of war.",
+      "id": "c5878532919d8428",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The Christmas truce of 1914",
+      "topic": "spark",
+      "ts": "2026-08-04T12:08:56.381292+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "What: The Itaipu Dam on the Paran\u00e1 River, shared by Brazil and Paraguay, started generating; for years it led the world in annual output.\nWhy it matters: It is a rare bi-national power plant, supplying a huge share of two countries' electricity.\nWhy you should care: Itaipu still provides most of Paraguay's power and a large slice of Brazil's \u2014 a model of shared energy infrastructure.\n(Source: Itaipu Binacional)",
+      "id": "28a8a17b9a12ed1d",
+      "score": 60,
+      "severity": "low",
+      "source": "Energy learning",
+      "title": "\u26a1 Today's spark \u2014 Itaipu Dam begins operating (1984)",
+      "topic": "energy_learn",
+      "ts": "2026-08-04T12:08:56.599291+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Starts Tuesday 11 August (in 7 days). Tap for the academic calendar (PDF).",
+      "id": "431f405ba85d564d",
+      "score": 62,
+      "severity": "moderate",
+      "source": "ITSC",
+      "title": "ITSC: Publicaci\u00f3n de notas examen final",
+      "topic": "itsc",
+      "ts": "2026-08-04T12:09:02.675088+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/07/Calendario-academico-2026-2-actualizado-julio.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Starts Tuesday 11 August (in 7 days). Tap for the academic calendar (PDF).",
+      "id": "6b97550058eb7a4f",
+      "score": 62,
+      "severity": "moderate",
+      "source": "ITSC",
+      "title": "ITSC: Solicitud Revisi\u00f3n Calificaciones (Estudiante)",
+      "topic": "itsc",
+      "ts": "2026-08-04T12:09:02.887986+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/07/Calendario-academico-2026-2-actualizado-julio.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Starts Tuesday 11 August (in 7 days). Tap for the academic calendar (PDF).",
+      "id": "594b87f3a03922b5",
+      "score": 62,
+      "severity": "moderate",
+      "source": "ITSC",
+      "title": "ITSC: Reporte Modificaciones a Registro (FINAL)",
+      "topic": "itsc",
+      "ts": "2026-08-04T12:09:03.114917+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/07/Calendario-academico-2026-2-actualizado-julio.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "What causes unusual knots of gas and dust in planetary nebulas? Seen also in the Ring Nebula, the Dumbbell Nebula and NGC 2392, the knots' existence was not initially predicted, and their origins are still not well understood. Pictured here is a fascinating image of part of the...",
+      "id": "4e7100382cee576a",
+      "score": 60,
+      "severity": "low",
+      "source": "NASA APOD",
+      "title": "APOD: Curious Cometary Knots in the Helix Nebula",
+      "topic": "apod",
+      "ts": "2026-08-04T12:09:04.868933+00:00",
+      "url": "https://apod.nasa.gov/apod/image/2608/HelixKnots_JWST_2000.jpg"
+    },
+    {
+      "action": "push",
+      "detail": "outages \u2014 down 1d 21h (since 2026-08-02 15:07 UTC), reminder #3; last error: EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (9d ago)",
+      "id": "a7daa7c1a856ce3c",
+      "score": 72,
+      "severity": "critical",
+      "source": "Watchdog",
+      "title": "Watchdog: 'outages' is STILL failing (1d 21h)",
+      "topic": "watchdog",
+      "ts": "2026-08-04T12:09:07.735695+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -12808,7 +12682,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
   "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-03T21:08:43.937852+00:00",
+  "fuel_last_prices_seen_at": "2026-08-04T12:08:49.718352+00:00",
   "fuel_prices": {
     "GLP": 135.2,
     "Gasoil Regular": 258.3,
@@ -12818,8 +12692,8 @@
     "Kerosene": 335.5
   },
   "fx_daily_baseline": {
-    "date": "2026-08-03",
-    "rate": 58.130879
+    "date": "2026-08-04",
+    "rate": 57.943961
   },
   "fx_last_rate": 57.943961,
   "fx_last_zone": "within",
@@ -13645,6 +13519,10 @@
       "997e525f302628c6"
     ],
     "Nacional": [
+      "560a56e00f0fea90",
+      "00d35e4dc3d84454",
+      "e8ed5f101b998ccd",
+      "682a7ce4e71b2ed3",
       "766be9b385fea8e5",
       "e7604f65aba73ddc",
       "6884893304f6f3ea",
@@ -14163,6 +14041,9 @@
     "00b1c446e37d1bf2"
   ],
   "itsc_sent_ids": [
+    "3b16a484ca234724",
+    "b99d480e18dbbb02",
+    "4a2e513ff6a26628",
     "e225196f247c74b5",
     "3689f25bacd2fdfc",
     "aa0d0328827d7d51",
@@ -14229,7 +14110,7 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "technology",
+  "knowledge_last_category": "world_history",
   "knowledge_last_sent": "2026-07-14T4",
   "knowledge_seen": {
     "ancient_civilizations:The Aztec Empire and Tenochtitlan": "2026-07-26",
@@ -14237,12 +14118,10 @@
     "ancient_civilizations:The Epic of Gilgamesh": "2026-07-08",
     "ancient_civilizations:The Indus Valley Civilization": "2026-07-14",
     "ancient_civilizations:The Minoans of Crete": "2026-07-06",
-    "ancient_civilizations:The Mycenaeans and the Linear B script": "2026-07-05",
     "ancient_civilizations:The Trojan War and Schliemann's excavations": "2026-07-11",
     "ancient_civilizations:The building of the Great Wall of China": "2026-07-09",
     "ancient_civilizations:The conquests of Alexander the Great": "2026-07-13",
     "astronomy:Galileo's telescope and the moons of Jupiter": "2026-07-09",
-    "astronomy:Jocelyn Bell Burnell and the discovery of pulsars": "2026-07-05",
     "astronomy:Sputnik and the dawn of the space age": "2026-07-27",
     "astronomy:The Cassini mission to Saturn": "2026-07-13",
     "astronomy:The Drake equation and the search for life": "2026-07-10",
@@ -14252,7 +14131,6 @@
     "astronomy:Vera Rubin and the evidence for dark matter": "2026-07-11",
     "early_humans:Homo habilis and the first stone tools": "2026-07-09",
     "early_humans:The Blombos Cave engravings": "2026-07-28",
-    "early_humans:The Ice Age megafauna extinctions": "2026-07-05",
     "early_humans:The dawn of metallurgy in the Bronze Age": "2026-07-08",
     "early_humans:The domestication of the dog": "2026-07-14",
     "early_humans:The domestication of wheat and barley": "2026-07-13",
@@ -14261,7 +14139,6 @@
     "early_humans:\u00d6tzi the Iceman": "2026-07-07",
     "math_history:Archimedes and the 'Eureka' moment": "2026-07-09",
     "math_history:Cardano and the solution of the cubic equation": "2026-07-15",
-    "math_history:Hilbert's 23 problems": "2026-07-05",
     "math_history:Ramanujan and Hardy's improbable collaboration": "2026-07-29",
     "math_history:The Pythagorean theorem": "2026-07-07",
     "math_history:The Seven Bridges of K\u00f6nigsberg": "2026-07-13",
@@ -14271,7 +14148,6 @@
     "medicine:Andreas Vesalius and the birth of modern anatomy": "2026-07-13",
     "medicine:Ignaz Semmelweis and the fight for handwashing": "2026-07-11",
     "medicine:Joseph Lister and antiseptic surgery": "2026-07-09",
-    "medicine:Louis Pasteur and the rabies vaccine": "2026-07-05",
     "medicine:The Tuskegee syphilis study and research ethics": "2026-07-12",
     "medicine:The decades-long development of mRNA vaccines": "2026-07-07",
     "medicine:The first MRI scan of a human body": "2026-07-30",
@@ -14281,7 +14157,6 @@
     "mythology:King Midas and the golden touch": "2026-07-08",
     "mythology:Maui, the Polynesian demigod": "2026-07-07",
     "mythology:Orpheus and Eurydice in the underworld": "2026-07-12",
-    "mythology:Prometheus and the theft of fire": "2026-07-05",
     "mythology:The Greek creation myth and the Titans": "2026-07-31",
     "mythology:The Maya Popol Vuh": "2026-07-13",
     "mythology:The Norse creation from Ginnungagap": "2026-07-17",
@@ -14314,19 +14189,19 @@
     "technology:The sending of the first email": "2026-08-03",
     "technology:The transistor at Bell Labs": "2026-07-14",
     "world_history:The Battle of Stalingrad": "2026-07-07",
+    "world_history:The Christmas truce of 1914": "2026-08-04",
     "world_history:The McCarthy era and the Red Scare": "2026-07-10",
     "world_history:The Russian Revolution of 1917": "2026-07-09",
     "world_history:The Watergate scandal": "2026-07-25",
     "world_history:The assassination of John F. Kennedy": "2026-07-14",
     "world_history:The fall of the Berlin Wall": "2026-07-12",
     "world_history:The fall of the Romanovs": "2026-07-11",
-    "world_history:The partition of India": "2026-07-05",
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-04T11:52:32.635264+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-04T12:07:37.671958+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14365,7 +14240,7 @@
     "9cf78ee44cb96c21",
     "7621aad01d0821be"
   ],
-  "learn_last_sent": "2026-08-03",
+  "learn_last_sent": "2026-08-04",
   "life_dashboard_last_week": "2026-W31",
   "meditate_slots_sent": [],
   "music_discovery_seen": [
@@ -14589,7 +14464,8 @@
     2053,
     3348,
     4194,
-    4189
+    4189,
+    459
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14930,6 +14806,15 @@
         "name": "The Skullduggers"
       }
     },
+    "b79e3aa6cf3804d4": {
+      "applied": null,
+      "created": "2026-08-04T12:07:43.761173+00:00",
+      "kind": "artist",
+      "label": "Sum 41",
+      "payload": {
+        "name": "Sum 41"
+      }
+    },
     "c27be1dfb17ba405": {
       "applied": "2026-06-13T10:56:58.130168+00:00",
       "created": "2026-06-13T08:56:03.026648+00:00",
@@ -15145,6 +15030,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "54563cf073e26687",
     "ec03905908f9f68e",
     "bcdd48382b1f0bc4",
     "9d4f48cfc2929806",
@@ -15282,157 +15168,155 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82677,
-  "spark_next_kind": "fact",
+  "spark_last_sent": 82678,
+  "spark_next_kind": "health",
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-04T09:08:30.750503+00:00",
+      "last_data": "2026-08-04T12:08:47.705577+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-04T09:08:32.481870+00:00",
+      "last_data": "2026-08-04T12:08:51.184160+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "apod": {
-      "last_data": "2026-08-03T21:08:51.597010+00:00",
+      "last_data": "2026-08-04T12:09:04.868913+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "deals": {
-      "last_data": "2026-08-04T09:08:07.052989+00:00",
+      "last_data": "2026-08-04T12:08:07.854600+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "energy": {
-      "last_data": "2026-08-04T09:08:17.370295+00:00",
+      "last_data": "2026-08-04T12:08:33.884541+00:00",
       "last_data_count": 58,
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "energy_learn": {
-      "last_data": "2026-08-03T12:10:20.788103+00:00",
+      "last_data": "2026-08-04T12:08:56.885026+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "fda": {
-      "last_data": "2026-08-04T09:08:07.519653+00:00",
+      "last_data": "2026-08-04T12:08:22.411046+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-03T21:08:43.937906+00:00",
+      "last_data": "2026-08-04T12:08:49.718379+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "fx": {
-      "last_data": "2026-08-04T09:08:30.865809+00:00",
+      "last_data": "2026-08-04T12:08:47.764678+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-04T09:07:45.174445+00:00",
+      "last_data": "2026-08-04T12:07:45.866614+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-03T21:08:15.890492+00:00",
-      "last_data_count": 246,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_data": "2026-08-04T12:08:21.850915+00:00",
+      "last_data_count": 247,
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "habits": {
-      "last_data": "2026-08-04T11:52:34.499439+00:00",
+      "last_data": "2026-08-04T12:08:53.549968+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-04T11:52:32.635264+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-03T21:08:49.557270+00:00",
+      "last_data": "2026-08-04T12:09:01.648035+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "iss": {
-      "empty_runs": 4,
-      "empty_since": "2026-08-04T00:07:26.322417+00:00",
-      "last_data": "2026-08-03T21:08:44.807989+00:00",
-      "last_data_count": 0,
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_data": "2026-08-04T12:08:50.695936+00:00",
+      "last_data_count": 1,
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-03T21:08:50.297785+00:00",
+      "last_data": "2026-08-04T12:09:02.674564+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "launches": {
-      "last_data": "2026-08-04T09:08:31.198997+00:00",
+      "last_data": "2026-08-04T12:08:50.015229+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "learn": {
-      "last_data": "2026-08-03T12:10:16.154863+00:00",
+      "last_data": "2026-08-04T12:08:53.590710+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-03T12:07:29.369450+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "marine": {
-      "last_data": "2026-08-03T21:08:51.083739+00:00",
+      "last_data": "2026-08-04T12:09:04.599398+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "music": {
-      "last_data": "2026-08-04T09:07:43.325285+00:00",
+      "last_data": "2026-08-04T12:07:43.021216+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-04T09:08:18.012525+00:00",
+      "last_data": "2026-08-04T12:08:34.466967+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (9d ago)",
-      "last_error_ts": "2026-08-04T09:07:38.351844+00:00",
+      "last_error_ts": "2026-08-04T12:07:37.671958+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-04T09:08:30.266991+00:00",
-      "last_data_count": 49,
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_data": "2026-08-04T12:08:47.082053+00:00",
+      "last_data_count": 48,
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "research": {
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-04T09:08:01.402036+00:00",
+      "last_data": "2026-08-04T12:08:03.789048+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "spark": {
       "last_data": "2026-08-04T06:08:42.651389+00:00",
@@ -15440,37 +15324,37 @@
       "last_ok": "2026-08-04T06:07:43.134531+00:00"
     },
     "spending": {
-      "empty_runs": 4,
+      "empty_runs": 5,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-04T11:52:33.635069+00:00",
+      "last_data": "2026-08-04T12:07:40.944171+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T11:52:32.635264+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "uv": {
-      "last_data": "2026-08-03T21:08:50.700078+00:00",
+      "last_data": "2026-08-04T12:09:03.974744+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-03T21:07:31.591666+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "weather": {
-      "last_data": "2026-08-04T09:08:17.557487+00:00",
+      "last_data": "2026-08-04T12:08:33.989748+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-04T09:08:33.653288+00:00",
+      "last_data": "2026-08-04T12:08:52.311095+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-04T09:07:38.351844+00:00"
+      "last_ok": "2026-08-04T12:07:37.671958+00:00"
     }
   },
   "twitch_live": [],
@@ -15478,7 +15362,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165355"
+    "last_full_window": "165356"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15491,8 +15375,8 @@
   "watchdog_outages": {
     "outages": {
       "alerted": "2026-08-02T17:18:45.308745+00:00",
-      "last_alert": "2026-08-03T21:08:51.598424+00:00",
-      "reminders": 2,
+      "last_alert": "2026-08-04T12:09:07.735570+00:00",
+      "reminders": 3,
       "since": "2026-08-02T17:18:45.308745+00:00"
     }
   },
@@ -15500,6 +15384,7 @@
     "2026-08-04|05:30"
   ],
   "weather_seen_ids": [
+    "2274cf624c6cb0ee",
     "645c0d6b766d98ee",
     "5bba7448ef6f6d47",
     "1d4c5b10e63b5889",
@@ -15698,8 +15583,7 @@
     "09f4ece7b5fb6348",
     "f1eab3ed5e8a313f",
     "b83b9e9bba61aab9",
-    "f2218c6998264874",
-    "3f5fcb750313f196"
+    "f2218c6998264874"
   ],
   "wikiquote_last_category": "philosophers",
   "wikiquote_last_sent": "2026-07-14T4",
