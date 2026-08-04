@@ -585,18 +585,6 @@
     {
       "action": "digest",
       "detail": "",
-      "id": "f5d0e72eb24b33c3",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine Gets A Surprise New Trailer With Deathstrike - Kotaku",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.942623+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcy1GVV9PQm50eTA2YVRBNEJXUmVXQ0VJelVMbDhkVFRaejBvdk1yVE5aYzVDbElJaEp5dHhZQmxfVU1xV1dMcEpPaHpWNjFCMmNaRE42dm96ajdpME01bjQtalhETG9yVGQ0ZllrZzIzLUtXaGZzazNYVUtyeTlyajdDMm5nRzZyT2ZDUjVkNF8tRV90RXJKaVVGdTBTUk5la3VDVUNEc2I0MDZTeEpn?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
       "id": "06d03a9a19be9f71",
       "score": 35,
       "severity": "moderate",
@@ -12581,6 +12569,18 @@
       "topic": "twitch",
       "ts": "2026-08-04T06:52:47.491283+00:00",
       "url": "https://twitch.tv/RiddlesMK"
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - 1v1Me",
+      "id": "4f82ebe8a2992ed2",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-08-04T07:37:33.496877+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "exercise_slots_sent": [],
@@ -14326,7 +14326,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-04T07:22:37.064884+00:00"
+    "ts": "2026-08-04T07:37:33.095635+00:00"
   },
   "launch_seen_ids": [
     "29d7806386222b4c",
@@ -15357,9 +15357,9 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "habits": {
-      "last_data": "2026-08-04T07:22:39.383254+00:00",
+      "last_data": "2026-08-04T07:37:36.242953+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-04T07:22:37.064884+00:00"
+      "last_ok": "2026-08-04T07:37:33.095635+00:00"
     },
     "holidays": {
       "last_data": "2026-08-03T21:08:49.557270+00:00",
@@ -15446,9 +15446,9 @@
       "last_ok": "2026-08-04T06:07:43.134531+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-04T07:22:38.387830+00:00",
+      "last_data": "2026-08-04T07:37:34.869229+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T07:22:37.064884+00:00"
+      "last_ok": "2026-08-04T07:37:33.095635+00:00"
     },
     "uv": {
       "last_data": "2026-08-03T21:08:50.700078+00:00",
@@ -15472,7 +15472,9 @@
       "last_ok": "2026-08-04T06:07:43.134531+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_bulletin_current": "2026-08",
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
