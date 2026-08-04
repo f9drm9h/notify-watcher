@@ -89,7 +89,9 @@
     "rent|2026-07-30|1"
   ],
   "blood_donation_last_notified": "2026-07-08",
-  "cleaning_slots_sent": [],
+  "cleaning_slots_sent": [
+    "2026-08-04|18:00"
+  ],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -520,42 +522,6 @@
     "ab85f84d2a40dc84"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "c2e65ad6662ad046",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-07-20T12:09:39.426621+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "USD/DOP moved from 58.37 to 58.55 (+0.18, +0.31%) vs yesterday",
-      "id": "8d62923f6f077ad6",
-      "score": 62,
-      "severity": "high",
-      "source": "FX",
-      "title": "USD/DOP today: 58.55",
-      "topic": "fx",
-      "ts": "2026-07-20T12:09:59.011308+00:00",
-      "url": ""
-    },
-    {
-      "action": "digest",
-      "detail": "This week: USD/DOP moved from 58.69 to 58.55 (-0.14, -0.24%)",
-      "id": "214736b8abe409c7",
-      "score": 45,
-      "severity": "low",
-      "source": "FX",
-      "title": "USD/DOP weekly trend",
-      "topic": "fx",
-      "ts": "2026-07-20T12:09:59.255847+00:00",
-      "url": ""
-    },
     {
       "action": "push",
       "detail": "On this day\n1936: The July 1936 military uprising in Barcelona is defeated by anarchist militias and Republican loyalists, beginning the Spanish Revolution of 1936.\n\nFeatured: Curlew sandpiper\nThe curlew sandpiper is a small wader. It is a long-distance migrant, breeding in the bogs and coastal lowlands of the Siberian Arctic, arriving there in June and staying until August or September. After the breeding season, it migrates south to spend the winter in Africa and...\n\nMoney basics\nWhen sending money abroad, compare the TOTAL cost; the margin on the exchange rate matters more than a \"zero-fee\" transfer. (Source: World Bank)",
@@ -12519,9 +12485,47 @@
       "topic": "fda",
       "ts": "2026-08-04T21:08:41.966781+00:00",
       "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761400"
+    },
+    {
+      "action": "push",
+      "detail": "Exercise time. Get the body working before the evening slips away.",
+      "id": "111b6d9988464e47",
+      "score": 0,
+      "severity": "low",
+      "source": "exercise",
+      "title": "Exercise - 6 PM session",
+      "topic": "habits",
+      "ts": "2026-08-04T22:07:32.932339+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Meditation time: sit, breathe, let the day settle.",
+      "id": "1d880451b7b872bf",
+      "score": 0,
+      "severity": "low",
+      "source": "meditate",
+      "title": "Meditate - evening reset",
+      "topic": "habits",
+      "ts": "2026-08-04T22:07:32.932339+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Cleaning slot: reset one area before the night starts.",
+      "id": "0f514357ef90ea26",
+      "score": 0,
+      "severity": "low",
+      "source": "cleaning",
+      "title": "Cleaning - quick tidy-up",
+      "topic": "habits",
+      "ts": "2026-08-04T22:07:32.932339+00:00",
+      "url": ""
     }
   ],
-  "exercise_slots_sent": [],
+  "exercise_slots_sent": [
+    "2026-08-04|18:00"
+  ],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -13949,21 +13953,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1533959528268431381": {
-      "channel": "1515504253345726558",
-      "habit": "exercise",
-      "sent": "2026-08-03T22:07:29.816611+00:00"
-    },
-    "1533959531875401920": {
-      "channel": "1515504253345726558",
-      "habit": "meditate",
-      "sent": "2026-08-03T22:07:29.816611+00:00"
-    },
-    "1533959534744441015": {
-      "channel": "1515504253345726558",
-      "habit": "cleaning",
-      "sent": "2026-08-03T22:07:29.816611+00:00"
-    },
     "1534004840160694352": {
       "channel": "1515504253345726558",
       "habit": "sleep",
@@ -13978,6 +13967,21 @@
       "channel": "1515504253345726558",
       "habit": "water",
       "sent": "2026-08-04T09:37:31.233697+00:00"
+    },
+    "1534321928704360449": {
+      "channel": "1515504253345726558",
+      "habit": "exercise",
+      "sent": "2026-08-04T22:07:32.932339+00:00"
+    },
+    "1534321930897854507": {
+      "channel": "1515504253345726558",
+      "habit": "meditate",
+      "sent": "2026-08-04T22:07:32.932339+00:00"
+    },
+    "1534321933682999378": {
+      "channel": "1515504253345726558",
+      "habit": "cleaning",
+      "sent": "2026-08-04T22:07:32.932339+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-04",
@@ -14267,7 +14271,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-04T21:52:27.368225+00:00"
+    "ts": "2026-08-04T22:07:31.651193+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14308,7 +14312,9 @@
   ],
   "learn_last_sent": "2026-08-04",
   "life_dashboard_last_week": "2026-W31",
-  "meditate_slots_sent": [],
+  "meditate_slots_sent": [
+    "2026-08-04|18:00"
+  ],
   "music_discovery_seen": [
     5425093,
     4685222,
@@ -15341,9 +15347,9 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "habits": {
-      "last_data": "2026-08-04T21:52:29.860721+00:00",
+      "last_data": "2026-08-04T22:07:35.615585+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-04T21:52:27.368225+00:00"
+      "last_ok": "2026-08-04T22:07:31.651193+00:00"
     },
     "holidays": {
       "last_data": "2026-08-04T21:09:32.024418+00:00",
@@ -15428,9 +15434,9 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-04T21:52:28.872499+00:00",
+      "last_data": "2026-08-04T22:07:32.931858+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T21:52:27.368225+00:00"
+      "last_ok": "2026-08-04T22:07:31.651193+00:00"
     },
     "uv": {
       "last_data": "2026-08-04T21:09:33.540386+00:00",
