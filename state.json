@@ -129,6 +129,33 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Pluvicto",
+      "title": "FDA updates approval for Pluvicto (Lutetium Lu-177 Vipivotide Tetraxetan) (NDA215833)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215833"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Hernexeos",
+      "title": "FDA updates approval for Hernexeos (Zongertinib) (NDA219042)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219042"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Lynozyfic",
+      "title": "FDA updates approval for Lynozyfic (Linvoseltamab-Gcpt) (BLA761400)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761400"
     }
   ],
   "digest_last_sent": "2026-08-04",
@@ -493,54 +520,6 @@
     "ab85f84d2a40dc84"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "64607b2490f76217",
-      "score": 35,
-      "severity": "moderate",
-      "source": "God of War Laufey",
-      "title": "God Of War Laufey Promises PS5 Disc, Teasing 2027 Release Date - Kotaku",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:40.951577+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNNTNNNHk4Rm93bktOYXRyOXZOVUVvMXg2b19nR1ZwaEUyRmFJVTgtdlcwcXp6SkZWUmdWQWRxNTJGSjNpcmpiMjVEb2hNakh0WU1hSUZIRk9zNjExdEs3SE51ZHZxNXlsMXh2SVQ3OWVqVkNVbm5tYnVYcnh5SEVQTm1heGxPelJUWGx5MkJnQ29jNHQ5M1Mxc1IyQ3hfczljWklKR3p3M29PazNLa1E?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "e318ef671abbe6b4",
-      "score": 35,
-      "severity": "moderate",
-      "source": "God of War Laufey",
-      "title": "Sony Santa Monica confirms \"God of War Laufey will be available on disc\" despite PlayStation's war on physical - GamesRadar+",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:40.951831+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPVlE5WnRRNFcxVVRxLVlpOEJVNXV1Q2J6Z0NyT1hMWjZjTllDbDJ1WlFMNUlSUEJtTUtzNWRiV2RNNXdfUElOUnZhcWlGYmpmdkZKSHNkQVl2ZzBQSWw5U2x5VFZnYXFEa01aVDY0LTRQUG5zMjBhWGltR0l5TjdoTkhwZExuSVM1bVBxelR5TVNESEZsaGh1b3BDZWlldWwwLUtzazJScTkyTVRBSnNSZFNhcVdFeEZyZVFPbGxWYks3QkkxR1ZXczNnV3ZiM29tLUJkME1fS3I0UE5LUmM1aWh2dllOc0U?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "The Pace - MYNGA\n(because you like Supermans Feinde)",
-      "id": "4125b0e7583f038e",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-07-20T12:08:46.232914+00:00",
-      "url": "https://www.deezer.com/track/567294322"
-    },
-    {
-      "action": "push",
-      "detail": "DOP 137.95 (was DOP 238.95, -42%)",
-      "id": "ea0e9bea54e96b4b",
-      "score": 64,
-      "severity": "high",
-      "source": "Nacional",
-      "title": "Nacional deal: Malta Morena Lata 8 Onz, 6 Und/Paq",
-      "topic": "groceries",
-      "ts": "2026-07-20T12:09:27.949517+00:00",
-      "url": "https://supermercadosnacional.com/malta-morena-lata-8-onz-6-und-paq-2204092"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -12492,6 +12471,54 @@
       "topic": "weather",
       "ts": "2026-08-04T18:08:53.017455+00:00",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Fallen Leaves - Billy Talent\n(because you like The Offspring)",
+      "id": "717933f65a91632a",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-04T21:07:40.434645+00:00",
+      "url": "https://www.deezer.com/track/713395"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "3815aae3aa24cdf5",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Pluvicto",
+      "title": "FDA updates approval for Pluvicto (Lutetium Lu-177 Vipivotide Tetraxetan) (NDA215833)",
+      "topic": "fda",
+      "ts": "2026-08-04T21:08:41.966277+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=215833"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "af84d0df27c82202",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Hernexeos",
+      "title": "FDA updates approval for Hernexeos (Zongertinib) (NDA219042)",
+      "topic": "fda",
+      "ts": "2026-08-04T21:08:41.966525+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=219042"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "8162642cf1a282fc",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Lynozyfic",
+      "title": "FDA updates approval for Lynozyfic (Linvoseltamab-Gcpt) (BLA761400)",
+      "topic": "fda",
+      "ts": "2026-08-04T21:08:41.966781+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761400"
     }
   ],
   "exercise_slots_sent": [],
@@ -12506,6 +12533,9 @@
     }
   ],
   "fda_seen_ids": [
+    "e0d5ebe6295f2b00",
+    "b1b41d4a3395cc24",
+    "f48dc00259b83a24",
     "eb88f60cab6c4e59",
     "4b8e05a177acf52f",
     "958c15109d49afcf",
@@ -12702,10 +12732,7 @@
     "5de30541aaca0ca7",
     "8dc429ce4668bed9",
     "2652701af2313b21",
-    "b00a7aee3320d58e",
-    "9ad4ad6b9b420750",
-    "64a8abbc085ab4be",
-    "27c29f71cb5d4897"
+    "b00a7aee3320d58e"
   ],
   "follows": {
     "artists": [
@@ -12719,7 +12746,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
   "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-04T18:09:35.974649+00:00",
+  "fuel_last_prices_seen_at": "2026-08-04T21:09:23.236209+00:00",
   "fuel_prices": {
     "GLP": 135.2,
     "Gasoil Regular": 258.3,
@@ -14238,9 +14265,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-04T20:52:28.992341+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-04T21:07:34.090909+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14506,7 +14533,8 @@
     4189,
     459,
     936,
-    409
+    409,
+    2830
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14638,6 +14666,15 @@
       "label": "24kgoldn",
       "payload": {
         "name": "24kgoldn"
+      }
+    },
+    "349649385e689770": {
+      "applied": null,
+      "created": "2026-08-04T21:07:40.434622+00:00",
+      "kind": "artist",
+      "label": "Billy Talent",
+      "payload": {
+        "name": "Billy Talent"
       }
     },
     "388c0b591faeec0a": {
@@ -15233,41 +15270,41 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-04T18:09:34.376274+00:00",
+      "last_data": "2026-08-04T21:09:21.747334+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-04T18:09:38.704468+00:00",
+      "last_data": "2026-08-04T21:09:25.446482+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "apod": {
-      "last_data": "2026-08-04T18:09:46.612077+00:00",
+      "last_data": "2026-08-04T21:09:34.411177+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "deals": {
-      "last_data": "2026-08-04T18:08:29.087701+00:00",
-      "last_data_count": 12,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_data": "2026-08-04T21:08:26.844245+00:00",
+      "last_data_count": 11,
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "energy": {
-      "last_data": "2026-08-04T18:08:52.912469+00:00",
+      "last_data": "2026-08-04T21:08:53.610290+00:00",
       "last_data_count": 58,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-04T12:08:56.885026+00:00",
@@ -15275,58 +15312,58 @@
       "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "fda": {
-      "last_data": "2026-08-04T18:08:43.511878+00:00",
-      "last_data_count": 6,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_data": "2026-08-04T21:08:41.966084+00:00",
+      "last_data_count": 3,
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-04T18:09:35.974668+00:00",
+      "last_data": "2026-08-04T21:09:23.236228+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "fx": {
-      "last_data": "2026-08-04T18:09:34.453028+00:00",
+      "last_data": "2026-08-04T21:09:21.816777+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-04T18:07:43.685465+00:00",
+      "last_data": "2026-08-04T21:07:42.295876+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-04T18:08:43.264991+00:00",
+      "last_data": "2026-08-04T21:08:41.731627+00:00",
       "last_data_count": 248,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "habits": {
-      "last_data": "2026-08-04T20:52:31.395826+00:00",
+      "last_data": "2026-08-04T21:09:28.136302+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-04T20:52:28.992341+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-04T18:09:44.038091+00:00",
+      "last_data": "2026-08-04T21:09:32.024418+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "iss": {
-      "last_data": "2026-08-04T18:09:38.137809+00:00",
-      "last_data_count": 1,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_data": "2026-08-04T21:09:24.907643+00:00",
+      "last_data_count": 2,
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-04T18:09:44.960671+00:00",
+      "last_data": "2026-08-04T21:09:32.894146+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "launches": {
-      "last_data": "2026-08-04T18:09:37.428639+00:00",
+      "last_data": "2026-08-04T21:09:24.240063+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "learn": {
       "last_data": "2026-08-04T12:08:53.590710+00:00",
@@ -15334,49 +15371,49 @@
       "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "marine": {
-      "last_data": "2026-08-04T18:09:46.395278+00:00",
+      "last_data": "2026-08-04T21:09:34.167421+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "music": {
-      "last_data": "2026-08-04T18:07:41.120712+00:00",
+      "last_data": "2026-08-04T21:07:39.602734+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-04T18:08:53.484536+00:00",
+      "last_data": "2026-08-04T21:08:54.219388+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
-      "last_error": "EDEESTE archive unreachable or parsed to 0 packages",
-      "last_error_ts": "2026-08-04T18:07:35.809117+00:00",
+      "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (9d ago)",
+      "last_error_ts": "2026-08-04T21:07:34.090909+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-04T18:09:33.748054+00:00",
-      "last_data_count": 49,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_data": "2026-08-04T21:09:20.990333+00:00",
+      "last_data_count": 46,
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "research": {
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-04T18:08:23.886167+00:00",
+      "last_data": "2026-08-04T21:08:22.791715+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "spark": {
       "last_data": "2026-08-04T06:08:42.651389+00:00",
@@ -15384,37 +15421,37 @@
       "last_ok": "2026-08-04T06:07:43.134531+00:00"
     },
     "spending": {
-      "empty_runs": 7,
+      "empty_runs": 8,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-04T20:52:30.445350+00:00",
+      "last_data": "2026-08-04T21:07:37.160844+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T20:52:28.992341+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "uv": {
-      "last_data": "2026-08-04T18:09:45.753690+00:00",
+      "last_data": "2026-08-04T21:09:33.540386+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "weather": {
-      "last_data": "2026-08-04T18:08:53.017091+00:00",
+      "last_data": "2026-08-04T21:08:53.734487+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-04T18:09:39.703046+00:00",
+      "last_data": "2026-08-04T21:09:26.667781+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-04T18:07:35.809117+00:00"
+      "last_ok": "2026-08-04T21:07:34.090909+00:00"
     }
   },
   "twitch_live": [],
@@ -15422,7 +15459,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165358"
+    "last_full_window": "165359"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
