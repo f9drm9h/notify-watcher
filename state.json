@@ -102,6 +102,33 @@
       "title": "M3.5 - 69 km NW of San Antonio, Puerto Rico (~240 km away)",
       "topic": "quakes",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr2026216002"
+    },
+    {
+      "detail": "DOP 94.95 (was DOP 114.95, -17%)",
+      "preserve_detail": false,
+      "score": 45,
+      "source": "Nacional",
+      "title": "Nacional deal: Yogurt Griego Vanilla Chobani 4 oz",
+      "topic": "groceries",
+      "url": "https://supermercadosnacional.com/ofertas/yogurt-griego-vanilla-chobani-4-oz-2239307"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 35,
+      "source": "World Nuclear News",
+      "title": "Greek ministers to examine nuclear energy options",
+      "topic": "energy",
+      "url": "https://www.world-nuclear-news.org/articles/greek-ministers-to-examine-nuclear-energy-options"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-08-04",
@@ -164,6 +191,10 @@
     ]
   },
   "energy_seen_ids": [
+    "11fb59351534c6ce",
+    "63191282994aa746",
+    "eeaba8ea537e1ae5",
+    "c51174e04f61df32",
     "313fbdf1d29bf4ed",
     "c3886024e1de8530",
     "8ed699f229fc723b",
@@ -459,49 +490,9 @@
     "0a690c05c0df363d",
     "868d18ae1c49a501",
     "4e2085bf751417fd",
-    "ab85f84d2a40dc84",
-    "2883ef7691a01cd8",
-    "54ff0275fabde9aa",
-    "abd3538106ae5c52",
-    "7a2fcd9cb3ab7e18"
+    "ab85f84d2a40dc84"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "3e857070291da5d1",
-      "score": 35,
-      "severity": "moderate",
-      "source": "God of War Laufey",
-      "title": "Santa Monica Gives Official Update on God of War Laufey Release Date - IMDb",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:40.950694+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBCY3BkOU11N2xkcEtxaXV1QVVyZWgtSkdrczhtYjR2eFdvNTZLNDJLTFJVVVk2ODBqU2pXZjhnT2l2R0dHZC1FQnRSQjRsYUIwUktWQ1JrekpycDZNdVJTZg?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "e0b3ce60ee0de1bd",
-      "score": 35,
-      "severity": "moderate",
-      "source": "God of War Laufey",
-      "title": "God of War studio confirms Laufey will have a disc version, revealing its release window - Video Games Chronicle",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:40.951022+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxPQzRYZmtMQnNxUDJhblItdjBlcmlManR2T21MZk9FejlJelFZRlZLTWZNdWNodkM2cGFISnI4R0ljTWM5d0VsWF9Xb1l6RjU0TkMzVDExaTJSMEVzSy1GSmU1TjFHemMxbWx2bWF2R1dXWW1oaEdJSF9XY3NWU1JoNkg2RFRKT1pUTFZubm9ULVhsMno4VzVLZHhOUjQ2ZHJEbEhNM2g0QkhCQkVjdGp1Y2pRTDBpYThaZ3VnRHJiSHlCTklkX0xsbw?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "f42c4d08d24da8f3",
-      "score": 35,
-      "severity": "moderate",
-      "source": "God of War Laufey",
-      "title": "God of War Laufey to Launch Before January 2028 as Physical Disc Edition Confirmed - News - VGChartz",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:40.951297+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOWnNMUHZYYXVWanNwckdfNG0yaFpLcFcwWlJBSUhQenJ4Nm5IUWxFZE9DY3dSSkphS1U4eVZPYkFSTG1LNElsenphMlI4bGtxVXduMkNRUjlFemNzOVowc3lPV2dkVWtMM0RXYUV0eklfZGF1OEo5RzRiQlAzd3pxSG5IMzJEWjdNUTNWM19aclZKcng0OHNGR3pCNGF4YWVNZU1RZkxPU0xmbnMwWnlvY1QyakI2cWxSZE5SSDZYVy0?oc=5"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -12465,6 +12456,42 @@
       "topic": "twitch",
       "ts": "2026-08-04T17:37:29.988264+00:00",
       "url": "https://twitch.tv/RiddlesMK"
+    },
+    {
+      "action": "push",
+      "detail": "All The Small Things - blink-182\n(because you like The Offspring)",
+      "id": "3a77a0cf7e8c7866",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-04T18:07:41.873686+00:00",
+      "url": "https://www.deezer.com/track/127354207"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "4768b3722753408b",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Greek ministers to examine nuclear energy options",
+      "topic": "energy",
+      "ts": "2026-08-04T18:08:52.912877+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/greek-ministers-to-examine-nuclear-energy-options"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "d70fa0b82cbdff10",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-04T18:08:53.017455+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "exercise_slots_sent": [],
@@ -12692,7 +12719,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
   "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-04T15:09:25.669086+00:00",
+  "fuel_last_prices_seen_at": "2026-08-04T18:09:35.974649+00:00",
   "fuel_prices": {
     "GLP": 135.2,
     "Gasoil Regular": 258.3,
@@ -13530,6 +13557,7 @@
       "997e525f302628c6"
     ],
     "Nacional": [
+      "bc4284c7be62663c",
       "560a56e00f0fea90",
       "00d35e4dc3d84454",
       "e8ed5f101b998ccd",
@@ -14210,9 +14238,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-04T17:52:49.667732+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-04T18:07:35.809117+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14477,7 +14505,8 @@
     4194,
     4189,
     459,
-    936
+    936,
+    409
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14881,6 +14910,15 @@
         "name": "The Who"
       }
     },
+    "dcbb5fb5a7e79926": {
+      "applied": null,
+      "created": "2026-08-04T18:07:41.873661+00:00",
+      "kind": "artist",
+      "label": "blink-182",
+      "payload": {
+        "name": "blink-182"
+      }
+    },
     "e12019f6975127f2": {
       "applied": null,
       "created": "2026-08-01T18:08:32.540863+00:00",
@@ -15195,41 +15233,41 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-04T15:09:24.572771+00:00",
+      "last_data": "2026-08-04T18:09:34.376274+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-04T15:09:27.754321+00:00",
+      "last_data": "2026-08-04T18:09:38.704468+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "apod": {
-      "last_data": "2026-08-04T15:09:53.526232+00:00",
+      "last_data": "2026-08-04T18:09:46.612077+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "deals": {
-      "last_data": "2026-08-04T15:08:16.586291+00:00",
-      "last_data_count": 11,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_data": "2026-08-04T18:08:29.087701+00:00",
+      "last_data_count": 12,
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "energy": {
-      "last_data": "2026-08-04T15:09:11.711963+00:00",
-      "last_data_count": 12,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_data": "2026-08-04T18:08:52.912469+00:00",
+      "last_data_count": 58,
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-04T12:08:56.885026+00:00",
@@ -15237,58 +15275,58 @@
       "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "fda": {
-      "last_data": "2026-08-04T15:08:31.317107+00:00",
+      "last_data": "2026-08-04T18:08:43.511878+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-04T15:09:25.669103+00:00",
+      "last_data": "2026-08-04T18:09:35.974668+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "fx": {
-      "last_data": "2026-08-04T15:09:24.648952+00:00",
+      "last_data": "2026-08-04T18:09:34.453028+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-04T15:07:31.310448+00:00",
+      "last_data": "2026-08-04T18:07:43.685465+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-04T15:08:30.608492+00:00",
+      "last_data": "2026-08-04T18:08:43.264991+00:00",
       "last_data_count": 248,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "habits": {
-      "last_data": "2026-08-04T17:52:53.535690+00:00",
+      "last_data": "2026-08-04T18:09:41.032990+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-04T17:52:49.667732+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-04T15:09:50.435945+00:00",
+      "last_data": "2026-08-04T18:09:44.038091+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "iss": {
-      "last_data": "2026-08-04T15:09:27.150601+00:00",
+      "last_data": "2026-08-04T18:09:38.137809+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-04T15:09:51.180535+00:00",
+      "last_data": "2026-08-04T18:09:44.960671+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "launches": {
-      "last_data": "2026-08-04T15:09:26.720338+00:00",
+      "last_data": "2026-08-04T18:09:37.428639+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "learn": {
       "last_data": "2026-08-04T12:08:53.590710+00:00",
@@ -15296,49 +15334,49 @@
       "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "marine": {
-      "last_data": "2026-08-04T15:09:51.975491+00:00",
+      "last_data": "2026-08-04T18:09:46.395278+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "music": {
-      "last_data": "2026-08-04T15:07:28.645736+00:00",
+      "last_data": "2026-08-04T18:07:41.120712+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-04T15:09:12.332313+00:00",
+      "last_data": "2026-08-04T18:08:53.484536+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
-      "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (9d ago)",
-      "last_error_ts": "2026-08-04T15:07:24.648676+00:00",
+      "last_error": "EDEESTE archive unreachable or parsed to 0 packages",
+      "last_error_ts": "2026-08-04T18:07:35.809117+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-04T15:09:24.202841+00:00",
-      "last_data_count": 46,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_data": "2026-08-04T18:09:33.748054+00:00",
+      "last_data_count": 49,
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "research": {
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-04T15:08:10.180839+00:00",
+      "last_data": "2026-08-04T18:08:23.886167+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "spark": {
       "last_data": "2026-08-04T06:08:42.651389+00:00",
@@ -15346,47 +15384,45 @@
       "last_ok": "2026-08-04T06:07:43.134531+00:00"
     },
     "spending": {
-      "empty_runs": 6,
+      "empty_runs": 7,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-04T17:52:51.840445+00:00",
+      "last_data": "2026-08-04T18:07:39.175787+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T17:52:49.667732+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "uv": {
-      "last_data": "2026-08-04T15:09:51.594279+00:00",
+      "last_data": "2026-08-04T18:09:45.753690+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "weather": {
-      "last_data": "2026-08-04T15:09:12.007209+00:00",
+      "last_data": "2026-08-04T18:08:53.017091+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-04T15:09:28.774795+00:00",
+      "last_data": "2026-08-04T18:09:39.703046+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-04T15:07:24.648676+00:00"
+      "last_ok": "2026-08-04T18:07:35.809117+00:00"
     }
   },
-  "twitch_live": [
-    "RiddlesMK"
-  ],
+  "twitch_live": [],
   "visa_bulletin_current": "2026-08",
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165357"
+    "last_full_window": "165358"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15408,6 +15444,7 @@
     "2026-08-04|05:30"
   ],
   "weather_seen_ids": [
+    "1cf244a53db159b2",
     "2274cf624c6cb0ee",
     "645c0d6b766d98ee",
     "5bba7448ef6f6d47",
@@ -15606,8 +15643,7 @@
     "2418c22141e5cb54",
     "09f4ece7b5fb6348",
     "f1eab3ed5e8a313f",
-    "b83b9e9bba61aab9",
-    "f2218c6998264874"
+    "b83b9e9bba61aab9"
   ],
   "wikiquote_last_category": "philosophers",
   "wikiquote_last_sent": "2026-07-14T4",
