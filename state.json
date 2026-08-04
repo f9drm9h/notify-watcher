@@ -578,18 +578,6 @@
     {
       "action": "digest",
       "detail": "",
-      "id": "77331e291ade01e8",
-      "score": 35,
-      "severity": "moderate",
-      "source": "Marvel's Wolverine",
-      "title": "Marvel's Wolverine Cinematic Trailer Features Cameos from Sabretooth and Lady Deathstrike - IGN",
-      "topic": "games",
-      "ts": "2026-07-20T12:08:39.941377+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNUFVKRmtyeUh4ZkUtV2N6UFBDanluUlNIME9NNzZRTjhHX05VZ1hxZF91aDB2NlFyTHREcjVtenJ0VmJwV2xVQi1VRU5hcWtVRTZTZDFyRVgtTlE0M29uNFFUQ3luRTRhblVNTHY3Y280d0dTNjg0ZExfcHh3WTdHSUxwczljYmhKUWhIOW1YUGJPZGgwbzhfS2hn?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
       "id": "e33c9ff6bfb579d8",
       "score": 35,
       "severity": "moderate",
@@ -12574,6 +12562,18 @@
       "topic": "habits",
       "ts": "2026-08-04T01:07:33.436665+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Bedtime. Phone away, eyes closed. Good night!",
+      "id": "09c2689af9a19069",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-08-04T02:07:25.494371+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -14029,6 +14029,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-08-04T01:07:33.436665+00:00"
+    },
+    "1534019907178729533": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-08-04T02:07:25.494371+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-04",
@@ -14321,7 +14326,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-04T01:52:28.952400+00:00"
+    "ts": "2026-08-04T02:07:24.499587+00:00"
   },
   "launch_seen_ids": [
     "d568d3247c4b17ff",
@@ -15271,7 +15276,8 @@
   "recap_last_week": "2026-W32",
   "reminders_sent": [],
   "sleep_slots_sent": [
-    "2026-08-03|21:00"
+    "2026-08-03|21:00",
+    "2026-08-03|22:00"
   ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
@@ -15355,9 +15361,9 @@
       "last_ok": "2026-08-03T21:07:31.591666+00:00"
     },
     "habits": {
-      "last_data": "2026-08-04T01:52:32.503413+00:00",
+      "last_data": "2026-08-04T02:07:26.848720+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-04T01:52:28.952400+00:00"
+      "last_ok": "2026-08-04T02:07:24.499587+00:00"
     },
     "holidays": {
       "last_data": "2026-08-03T21:08:49.557270+00:00",
@@ -15444,9 +15450,9 @@
       "last_ok": "2026-08-04T00:07:26.322417+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-04T01:52:31.208666+00:00",
+      "last_data": "2026-08-04T02:07:25.493912+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T01:52:28.952400+00:00"
+      "last_ok": "2026-08-04T02:07:24.499587+00:00"
     },
     "uv": {
       "last_data": "2026-08-03T21:08:50.700078+00:00",
