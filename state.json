@@ -89,7 +89,9 @@
     "rent|2026-07-30|1"
   ],
   "blood_donation_last_notified": "2026-07-08",
-  "cleaning_slots_sent": [],
+  "cleaning_slots_sent": [
+    "2026-08-05|18:00"
+  ],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -601,42 +603,6 @@
     "61a327d54598e35c"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "5ed079108a601187",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "New Jersey launches procurement process for new nuclear",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.848316+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/new-jersey-launches-procurement-process-for-new-nuclear"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "b33f4ba33a3fe182",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Saudi Arabia, USA sign nuclear agreements",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.848664+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/saudi-arabia-usa-sign-nuclear-agreements"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "325bbf048d0640f8",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Hyundai E&C, FANCO to collaborate on SMR project",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.848960+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/hyundai-ec-fanco-to-collaborate-on-smr-project"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -12600,9 +12566,47 @@
       "topic": "quakes",
       "ts": "2026-08-05T21:09:25.974721+00:00",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527638"
+    },
+    {
+      "action": "push",
+      "detail": "Workout window is open: stretch, lift, walk - whatever gets you moving.",
+      "id": "4881870e4b87866b",
+      "score": 0,
+      "severity": "low",
+      "source": "exercise",
+      "title": "Exercise - 6 PM session",
+      "topic": "habits",
+      "ts": "2026-08-05T22:08:04.843847+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Pause for meditation - a few minutes of stillness changes the whole evening.",
+      "id": "ca7d666c2cee1c5c",
+      "score": 0,
+      "severity": "low",
+      "source": "meditate",
+      "title": "Meditate - evening reset",
+      "topic": "habits",
+      "ts": "2026-08-05T22:08:04.843847+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "A little cleaning now beats a big cleaning later. Pick one thing.",
+      "id": "3f2d5990cd636909",
+      "score": 0,
+      "severity": "low",
+      "source": "cleaning",
+      "title": "Cleaning - quick tidy-up",
+      "topic": "habits",
+      "ts": "2026-08-05T22:08:04.843847+00:00",
+      "url": ""
     }
   ],
-  "exercise_slots_sent": [],
+  "exercise_slots_sent": [
+    "2026-08-05|18:00"
+  ],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -14034,21 +14038,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1534321928704360449": {
-      "channel": "1515504253345726558",
-      "habit": "exercise",
-      "sent": "2026-08-04T22:07:32.932339+00:00"
-    },
-    "1534321930897854507": {
-      "channel": "1515504253345726558",
-      "habit": "meditate",
-      "sent": "2026-08-04T22:07:32.932339+00:00"
-    },
-    "1534321933682999378": {
-      "channel": "1515504253345726558",
-      "habit": "cleaning",
-      "sent": "2026-08-04T22:07:32.932339+00:00"
-    },
     "1534367196648833166": {
       "channel": "1515504253345726558",
       "habit": "sleep",
@@ -14063,6 +14052,21 @@
       "channel": "1515504253345726558",
       "habit": "water",
       "sent": "2026-08-05T09:38:04.425032+00:00"
+    },
+    "1534684449273286899": {
+      "channel": "1515504253345726558",
+      "habit": "exercise",
+      "sent": "2026-08-05T22:08:04.843847+00:00"
+    },
+    "1534684451424960593": {
+      "channel": "1515504253345726558",
+      "habit": "meditate",
+      "sent": "2026-08-05T22:08:04.843847+00:00"
+    },
+    "1534684453019058217": {
+      "channel": "1515504253345726558",
+      "habit": "cleaning",
+      "sent": "2026-08-05T22:08:04.843847+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-05",
@@ -14347,7 +14351,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-05T21:53:08.345541+00:00"
+    "ts": "2026-08-05T22:08:03.665428+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14388,7 +14392,9 @@
   ],
   "learn_last_sent": "2026-08-05",
   "life_dashboard_last_week": "2026-W31",
-  "meditate_slots_sent": [],
+  "meditate_slots_sent": [
+    "2026-08-05|18:00"
+  ],
   "music_discovery_seen": [
     5425093,
     4685222,
@@ -15468,9 +15474,9 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "habits": {
-      "last_data": "2026-08-05T21:53:11.155541+00:00",
+      "last_data": "2026-08-05T22:08:06.928867+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-05T21:53:08.345541+00:00"
+      "last_ok": "2026-08-05T22:08:03.665428+00:00"
     },
     "holidays": {
       "last_data": "2026-08-05T21:09:37.596006+00:00",
@@ -15555,9 +15561,9 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-05T21:53:09.953928+00:00",
+      "last_data": "2026-08-05T22:08:04.843373+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-05T21:53:08.345541+00:00"
+      "last_ok": "2026-08-05T22:08:03.665428+00:00"
     },
     "uv": {
       "last_data": "2026-08-05T21:09:39.313807+00:00",
