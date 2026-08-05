@@ -158,6 +158,24 @@
       "title": "FDA updates approval for Lynozyfic (Linvoseltamab-Gcpt) (BLA761400)",
       "topic": "fda",
       "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761400"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 35,
+      "source": "Golden Sun",
+      "title": "I made a custom 2-LP Golden Sun vinyl set for its 25th anniversary",
+      "topic": "golden_sun",
+      "url": "https://www.reddit.com/r/GoldenSun/comments/1vcpvsu/i_made_a_custom_2lp_golden_sun_vinyl_set_for_its/"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-08-04",
@@ -522,54 +540,6 @@
     "ab85f84d2a40dc84"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "On this day\n1936: The July 1936 military uprising in Barcelona is defeated by anarchist militias and Republican loyalists, beginning the Spanish Revolution of 1936.\n\nFeatured: Curlew sandpiper\nThe curlew sandpiper is a small wader. It is a long-distance migrant, breeding in the bogs and coastal lowlands of the Siberian Arctic, arriving there in June and staying until August or September. After the breeding season, it migrates south to spend the winter in Africa and...\n\nMoney basics\nWhen sending money abroad, compare the TOTAL cost; the margin on the exchange rate matters more than a \"zero-fee\" transfer. (Source: World Bank)",
-      "id": "cfccfc6aaebcd493",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Daily learning",
-      "topic": "learn",
-      "ts": "2026-07-20T12:10:05.753587+00:00",
-      "url": "https://en.wikipedia.org/wiki/Curlew_sandpiper"
-    },
-    {
-      "action": "push",
-      "detail": "What: When power is cheap, water is pumped uphill to a reservoir; when demand peaks, it flows back down through turbines to make electricity.\nWhy it matters: It's effectively a giant water battery and stores the vast majority of the world's grid-scale energy today.\nWhy you should care: It's the proven way grids have banked surplus power for nearly a century \u2014 long before lithium batteries.\n(Source: U.S. Dept. of Energy)",
-      "id": "fd48e8fac5847eb1",
-      "score": 60,
-      "severity": "low",
-      "source": "Energy learning",
-      "title": "\u26a1 Today's spark \u2014 How pumped-hydro stores energy",
-      "topic": "energy_learn",
-      "ts": "2026-07-20T12:10:07.563697+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "331 live pushes, 164 digested, 0 dropped\nBusiest: movies (150), games (90), habits (34)\nTop story: [95] Weather alert: Atlantic Tropical Weather Outlook\nFailing now: spark, visa_bulletin",
-      "id": "6601151403324255",
-      "score": 60,
-      "severity": "low",
-      "source": "Recap",
-      "title": "Your week in notifications",
-      "topic": "recap",
-      "ts": "2026-07-20T12:10:14.458557+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Ends Tuesday 21 July (tomorrow). Tap for the academic calendar (PDF).",
-      "id": "1b9889fb956e8fb4",
-      "score": 62,
-      "severity": "high",
-      "source": "ITSC",
-      "title": "ITSC: Solicitud Retiro de Asignatura 2026-2(Ordinario)",
-      "topic": "itsc",
-      "ts": "2026-07-20T12:10:16.034683+00:00",
-      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/07/Calendario-academico-2026-2-actualizado-julio.pdf"
-    },
     {
       "action": "push",
       "detail": "Starts Monday 27 July (in 7 days). Tap for the academic calendar (PDF).",
@@ -12521,6 +12491,54 @@
       "topic": "habits",
       "ts": "2026-08-04T22:07:32.932339+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "cad722f4f4f14ea2",
+      "score": 35,
+      "severity": "moderate",
+      "source": "Golden Sun",
+      "title": "I made a custom 2-LP Golden Sun vinyl set for its 25th anniversary",
+      "topic": "golden_sun",
+      "ts": "2026-08-05T00:07:40.985322+00:00",
+      "url": "https://www.reddit.com/r/GoldenSun/comments/1vcpvsu/i_made_a_custom_2lp_golden_sun_vinyl_set_for_its/"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "e3338892321fad32",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-05T00:08:45.391067+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Choose stairs over escalators; brief activity increments significantly contribute to daily fitness. (Source: CDC)",
+      "id": "7e3aeb081a4ead61",
+      "score": 60,
+      "severity": "low",
+      "source": "Health",
+      "title": "Health tip",
+      "topic": "spark",
+      "ts": "2026-08-05T00:09:07.338215+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "outages \u2014 down 2d 9h (since 2026-08-02 15:07 UTC), reminder #4; last error: EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (9d ago)",
+      "id": "0ddee5ffa9edba64",
+      "score": 72,
+      "severity": "critical",
+      "source": "Watchdog",
+      "title": "Watchdog: 'outages' is STILL failing (2d 9h)",
+      "topic": "watchdog",
+      "ts": "2026-08-05T00:09:11.560499+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -13086,6 +13104,7 @@
   "games_week_last": "2026-W32",
   "golden_sun_seen": {
     "Golden Sun": [
+      "4864776a3bbfab59",
       "f21f1c1f57397ccf",
       "c27c806db346b974",
       "88119a4877f24078",
@@ -13984,7 +14003,7 @@
       "sent": "2026-08-04T22:07:32.932339+00:00"
     }
   },
-  "health_tip_last_sent": "2026-08-04",
+  "health_tip_last_sent": "2026-08-05",
   "holidays_sent": [],
   "ignored": {
     "4071c13d0b9dc18b": {
@@ -14269,9 +14288,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-04T23:52:24.825673+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-05T00:07:31.274200+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15271,19 +15290,19 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82678,
-  "spark_next_kind": "health",
+  "spark_last_sent": 82680,
+  "spark_next_kind": "quote",
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-04T21:09:21.747334+00:00",
+      "last_data": "2026-08-05T00:08:57.855539+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-04T21:09:25.446482+00:00",
+      "last_data": "2026-08-05T00:08:59.940108+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "apod": {
       "last_data": "2026-08-04T21:09:34.411177+00:00",
@@ -15291,26 +15310,26 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "deals": {
-      "last_data": "2026-08-04T21:08:26.844245+00:00",
-      "last_data_count": 11,
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_data": "2026-08-05T00:08:33.010580+00:00",
+      "last_data_count": 12,
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "energy": {
-      "last_data": "2026-08-04T21:08:53.610290+00:00",
+      "last_data": "2026-08-05T00:08:45.028879+00:00",
       "last_data_count": 58,
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-04T12:08:56.885026+00:00",
@@ -15318,9 +15337,9 @@
       "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "fda": {
-      "last_data": "2026-08-04T21:08:41.966084+00:00",
+      "last_data": "2026-08-05T00:08:33.488193+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "fuel": {
       "last_data": "2026-08-04T21:09:23.236228+00:00",
@@ -15328,18 +15347,18 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "fx": {
-      "last_data": "2026-08-04T21:09:21.816777+00:00",
+      "last_data": "2026-08-05T00:08:58.325560+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-04T21:07:42.295876+00:00",
+      "last_data": "2026-08-05T00:07:40.985211+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "groceries": {
       "last_data": "2026-08-04T21:08:41.731627+00:00",
@@ -15347,9 +15366,9 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "habits": {
-      "last_data": "2026-08-04T23:52:27.880154+00:00",
+      "last_data": "2026-08-05T00:09:06.563237+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-04T23:52:24.825673+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "holidays": {
       "last_data": "2026-08-04T21:09:32.024418+00:00",
@@ -15357,9 +15376,9 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "iss": {
-      "last_data": "2026-08-04T21:09:24.907643+00:00",
-      "last_data_count": 2,
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_data": "2026-08-05T00:08:59.413312+00:00",
+      "last_data_count": 3,
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "itsc": {
       "last_data": "2026-08-04T21:09:32.894146+00:00",
@@ -15367,9 +15386,9 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "launches": {
-      "last_data": "2026-08-04T21:09:24.240063+00:00",
+      "last_data": "2026-08-05T00:08:58.891781+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "learn": {
       "last_data": "2026-08-04T12:08:53.590710+00:00",
@@ -15377,7 +15396,7 @@
       "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "marine": {
       "last_data": "2026-08-04T21:09:34.167421+00:00",
@@ -15385,41 +15404,41 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "music": {
-      "last_data": "2026-08-04T21:07:39.602734+00:00",
+      "last_data": "2026-08-05T00:07:38.956604+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-04T21:08:54.219388+00:00",
+      "last_data": "2026-08-05T00:08:45.849766+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (9d ago)",
-      "last_error_ts": "2026-08-04T21:07:34.090909+00:00",
+      "last_error_ts": "2026-08-05T00:07:31.274200+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-04T21:09:20.990333+00:00",
-      "last_data_count": 46,
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_data": "2026-08-05T00:08:57.302389+00:00",
+      "last_data_count": 44,
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "research": {
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-04T21:08:22.791715+00:00",
+      "last_data": "2026-08-05T00:08:23.440003+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "spark": {
       "last_data": "2026-08-04T06:08:42.651389+00:00",
@@ -15427,16 +15446,16 @@
       "last_ok": "2026-08-04T06:07:43.134531+00:00"
     },
     "spending": {
-      "empty_runs": 8,
+      "empty_runs": 9,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-04T23:52:26.622551+00:00",
+      "last_data": "2026-08-05T00:07:36.557866+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-04T23:52:24.825673+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "uv": {
       "last_data": "2026-08-04T21:09:33.540386+00:00",
@@ -15444,20 +15463,20 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "weather": {
-      "last_data": "2026-08-04T21:08:53.734487+00:00",
+      "last_data": "2026-08-05T00:08:45.390641+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-04T21:09:26.667781+00:00",
+      "last_data": "2026-08-05T00:09:02.175181+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-04T21:07:34.090909+00:00"
+      "last_ok": "2026-08-05T00:07:31.274200+00:00"
     }
   },
   "twitch_live": [],
@@ -15465,7 +15484,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165359"
+    "last_full_window": "165360"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15478,8 +15497,8 @@
   "watchdog_outages": {
     "outages": {
       "alerted": "2026-08-02T17:18:45.308745+00:00",
-      "last_alert": "2026-08-04T12:09:07.735570+00:00",
-      "reminders": 3,
+      "last_alert": "2026-08-05T00:09:11.560375+00:00",
+      "reminders": 4,
       "since": "2026-08-02T17:18:45.308745+00:00"
     }
   },
@@ -15487,6 +15506,7 @@
     "2026-08-04|05:30"
   ],
   "weather_seen_ids": [
+    "fa76a1ab81516b97",
     "1cf244a53db159b2",
     "2274cf624c6cb0ee",
     "645c0d6b766d98ee",
@@ -15685,8 +15705,7 @@
     "51f4cc6fcf97d49f",
     "2418c22141e5cb54",
     "09f4ece7b5fb6348",
-    "f1eab3ed5e8a313f",
-    "b83b9e9bba61aab9"
+    "f1eab3ed5e8a313f"
   ],
   "wikiquote_last_category": "philosophers",
   "wikiquote_last_sent": "2026-07-14T4",
