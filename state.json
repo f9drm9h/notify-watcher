@@ -543,18 +543,6 @@
     {
       "action": "push",
       "detail": "Starts Monday 27 July (in 7 days). Tap for the academic calendar (PDF).",
-      "id": "c6f144245976d3c9",
-      "score": 62,
-      "severity": "moderate",
-      "source": "ITSC",
-      "title": "ITSC: Matriculaci\u00f3n y Selecci\u00f3n Nuevo Ingreso",
-      "topic": "itsc",
-      "ts": "2026-07-20T12:10:16.341097+00:00",
-      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/07/Calendario-academico-2026-2-actualizado-julio.pdf"
-    },
-    {
-      "action": "push",
-      "detail": "Starts Monday 27 July (in 7 days). Tap for the academic calendar (PDF).",
       "id": "0736a0d44325f70c",
       "score": 62,
       "severity": "moderate",
@@ -12539,6 +12527,18 @@
       "topic": "watchdog",
       "ts": "2026-08-05T00:09:11.560499+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "9 PM: start winding down. Screens dimmer, lights lower.",
+      "id": "21db027b286e1010",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-08-05T01:07:25.357670+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -14001,6 +14001,11 @@
       "channel": "1515504253345726558",
       "habit": "cleaning",
       "sent": "2026-08-04T22:07:32.932339+00:00"
+    },
+    "1534367196648833166": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-08-05T01:07:25.357670+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-05",
@@ -14290,7 +14295,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-05T00:52:43.864741+00:00"
+    "ts": "2026-08-05T01:07:24.008071+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15283,7 +15288,9 @@
   ],
   "recap_last_week": "2026-W32",
   "reminders_sent": [],
-  "sleep_slots_sent": [],
+  "sleep_slots_sent": [
+    "2026-08-04|21:00"
+  ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
     "d1203-liberty-5-pro-anc-earbuds-clear-calls",
@@ -15366,9 +15373,9 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "habits": {
-      "last_data": "2026-08-05T00:52:46.557575+00:00",
+      "last_data": "2026-08-05T01:07:27.177385+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-05T00:52:43.864741+00:00"
+      "last_ok": "2026-08-05T01:07:24.008071+00:00"
     },
     "holidays": {
       "last_data": "2026-08-04T21:09:32.024418+00:00",
@@ -15453,9 +15460,9 @@
       "last_ok": "2026-08-05T00:07:31.274200+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-05T00:52:45.260304+00:00",
+      "last_data": "2026-08-05T01:07:25.357223+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-05T00:52:43.864741+00:00"
+      "last_ok": "2026-08-05T01:07:24.008071+00:00"
     },
     "uv": {
       "last_data": "2026-08-04T21:09:33.540386+00:00",
