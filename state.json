@@ -559,18 +559,6 @@
     {
       "action": "push",
       "detail": "",
-      "id": "7bdf9325d9e34dfb",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "The Batman 2 BATSUIT CAMERA TEST + Delayed AGAIN To 2028?! Tommy Robinson (AT24LmYTjs) - Mshale",
-      "topic": "movies",
-      "ts": "2026-07-25T05:14:46.418060+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5kOXl0c3FVWUJwRU9MTlpQYTZRRjh2dXJuWklRb0d2M05MdkN6OXE5dnV5RURZX3hNLWpXMzF2a1hLV1h5YWVkRWZIM3ItRWNjUndTeEVqVkpTQQ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
       "id": "2f76d2b40c9e0067",
       "score": 62,
       "severity": "high",
@@ -12555,6 +12543,18 @@
       "topic": "watchdog",
       "ts": "2026-08-05T09:09:14.761924+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Water first, everything else after. Your body spent all night without it.",
+      "id": "11c4a0e01caf7ee9",
+      "score": 0,
+      "severity": "low",
+      "source": "water",
+      "title": "Water - start the day hydrated",
+      "topic": "habits",
+      "ts": "2026-08-05T09:38:04.425032+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -13986,11 +13986,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1534133177973608471": {
-      "channel": "1515504253345726558",
-      "habit": "water",
-      "sent": "2026-08-04T09:37:31.233697+00:00"
-    },
     "1534321928704360449": {
       "channel": "1515504253345726558",
       "habit": "exercise",
@@ -14015,6 +14010,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-08-05T02:07:34.494439+00:00"
+    },
+    "1534495703915565128": {
+      "channel": "1515504253345726558",
+      "habit": "water",
+      "sent": "2026-08-05T09:38:04.425032+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-05",
@@ -14304,7 +14304,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-05T09:23:06.817942+00:00"
+    "ts": "2026-08-05T09:38:03.517443+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15378,9 +15378,9 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "habits": {
-      "last_data": "2026-08-05T09:23:09.330430+00:00",
+      "last_data": "2026-08-05T09:38:05.647732+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-05T09:23:06.817942+00:00"
+      "last_ok": "2026-08-05T09:38:03.517443+00:00"
     },
     "holidays": {
       "last_data": "2026-08-04T21:09:32.024418+00:00",
@@ -15465,9 +15465,9 @@
       "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-05T09:23:08.206073+00:00",
+      "last_data": "2026-08-05T09:38:04.424687+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-05T09:23:06.817942+00:00"
+      "last_ok": "2026-08-05T09:38:03.517443+00:00"
     },
     "uv": {
       "last_data": "2026-08-04T21:09:33.540386+00:00",
@@ -15514,7 +15514,9 @@
       "since": "2026-08-02T17:18:45.308745+00:00"
     }
   },
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-08-05|05:30"
+  ],
   "weather_seen_ids": [
     "a766802ff06e1caa",
     "fa76a1ab81516b97",
