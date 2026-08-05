@@ -183,6 +183,15 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 35,
+      "source": "World Nuclear News",
+      "title": "Entergy to consider deployment of Holtec's SMR-300",
+      "topic": "energy",
+      "url": "https://www.world-nuclear-news.org/articles/entergy-to-consider-deployment-of-holtecs-smr-300"
     }
   ],
   "digest_last_sent": "2026-08-04",
@@ -245,6 +254,7 @@
     ]
   },
   "energy_seen_ids": [
+    "f822b8fa37db845f",
     "11fb59351534c6ce",
     "63191282994aa746",
     "eeaba8ea537e1ae5",
@@ -543,34 +553,9 @@
     "ed35816d7b999fb6",
     "0a690c05c0df363d",
     "868d18ae1c49a501",
-    "4e2085bf751417fd",
-    "ab85f84d2a40dc84"
+    "4e2085bf751417fd"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "",
-      "id": "aaa31e46c2ca1b24",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018Spider-Man: Brand New Day\u2019 Director Finally Speaks Out About Film Cancellation - Inside the Magic",
-      "topic": "movies",
-      "ts": "2026-07-25T05:14:44.308968+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWURDUXlmNmlVZ1plRnpIam12UzdPeG1ZV0Y2dFpyVlNWMThKakd5OUhKOEFVY0VQVUJEZnE1RVVISTdTMVYzZk1xRkxJVEp2cTRfOHp4aHdzV1I2Z3ItSzljcnFKUnVtbVZvZURLNjJ4RWtjUElhc1JKY3VDaTFlLVRDZ3FTdWNxVzRHbjBHRldfc3NYajBqNk43aw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "f702de807f359330",
-      "score": 62,
-      "severity": "high",
-      "source": "The Odyssey",
-      "title": "Sacramento IMAX theater says technical issues caused viewing delays for The Odyssey - KCRA",
-      "topic": "movies",
-      "ts": "2026-07-25T05:14:45.212438+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNem50bzN3S0lhdm94OGNUMUk2SzItNWhENXhNNk5RQkdEcVVJRDIwZF9nVGhCM0tPVTdxTDlTVXlOQ05KbTRMZXFqQVR3RmtXVHlfbXptNkEySWRiczFjS1lwOUtqQXVqS0JNb05wUVNGckFwRmVjVmFONEdxNnFOVzV2YVExTFpCRHp5RFdIRHhUYXlR?oc=5"
-    },
     {
       "action": "push",
       "detail": "",
@@ -12546,6 +12531,30 @@
       "topic": "watchdog",
       "ts": "2026-08-05T06:09:52.977456+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "81029bc558b9793c",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "Entergy to consider deployment of Holtec's SMR-300",
+      "topic": "energy",
+      "ts": "2026-08-05T09:08:53.076273+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/entergy-to-consider-deployment-of-holtecs-smr-300"
+    },
+    {
+      "action": "push",
+      "detail": "youtube \u2014 running again after 2h down",
+      "id": "ac72451176c8f982",
+      "score": 72,
+      "severity": "high",
+      "source": "Watchdog",
+      "title": "Watchdog: 'youtube' recovered",
+      "topic": "watchdog",
+      "ts": "2026-08-05T09:09:14.761924+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -14293,9 +14302,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-05T08:53:06.253386+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-05T09:08:12.030486+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15298,14 +15307,14 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-05T06:09:39.128336+00:00",
+      "last_data": "2026-08-05T09:09:05.904135+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-05T06:09:41.436720+00:00",
+      "last_data": "2026-08-05T09:09:07.538623+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "apod": {
       "last_data": "2026-08-04T21:09:34.411177+00:00",
@@ -15313,26 +15322,26 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "deals": {
-      "last_data": "2026-08-05T06:08:55.838226+00:00",
-      "last_data_count": 12,
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_data": "2026-08-05T09:08:42.203740+00:00",
+      "last_data_count": 11,
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "energy": {
-      "last_data": "2026-08-05T06:09:25.638282+00:00",
-      "last_data_count": 58,
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_data": "2026-08-05T09:08:53.075880+00:00",
+      "last_data_count": 59,
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-04T12:08:56.885026+00:00",
@@ -15340,9 +15349,9 @@
       "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "fda": {
-      "last_data": "2026-08-05T06:09:15.934516+00:00",
-      "last_data_count": 3,
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_data": "2026-08-05T09:08:42.534711+00:00",
+      "last_data_count": 7,
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "fuel": {
       "last_data": "2026-08-04T21:09:23.236228+00:00",
@@ -15350,18 +15359,18 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "fx": {
-      "last_data": "2026-08-05T06:09:39.257184+00:00",
+      "last_data": "2026-08-05T09:09:05.993701+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-05T06:08:31.179754+00:00",
+      "last_data": "2026-08-05T09:08:19.819100+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "groceries": {
       "last_data": "2026-08-04T21:08:41.731627+00:00",
@@ -15369,9 +15378,9 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "habits": {
-      "last_data": "2026-08-05T08:53:08.000150+00:00",
+      "last_data": "2026-08-05T09:09:10.516441+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-05T08:53:06.253386+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "holidays": {
       "last_data": "2026-08-04T21:09:32.024418+00:00",
@@ -15379,9 +15388,9 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "iss": {
-      "last_data": "2026-08-05T06:09:40.906707+00:00",
+      "last_data": "2026-08-05T09:09:07.003283+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "itsc": {
       "last_data": "2026-08-04T21:09:32.894146+00:00",
@@ -15389,9 +15398,9 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "launches": {
-      "last_data": "2026-08-05T06:09:40.250256+00:00",
+      "last_data": "2026-08-05T09:09:06.316394+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "learn": {
       "last_data": "2026-08-04T12:08:53.590710+00:00",
@@ -15399,7 +15408,7 @@
       "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "marine": {
       "last_data": "2026-08-04T21:09:34.167421+00:00",
@@ -15407,41 +15416,41 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "music": {
-      "last_data": "2026-08-05T06:08:29.196455+00:00",
+      "last_data": "2026-08-05T09:08:17.944546+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-05T06:09:26.242798+00:00",
+      "last_data": "2026-08-05T09:08:53.842927+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (10d ago)",
-      "last_error_ts": "2026-08-05T06:08:23.246110+00:00",
+      "last_error_ts": "2026-08-05T09:08:12.030486+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-05T06:09:38.542528+00:00",
-      "last_data_count": 52,
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_data": "2026-08-05T09:09:05.281646+00:00",
+      "last_data_count": 54,
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "research": {
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-05T06:08:49.012689+00:00",
+      "last_data": "2026-08-05T09:08:37.469523+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "spark": {
       "last_data": "2026-08-05T06:09:45.365513+00:00",
@@ -15449,16 +15458,16 @@
       "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "spending": {
-      "empty_runs": 11,
+      "empty_runs": 12,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-05T08:53:07.188887+00:00",
+      "last_data": "2026-08-05T09:08:15.546352+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-05T08:53:06.253386+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "uv": {
       "last_data": "2026-08-04T21:09:33.540386+00:00",
@@ -15466,23 +15475,20 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "weather": {
-      "last_data": "2026-08-05T06:09:25.812823+00:00",
+      "last_data": "2026-08-05T09:08:53.270325+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-05T03:08:26.272813+00:00",
-      "last_data_count": 15,
-      "last_error": "all 7 channel feed(s) failed; last: PabloELECTRUM: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UC9DS-MY8CZzLh7vQG000uug",
-      "last_error_ts": "2026-08-05T06:08:23.246110+00:00",
-      "last_ok": "2026-08-05T03:07:25.257069+00:00",
-      "source_failed": true
+      "last_data": "2026-08-05T09:09:09.118245+00:00",
+      "last_data_count": 90,
+      "last_ok": "2026-08-05T09:08:12.030486+00:00"
     }
   },
   "twitch_live": [],
@@ -15490,7 +15496,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165362"
+    "last_full_window": "165363"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15506,12 +15512,6 @@
       "last_alert": "2026-08-05T00:09:11.560375+00:00",
       "reminders": 4,
       "since": "2026-08-02T17:18:45.308745+00:00"
-    },
-    "youtube": {
-      "alerted": "2026-08-05T06:09:52.977330+00:00",
-      "last_alert": "2026-08-05T06:09:52.977330+00:00",
-      "reminders": 0,
-      "since": "2026-08-05T06:09:52.977330+00:00"
     }
   },
   "water_slots_sent": [],
