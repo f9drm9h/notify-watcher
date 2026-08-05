@@ -129,6 +129,114 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "DOP 471.95 (was DOP 554.95, -15%)",
+      "preserve_detail": false,
+      "score": 28,
+      "source": "Nacional",
+      "title": "Nacional deal: Ambientador Aerosol Lysol Light Breeze 10oz",
+      "topic": "groceries",
+      "url": "https://supermercadosnacional.com/ofertas/ambientador-aerosol-lysol-light-breeze-10oz-2240774"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Foundayo",
+      "title": "FDA updates approval for Foundayo (Orforglipron Calcium) (NDA220934)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220934"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Orenitram",
+      "title": "FDA updates approval for Orenitram (Treprostinil Diolamine) (NDA203496)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203496"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Yorvipath",
+      "title": "FDA updates approval for Yorvipath (Palopegteriparatide) (NDA216490)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=216490"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Keflex",
+      "title": "FDA updates approval for Keflex (Cephalexin) (NDA050405)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050405"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Tymlos",
+      "title": "FDA updates approval for Tymlos (Abaloparatide) (NDA208743)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208743"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Teriparatide",
+      "title": "FDA updates approval for Teriparatide (NDA218771)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=218771"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Forteo",
+      "title": "FDA updates approval for Forteo (Teriparatide) (NDA021318)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021318"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Bonsity",
+      "title": "FDA updates approval for Bonsity (Teriparatide) (NDA211939)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211939"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Argatroban In Sodium Chloride",
+      "title": "FDA updates approval for Argatroban In Sodium Chloride (Argatroban) (NDA212035)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=212035"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Keytruda Qlex",
+      "title": "FDA updates approval for Keytruda Qlex (Pembrolizumab, Berahyaluronidase Alfa-Pmph) (BLA761467)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761467"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Earthquakes",
+      "title": "M3.1 - 63 km NW of San Antonio, Puerto Rico (~241 km away)",
+      "topic": "quakes",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527638"
     }
   ],
   "digest_last_sent": "2026-08-05",
@@ -493,174 +601,6 @@
     "61a327d54598e35c"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "0bc6ac5e05cf9016",
-      "score": 35,
-      "severity": "moderate",
-      "source": "EIA Today in Energy",
-      "title": "Energia Costa Azul, Mexico's second LNG terminal, shipped first cargo",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.668399+00:00",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67884"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "6a2bc6420dadf300",
-      "score": 35,
-      "severity": "moderate",
-      "source": "EIA Today in Energy",
-      "title": "New York imports more electricity from Canada after high-voltage transmission line opens",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.668841+00:00",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67867"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "353b2972ecc30e43",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Third reactor at Changjiang plant starts up",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.669150+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/third-reactor-at-changjiang-plant-starts-up"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "acd6e7a26d459a63",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Building new Swiss nuclear power plant economically viable, report says",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.669416+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/building-new-swiss-nuclear-power-plant-economically-viable-report-says"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "f08f738fb2d911c0",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Reactor vessel installed at Lufeng unit 1",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.669703+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/reactor-vessel-installed-at-lufeng-unit-1"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "9329af8a0f38c181",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Siting licence granted for new Kola nuclear power plant units",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.669981+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/site-licence-granted-for-new-kola-nuclear-power-plant-units"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "b00d6b7525d1f717",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "South Korean SMR-powered container ship design certified",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.670240+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/korean-smr-powered-container-ship-design-certified"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "a9125087ae4d6fd6",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Two more Czech sites lined up for Rolls-Royce SMRs",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.670524+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/two-more-czech-sites-lined-up-for-rolls-royce-smrs"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "32ad494be2c1686a",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Korean-US partnership for floating SMR platform",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.670830+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/korean-us-partnership-for-floating-smr-platform"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "dba5681d56c7a43d",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Nuclearelectrica's proposal to review SMR options rejected by ministry",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.671093+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/nuclearelectricas-proposal-to-review-smr-options-rejected-by-ministry"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "8f2ffa474cdc6bc4",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Newcleo sets out plan for US licensing of reactor",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.671360+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/newcleo-sets-out-plan-for-us-licensing-of-reactor"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "24985726fb3b395f",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Molten salt reactor gets US safety design approval",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.671676+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/molten-salt-reactor-gets-us-safety-design-approval"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "1dd68ad0010deda2",
-      "score": 60,
-      "severity": "high",
-      "source": "World Nuclear News",
-      "title": "Oklo cleared to start up test reactor",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.671938+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/oklo-cleared-to-start-up-test-reactor"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "ffcd3b60860301b4",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Serbia preparing for next steps towards new nuclear",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.847758+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/serbia-preparing-for-next-steps-in-new-nuclear-programme"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -12492,6 +12432,174 @@
       "topic": "youtube",
       "ts": "2026-08-05T18:09:51.627132+00:00",
       "url": "https://www.youtube.com/watch?v=mi3nwo940c8"
+    },
+    {
+      "action": "push",
+      "detail": "Eyes Without A Face - Billy Idol\n(because you like The Police)",
+      "id": "21d0e23c0ce8f772",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-05T21:08:21.098539+00:00",
+      "url": "https://www.deezer.com/track/353398321"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "278c5464754a470a",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Foundayo",
+      "title": "FDA updates approval for Foundayo (Orforglipron Calcium) (NDA220934)",
+      "topic": "fda",
+      "ts": "2026-08-05T21:09:02.558439+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220934"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "ceedc46f7f5715dd",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Orenitram",
+      "title": "FDA updates approval for Orenitram (Treprostinil Diolamine) (NDA203496)",
+      "topic": "fda",
+      "ts": "2026-08-05T21:09:02.558764+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203496"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "91c654ae4d5737ec",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Yorvipath",
+      "title": "FDA updates approval for Yorvipath (Palopegteriparatide) (NDA216490)",
+      "topic": "fda",
+      "ts": "2026-08-05T21:09:02.559035+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=216490"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "ea1b229e7109ba7d",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Keflex",
+      "title": "FDA updates approval for Keflex (Cephalexin) (NDA050405)",
+      "topic": "fda",
+      "ts": "2026-08-05T21:09:02.559298+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050405"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "2694b69bea4bc35d",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Tymlos",
+      "title": "FDA updates approval for Tymlos (Abaloparatide) (NDA208743)",
+      "topic": "fda",
+      "ts": "2026-08-05T21:09:02.559578+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208743"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "07fc73fffc2acf68",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Teriparatide",
+      "title": "FDA updates approval for Teriparatide (NDA218771)",
+      "topic": "fda",
+      "ts": "2026-08-05T21:09:02.559844+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=218771"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "692383047a5e9ab9",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Forteo",
+      "title": "FDA updates approval for Forteo (Teriparatide) (NDA021318)",
+      "topic": "fda",
+      "ts": "2026-08-05T21:09:02.560108+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021318"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "8d415a177c06a740",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Bonsity",
+      "title": "FDA updates approval for Bonsity (Teriparatide) (NDA211939)",
+      "topic": "fda",
+      "ts": "2026-08-05T21:09:02.560369+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211939"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "3dd78b9e736085e6",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Argatroban In Sodium Chloride",
+      "title": "FDA updates approval for Argatroban In Sodium Chloride (Argatroban) (NDA212035)",
+      "topic": "fda",
+      "ts": "2026-08-05T21:09:02.560643+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=212035"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "3a7bfe90d8c64ae9",
+      "score": 70,
+      "severity": "high",
+      "source": "Dr Reddys Labs Sa",
+      "title": "FDA approves Dr Reddys Labs Sa (BLA761376)",
+      "topic": "fda",
+      "ts": "2026-08-05T21:09:02.560899+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761376"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "6b6dc9e4e5a31a41",
+      "score": 70,
+      "severity": "high",
+      "source": "Mezofy",
+      "title": "FDA approves Mezofy (Aripiprazole) (NDA211448)",
+      "topic": "fda",
+      "ts": "2026-08-05T21:09:02.957795+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211448"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "44feae3ec9c993ff",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Keytruda Qlex",
+      "title": "FDA updates approval for Keytruda Qlex (Pembrolizumab, Berahyaluronidase Alfa-Pmph) (BLA761467)",
+      "topic": "fda",
+      "ts": "2026-08-05T21:09:03.314894+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761467"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "86a2f825bc7bed65",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.1 - 63 km NW of San Antonio, Puerto Rico (~241 km away)",
+      "topic": "quakes",
+      "ts": "2026-08-05T21:09:25.974721+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527638"
     }
   ],
   "exercise_slots_sent": [],
@@ -12506,6 +12614,18 @@
     }
   ],
   "fda_seen_ids": [
+    "ec2b28fa84b347d1",
+    "1b182fe2fb4cf453",
+    "a8eb5c30ac13aa9d",
+    "1febe3aeb5dac663",
+    "18957491936d226c",
+    "9d12db7b86859a9f",
+    "5ccac0be08d6ab60",
+    "940e0770c4d8a073",
+    "6121af7848a6ab2f",
+    "be5996ab8bb81896",
+    "f91abcb89b7c14f8",
+    "c73e6d57019ad4fc",
     "e0d5ebe6295f2b00",
     "b1b41d4a3395cc24",
     "f48dc00259b83a24",
@@ -12693,19 +12813,7 @@
     "64ad1d819e506fb2",
     "bd67c0ea0110cfe2",
     "50edf211c063928c",
-    "0c22e528ab0bcdff",
-    "043bb491a4ecca6a",
-    "19cbcd60b82b815f",
-    "cbcd1f5cc77c4b02",
-    "f091c16efdc72e9e",
-    "74630f76d51328fe",
-    "0f4d836f4b937b71",
-    "b75132a66a05e608",
-    "d134f8fcb54f1646",
-    "5de30541aaca0ca7",
-    "8dc429ce4668bed9",
-    "2652701af2313b21",
-    "b00a7aee3320d58e"
+    "0c22e528ab0bcdff"
   ],
   "follows": {
     "artists": [
@@ -12719,7 +12827,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
   "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-05T18:09:49.973381+00:00",
+  "fuel_last_prices_seen_at": "2026-08-05T21:09:28.419341+00:00",
   "fuel_prices": {
     "GLP": 135.2,
     "Gasoil Regular": 258.3,
@@ -13558,6 +13666,7 @@
       "997e525f302628c6"
     ],
     "Nacional": [
+      "eabecb447c8a299a",
       "82c47d148c7aca44",
       "116068807729b2e3",
       "bc4284c7be62663c",
@@ -14236,9 +14345,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-05T20:53:08.462974+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-05T21:08:14.451183+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14508,7 +14617,8 @@
     2830,
     163,
     1048,
-    3037
+    3037,
+    2111
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14775,6 +14885,15 @@
       "label": "The Growlers",
       "payload": {
         "name": "The Growlers"
+      }
+    },
+    "688db1356c4e7247": {
+      "applied": null,
+      "created": "2026-08-05T21:08:21.098508+00:00",
+      "kind": "artist",
+      "label": "Billy Idol",
+      "payload": {
+        "name": "Billy Idol"
       }
     },
     "68bf423f38916628": {
@@ -15133,6 +15252,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "2dc0beb222e26285",
     "9a7a832345a09d11",
     "54563cf073e26687",
     "ec03905908f9f68e",
@@ -15277,41 +15397,41 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-05T18:09:48.762882+00:00",
+      "last_data": "2026-08-05T21:09:26.608869+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-05T18:09:51.350204+00:00",
+      "last_data": "2026-08-05T21:09:30.809774+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "apod": {
-      "last_data": "2026-08-05T18:09:59.427878+00:00",
+      "last_data": "2026-08-05T21:09:40.194235+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "deals": {
-      "last_data": "2026-08-05T18:09:06.715072+00:00",
+      "last_data": "2026-08-05T21:08:46.291138+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "energy": {
-      "last_data": "2026-08-05T18:09:34.088432+00:00",
+      "last_data": "2026-08-05T21:09:12.986756+00:00",
       "last_data_count": 60,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-05T12:09:27.738780+00:00",
@@ -15319,58 +15439,58 @@
       "last_ok": "2026-08-05T12:08:07.559751+00:00"
     },
     "fda": {
-      "last_data": "2026-08-05T18:09:22.511115+00:00",
-      "last_data_count": 7,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_data": "2026-08-05T21:09:02.558214+00:00",
+      "last_data_count": 14,
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-05T18:09:49.973403+00:00",
+      "last_data": "2026-08-05T21:09:28.419362+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "fx": {
-      "last_data": "2026-08-05T18:09:48.916401+00:00",
+      "last_data": "2026-08-05T21:09:26.719395+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-05T18:08:41.834236+00:00",
+      "last_data": "2026-08-05T21:08:23.555223+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-05T18:09:21.525609+00:00",
+      "last_data": "2026-08-05T21:09:02.292252+00:00",
       "last_data_count": 250,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "habits": {
-      "last_data": "2026-08-05T20:53:10.670204+00:00",
+      "last_data": "2026-08-05T21:09:33.467400+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-05T20:53:08.462974+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-05T18:09:57.170222+00:00",
+      "last_data": "2026-08-05T21:09:37.596006+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "iss": {
-      "last_data": "2026-08-05T18:09:50.788860+00:00",
-      "last_data_count": 3,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_data": "2026-08-05T21:09:30.282134+00:00",
+      "last_data_count": 4,
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-05T18:09:57.993125+00:00",
+      "last_data": "2026-08-05T21:09:38.644106+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "launches": {
-      "last_data": "2026-08-05T18:09:50.169858+00:00",
+      "last_data": "2026-08-05T21:09:29.583320+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "learn": {
       "last_data": "2026-08-05T12:09:22.043554+00:00",
@@ -15378,49 +15498,49 @@
       "last_ok": "2026-08-05T12:08:07.559751+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "marine": {
-      "last_data": "2026-08-05T18:09:58.995961+00:00",
+      "last_data": "2026-08-05T21:09:39.976358+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "music": {
-      "last_data": "2026-08-05T18:08:38.666297+00:00",
+      "last_data": "2026-08-05T21:08:20.347445+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-05T18:09:34.737303+00:00",
+      "last_data": "2026-08-05T21:09:13.566367+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (10d ago)",
-      "last_error_ts": "2026-08-05T18:08:34.059573+00:00",
+      "last_error_ts": "2026-08-05T21:08:14.451183+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-05T18:09:48.293905+00:00",
-      "last_data_count": 48,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_data": "2026-08-05T21:09:25.974298+00:00",
+      "last_data_count": 46,
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "research": {
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-05T18:09:01.353665+00:00",
+      "last_data": "2026-08-05T21:08:42.136708+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "spark": {
       "last_data": "2026-08-05T06:09:45.365513+00:00",
@@ -15428,37 +15548,37 @@
       "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "spending": {
-      "empty_runs": 15,
+      "empty_runs": 16,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-05T20:53:09.681602+00:00",
+      "last_data": "2026-08-05T21:08:18.065319+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-05T20:53:08.462974+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "uv": {
-      "last_data": "2026-08-05T18:09:58.512151+00:00",
+      "last_data": "2026-08-05T21:09:39.313807+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "weather": {
-      "last_data": "2026-08-05T18:09:34.353597+00:00",
+      "last_data": "2026-08-05T21:09:13.099612+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-05T18:09:52.844477+00:00",
+      "last_data": "2026-08-05T21:09:31.982798+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-05T18:08:34.059573+00:00"
+      "last_ok": "2026-08-05T21:08:14.451183+00:00"
     }
   },
   "twitch_live": [],
@@ -15466,7 +15586,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165366"
+    "last_full_window": "165367"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
