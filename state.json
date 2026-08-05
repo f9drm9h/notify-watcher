@@ -487,18 +487,6 @@
     {
       "action": "digest",
       "detail": "",
-      "id": "3c58689403d965c9",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Ojjaara",
-      "title": "FDA updates approval for Ojjaara (Momelotinib Dihydrochloride) (NDA216873)",
-      "topic": "fda",
-      "ts": "2026-07-25T05:16:02.408995+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=216873"
-    },
-    {
-      "action": "digest",
-      "detail": "",
       "id": "0c045f32ade0f28d",
       "score": 40,
       "severity": "moderate",
@@ -12483,6 +12471,18 @@
       "topic": "energy",
       "ts": "2026-08-05T15:09:38.257006+00:00",
       "url": "https://www.world-nuclear-news.org/articles/khnp-aboitizpower-to-cooperate-on-nuclear-energy"
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - New Patch Terry/Luke Gaming + 1v1Me !wait",
+      "id": "1f0de0b0711b2bfd",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-08-05T16:23:11.386989+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "exercise_slots_sent": [],
@@ -14229,7 +14229,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-05T16:08:06.478488+00:00"
+    "ts": "2026-08-05T16:23:10.820727+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15323,9 +15323,9 @@
       "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "habits": {
-      "last_data": "2026-08-05T16:08:08.676617+00:00",
+      "last_data": "2026-08-05T16:23:13.960323+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-05T16:08:06.478488+00:00"
+      "last_ok": "2026-08-05T16:23:10.820727+00:00"
     },
     "holidays": {
       "last_data": "2026-08-05T15:10:05.850899+00:00",
@@ -15410,9 +15410,9 @@
       "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-05T16:08:07.564040+00:00",
+      "last_data": "2026-08-05T16:23:13.000729+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-05T16:08:06.478488+00:00"
+      "last_ok": "2026-08-05T16:23:10.820727+00:00"
     },
     "uv": {
       "last_data": "2026-08-05T15:10:07.395453+00:00",
@@ -15436,7 +15436,9 @@
       "last_ok": "2026-08-05T15:08:16.210500+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_bulletin_current": "2026-08",
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
