@@ -93,7 +93,35 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [],
+  "digest_buffer": [
+    {
+      "detail": "DOP 64.95 (was DOP 79.95, -19%)",
+      "preserve_detail": false,
+      "score": 45,
+      "source": "Nacional",
+      "title": "Nacional deal: Cerveza Presidente Regular 8 Onz",
+      "topic": "groceries",
+      "url": "https://supermercadosnacional.com/cerveza-presidente-regular-8-onz-2199620"
+    },
+    {
+      "detail": "DOP 64.95 (was DOP 79.95, -19%)",
+      "preserve_detail": false,
+      "score": 45,
+      "source": "Nacional",
+      "title": "Nacional deal: Cerveza Presidente Light 8 Onz",
+      "topic": "groceries",
+      "url": "https://supermercadosnacional.com/cerveza-presidente-light-8-onz-2199619"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 35,
+      "source": "World Nuclear News",
+      "title": "KHNP, AboitizPower to cooperate on nuclear energy",
+      "topic": "energy",
+      "url": "https://www.world-nuclear-news.org/articles/khnp-aboitizpower-to-cooperate-on-nuclear-energy"
+    }
+  ],
   "digest_last_sent": "2026-08-05",
   "discord_control": {
     "last_id": "1530929203594137641"
@@ -154,6 +182,7 @@
     ]
   },
   "energy_seen_ids": [
+    "d9960ef04bcc81ff",
     "cdec0b081a31f48d",
     "6e25598cd7fcdd71",
     "c394a7e63757639e",
@@ -452,34 +481,9 @@
     "ca7cbc45dc42d9a8",
     "056ef545b00e91cd",
     "380b8fae794e3209",
-    "61a327d54598e35c",
-    "ed35816d7b999fb6"
+    "61a327d54598e35c"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "da08b608fcd42a95",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Inrebic",
-      "title": "FDA updates approval for Inrebic (Fedratinib Hydrochloride) (NDA212327)",
-      "topic": "fda",
-      "ts": "2026-07-25T05:16:02.408444+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=212327"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "ec88a1c03011343d",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Jakafi Xr",
-      "title": "FDA updates approval for Jakafi Xr (Ruxolitinib Phosphate) (NDA217180)",
-      "topic": "fda",
-      "ts": "2026-07-25T05:16:02.408726+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=217180"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -12455,6 +12459,30 @@
       "topic": "watchdog",
       "ts": "2026-08-05T12:09:38.184099+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Solsbury Hill - Peter Gabriel\n(because you like The Police)",
+      "id": "d081c5256ec32f21",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-05T15:08:22.599335+00:00",
+      "url": "https://www.deezer.com/track/538699662"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "cf37e21495b24edc",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "KHNP, AboitizPower to cooperate on nuclear energy",
+      "topic": "energy",
+      "ts": "2026-08-05T15:09:38.257006+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/khnp-aboitizpower-to-cooperate-on-nuclear-energy"
     }
   ],
   "exercise_slots_sent": [],
@@ -12682,7 +12710,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
   "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-05T12:09:18.361722+00:00",
+  "fuel_last_prices_seen_at": "2026-08-05T15:09:53.490404+00:00",
   "fuel_prices": {
     "GLP": 135.2,
     "Gasoil Regular": 258.3,
@@ -13521,6 +13549,8 @@
       "997e525f302628c6"
     ],
     "Nacional": [
+      "82c47d148c7aca44",
+      "116068807729b2e3",
       "bc4284c7be62663c",
       "560a56e00f0fea90",
       "00d35e4dc3d84454",
@@ -14197,9 +14227,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-05T14:53:06.929163+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-05T15:08:16.210500+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14467,7 +14497,8 @@
     936,
     409,
     2830,
-    163
+    163,
+    1048
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14572,6 +14603,15 @@
       "label": "Siouxsie and The Banshees",
       "payload": {
         "name": "Siouxsie and The Banshees"
+      }
+    },
+    "25cf31567b6c8b37": {
+      "applied": null,
+      "created": "2026-08-05T15:08:22.599297+00:00",
+      "kind": "artist",
+      "label": "Peter Gabriel",
+      "payload": {
+        "name": "Peter Gabriel"
       }
     },
     "26712b9ff77c3c87": {
@@ -15212,41 +15252,41 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-05T12:09:16.531980+00:00",
+      "last_data": "2026-08-05T15:09:51.770351+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-05T12:09:19.783544+00:00",
+      "last_data": "2026-08-05T15:09:55.113884+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "apod": {
-      "last_data": "2026-08-05T12:09:35.454196+00:00",
+      "last_data": "2026-08-05T15:10:08.514689+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "deals": {
-      "last_data": "2026-08-05T12:08:38.394245+00:00",
-      "last_data_count": 12,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_data": "2026-08-05T15:09:11.219830+00:00",
+      "last_data_count": 11,
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "energy": {
-      "last_data": "2026-08-05T12:09:02.742029+00:00",
-      "last_data_count": 60,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_data": "2026-08-05T15:09:38.256591+00:00",
+      "last_data_count": 61,
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-05T12:09:27.738780+00:00",
@@ -15254,58 +15294,58 @@
       "last_ok": "2026-08-05T12:08:07.559751+00:00"
     },
     "fda": {
-      "last_data": "2026-08-05T12:08:52.471749+00:00",
+      "last_data": "2026-08-05T15:09:28.821540+00:00",
       "last_data_count": 7,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-05T12:09:18.361745+00:00",
+      "last_data": "2026-08-05T15:09:53.490438+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "fx": {
-      "last_data": "2026-08-05T12:09:16.591116+00:00",
+      "last_data": "2026-08-05T15:09:51.944419+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-05T12:08:16.517533+00:00",
+      "last_data": "2026-08-05T15:08:25.132303+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-05T12:08:52.109506+00:00",
-      "last_data_count": 248,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_data": "2026-08-05T15:09:27.927199+00:00",
+      "last_data_count": 150,
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "habits": {
-      "last_data": "2026-08-05T14:53:10.000123+00:00",
+      "last_data": "2026-08-05T15:09:59.792770+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-05T14:53:06.929163+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-05T12:09:32.750918+00:00",
+      "last_data": "2026-08-05T15:10:05.850899+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "iss": {
-      "last_data": "2026-08-05T12:09:19.252969+00:00",
+      "last_data": "2026-08-05T15:09:54.561179+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-05T12:09:33.757229+00:00",
+      "last_data": "2026-08-05T15:10:06.827125+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "launches": {
-      "last_data": "2026-08-05T12:09:18.578894+00:00",
+      "last_data": "2026-08-05T15:09:53.822897+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "learn": {
       "last_data": "2026-08-05T12:09:22.043554+00:00",
@@ -15313,49 +15353,49 @@
       "last_ok": "2026-08-05T12:08:07.559751+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "marine": {
-      "last_data": "2026-08-05T12:09:35.205166+00:00",
+      "last_data": "2026-08-05T15:10:08.078899+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "music": {
-      "last_data": "2026-08-05T12:08:13.266437+00:00",
+      "last_data": "2026-08-05T15:08:21.746098+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-05T12:09:03.345163+00:00",
+      "last_data": "2026-08-05T15:09:38.952614+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (10d ago)",
-      "last_error_ts": "2026-08-05T12:08:07.559751+00:00",
+      "last_error_ts": "2026-08-05T15:08:16.210500+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-05T12:09:15.869204+00:00",
-      "last_data_count": 52,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_data": "2026-08-05T15:09:51.182921+00:00",
+      "last_data_count": 43,
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "research": {
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-05T12:08:33.288186+00:00",
+      "last_data": "2026-08-05T15:09:05.243750+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "spark": {
       "last_data": "2026-08-05T06:09:45.365513+00:00",
@@ -15363,37 +15403,37 @@
       "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "spending": {
-      "empty_runs": 13,
+      "empty_runs": 14,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-05T14:53:08.519217+00:00",
+      "last_data": "2026-08-05T15:08:19.210081+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-05T14:53:06.929163+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "uv": {
-      "last_data": "2026-08-05T12:09:34.567267+00:00",
+      "last_data": "2026-08-05T15:10:07.395453+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "weather": {
-      "last_data": "2026-08-05T12:09:02.881444+00:00",
+      "last_data": "2026-08-05T15:09:38.467625+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-05T12:09:20.854903+00:00",
+      "last_data": "2026-08-05T15:09:57.520804+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-05T15:08:16.210500+00:00"
     }
   },
   "twitch_live": [],
@@ -15401,7 +15441,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165364"
+    "last_full_window": "165365"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
