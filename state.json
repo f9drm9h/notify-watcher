@@ -174,6 +174,15 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-08-04",
@@ -538,42 +547,6 @@
     "ab85f84d2a40dc84"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "Starts Monday 27 July (in 7 days). Tap for the academic calendar (PDF).",
-      "id": "271e524e390bd4b7",
-      "score": 62,
-      "severity": "moderate",
-      "source": "ITSC",
-      "title": "ITSC: Evaluaci\u00f3n Docente (Encuestas)",
-      "topic": "itsc",
-      "ts": "2026-07-20T12:10:16.911225+00:00",
-      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/07/Calendario-academico-2026-2-actualizado-julio.pdf"
-    },
-    {
-      "action": "push",
-      "detail": "What's happening in the Statue of Liberty nebula? Bright stars and interesting molecules are forming and being liberated. The complex nebula resides in the star forming region called RCW 57, and besides the iconic monument, to some looks like a flying superhero or a weeping...\n(c) Logan Carpenter",
-      "id": "8c6b6df8d6b53cf9",
-      "score": 60,
-      "severity": "low",
-      "source": "NASA APOD",
-      "title": "APOD: NGC 3576: The Statue of Liberty Nebula",
-      "topic": "apod",
-      "ts": "2026-07-20T12:10:18.687927+00:00",
-      "url": "https://apod.nasa.gov/apod/image/2607/LibertyNeb_Carpenter_1830.jpg"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "464cd7f8f00ae097",
-      "score": 62,
-      "severity": "high",
-      "source": "Avengers: Doomsday",
-      "title": "'Avengers: Doomsday' official trailer offers sneak peek at Robert Downey Jr.'s take on Doctor Doom - ABC7 Chicago",
-      "topic": "movies",
-      "ts": "2026-07-25T05:14:43.331410+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZGE0Q0ZJMnI5SVFtRDJFUFpjQVZiZmNVUEJZRFNMcXhUSlNIUmYwQTQ2d0pQaWxDY2lINTRNUDFWLXFkOVNkTU5ZUHN4UnlMMzNzdnBPOVF0VmV4anYzejNMN2IwMWJvMFk3SWl4VWxvYnZBZVdFUmp1TDZqNlhaN3gwRDdmNmt3cVZDSWRCMGhzSlk4dDZlbjNuTEh0N2lQMG94Z1laUlBSN3VWVzJHZFJGVHhpV29JZHB4LWp3MmxHSGo10gHKAUFVX3lxTFBlTjB6WDNPNTYza09FcEJ3YllUcHRKaVZCQVd6YUdISVkzQjg0SV9ySmZIcFhfTHpQSHROOVk5UFdZQUhYZVdlRTNUOHRhSi1VRmF4QkYxQ3AwV0dIOE8zLWtTWWNZQmd1OWRRRW9FODFFdGJTNkRZcFJuRlh4dmE3c0E3TFhydE5XUGIwZWFmWUtkRG9Ya1VzYkdNRHVuVnh6clptN2FfZEIwWVNfR3kzMVRsRm5lVnQwNXFXc09vOWxBS1B2aFZWV1E?oc=5"
-    },
     {
       "action": "push",
       "detail": "",
@@ -12537,6 +12510,42 @@
       "topic": "habits",
       "ts": "2026-08-05T02:07:34.494439+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "6e50a18ebb041292",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-05T06:09:25.813206+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "\u201cWhen a person is haughty, he distances himself from other people and thereby deprives himself of one of life's biggest pleasures\u2014open, joyful communication with everyone.\u201d\n\u2014 Leo Tolstoy\n\nLeo Tolstoy, a titan of Russian literature, penned these words not from the detached perch of an academic, but from the crucible of a deeply examined life. By the time of his later years, after monumental works like *War and Peace* and *Anna Karenina*, Tolstoy had undergone a profound spiritual crisis. He renounced his wealth, struggled with the tenets of organized religion, and sought a simpler, more meaningful existence rooted in Christian anarchism and pacifism. This quote emerges from that period of intense introspection, a reflection on human connection that was central to his evolving philosophy, where humility and empathy were paramount to true living.\n\nHe observed, with the keen eye of a novelist and the soul of a philosopher, how pride erects invisible barriers. For Tolstoy, who eventually sought to live among peasants and labor alongside them, the artificiality of social hierarchy and the self-importance it bred were anathema to genuine human experience. He believed that the very essence of joy resided in the unburdened exchange between individuals, a communion that haughtiness inherently disrupts by placing oneself above the fray, rather than within it.\n\nThis sentiment, articulated by a man who grappled so publicly and passionately with the meaning of life, resonates with particular force today. In an era often characterized by division and the curated self-presentation of social media, Tolstoy's simple wisdom reminds us of the enduring human need for authentic connection.",
+      "id": "51ee861687e2f9ff",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Leo Tolstoy",
+      "topic": "spark",
+      "ts": "2026-08-05T06:09:48.182005+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "youtube \u2014 no successful run since 2026-08-05 03:07 UTC (3h); last error: all 7 channel feed(s) failed; last: PabloELECTRUM: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/v\u2026",
+      "id": "87930c6289f2a804",
+      "score": 72,
+      "severity": "critical",
+      "source": "Watchdog",
+      "title": "Watchdog: 'youtube' is failing",
+      "topic": "watchdog",
+      "ts": "2026-08-05T06:09:52.977456+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -14284,9 +14293,9 @@
     "world_history:The space race and the launch of Sputnik": "2026-07-06"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-05T05:52:31.324094+00:00"
+    "failed": 2,
+    "ok": 38,
+    "ts": "2026-08-05T06:08:23.246110+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15137,7 +15146,7 @@
     "https://www.anker.com/products/a8346": 39.99,
     "https://www.anker.com/products/a8392": 199.99,
     "https://www.baseus.com/products/enerfill-fc41-digital-display-power-bank-20000mah-100w": 59.99,
-    "https://www.baseus.com/products/metal-gleam-series-9-in-1-usb-c-hub": 69.99,
+    "https://www.baseus.com/products/metal-gleam-series-9-in-1-usb-c-hub": 79.99,
     "https://www.baseus.com/products/picogo-am52-qi2-2-magnetic-power-bank-10000mah-45w": 59.99,
     "https://www.baseus.com/products/usb-c-to-usb-c-cable-100w": 7.99,
     "https://www.soundcore.com/products/d1203-liberty-5-pro-anc-earbuds-clear-calls": 169.99,
@@ -15284,19 +15293,19 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82680,
-  "spark_next_kind": "quote",
+  "spark_last_sent": 82681,
+  "spark_next_kind": "fact",
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-05T03:08:23.636569+00:00",
+      "last_data": "2026-08-05T06:09:39.128336+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-05T03:08:25.585920+00:00",
+      "last_data": "2026-08-05T06:09:41.436720+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "apod": {
       "last_data": "2026-08-04T21:09:34.411177+00:00",
@@ -15304,26 +15313,26 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "deals": {
-      "last_data": "2026-08-05T03:07:56.787495+00:00",
+      "last_data": "2026-08-05T06:08:55.838226+00:00",
       "last_data_count": 12,
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "energy": {
-      "last_data": "2026-08-05T03:08:06.955979+00:00",
+      "last_data": "2026-08-05T06:09:25.638282+00:00",
       "last_data_count": 58,
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-04T12:08:56.885026+00:00",
@@ -15331,9 +15340,9 @@
       "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "fda": {
-      "last_data": "2026-08-05T03:07:57.384110+00:00",
+      "last_data": "2026-08-05T06:09:15.934516+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "fuel": {
       "last_data": "2026-08-04T21:09:23.236228+00:00",
@@ -15341,18 +15350,18 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "fx": {
-      "last_data": "2026-08-05T03:08:23.783793+00:00",
+      "last_data": "2026-08-05T06:09:39.257184+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-05T03:07:31.674559+00:00",
+      "last_data": "2026-08-05T06:08:31.179754+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "groceries": {
       "last_data": "2026-08-04T21:08:41.731627+00:00",
@@ -15360,9 +15369,9 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "habits": {
-      "last_data": "2026-08-05T05:52:34.522343+00:00",
+      "last_data": "2026-08-05T06:09:44.733810+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-05T05:52:31.324094+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "holidays": {
       "last_data": "2026-08-04T21:09:32.024418+00:00",
@@ -15370,9 +15379,9 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "iss": {
-      "last_data": "2026-08-05T03:08:25.102158+00:00",
+      "last_data": "2026-08-05T06:09:40.906707+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "itsc": {
       "last_data": "2026-08-04T21:09:32.894146+00:00",
@@ -15380,9 +15389,9 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "launches": {
-      "last_data": "2026-08-05T03:08:24.646945+00:00",
+      "last_data": "2026-08-05T06:09:40.250256+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "learn": {
       "last_data": "2026-08-04T12:08:53.590710+00:00",
@@ -15390,7 +15399,7 @@
       "last_ok": "2026-08-04T12:07:37.671958+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "marine": {
       "last_data": "2026-08-04T21:09:34.167421+00:00",
@@ -15398,58 +15407,58 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "music": {
-      "last_data": "2026-08-05T03:07:30.087651+00:00",
+      "last_data": "2026-08-05T06:08:29.196455+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-05T03:08:07.518825+00:00",
+      "last_data": "2026-08-05T06:09:26.242798+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
-      "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (9d ago)",
-      "last_error_ts": "2026-08-05T03:07:25.257069+00:00",
+      "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (10d ago)",
+      "last_error_ts": "2026-08-05T06:08:23.246110+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-05T03:08:23.104525+00:00",
-      "last_data_count": 50,
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_data": "2026-08-05T06:09:38.542528+00:00",
+      "last_data_count": 52,
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "research": {
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-05T03:07:49.140534+00:00",
+      "last_data": "2026-08-05T06:08:49.012689+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "spark": {
-      "last_data": "2026-08-04T06:08:42.651389+00:00",
-      "last_data_count": 163,
-      "last_ok": "2026-08-04T06:07:43.134531+00:00"
+      "last_data": "2026-08-05T06:09:45.365513+00:00",
+      "last_data_count": 112,
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "spending": {
-      "empty_runs": 10,
+      "empty_runs": 11,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-05T05:52:33.380073+00:00",
+      "last_data": "2026-08-05T06:08:26.524977+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-05T05:52:31.324094+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "uv": {
       "last_data": "2026-08-04T21:09:33.540386+00:00",
@@ -15457,20 +15466,23 @@
       "last_ok": "2026-08-04T21:07:34.090909+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "weather": {
-      "last_data": "2026-08-05T03:08:07.155484+00:00",
+      "last_data": "2026-08-05T06:09:25.812823+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "youtube": {
       "last_data": "2026-08-05T03:08:26.272813+00:00",
       "last_data_count": 15,
-      "last_ok": "2026-08-05T03:07:25.257069+00:00"
+      "last_error": "all 7 channel feed(s) failed; last: PabloELECTRUM: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UC9DS-MY8CZzLh7vQG000uug",
+      "last_error_ts": "2026-08-05T06:08:23.246110+00:00",
+      "last_ok": "2026-08-05T03:07:25.257069+00:00",
+      "source_failed": true
     }
   },
   "twitch_live": [],
@@ -15478,7 +15490,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165361"
+    "last_full_window": "165362"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15494,10 +15506,17 @@
       "last_alert": "2026-08-05T00:09:11.560375+00:00",
       "reminders": 4,
       "since": "2026-08-02T17:18:45.308745+00:00"
+    },
+    "youtube": {
+      "alerted": "2026-08-05T06:09:52.977330+00:00",
+      "last_alert": "2026-08-05T06:09:52.977330+00:00",
+      "reminders": 0,
+      "since": "2026-08-05T06:09:52.977330+00:00"
     }
   },
   "water_slots_sent": [],
   "weather_seen_ids": [
+    "a766802ff06e1caa",
     "fa76a1ab81516b97",
     "1cf244a53db159b2",
     "2274cf624c6cb0ee",
@@ -15696,10 +15715,9 @@
     "8ab3f3ef77e2624c",
     "51f4cc6fcf97d49f",
     "2418c22141e5cb54",
-    "09f4ece7b5fb6348",
-    "f1eab3ed5e8a313f"
+    "09f4ece7b5fb6348"
   ],
-  "wikiquote_last_category": "philosophers",
+  "wikiquote_last_category": "writers",
   "wikiquote_last_sent": "2026-07-14T4",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-07-25",
@@ -15756,7 +15774,7 @@
     "writers:Fyodor Dostoevsky": "2026-07-17",
     "writers:George Orwell": "2026-07-09",
     "writers:Jane Austen": "2026-07-12",
-    "writers:Leo Tolstoy": "2026-07-09",
+    "writers:Leo Tolstoy": "2026-08-05",
     "writers:Mark Twain": "2026-07-11",
     "writers:Maya Angelou": "2026-07-13",
     "writers:Oscar Wilde": "2026-07-10",
