@@ -93,7 +93,26 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [],
+  "digest_buffer": [
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Earthquakes",
+      "title": "M3.1 - 42 km NW of Aguadilla, Puerto Rico (~252 km away)",
+      "topic": "quakes",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527703"
+    }
+  ],
   "digest_last_sent": "2026-08-06",
   "discord_control": {
     "last_id": "1530929203594137641"
@@ -155,6 +174,8 @@
     ]
   },
   "energy_seen_ids": [
+    "7b4a12a99790ae4e",
+    "d87c345554d45a89",
     "a9f5443a382980f5",
     "cb90fca254cabeb8",
     "e58f14fa3f2ffe70",
@@ -452,83 +473,9 @@
     "18192444e43946a7",
     "9a87c340c47ecb65",
     "6c1a1f055fddbbca",
-    "12c57da9193aec03",
-    "a96ef8353f84cf23",
-    "ca7cbc45dc42d9a8"
+    "12c57da9193aec03"
   ],
   "event_log": [
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "96d6435914ec8ac5",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "THE BATMAN: PART II delayed until 2028 - comicsbeat.com",
-      "topic": "movies",
-      "ts": "2026-07-25T09:08:28.673145+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9mWFE2eHNyRlNfUUhZa0xyVHVmNTBlblF1VTlfb0lCX0dpUnE4SmJjdWtFRkJFbnozcVRYVEhGX1BlNGNDN1QyTHZ5aHJoVTUxZE02T3J6QnNhY3hJRUdWT0J3?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "0355a0de458d3651",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "'The Batman Part II' director reveals fresh look at Robert Pattinson's Dark Knight as his new Batman movie suffers another release date setback \u2014 and I'm not sure how many more delays I can take - Yahoo",
-      "topic": "movies",
-      "ts": "2026-07-25T09:08:28.673855+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPRTJ0eWVIOTFOTVhRYjFyQmJaY0Zoc3hJYmxNUWNmUzlDWjYyVy1nUVZaa1E4QnJqdExmTGlKcE5oRG9GSlJ0S3VWOE5naDV2NzVHbTh2OThfTzZ3XzEzdFBQendZSXA2cjl3d1dDNWtONktrNTZ0NVBFbzBfbW1QRHMtV2ZWSHdZMENmamhWOEtSVi1qVERiVE5tdEhZT0k?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "90f2de2c1cfe1049",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II Should\u2019ve Been Canceled Years Ago & Is Hurting James Gunn\u2019s DCU - Yahoo",
-      "topic": "movies",
-      "ts": "2026-07-25T09:08:28.674585+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPZUtRaXJaVUxQcUw4UUdwMEp3aWdHSlNySEttWkRfV1NiUlVwcEQySWRqQmh4Q0p4a2dIQVozaGdFTDVJRkJsVWNiZ1dxZ3NBTWI0bHR3Y1pSc25pS191ekYxODNUYlZING11ZmltQkR2UHFWckRaQmJPOUs3U1lDaWp6T1J6ZjdMc2dabEFrRG91N2FLS3ZPdg?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "d78d4aff3eefa065",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Augmentin '200'",
-      "title": "FDA updates approval for Augmentin '200' (Amoxicillin, Clavulanate Potassium) (NDA050726)",
-      "topic": "fda",
-      "ts": "2026-07-25T09:09:25.959977+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050726"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "bc59bf3a293272a6",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Augmentin Es-600",
-      "title": "FDA updates approval for Augmentin Es-600 (Amoxicillin, Clavulanate Potassium) (NDA050755)",
-      "topic": "fda",
-      "ts": "2026-07-25T09:09:25.960280+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050755"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "d12be6a65930eb96",
-      "score": 40,
-      "severity": "moderate",
-      "source": "Augmentin Xr",
-      "title": "FDA updates approval for Augmentin Xr (Amoxicillin, Clavulanate Potassium) (NDA050785)",
-      "topic": "fda",
-      "ts": "2026-07-25T09:09:25.960544+00:00",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050785"
-    },
     {
       "action": "push",
       "detail": "Visible pass at 10:42 PM - max 51deg, NW to SE. Look up!",
@@ -12456,6 +12403,78 @@
       "topic": "twitch",
       "ts": "2026-08-06T17:17:52.855702+00:00",
       "url": "https://twitch.tv/RiddlesMK"
+    },
+    {
+      "action": "push",
+      "detail": "The Color Violet - Tory Lanez\n(because you like The Weeknd)",
+      "id": "c01d01e8d4c41ad6",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-06T18:38:24.316912+00:00",
+      "url": "https://www.deezer.com/track/1579438382"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "e2f928cd16adc591",
+      "score": 60,
+      "severity": "high",
+      "source": "World Nuclear News",
+      "title": "US test reactors achieve milestones",
+      "topic": "energy",
+      "ts": "2026-08-06T18:39:53.957251+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/us-test-reactors-achieve-milestones"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "ea99929d3c747bf2",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-06T18:39:54.290796+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Inundacion. Acumulados de precipitaciones esperados entre 35 y 70 mil\u00edmetros, pudiendo ser superiores en lugares aislados.\n\nProvincias: Elias Pi\u00f1a",
+      "id": "cbc209b7fdf93304",
+      "score": 80,
+      "severity": "high",
+      "source": "ONAMET",
+      "title": "INDOMET: Guia para inundaciones en Republica Dominicana",
+      "topic": "onamet",
+      "ts": "2026-08-06T18:39:54.899362+00:00",
+      "url": "https://cap-sources.s3.amazonaws.com/do-indomet-es/2026-08-06-18-29-58.xml"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "c6c8b257b143b4d0",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.1 - 42 km NW of Aguadilla, Puerto Rico (~252 km away)",
+      "topic": "quakes",
+      "ts": "2026-08-06T18:40:07.538584+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527703"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 6:00 PM - max 55deg, NW to SE. Look up!",
+      "id": "fb3f7d9bf985a2c9",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-08-06T18:40:25.316240+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -12683,7 +12702,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
   "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-06T15:09:52.887549+00:00",
+  "fuel_last_prices_seen_at": "2026-08-06T18:40:09.091465+00:00",
   "fuel_prices": {
     "GLP": 135.2,
     "Gasoil Regular": 258.3,
@@ -13977,6 +13996,7 @@
     }
   },
   "iss_seen_passes": [
+    "c4daca12d19fd680",
     "4769bfacf9036186",
     "e0cc9a83778e8b07",
     "2037c03944b90055",
@@ -14075,8 +14095,7 @@
     "04805dcef8eb468b",
     "0f46d184304b7383",
     "cfbcd32193b51486",
-    "4d42a4cba83b548d",
-    "d24790f2d29fdce2"
+    "4d42a4cba83b548d"
   ],
   "itsc_sent_ids": [
     "884c2c592f066bf0",
@@ -14227,9 +14246,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-06T17:42:22.966463+00:00"
+    "failed": 2,
+    "ok": 38,
+    "ts": "2026-08-06T18:38:19.896718+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14502,7 +14521,8 @@
     3037,
     2111,
     8828322,
-    68583162
+    68583162,
+    5575105
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14816,6 +14836,15 @@
         "name": "Wanda Jackson"
       }
     },
+    "708ac9422864668f": {
+      "applied": null,
+      "created": "2026-08-06T18:38:24.316888+00:00",
+      "kind": "artist",
+      "label": "Tory Lanez",
+      "payload": {
+        "name": "Tory Lanez"
+      }
+    },
     "750c20ff86b03ce8": {
       "applied": null,
       "created": "2026-07-29T18:07:56.595324+00:00",
@@ -15035,9 +15064,20 @@
   },
   "onamet_active": {
     "274386cf5bc31532": "2026-08-07T20:00:12-04:00",
-    "5c27327553576e86": "2026-08-07T20:00:12-04:00"
+    "5c27327553576e86": "2026-08-07T20:00:12-04:00",
+    "8d3643a45f81aeb8": "2026-08-06T14:31:12-04:00"
   },
   "onamet_seen_ids": [
+    "031e04a6c47c4708",
+    "ff6d8098af2214d4",
+    "40448f04f4e89b73",
+    "abae663fb5b7cdb0",
+    "70d7544af5fa2c96",
+    "a914ebecc6f6db76",
+    "7724dc64f4e91a65",
+    "fc6d175f1825c5fd",
+    "45d9dd18add12244",
+    "bcce17433fc02091",
     "98fe77c53505a2f6",
     "c6f31cbb18372d69",
     "7d0ecc008f2b05be",
@@ -15154,6 +15194,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "c5b282f541dd3be9",
     "ede8d3684c4a61b8",
     "2dc0beb222e26285",
     "9a7a832345a09d11",
@@ -15300,44 +15341,44 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-06T15:09:50.666022+00:00",
+      "last_data": "2026-08-06T18:40:07.929245+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-06T15:09:56.039783+00:00",
+      "last_data": "2026-08-06T18:40:26.444032+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "apod": {
       "last_data": "2026-08-06T12:10:12.555263+00:00",
       "last_data_count": 1,
-      "last_error": "APOD fetch failed: 503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=wJPj2a8PGR9waSxTix6B9Dw1k2wvyWJdZaaVawTY&thumbs=true",
-      "last_error_ts": "2026-08-06T15:08:09.623627+00:00",
+      "last_error": "APOD fetch failed: HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=30)",
+      "last_error_ts": "2026-08-06T18:38:19.896718+00:00",
       "last_ok": "2026-08-06T12:08:12.457967+00:00",
       "source_failed": true
     },
     "astronomy": {
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "deals": {
-      "last_data": "2026-08-06T15:09:09.118792+00:00",
+      "last_data": "2026-08-06T18:39:29.255845+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "energy": {
-      "last_data": "2026-08-06T15:09:36.467944+00:00",
-      "last_data_count": 59,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_data": "2026-08-06T18:39:53.956848+00:00",
+      "last_data_count": 60,
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-06T12:10:05.315809+00:00",
@@ -15345,58 +15386,58 @@
       "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "fda": {
-      "last_data": "2026-08-06T15:09:25.820245+00:00",
+      "last_data": "2026-08-06T18:39:44.127828+00:00",
       "last_data_count": 15,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-06T15:09:52.887569+00:00",
+      "last_data": "2026-08-06T18:40:09.091482+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "fx": {
-      "last_data": "2026-08-06T15:09:50.735260+00:00",
+      "last_data": "2026-08-06T18:40:08.069887+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-06T15:08:18.136713+00:00",
+      "last_data": "2026-08-06T18:38:26.671762+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-06T15:09:25.530225+00:00",
+      "last_data": "2026-08-06T18:39:43.519666+00:00",
       "last_data_count": 227,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "habits": {
-      "last_data": "2026-08-06T17:42:25.194348+00:00",
+      "last_data": "2026-08-06T18:40:28.164250+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T17:42:22.966463+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-06T15:10:13.660056+00:00",
+      "last_data": "2026-08-06T18:40:31.818770+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "iss": {
-      "last_data": "2026-08-06T15:09:55.193330+00:00",
+      "last_data": "2026-08-06T18:40:25.316042+00:00",
       "last_data_count": 3,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-06T15:10:14.815430+00:00",
+      "last_data": "2026-08-06T18:40:32.579275+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "launches": {
-      "last_data": "2026-08-06T15:09:54.511817+00:00",
+      "last_data": "2026-08-06T18:40:24.711210+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "learn": {
       "last_data": "2026-08-06T12:10:00.816721+00:00",
@@ -15404,49 +15445,49 @@
       "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "marine": {
-      "last_data": "2026-08-06T15:10:16.095517+00:00",
+      "last_data": "2026-08-06T18:40:33.388543+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "music": {
-      "last_data": "2026-08-06T15:08:15.335191+00:00",
+      "last_data": "2026-08-06T18:38:23.617542+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-06T15:09:37.128652+00:00",
-      "last_data_count": 5,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_data": "2026-08-06T18:39:54.632502+00:00",
+      "last_data_count": 15,
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (11d ago)",
-      "last_error_ts": "2026-08-06T15:08:09.623627+00:00",
+      "last_error_ts": "2026-08-06T18:38:19.896718+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-06T15:09:50.060908+00:00",
-      "last_data_count": 36,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_data": "2026-08-06T18:40:07.538156+00:00",
+      "last_data_count": 38,
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "research": {
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-06T15:09:02.341407+00:00",
+      "last_data": "2026-08-06T18:39:24.316497+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "spark": {
       "last_data": "2026-08-06T06:09:10.678404+00:00",
@@ -15454,37 +15495,37 @@
       "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "spending": {
-      "empty_runs": 22,
+      "empty_runs": 23,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-06T17:42:24.204873+00:00",
+      "last_data": "2026-08-06T18:38:21.987070+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-06T17:42:22.966463+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "uv": {
-      "last_data": "2026-08-06T15:10:15.475645+00:00",
+      "last_data": "2026-08-06T18:40:33.006647+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "weather": {
-      "last_data": "2026-08-06T15:09:36.607575+00:00",
+      "last_data": "2026-08-06T18:39:54.290401+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-06T15:09:57.401178+00:00",
+      "last_data": "2026-08-06T18:40:27.129404+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-06T15:08:09.623627+00:00"
+      "last_ok": "2026-08-06T18:38:19.896718+00:00"
     }
   },
   "twitch_live": [
@@ -15494,7 +15535,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165373"
+    "last_full_window": "165374"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15522,6 +15563,7 @@
     "2026-08-06|05:30"
   ],
   "weather_seen_ids": [
+    "29d813b35e623f9c",
     "343e068eb9e5a521",
     "ad80a2a5f18eeb44",
     "c75e5cc193c51f8f",
@@ -15720,8 +15762,7 @@
     "515305adaae01e6a",
     "21ce453627b94eb7",
     "228bf2197c756060",
-    "23a0989662847ef2",
-    "461f2e172db0b186"
+    "23a0989662847ef2"
   ],
   "wikiquote_last_category": "writers",
   "wikiquote_last_sent": "2026-07-14T4",
