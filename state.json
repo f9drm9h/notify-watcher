@@ -615,18 +615,6 @@
     {
       "action": "digest",
       "detail": "",
-      "id": "cd8675c1659cf2c6",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Russia stresses long-term nature of nuclear cooperation with China",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.850448+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/russia-stresses-longterm-nature-nuclear-cooperation-with-china"
-    },
-    {
-      "action": "digest",
-      "detail": "",
       "id": "f10ee9027e147b25",
       "score": 35,
       "severity": "moderate",
@@ -12611,6 +12599,18 @@
       "topic": "habits",
       "ts": "2026-08-06T01:08:10.034811+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Wind-down time: wrap up what you're doing and ease toward bed.",
+      "id": "4e7d30b231ed2884",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-08-06T02:08:04.350941+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -14047,11 +14047,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1534382332901982319": {
-      "channel": "1515504253345726558",
-      "habit": "sleep",
-      "sent": "2026-08-05T02:07:34.494439+00:00"
-    },
     "1534495703915565128": {
       "channel": "1515504253345726558",
       "habit": "water",
@@ -14076,6 +14071,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-08-06T01:08:10.034811+00:00"
+    },
+    "1534744845795590258": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-08-06T02:08:04.350941+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-06",
@@ -14360,7 +14360,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-06T01:53:08.348903+00:00"
+    "ts": "2026-08-06T02:08:03.348108+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15401,7 +15401,8 @@
   "recap_last_week": "2026-W32",
   "reminders_sent": [],
   "sleep_slots_sent": [
-    "2026-08-05|21:00"
+    "2026-08-05|21:00",
+    "2026-08-05|22:00"
   ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
@@ -15485,9 +15486,9 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "habits": {
-      "last_data": "2026-08-06T01:53:10.696750+00:00",
+      "last_data": "2026-08-06T02:08:05.737395+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T01:53:08.348903+00:00"
+      "last_ok": "2026-08-06T02:08:03.348108+00:00"
     },
     "holidays": {
       "last_data": "2026-08-05T21:09:37.596006+00:00",
@@ -15572,9 +15573,9 @@
       "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-06T01:53:09.578645+00:00",
+      "last_data": "2026-08-06T02:08:04.350485+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-06T01:53:08.348903+00:00"
+      "last_ok": "2026-08-06T02:08:03.348108+00:00"
     },
     "uv": {
       "last_data": "2026-08-05T21:09:39.313807+00:00",
