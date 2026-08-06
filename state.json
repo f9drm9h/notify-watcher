@@ -248,6 +248,24 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 35,
+      "source": "Golden Sun",
+      "title": "Obligatory anniversary post \u2600\ufe0f",
+      "topic": "golden_sun",
+      "url": "https://www.reddit.com/r/GoldenSun/comments/1vekyrf/obligatory_anniversary_post/"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Earthquakes",
+      "title": "M3.1 - 72 km NW of San Antonio, Puerto Rico (~234 km away)",
+      "topic": "quakes",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527658"
     }
   ],
   "digest_last_sent": "2026-08-05",
@@ -612,54 +630,6 @@
     "61a327d54598e35c"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "f10ee9027e147b25",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "In pictures: Demolition of Stade reactor building progresses",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.850776+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/in-pictures-demolition-of-stade-reactor-building-progresses"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "32e8f475643a8b14",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Fusion industry raised USD4.5 billion in past year, report says",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.851069+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/fusion-industry-raised-usd45-billion-over-past-year-report-says"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "264f78ad42aaebfd",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-07-25T05:16:14.027147+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "USD/DOP moved from 58.55 to 58.19 (-0.36, -0.61%) vs yesterday",
-      "id": "99b4cc3e1d63e552",
-      "score": 62,
-      "severity": "high",
-      "source": "FX",
-      "title": "USD/DOP today: 58.19",
-      "topic": "fx",
-      "ts": "2026-07-25T05:16:34.873193+00:00",
-      "url": ""
-    },
     {
       "action": "digest",
       "detail": "Gasolina Premium: RD$3380.07 (sin cambio)\nGasolina Regular: RD$3380.07 (sin cambio)\nGasoil Regular: RD$3380.07 (sin cambio)\nGasoil \u00d3ptimo: RD$3380.07 (sin cambio)\nKerosene: RD$3380.07 (sin cambio)\nGLP: RD$3380.07 (sin cambio)",
@@ -12611,6 +12581,54 @@
       "topic": "habits",
       "ts": "2026-08-06T02:08:04.350941+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "45a7166c0889d42f",
+      "score": 35,
+      "severity": "moderate",
+      "source": "Golden Sun",
+      "title": "Obligatory anniversary post \u2600\ufe0f",
+      "topic": "golden_sun",
+      "ts": "2026-08-06T03:08:25.922763+00:00",
+      "url": "https://www.reddit.com/r/GoldenSun/comments/1vekyrf/obligatory_anniversary_post/"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "e6ebe62e568a385c",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.1 - 72 km NW of San Antonio, Puerto Rico (~234 km away)",
+      "topic": "quakes",
+      "ts": "2026-08-06T03:09:42.130640+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527658"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 6:00 PM - max 55deg, NW to SE. Look up!",
+      "id": "e0e376f400623d6f",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-08-06T03:09:44.268802+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "outages \u2014 down 3d 12h (since 2026-08-02 15:07 UTC), reminder #6; last error: EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (10d ago)",
+      "id": "3b52d9527dbc28bc",
+      "score": 72,
+      "severity": "critical",
+      "source": "Watchdog",
+      "title": "Watchdog: 'outages' is STILL failing (3d 12h)",
+      "topic": "watchdog",
+      "ts": "2026-08-06T03:09:51.122309+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -12853,7 +12871,7 @@
     "date": "2026-08-05",
     "rate": 58.157921
   },
-  "fx_last_rate": 58.157921,
+  "fx_last_rate": 58.301035,
   "fx_last_zone": "within",
   "fx_week_baseline": {
     "rate": 58.130879,
@@ -13176,6 +13194,7 @@
   "games_week_last": "2026-W32",
   "golden_sun_seen": {
     "Golden Sun": [
+      "723cfc02ddebcfd8",
       "4864776a3bbfab59",
       "f21f1c1f57397ccf",
       "c27c806db346b974",
@@ -14103,6 +14122,7 @@
     }
   },
   "iss_seen_passes": [
+    "fe3eb8ea17d54cd2",
     "80a14298860564e9",
     "e09ab28cd163a459",
     "3aab0407327d07c8",
@@ -14201,8 +14221,7 @@
     "7643a7cd6a1ecdc6",
     "368cf15a03bd815b",
     "aba184aa7a89772c",
-    "0617aa1ba668e172",
-    "701fc37852950706"
+    "0617aa1ba668e172"
   ],
   "itsc_sent_ids": [
     "3b16a484ca234724",
@@ -14358,9 +14377,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-06T02:53:10.002867+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-06T03:08:18.867751+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15267,6 +15286,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "ede8d3684c4a61b8",
     "2dc0beb222e26285",
     "9a7a832345a09d11",
     "54563cf073e26687",
@@ -15415,14 +15435,14 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-06T00:09:22.580898+00:00",
+      "last_data": "2026-08-06T03:09:42.634868+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-06T00:09:23.952384+00:00",
+      "last_data": "2026-08-06T03:09:45.699225+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "apod": {
       "last_data": "2026-08-05T21:09:40.194235+00:00",
@@ -15430,26 +15450,26 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "deals": {
-      "last_data": "2026-08-06T00:08:58.499880+00:00",
+      "last_data": "2026-08-06T03:09:12.413904+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "energy": {
-      "last_data": "2026-08-06T00:09:08.273744+00:00",
+      "last_data": "2026-08-06T03:09:24.314707+00:00",
       "last_data_count": 60,
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-05T12:09:27.738780+00:00",
@@ -15457,9 +15477,9 @@
       "last_ok": "2026-08-05T12:08:07.559751+00:00"
     },
     "fda": {
-      "last_data": "2026-08-06T00:08:59.105925+00:00",
+      "last_data": "2026-08-06T03:09:13.016477+00:00",
       "last_data_count": 14,
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "fuel": {
       "last_data": "2026-08-05T21:09:28.419362+00:00",
@@ -15467,18 +15487,18 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "fx": {
-      "last_data": "2026-08-06T00:09:22.662109+00:00",
+      "last_data": "2026-08-06T03:09:42.783103+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-06T00:08:18.280588+00:00",
+      "last_data": "2026-08-06T03:08:25.922639+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "groceries": {
       "last_data": "2026-08-05T21:09:02.292252+00:00",
@@ -15486,9 +15506,9 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "habits": {
-      "last_data": "2026-08-06T02:53:12.185365+00:00",
+      "last_data": "2026-08-06T03:09:47.983340+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T02:53:10.002867+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "holidays": {
       "last_data": "2026-08-05T21:09:37.596006+00:00",
@@ -15496,9 +15516,9 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "iss": {
-      "last_data": "2026-08-06T00:09:23.189926+00:00",
+      "last_data": "2026-08-06T03:09:44.268633+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "itsc": {
       "last_data": "2026-08-05T21:09:38.644106+00:00",
@@ -15506,9 +15526,9 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "launches": {
-      "last_data": "2026-08-06T00:09:22.754680+00:00",
+      "last_data": "2026-08-06T03:09:43.564818+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "learn": {
       "last_data": "2026-08-05T12:09:22.043554+00:00",
@@ -15516,7 +15536,7 @@
       "last_ok": "2026-08-05T12:08:07.559751+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "marine": {
       "last_data": "2026-08-05T21:09:39.976358+00:00",
@@ -15524,41 +15544,41 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "music": {
-      "last_data": "2026-08-06T00:08:16.550941+00:00",
+      "last_data": "2026-08-06T03:08:24.110423+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-06T00:09:08.722201+00:00",
+      "last_data": "2026-08-06T03:09:25.003327+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (10d ago)",
-      "last_error_ts": "2026-08-06T00:08:12.495722+00:00",
+      "last_error_ts": "2026-08-06T03:08:18.867751+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-06T00:09:22.197465+00:00",
+      "last_data": "2026-08-06T03:09:42.130394+00:00",
       "last_data_count": 50,
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "research": {
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-06T00:08:53.114667+00:00",
+      "last_data": "2026-08-06T03:09:07.212223+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "spark": {
       "last_data": "2026-08-05T06:09:45.365513+00:00",
@@ -15566,16 +15586,16 @@
       "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "spending": {
-      "empty_runs": 17,
+      "empty_runs": 18,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-06T02:53:11.270011+00:00",
+      "last_data": "2026-08-06T03:08:21.951439+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-06T02:53:10.002867+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "uv": {
       "last_data": "2026-08-05T21:09:39.313807+00:00",
@@ -15583,20 +15603,20 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "weather": {
-      "last_data": "2026-08-06T00:09:08.407304+00:00",
+      "last_data": "2026-08-06T03:09:24.545169+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-06T00:09:24.907045+00:00",
-      "last_data_count": 90,
-      "last_ok": "2026-08-06T00:08:12.495722+00:00"
+      "last_data": "2026-08-06T03:09:46.733604+00:00",
+      "last_data_count": 75,
+      "last_ok": "2026-08-06T03:08:18.867751+00:00"
     }
   },
   "twitch_live": [],
@@ -15604,7 +15624,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165368"
+    "last_full_window": "165369"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15617,8 +15637,8 @@
   "watchdog_outages": {
     "outages": {
       "alerted": "2026-08-02T17:18:45.308745+00:00",
-      "last_alert": "2026-08-05T12:09:38.183946+00:00",
-      "reminders": 5,
+      "last_alert": "2026-08-06T03:09:51.122172+00:00",
+      "reminders": 6,
       "since": "2026-08-02T17:18:45.308745+00:00"
     }
   },
