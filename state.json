@@ -239,6 +239,15 @@
       "title": "M3.1 - 63 km NW of San Antonio, Puerto Rico (~241 km away)",
       "topic": "quakes",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527638"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-08-05",
@@ -603,42 +612,6 @@
     "61a327d54598e35c"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "60190a9e2428f72f",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Rosatom says projects for 18 nuclear units being implemented",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.849274+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/rosatom-says-projects-for-18-nuclear-units-being-implemented"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "d1ec5bbcd6263aad",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Global nuclear M&A deals 'double to USD7 billion'",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.849585+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/global-nuclear-ma-deals-double-to-usd7-billion"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "387ed3da8eedf047",
-      "score": 35,
-      "severity": "moderate",
-      "source": "World Nuclear News",
-      "title": "Jacobs to assist in planning of UK SMR projects",
-      "topic": "energy",
-      "ts": "2026-07-25T05:16:13.849866+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/jacobs-to-assist-in-planning-of-uk-smr-projects"
-    },
     {
       "action": "digest",
       "detail": "",
@@ -12602,6 +12575,42 @@
       "topic": "habits",
       "ts": "2026-08-05T22:08:04.843847+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "c55139e89e077823",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-06T00:09:08.407706+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 6:00 PM - max 54deg, NW to SE. Look up!",
+      "id": "b40d8147a5b5ad7e",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-08-06T00:09:23.190150+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Brush twice daily and floss once to protect your gums and teeth. (Source: MedlinePlus)",
+      "id": "6180df67cda8cfc0",
+      "score": 60,
+      "severity": "low",
+      "source": "Health",
+      "title": "Health tip",
+      "topic": "spark",
+      "ts": "2026-08-06T00:09:26.486463+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -14069,7 +14078,7 @@
       "sent": "2026-08-05T22:08:04.843847+00:00"
     }
   },
-  "health_tip_last_sent": "2026-08-05",
+  "health_tip_last_sent": "2026-08-06",
   "holidays_sent": [],
   "ignored": {
     "4071c13d0b9dc18b": {
@@ -14094,6 +14103,7 @@
     }
   },
   "iss_seen_passes": [
+    "80a14298860564e9",
     "e09ab28cd163a459",
     "3aab0407327d07c8",
     "4f06f9cf939f06de",
@@ -14192,8 +14202,7 @@
     "368cf15a03bd815b",
     "aba184aa7a89772c",
     "0617aa1ba668e172",
-    "701fc37852950706",
-    "00b1c446e37d1bf2"
+    "701fc37852950706"
   ],
   "itsc_sent_ids": [
     "3b16a484ca234724",
@@ -14349,9 +14358,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-05T23:53:07.891066+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-06T00:08:12.495722+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15398,19 +15407,19 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82682,
-  "spark_next_kind": "health",
+  "spark_last_sent": 82684,
+  "spark_next_kind": "quote",
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-05T21:09:26.608869+00:00",
+      "last_data": "2026-08-06T00:09:22.580898+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-05T21:09:30.809774+00:00",
+      "last_data": "2026-08-06T00:09:23.952384+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "apod": {
       "last_data": "2026-08-05T21:09:40.194235+00:00",
@@ -15418,26 +15427,26 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "deals": {
-      "last_data": "2026-08-05T21:08:46.291138+00:00",
+      "last_data": "2026-08-06T00:08:58.499880+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "energy": {
-      "last_data": "2026-08-05T21:09:12.986756+00:00",
+      "last_data": "2026-08-06T00:09:08.273744+00:00",
       "last_data_count": 60,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-05T12:09:27.738780+00:00",
@@ -15445,9 +15454,9 @@
       "last_ok": "2026-08-05T12:08:07.559751+00:00"
     },
     "fda": {
-      "last_data": "2026-08-05T21:09:02.558214+00:00",
+      "last_data": "2026-08-06T00:08:59.105925+00:00",
       "last_data_count": 14,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "fuel": {
       "last_data": "2026-08-05T21:09:28.419362+00:00",
@@ -15455,18 +15464,18 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "fx": {
-      "last_data": "2026-08-05T21:09:26.719395+00:00",
+      "last_data": "2026-08-06T00:09:22.662109+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-05T21:08:23.555223+00:00",
+      "last_data": "2026-08-06T00:08:18.280588+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "groceries": {
       "last_data": "2026-08-05T21:09:02.292252+00:00",
@@ -15474,9 +15483,9 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "habits": {
-      "last_data": "2026-08-05T23:53:10.362803+00:00",
+      "last_data": "2026-08-06T00:09:25.957332+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-05T23:53:07.891066+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "holidays": {
       "last_data": "2026-08-05T21:09:37.596006+00:00",
@@ -15484,9 +15493,9 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "iss": {
-      "last_data": "2026-08-05T21:09:30.282134+00:00",
+      "last_data": "2026-08-06T00:09:23.189926+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "itsc": {
       "last_data": "2026-08-05T21:09:38.644106+00:00",
@@ -15494,9 +15503,9 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "launches": {
-      "last_data": "2026-08-05T21:09:29.583320+00:00",
+      "last_data": "2026-08-06T00:09:22.754680+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "learn": {
       "last_data": "2026-08-05T12:09:22.043554+00:00",
@@ -15504,7 +15513,7 @@
       "last_ok": "2026-08-05T12:08:07.559751+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "marine": {
       "last_data": "2026-08-05T21:09:39.976358+00:00",
@@ -15512,41 +15521,41 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "music": {
-      "last_data": "2026-08-05T21:08:20.347445+00:00",
+      "last_data": "2026-08-06T00:08:16.550941+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-05T21:09:13.566367+00:00",
+      "last_data": "2026-08-06T00:09:08.722201+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (10d ago)",
-      "last_error_ts": "2026-08-05T21:08:14.451183+00:00",
+      "last_error_ts": "2026-08-06T00:08:12.495722+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-05T21:09:25.974298+00:00",
-      "last_data_count": 46,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_data": "2026-08-06T00:09:22.197465+00:00",
+      "last_data_count": 50,
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "research": {
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-05T21:08:42.136708+00:00",
+      "last_data": "2026-08-06T00:08:53.114667+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "spark": {
       "last_data": "2026-08-05T06:09:45.365513+00:00",
@@ -15554,16 +15563,16 @@
       "last_ok": "2026-08-05T06:08:23.246110+00:00"
     },
     "spending": {
-      "empty_runs": 16,
+      "empty_runs": 17,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-05T23:53:09.347402+00:00",
+      "last_data": "2026-08-06T00:08:14.745551+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-05T23:53:07.891066+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "uv": {
       "last_data": "2026-08-05T21:09:39.313807+00:00",
@@ -15571,20 +15580,20 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "weather": {
-      "last_data": "2026-08-05T21:09:13.099612+00:00",
+      "last_data": "2026-08-06T00:09:08.407304+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-05T21:09:31.982798+00:00",
+      "last_data": "2026-08-06T00:09:24.907045+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T00:08:12.495722+00:00"
     }
   },
   "twitch_live": [],
@@ -15592,7 +15601,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165367"
+    "last_full_window": "165368"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15614,6 +15623,7 @@
     "2026-08-05|05:30"
   ],
   "weather_seen_ids": [
+    "c75e5cc193c51f8f",
     "41769c51a837e54c",
     "8deee171e82af7f2",
     "a766802ff06e1caa",
@@ -15812,8 +15822,7 @@
     "23a0989662847ef2",
     "461f2e172db0b186",
     "5a93f724a86804f7",
-    "8ab3f3ef77e2624c",
-    "51f4cc6fcf97d49f"
+    "8ab3f3ef77e2624c"
   ],
   "wikiquote_last_category": "writers",
   "wikiquote_last_sent": "2026-07-14T4",
