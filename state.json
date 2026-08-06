@@ -460,18 +460,6 @@
     {
       "action": "drop",
       "detail": "",
-      "id": "9b83e8b445bd16a5",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman Part II\u2019: When Does the Sequel Come Out? - Esquire",
-      "topic": "movies",
-      "ts": "2026-07-25T09:08:28.672439+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNeDRPY1RLX3NXbmlkV2dlQU56WVpJOGxkcEI4N3BnQnhwQy1rTm5pN05lWm5GZF96OGoyYWNMVVhUMkhuaExCbU8xd3dEVnBjQThDTDFpV0V1UnFWSTlnUkZtNldDV0ZkYUN0UER2Wk5lelQwTEZOb1A2b21XdElYR0tLSUMtU0NDWFZjbm52Zml6S3B2cVZ6cDZn?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
       "id": "96d6435914ec8ac5",
       "score": 28,
       "severity": "moderate",
@@ -12456,6 +12444,18 @@
       "topic": "watchdog",
       "ts": "2026-08-06T15:10:27.686528+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - New Patch Terry/Luke Gaming + 1v1Me !wait",
+      "id": "cfc02d4913be5799",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-08-06T17:17:52.855702+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "exercise_slots_sent": [],
@@ -14229,7 +14229,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-06T16:18:13.791497+00:00"
+    "ts": "2026-08-06T17:17:52.378014+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15374,9 +15374,9 @@
       "last_ok": "2026-08-06T15:08:09.623627+00:00"
     },
     "habits": {
-      "last_data": "2026-08-06T16:18:17.416318+00:00",
+      "last_data": "2026-08-06T17:17:55.236155+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T16:18:13.791497+00:00"
+      "last_ok": "2026-08-06T17:17:52.378014+00:00"
     },
     "holidays": {
       "last_data": "2026-08-06T15:10:13.660056+00:00",
@@ -15461,9 +15461,9 @@
       "last_ok": "2026-08-06T15:08:09.623627+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-06T16:18:16.031198+00:00",
+      "last_data": "2026-08-06T17:17:53.971427+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-06T16:18:13.791497+00:00"
+      "last_ok": "2026-08-06T17:17:52.378014+00:00"
     },
     "uv": {
       "last_data": "2026-08-06T15:10:15.475645+00:00",
@@ -15487,7 +15487,9 @@
       "last_ok": "2026-08-06T15:08:09.623627+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_bulletin_current": "2026-08",
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
