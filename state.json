@@ -639,18 +639,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "Before the turn of the 20th century, the bounty of the earth was limited by its own slow rhythms. Crops needed nitrogen, but the vast reservoir in our atmosphere, nearly 80% of the air we breathe, was stubbornly inert, locked away from the very plants that craved it. The only significant source of usable nitrogen came from guano and nitrate deposits, finite reserves whose depletion loomed large as the global population steadily climbed. Famines were not just a threat, but a cyclical reality, and the spectre of a Malthusian catastrophe \u2014 humanity outstripping its food supply \u2014 loomed large in the minds of scientists and economists alike.\n\nIt was in this desperate landscape that a German chemist, Fritz Haber, wrestled with the atmospheric giant. In 1909, he achieved a breakthrough: reacting nitrogen and hydrogen under immense pressure and high temperatures, using a catalyst, to create ammonia. His discovery, however, was a small-scale laboratory triumph. It took another German, Carl Bosch, an engineer at BASF, to scale Haber's delicate process into an industrial titan. Bosch\u2019s ingenuity brought the Haber-Bosch process to life, transforming a scientific marvel into a practical, continuous method for producing synthetic ammonia, the foundational ingredient for nitrogen fertilizers.\n\nThe impact of this chemical alchemy on human civilization is almost immeasurable. The Haber-Bosch process, by unlocking the atmospheric nitrogen, effectively put an end to the natural limitations on food production. Synthetic fertilizers derived from this process supercharged agricultural yields, enabling a dramatic increase in crop output across the globe.",
-      "id": "fe08f98a2d29e3ca",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The Haber-Bosch process and synthetic fertilizer",
-      "topic": "spark",
-      "ts": "2026-07-25T05:16:42.321671+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
       "detail": "Headline: \"Oklo cleared to start up test reactor\"\nWhy it matters: The Oklo test reactor could advance safe, clean nuclear energy through novel fission technology.\n(World Nuclear News \u00b7 tap to read)",
       "id": "a4195b667e4d9f07",
       "score": 60,
@@ -12636,6 +12624,18 @@
       "topic": "watchdog",
       "ts": "2026-08-06T09:09:37.128555+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Morning hydration check: one big glass of water to wake up your system.",
+      "id": "d3db028adea8d7a0",
+      "score": 0,
+      "severity": "low",
+      "source": "water",
+      "title": "Water - start the day hydrated",
+      "topic": "habits",
+      "ts": "2026-08-06T09:38:22.434380+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -14071,11 +14071,6 @@
     }
   ],
   "habit_pending_acks": {
-    "1534495703915565128": {
-      "channel": "1515504253345726558",
-      "habit": "water",
-      "sent": "2026-08-05T09:38:04.425032+00:00"
-    },
     "1534684449273286899": {
       "channel": "1515504253345726558",
       "habit": "exercise",
@@ -14100,6 +14095,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-08-06T02:08:04.350941+00:00"
+    },
+    "1534858169702944841": {
+      "channel": "1515504253345726558",
+      "habit": "water",
+      "sent": "2026-08-06T09:38:22.434380+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-06",
@@ -14384,7 +14384,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-06T09:23:09.072566+00:00"
+    "ts": "2026-08-06T09:38:20.410739+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15506,9 +15506,9 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "habits": {
-      "last_data": "2026-08-06T09:23:13.131365+00:00",
+      "last_data": "2026-08-06T09:38:24.431507+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T09:23:09.072566+00:00"
+      "last_ok": "2026-08-06T09:38:20.410739+00:00"
     },
     "holidays": {
       "last_data": "2026-08-05T21:09:37.596006+00:00",
@@ -15593,9 +15593,9 @@
       "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-06T09:23:11.356940+00:00",
+      "last_data": "2026-08-06T09:38:22.433927+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-06T09:23:09.072566+00:00"
+      "last_ok": "2026-08-06T09:38:20.410739+00:00"
     },
     "uv": {
       "last_data": "2026-08-05T21:09:39.313807+00:00",
@@ -15642,7 +15642,9 @@
       "since": "2026-08-02T17:18:45.308745+00:00"
     }
   },
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-08-06|05:30"
+  ],
   "weather_seen_ids": [
     "ad80a2a5f18eeb44",
     "c75e5cc193c51f8f",
