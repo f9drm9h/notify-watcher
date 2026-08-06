@@ -69,7 +69,7 @@
     "29db49f64ce68661",
     "a8b1aff056453d2f"
   ],
-  "apod_last_sent": "2026-08-05",
+  "apod_last_sent": "2026-08-06",
   "astronomy_sent": [
     "2026-06-14|New moon tonight - d",
     "2026-06-21|June solstice today",
@@ -93,194 +93,13 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [
-    {
-      "detail": "DOP 64.95 (was DOP 79.95, -19%)",
-      "preserve_detail": false,
-      "score": 45,
-      "source": "Nacional",
-      "title": "Nacional deal: Cerveza Presidente Regular 8 Onz",
-      "topic": "groceries",
-      "url": "https://supermercadosnacional.com/cerveza-presidente-regular-8-onz-2199620"
-    },
-    {
-      "detail": "DOP 64.95 (was DOP 79.95, -19%)",
-      "preserve_detail": false,
-      "score": 45,
-      "source": "Nacional",
-      "title": "Nacional deal: Cerveza Presidente Light 8 Onz",
-      "topic": "groceries",
-      "url": "https://supermercadosnacional.com/cerveza-presidente-light-8-onz-2199619"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "World Nuclear News",
-      "title": "KHNP, AboitizPower to cooperate on nuclear energy",
-      "topic": "energy",
-      "url": "https://www.world-nuclear-news.org/articles/khnp-aboitizpower-to-cooperate-on-nuclear-energy"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "DOP 471.95 (was DOP 554.95, -15%)",
-      "preserve_detail": false,
-      "score": 28,
-      "source": "Nacional",
-      "title": "Nacional deal: Ambientador Aerosol Lysol Light Breeze 10oz",
-      "topic": "groceries",
-      "url": "https://supermercadosnacional.com/ofertas/ambientador-aerosol-lysol-light-breeze-10oz-2240774"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Foundayo",
-      "title": "FDA updates approval for Foundayo (Orforglipron Calcium) (NDA220934)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220934"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Orenitram",
-      "title": "FDA updates approval for Orenitram (Treprostinil Diolamine) (NDA203496)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=203496"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Yorvipath",
-      "title": "FDA updates approval for Yorvipath (Palopegteriparatide) (NDA216490)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=216490"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Keflex",
-      "title": "FDA updates approval for Keflex (Cephalexin) (NDA050405)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=050405"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Tymlos",
-      "title": "FDA updates approval for Tymlos (Abaloparatide) (NDA208743)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=208743"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Teriparatide",
-      "title": "FDA updates approval for Teriparatide (NDA218771)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=218771"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Forteo",
-      "title": "FDA updates approval for Forteo (Teriparatide) (NDA021318)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=021318"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Bonsity",
-      "title": "FDA updates approval for Bonsity (Teriparatide) (NDA211939)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=211939"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Argatroban In Sodium Chloride",
-      "title": "FDA updates approval for Argatroban In Sodium Chloride (Argatroban) (NDA212035)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=212035"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Keytruda Qlex",
-      "title": "FDA updates approval for Keytruda Qlex (Pembrolizumab, Berahyaluronidase Alfa-Pmph) (BLA761467)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=761467"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.1 - 63 km NW of San Antonio, Puerto Rico (~241 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527638"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "Golden Sun",
-      "title": "Obligatory anniversary post \u2600\ufe0f",
-      "topic": "golden_sun",
-      "url": "https://www.reddit.com/r/GoldenSun/comments/1vekyrf/obligatory_anniversary_post/"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.1 - 72 km NW of San Antonio, Puerto Rico (~234 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527658"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    }
-  ],
-  "digest_last_sent": "2026-08-05",
+  "digest_buffer": [],
+  "digest_last_sent": "2026-08-06",
   "discord_control": {
     "last_id": "1530929203594137641"
   },
   "energy_learn_last_news": "2026-08-05",
-  "energy_learn_last_sent": "2026-08-05",
+  "energy_learn_last_sent": "2026-08-06",
   "energy_learn_seen": {
     "facts": [
       "baseload-vs-peaking",
@@ -331,10 +150,13 @@
       "private-fusion-startups",
       "nif-fusion-ignition",
       "vogtle-new-reactors",
-      "heat-pumps"
+      "heat-pumps",
+      "bhadla-solar-park"
     ]
   },
   "energy_seen_ids": [
+    "cb90fca254cabeb8",
+    "e58f14fa3f2ffe70",
     "d9960ef04bcc81ff",
     "cdec0b081a31f48d",
     "6e25598cd7fcdd71",
@@ -632,191 +454,9 @@
     "12c57da9193aec03",
     "a96ef8353f84cf23",
     "ca7cbc45dc42d9a8",
-    "056ef545b00e91cd",
-    "380b8fae794e3209",
-    "61a327d54598e35c"
+    "056ef545b00e91cd"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "Headline: \"Oklo cleared to start up test reactor\"\nWhy it matters: The Oklo test reactor could advance safe, clean nuclear energy through novel fission technology.\n(World Nuclear News \u00b7 tap to read)",
-      "id": "a4195b667e4d9f07",
-      "score": 60,
-      "severity": "low",
-      "source": "Energy learning",
-      "title": "\u26a1 Energy now",
-      "topic": "energy_learn",
-      "ts": "2026-07-25T05:16:43.006150+00:00",
-      "url": "https://www.world-nuclear-news.org/articles/oklo-cleared-to-start-up-test-reactor"
-    },
-    {
-      "action": "push",
-      "detail": "Rent - due 2026-07-30 (in 5 days)",
-      "id": "72c2ca911a57df54",
-      "score": 62,
-      "severity": "moderate",
-      "source": "Bills",
-      "title": "Bill due soon",
-      "topic": "bills",
-      "ts": "2026-07-25T05:16:43.187533+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "The Seas of Tranquility and Serenity are calm today. They're calm most every day though, since they are actually lunar maria, ancient lava flows filling in large impact basins on the Moon. Also known by Latin names Mare Tranquillitatis (right) and Mare Serenitatis, the smooth...\n(c) Tranquility",
-      "id": "5f4f5a37fd5d333e",
-      "score": 60,
-      "severity": "low",
-      "source": "NASA APOD",
-      "title": "APOD: Tranquility and Serenity",
-      "topic": "apod",
-      "ts": "2026-07-25T05:16:46.960240+00:00",
-      "url": "https://apod.nasa.gov/apod/image/2607/TranquilitySerenity2048.jpg"
-    },
-    {
-      "action": "push",
-      "detail": "spark \u2014 down since 2026-07-20 06:08 UTC; last error: knowledge story generation failed (no LLM provider answered)\nyoutube \u2014 down since 2026-07-20 12:08 UTC; last error: all 7 channel feed(s) failed; last: PabloELECTRUM: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/v\u2026",
-      "id": "fc5bef602de09895",
-      "score": 72,
-      "severity": "high",
-      "source": "Watchdog",
-      "title": "Watchdog: 2 topics have had no successful run in 48h",
-      "topic": "watchdog",
-      "ts": "2026-07-25T05:16:49.361027+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "cacf4440b856c1d0",
-      "score": 62,
-      "severity": "high",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Samsung Expands Sony Pictures\u2019 \u2018Spider-Man\u2122: Brand New Day\u2019 Collaboration with New Cinematic Spot Starring Jacob Batalon - Samsung Global Newsroom",
-      "topic": "movies",
-      "ts": "2026-07-25T06:08:23.759705+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxON1cxbWtxMEc1YnJjU3ZNRjY0dzloZHhIVjQ4ZVA2ZW92TWlNc3ZpN2g4ckhwdmVNalZKd01JT0c3enJ5eUxFYVpCRzB0ODcxcVB3NlJOOWJjZF9peXB4X016c250Z19nUGVENThzeFZyQmRBQ3U1Z2gwZVA0RzVmRnJTM2tXcTJVM1JROHVVQUtYNkVaQ2lLM1ZkVU1OLVNId1BNS090SlhWM1JXLUtFVEdyc1luVGxXWHdVNjZhdTNTeTA?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "",
-      "id": "e49f12b1bbbb4ddd",
-      "score": 62,
-      "severity": "high",
-      "source": "The Batman Part II",
-      "title": "THE BATMAN \u2014 PART II Delayed Again as Reeves Reveals First Footage of Pattinson's Return - Movieguide",
-      "topic": "movies",
-      "ts": "2026-07-25T06:08:25.635717+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNbDRQNElJRVItSS1JTkZWX1ZQODdoYXh5NTJBc2t5c0J4Uy1YSTFzQjhhamVickRxdUtJS1RPTjI3c3kwWWpldDJibGpnZjRUOXJBUFc1amoxb0NjZ0x1QWc5UDhyR2d1czhoNVVyWE5fQmN0bl8zNktxTnlVX3VNZHZZa2w?oc=5"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "dd7da8af52ca158c",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-07-25T06:10:00.639267+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "Visible pass at 10:42 PM - max 51deg, NW to SE. Look up!",
-      "id": "6d7aa1baa682227a",
-      "score": 62,
-      "severity": "low",
-      "source": "ISS",
-      "title": "ISS pass overhead",
-      "topic": "iss",
-      "ts": "2026-07-25T06:10:24.530969+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "For heart and metabolic health, consume less than 10% of daily calories from added sugars. (Source: WHO)",
-      "id": "930d00d3356c0a89",
-      "score": 60,
-      "severity": "low",
-      "source": "Health",
-      "title": "Health tip",
-      "topic": "spark",
-      "ts": "2026-07-25T06:10:27.014014+00:00",
-      "url": ""
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "484cb9305564c81f",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Confirms Little Change to THE BATMAN: PART II Costume - GeekTyrant",
-      "topic": "movies",
-      "ts": "2026-07-25T09:08:28.664960+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQN1czc0UtWGc0cXBvOThHbHJBb3FCUnloVkFMMHNIWWxzNmRVYURwVl83WS1fOS04amhJYmhid2RGc2RmM1ZPZldGV2tRcWYxSmZhMTFfQTVGaWI0TEVQREU5QkFtcW15cHlxTk5YSExHaEFhT3UtcTl1b3FyQl9HSDNQN2Z6b0VlSS1IT0pSRTRnNmFJ?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "70f50118d10a2217",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "First teaser for The Batman Part II announces another delay to 2028 - Flickering Myth",
-      "topic": "movies",
-      "ts": "2026-07-25T09:08:28.665859+00:00",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOOVdpc245bGNYYVhnQkMzWnpsZVlJY1hXalN0clpHeUdDeTNScE9wWVZzS1dmZFZEcUh5Y051V3FjSE5hN2RPWkdjT3dWQnZXV3pQMi1oRmVhMGhUc1dxWUNLNVNUQnd1OE1RZURqUTRRdmJhS0YxQi1EcEwyMGpnbnJoNWRCOUVUZUl3UGpOZ1JDOGxaa0xvMkh5RkdVSGVh?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "c7f37bd6c08047cb",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II Delayed to 2028: Matt Reeves Shares First Look at Robert Pattinson - SYFY",
-      "topic": "movies",
-      "ts": "2026-07-25T09:08:28.666569+00:00",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWU5wMFZjOWFlTW9GZXk1SmdYUmdaWmNiekZETGVNMGtQT2VteUtWWDcydnlUenhDQ0V0b2lqWEJ3ZmhUUDhxRWdhLTlEcFdfZkkyemNVVWp2QnRRNFc4dkhJQXpyNjBFRDFCbmZuY21fV2dOLTZFTnJ5c2VyS2o4cWVtWldCWVV5MUZYR0pOSTdCQzRxekRaLUxLRTRvUnRHSkREOTgyVnRxczNUb3VwbE5n?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "ce3341b1cd280c31",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II Delayed To 2028 As Matt Reeves Shares First Look at Robert Pattinson - Yahoo",
-      "topic": "movies",
-      "ts": "2026-07-25T09:08:28.667312+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNWHVZLTE1TTN2bVFSUUZaX2gwUk9ZQW56RmdWaV83bjlRdURKOGdQRnQxX3U3VUpGRWNCcXAycTZyY28xZ3NvaUpBNWZ5Ym1zZTFmSk1HQk83WGZ6RVJfVFp3VGp1Xy1pT2pZVlNnOGpYaTZIUWJLS1dvWHlqQllzSkpEWC1Nd05fNV92M2MzaEUtaUZjcHQ5QnpB?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "9e822d73286de407",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman 2 Delayed To 2028 - IMDb",
-      "topic": "movies",
-      "ts": "2026-07-25T09:08:28.668022+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9sYlhJMTNSNGpfNkwzNW1udEt1Zl9NUHVBTWpxLVNCZTE3NXFzZUxaeEdzV2xkSmVmU1hzRU5JOHVQV3VXTUQzYnNnQXdIazNkNjVvdk9MOElGTG00aU1QZ1dNWS10UG8?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "a0da6e11ddf98644",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman Part II\u2019 Delay Comes with a Silver Lining for J.J. Abrams\u2019 \u2018The Great Beyond\u2019 - IMDb",
-      "topic": "movies",
-      "ts": "2026-07-25T09:08:28.668802+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE43Ym0zaXRlQl9uUjg4RkNuMVRWZDkzRzVmSmVjUUExbU03YW95X3pRNEhsM3pZVE9UUlVSV05QU2ExSTI5aEFoZ2RpT214YmJSZUFyc2I4bkFuanZZVDB2Ukt3?oc=5"
-    },
     {
       "action": "drop",
       "detail": "",
@@ -12636,6 +12276,186 @@
       "topic": "habits",
       "ts": "2026-08-06T09:38:22.434380+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Secrets (feat. the Weeknd) - Jr. Hi\n(because you like The Weeknd)",
+      "id": "e0c7e790c69e276d",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-06T12:08:19.082810+00:00",
+      "url": "https://www.deezer.com/track/107014956"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 5,295.00 (was DOP 10,995.00, -52%)",
+      "id": "81261c619bbddcda",
+      "score": 64,
+      "severity": "high",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Bocina Smt Bluetooth 8 Pulgadas 208Led",
+      "topic": "groceries",
+      "ts": "2026-08-06T12:09:26.613150+00:00",
+      "url": "https://www.sirena.do/smt-bocina-bluetooth-8p-208led-2059833/p"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 9,995.00 (was DOP 15,995.00, -38%)",
+      "id": "66d395787ebcbd3e",
+      "score": 64,
+      "severity": "high",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Bocina Smt Bluetooth 10 Pulgadas 210Led",
+      "topic": "groceries",
+      "ts": "2026-08-06T12:09:26.872338+00:00",
+      "url": "https://www.sirena.do/smt-bocina-bluetooth-10p-210led-2059896/p"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 6,295.00 (was DOP 9,995.00, -37%)",
+      "id": "0ec7db0b2ee9cb31",
+      "score": 64,
+      "severity": "high",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Bocina Kocaso Bluetooth 8P Gpct4313",
+      "topic": "groceries",
+      "ts": "2026-08-06T12:09:27.157990+00:00",
+      "url": "https://www.sirena.do/kocaso-bocina-bluetooth-8p-gpct4313-2034754/p"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 1,295.00 (was DOP 1,995.00, -35%)",
+      "id": "a0add84aabfa9e4a",
+      "score": 64,
+      "severity": "high",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Bocina Argom Portatil Bboom Sp-3120Bk",
+      "topic": "groceries",
+      "ts": "2026-08-06T12:09:27.390364+00:00",
+      "url": "https://www.sirena.do/argom-bocina-portatil-bboom-sp-3120bk-2070051/p"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 1,995.00 (was DOP 2,995.00, -33%)",
+      "id": "363812e1e7ccdfbf",
+      "score": 64,
+      "severity": "high",
+      "source": "La Sirena",
+      "title": "La Sirena deal: Bocina Argom Portatil Bboom Sp-3126Bk",
+      "topic": "groceries",
+      "ts": "2026-08-06T12:09:27.607412+00:00",
+      "url": "https://www.sirena.do/argom-bocina-portatil-bboom-sp-3126bk-2070054/p"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "ba5692b3895f837e",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-06T12:09:39.776058+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "USD/DOP moved from 58.16 to 58.30 (+0.14, +0.25%) vs yesterday",
+      "id": "3e8df1f68c306a39",
+      "score": 62,
+      "severity": "high",
+      "source": "FX",
+      "title": "USD/DOP today: 58.30",
+      "topic": "fx",
+      "ts": "2026-08-06T12:09:53.239110+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 6:00 PM - max 55deg, NW to SE. Look up!",
+      "id": "fc39ad83730e70c8",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-08-06T12:09:57.243092+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "On this day\n1944: World War II: Allied forces attacked German fortifications at Saint-Malo, France, beginning the Battle of Saint-Malo (pictured).\n\nFeatured: Big Duck\nThe Big Duck is a 20-foot-tall (6.1 m) ferrocement building in the shape of a duck: a canonical example of novelty architecture. Built in 1931 in Riverhead, New York, United States, it was moved several times to various locations on eastern Long Island, ending up in Flanders in...\n\nTechnology\nUpdate your software and phone OS; most exploited vulnerabilities have a patch available when attacks occur. (Source: NIST)",
+      "id": "347d210252a3199d",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Daily learning",
+      "topic": "learn",
+      "ts": "2026-08-06T12:10:01.421445+00:00",
+      "url": "https://en.wikipedia.org/wiki/Big_Duck"
+    },
+    {
+      "action": "push",
+      "detail": "In the chilling twilight of the Cold War, a young Soviet airman, Yuri Alekseyevich Gagarin, became the unlikely herald of a new age. Chosen from a cohort of elite pilots for his calm demeanor, sharp intellect, and that winning smile, Gagarin embodied the socialist ideal. He was the everyman, the worker's son, now poised to pierce the heavens. On April 12, 1961, atop a thunderous Vostok 1 rocket at Baikonur Cosmodrome, Gagarin's voice, famously uttering \"Poyekhali!\" \u2014 \"Let's go!\" \u2014 reverberated through the world, a defiant challenge to the American space ambitions and a declaration of Soviet technological supremacy.\n\nHis journey, a single orbit lasting a mere 108 minutes, was a testament to courage and human ingenuity. From his tiny capsule, Gagarin witnessed Earth as a vibrant blue marble, a sight that transcended political divides and offered humanity its first glimpse of itself from beyond. He experienced weightlessness, marveled at the speed, and returned a global hero, his name forever etched in the annals of exploration. The sheer audacity of sending a human into the void, and bringing him back alive, ignited the collective imagination and forever altered our perception of what was possible.\n\nGagarin\u2019s flight was more than a technological triumph; it was a profound shift in human consciousness. It launched the space race into full throttle, accelerating scientific and engineering advancements at an unprecedented pace. But beyond the geopolitical contest, Gagarin\u2019s journey mattered because it expanded the boundaries of human experience, proving that we were not confined to our planet. It inspired generations to look skyward, to dream bigger, and to pursue the unknown, laying the foundational myth for all future human endeavors into the cosmos.",
+      "id": "ef6abf1fa3cb9b6f",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Yuri Gagarin, the first human in space",
+      "topic": "spark",
+      "ts": "2026-08-06T12:10:04.818989+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "What: Enormous solar parks such as Bhadla in India's Thar Desert cover tens of square kilometres with millions of panels.\nWhy it matters: Building solar in vast, sun-soaked clusters drives the cost of clean electricity to record lows.\nWhy you should care: Solar is now the cheapest electricity in history in many sunny regions, thanks to projects at this scale.\n(Source: International Energy Agency)",
+      "id": "504bf55532201378",
+      "score": 60,
+      "severity": "low",
+      "source": "Energy learning",
+      "title": "\u26a1 Today's spark \u2014 Solar parks the size of cities",
+      "topic": "energy_learn",
+      "ts": "2026-08-06T12:10:05.078608+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Ends Friday 07 August (tomorrow). Tap for the academic calendar (PDF).",
+      "id": "3ca9626b0385aaa1",
+      "score": 62,
+      "severity": "high",
+      "source": "ITSC",
+      "title": "ITSC: Reporte Programaci\u00f3n (Acad\u00e9mica -> Registro)",
+      "topic": "itsc",
+      "ts": "2026-08-06T12:10:10.615225+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/07/Calendario-academico-2026-2-actualizado-julio.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Is Friday 07 August (tomorrow). Tap for the academic calendar (PDF).",
+      "id": "9d42a33604d29d8a",
+      "score": 62,
+      "severity": "high",
+      "source": "ITSC",
+      "title": "ITSC: Fecha l\u00edmite Presentaci\u00f3n Trabajo de Grado",
+      "topic": "itsc",
+      "ts": "2026-08-06T12:10:10.839501+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/07/Calendario-academico-2026-2-actualizado-julio.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "What does the new sharpest image of our Sun show? Instability. To be clear, a certain kind of interactive process called the Kelvin-Helmholtz instability (KHI). This instability can create waves and swirls when two streams flow past each other -- in this case variable streams of...",
+      "id": "0eef091eb23f9d41",
+      "score": 60,
+      "severity": "low",
+      "source": "NASA APOD",
+      "title": "APOD: New Sharpest Image of the Sun Uncovers Instability",
+      "topic": "apod",
+      "ts": "2026-08-06T12:10:12.555299+00:00",
+      "url": "https://apod.nasa.gov/apod/image/2608/SunFlowers_NSO_1901.jpg"
     }
   ],
   "exercise_slots_sent": [],
@@ -12863,7 +12683,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
   "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-05T21:09:28.419341+00:00",
+  "fuel_last_prices_seen_at": "2026-08-06T12:09:55.118798+00:00",
   "fuel_prices": {
     "GLP": 135.2,
     "Gasoil Regular": 258.3,
@@ -12873,8 +12693,8 @@
     "Kerosene": 335.5
   },
   "fx_daily_baseline": {
-    "date": "2026-08-05",
-    "rate": 58.157921
+    "date": "2026-08-06",
+    "rate": 58.301035
   },
   "fx_last_rate": 58.301035,
   "fx_last_zone": "within",
@@ -13251,6 +13071,34 @@
       "1b7d9e5ab11b51a5"
     ],
     "La Sirena": [
+      "f071a0ea6dd37aca",
+      "11ca04c9eb43ac61",
+      "1fdeb7f8088a0bff",
+      "6d3361ec10f29281",
+      "627b4c37ef35894a",
+      "a188b9f56c4e8f62",
+      "f63cbe898c4dbe35",
+      "038d4dd1043a2513",
+      "6973fbdf548b1e8c",
+      "6dd4ee77e3ae7579",
+      "293926a4f6a9c748",
+      "9e5a8d70725fa833",
+      "57757cab0a601c4e",
+      "9f7a8979fc4d332b",
+      "e3327dc730f28e0f",
+      "72909ae6975093ca",
+      "b97570601ff064f7",
+      "e30c0116252aa7a0",
+      "35fe863f36ccb774",
+      "872e5d9e96308428",
+      "a3ff8d5513e85418",
+      "d2ffac0be12a87ac",
+      "985dee1c90b93f8b",
+      "a8828398a48b465a",
+      "bcc3901614e24552",
+      "61cef411d7ca2ed6",
+      "05449bf2e3c01072",
+      "d71a136a340812da",
       "eb831445a6557b92",
       "658e26efba04d8e0",
       "c9f0325469cb689a",
@@ -13703,6 +13551,8 @@
       "997e525f302628c6"
     ],
     "Nacional": [
+      "b3b570a7c122fc4c",
+      "b73180e25bd05d27",
       "eabecb447c8a299a",
       "82c47d148c7aca44",
       "116068807729b2e3",
@@ -14127,6 +13977,7 @@
     }
   },
   "iss_seen_passes": [
+    "e0cc9a83778e8b07",
     "2037c03944b90055",
     "2506080de8630600",
     "fe3eb8ea17d54cd2",
@@ -14225,10 +14076,11 @@
     "cfbcd32193b51486",
     "4d42a4cba83b548d",
     "d24790f2d29fdce2",
-    "7643a7cd6a1ecdc6",
-    "368cf15a03bd815b"
+    "7643a7cd6a1ecdc6"
   ],
   "itsc_sent_ids": [
+    "884c2c592f066bf0",
+    "b62f93625607505e",
     "3b16a484ca234724",
     "b99d480e18dbbb02",
     "4a2e513ff6a26628",
@@ -14298,7 +14150,7 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "ancient_civilizations",
+  "knowledge_last_category": "astronomy",
   "knowledge_last_sent": "2026-07-14T4",
   "knowledge_seen": {
     "ancient_civilizations:Hatshepsut, the woman who became pharaoh": "2026-08-05",
@@ -14316,6 +14168,7 @@
     "astronomy:The Tunguska event of 1908": "2026-07-08",
     "astronomy:Tycho's supernova of 1572": "2026-07-14",
     "astronomy:Vera Rubin and the evidence for dark matter": "2026-07-11",
+    "astronomy:Yuri Gagarin, the first human in space": "2026-08-06",
     "early_humans:Homo habilis and the first stone tools": "2026-07-09",
     "early_humans:The Blombos Cave engravings": "2026-07-28",
     "early_humans:The dawn of metallurgy in the Bronze Age": "2026-07-08",
@@ -14323,11 +14176,9 @@
     "early_humans:The domestication of wheat and barley": "2026-07-13",
     "early_humans:The first deliberate burials and ritual": "2026-07-10",
     "early_humans:The origins of human language": "2026-07-12",
-    "early_humans:\u00d6tzi the Iceman": "2026-07-07",
     "math_history:Archimedes and the 'Eureka' moment": "2026-07-09",
     "math_history:Cardano and the solution of the cubic equation": "2026-07-15",
     "math_history:Ramanujan and Hardy's improbable collaboration": "2026-07-29",
-    "math_history:The Pythagorean theorem": "2026-07-07",
     "math_history:The Seven Bridges of K\u00f6nigsberg": "2026-07-13",
     "math_history:The bitter calculus priority dispute": "2026-07-10",
     "math_history:The halting problem": "2026-07-08",
@@ -14336,13 +14187,11 @@
     "medicine:Ignaz Semmelweis and the fight for handwashing": "2026-07-11",
     "medicine:Joseph Lister and antiseptic surgery": "2026-07-09",
     "medicine:The Tuskegee syphilis study and research ethics": "2026-07-12",
-    "medicine:The decades-long development of mRNA vaccines": "2026-07-07",
     "medicine:The first MRI scan of a human body": "2026-07-30",
     "medicine:The global eradication of smallpox": "2026-07-16",
     "medicine:The thalidomide tragedy and drug regulation": "2026-07-08",
     "mythology:Dragons across the world's mythologies": "2026-07-11",
     "mythology:King Midas and the golden touch": "2026-07-08",
-    "mythology:Maui, the Polynesian demigod": "2026-07-07",
     "mythology:Orpheus and Eurydice in the underworld": "2026-07-12",
     "mythology:The Greek creation myth and the Titans": "2026-07-31",
     "mythology:The Maya Popol Vuh": "2026-07-13",
@@ -14354,14 +14203,12 @@
     "philosophy:John Locke and the blank slate": "2026-08-01",
     "philosophy:John Stuart Mill and utilitarianism": "2026-07-18",
     "philosophy:Schopenhauer and the world as will": "2026-07-11",
-    "philosophy:Thomas Aquinas and the marriage of faith and reason": "2026-07-07",
     "philosophy:Zeno of Citium and the founding of Stoicism": "2026-07-10",
     "science:Alfred Wegener and continental drift": "2026-08-02",
     "science:Gregor Mendel and the laws of heredity": "2026-07-08",
     "science:Lord Kelvin and the age of the Earth debate": "2026-07-19",
     "science:Louis Pasteur and germ theory": "2026-07-11",
     "science:Maxwell's equations and the unification of light": "2026-07-10",
-    "science:The discovery of the cell": "2026-07-07",
     "science:The double-slit experiment and the nature of light": "2026-07-12",
     "science:The theory of plate tectonics": "2026-07-14",
     "technology:Edison's lab and the practical light bulb": "2026-07-11",
@@ -14369,10 +14216,8 @@
     "technology:Samuel Morse and the telegraph": "2026-07-10",
     "technology:The Haber-Bosch process and synthetic fertilizer": "2026-07-25",
     "technology:The Mother of All Demos": "2026-07-09",
-    "technology:The development of the first nuclear reactors": "2026-07-07",
     "technology:The sending of the first email": "2026-08-03",
     "technology:The transistor at Bell Labs": "2026-07-14",
-    "world_history:The Battle of Stalingrad": "2026-07-07",
     "world_history:The Christmas truce of 1914": "2026-08-04",
     "world_history:The McCarthy era and the Red Scare": "2026-07-10",
     "world_history:The Russian Revolution of 1917": "2026-07-09",
@@ -14382,9 +14227,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-06T11:53:11.323659+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-06T12:08:12.457967+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14423,7 +14268,7 @@
     "9cf78ee44cb96c21",
     "7621aad01d0821be"
   ],
-  "learn_last_sent": "2026-08-05",
+  "learn_last_sent": "2026-08-06",
   "life_dashboard_last_week": "2026-W31",
   "meditate_slots_sent": [],
   "music_discovery_seen": [
@@ -14655,7 +14500,8 @@
     163,
     1048,
     3037,
-    2111
+    2111,
+    8828322
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14940,6 +14786,15 @@
       "label": "George Harrison",
       "payload": {
         "name": "George Harrison"
+      }
+    },
+    "6b96775248dbae11": {
+      "applied": null,
+      "created": "2026-08-06T12:08:19.082784+00:00",
+      "kind": "artist",
+      "label": "Jr. Hi",
+      "payload": {
+        "name": "Jr. Hi"
       }
     },
     "6c696cb5b3ffa222": {
@@ -15430,155 +15285,155 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82685,
-  "spark_next_kind": "fact",
+  "spark_last_sent": 82686,
+  "spark_next_kind": "health",
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-06T09:09:28.150752+00:00",
+      "last_data": "2026-08-06T12:09:53.170885+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-06T09:09:30.259033+00:00",
+      "last_data": "2026-08-06T12:09:58.409238+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "apod": {
-      "last_data": "2026-08-05T21:09:40.194235+00:00",
+      "last_data": "2026-08-06T12:10:12.555263+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "deals": {
-      "last_data": "2026-08-06T09:09:02.234857+00:00",
+      "last_data": "2026-08-06T12:09:10.384847+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "energy": {
-      "last_data": "2026-08-06T09:09:13.293761+00:00",
-      "last_data_count": 60,
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_data": "2026-08-06T12:09:39.661449+00:00",
+      "last_data_count": 61,
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "energy_learn": {
-      "last_data": "2026-08-05T12:09:27.738780+00:00",
+      "last_data": "2026-08-06T12:10:05.315809+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "fda": {
-      "last_data": "2026-08-06T09:09:02.574891+00:00",
+      "last_data": "2026-08-06T12:09:28.134677+00:00",
       "last_data_count": 15,
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-05T21:09:28.419362+00:00",
+      "last_data": "2026-08-06T12:09:55.118818+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "fx": {
-      "last_data": "2026-08-06T09:09:28.238572+00:00",
+      "last_data": "2026-08-06T12:09:53.238941+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-06T09:08:16.635026+00:00",
+      "last_data": "2026-08-06T12:08:20.861145+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-05T21:09:02.292252+00:00",
-      "last_data_count": 250,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_data": "2026-08-06T12:09:26.612505+00:00",
+      "last_data_count": 227,
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "habits": {
-      "last_data": "2026-08-06T11:53:14.808172+00:00",
+      "last_data": "2026-08-06T12:10:00.775079+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T11:53:11.323659+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-05T21:09:37.596006+00:00",
+      "last_data": "2026-08-06T12:10:09.678926+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "iss": {
-      "last_data": "2026-08-06T09:09:29.166132+00:00",
-      "last_data_count": 4,
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_data": "2026-08-06T12:09:57.242857+00:00",
+      "last_data_count": 3,
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-05T21:09:38.644106+00:00",
+      "last_data": "2026-08-06T12:10:10.614829+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "launches": {
-      "last_data": "2026-08-06T09:09:28.420235+00:00",
+      "last_data": "2026-08-06T12:09:56.696890+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "learn": {
-      "last_data": "2026-08-05T12:09:22.043554+00:00",
+      "last_data": "2026-08-06T12:10:00.816721+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-05T12:08:07.559751+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "marine": {
-      "last_data": "2026-08-05T21:09:39.976358+00:00",
+      "last_data": "2026-08-06T12:10:12.327781+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "music": {
-      "last_data": "2026-08-06T09:08:15.025452+00:00",
+      "last_data": "2026-08-06T12:08:18.057075+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-06T09:09:13.923475+00:00",
+      "last_data": "2026-08-06T12:09:40.239944+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (11d ago)",
-      "last_error_ts": "2026-08-06T09:08:09.380910+00:00",
+      "last_error_ts": "2026-08-06T12:08:12.457967+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-06T09:09:27.470994+00:00",
-      "last_data_count": 37,
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_data": "2026-08-06T12:09:52.541033+00:00",
+      "last_data_count": 38,
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "research": {
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-06T09:08:56.933185+00:00",
+      "last_data": "2026-08-06T12:09:05.538002+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "spark": {
       "last_data": "2026-08-06T06:09:10.678404+00:00",
@@ -15586,37 +15441,37 @@
       "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "spending": {
-      "empty_runs": 20,
+      "empty_runs": 21,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-06T11:53:13.488492+00:00",
+      "last_data": "2026-08-06T12:08:16.034917+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-06T11:53:11.323659+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "uv": {
-      "last_data": "2026-08-05T21:09:39.313807+00:00",
+      "last_data": "2026-08-06T12:10:11.687827+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-05T21:08:14.451183+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "weather": {
-      "last_data": "2026-08-06T09:09:13.427211+00:00",
+      "last_data": "2026-08-06T12:09:39.775654+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-06T09:09:31.697957+00:00",
+      "last_data": "2026-08-06T12:09:59.615832+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-06T09:08:09.380910+00:00"
+      "last_ok": "2026-08-06T12:08:12.457967+00:00"
     }
   },
   "twitch_live": [],
@@ -15624,7 +15479,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165371"
+    "last_full_window": "165372"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15646,6 +15501,7 @@
     "2026-08-06|05:30"
   ],
   "weather_seen_ids": [
+    "343e068eb9e5a521",
     "ad80a2a5f18eeb44",
     "c75e5cc193c51f8f",
     "41769c51a837e54c",
@@ -15844,8 +15700,7 @@
     "21ce453627b94eb7",
     "228bf2197c756060",
     "23a0989662847ef2",
-    "461f2e172db0b186",
-    "5a93f724a86804f7"
+    "461f2e172db0b186"
   ],
   "wikiquote_last_category": "writers",
   "wikiquote_last_sent": "2026-07-14T4",
