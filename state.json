@@ -639,30 +639,6 @@
   "event_log": [
     {
       "action": "push",
-      "detail": "Apply for Anthropic\u2019s AI for Science rare disease research grants - Anthropic",
-      "id": "f5f314bb3cdc2e72",
-      "score": 64,
-      "severity": "moderate",
-      "source": "Anthropic",
-      "title": "Anthropic",
-      "topic": "anthropic_news",
-      "ts": "2026-07-25T05:16:38.219236+00:00",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1STEpkV0VLajlBMFFERkROS2RUVTBjUXJseDctQWhpdFZ2dXRyd0paRTRneTRKMU5XdzBaSjVZeUpiOGQxM3liVzVDNGNUT1NRc1ViMjJqX3ZWYTJBejNPUUZNZXhZa0dkaGk0?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "On this day\n1591: Eighty Years' War: Dutch and English forces relieved the siege of Knodsenburg in the Spanish Netherlands, having defeated the Duke of Parma's army in the field.\n\nFeatured: Las Meninas\nLas Meninas is a 1656 oil painting in the Museo del Prado in Madrid, by Diego Vel\u00e1zquez, the leading artist in the court of King Philip IV of Spain and Portugal, and of the Spanish Golden Age. It has become one of the most widely analyzed works in Western painting for the way...\n\nDid you know\nA 52-card deck has more possible shuffle combinations than the number of atoms on Earth. (Source: Britannica)",
-      "id": "b13b0dc6611b24fa",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "Daily learning",
-      "topic": "learn",
-      "ts": "2026-07-25T05:16:39.608814+00:00",
-      "url": "https://en.wikipedia.org/wiki/Las_Meninas"
-    },
-    {
-      "action": "push",
       "detail": "Before the turn of the 20th century, the bounty of the earth was limited by its own slow rhythms. Crops needed nitrogen, but the vast reservoir in our atmosphere, nearly 80% of the air we breathe, was stubbornly inert, locked away from the very plants that craved it. The only significant source of usable nitrogen came from guano and nitrate deposits, finite reserves whose depletion loomed large as the global population steadily climbed. Famines were not just a threat, but a cyclical reality, and the spectre of a Malthusian catastrophe \u2014 humanity outstripping its food supply \u2014 loomed large in the minds of scientists and economists alike.\n\nIt was in this desperate landscape that a German chemist, Fritz Haber, wrestled with the atmospheric giant. In 1909, he achieved a breakthrough: reacting nitrogen and hydrogen under immense pressure and high temperatures, using a catalyst, to create ammonia. His discovery, however, was a small-scale laboratory triumph. It took another German, Carl Bosch, an engineer at BASF, to scale Haber's delicate process into an industrial titan. Bosch\u2019s ingenuity brought the Haber-Bosch process to life, transforming a scientific marvel into a practical, continuous method for producing synthetic ammonia, the foundational ingredient for nitrogen fertilizers.\n\nThe impact of this chemical alchemy on human civilization is almost immeasurable. The Haber-Bosch process, by unlocking the atmospheric nitrogen, effectively put an end to the natural limitations on food production. Synthetic fertilizers derived from this process supercharged agricultural yields, enabling a dramatic increase in crop output across the globe.",
       "id": "fe08f98a2d29e3ca",
       "score": 60,
@@ -12636,6 +12612,30 @@
       "topic": "watchdog",
       "ts": "2026-08-06T06:09:17.317626+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 6:00 PM - max 55deg, NW to SE. Look up!",
+      "id": "aee34b6d37a6dc04",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-08-06T09:09:29.166392+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "youtube \u2014 running again after 3h down",
+      "id": "034abf2df9405067",
+      "score": 72,
+      "severity": "high",
+      "source": "Watchdog",
+      "title": "Watchdog: 'youtube' recovered",
+      "topic": "watchdog",
+      "ts": "2026-08-06T09:09:37.128555+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -14127,6 +14127,7 @@
     }
   },
   "iss_seen_passes": [
+    "2037c03944b90055",
     "2506080de8630600",
     "fe3eb8ea17d54cd2",
     "80a14298860564e9",
@@ -14225,8 +14226,7 @@
     "4d42a4cba83b548d",
     "d24790f2d29fdce2",
     "7643a7cd6a1ecdc6",
-    "368cf15a03bd815b",
-    "aba184aa7a89772c"
+    "368cf15a03bd815b"
   ],
   "itsc_sent_ids": [
     "3b16a484ca234724",
@@ -14382,9 +14382,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-06T08:53:13.241664+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-06T09:08:09.380910+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15435,14 +15435,14 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-06T06:09:05.675336+00:00",
+      "last_data": "2026-08-06T09:09:28.150752+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-06T06:09:07.576477+00:00",
+      "last_data": "2026-08-06T09:09:30.259033+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "apod": {
       "last_data": "2026-08-05T21:09:40.194235+00:00",
@@ -15450,26 +15450,26 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "deals": {
-      "last_data": "2026-08-06T06:08:42.529115+00:00",
+      "last_data": "2026-08-06T09:09:02.234857+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "energy": {
-      "last_data": "2026-08-06T06:08:52.377509+00:00",
+      "last_data": "2026-08-06T09:09:13.293761+00:00",
       "last_data_count": 60,
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-05T12:09:27.738780+00:00",
@@ -15477,9 +15477,9 @@
       "last_ok": "2026-08-05T12:08:07.559751+00:00"
     },
     "fda": {
-      "last_data": "2026-08-06T06:08:42.839891+00:00",
-      "last_data_count": 14,
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_data": "2026-08-06T09:09:02.574891+00:00",
+      "last_data_count": 15,
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "fuel": {
       "last_data": "2026-08-05T21:09:28.419362+00:00",
@@ -15487,18 +15487,18 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "fx": {
-      "last_data": "2026-08-06T06:09:05.781692+00:00",
+      "last_data": "2026-08-06T09:09:28.238572+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-06T06:08:18.068124+00:00",
+      "last_data": "2026-08-06T09:08:16.635026+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "groceries": {
       "last_data": "2026-08-05T21:09:02.292252+00:00",
@@ -15506,9 +15506,9 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "habits": {
-      "last_data": "2026-08-06T08:53:16.540810+00:00",
+      "last_data": "2026-08-06T09:09:33.234734+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T08:53:13.241664+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "holidays": {
       "last_data": "2026-08-05T21:09:37.596006+00:00",
@@ -15516,9 +15516,9 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "iss": {
-      "last_data": "2026-08-06T06:09:06.495389+00:00",
+      "last_data": "2026-08-06T09:09:29.166132+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "itsc": {
       "last_data": "2026-08-05T21:09:38.644106+00:00",
@@ -15526,9 +15526,9 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "launches": {
-      "last_data": "2026-08-06T06:09:05.958276+00:00",
+      "last_data": "2026-08-06T09:09:28.420235+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "learn": {
       "last_data": "2026-08-05T12:09:22.043554+00:00",
@@ -15536,7 +15536,7 @@
       "last_ok": "2026-08-05T12:08:07.559751+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "marine": {
       "last_data": "2026-08-05T21:09:39.976358+00:00",
@@ -15544,41 +15544,41 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "music": {
-      "last_data": "2026-08-06T06:08:16.440452+00:00",
+      "last_data": "2026-08-06T09:08:15.025452+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-06T06:08:53.051311+00:00",
+      "last_data": "2026-08-06T09:09:13.923475+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (11d ago)",
-      "last_error_ts": "2026-08-06T06:08:11.145627+00:00",
+      "last_error_ts": "2026-08-06T09:08:09.380910+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-06T06:09:05.013181+00:00",
-      "last_data_count": 41,
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_data": "2026-08-06T09:09:27.470994+00:00",
+      "last_data_count": 37,
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "research": {
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-06T06:08:37.380077+00:00",
+      "last_data": "2026-08-06T09:08:56.933185+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "spark": {
       "last_data": "2026-08-06T06:09:10.678404+00:00",
@@ -15586,16 +15586,16 @@
       "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "spending": {
-      "empty_runs": 19,
+      "empty_runs": 20,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-06T08:53:15.332006+00:00",
+      "last_data": "2026-08-06T09:08:12.951017+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-06T08:53:13.241664+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "uv": {
       "last_data": "2026-08-05T21:09:39.313807+00:00",
@@ -15603,23 +15603,20 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "weather": {
-      "last_data": "2026-08-06T06:08:52.545304+00:00",
+      "last_data": "2026-08-06T09:09:13.427211+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-06T03:09:46.733604+00:00",
-      "last_data_count": 75,
-      "last_error": "all 7 channel feed(s) failed; last: PabloELECTRUM: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UC9DS-MY8CZzLh7vQG000uug",
-      "last_error_ts": "2026-08-06T06:08:11.145627+00:00",
-      "last_ok": "2026-08-06T03:08:18.867751+00:00",
-      "source_failed": true
+      "last_data": "2026-08-06T09:09:31.697957+00:00",
+      "last_data_count": 90,
+      "last_ok": "2026-08-06T09:08:09.380910+00:00"
     }
   },
   "twitch_live": [],
@@ -15627,7 +15624,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165370"
+    "last_full_window": "165371"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15643,12 +15640,6 @@
       "last_alert": "2026-08-06T03:09:51.122172+00:00",
       "reminders": 6,
       "since": "2026-08-02T17:18:45.308745+00:00"
-    },
-    "youtube": {
-      "alerted": "2026-08-06T06:09:17.317465+00:00",
-      "last_alert": "2026-08-06T06:09:17.317465+00:00",
-      "reminders": 0,
-      "since": "2026-08-06T06:09:17.317465+00:00"
     }
   },
   "water_slots_sent": [],
