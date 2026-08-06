@@ -264,6 +264,15 @@
       "title": "M3.1 - 72 km NW of San Antonio, Puerto Rico (~234 km away)",
       "topic": "quakes",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527658"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-08-05",
@@ -628,54 +637,6 @@
     "61a327d54598e35c"
   ],
   "event_log": [
-    {
-      "action": "digest",
-      "detail": "Gasolina Premium: RD$3380.07 (sin cambio)\nGasolina Regular: RD$3380.07 (sin cambio)\nGasoil Regular: RD$3380.07 (sin cambio)\nGasoil \u00d3ptimo: RD$3380.07 (sin cambio)\nKerosene: RD$3380.07 (sin cambio)\nGLP: RD$3380.07 (sin cambio)",
-      "id": "51663b4ad8765de0",
-      "score": 45,
-      "severity": "low",
-      "source": "MICM",
-      "title": "Combustibles: precios de la semana",
-      "topic": "fuel",
-      "ts": "2026-07-25T05:16:36.400816+00:00",
-      "url": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-25-31-JUL-DE-2026.pdf"
-    },
-    {
-      "action": "push",
-      "detail": "Visible pass at 10:42 PM - max 51deg, NW to SE. Look up!",
-      "id": "68f1d8463a8e10be",
-      "score": 62,
-      "severity": "low",
-      "source": "ISS",
-      "title": "ISS pass overhead",
-      "topic": "iss",
-      "ts": "2026-07-25T05:16:37.086140+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Introducing Claude Opus 5 - Anthropic",
-      "id": "5bfe5cf714b996e5",
-      "score": 70,
-      "severity": "moderate",
-      "source": "Anthropic",
-      "title": "Anthropic",
-      "topic": "anthropic_news",
-      "ts": "2026-07-25T05:16:37.788543+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE9iczRhdUZaZWkyQ2RXakhsM1ViSF8wclZFX25KdEF6WU1UTEtMQXJhYnpiZnJRUWd2LXNoSkF0TnFQWEpBZzN2b0Z5TmhNZExyTVJUZDR3cw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "The Anthropic Economic Index connector - Anthropic",
-      "id": "a99d0777ffbb8458",
-      "score": 64,
-      "severity": "moderate",
-      "source": "Anthropic",
-      "title": "Anthropic",
-      "topic": "anthropic_news",
-      "ts": "2026-07-25T05:16:37.956261+00:00",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1SYk1FQ3paMmNwYURwWWFZQ3VDblA3Yy05c3F4MXJxTnVHLVlHMDQyM2pDQ3A0VjNhNl90Q2xzNFpyYVlhUkdXb2ZTVUR5MFZnVWpkaFRmdkxPUGZoTGYyakJnTzhBOGJOaDF1Q1ZDa3haVkU?oc=5"
-    },
     {
       "action": "push",
       "detail": "Apply for Anthropic\u2019s AI for Science rare disease research grants - Anthropic",
@@ -12627,6 +12588,54 @@
       "topic": "watchdog",
       "ts": "2026-08-06T03:09:51.122309+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "21a9751af3ada400",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-06T06:08:52.545669+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Visible pass at 6:00 PM - max 55deg, NW to SE. Look up!",
+      "id": "6a06767cb2949d4a",
+      "score": 62,
+      "severity": "low",
+      "source": "ISS",
+      "title": "ISS pass overhead",
+      "topic": "iss",
+      "ts": "2026-08-06T06:09:06.495610+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "\u201cHunger reduces one to an utterly spineless, brainless condition, more like the after-effects of influenza than anything else. It is as though all one's blood had been pumped out and lukewarm water substituted.\u201d\n\u2014 George Orwell\n\nGeorge Orwell, born Eric Blair, was a man whose conscience was stirred by the vast gulf between the powerful and the powerless. His early experiences as an Imperial policeman in Burma, witnessing the casual cruelties of colonialism, and later, living amongst the destitute in London and Paris, shaped a worldview profoundly empathetic to the struggles of ordinary people. It was this visceral understanding of poverty and oppression that drove him to the Spanish Civil War, to fight alongside the anti-fascist Republicans, a choice that would profoundly influence his most enduring works.\n\nIt was during his time in Spain, specifically on the Aragon front, that Orwell experienced the kind of gnawing hunger he so vividly describes. Serving as a militiaman, he endured weeks of meager rations, the constant threat of enemy fire, and the pervasive cold, a reality far removed from the romanticized image of war. His words, published in \"Homage to Catalonia,\" are not merely a clinical observation, but the raw, unvarnished truth of a body and mind under extreme duress, where the basic instinct for survival overwhelms all other human faculties.\n\nOrwell's searing description of hunger transcends its immediate context, resonating with a timeless power. In a world still grappling with food insecurity, famine, and the systemic inequalities that perpetuate them, his words serve as a stark reminder of the fundamental human cost.",
+      "id": "6a35fbc11c401e00",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "George Orwell",
+      "topic": "spark",
+      "ts": "2026-08-06T06:09:13.271184+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "youtube \u2014 no successful run since 2026-08-06 03:08 UTC (3h); last error: all 7 channel feed(s) failed; last: PabloELECTRUM: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/v\u2026",
+      "id": "86cb5a4e9eaff18f",
+      "score": 72,
+      "severity": "critical",
+      "source": "Watchdog",
+      "title": "Watchdog: 'youtube' is failing",
+      "topic": "watchdog",
+      "ts": "2026-08-06T06:09:17.317626+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -14118,6 +14127,7 @@
     }
   },
   "iss_seen_passes": [
+    "2506080de8630600",
     "fe3eb8ea17d54cd2",
     "80a14298860564e9",
     "e09ab28cd163a459",
@@ -14216,8 +14226,7 @@
     "d24790f2d29fdce2",
     "7643a7cd6a1ecdc6",
     "368cf15a03bd815b",
-    "aba184aa7a89772c",
-    "0617aa1ba668e172"
+    "aba184aa7a89772c"
   ],
   "itsc_sent_ids": [
     "3b16a484ca234724",
@@ -14373,9 +14382,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-06T05:53:08.197257+00:00"
+    "failed": 2,
+    "ok": 38,
+    "ts": "2026-08-06T06:08:11.145627+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15421,19 +15430,19 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82684,
-  "spark_next_kind": "quote",
+  "spark_last_sent": 82685,
+  "spark_next_kind": "fact",
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-06T03:09:42.634868+00:00",
+      "last_data": "2026-08-06T06:09:05.675336+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-06T03:09:45.699225+00:00",
+      "last_data": "2026-08-06T06:09:07.576477+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "apod": {
       "last_data": "2026-08-05T21:09:40.194235+00:00",
@@ -15441,26 +15450,26 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "deals": {
-      "last_data": "2026-08-06T03:09:12.413904+00:00",
+      "last_data": "2026-08-06T06:08:42.529115+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "energy": {
-      "last_data": "2026-08-06T03:09:24.314707+00:00",
+      "last_data": "2026-08-06T06:08:52.377509+00:00",
       "last_data_count": 60,
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-05T12:09:27.738780+00:00",
@@ -15468,9 +15477,9 @@
       "last_ok": "2026-08-05T12:08:07.559751+00:00"
     },
     "fda": {
-      "last_data": "2026-08-06T03:09:13.016477+00:00",
+      "last_data": "2026-08-06T06:08:42.839891+00:00",
       "last_data_count": 14,
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "fuel": {
       "last_data": "2026-08-05T21:09:28.419362+00:00",
@@ -15478,18 +15487,18 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "fx": {
-      "last_data": "2026-08-06T03:09:42.783103+00:00",
+      "last_data": "2026-08-06T06:09:05.781692+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-06T03:08:25.922639+00:00",
+      "last_data": "2026-08-06T06:08:18.068124+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "groceries": {
       "last_data": "2026-08-05T21:09:02.292252+00:00",
@@ -15497,9 +15506,9 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "habits": {
-      "last_data": "2026-08-06T05:53:11.837160+00:00",
+      "last_data": "2026-08-06T06:09:10.074485+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T05:53:08.197257+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "holidays": {
       "last_data": "2026-08-05T21:09:37.596006+00:00",
@@ -15507,9 +15516,9 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "iss": {
-      "last_data": "2026-08-06T03:09:44.268633+00:00",
+      "last_data": "2026-08-06T06:09:06.495389+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "itsc": {
       "last_data": "2026-08-05T21:09:38.644106+00:00",
@@ -15517,9 +15526,9 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "launches": {
-      "last_data": "2026-08-06T03:09:43.564818+00:00",
+      "last_data": "2026-08-06T06:09:05.958276+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "learn": {
       "last_data": "2026-08-05T12:09:22.043554+00:00",
@@ -15527,7 +15536,7 @@
       "last_ok": "2026-08-05T12:08:07.559751+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "marine": {
       "last_data": "2026-08-05T21:09:39.976358+00:00",
@@ -15535,58 +15544,58 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "music": {
-      "last_data": "2026-08-06T03:08:24.110423+00:00",
+      "last_data": "2026-08-06T06:08:16.440452+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-06T03:09:25.003327+00:00",
+      "last_data": "2026-08-06T06:08:53.051311+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
-      "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (10d ago)",
-      "last_error_ts": "2026-08-06T03:08:18.867751+00:00",
+      "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (11d ago)",
+      "last_error_ts": "2026-08-06T06:08:11.145627+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-06T03:09:42.130394+00:00",
-      "last_data_count": 50,
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_data": "2026-08-06T06:09:05.013181+00:00",
+      "last_data_count": 41,
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "research": {
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-06T03:09:07.212223+00:00",
+      "last_data": "2026-08-06T06:08:37.380077+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "spark": {
-      "last_data": "2026-08-05T06:09:45.365513+00:00",
-      "last_data_count": 112,
-      "last_ok": "2026-08-05T06:08:23.246110+00:00"
+      "last_data": "2026-08-06T06:09:10.678404+00:00",
+      "last_data_count": 170,
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "spending": {
-      "empty_runs": 18,
+      "empty_runs": 19,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-06T05:53:10.366154+00:00",
+      "last_data": "2026-08-06T06:08:14.427571+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-06T05:53:08.197257+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "uv": {
       "last_data": "2026-08-05T21:09:39.313807+00:00",
@@ -15594,20 +15603,23 @@
       "last_ok": "2026-08-05T21:08:14.451183+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "weather": {
-      "last_data": "2026-08-06T03:09:24.545169+00:00",
+      "last_data": "2026-08-06T06:08:52.545304+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "youtube": {
       "last_data": "2026-08-06T03:09:46.733604+00:00",
       "last_data_count": 75,
-      "last_ok": "2026-08-06T03:08:18.867751+00:00"
+      "last_error": "all 7 channel feed(s) failed; last: PabloELECTRUM: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UC9DS-MY8CZzLh7vQG000uug",
+      "last_error_ts": "2026-08-06T06:08:11.145627+00:00",
+      "last_ok": "2026-08-06T03:08:18.867751+00:00",
+      "source_failed": true
     }
   },
   "twitch_live": [],
@@ -15615,7 +15627,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165369"
+    "last_full_window": "165370"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15631,10 +15643,17 @@
       "last_alert": "2026-08-06T03:09:51.122172+00:00",
       "reminders": 6,
       "since": "2026-08-02T17:18:45.308745+00:00"
+    },
+    "youtube": {
+      "alerted": "2026-08-06T06:09:17.317465+00:00",
+      "last_alert": "2026-08-06T06:09:17.317465+00:00",
+      "reminders": 0,
+      "since": "2026-08-06T06:09:17.317465+00:00"
     }
   },
   "water_slots_sent": [],
   "weather_seen_ids": [
+    "ad80a2a5f18eeb44",
     "c75e5cc193c51f8f",
     "41769c51a837e54c",
     "8deee171e82af7f2",
@@ -15833,8 +15852,7 @@
     "228bf2197c756060",
     "23a0989662847ef2",
     "461f2e172db0b186",
-    "5a93f724a86804f7",
-    "8ab3f3ef77e2624c"
+    "5a93f724a86804f7"
   ],
   "wikiquote_last_category": "writers",
   "wikiquote_last_sent": "2026-07-14T4",
@@ -15891,7 +15909,7 @@
     "science_pioneers:Stephen Hawking": "2026-07-27",
     "writers:Ernest Hemingway": "2026-07-13",
     "writers:Fyodor Dostoevsky": "2026-07-17",
-    "writers:George Orwell": "2026-07-09",
+    "writers:George Orwell": "2026-08-06",
     "writers:Jane Austen": "2026-07-12",
     "writers:Leo Tolstoy": "2026-08-05",
     "writers:Mark Twain": "2026-07-11",
