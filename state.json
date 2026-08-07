@@ -121,6 +121,15 @@
       "title": "M3.7 - 61 km ENE of Miches, Dominican Republic (~158 km away)",
       "topic": "quakes",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr2026219001"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-08-07",
@@ -185,6 +194,7 @@
     ]
   },
   "energy_seen_ids": [
+    "53413096294c56f6",
     "7ed5134551b6a017",
     "6933a38737d0ab46",
     "e795925c60064c4b",
@@ -483,58 +493,9 @@
     "233fd4f5a2497e58",
     "5d051819242cce3a",
     "04e47415afdbe8d4",
-    "091688684f171eb1",
-    "76815b71a0c60ed4"
+    "091688684f171eb1"
   ],
   "event_log": [
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "abebe52a77de985f",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman: Part II\u2019 Delayed Again to 2028, First Look at Batsuit Revealed - TheWrap",
-      "topic": "movies",
-      "ts": "2026-07-25T18:08:20.288478+00:00",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNT3MybVF2dWMzSnFiLWQza3lJYnB4N0RHNUhZUkxOVnoyUFJCMVg1WkxXVk1UU0xRU3lyc3V0ZDd0WTdXdUxMaTNFRjlHdzJJOVdYMlFzd3ZNTlNnZU00Ql8zLUtZSHgtZWEwUGp0bDJWcktQRlZKdC1IdXlSa1hPTjl1QWdFVnp0czV3ZmdiblFnRFZJUktTV2FoaEtoRHFONWl4Y3FzTmE1dXEwZHRWYlg5YUMxajg?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "e2246fb5936d5a6a",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "DC Officially Confirms Major 'The Batman: Part 2' Delay - Collider",
-      "topic": "movies",
-      "ts": "2026-07-25T18:08:20.289182+00:00",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE1lTVJkU2NOcWpoMVpfLUl1aEdiRGVpRF8wTlNSa3NrMG0wOWwyNEtxUmtBOHR6dnhhNkFlNkhwY3BuTS1BMU8xOFhXUjdaVm9zUXhlSWxOWWRpU3drMTJxOXl6dDFkUU5PWW0yeDRwQ1FfNm8?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "c374234e9cf3fe51",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II First Look Reveals Robert Pattinson In The Snow, New Release Date - SlashFilm",
-      "topic": "movies",
-      "ts": "2026-07-25T18:08:20.289830+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOSC1WZlpTV0dVY2F0ZjlvMHZhblVhN29hekQ3d1dBRkFjZ2U5ai1aTlNtOWZ6MEhKVEVTQWVHZ2hyNWI5cnlIR2h6YS15MTNKWWNrZks0TGFUdHhVeW92dDk2a3dvbW1fTGJiN2tMc001SlE4UHVnWDZLZ1RJelJfalV1eENCSXNsNUVfSGtyZG1hLTAwLWc?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "a930285368a6d92d",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman Part 2 - Official 'Camera Test' Teaser Trailer - IGN",
-      "topic": "movies",
-      "ts": "2026-07-25T18:08:20.290618+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOckctY0JMQlZJYm9yd3dqS1JYYWdJbDg0TlQ3bVJ1LWpEaEJUODQ3X3hEc2VRNTlJdVNadGhxOVpGTEF4c3ZXUUU3bXEyTjlDVTBaM2xwVWJOR054aWtFV1E1R0R1Ql96aTQtV3lQNk42a3VxdlFfM2ZHNm1ldGx3dUhpRjFjZHc?oc=5"
-    },
     {
       "action": "drop",
       "detail": "",
@@ -12486,6 +12447,54 @@
       "topic": "twitch",
       "ts": "2026-08-07T17:08:11.138081+00:00",
       "url": "https://twitch.tv/RiddlesMK"
+    },
+    {
+      "action": "push",
+      "detail": "Little Lion Man - Mumford & Sons\n(because you like Vance Joy)",
+      "id": "efaf7e9159c373fd",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-07T18:08:21.523397+00:00",
+      "url": "https://www.deezer.com/track/3026049971"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "9b983ee093e9a78a",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-07T18:09:37.453521+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "apod \u2014 no successful run since 2026-08-07 15:08 UTC (3h); last error: APOD fetch failed: 503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=wJPj2a8PG\u2026",
+      "id": "6f379bc2c0691e1b",
+      "score": 72,
+      "severity": "critical",
+      "source": "Watchdog",
+      "title": "Watchdog: 'apod' is failing",
+      "topic": "watchdog",
+      "ts": "2026-08-07T18:10:28.253479+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "outages \u2014 down 5d 3h (since 2026-08-02 15:07 UTC), reminder #9; last error: EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (12d ago)",
+      "id": "fa4c9f82c50e503a",
+      "score": 72,
+      "severity": "critical",
+      "source": "Watchdog",
+      "title": "Watchdog: 'outages' is STILL failing (5d 3h)",
+      "topic": "watchdog",
+      "ts": "2026-08-07T18:10:28.526729+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -12713,7 +12722,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
   "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-07T15:09:49.036551+00:00",
+  "fuel_last_prices_seen_at": "2026-08-07T18:09:52.817817+00:00",
   "fuel_prices": {
     "GLP": 135.2,
     "Gasoil Regular": 258.3,
@@ -14255,9 +14264,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-07T17:53:12.978948+00:00"
+    "failed": 2,
+    "ok": 38,
+    "ts": "2026-08-07T18:08:15.937665+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14534,7 +14543,8 @@
     5575105,
     4027889,
     793825,
-    1581786
+    1581786,
+    288092
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14630,6 +14640,15 @@
       "label": "The Turtles",
       "payload": {
         "name": "The Turtles"
+      }
+    },
+    "21ea0a4ebeb4b81b": {
+      "applied": null,
+      "created": "2026-08-07T18:08:21.523379+00:00",
+      "kind": "artist",
+      "label": "Mumford & Sons",
+      "payload": {
+        "name": "Mumford & Sons"
       }
     },
     "246703708e830b1a": {
@@ -15393,41 +15412,44 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-07T15:09:47.544989+00:00",
+      "last_data": "2026-08-07T18:09:51.431322+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-07T15:09:50.187904+00:00",
+      "last_data": "2026-08-07T18:09:54.057311+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "apod": {
       "last_data": "2026-08-07T15:10:01.313317+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_error": "APOD fetch failed: 503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=wJPj2a8PGR9waSxTix6B9Dw1k2wvyWJdZaaVawTY&thumbs=true",
+      "last_error_ts": "2026-08-07T18:08:15.937665+00:00",
+      "last_ok": "2026-08-07T15:08:04.880156+00:00",
+      "source_failed": true
     },
     "astronomy": {
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "deals": {
-      "last_data": "2026-08-07T15:09:03.352730+00:00",
+      "last_data": "2026-08-07T18:09:12.257160+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "energy": {
-      "last_data": "2026-08-07T15:09:32.577653+00:00",
-      "last_data_count": 60,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_data": "2026-08-07T18:09:37.266447+00:00",
+      "last_data_count": 61,
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-07T12:09:53.242113+00:00",
@@ -15435,58 +15457,58 @@
       "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "fda": {
-      "last_data": "2026-08-07T15:09:22.553366+00:00",
+      "last_data": "2026-08-07T18:09:27.186495+00:00",
       "last_data_count": 15,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-07T15:09:49.036576+00:00",
+      "last_data": "2026-08-07T18:09:52.817833+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "fx": {
-      "last_data": "2026-08-07T15:09:47.691947+00:00",
+      "last_data": "2026-08-07T18:09:51.504781+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-07T15:08:12.579860+00:00",
+      "last_data": "2026-08-07T18:08:23.643912+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-07T15:09:22.077722+00:00",
+      "last_data": "2026-08-07T18:09:26.736529+00:00",
       "last_data_count": 227,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "habits": {
-      "last_data": "2026-08-07T17:53:15.227735+00:00",
+      "last_data": "2026-08-07T18:09:56.026366+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-07T17:53:12.978948+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-07T15:09:57.104529+00:00",
+      "last_data": "2026-08-07T18:10:00.307616+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "iss": {
-      "last_data": "2026-08-07T15:09:49.652524+00:00",
+      "last_data": "2026-08-07T18:09:53.504128+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-07T15:09:57.893704+00:00",
+      "last_data": "2026-08-07T18:10:01.138288+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "launches": {
-      "last_data": "2026-08-07T15:09:49.217373+00:00",
+      "last_data": "2026-08-07T18:09:52.944834+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "learn": {
       "last_data": "2026-08-07T12:09:48.870742+00:00",
@@ -15494,49 +15516,49 @@
       "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "marine": {
-      "last_data": "2026-08-07T15:09:58.797548+00:00",
+      "last_data": "2026-08-07T18:10:02.314547+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "music": {
-      "last_data": "2026-08-07T15:08:09.485250+00:00",
+      "last_data": "2026-08-07T18:08:20.457218+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-07T15:09:33.091218+00:00",
+      "last_data": "2026-08-07T18:09:37.836532+00:00",
       "last_data_count": 24,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (12d ago)",
-      "last_error_ts": "2026-08-07T15:08:04.880156+00:00",
+      "last_error_ts": "2026-08-07T18:08:15.937665+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-07T15:09:47.080153+00:00",
-      "last_data_count": 38,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_data": "2026-08-07T18:09:51.001363+00:00",
+      "last_data_count": 39,
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "research": {
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-07T15:08:58.470129+00:00",
+      "last_data": "2026-08-07T18:09:07.344509+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "spark": {
       "last_data": "2026-08-07T06:09:27.054554+00:00",
@@ -15544,37 +15566,37 @@
       "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "spending": {
-      "empty_runs": 30,
+      "empty_runs": 31,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-07T17:53:14.222574+00:00",
+      "last_data": "2026-08-07T18:08:18.723009+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-07T17:53:12.978948+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "uv": {
-      "last_data": "2026-08-07T15:09:58.365486+00:00",
+      "last_data": "2026-08-07T18:10:01.871283+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "weather": {
-      "last_data": "2026-08-07T15:09:32.681366+00:00",
+      "last_data": "2026-08-07T18:09:37.453171+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-07T15:09:51.280550+00:00",
+      "last_data": "2026-08-07T18:09:55.013605+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-07T15:08:04.880156+00:00"
+      "last_ok": "2026-08-07T18:08:15.937665+00:00"
     }
   },
   "twitch_live": [
@@ -15584,7 +15606,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165381"
+    "last_full_window": "165382"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15595,10 +15617,16 @@
   "watchdog_data_outages": {},
   "watchdog_empty_outages": {},
   "watchdog_outages": {
+    "apod": {
+      "alerted": "2026-08-07T18:10:28.253358+00:00",
+      "last_alert": "2026-08-07T18:10:28.253358+00:00",
+      "reminders": 0,
+      "since": "2026-08-07T18:10:28.253358+00:00"
+    },
     "outages": {
       "alerted": "2026-08-02T17:18:45.308745+00:00",
-      "last_alert": "2026-08-07T06:09:33.835074+00:00",
-      "reminders": 8,
+      "last_alert": "2026-08-07T18:10:28.253358+00:00",
+      "reminders": 9,
       "since": "2026-08-02T17:18:45.308745+00:00"
     }
   },
@@ -15606,6 +15634,7 @@
     "2026-08-07|05:30"
   ],
   "weather_seen_ids": [
+    "ea8f9e7de7982cb4",
     "d47fa5d5635d0667",
     "13bbf2ab69c9fdc6",
     "299fe61af37458e8",
@@ -15804,8 +15833,7 @@
     "8d2f7a355fd6f471",
     "02375c3cfb5372ae",
     "a191549e58f3ffca",
-    "d037b12df9891ca7",
-    "515305adaae01e6a"
+    "d037b12df9891ca7"
   ],
   "wikiquote_last_category": "leaders",
   "wikiquote_last_sent": "2026-07-14T4",
