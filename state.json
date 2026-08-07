@@ -130,6 +130,24 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Adempas",
+      "title": "FDA updates approval for Adempas (Riociguat) (NDA204819)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204819"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Neulasta",
+      "title": "FDA updates approval for Neulasta (Pegfilgrastim) (BLA125031)",
+      "topic": "fda",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125031"
     }
   ],
   "digest_last_sent": "2026-08-07",
@@ -496,90 +514,6 @@
     "091688684f171eb1"
   ],
   "event_log": [
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "6f84aeb4fc9ef172",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II Delayed Again (Again) Until February 2028 - Kotaku",
-      "topic": "movies",
-      "ts": "2026-07-25T18:08:20.291343+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPN2pubDVHU09GaTV6ekhndmZscHF6RHoxVWZvMDBNSmFZUXRTTlBpVnZqRHhZNzdRY0tvb20wWmhmOWJhcUc4Y1laNC1QcGJLVWpIdzZMWUJUX3BZbWs4czM4MVdjR0M1bFZtR0xZbE1peUM3Z0F2WDBhMkRmTzFONC1FZk1FOHZDTVg1VHBsOWtQdw?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "9320250f996a9488",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II Has Been Delayed AGAIN - This Time Til 2028 (SIX YEARS After The First Movie) - Barstool Sports",
-      "topic": "movies",
-      "ts": "2026-07-25T18:08:20.292075+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVnBzSXg3bzdwN2lxemN4ZTdYVzI0SVIySWVLTElJZmxWQTlEOFpYUWZ4dGQwdXZmaXNhS01OdDFvODBWSkp1MDk2ZEEtbTZva05rZXBkU01acXdmT1I5OTVHaHU5QWRVbnFKTGZicVFBeHhDdVZCR0h2ckNfaUFITGd2MkdDNG5iVjdtUG95SVNvc2gwMmsyQVhBT2dBc0QwYk1MRXp3ZHp1VkxwRkZpZGg5WUVnQmU2QzZqdQ?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "e38f91b431700c5e",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Robert Pattinson's Return in The Batman: Part 2 Delayed Again, Now Arriving 2028 - IGN",
-      "topic": "movies",
-      "ts": "2026-07-25T18:08:20.292818+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPZjBscHBjN2pWRlNUanN5bU1acnpUYnhrYlN1Q1FrYlBCQV9wTEVSUlZTakxiQ3RwRGp0Y09sV3kyYVRjU0lvU0VSdnd6QzNlWndEU01YdmdIY29HUlFkWEVHVHR1Rkl5aTlxVWJ1a0p4MDhERGphaUlhZWxYUlRCT1RxUXZueWhLeGNRWXBVbksxVV9CWlVtemprQS1fZ0RCNXN6U2xPQU1Qdw?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Night Ride - The Growlers\n(because you like Tame Impala)",
-      "id": "585b9164f00122a8",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-07-25T18:08:25.779088+00:00",
-      "url": "https://www.deezer.com/track/745918212"
-    },
-    {
-      "action": "digest",
-      "detail": "",
-      "id": "2290d20055468971",
-      "score": 50,
-      "severity": "moderate",
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "ts": "2026-07-25T18:09:37.587784+00:00",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "action": "push",
-      "detail": "Visible pass at 10:42 PM - max 51deg, NW to SE. Look up!",
-      "id": "180191fced2ac0b0",
-      "score": 62,
-      "severity": "low",
-      "source": "ISS",
-      "title": "ISS pass overhead",
-      "topic": "iss",
-      "ts": "2026-07-25T18:09:57.891011+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "The story of Watergate truly begins not with a break-in, but with a president consumed by paranoia and a desire for control. Richard Nixon, ever suspicious of his political adversaries and the press, nurtured a culture within the White House that blurred the lines between legitimate political action and dirty tricks. This ethos gave rise to the \"Plumbers,\" a secretive group tasked with stopping leaks of classified information and discrediting opponents. Their ambition, fueled by Nixon's re-election campaign, would eventually lead them to the Democratic National Committee headquarters at the Watergate complex in the early hours of June 17, 1972, with wiretaps and cameras in hand, seeking to gain an illicit advantage over the opposition.\n\nWhat started as a \"third-rate burglary\" quickly spiraled into a constitutional crisis as the administration, from the highest levels, engaged in a systematic cover-up. Through hush money, obstruction of justice, and the destruction of evidence, Nixon and his inner circle desperately tried to distance themselves from the crime. Yet, the relentless reporting of journalists like Bob Woodward and Carl Bernstein, coupled with the principled stance of figures within the Justice Department and Congress, began to peel back the layers of deception. The existence of secret White House tapes, revealing Nixon's direct involvement in orchestrating the cover-up, ultimately proved to be the undoing of his presidency, leading to his resignation in August 1974, just before the House of Representatives could vote on articles of impeachment.\n\nWatergate remains a pivotal moment in American history, not merely for the downfall of a president, but for its profound impact on the relationship between the government and its citizens.",
-      "id": "76616e2ee424f646",
-      "score": 60,
-      "severity": "low",
-      "source": "Learning",
-      "title": "The Watergate scandal",
-      "topic": "spark",
-      "ts": "2026-07-25T18:10:02.361056+00:00",
-      "url": ""
-    },
     {
       "action": "drop",
       "detail": "",
@@ -12495,6 +12429,90 @@
       "topic": "watchdog",
       "ts": "2026-08-07T18:10:28.526729+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Coastline - Hollow Coves\n(because you like Vance Joy)",
+      "id": "b8ba2d186e857eed",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-07T21:08:15.151510+00:00",
+      "url": "https://www.deezer.com/track/1647876002"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "c57793ba8597f02f",
+      "score": 70,
+      "severity": "high",
+      "source": "Orzeyful",
+      "title": "FDA approves Orzeyful (Oveporexton) (NDA220860)",
+      "topic": "fda",
+      "ts": "2026-08-07T21:09:22.918293+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=220860"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "d86bf61c2e084376",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Adempas",
+      "title": "FDA updates approval for Adempas (Riociguat) (NDA204819)",
+      "topic": "fda",
+      "ts": "2026-08-07T21:09:23.245144+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204819"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "8b61e37fdb638c1f",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Neulasta",
+      "title": "FDA updates approval for Neulasta (Pegfilgrastim) (BLA125031)",
+      "topic": "fda",
+      "ts": "2026-08-07T21:09:23.245791+00:00",
+      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125031"
+    },
+    {
+      "action": "push",
+      "detail": "Inundacion. Acumulados de precipitaciones esperados entre 35 y 70 mil\u00edmetros, pudiendo ser superiores en lugares aislados.\n\nProvincias: El Gran Santo Domingo",
+      "id": "10d50e5d562a89b4",
+      "score": 80,
+      "severity": "high",
+      "source": "ONAMET",
+      "title": "INDOMET: Cancelaci\u00f3n de alerta anterior",
+      "topic": "onamet",
+      "ts": "2026-08-07T21:09:34.076524+00:00",
+      "url": "https://cap-sources.s3.amazonaws.com/do-indomet-es/2026-08-07-18-18-24.xml"
+    },
+    {
+      "action": "push",
+      "detail": "Inundacion. Acumulados de precipitaciones esperados entre 35 y 70 mil\u00edmetros, pudiendo ser superiores en lugares aislados.\n\nProvincias: Elias Pi\u00f1a",
+      "id": "543dfbeb9e81f106",
+      "score": 80,
+      "severity": "high",
+      "source": "ONAMET",
+      "title": "INDOMET: Guia para inundaciones en Republica Dominicana",
+      "topic": "onamet",
+      "ts": "2026-08-07T21:09:34.690179+00:00",
+      "url": "https://cap-sources.s3.amazonaws.com/do-indomet-es/2026-08-07-18-13-27.xml"
+    },
+    {
+      "action": "push",
+      "detail": "apod \u2014 running again after 2h down",
+      "id": "bce3a32485094d61",
+      "score": 72,
+      "severity": "high",
+      "source": "Watchdog",
+      "title": "Watchdog: 'apod' recovered",
+      "topic": "watchdog",
+      "ts": "2026-08-07T21:09:58.114332+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -12509,6 +12527,9 @@
     }
   ],
   "fda_seen_ids": [
+    "380094aa6b85a67f",
+    "c9c43c62a8a50411",
+    "67b8c7cdd5fa31c1",
     "ec2b28fa84b347d1",
     "1b182fe2fb4cf453",
     "a8eb5c30ac13aa9d",
@@ -12705,10 +12726,7 @@
     "cd4abd358e5da2a5",
     "43e3ffe1ac733d54",
     "34b57f84568da2e4",
-    "64ad1d819e506fb2",
-    "bd67c0ea0110cfe2",
-    "50edf211c063928c",
-    "0c22e528ab0bcdff"
+    "64ad1d819e506fb2"
   ],
   "follows": {
     "artists": [
@@ -12722,7 +12740,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
   "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-07T18:09:52.817817+00:00",
+  "fuel_last_prices_seen_at": "2026-08-07T21:09:48.315109+00:00",
   "fuel_prices": {
     "GLP": 135.2,
     "Gasoil Regular": 258.3,
@@ -14264,9 +14282,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-07T20:53:16.397978+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-07T21:08:10.049881+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14544,7 +14562,8 @@
     4027889,
     793825,
     1581786,
-    288092
+    288092,
+    7492486
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14766,6 +14785,15 @@
       "label": "The Beach Boys",
       "payload": {
         "name": "The Beach Boys"
+      }
+    },
+    "4d06fe24d88bec84": {
+      "applied": null,
+      "created": "2026-08-07T21:08:15.151484+00:00",
+      "kind": "artist",
+      "label": "Hollow Coves",
+      "payload": {
+        "name": "Hollow Coves"
       }
     },
     "4d3a83f44503d442": {
@@ -15122,9 +15150,14 @@
   },
   "onamet_active": {
     "274386cf5bc31532": "2026-08-07T20:00:12-04:00",
-    "5c27327553576e86": "2026-08-07T20:00:12-04:00"
+    "3a909bb26f098072": "2026-08-07T14:25:32-04:00",
+    "5c27327553576e86": "2026-08-07T20:00:12-04:00",
+    "8d3643a45f81aeb8": "2026-08-07T14:20:32-04:00"
   },
   "onamet_seen_ids": [
+    "00c4370b304f8625",
+    "27c6ce33f3a36a01",
+    "a7092f4c27fe21e1",
     "339103b957436a56",
     "a657bbf6c674aede",
     "198470ad8cdddeae",
@@ -15412,44 +15445,41 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-07T18:09:51.431322+00:00",
+      "last_data": "2026-08-07T21:09:47.225753+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-07T18:09:54.057311+00:00",
+      "last_data": "2026-08-07T21:09:50.068332+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "apod": {
-      "last_data": "2026-08-07T15:10:01.313317+00:00",
+      "last_data": "2026-08-07T21:09:58.112835+00:00",
       "last_data_count": 1,
-      "last_error": "APOD fetch failed: 503 Server Error: Service Unavailable for url: https://api.nasa.gov/planetary/apod?api_key=wJPj2a8PGR9waSxTix6B9Dw1k2wvyWJdZaaVawTY&thumbs=true",
-      "last_error_ts": "2026-08-07T18:08:15.937665+00:00",
-      "last_ok": "2026-08-07T15:08:04.880156+00:00",
-      "source_failed": true
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "deals": {
-      "last_data": "2026-08-07T18:09:12.257160+00:00",
+      "last_data": "2026-08-07T21:09:04.353353+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "energy": {
-      "last_data": "2026-08-07T18:09:37.266447+00:00",
+      "last_data": "2026-08-07T21:09:33.139972+00:00",
       "last_data_count": 61,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-07T12:09:53.242113+00:00",
@@ -15457,58 +15487,58 @@
       "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "fda": {
-      "last_data": "2026-08-07T18:09:27.186495+00:00",
-      "last_data_count": 15,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_data": "2026-08-07T21:09:22.918061+00:00",
+      "last_data_count": 13,
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-07T18:09:52.817833+00:00",
+      "last_data": "2026-08-07T21:09:48.315128+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "fx": {
-      "last_data": "2026-08-07T18:09:51.504781+00:00",
+      "last_data": "2026-08-07T21:09:47.307478+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-07T18:08:23.643912+00:00",
+      "last_data": "2026-08-07T21:08:17.259819+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-07T18:09:26.736529+00:00",
+      "last_data": "2026-08-07T21:09:22.155523+00:00",
       "last_data_count": 227,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "habits": {
-      "last_data": "2026-08-07T20:53:20.032933+00:00",
+      "last_data": "2026-08-07T21:09:52.011923+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-07T20:53:16.397978+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-07T18:10:00.307616+00:00",
+      "last_data": "2026-08-07T21:09:56.090234+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "iss": {
-      "last_data": "2026-08-07T18:09:53.504128+00:00",
+      "last_data": "2026-08-07T21:09:49.509984+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-07T18:10:01.138288+00:00",
+      "last_data": "2026-08-07T21:09:56.838078+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "launches": {
-      "last_data": "2026-08-07T18:09:52.944834+00:00",
+      "last_data": "2026-08-07T21:09:49.113738+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "learn": {
       "last_data": "2026-08-07T12:09:48.870742+00:00",
@@ -15516,49 +15546,49 @@
       "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "marine": {
-      "last_data": "2026-08-07T18:10:02.314547+00:00",
+      "last_data": "2026-08-07T21:09:57.621019+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "music": {
-      "last_data": "2026-08-07T18:08:20.457218+00:00",
+      "last_data": "2026-08-07T21:08:14.040936+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-07T18:09:37.836532+00:00",
-      "last_data_count": 24,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_data": "2026-08-07T21:09:33.776651+00:00",
+      "last_data_count": 27,
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (12d ago)",
-      "last_error_ts": "2026-08-07T18:08:15.937665+00:00",
+      "last_error_ts": "2026-08-07T21:08:10.049881+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-07T18:09:51.001363+00:00",
-      "last_data_count": 39,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_data": "2026-08-07T21:09:46.777176+00:00",
+      "last_data_count": 37,
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "research": {
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-07T18:09:07.344509+00:00",
+      "last_data": "2026-08-07T21:08:58.154244+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "spark": {
       "last_data": "2026-08-07T06:09:27.054554+00:00",
@@ -15566,37 +15596,37 @@
       "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "spending": {
-      "empty_runs": 31,
+      "empty_runs": 32,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-07T20:53:18.679473+00:00",
+      "last_data": "2026-08-07T21:08:11.824062+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-07T20:53:16.397978+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "uv": {
-      "last_data": "2026-08-07T18:10:01.871283+00:00",
+      "last_data": "2026-08-07T21:09:57.237090+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "weather": {
-      "last_data": "2026-08-07T18:09:37.453171+00:00",
+      "last_data": "2026-08-07T21:09:33.433831+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-07T18:09:55.013605+00:00",
+      "last_data": "2026-08-07T21:09:51.133109+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-07T18:08:15.937665+00:00"
+      "last_ok": "2026-08-07T21:08:10.049881+00:00"
     }
   },
   "twitch_live": [
@@ -15606,7 +15636,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165382"
+    "last_full_window": "165383"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15617,12 +15647,6 @@
   "watchdog_data_outages": {},
   "watchdog_empty_outages": {},
   "watchdog_outages": {
-    "apod": {
-      "alerted": "2026-08-07T18:10:28.253358+00:00",
-      "last_alert": "2026-08-07T18:10:28.253358+00:00",
-      "reminders": 0,
-      "since": "2026-08-07T18:10:28.253358+00:00"
-    },
     "outages": {
       "alerted": "2026-08-02T17:18:45.308745+00:00",
       "last_alert": "2026-08-07T18:10:28.253358+00:00",
