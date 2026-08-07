@@ -70,7 +70,7 @@
     "29db49f64ce68661",
     "a8b1aff056453d2f"
   ],
-  "apod_last_sent": "2026-08-06",
+  "apod_last_sent": "2026-08-07",
   "astronomy_sent": [
     "2026-06-14|New moon tonight - d",
     "2026-06-21|June solstice today",
@@ -89,82 +89,18 @@
     "rent|2026-07-30|5",
     "rent|2026-07-30|1"
   ],
-  "blood_donation_last_notified": "2026-07-08",
+  "blood_donation_last_notified": "2026-08-07",
   "cleaning_slots_sent": [],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.1 - 42 km NW of Aguadilla, Puerto Rico (~252 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527703"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.3 - 60 km WSW of Stella, Puerto Rico (~216 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527713"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.2 - 62 km NW of San Antonio, Puerto Rico (~240 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527698"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.2 - 63 km N of Punta Cana, Dominican Republic (~171 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tiwb"
-    }
-  ],
-  "digest_last_sent": "2026-08-06",
+  "digest_buffer": [],
+  "digest_last_sent": "2026-08-07",
   "discord_control": {
     "last_id": "1530929203594137641"
   },
   "energy_learn_last_news": "2026-08-05",
-  "energy_learn_last_sent": "2026-08-06",
+  "energy_learn_last_sent": "2026-08-07",
   "energy_learn_seen": {
     "facts": [
       "baseload-vs-peaking",
@@ -202,7 +138,8 @@
       "grand-coulee-infra",
       "james-bay-project",
       "bath-county-pumped-storage",
-      "tehri-dam"
+      "tehri-dam",
+      "noor-ouarzazate"
     ],
     "modern": [
       "perovskite-solar",
@@ -220,6 +157,7 @@
     ]
   },
   "energy_seen_ids": [
+    "c5cdae3296a12e9e",
     "7b4a12a99790ae4e",
     "d87c345554d45a89",
     "a9f5443a382980f5",
@@ -518,154 +456,9 @@
     "76815b71a0c60ed4",
     "18192444e43946a7",
     "9a87c340c47ecb65",
-    "6c1a1f055fddbbca",
-    "12c57da9193aec03"
+    "6c1a1f055fddbbca"
   ],
   "event_log": [
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "0d289313b5fd142b",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "When Does The Batman: Part II Come Out? Release Date Pushed to 2028 - DraftKings Network",
-      "topic": "movies",
-      "ts": "2026-07-25T15:08:29.784782+00:00",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPQUxtV2dFcFVpS01NcnhhOVNjaE5rSEhCVmJNMzViVnc1WG1YMmlRY2pXcF9ZYmVCTDIzMXpVYS1UYjF0STgtTW5na0UtbV9sbEd1a1dyWXZUcTF6Y29lWUVEMTFoV05nM3BacGd6U0NBeTZjZlduYzVxZG1RbDlUMnJZVTNRdmFBX2hrXy1CekN6clZUdzFqeDhUUHhhRUJIV3I5YjhuclJZMzdOWW9N?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "febe3305523a0fba",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman 2: First Official Look At Robert Pattinson's Dark Knight Revealed As Sequel Is Pushed To 2028 - IMDb",
-      "topic": "movies",
-      "ts": "2026-07-25T15:08:29.785483+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9qLWRpOXJBMDR0SHhXOGpGd0pGS3dEb2FZcmxfelNqR1RtUGZnMGRqdWhPV2NkWnBKTHRMWl9WUmh6WTl2OVBCQlJaQ3IyNXdLOVJzWEc0V3BsYmVLR2dRag?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "244a777af1d390c1",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II Release Date Pushed To 2028, Teaser Posted - Bleeding Cool News",
-      "topic": "movies",
-      "ts": "2026-07-25T15:08:29.786201+00:00",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQUk13eXI4YzU0czQzRDJGbnBUSVY0bjNtREFzWEU1b3h1ekF5c2pxbVF6Z25ZR28zQU1jZzNUQW4xUVhNSnVyR3ZwXzByT2FLS2JHRXpxbHhNdFNESFg4TEI4a2FSLUxFOEVscXlyZ0ZERHdiNDdxSlBzR0J5cWxnMXRIdm0yMHhSRDYtMkVyUlppdGFqRXJ2Yw?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "857305b04ce07622",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman: Part II\u2019 Delayed Again to 2028, First Look at Batsuit Revealed - IMDb",
-      "topic": "movies",
-      "ts": "2026-07-25T15:08:29.786911+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBocDBKM0FlUDRGX3VKc2UwaWdsancxQjNoVFJoRDhvd19RWVgwcGVGNkxVVEpEM2NFUU5aU0dxeUk3Tm9KS0ZfRkkxM0ZkZF9wQ3lER21jMlRLekNxRWdFeQ?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "61d57088acc8818f",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "'The Batman: Part II' delayed to 2028 with new Batsuit reveal - MSN",
-      "topic": "movies",
-      "ts": "2026-07-25T15:08:29.787634+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQVVc2dXFtMGp0QzdIQi16c3hWM0paREpkNFFCb0RLbGRXWUJRNDhQNlpELXBUZ3NmUHVqUzNKQlUzc0U1NUZoZ1RZZ21RdlhNLVBTQURITlRXYjFZVlJ4RFBDUjJfYmhqWGFraHJ5ZGg5SkJROXdWMXlhLVp5TUhmZzA3bEJsangxVnVORklzcTR4VDNnbGluYmRFSGx0aThldkw2VEhvNk5iTFJHd0xXWmthaGhWTXZMYmJjcjBhSmhueFh2WG04U1pkSy1SbndYb09oUmttMEloSjQ3UlZmaTZn?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "8fa541ece8282046",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "'The Batman: Part II' delayed again \u2013 See the teaser, new release date - USA Today",
-      "topic": "movies",
-      "ts": "2026-07-25T15:08:29.788426+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZmFmQ1lsb3pVXzYtZkJfLTVlbUliSzB6dVNxajZ0Qk1BclBzSE9ZbTZkaE90RVh5dmJoTXpfeWlyeGlYRmg1YnNTb0haN3U4T2FVcmJORVhJQ3dBcmxqcnNBSjB6SUV3YnlTXzRCZDY3WklJcE5Fd1ZicHJqYkk5Y2gyQXJrR1FsUEhzSldBVjVwNUhtV0daMFVrb0FnTGRQeDVMcl95ME1icEtZWW5IaDBoNnRBMy1TNXYyZ0hnczlQNnN5WEE?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Show Me How - Men I Trust\n(because you like Tame Impala)",
-      "id": "1d287a8a3a3071f9",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-07-25T15:08:36.880622+00:00",
-      "url": "https://www.deezer.com/track/2579890802"
-    },
-    {
-      "action": "push",
-      "detail": "Visible pass at 10:42 PM - max 51deg, NW to SE. Look up!",
-      "id": "8e8032cf563bc2c2",
-      "score": 62,
-      "severity": "low",
-      "source": "ISS",
-      "title": "ISS pass overhead",
-      "topic": "iss",
-      "ts": "2026-07-25T15:10:24.240877+00:00",
-      "url": ""
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "514092b3840de729",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel's Ominous Avengers: Doomsday Poster Makes Doctor Doom's Motivations Clear - IGN",
-      "topic": "movies",
-      "ts": "2026-07-25T18:08:18.120397+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPUEVLYlBHTmxBTnhGN0ViLTMwb3FWc0RXNXUzbjBIWlQzYXNZMmdKY05jc0RSX0lfWlpkX0RQT09BRDdlMFVhYTZMTzlkZWx1R3cxOUZ3TmhYWVBzYXBRdDBGMG80SmVrdTQtYldHaU9mZnNKQTlzSnBxaDhkZEd5RDFtS1dqMG50ZTF6ZTE3NVM3d0loUDhmU2psUUg4djI1c3A2QWdobm52UQ?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "5c57f27a003389f3",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday\u2019s first trailer puts everyone on high alert - The Verge",
-      "topic": "movies",
-      "ts": "2026-07-25T18:08:18.121491+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxONnlEVTA3S0tUZ3VCZkpsVmlSMHUtQ2lwd1dHM1dzVE9Jb2NvTl9wdFRzTWRBaHgtcjJmZzI3cW1ha1J3a0xWLXhDV0NQdmowaTY5OFp0RXA5SXFCeDdtQzVtT0Ftc2JocDFaQWM1UWl0YXg1MG9ickxmaFN3ckJ6YkE0WWFiY0Z2NVpKUWMxS1A5Q1p4V0E?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "9f9550960e96de34",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday - Official Trailer - IGN Benelux",
-      "topic": "movies",
-      "ts": "2026-07-25T18:08:18.122541+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNW1UaHNSV1FzUzhteUIzRzE5cVl6RDNIWUw5cG1uQmNzSW0zWXNnbnhGXzBRT0xYYjZtdlBBSUQwYTRudkxyOF8ydGk5MDZpUVhVMVI2eUFEWUJNWURIampzSXZldUcxTTFyMVFXdUlBMThwSDRxMUJVQVFvYTVKY3pIVlo?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "8aca36e74acc01c5",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "\u2018The Odyssey\u2019 & \u2018Spider-Man: Brand New Day\u2019 Star Zendaya Announces a Break After a Massive 2026 Run Filled With Blockbusters and Big Moments - IMDb",
-      "topic": "movies",
-      "ts": "2026-07-25T18:08:18.681195+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBrVmN0RXl1VTFYQWNuRTExY3FzRUw4bHZ6YWlhaFUxVGE5bFBFY2NxYTNCQld6QTB4R2l1Qm83ZlNoeVhDanphZzRnSFlhYjNxY2Z5MFUwQm91RU9YdTY4QkEza0pKM3M?oc=5"
-    },
     {
       "action": "drop",
       "detail": "",
@@ -12521,6 +12314,150 @@
       "topic": "habits",
       "ts": "2026-08-07T09:38:11.835390+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Ophelia - The Lumineers\n(because you like Vance Joy)",
+      "id": "95c6df3f223234a6",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-07T12:08:16.069610+00:00",
+      "url": "https://www.deezer.com/track/757235122"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 79.95 (was DOP 149.95, -47%)",
+      "id": "2f378cad64b522eb",
+      "score": 64,
+      "severity": "high",
+      "source": "Nacional",
+      "title": "Nacional deal: Pan Tostado Cl\u00e1sico Para Desayuno Bimbo Bolsa De 210g",
+      "topic": "groceries",
+      "ts": "2026-08-07T12:09:15.790361+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/pan-tostado-clasico-para-desayuno-bimbo-bolsa-de-210g-2238021"
+    },
+    {
+      "action": "push",
+      "detail": "DOP 79.95 (was DOP 149.95, -47%)",
+      "id": "85088095ae18d634",
+      "score": 64,
+      "severity": "high",
+      "source": "Nacional",
+      "title": "Nacional deal: Pan Tostado Doble Fibra Para Desayuno Bimbo  250g",
+      "topic": "groceries",
+      "ts": "2026-08-07T12:09:16.058087+00:00",
+      "url": "https://supermercadosnacional.com/ofertas/pan-tostado-doble-fibra-para-desayuno-bimbo-250g-2137102"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "e7eeb92d906df3c6",
+      "score": 35,
+      "severity": "moderate",
+      "source": "World Nuclear News",
+      "title": "US collaboration to study used nuclear fuel recycling",
+      "topic": "energy",
+      "ts": "2026-08-07T12:09:27.076201+00:00",
+      "url": "https://www.world-nuclear-news.org/articles/us-collaboration-to-study-used-nuclear-fuel-recycling"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "0224cd4b6f0d4b57",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-07T12:09:27.243878+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "USD/DOP moved from 58.30 to 58.27 (-0.03, -0.05%) vs yesterday",
+      "id": "5abe2a8f225e9031",
+      "score": 62,
+      "severity": "high",
+      "source": "FX",
+      "title": "USD/DOP today: 58.27",
+      "topic": "fx",
+      "ts": "2026-08-07T12:09:40.478489+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "On this day\n1897: Mahdist War: Anglo-Egyptian soldiers clashed with Mahdist Sudanese rebels in the Battle of Abu Hamed.\n\nFeatured: Henry Macandrew\nMajor-General Sir Henry John Milnes Macandrew, was a British Indian Army officer who fought in the Boer War and First World War, rising to command cavalry divisions on the Western Front and in the Sinai and Palestine campaign.\n\nLife skill\nYour smoke alarm cuts your risk of dying in a home fire by 50%; test it monthly and replace its batteries yearly. (Source: Red Cross)",
+      "id": "8a75e3f97d579d9d",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Daily learning",
+      "topic": "learn",
+      "ts": "2026-08-07T12:09:49.494336+00:00",
+      "url": "https://en.wikipedia.org/wiki/Henry_Macandrew"
+    },
+    {
+      "action": "push",
+      "detail": "As the last great Ice Age waned, a staggering array of giant creatures, the megafauna, roamed the Earth. Woolly mammoths, with their shaggy coats and enormous tusks, shared the frigid grasslands with lumbering woolly rhinoceroses. Giant ground sloths, the size of modern elephants, browsed ancient forests, while saber-toothed cats, with their iconic dagger-like canines, hunted colossal bison and towering short-faced bears. But as the planet began to warm, a dramatic shift occurred, and the populations of these magnificent beasts, which had weathered countless previous glaciations, began a precipitous decline, leading to their near-total disappearance across most continents.\n\nThe precise causes of this grand extinction event, unfolding roughly 10,000 to 15,000 years ago, remain a subject of intense scientific debate. One prominent theory, the \"overkill\" hypothesis, implicates the arrival of anatomically modern humans, Homo sapiens, armed with increasingly sophisticated hunting tools and techniques. As humans expanded their territories across continents like North America and Australia, areas where megafauna had never encountered such a formidable predator, the sheer efficiency of their hunting may have pushed already stressed populations past a critical threshold. Competing theories emphasize the dramatic climatic shifts of the Younger Dryas and subsequent periods, with rapid temperature changes, alterations in vegetation, and the disruption of critical habitats proving too much for species adapted to glacial conditions to overcome.\n\nRegardless of the exact blend of factors, the extinction of the megafauna represents a profound turning point in Earth\u2019s history.",
+      "id": "ace63aee28509fe1",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "The Ice Age megafauna extinctions",
+      "topic": "spark",
+      "ts": "2026-08-07T12:09:52.667529+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "What: Morocco's Noor Ouarzazate complex is one of the world's largest concentrated solar power plants, using mirrors to focus sunlight and store heat.\nWhy it matters: By storing heat in molten salt, it can keep generating for hours after sunset \u2014 solar that runs into the night.\nWhy you should care: It points to how sun-rich nations could export clean power and reduce reliance on imported fuel.\n(Source: International Energy Agency)",
+      "id": "ba9fb7c997cc844e",
+      "score": 60,
+      "severity": "low",
+      "source": "Energy learning",
+      "title": "\u26a1 Today's spark \u2014 Noor Ouarzazate \u2014 a solar oasis",
+      "topic": "energy_learn",
+      "ts": "2026-08-07T12:09:52.879115+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "You're eligible to donate blood again (last donation 2024-12-15, eligible since 2025-02-09).",
+      "id": "1c9a55d9c359318b",
+      "score": 45,
+      "severity": "moderate",
+      "source": "Blood donation",
+      "title": "Blood donation",
+      "topic": "blood_donation",
+      "ts": "2026-08-07T12:09:57.759748+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Ends Saturday 08 August (tomorrow). Tap for the academic calendar (PDF).",
+      "id": "a001970ba12c03ea",
+      "score": 62,
+      "severity": "high",
+      "source": "ITSC",
+      "title": "ITSC: Evaluaci\u00f3n Docente (Encuestas)",
+      "topic": "itsc",
+      "ts": "2026-08-07T12:09:59.215639+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/07/Calendario-academico-2026-2-actualizado-julio.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "There are more than half a million galaxies in the central panel of this image from the NSF-DOE Vera C. Rubin Observatory in Chile. This is the COSMOS field, a patch of sky several times larger than the full moon, first observed by Hubble. It has also been observed by Webb and...\n(c) NSF\u2013DOE Vera C. Rubin Observatory/NOIRLab/SLAC/AURA Text: Cecilia Chirenti (NASA GSFC, UMCP, CRESST II)",
+      "id": "52febeb4e1fdc6bc",
+      "score": 60,
+      "severity": "low",
+      "source": "NASA APOD",
+      "title": "APOD: Rubin's COSMOS field",
+      "topic": "apod",
+      "ts": "2026-08-07T12:10:03.007532+00:00",
+      "url": "https://apod.nasa.gov/apod/image/2608/noirlab2618b.jpg"
     }
   ],
   "exercise_slots_sent": [],
@@ -12748,7 +12685,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
   "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-06T21:24:47.204641+00:00",
+  "fuel_last_prices_seen_at": "2026-08-07T12:09:42.620379+00:00",
   "fuel_prices": {
     "GLP": 135.2,
     "Gasoil Regular": 258.3,
@@ -12758,8 +12695,8 @@
     "Kerosene": 335.5
   },
   "fx_daily_baseline": {
-    "date": "2026-08-06",
-    "rate": 58.301035
+    "date": "2026-08-07",
+    "rate": 58.274238
   },
   "fx_last_rate": 58.274238,
   "fx_last_zone": "within",
@@ -13616,6 +13553,10 @@
       "997e525f302628c6"
     ],
     "Nacional": [
+      "ad5e896806d8d20e",
+      "42b331d2bba8546b",
+      "677717ad6111adfa",
+      "f7bf43f655fb2d80",
       "b3b570a7c122fc4c",
       "b73180e25bd05d27",
       "eabecb447c8a299a",
@@ -14144,6 +14085,7 @@
     "cfbcd32193b51486"
   ],
   "itsc_sent_ids": [
+    "16a062d27f24017b",
     "884c2c592f066bf0",
     "b62f93625607505e",
     "3b16a484ca234724",
@@ -14215,13 +14157,12 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "astronomy",
+  "knowledge_last_category": "early_humans",
   "knowledge_last_sent": "2026-07-14T4",
   "knowledge_seen": {
     "ancient_civilizations:Hatshepsut, the woman who became pharaoh": "2026-08-05",
     "ancient_civilizations:The Aztec Empire and Tenochtitlan": "2026-07-26",
     "ancient_civilizations:The Babylonian Empire": "2026-07-10",
-    "ancient_civilizations:The Epic of Gilgamesh": "2026-07-08",
     "ancient_civilizations:The Indus Valley Civilization": "2026-07-14",
     "ancient_civilizations:The Trojan War and Schliemann's excavations": "2026-07-11",
     "ancient_civilizations:The building of the Great Wall of China": "2026-07-09",
@@ -14230,13 +14171,12 @@
     "astronomy:Sputnik and the dawn of the space age": "2026-07-27",
     "astronomy:The Cassini mission to Saturn": "2026-07-13",
     "astronomy:The Drake equation and the search for life": "2026-07-10",
-    "astronomy:The Tunguska event of 1908": "2026-07-08",
     "astronomy:Tycho's supernova of 1572": "2026-07-14",
     "astronomy:Vera Rubin and the evidence for dark matter": "2026-07-11",
     "astronomy:Yuri Gagarin, the first human in space": "2026-08-06",
     "early_humans:Homo habilis and the first stone tools": "2026-07-09",
     "early_humans:The Blombos Cave engravings": "2026-07-28",
-    "early_humans:The dawn of metallurgy in the Bronze Age": "2026-07-08",
+    "early_humans:The Ice Age megafauna extinctions": "2026-08-07",
     "early_humans:The domestication of the dog": "2026-07-14",
     "early_humans:The domestication of wheat and barley": "2026-07-13",
     "early_humans:The first deliberate burials and ritual": "2026-07-10",
@@ -14246,7 +14186,6 @@
     "math_history:Ramanujan and Hardy's improbable collaboration": "2026-07-29",
     "math_history:The Seven Bridges of K\u00f6nigsberg": "2026-07-13",
     "math_history:The bitter calculus priority dispute": "2026-07-10",
-    "math_history:The halting problem": "2026-07-08",
     "math_history:Turing and the limits of computation": "2026-07-12",
     "medicine:Andreas Vesalius and the birth of modern anatomy": "2026-07-13",
     "medicine:Ignaz Semmelweis and the fight for handwashing": "2026-07-11",
@@ -14254,9 +14193,7 @@
     "medicine:The Tuskegee syphilis study and research ethics": "2026-07-12",
     "medicine:The first MRI scan of a human body": "2026-07-30",
     "medicine:The global eradication of smallpox": "2026-07-16",
-    "medicine:The thalidomide tragedy and drug regulation": "2026-07-08",
     "mythology:Dragons across the world's mythologies": "2026-07-11",
-    "mythology:King Midas and the golden touch": "2026-07-08",
     "mythology:Orpheus and Eurydice in the underworld": "2026-07-12",
     "mythology:The Greek creation myth and the Titans": "2026-07-31",
     "mythology:The Maya Popol Vuh": "2026-07-13",
@@ -14264,13 +14201,11 @@
     "mythology:Thor and the hammer Mj\u00f6lnir": "2026-07-09",
     "philosophy:Aristotle's virtue ethics": "2026-07-12",
     "philosophy:Descartes and 'I think, therefore I am'": "2026-07-13",
-    "philosophy:Diogenes and the Cynics": "2026-07-08",
     "philosophy:John Locke and the blank slate": "2026-08-01",
     "philosophy:John Stuart Mill and utilitarianism": "2026-07-18",
     "philosophy:Schopenhauer and the world as will": "2026-07-11",
     "philosophy:Zeno of Citium and the founding of Stoicism": "2026-07-10",
     "science:Alfred Wegener and continental drift": "2026-08-02",
-    "science:Gregor Mendel and the laws of heredity": "2026-07-08",
     "science:Lord Kelvin and the age of the Earth debate": "2026-07-19",
     "science:Louis Pasteur and germ theory": "2026-07-11",
     "science:Maxwell's equations and the unification of light": "2026-07-10",
@@ -14292,9 +14227,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-07T11:53:04.388743+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-07T12:08:09.254564+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14333,7 +14268,7 @@
     "9cf78ee44cb96c21",
     "7621aad01d0821be"
   ],
-  "learn_last_sent": "2026-08-06",
+  "learn_last_sent": "2026-08-07",
   "life_dashboard_last_week": "2026-W31",
   "meditate_slots_sent": [],
   "music_discovery_seen": [
@@ -14569,7 +14504,8 @@
     8828322,
     68583162,
     5575105,
-    4027889
+    4027889,
+    793825
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14971,6 +14907,15 @@
       "label": "Wire",
       "payload": {
         "name": "Wire"
+      }
+    },
+    "b442d7c22b99bc8e": {
+      "applied": null,
+      "created": "2026-08-07T12:08:16.069585+00:00",
+      "kind": "artist",
+      "label": "The Lumineers",
+      "payload": {
+        "name": "The Lumineers"
       }
     },
     "b4dcc8d3e8f7f3be": {
@@ -15403,155 +15348,155 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82689,
-  "spark_next_kind": "fact",
+  "spark_last_sent": 82690,
+  "spark_next_kind": "health",
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-07T09:09:27.181186+00:00",
+      "last_data": "2026-08-07T12:09:40.370968+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-07T09:09:29.501762+00:00",
+      "last_data": "2026-08-07T12:09:45.420651+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "apod": {
-      "last_data": "2026-08-06T21:25:01.352747+00:00",
+      "last_data": "2026-08-07T12:10:03.007514+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "deals": {
-      "last_data": "2026-08-07T09:09:00.969305+00:00",
-      "last_data_count": 11,
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_data": "2026-08-07T12:09:07.925142+00:00",
+      "last_data_count": 12,
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "energy": {
-      "last_data": "2026-08-07T09:09:12.096126+00:00",
-      "last_data_count": 60,
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_data": "2026-08-07T12:09:27.075715+00:00",
+      "last_data_count": 59,
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "energy_learn": {
-      "last_data": "2026-08-06T12:10:05.315809+00:00",
+      "last_data": "2026-08-07T12:09:53.242113+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T12:08:12.457967+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "fda": {
-      "last_data": "2026-08-07T09:09:02.203669+00:00",
+      "last_data": "2026-08-07T12:09:16.668340+00:00",
       "last_data_count": 15,
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-06T21:24:47.204657+00:00",
+      "last_data": "2026-08-07T12:09:42.620399+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "fx": {
-      "last_data": "2026-08-07T09:09:27.298259+00:00",
+      "last_data": "2026-08-07T12:09:40.478294+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-07T09:08:16.037468+00:00",
+      "last_data": "2026-08-07T12:08:18.337540+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-06T21:24:21.377492+00:00",
+      "last_data": "2026-08-07T12:09:15.789258+00:00",
       "last_data_count": 227,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "habits": {
-      "last_data": "2026-08-07T11:53:06.897132+00:00",
+      "last_data": "2026-08-07T12:09:48.633751+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-07T11:53:04.388743+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-06T21:24:58.921479+00:00",
+      "last_data": "2026-08-07T12:09:58.119396+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "iss": {
-      "last_data": "2026-08-07T09:09:29.031874+00:00",
-      "last_data_count": 2,
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_data": "2026-08-07T12:09:44.828586+00:00",
+      "last_data_count": 1,
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-06T21:24:59.857480+00:00",
+      "last_data": "2026-08-07T12:09:59.215292+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "launches": {
-      "last_data": "2026-08-07T09:09:28.416968+00:00",
+      "last_data": "2026-08-07T12:09:44.291422+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "learn": {
-      "last_data": "2026-08-06T12:10:00.816721+00:00",
+      "last_data": "2026-08-07T12:09:48.870742+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-06T12:08:12.457967+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "marine": {
-      "last_data": "2026-08-06T21:25:01.090028+00:00",
+      "last_data": "2026-08-07T12:10:00.643239+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "music": {
-      "last_data": "2026-08-07T09:08:14.466922+00:00",
+      "last_data": "2026-08-07T12:08:14.687695+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-07T09:09:12.660080+00:00",
+      "last_data": "2026-08-07T12:09:27.669720+00:00",
       "last_data_count": 24,
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (12d ago)",
-      "last_error_ts": "2026-08-07T09:08:11.021675+00:00",
+      "last_error_ts": "2026-08-07T12:08:09.254564+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-07T09:09:26.799994+00:00",
-      "last_data_count": 33,
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_data": "2026-08-07T12:09:39.740979+00:00",
+      "last_data_count": 30,
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "research": {
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-07T09:08:55.125346+00:00",
+      "last_data": "2026-08-07T12:09:02.454777+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "spark": {
       "last_data": "2026-08-07T06:09:27.054554+00:00",
@@ -15559,37 +15504,37 @@
       "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "spending": {
-      "empty_runs": 28,
+      "empty_runs": 29,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-07T11:53:05.720407+00:00",
+      "last_data": "2026-08-07T12:08:12.581775+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-07T11:53:04.388743+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "uv": {
-      "last_data": "2026-08-06T21:25:00.484180+00:00",
+      "last_data": "2026-08-07T12:10:00.027521+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "weather": {
-      "last_data": "2026-08-07T09:09:12.352902+00:00",
+      "last_data": "2026-08-07T12:09:27.243447+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-07T09:09:30.634567+00:00",
+      "last_data": "2026-08-07T12:09:47.028158+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-07T09:08:11.021675+00:00"
+      "last_ok": "2026-08-07T12:08:09.254564+00:00"
     }
   },
   "twitch_live": [],
@@ -15597,7 +15542,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165379"
+    "last_full_window": "165380"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15619,6 +15564,7 @@
     "2026-08-07|05:30"
   ],
   "weather_seen_ids": [
+    "d47fa5d5635d0667",
     "13bbf2ab69c9fdc6",
     "299fe61af37458e8",
     "29d813b35e623f9c",
@@ -15817,8 +15763,7 @@
     "02375c3cfb5372ae",
     "a191549e58f3ffca",
     "d037b12df9891ca7",
-    "515305adaae01e6a",
-    "21ce453627b94eb7"
+    "515305adaae01e6a"
   ],
   "wikiquote_last_category": "leaders",
   "wikiquote_last_sent": "2026-07-14T4",
