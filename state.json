@@ -1,5 +1,6 @@
 {
   "anthropic_seen": [
+    "fac49ca619ec415d",
     "a5e7c7504f8d5789",
     "bb6202c9250b7b15",
     "f1ed3916d09b894a",
@@ -147,6 +148,15 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Earthquakes",
+      "title": "M3.2 - 63 km N of Punta Cana, Dominican Republic (~171 km away)",
+      "topic": "quakes",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tiwb"
     }
   ],
   "digest_last_sent": "2026-08-06",
@@ -512,42 +522,6 @@
     "12c57da9193aec03"
   ],
   "event_log": [
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "61d287d854a7d109",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman: Part II delayed to 2028 with first look reveal - MSN",
-      "topic": "movies",
-      "ts": "2026-07-25T15:08:29.781741+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQZ2FGbnpLcTlUNkN3Y1BJVGxwNHNPRFJUaVpBVDYyUEpXZGVVSUk4WlozNVpMUTk0MllLN0dqNTFMMXpZYXQ3YmVxZHhZZ0RmUE1PY2V6UzlRWG9CQW1xdVdmaWxmalowUGN4MC0wWVd2UzBqSG5YbEMwMlZlT01ScmRBdzZwWDQ5SFBmd1JaWTdCMUFIYXo2cU1xdFh1UVZzYWhLYVRyd3lkV1d6M29hS2UtdUU5ZGVhZ1BadWY0X1g2OWRaWl84UDNnNnpHUUtEdXVBRUg1M0tvYTdjcERLU1BjbkFYenpRaEJURnFGcC0?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "4d9e7ccdbdc667f5",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II delayed to 2028 as first teaser drops - MSN",
-      "topic": "movies",
-      "ts": "2026-07-25T15:08:29.782505+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxQaUJvUWNZUWZmYzdjSFA2YVdPVVdPaUlGdnB3bzFuaVJJdWRvaWpXUDNEbmgyekQ2cEVMdGsxaDhNZkg3VmVJTzFtckVzTFU3SXBoSDBjZVUtLWw4Nmg4bHNkSnZ5bG4zY3ZlbmJoVlZyeFJZYXE2bWVmNnltZjJJQlpLZi0yNVdhOElfZVpRbXFyM0M1eHhqNDRYVGJnRTFpZmhlRUZQQnl0NXlDdExBang0bnZITWVZekluelVrMGRySEItZGd0NHdqLXg4UlNnYzV6ZlBHazA3cThvZUlmY0dvekEyckwtSzlCSF9lcw?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "af0aa47547c94944",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II delayed to 2028 with first look revealed - MSN",
-      "topic": "movies",
-      "ts": "2026-07-25T15:08:29.783242+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNMVBOcDlUVXNYQS1EYUw1WmFRaW5LSTFObnF0QWxzN19VWkdXOUxvUU11aUw5WGoyc1hIbU5yNnZ5azVwaTJOaHVrUjY5RHBBTktXMnA2SThXaHV5Z1VFSmJFR3ZoWWZ3WE56bF8xZ180cjVqblZVWDJRNUt1MVdoWUtNM0xxTGRVY1FNa3dsekJ4VUNkcV9vTmpUWFRwNkViejlwdzdBdVpNVjhKc1RodC1KRXBGOXZMLWpRbDFEQlR3ZmJrS2NBMl9paFFwUUhPR3QwN3JLcVYtb2xpUW9qRUdBYURmWVA4cUVHQTV3UFdMa3dj?oc=5"
-    },
     {
       "action": "drop",
       "detail": "",
@@ -12511,6 +12485,42 @@
       "topic": "watchdog",
       "ts": "2026-08-07T06:09:33.835238+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "6faed47b0ce67f80",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.2 - 63 km N of Punta Cana, Dominican Republic (~171 km away)",
+      "topic": "quakes",
+      "ts": "2026-08-07T09:09:26.800457+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/us6000tiwb"
+    },
+    {
+      "action": "push",
+      "detail": "Improving Fable 5's biology safeguards - Anthropic",
+      "id": "4701281e015074bc",
+      "score": 64,
+      "severity": "moderate",
+      "source": "Anthropic",
+      "title": "Anthropic",
+      "topic": "anthropic_news",
+      "ts": "2026-08-07T09:09:29.501902+00:00",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE95RXUtcVFIR1hIbmVDRk5sRDZEVWZSRTlXNXRMU1RXQk1JdE1kRzBMR3RuOGhzOVRZdEs2bGRIX3JIa1ZZbjlCbGx5RzlZRGdQZ3RwLXVidjZyZUpXeU1sM0hYeTQ2QW0zOXlCWnJQenFhZ0dEUFNFUA?oc=5"
+    },
+    {
+      "action": "push",
+      "detail": "youtube \u2014 running again after 6h down",
+      "id": "0e924941894fe1b5",
+      "score": 72,
+      "severity": "high",
+      "source": "Watchdog",
+      "title": "Watchdog: 'youtube' recovered",
+      "topic": "watchdog",
+      "ts": "2026-08-07T09:09:34.944306+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -14282,9 +14292,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-07T08:53:11.441838+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-07T09:08:11.021675+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15248,6 +15258,7 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "303b124df58ddeae",
     "aded035eaa97c472",
     "119c925ecc331ffe",
     "c5b282f541dd3be9",
@@ -15397,14 +15408,14 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-07T06:09:23.890364+00:00",
+      "last_data": "2026-08-07T09:09:27.181186+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-07T06:09:25.132641+00:00",
+      "last_data": "2026-08-07T09:09:29.501762+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "apod": {
       "last_data": "2026-08-06T21:25:01.352747+00:00",
@@ -15412,26 +15423,26 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "deals": {
-      "last_data": "2026-08-07T06:08:59.272972+00:00",
-      "last_data_count": 12,
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_data": "2026-08-07T09:09:00.969305+00:00",
+      "last_data_count": 11,
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "energy": {
-      "last_data": "2026-08-07T06:09:08.926182+00:00",
+      "last_data": "2026-08-07T09:09:12.096126+00:00",
       "last_data_count": 60,
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-06T12:10:05.315809+00:00",
@@ -15439,9 +15450,9 @@
       "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "fda": {
-      "last_data": "2026-08-07T06:09:00.004812+00:00",
+      "last_data": "2026-08-07T09:09:02.203669+00:00",
       "last_data_count": 15,
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "fuel": {
       "last_data": "2026-08-06T21:24:47.204657+00:00",
@@ -15449,18 +15460,18 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "fx": {
-      "last_data": "2026-08-07T06:09:23.970644+00:00",
+      "last_data": "2026-08-07T09:09:27.298259+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-07T06:08:10.906460+00:00",
+      "last_data": "2026-08-07T09:08:16.037468+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "groceries": {
       "last_data": "2026-08-06T21:24:21.377492+00:00",
@@ -15468,9 +15479,9 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "habits": {
-      "last_data": "2026-08-07T08:53:13.962981+00:00",
+      "last_data": "2026-08-07T09:09:31.472900+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-07T08:53:11.441838+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "holidays": {
       "last_data": "2026-08-06T21:24:58.921479+00:00",
@@ -15478,9 +15489,9 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "iss": {
-      "last_data": "2026-08-07T06:09:24.635085+00:00",
+      "last_data": "2026-08-07T09:09:29.031874+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "itsc": {
       "last_data": "2026-08-06T21:24:59.857480+00:00",
@@ -15488,9 +15499,9 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "launches": {
-      "last_data": "2026-08-07T06:09:24.069553+00:00",
+      "last_data": "2026-08-07T09:09:28.416968+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "learn": {
       "last_data": "2026-08-06T12:10:00.816721+00:00",
@@ -15498,7 +15509,7 @@
       "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "marine": {
       "last_data": "2026-08-06T21:25:01.090028+00:00",
@@ -15506,41 +15517,41 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "music": {
-      "last_data": "2026-08-07T06:08:09.227112+00:00",
+      "last_data": "2026-08-07T09:08:14.466922+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-07T06:09:09.435508+00:00",
+      "last_data": "2026-08-07T09:09:12.660080+00:00",
       "last_data_count": 24,
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (12d ago)",
-      "last_error_ts": "2026-08-07T06:08:05.537841+00:00",
+      "last_error_ts": "2026-08-07T09:08:11.021675+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-07T06:09:23.479537+00:00",
+      "last_data": "2026-08-07T09:09:26.799994+00:00",
       "last_data_count": 33,
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "research": {
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-07T06:08:51.796580+00:00",
+      "last_data": "2026-08-07T09:08:55.125346+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "spark": {
       "last_data": "2026-08-07T06:09:27.054554+00:00",
@@ -15548,16 +15559,16 @@
       "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "spending": {
-      "empty_runs": 27,
+      "empty_runs": 28,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-07T08:53:12.742530+00:00",
+      "last_data": "2026-08-07T09:08:12.771897+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-07T08:53:11.441838+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "uv": {
       "last_data": "2026-08-06T21:25:00.484180+00:00",
@@ -15565,23 +15576,20 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "weather": {
-      "last_data": "2026-08-07T06:09:09.057916+00:00",
+      "last_data": "2026-08-07T09:09:12.352902+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-07T00:09:58.306385+00:00",
+      "last_data": "2026-08-07T09:09:30.634567+00:00",
       "last_data_count": 90,
-      "last_error": "all 7 channel feed(s) failed; last: PabloELECTRUM: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UC9DS-MY8CZzLh7vQG000uug",
-      "last_error_ts": "2026-08-07T06:08:05.537841+00:00",
-      "last_ok": "2026-08-07T00:08:25.027167+00:00",
-      "source_failed": true
+      "last_ok": "2026-08-07T09:08:11.021675+00:00"
     }
   },
   "twitch_live": [],
@@ -15589,7 +15597,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165378"
+    "last_full_window": "165379"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15605,12 +15613,6 @@
       "last_alert": "2026-08-07T06:09:33.835074+00:00",
       "reminders": 8,
       "since": "2026-08-02T17:18:45.308745+00:00"
-    },
-    "youtube": {
-      "alerted": "2026-08-07T03:09:21.233221+00:00",
-      "last_alert": "2026-08-07T03:09:21.233221+00:00",
-      "reminders": 0,
-      "since": "2026-08-07T03:09:21.233221+00:00"
     }
   },
   "water_slots_sent": [],
