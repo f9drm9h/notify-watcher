@@ -525,18 +525,6 @@
     {
       "action": "drop",
       "detail": "",
-      "id": "aaf13c245520abeb",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Robert Pattinson's Return in The Batman: Part 2 Delayed Again, Now Arriving 2028 - IGN Nordic",
-      "topic": "movies",
-      "ts": "2026-07-25T15:08:29.784083+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYmJOUFlOTG9jQXc2S2lCQWp6VlhTd3JGNmhPMmNBZTBLeFpGdVV4aEIwRy00Vmhxcy04ODZLcjdBeXhUMF9SYm1uZ3QwQnp6SktrR0lndW0zcWF5czNmajh4MmlhSkM2NW1FV2hLUmw0aVRYaVAwY3lLZGRBQkFReFdLT1NzVkQ4UkxTbzIxUmhUMnFZOWxiQWViOEVYVzQyQVI0c1BuNk5nM3NEamFfRFRhVV9IX1JqbWZHUw?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
       "id": "0d289313b5fd142b",
       "score": 28,
       "severity": "moderate",
@@ -12521,6 +12509,18 @@
       "topic": "watchdog",
       "ts": "2026-08-07T09:09:34.944306+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Before coffee, before your phone: a glass of water.",
+      "id": "1f5265ccd9ecf950",
+      "score": 0,
+      "severity": "low",
+      "source": "water",
+      "title": "Water - start the day hydrated",
+      "topic": "habits",
+      "ts": "2026-08-07T09:38:11.835390+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -14015,6 +14015,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-08-07T02:08:13.560128+00:00"
+    },
+    "1535220513108926546": {
+      "channel": "1515504253345726558",
+      "habit": "water",
+      "sent": "2026-08-07T09:38:11.835390+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-07",
@@ -14294,7 +14299,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-07T09:23:10.411553+00:00"
+    "ts": "2026-08-07T09:38:09.616535+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15479,9 +15484,9 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "habits": {
-      "last_data": "2026-08-07T09:23:13.819255+00:00",
+      "last_data": "2026-08-07T09:38:13.852471+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-07T09:23:10.411553+00:00"
+      "last_ok": "2026-08-07T09:38:09.616535+00:00"
     },
     "holidays": {
       "last_data": "2026-08-06T21:24:58.921479+00:00",
@@ -15566,9 +15571,9 @@
       "last_ok": "2026-08-07T09:08:11.021675+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-07T09:23:12.594839+00:00",
+      "last_data": "2026-08-07T09:38:11.834972+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-07T09:23:10.411553+00:00"
+      "last_ok": "2026-08-07T09:38:09.616535+00:00"
     },
     "uv": {
       "last_data": "2026-08-06T21:25:00.484180+00:00",
@@ -15615,7 +15620,9 @@
       "since": "2026-08-02T17:18:45.308745+00:00"
     }
   },
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-08-07|05:30"
+  ],
   "weather_seen_ids": [
     "13bbf2ab69c9fdc6",
     "299fe61af37458e8",
