@@ -131,6 +131,15 @@
       "title": "M3.2 - 62 km NW of San Antonio, Puerto Rico (~240 km away)",
       "topic": "quakes",
       "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527698"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-08-06",
@@ -496,30 +505,6 @@
     "12c57da9193aec03"
   ],
   "event_log": [
-    {
-      "action": "push",
-      "detail": "\u201cEthics, too, are nothing but reverence for life. That is what gives me the fundamental principle of morality, namely, that good consists in maintaining, promoting, and enhancing life, and that destroying, injuring, and limiting life are evil.\u201d\n\u2014 Albert Schweitzer\n\nThe year was 1952, and a formidable figure, whose very name had become synonymous with humanitarianism, stood before an expectant audience in Oslo. Albert Schweitzer, a man of staggering intellect\u2014theologian, musician, philosopher, and physician\u2014was accepting the Nobel Peace Prize. He had by then spent decades of his life in the remote reaches of Lambar\u00e9n\u00e9, Gabon, dedicating himself to medicine and the service of others, a journey that began with a profound spiritual crisis over the suffering he witnessed in the world. It was in this crucible of thought and action that his concept of \"Reverence for Life\" was forged.\n\nThis wasn't merely a philosophical ideal for Schweitzer; it was the practical bedrock of his existence. He saw in every living thing, from the grandest human endeavor to the smallest insect, an intrinsic will to live, and thus, a right to exist. His ethics demanded a boundless sense of responsibility, urging us not just to avoid harm, but actively to foster, promote, and enhance life in all its myriad forms. To him, the ethical dilemma wasn't an abstract puzzle but a constant call to action, demanding compassion and engagement with the world's pain.\n\nIn our own complex age, Schweitzer's words resonate with a startling clarity. As we grapple with ecological crises, social injustices, and the ever-present shadow of conflict, his call to reverence life offers a universal antidote. It transcends cultural and religious divides, providing a fundamental principle for a shared morality.",
-      "id": "562c196b12915bb2",
-      "score": 60,
-      "severity": "low",
-      "source": "Wikiquote",
-      "title": "Albert Schweitzer",
-      "topic": "spark",
-      "ts": "2026-07-25T12:11:31.966720+00:00",
-      "url": ""
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "a68ad2f09abcaa3a",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Marvel Studios Launches \u2018Avengers: Doomsday\u2019 Trailer and Infinity Vision Tickets - Marvel.com",
-      "topic": "movies",
-      "ts": "2026-07-25T15:08:27.323815+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOQ3VXSDF4SW16QmZvcVN5Sk5zdzBSUDlRcFUxZnRvc0Y1ckVDdWNuMS1HZWdpcEVfTXpVRk14VzUzSnJBVHFOY09vZktOS2R1bDdHMU51UktlR3gwRlZXaTVGYmZNWVF6LTdkdENXUEt1dFI5ZDZsSkptZ2ZUbENSRUM2LTdUeUQ2emE0eW1Ub3BTdw?oc=5"
-    },
     {
       "action": "drop",
       "detail": "",
@@ -12495,6 +12480,30 @@
       "topic": "habits",
       "ts": "2026-08-06T22:08:29.280926+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "ef78e155f94600bd",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-07T00:09:10.965091+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Manage stress with brief daily breathing or relaxation breaks; chronic stress affects sleep and heart health. (Source: MedlinePlus)",
+      "id": "aa00e0b5e478f21d",
+      "score": 60,
+      "severity": "low",
+      "source": "Health",
+      "title": "Health tip",
+      "topic": "spark",
+      "ts": "2026-08-07T00:10:00.659943+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -13993,7 +14002,7 @@
       "sent": "2026-08-06T22:08:29.280926+00:00"
     }
   },
-  "health_tip_last_sent": "2026-08-06",
+  "health_tip_last_sent": "2026-08-07",
   "holidays_sent": [],
   "ignored": {
     "4071c13d0b9dc18b": {
@@ -14268,9 +14277,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-06T23:53:11.049419+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-07T00:08:25.027167+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15098,8 +15107,7 @@
   },
   "onamet_active": {
     "274386cf5bc31532": "2026-08-07T20:00:12-04:00",
-    "5c27327553576e86": "2026-08-07T20:00:12-04:00",
-    "8d3643a45f81aeb8": "2026-08-06T15:18:45-04:00"
+    "5c27327553576e86": "2026-08-07T20:00:12-04:00"
   },
   "onamet_seen_ids": [
     "339103b957436a56",
@@ -15381,19 +15389,19 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82686,
-  "spark_next_kind": "health",
+  "spark_last_sent": 82688,
+  "spark_next_kind": "quote",
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-06T21:24:45.417524+00:00",
+      "last_data": "2026-08-07T00:09:27.081094+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-06T21:24:48.906453+00:00",
+      "last_data": "2026-08-07T00:09:57.062952+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "apod": {
       "last_data": "2026-08-06T21:25:01.352747+00:00",
@@ -15401,26 +15409,26 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "deals": {
-      "last_data": "2026-08-06T21:24:05.450990+00:00",
-      "last_data_count": 11,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_data": "2026-08-07T00:09:00.815349+00:00",
+      "last_data_count": 12,
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "energy": {
-      "last_data": "2026-08-06T21:24:31.048881+00:00",
+      "last_data": "2026-08-07T00:09:10.745629+00:00",
       "last_data_count": 60,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-06T12:10:05.315809+00:00",
@@ -15428,9 +15436,9 @@
       "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "fda": {
-      "last_data": "2026-08-06T21:24:21.616217+00:00",
+      "last_data": "2026-08-07T00:09:01.463475+00:00",
       "last_data_count": 15,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "fuel": {
       "last_data": "2026-08-06T21:24:47.204657+00:00",
@@ -15438,18 +15446,18 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "fx": {
-      "last_data": "2026-08-06T21:24:45.472859+00:00",
+      "last_data": "2026-08-07T00:09:27.302327+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-06T21:23:24.244556+00:00",
+      "last_data": "2026-08-07T00:08:32.517812+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "groceries": {
       "last_data": "2026-08-06T21:24:21.377492+00:00",
@@ -15457,9 +15465,9 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "habits": {
-      "last_data": "2026-08-06T23:53:16.419170+00:00",
+      "last_data": "2026-08-07T00:10:00.077344+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-06T23:53:11.049419+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "holidays": {
       "last_data": "2026-08-06T21:24:58.921479+00:00",
@@ -15467,9 +15475,9 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "iss": {
-      "last_data": "2026-08-06T21:24:48.126888+00:00",
-      "last_data_count": 3,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_data": "2026-08-07T00:09:56.510772+00:00",
+      "last_data_count": 2,
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "itsc": {
       "last_data": "2026-08-06T21:24:59.857480+00:00",
@@ -15477,9 +15485,9 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "launches": {
-      "last_data": "2026-08-06T21:24:47.582396+00:00",
+      "last_data": "2026-08-07T00:09:55.868293+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "learn": {
       "last_data": "2026-08-06T12:10:00.816721+00:00",
@@ -15487,7 +15495,7 @@
       "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "marine": {
       "last_data": "2026-08-06T21:25:01.090028+00:00",
@@ -15495,41 +15503,41 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "music": {
-      "last_data": "2026-08-06T21:23:21.235694+00:00",
+      "last_data": "2026-08-07T00:08:30.659785+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-06T21:24:31.629357+00:00",
+      "last_data": "2026-08-07T00:09:11.374589+00:00",
       "last_data_count": 24,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (11d ago)",
-      "last_error_ts": "2026-08-06T21:23:15.744153+00:00",
+      "last_error_ts": "2026-08-07T00:08:25.027167+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-06T21:24:44.796095+00:00",
-      "last_data_count": 44,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_data": "2026-08-07T00:09:26.457337+00:00",
+      "last_data_count": 41,
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "research": {
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-06T21:24:00.837271+00:00",
+      "last_data": "2026-08-07T00:08:52.557596+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "spark": {
       "last_data": "2026-08-06T06:09:10.678404+00:00",
@@ -15537,16 +15545,16 @@
       "last_ok": "2026-08-06T06:08:11.145627+00:00"
     },
     "spending": {
-      "empty_runs": 24,
+      "empty_runs": 25,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-06T23:53:13.279096+00:00",
+      "last_data": "2026-08-07T00:08:28.264571+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-06T23:53:11.049419+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "uv": {
       "last_data": "2026-08-06T21:25:00.484180+00:00",
@@ -15554,20 +15562,20 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "weather": {
-      "last_data": "2026-08-06T21:24:31.175165+00:00",
+      "last_data": "2026-08-07T00:09:10.964792+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-06T21:24:49.999344+00:00",
+      "last_data": "2026-08-07T00:09:58.306385+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-06T21:23:15.744153+00:00"
+      "last_ok": "2026-08-07T00:08:25.027167+00:00"
     }
   },
   "twitch_live": [],
@@ -15575,7 +15583,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165375"
+    "last_full_window": "165376"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15597,6 +15605,7 @@
     "2026-08-06|05:30"
   ],
   "weather_seen_ids": [
+    "299fe61af37458e8",
     "29d813b35e623f9c",
     "343e068eb9e5a521",
     "ad80a2a5f18eeb44",
@@ -15795,8 +15804,7 @@
     "d037b12df9891ca7",
     "515305adaae01e6a",
     "21ce453627b94eb7",
-    "228bf2197c756060",
-    "23a0989662847ef2"
+    "228bf2197c756060"
   ],
   "wikiquote_last_category": "writers",
   "wikiquote_last_sent": "2026-07-14T4",
