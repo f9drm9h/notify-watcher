@@ -519,18 +519,6 @@
     {
       "action": "drop",
       "detail": "",
-      "id": "8654f8f3aab0fb18",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Avengers: Doomsday Official Trailer Reaction - Chess.com",
-      "topic": "movies",
-      "ts": "2026-07-25T21:08:26.707317+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNMWZURFpBN3hjRUdSQW5SOW1nRll1T2RvN3Y5NzRIdFF4azZxSmZ4cENDNVdYd09ORXJwUWtpakhva28wTmQxUl92WFFDUENtSUd6MTNXa1MwOTZaQW5vZ182Z3V3Sk9VNHpCanZLU2ZYRHVJVndUdnY1VUp1YkRwV3BuU3pLV2RNSXNFOVZR?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
       "id": "97d3f078c4d946ae",
       "score": 28,
       "severity": "moderate",
@@ -12515,6 +12503,18 @@
       "topic": "twitch",
       "ts": "2026-08-07T23:07:45.512382+00:00",
       "url": "https://twitch.tv/RiddlesMK"
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - Un poco de Elite  Smash! pa ta en nah",
+      "id": "a8679c5ce419d06b",
+      "score": 68,
+      "severity": "high",
+      "source": "elcodo22",
+      "title": "elcodo22 is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-08-07T23:37:45.144116+00:00",
+      "url": "https://twitch.tv/elcodo22"
     }
   ],
   "exercise_slots_sent": [
@@ -14288,7 +14288,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-07T23:22:38.479139+00:00"
+    "ts": "2026-08-07T23:37:44.191749+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15522,9 +15522,9 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "habits": {
-      "last_data": "2026-08-07T23:22:40.419690+00:00",
+      "last_data": "2026-08-07T23:37:46.788546+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-07T23:22:38.479139+00:00"
+      "last_ok": "2026-08-07T23:37:44.191749+00:00"
     },
     "holidays": {
       "last_data": "2026-08-07T21:09:56.090234+00:00",
@@ -15609,9 +15609,9 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-07T23:22:39.563358+00:00",
+      "last_data": "2026-08-07T23:37:45.876346+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-07T23:22:38.479139+00:00"
+      "last_ok": "2026-08-07T23:37:44.191749+00:00"
     },
     "uv": {
       "last_data": "2026-08-07T21:09:57.237090+00:00",
@@ -15636,7 +15636,8 @@
     }
   },
   "twitch_live": [
-    "RiddlesMK"
+    "RiddlesMK",
+    "elcodo22"
   ],
   "visa_bulletin_current": "2026-08",
   "visa_f4_dates_for_filing": "22JUN10",
