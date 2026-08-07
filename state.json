@@ -138,6 +138,15 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-08-06",
@@ -503,42 +512,6 @@
     "12c57da9193aec03"
   ],
   "event_log": [
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "49713921da927c3a",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Kevin Feige Confirms \u2018Spider-Man: Brand New Day\u2019s Place in the MCU Timeline [Exclusive] - Collider",
-      "topic": "movies",
-      "ts": "2026-07-25T15:08:27.995131+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQNFhxOW4xYlUwNHp3WFJLTVF2MzNiaEpKNnNXZlFCZGdKbm94eFFHVXZ1UHFLTWdhc2lnUUZmQWJlWm91THNpY05zaTN1eWtsLTZ3LWVLOVhnVlNROUo5X1lkYkFzNFhXVUQwODI2Si1YWV9lbV9CNlFKQWk5QzBncV9qVERaUDNsU1ZuZA?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "301d256b1d76c653",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Odyssey",
-      "title": "Matt Damon Announces His Next Movie After 'The Odyssey' - Yahoo",
-      "topic": "movies",
-      "ts": "2026-07-25T15:08:28.594458+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOb3BtLTVhNm00NkdWbzZwdDYtc2dsYTJZOW5aMjNhQzZwclF0UVZndHd5dnRiV2xOLW82bF8zNlUwR0g4UGl1dVRMaXFBTE1sYnUyRHRBdUNxSGlra2laVW92MEQwb3AweVI1V3RSVjBhZHF1YVpzbU1lTzU3UUFHanJzNXlveWlwQzNDbi1tZTJNVHJLM2t0MmlYTDlmYVk?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "e675c5a34f6e4bc5",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Matt Reeves Confirms New Batsuit Design Change For The Batman 2 - IMDb",
-      "topic": "movies",
-      "ts": "2026-07-25T15:08:29.780915+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBUT01UVmx0Z0JJa1BnNDdrT2ljV2VGa1MtV3ZmM3VWVU1kazZLdE40anBrQkJDbEhqMV9aNF9UQjN5ZmdzQjhSSUc0OXg5d09EYzEtN2xHTGxDRHlZR1dMaQ?oc=5"
-    },
     {
       "action": "drop",
       "detail": "",
@@ -12502,6 +12475,42 @@
       "topic": "watchdog",
       "ts": "2026-08-07T03:09:21.233386+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "531cef00fdc8d9f6",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-07T06:09:09.058348+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "\u201cWe cannot afford to see Nazidom in its present phase of cruelty and intolerance, with all its hatreds and all its gleaming weapons, paramount in Europe at the present time.\u201d\n\u2014 Winston Churchill\n\nWinston Churchill, a towering figure in 20th-century British politics, was already a veteran statesman with a long career of both triumph and controversy when he uttered these words. He had served in various government capacities for decades, from the Home Office to the Admiralty, and possessed an almost uncanny foresight regarding the gathering storm clouds over Europe. His political life was a tapestry woven with grand oratory, military strategy, and a deep, abiding belief in the principles of liberal democracy, even if his own actions sometimes veered into imperialistic tendencies. By 1938, as the Nazi regime flexed its muscle with increasing brutality and open aggression, Churchill, then out of power and often dismissed as an anachronism, emerged as one of its most vocal and prescient critics.\n\nThis particular statement, delivered as the appeasement policies of the British government were in full swing, captures Churchill's profound alarm at the moral and military threat posed by Hitler's Germany. It was a cry in the wilderness, an urgent warning that the West was sleepwalking into catastrophe by underestimating the malevolent force of Nazism. The \"cruelty and intolerance\" he spoke of were already manifest in the persecution of Jews, political dissidents, and other minorities within Germany, while the \"gleaming weapons\" signaled the rapid rearmament that openly defied the Treaty of Versailles.",
+      "id": "1ff488a173e89f5e",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Winston Churchill",
+      "topic": "spark",
+      "ts": "2026-08-07T06:09:30.598048+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "outages \u2014 down 4d 15h (since 2026-08-02 15:07 UTC), reminder #8; last error: EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (12d ago)",
+      "id": "6863dcd37288ebe4",
+      "score": 72,
+      "severity": "critical",
+      "source": "Watchdog",
+      "title": "Watchdog: 'outages' is STILL failing (4d 15h)",
+      "topic": "watchdog",
+      "ts": "2026-08-07T06:09:33.835238+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -14273,9 +14282,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-07T05:53:03.754536+00:00"
+    "failed": 2,
+    "ok": 38,
+    "ts": "2026-08-07T06:08:05.537841+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15383,19 +15392,19 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82688,
-  "spark_next_kind": "quote",
+  "spark_last_sent": 82689,
+  "spark_next_kind": "fact",
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-07T03:09:12.461711+00:00",
+      "last_data": "2026-08-07T06:09:23.890364+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-07T03:09:14.001017+00:00",
+      "last_data": "2026-08-07T06:09:25.132641+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "apod": {
       "last_data": "2026-08-06T21:25:01.352747+00:00",
@@ -15403,26 +15412,26 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "deals": {
-      "last_data": "2026-08-07T03:08:44.009295+00:00",
-      "last_data_count": 11,
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_data": "2026-08-07T06:08:59.272972+00:00",
+      "last_data_count": 12,
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "energy": {
-      "last_data": "2026-08-07T03:08:56.777481+00:00",
+      "last_data": "2026-08-07T06:09:08.926182+00:00",
       "last_data_count": 60,
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-06T12:10:05.315809+00:00",
@@ -15430,9 +15439,9 @@
       "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "fda": {
-      "last_data": "2026-08-07T03:08:44.966239+00:00",
+      "last_data": "2026-08-07T06:09:00.004812+00:00",
       "last_data_count": 15,
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "fuel": {
       "last_data": "2026-08-06T21:24:47.204657+00:00",
@@ -15440,18 +15449,18 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "fx": {
-      "last_data": "2026-08-07T03:09:12.516335+00:00",
+      "last_data": "2026-08-07T06:09:23.970644+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-07T03:08:23.711473+00:00",
+      "last_data": "2026-08-07T06:08:10.906460+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "groceries": {
       "last_data": "2026-08-06T21:24:21.377492+00:00",
@@ -15459,9 +15468,9 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "habits": {
-      "last_data": "2026-08-07T05:53:05.760771+00:00",
+      "last_data": "2026-08-07T06:09:26.815789+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-07T05:53:03.754536+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "holidays": {
       "last_data": "2026-08-06T21:24:58.921479+00:00",
@@ -15469,9 +15478,9 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "iss": {
-      "last_data": "2026-08-07T03:09:13.467768+00:00",
+      "last_data": "2026-08-07T06:09:24.635085+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "itsc": {
       "last_data": "2026-08-06T21:24:59.857480+00:00",
@@ -15479,9 +15488,9 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "launches": {
-      "last_data": "2026-08-07T03:09:12.912455+00:00",
+      "last_data": "2026-08-07T06:09:24.069553+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "learn": {
       "last_data": "2026-08-06T12:10:00.816721+00:00",
@@ -15489,7 +15498,7 @@
       "last_ok": "2026-08-06T12:08:12.457967+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "marine": {
       "last_data": "2026-08-06T21:25:01.090028+00:00",
@@ -15497,58 +15506,58 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "music": {
-      "last_data": "2026-08-07T03:08:22.195255+00:00",
+      "last_data": "2026-08-07T06:08:09.227112+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-07T03:08:57.352197+00:00",
+      "last_data": "2026-08-07T06:09:09.435508+00:00",
       "last_data_count": 24,
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
-      "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (11d ago)",
-      "last_error_ts": "2026-08-07T03:08:16.643767+00:00",
+      "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (12d ago)",
+      "last_error_ts": "2026-08-07T06:08:05.537841+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-07T03:09:11.866320+00:00",
-      "last_data_count": 39,
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_data": "2026-08-07T06:09:23.479537+00:00",
+      "last_data_count": 33,
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "research": {
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-07T03:08:40.273789+00:00",
+      "last_data": "2026-08-07T06:08:51.796580+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "spark": {
-      "last_data": "2026-08-06T06:09:10.678404+00:00",
-      "last_data_count": 170,
-      "last_ok": "2026-08-06T06:08:11.145627+00:00"
+      "last_data": "2026-08-07T06:09:27.054554+00:00",
+      "last_data_count": 303,
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "spending": {
-      "empty_runs": 26,
+      "empty_runs": 27,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-07T05:53:04.779358+00:00",
+      "last_data": "2026-08-07T06:08:07.484020+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-07T05:53:03.754536+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "uv": {
       "last_data": "2026-08-06T21:25:00.484180+00:00",
@@ -15556,21 +15565,21 @@
       "last_ok": "2026-08-06T21:23:15.744153+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "weather": {
-      "last_data": "2026-08-07T03:08:56.905220+00:00",
+      "last_data": "2026-08-07T06:09:09.057916+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-07T03:08:16.643767+00:00"
+      "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "youtube": {
       "last_data": "2026-08-07T00:09:58.306385+00:00",
       "last_data_count": 90,
-      "last_error": "all 7 channel feed(s) failed; last: PabloELECTRUM: 500 Server Error: Internal Server Error for url: https://www.youtube.com/feeds/videos.xml?channel_id=UC9DS-MY8CZzLh7vQG000uug",
-      "last_error_ts": "2026-08-07T03:08:16.643767+00:00",
+      "last_error": "all 7 channel feed(s) failed; last: PabloELECTRUM: 404 Client Error: Not Found for url: https://www.youtube.com/feeds/videos.xml?channel_id=UC9DS-MY8CZzLh7vQG000uug",
+      "last_error_ts": "2026-08-07T06:08:05.537841+00:00",
       "last_ok": "2026-08-07T00:08:25.027167+00:00",
       "source_failed": true
     }
@@ -15580,7 +15589,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165377"
+    "last_full_window": "165378"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15593,8 +15602,8 @@
   "watchdog_outages": {
     "outages": {
       "alerted": "2026-08-02T17:18:45.308745+00:00",
-      "last_alert": "2026-08-06T15:10:27.384959+00:00",
-      "reminders": 7,
+      "last_alert": "2026-08-07T06:09:33.835074+00:00",
+      "reminders": 8,
       "since": "2026-08-02T17:18:45.308745+00:00"
     },
     "youtube": {
@@ -15606,6 +15615,7 @@
   },
   "water_slots_sent": [],
   "weather_seen_ids": [
+    "13bbf2ab69c9fdc6",
     "299fe61af37458e8",
     "29d813b35e623f9c",
     "343e068eb9e5a521",
@@ -15804,10 +15814,9 @@
     "a191549e58f3ffca",
     "d037b12df9891ca7",
     "515305adaae01e6a",
-    "21ce453627b94eb7",
-    "228bf2197c756060"
+    "21ce453627b94eb7"
   ],
-  "wikiquote_last_category": "writers",
+  "wikiquote_last_category": "leaders",
   "wikiquote_last_sent": "2026-07-14T4",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-07-25",
@@ -15839,7 +15848,7 @@
     "leaders:Nelson Mandela": "2026-07-29",
     "leaders:Theodore Roosevelt": "2026-07-11",
     "leaders:Thomas Jefferson": "2026-07-18",
-    "leaders:Winston Churchill": "2026-07-09",
+    "leaders:Winston Churchill": "2026-08-07",
     "philosophers:Aristotle": "2026-07-14",
     "philosophers:Arthur Schopenhauer": "2026-07-15",
     "philosophers:Confucius": "2026-07-10",
