@@ -94,7 +94,35 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [],
+  "digest_buffer": [
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 35,
+      "source": "EIA Today in Energy",
+      "title": "Battery storage capacity averaged 70% growth over the last three years",
+      "topic": "energy",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67925"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Earthquakes",
+      "title": "M3.4 - 34 km NE of Punta Cana, Dominican Republic (~173 km away)",
+      "topic": "quakes",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527803"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 40,
+      "source": "Earthquakes",
+      "title": "M3.7 - 61 km ENE of Miches, Dominican Republic (~158 km away)",
+      "topic": "quakes",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr2026219001"
+    }
+  ],
   "digest_last_sent": "2026-08-07",
   "discord_control": {
     "last_id": "1530929203594137641"
@@ -157,6 +185,9 @@
     ]
   },
   "energy_seen_ids": [
+    "7ed5134551b6a017",
+    "6933a38737d0ab46",
+    "e795925c60064c4b",
     "c5cdae3296a12e9e",
     "7b4a12a99790ae4e",
     "d87c345554d45a89",
@@ -453,60 +484,9 @@
     "5d051819242cce3a",
     "04e47415afdbe8d4",
     "091688684f171eb1",
-    "76815b71a0c60ed4",
-    "18192444e43946a7",
-    "9a87c340c47ecb65",
-    "6c1a1f055fddbbca"
+    "76815b71a0c60ed4"
   ],
   "event_log": [
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "e95f89d455a5b282",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Marvel confirms Spider-Man: Brand New Day will feature a previously unannounced hero - Yahoo",
-      "topic": "movies",
-      "ts": "2026-07-25T18:08:18.682095+00:00",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOa0YtRmQ4N01vMUsxaWpvcndEZkp2bV9JLTEtTlBXU2dySkRzRENHeWYtN21PMkxHcGdRUllLUkFHY18tZjR6anF1eW81WHFmeVVrS3A0dndYdVBDSmVxcXFMdjd0UXpXanpHMjZuMkZNbDZWdC1Va1Y4b2JVeDJlUUlSV0ljX2txWEl5NVQ3cG9NNmczTlFCb21KSTRiR09o?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "ee3b38c104e55e1c",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman Part II\u2019 pushed to 2028 as first footage debuts - MSN",
-      "topic": "movies",
-      "ts": "2026-07-25T18:08:20.285246+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNWFNaWDAzazlNUDVEM2RDRWw0OGtlYzB4Mm5HelR4R2xuS0M2ZXoyclVUVUt3Tk9jTlI0b0tnbmdvWk1KSXNjdl9XZko5Y19idkUyZjRtQUg4LWJ5Y1A0TnZ1RWdULVU5TWNJLVZJbkJnOFlXbE8tWkVPTU9OUFFjYVZqMnJNRUhaaFVqOEc2eWtXYy12aDFJUHNxcXZwN3NFT0RXSDc2R1VpbHpSMHdTMFR6TlpaUWhMNDBrZW5YTG9VWWNQYlNMR2FzcjFiMGttaUxOU21OX2lvdXFSYVJycQ?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "198debcef9a61423",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "First Teaser And Logo For 'The Batman: Part II' Released Following News Of Yet Another Delay - BroBible",
-      "topic": "movies",
-      "ts": "2026-07-25T18:08:20.286275+00:00",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNdjY0em1ETXExZUVzV3VnZ3ZPLTNCTjhUaDRLbmJxUUJFNTI3S2RuVjByYWFxVE1YbHFIaXBYZVo4U0Zta3l1SGluSEltb0s4TFZzc1hJTENGQkZYZUtRb3JfN21UUk1MaFFaMkVFV2FwR2tlU0tTY0JfU2RuRzllb0oxLWhkZw?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "91ccb7f9f8558141",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "'The Batman: Part II' delayed to 2028 with new Batsuit reveal - MSN",
-      "topic": "movies",
-      "ts": "2026-07-25T18:08:20.286977+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPOXJnLUZFbVd1cXBXUGF5bnlqaHkxd2ZNZHRCRm1idTBfM29acnRjbzFTdVlpY3dMYklvQnhNMVVFYW82YjExNWE4MF9BNk5tUXl3cmJLZ2FoaWZZeWQxS01vbm9PNXRUUkFWVHBBaEozREJhT18xeGt5eFREV3hYTnJWSDdGeTNWb2txakJ2amlpYzQwekVBU2ZnanpObXRvUmtsX0ZDOUxIeExhYU16UmpiSkdEelVhZWo4UVMwMjZocE9mYkFvcmpvT1diQncwcWRFTV9TWHpkSk1BeVJYMzJ5NWh2Z2l3c3R4TjA0czMwZw?oc=5"
-    },
     {
       "action": "drop",
       "detail": "",
@@ -12458,6 +12438,54 @@
       "topic": "apod",
       "ts": "2026-08-07T12:10:03.007532+00:00",
       "url": "https://apod.nasa.gov/apod/image/2608/noirlab2618b.jpg"
+    },
+    {
+      "action": "push",
+      "detail": "Dirty Paws - Of Monsters And Men\n(because you like Vance Joy)",
+      "id": "6fc5c748bff805f9",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-07T15:08:10.691161+00:00",
+      "url": "https://www.deezer.com/track/17615563"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "5c5010d17f6a4125",
+      "score": 35,
+      "severity": "moderate",
+      "source": "EIA Today in Energy",
+      "title": "Battery storage capacity averaged 70% growth over the last three years",
+      "topic": "energy",
+      "ts": "2026-08-07T15:09:32.577989+00:00",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67925"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "72fcd62f65d7d1a5",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.4 - 34 km NE of Punta Cana, Dominican Republic (~173 km away)",
+      "topic": "quakes",
+      "ts": "2026-08-07T15:09:47.080473+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527803"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "e9cf52584e6c50d0",
+      "score": 40,
+      "severity": "moderate",
+      "source": "Earthquakes",
+      "title": "M3.7 - 61 km ENE of Miches, Dominican Republic (~158 km away)",
+      "topic": "quakes",
+      "ts": "2026-08-07T15:09:47.081083+00:00",
+      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr2026219001"
     }
   ],
   "exercise_slots_sent": [],
@@ -12685,7 +12713,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
   "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-07T12:09:42.620379+00:00",
+  "fuel_last_prices_seen_at": "2026-08-07T15:09:49.036551+00:00",
   "fuel_prices": {
     "GLP": 135.2,
     "Gasoil Regular": 258.3,
@@ -14227,9 +14255,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-07T14:53:06.058275+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-07T15:08:04.880156+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14505,7 +14533,8 @@
     68583162,
     5575105,
     4027889,
-    793825
+    793825,
+    1581786
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -15053,6 +15082,15 @@
         "name": "Pride of Bedlam"
       }
     },
+    "f44173ad063963bb": {
+      "applied": null,
+      "created": "2026-08-07T15:08:10.691131+00:00",
+      "kind": "artist",
+      "label": "Of Monsters And Men",
+      "payload": {
+        "name": "Of Monsters And Men"
+      }
+    },
     "fa181484c64f0552": {
       "applied": null,
       "created": "2026-08-03T21:07:36.821824+00:00",
@@ -15203,6 +15241,8 @@
     "https://www.soundcore.com/products/liberty-4-nc-a3947z11": 99.99
   },
   "quake_seen_ids": [
+    "9b993ce2f741e3c2",
+    "44e1474b14c7feda",
     "303b124df58ddeae",
     "aded035eaa97c472",
     "119c925ecc331ffe",
@@ -15353,41 +15393,41 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-07T12:09:40.370968+00:00",
+      "last_data": "2026-08-07T15:09:47.544989+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-07T12:09:45.420651+00:00",
+      "last_data": "2026-08-07T15:09:50.187904+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "apod": {
-      "last_data": "2026-08-07T12:10:03.007514+00:00",
+      "last_data": "2026-08-07T15:10:01.313317+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "deals": {
-      "last_data": "2026-08-07T12:09:07.925142+00:00",
-      "last_data_count": 12,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_data": "2026-08-07T15:09:03.352730+00:00",
+      "last_data_count": 11,
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "energy": {
-      "last_data": "2026-08-07T12:09:27.075715+00:00",
-      "last_data_count": 59,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_data": "2026-08-07T15:09:32.577653+00:00",
+      "last_data_count": 60,
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-07T12:09:53.242113+00:00",
@@ -15395,58 +15435,58 @@
       "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "fda": {
-      "last_data": "2026-08-07T12:09:16.668340+00:00",
+      "last_data": "2026-08-07T15:09:22.553366+00:00",
       "last_data_count": 15,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-07T12:09:42.620399+00:00",
+      "last_data": "2026-08-07T15:09:49.036576+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "fx": {
-      "last_data": "2026-08-07T12:09:40.478294+00:00",
+      "last_data": "2026-08-07T15:09:47.691947+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-07T12:08:18.337540+00:00",
+      "last_data": "2026-08-07T15:08:12.579860+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-07T12:09:15.789258+00:00",
+      "last_data": "2026-08-07T15:09:22.077722+00:00",
       "last_data_count": 227,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "habits": {
-      "last_data": "2026-08-07T14:53:08.085825+00:00",
+      "last_data": "2026-08-07T15:09:52.366180+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-07T14:53:06.058275+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-07T12:09:58.119396+00:00",
+      "last_data": "2026-08-07T15:09:57.104529+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "iss": {
-      "last_data": "2026-08-07T12:09:44.828586+00:00",
+      "last_data": "2026-08-07T15:09:49.652524+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-07T12:09:59.215292+00:00",
+      "last_data": "2026-08-07T15:09:57.893704+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "launches": {
-      "last_data": "2026-08-07T12:09:44.291422+00:00",
+      "last_data": "2026-08-07T15:09:49.217373+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "learn": {
       "last_data": "2026-08-07T12:09:48.870742+00:00",
@@ -15454,49 +15494,49 @@
       "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "marine": {
-      "last_data": "2026-08-07T12:10:00.643239+00:00",
+      "last_data": "2026-08-07T15:09:58.797548+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "music": {
-      "last_data": "2026-08-07T12:08:14.687695+00:00",
+      "last_data": "2026-08-07T15:08:09.485250+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-07T12:09:27.669720+00:00",
+      "last_data": "2026-08-07T15:09:33.091218+00:00",
       "last_data_count": 24,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (12d ago)",
-      "last_error_ts": "2026-08-07T12:08:09.254564+00:00",
+      "last_error_ts": "2026-08-07T15:08:04.880156+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-07T12:09:39.740979+00:00",
-      "last_data_count": 30,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_data": "2026-08-07T15:09:47.080153+00:00",
+      "last_data_count": 38,
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "research": {
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-07T12:09:02.454777+00:00",
+      "last_data": "2026-08-07T15:08:58.470129+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "spark": {
       "last_data": "2026-08-07T06:09:27.054554+00:00",
@@ -15504,37 +15544,37 @@
       "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "spending": {
-      "empty_runs": 29,
+      "empty_runs": 30,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-07T14:53:07.193034+00:00",
+      "last_data": "2026-08-07T15:08:07.217932+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-07T14:53:06.058275+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "uv": {
-      "last_data": "2026-08-07T12:10:00.027521+00:00",
+      "last_data": "2026-08-07T15:09:58.365486+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "weather": {
-      "last_data": "2026-08-07T12:09:27.243447+00:00",
+      "last_data": "2026-08-07T15:09:32.681366+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-07T12:09:47.028158+00:00",
+      "last_data": "2026-08-07T15:09:51.280550+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-07T15:08:04.880156+00:00"
     }
   },
   "twitch_live": [],
@@ -15542,7 +15582,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165380"
+    "last_full_window": "165381"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
