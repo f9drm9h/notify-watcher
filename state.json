@@ -519,18 +519,6 @@
     {
       "action": "drop",
       "detail": "",
-      "id": "1bbe82b266d39d1e",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "\u2018Avengers: Doomsday\u2019 Trailer Reveals First Look at Robert Downey Jr.\u2019s Doctor Doom - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-07-25T21:08:26.706355+00:00",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOVkZlVjcxOGY0MU1VTTg3VUY4R2hnZFJwRFlrM1ZfMldqLUpjZ0wydmlPOVZEaUZWYUVVN0NCNGZITkNsaE4zZlhyT29kdUJVa1pacTJPYy1YWlVJRFRxaFpMT3l1TnFiVDI1b3ZMYUo4SlFzWDAzTjdqRGlvbC1UU29Va3dQWUNRV1M3cWNLOHR2dHYzamJEZ1BfWEdBLTRHSDdoOXQ4YUE0aFFRRG5kTGVVRU93NC11SjZidk9vNA?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
       "id": "8654f8f3aab0fb18",
       "score": 28,
       "severity": "moderate",
@@ -12515,6 +12503,18 @@
       "topic": "habits",
       "ts": "2026-08-07T22:08:12.759293+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "MARVEL T\u014cKON: Fighting Souls - Locking In | FlyQuest Tourney Later",
+      "id": "f3f6f319822c1d98",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-08-07T23:07:45.512382+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "exercise_slots_sent": [
@@ -14288,7 +14288,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-07T22:52:43.236582+00:00"
+    "ts": "2026-08-07T23:07:44.930763+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15522,9 +15522,9 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "habits": {
-      "last_data": "2026-08-07T22:52:45.072978+00:00",
+      "last_data": "2026-08-07T23:07:47.968712+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-07T22:52:43.236582+00:00"
+      "last_ok": "2026-08-07T23:07:44.930763+00:00"
     },
     "holidays": {
       "last_data": "2026-08-07T21:09:56.090234+00:00",
@@ -15609,9 +15609,9 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-07T22:52:44.320190+00:00",
+      "last_data": "2026-08-07T23:07:46.958417+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-07T22:52:43.236582+00:00"
+      "last_ok": "2026-08-07T23:07:44.930763+00:00"
     },
     "uv": {
       "last_data": "2026-08-07T21:09:57.237090+00:00",
@@ -15635,7 +15635,9 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_bulletin_current": "2026-08",
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
