@@ -90,7 +90,9 @@
     "rent|2026-07-30|1"
   ],
   "blood_donation_last_notified": "2026-08-07",
-  "cleaning_slots_sent": [],
+  "cleaning_slots_sent": [
+    "2026-08-07|18:00"
+  ],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -514,42 +516,6 @@
     "091688684f171eb1"
   ],
   "event_log": [
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "90d73067681de80b",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "Doctor Doom's Avengers: Doomsday costume at San Diego Comic-Con hints at the return of an unannounced Marvel hero - GamesRadar+",
-      "topic": "movies",
-      "ts": "2026-07-25T21:08:26.702227+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOWGFjZWk4cy1TR043OXhIb3FfQjRRRnUxZkN4czV4eXgyNU5HS0RKNFYtVnFOdU56amg4UW1rd21sLXdqRmxDZkJQR3FSSng3a2FVSGxXUFVvUUFNT1RmZmRvcGZydjBVSEpXVGwtdTlUQUtaMTB3NjJpTDl2a3RRVi1abGpQdDB3QlZwSVdxYWh3Qmc2YldWYTRTT3R2RGNXT0l0UFNPQXN1ZU1VUUFOalMybS00NFVYTXlpVFhoaGRNd05aQ3pLRVIyY1N3d2QtMGtCZThudVg3cWk0emE5eklJZTNZV2FfQkVFVmdveWdzTGhHRXJYOGp5OA?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "4e8fd5500b85ba94",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "'Avengers: Doomsday' official trailer offers sneak peek at Robert Downey Jr.'s take on Doctor Doom - ABC7 Chicago",
-      "topic": "movies",
-      "ts": "2026-07-25T21:08:26.704472+00:00",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNZGE0Q0ZJMnI5SVFtRDJFUFpjQVZiZmNVUEJZRFNMcXhUSlNIUmYwQTQ2d0pQaWxDY2lINTRNUDFWLXFkOVNkTU5ZUHN4UnlMMzNzdnBPOVF0VmV4anYzejNMN2IwMWJvMFk3SWl4VWxvYnZBZVdFUmp1TDZqNlhaN3gwRDdmNmt3cVZDSWRCMGhzSlk4dDZlbjNuTEh0N2lQMG94Z1laUlBSN3VWVzJHZFJGVHhpV29JZHB4LWp3MmxHSGo10gHKAUFVX3lxTFBlTjB6WDNPNTYza09FcEJ3YllUcHRKaVZCQVd6YUdISVkzQjg0SV9ySmZIcFhfTHpQSHROOVk5UFdZQUhYZVdlRTNUOHRhSi1VRmF4QkYxQ3AwV0dIOE8zLWtTWWNZQmd1OWRRRW9FODFFdGJTNkRZcFJuRlh4dmE3c0E3TFhydE5XUGIwZWFmWUtkRG9Ya1VzYkdNRHVuVnh6clptN2FfZEIwWVNfR3kzMVRsRm5lVnQwNXFXc09vOWxBS1B2aFZWV1E?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "baa8d9384e449d27",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "'Avengers: Doomsday': Trailer, release date and what to know about the Marvel movie - ABC News - Breaking News, Latest News and Videos",
-      "topic": "movies",
-      "ts": "2026-07-25T21:08:26.705449+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQeUJPTUJSM1pkb3pQWmNBUURxeGo3Wk5mVS1rNTFWUnRIWXdPZVJ4aUVTNjhZaTFYWDYzYzl6ZGg0SXJXNUJHMlJfSUtFaEMwLXZWbjVidUljTXNmeXZZVndFNVFEbnFkcV9RQ05OZ2JnaE5GekN3QnphbVRpYVExamRqZUhpUHNNNFpNNVJSNVd1UFE3ak1Icy1wLV9FVXo0aFhDQ9IBqgFBVV95cUxPQndXRXlhRzdqb0FFbUxpeHZiSmRIU3g3cGlFdkdwYmFRR1VqV1J0bUlNa2JPaXBoc1dSd1FRSExENU9fdHBmNC1VOWpBY1pKRjNxY3p5aUwyWWV0RDVXS25BeHh4cVdaOGRZQ2xDZVpBZkFSU29PYjVvaWtaVmI1bjlVc2xvTFlSNUdWd281MEZETmNKWkJpOXlBMVQxUTZtcW4xVkxSaEVTUQ?oc=5"
-    },
     {
       "action": "drop",
       "detail": "",
@@ -12513,9 +12479,47 @@
       "topic": "watchdog",
       "ts": "2026-08-07T21:09:58.114332+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Time to train. Start small if you have to - just start.",
+      "id": "01df11a52fe2445f",
+      "score": 0,
+      "severity": "low",
+      "source": "exercise",
+      "title": "Exercise - 6 PM session",
+      "topic": "habits",
+      "ts": "2026-08-07T22:08:12.759293+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Time to meditate. No pressure, just presence.",
+      "id": "81532d920f3d205d",
+      "score": 0,
+      "severity": "low",
+      "source": "meditate",
+      "title": "Meditate - evening reset",
+      "topic": "habits",
+      "ts": "2026-08-07T22:08:12.759293+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "15-minute cleaning sprint. Timer on, go.",
+      "id": "0577840b4440394d",
+      "score": 0,
+      "severity": "low",
+      "source": "cleaning",
+      "title": "Cleaning - quick tidy-up",
+      "topic": "habits",
+      "ts": "2026-08-07T22:08:12.759293+00:00",
+      "url": ""
     }
   ],
-  "exercise_slots_sent": [],
+  "exercise_slots_sent": [
+    "2026-08-07|18:00"
+  ],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -14011,6 +14015,21 @@
       "channel": "1515504253345726558",
       "habit": "water",
       "sent": "2026-08-07T09:38:11.835390+00:00"
+    },
+    "1535409262589775983": {
+      "channel": "1515504253345726558",
+      "habit": "exercise",
+      "sent": "2026-08-07T22:08:12.759293+00:00"
+    },
+    "1535409266121511023": {
+      "channel": "1515504253345726558",
+      "habit": "meditate",
+      "sent": "2026-08-07T22:08:12.759293+00:00"
+    },
+    "1535409268277383275": {
+      "channel": "1515504253345726558",
+      "habit": "cleaning",
+      "sent": "2026-08-07T22:08:12.759293+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-07",
@@ -14284,7 +14303,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-07T21:53:05.722043+00:00"
+    "ts": "2026-08-07T22:08:11.373327+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14325,7 +14344,9 @@
   ],
   "learn_last_sent": "2026-08-07",
   "life_dashboard_last_week": "2026-W31",
-  "meditate_slots_sent": [],
+  "meditate_slots_sent": [
+    "2026-08-07|18:00"
+  ],
   "music_discovery_seen": [
     5425093,
     4685222,
@@ -15516,9 +15537,9 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "habits": {
-      "last_data": "2026-08-07T21:53:08.600166+00:00",
+      "last_data": "2026-08-07T22:08:16.654320+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-07T21:53:05.722043+00:00"
+      "last_ok": "2026-08-07T22:08:11.373327+00:00"
     },
     "holidays": {
       "last_data": "2026-08-07T21:09:56.090234+00:00",
@@ -15603,9 +15624,9 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-07T21:53:07.240775+00:00",
+      "last_data": "2026-08-07T22:08:12.758840+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-07T21:53:05.722043+00:00"
+      "last_ok": "2026-08-07T22:08:11.373327+00:00"
     },
     "uv": {
       "last_data": "2026-08-07T21:09:57.237090+00:00",
