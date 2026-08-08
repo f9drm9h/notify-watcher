@@ -157,6 +157,15 @@
       "title": "Atlantic Tropical Weather Outlook",
       "topic": "weather",
       "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-08-07",
@@ -523,30 +532,6 @@
     "091688684f171eb1"
   ],
   "event_log": [
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "d2356ed1c2f47642",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Odyssey",
-      "title": "\u2018The Odyssey\u2019 Holding Strong for Big Second Weekend in $84.5M Range - The Hollywood Reporter",
-      "topic": "movies",
-      "ts": "2026-07-25T21:08:28.002947+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNd0VNWUZ6RzEycjNQVTdPZG5HS0s1UXZUYjROQndodDZxV0cyNW0yemRrckZYUnRhcHBvd0puY29Bbzltb0dxYzZZM3hzTUNscEtJU2l3NU8tSWs0NXdFMjdWMHF5U005TEpFamFDOHBBYlNvMGh4UG1hTWpsRmFyTW5HZTVubFRRSTZVX1VTanBWQnFpOEV0cUhoX2Q1bGhfUFdVdFRoTmE?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "44822e85d8bbb668",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman Part 2 - Official 'Camera Test' Teaser Trailer - IGN India",
-      "topic": "movies",
-      "ts": "2026-07-25T21:08:28.949953+00:00",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNbDFtNlplbXJ4SGdhaTNuVUk3cHpIcXRmWnRsN1l6V2NNU1VQOGNfWEljWG5hZ0VZSTBRNnVvR256TUk4cmoxaHZEQ01tQVotTDlEYTRmRDFZWEJFb1hYY1h2SktSMXA2bFlmRWlnQS1lcUFsSTFtM2w5MkNqTzNMci1GUU9adEhsVnBYX204dmNOUmVoQ2Rr?oc=5"
-    },
     {
       "action": "drop",
       "detail": "",
@@ -12522,6 +12507,30 @@
       "topic": "habits",
       "ts": "2026-08-08T02:07:52.650433+00:00",
       "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "a85e9cfe21d16fa5",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-08T06:09:14.494737+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "\u201cFreedom only comes through persistent revolt, through persistent agitation, through persistently rising up against the system of evil.\u201d\n\u2014 Martin Luther King, Jr.\n\nMartin Luther King, Jr., a Baptist minister and the most visible spokesperson and leader in the American Civil Rights Movement from 1955 until his assassination in 1968, was a tireless advocate for nonviolent protest. Yet, this particular quote reveals a crucial distinction often missed in simplified accounts of his philosophy. King\u2019s nonviolence was not passive submission, but an active, confrontational force, a strategic refusal to cooperate with injustice. He understood that true freedom wasn\u2019t granted, but seized, not through quiet appeals, but through a collective, unyielding demand for change that disrupted the status quo and made the continuation of evil impossible.\n\nHe uttered these words amidst the fervent struggle against systemic racism and segregation in the American South. King and his allies faced police brutality, economic disenfranchisement, and deeply entrenched social prejudice. The \"system of evil\" he referenced was not merely individual acts of bigotry, but the institutionalized oppression that denied Black Americans their basic human rights. His call for \"persistent revolt\" was a strategic framework for sustained civil disobedience, boycotts, and marches designed to exert moral and political pressure, forcing a nation to confront its conscience and dismantle its discriminatory laws.\n\nToday, King\u2019s words echo with profound relevance for those confronting various forms of injustice worldwide.",
+      "id": "f3ec67680448e563",
+      "score": 60,
+      "severity": "low",
+      "source": "Wikiquote",
+      "title": "Martin Luther King, Jr.",
+      "topic": "spark",
+      "ts": "2026-08-08T06:09:33.394447+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -14291,9 +14300,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-08T05:52:41.534568+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-08T06:07:39.401440+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15435,19 +15444,19 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82692,
-  "spark_next_kind": "quote",
+  "spark_last_sent": 82693,
+  "spark_next_kind": "fact",
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-08T03:08:39.779152+00:00",
+      "last_data": "2026-08-08T06:09:27.987344+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-08T03:08:41.089404+00:00",
+      "last_data": "2026-08-08T06:09:29.381683+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "apod": {
       "last_data": "2026-08-07T21:09:58.112835+00:00",
@@ -15455,26 +15464,26 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "deals": {
-      "last_data": "2026-08-08T03:08:14.858171+00:00",
+      "last_data": "2026-08-08T06:08:33.168732+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "energy": {
-      "last_data": "2026-08-08T03:08:26.513988+00:00",
-      "last_data_count": 61,
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_data": "2026-08-08T06:09:14.302238+00:00",
+      "last_data_count": 14,
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-07T12:09:53.242113+00:00",
@@ -15482,9 +15491,9 @@
       "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "fda": {
-      "last_data": "2026-08-08T03:08:15.473768+00:00",
+      "last_data": "2026-08-08T06:08:33.879077+00:00",
       "last_data_count": 13,
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "fuel": {
       "last_data": "2026-08-07T21:09:48.315128+00:00",
@@ -15492,18 +15501,18 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "fx": {
-      "last_data": "2026-08-08T03:08:39.858301+00:00",
+      "last_data": "2026-08-08T06:09:28.036198+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-08T03:07:50.495631+00:00",
+      "last_data": "2026-08-08T06:07:44.501529+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "groceries": {
       "last_data": "2026-08-07T21:09:22.155523+00:00",
@@ -15511,9 +15520,9 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "habits": {
-      "last_data": "2026-08-08T05:52:44.771956+00:00",
+      "last_data": "2026-08-08T06:09:30.712153+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-08T05:52:41.534568+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "holidays": {
       "last_data": "2026-08-07T21:09:56.090234+00:00",
@@ -15521,11 +15530,11 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "iss": {
-      "empty_runs": 2,
+      "empty_runs": 3,
       "empty_since": "2026-08-08T00:07:37.201113+00:00",
       "last_data": "2026-08-07T21:09:49.509984+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "itsc": {
       "last_data": "2026-08-07T21:09:56.838078+00:00",
@@ -15533,9 +15542,9 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "launches": {
-      "last_data": "2026-08-08T03:08:40.019885+00:00",
+      "last_data": "2026-08-08T06:09:28.181030+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "learn": {
       "last_data": "2026-08-07T12:09:48.870742+00:00",
@@ -15543,7 +15552,7 @@
       "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "marine": {
       "last_data": "2026-08-07T21:09:57.621019+00:00",
@@ -15551,56 +15560,56 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "music": {
-      "last_data": "2026-08-08T03:07:48.900483+00:00",
+      "last_data": "2026-08-08T06:07:43.048117+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-08T03:08:27.098164+00:00",
+      "last_data": "2026-08-08T06:09:14.875800+00:00",
       "last_data_count": 27,
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
-      "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (12d ago)",
-      "last_error_ts": "2026-08-08T03:07:44.434383+00:00",
+      "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (13d ago)",
+      "last_error_ts": "2026-08-08T06:07:39.401440+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-08T03:08:39.312075+00:00",
-      "last_data_count": 41,
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_data": "2026-08-08T06:09:27.615617+00:00",
+      "last_data_count": 50,
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "research": {
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-08T03:08:09.911464+00:00",
+      "last_data": "2026-08-08T06:08:29.044092+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "spark": {
-      "last_data": "2026-08-07T06:09:27.054554+00:00",
-      "last_data_count": 303,
-      "last_ok": "2026-08-07T06:08:05.537841+00:00"
+      "last_data": "2026-08-08T06:09:30.960227+00:00",
+      "last_data_count": 106,
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "spending": {
-      "last_data": "2026-08-08T03:08:50.310589+00:00",
+      "last_data": "2026-08-08T06:09:37.703383+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-08T05:52:43.550813+00:00",
+      "last_data": "2026-08-08T06:07:41.536375+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-08T05:52:41.534568+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "uv": {
       "last_data": "2026-08-07T21:09:57.237090+00:00",
@@ -15608,20 +15617,20 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "weather": {
-      "last_data": "2026-08-08T03:08:26.739551+00:00",
+      "last_data": "2026-08-08T06:09:14.494282+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-08T03:08:42.017569+00:00",
-      "last_data_count": 90,
-      "last_ok": "2026-08-08T03:07:44.434383+00:00"
+      "last_data": "2026-08-08T06:09:29.853144+00:00",
+      "last_data_count": 15,
+      "last_ok": "2026-08-08T06:07:39.401440+00:00"
     }
   },
   "twitch_live": [],
@@ -15629,7 +15638,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165385"
+    "last_full_window": "165386"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15649,6 +15658,7 @@
   },
   "water_slots_sent": [],
   "weather_seen_ids": [
+    "39c1be1dc0dc015a",
     "31f3924be0760d56",
     "ea8f9e7de7982cb4",
     "d47fa5d5635d0667",
@@ -15847,10 +15857,9 @@
     "539ee7f10a7355e7",
     "f32b5eb9b621e5c0",
     "8d2f7a355fd6f471",
-    "02375c3cfb5372ae",
-    "a191549e58f3ffca"
+    "02375c3cfb5372ae"
   ],
-  "wikiquote_last_category": "leaders",
+  "wikiquote_last_category": "activists_thinkers",
   "wikiquote_last_sent": "2026-07-14T4",
   "wikiquote_seen": {
     "activists_thinkers:Albert Schweitzer": "2026-07-25",
@@ -15858,7 +15867,7 @@
     "activists_thinkers:Helen Keller": "2026-08-01",
     "activists_thinkers:Henry David Thoreau": "2026-07-11",
     "activists_thinkers:Malala Yousafzai": "2026-07-12",
-    "activists_thinkers:Martin Luther King, Jr.": "2026-07-09",
+    "activists_thinkers:Martin Luther King, Jr.": "2026-08-08",
     "activists_thinkers:Mother Teresa": "2026-07-20",
     "activists_thinkers:Ralph Waldo Emerson": "2026-08-02",
     "activists_thinkers:Rosa Parks": "2026-07-10",
@@ -15872,11 +15881,9 @@
     "innovators_artists:Steve Jobs": "2026-07-10",
     "innovators_artists:Thomas Edison": "2026-07-14",
     "innovators_artists:Vincent van Gogh": "2026-07-10",
-    "innovators_artists:Walt Disney": "2026-07-09",
     "leaders:Abraham Lincoln": "2026-07-13",
     "leaders:Benjamin Franklin": "2026-07-14",
     "leaders:Eleanor Roosevelt": "2026-07-11",
-    "leaders:Frederick Douglass": "2026-07-09",
     "leaders:Mahatma Gandhi": "2026-07-11",
     "leaders:Mikhail Gorbachev": "2026-07-13",
     "leaders:Nelson Mandela": "2026-07-29",
