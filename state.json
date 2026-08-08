@@ -463,18 +463,6 @@
     {
       "action": "drop",
       "detail": "",
-      "id": "62814d6fec66cb38",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Marvel Officially Cut Rosario Dawson\u2019s 'Daredevil' Crossover Cameo From 'Spider-Man: Brand New Day' - Collider",
-      "topic": "movies",
-      "ts": "2026-07-26T00:08:23.122216+00:00",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOSEdVa0R4SmNrU21MaVp5MDRzSUJKYjNWLUZPRVlHY2hKTnN2WVhhZ0lHOW54Z3U4aUZfeTFNaElXdXpRRUkyQVJRZERmVjRSdnVXeVNCeTYyMUNnVE4ybk5ja0hVc0NVWnl2U2hTTjJCdzBTdnBkUE5ySTI1VWVKeWI2N1NIZWUwc1ZoYU1yYUE?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
       "id": "42eb0dc7e9fc03c2",
       "score": 28,
       "severity": "moderate",
@@ -12459,6 +12447,18 @@
       "topic": "music",
       "ts": "2026-08-08T14:31:50.498700+00:00",
       "url": "https://www.deezer.com/track/1761501037"
+    },
+    {
+      "action": "push",
+      "detail": "Rivers and Roads - The Head And The Heart\n(because you like Vance Joy)",
+      "id": "9da2f9b329965dcf",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-08T15:08:16.042025+00:00",
+      "url": "https://www.deezer.com/track/3025976131"
     }
   ],
   "exercise_slots_sent": [],
@@ -12686,7 +12686,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/08/AVISO-PRE.-SEM.CORTE-08-14-AGO-DE-2026.pdf",
   "fuel_last_pdf_hash": "020830b53413ef4e47844dbb8cdd1bf3615a9414ac83de123745f2db032dbac9",
-  "fuel_last_prices_seen_at": "2026-08-08T14:33:15.242175+00:00",
+  "fuel_last_prices_seen_at": "2026-08-08T15:09:38.375968+00:00",
   "fuel_prices": {
     "GLP": 135.2,
     "Gasoil Regular": 260.3,
@@ -14226,9 +14226,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-08T14:52:36.171611+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-08T15:08:10.870660+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14509,7 +14509,8 @@
     288092,
     7492486,
     3803881,
-    1690336
+    1690336,
+    1065098
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14659,6 +14660,15 @@
       "label": "The Kinks",
       "payload": {
         "name": "The Kinks"
+      }
+    },
+    "328b2090a5a2e894": {
+      "applied": null,
+      "created": "2026-08-08T15:08:16.041998+00:00",
+      "kind": "artist",
+      "label": "The Head And The Heart",
+      "payload": {
+        "name": "The Head And The Heart"
       }
     },
     "33d5a1cfc04b6c67": {
@@ -15386,41 +15396,41 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-08T14:33:12.896930+00:00",
+      "last_data": "2026-08-08T15:09:37.013136+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-08T14:33:17.940340+00:00",
+      "last_data": "2026-08-08T15:09:40.253136+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "apod": {
-      "last_data": "2026-08-08T14:33:29.795435+00:00",
+      "last_data": "2026-08-08T15:09:48.668409+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "deals": {
-      "last_data": "2026-08-08T14:32:41.874518+00:00",
+      "last_data": "2026-08-08T15:09:02.437269+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "energy": {
-      "last_data": "2026-08-08T14:33:00.067352+00:00",
+      "last_data": "2026-08-08T15:09:23.510486+00:00",
       "last_data_count": 61,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-08T12:09:14.592499+00:00",
@@ -15428,58 +15438,58 @@
       "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "fda": {
-      "last_data": "2026-08-08T14:32:50.738841+00:00",
+      "last_data": "2026-08-08T15:09:14.314380+00:00",
       "last_data_count": 14,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-08T14:33:15.242199+00:00",
+      "last_data": "2026-08-08T15:09:38.375995+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "fx": {
-      "last_data": "2026-08-08T14:33:13.102984+00:00",
+      "last_data": "2026-08-08T15:09:37.102790+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-08T14:31:52.789690+00:00",
+      "last_data": "2026-08-08T15:08:17.764814+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-08T14:32:50.239958+00:00",
+      "last_data": "2026-08-08T15:09:13.466501+00:00",
       "last_data_count": 227,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "habits": {
-      "last_data": "2026-08-08T14:52:38.754083+00:00",
+      "last_data": "2026-08-08T15:09:42.428962+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-08T14:52:36.171611+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-08T14:33:27.281492+00:00",
+      "last_data": "2026-08-08T15:09:46.508099+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "iss": {
-      "last_data": "2026-08-08T14:33:17.351786+00:00",
+      "last_data": "2026-08-08T15:09:39.798498+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-08T14:33:28.196977+00:00",
+      "last_data": "2026-08-08T15:09:47.334288+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "launches": {
-      "last_data": "2026-08-08T14:33:16.704068+00:00",
+      "last_data": "2026-08-08T15:09:39.350175+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "learn": {
       "last_data": "2026-08-08T12:09:10.601193+00:00",
@@ -15487,49 +15497,49 @@
       "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "marine": {
-      "last_data": "2026-08-08T14:33:29.312737+00:00",
+      "last_data": "2026-08-08T15:09:48.276281+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "music": {
-      "last_data": "2026-08-08T14:31:49.705881+00:00",
+      "last_data": "2026-08-08T15:08:15.346280+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-08T14:33:00.628229+00:00",
+      "last_data": "2026-08-08T15:09:24.124877+00:00",
       "last_data_count": 27,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (13d ago)",
-      "last_error_ts": "2026-08-08T14:31:44.597899+00:00",
+      "last_error_ts": "2026-08-08T15:08:10.870660+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-08T14:33:12.308840+00:00",
+      "last_data": "2026-08-08T15:09:36.482431+00:00",
       "last_data_count": 46,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "research": {
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-08T14:32:36.716014+00:00",
+      "last_data": "2026-08-08T15:08:57.963299+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "spark": {
       "last_data": "2026-08-08T06:09:30.960227+00:00",
@@ -15537,45 +15547,43 @@
       "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "spending": {
-      "last_data": "2026-08-08T14:33:26.986140+00:00",
+      "last_data": "2026-08-08T15:09:46.276688+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-08T14:52:37.341027+00:00",
+      "last_data": "2026-08-08T15:08:13.552041+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-08T14:52:36.171611+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "uv": {
-      "last_data": "2026-08-08T14:33:28.746481+00:00",
+      "last_data": "2026-08-08T15:09:47.821948+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "weather": {
-      "last_data": "2026-08-08T14:33:00.223290+00:00",
+      "last_data": "2026-08-08T15:09:23.654846+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-08T14:33:19.166944+00:00",
+      "last_data": "2026-08-08T15:09:41.348530+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-08T14:31:44.597899+00:00"
+      "last_ok": "2026-08-08T15:08:10.870660+00:00"
     }
   },
-  "twitch_live": [
-    "Acola_lui"
-  ],
+  "twitch_live": [],
   "visa_bulletin_current": "2026-08",
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165388"
+    "last_full_window": "165389"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
