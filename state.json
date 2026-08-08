@@ -150,6 +150,15 @@
       "title": "FDA updates approval for Neulasta (Pegfilgrastim) (BLA125031)",
       "topic": "fda",
       "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125031"
+    },
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
     }
   ],
   "digest_last_sent": "2026-08-07",
@@ -516,30 +525,6 @@
     "091688684f171eb1"
   ],
   "event_log": [
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "97d3f078c4d946ae",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "10 Things We Noticed In Avengers: Doomsday\u2019s First Trailer - Kotaku",
-      "topic": "movies",
-      "ts": "2026-07-25T21:08:26.708077+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQdm1qcExWeWFVTUItSmNPZnItM0ozdGNfa044ekZ0bU4zRHJJdTZWSEVLLXFqRFo1dmtKNTBQblo5VzN6SU5lY0xRREZnUkRSLUNucE9rQWpCYkN4MWk4MC1iWXRGcXc0akZtajZNcDgwYzZkeG1idW9XM0hIZmRJRFRuWFBqTHd5dG9lVUtB?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "4dd64d6c4a3dae91",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "See 'Avengers: Doomsday' in Theaters December 18. Watch the Marvel Cinematic Universe Anytime on Disney+. - ABC Network",
-      "topic": "movies",
-      "ts": "2026-07-25T21:08:26.708993+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1BdlVISVR0ZEZDMEdmUThJSTFNV09Wa3JXbm1oVWxxX0RQMy1YWTdVSEFWSXZzQ253TXRFdTB5cURkdm9FSzYwZnlxY25fVFB3Vi1Gak5DR1ViMnJtcXVNRUVSdl9vV3ZuRzFFWGtTYU5HUmZPa1hCM1FEeU1iUTA?oc=5"
-    },
     {
       "action": "drop",
       "detail": "",
@@ -12515,6 +12500,30 @@
       "topic": "twitch",
       "ts": "2026-08-07T23:37:45.144116+00:00",
       "url": "https://twitch.tv/elcodo22"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "5009863bab934d43",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-08T00:08:14.782710+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Read food labels to select products with less saturated fat, sodium, and added sugar. (Source: CDC)",
+      "id": "9a04bf50fbaf4982",
+      "score": 60,
+      "severity": "low",
+      "source": "Health",
+      "title": "Health tip",
+      "topic": "spark",
+      "ts": "2026-08-08T00:08:31.940707+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -14017,7 +14026,7 @@
       "sent": "2026-08-07T22:08:12.759293+00:00"
     }
   },
-  "health_tip_last_sent": "2026-08-07",
+  "health_tip_last_sent": "2026-08-08",
   "holidays_sent": [],
   "ignored": {
     "4071c13d0b9dc18b": {
@@ -14286,9 +14295,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-07T23:52:45.015510+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-08T00:07:37.201113+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15154,12 +15163,7 @@
       }
     }
   },
-  "onamet_active": {
-    "274386cf5bc31532": "2026-08-07T20:00:12-04:00",
-    "3a909bb26f098072": "2026-08-07T14:25:32-04:00",
-    "5c27327553576e86": "2026-08-07T20:00:12-04:00",
-    "8d3643a45f81aeb8": "2026-08-07T14:20:32-04:00"
-  },
+  "onamet_active": {},
   "onamet_seen_ids": [
     "00c4370b304f8625",
     "27c6ce33f3a36a01",
@@ -15446,19 +15450,19 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82690,
-  "spark_next_kind": "health",
+  "spark_last_sent": 82692,
+  "spark_next_kind": "quote",
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-07T21:09:47.225753+00:00",
+      "last_data": "2026-08-08T00:08:28.155739+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-07T21:09:50.068332+00:00",
+      "last_data": "2026-08-08T00:08:29.262260+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "apod": {
       "last_data": "2026-08-07T21:09:58.112835+00:00",
@@ -15466,26 +15470,26 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "deals": {
-      "last_data": "2026-08-07T21:09:04.353353+00:00",
+      "last_data": "2026-08-08T00:08:05.037637+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "energy": {
-      "last_data": "2026-08-07T21:09:33.139972+00:00",
+      "last_data": "2026-08-08T00:08:14.655754+00:00",
       "last_data_count": 61,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-07T12:09:53.242113+00:00",
@@ -15493,9 +15497,9 @@
       "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "fda": {
-      "last_data": "2026-08-07T21:09:22.918061+00:00",
+      "last_data": "2026-08-08T00:08:05.574306+00:00",
       "last_data_count": 13,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "fuel": {
       "last_data": "2026-08-07T21:09:48.315128+00:00",
@@ -15503,18 +15507,18 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "fx": {
-      "last_data": "2026-08-07T21:09:47.307478+00:00",
+      "last_data": "2026-08-08T00:08:28.210894+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-07T21:08:17.259819+00:00",
+      "last_data": "2026-08-08T00:07:42.823657+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "groceries": {
       "last_data": "2026-08-07T21:09:22.155523+00:00",
@@ -15522,9 +15526,9 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "habits": {
-      "last_data": "2026-08-07T23:52:48.276052+00:00",
+      "last_data": "2026-08-08T00:08:31.316104+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-07T23:52:45.015510+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "holidays": {
       "last_data": "2026-08-07T21:09:56.090234+00:00",
@@ -15532,9 +15536,11 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "iss": {
+      "empty_runs": 1,
+      "empty_since": "2026-08-08T00:07:37.201113+00:00",
       "last_data": "2026-08-07T21:09:49.509984+00:00",
-      "last_data_count": 1,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_data_count": 0,
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "itsc": {
       "last_data": "2026-08-07T21:09:56.838078+00:00",
@@ -15542,9 +15548,9 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "launches": {
-      "last_data": "2026-08-07T21:09:49.113738+00:00",
+      "last_data": "2026-08-08T00:08:28.352039+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "learn": {
       "last_data": "2026-08-07T12:09:48.870742+00:00",
@@ -15552,7 +15558,7 @@
       "last_ok": "2026-08-07T12:08:09.254564+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "marine": {
       "last_data": "2026-08-07T21:09:57.621019+00:00",
@@ -15560,41 +15566,41 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "music": {
-      "last_data": "2026-08-07T21:08:14.040936+00:00",
+      "last_data": "2026-08-08T00:07:41.415312+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-07T21:09:33.776651+00:00",
+      "last_data": "2026-08-08T00:08:15.248590+00:00",
       "last_data_count": 27,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (12d ago)",
-      "last_error_ts": "2026-08-07T21:08:10.049881+00:00",
+      "last_error_ts": "2026-08-08T00:07:37.201113+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-07T21:09:46.777176+00:00",
-      "last_data_count": 37,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_data": "2026-08-08T00:08:27.698826+00:00",
+      "last_data_count": 39,
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "research": {
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-07T21:08:58.154244+00:00",
+      "last_data": "2026-08-08T00:08:00.434694+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "spark": {
       "last_data": "2026-08-07T06:09:27.054554+00:00",
@@ -15602,16 +15608,16 @@
       "last_ok": "2026-08-07T06:08:05.537841+00:00"
     },
     "spending": {
-      "empty_runs": 32,
+      "empty_runs": 33,
       "empty_since": "2026-08-04T00:07:26.322417+00:00",
       "last_data": "2026-08-03T21:08:49.392156+00:00",
       "last_data_count": 0,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-07T23:52:47.120579+00:00",
+      "last_data": "2026-08-08T00:07:39.772148+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-07T23:52:45.015510+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "uv": {
       "last_data": "2026-08-07T21:09:57.237090+00:00",
@@ -15619,20 +15625,20 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "weather": {
-      "last_data": "2026-08-07T21:09:33.433831+00:00",
+      "last_data": "2026-08-08T00:08:14.782285+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-07T21:09:51.133109+00:00",
+      "last_data": "2026-08-08T00:08:30.244072+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T00:07:37.201113+00:00"
     }
   },
   "twitch_live": [
@@ -15643,7 +15649,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165383"
+    "last_full_window": "165384"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15665,6 +15671,7 @@
     "2026-08-07|05:30"
   ],
   "weather_seen_ids": [
+    "31f3924be0760d56",
     "ea8f9e7de7982cb4",
     "d47fa5d5635d0667",
     "13bbf2ab69c9fdc6",
@@ -15863,8 +15870,7 @@
     "f32b5eb9b621e5c0",
     "8d2f7a355fd6f471",
     "02375c3cfb5372ae",
-    "a191549e58f3ffca",
-    "d037b12df9891ca7"
+    "a191549e58f3ffca"
   ],
   "wikiquote_last_category": "leaders",
   "wikiquote_last_sent": "2026-07-14T4",
