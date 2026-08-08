@@ -90,9 +90,7 @@
     "rent|2026-07-30|1"
   ],
   "blood_donation_last_notified": "2026-08-07",
-  "cleaning_slots_sent": [
-    "2026-08-07|18:00"
-  ],
+  "cleaning_slots_sent": [],
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
@@ -12526,9 +12524,7 @@
       "url": ""
     }
   ],
-  "exercise_slots_sent": [
-    "2026-08-07|18:00"
-  ],
+  "exercise_slots_sent": [],
   "f4_history": [
     {
       "bulletin": "2026-07",
@@ -14297,7 +14293,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-08T03:52:39.436330+00:00"
+    "ts": "2026-08-08T04:07:41.971104+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14338,9 +14334,7 @@
   ],
   "learn_last_sent": "2026-08-07",
   "life_dashboard_last_week": "2026-W31",
-  "meditate_slots_sent": [
-    "2026-08-07|18:00"
-  ],
+  "meditate_slots_sent": [],
   "music_discovery_seen": [
     5425093,
     4685222,
@@ -15443,10 +15437,7 @@
   ],
   "recap_last_week": "2026-W32",
   "reminders_sent": [],
-  "sleep_slots_sent": [
-    "2026-08-07|21:00",
-    "2026-08-07|22:00"
-  ],
+  "sleep_slots_sent": [],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
     "d1203-liberty-5-pro-anc-earbuds-clear-calls",
@@ -15529,9 +15520,9 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "habits": {
-      "last_data": "2026-08-08T03:52:43.213133+00:00",
+      "last_data": "2026-08-08T04:07:45.622158+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-08T03:52:39.436330+00:00"
+      "last_ok": "2026-08-08T04:07:41.971104+00:00"
     },
     "holidays": {
       "last_data": "2026-08-07T21:09:56.090234+00:00",
@@ -15616,9 +15607,9 @@
       "last_ok": "2026-08-08T03:07:44.434383+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-08T03:52:41.754005+00:00",
+      "last_data": "2026-08-08T04:07:44.005497+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-08T03:52:39.436330+00:00"
+      "last_ok": "2026-08-08T04:07:41.971104+00:00"
     },
     "uv": {
       "last_data": "2026-08-07T21:09:57.237090+00:00",
@@ -15665,9 +15656,7 @@
       "since": "2026-08-02T17:18:45.308745+00:00"
     }
   },
-  "water_slots_sent": [
-    "2026-08-07|05:30"
-  ],
+  "water_slots_sent": [],
   "weather_seen_ids": [
     "31f3924be0760d56",
     "ea8f9e7de7982cb4",
