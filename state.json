@@ -528,18 +528,6 @@
     {
       "action": "drop",
       "detail": "",
-      "id": "10747157559a167d",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Avengers: Doomsday",
-      "title": "The first trailer for Avengers: Doomsday is finally here - Ars Technica",
-      "topic": "movies",
-      "ts": "2026-07-25T21:08:26.709776+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQS05OdURXSGo0anVoa002cGNyaFZSYnFraGZobHlXczJuVWVLOWRDX2ZoMXdQekd6WG5MaEJwNFFNQkdEMnRCeEJXVEJBYXktR3k5N0lVM1pVemhsUVdTNU82YlJWZUxBUkRsYUFWNmlqWGZtYmlFNXBoVUhpSHQxU1pJeWxZaWlYTy1USTJoaThBMUxKaWxKX3dMM2g?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
       "id": "5331cf132fa0e819",
       "score": 28,
       "severity": "moderate",
@@ -12524,6 +12512,18 @@
       "topic": "spark",
       "ts": "2026-08-08T00:08:31.940707+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Second call: time to actually head to bed. Tomorrow starts tonight.",
+      "id": "250f5245b2ad8ebf",
+      "score": 0,
+      "severity": "low",
+      "source": "sleep",
+      "title": "Sleep - wind down",
+      "topic": "habits",
+      "ts": "2026-08-08T01:07:57.031029+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [
@@ -14024,6 +14024,11 @@
       "channel": "1515504253345726558",
       "habit": "cleaning",
       "sent": "2026-08-07T22:08:12.759293+00:00"
+    },
+    "1535454492600963133": {
+      "channel": "1515504253345726558",
+      "habit": "sleep",
+      "sent": "2026-08-08T01:07:57.031029+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-08",
@@ -14297,7 +14302,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-08T00:52:54.175627+00:00"
+    "ts": "2026-08-08T01:07:54.946070+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15443,7 +15448,9 @@
   ],
   "recap_last_week": "2026-W32",
   "reminders_sent": [],
-  "sleep_slots_sent": [],
+  "sleep_slots_sent": [
+    "2026-08-07|21:00"
+  ],
   "soundcore_pro_seen": [
     "a3954-liberty-4-pro-tws-earbuds",
     "d1203-liberty-5-pro-anc-earbuds-clear-calls",
@@ -15526,9 +15533,9 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "habits": {
-      "last_data": "2026-08-08T00:52:57.607801+00:00",
+      "last_data": "2026-08-08T01:07:58.758888+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-08T00:52:54.175627+00:00"
+      "last_ok": "2026-08-08T01:07:54.946070+00:00"
     },
     "holidays": {
       "last_data": "2026-08-07T21:09:56.090234+00:00",
@@ -15615,9 +15622,9 @@
       "last_ok": "2026-08-08T00:07:37.201113+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-08T00:52:56.065217+00:00",
+      "last_data": "2026-08-08T01:07:57.030581+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-08T00:52:54.175627+00:00"
+      "last_ok": "2026-08-08T01:07:54.946070+00:00"
     },
     "uv": {
       "last_data": "2026-08-07T21:09:57.237090+00:00",
@@ -15642,8 +15649,7 @@
     }
   },
   "twitch_live": [
-    "RiddlesMK",
-    "elcodo22"
+    "RiddlesMK"
   ],
   "visa_bulletin_current": "2026-08",
   "visa_f4_dates_for_filing": "22JUN10",
