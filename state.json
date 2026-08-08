@@ -535,18 +535,6 @@
     {
       "action": "drop",
       "detail": "",
-      "id": "69c1589fcc870b3c",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II First Look Reveals Robert Pattinson In The Snow, New Release Date - IMDb",
-      "topic": "movies",
-      "ts": "2026-07-25T21:08:28.951820+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE45SDhJNXZ6Nk92RlR1cmZocmFvOG5yVG52am5QaTZaQXJwRVFSTVpncUQzXzE0bnhBU3pUdDJEa1B4dzByLUM5d2pmZ3g3eUM3VFBJV0ZwbUc0TE55dHZQbA?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
       "id": "6e2dc5d145b1b829",
       "score": 28,
       "severity": "moderate",
@@ -12531,6 +12519,18 @@
       "topic": "watchdog",
       "ts": "2026-08-08T09:09:15.643254+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Good morning! First glass of water before anything else.",
+      "id": "b06e3051e92328b4",
+      "score": 0,
+      "severity": "low",
+      "source": "water",
+      "title": "Water - start the day hydrated",
+      "topic": "habits",
+      "ts": "2026-08-08T09:37:45.037483+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -14029,6 +14029,11 @@
       "channel": "1515504253345726558",
       "habit": "sleep",
       "sent": "2026-08-08T02:07:52.650433+00:00"
+    },
+    "1535582790668521513": {
+      "channel": "1515504253345726558",
+      "habit": "water",
+      "sent": "2026-08-08T09:37:45.037483+00:00"
     }
   },
   "health_tip_last_sent": "2026-08-08",
@@ -14302,7 +14307,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-08T09:22:43.215907+00:00"
+    "ts": "2026-08-08T09:37:43.237049+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15520,9 +15525,9 @@
       "last_ok": "2026-08-07T21:08:10.049881+00:00"
     },
     "habits": {
-      "last_data": "2026-08-08T09:22:45.596306+00:00",
+      "last_data": "2026-08-08T09:37:47.527880+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-08T09:22:43.215907+00:00"
+      "last_ok": "2026-08-08T09:37:43.237049+00:00"
     },
     "holidays": {
       "last_data": "2026-08-07T21:09:56.090234+00:00",
@@ -15605,9 +15610,9 @@
       "last_ok": "2026-08-08T09:07:38.959940+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-08T09:22:44.660004+00:00",
+      "last_data": "2026-08-08T09:37:45.037017+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-08T09:22:43.215907+00:00"
+      "last_ok": "2026-08-08T09:37:43.237049+00:00"
     },
     "uv": {
       "last_data": "2026-08-07T21:09:57.237090+00:00",
@@ -15654,7 +15659,9 @@
       "since": "2026-08-02T17:18:45.308745+00:00"
     }
   },
-  "water_slots_sent": [],
+  "water_slots_sent": [
+    "2026-08-08|05:30"
+  ],
   "weather_seen_ids": [
     "39c1be1dc0dc015a",
     "31f3924be0760d56",
