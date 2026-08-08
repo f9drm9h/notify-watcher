@@ -94,7 +94,17 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [],
+  "digest_buffer": [
+    {
+      "detail": "",
+      "preserve_detail": false,
+      "score": 50,
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    }
+  ],
   "digest_last_sent": "2026-08-08",
   "discord_control": {
     "last_id": "1530929203594137641"
@@ -460,66 +470,6 @@
     "091688684f171eb1"
   ],
   "event_log": [
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "c8b3821dd93232f6",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day's runtime confirmed ahead of cinema release - Digital Spy",
-      "topic": "movies",
-      "ts": "2026-07-26T00:08:23.125348+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNSEJjaGlTRnAyNUhnZURoYjlqZGxMVnJyd2F2RjNmcDcybTNiRzhvLU5KandvX3B5cE5EQmhpV21leTcxTkJ5M01Ycm5XQzdadkVzMkdFaXVPVE5ha0I0R25kRXM2ZWQ3cHZjelVBMnhIeldjdkJ5ZDRjS0g4cjgtdVR1TGxEQkhHZjQ1WDZIQQ?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "24e9af041a59561e",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Spider-Man: Brand New Day - Official Final Trailer - IGN",
-      "topic": "movies",
-      "ts": "2026-07-26T00:08:23.126223+00:00",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1nb3RGQlNyTGpIczdYbFNqcEFSZHJtS1hoSXVBc2pwemdadlc3TGZTUEptTm94RmNzNDRNM2JpQ2ZRQW00Y0diTkVsLXJBMVRRejlUQ3NpaWxvQkVrMHY2S3V6cmhMd0tkbnJsdWcxbk1TWTczekZGaHhrWDlpenc?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "9f80d0dc7123d4fc",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman Part II\u2019 Pushed Back Again, But Matt Reeves Softens The Blow With A First Look - IMDb",
-      "topic": "movies",
-      "ts": "2026-07-26T00:08:24.615490+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBuNjNSdGxSbUl3d3g2VERWS0dzRnBTTk5Ib1kzVG1IRElURGNEVEVYYkFWeEJBY0pSdnhvOFhXdDlyTW5LaUg1ZENJS1RNZ215TEJFWVJzTnNMR3hxUDJIblhYeEc?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "1285b200fe2dd06b",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "Why Did The Batman 2 Get DELAYED Again? 2 Blue Beetles On Man Of Tomorrow? - DCU News Jordyn Woods (dbCR6AaLJg) - Mshale",
-      "topic": "movies",
-      "ts": "2026-07-26T00:08:24.616337+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1QZmpTd3RhRjVwdzhRaUhZV2EzbEhZZ2t6SnNnam81NUZwZGZRLXNSaWU2UUhOZ2tjaFZLMy02Y1g1ckNWMWVWMUE5UjlpRTFKaEVWMnB6eDY4QkQ1YjBsSw?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "23ca5970efaf55fb",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman II Delay Can Be Worth It If We Get A Masterpiece - Den of Geek",
-      "topic": "movies",
-      "ts": "2026-07-26T00:08:24.617146+00:00",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5EMGFuR2oyVENvU045c1FCLUVwLThRbV9STS1JNE1kWHJ3eXRuWnhpVk91SzdoQmdTS3dfXy00dDFUbjBQaGw0U1NveWM2Q0RzRXkweVp0MnZPZjZHV1U5QTQxZklZLVY3VGhsazc0OXpMMVp2QzhXWg?oc=5"
-    },
     {
       "action": "drop",
       "detail": "",
@@ -12459,6 +12409,66 @@
       "topic": "twitch",
       "ts": "2026-08-08T17:53:11.174904+00:00",
       "url": "https://twitch.tv/RiddlesMK"
+    },
+    {
+      "action": "push",
+      "detail": "Driftwood Seat - Mighty Oaks\n(because you like Vance Joy)",
+      "id": "e5e61e3ffe0a75c7",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-08T18:08:13.972906+00:00",
+      "url": "https://www.deezer.com/track/1165545792"
+    },
+    {
+      "action": "push",
+      "detail": "",
+      "id": "b741c08ff159f513",
+      "score": 64,
+      "severity": "high",
+      "source": "Golden Sun",
+      "title": "My collection \u2600\ufe0f",
+      "topic": "golden_sun",
+      "ts": "2026-08-08T18:08:16.284419+00:00",
+      "url": "https://www.reddit.com/r/GoldenSun/comments/1vdfkdr/my_collection/"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "1f8709a7140e8626",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-08T18:09:33.969362+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "Aug 03-Aug 09: RD$4,100.00 across 2 transactions\nTop: PIN Pesos RD$4,100.00\nBiggest: RD$2,500.00 at PIN Pesos",
+      "id": "96a5bee838b2e311",
+      "score": 60,
+      "severity": "moderate",
+      "source": "BHD",
+      "title": "Weekly spending summary",
+      "topic": "spending",
+      "ts": "2026-08-08T18:09:59.660036+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "apod \u2014 no successful run since 2026-08-08 15:08 UTC (3h); last error: APOD fetch failed: HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=30)\nuv \u2014 no successful run since 2026-08-08 15:08 UTC (3h); last error: fetch failed: 503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=18.521661&\u2026",
+      "id": "830be9664ee880be",
+      "score": 72,
+      "severity": "critical",
+      "source": "Watchdog",
+      "title": "Watchdog: 2 topics are failing",
+      "topic": "watchdog",
+      "ts": "2026-08-08T18:10:32.907210+00:00",
+      "url": ""
     }
   ],
   "exercise_slots_sent": [],
@@ -12686,7 +12696,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/08/AVISO-PRE.-SEM.CORTE-08-14-AGO-DE-2026.pdf",
   "fuel_last_pdf_hash": "020830b53413ef4e47844dbb8cdd1bf3615a9414ac83de123745f2db032dbac9",
-  "fuel_last_prices_seen_at": "2026-08-08T15:09:38.375968+00:00",
+  "fuel_last_prices_seen_at": "2026-08-08T18:09:49.473074+00:00",
   "fuel_prices": {
     "GLP": 135.2,
     "Gasoil Regular": 260.3,
@@ -13022,6 +13032,7 @@
   "games_week_last": "2026-W32",
   "golden_sun_seen": {
     "Golden Sun": [
+      "a5782cd0f95847e3",
       "723cfc02ddebcfd8",
       "4864776a3bbfab59",
       "f21f1c1f57397ccf",
@@ -14226,9 +14237,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-08T17:53:10.606689+00:00"
+    "failed": 3,
+    "ok": 37,
+    "ts": "2026-08-08T18:08:07.463239+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14510,7 +14521,8 @@
     7492486,
     3803881,
     1690336,
-    1065098
+    1065098,
+    4859735
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14986,6 +14998,15 @@
         "name": "Ye Banished Privateers"
       }
     },
+    "c96e075f650fc8b5": {
+      "applied": null,
+      "created": "2026-08-08T18:08:13.972883+00:00",
+      "kind": "artist",
+      "label": "Mighty Oaks",
+      "payload": {
+        "name": "Mighty Oaks"
+      }
+    },
     "cb8563e597d001ca": {
       "applied": null,
       "created": "2026-07-27T12:08:31.415027+00:00",
@@ -15384,44 +15405,47 @@
   ],
   "spark_last_sent": 82694,
   "spark_next_kind": "health",
-  "spending_week_summarized": "2026-W28:2817.16",
+  "spending_week_summarized": "2026-W32:4100.00",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-08T15:09:37.013136+00:00",
+      "last_data": "2026-08-08T18:09:47.481915+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-08T15:09:40.253136+00:00",
+      "last_data": "2026-08-08T18:09:51.024423+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "apod": {
       "last_data": "2026-08-08T15:09:48.668409+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_error": "APOD fetch failed: HTTPSConnectionPool(host='api.nasa.gov', port=443): Read timed out. (read timeout=30)",
+      "last_error_ts": "2026-08-08T18:08:07.463239+00:00",
+      "last_ok": "2026-08-08T15:08:10.870660+00:00",
+      "source_failed": true
     },
     "astronomy": {
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "deals": {
-      "last_data": "2026-08-08T15:09:02.437269+00:00",
+      "last_data": "2026-08-08T18:09:05.544639+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "energy": {
-      "last_data": "2026-08-08T15:09:23.510486+00:00",
+      "last_data": "2026-08-08T18:09:33.819886+00:00",
       "last_data_count": 61,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-08T12:09:14.592499+00:00",
@@ -15429,58 +15453,58 @@
       "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "fda": {
-      "last_data": "2026-08-08T15:09:14.314380+00:00",
+      "last_data": "2026-08-08T18:09:22.395291+00:00",
       "last_data_count": 14,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-08T15:09:38.375995+00:00",
+      "last_data": "2026-08-08T18:09:49.473097+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "fx": {
-      "last_data": "2026-08-08T15:09:37.102790+00:00",
+      "last_data": "2026-08-08T18:09:47.572296+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-08T15:08:17.764814+00:00",
+      "last_data": "2026-08-08T18:08:16.284309+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-08T15:09:13.466501+00:00",
+      "last_data": "2026-08-08T18:09:22.050208+00:00",
       "last_data_count": 227,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "habits": {
-      "last_data": "2026-08-08T17:53:13.443005+00:00",
+      "last_data": "2026-08-08T18:09:53.657793+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-08T17:53:10.606689+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-08T15:09:46.508099+00:00",
+      "last_data": "2026-08-08T18:10:00.181865+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "iss": {
-      "last_data": "2026-08-08T15:09:39.798498+00:00",
+      "last_data": "2026-08-08T18:09:50.531439+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-08T15:09:47.334288+00:00",
+      "last_data": "2026-08-08T18:10:01.192971+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "launches": {
-      "last_data": "2026-08-08T15:09:39.350175+00:00",
+      "last_data": "2026-08-08T18:09:49.953195+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "learn": {
       "last_data": "2026-08-08T12:09:10.601193+00:00",
@@ -15488,49 +15512,49 @@
       "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "marine": {
-      "last_data": "2026-08-08T15:09:48.276281+00:00",
+      "last_data": "2026-08-08T18:10:02.656830+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "music": {
-      "last_data": "2026-08-08T15:08:15.346280+00:00",
+      "last_data": "2026-08-08T18:08:13.236166+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-08T15:09:24.124877+00:00",
+      "last_data": "2026-08-08T18:09:34.645396+00:00",
       "last_data_count": 27,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (13d ago)",
-      "last_error_ts": "2026-08-08T15:08:10.870660+00:00",
+      "last_error_ts": "2026-08-08T18:08:07.463239+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-08T15:09:36.482431+00:00",
-      "last_data_count": 46,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_data": "2026-08-08T18:09:46.831771+00:00",
+      "last_data_count": 55,
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "research": {
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-08T15:08:57.963299+00:00",
+      "last_data": "2026-08-08T18:09:00.898964+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "spark": {
       "last_data": "2026-08-08T06:09:30.960227+00:00",
@@ -15538,35 +15562,38 @@
       "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "spending": {
-      "last_data": "2026-08-08T15:09:46.276688+00:00",
-      "last_data_count": 1,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_data": "2026-08-08T18:09:59.659573+00:00",
+      "last_data_count": 5,
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-08T17:53:12.423024+00:00",
+      "last_data": "2026-08-08T18:08:11.078251+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-08T17:53:10.606689+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "uv": {
       "last_data": "2026-08-08T15:09:47.821948+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_error": "fetch failed: 503 Server Error: Service Unavailable for url: https://api.open-meteo.com/v1/forecast?latitude=18.521661&longitude=-69.8224191&daily=uv_index_max&timezone=auto&forecast_days=1",
+      "last_error_ts": "2026-08-08T18:08:07.463239+00:00",
+      "last_ok": "2026-08-08T15:08:10.870660+00:00",
+      "source_failed": true
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "weather": {
-      "last_data": "2026-08-08T15:09:23.654846+00:00",
+      "last_data": "2026-08-08T18:09:33.968954+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-08T15:09:41.348530+00:00",
+      "last_data": "2026-08-08T18:09:52.223109+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-08T15:08:10.870660+00:00"
+      "last_ok": "2026-08-08T18:08:07.463239+00:00"
     }
   },
   "twitch_live": [
@@ -15576,7 +15603,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165389"
+    "last_full_window": "165390"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15587,17 +15614,30 @@
   "watchdog_data_outages": {},
   "watchdog_empty_outages": {},
   "watchdog_outages": {
+    "apod": {
+      "alerted": "2026-08-08T18:10:32.907020+00:00",
+      "last_alert": "2026-08-08T18:10:32.907020+00:00",
+      "reminders": 0,
+      "since": "2026-08-08T18:10:32.907020+00:00"
+    },
     "outages": {
       "alerted": "2026-08-02T17:18:45.308745+00:00",
       "last_alert": "2026-08-08T09:09:15.643070+00:00",
       "reminders": 10,
       "since": "2026-08-02T17:18:45.308745+00:00"
+    },
+    "uv": {
+      "alerted": "2026-08-08T18:10:32.907020+00:00",
+      "last_alert": "2026-08-08T18:10:32.907020+00:00",
+      "reminders": 0,
+      "since": "2026-08-08T18:10:32.907020+00:00"
     }
   },
   "water_slots_sent": [
     "2026-08-08|05:30"
   ],
   "weather_seen_ids": [
+    "24a289c1ebe9d070",
     "982fa1c2ea7d25a9",
     "39c1be1dc0dc015a",
     "31f3924be0760d56",
@@ -15796,8 +15836,7 @@
     "b9680f9db47d2050",
     "d08c2c1624b9b7e1",
     "539ee7f10a7355e7",
-    "f32b5eb9b621e5c0",
-    "8d2f7a355fd6f471"
+    "f32b5eb9b621e5c0"
   ],
   "wikiquote_last_category": "activists_thinkers",
   "wikiquote_last_sent": "2026-07-14T4",
