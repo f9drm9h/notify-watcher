@@ -463,18 +463,6 @@
     {
       "action": "drop",
       "detail": "",
-      "id": "7d75d850ae793262",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "Rosario Dawson confirms her Netflix Daredevil character was cut from Spider-Man: Brand New Day - GamesRadar+",
-      "topic": "movies",
-      "ts": "2026-07-26T00:08:23.121144+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQakVDLUlhT0ozWm1waTZXazlVSnppUjhZZHhXQWd0R2tzUGw3Z2w1VTJKbFFlbEIzaHNGOGR5S0xHQW56NHJVUjA0MUVYZEJ5Q21laGRHNnNnTkpjcnVZdFZmZFVXc292emd3RDQzMDNoQmRtVXRlc0N3c3BYTzlRUFAxaDk3OUFMZHY3WTdOMGhlbElWeUZnMEl0UzQ3dTZkTjFMeWdmQ1FxLVU3bUN0dThlQVh3NHVDQkZYa0RfWmhZUFFiR3d5S084TWMxMnhCeVpSNW9uMnhvYWNUNTZBczZKOA?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
       "id": "62814d6fec66cb38",
       "score": 28,
       "severity": "moderate",
@@ -12459,6 +12447,18 @@
       "topic": "twitch",
       "ts": "2026-08-08T12:37:39.657133+00:00",
       "url": "https://twitch.tv/Acola_lui"
+    },
+    {
+      "action": "push",
+      "detail": "Above The Clouds Of Pompeii - Bear's Den\n(because you like Vance Joy)",
+      "id": "471bcb3f7c755c52",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-08T14:31:50.498700+00:00",
+      "url": "https://www.deezer.com/track/1761501037"
     }
   ],
   "exercise_slots_sent": [],
@@ -12686,7 +12686,7 @@
   },
   "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/08/AVISO-PRE.-SEM.CORTE-08-14-AGO-DE-2026.pdf",
   "fuel_last_pdf_hash": "020830b53413ef4e47844dbb8cdd1bf3615a9414ac83de123745f2db032dbac9",
-  "fuel_last_prices_seen_at": "2026-08-08T12:09:07.165738+00:00",
+  "fuel_last_prices_seen_at": "2026-08-08T14:33:15.242175+00:00",
   "fuel_prices": {
     "GLP": 135.2,
     "Gasoil Regular": 260.3,
@@ -14226,9 +14226,9 @@
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-08T14:22:38.107915+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-08T14:31:44.597899+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14508,7 +14508,8 @@
     1581786,
     288092,
     7492486,
-    3803881
+    3803881,
+    1690336
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14676,6 +14677,15 @@
       "label": "Billy Talent",
       "payload": {
         "name": "Billy Talent"
+      }
+    },
+    "38163217adb0d735": {
+      "applied": null,
+      "created": "2026-08-08T14:31:50.498670+00:00",
+      "kind": "artist",
+      "label": "Bear's Den",
+      "payload": {
+        "name": "Bear's Den"
       }
     },
     "388c0b591faeec0a": {
@@ -15376,41 +15386,41 @@
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-08T12:09:05.788919+00:00",
+      "last_data": "2026-08-08T14:33:12.896930+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-08T12:09:08.932583+00:00",
+      "last_data": "2026-08-08T14:33:17.940340+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "apod": {
-      "last_data": "2026-08-08T12:09:51.543178+00:00",
+      "last_data": "2026-08-08T14:33:29.795435+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "deals": {
-      "last_data": "2026-08-08T12:08:24.226733+00:00",
+      "last_data": "2026-08-08T14:32:41.874518+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "energy": {
-      "last_data": "2026-08-08T12:08:51.105969+00:00",
+      "last_data": "2026-08-08T14:33:00.067352+00:00",
       "last_data_count": 61,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "energy_learn": {
       "last_data": "2026-08-08T12:09:14.592499+00:00",
@@ -15418,58 +15428,58 @@
       "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "fda": {
-      "last_data": "2026-08-08T12:08:40.101463+00:00",
+      "last_data": "2026-08-08T14:32:50.738841+00:00",
       "last_data_count": 14,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-08T12:09:07.165723+00:00",
+      "last_data": "2026-08-08T14:33:15.242199+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "fx": {
-      "last_data": "2026-08-08T12:09:05.859361+00:00",
+      "last_data": "2026-08-08T14:33:13.102984+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-08T12:07:41.825804+00:00",
+      "last_data": "2026-08-08T14:31:52.789690+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-08T12:08:39.490507+00:00",
+      "last_data": "2026-08-08T14:32:50.239958+00:00",
       "last_data_count": 227,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "habits": {
-      "last_data": "2026-08-08T14:22:40.310090+00:00",
+      "last_data": "2026-08-08T14:33:22.704144+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-08T14:22:38.107915+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-08T12:09:21.552554+00:00",
+      "last_data": "2026-08-08T14:33:27.281492+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "iss": {
-      "last_data": "2026-08-08T12:09:08.426323+00:00",
+      "last_data": "2026-08-08T14:33:17.351786+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-08T12:09:22.405932+00:00",
+      "last_data": "2026-08-08T14:33:28.196977+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "launches": {
-      "last_data": "2026-08-08T12:09:07.909963+00:00",
+      "last_data": "2026-08-08T14:33:16.704068+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "learn": {
       "last_data": "2026-08-08T12:09:10.601193+00:00",
@@ -15477,49 +15487,49 @@
       "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "marine": {
-      "last_data": "2026-08-08T12:09:23.920601+00:00",
+      "last_data": "2026-08-08T14:33:29.312737+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "music": {
-      "last_data": "2026-08-08T12:07:39.103501+00:00",
+      "last_data": "2026-08-08T14:31:49.705881+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-08T12:08:51.674646+00:00",
+      "last_data": "2026-08-08T14:33:00.628229+00:00",
       "last_data_count": 27,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (13d ago)",
-      "last_error_ts": "2026-08-08T12:07:35.196083+00:00",
+      "last_error_ts": "2026-08-08T14:31:44.597899+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-08T12:09:05.402147+00:00",
+      "last_data": "2026-08-08T14:33:12.308840+00:00",
       "last_data_count": 46,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "research": {
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-08T12:08:20.314779+00:00",
+      "last_data": "2026-08-08T14:32:36.716014+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "spark": {
       "last_data": "2026-08-08T06:09:30.960227+00:00",
@@ -15527,35 +15537,35 @@
       "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "spending": {
-      "last_data": "2026-08-08T12:09:21.353168+00:00",
+      "last_data": "2026-08-08T14:33:26.986140+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-08T14:22:39.345556+00:00",
+      "last_data": "2026-08-08T14:31:47.198636+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-08T14:22:38.107915+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "uv": {
-      "last_data": "2026-08-08T12:09:23.511793+00:00",
+      "last_data": "2026-08-08T14:33:28.746481+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "weather": {
-      "last_data": "2026-08-08T12:08:51.353150+00:00",
+      "last_data": "2026-08-08T14:33:00.223290+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-08T12:09:09.727527+00:00",
+      "last_data": "2026-08-08T14:33:19.166944+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-08T12:07:35.196083+00:00"
+      "last_ok": "2026-08-08T14:31:44.597899+00:00"
     }
   },
   "twitch_live": [
