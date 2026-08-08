@@ -461,18 +461,6 @@
   ],
   "event_log": [
     {
-      "action": "push",
-      "detail": "Cleaning slot: reset one area before the night starts.",
-      "id": "329d62f90d9de777",
-      "score": 0,
-      "severity": "low",
-      "source": "cleaning",
-      "title": "Cleaning - quick tidy-up",
-      "topic": "habits",
-      "ts": "2026-07-25T22:08:29.260909+00:00",
-      "url": ""
-    },
-    {
       "action": "drop",
       "detail": "",
       "id": "7d75d850ae793262",
@@ -12459,6 +12447,18 @@
       "topic": "apod",
       "ts": "2026-08-08T12:09:51.543198+00:00",
       "url": "https://apod.nasa.gov/apod/image/2608/10P_Tempel2_Globular_M30_20260729_DEBartlett.jpg"
+    },
+    {
+      "action": "push",
+      "detail": "Super Smash Bros. Ultimate - ultrank1\u4f4d\u3067\u3057\u305f\uff01\u8272\u3005\u8a71\u3059\u3010\u30b9\u30de\u30d6\u30e9SP\u3011",
+      "id": "d87356c7daf4ab7c",
+      "score": 68,
+      "severity": "high",
+      "source": "Acola_lui",
+      "title": "Acola_lui is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-08-08T12:37:39.657133+00:00",
+      "url": "https://twitch.tv/Acola_lui"
     }
   ],
   "exercise_slots_sent": [],
@@ -14228,7 +14228,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-08T12:22:38.251789+00:00"
+    "ts": "2026-08-08T12:37:37.960494+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15447,9 +15447,9 @@
       "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "habits": {
-      "last_data": "2026-08-08T12:22:40.121670+00:00",
+      "last_data": "2026-08-08T12:37:42.172756+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-08T12:22:38.251789+00:00"
+      "last_ok": "2026-08-08T12:37:37.960494+00:00"
     },
     "holidays": {
       "last_data": "2026-08-08T12:09:21.552554+00:00",
@@ -15532,9 +15532,9 @@
       "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-08T12:22:39.222222+00:00",
+      "last_data": "2026-08-08T12:37:40.296002+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-08T12:22:38.251789+00:00"
+      "last_ok": "2026-08-08T12:37:37.960494+00:00"
     },
     "uv": {
       "last_data": "2026-08-08T12:09:23.511793+00:00",
@@ -15558,7 +15558,9 @@
       "last_ok": "2026-08-08T12:07:35.196083+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "Acola_lui"
+  ],
   "visa_bulletin_current": "2026-08",
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
