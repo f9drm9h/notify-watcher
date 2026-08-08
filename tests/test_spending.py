@@ -147,6 +147,74 @@ class RealEmailFormatTest(unittest.TestCase):
         self.assertEqual(txs[0]["merchant"], "CLARO RECAR")
 
 
+# Real "Transacciones entre productos BHD y a otros Bancos" alert (PIN cash
+# withdrawal), captured 2026-08-07 via Gmail "Show original" after the debit
+# card was cut and PIN withdrawals became the account's only activity. The
+# account holder's name is genericized here since this repo is public; the
+# markup/wording around it is otherwise unchanged.
+PROSE_HTML = """
+<table><tbody><tr><td><p>&nbsp;</p></td></tr></tbody></table>
+<table align="center"><tbody>
+<tr><td><img src="https://ib.bhd.com.do/logo.png"/></td></tr>
+<tr><td><p>Estimado(a):&nbsp; <strong>JUAN PEREZ</strong></p></td></tr>
+<tr><td><p> Nuestro inter&eacute;s es informarle que el c&oacute;digo de la
+transacci&oacute;n&nbsp; <strong>PIN Pesos</strong>&nbsp;realizada el&nbsp;
+<strong>07/08/2026&nbsp;1:38 PM</strong> por un monto de </p></td></tr>
+<tr><td><p> <strong>RD$ 2,500.00</strong> </p></td></tr>
+<tr><td><p>es el siguiente:&nbsp; <strong>283058</strong></p></td></tr>
+<tr><td><div>Tu PIN Pesos va a estar disponible en los pr&oacute;ximos
+15 minutos</div></td></tr>
+<tr><td><p><strong>Nota:</strong>&nbsp;Este correo es generado autom&aacute;ticamente,
+favor no responder. En caso de no reconocer esta transacci&oacute;n, llamar
+al 809-243-5282.</p></td></tr>
+</tbody></table>
+"""
+
+
+class ProseFormatAlertTest(unittest.TestCase):
+    """PIN withdrawals / inter-account transfers: no table, prose only."""
+
+    def test_subject_matches_the_second_known_template(self):
+        self.assertTrue(sp._subject_matches(
+            "Transacciones entre productos BHD y a otros Bancos",
+            sp.DEFAULT_SUBJECT))
+        # The original card-purchase subject must still match too.
+        self.assertTrue(sp._subject_matches(
+            "BHD Notificación de Transacciones", sp.DEFAULT_SUBJECT))
+        self.assertFalse(sp._subject_matches(
+            "Estado de Cuenta Mensual", sp.DEFAULT_SUBJECT))
+
+    def test_config_override_as_single_string_still_works(self):
+        # A hand-edited monitors.json subject override is a plain string,
+        # not a list -- must not be forced to wrap it correctly itself.
+        self.assertTrue(sp._subject_matches(
+            "BHD Notificación de Transacciones",
+            "BHD Notificación de Transacciones"))
+
+    def test_parses_pin_withdrawal_with_no_table(self):
+        txs = sp._parse_transactions(PROSE_HTML)
+        self.assertEqual(txs, [{
+            "date": "2026-08-07T13:38:00",  # 1:38 PM -> 13:38
+            "amount": 2500.0,
+            "currency": "DOP",
+            "merchant": "PIN Pesos",  # transaction type doubles as merchant
+            "type": "PIN Pesos",      # so repeat withdrawals group together
+            "source": "bhd_email",
+            "reference": "283058",
+        }])
+
+    def test_table_format_still_takes_priority_over_prose_fallback(self):
+        # A genuine card-purchase email (has a table) must never fall
+        # through to the prose parser, even if its prose also happens to
+        # mention a transaction-shaped sentence somewhere.
+        txs = sp._parse_transactions(REAL_HTML)
+        self.assertEqual(len(txs), 1)
+        self.assertEqual(txs[0]["type"], "Compra")
+
+    def test_unrecognized_prose_yields_nothing(self):
+        self.assertEqual(sp._parse_transactions("<p>Hello, no transaction here.</p>"), [])
+
+
 class HelpersTest(unittest.TestCase):
     def test_subject_matches_ignores_accents_and_case(self):
         self.assertTrue(sp._subject_matches(
@@ -359,7 +427,7 @@ class IngestEmailsTest(unittest.TestCase):
         msgs = []
         for body in bodies:
             msg = email.message.EmailMessage()
-            msg["Subject"] = sp.DEFAULT_SUBJECT
+            msg["Subject"] = sp.DEFAULT_SUBJECT[0]
             msg["From"] = "alertas@bhd.com.do"
             msg.set_content(body, subtype="html")
             msgs.append(msg.as_bytes(policy=email.policy.default))
@@ -386,7 +454,7 @@ class IngestEmailsTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             path = Path(tmp) / "spending.json.enc"
             msg = email.message.EmailMessage()
-            msg["Subject"] = sp.DEFAULT_SUBJECT
+            msg["Subject"] = sp.DEFAULT_SUBJECT[0]
             msg.set_content(SAMPLE_HTML, subtype="html")
             raw = msg.as_bytes(policy=email.policy.default)
             env = {"GMAIL_USER": "u@example.com",
