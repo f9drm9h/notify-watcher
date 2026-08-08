@@ -463,18 +463,6 @@
     {
       "action": "drop",
       "detail": "",
-      "id": "42eb0dc7e9fc03c2",
-      "score": 28,
-      "severity": "moderate",
-      "source": "Spider-Man: Brand New Day",
-      "title": "'Spider-Man: Brand New Day' Final Trailer Shows Tom Holland Swinging With Zendaya & Closer Look At Mark Ruffalo's Hulk - Deadline",
-      "topic": "movies",
-      "ts": "2026-07-26T00:08:23.124175+00:00",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQYnVSdjJIRFNCRWVCbEtpblV1aGJQZmJNWkhZU2hsWEtSXzVRZkJsTDJtb3oxS0xqQTRXN0RIQUt6ZGczbzBpUUpfNUR1MFBKSG5JQmxaT1hnVER3VTBEc093VzdYVXNZU0pORksxY2JzbXhpV1A5Mi0yOXdFMHhWRlQ5SzQzc1gxRFlXdTd6TE53NnBmOXFEZ2dLWk1Gd3FoV2Q5bUZjRQ?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
       "id": "c8b3821dd93232f6",
       "score": 28,
       "severity": "moderate",
@@ -12459,6 +12447,18 @@
       "topic": "music",
       "ts": "2026-08-08T15:08:16.042025+00:00",
       "url": "https://www.deezer.com/track/3025976131"
+    },
+    {
+      "action": "push",
+      "detail": "Street Fighter 6 - CEO Grind and 1v1Me",
+      "id": "0cae75d0be0dcf0a",
+      "score": 68,
+      "severity": "high",
+      "source": "RiddlesMK",
+      "title": "RiddlesMK is live on Twitch",
+      "topic": "twitch",
+      "ts": "2026-08-08T17:53:11.174904+00:00",
+      "url": "https://twitch.tv/RiddlesMK"
     }
   ],
   "exercise_slots_sent": [],
@@ -14228,7 +14228,7 @@
   "last_run": {
     "failed": 0,
     "ok": 2,
-    "ts": "2026-08-08T17:38:06.742996+00:00"
+    "ts": "2026-08-08T17:53:10.606689+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -15458,9 +15458,9 @@
       "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "habits": {
-      "last_data": "2026-08-08T17:38:08.757387+00:00",
+      "last_data": "2026-08-08T17:53:13.443005+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-08T17:38:06.742996+00:00"
+      "last_ok": "2026-08-08T17:53:10.606689+00:00"
     },
     "holidays": {
       "last_data": "2026-08-08T15:09:46.508099+00:00",
@@ -15543,9 +15543,9 @@
       "last_ok": "2026-08-08T15:08:10.870660+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-08T17:38:07.830375+00:00",
+      "last_data": "2026-08-08T17:53:12.423024+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-08T17:38:06.742996+00:00"
+      "last_ok": "2026-08-08T17:53:10.606689+00:00"
     },
     "uv": {
       "last_data": "2026-08-08T15:09:47.821948+00:00",
@@ -15569,7 +15569,9 @@
       "last_ok": "2026-08-08T15:08:10.870660+00:00"
     }
   },
-  "twitch_live": [],
+  "twitch_live": [
+    "RiddlesMK"
+  ],
   "visa_bulletin_current": "2026-08",
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
