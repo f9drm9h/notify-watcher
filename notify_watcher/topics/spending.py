@@ -1,12 +1,19 @@
 """Topic: weekly spending summary from BHD transaction emails (Gmail IMAP).
 
-Banco BHD mails a "BHD Notificación de Transacciones" alert for each card
-transaction. Every run this topic polls Gmail for recent alerts from the
-configured sender — the last ``lookback_days`` (default 7) of mail regardless
-of read state, because the account owner reads their own bank alerts and an
-UNSEEN filter would race them and silently lose transactions. The mailbox is
-opened read-only and never modified; re-parsing an already-recorded email is
-harmless because transactions dedup on date + amount + merchant. Approved
+Banco BHD mails two different alert templates this topic watches for: "BHD
+Notificación de Transacciones" for card purchases (an HTML table, filtered to
+rows whose Estado is "Aprobada"), and "Transacciones entre productos BHD y a
+otros Bancos" for everything else — PIN cash withdrawals, transfers between
+BHD products and to other banks — which carries no table at all, just prose
+naming the transaction type/date/amount inline (added 2026-08 after the debit
+card was cut and PIN withdrawals became the account's only activity; see
+RUNBOOK.md for the diagnostic history). Every run this topic polls Gmail for
+recent alerts from the configured sender matching either subject — the last
+``lookback_days`` (default 7) of mail regardless of read state, because the
+account owner reads their own bank alerts and an UNSEEN filter would race
+them and silently lose transactions. The mailbox is opened read-only and
+never modified; re-parsing an already-recorded email is harmless because
+transactions dedup on date + amount + merchant. Approved/completed
 transactions are appended to the encrypted log. On each daily run it pushes a
 summary of the CURRENT ISO week, so spending made *this* week surfaces promptly
 instead of waiting until the following Monday for a retrospective (the old
@@ -65,7 +72,20 @@ SPENDING_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "spendi
 # A bare domain: IMAP FROM is a substring match over the header, and the
 # bank's exact mailbox name is not guaranteed (the subject filter narrows it).
 DEFAULT_SENDER = "bhd.com.do"
-DEFAULT_SUBJECT = "BHD Notificación de Transacciones"
+# Two alert templates, not one. "BHD Notificación de Transacciones" is the
+# card-purchase alert (HTML table, Fecha/Monto/Comercio/Estado columns).
+# "Transacciones entre productos BHD y a otros Bancos" covers everything
+# that isn't a card purchase — PIN cash withdrawals, transfers between BHD
+# products and to other banks — and carries no table at all, just prose
+# naming the transaction type, date and amount inline. Added 2026-08 after
+# the debit card was cut and PIN withdrawals became the only bank activity;
+# before that, subject-matching only the card alert made spending look dead
+# even though the mailbox was receiving plenty of real bank mail (see
+# RUNBOOK.md's spending entry for the diagnostic history).
+DEFAULT_SUBJECT = (
+    "BHD Notificación de Transacciones",
+    "Transacciones entre productos BHD y a otros Bancos",
+)
 IMAP_HOST = "imap.gmail.com"
 
 # Header-name fragments (accent-stripped, lowercase) -> canonical field.
@@ -104,8 +124,17 @@ def _fold(text: str) -> str:
     return "".join(c for c in nfkd if not unicodedata.combining(c)).lower().strip()
 
 
-def _subject_matches(subject: str, wanted: str) -> bool:
-    return _fold(wanted) in _fold(subject)
+def _subject_matches(subject: str, wanted: str | tuple[str, ...] | list) -> bool:
+    """True if ``subject`` contains any of the wanted subject(s).
+
+    ``wanted`` is normally the module/config default (a tuple covering both
+    known BHD alert templates), but a hand-edited monitors.json ``subject``
+    override is a single string — accept both shapes rather than requiring
+    the config author to remember to wrap it in a list.
+    """
+    wanted_list = [wanted] if isinstance(wanted, str) else list(wanted)
+    folded_subject = _fold(subject)
+    return any(_fold(w) in folded_subject for w in wanted_list)
 
 
 def _parse_amount(text: str) -> float | None:
@@ -129,6 +158,60 @@ def _parse_date(text: str) -> str:
         except ValueError:
             continue
     return cleaned
+
+
+# The "Transacciones entre productos BHD y a otros Bancos" alert has no
+# table — it's prose paragraphs naming the transaction type, date and
+# amount inline, e.g.: "...el código de la transacción PIN Pesos realizada
+# el 07/08/2026 1:38 PM por un monto de RD$ 2,500.00 es el siguiente:
+# 283058". The type is whatever BHD names it (PIN Pesos, PIN Dólares, a
+# transfer type, etc.) — not hardcoded, since this one subject line covers
+# several transaction kinds, only some of which have been seen so far.
+_PROSE_TX_RE = re.compile(
+    r"transacci[oó]n\s+(?P<type>.+?)\s+realizada\s+el\s+"
+    r"(?P<date>\d{1,2}/\d{1,2}/\d{4}\s+\d{1,2}:\d{2}\s*[AaPp]\.?\s?[Mm]\.?)"
+    r"\s+por\s+un\s+monto\s+de\s+(?P<amount>RD?\$?\s?[\d,]+\.\d{2})",
+    re.IGNORECASE,
+)
+_PROSE_REF_RE = re.compile(r"siguiente:\s*(?P<ref>\d+)", re.IGNORECASE)
+
+
+def _parse_prose_transaction(html: str) -> list[dict]:
+    """Pure: the single transaction from a no-table BHD alert, if any.
+
+    Returns a list (0 or 1 items) so callers can ``extend`` it the same way
+    as the table parser's output. Every PIN/transfer alert seen so far names
+    exactly one transaction; if BHD ever batches several into one email this
+    will need a loop instead of a single ``.search``.
+    """
+    text = " ".join(BeautifulSoup(html or "", "html.parser").get_text(" ").split())
+    m = _PROSE_TX_RE.search(text)
+    if not m:
+        return []
+    amount = _parse_amount(m.group("amount"))
+    if amount is None:
+        return []
+    tx_type = " ".join(m.group("type").split())
+    ref_match = _PROSE_REF_RE.search(text)
+    tx = {
+        "date": _parse_date(m.group("date")),
+        "amount": amount,
+        # No separate currency field in this alert template — every example
+        # seen so far is RD$ (matches the table parser's own "RD" default
+        # for a missing Moneda column).
+        "currency": _normalize_currency("RD"),
+        # No merchant on a cash withdrawal or inter-account transfer — the
+        # transaction type IS the meaningful label, and using it as the
+        # merchant groups repeated withdrawals together in the weekly
+        # summary's top-merchants line, which is what was actually wanted
+        # (see chat: "yes, count ATM cash withdrawals, as a lump line").
+        "merchant": tx_type,
+        "type": tx_type,
+        "source": "bhd_email",
+    }
+    if ref_match:
+        tx["reference"] = ref_match.group("ref")
+    return [tx]
 
 
 def _normalize_currency(text: str) -> str:
@@ -207,7 +290,13 @@ def _parse_transactions(html: str) -> list[dict]:
                 "type": " ".join(tx_type.split()),
                 "source": "bhd_email",
             })
-    return out
+    if out:
+        return out
+    # No table matched — try the prose-format alert (PIN withdrawals,
+    # inter-account transfers) before giving up. Only attempted when the
+    # table scan found nothing, so a genuinely malformed card-purchase
+    # email still reports zero rather than accidentally matching noise.
+    return _parse_prose_transaction(html)
 
 
 def _html_from_message(msg: email.message.Message) -> str:
