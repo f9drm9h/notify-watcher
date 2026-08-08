@@ -70,7 +70,7 @@
     "29db49f64ce68661",
     "a8b1aff056453d2f"
   ],
-  "apod_last_sent": "2026-08-07",
+  "apod_last_sent": "2026-08-08",
   "astronomy_sent": [
     "2026-06-14|New moon tonight - d",
     "2026-06-21|June solstice today",
@@ -94,86 +94,13 @@
   "control": {
     "last_id": "y6zvz7vDoH1s"
   },
-  "digest_buffer": [
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 35,
-      "source": "EIA Today in Energy",
-      "title": "Battery storage capacity averaged 70% growth over the last three years",
-      "topic": "energy",
-      "url": "https://www.eia.gov/todayinenergy/detail.php?id=67925"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.4 - 34 km NE of Punta Cana, Dominican Republic (~173 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr71527803"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Earthquakes",
-      "title": "M3.7 - 61 km ENE of Miches, Dominican Republic (~158 km away)",
-      "topic": "quakes",
-      "url": "https://earthquake.usgs.gov/earthquakes/eventpage/pr2026219001"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Adempas",
-      "title": "FDA updates approval for Adempas (Riociguat) (NDA204819)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=204819"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 40,
-      "source": "Neulasta",
-      "title": "FDA updates approval for Neulasta (Pegfilgrastim) (BLA125031)",
-      "topic": "fda",
-      "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=125031"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    },
-    {
-      "detail": "",
-      "preserve_detail": false,
-      "score": 50,
-      "source": "Weather",
-      "title": "Atlantic Tropical Weather Outlook",
-      "topic": "weather",
-      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
-    }
-  ],
-  "digest_last_sent": "2026-08-07",
+  "digest_buffer": [],
+  "digest_last_sent": "2026-08-08",
   "discord_control": {
     "last_id": "1530929203594137641"
   },
   "energy_learn_last_news": "2026-08-05",
-  "energy_learn_last_sent": "2026-08-07",
+  "energy_learn_last_sent": "2026-08-08",
   "energy_learn_seen": {
     "facts": [
       "baseload-vs-peaking",
@@ -198,7 +125,8 @@
       "chernobyl-1986",
       "vulcan-street-1882",
       "godalming-1881",
-      "itaipu-1984"
+      "itaipu-1984",
+      "northeast-blackout-2003"
     ],
     "infrastructure": [
       "itaipu-dam",
@@ -532,150 +460,6 @@
     "091688684f171eb1"
   ],
   "event_log": [
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "6e2dc5d145b1b829",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "THE BATMAN PART II: \u201cCamera Test\u201d and New Release Date - batman on film",
-      "topic": "movies",
-      "ts": "2026-07-25T21:08:28.952599+00:00",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUGF4eHpDSzlscUxiRmFTVDhPMTBZUmp4SWlmUGo1UkxRNGJtVXQ2b09nbnFmajM5RTR4SVNwNzYyVThRWFJwUFhWUFpGdEZwa19fLXdGak00NXZXUFJOUk5idnkxMklVZlVzanNKQjZwZW1zUmY0UDEweElpZThmejFVcnZSWW1zVFR5U0pB0gGTAUFVX3lxTE1pcVo4OFEweVJ3c2lNdXZuVE52dHpIS1BGZEt4Mlk2WlJnZENFLVEyZDBZeG02eC1wZWF0ZU5IaG5KSWlZVGIyZ2xreWczRVZWSUNrQVdZZjdkczRhb2pTbGpZQWl0MWdmeDVSQkxjclg1MWFGUGJMYlZNLUcwX2tXMHFEYTJFMGF5b2NCUE8yUWs1MA?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "deaf66dca369c041",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "'The Batman Part II' gets short teaser, release delayed to 2028 - upi.com",
-      "topic": "movies",
-      "ts": "2026-07-25T21:08:28.953375+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOYnZYNEdOazdKdXhEV2VTZ21vQUVXejh3d2w4MXJWbnZDSjZkcDFveEs4NGtKd2ExaGRKNkZFSXl2SUhZczc0WE9WMUV3cGdGeHNuOEdxSV9EekN3aTBNZ04zXzA1bU5hQ0d4V3U3MmdCMkVNNnMzSDFyakdKN1FzUmRvaDZ6SHNBSGEtRTFueVhUNWd4TWtuR2QxUXBrQ3Y4M193Vm5hUFBZQdIBrwFBVV95cUxQZks2SVNxMWVmWFZibFFYODhUV3l2YUp1OVRuODdRaVpTMS1xcWNKMHJqN0xDN2VEQ1lqTHhxVlhROWJuYy1CeTZvdG9jcHNTUHprdnR1aHhDSnlNZXR4V0xpdkRuWUdRdFpZYmZmanQyOHpLcU1VSmdoeU9jVk5ZMEptNXd5cUtvNFkyWm1tYnQ4ZjRfT3Z1QXAzTjJERkNvV3hrY2NmQTBmN3NBcEJz?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "1d33b7941a8af798",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Long Winter Lengthens \u2014 \u2018The Batman\u2014Part II\u2019 Delayed Once Again - Murphy's Multiverse",
-      "topic": "movies",
-      "ts": "2026-07-25T21:08:28.954115+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNcF9XMWxObHJaNFI1ZVQyaXpBM2c3Y19CQndPblFvUFlwN196QlVsZ0o1THlsTEpmR1Z6V08wTzBFR0lta1pVOFBzdDg5X0hZcjBzamVKb25QNW5QaUF0ZnBWUmlCT0JlbHdBTWdnbHNteEpFVC1ULUNSUzNIQzctZVUwbFZubkt0M2xhVC1OcGROSnYyVVFsWWFlOTRON0U?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "9106ce0c5426e8a7",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "\u2018The Batman 2\u2019 Delayed Again to February 2028; Matt Reeves Drops First Camera Test Footage of Robert Pattinson\u2019s Return - IMDb",
-      "topic": "movies",
-      "ts": "2026-07-25T21:08:28.954901+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBfellxcFV1SGVrcktTdHBmOTZiUFFpSC1QRHdEQmhYSWtLT1BydzNBYmpZQXZSYmRod1VPYzZla3FleFFaU0dIZnpWQ3hJYUJONnYwUFE4dVZmcHJYalpBRTFWcE14elJYblE?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "3e85f4ff648d87b5",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman Part 2 Unveils First Official Look at Robert Pattinson's New Batsuit - The Direct",
-      "topic": "movies",
-      "ts": "2026-07-25T21:08:28.955822+00:00",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQNldJdTd1bFZvcEhRNmtFczFidFNiUEVyNExoMEZKdEp3ZGFrNEM3NmE4S1U1azlSVUxSbW1XbnVxTEtPSy1MN0gxOHZxNnVISlJ3ODNpY3phYm1ubjBLd051bDMxYkdaZlNGVmNfb3BsTFlHMlNRWjU2QldrSER3U3lEVnJRdVZ4bjhfZVJINVFtLVRKVGtrYlBWRWE?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "86c625f9c0b3134e",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "THE BATMAN: PART II Delayed to February 2028 as Matt Reeves Reveals First Camera Test Footage of Robert Pattinson\u2019s Batman - GeekTyrant",
-      "topic": "movies",
-      "ts": "2026-07-25T21:08:28.956593+00:00",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOZzhvWVB0Y19pRk9QdkFSc2V4Z1BXUWZLdi1mamlIN2xOSjBELW5rczNha2RCdWhiOUcyMF82QURRTkRQNlBLc1A4alJNcnhlZUd0WnlwdVE3TUhlTUxuSkpXQzlmOVloRXdQRmpFQWthaF9TWHE5NzM3eHAwSUI1MXVqNEhwVWtnZWpzclZKYkFTSHd6X2FsQ2RSS2ZSLWZOOUZacjJ6VlluRzhXNHM3bUdMbWljYXJqXzU0Q25BSmZZTjFUTkpkV1BqWjJpZ1Q0OGdYNTNyaEktZDFIcEZDWm55RU00d1plMEE?oc=5"
-    },
-    {
-      "action": "drop",
-      "detail": "",
-      "id": "0472491443a52a26",
-      "score": 28,
-      "severity": "moderate",
-      "source": "The Batman Part II",
-      "title": "The Batman Part II Delayed Again To 2028 \u2013 And Unveils First Teaser - empireonline.com",
-      "topic": "movies",
-      "ts": "2026-07-25T21:08:28.957381+00:00",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcXNpSUpQYTlhNGlINlowenN2T1FUa25reWlObWFNbFFhZTNsX3JKYUt3SXV2OXpjbGxnVjVuTkVUM0FYWGNaUlQ0Q1ZmX3huNTRPQzBZNDJzcVRDU0RCWjlKMjIzYk9hYk82bXhSaE9jVXVNdjB2Q1UzWVAtS096T29RMG5JNWxZ?oc=5"
-    },
-    {
-      "action": "push",
-      "detail": "Paint Me Silver - Pond\n(because you like Tame Impala)",
-      "id": "24739a2a5423dd47",
-      "score": 62,
-      "severity": "low",
-      "source": "Music",
-      "title": "Music discovery",
-      "topic": "music",
-      "ts": "2026-07-25T21:08:36.050534+00:00",
-      "url": "https://www.deezer.com/track/445954412"
-    },
-    {
-      "action": "push",
-      "detail": "Visible pass at 10:42 PM - max 51deg, NW to SE. Look up!",
-      "id": "dc67161f0e38ab59",
-      "score": 62,
-      "severity": "low",
-      "source": "ISS",
-      "title": "ISS pass overhead",
-      "topic": "iss",
-      "ts": "2026-07-25T21:10:20.915472+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "\u00bfMe dejar\u00e1 esta canci\u00f3n alg\u00fan d\u00eda?",
-      "id": "0979988b79fd01ed",
-      "score": 62,
-      "severity": "moderate",
-      "source": "MIGALA666",
-      "title": "MIGALA666 uploaded a new video",
-      "topic": "youtube",
-      "ts": "2026-07-25T21:10:21.988167+00:00",
-      "url": "https://www.youtube.com/watch?v=zaL-h1XOwZ4"
-    },
-    {
-      "action": "push",
-      "detail": "Exercise time. Get the body working before the evening slips away.",
-      "id": "207ced4dc19a5d4e",
-      "score": 0,
-      "severity": "low",
-      "source": "exercise",
-      "title": "Exercise - 6 PM session",
-      "topic": "habits",
-      "ts": "2026-07-25T22:08:29.260909+00:00",
-      "url": ""
-    },
-    {
-      "action": "push",
-      "detail": "Meditation time: sit, breathe, let the day settle.",
-      "id": "5d98d6b1c08946bf",
-      "score": 0,
-      "severity": "low",
-      "source": "meditate",
-      "title": "Meditate - evening reset",
-      "topic": "habits",
-      "ts": "2026-07-25T22:08:29.260909+00:00",
-      "url": ""
-    },
     {
       "action": "push",
       "detail": "Cleaning slot: reset one area before the night starts.",
@@ -12531,6 +12315,150 @@
       "topic": "habits",
       "ts": "2026-08-08T09:37:45.037483+00:00",
       "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "All I Want - Kodaline\n(because you like Vance Joy)",
+      "id": "966d88cde12db538",
+      "score": 62,
+      "severity": "low",
+      "source": "Music",
+      "title": "Music discovery",
+      "topic": "music",
+      "ts": "2026-08-08T12:07:39.776353+00:00",
+      "url": "https://www.deezer.com/track/927608952"
+    },
+    {
+      "action": "digest",
+      "detail": "",
+      "id": "1376c9866029386c",
+      "score": 50,
+      "severity": "moderate",
+      "source": "Weather",
+      "title": "Atlantic Tropical Weather Outlook",
+      "topic": "weather",
+      "ts": "2026-08-08T12:08:51.353572+00:00",
+      "url": "https://www.nhc.noaa.gov/gtwo.php?basin=atlc"
+    },
+    {
+      "action": "push",
+      "detail": "USD/DOP moved from 58.27 to 58.29 (+0.01, +0.02%) vs yesterday",
+      "id": "9693f0f323eae7a5",
+      "score": 62,
+      "severity": "high",
+      "source": "FX",
+      "title": "USD/DOP today: 58.29",
+      "topic": "fx",
+      "ts": "2026-08-08T12:09:05.859511+00:00",
+      "url": ""
+    },
+    {
+      "action": "digest",
+      "detail": "Gasolina Premium: RD$346.80 (+3.00, +0.9%)\nGasolina Regular: RD$310.00 (+2.10, +0.7%)\nGasoil Regular: RD$260.30 (+2.00, +0.8%)\nGasoil \u00d3ptimo: RD$296.80 (+3.00, +1.0%)\nKerosene: RD$323.80 (-11.70, -3.5%)\nGLP: RD$135.20 (sin cambio)",
+      "id": "c6ed687b0d023e67",
+      "score": 45,
+      "severity": "low",
+      "source": "MICM",
+      "title": "Combustibles: precios de la semana",
+      "topic": "fuel",
+      "ts": "2026-08-08T12:09:07.165822+00:00",
+      "url": "https://micm.gob.do/wp-content/uploads/2026/08/AVISO-PRE.-SEM.CORTE-08-14-AGO-DE-2026.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "On this day\n2014: The World Health Organization declared the Western African Ebola epidemic, which began in December 2013, to be a public health emergency of international concern.\n\nFeatured: Cerro Panizos\nCerro Panizos is a late Miocene-age shield-shaped volcano spanning the Potosi Department of Bolivia and the Jujuy Province of Argentina. It features two calderas and a group of lava domes. It is part of the Altiplano-Puna volcanic complex (APVC), a group of calderas and...\n\nDid you know\nThe shortest recorded war, the 1896 conflict between Britain and Zanzibar, concluded in under 45 minutes. (Source: Britannica)",
+      "id": "e243606d39b4c872",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Daily learning",
+      "topic": "learn",
+      "ts": "2026-08-08T12:09:11.127803+00:00",
+      "url": "https://en.wikipedia.org/wiki/Cerro_Panizos"
+    },
+    {
+      "action": "push",
+      "detail": "Deep in the sun-drenched city of Syracuse, some 2,200 years ago, lived one of the ancient world\u2019s most brilliant minds: Archimedes. More than just a mathematician, he was an engineer, an inventor, and a tireless explorer of the universe\u2019s hidden mechanics. Among his many pursuits, he grappled with a challenge that had eluded thinkers for centuries: accurately determining the ratio of a circle's circumference to its diameter, a number we now know as pi. Archimedes, with his characteristic ingenuity, didn't merely ponder this abstract constant; he devised a remarkably practical method to trap it, to pin it down with precision unheard of in his era.\n\nHis approach was as elegant as it was revolutionary. Imagine a circle. Now, picture a regular polygon inscribed within it, touching the circle at each of its vertices. The perimeter of this inner polygon, Archimedes reasoned, would be less than the circle's circumference. Next, envision another regular polygon circumscribed around the same circle, its sides tangent to the circle. The perimeter of this outer polygon, he concluded, would be greater than the circle\u2019s circumference. By meticulously increasing the number of sides of these polygons \u2013 from humble hexagons to 96-sided titans \u2013 Archimedes began to squeeze the circle\u2019s true circumference between ever-narrowing bounds. With each increase in sides, the polygons more closely approximated the circle, and his estimated range for pi tightened. Through this laborious, yet brilliant, geometric sandwich, he calculated pi to be between 3 10/71 and 3 1/7, an astonishingly accurate approximation for his time.\n\nArchimedes\u2019 method, far from being a mere intellectual exercise, laid a foundational stone for the development of calculus millennia later.",
+      "id": "5af639f6e26c75a3",
+      "score": 60,
+      "severity": "low",
+      "source": "Learning",
+      "title": "Archimedes and the estimation of pi",
+      "topic": "spark",
+      "ts": "2026-08-08T12:09:14.165055+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "What: Overgrown trees, a software bug, and an alarm failure cascaded into a blackout across the U.S. Northeast and Ontario, hitting ~50 million people.\nWhy it matters: It showed that even a modern grid can fall to a chain of small, unnoticed faults.\nWhy you should care: It drove mandatory reliability standards and tree-trimming rules that protect today's grid from repeat cascades.\n(Source: U.S.-Canada Power System Outage Task Force)",
+      "id": "9d211dfc6ecaee88",
+      "score": 60,
+      "severity": "low",
+      "source": "Energy learning",
+      "title": "\u26a1 Today's spark \u2014 The 2003 Northeast Blackout",
+      "topic": "energy_learn",
+      "ts": "2026-08-08T12:09:14.441449+00:00",
+      "url": ""
+    },
+    {
+      "action": "push",
+      "detail": "Ends Sunday 09 August (tomorrow). Tap for the academic calendar (PDF).",
+      "id": "23a0a0268af90228",
+      "score": 62,
+      "severity": "high",
+      "source": "ITSC",
+      "title": "ITSC: Inicio de docencia Cuatrimestre 2026-2",
+      "topic": "itsc",
+      "ts": "2026-08-08T12:09:22.406476+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/07/Calendario-academico-2026-2-actualizado-julio.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Ends Sunday 09 August (tomorrow). Tap for the academic calendar (PDF).",
+      "id": "104ec13fe7304b07",
+      "score": 62,
+      "severity": "high",
+      "source": "ITSC",
+      "title": "ITSC: Evaluaci\u00f3n y Publicaci\u00f3n Laboratorios",
+      "topic": "itsc",
+      "ts": "2026-08-08T12:09:22.585055+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/07/Calendario-academico-2026-2-actualizado-julio.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Ends Saturday 15 August (in 7 days). Tap for the academic calendar (PDF).",
+      "id": "ac80958ada0e51f4",
+      "score": 62,
+      "severity": "moderate",
+      "source": "ITSC",
+      "title": "ITSC: Ajuste a la programacion para la Selecci\u00f3n",
+      "topic": "itsc",
+      "ts": "2026-08-08T12:09:22.728525+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/07/Calendario-academico-2026-2-actualizado-julio.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Ends Saturday 15 August (in 7 days). Tap for the academic calendar (PDF).",
+      "id": "72b88eaf85a258fd",
+      "score": 62,
+      "severity": "moderate",
+      "source": "ITSC",
+      "title": "ITSC: DEVOLUCION libros prestados en Biblioteca",
+      "topic": "itsc",
+      "ts": "2026-08-08T12:09:22.858541+00:00",
+      "url": "https://www.itsc.edu.do/wp-content/uploads/2026/07/Calendario-academico-2026-2-actualizado-julio.pdf"
+    },
+    {
+      "action": "push",
+      "detail": "Which of these is not a comet? You guessed it - the one on the right is a globular star cluster. The diffuse greenish coma of periodic comet 10P/Tempel 2 is at left in the frame. In fact the globular star cluster is Messier 30, also known as M30, or the 30th entry in astronomer...\n(c) Dan Bartlett",
+      "id": "b0a6159c898807a2",
+      "score": 60,
+      "severity": "low",
+      "source": "NASA APOD",
+      "title": "APOD: A Messier Moment for Tempel 2",
+      "topic": "apod",
+      "ts": "2026-08-08T12:09:51.543198+00:00",
+      "url": "https://apod.nasa.gov/apod/image/2608/10P_Tempel2_Globular_M30_20260729_DEBartlett.jpg"
     }
   ],
   "exercise_slots_sent": [],
@@ -12756,20 +12684,20 @@
       }
     ]
   },
-  "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/07/AVISO-PRE.-SEM.CORTE-01-07-AGO-DE-2026-ESCENARIO-1.pdf",
-  "fuel_last_pdf_hash": "362e21db79392574a9439393da45f4171df6964db6ef255419f9738292d9ccfa",
-  "fuel_last_prices_seen_at": "2026-08-07T21:09:48.315109+00:00",
+  "fuel_last_pdf": "https://micm.gob.do/wp-content/uploads/2026/08/AVISO-PRE.-SEM.CORTE-08-14-AGO-DE-2026.pdf",
+  "fuel_last_pdf_hash": "020830b53413ef4e47844dbb8cdd1bf3615a9414ac83de123745f2db032dbac9",
+  "fuel_last_prices_seen_at": "2026-08-08T12:09:07.165738+00:00",
   "fuel_prices": {
     "GLP": 135.2,
-    "Gasoil Regular": 258.3,
-    "Gasoil \u00d3ptimo": 293.8,
-    "Gasolina Premium": 343.8,
-    "Gasolina Regular": 307.9,
-    "Kerosene": 335.5
+    "Gasoil Regular": 260.3,
+    "Gasoil \u00d3ptimo": 296.8,
+    "Gasolina Premium": 346.8,
+    "Gasolina Regular": 310.0,
+    "Kerosene": 323.8
   },
   "fx_daily_baseline": {
-    "date": "2026-08-07",
-    "rate": 58.274238
+    "date": "2026-08-08",
+    "rate": 58.287723
   },
   "fx_last_rate": 58.287723,
   "fx_last_zone": "within",
@@ -13146,6 +13074,7 @@
       "1b7d9e5ab11b51a5"
     ],
     "La Sirena": [
+      "998d934847f258df",
       "f071a0ea6dd37aca",
       "11ca04c9eb43ac61",
       "1fdeb7f8088a0bff",
@@ -14158,6 +14087,10 @@
     "cfbcd32193b51486"
   ],
   "itsc_sent_ids": [
+    "c756ad5895e8096c",
+    "ea406cd5ee0ab7c5",
+    "c8355c6fbe98253a",
+    "6086413d6424a582",
     "16a062d27f24017b",
     "884c2c592f066bf0",
     "b62f93625607505e",
@@ -14230,7 +14163,7 @@
     "2271594640351751",
     "f2cea80ebf0f1ab5"
   ],
-  "knowledge_last_category": "early_humans",
+  "knowledge_last_category": "math_history",
   "knowledge_last_sent": "2026-07-14T4",
   "knowledge_seen": {
     "ancient_civilizations:Hatshepsut, the woman who became pharaoh": "2026-08-05",
@@ -14238,23 +14171,20 @@
     "ancient_civilizations:The Babylonian Empire": "2026-07-10",
     "ancient_civilizations:The Indus Valley Civilization": "2026-07-14",
     "ancient_civilizations:The Trojan War and Schliemann's excavations": "2026-07-11",
-    "ancient_civilizations:The building of the Great Wall of China": "2026-07-09",
     "ancient_civilizations:The conquests of Alexander the Great": "2026-07-13",
-    "astronomy:Galileo's telescope and the moons of Jupiter": "2026-07-09",
     "astronomy:Sputnik and the dawn of the space age": "2026-07-27",
     "astronomy:The Cassini mission to Saturn": "2026-07-13",
     "astronomy:The Drake equation and the search for life": "2026-07-10",
     "astronomy:Tycho's supernova of 1572": "2026-07-14",
     "astronomy:Vera Rubin and the evidence for dark matter": "2026-07-11",
     "astronomy:Yuri Gagarin, the first human in space": "2026-08-06",
-    "early_humans:Homo habilis and the first stone tools": "2026-07-09",
     "early_humans:The Blombos Cave engravings": "2026-07-28",
     "early_humans:The Ice Age megafauna extinctions": "2026-08-07",
     "early_humans:The domestication of the dog": "2026-07-14",
     "early_humans:The domestication of wheat and barley": "2026-07-13",
     "early_humans:The first deliberate burials and ritual": "2026-07-10",
     "early_humans:The origins of human language": "2026-07-12",
-    "math_history:Archimedes and the 'Eureka' moment": "2026-07-09",
+    "math_history:Archimedes and the estimation of pi": "2026-08-08",
     "math_history:Cardano and the solution of the cubic equation": "2026-07-15",
     "math_history:Ramanujan and Hardy's improbable collaboration": "2026-07-29",
     "math_history:The Seven Bridges of K\u00f6nigsberg": "2026-07-13",
@@ -14262,7 +14192,6 @@
     "math_history:Turing and the limits of computation": "2026-07-12",
     "medicine:Andreas Vesalius and the birth of modern anatomy": "2026-07-13",
     "medicine:Ignaz Semmelweis and the fight for handwashing": "2026-07-11",
-    "medicine:Joseph Lister and antiseptic surgery": "2026-07-09",
     "medicine:The Tuskegee syphilis study and research ethics": "2026-07-12",
     "medicine:The first MRI scan of a human body": "2026-07-30",
     "medicine:The global eradication of smallpox": "2026-07-16",
@@ -14271,7 +14200,6 @@
     "mythology:The Greek creation myth and the Titans": "2026-07-31",
     "mythology:The Maya Popol Vuh": "2026-07-13",
     "mythology:The Norse creation from Ginnungagap": "2026-07-17",
-    "mythology:Thor and the hammer Mj\u00f6lnir": "2026-07-09",
     "philosophy:Aristotle's virtue ethics": "2026-07-12",
     "philosophy:Descartes and 'I think, therefore I am'": "2026-07-13",
     "philosophy:John Locke and the blank slate": "2026-08-01",
@@ -14288,21 +14216,19 @@
     "technology:GPS and its military origins": "2026-07-12",
     "technology:Samuel Morse and the telegraph": "2026-07-10",
     "technology:The Haber-Bosch process and synthetic fertilizer": "2026-07-25",
-    "technology:The Mother of All Demos": "2026-07-09",
     "technology:The sending of the first email": "2026-08-03",
     "technology:The transistor at Bell Labs": "2026-07-14",
     "world_history:The Christmas truce of 1914": "2026-08-04",
     "world_history:The McCarthy era and the Red Scare": "2026-07-10",
-    "world_history:The Russian Revolution of 1917": "2026-07-09",
     "world_history:The Watergate scandal": "2026-07-25",
     "world_history:The assassination of John F. Kennedy": "2026-07-14",
     "world_history:The fall of the Berlin Wall": "2026-07-12",
     "world_history:The fall of the Romanovs": "2026-07-11"
   },
   "last_run": {
-    "failed": 0,
-    "ok": 2,
-    "ts": "2026-08-08T11:52:40.898012+00:00"
+    "failed": 1,
+    "ok": 39,
+    "ts": "2026-08-08T12:07:35.196083+00:00"
   },
   "launch_seen_ids": [
     "0891cf1d82bf33bf",
@@ -14341,7 +14267,7 @@
     "9cf78ee44cb96c21",
     "7621aad01d0821be"
   ],
-  "learn_last_sent": "2026-08-07",
+  "learn_last_sent": "2026-08-08",
   "life_dashboard_last_week": "2026-W31",
   "meditate_slots_sent": [],
   "music_discovery_seen": [
@@ -14581,7 +14507,8 @@
     793825,
     1581786,
     288092,
-    7492486
+    7492486,
+    3803881
   ],
   "music_release_seen": [
     "3022f514ae2fac80",
@@ -14634,6 +14561,15 @@
     "music": "2026-06-27T06:18:27.434173+00:00"
   },
   "offers": {
+    "000b16109615b01b": {
+      "applied": null,
+      "created": "2026-08-08T12:07:39.776331+00:00",
+      "kind": "artist",
+      "label": "Kodaline",
+      "payload": {
+        "name": "Kodaline"
+      }
+    },
     "0044b619ffa82001": {
       "applied": null,
       "created": "2026-07-30T21:08:21.106881+00:00",
@@ -15444,155 +15380,155 @@
     "d1204-liberty-5-pro-max-ai-recording-earbuds",
     "soundcore-liberty-5-pro-max-anker-nano-cargador-usb-c-45w-inteligente"
   ],
-  "spark_last_sent": 82693,
-  "spark_next_kind": "fact",
+  "spark_last_sent": 82694,
+  "spark_next_kind": "health",
   "spending_week_summarized": "2026-W28:2817.16",
   "topic_health": {
     "air_quality": {
-      "last_data": "2026-08-08T09:09:02.317383+00:00",
+      "last_data": "2026-08-08T12:09:05.788919+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "anthropic_news": {
-      "last_data": "2026-08-08T09:09:05.301517+00:00",
+      "last_data": "2026-08-08T12:09:08.932583+00:00",
       "last_data_count": 100,
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "apod": {
-      "last_data": "2026-08-07T21:09:58.112835+00:00",
+      "last_data": "2026-08-08T12:09:51.543178+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "astronomy": {
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "bills": {
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "blood_donation": {
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "deals": {
-      "last_data": "2026-08-08T09:08:35.395109+00:00",
+      "last_data": "2026-08-08T12:08:24.226733+00:00",
       "last_data_count": 11,
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "digest": {
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "energy": {
-      "last_data": "2026-08-08T09:08:47.280691+00:00",
+      "last_data": "2026-08-08T12:08:51.105969+00:00",
       "last_data_count": 61,
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "energy_learn": {
-      "last_data": "2026-08-07T12:09:53.242113+00:00",
+      "last_data": "2026-08-08T12:09:14.592499+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "fda": {
-      "last_data": "2026-08-08T09:08:35.790613+00:00",
-      "last_data_count": 13,
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_data": "2026-08-08T12:08:40.101463+00:00",
+      "last_data_count": 14,
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "fuel": {
-      "last_data": "2026-08-07T21:09:48.315128+00:00",
+      "last_data": "2026-08-08T12:09:07.165723+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "fx": {
-      "last_data": "2026-08-08T09:09:02.466573+00:00",
+      "last_data": "2026-08-08T12:09:05.859361+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "games": {
       "last_data": "2026-08-03T12:08:32.343025+00:00",
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "golden_sun": {
-      "last_data": "2026-08-08T09:07:46.117867+00:00",
+      "last_data": "2026-08-08T12:07:41.825804+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "groceries": {
-      "last_data": "2026-08-07T21:09:22.155523+00:00",
+      "last_data": "2026-08-08T12:08:39.490507+00:00",
       "last_data_count": 227,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "habits": {
-      "last_data": "2026-08-08T11:52:44.126035+00:00",
+      "last_data": "2026-08-08T12:09:10.527701+00:00",
       "last_data_count": 5,
-      "last_ok": "2026-08-08T11:52:40.898012+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "holidays": {
-      "last_data": "2026-08-07T21:09:56.090234+00:00",
+      "last_data": "2026-08-08T12:09:21.552554+00:00",
       "last_data_count": 26,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "iss": {
-      "last_data": "2026-08-08T09:09:04.782021+00:00",
+      "last_data": "2026-08-08T12:09:08.426323+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "itsc": {
-      "last_data": "2026-08-07T21:09:56.838078+00:00",
+      "last_data": "2026-08-08T12:09:22.405932+00:00",
       "last_data_count": 49,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "launches": {
-      "last_data": "2026-08-08T09:09:04.256889+00:00",
+      "last_data": "2026-08-08T12:09:07.909963+00:00",
       "last_data_count": 20,
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "learn": {
-      "last_data": "2026-08-07T12:09:48.870742+00:00",
+      "last_data": "2026-08-08T12:09:10.601193+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-07T12:08:09.254564+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "life_dashboard": {
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "marine": {
-      "last_data": "2026-08-07T21:09:57.621019+00:00",
+      "last_data": "2026-08-08T12:09:23.920601+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "music": {
-      "last_data": "2026-08-08T09:07:44.254968+00:00",
+      "last_data": "2026-08-08T12:07:39.103501+00:00",
       "last_data_count": 4,
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "onamet": {
-      "last_data": "2026-08-08T09:08:47.906968+00:00",
+      "last_data": "2026-08-08T12:08:51.674646+00:00",
       "last_data_count": 27,
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "outages": {
       "last_data": "2026-07-27T03:09:41.894523+00:00",
       "last_data_count": 0,
       "last_error": "EDEESTE has published no schedule covering today; newest package ends 2026-07-26 (13d ago)",
-      "last_error_ts": "2026-08-08T09:07:38.959940+00:00",
+      "last_error_ts": "2026-08-08T12:07:35.196083+00:00",
       "last_ok": "2026-08-02T15:07:27.690220+00:00",
       "source_failed": true
     },
     "quakes": {
-      "last_data": "2026-08-08T09:09:01.764997+00:00",
-      "last_data_count": 47,
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_data": "2026-08-08T12:09:05.402147+00:00",
+      "last_data_count": 46,
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "recap": {
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "reminders": {
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "research": {
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "soundcore_pro": {
-      "last_data": "2026-08-08T09:08:30.315290+00:00",
+      "last_data": "2026-08-08T12:08:20.314779+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "spark": {
       "last_data": "2026-08-08T06:09:30.960227+00:00",
@@ -15600,35 +15536,35 @@
       "last_ok": "2026-08-08T06:07:39.401440+00:00"
     },
     "spending": {
-      "last_data": "2026-08-08T09:09:15.641827+00:00",
+      "last_data": "2026-08-08T12:09:21.353168+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "twitch": {
-      "last_data": "2026-08-08T11:52:42.951693+00:00",
+      "last_data": "2026-08-08T12:07:37.297796+00:00",
       "last_data_count": 6,
-      "last_ok": "2026-08-08T11:52:40.898012+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "uv": {
-      "last_data": "2026-08-07T21:09:57.237090+00:00",
+      "last_data": "2026-08-08T12:09:23.511793+00:00",
       "last_data_count": 1,
-      "last_ok": "2026-08-07T21:08:10.049881+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "visa_bulletin": {
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "watchdog": {
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "weather": {
-      "last_data": "2026-08-08T09:08:47.469361+00:00",
+      "last_data": "2026-08-08T12:08:51.353150+00:00",
       "last_data_count": 2,
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     },
     "youtube": {
-      "last_data": "2026-08-08T09:09:07.548658+00:00",
+      "last_data": "2026-08-08T12:09:09.727527+00:00",
       "last_data_count": 90,
-      "last_ok": "2026-08-08T09:07:38.959940+00:00"
+      "last_ok": "2026-08-08T12:07:35.196083+00:00"
     }
   },
   "twitch_live": [],
@@ -15636,7 +15572,7 @@
   "visa_f4_dates_for_filing": "22JUN10",
   "visa_f4_final_action": "01SEP09",
   "watch_schedule": {
-    "last_full_window": "165387"
+    "last_full_window": "165388"
   },
   "watchdog_data_baseline": {
     "energy": "2026-06-12T12:15:55.633492+00:00",
@@ -15658,6 +15594,7 @@
     "2026-08-08|05:30"
   ],
   "weather_seen_ids": [
+    "982fa1c2ea7d25a9",
     "39c1be1dc0dc015a",
     "31f3924be0760d56",
     "ea8f9e7de7982cb4",
@@ -15856,8 +15793,7 @@
     "d08c2c1624b9b7e1",
     "539ee7f10a7355e7",
     "f32b5eb9b621e5c0",
-    "8d2f7a355fd6f471",
-    "02375c3cfb5372ae"
+    "8d2f7a355fd6f471"
   ],
   "wikiquote_last_category": "activists_thinkers",
   "wikiquote_last_sent": "2026-07-14T4",
